@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+        yun_seize_puppets_factories = { 
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea yun_seize_puppets_factories" }
+			name = yun_seize_puppets_factories
+			picture = KTG_Industrial_Crisis_Factories
+			available = { is_subject = yes }
+			allowed = { always = no }
+			modifier = {
+				cic_to_overlord_factor = 0.5
+				mic_to_overlord_factor = 0.5
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_arms_factory_factor = 0.5				
+			}
+		}
+	}		
+}

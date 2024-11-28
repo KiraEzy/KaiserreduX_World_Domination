@@ -1,0 +1,13 @@
+PSA_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = CAL
+	}
+
+	visible = { 
+		has_completed_focus = CAL_True_Pacific_Empire 
+	}
+
+}
+

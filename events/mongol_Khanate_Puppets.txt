@@ -1,0 +1,3033 @@
+#Imperialism path puppets
+add_namespace = MONoccupation
+country_event = {
+	#Revenge! But Swiss????
+	id = MONoccupation.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.1"
+	}
+	title = "The Formate of the Khanate of Sibir"
+	desc = MONoccupation.1.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SIB
+
+		name = "The Khanate of Sibir is back!"
+		add_political_power = 75
+		hidden_effect = {
+			SIB = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = SIB_MON_KHANATE
+				# create_country_leader = {
+				# 	name = "Edward VIII"
+				# 	picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
+				# 	expire = "1965.1.1"
+				# 	ideology = autocratic_colonial_govt_subtype
+				# }
+				# set_popularities = {
+				# 	totalist = 19
+				# 	radical_socialist = 6
+				# 	syndicalist = 10
+				# 	social_democrat = 4
+				# 	social_liberal = 4
+				# 	market_liberal = 3
+				# 	social_conservative = 5
+				# 	authoritarian_democrat = 4
+				# 	paternal_autocrat = 24
+				# 	national_populist = 21
+				# }
+				# set_party_name = {
+				# 	ideology = paternal_autocrat 
+				# 	long_name = "British Colonial Government"
+				# 	name = "British Colonial Government"
+				# }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = SIB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			SIB = {
+				every_core_state = {
+					remove_core_of = SIB
+				}
+				1201 = { add_core_of = SIB } 
+				1200 = { add_core_of = SIB } 
+				571 = { add_core_of = SIB } 
+				577 = { add_core_of = SIB } 
+				578 = { add_core_of = SIB } 
+				569 = { add_core_of = SIB } 
+				570 = { add_core_of = SIB } 
+				1292 = { add_core_of = SIB } 
+				40 = { add_core_of = SIB } 
+				588 = { add_core_of = SIB } 
+				583 = { add_core_of = SIB } 
+				403 = { add_core_of = SIB } 
+				580 = { add_core_of = SIB } 
+				653 = { add_core_of = SIB } 
+				572 = { add_core_of = SIB } 
+				582 = { add_core_of = SIB } 
+			
+				SIB = { 
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = SIB
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	#Revenge! But Swiss????
+	id = MONoccupation.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.2"
+	} 
+	title = "The Formate of the Khanate of Amur"
+	desc = MONoccupation.2.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = TRM
+
+		name = "The Khanate of Amur is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			TRM = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = TRM_MON_KHANATE
+				# create_country_leader = {
+				# 	name = "Edward VIII"
+				# 	picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
+				# 	expire = "1965.1.1"
+				# 	ideology = autocratic_colonial_govt_subtype
+				# }
+				# set_popularities = {
+				# 	totalist = 19
+				# 	radical_socialist = 6
+				# 	syndicalist = 10
+				# 	social_democrat = 4
+				# 	social_liberal = 4
+				# 	market_liberal = 3
+				# 	social_conservative = 5
+				# 	authoritarian_democrat = 4
+				# 	paternal_autocrat = 24
+				# 	national_populist = 21
+				# }
+				# set_party_name = {
+				# 	ideology = paternal_autocrat 
+				# 	long_name = "British Colonial Government"
+				# 	name = "British Colonial Government"
+				# }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = TRM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			TRM = {
+				every_core_state = {
+					remove_core_of = TRM
+				}
+				516 = { add_core_of = TRM } 
+				576 = { add_core_of = TRM } 
+				575 = { add_core_of = TRM } 
+				568 = { add_core_of = TRM } 
+				566 = { add_core_of = TRM } 
+				567 = { add_core_of = TRM } 
+				644 = { add_core_of = TRM } 
+				1246 = { add_core_of = TRM } 
+                408 = { add_core_of = TRM } 
+                409 = { add_core_of = TRM } 
+                560 = { add_core_of = TRM } 
+                561 = { add_core_of = TRM } 
+                562 = { add_core_of = TRM } 
+                563 = { add_core_of = TRM } 
+                564 = { add_core_of = TRM } 
+                565 = { add_core_of = TRM } 
+                574 = { add_core_of = TRM } 
+                637 = { add_core_of = TRM } 
+                657 = { add_core_of = TRM } 
+			
+				TRM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = TRM
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	#Revenge! But Swiss????
+	id = MONoccupation.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.3"
+	}
+	title = "The Formate of the Crimean Khanate"
+	desc = MONoccupation.3.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CRM
+
+		name = "The Crimean Khanate is back!"
+		add_political_power = 75
+		hidden_effect = {
+			CRM = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = CRM_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = CRM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1221
+				}
+			}
+			CRM = {
+				every_core_state = {
+					remove_core_of = CRM
+				}
+				137 = { add_core_of = CRM } 
+				1220 = { add_core_of = CRM } 
+				196 = { add_core_of = CRM } 
+				1234 = { add_core_of = CRM } 
+				200 = { add_core_of = CRM } 
+				1286 = { add_core_of = CRM } 
+				228 = { add_core_of = CRM } 
+				227 = { add_core_of = CRM } 
+                1283 = { add_core_of = CRM } 
+                1239 = { add_core_of = CRM } 
+                1282 = { add_core_of = CRM } 
+                1285 = { add_core_of = CRM } 
+                221 = { add_core_of = CRM } 
+                1221 = { add_core_of = CRM } 
+                1284 = { add_core_of = CRM } 
+                1238 = { add_core_of = CRM } 
+                259 = { add_core_of = CRM } 
+                225 = { add_core_of = CRM } 
+                1242 = { add_core_of = CRM } 
+                1243 = { add_core_of = CRM } 
+				1237 = { add_core_of = CRM } 
+				193 = { add_core_of = CRM } 
+				241 = { add_core_of = CRM } 
+				1230 = { add_core_of = CRM } 
+				220 = { add_core_of = CRM } 
+				821 = { add_core_of = CRM } 
+				240 = { add_core_of = CRM } 
+				1229 = { add_core_of = CRM } 
+				222 = { add_core_of = CRM } 
+				224 = { add_core_of = CRM } 
+
+				CRM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = CRM
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MONoccupation.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.4"
+	}
+	title = "The Formate of the Khanate of Kazan"
+	desc = MONoccupation.4.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = RUS
+
+		name = "The Khanate of Kazan is back!"
+		add_political_power = 75
+		hidden_effect = {
+			RUS = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = RUS_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = RUS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			RUS = {
+				every_core_state = {
+					remove_core_of = RUS
+				}
+				1193 = { add_core_of = RUS } 
+				1194 = { add_core_of = RUS } 
+				1195 = { add_core_of = RUS } 
+				1197 = { add_core_of = RUS } 
+				1198 = { add_core_of = RUS } 
+				1199 = { add_core_of = RUS } 
+				1204 = { add_core_of = RUS } 
+				1205 = { add_core_of = RUS } 
+				1208 = { add_core_of = RUS } 
+				1274 = { add_core_of = RUS } 
+				1287 = { add_core_of = RUS } 
+				1288 = { add_core_of = RUS } 
+				1289 = { add_core_of = RUS } 
+				1290 = { add_core_of = RUS } 
+				1291 = { add_core_of = RUS } 
+				1327 = { add_core_of = RUS } 
+				1328 = { add_core_of = RUS } 
+				195 = { add_core_of = RUS } 
+				205 = { add_core_of = RUS } 
+				208 = { add_core_of = RUS } 
+				209 = { add_core_of = RUS } 
+				210 = { add_core_of = RUS } 
+				213 = { add_core_of = RUS } 
+				214 = { add_core_of = RUS } 
+				215 = { add_core_of = RUS } 
+				216 = { add_core_of = RUS } 
+				219 = { add_core_of = RUS } 
+				223 = { add_core_of = RUS } 
+				239 = { add_core_of = RUS } 
+				242 = { add_core_of = RUS } 
+				243 = { add_core_of = RUS } 
+				244 = { add_core_of = RUS } 
+				246 = { add_core_of = RUS } 
+				247 = { add_core_of = RUS } 
+				248 = { add_core_of = RUS } 
+				249 = { add_core_of = RUS } 
+				250 = { add_core_of = RUS } 
+				251 = { add_core_of = RUS } 
+				252 = { add_core_of = RUS } 
+				253 = { add_core_of = RUS } 
+				254 = { add_core_of = RUS } 
+				255 = { add_core_of = RUS } 
+				256 = { add_core_of = RUS } 
+				257 = { add_core_of = RUS } 
+				258 = { add_core_of = RUS } 
+				260 = { add_core_of = RUS } 
+				262 = { add_core_of = RUS } 
+				263 = { add_core_of = RUS } 
+				264 = { add_core_of = RUS } 
+				265 = { add_core_of = RUS } 
+				351 = { add_core_of = RUS } 
+				397 = { add_core_of = RUS } 
+				398 = { add_core_of = RUS } 
+				399 = { add_core_of = RUS } 
+				400 = { add_core_of = RUS } 
+				401 = { add_core_of = RUS } 
+				573 = { add_core_of = RUS } 
+				581 = { add_core_of = RUS } 
+				651 = { add_core_of = RUS } 
+				652 = { add_core_of = RUS } 
+				722 = { add_core_of = RUS } 
+				755 = { add_core_of = RUS } 
+				880 = { add_core_of = RUS } 
+
+				RUS = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = RUS
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MONoccupation.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.5"
+	}
+	title = "The Formation of the Khanate of the Three Rivers"
+	desc = MONoccupation.5.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SHA
+
+		name = "The Khanate of the Three Rivers is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SHA = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = SHA_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = SHA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 640
+				}
+			}
+			SHA = {
+				every_core_state = {
+					remove_core_of = SHA
+				}
+				288 = { add_core_of = SHA } 
+				289 = { add_core_of = SHA } 
+				640 = { add_core_of = SHA } 
+				701 = { add_core_of = SHA } 
+				72 = { add_core_of = SHA } 
+				724 = { add_core_of = SHA } 
+				749 = { add_core_of = SHA } 
+				750 = { add_core_of = SHA } 
+				751 = { add_core_of = SHA } 
+				756 = { add_core_of = SHA } 
+				790 = { add_core_of = SHA } 
+				822 = { add_core_of = SHA } 
+				823 = { add_core_of = SHA } 
+				824 = { add_core_of = SHA } 
+				825 = { add_core_of = SHA } 
+				830 = { add_core_of = SHA } 
+				831 = { add_core_of = SHA } 
+				882 = { add_core_of = SHA } 
+				999 = { add_core_of = SHA } 
+				670 = { add_core_of = SHA } 
+				826 = { add_core_of = SHA } 
+				827 = { add_core_of = SHA } 
+				286 = { add_core_of = SHA } 
+				856 = { add_core_of = SHA } 
+				671 = { add_core_of = SHA } 
+				857 = { add_core_of = SHA } 
+
+				SHA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = SHA
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MONoccupation.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.6"
+	}
+	title = "The Formation of the Seljuk Empire"
+	desc = MONoccupation.6.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = TUR
+
+		name = "The Seljuk Empire is back!"
+		add_political_power = 75
+		hidden_effect = {
+			TUR = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = TUR_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = TUR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1000
+				}
+			}
+			TUR = {
+				every_core_state = {
+					remove_core_of = TUR
+				}
+				every_controlled_state = {
+					remove_state_claim = TUR
+				}
+				1000 = { add_core_of = TUR } 
+				1001 = { add_core_of = TUR } 
+				1213 = { add_core_of = TUR } 
+				1225 = { add_core_of = TUR } 
+				164 = { add_core_of = TUR } 
+				183 = { add_core_of = TUR } 
+				187 = { add_core_of = TUR } 
+				291 = { add_core_of = TUR } 
+				339 = { add_core_of = TUR } 
+				340 = { add_core_of = TUR } 
+				341 = { add_core_of = TUR } 
+				342 = { add_core_of = TUR } 
+				343 = { add_core_of = TUR } 
+				344 = { add_core_of = TUR } 
+				345 = { add_core_of = TUR } 
+				346 = { add_core_of = TUR } 
+				349 = { add_core_of = TUR } 
+				350 = { add_core_of = TUR } 
+				352 = { add_core_of = TUR } 
+				354 = { add_core_of = TUR } 
+				355 = { add_core_of = TUR } 
+				356 = { add_core_of = TUR } 
+				455 = { add_core_of = TUR } 
+				49 = { add_core_of = TUR } 
+				553 = { add_core_of = TUR } 
+				554 = { add_core_of = TUR } 
+				658 = { add_core_of = TUR } 
+				676 = { add_core_of = TUR } 
+				677 = { add_core_of = TUR } 
+				680 = { add_core_of = TUR } 
+				773 = { add_core_of = TUR } 
+				812 = { add_core_of = TUR } 
+				819 = { add_core_of = TUR } 
+				907 = { add_core_of = TUR } 
+				992 = { add_core_of = TUR } 
+				993 = { add_core_of = TUR } 
+				995 = { add_core_of = TUR } 
+
+				TUR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = TUR
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MONoccupation.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.7"
+	}
+	title = "The Formation of the Bulgar Khanate"
+	desc = MONoccupation.7.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BUL
+
+		name = "The Bulgar Khanate is back!"
+		add_political_power = 75
+		hidden_effect = {
+			BUL = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = BUL_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = BUL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 106
+				}
+			}
+			BUL = {
+				every_core_state = {
+					remove_core_of = BUL
+				}
+				106 = { add_core_of = BUL } 
+				1089 = { add_core_of = BUL } 
+				1090 = { add_core_of = BUL } 
+				1271 = { add_core_of = BUL } 
+				184 = { add_core_of = BUL } 
+				211 = { add_core_of = BUL } 
+				212 = { add_core_of = BUL } 
+				48 = { add_core_of = BUL } 
+				731 = { add_core_of = BUL } 
+				769 = { add_core_of = BUL } 
+				77 = { add_core_of = BUL } 
+				770 = { add_core_of = BUL } 
+				771 = { add_core_of = BUL } 
+				772 = { add_core_of = BUL } 
+				841 = { add_core_of = BUL } 
+				192 = { add_core_of = BUL } 
+				791 = { add_core_of = BUL } 
+				1245 = { add_core_of = BUL } 
+				199 = { add_core_of = BUL } 
+				1140 = { add_core_of = BUL } 
+				89 = { add_core_of = BUL } 
+				80 = { add_core_of = BUL } 
+				713 = { add_core_of = BUL } 
+				1116 = { add_core_of = BUL } 
+				1113 = { add_core_of = BUL } 
+				1114 = { add_core_of = BUL } 
+				82 = { add_core_of = BUL } 
+				875 = { add_core_of = BUL } 
+				45 = { add_core_of = BUL } 
+				794 = { add_core_of = BUL } 
+				81 = { add_core_of = BUL } 
+				1222 = { add_core_of = BUL } 
+				1320 = { add_core_of = BUL } 
+				46 = { add_core_of = BUL } 
+				78 = { add_core_of = BUL } 
+				79 = { add_core_of = BUL } 
+				91 = { add_core_of = BUL } 
+				1126 = { add_core_of = BUL } 
+				84 = { add_core_of = BUL } 
+				789 = { add_core_of = BUL } 
+				1127 = { add_core_of = BUL } 
+
+				BUL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = BUL
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MONoccupation.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.8"
+	}
+	title = "The Formation of the Khanate of Kiev"
+	desc = MONoccupation.8.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = UKR
+
+		name = "The Khanate of Kiev is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			UKR = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = UKR_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = UKR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 192
+				}
+			}
+			UKR = {
+				every_core_state = {
+					remove_core_of = UKR
+				}
+				192 = { add_core_of = UKR } 
+				1232 = { add_core_of = UKR } 
+				197 = { add_core_of = UKR } 
+				226 = { add_core_of = UKR } 
+				1233 = { add_core_of = UKR } 
+				791 = { add_core_of = UKR } 
+				1241 = { add_core_of = UKR } 
+				203 = { add_core_of = UKR } 
+				1245 = { add_core_of = UKR } 
+				198 = { add_core_of = UKR } 
+				1240 = { add_core_of = UKR } 
+				202 = { add_core_of = UKR } 
+				201 = { add_core_of = UKR } 
+				1244 = { add_core_of = UKR } 
+				199 = { add_core_of = UKR } 
+				1228 = { add_core_of = UKR } 
+				792 = { add_core_of = UKR } 
+				997 = { add_core_of = UKR } 
+				93 = { add_core_of = UKR } 
+				1087 = { add_core_of = UKR } 
+				1294 = { add_core_of = UKR } 
+				1295 = { add_core_of = UKR } 
+				194 = { add_core_of = UKR } 
+				204 = { add_core_of = UKR } 
+				206 = { add_core_of = UKR } 
+				207 = { add_core_of = UKR } 
+				95 = { add_core_of = UKR } 
+
+				UKR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = UKR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.9"
+	}
+	title = "The Formation of the Khanate of Sclavinia"
+	desc = MONoccupation.9.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CRO
+
+		name = "The Khanate of Sclavinia is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			CRO = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = CRO_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = CRO
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 103
+				}
+			}
+			CRO = {
+				every_core_state = {
+					remove_core_of = CRO
+				}
+				103 = { add_core_of = CRO } 
+				104 = { add_core_of = CRO } 
+				105 = { add_core_of = CRO } 
+				107 = { add_core_of = CRO } 
+				108 = { add_core_of = CRO } 
+				109 = { add_core_of = CRO } 
+				1097 = { add_core_of = CRO } 
+				1098 = { add_core_of = CRO } 
+				1099 = { add_core_of = CRO } 
+				1102 = { add_core_of = CRO } 
+				1105 = { add_core_of = CRO } 
+				1128 = { add_core_of = CRO } 
+				1141 = { add_core_of = CRO } 
+				794 = { add_core_of = CRO } 
+				1142 = { add_core_of = CRO } 
+				1143 = { add_core_of = CRO } 
+				1145 = { add_core_of = CRO } 
+				1206 = { add_core_of = CRO } 
+				1269 = { add_core_of = CRO } 
+				1270 = { add_core_of = CRO } 
+				163 = { add_core_of = CRO } 
+				765 = { add_core_of = CRO } 
+				767 = { add_core_of = CRO } 
+
+				CRO = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = CRO
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.10"
+	}
+	title = "The Formation of the Danubian Ulus"
+	desc = MONoccupation.10.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = HUN
+
+		name = "The Danubian Ulus is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			HUN = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = HUN_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = HUN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1106
+				}
+			}
+			HUN = {
+				every_core_state = {
+					remove_core_of = HUN
+				}
+				1106 = { add_core_of = HUN } 
+				1107 = { add_core_of = HUN } 
+				1108 = { add_core_of = HUN } 
+				1109 = { add_core_of = HUN } 
+				1110 = { add_core_of = HUN } 
+				1111 = { add_core_of = HUN } 
+				1112 = { add_core_of = HUN } 
+				1115 = { add_core_of = HUN } 
+				1117 = { add_core_of = HUN } 
+				1118 = { add_core_of = HUN } 
+				1119 = { add_core_of = HUN } 
+				1120 = { add_core_of = HUN } 
+				1121 = { add_core_of = HUN } 
+				1122 = { add_core_of = HUN } 
+				1123 = { add_core_of = HUN } 
+				1124 = { add_core_of = HUN } 
+				1125 = { add_core_of = HUN } 
+				1135 = { add_core_of = HUN } 
+				1136 = { add_core_of = HUN } 
+				1314 = { add_core_of = HUN } 
+				1319 = { add_core_of = HUN } 
+				154 = { add_core_of = HUN } 
+				155 = { add_core_of = HUN } 
+				43 = { add_core_of = HUN } 
+				664 = { add_core_of = HUN } 
+				70 = { add_core_of = HUN } 
+				73 = { add_core_of = HUN } 
+				76 = { add_core_of = HUN } 
+				784 = { add_core_of = HUN } 
+				83 = { add_core_of = HUN } 
+				88 = { add_core_of = HUN } 
+				HUN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = HUN
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+    id = MONoccupation.11
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event MONoccupation.11"
+    }
+    title = "The Formation of the Holy Roman Khanate"
+    desc = MONoccupation.11.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = GER
+
+        name = "The Holy Roman Khanate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            GER = {
+                set_country_flag = mon_khanated
+                set_cosmetic_tag = GER_MON_KHANATE
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                MON = {
+                    set_autonomy = {
+                        target = GER
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+                set_capital = {
+                    state = 570
+                }
+            }
+            GER = {
+                every_core_state = {
+                    remove_core_of = GER
+                }
+                1003 = { add_core_of = GER } 
+                1004 = { add_core_of = GER } 
+                1005 = { add_core_of = GER } 
+                102 = { add_core_of = GER } 
+                1100 = { add_core_of = GER } 
+                1101 = { add_core_of = GER } 
+                1103 = { add_core_of = GER } 
+                1104 = { add_core_of = GER } 
+                1129 = { add_core_of = GER } 
+                1130 = { add_core_of = GER } 
+                1131 = { add_core_of = GER } 
+                1132 = { add_core_of = GER } 
+                1133 = { add_core_of = GER } 
+                1134 = { add_core_of = GER } 
+                1137 = { add_core_of = GER } 
+                1138 = { add_core_of = GER } 
+                1139 = { add_core_of = GER } 
+                1144 = { add_core_of = GER } 
+                1235 = { add_core_of = GER } 
+                1236 = { add_core_of = GER } 
+                1272 = { add_core_of = GER } 
+                151 = { add_core_of = GER } 
+                152 = { add_core_of = GER } 
+                153 = { add_core_of = GER } 
+                157 = { add_core_of = GER } 
+                158 = { add_core_of = GER } 
+                159 = { add_core_of = GER } 
+                160 = { add_core_of = GER } 
+                161 = { add_core_of = GER } 
+                162 = { add_core_of = GER } 
+                188 = { add_core_of = GER } 
+                28 = { add_core_of = GER } 
+                3 = { add_core_of = GER } 
+                39 = { add_core_of = GER } 
+                4 = { add_core_of = GER } 
+                42 = { add_core_of = GER } 
+                5 = { add_core_of = GER } 
+                50 = { add_core_of = GER } 
+                51 = { add_core_of = GER } 
+                52 = { add_core_of = GER } 
+                53 = { add_core_of = GER } 
+                54 = { add_core_of = GER } 
+                55 = { add_core_of = GER } 
+                56 = { add_core_of = GER } 
+                57 = { add_core_of = GER } 
+                58 = { add_core_of = GER } 
+                59 = { add_core_of = GER } 
+                60 = { add_core_of = GER } 
+                61 = { add_core_of = GER } 
+                62 = { add_core_of = GER } 
+                63 = { add_core_of = GER } 
+                64 = { add_core_of = GER } 
+                65 = { add_core_of = GER } 
+                66 = { add_core_of = GER } 
+                67 = { add_core_of = GER } 
+                68 = { add_core_of = GER } 
+                69 = { add_core_of = GER } 
+                71 = { add_core_of = GER } 
+                736 = { add_core_of = GER } 
+                74 = { add_core_of = GER } 
+                75 = { add_core_of = GER } 
+                759 = { add_core_of = GER } 
+                760 = { add_core_of = GER } 
+                761 = { add_core_of = GER } 
+                764 = { add_core_of = GER } 
+                775 = { add_core_of = GER } 
+                776 = { add_core_of = GER } 
+                777 = { add_core_of = GER } 
+                780 = { add_core_of = GER } 
+                781 = { add_core_of = GER } 
+                782 = { add_core_of = GER } 
+                783 = { add_core_of = GER } 
+                786 = { add_core_of = GER } 
+                8 = { add_core_of = GER } 
+                835 = { add_core_of = GER } 
+                836 = { add_core_of = GER } 
+                838 = { add_core_of = GER } 
+                839 = { add_core_of = GER } 
+                86 = { add_core_of = GER } 
+                9 = { add_core_of = GER } 
+                942 = { add_core_of = GER } 
+				29 = { add_core_of = GER } 
+				34 = { add_core_of = GER } 
+				35 = { add_core_of = GER } 
+				36 = { add_core_of = GER } 
+				6 = { add_core_of = GER } 
+				7 = { add_core_of = GER } 
+				741 = { add_core_of = GER } 
+				866 = { add_core_of = GER } 
+				978 = { add_core_of = GER } 
+				979 = { add_core_of = GER } 
+                GER = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = MON
+                                OWNER = { is_subject_of = MON }
+                            }
+                        }
+                        transfer_state_to = GER
+                    }
+                }
+            }
+        }
+    }
+}
+country_event = {
+	id = MONoccupation.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.12"
+	}
+	title = "The Formation of the Vistulan Ulus"
+	desc = MONoccupation.12.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = POL
+
+		name = "The Vistulan Ulus is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			POL = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = POL_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = POL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 10
+				}
+			}
+			POL = {
+				every_core_state = {
+					remove_core_of = POL
+				}
+				10 = { add_core_of = POL } 
+				1088 = { add_core_of = POL } 
+				1148 = { add_core_of = POL } 
+				87 = { add_core_of = POL } 
+				90 = { add_core_of = POL } 
+				92 = { add_core_of = POL } 
+				97 = { add_core_of = POL } 
+				98 = { add_core_of = POL } 
+
+				POL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = POL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.13"
+	}
+	title = "The Formation of the Khanate of the Baltic"
+	desc = MONoccupation.13.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BAT
+
+		name = "The Khanate of the Baltic is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			BAT = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = BAT_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = BAT
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1091
+				}
+			}
+			BAT = {
+				every_core_state = {
+					remove_core_of = BAT
+				}
+				1091 = { add_core_of = BAT } 
+				11 = { add_core_of = BAT } 
+				12 = { add_core_of = BAT } 
+				13 = { add_core_of = BAT } 
+				1329 = { add_core_of = BAT } 
+				189 = { add_core_of = BAT } 
+				190 = { add_core_of = BAT } 
+				191 = { add_core_of = BAT } 
+				655 = { add_core_of = BAT } 
+				94 = { add_core_of = BAT } 
+				96 = { add_core_of = BAT } 
+
+				BAT = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = BAT
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.14"
+	}
+	title = "The Formation of the Khanate of the Northlands"
+	desc = MONoccupation.14.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SWE
+
+		name = "The Khanate of the Northlands is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SWE = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = SWE_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = SWE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 101
+				}
+			}
+			SWE = {
+				every_core_state = {
+					remove_core_of = SWE
+				}
+				101 = { add_core_of = SWE } 
+				110 = { add_core_of = SWE } 
+				111 = { add_core_of = SWE } 
+				1146 = { add_core_of = SWE } 
+				1147 = { add_core_of = SWE } 
+				124 = { add_core_of = SWE } 
+				1324 = { add_core_of = SWE } 
+				1325 = { add_core_of = SWE } 
+				1326 = { add_core_of = SWE } 
+				138 = { add_core_of = SWE } 
+				139 = { add_core_of = SWE } 
+				140 = { add_core_of = SWE } 
+				141 = { add_core_of = SWE } 
+				142 = { add_core_of = SWE } 
+				143 = { add_core_of = SWE } 
+				144 = { add_core_of = SWE } 
+				145 = { add_core_of = SWE } 
+				146 = { add_core_of = SWE } 
+				147 = { add_core_of = SWE } 
+				148 = { add_core_of = SWE } 
+				149 = { add_core_of = SWE } 
+				150 = { add_core_of = SWE } 
+				337 = { add_core_of = SWE } 
+				37 = { add_core_of = SWE } 
+				38 = { add_core_of = SWE } 
+				666 = { add_core_of = SWE } 
+				778 = { add_core_of = SWE } 
+				840 = { add_core_of = SWE } 
+				844 = { add_core_of = SWE } 
+				863 = { add_core_of = SWE } 
+				864 = { add_core_of = SWE } 
+				865 = { add_core_of = SWE } 
+				908 = { add_core_of = SWE } 
+				909 = { add_core_of = SWE } 
+				926 = { add_core_of = SWE } 
+				936 = { add_core_of = SWE } 
+				937 = { add_core_of = SWE } 
+				960 = { add_core_of = SWE } 
+				99 = { add_core_of = SWE } 
+				100 = { add_core_of = SWE } 
+
+				SWE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = SWE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.15"
+	}
+	title = "The Formation of the Khanate of the Franks"
+	desc = MONoccupation.15.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = FRA
+
+		name = "The Khanate of the Franks is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			FRA = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = FRA_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = FRA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1
+				}
+			}
+			FRA = {
+				every_core_state = {
+					remove_core_of = FRA
+				}
+				14 = { add_core_of = FRA } 
+				15 = { add_core_of = FRA } 
+				16 = { add_core_of = FRA } 
+				17 = { add_core_of = FRA } 
+				18 = { add_core_of = FRA } 
+				19 = { add_core_of = FRA } 
+				20 = { add_core_of = FRA } 
+				21 = { add_core_of = FRA } 
+				22 = { add_core_of = FRA } 
+				23 = { add_core_of = FRA } 
+				24 = { add_core_of = FRA } 
+				25 = { add_core_of = FRA } 
+				26 = { add_core_of = FRA } 
+				27 = { add_core_of = FRA } 
+				29 = { add_core_of = FRA } 
+				30 = { add_core_of = FRA } 
+				31 = { add_core_of = FRA } 
+				32 = { add_core_of = FRA } 
+				33 = { add_core_of = FRA } 
+				735 = { add_core_of = FRA } 
+				762 = { add_core_of = FRA } 
+				763 = { add_core_of = FRA } 
+				779 = { add_core_of = FRA } 
+				785 = { add_core_of = FRA } 
+				817 = { add_core_of = FRA } 
+				943 = { add_core_of = FRA } 
+				980 = { add_core_of = FRA } 
+				983 = { add_core_of = FRA } 
+				984 = { add_core_of = FRA } 
+
+				FRA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = FRA
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = MONoccupation.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.16"
+	}
+	title = "The Formation of the Iberian Khanate"
+	desc = MONoccupation.16.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SPR
+
+		name = "The Iberian Khanate is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SPR = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = SPR_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = SPR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 165
+				}
+			}
+			SPR = {
+				every_core_state = {
+					remove_core_of = SPR
+				}
+				112 = { add_core_of = SPR } 
+				118 = { add_core_of = SPR } 
+				1313 = { add_core_of = SPR } 
+				1316 = { add_core_of = SPR } 
+				165 = { add_core_of = SPR } 
+				166 = { add_core_of = SPR } 
+				167 = { add_core_of = SPR } 
+				168 = { add_core_of = SPR } 
+				169 = { add_core_of = SPR } 
+				170 = { add_core_of = SPR } 
+				171 = { add_core_of = SPR } 
+				172 = { add_core_of = SPR } 
+				173 = { add_core_of = SPR } 
+				174 = { add_core_of = SPR } 
+				175 = { add_core_of = SPR } 
+				176 = { add_core_of = SPR } 
+				177 = { add_core_of = SPR } 
+				178 = { add_core_of = SPR } 
+				179 = { add_core_of = SPR } 
+				180 = { add_core_of = SPR } 
+				181 = { add_core_of = SPR } 
+				41 = { add_core_of = SPR } 
+				697 = { add_core_of = SPR } 
+				698 = { add_core_of = SPR } 
+				702 = { add_core_of = SPR } 
+				705 = { add_core_of = SPR } 
+				793 = { add_core_of = SPR } 
+				795 = { add_core_of = SPR } 
+				940 = { add_core_of = SPR } 
+				951 = { add_core_of = SPR } 
+
+				SPR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = SPR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.17"
+	}
+	title = "The Formation of the Khanate of Britannia"
+	desc = MONoccupation.17.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ENG
+
+		name = "The Khanate of Britannia is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			ENG = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = ENG_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = ENG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 113
+				}
+			}
+			ENG = {
+				every_core_state = {
+					remove_core_of = ENG
+				}
+				113 = { add_core_of = ENG } 
+				119 = { add_core_of = ENG } 
+				120 = { add_core_of = ENG } 
+				121 = { add_core_of = ENG } 
+				122 = { add_core_of = ENG } 
+				123 = { add_core_of = ENG } 
+				125 = { add_core_of = ENG } 
+				126 = { add_core_of = ENG } 
+				127 = { add_core_of = ENG } 
+				128 = { add_core_of = ENG } 
+				129 = { add_core_of = ENG } 
+				130 = { add_core_of = ENG } 
+				131 = { add_core_of = ENG } 
+				1315 = { add_core_of = ENG } 
+				1317 = { add_core_of = ENG } 
+				132 = { add_core_of = ENG } 
+				133 = { add_core_of = ENG } 
+				134 = { add_core_of = ENG } 
+				135 = { add_core_of = ENG } 
+				136 = { add_core_of = ENG } 
+				338 = { add_core_of = ENG } 
+				938 = { add_core_of = ENG } 
+
+				ENG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = ENG
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.18"
+	}
+	title = "The Formation of the Khanate of Athens"
+	desc = MONoccupation.18.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = GRE
+
+		name = "The Khanate of Athens is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			GRE = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = GRE_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = GRE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1076
+				}
+			}
+			GRE = {
+				every_core_state = {
+					remove_core_of = GRE
+				}
+				1076 = { add_core_of = GRE } 
+				185 = { add_core_of = GRE } 
+				186 = { add_core_of = GRE } 
+				47 = { add_core_of = GRE } 
+				758 = { add_core_of = GRE } 
+				768 = { add_core_of = GRE } 
+				939 = { add_core_of = GRE } 
+				989 = { add_core_of = GRE } 
+				766 = { add_core_of = GRE } 
+				44 = { add_core_of = GRE } 
+				1268 = { add_core_of = GRE } 
+
+				GRE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = GRE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.19"
+	}
+	title = "The Formation of the Ulus of the Two Sicilies"
+	desc = MONoccupation.19.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SIC
+
+		name = "The Ulus of the Two Sicilies is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SIC = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = SIC_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = SIC
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1002
+				}
+			}
+			SIC = {
+				every_core_state = {
+					remove_core_of = SIC
+				}
+				1002 = { add_core_of = SIC } 
+				1006 = { add_core_of = SIC } 
+				114 = { add_core_of = SIC } 
+				1149 = { add_core_of = SIC } 
+				115 = { add_core_of = SIC } 
+				117 = { add_core_of = SIC } 
+				156 = { add_core_of = SIC } 
+				2 = { add_core_of = SIC } 
+				742 = { add_core_of = SIC } 
+				837 = { add_core_of = SIC } 
+
+				SIC = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = SIC
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.20
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.20"
+	}
+	title = "The Formation of the Khanate of Nippon"
+	desc = MONoccupation.20.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = JAP
+
+		name = "The Khanate of Nippon is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			JAP = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = JAP_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = JAP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 282
+				}
+			}
+			JAP = {
+				every_core_state = {
+					remove_core_of = JAP
+				}
+				282 = { add_core_of = JAP } 
+				526 = { add_core_of = JAP } 
+				528 = { add_core_of = JAP } 
+				529 = { add_core_of = JAP } 
+				530 = { add_core_of = JAP } 
+				531 = { add_core_of = JAP } 
+				532 = { add_core_of = JAP } 
+				533 = { add_core_of = JAP } 
+				534 = { add_core_of = JAP } 
+				535 = { add_core_of = JAP } 
+				536 = { add_core_of = JAP } 
+				537 = { add_core_of = JAP } 
+				555 = { add_core_of = JAP } 
+				645 = { add_core_of = JAP } 
+				648 = { add_core_of = JAP } 
+
+				JAP = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = JAP
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.21"
+	}
+	title = "The Formation of the Khanate of Maghreb"
+	desc = MONoccupation.21.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ALG
+
+		name = "The Khanate of Maghreb is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			ALG = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = ALG_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = ALG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 513
+				}
+			}
+			ALG = {
+				every_core_state = {
+					remove_core_of = ALG
+				}
+				513 = { add_core_of = ALG } 
+				514 = { add_core_of = ALG } 
+				515 = { add_core_of = ALG } 
+				910 = { add_core_of = ALG } 
+				911 = { add_core_of = ALG } 
+				272 = { add_core_of = ALG } 
+				913 = { add_core_of = ALG } 
+				662 = { add_core_of = ALG } 
+				290 = { add_core_of = ALG } 
+				805 = { add_core_of = ALG } 
+				1318 = { add_core_of = ALG } 
+				806 = { add_core_of = ALG } 
+				1192 = { add_core_of = ALG } 
+				296 = { add_core_of = ALG } 
+				298 = { add_core_of = ALG } 
+				808 = { add_core_of = ALG } 
+				556 = { add_core_of = ALG } 
+				557 = { add_core_of = ALG } 
+				558 = { add_core_of = ALG } 
+				809 = { add_core_of = ALG } 
+				699 = { add_core_of = ALG } 
+				700 = { add_core_of = ALG } 
+				702 = { add_core_of = ALG } 
+				834 = { add_core_of = ALG } 
+				966 = { add_core_of = ALG } 
+				967 = { add_core_of = ALG } 
+				968 = { add_core_of = ALG } 
+				459 = { add_core_of = ALG } 
+				460 = { add_core_of = ALG } 
+				461 = { add_core_of = ALG } 
+				462 = { add_core_of = ALG } 
+				973 = { add_core_of = ALG } 
+				860 = { add_core_of = ALG } 
+				878 = { add_core_of = ALG } 
+				807 = { add_core_of = ALG } 
+				963 = { add_core_of = ALG } 
+				1321 = { add_core_of = ALG } 
+				1322 = { add_core_of = ALG } 
+				1323 = { add_core_of = ALG } 
+				274 = { add_core_of = ALG } 
+				876 = { add_core_of = ALG } 
+				877 = { add_core_of = ALG } 
+				451 = { add_core_of = ALG } 
+				458 = { add_core_of = ALG } 
+				1009 = { add_core_of = ALG } 
+				663 = { add_core_of = ALG } 
+				665 = { add_core_of = ALG } 
+				273 = { add_core_of = ALG } 
+				448 = { add_core_of = ALG } 
+
+				ALG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = ALG
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.22"
+	}
+	title = "The Formation of the Egyptian Khanate"
+	desc = MONoccupation.22.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = EGY
+
+		name = "The Egyptian Khanate is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			EGY = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = EGY_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = EGY
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 513
+				}
+			}
+			EGY = {
+				every_core_state = {
+					remove_core_of = EGY
+				}
+				452 = { add_core_of = EGY } 
+				453 = { add_core_of = EGY } 
+				549 = { add_core_of = EGY } 
+				551 = { add_core_of = EGY } 
+				456 = { add_core_of = EGY } 
+				457 = { add_core_of = EGY } 
+				552 = { add_core_of = EGY } 
+				1007 = { add_core_of = EGY } 
+				1008 = { add_core_of = EGY } 
+				753 = { add_core_of = EGY } 
+				1010 = { add_core_of = EGY } 
+				1011 = { add_core_of = EGY } 
+				862 = { add_core_of = EGY } 
+				446 = { add_core_of = EGY } 
+				447 = { add_core_of = EGY } 
+
+				EGY = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = EGY
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.23"
+	}
+	title = "The Formation of the Ulus of Middle Africa"
+	desc = MONoccupation.23.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = COG
+		name = "The Ulus of Middle Africa is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			COG = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = COG_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = COG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 1025
+				}
+			}
+			COG = {
+				every_core_state = {
+					remove_core_of = COG
+				}
+				1025 = { add_core_of = COG } 
+				1026 = { add_core_of = COG } 
+				899 = { add_core_of = COG } 
+				1032 = { add_core_of = COG } 
+				905 = { add_core_of = COG } 
+				906 = { add_core_of = COG } 
+				268 = { add_core_of = COG } 
+				269 = { add_core_of = COG } 
+				271 = { add_core_of = COG } 
+				1297 = { add_core_of = COG } 
+				660 = { add_core_of = COG } 
+				918 = { add_core_of = COG } 
+				919 = { add_core_of = COG } 
+				920 = { add_core_of = COG } 
+				921 = { add_core_of = COG } 
+				538 = { add_core_of = COG } 
+				539 = { add_core_of = COG } 
+				1180 = { add_core_of = COG } 
+				1181 = { add_core_of = COG } 
+				1182 = { add_core_of = COG } 
+				1184 = { add_core_of = COG } 
+				1185 = { add_core_of = COG } 
+				546 = { add_core_of = COG } 
+				547 = { add_core_of = COG } 
+				1183 = { add_core_of = COG } 
+				548 = { add_core_of = COG } 
+				550 = { add_core_of = COG } 
+				295 = { add_core_of = COG } 
+				922 = { add_core_of = COG } 
+				923 = { add_core_of = COG } 
+				924 = { add_core_of = COG } 
+				925 = { add_core_of = COG } 
+				559 = { add_core_of = COG } 
+				944 = { add_core_of = COG } 
+				948 = { add_core_of = COG } 
+				949 = { add_core_of = COG } 
+				927 = { add_core_of = COG } 
+				952 = { add_core_of = COG } 
+				953 = { add_core_of = COG } 
+				928 = { add_core_of = COG } 
+				703 = { add_core_of = COG } 
+				704 = { add_core_of = COG } 
+				961 = { add_core_of = COG } 
+				962 = { add_core_of = COG } 
+				709 = { add_core_of = COG } 
+				965 = { add_core_of = COG } 
+				969 = { add_core_of = COG } 
+				970 = { add_core_of = COG } 
+				971 = { add_core_of = COG } 
+				718 = { add_core_of = COG } 
+				974 = { add_core_of = COG } 
+				975 = { add_core_of = COG } 
+				976 = { add_core_of = COG } 
+				977 = { add_core_of = COG } 
+				869 = { add_core_of = COG } 
+				870 = { add_core_of = COG } 
+				879 = { add_core_of = COG } 
+				881 = { add_core_of = COG } 
+				297 = { add_core_of = COG } 
+				892 = { add_core_of = COG } 
+
+				COG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = COG
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.24"
+	}
+	title = "The Formation of the Ulus of South Africa"
+	desc = MONoccupation.24.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SAF
+
+		name = "The Ulus of South Africa is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SAF = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = SAF_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = SAF
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 914
+				}
+			}
+			SAF = {
+				every_core_state = {
+					remove_core_of = SAF
+				}
+				914 = { add_core_of = SAF } 
+				275 = { add_core_of = SAF } 
+				916 = { add_core_of = SAF } 
+				917 = { add_core_of = SAF } 
+				1176 = { add_core_of = SAF } 
+				540 = { add_core_of = SAF } 
+				541 = { add_core_of = SAF } 
+				542 = { add_core_of = SAF } 
+				544 = { add_core_of = SAF } 
+				545 = { add_core_of = SAF } 
+				681 = { add_core_of = SAF } 
+				813 = { add_core_of = SAF } 
+				945 = { add_core_of = SAF } 
+				946 = { add_core_of = SAF } 
+				947 = { add_core_of = SAF } 
+				950 = { add_core_of = SAF } 
+				954 = { add_core_of = SAF } 
+				955 = { add_core_of = SAF } 
+				956 = { add_core_of = SAF } 
+				957 = { add_core_of = SAF } 
+				958 = { add_core_of = SAF } 
+				959 = { add_core_of = SAF } 
+				964 = { add_core_of = SAF } 
+				719 = { add_core_of = SAF } 
+				85 = { add_core_of = SAF } 
+				738 = { add_core_of = SAF } 
+				871 = { add_core_of = SAF } 
+
+				SAF = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = SAF
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.25
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.25"
+	}
+	title = "The Formation of the Ulus of Madagascar"
+	desc = MONoccupation.25.d
+	picture = GFX_report_event_conquest
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MAG
+
+		name = "The Ulus of Madagascar is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			MAG = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = MAG_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = MAG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 706
+				}
+			}
+			MAG = {
+				every_core_state = {
+					remove_core_of = MAG
+				}
+				706 = { add_core_of = MAG } 
+				707 = { add_core_of = MAG } 
+				708 = { add_core_of = MAG } 
+				1177 = { add_core_of = MAG } 
+				1178 = { add_core_of = MAG } 
+				1179 = { add_core_of = MAG } 
+				543 = { add_core_of = MAG } 
+
+				MAG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = MAG
+					}
+				}
+			}
+		}
+	}
+}
+country_event = {
+    id = MONoccupation.26
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event MONoccupation.26"
+    }
+    title = "The Forming of the Texan Khanate"
+    desc = MONoccupation.26.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = TXS
+
+        name = "The Texan Khanate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            TXS = {
+                set_country_flag = mon_khanated
+                set_cosmetic_tag = TXS_MON_KHANATE
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                MON = {
+                    set_autonomy = {
+                        target = TXS
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+                set_capital = {
+                    state = 570
+                }
+            }
+            TXS = {
+                every_core_state = {
+                    remove_core_of = TXS
+                }
+                1096 = { add_core_of = TXS } 
+				1166 = { add_core_of = TXS } 
+				1161 = { add_core_of = TXS } 
+				833 = { add_core_of = TXS } 
+				375 = { add_core_of = TXS }  
+
+                TXS = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = MON
+                                OWNER = { is_subject_of = MON }
+                            }
+                        }
+                        transfer_state_to = TXS
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = MONoccupation.27
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event MONoccupation.27"
+    }
+    title = "The Forming of the Khanate of the Pacific"
+    desc = MONoccupation.27.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = CAL
+
+        name = "The Khanate of the Pacific is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            CAL = {
+                set_country_flag = mon_khanated
+                set_cosmetic_tag = CAL_MON_KHANATE
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                MON = {
+                    set_autonomy = {
+                        target = CAL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+                set_capital = {
+                    state = 570
+                }
+            }
+            CAL = {
+                every_core_state = {
+                    remove_core_of = CAL
+                }
+                829 = { add_core_of = CAL } 
+				798 = { add_core_of = CAL } 
+				1165 = { add_core_of = CAL } 
+				797 = { add_core_of = CAL } 
+				378 = { add_core_of = CAL } 
+				385 = { add_core_of = CAL } 
+				386 = { add_core_of = CAL } 
+
+                CAL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = MON
+                                OWNER = { is_subject_of = MON }
+                            }
+                        }
+                        transfer_state_to = CAL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = MONoccupation.28
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event MONoccupation.28"
+    }
+    title = "The Forming of the Khanate of the Deseret"
+    desc = MONoccupation.28.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = DSR
+
+        name = "The Khanate of the Deseret is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            DSR = {
+                set_country_flag = mon_khanated
+                set_cosmetic_tag = DSR_MON_KHANATE
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                MON = {
+                    set_autonomy = {
+                        target = DSR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+                set_capital = {
+                    state = 570
+                }
+            }
+            DSR = {
+                every_core_state = {
+                    remove_core_of = DSR
+                }
+                376 = { add_core_of = DSR } 
+				377 = { add_core_of = DSR } 
+				380 = { add_core_of = DSR } 
+				379 = { add_core_of = DSR } 
+				1174 = { add_core_of = DSR } 
+
+                DSR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = MON
+                                OWNER = { is_subject_of = MON }
+                            }
+                        }
+                        transfer_state_to = DSR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = MONoccupation.29
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event MONoccupation.29"
+    }
+    title = "The Forming of the Khanate of the Midwest"
+    desc = MONoccupation.29.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = AML
+
+        name = "The Khanate of the Midwest is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            AML = {
+                set_country_flag = mon_khanated
+                set_cosmetic_tag = AML_MON_KHANATE
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                MON = {
+                    set_autonomy = {
+                        target = AML
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+                set_capital = {
+                    state = 570
+                }
+            }
+            AML = {
+                every_core_state = {
+                    remove_core_of = AML
+                }
+                387 = { add_core_of = AML } 
+				1157 = { add_core_of = AML } 
+				1164 = { add_core_of = AML } 
+				381 = { add_core_of = AML } 
+				388 = { add_core_of = AML } 
+				389 = { add_core_of = AML } 
+				390 = { add_core_of = AML } 
+				384 = { add_core_of = AML } 
+				382 = { add_core_of = AML } 
+				1150 = { add_core_of = AML } 
+				1175 = { add_core_of = AML } 
+				383 = { add_core_of = AML } 
+				1163 = { add_core_of = AML } 
+				373 = { add_core_of = AML } 
+			
+
+                AML = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = MON
+                                OWNER = { is_subject_of = MON }
+                            }
+                        }
+                        transfer_state_to = AML
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = MONoccupation.30
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event MONoccupation.30"
+    }
+    title = "The Forming of the American Khanate"
+    desc = MONoccupation.30.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = USA
+
+        name = "The American Khanate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            USA = {
+                set_country_flag = mon_khanated
+                set_cosmetic_tag = USA_MON_KHANATE
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                MON = {
+                    set_autonomy = {
+                        target = USA
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+                set_capital = {
+                    state = 570
+                }
+            }
+            USA = {
+                every_core_state = {
+                    remove_core_of = USA
+                }
+                374 = { add_core_of = USA } 
+				371 = { add_core_of = USA } 
+				372 = { add_core_of = USA } 
+				1156 = { add_core_of = USA } 
+				370 = { add_core_of = USA } 
+				1168 = { add_core_of = USA } 
+				368 = { add_core_of = USA } 
+				369 = { add_core_of = USA } 
+				1172 = { add_core_of = USA } 
+				1167 = { add_core_of = USA } 
+				367 = { add_core_of = USA } 
+				365 = { add_core_of = USA } 
+				1169 = { add_core_of = USA } 
+				1171 = { add_core_of = USA } 
+				366 = { add_core_of = USA } 
+				364 = { add_core_of = USA } 
+				1170 = { add_core_of = USA } 
+				363 = { add_core_of = USA } 
+				1155 = { add_core_of = USA } 
+				362 = { add_core_of = USA } 
+				1158 = { add_core_of = USA } 
+				391 = { add_core_of = USA } 
+				392 = { add_core_of = USA } 
+				394 = { add_core_of = USA } 
+				395 = { add_core_of = USA } 
+				393 = { add_core_of = USA } 
+				1152 = { add_core_of = USA } 
+				1173 = { add_core_of = USA } 
+				1154 = { add_core_of = USA } 
+				396 = { add_core_of = USA } 
+				1151 = { add_core_of = USA } 
+				1153 = { add_core_of = USA } 
+				261 = { add_core_of = USA } 
+				929 = { add_core_of = USA } 
+				360 = { add_core_of = USA } 
+				1159 = { add_core_of = USA } 
+				361 = { add_core_of = USA } 
+				930 = { add_core_of = USA } 
+				359 = { add_core_of = USA } 
+				1162 = { add_core_of = USA } 
+				358 = { add_core_of = USA } 
+				793 = { add_core_of = USA } 
+				931 = { add_core_of = USA } 
+				932 = { add_core_of = USA } 
+				935 = { add_core_of = USA } 
+				933 = { add_core_of = USA } 
+				934 = { add_core_of = USA } 
+				357 = { add_core_of = USA } 
+				796 = { add_core_of = USA } 
+				1160 = { add_core_of = USA } 
+
+                USA = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = MON
+                                OWNER = { is_subject_of = MON }
+                            }
+                        }
+                        transfer_state_to = USA
+                    }
+                }
+            }
+        } 
+    }
+}
+
+country_event = {
+	id = MONoccupation.31
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.31"
+	}
+	title = "The Forming of the Khanate of the Northern Steppes"
+	desc = MONoccupation.31.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CAN
+
+		name = "The Khanate of the Northern Steppes is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			CAN = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = CAN_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = CAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			CAN = {
+				every_core_state = {
+					remove_core_of = CAN
+				}
+				276 = { add_core_of = CAN } 
+				682 = { add_core_of = CAN } 
+				683 = { add_core_of = CAN } 
+				1330 = { add_core_of = CAN } 
+				1331 = { add_core_of = CAN } 
+				1332 = { add_core_of = CAN } 
+				832 = { add_core_of = CAN } 
+				331 = { add_core_of = CAN } 
+				332 = { add_core_of = CAN } 
+				464 = { add_core_of = CAN } 
+				465 = { add_core_of = CAN } 
+				466 = { add_core_of = CAN } 
+				467 = { add_core_of = CAN } 
+				468 = { add_core_of = CAN } 
+				469 = { add_core_of = CAN } 
+				470 = { add_core_of = CAN } 
+				471 = { add_core_of = CAN } 
+				472 = { add_core_of = CAN } 
+				473 = { add_core_of = CAN } 
+				730 = { add_core_of = CAN } 
+				739 = { add_core_of = CAN } 
+				740 = { add_core_of = CAN } 
+				1273 = { add_core_of = CAN } 
+				463 = { add_core_of = CAN } 
+
+				CAN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = CAN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.32
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.32"
+	}
+	title = "The Forming of the Khanat Mexica"
+	desc = MONoccupation.32.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MEX
+
+		name = "The Kanato Mexicano is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			MEX = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = MEX_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = MEX
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			MEX = {
+				every_core_state = {
+					remove_core_of = MEX
+				}
+				480 = { add_core_of = MEX } 
+				481 = { add_core_of = MEX } 
+				482 = { add_core_of = MEX } 
+				483 = { add_core_of = MEX } 
+				1252 = { add_core_of = MEX } 
+				1253 = { add_core_of = MEX } 
+				1254 = { add_core_of = MEX } 
+				1255 = { add_core_of = MEX } 
+				484 = { add_core_of = MEX } 
+				485 = { add_core_of = MEX } 
+				277 = { add_core_of = MEX } 
+				474 = { add_core_of = MEX } 
+				475 = { add_core_of = MEX } 
+				476 = { add_core_of = MEX } 
+				477 = { add_core_of = MEX } 
+				478 = { add_core_of = MEX } 
+				479 = { add_core_of = MEX } 
+
+				MEX = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = MEX
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.33
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.33"
+	}
+	title = "The Forming of the Central American Ulus"
+	desc = MONoccupation.33.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CEN
+
+		name = "The Central American Ulus is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			CEN = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = CEN_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = CEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			CEN = {
+				every_core_state = {
+					remove_core_of = CEN
+				}
+				1070 = { add_core_of = CEN } 
+				1071 = { add_core_of = CEN } 
+				304 = { add_core_of = CEN } 
+				311 = { add_core_of = CEN } 
+				312 = { add_core_of = CEN } 
+				313 = { add_core_of = CEN } 
+				314 = { add_core_of = CEN } 
+				316 = { add_core_of = CEN } 
+				317 = { add_core_of = CEN } 
+				842 = { add_core_of = CEN } 
+				854 = { add_core_of = CEN } 
+				1247 = { add_core_of = CEN } 
+				1248 = { add_core_of = CEN } 
+				1249 = { add_core_of = CEN } 
+				1250 = { add_core_of = CEN } 
+				1251 = { add_core_of = CEN } 
+				1256 = { add_core_of = CEN } 
+				1257 = { add_core_of = CEN } 
+				1258 = { add_core_of = CEN } 
+				1259 = { add_core_of = CEN } 
+				1260 = { add_core_of = CEN } 
+				1261 = { add_core_of = CEN } 
+				1262 = { add_core_of = CEN } 
+
+				CEN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = CEN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.34
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.34"
+	}
+	title = "The Forming of the Gran Columbia Ulus"
+	desc = MONoccupation.34.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = COL
+
+		name = "The Gran Columbia Ulus is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			COL = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = COL_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = COL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			COL = {
+				every_core_state = {
+					remove_core_of = COL
+				}
+				1280 = { add_core_of = COL } 
+				649 = { add_core_of = COL } 
+				1036 = { add_core_of = COL } 
+				1296 = { add_core_of = COL } 
+				912 = { add_core_of = COL } 
+				305 = { add_core_of = COL } 
+				306 = { add_core_of = COL } 
+				307 = { add_core_of = COL } 
+				1214 = { add_core_of = COL } 
+				1215 = { add_core_of = COL } 
+				1216 = { add_core_of = COL } 
+				849 = { add_core_of = COL } 
+				850 = { add_core_of = COL } 
+				851 = { add_core_of = COL } 
+				852 = { add_core_of = COL } 
+				853 = { add_core_of = COL } 
+				486 = { add_core_of = COL } 
+				488 = { add_core_of = COL } 
+				489 = { add_core_of = COL } 
+				490 = { add_core_of = COL } 
+				493 = { add_core_of = COL } 
+
+				COL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = COL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.35
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.35"
+	}
+	title = "The Forming of the Khanate of Brazil"
+	desc = MONoccupation.35.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BRA
+
+		name = "The Khanate of Brazil is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			BRA = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = BRA_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = BRA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			BRA = {
+				every_core_state = {
+					remove_core_of = BRA
+				}
+				896 = { add_core_of = BRA } 
+				898 = { add_core_of = BRA } 
+				900 = { add_core_of = BRA } 
+				1030 = { add_core_of = BRA } 
+				1031 = { add_core_of = BRA } 
+				1033 = { add_core_of = BRA } 
+				1038 = { add_core_of = BRA } 
+				1039 = { add_core_of = BRA } 
+				1040 = { add_core_of = BRA } 
+				1041 = { add_core_of = BRA } 
+				1043 = { add_core_of = BRA } 
+				280 = { add_core_of = BRA } 
+				1305 = { add_core_of = BRA } 
+				1306 = { add_core_of = BRA } 
+				1307 = { add_core_of = BRA } 
+				1310 = { add_core_of = BRA } 
+				1311 = { add_core_of = BRA } 
+				687 = { add_core_of = BRA } 
+				309 = { add_core_of = BRA } 
+				1078 = { add_core_of = BRA } 
+				1079 = { add_core_of = BRA } 
+				855 = { add_core_of = BRA } 
+				495 = { add_core_of = BRA } 
+				496 = { add_core_of = BRA } 
+				497 = { add_core_of = BRA } 
+				498 = { add_core_of = BRA } 
+				499 = { add_core_of = BRA } 
+				500 = { add_core_of = BRA } 
+				501 = { add_core_of = BRA } 
+				502 = { add_core_of = BRA } 
+				503 = { add_core_of = BRA } 
+				504 = { add_core_of = BRA } 
+				505 = { add_core_of = BRA } 
+				894 = { add_core_of = BRA } 
+				895 = { add_core_of = BRA } 
+				1039 = { add_core_of = BRA } 
+				1037 = { add_core_of = BRA } 
+				1038 = { add_core_of = BRA } 
+				BRA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = BRA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = MONoccupation.36
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event MONoccupation.36"
+	}
+	title = "The Forming of the Khanate of South America"
+	desc = MONoccupation.36.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ARG
+
+		name = "The Khanate of South America is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			ARG = {
+				set_country_flag = mon_khanated
+				set_cosmetic_tag = ARG_MON_KHANATE
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				MON = {
+					set_autonomy = {
+						target = ARG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 570
+				}
+			}
+			ARG = {
+				every_core_state = {
+					remove_core_of = ARG
+				}
+				512 = { add_core_of = ARG } 
+				1027 = { add_core_of = ARG } 
+				1028 = { add_core_of = ARG } 
+				1029 = { add_core_of = ARG } 
+				901 = { add_core_of = ARG } 
+				902 = { add_core_of = ARG } 
+				903 = { add_core_of = ARG } 
+				904 = { add_core_of = ARG } 
+				278 = { add_core_of = ARG } 
+				299 = { add_core_of = ARG } 
+				300 = { add_core_of = ARG } 
+				301 = { add_core_of = ARG } 
+				302 = { add_core_of = ARG } 
+				303 = { add_core_of = ARG } 
+				688 = { add_core_of = ARG } 
+				1073 = { add_core_of = ARG } 
+				1074 = { add_core_of = ARG } 
+				449 = { add_core_of = ARG } 
+				579 = { add_core_of = ARG } 
+				845 = { add_core_of = ARG } 
+				847 = { add_core_of = ARG } 
+				720 = { add_core_of = ARG } 
+				848 = { add_core_of = ARG } 
+				487 = { add_core_of = ARG } 
+				872 = { add_core_of = ARG } 
+				873 = { add_core_of = ARG } 
+				490 = { add_core_of = ARG } 
+				491 = { add_core_of = ARG } 
+				492 = { add_core_of = ARG } 
+				494 = { add_core_of = ARG } 
+				506 = { add_core_of = ARG } 
+				508 = { add_core_of = ARG } 
+				509 = { add_core_of = ARG } 
+				510 = { add_core_of = ARG } 
+				511 = { add_core_of = ARG } 
+				507 = { add_core_of = ARG } 
+				279 = { add_core_of = ARG } 
+				874 = { add_core_of = ARG } 
+
+				ARG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = MON
+								OWNER = { is_subject_of = MON }
+							}
+						}
+						transfer_state_to = ARG
+					}
+				}
+			}
+		}
+	}
+}

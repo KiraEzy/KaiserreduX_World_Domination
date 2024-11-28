@@ -1,0 +1,689 @@
+add_namespace = FRAoccupation
+
+country_event = { #Question of Algeria
+	id = FRAoccupation.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRAoccupation.1" }
+	title = FRAoccupation.1.t
+	desc = FRAoccupation.1.d
+	picture = GFX_news_event_FRA_algerie
+	  
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		AND = {
+			515 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			910 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			911 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			272 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			273 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			665 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			806 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			809 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			1192 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			296 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			808 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			556 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			557 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			700 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			702 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			448 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			834 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			967 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			968 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			458 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			860 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+		}
+	}
+
+	option = { #nah
+		name = FRAoccupation.1.a
+		ai_chance = {
+			base = 60
+		}
+		add_political_power = 60
+		add_stability = 0.01
+	}
+	
+	option = { #Reform Government
+		name = FRAoccupation.1.b
+		ai_chance = {
+			base = 15
+		}
+		add_political_power = 20
+		add_stability = 0.03
+		FRA = {
+			set_autonomy = {
+				target = MRT
+				autonomous_state = kx_colored_puppet
+			}
+		}
+		MRT = {
+			set_cosmetic_tag = MRT_cof_cosmetic_tag
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.25
+			}
+			set_party_name = {
+				ideology = syndicalist
+				long_name = FRA_MRT_camus_party_long
+				name = FRA_MRT_camus_party
+			}
+			create_country_leader = {
+				name = "Albert Camus"
+				desc = "POLITICS_ALBERT_CAMUS_DESC"
+				traits = {
+					hog_flamboyant_tough_guy   
+				}
+				picture = "gfx/leaders/FRA/Portrait_FRA_Albert_Camus.png"
+				expire = "1.1.1"
+				ideology = anarcho_syndicalist_subtype
+			}
+		}
+		release = MRT
+		MRT = {
+			515  = { add_core_of = MRT } 
+			910  = { add_core_of = MRT } 
+			911  = { add_core_of = MRT } 
+			272  = { add_core_of = MRT } 
+			273  = { add_core_of = MRT } 
+			665  = { add_core_of = MRT } 
+			806  = { add_core_of = MRT } 
+			1192  = { add_core_of = MRT } 
+			296  = { add_core_of = MRT } 
+			809  = { add_core_of = MRT } 
+			808  = { add_core_of = MRT } 
+			556  = { add_core_of = MRT } 
+			557  = { add_core_of = MRT } 
+			700  = { add_core_of = MRT } 
+			702  = { add_core_of = MRT } 
+			448  = { add_core_of = MRT } 
+			834  = { add_core_of = MRT } 
+			967  = { add_core_of = MRT } 
+			968  = { add_core_of = MRT } 
+			458  = { add_core_of = MRT } 
+			860  = { add_core_of = MRT }  
+			1015 = { add_core_of = MRT } 
+
+			MRT = { 
+				every_core_state = {
+					limit = {
+						OR = {
+							is_owned_by = FRA
+							OWNER = { is_subject_of = FRA }
+						}
+					}
+					transfer_state_to = MRT
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Question of Siberia
+	id = FRAoccupation.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event FRAoccupation.2" }
+	title = FRAoccupation.2.t
+	desc = FRAoccupation.2.d
+	picture = GFX_news_event_FRA_algerie
+	  
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		AND = {
+			572 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			653 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			580 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			1200 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			1201 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			577 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			403 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			570 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			571 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			578 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			516 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			576 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			575 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			568 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			566 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			567 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			582 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			583 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			588 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			40 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			569 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			1292 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+		}
+	}
+
+	option = { #nah
+		name = FRAoccupation.2.a
+		ai_chance = {
+			base = 60
+		}
+		add_political_power = 60
+		add_stability = 0.01
+	}
+	
+	option = { #Reform Government
+		name = FRAoccupation.2.b
+		ai_chance = {
+			base = 15
+		}
+		add_political_power = 20
+		add_stability = 0.03
+		FRA = {
+			set_autonomy = {
+				target = SIB
+				autonomous_state = kx_colored_puppet
+			}
+		}
+		SIB = {
+			set_cosmetic_tag = SIB_cof_cosmetic_tag
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.25
+			}
+			set_party_name = {
+				ideology = syndicalist
+				long_name = FRA_SIB_camus_party_long
+				name = FRA_SIB_camus_party
+			}
+			create_country_leader = {
+				name = "Albert Camus"
+				desc = "POLITICS_ALBERT_CAMUS_DESC"
+				traits = {
+					hog_flamboyant_tough_guy   
+				}
+				picture = "gfx/leaders/FRA/Portrait_FRA_Albert_Camus.png"
+				expire = "1.1.1"
+				ideology = anarcho_syndicalist_subtype
+			}
+		}
+		release = SIB
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+			572 = { add_core_of = SIB } 
+			653 = { add_core_of = SIB } 
+			580 = { add_core_of = SIB } 
+			1200 = { add_core_of = SIB } 
+			1201 = { add_core_of = SIB } 
+			577 = { add_core_of = SIB } 
+			403 = { add_core_of = SIB } 
+			570 = { add_core_of = SIB } 
+			571 = { add_core_of = SIB } 
+			578 = { add_core_of = SIB } 
+			516 = { add_core_of = SIB } 
+			576 = { add_core_of = SIB } 
+			575 = { add_core_of = SIB } 
+			568 = { add_core_of = SIB } 
+			566 = { add_core_of = SIB } 
+			567 = { add_core_of = SIB } 
+			582 = { add_core_of = SIB } 
+			583 = { add_core_of = SIB } 
+			588 = { add_core_of = SIB } 
+			40 = { add_core_of = SIB } 
+			644 = { add_core_of = SIB } 
+			1202 = { add_core_of = SIB } 
+			569 = { add_core_of = SIB } 
+			1292 = { add_core_of = SIB } 
+
+			SIB = { 
+				every_core_state = {
+					limit = {
+						OR = {
+							is_owned_by = FRA
+							OWNER = { is_subject_of = FRA }
+						}
+					}
+					transfer_state_to = SIB
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = FRAoccupation.3
+    immediate = { log = "[GetDateText]: [Root.GetName]: event FRAoccupation.3" }
+    title = FRAoccupation.3.t
+    desc = FRAoccupation.3.d
+    picture = GFX_news_event_FRA_algerie
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = FRA
+        AND = {
+    
+            773 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            164 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            49 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            187 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            1213 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            1225 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            339 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            340 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            341 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            342 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            343 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            345 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            346 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            354 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            355 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            356 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            1000 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+            1001 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } } 
+        }
+    } 
+
+    option = { #nah
+        name = FRAoccupation.3.a
+        ai_chance = {
+            base = 60
+        }
+        add_political_power = 60
+        add_stability = 0.01
+    }
+    
+    option = { #Reform Government
+        name = FRAoccupation.3.b
+        ai_chance = {
+			base = 15
+		}
+		add_political_power = 20
+		add_stability = 0.03
+		FRA = {
+			set_autonomy = {
+				target = TUR
+				autonomous_state = kx_colored_puppet
+			}
+		}
+		TUR = {
+			set_cosmetic_tag = TUR_cof_cosmetic_tag
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = syndicalist 
+				popularity = 0.25
+			}
+			set_party_name = {
+				ideology = syndicalist
+				long_name = FRA_TUR_camus_party_long
+				name = FRA_TUR_camus_party
+			}
+			create_country_leader = {
+				name = "Albert Camus"
+				desc = "POLITICS_ALBERT_CAMUS_DESC"
+				traits = {
+					hog_flamboyant_tough_guy   
+				}
+				picture = "gfx/leaders/FRA/Portrait_FRA_Albert_Camus.png"
+				expire = "1.1.1"
+				ideology = anarcho_syndicalist_subtype
+			}
+		}
+        release = TUR
+        TUR= {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			773 = { add_core_of = TUR }  
+            164 = { add_core_of = TUR }  
+            49 = { add_core_of = TUR }  
+            187 = { add_core_of = TUR }  
+            1213 = { add_core_of = TUR }  
+            1225 = { add_core_of = TUR }  
+            339 = { add_core_of = TUR }  
+            340 = { add_core_of = TUR }  
+            341 = { add_core_of = TUR }  
+            342 = { add_core_of = TUR }  
+            343 = { add_core_of = TUR }  
+            345 = { add_core_of = TUR }  
+            346 = { add_core_of = TUR }  
+            354 = { add_core_of = TUR }  
+            355 = { add_core_of = TUR }  
+            356 = { add_core_of = TUR }  
+            1000 = { add_core_of = TUR }  
+            1001 = { add_core_of = TUR }    
+
+            TUR = {
+                every_core_state = {
+                    limit = {
+                        OR = {
+                            is_owned_by = FRA
+                            OWNER = { is_subject_of = FRA } 
+                        }
+                    }
+                    transfer_state_to = TUR
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = FRAoccupation.4
+    immediate = { log = "[GetDateText]: [Root.GetName]: event FRAoccupation.4" }
+    title = FRAoccupation.4.t
+    desc = FRAoccupation.4.d
+    picture = GFX_news_event_FRA_algerie
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = FRA
+        AND = {
+            992 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			995 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			677 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			455 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			680 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			554 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+        }
+    } 
+
+    option = { #nah
+        name = FRAoccupation.4.a
+        ai_chance = {
+            base = 60
+        }
+        add_political_power = 60
+        add_stability = 0.01
+    }
+    
+    option = { #Reform Government
+        name = FRAoccupation.4.b
+        ai_chance = {
+			base = 15
+		}
+		add_political_power = 20
+		add_stability = 0.03
+		FRA = {
+			set_autonomy = {
+				target = SYR
+				autonomous_state = kx_colored_puppet
+			}
+		}
+		SYR = {
+			set_cosmetic_tag = SYR_cof_cosmetic_tag
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = syndicalist 
+				popularity = 0.25
+			}
+			set_party_name = {
+				ideology = syndicalist
+				long_name = FRA_SYR_camus_party_long
+				name = FRA_SYR_camus_party
+			}
+			create_country_leader = {
+				name = "Albert Camus"
+				desc = "POLITICS_ALBERT_CAMUS_DESC"
+				traits = {
+					hog_flamboyant_tough_guy   
+				}
+				picture = "gfx/leaders/FRA/Portrait_FRA_Albert_Camus.png"
+				expire = "1.1.1"
+				ideology = anarcho_syndicalist_subtype
+			}
+		}
+        release = SYR 
+        SYR= {
+			every_core_state = {
+				remove_core_of = SYR
+			}
+			1024 = { add_core_of = SYR } 
+			1035 = { add_core_of = SYR } 
+			907 = { add_core_of = SYR } 
+			656 = { add_core_of = SYR } 
+			658 = { add_core_of = SYR } 
+			659 = { add_core_of = SYR } 
+			915 = { add_core_of = SYR } 
+			417 = { add_core_of = SYR } 
+			291 = { add_core_of = SYR } 
+			292 = { add_core_of = SYR } 
+			293 = { add_core_of = SYR } 
+			294 = { add_core_of = SYR } 
+			421 = { add_core_of = SYR } 
+			675 = { add_core_of = SYR } 
+			553 = { add_core_of = SYR } 
+			554 = { add_core_of = SYR } 
+			676 = { add_core_of = SYR } 
+			677 = { add_core_of = SYR } 
+			678 = { add_core_of = SYR } 
+			679 = { add_core_of = SYR } 
+			680 = { add_core_of = SYR } 
+			812 = { add_core_of = SYR } 
+			819 = { add_core_of = SYR } 
+			454 = { add_core_of = SYR } 
+			455 = { add_core_of = SYR } 
+			981 = { add_core_of = SYR } 
+			982 = { add_core_of = SYR } 
+			347 = { add_core_of = SYR } 
+			859 = { add_core_of = SYR } 
+			349 = { add_core_of = SYR } 
+			350 = { add_core_of = SYR } 
+			991 = { add_core_of = SYR } 
+			352 = { add_core_of = SYR } 
+			992 = { add_core_of = SYR } 
+			993 = { add_core_of = SYR } 
+			994 = { add_core_of = SYR } 
+			995 = { add_core_of = SYR } 
+			752 = { add_core_of = SYR } 
+			754 = { add_core_of = SYR }  
+
+            SYR = {
+                every_core_state = {
+                    limit = {
+                        OR = {
+                            is_owned_by = FRA
+                            OWNER = { is_subject_of = FRA } 
+                        }
+                    }
+                    transfer_state_to = SYR
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = FRAoccupation.5
+    immediate = { log = "[GetDateText]: [Root.GetName]: event FRAoccupation.4" }
+    title = FRAoccupation.5.t
+    desc = FRAoccupation.5.d
+    picture = GFX_news_event_FRA_algerie
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = FRA
+        AND = {
+            914 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			916 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			917 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			540 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			959 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+        }
+    } 
+
+    option = { #nah
+        name = FRAoccupation.5.a
+        ai_chance = {
+            base = 60
+        }
+        add_political_power = 60
+        add_stability = 0.01
+    }
+    
+    option = { #Reform Government
+        name = FRAoccupation.5.b
+        ai_chance = {
+			base = 15
+		}
+		add_political_power = 20
+		add_stability = 0.03
+		FRA = {
+			set_autonomy = {
+				target = ANG
+				autonomous_state = kx_colored_puppet
+			}
+		}
+		ANG = {
+			set_cosmetic_tag = ANG_cof_cosmetic_tag
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = syndicalist 
+				popularity = 0.25
+			}
+			set_party_name = {
+				ideology = syndicalist
+				long_name = FRA_ANG_camus_party_long
+				name = FRA_ANG_camus_party
+			}
+			create_country_leader = {
+				name = "Albert Camus"
+				desc = "POLITICS_ALBERT_CAMUS_DESC"
+				traits = {
+					hog_flamboyant_tough_guy   
+				}
+				picture = "gfx/leaders/FRA/Portrait_FRA_Albert_Camus.png"
+				expire = "1.1.1"
+				ideology = anarcho_syndicalist_subtype
+			}
+		}
+        release = ANG 
+        ANG= {
+			every_core_state = {
+				remove_core_of = ANG
+			}
+			914 = { add_core_of = ANG } 
+			916 = { add_core_of = ANG } 
+			917 = { add_core_of = ANG } 
+			540 = { add_core_of = ANG } 
+			959 = { add_core_of = ANG }   
+
+            ANG = {
+                every_core_state = {
+                    limit = {
+                        OR = {
+                            is_owned_by = FRA
+                            OWNER = { is_subject_of = FRA } 
+                        }
+                    }
+                    transfer_state_to = ANG
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = FRAoccupation.6
+    immediate = { log = "[GetDateText]: [Root.GetName]: event FRAoccupation.4" }
+    title = FRAoccupation.6.t
+    desc = FRAoccupation.6.d
+    picture = GFX_news_event_FRA_algerie
+    
+    fire_only_once = yes
+    
+    trigger = {
+        tag = FRA
+        AND = {
+			544 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			954 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+			950 = { owner = { OR = { original_tag = FRA is_subject_of = FRA } } }
+        }
+    } 
+
+    option = { #nah
+        name = FRAoccupation.6.a
+        ai_chance = {
+            base = 60
+        }
+        add_political_power = 60
+        add_stability = 0.01
+    }
+    
+    option = { #Reform Government
+        name = FRAoccupation.6.b
+        ai_chance = {
+			base = 15
+		}
+		add_political_power = 20
+		add_stability = 0.03
+		FRA = {
+			set_autonomy = {
+				target = MZB
+				autonomous_state = kx_colored_puppet
+			}
+		}
+		MZB = {
+			set_cosmetic_tag = MZB_cof_cosmetic_tag
+			set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = no
+			}
+			add_popularity = {
+				ideology = syndicalist 
+				popularity = 0.25
+			}
+			set_party_name = {
+				ideology = syndicalist
+				long_name = FRA_MZB_camus_party_long
+				name = FRA_MZB_camus_party
+			}
+			create_country_leader = {
+				name = "Albert Camus"
+				desc = "POLITICS_ALBERT_CAMUS_DESC"
+				traits = {
+					hog_flamboyant_tough_guy   
+				}
+				picture = "gfx/leaders/FRA/Portrait_FRA_Albert_Camus.png"
+				expire = "1.1.1"
+				ideology = anarcho_syndicalist_subtype
+			}
+		}
+        release = MZB 
+        MZB= {
+			every_core_state = {
+				remove_core_of = MZB
+			}
+			544 = { add_core_of = MZB } 
+			954 = { add_core_of = MZB } 
+			950 = { add_core_of = MZB } 
+
+            MZB = {
+                every_core_state = {
+                    limit = {
+                        OR = {
+                            is_owned_by = FRA
+                            OWNER = { is_subject_of = FRA } 
+                        }
+                    }
+                    transfer_state_to = MZB
+                }
+            }
+        }
+    }
+}

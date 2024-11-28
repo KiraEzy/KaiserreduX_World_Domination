@@ -1,0 +1,1455 @@
+add_namespace = GERoccupation
+country_event = {
+	#Revenge! But Swiss????
+	id = GERoccupation.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.1"
+	}
+	title = "Deal with the United States"
+	desc = GERoccupation.1.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = USA
+
+		name = "The Kingdom of America is formed!"
+		add_political_power = 75
+        USA = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+        
+		hidden_effect = {
+			USA = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = USA_GER_OCC
+				create_country_leader = {
+					name = "Norton II"
+					desc = "POLITICS_CAL_NORTON_II_DESC"
+					picture = "gfx/leaders/CAL/Portrait_CAL_Norton_II.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+						charitable_emperor
+					}
+				}
+                create_country_leader = {
+					name = "Norton II"
+					desc = "POLITICS_CAL_NORTON_II_DESC"
+					picture = "gfx/leaders/CAL/Portrait_CAL_Norton_II.png"
+					expire = "1.1.1"
+					ideology = prussian_constitutionalism_subtype
+					traits = {
+						charitable_emperor
+					}
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					long_name = "Royalist Party"
+					name = "Royalist Party"
+				}
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = USA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 408
+				}
+			}
+			USA = {
+				every_core_state = {
+					remove_core_of = USA
+				}
+				1096 = { add_core_of = USA } 
+				629 = { add_core_of = USA } 
+				630 = { add_core_of = USA } 
+				631 = { add_core_of = USA } 
+				632 = { add_core_of = USA } 
+				1150 = { add_core_of = USA } 
+				1151 = { add_core_of = USA } 
+				1152 = { add_core_of = USA } 
+				1153 = { add_core_of = USA } 
+				1154 = { add_core_of = USA } 
+				1155 = { add_core_of = USA } 
+				1156 = { add_core_of = USA } 
+				1157 = { add_core_of = USA } 
+				1158 = { add_core_of = USA } 
+				1159 = { add_core_of = USA } 
+				1160 = { add_core_of = USA } 
+				1161 = { add_core_of = USA } 
+				1162 = { add_core_of = USA } 
+				1163 = { add_core_of = USA } 
+				1164 = { add_core_of = USA } 
+				1165 = { add_core_of = USA } 
+				1166 = { add_core_of = USA } 
+				1167 = { add_core_of = USA } 
+				1168 = { add_core_of = USA } 
+				1169 = { add_core_of = USA } 
+				1170 = { add_core_of = USA } 
+				1171 = { add_core_of = USA } 
+				1172 = { add_core_of = USA } 
+				1173 = { add_core_of = USA } 
+				1174 = { add_core_of = USA } 
+				1175 = { add_core_of = USA } 
+				642 = { add_core_of = USA } 
+				726 = { add_core_of = USA } 
+				727 = { add_core_of = USA } 
+				1273 = { add_core_of = USA } 
+				261 = { add_core_of = USA } 
+				796 = { add_core_of = USA } 
+				797 = { add_core_of = USA } 
+				798 = { add_core_of = USA } 
+				1312 = { add_core_of = USA } 
+				829 = { add_core_of = USA } 
+				833 = { add_core_of = USA } 
+				357 = { add_core_of = USA } 
+				358 = { add_core_of = USA } 
+				359 = { add_core_of = USA } 
+				360 = { add_core_of = USA } 
+				361 = { add_core_of = USA } 
+				362 = { add_core_of = USA } 
+				363 = { add_core_of = USA } 
+				364 = { add_core_of = USA } 
+				365 = { add_core_of = USA } 
+				366 = { add_core_of = USA } 
+				367 = { add_core_of = USA } 
+				368 = { add_core_of = USA } 
+				369 = { add_core_of = USA } 
+				370 = { add_core_of = USA } 
+				371 = { add_core_of = USA } 
+				372 = { add_core_of = USA } 
+				373 = { add_core_of = USA } 
+				374 = { add_core_of = USA } 
+				375 = { add_core_of = USA } 
+				376 = { add_core_of = USA } 
+				377 = { add_core_of = USA } 
+				378 = { add_core_of = USA } 
+				379 = { add_core_of = USA } 
+				380 = { add_core_of = USA } 
+				381 = { add_core_of = USA } 
+				382 = { add_core_of = USA } 
+				383 = { add_core_of = USA } 
+				384 = { add_core_of = USA } 
+				385 = { add_core_of = USA } 
+				386 = { add_core_of = USA } 
+				387 = { add_core_of = USA } 
+				388 = { add_core_of = USA } 
+				389 = { add_core_of = USA } 
+				390 = { add_core_of = USA } 
+				391 = { add_core_of = USA } 
+				392 = { add_core_of = USA } 
+				393 = { add_core_of = USA } 
+				394 = { add_core_of = USA } 
+				395 = { add_core_of = USA } 
+				396 = { add_core_of = USA } 
+				929 = { add_core_of = USA } 
+				930 = { add_core_of = USA } 
+				931 = { add_core_of = USA } 
+				932 = { add_core_of = USA } 
+				933 = { add_core_of = USA } 
+				934 = { add_core_of = USA } 
+				935 = { add_core_of = USA } 
+			
+				USA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = USA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.2"
+	}
+	title = "Establishing the Kingdom of Canada"
+	desc = GERoccupation.2.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CAN
+
+		name = "The Kingdom of Canada is formed!"
+		add_political_power = 75
+        CAN = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			CAN = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = CAN_GER_OCC
+				create_country_leader = {
+                    name = "Edward VIII"
+                    picture = "gfx/leaders/CAN/Portrait_Canada_King_Edward_VIII.png"
+                    desc = "POLITICS_EDWARD_GBR_DESC"
+                    expire = "1.1.1"
+                    ideology = prussian_constitutionalism_subtype
+                    traits = {
+                        CAN_autocratic_tendencies
+                    }
+                }
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = CAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CAN = {
+				every_core_state = {
+					remove_core_of = CAN
+				}
+				276 = { add_core_of = CAN } 
+				682 = { add_core_of = CAN } 
+				683 = { add_core_of = CAN } 
+				1330 = { add_core_of = CAN } 
+				1331 = { add_core_of = CAN } 
+				1332 = { add_core_of = CAN } 
+				832 = { add_core_of = CAN } 
+				331 = { add_core_of = CAN } 
+				332 = { add_core_of = CAN } 
+				464 = { add_core_of = CAN } 
+				465 = { add_core_of = CAN } 
+				466 = { add_core_of = CAN } 
+				467 = { add_core_of = CAN } 
+				468 = { add_core_of = CAN } 
+				469 = { add_core_of = CAN } 
+				470 = { add_core_of = CAN } 
+				471 = { add_core_of = CAN } 
+				472 = { add_core_of = CAN } 
+				473 = { add_core_of = CAN } 
+				730 = { add_core_of = CAN } 
+				739 = { add_core_of = CAN } 
+				740 = { add_core_of = CAN } 
+
+				CAN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = CAN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.3"
+	}
+	title = "Deal With Kingdom of Sweden"
+	desc = GERoccupation.3.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SWE
+
+		name = "The Kingdom of Sweden is formed!"
+		add_political_power = 75
+        SWE = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			SWE = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = SWE_GER_OCC
+                create_country_leader = {
+                    name = "Gustaf V"
+                    desc = "POLITICS_Gustaf_V_DESC"
+                    picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_V.png"
+                    expire = "1.1.1"
+                    ideology = prussian_constitutionalism_subtype
+                }
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = SWE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SWE = {
+				every_core_state = {
+					remove_core_of = SWE
+				}
+				960 = { add_core_of = SWE } 
+				38 = { add_core_of = SWE } 
+				138 = { add_core_of = SWE } 
+				139 = { add_core_of = SWE } 
+				140 = { add_core_of = SWE } 
+				141 = { add_core_of = SWE } 
+				778 = { add_core_of = SWE } 
+				908 = { add_core_of = SWE } 
+				909 = { add_core_of = SWE } 
+				666 = { add_core_of = SWE } 
+				124 = { add_core_of = SWE } 
+
+				SWE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = SWE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.4"
+	}
+	title = "Deal With Kingdom of Denmark"
+	desc = GERoccupation.4.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = DEN
+
+		name = "The Kingdom of Denmark is formed!"
+		add_political_power = 75
+        DEN = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			DEN = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = DEN_GER_OCC
+				
+				create_country_leader = {
+                    name = "Christian X"
+                    desc = "CHRISTIAN_X_DESC"
+                    picture = "gfx/leaders/DEN/Portrait_Denmark_Christian_X.png"
+                    expire = "1.1.1"
+                    ideology = authoritarian_democrat_subtype
+                }
+                set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = DEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			DEN = {
+				every_core_state = {
+					remove_core_of = DEN
+				}
+				99 = { add_core_of = DEN } 
+				37 = { add_core_of = DEN } 
+				101 = { add_core_of = DEN } 
+				337 = { add_core_of = DEN } 
+				926 = { add_core_of = DEN } 
+
+				DEN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = DEN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.5"
+	}
+	title = "Deal With Kingdom of Finland"
+	desc = GERoccupation.5.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = FIN
+
+		name = "The Kingdom of Finland is formed!"
+		add_political_power = 75
+        FIN = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			FIN = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = FIN_GER_OCC
+				create_country_leader = {
+                    name = "Fredrik Kaarle I"
+                    desc = "POLITICS_FREDRIK_KAARLE_DESC"
+                    picture = "gfx/leaders/FIN/Portrait_FIN_Fredrik_Kaarle_I.png"
+                    expire = "1.1.1"
+                    ideology = prussian_constitutionalism_subtype
+                }
+				
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = FIN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			FIN = {
+				every_core_state = {
+					remove_core_of = FIN
+				}
+				864 = { add_core_of = FIN } 
+				865 = { add_core_of = FIN } 
+				840 = { add_core_of = FIN } 
+				1324 = { add_core_of = FIN } 
+				1325 = { add_core_of = FIN } 
+				1326 = { add_core_of = FIN } 
+				111 = { add_core_of = FIN } 
+				844 = { add_core_of = FIN } 
+				145 = { add_core_of = FIN } 
+				146 = { add_core_of = FIN } 
+				147 = { add_core_of = FIN } 
+				148 = { add_core_of = FIN } 
+				149 = { add_core_of = FIN } 
+				150 = { add_core_of = FIN } 
+				863 = { add_core_of = FIN } 
+
+				FIN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = FIN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.6"
+	}
+	title = "Deal With Kingdom of Norway"
+	desc = GERoccupation.6.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = NOR
+
+		name = "The Kingdom of Norway is formed!"
+		add_political_power = 75
+        NOR = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			NOR = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = NOR_GER_OCC
+				
+				create_country_leader = {
+                    name = "Haakon VII"
+                    desc = "POLITICS_Haakon_VII_DESC"
+                    picture = "gfx/leaders/NOR/Portrait_Norway_Haakon_VII.png"
+                    expire = "1.1.1"
+                    ideology = prussian_constitutionalism_subtype
+                }
+				
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = NOR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			NOR = {
+				every_core_state = {
+					remove_core_of = NOR
+				}
+				936 = { add_core_of = NOR } 
+				937 = { add_core_of = NOR } 
+				142 = { add_core_of = NOR } 
+				110 = { add_core_of = NOR } 
+				143 = { add_core_of = NOR } 
+				144 = { add_core_of = NOR } 
+				1146 = { add_core_of = NOR } 
+				1147 = { add_core_of = NOR } 
+
+				NOR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = NOR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.7"
+	}
+	title = "Deal With Iceland Autonomous State"
+	desc = GERoccupation.7.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ICE
+
+		name = "The Iceland Autonomous State is formed!"
+		add_political_power = 75
+        ICE = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			ICE = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = ICE_GER_OCC
+				
+				create_country_leader = {
+                    name = "Alexandra I"
+                    picture = "gfx/leaders/ICE/Portrait_Iceland_Alexandria.png"
+                    expire = "1.1.1"
+                    ideology = authoritarian_democrat_subtype
+                }
+				
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = ICE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ICE = {
+				every_core_state = {
+					remove_core_of = ICE
+				}
+				100 = { add_core_of = ICE }
+
+				ICE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = ICE
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = GERoccupation.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.8"
+	}
+	title = "Deal With Hetmanate of German-Ukraine"
+	desc = GERoccupation.8.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = UKR
+
+		name = "The Hetmanate of German-Ukraine is formed!"
+		add_political_power = 75
+        UKR = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			UKR = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = UKR_GER_OCC
+				create_country_leader = {
+                    name = "Vasyl II"
+                    picture = "gfx/leaders/UKR/Portrait_UKR_Willy_II_Ukraine.png"
+                    expire = "1.1.1"
+                    ideology = authoritarian_democrat_subtype
+                    traits = { UKR_hetman_title }
+                }
+				
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = UKR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			UKR = {
+				every_core_state = {
+					remove_core_of = UKR
+				}
+				1282 = { add_core_of = UKR } 
+				1283 = { add_core_of = UKR } 
+				1284 = { add_core_of = UKR } 
+				1285 = { add_core_of = UKR } 
+				1286 = { add_core_of = UKR } 
+				259 = { add_core_of = UKR } 
+				137 = { add_core_of = UKR } 
+				791 = { add_core_of = UKR } 
+				792 = { add_core_of = UKR } 
+				192 = { add_core_of = UKR } 
+				193 = { add_core_of = UKR } 
+				1220 = { add_core_of = UKR } 
+				1221 = { add_core_of = UKR } 
+				196 = { add_core_of = UKR } 
+				197 = { add_core_of = UKR } 
+				198 = { add_core_of = UKR } 
+				199 = { add_core_of = UKR } 
+				200 = { add_core_of = UKR } 
+				201 = { add_core_of = UKR } 
+				1228 = { add_core_of = UKR } 
+				202 = { add_core_of = UKR } 
+				1230 = { add_core_of = UKR } 
+				203 = { add_core_of = UKR } 
+				1232 = { add_core_of = UKR } 
+				1233 = { add_core_of = UKR } 
+				1234 = { add_core_of = UKR } 
+				1237 = { add_core_of = UKR } 
+				1238 = { add_core_of = UKR } 
+				1239 = { add_core_of = UKR } 
+				1240 = { add_core_of = UKR } 
+				1241 = { add_core_of = UKR } 
+				1242 = { add_core_of = UKR } 
+				1243 = { add_core_of = UKR } 
+				1244 = { add_core_of = UKR } 
+				1245 = { add_core_of = UKR } 
+				221 = { add_core_of = UKR } 
+				93 = { add_core_of = UKR } 
+				225 = { add_core_of = UKR } 
+				226 = { add_core_of = UKR } 
+				227 = { add_core_of = UKR } 
+				228 = { add_core_of = UKR } 
+				997 = { add_core_of = UKR } 
+				241 = { add_core_of = UKR } 
+
+				UKR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = UKR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.9"
+	}
+	title = "Deal With Irischer Freistaat"
+	desc = GERoccupation.9.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = IRE
+
+		name = "The Irischer Freistaat is formed!"
+		add_political_power = 75
+        IRE = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			IRE = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = IRE_GER_OCC
+				
+				create_country_leader = {
+                    name = "Donough O'Brien"
+                    desc = "POLITICS_DONOUGH_OBRIEN_DESC"
+                    picture = "gfx/leaders/IRE/Portrait_Ireland_Donough_OBrien_Royal.png"
+                    expire = "1.1.1"
+                    ideology = authoritarian_democrat_subtype
+                }
+				
+                set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				GER = {
+					set_autonomy = {
+						target = IRE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			IRE = {
+				every_core_state = {
+					remove_core_of = IRE
+				}
+				135 = { add_core_of = IRE } 
+				113 = { add_core_of = IRE } 
+				134 = { add_core_of = IRE } 
+				119 = { add_core_of = IRE } 
+
+				IRE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = IRE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GERoccupation.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.10"
+	}
+	title = "Deal With Brazil Empire"
+	desc = GERoccupation.10.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BRA
+
+		name = "The Brazil Empire is formed!"
+		add_political_power = 75
+        BRA = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			BRA = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = BRA_GER_OCC
+				create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = christian_democracy_subtype 
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+                create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = soclib_christian_democracy_subtype 
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+                create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = liberal_conservative_subtype 
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+                create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = socdem_christian_socialism_subtype 
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+                create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = autdem_christian_democracy_subtype 
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+                create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = absolute_monarchy_subtype 
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+                create_country_leader = {
+                    name = "Pedro III"
+                    desc = "POLITICS_PEDRO_IV_BRA_DESC"
+                    picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                    expire = "1.1.1"
+                    ideology = integralism_subtype
+                    traits = {
+                        nationalist_symbol
+                    }
+                }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				GER = {
+					set_autonomy = {
+						target = BRA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BRA = {
+				every_core_state = {
+					remove_core_of = BRA
+				}
+				896 = { add_core_of = BRA } 
+				898 = { add_core_of = BRA } 
+				900 = { add_core_of = BRA } 
+				1030 = { add_core_of = BRA } 
+				1031 = { add_core_of = BRA } 
+				1033 = { add_core_of = BRA } 
+				1040 = { add_core_of = BRA } 
+				1041 = { add_core_of = BRA } 
+				1043 = { add_core_of = BRA } 
+				280 = { add_core_of = BRA } 
+				1305 = { add_core_of = BRA } 
+				1306 = { add_core_of = BRA } 
+				1307 = { add_core_of = BRA } 
+				1310 = { add_core_of = BRA } 
+				1311 = { add_core_of = BRA } 
+				855 = { add_core_of = BRA } 
+				495 = { add_core_of = BRA } 
+				496 = { add_core_of = BRA } 
+				497 = { add_core_of = BRA } 
+				498 = { add_core_of = BRA } 
+				499 = { add_core_of = BRA } 
+				500 = { add_core_of = BRA } 
+				501 = { add_core_of = BRA } 
+				502 = { add_core_of = BRA } 
+				503 = { add_core_of = BRA } 
+				504 = { add_core_of = BRA } 
+				505 = { add_core_of = BRA } 
+				894 = { add_core_of = BRA } 
+				895 = { add_core_of = BRA } 
+
+				BRA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = BRA
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = GERoccupation.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.11"
+	}
+	title = "Deal With Kingdom of Poland"
+	desc = GERoccupation.11.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = POL
+
+		name = "The Kingdom of Poland is formed!"
+		add_political_power = 75
+        POL = {
+            if = {
+                limit = {
+                    has_global_flag = GER_EU_Formed
+                }
+            }
+        }
+        add_ideas = GER_EU_Member
+		hidden_effect = {
+			POL = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = POL_GER_OCC
+				create_country_leader = {
+                    name = "Fryderyk II Krystian"
+                    desc = "POLITICS_FRYDERYK_KRYSTIAN_SASKI_DESC"
+                    picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+                    expire = "1.1.1"
+                    ideology = socdem_democratic_socialism_subtype
+                }
+                create_country_leader = {
+                    name = "Fryderyk II Krystian"
+                    desc = "POLITICS_FRYDERYK_KRYSTIAN_SASKI_DESC"
+                    picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+                    expire = "1.1.1"
+                    ideology = radical_liberalism_subtype
+                }
+                create_country_leader = {
+                    name = "Fryderyk II Krystian"
+                    desc = "POLITICS_FRYDERYK_KRYSTIAN_SASKI_DESC"
+                    picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+                    expire = "1.1.1"
+                    ideology = progressive_democracy_subtype
+                }
+                create_country_leader = {
+                    name = "Fryderyk II Krystian"
+                    desc = "POLITICS_FRYDERYK_KRYSTIAN_SASKI_DESC"
+                    picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+                    expire = "1.1.1"
+                    ideology = christian_democracy_subtype
+                }
+                create_country_leader = {
+                    name = "Fryderyk II Krystian"
+                    desc = "POLITICS_FRYDERYK_KRYSTIAN_SASKI_DESC"
+                    picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+                    expire = "1.1.1"
+                    ideology = prussian_constitutionalism_subtype
+                }
+                create_country_leader = {
+                    name = "Fryderyk II Krystian"
+                    desc = "POLITICS_FRYDERYK_KRYSTIAN_SASKI_DESC"
+                    picture = "gfx/leaders/POL/Portrait_POL_Fryderyk_Krystian_Saski.png"
+                    expire = "1.1.1"
+                    ideology = absolute_monarchy_subtype
+                }
+                create_country_leader = {
+                    name = "Bolesław Piasecki"
+                    picture = "gfx/leaders/POL/Portrait_POL_Boleslaw_Piasecki_KX.png"
+                    expire = "1.1.1"
+                    ideology = national_radicalism_subtype
+                }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				GER = {
+					set_autonomy = {
+						target = POL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			POL = {
+				every_core_state = {
+					remove_core_of = POL
+				}
+				1088 = { add_core_of = POL } 
+				97 = { add_core_of = POL } 
+				98 = { add_core_of = POL } 
+				10 = { add_core_of = POL } 
+				92 = { add_core_of = POL } 
+				87 = { add_core_of = POL } 
+				90 = { add_core_of = POL } 
+				1148 = { add_core_of = POL } 
+
+				POL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = POL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = GERoccupation.12
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event GERoccupation.12"
+    }
+    title = "Deal With Deutsch-China"
+    desc = GERoccupation.12.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = LEP
+
+        name = "Deutsch-China is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            LEP = {
+                set_country_flag = ger_formable
+				set_cosmetic_tag = AOG_CHINA
+				create_country_leader = {
+					name = "Weilian "
+					picture = "gfx/leaders/AOG/Portrait_AOG_Wilhelm_III.png"
+					expire = "1.1.1"
+					ideology = prussian_constitutionalism_subtype
+				}
+				create_country_leader = {
+					name = "Weilian "
+					picture = "gfx/leaders/AOG/Portrait_AOG_Wilhelm_III.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				GER = {
+					set_autonomy = {
+						target = LEP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			LEP = {
+				every_core_state = {
+					remove_core_of = LEP
+				}
+				1044 = { add_core_of = LEP } 
+				1045 = { add_core_of = LEP } 
+				1046 = { add_core_of = LEP } 
+				1047 = { add_core_of = LEP } 
+				1048 = { add_core_of = LEP } 
+				1049 = { add_core_of = LEP } 
+				1050 = { add_core_of = LEP } 
+				1051 = { add_core_of = LEP } 
+				1052 = { add_core_of = LEP } 
+				1053 = { add_core_of = LEP } 
+				1054 = { add_core_of = LEP } 
+				1055 = { add_core_of = LEP } 
+				1056 = { add_core_of = LEP } 
+				1058 = { add_core_of = LEP } 
+				1059 = { add_core_of = LEP } 
+				1060 = { add_core_of = LEP } 
+				1061 = { add_core_of = LEP } 
+				1062 = { add_core_of = LEP } 
+				1063 = { add_core_of = LEP } 
+				1064 = { add_core_of = LEP } 
+				1065 = { add_core_of = LEP } 
+				1066 = { add_core_of = LEP } 
+				1067 = { add_core_of = LEP } 
+				1068 = { add_core_of = LEP } 
+				1069 = { add_core_of = LEP } 
+				1072 = { add_core_of = LEP } 
+				1075 = { add_core_of = LEP } 
+				1083 = { add_core_of = LEP } 
+				1085 = { add_core_of = LEP } 
+				1086 = { add_core_of = LEP } 
+				591 = { add_core_of = LEP } 
+				593 = { add_core_of = LEP } 
+				594 = { add_core_of = LEP } 
+				595 = { add_core_of = LEP } 
+				596 = { add_core_of = LEP } 
+				597 = { add_core_of = LEP } 
+				598 = { add_core_of = LEP } 
+				599 = { add_core_of = LEP } 
+				600 = { add_core_of = LEP } 
+				601 = { add_core_of = LEP } 
+				602 = { add_core_of = LEP } 
+				603 = { add_core_of = LEP } 
+				604 = { add_core_of = LEP } 
+				605 = { add_core_of = LEP } 
+				606 = { add_core_of = LEP } 
+				607 = { add_core_of = LEP } 
+				608 = { add_core_of = LEP } 
+				609 = { add_core_of = LEP } 
+				610 = { add_core_of = LEP } 
+				611 = { add_core_of = LEP } 
+				613 = { add_core_of = LEP } 
+				614 = { add_core_of = LEP } 
+				615 = { add_core_of = LEP } 
+				616 = { add_core_of = LEP } 
+				617 = { add_core_of = LEP } 
+				618 = { add_core_of = LEP } 
+				619 = { add_core_of = LEP } 
+				620 = { add_core_of = LEP } 
+				621 = { add_core_of = LEP } 
+				622 = { add_core_of = LEP } 
+				650 = { add_core_of = LEP } 
+				661 = { add_core_of = LEP } 
+				693 = { add_core_of = LEP } 
+				714 = { add_core_of = LEP } 
+				715 = { add_core_of = LEP } 
+				716 = { add_core_of = LEP } 
+				717 = { add_core_of = LEP } 
+				743 = { add_core_of = LEP } 
+				744 = { add_core_of = LEP } 
+				746 = { add_core_of = LEP } 
+				747 = { add_core_of = LEP } 
+				748 = { add_core_of = LEP } 
+				774 = { add_core_of = LEP } 
+				788 = { add_core_of = LEP } 
+				283 = { add_core_of = LEP } 
+				287 = { add_core_of = LEP } 
+				799 = { add_core_of = LEP } 
+				800 = { add_core_of = LEP } 
+				801 = { add_core_of = LEP } 
+				803 = { add_core_of = LEP } 
+				816 = { add_core_of = LEP } 
+				322 = { add_core_of = LEP } 
+				325 = { add_core_of = LEP } 
+				326 = { add_core_of = LEP } 
+				328 = { add_core_of = LEP } 
+				348 = { add_core_of = LEP } 
+				353 = { add_core_of = LEP } 
+				883 = { add_core_of = LEP } 
+				884 = { add_core_of = LEP } 
+				885 = { add_core_of = LEP } 
+				886 = { add_core_of = LEP } 
+				897 = { add_core_of = LEP } 
+				996 = { add_core_of = LEP } 
+				1012 = { add_core_of = LEP } 
+				1013 = { add_core_of = LEP } 
+				1014 = { add_core_of = LEP } 
+				1015 = { add_core_of = LEP } 
+
+				LEP = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = LEP
+					}
+				}
+			}
+		} 
+	}
+}
+
+country_event = {
+	id = GERoccupation.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event GERoccupation.13"
+	}
+	title = "Deal With Kingdom of Italy"
+	desc = GERoccupation.13.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ITA
+
+		name = "The Kingdom of Italy is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			ITA = {
+				set_country_flag = ger_formable
+				set_cosmetic_tag = ITA_ANI_KINGDOM
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				GER = {
+					set_autonomy = {
+						target = ITA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ITA = {
+				every_core_state = {
+					remove_core_of = ITA
+				}
+				2 = { add_core_of = ITA } 
+				156 = { add_core_of = ITA } 
+				157 = { add_core_of = ITA } 
+				158 = { add_core_of = ITA } 
+				159 = { add_core_of = ITA } 
+				160 = { add_core_of = ITA } 
+				161 = { add_core_of = ITA } 
+				162 = { add_core_of = ITA } 
+				837 = { add_core_of = ITA } 
+				838 = { add_core_of = ITA } 
+				1236 = { add_core_of = ITA } 
+				742 = { add_core_of = ITA } 
+				1003 = { add_core_of = ITA } 
+				1004 = { add_core_of = ITA } 
+				1005 = { add_core_of = ITA } 
+				1006 = { add_core_of = ITA } 
+				115 = { add_core_of = ITA } 
+				117 = { add_core_of = ITA } 
+				759 = { add_core_of = ITA } 
+				764 = { add_core_of = ITA } 
+				1149 = { add_core_of = ITA } 
+
+				ITA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = GER
+								OWNER = { is_subject_of = GER }
+							}
+						}
+						transfer_state_to = ITA
+					}
+				}
+			}
+		}
+	}
+}

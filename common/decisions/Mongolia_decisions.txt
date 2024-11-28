@@ -1,0 +1,7123 @@
+###########################################
+# Mongolia decisions by a Cunt
+###########################################
+MON_great_game = {
+	MON_great_game_sibir_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = SIB
+				}
+				SIB = {
+				  is_subject_of = MON
+				}
+			  }
+			  SIB = {
+				1201 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1200 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				571 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				577 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				578 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				569 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				570 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1292 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				40 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				588 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				583 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				403 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				580 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				653 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				572 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				582 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				SIB = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.1
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_amur = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = TRM
+				}
+				TRM = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SIB
+				}
+				SIB = {
+				  is_subject_of = MON
+				}
+			  }
+			  TRM = {
+				516 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				576 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				575 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				568 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				566 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				567 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				644 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1246 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                408 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                409 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                560 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                561 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                562 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                563 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                564 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                565 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                574 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                637 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                657 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				TRM = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.2
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_crimean_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = CRM
+				}
+				CRM = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = UKR
+				}
+				UKR = {
+				  is_subject_of = MON
+				}
+			  }
+			  CRM = {
+				137 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1220 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				196 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1234 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				200 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1286 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				228 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				227 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1283 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1239 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1282 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1285 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                221 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1221 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1284 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1238 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                259 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                225 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1242 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1243 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1237 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                193 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                241 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+                1230 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				220 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				821 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				240 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				1229 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				222 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				224 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+			  }
+			}
+			NOT = {
+				CRM = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.3
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	MON_great_game_khanate_of_kazan = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = RUS
+				}
+				RUS = {
+				  is_subject_of = MON
+				}
+			  }
+			  RUS = {
+				1193 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1194 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1195 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1197 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1198 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1199 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1204 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1205 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1208 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1274 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1287 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1288 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1289 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1290 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1291 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1327 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1328 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				195 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				205 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				208 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				209 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				210 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				213 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				214 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				215 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				216 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				219 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				223 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				239 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				242 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				243 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				244 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				246 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				247 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				248 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				249 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				250 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				251 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				252 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				253 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				254 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				255 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				256 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				257 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				258 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				260 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				262 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				263 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				264 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				265 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				351 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				397 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				398 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				399 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				400 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				401 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				573 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				581 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				651 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				652 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				722 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				755 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				880 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				RUS = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.4
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_three_rivers = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = MLY
+				}
+				MLY = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SIA
+				}
+				SIA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = CAM
+				}
+				CAM = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = VIN
+				}
+				VIN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LAO
+				}
+				LAO = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = KAC
+				}
+				KAC = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = INC
+				}
+				INC = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SHA
+				}
+				SHA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BRM
+				}
+				BRM = {
+				  is_subject_of = MON
+				}
+			  }
+			  SHA = {
+				288 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				289 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				640 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				701 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				72 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				724 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				749 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				750 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				751 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				756 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				790 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				822 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				823 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				824 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				825 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				830 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				831 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				882 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				999 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				670 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				826 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				827 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				286 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				856 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				671 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				857 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				SHA = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.5
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_seljuk_empire = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = TUR
+				}
+				TUR = {
+				  is_subject_of = MON
+				}
+			  }
+			  TUR = {
+				1000 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1001 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1213 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1225 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				164 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				183 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				187 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				291 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				339 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				340 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				341 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				342 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				343 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				344 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				345 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				346 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				349 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				350 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				352 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				354 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				355 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				356 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				455 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				49 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				553 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				554 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				658 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				676 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				677 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				680 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				773 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				812 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				819 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				907 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				992 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				993 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				995 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				TUR = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.6
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_bulgar_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = BUL
+				}
+				BUL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = UKR
+				}
+				UKR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ALB
+				}
+				ALB = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = GAL
+				}
+				GAL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ROM
+				}
+				ROM = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = CRO
+				}
+				CRO = {
+				  is_subject_of = MON
+				}
+			  }
+			  BUL = {
+				106 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1089 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1090 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1271 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				184 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				211 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				212 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				48 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				731 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				769 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				77 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				770 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				771 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				772 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				841 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				192 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				791 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1245 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				199 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1140 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				89 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				80 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				713 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1116 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1113 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1114 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				82 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				875 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				45 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				794 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				81 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1222 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1320 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				46 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				78 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				79 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				91 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1126 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				84 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				789 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1127 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				BUL = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.7
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_kiev = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = UKR
+				}
+				UKR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = WHR
+				}
+				WHR = {
+				  is_subject_of = MON
+				}
+			  }
+			  UKR = {
+				192 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1232 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				197 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				226 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1233 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				791 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1241 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				203 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1245 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				198 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1240 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				202 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				201 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1244 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				199 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1228 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				792 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				997 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				93 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1087 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1294 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1295 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				194 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				204 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				206 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				207 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				95 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				UKR = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.8
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_sclavinia = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = CRO
+				}
+				CRO = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SER
+				}
+				SER = {
+				  is_subject_of = MON
+				}
+			  }
+			  CRO = {
+				103 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				104 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				105 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				107 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				108 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				109 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1097 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1098 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1099 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1102 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1105 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				794 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1141 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1142 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1143 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1145 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1206 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1269 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1270 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				163 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				765 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				767 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				CRO = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.9
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_danubian_ulus = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = HUN
+				}
+				HUN = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = GAL
+				}
+				GAL = {
+				  is_subject_of = MON
+				}
+			  }
+			  HUN = {
+				1106 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1107 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1108 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1109 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1110 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1111 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1112 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1115 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1117 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1118 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1119 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1120 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1121 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1122 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1123 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1124 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1125 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1135 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1136 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1314 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1319 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				154 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				155 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				43 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				664 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				70 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				73 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				76 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				784 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				83 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				88 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				HUN = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.10
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_holy_roman_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = GER
+				}
+				GER = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = GRU
+				}
+				GRU = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BAY
+				}
+				BAY = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LUX
+				}
+				LUX = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LOM
+				}
+				LOM = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ITA
+				}
+				ITA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = NGF
+				}
+				NGF = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = WGR
+				}
+				WGR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = DDR
+				}
+				DDR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = EPR
+				}
+				EPR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = EMI
+				}
+				EMI = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = TUS
+				}
+				TUS = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = VNC
+				}
+				VNC = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = ITA
+				}
+				ITA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SRI
+				}
+				SRI = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = SWI
+				}
+				SWI = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = AUS
+				}
+				AUS = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = CZE
+				}
+				CZE = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BEL
+				}
+				BEL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = WLL
+				}
+				WLL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = FLN
+				}
+				FLN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = HOL
+				}
+				HOL = {
+				  is_subject_of = MON
+				}
+			  }
+			  GER = {
+				1003 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1004 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1005 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				102 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1100 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1101 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1103 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1104 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1129 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1130 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1131 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1132 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1133 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1134 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1137 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1138 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1139 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1144 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1235 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1236 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1272 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				151 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				152 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				153 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				157 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				158 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				159 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				160 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				161 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				162 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				188 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				28 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				3 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				39 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				4 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				42 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				5 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				50 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				51 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				52 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				53 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				54 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				55 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				56 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				57 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				58 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				59 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				60 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				61 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				62 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				63 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				64 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				65 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				66 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				67 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				68 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				69 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				71 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				736 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				74 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				75 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				759 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				760 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				761 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				764 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				775 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				776 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				777 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				780 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				781 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				782 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				783 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				786 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				8 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				835 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				836 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				838 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				839 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				86 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				9 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				942 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				29 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				34 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				35 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				36 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				6 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				7 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				741 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				866 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				978 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				979 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				GER = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }
+		}
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.11
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	MON_great_game_vistulan_ulus = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = POL
+				}
+				POL = {
+				  is_subject_of = MON
+				}
+			  }
+			  POL = {
+				10 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1088 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1148 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				87 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				90 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				92 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				97 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				98 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				POL = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.12
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_baltic = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = BAT
+				}
+				BAT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LIT
+				}
+				LIT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LAT
+				}
+				LAT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = EST
+				}
+				EST = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BAT
+				}
+				BAT = {
+				  is_subject_of = MON
+				}
+			  }
+			  BAT = {
+				1091 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				11 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				12 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				13 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1329 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				189 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				190 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				191 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				655 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				94 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				96 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				BAT = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.13
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_northlands = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = SWE
+				}
+				SWE = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = NOR
+				}
+				NOR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = FIN
+				}
+				FIN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = DEN
+				}
+				DEN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ICE
+				}
+				ICE = {
+				  is_subject_of = MON
+				}
+			  }
+			  SWE = {
+				101 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				110 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				111 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1146 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1147 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				124 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1324 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1325 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1326 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				138 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				139 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				140 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				141 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				142 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				143 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				144 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				145 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				146 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				147 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				148 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				149 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				150 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				337 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				37 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				38 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				666 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				778 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				840 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				844 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				863 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				864 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				865 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				908 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				909 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				926 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				936 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				937 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				960 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				99 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				100 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				SWE = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.14
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_franks = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = FRA
+				}
+				FRA = {
+				  is_subject_of = MON
+				}
+			  }
+			  FRA = {
+				14 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				15 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				16 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				17 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				18 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				19 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				20 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				21 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				22 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				23 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				24 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				25 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				26 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				27 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				29 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				30 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				31 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				32 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				33 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				735 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				762 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				763 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				779 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				785 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				817 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				943 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				980 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				983 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				984 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				FRA = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.15
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_iberian_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = SPR
+				}
+				SPR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = CAT
+				}
+				CAT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BAS
+				}
+				BAS = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = GLC
+				}
+				GLC = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = POR
+				}
+				POR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = POR
+				}
+				POR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = POR
+				}
+				POR = {
+				  is_subject_of = MON
+				}
+			  }
+			  SPR = {
+				112 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				118 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1313 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1316 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				165 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				166 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				167 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				168 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				169 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				170 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				171 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				172 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				173 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				174 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				175 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				176 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				177 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				178 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				179 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				180 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				181 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				41 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				697 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				698 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				702 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				705 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				793 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				795 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				940 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				951 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				SPR = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.16
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	MON_great_game_khanate_of_britannia = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = ENG
+				}
+				ENG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = IRE
+				}
+				IRE = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SCT
+				}
+				SCT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = WAL
+				}
+				WAL = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = GBP
+				}
+				GBP = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  ENG = {
+				113 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				119 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				120 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				121 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				122 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				123 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				125 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				126 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				127 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				128 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				129 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				130 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				131 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1315 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1317 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				132 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				133 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				134 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				135 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				136 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				338 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				938 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				ENG = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.17
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_athens = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = GRE
+				}
+				GRE = {
+				  is_subject_of = MON
+				}
+			  }
+			  GRE = {
+				1076 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				185 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				186 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				47 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				758 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				768 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				939 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				989 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				766 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				44 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1268 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				GRE = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.18
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_ulus_of_the_two_sicilies = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = SIC
+				}
+				SIC = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = PAP
+				}
+				PAP = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SRD
+				}
+				SRD = {
+				  is_subject_of = MON
+				}
+			  }
+			  SIC = {
+				1002 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1006 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				114 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1149 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				115 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				117 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				156 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				2 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				742 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				837 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				SIC = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.19
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_nippon = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = JAP
+				}
+				JAP = {
+				  is_subject_of = MON
+				}
+			  }
+			  JAP = {
+				282 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				526 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				528 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				529 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				530 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				531 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				532 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				533 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				534 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				535 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				536 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				537 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				555 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				645 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				648 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				JAP = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.20
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_maghreb = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = ALG
+				}
+				ALG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = MAL
+				}
+				MAL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = IVO
+				}
+				IVO = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = GHA
+				}
+				GHA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = TOG
+				}
+				TOG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = DAH
+				}
+				DAH = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BFA
+				}
+				BFA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = NER
+				}
+				NER = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = NGR
+				}
+				NGR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = WAD
+				}
+				WAD = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LIB
+				}
+				LIB = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = GNA
+				}
+				GNA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SIE
+				}
+				SIE = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = CVG
+				}
+				CVG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = SEN
+				}
+				SEN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = MRT
+				}
+				MRT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = MOR
+				}
+				MOR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = TUN
+				}
+				TUN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = LBA
+				}
+				LBA = {
+				  is_subject_of = MON
+				}
+			  }
+			  ALG = {
+				513 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				514 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				515 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				910 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				911 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				272 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				913 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				662 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				290 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				805 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1318 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				806 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1192 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				296 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				298 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				808 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				556 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				557 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				558 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				809 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				699 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				700 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				702 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				834 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				966 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				967 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				968 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				459 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				460 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				461 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				462 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				973 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				860 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				878 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				807 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				963 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1321 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1322 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1323 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				274 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				876 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				877 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				451 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				458 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1009 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				663 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				665 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				273 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				448 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				ALG = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.21
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	MON_great_game_egyptian_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = EGY
+				}
+				EGY = {
+				  is_subject_of = MON
+				}
+			  }
+
+			  if = {
+				limit = {
+				  country_exists = SUD
+				}
+				SUD = {
+				  is_subject_of = MON
+				}
+			  }
+			  EGY = {
+				452 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				453 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				549 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				551 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				456 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				457 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				552 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1007 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1008 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				753 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1010 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1011 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				862 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				446 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				447 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				}
+			}
+			NOT = {
+				EGY = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.22
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_ulus_of_central_africa = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+				if = {
+					limit = {
+					  country_exists = COG
+					}
+					COG = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = GAB
+					}
+					GAB = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = CMR
+					}
+					CMR = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = CEA
+					}
+					CEA = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = KIV
+					}
+					KIV = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = UMN
+					}
+					UMN = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = TZN
+					}
+					TZN = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = BRD
+					}
+					BRD = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = RWA
+					}
+					RWA = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = UGA
+					}
+					UGA = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = KEN
+					}
+					KEN = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = SOM
+					}
+					SOM = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = ETH
+					}
+					ETH = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = ERI
+					}
+					ERI = {
+					  is_subject_of = MON
+					}
+				  }
+				  if = {
+					limit = {
+					  country_exists = ZZB
+					}
+					ZZB = {
+					  is_subject_of = MON
+					}
+				  }
+			  COG = {
+				1025 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1026 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				899 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1032 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				905 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				906 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				268 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				269 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				271 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1297 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				660 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				918 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				919 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				920 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				921 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				538 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				539 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1180 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1181 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1182 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1184 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1185 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				546 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				547 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1183 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				548 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				550 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				295 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				922 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				923 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				924 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				925 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				559 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				944 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				948 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				949 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				927 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				952 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				953 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				928 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				703 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				704 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				961 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				962 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				709 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				965 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				969 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				970 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				971 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				718 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				974 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				975 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				976 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				977 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				869 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				870 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				879 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				881 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				892 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				297 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				COG = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.23
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_ul_of_south_africa = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = SAF
+				}
+				SAF = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = NMB
+				}
+				NMB = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BOT
+				}
+				BOT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = MLW
+				}
+				MLW = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = MZB
+				}
+				MZB = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ANG
+				}
+				ANG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BRT
+				}
+				BRT = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ZIM
+				}
+				ZIM = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ZAM
+				}
+				ZAM = {
+				  is_subject_of = MON
+				}
+			  }
+			  SAF = {
+				914 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				275 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				916 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				917 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1176 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				540 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				541 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				542 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				544 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				545 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				681 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				813 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				945 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				946 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				947 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				950 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				954 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				955 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				956 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				957 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				958 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				959 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				964 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				719 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				85 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				738 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				871 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				SAF = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.24
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_ul_of_madagascar = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = MAG
+				}
+				MAG = {
+				  is_subject_of = MON
+				}
+			  }
+			  MAG = {
+				706 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				707 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				708 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1177 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1178 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1179 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				543 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				MAG = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.25
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_texan_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = TXS
+				}
+				TXS = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = USA
+				}
+				USA = {
+				  is_subject_of = MON
+				}
+			  }
+			  TXS = {
+				1096 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1166 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1161 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				833 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				375 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				TXS = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.26
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_pacific = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+	
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = CAL
+						}
+						CAL = {
+							is_subject_of = MON
+						}
+					}
+					CAL = {
+						829 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						798 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1165 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						797 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						378 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						385 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						386 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+					}
+				}
+				NOT = {
+					CAL = {
+						has_country_flag = mon_khanated
+					}
+				}
+			}
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+			country_event = MONoccupation.27
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_deseret = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+	
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = DSR
+						}
+						DSR = {
+							is_subject_of = MON
+						}
+					}
+					DSR = {
+						376 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						377 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						380 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						379 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1174 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+					}
+				}
+				NOT = {
+					DSR = {
+						has_country_flag = mon_khanated
+					}
+				}
+			}
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+			country_event = MONoccupation.28
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_midwest = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+	
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = AML
+						}
+						AML = {
+							is_subject_of = MON
+						}
+					}
+					AML = {
+						387 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1157 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1164 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						381 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						388 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						389 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						390 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						384 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						382 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1150 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1175 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						383 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1163 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						373 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+					}
+				}
+				NOT = {
+					AML = {
+						has_country_flag = mon_khanated
+					}
+				}
+			}
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+			country_event = MONoccupation.29
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_american_khanate = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+	
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = USA
+						}
+						USA = {
+							is_subject_of = MON
+						}
+					}
+					if = {
+						limit = {
+							country_exists = FSA
+						}
+						FSA = {
+							is_subject_of = MON
+						}
+					}
+					if = {
+						limit = {
+							country_exists = CGL
+						}
+						CGL = {
+							is_subject_of = MON
+						}
+					}
+					if = {
+						limit = {
+							country_exists = NYC
+						}
+						NYC = {
+							is_subject_of = MON
+						}
+					}
+					if = {
+						limit = {
+							country_exists = NEE
+						}
+						NEE = {
+							is_subject_of = MON
+						}
+					}
+					USA = {
+						374 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						371 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						372 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1156 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						370 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1168 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						368 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						369 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1172 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1167 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						367 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						365 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1169 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1171 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						366 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						364 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1170 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						363 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1155 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						362 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1158 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						391 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						392 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						394 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						395 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						393 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1152 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1173 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1154 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						396 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1151 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1153 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						261 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						929 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						360 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1159 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						361 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						930 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						359 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1162 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						358 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						793 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						931 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						932 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						935 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						933 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						934 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						357 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						796 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+						1160 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+					}
+				}
+				NOT = {
+					USA = {
+						has_country_flag = mon_khanated
+					}
+				}
+			}
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+			country_event = MONoccupation.30
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_the_northern_steppes = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = CAN
+				}
+				CAN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ALA
+				}
+				ALA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = QUE
+				}
+				QUE = {
+				  is_subject_of = MON
+				}
+			  }
+			  CAN = {
+				276= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				682= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				683= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1330= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1331= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1332= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				832= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				331= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				332= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				464= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				465= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				466= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				467= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				468= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				469= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				470= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				471= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				472= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				473= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				730= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				739= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				740= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1273= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				463= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				CAN = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.31
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanat_mexica = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = MEX
+				}
+				MEX = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = YUC
+				}
+				YUC = {
+				  is_subject_of = MON
+				}
+			  }
+			  MEX = {
+				480 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				481 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				482 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				483 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1252 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1253 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1254 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1255 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				484 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				485 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				277 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				474 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				475 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				476 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				477 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				478 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				479 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				MEX = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.32
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_central_american_ulus = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = CEN
+				}
+				CEN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = GUA
+				}
+				GUA = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ELS
+				}
+				ELS = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = HON
+				}
+				HON = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = NIC
+				}
+				NIC = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = COS
+				}
+				COS = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = PAN
+				}
+				PAN = {
+				  is_subject_of = MON
+				}
+			  }
+			  CEN = {
+				1070 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1071 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				304 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				311 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				312 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				313 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				314 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				316 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				317 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				842 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				854 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1247 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1248 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1249 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1250 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1251 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1256 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1257 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1258 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1259 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1260 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1261 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1262 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				CEN = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.33
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_gran_columbia_ulus = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = COL
+				}
+				COL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = VEN
+				}
+				VEN = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = ECU
+				}
+				ECU = {
+				  is_subject_of = MON
+				}
+			  }
+			  COL = {
+				1280 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				649 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1036 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1296 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				912 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				305 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				306 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				307 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1214 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1215 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1216 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				849 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				850 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				851 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				852 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				853 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				486 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				488 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				489 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				490 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				493 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				COL = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.34
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_brazil = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = BRA
+				}
+				BRA = {
+				  is_subject_of = MON
+				}
+			  }
+			  BRA = {
+				896 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				898 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				900 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1030 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1031 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1033 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1038 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1039 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1040 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1041 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1043 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				280 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1305 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1306 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1307 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1310 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1311 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				687 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				309 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1078 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1079 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				855 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				495 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				496 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				497 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				498 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				499 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				500 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				501 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				502 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				503 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				504 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				505 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				894 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				895 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1039 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1037 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1038 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				BRA = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.35
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+	MON_great_game_khanate_of_south_america = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			tag = MON
+		}
+		visible = {
+			
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = ARG
+				}
+				ARG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = PAR
+				}
+				PAR = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = FOP
+				}
+				FOP = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = BOL
+				}
+				BOL = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = PRU
+				}
+				PRU = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = URG
+				}
+				URG = {
+				  is_subject_of = MON
+				}
+			  }
+			  if = {
+				limit = {
+				  country_exists = CHL
+				}
+				CHL = {
+				  is_subject_of = MON
+				}
+			  }
+			  ARG = {
+				512 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1027 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1028 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1029 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				901 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				902 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				903 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				904 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				278 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				299 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				300 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				301 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				302 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				303 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				688 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1073 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1074 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				449 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				579 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				845 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				847 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				720 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				848 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				487 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				872 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				873 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				490 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				491 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				492 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				494 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				506 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				508 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				509 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				510 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				511 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				507 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				279 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				874 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+			  }
+			}
+			NOT = {
+				ARG = {
+					has_country_flag = mon_khanated
+				}
+			}
+		  }	
+					
+		}
+		
+		cost = 30
+		
+		remove_effect = {
+		country_event = MONoccupation.36
+		}
+		days_remove = 0
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 60
+		}
+	}
+}
+MON_dissident_decisions = {
+
+	MON_deal_with_Ja ={
+		icon = decision_category_generic_political_actions
+		
+		allowed = {
+			tag = MON
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			tag = MON
+			has_completed_focus = MON_form_the_mongolian_empire
+			has_country_flag = Gengis_Khan_II_HoS
+		
+		}
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 5
+		}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_deal_with_Ja"
+			country_event = { id = mongolia.105 }
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_deal_with_Ja"
+		}
+	}
+
+	MON_deal_with_Ja1 ={
+		icon = decision_category_generic_political_actions
+		
+		allowed = {
+			tag = MON
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			tag = MON
+			has_completed_focus = MON_form_the_mongolian_empire
+			has_country_flag = MON_sane
+		
+		}
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 5
+			}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_deal_with_Ja1"
+			country_event = { id = mongolia.103 }
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_deal_with_Ja1"
+		}
+	}
+
+	MON_Gada_strikes ={
+		icon = decision_category_generic_crisis
+		
+		allowed = {
+			tag = MON
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			tag = MON
+			has_completed_focus = MON_form_the_mongolian_empire
+		
+		}
+		fire_only_once = yes
+		cost = 25
+
+		ai_will_do = {
+			factor = 5
+			}
+		
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_Gada_strikes"
+			country_event = { id = mongolia.106 }
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_Gada_strikes"
+		}
+	}
+}
+
+MON_nuclear_decisions={
+	MON_recruit_nuclear ={
+		icon = GFX_decision_cat_generic_nuclear
+		
+		allowed = {
+			tag = MON
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			tag = MON
+			743 = { is_owned_by_ROOT_or_ally = yes}
+			608 = { is_owned_by_ROOT_or_ally = yes}
+			592 = { is_owned_by_ROOT_or_ally = yes}
+			613 = { is_owned_by_ROOT_or_ally = yes}
+			325 = { is_owned_by_ROOT_or_ally = yes}
+			605 = { is_owned_by_ROOT_or_ally = yes}
+		}	
+		fire_only_once = yes
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+			
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_recruit_nuclear"
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = nuclear
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_recruit_nuclear"
+		}
+	}
+}
+
+MON_country_formation_decisions = { ###This is completly fucking retarded
+
+	MON_budhi_king = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		
+		available = {
+			is_subject = no
+			owns_state = 604
+			owns_state = 608
+			owns_state = 1048
+		}
+		
+		visible = {
+			has_country_flag = religious_control
+		}
+		
+		fire_only_once = yes
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+			
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_budhi_king"
+			country_event = { id = mongolia.138 }
+			country_event = {
+				id = mon.412
+				days = 4
+			}
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_budhi_king"
+		}
+	}
+
+	MON_Yuan = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+		
+		available = {
+			is_subject = no
+			owns_state = 604
+			owns_state = 608
+			owns_state = 592
+			owns_state = 613
+			owns_state = 609
+			owns_state = 1048
+		}
+		visible = {
+			OR = {
+				has_country_flag = Ja_Lama_control
+				has_country_flag = Ja_Lama_control1
+			}
+		}
+		
+		fire_only_once = yes
+		cost = 50
+
+		ai_will_do = {
+			factor = 5
+			
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_Yuan"
+			country_event = { id = mongolia.143 }
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_Yuan"
+		}
+	}
+}
+
+MON_foreign_policy_decisions = {
+
+	MON_did_you_forget_about_me = { #finally Mongolia won't forget ETS exists
+		icon = generic_prepare_civil_war
+
+		visible = {
+			ETS = {
+				exists = yes
+				NOT = { is_subject_of = MON }
+			}
+			NOT = {
+				is_in_faction_with = ETS
+				has_war_with = ETS
+				is_subject_of = ETS
+			}
+			has_completed_focus = MON_mongol_minority_in_xibei
+			custom_trigger_tooltip = {
+				tooltip = MON_sternberg_tooltip
+				MON_sternberg_in_power = yes
+			}
+		}
+
+		targets = { ETS }
+		target_root_trigger = { has_completed_focus = MON_mongol_minority_in_xibei }
+		target_trigger = { can_declare_war_on = FROM }
+
+		fire_only_once = yes
+		cost = 5
+		days_remove = 14
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.7
+				}
+			}
+		}
+
+		remove_effect = { ETS = { country_event = mongolia.6 } }
+	}
+	
+	MON_invade_china = { #catch all decision for invading China
+		icon = generic_prepare_civil_war
+		visible = {
+			has_completed_focus = MON_claim_yuan
+			custom_trigger_tooltip = {
+				tooltip = MON_sternberg_tooltip
+				MON_sternberg_in_power = yes
+			}
+			FROM = {
+				exists = yes
+				NOT = { is_subject_of = ROOT }
+				any_neighbor_country = {
+					OR = {
+						tag = MON
+						is_subject_of = MON
+						is_in_faction_with = MON
+					}
+				}
+			}
+		}
+		target_root_trigger = {
+			has_completed_focus = MON_claim_yuan
+			NOT = {
+				is_in_faction_with = FROM
+				has_war_with = FROM
+				is_subject_of = FROM
+			}
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+			FROM = {
+				exists = yes
+				NOT = { is_subject_of = ROOT }
+				any_neighbor_country = {
+					OR = {
+						tag = MON
+						is_subject_of = MON
+						is_in_faction_with = MON
+					}
+				}
+				OR = {
+					tag = LEP
+					tag = QIE
+					tag = CHI
+					tag = ANQ
+					tag = HNN
+					tag = GXC
+					tag = YUN
+					tag = SZC
+					tag = SHX
+					tag = SQI
+					tag = PRC
+					tag = FNG
+				}
+			}
+		}
+
+		cost = 50
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.7
+				}
+			}
+		}
+
+		remove_effect = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	
+	MON_fengtian_ultimatum = { #demand fengtian integration
+		icon = generic_prepare_civil_war
+		visible = {
+			country_exists = FNG
+			has_global_flag = MON_japan_brotherhood_flag
+			OR = {
+				has_global_flag = MON_yuan_proposal
+				has_global_flag = MON_yiguandao_proposal
+				has_global_flag = MON_qing_proposal
+			}
+			custom_trigger_tooltip = {
+				tooltip = MON_sternberg_tooltip
+				MON_sternberg_in_power = yes
+			}
+			NOT = { has_global_flag = MON_sent_fengtian_ultimatum }
+		}
+		target_root_trigger = {
+			NOT = {
+				is_in_faction_with = FROM
+				has_war_with = FROM
+			}
+		}
+		targets = { FNG }
+
+		cost = 10
+		days_remove = 20
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.7
+				}
+			}
+		}
+
+		remove_effect = {
+			set_global_flag = MON_sent_fengtian_ultimatum
+			FNG = {
+				country_event = {
+					id = mon_khan.24
+				}
+			}
+		}
+	}
+	
+	MON_Invite_Bhutan = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = JAP
+					JAP = { is_faction_leader = yes }
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { BHU }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				has_socialist_government = no
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = { has_country_flag = MON_already_invited }
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+	
+	MON_Invite_Sikkim = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = JAP
+					JAP = { is_faction_leader = yes }
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { SKM }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				OR = {
+					has_completed_focus = skm_red_chogyal
+					has_socialist_government = no
+				}
+			}
+		}
+		cost = 25
+		days_remove = 20
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = { has_country_flag = MON_already_invited }
+			}
+		}
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = { clr_country_flag = MON_invited_country }
+	}
+	
+	MON_Invite_Tibet = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = JAP
+					JAP = { is_faction_leader = yes }
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			always = no
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+		targets = { TIB }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				exists = yes
+				OR = {
+					has_government = paternal_autocrat
+					has_government = authoritarian_democrat
+				}
+			}
+		}
+		cost = 25
+		days_remove = 20
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		remove_effect = { clr_country_flag = MON_invited_country }
+	}
+	
+	MON_Invite_Transamur = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		available = {
+			OR = {
+				is_faction_leader = yes
+				AND = {
+					is_in_faction_with = JAP
+					JAP = { is_faction_leader = yes }
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			OR = {
+				has_completed_focus = MON_ungern_alone
+				AND = {
+					is_in_faction_with = JAP
+					JAP = { is_faction_leader = yes }
+				}
+			}
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { TRM }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				OR = {
+					AND = {
+						has_government = totalist
+						has_country_flag = TRM_Mlad_in_power
+					}
+					has_country_flag = TRM_Semyonov_Coup
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+	
+	MON_Invite_Siam = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		available = { is_faction_leader = yes }
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			has_completed_focus = MON_ungern_alone
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { SIA }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				OR = {
+					has_global_flag = SIA_SARIT_RULES
+					has_global_flag = SIA_CONSTITUTION_GIVEN_BORIPATR
+					has_global_flag = SIA_PRAJADHIPOK_REFORM
+					has_completed_focus = SIA_halfleafdemocracy
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+	
+	
+	MON_Invite_Nepal = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		
+		available = {
+			is_faction_leader = yes
+		}
+
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			has_completed_focus = MON_ungern_alone
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { NEP }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				has_country_leader = {
+					name = "Tribhuvan"
+					ruling_only = yes
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+	
+	MON_Invite_Burma = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		
+		available = {
+			is_faction_leader = yes
+		}
+
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			has_completed_focus = MON_ungern_alone
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { BRM }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				has_government = authoritarian_democrat
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+	
+	MON_Invite_Afghanistan = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		
+		available = {
+			is_faction_leader = yes
+		}
+
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			has_completed_focus = MON_ungern_alone
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { AFG }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				has_government = paternal_autocrat
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+	
+	MON_Invite_Princely_Fed = {
+		name = MON_Invite_Country
+		icon = generic_agreement
+		
+		available = {
+			is_faction_leader = yes
+		}
+
+		visible = {
+			has_completed_focus = MON_brotherhood_alliance
+			has_completed_focus = MON_ungern_alone
+			FROM = {
+				is_subject = no
+				exists = yes
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+			}
+		}
+
+		targets = { PRF }
+		target_root_trigger = {
+			has_completed_focus = MON_brotherhood_alliance
+			NOT = { has_country_flag = MON_invited_country }
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_subject = no
+				has_idea = PRF_united_india
+				OR = {
+					is_in_faction = no
+					is_faction_leader = yes
+				}
+				OR = {
+					has_completed_focus = PRF_rebuke_council
+					has_completed_focus = PRF_princes_united
+				}
+			}
+		}
+
+		cost = 25
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				FROM = {
+					has_country_flag = MON_already_invited
+				}
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = MON_invited_country
+			FROM = {
+				country_event = {
+					id = mon_khan.2
+					days = 3
+				}
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MON_invited_country
+		}
+	}
+}
+
+MON_foreign_policy_decisions = {
+	MON_reclaim_china = { #catch all decision for invading China
+		icon = generic_prepare_civil_war
+
+		visible = {
+			has_country_flag = MON_anfu_in_power_flag
+			FROM = {
+				exists = yes
+				NOT = { is_subject_of = ROOT }
+				any_neighbor_country = {
+					OR = {
+						tag = MON
+						is_subject_of = MON
+						is_in_faction_with = MON
+					}
+				}
+			}
+		}
+		target_root_trigger = {
+			NOT = { is_in_faction_with = FROM }
+			NOT = { has_war_with = FROM }
+			NOT = { is_subject_of = FROM }
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+			FROM = {
+				exists = yes
+				NOT = { is_subject_of = ROOT }
+				any_neighbor_country = {
+					OR = {
+						tag = MON
+						is_subject_of = MON
+						is_in_faction_with = MON
+					}
+				}
+				OR = {
+					tag = LEP
+					tag = XSM
+					tag = TAN
+					tag = SIK
+					tag = ETS
+					tag = TIB
+					tag = QIE
+					tag = CHI
+					tag = ANQ
+					tag = HNN
+					tag = GXC
+					tag = YUN
+					tag = SZC
+					tag = SHX
+					tag = SQI
+					tag = PRC
+					tag = FNG
+				}
+			}
+		}
+
+		cost = 10
+		days_remove = 20
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.7
+				}
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = MON_secret_ai_flag
+			}
+			modifier = {
+				factor = 0
+				FROM = { tag = SHX }
+				NOT = { country_exists = XSM }
+			}
+		}
+		
+		complete_effect = {
+			set_country_flag = MON_secret_ai_flag
+		}
+
+		remove_effect = {
+			clr_country_flag = MON_secret_ai_flag
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	
+	MON_ask_tibet_for_faction_decision = {
+
+		icon = hol_exchange_intelligence_data
+
+		allowed = { original_tag = MON }
+
+		available = {
+			is_subject = no
+			has_socialist_government = no
+			TIB = {
+				has_socialist_government = no
+				is_subject = no
+			}
+		}
+
+		visible = {
+			country_exists = TIB
+			has_global_flag = northwest_conflict_ended
+			NOT = {
+				MON_sternberg_in_power = yes
+			}
+			NOT = {
+				AND = {
+					has_government = paternal_autocrat
+					has_country_flag = MON_russia_friends_flag
+				}
+				AND = {
+					has_government = paternal_autocrat
+					NOT = { has_completed_focus = MON_look_at_russia_policy }
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_ask_tibet_for_faction_decision"
+			TIB = { country_event = mon.59 }
+		}
+	}
+	MON_attack_the_mas_decision = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			has_war = no
+			is_subject = no
+			can_declare_war_on = XSM
+		}
+
+		visible = {
+			TIB = { has_war_with = XSM }
+			NOT = {
+				OR = {
+					has_country_leader = {
+					name = "Genghis Khan II"
+					ruling_only = yes
+					}
+					has_country_leader = {
+					name = "Roman von Ungern-Sternberg"
+					ruling_only = yes
+					}
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				ROOT_is_threatened = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = { has_war = no }
+			}
+		}
+
+		war_with_on_complete = XSM
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_the_mas_decision"
+			declare_war_on = {
+				target = XSM
+				type = annex_everything
+			}
+		}
+	}
+	
+	MON_attack_the_fng_decision = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			has_war = no
+		}
+
+		visible = {
+			has_completed_focus = MON_revenge_on_japan
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				is_in_faction_with = RUS
+				RUS = {
+					is_ai = no
+				}
+			}
+		}
+
+		war_with_on_complete = FNG
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_the_mas_decision"
+			declare_war_on = {
+				target = FNG
+				type = annex_everything
+			}
+			add_state_claim = 884
+			add_state_claim = 883
+			add_state_claim = 714
+			add_state_claim = 717
+			add_state_claim = 885
+			add_state_claim = 886
+			add_state_claim = 328
+			add_state_claim = 715
+			add_state_claim = 716
+			add_state_claim = 610
+		}
+	}
+	MON_pan_mongol_claims_decision = {
+
+		icon = generic_nationalism
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		visible = {
+			owns_state = 348
+			owns_state = 616
+			owns_state = 621
+			NOT = {
+				MON_sternberg_in_power = yes
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_pan_mongol_claims_decision"
+			add_state_claim = 1083
+			add_state_claim = 618
+			add_state_claim = 611
+			add_state_claim = 884
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = MON_russia_friends_flag
+					}
+				}
+				add_state_claim = 563
+				add_state_claim = 564
+				add_state_claim = 654
+			}
+		}
+	}
+	MON_intervene_in_jap_chi_war_decision = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			can_declare_war_on = FROM
+		}
+
+		visible = {
+			is_subject = no
+			OR = {
+				is_in_faction = no
+				is_faction_leader = yes
+			}
+			JAP = {
+				NOT = {
+					has_war_with = ROOT
+					has_global_flag = JAP_Fading_Sun
+				}
+			}
+			FROM = {
+				has_war_with = JAP
+				has_capitulated = no
+				is_neighbor_of = ROOT
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				NOT = { can_declare_war_on = FROM }
+				FROM = {
+					NOT = { has_war_with = JAP }
+				}
+			}
+		}
+
+		cost = 0
+		fire_only_once = no
+		days_remove = 15
+
+		war_with_target_on_remove = yes
+
+		target_array = global.china_tags_array
+		target_root_trigger = {
+			is_subject = no
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+			FROM = {
+				has_war_with = JAP
+				has_capitulated = no
+				is_neighbor_of = ROOT
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_country_flag = imminent_war
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+				NOT = {
+					any_enemy_country = {
+						is_neighbor_of = ROOT
+						has_capitulated = no
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					NOT = {
+						any_owned_state = { is_claim_or_core_of_ROOT = yes }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				JAP = { surrender_progress > 0.20 }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					strength_ratio = { tag = FROM ratio > 1.0 }
+					FROM = { surrender_progress > 0.20 }
+					FROM = {
+						is_in_faction = yes
+						strength_ratio = { tag = ROOT ratio < 2.50 }
+						faction_leader = { surrender_progress > 0.20 }
+					}
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_intervene_in_jap_chi_war_decision target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 16 value = 1 }
+			FROM = { country_event = kr.political.30 } #warning event
+			setup_decision_attack_AI = yes
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_intervene_in_jap_chi_war_decision target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+	MON_integrate_china = {#
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = MON }
+		available = {
+			tag = MON
+			has_country_flag = MON_invade_china_proper
+			owns_state = 608
+			owns_state = 716
+			owns_state = 613
+			owns_state = 592
+			QIE = { exists = no }
+			FNG = { exists = no }
+			CHI = { exists = no }
+			GXC = { exists = no }
+			}
+		visible = {
+			has_country_flag = MON_invade_china_proper
+		}
+		fire_only_once = yes
+		cost = 150
+		days_remove = 150
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_integrate_china"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_integrate_china"
+			every_state = {
+                limit = {
+					OR = {
+					is_core_of = KOR
+					is_claims_china = yes
+					}
+				}
+				add_core_of = MON
+			}
+		}
+	}
+	MON_integrate_south_east_asia = {#
+		icon = generic_prepare_civil_war
+		allowed = { original_tag = MON }
+		available = {
+			tag = MON
+			has_country_flag = MON_invade_south_east_asia
+			owns_state = 289
+			owns_state = 670
+			owns_state = 827
+			owns_state = 750
+			VIN = { exists = no }
+			LAO = { exists = no }
+			CAM = { exists = no }
+			SIA = { exists = no }
+			}
+		visible = {
+			has_country_flag = MON_invade_south_east_asia
+		}
+		fire_only_once = yes
+		cost = 100
+		days_remove = 100
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_integrate_south_east_asia"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_integrate_south_east_asia"
+			every_state = {
+			limit = {
+				OR = {
+					is_core_of = SIA
+					is_core_of = INC
+					is_core_of = LAO
+					is_core_of = CAM
+					is_core_of = VIN
+				}
+			}
+			add_core_of = MON
+			}
+		}
+	}
+}
+
+MON_western_rebellion_decisions = {
+	MON_reinforce_troops_in_west_decision = {
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = MON
+		}
+
+		fire_only_once = no
+		days_remove = 20
+		cost = 25
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_reinforce_troops_in_west_decision"
+			increase_ruling_party_popularity_by_5 = yes
+			add_stability = 0.02
+			add_war_support = 0.05
+		}
+	}
+	MON_the_offer_decision = {
+		icon = hol_exchange_intelligence_data
+
+		visible = {
+			MON_has_regular_govt = yes
+		}
+
+		cost = 0
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				MON_ruling_party_has_highest_pop = no
+			}
+			modifier = {
+				factor = 0
+				MON_ruling_party_has_highest_pop = yes
+				MON_any_group_within_5_pop = yes
+			}
+			modifier = {
+				factor = 2
+				MON_ruling_party_has_highest_pop = yes
+				MON_any_group_within_10_pop = no
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_the_offer_decision"
+			country_event = { id = mon.61 }
+		}
+	}
+	MON_bring_tuvan_garrison_decision = {
+		icon = eng_blackshirt_march
+
+		allowed = {
+			original_tag = MON
+		}
+
+		visible = {
+			owns_state = 329
+			NOT = { has_country_flag = MON_bandits_occupy_tuva }
+		}
+
+		cost = 0
+
+		fire_only_once = yes
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 329
+		}
+}
+
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 0
+				has_stability < 0.25
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_bring_tuvan_garrison_decision target: [From.GetName]"
+			add_stability = -0.02
+			add_war_support = 0.08
+		}
+	}
+	MON_reinvade_tuva_decision = {
+		icon = generic_operation
+
+		allowed = {
+			original_tag = MON
+		}
+
+		visible = {
+			has_country_flag = MON_bandits_occupy_tuva
+			owns_state = 329
+		}
+
+		custom_cost_text = SZC_15_CP
+		custom_cost_trigger = {
+			command_power > 14.99
+		}
+
+		fire_only_once = yes
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 329
+		}
+}
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = ROOT.command_power
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_reinvade_tuva_decision target: [From.GetName]"
+			hidden_effect = {
+				add_command_power = -15
+			}
+			country_event = { id = mon.26 }
+		}
+	}
+	MON_seige_of_uliastai_decision = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = MON
+		}
+
+		visible = {
+			owns_state = 1084
+			has_country_flag = MON_bandits_occupy_uliastai
+		}
+
+		custom_cost_text = SZC_15_CP
+		custom_cost_trigger = {
+			command_power > 14.99
+		}
+
+		fire_only_once = yes
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 1084
+		}
+}
+
+		ai_will_do = {
+			base = 25
+			modifier = {
+				add = ROOT.command_power
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_seige_of_uliastai_decision target: [From.GetName]"
+			hidden_effect = {
+				add_command_power = -15
+			}
+			country_event = { id = mon.33 }
+		}
+	}
+
+}
+
+MON_chaos_in_capital_decisions = {
+	MON_force_control_in_urga_decision = {
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			has_stability > 0
+		}
+
+		visible = {
+			has_government = paternal_autocrat
+		}
+
+		cost = 25
+
+		days_remove = 25
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_force_control_in_urga_decision"
+			add_stability = -0.05
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.05
+			}
+		}
+	}
+	MON_crack_on_MAN_decision = {
+		icon = oppression
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			has_stability > 0
+		}
+
+		visible = {
+			MON_has_regular_govt = yes
+			NOT = { has_government = social_democrat }
+			OR = {
+				check_variable = { ROOT.party_popularity@social_democrat > 0.05 }
+				check_variable = { ROOT.party_popularity@social_democrat > ROOT.party_popularity@ruling_party }
+			}
+		}
+
+		cost = 25
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				MON_socdem_within_10_pop = no
+			}
+			modifier = {
+				factor = 5
+				MON_socdem_within_5_pop = yes
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					var = ROOT.party_popularity@social_democrat
+					value = ROOT.party_popularity@ruling_party
+					compare = greater_than
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_crack_on_MAN_decision"
+			add_stability = -0.05
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.05
+			}
+		}
+	}
+	MON_bribe_aristocrats_decision = {
+		icon = hol_attract_foreign_investors
+
+		allowed = {
+			original_tag = MON
+		}
+
+		visible = {
+			MON_has_regular_govt = yes
+			NOT = { has_government = authoritarian_democrat }
+			OR = {
+				check_variable = { ROOT.party_popularity@authoritarian_democrat > 0.05 }
+				check_variable = { ROOT.party_popularity@authoritarian_democrat > ROOT.party_popularity@ruling_party }
+			}
+		}
+
+		cost = 50
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				MON_authdem_within_10_pop = no
+			}
+			modifier = {
+				factor = 5
+				MON_authdem_within_5_pop = yes
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					var = ROOT.party_popularity@authoritarian_democrat
+					value = ROOT.party_popularity@ruling_party
+					compare = greater_than
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_bribe_aristocrats_decision"
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.05
+			}
+		}
+	}
+	MON_discourse_in_MAN_decision = {
+		icon = eng_propaganda_campaigns
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			has_stability > 0
+		}
+
+		visible = {
+			MON_has_regular_govt = yes
+			NOT = { has_government = social_democrat }
+		}
+
+		cost = 15
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				MON_socdem_within_10_pop = no
+			}
+			modifier = {
+				factor = 5
+				MON_socdem_within_5_pop = yes
+			}
+			modifier = {
+				factor = 2
+				check_variable = {
+					var = ROOT.party_popularity@social_democrat
+					value = ROOT.party_popularity@ruling_party
+					compare = greater_than
+				}
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_discourse_in_MAN_decision"
+			add_stability = -0.05
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.05
+			}
+		}
+	}
+	MON_cede_to_aristocrats_decision = {
+		icon = eng_ally_imperialist_coup
+
+		allowed = {
+			original_tag = MON
+		}
+
+		visible = {
+			MON_has_regular_govt = yes
+			NOT = { has_government = authoritarian_democrat }
+		}
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_political_power > 25
+			}
+			modifier = {
+				factor = 0
+				MON_ruling_party_has_highest_pop = yes
+				MON_any_group_within_5_pop = no
+			}
+			modifier = {
+				factor = 0
+				MON_authdem_within_10_pop = yes
+			}
+			modifier = {
+				factor = 5
+				MON_ruling_party_has_highest_pop = no
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_cede_to_aristocrats_decision"
+			add_political_power = 50
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+		}
+	}
+	MON_cede_to_monks_decision = {
+		icon = eng_blackshirt_march
+
+		allowed = {
+			original_tag = MON
+		}
+
+		visible = {
+			MON_has_regular_govt = yes
+			NOT = { has_government = national_populist }
+		}
+
+		days_remove = 30
+
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				has_political_power > 25
+			}
+			modifier = {
+				factor = 0
+				MON_ruling_party_has_highest_pop = yes
+				MON_any_group_within_5_pop = no
+			}
+			modifier = {
+				factor = 0
+				MON_natpop_within_10_pop = yes
+			}
+			modifier = {
+				factor = 5
+				MON_ruling_party_has_highest_pop = no
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_cede_to_monks_decision"
+			add_political_power = 50
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+MON_mongolian_highway_decisions = {
+	MON_main_mongolian_road_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			controls_state = 330
+		}
+
+		visible = {
+			owns_state = 330
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 330
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 100
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_main_mongolian_road_decision target: [From.GetName]"
+			build_railway = {
+				start_province = 4801
+				target_province = 7717
+			}
+			build_railway = {
+				start_province = 4801
+				target_province = 10578
+			}
+			330 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			set_country_flag = MON_main_railway_built_flag
+		}
+	}
+	MON_connect_to_the_west_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			has_country_flag = MON_main_railway_built_flag
+			controls_state = 1084
+		}
+
+		visible = {
+			owns_state = 1084
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 1084
+		}
+}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_connect_to_the_west_decision target: [From.GetName]"
+			1084 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	MON_connect_to_tuva_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			has_country_flag = MON_main_railway_built_flag
+			controls_state = 329
+		}
+
+		visible = {
+			owns_state = 329
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 329
+		}
+}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_connect_to_tuva_decision target: [From.GetName]"
+			build_railway = {
+				start_province = 7717
+				target_province = 10627
+			}
+			build_railway = {
+				start_province = 10627
+				target_province = 4801
+			}
+			329 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	MON_connect_to_chahar_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			controls_state = 612
+			controls_state = 330
+			num_of_civilian_factories_available_for_projects > 0
+			has_country_flag = MON_main_railway_built_flag
+		}
+
+		visible = {
+			owns_state = 612
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 612
+		}
+}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_connect_to_chahar_decision target: [From.GetName]"
+			build_railway = {
+				start_province = 4801
+				target_province = 10372
+			}
+			612 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 10372
+				}
+			}
+		}
+	}
+	MON_connect_to_ulanqab_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 0
+			has_country_flag = MON_main_railway_built_flag
+			controls_state = 621
+		}
+
+		visible = {
+			owns_state = 621
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 621
+		}
+}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_connect_to_ulanqab_decision target: [From.GetName]"
+			build_railway = {
+				start_province = 10372
+				target_province = 10424
+			}
+			621 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	MON_connect_to_ningxia_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			has_country_flag = MON_main_railway_built_flag
+			controls_state = 348
+			controls_state = 330
+		}
+
+		visible = {
+			owns_state = 348
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 348
+		}
+}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_connect_to_ningxia_decision target: [From.GetName]"
+			build_railway = {
+				start_province = 4801
+				target_province = 10724
+			}
+			add_state_core = 348
+			348 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	MON_connect_to_ordos_decision = {
+		icon = generic_construction
+
+		allowed = {
+			original_tag = MON
+		}
+
+		available = {
+			num_of_civilian_factories_available_for_projects > 1
+			has_country_flag = MON_main_railway_built_flag
+			controls_state = 616
+		}
+
+		visible = {
+			owns_state = 616
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 616
+		}
+}
+
+		fire_only_once = yes
+
+		cost = 25
+
+		days_remove = 80
+
+		modifier = {
+			civilian_factory_use = 1
+		}
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_connect_to_ordos_decision target: [From.GetName]"
+			add_state_core = 616
+			616 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+MON_dealing_with_the_leftover_bandits_decisions = {
+	MON_pacify_western_bandits_decision = {
+
+		icon = oppression
+
+		available = {
+			divisions_in_state = {
+				state = 1084
+				size > 2
+			}
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 1084
+		}
+}
+
+		cost = 0
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				divisions_in_state = {
+					state = 1084
+					size > 2
+				}
+			}
+		}
+
+		visible = {
+			NOT = { has_active_mission = MON_maintain_western_control_mission }
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_pacify_western_bandits_decision target: [From.GetName]"
+			activate_mission = MON_maintain_western_control_mission
+			custom_effect_tooltip = MON_pacify_bandits_mission_explanation
+		}
+	}
+
+	MON_maintain_western_control_mission = {
+		icon = generic_civil_support
+
+		allowed = { always = no } #manually activated
+
+		available = {
+			hidden_trigger = { always = no }
+		}
+
+		days_mission_timeout = MAN_maintain_control_timer?180
+
+		cancel_trigger = {
+			divisions_in_state = {
+				state = 1084
+				size < 3
+			}
+		}
+
+		highlight_states = {
+highlight_state_targets = {
+			state = 1084
+		}
+}
+
+		is_good = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision timeout MON_maintain_western_control_mission target: [From.GetName]"
+			army_experience = 10
+			add_stability = 0.05
+			add_war_support = 0.05
+			set_country_flag = MON_bandits_beaten_flag
+			remove_ideas = MON_western_banditry_idea
+		}
+	}
+}
+
+MON_red_diplomacy = {
+
+	MON_stabilize_sinkiang = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		fire_only_once = yes
+		days_remove = 14
+		targets = { SIK TAN ETS }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+				has_completed_focus = MON_healing_steppe_with_syndicalism
+			}
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_stabilize_sinkiang target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_stabilize_sinkiang target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}
+	MON_go_south = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		fire_only_once = yes
+		days_remove = 14
+		targets = { XSM TIB }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+				has_completed_focus = MON_healing_steppe_with_syndicalism
+			}		
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_go_south target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_go_south target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}
+	MON_ride_east = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		fire_only_once = yes
+		days_remove = 14
+		targets = { FNG }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+				has_completed_focus = MON_healing_steppe_with_syndicalism
+			}	
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_ride_east target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_ride_east target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}
+	MON_attack_qing = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		fire_only_once = yes
+		days_remove = 14
+		targets = { QIE SHX }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}		
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_qing target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_qing target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}
+	MON_attack_the_rest = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		cost = 10
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		fire_only_once = yes
+		days_remove = 14
+		targets = { HNN GXC YUN SZC LEP ANQ CHI SQI }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}		
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_the_rest target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_the_rest target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_attack_russia = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		cost = 10
+		fire_only_once = yes
+		days_remove = 14
+		targets = { RUS TRM }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}		
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_russia target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_russia target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_attack_minors = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		cost = 10
+		fire_only_once = yes
+		days_remove = 14
+		targets = { SIB TTR BKN }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_minors target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_minors target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_attack_central_asia = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		cost = 10
+		fire_only_once = yes
+		days_remove = 14
+		targets = { ALO TRK TAJ KYR UZB }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}	
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_central_asia target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_central_asia target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_attack_caucuses = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 14
+		targets = { DKB KLY MTR GEO ARM AZE DAG KUB ABK }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}	
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_caucuses target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_caucuses target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_attack_eastern_euro = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_target_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_overlord_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_faction_is_stronger = yes }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 14
+		targets = { UKR WHR }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_paradise_under_red_khan			
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+			}
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_attack_eastern_euro target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_attack_eastern_euro target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_fuck_japan = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_target_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_overlord_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_faction_is_stronger = yes }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 14
+		targets = { JAP }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_sino_mongolian_communes_coops
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+				has_completed_focus = MON_healing_steppe_with_syndicalism
+			}
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_fuck_japan target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_fuck_japan target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_SOV_fuck_middle_east = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_target_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_overlord_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_faction_is_stronger = yes }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 14
+		targets = { PER AFG }
+		target_root_trigger = {
+			has_completed_focus = MON_benefits_of_bolshie_expertise
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_SOV_fuck_middle_east target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_SOV_fuck_middle_east target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}	
+	MON_fuck_korea = {
+		icon = GFX_decision_generic_operation
+		allowed = { tag = MON }
+		visible = {
+			can_declare_war_on = FROM
+		}
+		available = {
+			country_exists = FROM
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+		}
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				RUS_dont_attack_if_vulnerable_or_preparing = yes
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_target_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_overlord_is_stronger = yes }
+			}
+			modifier = {
+				factor = 0
+				FROM = { RUS_dont_attack_if_faction_is_stronger = yes }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 14
+		targets = { KOR }
+		target_root_trigger = {
+			OR = {
+				has_completed_focus = MON_benefits_of_bolshie_expertise
+				has_completed_focus = MON_healing_steppe_with_syndicalism
+			}
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+		}
+		war_with_target_on_remove = yes
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_fuck_korea target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes			
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_fuck_korea target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}			
+			hidden_effect = {
+				every_state = {
+					limit = {
+						is_core_of = FROM
+						is_owned_by = FROM
+					}
+					add_claim_by = MON
+				}
+			}
+		}
+	}
+	MON_integrate_tibet = {
+		icon = generic_form_nation
+		allowed = { original_tag = MON }
+		visible = {
+			has_completed_focus = MON_healing_steppe_with_syndicalism
+		}
+		available = {
+			owns_state = 322
+			NOT = {
+				country_exists = TIB
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_integrate_tibet"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = TIB
+					}
+				}
+				MON = {
+					add_state_core = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	MON_integrate_xinjiang = {
+		icon = generic_form_nation
+		allowed = { original_tag = MON }
+		visible = {
+			has_completed_focus = MON_healing_steppe_with_syndicalism
+		}
+		available = {
+			owns_state = 617
+			NOT = {
+				country_exists = SIK
+				country_exists = ETS
+				country_exists = TAN
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_integrate_xinjiang"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = SIK
+						is_core_of = ETS
+						is_core_of = TAN
+					}
+				}
+				MON = {
+					add_state_core = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	MON_integrate_manchuria = {
+		icon = generic_form_nation
+		allowed = { original_tag = MON }
+		visible = {
+			has_completed_focus = MON_healing_steppe_with_syndicalism
+		}
+		available = {
+			owns_state = 716
+			NOT = {
+				country_exists = FNG
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_integrate_manchuria"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = FNG
+					}
+				}
+				MON = {
+					add_state_core = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	MON_integrate_korea = {
+		icon = generic_form_nation
+		allowed = { original_tag = MON }
+		visible = {
+			has_completed_focus = MON_healing_steppe_with_syndicalism
+		}
+		available = {
+			owns_state = 527
+			owns_state = 525
+			NOT = {
+				country_exists = KOR
+			}
+		}
+		fire_only_once = yes
+		cost = 25
+		days_remove = 45
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_integrate_xinjiang"
+			every_state = {
+				limit = {
+					OR = {
+						is_core_of = KOR
+					}
+				}
+				MON = {
+					add_state_core = PREV
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	MON_red_mongol_empire = {
+		allowed = { tag = MON }
+		cost = 25
+		visible = {
+			has_completed_focus = MON_paradise_under_red_khan
+		}
+		available = {
+			owns_state = 219
+			owns_state = 408
+			owns_state = 608
+			owns_state = 605
+			owns_state = 325
+			owns_state = 613
+			owns_state = 594
+			owns_state = 602
+			owns_state = 604
+			owns_state = 617
+			owns_state = 322
+			owns_state = 1042
+			owns_state = 405
+			owns_state = 861
+			owns_state = 218
+			owns_state = 234
+			owns_state = 233
+			owns_state = 231
+			owns_state = 990
+			owns_state = 230
+			owns_state = 202
+			owns_state = 206
+			owns_state = 1221
+		}
+		fire_only_once = yes
+		icon = GFX_decision_generic_operation
+		complete_effect = {
+						if = {
+			limit = { has_cosmetic_tag = MON_ROERICH }
+			set_cosmetic_tag = MON_ROERICH_GENGHIS
+				}
+				else = {
+			set_cosmetic_tag = MON_GADA_GENGHIS
+				}
+			every_owned_state = {
+				limit = {
+					is_claimed_by = MON
+					NOT = {
+						is_core_of = MON
+					}
+				}
+				add_core_of = MON
+			}
+		}
+	}
+	MON_china_form = {
+		allowed = { tag = MON }
+		cost = 25
+		visible = {
+			has_completed_focus = MON_sino_mongolian_communes_coops
+		}
+		available = {
+						owns_state = 613
+						owns_state = 594
+						owns_state = 325
+						owns_state = 605
+						owns_state = 608
+						owns_state = 1072
+						owns_state = 604
+						owns_state = 617
+						owns_state = 1083
+						owns_state = 322
+						owns_state = 597
+						owns_state = 716
+		}
+		fire_only_once = yes
+		icon = GFX_decision_generic_operation
+		complete_effect = {
+			set_cosmetic_tag = MON_CHINA
+						every_owned_state = {
+				limit = {
+					is_claimed_by = MON
+					NOT = {
+						is_core_of = MON
+					}
+				}
+				add_core_of = MON
+			}
+		}
+	}
+	MON_soviet_form = {
+		allowed = { tag = MON }
+		cost = 25
+		visible = {
+			has_completed_focus = MON_benefits_of_bolshie_expertise
+		}
+		available = {
+						owns_state = 604
+						owns_state = 322
+						owns_state = 617
+						owns_state = 1083
+						owns_state = 1042
+						owns_state = 405
+						owns_state = 861
+						owns_state = 810
+						owns_state = 219
+						owns_state = 408
+						owns_state = 716
+						owns_state = 525
+						owns_state = 527
+						owns_state = 282
+		}
+		fire_only_once = yes
+		icon = GFX_decision_generic_operation
+		complete_effect = {
+			set_cosmetic_tag = MON_SOVIETS
+						every_owned_state = {
+				limit = {
+					is_claimed_by = MON
+					NOT = {
+						is_core_of = MON
+					}
+				}
+				add_core_of = MON
+			}
+		}
+	}
+	MON_form_eastern_union = {
+		allowed = { tag = MON }
+		cost = 25
+		visible = {
+			has_completed_focus = MON_healing_steppe_with_syndicalism
+		}
+		available = {
+			owns_state = 527
+						owns_state = 525
+						owns_state = 282
+						owns_state = 529
+						owns_state = 885
+						owns_state = 716
+						owns_state = 1083
+						owns_state = 617
+						owns_state = 616
+						owns_state = 604
+						owns_state = 322
+		}
+		fire_only_once = yes
+		icon = GFX_decision_generic_operation
+		complete_effect = {
+			set_cosmetic_tag = MON_SYNDIES_UNITED
+						every_owned_state = {
+				limit = {
+					is_claimed_by = MON
+					is_core_of = JAP
+					is_core_of = KOR
+					NOT = {
+						is_core_of = MON
+					}
+				}
+				add_core_of = MON
+			}
+		}
+	}
+}
+
+MON_economic_decisions = {# Economic Decisions
+
+		MON_military_expansion_effort = {
+		name = MON_military_expansion_effort
+		icon = generic_construction
+
+		allowed = { tag = MON }
+		available = {
+			date > 1936.6.1
+						NOT = { has_country_flag = MON_ongoing_industrial_effort }
+		}
+		cost = 75
+		days_remove = 45
+		fire_only_once = no
+				days_re_enable = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+				complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_military_expansion_effort"
+			set_country_flag = MON_ongoing_industrial_effort
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_military_expansion_effort"
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+						clr_country_flag = MON_ongoing_industrial_effort
+		}
+	}
+
+		MON_civilian_expansion_effort = {
+		name = MON_civilian_expansion_effort
+		icon = generic_construction
+
+		allowed = { tag = MON }
+		available = {
+			date > 1936.6.1
+						NOT = { has_country_flag = MON_ongoing_industrial_effort }
+		}
+		cost = 75
+		days_remove = 45
+		fire_only_once = no
+				days_re_enable = 5
+		ai_will_do = {
+			factor = 50
+		}
+
+				complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision MON_civilian_expansion_effort"
+			set_country_flag = MON_ongoing_industrial_effort
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MON_civilian_expansion_effort"
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+						clr_country_flag = MON_ongoing_industrial_effort
+		}
+	}
+}

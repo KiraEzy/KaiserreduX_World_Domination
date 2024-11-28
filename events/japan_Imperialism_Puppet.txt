@@ -1,0 +1,4196 @@
+add_namespace = JAPoccupation
+country_event = {
+	#Revenge! But Swiss????
+	id = JAPoccupation.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.1"
+	}
+	title = "Establishing the Transamur Prefectures"
+	desc = JAPoccupation.1.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = TRM
+
+		name = "The Transamur Prefectures is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			TRM = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = TRM_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = TRM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+				set_capital = {
+					state = 408
+				}
+			}
+			TRM = {
+				every_core_state = {
+					remove_core_of = TRM
+				}
+				1246 = { add_core_of = TRM } 
+                408 = { add_core_of = TRM } 
+                409 = { add_core_of = TRM } 
+                560 = { add_core_of = TRM } 
+                561 = { add_core_of = TRM } 
+                563 = { add_core_of = TRM } 
+                564 = { add_core_of = TRM } 
+                565 = { add_core_of = TRM } 
+                574 = { add_core_of = TRM } 
+                637 = { add_core_of = TRM } 
+                657 = { add_core_of = TRM } 
+			
+				TRM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = TRM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = JAPoccupation.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.2"
+	}
+	title = "Establishing the Mongol Province"
+	desc = JAPoccupation.2.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MON
+ 
+		name = "The Mongol Province is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			MON = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = MON_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = MON
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			MON = {
+				every_core_state = {
+					remove_core_of = MON
+				}
+				1084 = { add_core_of = MON } 
+				1293 = { add_core_of = MON } 
+				329 = { add_core_of = MON } 
+				330 = { add_core_of = MON } 
+				612 = { add_core_of = MON } 
+				621 = { add_core_of = MON } 
+				654 = { add_core_of = MON } 
+				811 = { add_core_of = MON }
+			
+				MON = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = MON
+					}
+				}
+			} 
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.3"
+	}
+	title = "Establishing the Imperial Prefectures of America"
+	desc = JAPoccupation.3.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CAL
+
+		name = "The Imperial Prefectures of America is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			CAL = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = CAL_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP= {
+					set_autonomy = {
+						target = CAL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CAL = {
+				every_core_state = {
+					remove_core_of = CAL
+				}
+				1096 = { add_core_of = CAL } 
+				629 = { add_core_of = CAL } 
+				630 = { add_core_of = CAL } 
+				631 = { add_core_of = CAL } 
+				632 = { add_core_of = CAL } 
+				1150 = { add_core_of = CAL } 
+				1151 = { add_core_of = CAL } 
+				1152 = { add_core_of = CAL } 
+				1153 = { add_core_of = CAL } 
+				1154 = { add_core_of = CAL } 
+				1155 = { add_core_of = CAL } 
+				1156 = { add_core_of = CAL } 
+				1157 = { add_core_of = CAL } 
+				1158 = { add_core_of = CAL } 
+				1159 = { add_core_of = CAL } 
+				1160 = { add_core_of = CAL } 
+				1161 = { add_core_of = CAL } 
+				1162 = { add_core_of = CAL } 
+				1163 = { add_core_of = CAL } 
+				1164 = { add_core_of = CAL } 
+				1165 = { add_core_of = CAL } 
+				1166 = { add_core_of = CAL } 
+				1167 = { add_core_of = CAL } 
+				1168 = { add_core_of = CAL } 
+				1169 = { add_core_of = CAL } 
+				1170 = { add_core_of = CAL } 
+				1171 = { add_core_of = CAL } 
+				1172 = { add_core_of = CAL } 
+				1173 = { add_core_of = CAL } 
+				1174 = { add_core_of = CAL } 
+				1175 = { add_core_of = CAL } 
+				642 = { add_core_of = CAL } 
+				726 = { add_core_of = CAL } 
+				727 = { add_core_of = CAL } 
+				1273 = { add_core_of = CAL } 
+				261 = { add_core_of = CAL } 
+				796 = { add_core_of = CAL } 
+				797 = { add_core_of = CAL } 
+				798 = { add_core_of = CAL } 
+				1312 = { add_core_of = CAL } 
+				829 = { add_core_of = CAL } 
+				833 = { add_core_of = CAL } 
+				357 = { add_core_of = CAL } 
+				358 = { add_core_of = CAL } 
+				359 = { add_core_of = CAL } 
+				360 = { add_core_of = CAL } 
+				361 = { add_core_of = CAL } 
+				362 = { add_core_of = CAL } 
+				363 = { add_core_of = CAL } 
+				364 = { add_core_of = CAL } 
+				365 = { add_core_of = CAL } 
+				366 = { add_core_of = CAL } 
+				367 = { add_core_of = CAL } 
+				368 = { add_core_of = CAL } 
+				369 = { add_core_of = CAL } 
+				370 = { add_core_of = CAL } 
+				371 = { add_core_of = CAL } 
+				372 = { add_core_of = CAL } 
+				373 = { add_core_of = CAL } 
+				374 = { add_core_of = CAL } 
+				375 = { add_core_of = CAL } 
+				376 = { add_core_of = CAL } 
+				377 = { add_core_of = CAL } 
+				378 = { add_core_of = CAL } 
+				379 = { add_core_of = CAL } 
+				380 = { add_core_of = CAL } 
+				381 = { add_core_of = CAL } 
+				382 = { add_core_of = CAL } 
+				383 = { add_core_of = CAL } 
+				384 = { add_core_of = CAL } 
+				385 = { add_core_of = CAL } 
+				386 = { add_core_of = CAL } 
+				387 = { add_core_of = CAL } 
+				388 = { add_core_of = CAL } 
+				389 = { add_core_of = CAL } 
+				390 = { add_core_of = CAL } 
+				391 = { add_core_of = CAL } 
+				392 = { add_core_of = CAL } 
+				393 = { add_core_of = CAL } 
+				394 = { add_core_of = CAL } 
+				395 = { add_core_of = CAL } 
+				396 = { add_core_of = CAL } 
+				929 = { add_core_of = CAL } 
+				930 = { add_core_of = CAL } 
+				931 = { add_core_of = CAL } 
+				932 = { add_core_of = CAL } 
+				933 = { add_core_of = CAL } 
+				934 = { add_core_of = CAL } 
+				935 = { add_core_of = CAL } 
+
+				CAL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP}
+							}
+						}
+						transfer_state_to = CAL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.4"
+	}
+	title = "Establishing the Imperial Prefectures of Canada"
+	desc = JAPoccupation.4.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CAN
+
+		name = "The Imperial Prefectures of Canada are formed!"
+		add_political_power = 75
+		hidden_effect = {
+			CAN = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = CAN_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = CAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CAN = {
+				every_core_state = {
+					remove_core_of = CAN
+				}
+				276 = { add_core_of = CAN } 
+				682 = { add_core_of = CAN } 
+				683 = { add_core_of = CAN } 
+				1330 = { add_core_of = CAN } 
+				1331 = { add_core_of = CAN } 
+				1332 = { add_core_of = CAN } 
+				832 = { add_core_of = CAN } 
+				331 = { add_core_of = CAN } 
+				332 = { add_core_of = CAN } 
+				464 = { add_core_of = CAN } 
+				465 = { add_core_of = CAN } 
+				466 = { add_core_of = CAN } 
+				467 = { add_core_of = CAN } 
+				468 = { add_core_of = CAN } 
+				469 = { add_core_of = CAN } 
+				470 = { add_core_of = CAN } 
+				471 = { add_core_of = CAN } 
+				472 = { add_core_of = CAN } 
+				473 = { add_core_of = CAN } 
+				730 = { add_core_of = CAN } 
+				739 = { add_core_of = CAN } 
+				740 = { add_core_of = CAN } 
+
+				CAN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = CAN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.5"
+	}
+	title = "Establishing the State of Manchuria"
+	desc = JAPoccupation.5.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MAN
+
+		name = "The State of Manchuria is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			MAN = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = MAN_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = MAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			MAN = {
+				every_core_state = {
+					remove_core_of = MAN
+				}
+				610 = { add_core_of = MAN } 
+				328 = { add_core_of = MAN } 
+				714 = { add_core_of = MAN } 
+				715 = { add_core_of = MAN } 
+				716 = { add_core_of = MAN } 
+				717 = { add_core_of = MAN } 
+				883 = { add_core_of = MAN } 
+				884 = { add_core_of = MAN } 
+				885 = { add_core_of = MAN } 
+				886 = { add_core_of = MAN } 
+
+				MAN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = MAN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.6"
+	}
+	title = "Establishing Guangzhou Province"
+	desc = JAPoccupation.6.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = GXC
+
+		name = "Guangzhou Province is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			GXC = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = GXC_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = GXC
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			GXC = {
+				every_core_state = {
+					remove_core_of = GXC
+				}
+				1056 = { add_core_of = GXC } 
+				800 = { add_core_of = GXC } 
+				801 = { add_core_of = GXC } 
+				326 = { add_core_of = GXC } 
+				591 = { add_core_of = GXC } 
+				592 = { add_core_of = GXC } 
+				593 = { add_core_of = GXC } 
+				594 = { add_core_of = GXC } 
+				1012 = { add_core_of = GXC } 
+				599 = { add_core_of = GXC } 
+				728 = { add_core_of = GXC } 
+				729 = { add_core_of = GXC } 
+				1053 = { add_core_of = GXC } 
+				1054 = { add_core_of = GXC } 
+				1055 = { add_core_of = GXC } 
+
+				GXC = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = GXC
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.7"
+	}
+	title = "Establishing Yunnan Province"
+	desc = JAPoccupation.7.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = YUN
+
+		name = "Yunnan Province is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			YUN = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = YUN_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = YUN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			YUN = {
+				every_core_state = {
+					remove_core_of = YUN
+				}
+				325 = { add_core_of = YUN } 
+				1051 = { add_core_of = YUN } 
+				816 = { add_core_of = YUN } 
+				603 = { add_core_of = YUN } 
+				1052 = { add_core_of = YUN } 
+
+				YUN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = YUN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.8"
+	}
+	title = "Establishing the IJA Administration of Shanxi"
+	desc = JAPoccupation.8.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SHX
+
+		name = "The IJA Administration of Shanxi is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SHX = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = SHX_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = SHX
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SHX = {
+				every_core_state = {
+					remove_core_of = SHX
+				}
+				615 = { add_core_of = SHX } 
+				622 = { add_core_of = SHX } 
+				1072 = { add_core_of = SHX } 
+				1015 = { add_core_of = SHX } 
+				799 = { add_core_of = SHX } 
+
+				SHX = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = SHX
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.9"
+	}
+	title = "Establishing Sichuan Province"
+	desc = JAPoccupation.9.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SZC
+
+		name = "Sichuan Province is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SZC = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = SZC_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = SZC
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SZC = {
+				every_core_state = {
+					remove_core_of = SZC
+				}
+				650 = { add_core_of = SZC } 
+				788 = { add_core_of = SZC } 
+				661 = { add_core_of = SZC } 
+				601 = { add_core_of = SZC } 
+				605 = { add_core_of = SZC } 
+				1049 = { add_core_of = SZC } 
+
+				SZC = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = SZC
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.10"
+	}
+	title = "Establishing Qinghai Province"
+	desc = JAPoccupation.10.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = XSM
+
+		name = "Qinghai Province is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			XSM = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = XSM_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = XSM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			XSM = {
+				every_core_state = {
+					remove_core_of = XSM
+				}
+				353 = { add_core_of = XSM } 
+				774 = { add_core_of = XSM } 
+				616 = { add_core_of = XSM } 
+				621 = { add_core_of = XSM } 
+				283 = { add_core_of = XSM } 
+				348 = { add_core_of = XSM } 
+				604 = { add_core_of = XSM } 
+
+				XSM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = XSM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.11"
+	}
+	title = "Establishing Sinkiang Province"
+	desc = JAPoccupation.11.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SIK
+
+		name = "Sinkiang Province is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			SIK = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = SIK_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = SIK
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SIK = {
+				every_core_state = {
+					remove_core_of = SIK
+				}
+				897 = { add_core_of = SIK } 
+				617 = { add_core_of = SIK } 
+				618 = { add_core_of = SIK } 
+				619 = { add_core_of = SIK } 
+				1083 = { add_core_of = SIK } 
+				1085 = { add_core_of = SIK } 
+				287 = { add_core_of = SIK } 
+
+				SIK = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = SIK
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = JAPoccupation.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event JAPoccupation.12"
+	}
+	title = "Establishing the Reorganised National Government of China"
+	desc = JAPoccupation.12.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CHI
+
+		name = "The Reorganised National Government of China is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			CHI = {
+				set_country_flag = jap_formable
+				set_cosmetic_tag = CHI_JAP_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				JAP = {
+					set_autonomy = {
+						target = CHI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CHI = {
+				every_core_state = {
+					remove_core_of = CHI
+				}
+				611 = { add_core_of = CHI } 
+				614 = { add_core_of = CHI } 
+				608 = { add_core_of = CHI } 
+				619 = { add_core_of = CHI } 
+				1062 = { add_core_of = CHI } 
+				1063 = { add_core_of = CHI } 
+				287 = { add_core_of = CHI } 
+				1061 = { add_core_of = CHI } 
+				597 = { add_core_of = CHI } 
+				609 = { add_core_of = CHI } 
+				1065 = { add_core_of = CHI } 
+				744 = { add_core_of = CHI } 
+				996 = { add_core_of = CHI } 
+				1060 = { add_core_of = CHI } 
+				1059 = { add_core_of = CHI } 
+				1047 = { add_core_of = CHI } 
+				1064 = { add_core_of = CHI } 
+				1050 = { add_core_of = CHI } 
+				598 = { add_core_of = CHI } 
+				607 = { add_core_of = CHI } 
+				1058 = { add_core_of = CHI } 
+				606 = { add_core_of = CHI } 
+				613 = { add_core_of = CHI } 
+				620 = { add_core_of = CHI } 
+				1014 = { add_core_of = CHI } 
+				743 = { add_core_of = CHI } 
+				596 = { add_core_of = CHI } 
+				1048 = { add_core_of = CHI } 
+				1013 = { add_core_of = CHI } 
+				602 = { add_core_of = CHI } 
+				600 = { add_core_of = CHI } 
+				1046 = { add_core_of = CHI } 
+				1066 = { add_core_of = CHI } 
+				1069 = { add_core_of = CHI } 
+				803 = { add_core_of = CHI } 
+				1068 = { add_core_of = CHI } 
+				746 = { add_core_of = CHI } 
+				1045 = { add_core_of = CHI } 
+				1044 = { add_core_of = CHI } 
+				1067 = { add_core_of = CHI } 
+				747 = { add_core_of = CHI } 
+				595 = { add_core_of = CHI } 
+
+				CHI = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = JAP
+								OWNER = { is_subject_of = JAP }
+							}
+						}
+						transfer_state_to = CHI
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = JAPoccupation.13
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.13"
+    }
+    title = "Establishing the IJA Administration of Indochina"
+    desc = JAPoccupation.13.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = INC
+
+        name = "The IJA Administration of Indochina are formed!"
+        add_political_power = 75
+        hidden_effect = {
+            INC = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = INC_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = INC
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            INC = {
+                every_core_state = {
+                    remove_core_of = INC
+                }
+                750 = { add_core_of = INC }
+                671 = { add_core_of = INC }
+                882 = { add_core_of = INC }
+                857 = { add_core_of = INC }
+                856 = { add_core_of = INC }
+                825 = { add_core_of = INC }
+                826 = { add_core_of = INC }
+                827 = { add_core_of = INC }
+                670 = { add_core_of = INC }
+                286 = { add_core_of = INC }
+                
+                INC = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = INC
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.14
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.14"
+    }
+    title = "Establishing the Imperial Prefectures of Australia"
+    desc = JAPoccupation.14.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = AST
+
+        name = "The Imperial Prefectures of Australia are formed!"
+        add_political_power = 75
+        hidden_effect = {
+            AST = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = AST_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = AST
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            AST = {
+                every_core_state = {
+                    remove_core_of = AST
+                }
+                674 = { add_core_of = AST }
+                517 = { add_core_of = AST }
+                518 = { add_core_of = AST }
+                519 = { add_core_of = AST }
+                520 = { add_core_of = AST }
+                521 = { add_core_of = AST }
+                522 = { add_core_of = AST }
+                711 = { add_core_of = AST }
+                988 = { add_core_of = AST }
+                985 = { add_core_of = AST }
+                986 = { add_core_of = AST }
+                987 = { add_core_of = AST }
+                285 = { add_core_of = AST }
+                
+                AST = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = AST
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.15
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.15"
+    }
+    title = "Establishing the IJN Administration of New Zealand"
+    desc = JAPoccupation.15.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = NZL
+
+        name = "The IJN Administration of New Zealand is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            NZL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = NZL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = NZL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            NZL = {
+                every_core_state = {
+                    remove_core_of = NZL
+                }
+                723 = { add_core_of = NZL }
+                284 = { add_core_of = NZL }
+
+                NZL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = NZL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.16
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.16"
+    }
+    title = "Establishing the Firipin Rinji Seifu"
+    desc = JAPoccupation.16.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = PHI
+
+        name = "The Firipin Rinji Seifu is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            PHI = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = PHI_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = PHI
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            PHI = {
+                every_core_state = {
+                    remove_core_of = PHI
+                }
+                327 = { add_core_of = PHI }
+                623 = { add_core_of = PHI }
+                624 = { add_core_of = PHI }
+                625 = { add_core_of = PHI }
+                626 = { add_core_of = PHI }
+                627 = { add_core_of = PHI }
+                628 = { add_core_of = PHI }
+
+                PHI = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = PHI
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.17
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.17"
+    }
+    title = "Establishing the Imperial Prefecture of Tibet"
+    desc = JAPoccupation.17.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = TIB
+
+        name = "The Imperial Prefecture of Tibet is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            TIB = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = TIB_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = TIB
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            TIB = {
+                every_core_state = {
+                    remove_core_of = TIB
+                }
+                322 = { add_core_of = TIB }
+                748 = { add_core_of = TIB }
+                693 = { add_core_of = TIB }
+                1086 = { add_core_of = TIB }
+
+                TIB = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = TIB
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.18
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.18"
+    }
+    title = "Establishing the Imperial Prefecture of Siam"
+    desc = JAPoccupation.18.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = SIA
+
+        name = "The Imperial Prefecture of Siam is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            SIA = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = SIA_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = SIA
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            SIA = {
+                every_core_state = {
+                    remove_core_of = SIA
+                }
+                289 = { add_core_of = SIA }
+                999 = { add_core_of = SIA }
+                749 = { add_core_of = SIA }
+                751 = { add_core_of = SIA }
+                882 = { add_core_of = SIA }
+                724 = { add_core_of = SIA }
+                822 = { add_core_of = SIA }
+                823 = { add_core_of = SIA }
+                824 = { add_core_of = SIA }
+                825 = { add_core_of = SIA }
+                830 = { add_core_of = SIA }
+
+                SIA = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = SIA
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.19
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.19"
+    }
+    title = "Establishing the Imperial Prefecture of Burma"
+    desc = JAPoccupation.19.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = BRM
+
+        name = "The Imperial Prefecture of Burma is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            BRM = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = BRM_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = BRM
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            BRM = {
+                every_core_state = {
+                    remove_core_of = BRM
+                }
+                288 = { add_core_of = BRM }
+                640 = { add_core_of = BRM }
+                72 = { add_core_of = BRM }
+                790 = { add_core_of = BRM }
+                701 = { add_core_of = BRM }
+                831 = { add_core_of = BRM }
+
+                BRM = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = BRM
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.20
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.20"
+    }
+    title = "Establishing the Imperial Prefecture of India"
+    desc = JAPoccupation.20.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = DEH
+
+        name = "The Imperial Prefecture of India is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            DEH = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = DEH_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = DEH
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            DEH = {
+                every_core_state = {
+                    remove_core_of = DEH
+                }
+                815 = { add_core_of = DEH }
+                1034 = { add_core_of = DEH }
+                1057 = { add_core_of = DEH }
+                423 = { add_core_of = DEH }
+                424 = { add_core_of = DEH }
+                425 = { add_core_of = DEH }
+                426 = { add_core_of = DEH }
+                427 = { add_core_of = DEH }
+                428 = { add_core_of = DEH }
+                429 = { add_core_of = DEH }
+                430 = { add_core_of = DEH }
+                431 = { add_core_of = DEH }
+                432 = { add_core_of = DEH }
+                433 = { add_core_of = DEH }
+                434 = { add_core_of = DEH }
+                435 = { add_core_of = DEH }
+                436 = { add_core_of = DEH }
+                437 = { add_core_of = DEH }
+                438 = { add_core_of = DEH }
+                439 = { add_core_of = DEH }
+                440 = { add_core_of = DEH }
+                441 = { add_core_of = DEH }
+                442 = { add_core_of = DEH }
+                443 = { add_core_of = DEH }
+                444 = { add_core_of = DEH }
+                445 = { add_core_of = DEH }
+                320 = { add_core_of = DEH }
+                1219 = { add_core_of = DEH }
+                1092 = { add_core_of = DEH }
+                1093 = { add_core_of = DEH }
+                1094 = { add_core_of = DEH }
+                1095 = { add_core_of = DEH }
+                858 = { add_core_of = DEH }
+                867 = { add_core_of = DEH }
+                868 = { add_core_of = DEH }
+                887 = { add_core_of = DEH }
+                889 = { add_core_of = DEH }
+                890 = { add_core_of = DEH }
+                891 = { add_core_of = DEH }
+                893 = { add_core_of = DEH }
+
+                DEH = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = DEH
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.21
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.21"
+    }
+    title = "Establishing the IJA Administration of Himalayas"
+    desc = JAPoccupation.21.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = NEP
+
+        name = "The IJA Administration of Himalayas is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            NEP = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = NEP_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = NEP
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            NEP = {
+                every_core_state = {
+                    remove_core_of = NEP
+                }
+                897 = { add_core_of = NEP }
+                323 = { add_core_of = NEP }
+                324 = { add_core_of = NEP }
+                617 = { add_core_of = NEP }
+                618 = { add_core_of = NEP }
+                619 = { add_core_of = NEP }
+                814 = { add_core_of = NEP }
+                887 = { add_core_of = NEP }
+                888 = { add_core_of = NEP }
+                1083 = { add_core_of = NEP }
+                1085 = { add_core_of = NEP }
+                287 = { add_core_of = NEP }
+
+                NEP = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = NEP
+                    }
+                }
+            }
+        }
+    }
+}  
+
+country_event = {
+	id = JAPoccupation.22
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.22"
+    }
+    title = "Establishing the Russia Prefecture"
+    desc = JAPoccupation.22.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		#
+		name = "Russia Prefecture is formed!"
+		add_political_power = 75
+		hidden_effect = {
+			RUS = {
+				set_country_flag = jap_formable
+                set_cosmetic_tag = RUS_JAP_OCC
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = RUS
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+			}
+			RUS = {
+				every_core_state = {
+					remove_core_of = RUS
+				}
+			}
+			1193 = {
+				add_core_of = RUS
+			}
+			1194 = {
+				add_core_of = RUS
+			}
+			1195 = {
+				add_core_of = RUS
+			}
+			1197 = {
+				add_core_of = RUS
+			}
+			1198 = {
+				add_core_of = RUS
+			}
+			1199 = {
+				add_core_of = RUS
+			}
+			1204 = {
+				add_core_of = RUS
+			}
+			1205 = {
+				add_core_of = RUS
+			}
+			1207 = {
+				add_core_of = RUS
+			}
+			1224 = {
+				add_core_of = RUS
+			}
+			1229 = {
+				add_core_of = RUS
+			}
+			1274 = {
+				add_core_of = RUS
+			}
+			1287 = {
+				add_core_of = RUS
+			}
+			1288 = {
+				add_core_of = RUS
+			}
+			1289 = {
+				add_core_of = RUS
+			}
+			1290 = {
+				add_core_of = RUS
+			}
+			1291 = {
+				add_core_of = RUS
+			}
+			1327 = {
+				add_core_of = RUS
+			}
+			1328 = {
+				add_core_of = RUS
+			}
+			195 = {
+				add_core_of = RUS
+			}
+			205 = {
+				add_core_of = RUS
+			}
+			208 = {
+				add_core_of = RUS
+			}
+			209 = {
+				add_core_of = RUS
+			}
+			210 = {
+				add_core_of = RUS
+			}
+			213 = {
+				add_core_of = RUS
+			}
+			214 = {
+				add_core_of = RUS
+			}
+			215 = {
+				add_core_of = RUS
+			}
+			216 = {
+				add_core_of = RUS
+			}
+			217 = {
+				add_core_of = RUS
+			}
+			219 = {
+				add_core_of = RUS
+			}
+			220 = {
+				add_core_of = RUS
+			}
+			222 = {
+				add_core_of = RUS
+			}
+			223 = {
+				add_core_of = RUS
+			}
+			224 = {
+				add_core_of = RUS
+			}
+			236 = {
+				add_core_of = RUS
+			}
+			239 = {
+				add_core_of = RUS
+			}
+			240 = {
+				add_core_of = RUS
+			}
+			242 = {
+				add_core_of = RUS
+			}
+			243 = {
+				add_core_of = RUS
+			}
+			244 = {
+				add_core_of = RUS
+			}
+			246 = {
+				add_core_of = RUS
+			}
+			247 = {
+				add_core_of = RUS
+			}
+			248 = {
+				add_core_of = RUS
+			}
+			249 = {
+				add_core_of = RUS
+			}
+			250 = {
+				add_core_of = RUS
+			}
+			251 = {
+				add_core_of = RUS
+			}
+			252 = {
+				add_core_of = RUS
+			}
+			253 = {
+				add_core_of = RUS
+			}
+			254 = {
+				add_core_of = RUS
+			}
+			255 = {
+				add_core_of = RUS
+			}
+			256 = {
+				add_core_of = RUS
+			}
+			257 = {
+				add_core_of = RUS
+			}
+			258 = {
+				add_core_of = RUS
+			}
+			260 = {
+				add_core_of = RUS
+			}
+			262 = {
+				add_core_of = RUS
+			}
+			263 = {
+				add_core_of = RUS
+			}
+			264 = {
+				add_core_of = RUS
+			}
+			265 = {
+				add_core_of = RUS
+			}
+			351 = {
+				add_core_of = RUS
+			}
+			397 = {
+				add_core_of = RUS
+			}
+			398 = {
+				add_core_of = RUS
+			}
+			399 = {
+				add_core_of = RUS
+			}
+			400 = {
+				add_core_of = RUS
+			}
+			401 = {
+				add_core_of = RUS
+			}
+			573 = {
+				add_core_of = RUS
+			}
+			581 = {
+				add_core_of = RUS
+			}
+			582 = {
+				add_core_of = RUS
+			}
+			651 = {
+				add_core_of = RUS
+			}
+			652 = {
+				add_core_of = RUS
+			}
+			722 = {
+				add_core_of = RUS
+			}
+			755 = {
+				add_core_of = RUS
+			}
+			821 = {
+				add_core_of = RUS
+			}
+			880 = {
+				add_core_of = RUS
+			}
+			RUS = {
+				every_core_state = {
+					limit = {
+						OR = {
+							is_owned_by = JAP
+							OWNER = { is_subject_of = JAP }
+						}
+					}
+					transfer_state_to = RUS
+				}
+			}
+			# Siberia ------------------------
+			release = SIB
+			SIB = {
+				every_core_state = {
+					remove_core_of = SIB
+				}
+			}
+			SIB = {
+				add_state_core = 583
+				add_state_core = 572
+				add_state_core = 653
+				add_state_core = 580
+				add_state_core = 1200
+				add_state_core = 1201
+				add_state_core = 1202
+				add_state_core = 577
+				add_state_core = 403
+				add_state_core = 583
+				add_state_core = 588
+				add_state_core = 571
+				add_state_core = 570
+				add_state_core = 578
+				add_state_core = 575
+				add_state_core = 569
+				add_state_core = 1292
+				add_state_core = 40
+				add_state_core = 576
+				add_state_core = 516
+				add_state_core = 568
+				add_state_core = 567
+				add_state_core = 566
+				add_state_core = 644
+				set_state_owner = 583
+				set_state_owner = 572
+				set_state_owner = 653
+				set_state_owner = 580
+				set_state_owner = 1200
+				set_state_owner = 1201
+				set_state_owner = 1202
+				set_state_owner = 577
+				set_state_owner = 403
+				set_state_owner = 583
+				set_state_owner = 588
+				set_state_owner = 571
+				set_state_owner = 570
+				set_state_owner = 578
+				set_state_owner = 575
+				set_state_owner = 569
+				set_state_owner = 1292
+				set_state_owner = 40
+				set_state_owner = 576
+				set_state_owner = 516
+				set_state_owner = 568
+				set_state_owner = 567
+				set_state_owner = 566
+				set_state_owner = 644
+				transfer_state = 583
+				transfer_state = 572
+				transfer_state = 653
+				transfer_state = 580
+				transfer_state = 1200
+				transfer_state = 1201
+				transfer_state = 1202
+				transfer_state = 577
+				transfer_state = 403
+				transfer_state = 583
+				transfer_state = 588
+				transfer_state = 571
+				transfer_state = 570
+				transfer_state = 578
+				transfer_state = 575
+				transfer_state = 569
+				transfer_state = 1292
+				transfer_state = 40
+				transfer_state = 576
+				transfer_state = 516
+				transfer_state = 568
+				transfer_state = 567
+				transfer_state = 566
+				transfer_state = 644
+			}
+			SIB = {
+				set_country_flag = jap_formable
+                set_cosmetic_tag = SIB_JAP_OCC
+				set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = SIB
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+			}
+			JAP = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = JAPoccupation.23
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.23"
+    }
+    title = "Establishing the Imperial Prefecture of Scandinavia"
+    desc = JAPoccupation.23.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = SWE
+
+        name = "The Imperial Prefecture of Scandinavia is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            SWE = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = SWE_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = SWE
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            SWE = {
+                every_core_state = {
+                    remove_core_of = SWE
+                }
+                138 = { add_core_of = SWE }
+                139 = { add_core_of = SWE }
+                140 = { add_core_of = SWE }
+                141 = { add_core_of = SWE }
+                142 = { add_core_of = SWE }
+                143 = { add_core_of = SWE }
+                144 = { add_core_of = SWE }
+                145 = { add_core_of = SWE }
+                146 = { add_core_of = SWE }
+                147 = { add_core_of = SWE }
+                148 = { add_core_of = SWE }
+                149 = { add_core_of = SWE }
+                150 = { add_core_of = SWE }
+                666 = { add_core_of = SWE }
+                38 = { add_core_of = SWE }
+                936 = { add_core_of = SWE }
+                937 = { add_core_of = SWE }
+                1324 = { add_core_of = SWE }
+                1325 = { add_core_of = SWE }
+                1326 = { add_core_of = SWE }
+                960 = { add_core_of = SWE }
+                840 = { add_core_of = SWE }
+                778 = { add_core_of = SWE }
+                844 = { add_core_of = SWE }
+                908 = { add_core_of = SWE }
+                909 = { add_core_of = SWE }
+                863 = { add_core_of = SWE }
+                864 = { add_core_of = SWE }
+                865 = { add_core_of = SWE }
+                110 = { add_core_of = SWE }
+                111 = { add_core_of = SWE }
+                1146 = { add_core_of = SWE }
+                1147 = { add_core_of = SWE }
+                124 = { add_core_of = SWE }
+
+                SWE = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = SWE
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.24
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.24"
+    }
+    title = "Establishing the IJN Administration of the Atlantics"
+    desc = JAPoccupation.24.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = DEN
+
+        name = "The IJN Administration of the Atlantics is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            DEN = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = DEN_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = DEN
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            DEN = {
+                every_core_state = {
+                    remove_core_of = DEN
+                }
+                99 = { add_core_of = DEN }
+                100 = { add_core_of = DEN }
+                37 = { add_core_of = DEN }
+                101 = { add_core_of = DEN }
+                337 = { add_core_of = DEN }
+                926 = { add_core_of = DEN }
+                331 = { add_core_of = DEN }
+
+                DEN = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = DEN
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.25
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.25"
+    }
+    title = "Establishing the Deutsch Shogunate"
+    desc = JAPoccupation.25.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = GER
+
+        name = "The Deutsch Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            GER = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = GER_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = GER
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            GER = {
+                every_core_state = {
+                    remove_core_of = GER
+                }
+                5 = { add_core_of = GER }
+                776 = { add_core_of = GER }
+                777 = { add_core_of = GER }
+                8 = { add_core_of = GER }
+                779 = { add_core_of = GER }
+                780 = { add_core_of = GER }
+                781 = { add_core_of = GER }
+                782 = { add_core_of = GER }
+                281 = { add_core_of = GER }
+                28 = { add_core_of = GER }
+                422 = { add_core_of = GER }
+                42 = { add_core_of = GER }
+                50 = { add_core_of = GER }
+                51 = { add_core_of = GER }
+                52 = { add_core_of = GER }
+                53 = { add_core_of = GER }
+                54 = { add_core_of = GER }
+                55 = { add_core_of = GER }
+                56 = { add_core_of = GER }
+                57 = { add_core_of = GER }
+                58 = { add_core_of = GER }
+                59 = { add_core_of = GER }
+                60 = { add_core_of = GER }
+                188 = { add_core_of = GER }
+                61 = { add_core_of = GER }
+                62 = { add_core_of = GER }
+                63 = { add_core_of = GER }
+                64 = { add_core_of = GER }
+                65 = { add_core_of = GER }
+                66 = { add_core_of = GER }
+                67 = { add_core_of = GER }
+                68 = { add_core_of = GER }
+                710 = { add_core_of = GER }
+                839 = { add_core_of = GER }
+                86 = { add_core_of = GER }
+                741 = { add_core_of = GER }
+                753 = { add_core_of = GER }
+
+                GER = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = GER
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.26
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.26"
+    }
+    title = "Establishing the IJA Administration of the Baltic"
+    desc = JAPoccupation.26.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = BAT
+
+        name = "The IJA Administration of the Baltic is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            BAT = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = BAT_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = BAT
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            BAT = {
+                every_core_state = {
+                    remove_core_of = BAT
+                }
+                11 = { add_core_of = BAT }
+                12 = { add_core_of = BAT }
+                13 = { add_core_of = BAT }
+                1294 = { add_core_of = BAT }
+                1295 = { add_core_of = BAT }
+                655 = { add_core_of = BAT }
+                1329 = { add_core_of = BAT }
+                189 = { add_core_of = BAT }
+                190 = { add_core_of = BAT }
+                191 = { add_core_of = BAT }
+                1087 = { add_core_of = BAT }
+                194 = { add_core_of = BAT }
+                1091 = { add_core_of = BAT }
+                204 = { add_core_of = BAT }
+                206 = { add_core_of = BAT }
+                207 = { add_core_of = BAT }
+                94 = { add_core_of = BAT }
+                95 = { add_core_of = BAT }
+                96 = { add_core_of = BAT }
+
+                BAT = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = BAT
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.27
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.27"
+    }
+    title = "Establishing the Imperial Prefecture of Alash"
+    desc = JAPoccupation.27.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = ALO
+
+        name = "The Imperial Prefecture of Alash is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            ALO = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = ALO_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = ALO
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            ALO = {
+                every_core_state = {
+                    remove_core_of = ALO
+                }
+                810 = { add_core_of = ALO }
+                587 = { add_core_of = ALO }
+                589 = { add_core_of = ALO }
+                590 = { add_core_of = ALO }
+                402 = { add_core_of = ALO }
+                1203 = { add_core_of = ALO }
+                404 = { add_core_of = ALO }
+                406 = { add_core_of = ALO }
+                1208 = { add_core_of = ALO }
+                1212 = { add_core_of = ALO }
+
+                ALO = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = ALO
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.28
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.28"
+    }
+    title = "Establishing the Austria-Hungary Shogunate"
+    desc = JAPoccupation.28.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = AUS
+
+        name = "The Austria-Hungary Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            AUS = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = AUS_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = AUS
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            AUS = {
+                every_core_state = {
+                    remove_core_of = AUS
+                }
+                4 = { add_core_of = AUS }
+                9 = { add_core_of = AUS }
+                39 = { add_core_of = AUS }
+                43 = { add_core_of = AUS }
+                45 = { add_core_of = AUS }
+                69 = { add_core_of = AUS }
+                70 = { add_core_of = AUS }
+                71 = { add_core_of = AUS }
+                73 = { add_core_of = AUS }
+                74 = { add_core_of = AUS }
+                75 = { add_core_of = AUS }
+                1100 = { add_core_of = AUS }
+                76 = { add_core_of = AUS }
+                80 = { add_core_of = AUS }
+                82 = { add_core_of = AUS }
+                83 = { add_core_of = AUS }
+                84 = { add_core_of = AUS }
+                1106 = { add_core_of = AUS }
+                1107 = { add_core_of = AUS }
+                1108 = { add_core_of = AUS }
+                88 = { add_core_of = AUS }
+                89 = { add_core_of = AUS }
+                1109 = { add_core_of = AUS }
+                1110 = { add_core_of = AUS }
+                1111 = { add_core_of = AUS }
+                1112 = { add_core_of = AUS }
+                1113 = { add_core_of = AUS }
+                1114 = { add_core_of = AUS }
+                1115 = { add_core_of = AUS }
+                1116 = { add_core_of = AUS }
+                1117 = { add_core_of = AUS }
+                1118 = { add_core_of = AUS }
+                1119 = { add_core_of = AUS }
+                1120 = { add_core_of = AUS }
+                1121 = { add_core_of = AUS }
+                1122 = { add_core_of = AUS }
+                1123 = { add_core_of = AUS }
+                1124 = { add_core_of = AUS }
+                1125 = { add_core_of = AUS }
+                1126 = { add_core_of = AUS }
+                1127 = { add_core_of = AUS }
+                1129 = { add_core_of = AUS }
+                1130 = { add_core_of = AUS }
+                1131 = { add_core_of = AUS }
+                1132 = { add_core_of = AUS }
+                1133 = { add_core_of = AUS }
+                1134 = { add_core_of = AUS }
+                1135 = { add_core_of = AUS }
+                1136 = { add_core_of = AUS }
+                1137 = { add_core_of = AUS }
+                1138 = { add_core_of = AUS }
+                1139 = { add_core_of = AUS }
+                1140 = { add_core_of = AUS }
+                1144 = { add_core_of = AUS }
+                152 = { add_core_of = AUS }
+                153 = { add_core_of = AUS }
+                154 = { add_core_of = AUS }
+                155 = { add_core_of = AUS }
+                664 = { add_core_of = AUS }
+                713 = { add_core_of = AUS }
+                1235 = { add_core_of = AUS }
+                736 = { add_core_of = AUS }
+                1272 = { add_core_of = AUS }
+                775 = { add_core_of = AUS }
+                783 = { add_core_of = AUS }
+                784 = { add_core_of = AUS }
+                786 = { add_core_of = AUS }
+                789 = { add_core_of = AUS }
+                1314 = { add_core_of = AUS }
+                1319 = { add_core_of = AUS }
+                835 = { add_core_of = AUS }
+                836 = { add_core_of = AUS }
+                875 = { add_core_of = AUS }
+                942 = { add_core_of = AUS }
+                91 = { add_core_of = AUS }
+
+                AUS = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = AUS
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.29
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.29"
+    }
+    title = "Establishing the France Shogunate"
+    desc = JAPoccupation.29.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = FRA
+
+        name = "The France Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            FRA = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = FRA_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = FRA
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            FRA = {
+                every_core_state = {
+                    remove_core_of = FRA
+                }
+                14 = { add_core_of = FRA }
+                15 = { add_core_of = FRA }
+                16 = { add_core_of = FRA }
+                17 = { add_core_of = FRA }
+                18 = { add_core_of = FRA }
+                19 = { add_core_of = FRA }
+                20 = { add_core_of = FRA }
+                21 = { add_core_of = FRA }
+                22 = { add_core_of = FRA }
+                23 = { add_core_of = FRA }
+                24 = { add_core_of = FRA }
+                25 = { add_core_of = FRA }
+                26 = { add_core_of = FRA }
+                27 = { add_core_of = FRA }
+                30 = { add_core_of = FRA }
+                31 = { add_core_of = FRA }
+                32 = { add_core_of = FRA }
+                33 = { add_core_of = FRA }
+                817 = { add_core_of = FRA }
+                980 = { add_core_of = FRA }
+                983 = { add_core_of = FRA }
+                984 = { add_core_of = FRA }
+                735 = { add_core_of = FRA }
+                785 = { add_core_of = FRA }
+                762 = { add_core_of = FRA }
+                763 = { add_core_of = FRA }
+
+                FRA = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = FRA
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.30
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.30"
+    }
+    title = "Establishing the IJA Administration of Switzerland"
+    desc = JAPoccupation.30.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = SWI
+
+        name = "The IJA Administration of Switzerland is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            SWI = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = SWI_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = SWI
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            SWI = {
+                every_core_state = {
+                    remove_core_of = SWI
+                }
+                3 = { add_core_of = SWI }
+                943 = { add_core_of = SWI }
+                151 = { add_core_of = SWI }
+                760 = { add_core_of = SWI }
+                761 = { add_core_of = SWI }
+
+                SWI = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = SWI
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.31
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.30"
+    }
+    title = "Establishing the Dutch Shogunate"
+    desc = JAPoccupation.30.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = HOL
+
+        name = "The Dutch Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            HOL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = HOL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = HOL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            HOL = {
+                every_core_state = {
+                    remove_core_of = HOL
+                }
+                866 = { add_core_of = HOL }
+                35 = { add_core_of = HOL }
+                36 = { add_core_of = HOL }
+                7 = { add_core_of = HOL }
+                978 = { add_core_of = HOL }
+                979 = { add_core_of = HOL }
+
+                HOL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = HOL
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+country_event = {
+    id = JAPoccupation.32
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.31"
+    }
+    title = "Establishing the Belgium Shogunate"
+    desc = JAPoccupation.31.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = BEL
+
+        name = "The Belgium Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            BEL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = BEL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = BEL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            BEL = {
+                every_core_state = {
+                    remove_core_of = BEL
+                }
+                741 = { add_core_of = BEL }
+                34 = { add_core_of = BEL }
+                29 = { add_core_of = BEL }
+                6 = { add_core_of = BEL }
+
+                BEL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = BEL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.33
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.33"
+    }
+    title = "Establishing the Kiev Shogunate"
+    desc = JAPoccupation.33.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = UKR
+
+        name = "The Kiev Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            UKR = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = UKR_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = UKR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            UKR = {
+                every_core_state = {
+                    remove_core_of = UKR
+                }
+                1282 = { add_core_of = UKR }
+                1283 = { add_core_of = UKR }
+                1284 = { add_core_of = UKR }
+                1285 = { add_core_of = UKR }
+                1286 = { add_core_of = UKR }
+                259  = { add_core_of = UKR }
+                137  = { add_core_of = UKR }
+                791  = { add_core_of = UKR }
+                792  = { add_core_of = UKR }
+                192  = { add_core_of = UKR }
+                193  = { add_core_of = UKR }
+                1220 = { add_core_of = UKR }
+                1221 = { add_core_of = UKR }
+                196  = { add_core_of = UKR }
+                197  = { add_core_of = UKR }
+                198  = { add_core_of = UKR }
+                199  = { add_core_of = UKR }
+                200  = { add_core_of = UKR }
+                201  = { add_core_of = UKR }
+                1228 = { add_core_of = UKR }
+                202  = { add_core_of = UKR }
+                1230 = { add_core_of = UKR }
+                203  = { add_core_of = UKR }
+                1232 = { add_core_of = UKR }
+                1233 = { add_core_of = UKR }
+                1234 = { add_core_of = UKR }
+                1237 = { add_core_of = UKR }
+                1238 = { add_core_of = UKR }
+                1239 = { add_core_of = UKR }
+                1240 = { add_core_of = UKR }
+                1241 = { add_core_of = UKR }
+                1242 = { add_core_of = UKR }
+                1243 = { add_core_of = UKR }
+                1244 = { add_core_of = UKR }
+                1245 = { add_core_of = UKR }
+                221  = { add_core_of = UKR }
+                93   = { add_core_of = UKR }
+                225  = { add_core_of = UKR }
+                226  = { add_core_of = UKR }
+                227  = { add_core_of = UKR }
+                228  = { add_core_of = UKR }
+                997  = { add_core_of = UKR }
+                241  = { add_core_of = UKR }
+
+                UKR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = UKR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.34
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.34"
+    }
+    title = "Establishing the IJA Administration of Poland"
+    desc = JAPoccupation.34.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = POL
+
+        name = "The IJA Administration of Poland is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            POL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = POL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = POL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            POL = {
+                every_core_state = {
+                    remove_core_of = POL
+                }
+                1088 = { add_core_of = POL }
+                97   = { add_core_of = POL }
+                98   = { add_core_of = POL }
+                10   = { add_core_of = POL }
+                92   = { add_core_of = POL }
+                87   = { add_core_of = POL }
+                90   = { add_core_of = POL }
+                1148 = { add_core_of = POL }
+
+                POL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = POL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.35
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.35"
+    }
+    title = "Establishing the Spain Shogunate"
+    desc = JAPoccupation.35.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = SPR
+
+        name = "The Spain Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            SPR = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = SPR_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = SPR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            SPR = {
+                every_core_state = {
+                    remove_core_of = SPR
+                }
+                793  = { add_core_of = SPR }
+                795  = { add_core_of = SPR }
+                1313 = { add_core_of = SPR }
+                165  = { add_core_of = SPR }
+                166  = { add_core_of = SPR }
+                167  = { add_core_of = SPR }
+                168  = { add_core_of = SPR }
+                169  = { add_core_of = SPR }
+                170  = { add_core_of = SPR }
+                171  = { add_core_of = SPR }
+                172  = { add_core_of = SPR }
+                173  = { add_core_of = SPR }
+                174  = { add_core_of = SPR }
+                175  = { add_core_of = SPR }
+                176  = { add_core_of = SPR }
+                177  = { add_core_of = SPR }
+                178  = { add_core_of = SPR }
+                940  = { add_core_of = SPR }
+                951  = { add_core_of = SPR }
+                41   = { add_core_of = SPR }
+                118  = { add_core_of = SPR }
+
+                SPR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = SPR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.36
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.36"
+    }
+    title = "Establishing the Imperial Prefecture of Illyria"
+    desc = JAPoccupation.36.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = CRO
+
+        name = "The Imperial Prefecture of Illyria is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            CRO = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = CRO_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = CRO
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            CRO = {
+                every_core_state = {
+                    remove_core_of = CRO
+                }
+                163  = { add_core_of = CRO }
+                103  = { add_core_of = CRO }
+                104  = { add_core_of = CRO }
+                105  = { add_core_of = CRO }
+                1097 = { add_core_of = CRO }
+                1098 = { add_core_of = CRO }
+                1099 = { add_core_of = CRO }
+                109  = { add_core_of = CRO }
+                1102 = { add_core_of = CRO }
+                1128 = { add_core_of = CRO }
+                1105 = { add_core_of = CRO }
+                1141 = { add_core_of = CRO }
+                1142 = { add_core_of = CRO }
+                1143 = { add_core_of = CRO }
+                1206 = { add_core_of = CRO }
+                1145 = { add_core_of = CRO }
+                1270 = { add_core_of = CRO }
+                794  = { add_core_of = CRO }
+
+                CRO = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = CRO
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.37
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.37"
+    }
+    title = "Establishing the IJA Administration of Serbia"
+    desc = JAPoccupation.37.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = SER
+
+        name = "The IJA Administration of Serbia is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            SER = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = SER_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = SER
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            SER = {
+                every_core_state = {
+                    remove_core_of = SER
+                }
+                107  = { add_core_of = SER }
+                108  = { add_core_of = SER }
+                1269 = { add_core_of = SER }
+                765  = { add_core_of = SER }
+                767  = { add_core_of = SER }
+
+                SER = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = SER
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.38
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.38"
+    }
+    title = "Establishing the Imperial Prefecture of Greece"
+    desc = JAPoccupation.38.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = GRE
+
+        name = "The Imperial Prefecture of Greece is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            GRE = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = GRE_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = GRE
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            GRE = {
+                every_core_state = {
+                    remove_core_of = GRE
+                }
+                1089 = { add_core_of = GRE }
+                1090 = { add_core_of = GRE }
+                769  = { add_core_of = GRE }
+                770  = { add_core_of = GRE }
+                771  = { add_core_of = GRE }
+                772  = { add_core_of = GRE }
+                841  = { add_core_of = GRE }
+                106  = { add_core_of = GRE }
+                44   = { add_core_of = GRE }
+                77   = { add_core_of = GRE }
+                48   = { add_core_of = GRE }
+                211  = { add_core_of = GRE }
+                1268 = { add_core_of = GRE }
+                212  = { add_core_of = GRE }
+                1271 = { add_core_of = GRE }
+                184  = { add_core_of = GRE }
+                731  = { add_core_of = GRE }
+                766  = { add_core_of = GRE }
+
+                GRE = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = GRE
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.39
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.39"
+    }
+    title = "Establishing the Imperial Prefecture of Bulgaria"
+    desc = JAPoccupation.39.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = BUL
+
+        name = "The Imperial Prefecture of Bulgaria is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            BUL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = BUL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = BUL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            BUL = {
+                every_core_state = {
+                    remove_core_of = BUL
+                }
+                1089 = { add_core_of = BUL }
+                1090 = { add_core_of = BUL }
+                769  = { add_core_of = BUL }
+                770  = { add_core_of = BUL }
+                771  = { add_core_of = BUL }
+                772  = { add_core_of = BUL }
+                841  = { add_core_of = BUL }
+                106  = { add_core_of = BUL }
+                77   = { add_core_of = BUL }
+                48   = { add_core_of = BUL }
+                211  = { add_core_of = BUL }
+                212  = { add_core_of = BUL }
+                1271 = { add_core_of = BUL }
+                184  = { add_core_of = BUL }
+                731  = { add_core_of = BUL }
+
+                BUL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = BUL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.40
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.40"
+    }
+    title = "Establishing the Romania Shogunate"
+    desc = JAPoccupation.40.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = ROM
+
+        name = "The Romania Shogunate is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            ROM = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = ROM_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = ROM
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            ROM = {
+                every_core_state = {
+                    remove_core_of = ROM
+                }
+                1222 = { add_core_of = ROM }
+                1320 = { add_core_of = ROM }
+                46   = { add_core_of = ROM }
+                79   = { add_core_of = ROM }
+                78   = { add_core_of = ROM }
+                81   = { add_core_of = ROM }
+
+                ROM = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = ROM
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.41
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.41"
+    }
+    title = "Establishing the IJN Administration of Portugal"
+    desc = JAPoccupation.41.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = POR
+
+        name = "The IJN Administration of Portugal is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            POR = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = POR_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = POR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            POR = {
+                every_core_state = {
+                    remove_core_of = POR
+                }
+                705 = { add_core_of = POR }
+                112 = { add_core_of = POR }
+                179 = { add_core_of = POR }
+                180 = { add_core_of = POR }
+                181 = { add_core_of = POR }
+                697 = { add_core_of = POR }
+                698 = { add_core_of = POR }
+                702 = { add_core_of = POR }
+
+                POR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = POR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.42
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.42"
+    }
+    title = "Establishing the Imperial Prefecture of United Kingdom"
+    desc = JAPoccupation.42.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = ENG
+
+        name = "The Imperial Prefecture of United Kingdom is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            ENG = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = ENG_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = ENG
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            ENG = {
+                every_core_state = {
+                    remove_core_of = ENG
+                }
+                128 = { add_core_of = ENG }
+                129 = { add_core_of = ENG }
+                130 = { add_core_of = ENG }
+                131 = { add_core_of = ENG }
+                132 = { add_core_of = ENG }
+                133 = { add_core_of = ENG }
+                134 = { add_core_of = ENG }
+                135 = { add_core_of = ENG }
+                136 = { add_core_of = ENG }
+                1315 = { add_core_of = ENG }
+                1317 = { add_core_of = ENG }
+                938 = { add_core_of = ENG }
+                338 = { add_core_of = ENG }
+                113 = { add_core_of = ENG }
+                119 = { add_core_of = ENG }
+                120 = { add_core_of = ENG }
+                121 = { add_core_of = ENG }
+                122 = { add_core_of = ENG }
+                123 = { add_core_of = ENG }
+                125 = { add_core_of = ENG }
+                126 = { add_core_of = ENG }
+                127 = { add_core_of = ENG }
+
+                ENG = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = ENG
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.43
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.43"
+    }
+    title = "Establishing the Imperial Prefecture of Ottoman"
+    desc = JAPoccupation.43.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = TUR
+
+        name = "The Imperial Prefecture of Ottoman is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            TUR = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = TUR_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = TUR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            TUR = {
+                every_core_state = {
+                    remove_core_of = TUR
+                }
+                	1000 = { add_core_of = TUR }
+					1001 = { add_core_of = TUR }
+					1213 = { add_core_of = TUR }
+					1225 = { add_core_of = TUR }
+					164 = { add_core_of = TUR }
+					273 = { add_core_of = TUR }
+					339 = { add_core_of = TUR }
+					340 = { add_core_of = TUR }
+					341 = { add_core_of = TUR }
+					342 = { add_core_of = TUR }
+					343 = { add_core_of = TUR }
+					344 = { add_core_of = TUR }
+					345 = { add_core_of = TUR }
+					346 = { add_core_of = TUR }
+					354 = { add_core_of = TUR }
+					355 = { add_core_of = TUR }
+					356 = { add_core_of = TUR }
+					49 = { add_core_of = TUR }
+					773 = { add_core_of = TUR }
+
+                TUR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = TUR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.44
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.44"
+    }
+    title = "Establishing the Imperial Prefecture of Turkestan"
+    desc = JAPoccupation.44.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = TRK
+
+        name = "The Imperial Prefecture of Turkestan is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            TRK = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = TRK_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = TRK
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            TRK = {
+                every_core_state = {
+                    remove_core_of = TRK
+                }
+                1281 = { add_core_of = TRK }
+                1042 = { add_core_of = TRK }
+                405 = { add_core_of = TRK }
+                407 = { add_core_of = TRK }
+                1196 = { add_core_of = TRK }
+                1209 = { add_core_of = TRK }
+                1210 = { add_core_of = TRK }
+                1211 = { add_core_of = TRK }
+                584 = { add_core_of = TRK }
+                585 = { add_core_of = TRK }
+                586 = { add_core_of = TRK }
+                712 = { add_core_of = TRK }
+                732 = { add_core_of = TRK }
+                861 = { add_core_of = TRK }
+                1275 = { add_core_of = TRK }
+                1276 = { add_core_of = TRK }
+                1277 = { add_core_of = TRK }
+                1278 = { add_core_of = TRK }
+                1279 = { add_core_of = TRK }
+
+                TRK = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = TRK
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.45
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.45"
+    }
+    title = "Establishing the Imperial Prefecture of Persia"
+    desc = JAPoccupation.45.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = PER
+
+        name = "The Imperial Prefecture of Persia is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            PER = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = PER_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = PER
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            PER = {
+                every_core_state = {
+                    remove_core_of = PER
+                }
+                416 = { add_core_of = PER }
+                417 = { add_core_of = PER }
+                418 = { add_core_of = PER }
+                419 = { add_core_of = PER }
+                420 = { add_core_of = PER }
+                421 = { add_core_of = PER }
+                804 = { add_core_of = PER }
+                266 = { add_core_of = PER }
+                410 = { add_core_of = PER }
+                411 = { add_core_of = PER }
+                412 = { add_core_of = PER }
+                413 = { add_core_of = PER }
+                414 = { add_core_of = PER }
+
+                PER = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = PER
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.46
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.46"
+    }
+    title = "Establishing the IJA Administration of Caucasia"
+    desc = JAPoccupation.46.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = DKB
+
+        name = "The IJA Administration of Caucasia is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            DKB = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = MTN_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = DKB
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            DKB = {
+                every_core_state = {
+                    remove_core_of = DKB
+                }
+                1298 = { add_core_of = DKB }
+                1299 = { add_core_of = DKB }
+                1300 = { add_core_of = DKB }
+                1301 = { add_core_of = DKB }
+                1302 = { add_core_of = DKB }
+                1303 = { add_core_of = DKB }
+                1304 = { add_core_of = DKB }
+                1188 = { add_core_of = DKB }
+                1190 = { add_core_of = DKB }
+                1080 = { add_core_of = DKB }
+                1081 = { add_core_of = DKB }
+                1082 = { add_core_of = DKB }
+                1213 = { add_core_of = DKB }
+                1226 = { add_core_of = DKB }
+                1227 = { add_core_of = DKB }
+                1231 = { add_core_of = DKB }
+                218 = { add_core_of = DKB }
+                990 = { add_core_of = DKB }
+                229 = { add_core_of = DKB }
+                998 = { add_core_of = DKB }
+                231 = { add_core_of = DKB }
+                234 = { add_core_of = DKB }
+                235 = { add_core_of = DKB }
+                237 = { add_core_of = DKB }
+                238 = { add_core_of = DKB }
+                1263 = { add_core_of = DKB }
+                1264 = { add_core_of = DKB }
+                1265 = { add_core_of = DKB }
+                1266 = { add_core_of = DKB }
+                1267 = { add_core_of = DKB }
+                245 = { add_core_of = DKB }
+
+                DKB = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = DKB
+                    }
+                }
+            }
+        }
+    }
+} 
+
+country_event = {
+    id = JAPoccupation.47
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.47"
+    }
+    title = "Establishing the Imperial Prefecture of Brazil"
+    desc = JAPoccupation.47.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = BRA
+
+        name = "The Imperial Prefecture of Brazil is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            BRA = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = BRA_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = BRA
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            BRA = {
+                every_core_state = {
+                    remove_core_of = BRA
+                }
+                896 = { add_core_of = BRA }
+                898 = { add_core_of = BRA }
+                900 = { add_core_of = BRA }
+                1030 = { add_core_of = BRA }
+                1031 = { add_core_of = BRA }
+                1033 = { add_core_of = BRA }
+                1040 = { add_core_of = BRA }
+                1041 = { add_core_of = BRA }
+                1043 = { add_core_of = BRA }
+                280 = { add_core_of = BRA }
+                1305 = { add_core_of = BRA }
+                1306 = { add_core_of = BRA }
+                1307 = { add_core_of = BRA }
+                1310 = { add_core_of = BRA }
+                1311 = { add_core_of = BRA }
+                855 = { add_core_of = BRA }
+                495 = { add_core_of = BRA }
+                496 = { add_core_of = BRA }
+                497 = { add_core_of = BRA }
+                498 = { add_core_of = BRA }
+                499 = { add_core_of = BRA }
+                500 = { add_core_of = BRA }
+                501 = { add_core_of = BRA }
+                502 = { add_core_of = BRA }
+                503 = { add_core_of = BRA }
+                504 = { add_core_of = BRA }
+                505 = { add_core_of = BRA }
+                894 = { add_core_of = BRA }
+                895 = { add_core_of = BRA }
+
+                BRA = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = BRA
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.48
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.48"
+    }
+    title = "Establishing the Peru Prefecture"
+    desc = JAPoccupation.48.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = PRU
+
+        name = "The Peru Prefecture is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            PRU = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = PRU_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = PRU
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            PRU = {
+                every_core_state = {
+                    remove_core_of = PRU
+                }
+                1027 = { add_core_of = PRU }
+                487 = { add_core_of = PRU }
+                872 = { add_core_of = PRU }
+                873 = { add_core_of = PRU }
+                490 = { add_core_of = PRU }
+                491 = { add_core_of = PRU }
+                492 = { add_core_of = PRU }
+                845 = { add_core_of = PRU }
+                302 = { add_core_of = PRU }
+                303 = { add_core_of = PRU }
+                494 = { add_core_of = PRU }
+                1073 = { add_core_of = PRU }
+                688 = { add_core_of = PRU }
+                847 = { add_core_of = PRU }
+                848 = { add_core_of = PRU }
+                506 = { add_core_of = PRU }
+
+                PRU = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = PRU
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.48
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.48"
+    }
+    title = "Establishing the Peru Prefecture"
+    desc = JAPoccupation.48.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = PRU
+
+        name = "The Peru Prefecture is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            PRU = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = PRU_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = PRU
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            PRU = {
+                every_core_state = {
+                    remove_core_of = PRU
+                }
+                1027 = { add_core_of = PRU }
+                487 = { add_core_of = PRU }
+                872 = { add_core_of = PRU }
+                873 = { add_core_of = PRU }
+                490 = { add_core_of = PRU }
+                491 = { add_core_of = PRU }
+                492 = { add_core_of = PRU }
+                845 = { add_core_of = PRU }
+                302 = { add_core_of = PRU }
+                303 = { add_core_of = PRU }
+                494 = { add_core_of = PRU }
+                1073 = { add_core_of = PRU }
+                688 = { add_core_of = PRU }
+                847 = { add_core_of = PRU }
+                848 = { add_core_of = PRU }
+                506 = { add_core_of = PRU }
+
+                PRU = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = PRU
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.49
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.49"
+    }
+    title = "Establishing the Imperial Prefecture of Chile"
+    desc = JAPoccupation.49.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = CHL
+
+        name = "The Imperial Prefecture of Chile is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            CHL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = CHL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = CHL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            CHL = {
+                every_core_state = {
+                    remove_core_of = CHL
+                }
+                872 = { add_core_of = CHL }
+                873 = { add_core_of = CHL }
+                874 = { add_core_of = CHL }
+                270 = { add_core_of = CHL }
+                279 = { add_core_of = CHL }
+                506 = { add_core_of = CHL }
+                507 = { add_core_of = CHL }
+
+                CHL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = CHL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.50
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.50"
+    }
+    title = "Establishing the Imperial Prefecture of Argentina"
+    desc = JAPoccupation.50.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = ARG
+
+        name = "The Imperial Prefecture of Argentina is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            ARG = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = ARG_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = ARG
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            ARG = {
+                every_core_state = {
+                    remove_core_of = ARG
+                }
+                512 = { add_core_of = ARG }
+                1027 = { add_core_of = ARG }
+                1028 = { add_core_of = ARG }
+                1029 = { add_core_of = ARG }
+                901 = { add_core_of = ARG }
+                902 = { add_core_of = ARG }
+                903 = { add_core_of = ARG }
+                904 = { add_core_of = ARG }
+                278 = { add_core_of = ARG }
+                299 = { add_core_of = ARG }
+                301 = { add_core_of = ARG }
+                688 = { add_core_of = ARG }
+                1074 = { add_core_of = ARG }
+                449 = { add_core_of = ARG }
+                579 = { add_core_of = ARG }
+                720 = { add_core_of = ARG }
+                508 = { add_core_of = ARG }
+                509 = { add_core_of = ARG }
+                510 = { add_core_of = ARG }
+                511 = { add_core_of = ARG }
+
+                ARG = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = ARG
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.51
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.51"
+    }
+    title = "Establishing the Imperial Prefecture of Gran Columbia"
+    desc = JAPoccupation.51.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = COL
+
+        name = "The Imperial Prefecture of Gran Columbia is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            COL = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = COL_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = COL
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            COL = {
+                every_core_state = {
+                    remove_core_of = COL
+                }
+                1280 = { add_core_of = COL }
+                649 = { add_core_of = COL }
+                1036 = { add_core_of = COL }
+                1296 = { add_core_of = COL }
+                912 = { add_core_of = COL }
+                305 = { add_core_of = COL }
+                306 = { add_core_of = COL }
+                307 = { add_core_of = COL }
+                1214 = { add_core_of = COL }
+                1215 = { add_core_of = COL }
+                1216 = { add_core_of = COL }
+                849 = { add_core_of = COL }
+                850 = { add_core_of = COL }
+                851 = { add_core_of = COL }
+                852 = { add_core_of = COL }
+                853 = { add_core_of = COL }
+                486 = { add_core_of = COL }
+                488 = { add_core_of = COL }
+                489 = { add_core_of = COL }
+                490 = { add_core_of = COL }
+                493 = { add_core_of = COL }
+
+                COL = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = COL
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.52
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.52"
+    }
+    title = "Establishing the Imperial Prefecture of Mexico"
+    desc = JAPoccupation.52.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = MEX
+
+        name = "The Imperial Prefecture of Mexico is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            MEX = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = MEX_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = MEX
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            MEX = {
+                every_core_state = {
+                    remove_core_of = MEX
+                }
+                480 = { add_core_of = MEX }
+                481 = { add_core_of = MEX }
+                482 = { add_core_of = MEX }
+                483 = { add_core_of = MEX }
+                1252 = { add_core_of = MEX }
+                1253 = { add_core_of = MEX }
+                1254 = { add_core_of = MEX }
+                1255 = { add_core_of = MEX }
+                484 = { add_core_of = MEX }
+                485 = { add_core_of = MEX }
+                277 = { add_core_of = MEX }
+                474 = { add_core_of = MEX }
+                475 = { add_core_of = MEX }
+                476 = { add_core_of = MEX }
+                477 = { add_core_of = MEX }
+                478 = { add_core_of = MEX }
+                479 = { add_core_of = MEX }
+
+                MEX = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = MEX
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.53
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.53"
+    }
+    title = "Establishing the IJA Administration of Central America"
+    desc = JAPoccupation.53.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = CEN
+
+        name = "The IJA Administration of Central America is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            CEN = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = CEN_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = CEN
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            CEN = {
+                every_core_state = {
+                    remove_core_of = CEN
+                }
+                1070 = { add_core_of = CEN }
+                1071 = { add_core_of = CEN }
+                311 = { add_core_of = CEN }
+                312 = { add_core_of = CEN }
+                313 = { add_core_of = CEN }
+                314 = { add_core_of = CEN }
+                316 = { add_core_of = CEN }
+                317 = { add_core_of = CEN }
+                842 = { add_core_of = CEN }
+                1247 = { add_core_of = CEN }
+                1249 = { add_core_of = CEN }
+                1250 = { add_core_of = CEN }
+                1251 = { add_core_of = CEN }
+                1256 = { add_core_of = CEN }
+                1258 = { add_core_of = CEN }
+                1259 = { add_core_of = CEN }
+                1260 = { add_core_of = CEN }
+                1261 = { add_core_of = CEN }
+                1262 = { add_core_of = CEN }
+
+                CEN = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = CEN
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = JAPoccupation.54
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event JAPoccupation.54"
+    }
+    title = "Establishing the IJN Administration of Panama"
+    desc = JAPoccupation.54.d
+    picture = GFX_report_event_generic_diplomacy
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = PAN
+
+        name = "The IJN Administration of Panama is formed!"
+        add_political_power = 75
+        hidden_effect = {
+            PAN = {
+                set_country_flag = jap_formable
+                set_cosmetic_tag = PAN_JAP_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                JAP = {
+                    set_autonomy = {
+                        target = PAN
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            PAN = {
+                every_core_state = {
+                    remove_core_of = PAN
+                }
+                1248 = { add_core_of = PAN }
+                1257 = { add_core_of = PAN }
+                685 = { add_core_of = PAN }
+                1070 = { add_core_of = PAN }
+                304 = { add_core_of = PAN }
+                854 = { add_core_of = PAN }
+
+                PAN = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = JAP
+                                OWNER = { is_subject_of = JAP }
+                            }
+                        }
+                        transfer_state_to = PAN
+                    }
+                }
+            }
+        }
+    }
+}

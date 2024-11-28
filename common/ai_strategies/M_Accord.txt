@@ -1,0 +1,1030 @@
+MACCORD_Priority_1 = {
+	allowed = {
+		OR = {
+		   tag = GRE
+		   tag = BUL
+		   tag = SER
+		}
+	}
+	enable = {
+		is_in_faction_with = RUS
+	}
+	abort = { always = no } 
+    ai_strategy = {
+        type = spare_unit_factor
+        value = -100
+    }	
+	ai_strategy = {
+		type = garrison
+		value = 200
+	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "GRU"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "BAY"
+   		value = 100
+   	}	
+    ai_strategy = {
+        type = area_priority
+        id = balkans
+        value = 200
+    }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EGY
+        value = 200
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = RUS
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LPD
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DJI
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DDR
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = ALA
+        value = 200
+    }	
+}
+MACCORD_Priority_2 = {
+	allowed = {
+		tag = CZE
+	}
+	enable = {
+		is_in_faction_with = RUS
+	}
+	abort = { always = no } 
+    ai_strategy = {
+        type = spare_unit_factor
+        value = -100
+    }	
+	ai_strategy = {
+		type = garrison
+		value = 200
+	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "GRU"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "NGF"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "BAY"
+   		value = 100
+   	}	
+    ai_strategy = {
+        type = area_priority
+        id = central_europe
+        value = 200
+    }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EGY
+        value = 200
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = RUS
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LPD
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DJI
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DDR
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = ALA
+        value = 200
+    }	
+}
+MACCORD_Priority_3 = {
+	allowed = {
+		tag = ROM
+	}
+	enable = {
+		is_in_faction_with = RUS
+	}
+	abort = { always = no } 
+    ai_strategy = {
+        type = spare_unit_factor
+        value = -100
+    }	
+	ai_strategy = {
+		type = garrison
+		value = 200
+	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "GRU"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "NGF"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "BAY"
+   		value = 100
+   	}	
+    ai_strategy = {
+        type = area_priority
+        id = romania
+        value = 200
+    }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EGY
+        value = 200
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = RUS
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LPD
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DJI
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DDR
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = ALA
+        value = 200
+    }	
+}
+MACCORD_Priority_4 = {
+    allowed = {
+		OR = {
+		   tag = MEX
+		   tag = CEN
+		}
+	}
+	enable = {
+		is_in_faction_with = RUS
+	}
+	abort = { always = no } 
+    ai_strategy = {
+        type = spare_unit_factor
+        value = -100
+    }	
+	ai_strategy = {
+		type = garrison
+		value = 200
+	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "CSA"
+   		value = 100
+   	}	
+    ai_strategy = {
+        type = area_priority
+        id = central_america
+        value = 200
+    }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EGY
+        value = 200
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = RUS
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LPD
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DJI
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DDR
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = ALA
+        value = 200
+    }	
+}
+MACCORD_Priority_5 = {
+    allowed = {
+		OR = {
+		   tag = PRU
+		   tag = COL
+		   tag = ECU
+		   tag = BOL
+		   tag = PAR
+		}
+	}
+	enable = {
+		is_in_faction_with = RUS
+	}
+	abort = { always = no }
+    ai_strategy = {
+        type = spare_unit_factor
+        value = -100
+    }	
+	ai_strategy = {
+		type = garrison
+		value = 200
+	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "VEN"
+   		value = 50
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "BRA"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "FOP"
+   		value = 100
+   	}
+	ai_strategy = {
+  		type = prepare_for_war
+		id = "CHL"
+   		value = 50
+   	}	
+    ai_strategy = {
+        type = area_priority
+        id = south_america
+        value = 200
+    }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EGY
+        value = 200
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = RUS
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = LPD
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DJI
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DDR
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = ALA
+        value = 200
+    }	
+}
+MACCORD_Priority_6 = {
+    allowed = {
+		tag = DJI
+	}
+	enable = {
+		is_in_faction_with = RUS
+	}
+	abort = { always = no }
+    ai_strategy = {
+        type = spare_unit_factor
+        value = -100
+    }	
+	ai_strategy = {
+		type = garrison
+		value = 200
+	}
+    ai_strategy = {
+        type = area_priority
+        id = middle_africa
+        value = 200
+    }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = EGY
+        value = 200
+    }	
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = RUS
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = DDR
+        value = 200
+    }
+    ai_strategy = {
+        type = dont_defend_ally_borders
+        id = ALA
+        value = 200
+    }	
+}
+MACCORD_Priority_7 = {
+    allowed = {
+	  OR = {
+		tag = DDR
+		tag = SWE
+		tag = HUN
+		tag = ALB
+		tag = NGF
+		tag = BAY
+		tag = BEL
+		tag = FRP
+		tag = GBP
+		tag = PRF
+		tag = PER
+		tag = IRQ
+		tag = EGY
+		tag = LIB
+		tag = GXC
+		tag = AST
+		tag = JAP
+		tag = INC
+		tag = INS
+		tag = SAF
+		tag = ALA 
+		tag = BRA
+		tag = VEN
+		tag = ARG
+		tag = CAL
+		tag = AML
+		tag = FSA
+		tag = NEE
+	  }
+	}
+	enable = {
+		is_subject_of = RUS
+	}
+	abort = { always = no }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }	
+}
+MACCORD_Priority_8 = {
+    allowed = {
+	  OR = {
+		tag = CAF
+		tag = HAW
+		tag = MAG
+	  }
+	}
+	enable = {
+		is_subject_of = RUS
+	}
+	abort = { always = no }
+    ai_strategy = {
+        type = air_factory_balance
+        value = -2000
+    }	
+	ai_strategy = {
+		type = dockyard_to_military_factory_ratio
+		value = 100
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 10
+	}	
+}
+INT_Third_Weltkrieg_1 = {
+	enable = {
+		is_in_faction_with = FRA
+		is_major = yes
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -12
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor_role
+		value = 12
+	}
+	ai_strategy = {
+		type = template_prio
+		id = anti_tank
+		value = 100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = modern_armor
+		value = 50
+	}
+	ai_strategy = {
+		type = template_prio
+		id = mechanized
+		value = 50
+	}
+    ai_strategy = {
+        type = build_army
+        id = anti_tank
+        value = 100
+    }
+    ai_strategy = {
+        type = build_army
+        id = mobile
+        value = 50
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 50
+    }	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = heavy_fighter
+		value = 30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = heavy_fighter
+		value = 30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -30
+	}
+}
+INT_Third_Weltkrieg_2 = {
+	enable = {
+		is_in_faction_with = FRA
+		is_major = no
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -4
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = armor_role
+		value = 4
+	}
+	ai_strategy = {
+		type = template_prio
+		id = anti_tank
+		value = 100
+	}
+	ai_strategy = {
+		type = template_prio
+		id = light_armor
+		value = 50
+	}
+	ai_strategy = {
+		type = template_prio
+		id = motorized
+		value = 50
+	}
+    ai_strategy = {
+        type = build_army
+        id = anti_tank
+        value = 100
+    }
+    ai_strategy = {
+        type = build_army
+        id = mobile
+        value = 50
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 50
+    }	
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = 30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = -30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -30
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -30
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -30
+	}
+}
+INT_Third_Weltkrieg_3 = {
+    allowed = {
+	        OR = {
+			   tag = FRA
+			   tag = SRI
+			   tag = FOP
+			   tag = BRA
+			   tag = GRU
+			   tag = WGR
+			   tag = BEL
+			   tag = HOL
+			   tag = NGF
+			   tag = AUS
+			   tag = BAY
+			   tag = SWE
+			   tag = NOR
+			   tag = POR
+			   tag = CNT
+			   tag = SWI
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 50
+    }	
+    ai_strategy = {
+        type = air_factory_balance
+        value = -10
+    }
+    ai_strategy = {
+        type = dockyard_to_military_factory_ratio
+        value = -10
+    }
+    ai_strategy = {
+        type = build_army
+        id = anti_tank
+        value = 100
+    }
+    ai_strategy = {
+        type = build_army
+        id = mobile
+        value = 50
+    }
+    ai_strategy = {
+        type = build_army
+        id = armor
+        value = 50
+    }	
+	
+}
+INT_Third_Weltkrieg_4 = {
+    allowed = {
+	        OR = {
+			   tag = CAN
+			   tag = CSA
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 25
+    }	
+    ai_strategy = {
+        type = air_factory_balance
+        value = 15
+    }
+    ai_strategy = {
+        type = dockyard_to_military_factory_ratio
+        value = 25
+    }
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 10
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 10
+	}
+	
+}
+INT_Third_Weltkrieg_5 = {
+    allowed = {
+	        tag = ENG
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = added_military_to_civilian_factory_ratio
+        value = 25
+    }	
+    ai_strategy = {
+        type = air_factory_balance
+        value = 40
+    }
+    ai_strategy = {
+        type = dockyard_to_military_factory_ratio
+        value = 15
+    }
+	
+}
+INT_Third_Weltkrieg_6 = {
+    allowed = {
+	        OR = {
+			   tag = FRA
+			   tag = SRI
+			   tag = BEL
+			   tag = HOL
+			   tag = POR
+			   tag = CNT
+			   tag = SWI
+			   tag = GRU
+			   tag = NGF
+			   tag = AUS
+			   tag = BAY
+			   tag = WGR
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = DDR
+        value = 100
+    }	
+    ai_strategy = {
+        type = prepare_for_war
+        id = CZE
+        value = 100
+    }	
+    ai_strategy = {
+        type = prepare_for_war
+        id = HUN
+        value = 100
+    }
+    ai_strategy = {
+        type = prepare_for_war
+        id = SER
+        value = 100
+    }	
+	
+}
+INT_Third_Weltkrieg_7 = {
+    allowed = {
+	        OR = {
+			   tag = FRA
+			   tag = SRI
+			   tag = BEL
+			   tag = HOL
+			   tag = POR
+			   tag = CNT
+			   tag = SWI
+			   tag = WGR
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = force_defend_ally_borders
+        id = GRU
+        value = 100
+    }	
+    ai_strategy = {
+        type = force_defend_ally_borders
+        id = AUS
+        value = 100
+    }	
+    ai_strategy = {
+        type = force_defend_ally_borders
+        id = NGF
+        value = 100
+    }
+    ai_strategy = {
+        type = force_defend_ally_borders
+        id = BAY
+        value = 100
+    }
+    ai_strategy = {
+        type = force_defend_ally_borders
+        id = SRI
+        value = 100
+    }		
+	
+}
+INT_Third_Weltkrieg_8 = {
+    allowed = {
+	        OR = {
+			   tag = SWE
+			   tag = NOR
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = RUS
+        value = 100
+    }		
+	
+}
+INT_Third_Weltkrieg_9 = {
+    allowed = {
+	        OR = {
+			   tag = FOP
+			   tag = CHL
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = BOL
+        value = 100
+    }		
+    ai_strategy = {
+        type = prepare_for_war
+        id = PAR
+        value = 100
+    }	
+    ai_strategy = {
+        type = prepare_for_war
+        id = PRU
+        value = 100
+    }	
+}
+INT_Third_Weltkrieg_10 = {
+    allowed = {
+	        OR = {
+			   tag = BRA
+			   tag = VEN
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = PRU
+        value = 100
+    }		
+    ai_strategy = {
+        type = prepare_for_war
+        id = COL
+        value = 100
+    }	
+    ai_strategy = {
+        type = prepare_for_war
+        id = ECU
+        value = 100
+    }	
+}
+INT_Third_Weltkrieg_11 = {
+    allowed = {
+	        OR = {
+			   tag = CSA
+			   tag = CAN
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = prepare_for_war
+        id = ALA
+        value = 100
+    }		
+    ai_strategy = {
+        type = prepare_for_war
+        id = MEX
+        value = 100
+    }		
+}
+INT_Third_Weltkrieg_12 = {
+    allowed = {
+	        OR = {
+			   tag = ENG
+			   tag = IRE
+			}
+	}
+	enable = {
+		is_in_faction_with = FRA
+		RUS = {
+		has_completed_focus = RUS_Supremacy
+		}		
+	}
+
+	abort_when_not_enabled = yes
+    ai_strategy = {
+        type = garrison
+        value = 30
+    }		
+}

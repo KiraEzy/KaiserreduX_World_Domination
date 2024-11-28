@@ -1,0 +1,4584 @@
+add_namespace = CALoccupation
+country_event = {
+    id = CALoccupation.1
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.1"
+    }
+    title = "Deal With Protectorate of the United States"
+    desc = CALoccupation.1.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = USA
+
+        name = "The Protectorate of the United States is established!"
+        add_political_power = 75
+        hidden_effect = {
+            USA = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = USA_CAL_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = USA
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            USA = {
+                every_core_state = {
+                    remove_core_of = USA
+                }
+                1096 = { add_core_of = USA }
+                    1150 = { add_core_of = USA }
+                    1151 = { add_core_of = USA }
+                    1152 = { add_core_of = USA }
+                    1153 = { add_core_of = USA }
+                    1154 = { add_core_of = USA }
+                    1155 = { add_core_of = USA }
+                    1156 = { add_core_of = USA }
+                    1157 = { add_core_of = USA }
+                    1158 = { add_core_of = USA }
+                    1159 = { add_core_of = USA }
+                    1160 = { add_core_of = USA }
+                    1161 = { add_core_of = USA }
+                    1162 = { add_core_of = USA }
+                    1163 = { add_core_of = USA }
+                    1164 = { add_core_of = USA }
+                    1166 = { add_core_of = USA }
+                    1167 = { add_core_of = USA }
+                    1168 = { add_core_of = USA }
+                    1169 = { add_core_of = USA }
+                    1170 = { add_core_of = USA }
+                    1171 = { add_core_of = USA }
+                    1172 = { add_core_of = USA }
+                    1173 = { add_core_of = USA }
+                    1174 = { add_core_of = USA }
+                    1175 = { add_core_of = USA }
+                    261 = { add_core_of = USA }
+                    796 = { add_core_of = USA }
+                    833 = { add_core_of = USA }
+                    357 = { add_core_of = USA }
+                    358 = { add_core_of = USA }
+                    359 = { add_core_of = USA }
+                    360 = { add_core_of = USA }
+                    361 = { add_core_of = USA }
+                    362 = { add_core_of = USA }
+                    363 = { add_core_of = USA }
+                    364 = { add_core_of = USA }
+                    365 = { add_core_of = USA }
+                    366 = { add_core_of = USA }
+                    367 = { add_core_of = USA }
+                    368 = { add_core_of = USA }
+                    369 = { add_core_of = USA }
+                    370 = { add_core_of = USA }
+                    371 = { add_core_of = USA }
+                    372 = { add_core_of = USA }
+                    373 = { add_core_of = USA }
+                    374 = { add_core_of = USA }
+                    375 = { add_core_of = USA }
+                    381 = { add_core_of = USA }
+                    382 = { add_core_of = USA }
+                    383 = { add_core_of = USA }
+                    384 = { add_core_of = USA }
+                    387 = { add_core_of = USA }
+                    388 = { add_core_of = USA }
+                    389 = { add_core_of = USA }
+                    390 = { add_core_of = USA }
+                    391 = { add_core_of = USA }
+                    392 = { add_core_of = USA }
+                    393 = { add_core_of = USA }
+                    394 = { add_core_of = USA }
+                    395 = { add_core_of = USA }
+                    396 = { add_core_of = USA }
+                    929 = { add_core_of = USA }
+                    930 = { add_core_of = USA }
+                    931 = { add_core_of = USA }
+                    932 = { add_core_of = USA }
+                    933 = { add_core_of = USA }
+                    934 = { add_core_of = USA }
+                    935 = { add_core_of = USA }
+
+                USA = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                AND = {
+                                    NOT = {is_core_of = CAL}
+                                    is_owned_by = CAL
+                                }
+                                OWNER = { is_subject_of = CAL }
+                            }
+                        }
+                        transfer_state_to = USA
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+	id = CALoccupation.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.2"
+	}
+	title = "Deal With Protectorate of Gran Columbia"
+	desc = CALoccupation.2.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = COL
+
+		name = "The Protectorate of Gran Columbia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			COL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = COL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = COL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			COL = {
+				every_core_state = {
+					remove_core_of = COL
+				}
+				1280 = { add_core_of = COL } 
+				649 = { add_core_of = COL } 
+				1036 = { add_core_of = COL } 
+				1296 = { add_core_of = COL } 
+				912 = { add_core_of = COL } 
+				305 = { add_core_of = COL } 
+				306 = { add_core_of = COL } 
+				307 = { add_core_of = COL } 
+				1214 = { add_core_of = COL } 
+				1215 = { add_core_of = COL } 
+				1216 = { add_core_of = COL } 
+				849 = { add_core_of = COL } 
+				850 = { add_core_of = COL } 
+				851 = { add_core_of = COL } 
+				852 = { add_core_of = COL } 
+				853 = { add_core_of = COL } 
+				486 = { add_core_of = COL } 
+				488 = { add_core_of = COL } 
+				489 = { add_core_of = COL } 
+				490 = { add_core_of = COL } 
+				493 = { add_core_of = COL } 
+
+				COL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = COL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.3"
+	}
+	title = "Deal With Protectorate of Brazil"
+	desc = CALoccupation.3.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BRA
+
+		name = "The Protectorate of Brazil is established!"
+		add_political_power = 75
+		hidden_effect = {
+			BRA = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = BRA_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = BRA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BRA = {
+				every_core_state = {
+					remove_core_of = BRA
+				}
+				896 = { add_core_of = BRA } 
+				898 = { add_core_of = BRA } 
+				900 = { add_core_of = BRA } 
+				1030 = { add_core_of = BRA } 
+				1031 = { add_core_of = BRA } 
+				1033 = { add_core_of = BRA } 
+				1040 = { add_core_of = BRA } 
+				1041 = { add_core_of = BRA } 
+				1043 = { add_core_of = BRA } 
+				280 = { add_core_of = BRA } 
+				1305 = { add_core_of = BRA } 
+				1306 = { add_core_of = BRA } 
+				1307 = { add_core_of = BRA } 
+				1310 = { add_core_of = BRA } 
+				1311 = { add_core_of = BRA } 
+				855 = { add_core_of = BRA } 
+				495 = { add_core_of = BRA } 
+				496 = { add_core_of = BRA } 
+				497 = { add_core_of = BRA } 
+				498 = { add_core_of = BRA } 
+				499 = { add_core_of = BRA } 
+				500 = { add_core_of = BRA } 
+				501 = { add_core_of = BRA } 
+				502 = { add_core_of = BRA } 
+				503 = { add_core_of = BRA } 
+				504 = { add_core_of = BRA } 
+				505 = { add_core_of = BRA } 
+				894 = { add_core_of = BRA } 
+				895 = { add_core_of = BRA } 
+				300 = { add_core_of = BRA } 
+
+				BRA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = BRA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.4"
+	}
+	title = "Deal With Protectorate of La Plata"
+	desc = CALoccupation.4.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ARG
+
+		name = "The Protectorate of La Plata is established!"
+		add_political_power = 75
+		hidden_effect = {
+			ARG = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = ARG_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = ARG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ARG = {
+				every_core_state = {
+					remove_core_of = ARG
+				}
+				512 = { add_core_of = ARG } 
+				1027 = { add_core_of = ARG } 
+				1028 = { add_core_of = ARG } 
+				1029 = { add_core_of = ARG } 
+				901 = { add_core_of = ARG } 
+				902 = { add_core_of = ARG } 
+				903 = { add_core_of = ARG } 
+				904 = { add_core_of = ARG } 
+				278 = { add_core_of = ARG } 
+				299 = { add_core_of = ARG } 
+				301 = { add_core_of = ARG } 
+				688 = { add_core_of = ARG } 
+				1074 = { add_core_of = ARG } 
+				449 = { add_core_of = ARG } 
+				579 = { add_core_of = ARG } 
+				720 = { add_core_of = ARG } 
+				508 = { add_core_of = ARG } 
+				509 = { add_core_of = ARG } 
+				510 = { add_core_of = ARG } 
+				511 = { add_core_of = ARG } 
+
+				ARG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = ARG
+					}
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = CALoccupation.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.5"
+	}
+	title = "Deal With Protectorate of Chile"
+	desc = CALoccupation.5.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CHL
+
+		name = "The Protectorate of Chile is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CHL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CHL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CHL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CHL = {
+				every_core_state = {
+					remove_core_of = CHL
+				}
+				872 = { add_core_of = CHL } 
+				873 = { add_core_of = CHL } 
+				874 = { add_core_of = CHL } 
+				270 = { add_core_of = CHL } 
+				279 = { add_core_of = CHL } 
+				506 = { add_core_of = CHL } 
+				507 = { add_core_of = CHL } 
+
+				CHL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CHL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.6"
+	}
+	title = "Deal With Protectorate of Peru"
+	desc = CALoccupation.6.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = PRU
+
+		name = "The Protectorate of Peru is established!"
+		add_political_power = 75
+		hidden_effect = {
+			PRU = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = PRU_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = PRU
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			PRU = {
+				every_core_state = {
+					remove_core_of = PRU
+				}
+				491 = { add_core_of = PRU } 
+				492 = { add_core_of = PRU } 
+				845 = { add_core_of = PRU } 
+				494 = { add_core_of = PRU } 
+				303 = { add_core_of = PRU } 
+
+				PRU = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = PRU
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.7"
+	}
+	title = "Deal With Protectorate of Bolivia"
+	desc = CALoccupation.7.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BOL
+
+		name = "The Protectorate of Bolivia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			BOL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = BOL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = BOL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BOL = {
+				every_core_state = {
+					remove_core_of = BOL
+				}
+				487 = { add_core_of = BOL } 
+				302 = { add_core_of = BOL } 
+				847 = { add_core_of = BOL } 
+				848 = { add_core_of = BOL } 
+				1073 = { add_core_of = BOL } 
+
+				BOL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = BOL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.8"
+	}
+	title = "Deal With American West Indies"
+	desc = CALoccupation.8.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CAF
+
+		name = "The American West Indies is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CAF = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CAF_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CAF
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CAF = {
+				every_core_state = {
+					remove_core_of = CAF
+				}
+				696 = { add_core_of = CAF } 
+				689 = { add_core_of = CAF } 
+				690 = { add_core_of = CAF } 
+				691 = { add_core_of = CAF } 
+				308 = { add_core_of = CAF } 
+				692 = { add_core_of = CAF } 
+				694 = { add_core_of = CAF } 
+
+				CAF = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CAF
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.9"
+	}
+	title = "Deal With Protectorate of Suriname"
+	desc = CALoccupation.9.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SUR
+
+		name = "The Protectorate of Suriname is established!"
+		add_political_power = 75
+		hidden_effect = {
+			SUR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = SUR_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = SUR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SUR = {
+				every_core_state = {
+					remove_core_of = SUR
+				}
+				309 = { add_core_of = SUR } 
+				1038 = { add_core_of = SUR } 
+				1078 = { add_core_of = SUR } 
+				1079 = { add_core_of = SUR } 
+				687 = { add_core_of = SUR } 
+				1039 = { add_core_of = SUR } 
+				1308 = { add_core_of = SUR } 
+				309 = { add_core_of = SUR } 
+				310 = { add_core_of = SUR } 
+				1037 = { add_core_of = SUR } 
+				1309 = { add_core_of = SUR } 
+
+				SUR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = SUR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.10"
+	}
+	title = "Deal With Protectorate of Cuba"
+	desc = CALoccupation.10.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CUB
+
+		name = "The Protectorate of Cuba is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CUB = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CUB_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CUB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CUB = {
+				every_core_state = {
+					remove_core_of = CUB
+				}
+				315 = { add_core_of = CUB } 
+				820 = { add_core_of = CUB } 
+
+				CUB = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CUB
+					}
+				}
+
+                818 = { add_core_of = CAL }
+                818 = {transfer_state_to = CAL} 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.11"
+	}
+	title = "Deal With Protectorate of Central America"
+	desc = CALoccupation.11.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CEN
+
+		name = "The Protectorate of Central America is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CEN = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CEN_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CEN = {
+				every_core_state = {
+					remove_core_of = CEN
+				}
+				1070 = { add_core_of = CEN } 
+				1071 = { add_core_of = CEN } 
+				311 = { add_core_of = CEN } 
+				312 = { add_core_of = CEN } 
+				313 = { add_core_of = CEN } 
+				314 = { add_core_of = CEN } 
+				316 = { add_core_of = CEN } 
+				317 = { add_core_of = CEN } 
+				842 = { add_core_of = CEN } 
+				1247 = { add_core_of = CEN } 
+				1249 = { add_core_of = CEN } 
+				1250 = { add_core_of = CEN } 
+				1251 = { add_core_of = CEN } 
+				1256 = { add_core_of = CEN } 
+				1258 = { add_core_of = CEN } 
+				1259 = { add_core_of = CEN } 
+				1260 = { add_core_of = CEN } 
+				1261 = { add_core_of = CEN } 
+				1262 = { add_core_of = CEN } 
+
+				CEN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CEN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.12"
+	}
+	title = "Deal With Protectorate of Panama"
+	desc = CALoccupation.12.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = PAN
+
+		name = "The Protectorate of Panama is established!"
+		add_political_power = 75
+		hidden_effect = {
+			PAN = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = PAN_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = PAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			PAN = {
+				every_core_state = {
+					remove_core_of = PAN
+				}
+				1248 = { add_core_of = PAN } 
+				1257 = { add_core_of = PAN } 
+				304 = { add_core_of = PAN } 
+				854 = { add_core_of = PAN } 
+
+				PAN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = PAN
+					}
+				}
+
+                685 = { add_core_of = CAL }
+                685 = {transfer_state_to = CAL} 
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.13"
+	}
+	title = "Deal With Protectorate of United Island of Hispaniola"
+	desc = CALoccupation.13.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = DOM
+
+		name = "The Protectorate of United Island of Hispaniola is established!"
+		add_political_power = 75
+		hidden_effect = {
+			DOM = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = DOM_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = DOM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			DOM = {
+				every_core_state = {
+					remove_core_of = DOM
+				}
+				318 = { add_core_of = DOM } 
+				319 = { add_core_of = DOM } 
+
+				DOM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = DOM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.14"
+	}
+	title = "Deal With Protectorate of Russia"
+	desc = CALoccupation.14.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = RUS
+
+		name = "The Protectorate of Russia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			RUS = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = RUS_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = RUS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			RUS = {
+				every_core_state = {
+					remove_core_of = RUS
+				}
+				516 = { add_core_of = RUS } 
+				40 = { add_core_of = RUS } 
+				566 = { add_core_of = RUS } 
+				567 = { add_core_of = RUS } 
+				568 = { add_core_of = RUS } 
+				569 = { add_core_of = RUS } 
+				570 = { add_core_of = RUS } 
+				571 = { add_core_of = RUS } 
+				572 = { add_core_of = RUS } 
+				573 = { add_core_of = RUS } 
+				575 = { add_core_of = RUS } 
+				576 = { add_core_of = RUS } 
+				577 = { add_core_of = RUS } 
+				578 = { add_core_of = RUS } 
+				580 = { add_core_of = RUS } 
+				581 = { add_core_of = RUS } 
+				582 = { add_core_of = RUS } 
+				583 = { add_core_of = RUS } 
+				588 = { add_core_of = RUS } 
+				644 = { add_core_of = RUS } 
+				651 = { add_core_of = RUS } 
+				652 = { add_core_of = RUS } 
+				653 = { add_core_of = RUS } 
+				1193 = { add_core_of = RUS } 
+				1194 = { add_core_of = RUS } 
+				1195 = { add_core_of = RUS } 
+				1197 = { add_core_of = RUS } 
+				1198 = { add_core_of = RUS } 
+				1199 = { add_core_of = RUS } 
+				1200 = { add_core_of = RUS } 
+				1201 = { add_core_of = RUS } 
+				1202 = { add_core_of = RUS } 
+				1204 = { add_core_of = RUS } 
+				1205 = { add_core_of = RUS } 
+				1207 = { add_core_of = RUS } 
+				195 = { add_core_of = RUS } 
+				1224 = { add_core_of = RUS } 
+				1229 = { add_core_of = RUS } 
+				205 = { add_core_of = RUS } 
+				208 = { add_core_of = RUS } 
+				209 = { add_core_of = RUS } 
+				210 = { add_core_of = RUS } 
+				722 = { add_core_of = RUS } 
+				213 = { add_core_of = RUS } 
+				214 = { add_core_of = RUS } 
+				215 = { add_core_of = RUS } 
+				216 = { add_core_of = RUS } 
+				217 = { add_core_of = RUS } 
+				219 = { add_core_of = RUS } 
+				220 = { add_core_of = RUS } 
+				222 = { add_core_of = RUS } 
+				223 = { add_core_of = RUS } 
+				224 = { add_core_of = RUS } 
+				236 = { add_core_of = RUS } 
+				239 = { add_core_of = RUS } 
+				240 = { add_core_of = RUS } 
+				242 = { add_core_of = RUS } 
+				243 = { add_core_of = RUS } 
+				244 = { add_core_of = RUS } 
+				755 = { add_core_of = RUS } 
+				246 = { add_core_of = RUS } 
+				247 = { add_core_of = RUS } 
+				248 = { add_core_of = RUS } 
+				249 = { add_core_of = RUS } 
+				250 = { add_core_of = RUS } 
+				1274 = { add_core_of = RUS } 
+				251 = { add_core_of = RUS } 
+				252 = { add_core_of = RUS } 
+				253 = { add_core_of = RUS } 
+				254 = { add_core_of = RUS } 
+				256 = { add_core_of = RUS } 
+				257 = { add_core_of = RUS } 
+				258 = { add_core_of = RUS } 
+				255 = { add_core_of = RUS } 
+				260 = { add_core_of = RUS } 
+				262 = { add_core_of = RUS } 
+				1287 = { add_core_of = RUS } 
+				1288 = { add_core_of = RUS } 
+				1289 = { add_core_of = RUS } 
+				1290 = { add_core_of = RUS } 
+				1291 = { add_core_of = RUS } 
+				1292 = { add_core_of = RUS } 
+				263 = { add_core_of = RUS } 
+				264 = { add_core_of = RUS } 
+				265 = { add_core_of = RUS } 
+				1327 = { add_core_of = RUS } 
+				1328 = { add_core_of = RUS } 
+				821 = { add_core_of = RUS } 
+				351 = { add_core_of = RUS } 
+				880 = { add_core_of = RUS } 
+				397 = { add_core_of = RUS } 
+				398 = { add_core_of = RUS } 
+				399 = { add_core_of = RUS } 
+				400 = { add_core_of = RUS } 
+				401 = { add_core_of = RUS } 
+				403 = { add_core_of = RUS } 
+			}
+
+            574 = { add_core_of = CAL }
+            560 = { add_core_of = CAL }
+            561 = { add_core_of = CAL }
+            562 = { add_core_of = CAL }
+            563 = { add_core_of = CAL }
+            564 = { add_core_of = CAL }
+            565 = { add_core_of = CAL }
+            657 = { add_core_of = CAL }
+            408 = { add_core_of = CAL }
+            409 = { add_core_of = CAL }
+            637 = { add_core_of = CAL }
+            1246 = { add_core_of = CAL }
+
+            574 = {transfer_state_to = CAL}
+            560 = {transfer_state_to = CAL}
+            561 = {transfer_state_to = CAL}
+            562 = {transfer_state_to = CAL}
+            563 = {transfer_state_to = CAL}
+            564 = {transfer_state_to = CAL}
+            565 = {transfer_state_to = CAL}
+            657 = {transfer_state_to = CAL}
+            408 = {transfer_state_to = CAL}
+            409 = {transfer_state_to = CAL}
+            637 = {transfer_state_to = CAL}
+            1246 = {transfer_state_to = CAL}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.15"
+	}
+	title = "Deal With American Qing Empire"
+	desc = CALoccupation.15.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = QIE
+
+		name = "The American Qing Empire is established!"
+		add_political_power = 75
+		hidden_effect = {
+			QIE = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = QIE_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = QIE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			QIE = {
+				every_core_state = {
+					remove_core_of = QIE
+				}
+				774 = { add_core_of = QIE } 
+				1048 = { add_core_of = QIE } 
+				283 = { add_core_of = QIE } 
+				799 = { add_core_of = QIE } 
+				1058 = { add_core_of = QIE } 
+				1059 = { add_core_of = QIE } 
+				1060 = { add_core_of = QIE } 
+				1061 = { add_core_of = QIE } 
+				1062 = { add_core_of = QIE } 
+				1063 = { add_core_of = QIE } 
+				1072 = { add_core_of = QIE } 
+				328 = { add_core_of = QIE } 
+				714 = { add_core_of = QIE } 
+				715 = { add_core_of = QIE } 
+				716 = { add_core_of = QIE } 
+				717 = { add_core_of = QIE } 
+				348 = { add_core_of = QIE } 
+				604 = { add_core_of = QIE } 
+				607 = { add_core_of = QIE } 
+				608 = { add_core_of = QIE } 
+				353 = { add_core_of = QIE } 
+				610 = { add_core_of = QIE } 
+				611 = { add_core_of = QIE } 
+				614 = { add_core_of = QIE } 
+				615 = { add_core_of = QIE } 
+				616 = { add_core_of = QIE } 
+				620 = { add_core_of = QIE } 
+				621 = { add_core_of = QIE } 
+				622 = { add_core_of = QIE } 
+				883 = { add_core_of = QIE } 
+				884 = { add_core_of = QIE } 
+				885 = { add_core_of = QIE } 
+				1015 = { add_core_of = QIE } 
+
+				QIE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = QIE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.16"
+	}
+	title = "Deal With American Mongol Empire"
+	desc = CALoccupation.16.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MON
+
+		name = "The American Mongol Empire is established!"
+		add_political_power = 75
+		hidden_effect = {
+			MON = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = MON_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = MON
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			MON = {
+				every_core_state = {
+					remove_core_of = MON
+				}
+				897 = { add_core_of = MON } 
+				612 = { add_core_of = MON } 
+				329 = { add_core_of = MON } 
+				330 = { add_core_of = MON } 
+				617 = { add_core_of = MON } 
+				618 = { add_core_of = MON } 
+				1293 = { add_core_of = MON } 
+				619 = { add_core_of = MON } 
+				654 = { add_core_of = MON } 
+				811 = { add_core_of = MON } 
+				1083 = { add_core_of = MON } 
+				1084 = { add_core_of = MON } 
+				1085 = { add_core_of = MON } 
+				287 = { add_core_of = MON } 
+
+				MON = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = MON
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.17"
+	}
+	title = "Deal With Dominion of China"
+	desc = CALoccupation.17.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CHI
+
+		name = "The Dominion of China is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CHI = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CHI_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CHI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CHI = {
+				every_core_state = {
+					remove_core_of = CHI
+				}
+				650 = { add_core_of = CHI } 
+				1044 = { add_core_of = CHI } 
+				1045 = { add_core_of = CHI } 
+				661 = { add_core_of = CHI } 
+				1047 = { add_core_of = CHI } 
+				788 = { add_core_of = CHI } 
+				1049 = { add_core_of = CHI } 
+				1050 = { add_core_of = CHI } 
+				1051 = { add_core_of = CHI } 
+				1052 = { add_core_of = CHI } 
+				803 = { add_core_of = CHI } 
+				1064 = { add_core_of = CHI } 
+				1065 = { add_core_of = CHI } 
+				1067 = { add_core_of = CHI } 
+				1069 = { add_core_of = CHI } 
+				816 = { add_core_of = CHI } 
+				1075 = { add_core_of = CHI } 
+				325 = { add_core_of = CHI } 
+				596 = { add_core_of = CHI } 
+				597 = { add_core_of = CHI } 
+				598 = { add_core_of = CHI } 
+				601 = { add_core_of = CHI } 
+				603 = { add_core_of = CHI } 
+				605 = { add_core_of = CHI } 
+				606 = { add_core_of = CHI } 
+				613 = { add_core_of = CHI } 
+				1014 = { add_core_of = CHI } 
+				1056 = { add_core_of = CHI } 
+				800 = { add_core_of = CHI } 
+				592 = { add_core_of = CHI } 
+				593 = { add_core_of = CHI } 
+				594 = { add_core_of = CHI } 
+				1012 = { add_core_of = CHI } 
+				1013 = { add_core_of = CHI } 
+				599 = { add_core_of = CHI } 
+				602 = { add_core_of = CHI } 
+				1053 = { add_core_of = CHI } 
+				1054 = { add_core_of = CHI } 
+				1055 = { add_core_of = CHI } 
+
+				CHI = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CHI
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.18"
+	}
+	title = "Deal With Dominion of Tibet"
+	desc = CALoccupation.18.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = TIB
+
+		name = "The Dominion of Tibet is established!"
+		add_political_power = 75
+		hidden_effect = {
+			TIB = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = TIB_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = TIB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			TIB = {
+				every_core_state = {
+					remove_core_of = TIB
+				}
+				322 = { add_core_of = TIB } 
+				748 = { add_core_of = TIB } 
+				693 = { add_core_of = TIB } 
+				1086 = { add_core_of = TIB } 
+
+				TIB = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = TIB
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.19"
+	}
+	title = "Deal With Autonomous State of Japan"
+	desc = CALoccupation.19.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = JAP
+
+		name = "The Autonomous State of Japan is established!"
+		add_political_power = 75
+		hidden_effect = {
+			JAP = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = JAP_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = JAP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			JAP = {
+				every_core_state = {
+					remove_core_of = JAP
+				}
+				645 = { add_core_of = JAP } 
+				648 = { add_core_of = JAP } 
+				555 = { add_core_of = JAP } 
+				525 = { add_core_of = JAP } 
+				527 = { add_core_of = JAP } 
+				528 = { add_core_of = JAP } 
+				529 = { add_core_of = JAP } 
+				530 = { add_core_of = JAP } 
+				531 = { add_core_of = JAP } 
+				532 = { add_core_of = JAP } 
+				533 = { add_core_of = JAP } 
+				534 = { add_core_of = JAP } 
+				535 = { add_core_of = JAP } 
+				536 = { add_core_of = JAP } 
+				537 = { add_core_of = JAP } 
+				282 = { add_core_of = JAP } 
+
+				JAP = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = JAP
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.20
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.20"
+	}
+	title = "Deal With Dominion of Vietnam"
+	desc = CALoccupation.20.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = VIN
+
+		name = "The Dominion of Vietnam is established!"
+		add_political_power = 75
+		hidden_effect = {
+			VIN = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = VIN_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = VIN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			VIN = {
+				every_core_state = {
+					remove_core_of = VIN
+				}
+				750 = { add_core_of = VIN } 
+				671 = { add_core_of = VIN } 
+				882 = { add_core_of = VIN } 
+				857 = { add_core_of = VIN } 
+				856 = { add_core_of = VIN } 
+				825 = { add_core_of = VIN } 
+				826 = { add_core_of = VIN } 
+				827 = { add_core_of = VIN } 
+				670 = { add_core_of = VIN } 
+				286 = { add_core_of = VIN } 
+
+				VIN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = VIN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.21"
+	}
+	title = "Deal With Dominion of Siam"
+	desc = CALoccupation.21.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SIA
+
+		name = "The Dominion of Siam is established!"
+		add_political_power = 75
+		hidden_effect = {
+			SIA = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = SIA_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = SIA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SIA = {
+				every_core_state = {
+					remove_core_of = SIA
+				}
+				289 = { add_core_of = SIA } 
+				999 = { add_core_of = SIA } 
+				749 = { add_core_of = SIA } 
+				751 = { add_core_of = SIA } 
+				882 = { add_core_of = SIA } 
+				724 = { add_core_of = SIA } 
+				822 = { add_core_of = SIA } 
+				823 = { add_core_of = SIA } 
+				824 = { add_core_of = SIA } 
+				825 = { add_core_of = SIA } 
+				830 = { add_core_of = SIA } 
+
+				SIA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = SIA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.22"
+	}
+	title = "Deal With Dominion of Burma"
+	desc = CALoccupation.22.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BRM
+
+		name = "The Dominion of Burma is established!"
+		add_political_power = 75
+		hidden_effect = {
+			BRM = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = BRM_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = BRM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BRM = {
+				every_core_state = {
+					remove_core_of = BRM
+				}
+				288 = { add_core_of = BRM } 
+				640 = { add_core_of = BRM } 
+				72  = { add_core_of = BRM } 
+				790 = { add_core_of = BRM } 
+				701 = { add_core_of = BRM } 
+
+				BRM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = BRM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.23
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.23"
+	}
+	title = "Deal With Dominion of Transoxiana"
+	desc = CALoccupation.23.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = TRK
+
+		name = "The Dominion of Transoxiana is established!"
+		add_political_power = 75
+		hidden_effect = {
+			TRK = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = TRK_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = TRK
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			TRK = {
+				every_core_state = {
+					remove_core_of = TRK
+				}
+				1281 = { add_core_of = TRK } 
+				1042 = { add_core_of = TRK } 
+				405  = { add_core_of = TRK } 
+				407  = { add_core_of = TRK } 
+				1196 = { add_core_of = TRK } 
+				1209 = { add_core_of = TRK } 
+				1210 = { add_core_of = TRK } 
+				1211 = { add_core_of = TRK } 
+				584  = { add_core_of = TRK } 
+				585  = { add_core_of = TRK } 
+				586  = { add_core_of = TRK } 
+				712  = { add_core_of = TRK } 
+				732  = { add_core_of = TRK } 
+				861  = { add_core_of = TRK } 
+				1275 = { add_core_of = TRK } 
+				1276 = { add_core_of = TRK } 
+				1277 = { add_core_of = TRK } 
+				1278 = { add_core_of = TRK } 
+				1279 = { add_core_of = TRK } 
+
+				TRK = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = TRK
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.24
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.24"
+	}
+	title = "Deal With Dominion of Persia"
+	desc = CALoccupation.24.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = PER
+
+		name = "The Dominion of Persia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			PER = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = PER_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = PER
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			PER = {
+				every_core_state = {
+					remove_core_of = PER
+				}
+				416 = { add_core_of = PER } 
+				417 = { add_core_of = PER } 
+				418 = { add_core_of = PER } 
+				419 = { add_core_of = PER } 
+				420 = { add_core_of = PER } 
+				421 = { add_core_of = PER } 
+				804 = { add_core_of = PER } 
+				266 = { add_core_of = PER } 
+				410 = { add_core_of = PER } 
+				411 = { add_core_of = PER } 
+				412 = { add_core_of = PER } 
+				413 = { add_core_of = PER } 
+				414 = { add_core_of = PER } 
+
+				PER = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = PER
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.25
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.25"
+	}
+	title = "Deal With Dominion of Afghanistan"
+	desc = CALoccupation.25.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = AFG
+
+		name = "The Dominion of Afghanistan is established!"
+		add_political_power = 75
+		hidden_effect = {
+			AFG = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = AFG_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = AFG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			AFG = {
+				every_core_state = {
+					remove_core_of = AFG
+				}
+				1217 = { add_core_of = AFG } 
+				1218 = { add_core_of = AFG } 
+				1219 = { add_core_of = AFG } 
+				267 = { add_core_of = AFG } 
+				442 = { add_core_of = AFG } 
+				445 = { add_core_of = AFG } 
+				415 = { add_core_of = AFG } 
+
+				AFG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = AFG
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.26
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.26"
+	}
+	title = "Deal With Dominion of Caucasia"
+	desc = CALoccupation.26.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MTR
+
+		name = "The Dominion of Caucasia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			MTR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = MTN_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = MTR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			MTR = {
+				every_core_state = {
+					remove_core_of = MTR
+				}
+				1298 = { add_core_of = MTR } 
+				1299 = { add_core_of = MTR } 
+				1300 = { add_core_of = MTR } 
+				1301 = { add_core_of = MTR } 
+				1302 = { add_core_of = MTR } 
+				1303 = { add_core_of = MTR } 
+				1304 = { add_core_of = MTR } 
+				787 = { add_core_of = MTR } 
+				1186 = { add_core_of = MTR } 
+				1187 = { add_core_of = MTR } 
+				1188 = { add_core_of = MTR } 
+				1189 = { add_core_of = MTR } 
+				1190 = { add_core_of = MTR } 
+				1191 = { add_core_of = MTR } 
+				1080 = { add_core_of = MTR } 
+				1081 = { add_core_of = MTR } 
+				1082 = { add_core_of = MTR } 
+				1226 = { add_core_of = MTR } 
+				1227 = { add_core_of = MTR } 
+				1231 = { add_core_of = MTR } 
+				218 = { add_core_of = MTR } 
+				990 = { add_core_of = MTR } 
+				229 = { add_core_of = MTR } 
+				998 = { add_core_of = MTR } 
+				231 = { add_core_of = MTR } 
+				232 = { add_core_of = MTR } 
+				233 = { add_core_of = MTR } 
+				234 = { add_core_of = MTR } 
+				235 = { add_core_of = MTR } 
+				237 = { add_core_of = MTR } 
+				238 = { add_core_of = MTR } 
+				1263 = { add_core_of = MTR } 
+				1264 = { add_core_of = MTR } 
+				1265 = { add_core_of = MTR } 
+				1266 = { add_core_of = MTR } 
+				1267 = { add_core_of = MTR } 
+				245 = { add_core_of = MTR } 
+
+				MTR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = MTR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.27
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.27"
+	}
+	title = "Deal With Dominion of Arabia"
+	desc = CALoccupation.27.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = JBS
+
+		name = "The Dominion of Arabia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			JBS = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = JBS_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = JBS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			JBS = {
+				every_core_state = {
+					remove_core_of = JBS
+				}
+				1024 = { add_core_of = JBS } 
+				1035 = { add_core_of = JBS } 
+				291 = { add_core_of = JBS } 
+				292 = { add_core_of = JBS } 
+				293 = { add_core_of = JBS } 
+				294 = { add_core_of = JBS } 
+				349 = { add_core_of = JBS } 
+				350 = { add_core_of = JBS } 
+				352 = { add_core_of = JBS } 
+				417 = { add_core_of = JBS } 
+				421 = { add_core_of = JBS } 
+				454 = { add_core_of = JBS } 
+				455 = { add_core_of = JBS } 
+				554 = { add_core_of = JBS } 
+				656 = { add_core_of = JBS } 
+				658 = { add_core_of = JBS } 
+				659 = { add_core_of = JBS } 
+				675 = { add_core_of = JBS } 
+				676 = { add_core_of = JBS } 
+				677 = { add_core_of = JBS } 
+				678 = { add_core_of = JBS } 
+				679 = { add_core_of = JBS } 
+				680 = { add_core_of = JBS } 
+				752 = { add_core_of = JBS } 
+				754 = { add_core_of = JBS } 
+				812 = { add_core_of = JBS } 
+				819 = { add_core_of = JBS } 
+				859 = { add_core_of = JBS } 
+				915 = { add_core_of = JBS } 
+				981 = { add_core_of = JBS } 
+				982 = { add_core_of = JBS } 
+				991 = { add_core_of = JBS } 
+				992 = { add_core_of = JBS } 
+				993 = { add_core_of = JBS } 
+				994 = { add_core_of = JBS } 
+				995 = { add_core_of = JBS } 
+
+				JBS = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = JBS
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.28
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.28"
+	}
+	title = "Deal With Dominion of Anatolia"
+	desc = CALoccupation.28.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = TUR
+
+		name = "The Dominion of Anatolia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			TUR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = TUR_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = TUR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			TUR = {
+				every_core_state = {
+					remove_core_of = TUR
+				}
+				1000 = { add_core_of = TUR } 
+				1001 = { add_core_of = TUR } 
+				1213 = { add_core_of = TUR } 
+				1225 = { add_core_of = TUR } 
+				164 = { add_core_of = TUR } 
+				187 = { add_core_of = TUR } 
+				273 = { add_core_of = TUR } 
+				339 = { add_core_of = TUR } 
+				340 = { add_core_of = TUR } 
+				341 = { add_core_of = TUR } 
+				342 = { add_core_of = TUR } 
+				343 = { add_core_of = TUR } 
+				344 = { add_core_of = TUR } 
+				345 = { add_core_of = TUR } 
+				346 = { add_core_of = TUR } 
+				354 = { add_core_of = TUR } 
+				355 = { add_core_of = TUR } 
+				356 = { add_core_of = TUR } 
+				49 = { add_core_of = TUR } 
+				773 = { add_core_of = TUR } 
+
+				TUR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = TUR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.29
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.29"
+	}
+	title = "Deal With Dominion of Spain"
+	desc = CALoccupation.29.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SPR
+
+		name = "The Dominion of Spain is established!"
+		add_political_power = 75
+		hidden_effect = {
+			SPR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = SPR_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = SPR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SPR = {
+				every_core_state = {
+					remove_core_of = SPR
+				}
+				793 = { add_core_of = SPR } 
+				795 = { add_core_of = SPR } 
+				1313 = { add_core_of = SPR } 
+				1316 = { add_core_of = SPR } 
+				165 = { add_core_of = SPR } 
+				166 = { add_core_of = SPR } 
+				167 = { add_core_of = SPR } 
+				168 = { add_core_of = SPR } 
+				169 = { add_core_of = SPR } 
+				170 = { add_core_of = SPR } 
+				171 = { add_core_of = SPR } 
+				172 = { add_core_of = SPR } 
+				173 = { add_core_of = SPR } 
+				174 = { add_core_of = SPR } 
+				175 = { add_core_of = SPR } 
+				176 = { add_core_of = SPR } 
+				177 = { add_core_of = SPR } 
+				178 = { add_core_of = SPR } 
+				940 = { add_core_of = SPR } 
+				951 = { add_core_of = SPR } 
+				41 = { add_core_of = SPR } 
+
+				SPR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = SPR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.30
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.30"
+	}
+	title = "Deal With Autonomous State of France"
+	desc = CALoccupation.30.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = FRA
+
+		name = "The Autonomous State of France is established!"
+		add_political_power = 75
+		hidden_effect = {
+			FRA = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = FRA_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = FRA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			FRA = {
+				every_core_state = {
+					remove_core_of = FRA
+				}
+				14 = { add_core_of = FRA } 
+				15 = { add_core_of = FRA } 
+				16 = { add_core_of = FRA } 
+				17 = { add_core_of = FRA } 
+				18 = { add_core_of = FRA } 
+				19 = { add_core_of = FRA } 
+				20 = { add_core_of = FRA } 
+				21 = { add_core_of = FRA } 
+				22 = { add_core_of = FRA } 
+				23 = { add_core_of = FRA } 
+				24 = { add_core_of = FRA } 
+				25 = { add_core_of = FRA } 
+				26 = { add_core_of = FRA } 
+				27 = { add_core_of = FRA } 
+				30 = { add_core_of = FRA } 
+				31 = { add_core_of = FRA } 
+				32 = { add_core_of = FRA } 
+				33 = { add_core_of = FRA } 
+				817 = { add_core_of = FRA } 
+				980 = { add_core_of = FRA } 
+				984 = { add_core_of = FRA } 
+				735 = { add_core_of = FRA } 
+				785 = { add_core_of = FRA } 
+				762 = { add_core_of = FRA } 
+				763 = { add_core_of = FRA } 
+
+				FRA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = FRA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.31
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.31"
+	}
+	title = "Deal With State of England"
+	desc = CALoccupation.31.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ENG
+
+		name = "The State of England is established!"
+		add_political_power = 75
+		hidden_effect = {
+			ENG = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = ENG_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = ENG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ENG = {
+				every_core_state = {
+					remove_core_of = ENG
+				}
+				128 = { add_core_of = ENG } 
+				129 = { add_core_of = ENG } 
+				130 = { add_core_of = ENG } 
+				131 = { add_core_of = ENG } 
+				1315 = { add_core_of = ENG } 
+				1317 = { add_core_of = ENG } 
+				132 = { add_core_of = ENG } 
+				133 = { add_core_of = ENG } 
+				136 = { add_core_of = ENG } 
+				938 = { add_core_of = ENG } 
+				338 = { add_core_of = ENG } 
+				120 = { add_core_of = ENG } 
+				121 = { add_core_of = ENG } 
+				122 = { add_core_of = ENG } 
+				123 = { add_core_of = ENG } 
+				125 = { add_core_of = ENG } 
+				126 = { add_core_of = ENG } 
+				127 = { add_core_of = ENG } 
+
+				ENG = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = ENG
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.32
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.32"
+	}
+	title = "Deal With State of Ireland"
+	desc = CALoccupation.32.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = IRE
+
+		name = "The State of Ireland is established!"
+		add_political_power = 75
+		hidden_effect = {
+			IRE = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = IRE_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = IRE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			IRE = {
+				every_core_state = {
+					remove_core_of = IRE
+				}
+				135 = { add_core_of = IRE } 
+				113 = { add_core_of = IRE } 
+				134 = { add_core_of = IRE } 
+				119 = { add_core_of = IRE } 
+
+				IRE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = IRE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.33
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.33"
+	}
+	title = "Deal With Protectorate of Portugal"
+	desc = CALoccupation.33.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = POR
+
+		name = "The Protectorate of Portugal is established!"
+		add_political_power = 75
+		hidden_effect = {
+			POR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = POR_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = POR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			POR = {
+				every_core_state = {
+					remove_core_of = POR
+				}
+				705 = { add_core_of = POR } 
+				112 = { add_core_of = POR } 
+				179 = { add_core_of = POR } 
+				180 = { add_core_of = POR } 
+				181 = { add_core_of = POR } 
+				697 = { add_core_of = POR } 
+				698 = { add_core_of = POR } 
+				702 = { add_core_of = POR } 
+
+				POR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = POR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.33
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.33"
+	}
+	title = "Deal With Protectorate of Portugal"
+	desc = CALoccupation.33.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = POR
+
+		name = "The Protectorate of Portugal is established!"
+		add_political_power = 75
+		hidden_effect = {
+			POR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = POR_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = POR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			POR = {
+				every_core_state = {
+					remove_core_of = POR
+				}
+				705 = { add_core_of = POR } 
+				112 = { add_core_of = POR } 
+				179 = { add_core_of = POR } 
+				180 = { add_core_of = POR } 
+				181 = { add_core_of = POR } 
+				697 = { add_core_of = POR } 
+				698 = { add_core_of = POR } 
+				702 = { add_core_of = POR } 
+
+				POR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = POR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.34
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.34"
+	}
+	title = "Deal With Protectorate of Italy"
+	desc = CALoccupation.34.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ITA
+
+		name = "The Protectorate of Italy is established!"
+		add_political_power = 75
+		hidden_effect = {
+			ITA = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = ITA_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = ITA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ITA = {
+				every_core_state = {
+					remove_core_of = ITA
+				}
+				156 = { add_core_of = ITA } 
+				157 = { add_core_of = ITA } 
+				158 = { add_core_of = ITA } 
+				159 = { add_core_of = ITA } 
+				160 = { add_core_of = ITA } 
+				161 = { add_core_of = ITA } 
+				162 = { add_core_of = ITA } 
+				837 = { add_core_of = ITA } 
+				838 = { add_core_of = ITA } 
+				1236 = { add_core_of = ITA } 
+				742 = { add_core_of = ITA } 
+				1003 = { add_core_of = ITA } 
+				1004 = { add_core_of = ITA } 
+				1005 = { add_core_of = ITA } 
+				1006 = { add_core_of = ITA } 
+				115 = { add_core_of = ITA } 
+				117 = { add_core_of = ITA } 
+				759 = { add_core_of = ITA } 
+				764 = { add_core_of = ITA } 
+
+				ITA = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = ITA
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.35
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.35"
+	}
+	title = "Deal With American Papal State"
+	desc = CALoccupation.35.d
+    picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = PAP
+
+		name = "The American Papal State is established!"
+		add_political_power = 75
+		hidden_effect = {
+			PAP = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = PAP_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = PAP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			PAP = {
+				every_core_state = {
+					remove_core_of = PAP
+				}
+				2 = { add_core_of = PAP } 
+				1149 = { add_core_of = PAP } 
+
+				PAP = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = PAP
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.36
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.36"
+	}
+	title = "Deal With the Protectorate of Germania"
+	desc = CALoccupation.36.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = GER
+
+		name = "The Protectorate of Germania is established!"
+		add_political_power = 75
+		hidden_effect = {
+			GER = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = GER_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = GER
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			GER = {
+				every_core_state = {
+					remove_core_of = GER
+				}
+				5 = { add_core_of = GER } 
+				776 = { add_core_of = GER } 
+				777 = { add_core_of = GER } 
+				8 = { add_core_of = GER } 
+				780 = { add_core_of = GER } 
+				781 = { add_core_of = GER } 
+				782 = { add_core_of = GER } 
+				28 = { add_core_of = GER } 
+				42 = { add_core_of = GER } 
+				50 = { add_core_of = GER } 
+				51 = { add_core_of = GER } 
+				52 = { add_core_of = GER } 
+				53 = { add_core_of = GER } 
+				54 = { add_core_of = GER } 
+				55 = { add_core_of = GER } 
+				56 = { add_core_of = GER } 
+				57 = { add_core_of = GER } 
+				58 = { add_core_of = GER } 
+				59 = { add_core_of = GER } 
+				60 = { add_core_of = GER } 
+				188 = { add_core_of = GER } 
+				61 = { add_core_of = GER } 
+				62 = { add_core_of = GER } 
+				64 = { add_core_of = GER } 
+				63 = { add_core_of = GER } 
+				65 = { add_core_of = GER } 
+				66 = { add_core_of = GER } 
+				67 = { add_core_of = GER } 
+				68 = { add_core_of = GER } 
+				839 = { add_core_of = GER } 
+				86 = { add_core_of = GER } 
+
+				GER = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = GER
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.37
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.37"
+	}
+	title = "Deal With the Protectorate of Holland"
+	desc = CALoccupation.37.d
+	picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = HOL
+
+		name = "The Protectorate of Holland is established!"
+		add_political_power = 75
+		hidden_effect = {
+			HOL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = HOL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = HOL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			HOL = {
+				every_core_state = {
+					remove_core_of = HOL
+				}
+				866 = { add_core_of = HOL } 
+				35 = { add_core_of = HOL } 
+				36 = { add_core_of = HOL } 
+				7 = { add_core_of = HOL } 
+				978 = { add_core_of = HOL } 
+				979 = { add_core_of = HOL } 
+
+				HOL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = HOL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.38
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.38"
+	}
+	title = "Deal With Protectorate of Belgium"
+	desc = CALoccupation.38.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BEL
+
+		name = "The Protectorate of Belgium is established!"
+		add_political_power = 75
+		hidden_effect = {
+			BEL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = BEL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = BEL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BEL = {
+				every_core_state = {
+					remove_core_of = BEL
+				}
+				34 = { add_core_of = BEL } 
+				29 = { add_core_of = BEL } 
+				6 = { add_core_of = BEL } 
+
+				BEL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = BEL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.39
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.39"
+	}
+	title = "Deal With Free State of Denmark"
+	desc = CALoccupation.39.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = DEN
+
+		name = "The Free State of Denmark is established!"
+		add_political_power = 75
+		hidden_effect = {
+			DEN = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = DEN_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = DEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			DEN = {
+				every_core_state = {
+					remove_core_of = DEN
+				}
+				99 = { add_core_of = DEN } 
+				37 = { add_core_of = DEN } 
+				101 = { add_core_of = DEN } 
+				337 = { add_core_of = DEN } 
+				926 = { add_core_of = DEN } 
+
+				DEN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = DEN
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.40
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.40"
+	}
+	title = "Deal With Nordic Protectorate of America"
+	desc = CALoccupation.40.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = NOR
+
+		name = "The Nordic Protectorate of America is established!"
+		add_political_power = 75
+		hidden_effect = {
+			NOR = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = NOR_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = NOR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			NOR = {
+				every_core_state = {
+					remove_core_of = NOR
+				}
+				138 = { add_core_of = NOR } 
+				139 = { add_core_of = NOR } 
+				140 = { add_core_of = NOR } 
+				141 = { add_core_of = NOR } 
+				142 = { add_core_of = NOR } 
+				143 = { add_core_of = NOR } 
+				144 = { add_core_of = NOR } 
+				145 = { add_core_of = NOR } 
+				146 = { add_core_of = NOR } 
+				147 = { add_core_of = NOR } 
+				148 = { add_core_of = NOR } 
+				149 = { add_core_of = NOR } 
+				150 = { add_core_of = NOR } 
+				666 = { add_core_of = NOR } 
+				38 = { add_core_of = NOR } 
+				936 = { add_core_of = NOR } 
+				937 = { add_core_of = NOR } 
+				1324 = { add_core_of = NOR } 
+				1325 = { add_core_of = NOR } 
+				1326 = { add_core_of = NOR } 
+				960 = { add_core_of = NOR } 
+				840 = { add_core_of = NOR } 
+				778 = { add_core_of = NOR } 
+				844 = { add_core_of = NOR } 
+				908 = { add_core_of = NOR } 
+				909 = { add_core_of = NOR } 
+				863 = { add_core_of = NOR } 
+				864 = { add_core_of = NOR } 
+				865 = { add_core_of = NOR } 
+				110 = { add_core_of = NOR } 
+				111 = { add_core_of = NOR } 
+				1146 = { add_core_of = NOR } 
+				1147 = { add_core_of = NOR } 
+				124 = { add_core_of = NOR } 
+				100 = { add_core_of = NOR } 
+
+				NOR = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = NOR
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.41
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.41"
+	}
+	title = "Deal With Protectorate of Czech"
+	desc = CALoccupation.41.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CZE
+
+		name = "The Protectorate of Czech is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CZE = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CZE_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CZE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CZE = {
+				every_core_state = {
+					remove_core_of = CZE
+				}
+				69 = { add_core_of = CZE } 
+				71 = { add_core_of = CZE } 
+				1129 = { add_core_of = CZE } 
+				1130 = { add_core_of = CZE } 
+				1131 = { add_core_of = CZE } 
+				1132 = { add_core_of = CZE } 
+				1133 = { add_core_of = CZE } 
+				1134 = { add_core_of = CZE } 
+				74 = { add_core_of = CZE } 
+				75 = { add_core_of = CZE } 
+				9 = { add_core_of = CZE } 
+				1138 = { add_core_of = CZE } 
+				1139 = { add_core_of = CZE } 
+				786 = { add_core_of = CZE } 
+
+				CZE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CZE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.42
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.42"
+	}
+	title = "Deal With Protectorate of Austria"
+	desc = CALoccupation.42.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = AUS
+
+		name = "The Protectorate of Austria is established!"
+		add_political_power = 75
+		hidden_effect = {
+			AUS = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = AUS_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = AUS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			AUS = {
+				every_core_state = {
+					remove_core_of = AUS
+				}
+				4 = { add_core_of = AUS } 
+				775 = { add_core_of = AUS } 
+				783 = { add_core_of = AUS } 
+				152 = { add_core_of = AUS } 
+				153 = { add_core_of = AUS } 
+				39 = { add_core_of = AUS } 
+				942 = { add_core_of = AUS } 
+				835 = { add_core_of = AUS } 
+				836 = { add_core_of = AUS } 
+				1100 = { add_core_of = AUS } 
+				1101 = { add_core_of = AUS } 
+				1103 = { add_core_of = AUS } 
+				1104 = { add_core_of = AUS } 
+				1235 = { add_core_of = AUS } 
+				736 = { add_core_of = AUS } 
+				102 = { add_core_of = AUS } 
+				1137 = { add_core_of = AUS } 
+				1272 = { add_core_of = AUS } 
+				1144 = { add_core_of = AUS } 
+
+				AUS = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = AUS
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.43
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.43"
+	}
+	title = "Deal With Free State of Switzerland"
+	desc = CALoccupation.43.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SWI
+
+		name = "The Free State of Switzerland is established!"
+		add_political_power = 75
+		hidden_effect = {
+			SWI = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = SWI_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = SWI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SWI = {
+				every_core_state = {
+					remove_core_of = SWI
+				}
+				760 = { add_core_of = SWI } 
+				761 = { add_core_of = SWI } 
+				3 = { add_core_of = SWI } 
+				151 = { add_core_of = SWI } 
+
+				SWI = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = SWI
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.44
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.44"
+	}
+	title = "Deal With Free City of Gibraltar"
+	desc = CALoccupation.44.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CNT
+
+		name = "The Free City of Gibraltar is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CNT = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CNT_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CNT
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CNT = {
+				every_core_state = {
+					remove_core_of = CNT
+				}
+				118 = { add_core_of = CNT } 
+
+				CNT = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CNT
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.45
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.45"
+	}
+	title = "Deal With Free City of Brittany"
+	desc = CALoccupation.45.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BRI
+
+		name = "The Free City of Brittany is established!"
+		add_political_power = 75
+		hidden_effect = {
+			BRI = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = BRI_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = BRI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BRI = {
+				every_core_state = {
+					remove_core_of = BRI
+				}
+				983 = { add_core_of = BRI }
+
+				BRI = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = BRI
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.46
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.46"
+	}
+	title = "Deal With Protectorate of Hungary"
+	desc = CALoccupation.46.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = HUN
+
+		name = "The Protectorate of Hungary is established!"
+		add_political_power = 75
+		hidden_effect = {
+			HUN = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = HUN_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = HUN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			HUN = {
+				every_core_state = {
+					remove_core_of = HUN
+				}
+				784 = { add_core_of = HUN }
+				789 = { add_core_of = HUN }
+				664 = { add_core_of = HUN }
+				154 = { add_core_of = HUN }
+				155 = { add_core_of = HUN }
+				82 = { add_core_of = HUN }
+				83 = { add_core_of = HUN }
+				84 = { add_core_of = HUN }
+				43 = { add_core_of = HUN }
+				45 = { add_core_of = HUN }
+				70 = { add_core_of = HUN }
+				73 = { add_core_of = HUN }
+				76 = { add_core_of = HUN }
+				1106 = { add_core_of = HUN }
+				1107 = { add_core_of = HUN }
+				1108 = { add_core_of = HUN }
+				1109 = { add_core_of = HUN }
+				1110 = { add_core_of = HUN }
+				1111 = { add_core_of = HUN }
+				1112 = { add_core_of = HUN }
+				1113 = { add_core_of = HUN }
+				1114 = { add_core_of = HUN }
+				1115 = { add_core_of = HUN }
+				1116 = { add_core_of = HUN }
+				1117 = { add_core_of = HUN }
+				1118 = { add_core_of = HUN }
+				1119 = { add_core_of = HUN }
+				1120 = { add_core_of = HUN }
+				1121 = { add_core_of = HUN }
+				1122 = { add_core_of = HUN }
+				1123 = { add_core_of = HUN }
+				875 = { add_core_of = HUN }
+				1135 = { add_core_of = HUN }
+				1136 = { add_core_of = HUN }
+
+				HUN = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = HUN
+					}
+				}
+			}
+		}
+	}
+}  
+
+country_event = {
+	id = CALoccupation.47
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.47"
+	}
+	title = "Deal With Protectorate of Serbia"
+	desc = CALoccupation.47.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = SER
+
+		name = "The Protectorate of Serbia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			SER = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = SER_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = SER
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			SER = {
+				every_core_state = {
+					remove_core_of = SER
+				}
+				163 = { add_core_of = SER } 
+				103 = { add_core_of = SER } 
+				104 = { add_core_of = SER } 
+				105 = { add_core_of = SER } 
+				1097 = { add_core_of = SER } 
+				1098 = { add_core_of = SER } 
+				1099 = { add_core_of = SER } 
+				109 = { add_core_of = SER } 
+				1102 = { add_core_of = SER } 
+				1128 = { add_core_of = SER } 
+				1105 = { add_core_of = SER } 
+				1141 = { add_core_of = SER } 
+				1142 = { add_core_of = SER } 
+				1143 = { add_core_of = SER } 
+				1206 = { add_core_of = SER } 
+				1145 = { add_core_of = SER } 
+				1270 = { add_core_of = SER } 
+				794 = { add_core_of = SER } 
+
+				SER = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = SER
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.48
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.48"
+	}
+	title = "Deal With Protectorate of Bulgaria"
+	desc = CALoccupation.48.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = BUL
+
+		name = "The Protectorate of Bulgaria is established!"
+		add_political_power = 75
+		hidden_effect = {
+			BUL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = BUL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = BUL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			BUL = {
+				every_core_state = {
+					remove_core_of = BUL
+				}
+				1089 = { add_core_of = BUL } 
+				1090 = { add_core_of = BUL } 
+				769 = { add_core_of = BUL } 
+				770 = { add_core_of = BUL } 
+				771 = { add_core_of = BUL } 
+				772 = { add_core_of = BUL } 
+				841 = { add_core_of = BUL } 
+				106 = { add_core_of = BUL } 
+				77 = { add_core_of = BUL } 
+				48 = { add_core_of = BUL } 
+				211 = { add_core_of = BUL } 
+				212 = { add_core_of = BUL } 
+				1271 = { add_core_of = BUL } 
+				184 = { add_core_of = BUL } 
+				731 = { add_core_of = BUL } 
+
+				BUL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = BUL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.49
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.49"
+	}
+	title = "Deal With Protectorate of Croatia"
+	desc = CALoccupation.49.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CRO
+
+		name = "The Protectorate of Croatia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CRO = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CRO_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CRO
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CRO = {
+				every_core_state = {
+					remove_core_of = CRO
+				}
+				163 = { add_core_of = CRO } 
+				103 = { add_core_of = CRO } 
+				104 = { add_core_of = CRO } 
+				105 = { add_core_of = CRO } 
+				1097 = { add_core_of = CRO } 
+				1098 = { add_core_of = CRO } 
+				1099 = { add_core_of = CRO } 
+				109 = { add_core_of = CRO } 
+				1102 = { add_core_of = CRO } 
+				1128 = { add_core_of = CRO } 
+				1105 = { add_core_of = CRO } 
+				1141 = { add_core_of = CRO } 
+				1142 = { add_core_of = CRO } 
+				1143 = { add_core_of = CRO } 
+				1206 = { add_core_of = CRO } 
+				1145 = { add_core_of = CRO } 
+				1270 = { add_core_of = CRO } 
+				794 = { add_core_of = CRO } 
+
+				CRO = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CRO
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = CALoccupation.50
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.50"
+    }
+    title = "Deal With Protectorate of Greece"
+    desc = CALoccupation.50.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = GRE
+
+        name = "The Protectorate of Greece is established!"
+        add_political_power = 75
+        hidden_effect = {
+            GRE = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = GRE_CAL_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = GRE
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            GRE = {
+                every_core_state = {
+                    remove_core_of = GRE
+                }
+                768 = { add_core_of = GRE } 
+                939 = { add_core_of = GRE } 
+                47 = { add_core_of = GRE } 
+                1076 = { add_core_of = GRE } 
+                758 = { add_core_of = GRE } 
+                185 = { add_core_of = GRE } 
+                186 = { add_core_of = GRE } 
+                989 = { add_core_of = GRE } 
+
+                GRE = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = GRE
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = CALoccupation.51
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.51"
+    }
+    title = "Deal With Protectorate of Albania"
+    desc = CALoccupation.51.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = ALB
+
+        name = "The Protectorate of Albania is established!"
+        add_political_power = 75
+        hidden_effect = {
+            ALB = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = ALB_CAL_OCC
+
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = ALB
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            ALB = {
+                every_core_state = {
+                    remove_core_of = ALB
+                }
+                1268 = { add_core_of = ALB } 
+                44 = { add_core_of = ALB } 
+                766 = { add_core_of = ALB } 
+
+                ALB = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = ALB
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+	id = CALoccupation.52
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.52"
+	}
+	title = "Deal With Protectorate of Romania"
+	desc = CALoccupation.52.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ROM
+
+		name = "The Protectorate of Romania is established!"
+		add_political_power = 75
+		hidden_effect = {
+			ROM = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = ROM_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = ROM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ROM = {
+				every_core_state = {
+					remove_core_of = ROM
+				}
+				1222 = { add_core_of = ROM } 
+				1320 = { add_core_of = ROM } 
+				46 = { add_core_of = ROM } 
+				79 = { add_core_of = ROM } 
+				78 = { add_core_of = ROM } 
+				81 = { add_core_of = ROM } 
+
+				ROM = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = ROM
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+    id = CALoccupation.54
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.54"
+    }
+    title = "Deal With Protectorate of Ukraine"
+    desc = CALoccupation.54.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = UKR
+
+        name = "The Protectorate of Ukraine is established!"
+        add_political_power = 75
+        hidden_effect = {
+            UKR = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = UKR_CAL_OCC
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = UKR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            UKR = {
+                every_core_state = {
+                    remove_core_of = UKR
+                }
+                1282 = { add_core_of = UKR } 
+                1283 = { add_core_of = UKR } 
+                1284 = { add_core_of = UKR } 
+                1285 = { add_core_of = UKR } 
+                1286 = { add_core_of = UKR } 
+                259 = { add_core_of = UKR } 
+                137 = { add_core_of = UKR } 
+                1294 = { add_core_of = UKR } 
+                1295 = { add_core_of = UKR } 
+                207 = { add_core_of = UKR } 
+                791 = { add_core_of = UKR } 
+                792 = { add_core_of = UKR } 
+                1087 = { add_core_of = UKR } 
+                192 = { add_core_of = UKR } 
+                193 = { add_core_of = UKR } 
+                194 = { add_core_of = UKR } 
+                1220 = { add_core_of = UKR } 
+                1221 = { add_core_of = UKR } 
+                196 = { add_core_of = UKR } 
+                197 = { add_core_of = UKR } 
+                198 = { add_core_of = UKR } 
+                199 = { add_core_of = UKR } 
+                200 = { add_core_of = UKR } 
+                201 = { add_core_of = UKR } 
+                1228 = { add_core_of = UKR } 
+                202 = { add_core_of = UKR } 
+                1230 = { add_core_of = UKR } 
+                203 = { add_core_of = UKR } 
+                1232 = { add_core_of = UKR } 
+                1233 = { add_core_of = UKR } 
+                1234 = { add_core_of = UKR } 
+                204 = { add_core_of = UKR } 
+                206 = { add_core_of = UKR } 
+                1237 = { add_core_of = UKR } 
+                1238 = { add_core_of = UKR } 
+                1239 = { add_core_of = UKR } 
+                1240 = { add_core_of = UKR } 
+                1241 = { add_core_of = UKR } 
+                1242 = { add_core_of = UKR } 
+                1243 = { add_core_of = UKR } 
+                1244 = { add_core_of = UKR } 
+                1245 = { add_core_of = UKR } 
+                221 = { add_core_of = UKR } 
+                93 = { add_core_of = UKR } 
+                95 = { add_core_of = UKR } 
+                225 = { add_core_of = UKR } 
+                226 = { add_core_of = UKR } 
+                227 = { add_core_of = UKR } 
+                228 = { add_core_of = UKR } 
+                997 = { add_core_of = UKR } 
+                241 = { add_core_of = UKR } 
+                UKR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = UKR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = CALoccupation.55
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.55"
+    }
+    title = "Deal With Protectorate of Baltics"
+    desc = CALoccupation.55.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = BAT
+
+        name = "The Protectorate of Baltics is established!"
+        add_political_power = 75
+        hidden_effect = {
+            BAT = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = BAT_CAL_OCC
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = BAT
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            BAT = {
+                every_core_state = {
+                    remove_core_of = BAT
+                }
+                96 = { add_core_of = BAT } 
+                1091 = { add_core_of = BAT } 
+                11 = { add_core_of = BAT } 
+                12 = { add_core_of = BAT } 
+                13 = { add_core_of = BAT } 
+                655 = { add_core_of = BAT } 
+                1329 = { add_core_of = BAT } 
+                94 = { add_core_of = BAT } 
+                189 = { add_core_of = BAT } 
+                190 = { add_core_of = BAT } 
+                191 = { add_core_of = BAT } 
+                BAT = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = BAT
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = CALoccupation.56
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.56"
+    }
+    title = "Deal With the American Legation Cities"
+    desc = CALoccupation.56.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = LEC
+
+        name = "The American Legation Cities are established!"
+        add_political_power = 75
+        hidden_effect = {
+            LEC = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = LEC_CAL_OCC
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = LEC
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            LEC = {
+                every_core_state = {
+                    remove_core_of = LEC
+                }
+                729 = { add_core_of = LEC } 
+                326 = { add_core_of = LEC } 
+                801 = { add_core_of = LEC } 
+                747 = { add_core_of = LEC } 
+                746 = { add_core_of = LEC } 
+                743 = { add_core_of = LEC } 
+                744 = { add_core_of = LEC } 
+                886 = { add_core_of = LEC } 
+                609 = { add_core_of = LEC } 
+                745 = { add_core_of = LEC } 
+                526 = { add_core_of = LEC } 
+                591 = { add_core_of = LEC } 
+                336 = { add_core_of = LEC } 
+                907 = { add_core_of = LEC } 
+                347 = { add_core_of = LEC } 
+                753 = { add_core_of = LEC } 
+                268 = { add_core_of = LEC } 
+                297 = { add_core_of = LEC } 
+                686 = { add_core_of = LEC } 
+                1312 = { add_core_of = LEC } 
+                685 = { add_core_of = LEC } 
+                629 = { add_core_of = LEC } 
+                524 = { add_core_of = LEC } 
+                LEC = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = LEC
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = CALoccupation.57
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.57"
+    }
+    title = "Deal With the State of Philippines"
+    desc = CALoccupation.57.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = PHI
+
+        name = "The State of Philippines is established!"
+        add_political_power = 75
+        hidden_effect = {
+            PHI = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = PHI_CAL_OCC
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = PHI
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            PHI = {
+                every_core_state = {
+                    remove_core_of = PHI
+                }
+                327 = { add_core_of = PHI } 
+                623 = { add_core_of = PHI } 
+                624 = { add_core_of = PHI } 
+                625 = { add_core_of = PHI } 
+                626 = { add_core_of = PHI } 
+                627 = { add_core_of = PHI } 
+                628 = { add_core_of = PHI } 
+                PHI = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = PHI
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = CALoccupation.58
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.58"
+    }
+    title = "Deal With the Dominion of Insulindia"
+    desc = CALoccupation.58.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = INS
+
+        name = "The Dominion of Insulindia is established!"
+        add_political_power = 75
+        hidden_effect = {
+            INS = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = INS_CAL_OCC
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = INS
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            INS = {
+                every_core_state = {
+                    remove_core_of = INS
+                }
+                672 = { add_core_of = INS } 
+                668 = { add_core_of = INS } 
+                673 = { add_core_of = INS } 
+                669 = { add_core_of = INS } 
+                843 = { add_core_of = INS } 
+                972 = { add_core_of = INS } 
+                667 = { add_core_of = INS } 
+                334 = { add_core_of = INS } 
+                335 = { add_core_of = INS } 
+                721 = { add_core_of = INS } 
+                1016 = { add_core_of = INS } 
+                1017 = { add_core_of = INS } 
+                1018 = { add_core_of = INS } 
+                1019 = { add_core_of = INS } 
+                1020 = { add_core_of = INS } 
+                1021 = { add_core_of = INS } 
+                1022 = { add_core_of = INS } 
+                1023 = { add_core_of = INS } 
+                INS = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = INS
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = CALoccupation.59
+    immediate = {
+        log = "[GetDateText]: [Root.GetName]: event CALoccupation.59"
+    }
+    title = "Deal With the State of Sarawak"
+    desc = CALoccupation.59.d
+    picture = GFX_event_NFA_versaille_treaty
+    is_triggered_only = yes
+    fire_only_once = yes
+    option = {
+        release = SAR
+
+        name = "The State of Sarawak is established!"
+        add_political_power = 75
+        hidden_effect = {
+            SAR = {
+                set_country_flag = cal_formable
+                set_cosmetic_tag = SAR_CAL_OCC
+                
+                set_politics = {
+                    ruling_party = paternal_autocrat
+                    elections_allowed = no
+                }
+                CAL = {
+                    set_autonomy = {
+                        target = SAR
+                        autonomous_state = kx_colored_puppet
+                    }
+                }
+                load_focus_tree = generic_focus
+            }
+            SAR = {
+                every_core_state = {
+                    remove_core_of = SAR
+                }
+                828 = { add_core_of = SAR } 
+                333 = { add_core_of = SAR } 
+                SAR = {
+                    every_core_state = {
+                        limit = {
+                            OR = {
+                                is_owned_by = CAL
+                                OWNER = { is_subject_of = CAL}
+                            }
+                        }
+                        transfer_state_to = SAR
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+	id = CALoccupation.60
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.60"
+	}
+	title = "Deal With Protectorate of Malta"
+	desc = CALoccupation.60.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MLT
+
+		name = "The Protectorate of Malta is established!"
+		add_political_power = 75
+		hidden_effect = {
+			MLT = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = MLT_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = MLT
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			MLT = {
+				every_core_state = {
+					remove_core_of = MLT
+				}
+				116 = { add_core_of = MLT } 
+
+				MLT = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = MLT
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.61
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.61"
+	}
+	title = "Deal With Protectorate of Crete"
+	desc = CALoccupation.61.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = CRE
+
+		name = "The Protectorate of Crete is established!"
+		add_political_power = 75
+		hidden_effect = {
+			CRE = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = CRE_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = CRE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			CRE = {
+				every_core_state = {
+					remove_core_of = CRE
+				}
+				182 = { add_core_of = CRE } 
+
+				CRE = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = CRE
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.62
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.62"
+	}
+	title = "Deal With Autonomous State of Australia"
+	desc = CALoccupation.62.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = AST
+
+		name = "The Autonomous State of Australia is established!"
+		add_political_power = 75
+		hidden_effect = {
+			AST = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = AST_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = AST
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			AST = {
+				every_core_state = {
+					remove_core_of = AST
+				}
+				636 = { add_core_of = AST } 
+				674 = { add_core_of = AST } 
+				517 = { add_core_of = AST } 
+				518 = { add_core_of = AST } 
+				519 = { add_core_of = AST } 
+				520 = { add_core_of = AST } 
+				521 = { add_core_of = AST } 
+				522 = { add_core_of = AST } 
+				523 = { add_core_of = AST } 
+				988 = { add_core_of = AST } 
+				723 = { add_core_of = AST } 
+				985 = { add_core_of = AST } 
+				986 = { add_core_of = AST } 
+				987 = { add_core_of = AST } 
+				284 = { add_core_of = AST } 
+				285 = { add_core_of = AST } 
+
+				AST = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL}
+							}
+						}
+						transfer_state_to = AST
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.64
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.64"
+	}
+	title = "Deal With State of New Zealand"
+	desc = CALoccupation.64.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = NZL
+
+		name = "The State of New Zealand is established!"
+		add_political_power = 75
+		hidden_effect = {
+			NZL = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = NZL_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = NZL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			NZL = {
+				every_core_state = {
+					remove_core_of = NZL
+				}
+				723 = { add_core_of = NZL } 
+				284 = { add_core_of = NZL } 
+
+				NZL = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL }
+							}
+						}
+						transfer_state_to = NZL
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.65
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.65"
+	}
+	title = "Deal With American Raj"
+	desc = CALoccupation.65.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = DEH
+
+		name = "The American Raj is established!"
+		add_political_power = 75
+		hidden_effect = {
+			DEH = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = DEH_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = DEH
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			DEH = {
+				every_core_state = {
+					remove_core_of = DEH
+				}
+				815 = { add_core_of = DEH } 
+				1034 = { add_core_of = DEH } 
+				1057 = { add_core_of = DEH } 
+				423 = { add_core_of = DEH } 
+				424 = { add_core_of = DEH } 
+				425 = { add_core_of = DEH } 
+				426 = { add_core_of = DEH } 
+				427 = { add_core_of = DEH } 
+				428 = { add_core_of = DEH } 
+				429 = { add_core_of = DEH } 
+				430 = { add_core_of = DEH } 
+				431 = { add_core_of = DEH } 
+				432 = { add_core_of = DEH } 
+				433 = { add_core_of = DEH } 
+				434 = { add_core_of = DEH } 
+				435 = { add_core_of = DEH } 
+				436 = { add_core_of = DEH } 
+				437 = { add_core_of = DEH } 
+				438 = { add_core_of = DEH } 
+				439 = { add_core_of = DEH } 
+				440 = { add_core_of = DEH } 
+				441 = { add_core_of = DEH } 
+				443 = { add_core_of = DEH } 
+				444 = { add_core_of = DEH } 
+				1092 = { add_core_of = DEH } 
+				1093 = { add_core_of = DEH } 
+				1094 = { add_core_of = DEH } 
+				858 = { add_core_of = DEH } 
+				867 = { add_core_of = DEH } 
+				868 = { add_core_of = DEH } 
+				887 = { add_core_of = DEH } 
+				889 = { add_core_of = DEH } 
+				890 = { add_core_of = DEH } 
+				891 = { add_core_of = DEH } 
+				893 = { add_core_of = DEH } 
+
+				DEH = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL }
+							}
+						}
+						transfer_state_to = DEH
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.66
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.66"
+	}
+	title = "Deal With Autonomous State of Orenburg Cossack Host"
+	desc = CALoccupation.66.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = ALO
+
+		name = "The Autonomous State of Orenburg Cossack Host is established!"
+		add_political_power = 75
+		hidden_effect = {
+			ALO = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = ALO_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = ALO
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			ALO = {
+				every_core_state = {
+					remove_core_of = ALO
+				}
+				810 = { add_core_of = ALO } 
+				587 = { add_core_of = ALO } 
+				589 = { add_core_of = ALO } 
+				590 = { add_core_of = ALO } 
+				402 = { add_core_of = ALO } 
+				1203 = { add_core_of = ALO } 
+				404 = { add_core_of = ALO } 
+				406 = { add_core_of = ALO } 
+				1212 = { add_core_of = ALO } 
+
+				ALO = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL }
+							}
+						}
+						transfer_state_to = ALO
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CALoccupation.68
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event CALoccupation.68"
+	}
+	title = "Deal With State of Malaya"
+	desc = CALoccupation.68.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		release = MLY
+
+		name = "The State of Malaya is established!"
+		add_political_power = 75
+		hidden_effect = {
+			MLY = {
+				set_country_flag = cal_formable
+				set_cosmetic_tag = MLY_CAL_OCC
+				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				CAL = {
+					set_autonomy = {
+						target = MLY
+						autonomous_state = kx_colored_puppet
+					}
+				}
+				load_focus_tree = generic_focus
+			}
+			MLY = {
+				every_core_state = {
+					remove_core_of = MLY
+				}
+				999 = { add_core_of = MLY } 
+				846 = { add_core_of = MLY } 
+				751 = { add_core_of = MLY } 
+				830 = { add_core_of = MLY } 
+
+				MLY = {
+					every_core_state = {
+						limit = {
+							OR = {
+								is_owned_by = CAL
+								OWNER = { is_subject_of = CAL }
+							}
+						}
+						transfer_state_to = MLY
+					}
+				}
+			}
+		}
+	}
+}
