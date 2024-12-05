@@ -2411,67 +2411,6 @@ country_event = {
 }
 
 country_event = {
-	id = CALoccupation.33
-	immediate = {
-		log = "[GetDateText]: [Root.GetName]: event CALoccupation.33"
-	}
-	title = "Deal With Protectorate of Portugal"
-	desc = CALoccupation.33.d
-	picture = GFX_event_NFA_versaille_treaty
-	is_triggered_only = yes
-	fire_only_once = yes
-	option = {
-		release = POR
-
-		name = "The Protectorate of Portugal is established!"
-		add_political_power = 75
-		hidden_effect = {
-			POR = {
-				set_country_flag = cal_formable
-				set_cosmetic_tag = POR_CAL_OCC
-				
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
-				CAL = {
-					set_autonomy = {
-						target = POR
-						autonomous_state = kx_colored_puppet
-					}
-				}
-				load_focus_tree = generic_focus
-			}
-			POR = {
-				every_core_state = {
-					remove_core_of = POR
-				}
-				705 = { add_core_of = POR } 
-				112 = { add_core_of = POR } 
-				179 = { add_core_of = POR } 
-				180 = { add_core_of = POR } 
-				181 = { add_core_of = POR } 
-				697 = { add_core_of = POR } 
-				698 = { add_core_of = POR } 
-				702 = { add_core_of = POR } 
-
-				POR = {
-					every_core_state = {
-						limit = {
-							OR = {
-								is_owned_by = CAL
-								OWNER = { is_subject_of = CAL}
-							}
-						}
-						transfer_state_to = POR
-					}
-				}
-			}
-		}
-	}
-}
-
-country_event = {
 	id = CALoccupation.34
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event CALoccupation.34"
