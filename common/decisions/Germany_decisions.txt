@@ -4,6 +4,100 @@
 GER_great_game = {
 	GER_great_game_america = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1096
+			  state = 629
+			  state = 630
+			  state = 631
+			  state = 632
+			  state = 1150
+			  state = 1151
+			  state = 1152
+			  state = 1153
+			  state = 1154
+			  state = 1155
+			  state = 1156
+			  state = 1157
+			  state = 1158
+			  state = 1159
+			  state = 1160
+			  state = 1161
+			  state = 1162
+			  state = 1163
+			  state = 1164
+			  state = 1165
+			  state = 1166
+			  state = 1167
+			  state = 1168
+			  state = 1169
+			  state = 1170
+			  state = 1171
+			  state = 1172
+			  state = 1173
+			  state = 1174
+			  state = 1175
+			  state = 642
+			  state = 726
+			  state = 727
+			  state = 1273
+			  state = 261
+			  state = 796
+			  state = 797
+			  state = 798
+			  state = 829
+			  state = 833
+			  state = 357
+			  state = 358
+			  state = 359
+			  state = 360
+			  state = 361
+			  state = 362
+			  state = 363
+			  state = 364
+			  state = 365
+			  state = 366
+			  state = 367
+			  state = 368
+			  state = 369
+			  state = 370
+			  state = 371
+			  state = 372
+			  state = 373
+			  state = 374
+			  state = 375
+			  state = 376
+			  state = 377
+			  state = 378
+			  state = 379
+			  state = 380
+			  state = 381
+			  state = 382
+			  state = 383
+			  state = 384
+			  state = 385
+			  state = 386
+			  state = 387
+			  state = 388
+			  state = 389
+			  state = 390
+			  state = 391
+			  state = 392
+			  state = 393
+			  state = 394
+			  state = 395
+			  state = 396
+			  state = 929
+			  state = 930
+			  state = 931
+			  state = 932
+			  state = 933
+			  state = 934
+			  state = 935
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -11,18 +105,18 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = USA
+					country_exists = USA
 				}
 				USA = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  USA = {
-                1096= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
+				}
+				USA = {
+				1096= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				629= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				630= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				631= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -111,14 +205,14 @@ GER_great_game = {
 				933= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				934= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				935= { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-              }
+				}
 			}
 			NOT = {
 				USA = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -134,9 +228,37 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_kingdom_of_canada = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 276
+			  state = 682
+			  state = 683
+			  state = 1330
+			  state = 1331
+			  state = 1332
+			  state = 832
+			  state = 331
+			  state = 332
+			  state = 464
+			  state = 465
+			  state = 466
+			  state = 467
+			  state = 468
+			  state = 469
+			  state = 470
+			  state = 471
+			  state = 472
+			  state = 473
+			  state = 730
+			  state = 739
+			  state = 740
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -144,17 +266,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CAN
+					country_exists = CAN
 				}
 				CAN = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  CAN = {
+				}
+				CAN = {
 				276 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 				682 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 				683 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -177,14 +299,14 @@ GER_great_game = {
 				730 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 				739 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 				740 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-			  }
+				}
 			}
 			NOT = {
 				CAN = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 		}
 		
 		cost = 30
@@ -199,9 +321,26 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_kingdom_of_sweden = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 960
+			  state = 38
+			  state = 138
+			  state = 139
+			  state = 140
+			  state = 141
+			  state = 778
+			  state = 908
+			  state = 909
+			  state = 666
+			  state = 124
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -209,17 +348,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SWE
+					country_exists = SWE
 				}
 				SWE = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  SWE = {
+				}
+				SWE = {
 				960 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				38 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				138 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -231,14 +370,14 @@ GER_great_game = {
 				909 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				666 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				124 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				SWE = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -256,6 +395,17 @@ GER_great_game = {
 	}
 	GER_great_game_kingdom_of_denmark = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 99
+			  state = 37
+			  state = 101
+			  state = 337
+			  state = 926
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -263,30 +413,30 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = DEN
+					country_exists = DEN
 				}
 				DEN = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  DEN = {
+				}
+				DEN = {
 				99 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				37 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				101 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				337 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				926 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				DEN = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -302,9 +452,30 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_kingdom_of_finland = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 864
+			  state = 865
+			  state = 840
+			  state = 1324
+			  state = 1325
+			  state = 1326
+			  state = 111
+			  state = 844
+			  state = 145
+			  state = 146
+			  state = 147
+			  state = 148
+			  state = 149
+			  state = 150
+			  state = 863
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -312,17 +483,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = FIN
+					country_exists = FIN
 				}
 				FIN = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  FIN = {
+				}
+				FIN = {
 				864 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				865 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				840 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -338,14 +509,14 @@ GER_great_game = {
 				149 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				150 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				863 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				FIN = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -361,9 +532,23 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_kingdom_of_norway = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 936
+			  state = 937
+			  state = 142
+			  state = 110
+			  state = 143
+			  state = 144
+			  state = 1146
+			  state = 1147
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -371,17 +556,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = NOR
+					country_exists = NOR
 				}
 				NOR = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  NOR = {
+				}
+				NOR = {
 				936 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				937 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				142 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -390,14 +575,14 @@ GER_great_game = {
 				144 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1146 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1147 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				NOR = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -413,9 +598,16 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_iceland_autonomous_state = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 100
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -423,26 +615,26 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = ICE
+					country_exists = ICE
 				}
 				ICE = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  ICE = {
+				}
+				ICE = {
 				100 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				ICE = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -458,9 +650,58 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_hetmanate_of_german_ukraine = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1282
+			  state = 1283
+			  state = 1284
+			  state = 1285
+			  state = 1286
+			  state = 259
+			  state = 137
+			  state = 791
+			  state = 792
+			  state = 192
+			  state = 193
+			  state = 1220
+			  state = 1221
+			  state = 196
+			  state = 197
+			  state = 198
+			  state = 199
+			  state = 200
+			  state = 201
+			  state = 1228
+			  state = 202
+			  state = 1230
+			  state = 203
+			  state = 1232
+			  state = 1233
+			  state = 1234
+			  state = 1237
+			  state = 1238
+			  state = 1239
+			  state = 1240
+			  state = 1241
+			  state = 1242
+			  state = 1243
+			  state = 1244
+			  state = 1245
+			  state = 221
+			  state = 93
+			  state = 225
+			  state = 226
+			  state = 227
+			  state = 228
+			  state = 997
+			  state = 241
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -468,17 +709,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = UKR
+					country_exists = UKR
 				}
 				UKR = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  UKR = {
+				}
+				UKR = {
 				1282 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1283 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1284 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -522,14 +763,14 @@ GER_great_game = {
 				228 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				997 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				241 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				UKR = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -545,9 +786,19 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_irischer_freistaat = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 135
+			  state = 113
+			  state = 134
+			  state = 119
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -555,29 +806,29 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = IRE
+					country_exists = IRE
 				}
 				IRE = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  IRE = {
+				}
+				IRE = {
 				135 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				113 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				134 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				119 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				IRE = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -593,9 +844,44 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_brazil_empire = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 896
+			  state = 898
+			  state = 900
+			  state = 1030
+			  state = 1031
+			  state = 1033
+			  state = 1040
+			  state = 1041
+			  state = 1043
+			  state = 280
+			  state = 1305
+			  state = 1306
+			  state = 1307
+			  state = 1310
+			  state = 1311
+			  state = 855
+			  state = 495
+			  state = 496
+			  state = 497
+			  state = 498
+			  state = 499
+			  state = 500
+			  state = 501
+			  state = 502
+			  state = 503
+			  state = 504
+			  state = 505
+			  state = 894
+			  state = 895
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -603,17 +889,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = BRA
+					country_exists = BRA
 				}
 				BRA = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  BRA = {
+				}
+				BRA = {
 				896 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				898 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				900 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -643,14 +929,14 @@ GER_great_game = {
 				505 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				894 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				895 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				BRA = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -666,9 +952,23 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_kingdom_of_poland = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1088
+			  state = 97
+			  state = 98
+			  state = 10
+			  state = 92
+			  state = 87
+			  state = 90
+			  state = 1148
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -676,17 +976,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = POL
+					country_exists = POL
 				}
 				POL = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  POL = {
+				}
+				POL = {
 				1088 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				97 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				98 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -695,14 +995,14 @@ GER_great_game = {
 				87 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				90 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1148 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				POL = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -718,9 +1018,112 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_deutsch_china = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1044
+			  state = 1045
+			  state = 1046
+			  state = 1047
+			  state = 1048
+			  state = 1049
+			  state = 1050
+			  state = 1051
+			  state = 1052
+			  state = 1053
+			  state = 1054
+			  state = 1055
+			  state = 1056
+			  state = 1058
+			  state = 1059
+			  state = 1060
+			  state = 1061
+			  state = 1062
+			  state = 1063
+			  state = 1064
+			  state = 1065
+			  state = 1066
+			  state = 1067
+			  state = 1068
+			  state = 1069
+			  state = 1072
+			  state = 1075
+			  state = 1083
+			  state = 1085
+			  state = 1086
+			  state = 591
+			  state = 593
+			  state = 594
+			  state = 595
+			  state = 596
+			  state = 597
+			  state = 598
+			  state = 599
+			  state = 600
+			  state = 601
+			  state = 602
+			  state = 603
+			  state = 604
+			  state = 605
+			  state = 606
+			  state = 607
+			  state = 608
+			  state = 609
+			  state = 610
+			  state = 611
+			  state = 613
+			  state = 614
+			  state = 615
+			  state = 616
+			  state = 617
+			  state = 618
+			  state = 619
+			  state = 620
+			  state = 621
+			  state = 622
+			  state = 650
+			  state = 661
+			  state = 693
+			  state = 714
+			  state = 715
+			  state = 716
+			  state = 717
+			  state = 743
+			  state = 744
+			  state = 746
+			  state = 747
+			  state = 748
+			  state = 774
+			  state = 788
+			  state = 283
+			  state = 287
+			  state = 799
+			  state = 800
+			  state = 801
+			  state = 803
+			  state = 816
+			  state = 322
+			  state = 325
+			  state = 326
+			  state = 328
+			  state = 348
+			  state = 353
+			  state = 883
+			  state = 884
+			  state = 885
+			  state = 886
+			  state = 897
+			  state = 996
+			  state = 1012
+			  state = 1013
+			  state = 1014
+			  state = 1015
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -728,17 +1131,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = LEP
+					country_exists = LEP
 				}
 				LEP = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  LEP = {
+				}
+				LEP = {
 				1044 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1045 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1046 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -836,14 +1239,14 @@ GER_great_game = {
 				1013 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1014 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1015 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				LEP = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }   
+			}   
 					
 		}
 		
@@ -859,9 +1262,36 @@ GER_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	GER_great_game_kingdom_of_italy = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 2
+			  state = 156
+			  state = 157
+			  state = 158
+			  state = 159
+			  state = 160
+			  state = 161
+			  state = 162
+			  state = 837
+			  state = 838
+			  state = 1236
+			  state = 742
+			  state = 1003
+			  state = 1004
+			  state = 1005
+			  state = 1006
+			  state = 115
+			  state = 117
+			  state = 759
+			  state = 764
+			  state = 1149
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = GER
 		}
@@ -869,17 +1299,17 @@ GER_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = ITA
+					country_exists = ITA
 				}
 				ITA = {
-				  is_subject_of = GER
+					is_subject_of = GER
 				}
-			  }
-			  ITA = {
+				}
+				ITA = {
 				2 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				156 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				157 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
@@ -901,14 +1331,14 @@ GER_great_game = {
 				759 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				764 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
 				1149 = { owner = { OR = { original_tag = GER is_subject_of = GER} } }
-			  }
+				}
 			}
 			NOT = {
 				ITA = {
 					has_country_flag = ger_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		

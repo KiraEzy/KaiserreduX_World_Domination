@@ -9,6 +9,23 @@
 JAP_great_game = {
 	JAP_great_game_transamur = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1246
+				state = 408
+				state = 409
+				state = 560
+				state = 561
+				state = 563
+				state = 564
+				state = 565
+				state = 574
+				state = 637
+				state = 657
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		  }
 		allowed = {
 			tag = JAP
 		}
@@ -16,36 +33,36 @@ JAP_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = TRM
+					country_exists = TRM
 				}
 				TRM = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  TRM = {
-                1246 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                408 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                409 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                560 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                561 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                563 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                564 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                565 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                574 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                637 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                657 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-            	}
+				}
+				TRM = {
+				1246 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				408 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				409 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				560 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				561 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				563 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				564 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				565 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				574 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				637 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				657 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+				}
 			}
 			NOT = {
 				TRM = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -63,6 +80,20 @@ JAP_great_game = {
 	}
 	JAP_great_game_mongol_province = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1084
+			  state = 1293
+			  state = 329
+			  state = 330
+			  state = 612
+			  state = 621
+			  state = 654
+			  state = 811
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -70,18 +101,18 @@ JAP_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = MON
+					country_exists = MON
 				}
 				MON = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  MON = {
-                1084 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
+				}
+				MON = {
+				1084 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
 				1293 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
 				329 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
 				330 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
@@ -89,14 +120,14 @@ JAP_great_game = {
 				621 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
 				654 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } } 
 				811 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }	
-            	}
+				}
 			}
 			NOT = {
 				MON = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -112,9 +143,103 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefectures_of_america = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1096
+			  state = 629
+			  state = 630
+			  state = 631
+			  state = 632
+			  state = 1150
+			  state = 1151
+			  state = 1152
+			  state = 1153
+			  state = 1154
+			  state = 1155
+			  state = 1156
+			  state = 1157
+			  state = 1158
+			  state = 1159
+			  state = 1160
+			  state = 1161
+			  state = 1162
+			  state = 1163
+			  state = 1164
+			  state = 1165
+			  state = 1166
+			  state = 1167
+			  state = 1168
+			  state = 1169
+			  state = 1170
+			  state = 1171
+			  state = 1172
+			  state = 1173
+			  state = 1174
+			  state = 1175
+			  state = 642
+			  state = 726
+			  state = 727
+			  state = 1273
+			  state = 261
+			  state = 796
+			  state = 797
+			  state = 798
+			  state = 829
+			  state = 833
+			  state = 357
+			  state = 358
+			  state = 359
+			  state = 360
+			  state = 361
+			  state = 362
+			  state = 363
+			  state = 364
+			  state = 365
+			  state = 366
+			  state = 367
+			  state = 368
+			  state = 369
+			  state = 370
+			  state = 371
+			  state = 372
+			  state = 373
+			  state = 374
+			  state = 375
+			  state = 376
+			  state = 377
+			  state = 378
+			  state = 379
+			  state = 380
+			  state = 381
+			  state = 382
+			  state = 383
+			  state = 384
+			  state = 385
+			  state = 386
+			  state = 387
+			  state = 388
+			  state = 389
+			  state = 390
+			  state = 391
+			  state = 392
+			  state = 393
+			  state = 394
+			  state = 395
+			  state = 396
+			  state = 929
+			  state = 930
+			  state = 931
+			  state = 932
+			  state = 933
+			  state = 934
+			  state = 935
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -122,17 +247,17 @@ JAP_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CAL
+					country_exists = CAL
 				}
 				CAL = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  CAL = {
+				}
+				CAL = {
 				1096= { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
 				629= { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
 				630= { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
@@ -222,10 +347,10 @@ JAP_great_game = {
 				933= { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
 				934= { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
 				935= { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-			  }
+				}
 			}
 			
-		  }	
+			}	
 					
 		}
 		
@@ -241,9 +366,37 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefectures_of_canada = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 276
+			  state = 682
+			  state = 683
+			  state = 1330
+			  state = 1331
+			  state = 1332
+			  state = 832
+			  state = 331
+			  state = 332
+			  state = 464
+			  state = 465
+			  state = 466
+			  state = 467
+			  state = 468
+			  state = 469
+			  state = 470
+			  state = 471
+			  state = 472
+			  state = 473
+			  state = 730
+			  state = 739
+			  state = 740
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -251,25 +404,25 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CAN
+					country_exists = CAN
 				}
 				CAN = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = QUE
+					country_exists = QUE
 				}
 				QUE = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  CAN = {
+				}
+				CAN = {
 				276 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				682 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				683 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -292,14 +445,14 @@ JAP_great_game = {
 				730 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				739 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				740 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				CAN = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -317,6 +470,22 @@ JAP_great_game = {
 	}
 	JAP_great_game_state_of_manchuria = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 610
+			  state = 328
+			  state = 714
+			  state = 715
+			  state = 716
+			  state = 717
+			  state = 883
+			  state = 884
+			  state = 885
+			  state = 886
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -324,17 +493,17 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = MAN
+					country_exists = MAN
 				}
 				MAN = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  MAN = {
+				}
+				MAN = {
 				610 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				328 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				714 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -345,14 +514,14 @@ JAP_great_game = {
 				884 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				885 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				886 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				MAN = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -368,9 +537,30 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_guangzhou_province = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1056
+			  state = 800
+			  state = 801
+			  state = 326
+			  state = 591
+			  state = 592
+			  state = 593
+			  state = 594
+			  state = 1012
+			  state = 599
+			  state = 728
+			  state = 729
+			  state = 1053
+			  state = 1054
+			  state = 1055
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -378,17 +568,17 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = GXC
+					country_exists = GXC
 				}
 				GXC = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  GXC = {
+				}
+				GXC = {
 				1056 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				800 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				801 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -404,14 +594,14 @@ JAP_great_game = {
 				1053 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1054 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1055 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				GXC = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -427,9 +617,20 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_yunnan_province = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 325
+			  state = 1051
+			  state = 816
+			  state = 603
+			  state = 1052
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -437,30 +638,30 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = YUN
+					country_exists = YUN
 				}
 				YUN = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  YUN = {
+				}
+				YUN = {
 				325 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1051 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				816 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				603 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1052 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				YUN = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -476,9 +677,20 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ija_administration_of_shanxi = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 615
+			  state = 622
+			  state = 1072
+			  state = 1015
+			  state = 799
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -486,30 +698,30 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SHX
+					country_exists = SHX
 				}
 				SHX = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  SHX = {
+				}
+				SHX = {
 				615 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				622 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1072 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1015 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				799 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				SHX = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -525,9 +737,21 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_sichuan_province = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 650
+			  state = 788
+			  state = 661
+			  state = 601
+			  state = 605
+			  state = 1049
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -535,31 +759,31 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SZC
+					country_exists = SZC
 				}
 				SZC = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  SZC = {
+				}
+				SZC = {
 				650 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				788 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				661 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				601 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				605 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1049 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				SZC = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -575,9 +799,22 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_qinghai_province = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 353
+			  state = 774
+			  state = 616
+			  state = 621
+			  state = 283
+			  state = 348
+			  state = 604
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -585,17 +822,17 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = XSM
+					country_exists = XSM
 				}
 				XSM = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  XSM = {
+				}
+				XSM = {
 				353 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				774 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				616 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -603,14 +840,14 @@ JAP_great_game = {
 				283 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				348 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				604 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				XSM = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -628,6 +865,19 @@ JAP_great_game = {
 	}
 	JAP_great_game_sinkiang_province = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 897
+			  state = 617
+			  state = 618
+			  state = 619
+			  state = 1083
+			  state = 1085
+			  state = 287
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -635,17 +885,17 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SIK
+					country_exists = SIK
 				}
 				SIK = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  SIK = {
+				}
+				SIK = {
 				897 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				617 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				618 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -653,14 +903,14 @@ JAP_great_game = {
 				1083 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				1085 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				287 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				SIK = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -676,9 +926,57 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_reorganised_national_government_of_china = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 611
+			  state = 614
+			  state = 608
+			  state = 619
+			  state = 1062
+			  state = 1063
+			  state = 287
+			  state = 1061
+			  state = 597
+			  state = 609
+			  state = 1065
+			  state = 744
+			  state = 996
+			  state = 1060
+			  state = 1059
+			  state = 1047
+			  state = 1064
+			  state = 1050
+			  state = 598
+			  state = 607
+			  state = 1058
+			  state = 606
+			  state = 613
+			  state = 620
+			  state = 1014
+			  state = 743
+			  state = 596
+			  state = 1048
+			  state = 1013
+			  state = 602
+			  state = 600
+			  state = 1046
+			  state = 1066
+			  state = 1069
+			  state = 803
+			  state = 1068
+			  state = 746
+			  state = 1045
+			  state = 1044
+			  state = 1067
+			  state = 747
+			  state = 595
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -686,17 +984,17 @@ JAP_great_game = {
 	
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CHI
+					country_exists = CHI
 				}
 				CHI = {
-				  is_subject_of = JAP
+					is_subject_of = JAP
 				}
-			  }
-			  CHI = {
+				}
+				CHI = {
 				611 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				614 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				608 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -739,14 +1037,14 @@ JAP_great_game = {
 				1067 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				747 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				595 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-			  }
+				}
 			}
 			NOT = {
 				CHI = {
 					has_country_flag = jap_formable
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -762,9 +1060,25 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefectures_of_indochina = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 750
+			  state = 671
+			  state = 882
+			  state = 857
+			  state = 856
+			  state = 825
+			  state = 826
+			  state = 827
+			  state = 670
+			  state = 286
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -816,6 +1130,25 @@ JAP_great_game = {
 	
 	JAP_great_game_imperial_prefectures_of_australia = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 674
+			  state = 517
+			  state = 518
+			  state = 519
+			  state = 520
+			  state = 521
+			  state = 522
+			  state = 711
+			  state = 988
+			  state = 985
+			  state = 986
+			  state = 987
+			  state = 285
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -867,9 +1200,17 @@ JAP_great_game = {
 			factor = 60
 		}
 	} 
-
+	
 	JAP_great_game_ijn_administration_of_new_zealand = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 723
+			  state = 284
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -910,9 +1251,22 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_firipin_rinji_seifu = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 327
+			  state = 623
+			  state = 624
+			  state = 625
+			  state = 626
+			  state = 627
+			  state = 628
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -945,7 +1299,7 @@ JAP_great_game = {
 				}
 			}
 		}
-		 
+			
 		cost = 30
 		
 		remove_effect = {
@@ -958,9 +1312,19 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_tibet = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 322
+			  state = 748
+			  state = 693
+			  state = 1086
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1003,9 +1367,26 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_siam = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 289
+			  state = 999
+			  state = 749
+			  state = 751
+			  state = 882
+			  state = 724
+			  state = 822
+			  state = 823
+			  state = 824
+			  state = 825
+			  state = 830
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1055,9 +1436,21 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_burma = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 288
+			  state = 640
+			  state = 72
+			  state = 790
+			  state = 701
+			  state = 831
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1102,9 +1495,55 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_india = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 815
+			  state = 1034
+			  state = 1057
+			  state = 423
+			  state = 424
+			  state = 425
+			  state = 426
+			  state = 427
+			  state = 428
+			  state = 429
+			  state = 430
+			  state = 431
+			  state = 432
+			  state = 433
+			  state = 434
+			  state = 435
+			  state = 436
+			  state = 437
+			  state = 438
+			  state = 439
+			  state = 440
+			  state = 441
+			  state = 442
+			  state = 443
+			  state = 444
+			  state = 445
+			  state = 320
+			  state = 1219
+			  state = 1092
+			  state = 1093
+			  state = 1094
+			  state = 1095
+			  state = 858
+			  state = 867
+			  state = 868
+			  state = 887
+			  state = 889
+			  state = 890
+			  state = 891
+			  state = 893
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1183,9 +1622,27 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ija_administration_of_himalayas = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 897
+			  state = 323
+			  state = 324
+			  state = 617
+			  state = 618
+			  state = 619
+			  state = 814
+			  state = 887
+			  state = 888
+			  state = 1083
+			  state = 1085
+			  state = 287
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1236,9 +1693,111 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_russia = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1193
+			  state = 1194
+			  state = 1195
+			  state = 1197
+			  state = 1198
+			  state = 1199
+			  state = 1200
+			  state = 1201
+			  state = 1202
+			  state = 1204
+			  state = 1205
+			  state = 1207
+			  state = 1224
+			  state = 1229
+			  state = 1274
+			  state = 1287
+			  state = 1288
+			  state = 1289
+			  state = 1290
+			  state = 1291
+			  state = 1292
+			  state = 1327
+			  state = 1328
+			  state = 195
+			  state = 205
+			  state = 208
+			  state = 209
+			  state = 210
+			  state = 213
+			  state = 214
+			  state = 215
+			  state = 216
+			  state = 217
+			  state = 219
+			  state = 220
+			  state = 222
+			  state = 223
+			  state = 224
+			  state = 236
+			  state = 239
+			  state = 240
+			  state = 242
+			  state = 243
+			  state = 244
+			  state = 246
+			  state = 247
+			  state = 248
+			  state = 249
+			  state = 250
+			  state = 251
+			  state = 252
+			  state = 253
+			  state = 254
+			  state = 255
+			  state = 256
+			  state = 257
+			  state = 258
+			  state = 260
+			  state = 262
+			  state = 263
+			  state = 264
+			  state = 265
+			  state = 351
+			  state = 397
+			  state = 398
+			  state = 399
+			  state = 40
+			  state = 400
+			  state = 401
+			  state = 403
+			  state = 516
+			  state = 566
+			  state = 567
+			  state = 568
+			  state = 569
+			  state = 570
+			  state = 571
+			  state = 572
+			  state = 573
+			  state = 575
+			  state = 576
+			  state = 577
+			  state = 578
+			  state = 580
+			  state = 581
+			  state = 582
+			  state = 583
+			  state = 588
+			  state = 644
+			  state = 651
+			  state = 652
+			  state = 653
+			  state = 722
+			  state = 755
+			  state = 821
+			  state = 880
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1246,135 +1805,135 @@ JAP_great_game = {
 	
 		}
 		available = {
-            AND = {
-              AND = {
-                  if = {
-                      limit = {
-                          country_exists = RUS
-                      }
-                      RUS = {
-                          is_subject_of = JAP
-                      }
-                  }
-                  if = {
-                      limit = {
-                          country_exists = SIB
-                      }
-                      SIB = {
-                          is_subject_of = JAP
-                      }
-                  }
-                  RUS = {
-                      1193 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1194 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1195 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1197 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1198 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1199 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1200 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1201 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1202 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1204 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1205 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1207 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1224 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1229 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1274 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1287 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1288 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1289 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1290 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1291 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1292 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1327 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      1328 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      195 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      205 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      208 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      209 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      210 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      213 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      214 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      215 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      216 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      217 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      219 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      220 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      222 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      223 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      224 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      236 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      239 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      240 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      242 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      243 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      244 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      246 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      247 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      248 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      249 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      250 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      251 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      252 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      253 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      254 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      255 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      256 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      257 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      258 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      260 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      262 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      263 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      264 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      265 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      351 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      397 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      398 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      399 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      40 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      400 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      401 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      403 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      516 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      566 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      567 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      568 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      569 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      570 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      571 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      572 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      573 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      575 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      576 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      577 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      578 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      580 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      581 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      582 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      583 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      588 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      644 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      651 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      652 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      653 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      722 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      755 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      821 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                      880 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
-                  }
-              }
-              NOT = {
-                OR={
-                  RUS = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = RUS
+						}
+						RUS = {
+							is_subject_of = JAP
+						}
+					}
+					if = {
+						limit = {
+							country_exists = SIB
+						}
+						SIB = {
+							is_subject_of = JAP
+						}
+					}
+					RUS = {
+						1193 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1194 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1195 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1197 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1198 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1199 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1200 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1201 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1202 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1204 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1205 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1207 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1224 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1229 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1274 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1287 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1288 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1289 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1290 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1291 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1292 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1327 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						1328 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						195 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						205 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						208 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						209 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						210 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						213 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						214 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						215 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						216 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						217 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						219 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						220 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						222 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						223 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						224 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						236 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						239 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						240 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						242 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						243 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						244 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						246 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						247 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						248 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						249 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						250 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						251 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						252 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						253 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						254 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						255 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						256 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						257 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						258 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						260 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						262 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						263 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						264 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						265 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						351 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						397 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						398 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						399 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						40 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						400 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						401 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						403 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						516 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						566 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						567 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						568 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						569 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						570 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						571 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						572 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						573 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						575 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						576 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						577 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						578 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						580 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						581 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						582 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						583 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						588 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						644 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						651 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						652 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						653 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						722 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						755 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						821 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+						880 = { owner = { OR = { original_tag = JAP is_subject_of = JAP} } }
+					}
+				}
+				NOT = {
+				OR={
+					RUS = {
 					has_country_flag = jap_formable
-                  }
-                  SIB = {
+					}
+					SIB = {
 					has_country_flag = jap_formable
-                  }
-                }
-              }		
-            }
-          }
+					}
+				}
+				}		
+			}
+			}
 	
 		cost = 30
 	
@@ -1388,9 +1947,49 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_scandanavia = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 138
+			  state = 139
+			  state = 140
+			  state = 141
+			  state = 142
+			  state = 143
+			  state = 144
+			  state = 145
+			  state = 146
+			  state = 147
+			  state = 148
+			  state = 149
+			  state = 150
+			  state = 666
+			  state = 38
+			  state = 936
+			  state = 937
+			  state = 1324
+			  state = 1325
+			  state = 1326
+			  state = 960
+			  state = 840
+			  state = 778
+			  state = 844
+			  state = 908
+			  state = 909
+			  state = 863
+			  state = 864
+			  state = 865
+			  state = 110
+			  state = 111
+			  state = 1146
+			  state = 1147
+			  state = 124
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1463,9 +2062,21 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ijn_administration_of_the_atlantics = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 99
+			  state = 100
+			  state = 37
+			  state = 101
+			  state = 337
+			  state = 926
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1510,9 +2121,52 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_deutsch_shogunate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 5
+			  state = 776
+			  state = 777
+			  state = 8
+			  state = 779
+			  state = 780
+			  state = 781
+			  state = 782
+			  state = 281
+			  state = 28
+			  state = 422
+			  state = 42
+			  state = 50
+			  state = 51
+			  state = 52
+			  state = 53
+			  state = 54
+			  state = 55
+			  state = 56
+			  state = 57
+			  state = 58
+			  state = 59
+			  state = 60
+			  state = 188
+			  state = 61
+			  state = 62
+			  state = 63
+			  state = 64
+			  state = 65
+			  state = 66
+			  state = 67
+			  state = 68
+			  state = 710
+			  state = 839
+			  state = 86
+			  state = 741
+			  state = 753
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1588,9 +2242,34 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ija_administration_of_the_baltic = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 11
+			  state = 12
+			  state = 13
+			  state = 1294
+			  state = 1295
+			  state = 655
+			  state = 1329
+			  state = 189
+			  state = 190
+			  state = 191
+			  state = 1087
+			  state = 194
+			  state = 1091
+			  state = 204
+			  state = 206
+			  state = 207
+			  state = 94
+			  state = 95
+			  state = 96
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1648,9 +2327,25 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_alash = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 810
+			  state = 587
+			  state = 589
+			  state = 590
+			  state = 402
+			  state = 1203
+			  state = 404
+			  state = 406
+			  state = 1208
+			  state = 1212
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1699,9 +2394,90 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_austria_hungary_shogunate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 4
+			  state = 9
+			  state = 39
+			  state = 43
+			  state = 45
+			  state = 69
+			  state = 70
+			  state = 71
+			  state = 73
+			  state = 74
+			  state = 75
+			  state = 1100
+			  state = 76
+			  state = 80
+			  state = 82
+			  state = 83
+			  state = 84
+			  state = 1106
+			  state = 1107
+			  state = 1108
+			  state = 88
+			  state = 89
+			  state = 1109
+			  state = 1110
+			  state = 1111
+			  state = 1112
+			  state = 1113
+			  state = 1114
+			  state = 1115
+			  state = 1116
+			  state = 1117
+			  state = 1118
+			  state = 1119
+			  state = 1120
+			  state = 1121
+			  state = 1122
+			  state = 1123
+			  state = 1124
+			  state = 1125
+			  state = 1126
+			  state = 1127
+			  state = 1129
+			  state = 1130
+			  state = 1131
+			  state = 1132
+			  state = 1133
+			  state = 1134
+			  state = 1135
+			  state = 1136
+			  state = 1137
+			  state = 1138
+			  state = 1139
+			  state = 1140
+			  state = 1144
+			  state = 152
+			  state = 153
+			  state = 154
+			  state = 155
+			  state = 664
+			  state = 713
+			  state = 1235
+			  state = 736
+			  state = 1272
+			  state = 775
+			  state = 783
+			  state = 784
+			  state = 786
+			  state = 789
+			  state = 1314
+			  state = 1319
+			  state = 835
+			  state = 836
+			  state = 875
+			  state = 942
+			  state = 91
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1815,9 +2591,41 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_france_shogunate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 14
+			  state = 15
+			  state = 16
+			  state = 17
+			  state = 18
+			  state = 19
+			  state = 20
+			  state = 21
+			  state = 22
+			  state = 23
+			  state = 24
+			  state = 25
+			  state = 26
+			  state = 27
+			  state = 30
+			  state = 31
+			  state = 32
+			  state = 33
+			  state = 817
+			  state = 980
+			  state = 983
+			  state = 984
+			  state = 735
+			  state = 785
+			  state = 762
+			  state = 763
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1882,9 +2690,20 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_swi_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 3
+			  state = 943
+			  state = 151
+			  state = 760
+			  state = 761
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1928,9 +2747,21 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_hol_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 866
+			  state = 35
+			  state = 36
+			  state = 7
+			  state = 978
+			  state = 979
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -1975,9 +2806,19 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_bel_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 741
+			  state = 34
+			  state = 29
+			  state = 6
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2020,9 +2861,58 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ukr_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1282
+			  state = 1283
+			  state = 1284
+			  state = 1285
+			  state = 1286
+			  state = 259
+			  state = 137
+			  state = 791
+			  state = 792
+			  state = 192
+			  state = 193
+			  state = 1220
+			  state = 1221
+			  state = 196
+			  state = 197
+			  state = 198
+			  state = 199
+			  state = 200
+			  state = 201
+			  state = 1228
+			  state = 202
+			  state = 1230
+			  state = 203
+			  state = 1232
+			  state = 1233
+			  state = 1234
+			  state = 1237
+			  state = 1238
+			  state = 1239
+			  state = 1240
+			  state = 1241
+			  state = 1242
+			  state = 1243
+			  state = 1244
+			  state = 1245
+			  state = 221
+			  state = 93
+			  state = 225
+			  state = 226
+			  state = 227
+			  state = 228
+			  state = 997
+			  state = 241
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2104,9 +2994,23 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_pol_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1088
+			  state = 97
+			  state = 98
+			  state = 10
+			  state = 92
+			  state = 87
+			  state = 90
+			  state = 1148
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2155,6 +3059,33 @@ JAP_great_game = {
 	}
 	JAP_great_game_spr_shogunate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 793
+			  state = 795
+			  state = 1313
+			  state = 165
+			  state = 166
+			  state = 167
+			  state = 168
+			  state = 169
+			  state = 170
+			  state = 171
+			  state = 172
+			  state = 173
+			  state = 174
+			  state = 175
+			  state = 176
+			  state = 177
+			  state = 178
+			  state = 940
+			  state = 951
+			  state = 41
+			  state = 118
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2214,9 +3145,33 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_cro_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 163
+			  state = 103
+			  state = 104
+			  state = 105
+			  state = 1097
+			  state = 1098
+			  state = 1099
+			  state = 109
+			  state = 1102
+			  state = 1128
+			  state = 1105
+			  state = 1141
+			  state = 1142
+			  state = 1143
+			  state = 1206
+			  state = 1145
+			  state = 1270
+			  state = 794
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2273,9 +3228,20 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ser_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 107
+			  state = 108
+			  state = 1269
+			  state = 765
+			  state = 767
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2321,6 +3287,30 @@ JAP_great_game = {
 	}
 	JAP_great_game_gre_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1089
+			  state = 1090
+			  state = 769
+			  state = 770
+			  state = 771
+			  state = 772
+			  state = 841
+			  state = 106
+			  state = 44
+			  state = 77
+			  state = 48
+			  state = 211
+			  state = 1268
+			  state = 212
+			  state = 1271
+			  state = 184
+			  state = 731
+			  state = 766
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2377,9 +3367,30 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_bul_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1089
+			  state = 1090
+			  state = 769
+			  state = 770
+			  state = 771
+			  state = 772
+			  state = 841
+			  state = 106
+			  state = 77
+			  state = 48
+			  state = 211
+			  state = 212
+			  state = 1271
+			  state = 184
+			  state = 731
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2433,9 +3444,21 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_rom_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1222
+			  state = 1320
+			  state = 46
+			  state = 79
+			  state = 78
+			  state = 81
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2480,9 +3503,23 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_por_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 705
+			  state = 112
+			  state = 179
+			  state = 180
+			  state = 181
+			  state = 697
+			  state = 698
+			  state = 702
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2529,9 +3566,37 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_uk_prefecture = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 128
+			  state = 129
+			  state = 130
+			  state = 131
+			  state = 132
+			  state = 133
+			  state = 134
+			  state = 135
+			  state = 136
+			  state = 1315
+			  state = 1317
+			  state = 938
+			  state = 338
+			  state = 113
+			  state = 119
+			  state = 120
+			  state = 121
+			  state = 122
+			  state = 123
+			  state = 125
+			  state = 126
+			  state = 127
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2592,9 +3657,34 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ottoman_prefecture = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1000
+			  state = 1001
+			  state = 1213
+			  state = 1225
+			  state = 164
+			  state = 273
+			  state = 339
+			  state = 340
+			  state = 341
+			  state = 342
+			  state = 343
+			  state = 344
+			  state = 345
+			  state = 346
+			  state = 354
+			  state = 355
+			  state = 356
+			  state = 49
+			  state = 773
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2652,9 +3742,34 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_turkestan_prefecture = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1281
+			  state = 1042
+			  state = 405
+			  state = 407
+			  state = 1196
+			  state = 1209
+			  state = 1210
+			  state = 1211
+			  state = 584
+			  state = 585
+			  state = 586
+			  state = 712
+			  state = 732
+			  state = 861
+			  state = 1275
+			  state = 1276
+			  state = 1277
+			  state = 1278
+			  state = 1279
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2715,6 +3830,25 @@ JAP_great_game = {
 	
 	JAP_great_game_persia_prefecture = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 416
+			  state = 417
+			  state = 418
+			  state = 419
+			  state = 420
+			  state = 421
+			  state = 804
+			  state = 266
+			  state = 410
+			  state = 411
+			  state = 412
+			  state = 413
+			  state = 414
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2766,9 +3900,46 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_caucasia_administration = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1298
+			  state = 1299
+			  state = 1300
+			  state = 1301
+			  state = 1302
+			  state = 1303
+			  state = 1304
+			  state = 1188
+			  state = 1190
+			  state = 1080
+			  state = 1081
+			  state = 1082
+			  state = 1213
+			  state = 1226
+			  state = 1227
+			  state = 1231
+			  state = 218
+			  state = 990
+			  state = 229
+			  state = 998
+			  state = 231
+			  state = 234
+			  state = 235
+			  state = 237
+			  state = 238
+			  state = 1263
+			  state = 1264
+			  state = 1265
+			  state = 1266
+			  state = 1267
+			  state = 245
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2838,9 +4009,44 @@ JAP_great_game = {
 			factor = 60
 		}
 	} 
-
+	
 	JAP_great_game_brazil_prefecture = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 896
+			  state = 898
+			  state = 900
+			  state = 1030
+			  state = 1031
+			  state = 1033
+			  state = 1040
+			  state = 1041
+			  state = 1043
+			  state = 280
+			  state = 1305
+			  state = 1306
+			  state = 1307
+			  state = 1310
+			  state = 1311
+			  state = 855
+			  state = 495
+			  state = 496
+			  state = 497
+			  state = 498
+			  state = 499
+			  state = 500
+			  state = 501
+			  state = 502
+			  state = 503
+			  state = 504
+			  state = 505
+			  state = 894
+			  state = 895
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2908,9 +4114,31 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_peru_prefecture = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1027
+			  state = 487
+			  state = 872
+			  state = 873
+			  state = 490
+			  state = 491
+			  state = 492
+			  state = 845
+			  state = 302
+			  state = 303
+			  state = 494
+			  state = 1073
+			  state = 688
+			  state = 847
+			  state = 848
+			  state = 506
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -2965,9 +4193,22 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_chile = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 872
+			  state = 873
+			  state = 874
+			  state = 270
+			  state = 279
+			  state = 506
+			  state = 507
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -3013,9 +4254,35 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_argentina = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 512
+			  state = 1027
+			  state = 1028
+			  state = 1029
+			  state = 901
+			  state = 902
+			  state = 903
+			  state = 904
+			  state = 278
+			  state = 299
+			  state = 301
+			  state = 688
+			  state = 1074
+			  state = 449
+			  state = 579
+			  state = 720
+			  state = 508
+			  state = 509
+			  state = 510
+			  state = 511
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -3074,9 +4341,36 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_gran_columbia = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1280
+			  state = 649
+			  state = 1036
+			  state = 1296
+			  state = 912
+			  state = 305
+			  state = 306
+			  state = 307
+			  state = 1214
+			  state = 1215
+			  state = 1216
+			  state = 849
+			  state = 850
+			  state = 851
+			  state = 852
+			  state = 853
+			  state = 486
+			  state = 488
+			  state = 489
+			  state = 490
+			  state = 493
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -3136,9 +4430,32 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_imperial_prefecture_of_mexico = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 480
+			  state = 481
+			  state = 482
+			  state = 483
+			  state = 1252
+			  state = 1253
+			  state = 1254
+			  state = 1255
+			  state = 484
+			  state = 485
+			  state = 277
+			  state = 474
+			  state = 475
+			  state = 476
+			  state = 477
+			  state = 478
+			  state = 479
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -3194,9 +4511,34 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ija_administration_of_central_america = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1070
+			  state = 1071
+			  state = 311
+			  state = 312
+			  state = 313
+			  state = 314
+			  state = 316
+			  state = 317
+			  state = 842
+			  state = 1247
+			  state = 1249
+			  state = 1250
+			  state = 1251
+			  state = 1256
+			  state = 1258
+			  state = 1259
+			  state = 1260
+			  state = 1261
+			  state = 1262
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}
@@ -3254,9 +4596,21 @@ JAP_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	JAP_great_game_ijn_administration_of_panama = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1248
+			  state = 1257
+			  state = 685
+			  state = 1070
+			  state = 304
+			  state = 854
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = JAP
 		}

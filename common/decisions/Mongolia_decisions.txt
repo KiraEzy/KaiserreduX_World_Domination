@@ -4,6 +4,27 @@
 MON_great_game = {
 	MON_great_game_sibir_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1201
+				state = 1200
+				state = 571
+				state = 577
+				state = 578
+				state = 569
+				state = 570
+				state = 1292
+				state = 40
+				state = 588
+				state = 583
+				state = 403
+				state = 653
+				state = 572
+				state = 582
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		  }
 		allowed = {
 			tag = MON
 		}
@@ -11,17 +32,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SIB
+					country_exists = SIB
 				}
 				SIB = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  SIB = {
+				}
+				SIB = {
 				1201 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1200 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				571 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -38,14 +59,14 @@ MON_great_game = {
 				653 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				572 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				582 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				SIB = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -61,9 +82,34 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_amur = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 516
+			  state = 576
+			  state = 575
+			  state = 568
+			  state = 566
+			  state = 567
+			  state = 644
+			  state = 1246
+			  state = 408
+			  state = 409
+			  state = 560
+			  state = 561
+			  state = 562
+			  state = 563
+			  state = 564
+			  state = 565
+			  state = 574
+			  state = 637
+			  state = 657
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -71,25 +117,25 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = TRM
+					country_exists = TRM
 				}
 				TRM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SIB
+					country_exists = SIB
 				}
 				SIB = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  TRM = {
+				}
+				TRM = {
 				516 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				576 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				575 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -98,25 +144,25 @@ MON_great_game = {
 				567 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				644 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1246 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                408 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                409 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                560 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                561 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                562 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                563 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                564 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                565 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                574 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                637 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                657 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				408 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				409 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				560 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				561 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				562 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				563 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				564 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				565 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				574 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				637 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				657 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				}
 			}
 			NOT = {
 				TRM = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -132,9 +178,45 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_crimean_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 137
+			  state = 1220
+			  state = 196
+			  state = 1234
+			  state = 200
+			  state = 1286
+			  state = 228
+			  state = 227
+			  state = 1283
+			  state = 1239
+			  state = 1282
+			  state = 1285
+			  state = 221
+			  state = 1221
+			  state = 1284
+			  state = 1238
+			  state = 259
+			  state = 225
+			  state = 1242
+			  state = 1243
+			  state = 1237
+			  state = 193
+			  state = 241
+			  state = 1230
+			  state = 220
+			  state = 821
+			  state = 240
+			  state = 1229
+			  state = 222
+			  state = 224
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -142,25 +224,25 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CRM
+					country_exists = CRM
 				}
 				CRM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = UKR
+					country_exists = UKR
 				}
 				UKR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  CRM = {
+				}
+				CRM = {
 				137 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1220 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				196 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -169,36 +251,36 @@ MON_great_game = {
 				1286 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				228 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				227 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1283 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1239 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1282 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1285 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                221 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1221 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1284 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1238 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                259 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                225 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1242 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1243 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1237 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                193 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                241 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-                1230 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
+				1283 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1239 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1282 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1285 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				221 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1221 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1284 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1238 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				259 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				225 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1242 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1243 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1237 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				193 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				241 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1230 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
 				220 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
 				821 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
 				240 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
 				1229 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
 				222 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
 				224 = { owner = { OR = { original_tag = MON is_subject_of = MON } } } 
-			  }
+				}
 			}
 			NOT = {
 				CRM = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -216,6 +298,75 @@ MON_great_game = {
 	}
 	MON_great_game_khanate_of_kazan = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1193
+			  state = 1194
+			  state = 1195
+			  state = 1197
+			  state = 1198
+			  state = 1199
+			  state = 1204
+			  state = 1205
+			  state = 1208
+			  state = 1274
+			  state = 1287
+			  state = 1288
+			  state = 1289
+			  state = 1290
+			  state = 1291
+			  state = 1327
+			  state = 1328
+			  state = 195
+			  state = 205
+			  state = 208
+			  state = 209
+			  state = 210
+			  state = 213
+			  state = 214
+			  state = 215
+			  state = 216
+			  state = 219
+			  state = 223
+			  state = 239
+			  state = 242
+			  state = 243
+			  state = 244
+			  state = 246
+			  state = 247
+			  state = 248
+			  state = 249
+			  state = 250
+			  state = 251
+			  state = 252
+			  state = 253
+			  state = 254
+			  state = 255
+			  state = 256
+			  state = 257
+			  state = 258
+			  state = 260
+			  state = 262
+			  state = 263
+			  state = 264
+			  state = 265
+			  state = 351
+			  state = 397
+			  state = 398
+			  state = 399
+			  state = 400
+			  state = 401
+			  state = 573
+			  state = 581
+			  state = 651
+			  state = 652
+			  state = 722
+			  state = 755
+			  state = 880
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -223,17 +374,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = RUS
+					country_exists = RUS
 				}
 				RUS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  RUS = {
+				}
+				RUS = {
 				1193 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1194 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1195 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -297,14 +448,14 @@ MON_great_game = {
 				722 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				755 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				880 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				RUS = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -320,9 +471,41 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_three_rivers = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 288
+			  state = 289
+			  state = 640
+			  state = 701
+			  state = 72
+			  state = 724
+			  state = 749
+			  state = 750
+			  state = 751
+			  state = 756
+			  state = 790
+			  state = 822
+			  state = 823
+			  state = 824
+			  state = 825
+			  state = 830
+			  state = 831
+			  state = 882
+			  state = 999
+			  state = 670
+			  state = 826
+			  state = 827
+			  state = 286
+			  state = 856
+			  state = 671
+			  state = 857
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -330,81 +513,81 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = MLY
+					country_exists = MLY
 				}
 				MLY = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SIA
+					country_exists = SIA
 				}
 				SIA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = CAM
+					country_exists = CAM
 				}
 				CAM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = VIN
+					country_exists = VIN
 				}
 				VIN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LAO
+					country_exists = LAO
 				}
 				LAO = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = KAC
+					country_exists = KAC
 				}
 				KAC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = INC
+					country_exists = INC
 				}
 				INC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SHA
+					country_exists = SHA
 				}
 				SHA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BRM
+					country_exists = BRM
 				}
 				BRM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  SHA = {
+				}
+				SHA = {
 				288 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				289 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				640 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -431,14 +614,14 @@ MON_great_game = {
 				856 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				671 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				857 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				SHA = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -454,9 +637,52 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_seljuk_empire = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1000
+			  state = 1001
+			  state = 1213
+			  state = 1225
+			  state = 164
+			  state = 183
+			  state = 187
+			  state = 291
+			  state = 339
+			  state = 340
+			  state = 341
+			  state = 342
+			  state = 343
+			  state = 344
+			  state = 345
+			  state = 346
+			  state = 349
+			  state = 350
+			  state = 352
+			  state = 354
+			  state = 355
+			  state = 356
+			  state = 455
+			  state = 49
+			  state = 553
+			  state = 554
+			  state = 658
+			  state = 676
+			  state = 677
+			  state = 680
+			  state = 773
+			  state = 812
+			  state = 819
+			  state = 907
+			  state = 992
+			  state = 993
+			  state = 995
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -464,17 +690,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = TUR
+					country_exists = TUR
 				}
 				TUR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  TUR = {
+				}
+				TUR = {
 				1000 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1001 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1213 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -512,14 +738,14 @@ MON_great_game = {
 				992 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				993 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				995 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				TUR = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -535,9 +761,56 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_bulgar_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 106
+			  state = 1089
+			  state = 1090
+			  state = 1271
+			  state = 184
+			  state = 211
+			  state = 212
+			  state = 48
+			  state = 731
+			  state = 769
+			  state = 77
+			  state = 770
+			  state = 771
+			  state = 772
+			  state = 841
+			  state = 192
+			  state = 791
+			  state = 1245
+			  state = 199
+			  state = 1140
+			  state = 89
+			  state = 80
+			  state = 713
+			  state = 1116
+			  state = 1113
+			  state = 1114
+			  state = 82
+			  state = 875
+			  state = 45
+			  state = 794
+			  state = 81
+			  state = 1222
+			  state = 1320
+			  state = 46
+			  state = 78
+			  state = 79
+			  state = 91
+			  state = 1126
+			  state = 84
+			  state = 789
+			  state = 1127
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -545,57 +818,57 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = BUL
+					country_exists = BUL
 				}
 				BUL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = UKR
+					country_exists = UKR
 				}
 				UKR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ALB
+					country_exists = ALB
 				}
 				ALB = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = GAL
+					country_exists = GAL
 				}
 				GAL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ROM
+					country_exists = ROM
 				}
 				ROM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = CRO
+					country_exists = CRO
 				}
 				CRO = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  BUL = {
+				}
+				BUL = {
 				106 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1089 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1090 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -637,14 +910,14 @@ MON_great_game = {
 				84 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				789 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1127 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				BUL = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -660,9 +933,42 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_kiev = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 192
+			  state = 1232
+			  state = 197
+			  state = 226
+			  state = 1233
+			  state = 791
+			  state = 1241
+			  state = 203
+			  state = 1245
+			  state = 198
+			  state = 1240
+			  state = 202
+			  state = 201
+			  state = 1244
+			  state = 199
+			  state = 1228
+			  state = 792
+			  state = 997
+			  state = 93
+			  state = 1087
+			  state = 1294
+			  state = 1295
+			  state = 194
+			  state = 204
+			  state = 206
+			  state = 207
+			  state = 95
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -670,25 +976,25 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = UKR
+					country_exists = UKR
 				}
 				UKR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = WHR
+					country_exists = WHR
 				}
 				WHR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  UKR = {
+				}
+				UKR = {
 				192 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1232 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				197 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -716,14 +1022,14 @@ MON_great_game = {
 				206 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				207 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				95 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				UKR = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -739,9 +1045,37 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_sclavinia = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 103
+			  state = 104
+			  state = 105
+			  state = 107
+			  state = 108
+			  state = 109
+			  state = 1097
+			  state = 1098
+			  state = 1099
+			  state = 1102
+			  state = 1105
+			  state = 794
+			  state = 1141
+			  state = 1142
+			  state = 1143
+			  state = 1145
+			  state = 1206
+			  state = 1269
+			  state = 1270
+			  state = 163
+			  state = 765
+			  state = 767
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -749,25 +1083,25 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CRO
+					country_exists = CRO
 				}
 				CRO = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SER
+					country_exists = SER
 				}
 				SER = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  CRO = {
+				}
+				CRO = {
 				103 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				104 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				105 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -790,14 +1124,14 @@ MON_great_game = {
 				163 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				765 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				767 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				CRO = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -813,9 +1147,46 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_danubian_ulus = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1106
+			  state = 1107
+			  state = 1108
+			  state = 1109
+			  state = 1110
+			  state = 1111
+			  state = 1112
+			  state = 1115
+			  state = 1117
+			  state = 1118
+			  state = 1119
+			  state = 1120
+			  state = 1121
+			  state = 1122
+			  state = 1123
+			  state = 1124
+			  state = 1125
+			  state = 1135
+			  state = 1136
+			  state = 1314
+			  state = 1319
+			  state = 154
+			  state = 155
+			  state = 43
+			  state = 664
+			  state = 70
+			  state = 73
+			  state = 76
+			  state = 784
+			  state = 83
+			  state = 88
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -823,26 +1194,26 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = HUN
+					country_exists = HUN
 				}
 				HUN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = GAL
+					country_exists = GAL
 				}
 				GAL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  HUN = {
+				}
+				HUN = {
 				1106 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1107 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1108 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -874,14 +1245,14 @@ MON_great_game = {
 				784 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				83 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				88 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				HUN = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -897,9 +1268,106 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_holy_roman_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1003
+			  state = 1004
+			  state = 1005
+			  state = 102
+			  state = 1100
+			  state = 1101
+			  state = 1103
+			  state = 1104
+			  state = 1129
+			  state = 1130
+			  state = 1131
+			  state = 1132
+			  state = 1133
+			  state = 1134
+			  state = 1137
+			  state = 1138
+			  state = 1139
+			  state = 1144
+			  state = 1235
+			  state = 1236
+			  state = 1272
+			  state = 151
+			  state = 152
+			  state = 153
+			  state = 157
+			  state = 158
+			  state = 159
+			  state = 160
+			  state = 161
+			  state = 162
+			  state = 188
+			  state = 28
+			  state = 3
+			  state = 39
+			  state = 4
+			  state = 42
+			  state = 5
+			  state = 50
+			  state = 51
+			  state = 52
+			  state = 53
+			  state = 54
+			  state = 55
+			  state = 56
+			  state = 57
+			  state = 58
+			  state = 59
+			  state = 60
+			  state = 61
+			  state = 62
+			  state = 63
+			  state = 64
+			  state = 65
+			  state = 66
+			  state = 67
+			  state = 68
+			  state = 69
+			  state = 71
+			  state = 736
+			  state = 74
+			  state = 75
+			  state = 759
+			  state = 760
+			  state = 761
+			  state = 764
+			  state = 775
+			  state = 776
+			  state = 777
+			  state = 780
+			  state = 781
+			  state = 782
+			  state = 783
+			  state = 786
+			  state = 8
+			  state = 835
+			  state = 836
+			  state = 838
+			  state = 839
+			  state = 86
+			  state = 9
+			  state = 942
+			  state = 29
+			  state = 34
+			  state = 35
+			  state = 36
+			  state = 6
+			  state = 7
+			  state = 741
+			  state = 866
+			  state = 978
+			  state = 979
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -907,190 +1375,190 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = GER
+					country_exists = GER
 				}
 				GER = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = GRU
+					country_exists = GRU
 				}
 				GRU = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BAY
+					country_exists = BAY
 				}
 				BAY = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LUX
+					country_exists = LUX
 				}
 				LUX = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LOM
+					country_exists = LOM
 				}
 				LOM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ITA
+					country_exists = ITA
 				}
 				ITA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = NGF
+					country_exists = NGF
 				}
 				NGF = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = WGR
+					country_exists = WGR
 				}
 				WGR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = DDR
+					country_exists = DDR
 				}
 				DDR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = EPR
+					country_exists = EPR
 				}
 				EPR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = EMI
+					country_exists = EMI
 				}
 				EMI = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = TUS
+					country_exists = TUS
 				}
 				TUS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = VNC
+					country_exists = VNC
 				}
 				VNC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = ITA
+					country_exists = ITA
 				}
 				ITA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SRI
+					country_exists = SRI
 				}
 				SRI = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = SWI
+					country_exists = SWI
 				}
 				SWI = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = AUS
+					country_exists = AUS
 				}
 				AUS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = CZE
+					country_exists = CZE
 				}
 				CZE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BEL
+					country_exists = BEL
 				}
 				BEL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = WLL
+					country_exists = WLL
 				}
 				WLL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = FLN
+					country_exists = FLN
 				}
 				FLN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = HOL
+					country_exists = HOL
 				}
 				HOL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  GER = {
+				}
+				GER = {
 				1003 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1004 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1005 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1182,14 +1650,14 @@ MON_great_game = {
 				866 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				978 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				979 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				GER = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }
+			}
 		}
 		cost = 30
 		
@@ -1205,6 +1673,20 @@ MON_great_game = {
 	}
 	MON_great_game_vistulan_ulus = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 10
+			  state = 1088
+			  state = 1148
+			  state = 87
+			  state = 90
+			  state = 92
+			  state = 97
+			  state = 98
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1212,17 +1694,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = POL
+					country_exists = POL
 				}
 				POL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  POL = {
+				}
+				POL = {
 				10 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1088 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1148 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1231,14 +1713,14 @@ MON_great_game = {
 				92 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				97 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				98 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				POL = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1254,9 +1736,26 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_baltic = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1091
+			  state = 11
+			  state = 12
+			  state = 13
+			  state = 1329
+			  state = 189
+			  state = 190
+			  state = 191
+			  state = 655
+			  state = 94
+			  state = 96
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1264,49 +1763,49 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = BAT
+					country_exists = BAT
 				}
 				BAT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LIT
+					country_exists = LIT
 				}
 				LIT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LAT
+					country_exists = LAT
 				}
 				LAT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = EST
+					country_exists = EST
 				}
 				EST = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BAT
+					country_exists = BAT
 				}
 				BAT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  BAT = {
+				}
+				BAT = {
 				1091 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				11 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				12 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1318,14 +1817,14 @@ MON_great_game = {
 				655 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				94 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				96 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				BAT = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1341,9 +1840,55 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_northlands = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 101
+			  state = 110
+			  state = 111
+			  state = 1146
+			  state = 1147
+			  state = 124
+			  state = 1324
+			  state = 1325
+			  state = 1326
+			  state = 138
+			  state = 139
+			  state = 140
+			  state = 141
+			  state = 142
+			  state = 143
+			  state = 144
+			  state = 145
+			  state = 146
+			  state = 147
+			  state = 148
+			  state = 149
+			  state = 150
+			  state = 337
+			  state = 37
+			  state = 38
+			  state = 666
+			  state = 778
+			  state = 840
+			  state = 844
+			  state = 863
+			  state = 864
+			  state = 865
+			  state = 908
+			  state = 909
+			  state = 926
+			  state = 936
+			  state = 937
+			  state = 960
+			  state = 99
+			  state = 100
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1351,49 +1896,49 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SWE
+					country_exists = SWE
 				}
 				SWE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = NOR
+					country_exists = NOR
 				}
 				NOR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = FIN
+					country_exists = FIN
 				}
 				FIN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = DEN
+					country_exists = DEN
 				}
 				DEN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ICE
+					country_exists = ICE
 				}
 				ICE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  SWE = {
+				}
+				SWE = {
 				101 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				110 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				111 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1434,14 +1979,14 @@ MON_great_game = {
 				960 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				99 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				100 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				SWE = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1457,9 +2002,44 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_franks = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 14
+			  state = 15
+			  state = 16
+			  state = 17
+			  state = 18
+			  state = 19
+			  state = 20
+			  state = 21
+			  state = 22
+			  state = 23
+			  state = 24
+			  state = 25
+			  state = 26
+			  state = 27
+			  state = 29
+			  state = 30
+			  state = 31
+			  state = 32
+			  state = 33
+			  state = 735
+			  state = 762
+			  state = 763
+			  state = 779
+			  state = 785
+			  state = 817
+			  state = 943
+			  state = 980
+			  state = 983
+			  state = 984
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1467,17 +2047,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = FRA
+					country_exists = FRA
 				}
 				FRA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  FRA = {
+				}
+				FRA = {
 				14 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				15 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				16 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1507,14 +2087,14 @@ MON_great_game = {
 				980 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				983 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				984 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				FRA = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1530,9 +2110,45 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_iberian_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 112
+			  state = 118
+			  state = 1313
+			  state = 1316
+			  state = 165
+			  state = 166
+			  state = 167
+			  state = 168
+			  state = 169
+			  state = 170
+			  state = 171
+			  state = 172
+			  state = 173
+			  state = 174
+			  state = 175
+			  state = 176
+			  state = 177
+			  state = 178
+			  state = 179
+			  state = 180
+			  state = 181
+			  state = 41
+			  state = 697
+			  state = 698
+			  state = 702
+			  state = 705
+			  state = 793
+			  state = 795
+			  state = 940
+			  state = 951
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1540,65 +2156,65 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SPR
+					country_exists = SPR
 				}
 				SPR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = CAT
+					country_exists = CAT
 				}
 				CAT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BAS
+					country_exists = BAS
 				}
 				BAS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = GLC
+					country_exists = GLC
 				}
 				GLC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = POR
+					country_exists = POR
 				}
 				POR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = POR
+					country_exists = POR
 				}
 				POR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = POR
+					country_exists = POR
 				}
 				POR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  SPR = {
+				}
+				SPR = {
 				112 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				118 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1313 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1629,14 +2245,14 @@ MON_great_game = {
 				795 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				940 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				951 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				SPR = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1654,6 +2270,34 @@ MON_great_game = {
 	}
 	MON_great_game_khanate_of_britannia = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 113
+			  state = 119
+			  state = 120
+			  state = 121
+			  state = 122
+			  state = 123
+			  state = 125
+			  state = 126
+			  state = 127
+			  state = 128
+			  state = 129
+			  state = 130
+			  state = 131
+			  state = 1315
+			  state = 1317
+			  state = 132
+			  state = 133
+			  state = 134
+			  state = 135
+			  state = 136
+			  state = 338
+			  state = 938
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1661,51 +2305,51 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = ENG
+					country_exists = ENG
 				}
 				ENG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = IRE
+					country_exists = IRE
 				}
 				IRE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SCT
+					country_exists = SCT
 				}
 				SCT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = WAL
+					country_exists = WAL
 				}
 				WAL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = GBP
+					country_exists = GBP
 				}
 				GBP = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  ENG = {
+				}
+	
+				ENG = {
 				113 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				119 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				120 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1728,14 +2372,14 @@ MON_great_game = {
 				136 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				338 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				938 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				ENG = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1751,9 +2395,26 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_athens = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1076
+			  state = 185
+			  state = 186
+			  state = 47
+			  state = 758
+			  state = 768
+			  state = 939
+			  state = 989
+			  state = 766
+			  state = 44
+			  state = 1268
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1761,17 +2422,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = GRE
+					country_exists = GRE
 				}
 				GRE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  GRE = {
+				}
+				GRE = {
 				1076 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				185 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				186 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1783,14 +2444,14 @@ MON_great_game = {
 				766 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				44 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1268 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				GRE = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1806,9 +2467,25 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_ulus_of_the_two_sicilies = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1002
+			  state = 1006
+			  state = 114
+			  state = 1149
+			  state = 115
+			  state = 117
+			  state = 156
+			  state = 2
+			  state = 742
+			  state = 837
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1816,33 +2493,33 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SIC
+					country_exists = SIC
 				}
 				SIC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = PAP
+					country_exists = PAP
 				}
 				PAP = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SRD
+					country_exists = SRD
 				}
 				SRD = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  SIC = {
+				}
+				SIC = {
 				1002 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1006 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				114 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1853,14 +2530,14 @@ MON_great_game = {
 				2 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				742 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				837 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				SIC = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1876,9 +2553,30 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_nippon = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 282
+			  state = 526
+			  state = 528
+			  state = 529
+			  state = 530
+			  state = 531
+			  state = 532
+			  state = 533
+			  state = 534
+			  state = 535
+			  state = 536
+			  state = 537
+			  state = 555
+			  state = 645
+			  state = 648
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1886,17 +2584,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = JAP
+					country_exists = JAP
 				}
 				JAP = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  JAP = {
+				}
+				JAP = {
 				282 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				526 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				528 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -1912,14 +2610,14 @@ MON_great_game = {
 				555 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				645 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				648 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				JAP = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -1935,9 +2633,64 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_maghreb = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 513
+			  state = 514
+			  state = 515
+			  state = 910
+			  state = 911
+			  state = 272
+			  state = 913
+			  state = 662
+			  state = 290
+			  state = 805
+			  state = 1318
+			  state = 806
+			  state = 1192
+			  state = 296
+			  state = 298
+			  state = 808
+			  state = 556
+			  state = 557
+			  state = 558
+			  state = 809
+			  state = 699
+			  state = 700
+			  state = 702
+			  state = 834
+			  state = 966
+			  state = 967
+			  state = 968
+			  state = 459
+			  state = 460
+			  state = 461
+			  state = 462
+			  state = 973
+			  state = 860
+			  state = 878
+			  state = 807
+			  state = 963
+			  state = 1321
+			  state = 1322
+			  state = 1323
+			  state = 274
+			  state = 876
+			  state = 877
+			  state = 451
+			  state = 458
+			  state = 1009
+			  state = 663
+			  state = 665
+			  state = 273
+			  state = 448
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -1945,161 +2698,161 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = ALG
+					country_exists = ALG
 				}
 				ALG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = MAL
+					country_exists = MAL
 				}
 				MAL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = IVO
+					country_exists = IVO
 				}
 				IVO = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = GHA
+					country_exists = GHA
 				}
 				GHA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = TOG
+					country_exists = TOG
 				}
 				TOG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = DAH
+					country_exists = DAH
 				}
 				DAH = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BFA
+					country_exists = BFA
 				}
 				BFA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = NER
+					country_exists = NER
 				}
 				NER = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = NGR
+					country_exists = NGR
 				}
 				NGR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = WAD
+					country_exists = WAD
 				}
 				WAD = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LIB
+					country_exists = LIB
 				}
 				LIB = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = GNA
+					country_exists = GNA
 				}
 				GNA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SIE
+					country_exists = SIE
 				}
 				SIE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = CVG
+					country_exists = CVG
 				}
 				CVG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = SEN
+					country_exists = SEN
 				}
 				SEN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = MRT
+					country_exists = MRT
 				}
 				MRT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = MOR
+					country_exists = MOR
 				}
 				MOR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = TUN
+					country_exists = TUN
 				}
 				TUN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = LBA
+					country_exists = LBA
 				}
 				LBA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  ALG = {
+				}
+				ALG = {
 				513 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				514 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				515 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -2149,14 +2902,14 @@ MON_great_game = {
 				665 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				273 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				448 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				ALG = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -2174,6 +2927,27 @@ MON_great_game = {
 	}
 	MON_great_game_egyptian_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 452
+			  state = 453
+			  state = 549
+			  state = 551
+			  state = 456
+			  state = 457
+			  state = 552
+			  state = 1007
+			  state = 1008
+			  state = 753
+			  state = 1010
+			  state = 1011
+			  state = 862
+			  state = 446
+			  state = 447
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2181,26 +2955,26 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = EGY
+					country_exists = EGY
 				}
 				EGY = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-
-			  if = {
+				}
+	
+				if = {
 				limit = {
-				  country_exists = SUD
+					country_exists = SUD
 				}
 				SUD = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  EGY = {
+				}
+				EGY = {
 				452 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				453 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				549 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -2223,7 +2997,7 @@ MON_great_game = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -2239,9 +3013,75 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_ulus_of_central_africa = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1025
+			  state = 1026
+			  state = 899
+			  state = 1032
+			  state = 905
+			  state = 906
+			  state = 268
+			  state = 269
+			  state = 271
+			  state = 1297
+			  state = 660
+			  state = 918
+			  state = 919
+			  state = 920
+			  state = 921
+			  state = 538
+			  state = 539
+			  state = 1180
+			  state = 1181
+			  state = 1182
+			  state = 1184
+			  state = 1185
+			  state = 546
+			  state = 547
+			  state = 1183
+			  state = 548
+			  state = 550
+			  state = 295
+			  state = 922
+			  state = 923
+			  state = 924
+			  state = 925
+			  state = 559
+			  state = 944
+			  state = 948
+			  state = 949
+			  state = 927
+			  state = 952
+			  state = 953
+			  state = 928
+			  state = 703
+			  state = 704
+			  state = 961
+			  state = 962
+			  state = 709
+			  state = 965
+			  state = 969
+			  state = 970
+			  state = 971
+			  state = 718
+			  state = 974
+			  state = 975
+			  state = 976
+			  state = 977
+			  state = 869
+			  state = 870
+			  state = 879
+			  state = 881
+			  state = 892
+			  state = 297
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2249,129 +3089,129 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
+			AND = {
 			AND = {
 				if = {
 					limit = {
-					  country_exists = COG
+						country_exists = COG
 					}
 					COG = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = GAB
+						country_exists = GAB
 					}
 					GAB = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = CMR
+						country_exists = CMR
 					}
 					CMR = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = CEA
+						country_exists = CEA
 					}
 					CEA = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = KIV
+						country_exists = KIV
 					}
 					KIV = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = UMN
+						country_exists = UMN
 					}
 					UMN = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = TZN
+						country_exists = TZN
 					}
 					TZN = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = BRD
+						country_exists = BRD
 					}
 					BRD = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = RWA
+						country_exists = RWA
 					}
 					RWA = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = UGA
+						country_exists = UGA
 					}
 					UGA = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = KEN
+						country_exists = KEN
 					}
 					KEN = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = SOM
+						country_exists = SOM
 					}
 					SOM = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = ETH
+						country_exists = ETH
 					}
 					ETH = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = ERI
+						country_exists = ERI
 					}
 					ERI = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-				  if = {
+					}
+					if = {
 					limit = {
-					  country_exists = ZZB
+						country_exists = ZZB
 					}
 					ZZB = {
-					  is_subject_of = MON
+						is_subject_of = MON
 					}
-				  }
-			  COG = {
+					}
+				COG = {
 				1025 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1026 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				899 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -2432,14 +3272,14 @@ MON_great_game = {
 				881 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				892 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				297 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				COG = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -2455,9 +3295,42 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_ul_of_south_africa = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 914
+			  state = 275
+			  state = 916
+			  state = 917
+			  state = 1176
+			  state = 540
+			  state = 541
+			  state = 542
+			  state = 544
+			  state = 545
+			  state = 681
+			  state = 813
+			  state = 945
+			  state = 946
+			  state = 947
+			  state = 950
+			  state = 954
+			  state = 955
+			  state = 956
+			  state = 957
+			  state = 958
+			  state = 959
+			  state = 964
+			  state = 719
+			  state = 85
+			  state = 738
+			  state = 871
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2465,81 +3338,81 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = SAF
+					country_exists = SAF
 				}
 				SAF = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = NMB
+					country_exists = NMB
 				}
 				NMB = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BOT
+					country_exists = BOT
 				}
 				BOT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = MLW
+					country_exists = MLW
 				}
 				MLW = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = MZB
+					country_exists = MZB
 				}
 				MZB = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ANG
+					country_exists = ANG
 				}
 				ANG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BRT
+					country_exists = BRT
 				}
 				BRT = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ZIM
+					country_exists = ZIM
 				}
 				ZIM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ZAM
+					country_exists = ZAM
 				}
 				ZAM = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  SAF = {
+				}
+				SAF = {
 				914 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				275 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				916 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -2567,14 +3440,14 @@ MON_great_game = {
 				85 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				738 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				871 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				SAF = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -2590,9 +3463,22 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_ul_of_madagascar = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 706
+			  state = 707
+			  state = 708
+			  state = 1177
+			  state = 1178
+			  state = 1179
+			  state = 543
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2600,17 +3486,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = MAG
+					country_exists = MAG
 				}
 				MAG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  MAG = {
+				}
+				MAG = {
 				706 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				707 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				708 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -2618,14 +3504,14 @@ MON_great_game = {
 				1178 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1179 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				543 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				MAG = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }
+			}
 		}
 		
 		cost = 30
@@ -2640,9 +3526,20 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_texan_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1096
+			  state = 1166
+			  state = 1161
+			  state = 833
+			  state = 375
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2650,38 +3547,38 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = TXS
+					country_exists = TXS
 				}
 				TXS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = USA
+					country_exists = USA
 				}
 				USA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  TXS = {
+				}
+				TXS = {
 				1096 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1166 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1161 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				833 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				375 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				TXS = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -2697,9 +3594,22 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_pacific = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 829
+			  state = 798
+			  state = 1165
+			  state = 797
+			  state = 378
+			  state = 385
+			  state = 386
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2747,9 +3657,20 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_deseret = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 376
+			  state = 377
+			  state = 380
+			  state = 379
+			  state = 1174
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2795,9 +3716,29 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_midwest = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 387
+			  state = 1157
+			  state = 1164
+			  state = 381
+			  state = 388
+			  state = 389
+			  state = 390
+			  state = 384
+			  state = 382
+			  state = 1150
+			  state = 1175
+			  state = 383
+			  state = 1163
+			  state = 373
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2852,9 +3793,65 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
-	MON_great_game_american_khanate = {
+	
+	MON_great_game_ameriMON_khanate = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 374
+			  state = 371
+			  state = 372
+			  state = 1156
+			  state = 370
+			  state = 1168
+			  state = 368
+			  state = 369
+			  state = 1172
+			  state = 1167
+			  state = 367
+			  state = 365
+			  state = 1169
+			  state = 1171
+			  state = 366
+			  state = 364
+			  state = 1170
+			  state = 363
+			  state = 1155
+			  state = 362
+			  state = 1158
+			  state = 391
+			  state = 392
+			  state = 394
+			  state = 395
+			  state = 393
+			  state = 1152
+			  state = 1173
+			  state = 1154
+			  state = 396
+			  state = 1151
+			  state = 1153
+			  state = 261
+			  state = 929
+			  state = 360
+			  state = 1159
+			  state = 361
+			  state = 930
+			  state = 359
+			  state = 1162
+			  state = 358
+			  state = 793
+			  state = 931
+			  state = 932
+			  state = 935
+			  state = 933
+			  state = 934
+			  state = 357
+			  state = 796
+			  state = 1160
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2977,9 +3974,39 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_the_northern_steppes = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 276
+			  state = 682
+			  state = 683
+			  state = 1330
+			  state = 1331
+			  state = 1332
+			  state = 832
+			  state = 331
+			  state = 332
+			  state = 464
+			  state = 465
+			  state = 466
+			  state = 467
+			  state = 468
+			  state = 469
+			  state = 470
+			  state = 471
+			  state = 472
+			  state = 473
+			  state = 730
+			  state = 739
+			  state = 740
+			  state = 1273
+			  state = 463
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -2987,33 +4014,33 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CAN
+					country_exists = CAN
 				}
 				CAN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ALA
+					country_exists = ALA
 				}
 				ALA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = QUE
+					country_exists = QUE
 				}
 				QUE = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  CAN = {
+				}
+				CAN = {
 				276= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				682= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				683= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -3038,14 +4065,14 @@ MON_great_game = {
 				740= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1273= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				463= { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				CAN = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -3061,9 +4088,32 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanat_mexica = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 480
+			  state = 481
+			  state = 482
+			  state = 483
+			  state = 1252
+			  state = 1253
+			  state = 1254
+			  state = 1255
+			  state = 484
+			  state = 485
+			  state = 277
+			  state = 474
+			  state = 475
+			  state = 476
+			  state = 477
+			  state = 478
+			  state = 479
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -3071,25 +4121,25 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = MEX
+					country_exists = MEX
 				}
 				MEX = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = YUC
+					country_exists = YUC
 				}
 				YUC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  MEX = {
+				}
+				MEX = {
 				480 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				481 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				482 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -3107,14 +4157,14 @@ MON_great_game = {
 				477 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				478 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				479 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				MEX = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -3130,9 +4180,38 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
-	MON_great_game_central_american_ulus = {
+	
+	MON_great_game_central_ameriMON_ulus = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1070
+			  state = 1071
+			  state = 304
+			  state = 311
+			  state = 312
+			  state = 313
+			  state = 314
+			  state = 316
+			  state = 317
+			  state = 842
+			  state = 854
+			  state = 1247
+			  state = 1248
+			  state = 1249
+			  state = 1250
+			  state = 1251
+			  state = 1256
+			  state = 1257
+			  state = 1258
+			  state = 1259
+			  state = 1260
+			  state = 1261
+			  state = 1262
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -3140,65 +4219,65 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = CEN
+					country_exists = CEN
 				}
 				CEN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = GUA
+					country_exists = GUA
 				}
 				GUA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ELS
+					country_exists = ELS
 				}
 				ELS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = HON
+					country_exists = HON
 				}
 				HON = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = NIC
+					country_exists = NIC
 				}
 				NIC = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = COS
+					country_exists = COS
 				}
 				COS = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = PAN
+					country_exists = PAN
 				}
 				PAN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  CEN = {
+				}
+				CEN = {
 				1070 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1071 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				304 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -3222,14 +4301,14 @@ MON_great_game = {
 				1260 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1261 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1262 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				CEN = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -3245,9 +4324,36 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_gran_columbia_ulus = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 1280
+			  state = 649
+			  state = 1036
+			  state = 1296
+			  state = 912
+			  state = 305
+			  state = 306
+			  state = 307
+			  state = 1214
+			  state = 1215
+			  state = 1216
+			  state = 849
+			  state = 850
+			  state = 851
+			  state = 852
+			  state = 853
+			  state = 486
+			  state = 488
+			  state = 489
+			  state = 490
+			  state = 493
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -3255,33 +4361,33 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = COL
+					country_exists = COL
 				}
 				COL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = VEN
+					country_exists = VEN
 				}
 				VEN = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = ECU
+					country_exists = ECU
 				}
 				ECU = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  COL = {
+				}
+				COL = {
 				1280 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				649 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1036 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -3303,14 +4409,14 @@ MON_great_game = {
 				489 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				490 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				493 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				COL = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -3326,9 +4432,53 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_brazil = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 896
+			  state = 898
+			  state = 900
+			  state = 1030
+			  state = 1031
+			  state = 1033
+			  state = 1038
+			  state = 1039
+			  state = 1040
+			  state = 1041
+			  state = 1043
+			  state = 280
+			  state = 1305
+			  state = 1306
+			  state = 1307
+			  state = 1310
+			  state = 1311
+			  state = 687
+			  state = 309
+			  state = 1078
+			  state = 1079
+			  state = 855
+			  state = 495
+			  state = 496
+			  state = 497
+			  state = 498
+			  state = 499
+			  state = 500
+			  state = 501
+			  state = 502
+			  state = 503
+			  state = 504
+			  state = 505
+			  state = 894
+			  state = 895
+			  state = 1039
+			  state = 1037
+			  state = 1038
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -3336,17 +4486,17 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = BRA
+					country_exists = BRA
 				}
 				BRA = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  BRA = {
+				}
+				BRA = {
 				896 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				898 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				900 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -3385,14 +4535,14 @@ MON_great_game = {
 				1039 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1037 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1038 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				BRA = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
@@ -3408,9 +4558,53 @@ MON_great_game = {
 			factor = 60
 		}
 	}
-
+	
 	MON_great_game_khanate_of_south_america = {
 		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 512
+			  state = 1027
+			  state = 1028
+			  state = 1029
+			  state = 901
+			  state = 902
+			  state = 903
+			  state = 904
+			  state = 278
+			  state = 299
+			  state = 300
+			  state = 301
+			  state = 302
+			  state = 303
+			  state = 688
+			  state = 1073
+			  state = 1074
+			  state = 449
+			  state = 579
+			  state = 845
+			  state = 847
+			  state = 720
+			  state = 848
+			  state = 487
+			  state = 872
+			  state = 873
+			  state = 490
+			  state = 491
+			  state = 492
+			  state = 494
+			  state = 506
+			  state = 508
+			  state = 509
+			  state = 510
+			  state = 511
+			  state = 507
+			  state = 279
+			  state = 874
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
 		allowed = {
 			tag = MON
 		}
@@ -3418,65 +4612,65 @@ MON_great_game = {
 			
 		}
 		available = {
-		  AND = {
 			AND = {
-			  if = {
+			AND = {
+				if = {
 				limit = {
-				  country_exists = ARG
+					country_exists = ARG
 				}
 				ARG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = PAR
+					country_exists = PAR
 				}
 				PAR = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = FOP
+					country_exists = FOP
 				}
 				FOP = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = BOL
+					country_exists = BOL
 				}
 				BOL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = PRU
+					country_exists = PRU
 				}
 				PRU = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = URG
+					country_exists = URG
 				}
 				URG = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  if = {
+				}
+				if = {
 				limit = {
-				  country_exists = CHL
+					country_exists = CHL
 				}
 				CHL = {
-				  is_subject_of = MON
+					is_subject_of = MON
 				}
-			  }
-			  ARG = {
+				}
+				ARG = {
 				512 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1027 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				1028 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
@@ -3515,14 +4709,14 @@ MON_great_game = {
 				507 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				279 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				874 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
-			  }
+				}
 			}
 			NOT = {
 				ARG = {
 					has_country_flag = mon_khanated
 				}
 			}
-		  }	
+			}	
 					
 		}
 		
