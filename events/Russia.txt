@@ -720,6 +720,7 @@ country_event = { #Gorgulov Coups Savinkov
 	desc = russia.12.d
 	fire_only_once = yes
 	is_triggered_only = yes
+	trigger = { has_government = national_populist }
 	picture = GFX_rus_gorguloff_army_event
 	option = {
 		name = russia.12.a
@@ -11092,7 +11093,7 @@ country_event = { #NSP
 	
 	option = {
 		name = rusdem.305.a
-		add_stability = -0.025
+		add_stability = 0.02
 	}
 }
 country_event = { #NSP
@@ -14545,6 +14546,7 @@ country_event = { #RSDRP
 			RUS_Nikolay_Sukhanov_eco_rso
 			RUS_Vyacheslav_P_Volgin_sec_sde
 		}
+		set_country_leader_ideology = syndie_social_democrat_subtype
 		set_variable = { RUS_rsdrp_minister_hog = token:RUS_Rafail_Abramovich_hog_sde }
 		set_variable = { RUS_rsdrp_minister_for = token:RUS_Nikolay_A_Ulganov_for_sde }
 		set_variable = { RUS_rsdrp_minister_eco = token:RUS_Nikolay_Sukhanov_eco_rso }
@@ -16644,6 +16646,14 @@ country_event = { #Monarchy Referendum
 		name = rusdem.556.a
 		trigger = {
 			NOT = { has_country_flag = Kirill_Romanov_dead }
+			TRM = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "Kirill I"
+					}
+				}
+			}
 		}
 		ai_chance = {
 			base = 20
@@ -16681,6 +16691,14 @@ country_event = { #Monarchy Referendum
 		name = rusdem.556.aa
 		trigger = {
 			has_country_flag = Kirill_Romanov_dead
+			TRM = {
+				NOT = {
+					has_country_leader = {
+						ruling_only = yes
+						name = "Vladimir III"
+					}
+				}
+			}
 		}
 		ai_chance = {
 			base = 20
@@ -16850,6 +16868,16 @@ country_event = { #Monarchy Referendum
 	}
 	option = {
 		name = rusdem.556.f
+		trigger = {
+			TRM = {
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					name = "Andrei I"
+				}
+			}
+		    }
+		}
 		ai_chance = {
 			base = 15
 			modifier = {
@@ -20817,7 +20845,6 @@ country_event = { #Kornilov's Death
 		remove_power_balance = { id = RUS_denikin_wrangel_conflict }
 		set_country_flag = Lavr_G_Kornilov_dead
 		hidden_effect = {
-			remove_kornilov_idea = yes
 			effect_tooltip = { kill_country_leader = yes }
 			create_country_leader = {
 				name = "Pyotr Wrangel"
@@ -21006,7 +21033,6 @@ country_event = { #Kornilov's Death
 			remove_ideas = RUS_Lavr_G_Kornilov_carm_pau
 		}
 		hidden_effect = {
-			remove_kornilov_idea = yes
 			effect_tooltip = { kill_country_leader = yes }
 			create_country_leader = {
 				name = "Pyotr Wrangel"
@@ -21230,15 +21256,12 @@ country_event = { #Fate of Russia
 				RUS_wrangel_in_power_pataut = yes
 			}
 			modifier = {
-			factor = 1000
-			has_game_rule = {
+				factor = 1000
+				has_game_rule = {
 					rule = RUS_post_assassination
 					option = RUS_POST_ASSASSINATION_WRANGEL_TSAR_WRANGEL
 				}
 			}
-		}
-		hidden_effect = {
-			remove_kornilov_idea = yes
 		}
 		set_country_flag = RUS_duma_dissolved
 		set_country_flag = RUS_monarchy_restored
@@ -26052,7 +26075,7 @@ country_event = {#Army
 			increase_mensheviks_congress = yes
 		}
 		increase_psr_congress = yes
-		set_country_flag = SOV_peoples_army_congress
+		set_country_flag = SOV_red_army_congress
 		country_event = {
 			id = russoc.8
 			days = 10
@@ -35323,6 +35346,17 @@ country_event = { #Russian coup failed
 			type = annex_everything
 		}
 	}
+	option = {
+		name = rusfor.1031.b #not yet
+		trigger = {
+			is_ai = no
+			FROM = { is_in_faction = yes }
+		}
+		create_wargoal = {
+			target = FROM
+			type = annex_everything
+		}
+	}
 }
 
 country_event = { #Status of armenia
@@ -35514,6 +35548,17 @@ country_event = { #Russian coup failed
 	option = {
 		name = rusfor.1044.a #Crush them
 		declare_war_on = {
+			target = FROM
+			type = annex_everything
+		}
+	}
+	option = {
+		name = rusfor.1044.b #not yet
+		trigger = {
+			is_ai = no
+			FROM = { is_in_faction = yes }
+		}
+		create_wargoal = {
 			target = FROM
 			type = annex_everything
 		}
@@ -37752,79 +37797,15 @@ country_event = { #Vladivostok is Russian!
 		ai_chance = {
 			factor = 20
 		}
-		hidden_effect = {
-			RUS_EVENT_CV01_naval_variant = yes
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-				}
-				set_technology = {
-					early_ship_hull_carrier = 1
-					popup = no
-				}
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Man the Guns"
-					}
-				}
-				set_technology = {
-					early_carrier = 1
-					popup = no
-				}
-			}
-		}
-		if = {
-			limit = {
-				tag = RUS
-			}
-			hidden_effect = { load_oob = RUS_TRM_NAVY_BIG }
-		}
 		add_political_power = -80
 		add_equipment_to_stockpile = {
 			type = convoy_1
 			amount = 50
 			producer = RUS
 		}
-		408 = {
-			remove_building = {
-				type = industrial_complex level = 2
-			}
-			add_building_construction = {
-				type = dockyard
-				level = 1
-				instant_build = yes
-			}
-		}
 		add_opinion_modifier = {
 			target = JAP
 			modifier = RUS_vladivostok_big
-		}
-		if = {
-			limit = {
-				tag = SOV
-			}
-			hidden_effect = { load_oob = SOV_TRM_NAVY_BIG }
-			408 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 957
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 3
-					province = 957
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -37832,12 +37813,6 @@ country_event = { #Vladivostok is Russian!
 		name = rusfor.1208.b #We shall merely use Transamur's old naval designs.
 		ai_chance = {
 			factor = 50
-		}
-		if = {
-			limit = {
-				tag = RUS
-			}
-			hidden_effect = { load_oob = RUS_TRM_NAVY_SMALL }
 		}
 		add_political_power = -40
 		add_opinion_modifier = {
@@ -37848,31 +37823,6 @@ country_event = { #Vladivostok is Russian!
 			type = convoy_1
 			amount = 30
 			producer = RUS
-		}
-		if = {
-			limit = {
-				tag = SOV
-			}
-			hidden_effect = { load_oob = SOV_TRM_NAVY_SMALL }
-			408 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 2
-					province = 957
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = naval_base
-					level = 3
-					province = 957
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -48619,6 +48569,9 @@ country_event = { #flag event
 			set_cosmetic_tag = SOV_alternative
 		}
 	}	
+	option = { #E
+		name = russia.2013.e
+	}
 }
 country_event = { #flag event
 	id = russia.2014
@@ -48665,6 +48618,9 @@ country_event = { #flag event
 			set_cosmetic_tag = SOV_union_alternative_3
 		}
 	}	
+	option = { #E
+		name = russia.2013.e
+	}
 }
 country_event = { #flag event
 	id = russia.2015
@@ -48692,6 +48648,9 @@ country_event = { #flag event
 			}
 			set_cosmetic_tag = RUS_vozhdct_2
 		}
+	}
+	option = { #E
+		name = russia.2013.e
 	}
 }
 
@@ -48722,6 +48681,9 @@ country_event = { #flag event
 			set_cosmetic_tag = SOV_union_labor_republic_2
 		}
 	}
+	option = { #E
+		name = russia.2013.e
+	}
 }
 
 country_event = {
@@ -48737,10 +48699,17 @@ country_event = {
 
 	option = {
 		name = russia.3000.a
-		set_technology = {
-			helicopter = 1
+		if = {
+			limit = { has_dlc_got = yes }
+			complete_special_project = sp:sp_air_helicopter
+			add_equipment_to_stockpile = { type = helicopter_equipment_1 amount = 100 }
 		}
-		add_equipment_to_stockpile = { type = helicopter_1 amount = 100 }
+		else = {
+			set_technology = {
+				helicopter = 1
+			}
+			add_equipment_to_stockpile = { type = helicopter_1 amount = 100 }
+		}
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -48768,10 +48737,19 @@ country_event = {
 
 	option = {
 		name = russia.3001.a
-		set_technology = {
-			helicopter = 1
+		if = {
+			limit = { has_dlc_got = yes }
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
 		}
-		add_equipment_to_stockpile = { type = helicopter_1 amount = 25 }
+		else = {
+			set_technology = {
+				helicopter = 1
+			}
+			add_equipment_to_stockpile = { type = helicopter_1 amount = 25 }
+		}
 	}
 }
 
