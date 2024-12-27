@@ -1,0 +1,12 @@
+MLT_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = MLT
+	}
+
+	visible = { 
+		has_completed_focus = MLT_return_holy_land_to_trve_faith 
+	}
+}
+
