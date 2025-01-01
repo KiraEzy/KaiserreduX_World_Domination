@@ -23781,8 +23781,26 @@ country_event = { #Aleksander Kolchak dies
 
 country_event = { #Wrangel dead
 	id = rusd.130
-	immediate = {log = "[GetDateText]: [Root.GetName]: event rusd.130"}
-	title = rusd.130.t
+	title = {
+	    text = rusd.130.t.minister
+		trigger = {
+			NOT = {
+				has_country_leader = {
+				ruling_only = yes
+				name = "Pyotr IV"
+				}
+			}
+		}
+    }
+	title = {
+	    text = rusd.130.t.tsar
+		trigger = {
+				has_country_leader = {
+				ruling_only = yes
+				name = "Pyotr IV"
+				}
+		}
+    }	
 	desc = {
 		text = rusd.130.d.wrangeltsar
 		trigger = {
@@ -23818,25 +23836,6 @@ country_event = { #Wrangel dead
 			name = "Pyotr IV"
 			}
 		}
-		effect_tooltip = { kill_country_leader = yes }
-		RUS_setup_tsar_wrangel_son_const = yes
-		set_country_flag = Pyetr_Vrangel_dead
-		if = {
-			limit = {
-				OR = {
-					has_idea = RUS_Pyetr_N_Vrangel_hog_ade
-					has_idea = RUS_Pyetr_N_Vrangel_sec_ade
-				}
-			}
-			remove_ideas_with_trait = head_of_government
-			add_ideas = RUS_Felix_F_Yusupov_hog_ade
-			remove_ideas_with_trait = security_minister
-			add_ideas = RUS_Mikhail_Rodzyanko_sec_ade
-		}
-		random_unit_leader = {
-			limit = { has_id = 400 }
-			retire = yes
-		}
 	}
 	option = {
 		name = rusd.130.b
@@ -23865,7 +23864,45 @@ country_event = { #Wrangel dead
 			limit = { has_id = 400 }
 			retire = yes
 		}
+		if = {
+		limit = {
+		RUS_is_absolute_monarchy = yes
+		}
+			end_coalition = yes
+			country_event = {
+				id = rusd.1542
+				days = 2
+			}				
+		}		
 	}
+	option = {
+		name = rusd.130.c
+		trigger = {
+			has_country_leader = {
+			ruling_only = yes
+			name = "Pyotr IV"
+			}
+		}
+		effect_tooltip = { kill_country_leader = yes }
+		RUS_setup_tsar_wrangel_son_const = yes
+		set_country_flag = Pyetr_Vrangel_dead
+		if = {
+			limit = {
+				OR = {
+					has_idea = RUS_Pyetr_N_Vrangel_hog_ade
+					has_idea = RUS_Pyetr_N_Vrangel_sec_ade
+				}
+			}
+			remove_ideas_with_trait = head_of_government
+			add_ideas = RUS_Felix_F_Yusupov_hog_ade
+			remove_ideas_with_trait = security_minister
+			add_ideas = RUS_Mikhail_Rodzyanko_sec_ade
+		}
+		random_unit_leader = {
+			limit = { has_id = 400 }
+			retire = yes
+		}
+	}	
 	option = {
 		name = rusd.97.a
 		trigger = {
@@ -23904,6 +23941,7 @@ country_event = { #Wrangel dead
 		}
 		effect_tooltip = { kill_country_leader = yes }
 		RUS_setup_shatilov = yes
+		end_coalition = yes
 		if = {
 			limit = {
 				OR = {

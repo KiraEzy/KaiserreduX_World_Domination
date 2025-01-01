@@ -1024,4 +1024,394 @@ MLT_great_game = {
         factor = 60
     }
   }
+
+  MLT_great_game_republic_of_venice = {
+    icon = generic_prepare_civil_war
+    highlight_states = {
+      highlight_state_targets = {
+          state = 160
+          state = 759
+          state = 736
+          state = 1144
+          state = 1100
+          state = 1206
+          state = 182
+      }
+      highlight_color_while_active = 3
+      highlight_color_before_active = 2
+    }
+    allowed = {
+        tag = MLT
+    }
+    visible = {
+
+    }
+    available = {
+      AND = {
+        AND = {
+          if = {
+            limit = {
+              country_exists = VNC
+            }
+            VNC = { 
+              is_subject_of = MLT
+            }
+          }
+          VNC = { 
+            160 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            759 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            736 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1144 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1100 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1206 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            182 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+          }
+        }
+        NOT = {
+          VNC = { 
+              has_country_flag = mlt_formable 
+          }
+        }
+      }                
+    }
+
+    cost = 30
+
+    remove_effect = {
+      hidden_effect = { 
+        release = VNC
+        add_political_power = 75
+        VNC = {
+          load_focus_tree = generic_focus
+  
+          set_capital = { state = 160 }
+          
+          ### Leader
+          create_country_leader = {
+            name = "Robert Schälzky"
+            picture = "gfx/leaders/MLTCRU/Portrait_Robert_Schalzky.png"
+            expire = "1.1.1"
+            ideology = absolute_monarchy_subtype
+            traits = {}
+          }
+  
+          ### Politics
+          set_popularities = {
+            totalist = 0
+            radical_socialist = 0
+            syndicalist = 0
+            social_democrat = 10
+            social_liberal = 0
+            market_liberal = 10
+            social_conservative = 20
+            authoritarian_democrat = 10
+            paternal_autocrat = 40
+            national_populist = 10
+          }
+          set_party_name = {
+            ideology = paternal_autocrat
+            long_name = "Order of St John"
+            name = "OSJ"
+          }
+          set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+          }
+          set_cosmetic_tag = mlt_formable
+          set_cosmetic_tag = VNC_MLT_OCC
+        }
+        MLT = {
+          set_autonomy = {
+            target = VNC
+            autonomous_state = kx_colored_puppet
+          }
+        }
+        VNC = { 
+          every_core_state = {
+            remove_core_of = VNC
+          }
+
+          160 = { add_core_of = VNC }
+          759 = { add_core_of = VNC }
+          736 = { add_core_of = VNC }
+          1144 = { add_core_of = VNC }
+          1108 = { add_core_of = VNC }
+          1206 = { add_core_of = VNC }
+          182 = { add_core_of = VNC }
+          VNC = { 
+            every_core_state = {
+              limit = {
+                AND = {
+                  NOT = { 
+                    is_core_of = MLT
+                  }
+                  OR = {
+                    is_owned_by = MLT
+                    OWNER = { is_subject_of = MLT} 
+                  }
+                }
+              }
+              transfer_state_to = VNC
+            }
+          }
+        }
+      }
+    }
+
+    days_remove = 0
+    fire_only_once = yes
+
+    ai_will_do = {
+        factor = 60
+    }
+  }
+
+  MLT_great_game_republic_of_sienna = {
+    icon = generic_prepare_civil_war
+    highlight_states = {
+      highlight_state_targets = {
+          state = 162
+      }
+      highlight_color_while_active = 3
+      highlight_color_before_active = 2
+    }
+    allowed = {
+        tag = MLT
+    }
+    visible = {
+
+    }
+    available = {
+      AND = {
+        AND = {
+          if = {
+            limit = {
+              country_exists = TUS
+            }
+            TUS = { 
+              is_subject_of = MLT
+            }
+          }
+          TUS = { 
+            162 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+          }
+        }
+        NOT = {
+          TUS = { 
+              has_country_flag = mlt_formable 
+          }
+        }
+      }                
+    }
+
+    cost = 30
+
+    remove_effect = {
+      hidden_effect = { 
+        release = TUS
+        add_political_power = 75
+        TUS = {
+          load_focus_tree = generic_focus
+  
+          set_capital = { state = 160 }
+          
+          ### Leader
+          create_country_leader = {
+            name = "Robert Schälzky"
+            picture = "gfx/leaders/MLTCRU/Portrait_Robert_Schalzky.png"
+            expire = "1.1.1"
+            ideology = absolute_monarchy_subtype
+            traits = {}
+          }
+  
+          ### Politics
+          set_popularities = {
+            totalist = 0
+            radical_socialist = 0
+            syndicalist = 0
+            social_democrat = 10
+            social_liberal = 0
+            market_liberal = 10
+            social_conservative = 20
+            authoritarian_democrat = 10
+            paternal_autocrat = 40
+            national_populist = 10
+          }
+          set_party_name = {
+            ideology = paternal_autocrat
+            long_name = "Order of St John"
+            name = "OSJ"
+          }
+          set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+          }
+          set_cosmetic_tag = mlt_formable
+          set_cosmetic_tag = TUS_MLT_OCC
+        }
+        MLT = {
+          set_autonomy = {
+            target = TUS
+            autonomous_state = kx_colored_puppet
+          }
+        }
+        TUS = { 
+          every_core_state = {
+            remove_core_of = TUS
+          }
+
+          162 = { add_core_of = TUS }
+          TUS = { 
+            every_core_state = {
+              limit = {
+                AND = {
+                  NOT = { 
+                    is_core_of = MLT
+                  }
+                  OR = {
+                    is_owned_by = MLT
+                    OWNER = { is_subject_of = MLT} 
+                  }
+                }
+              }
+              transfer_state_to = TUS
+            }
+          }
+        }
+      }
+    }
+
+    days_remove = 0
+    fire_only_once = yes
+
+    ai_will_do = {
+        factor = 60
+    }
+  }
+
+  MLT_great_game_republic_of_genoa = {
+    icon = generic_prepare_civil_war
+    highlight_states = {
+      highlight_state_targets = {
+        state = 838
+        state = 158
+      }
+      highlight_color_while_active = 3
+      highlight_color_before_active = 2
+    }
+    allowed = {
+        tag = MLT
+    }
+    visible = {
+
+    }
+    available = {
+      AND = {
+        AND = {
+          if = {
+            limit = {
+              country_exists = ITA
+            }
+            ITA = { 
+              is_subject_of = MLT
+            }
+          }
+          ITA = { 
+            838 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            158 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+          }
+        }
+        NOT = {
+          ITA = { 
+              has_country_flag = mlt_formable 
+          }
+        }
+      }                
+    }
+
+    cost = 30
+
+    remove_effect = {
+      hidden_effect = { 
+        release = ITA
+        add_political_power = 75
+        ITA = {
+          load_focus_tree = generic_focus
+  
+          set_capital = { state = 160 }
+          
+          ### Leader
+          create_country_leader = {
+            name = "Robert Schälzky"
+            picture = "gfx/leaders/MLTCRU/Portrait_Robert_Schalzky.png"
+            expire = "1.1.1"
+            ideology = absolute_monarchy_subtype
+            traits = {}
+          }
+  
+          ### Politics
+          set_popularities = {
+            totalist = 0
+            radical_socialist = 0
+            syndicalist = 0
+            social_democrat = 10
+            social_liberal = 0
+            market_liberal = 10
+            social_conservative = 20
+            authoritarian_democrat = 10
+            paternal_autocrat = 40
+            national_populist = 10
+          }
+          set_party_name = {
+            ideology = paternal_autocrat
+            long_name = "Order of St John"
+            name = "OSJ"
+          }
+          set_politics = {
+            ruling_party = paternal_autocrat
+            elections_allowed = no
+          }
+          set_cosmetic_tag = mlt_formable
+          set_cosmetic_tag = ITA_MLT_OCC
+        }
+        MLT = {
+          set_autonomy = {
+            target = ITA
+            autonomous_state = kx_colored_puppet
+          }
+        }
+        ITA = { 
+          every_core_state = {
+            remove_core_of = ITA
+          }
+
+          838 = { add_core_of = ITA }
+          158 = { add_core_of = ITA }
+          ITA = { 
+            every_core_state = {
+              limit = {
+                AND = {
+                  NOT = { 
+                    is_core_of = MLT
+                  }
+                  OR = {
+                    is_owned_by = MLT
+                    OWNER = { is_subject_of = MLT} 
+                  }
+                }
+              }
+              transfer_state_to = ITA
+            }
+          }
+        }
+      }
+    }
+
+    days_remove = 0
+    fire_only_once = yes
+
+    ai_will_do = {
+        factor = 60
+    }
+  }
 }

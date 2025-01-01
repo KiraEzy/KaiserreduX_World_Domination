@@ -9264,6 +9264,1725 @@ TXS_texaco_rks_actions = {
 			}
 		}
 	}
+	
+	TXS_establish_rk_LEB = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 455
+			  state = 992
+			  state = 554
+			  state = 553
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			455 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			992 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			554 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			553 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = LEB
+			LEB = {
+				every_core_state = {
+					remove_core_of = LEB
+				}
+			}
+			455 = { add_core_of = LEB }
+			992 = { add_core_of = LEB }
+			554 = { add_core_of = LEB }
+			553 = { add_core_of = LEB }
+	
+			LEB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = LEB
+				}
+			}
+			LEB = {
+				set_cosmetic_tag = TXS_LEB
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "Ray R. Irani"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Union_Oil_Company_of_California_Ray_R._Irani.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Union Oil Company of California Directorate"
+					long_name = "Union Oil Company of California Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Union Oil Company of California Directorate"
+					long_name = "Union Oil Company of California Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	TXS_establish_rk_PAL = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 454
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			454 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = PAL
+			PAL = {
+				every_core_state = {
+					remove_core_of = PAL
+				}
+			}
+			454 = { add_core_of = PAL }
+	
+			PAL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = PAL
+				}
+			}
+			PAL = {
+				set_cosmetic_tag = TXS_PAL
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = ""
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Texaco_Jerusalem_administration_.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Texaco Jerusalem administration Directorate"
+					long_name = "Texaco Jerusalem administration Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Texaco Jerusalem administration Directorate"
+					long_name = "Texaco Jerusalem administration Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = PAL
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	TXS_establish_rk_SYR = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 995
+			  state = 680
+			  state = 677
+			  state = 344
+			  state = 676
+			  state = 291
+			  state = 349
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			995 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			680 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			677 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			344 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			676 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			349 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			291 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = SYR
+			SYR = {
+				every_core_state = {
+					remove_core_of = SYR
+				}
+			}
+			995 = { add_core_of = SYR }
+			680 = { add_core_of = SYR }
+			677 = { add_core_of = SYR }
+			344 = { add_core_of = SYR }
+			676 = { add_core_of = SYR }
+			349 = { add_core_of = SYR }
+			291 = { add_core_of = SYR }
+	
+			SYR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = SYR
+				}
+			}
+			SYR = {
+				set_cosmetic_tag = TXS_SYR
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "William C. Luce"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Gulf_Oil_William_C._Luce.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Gulf Oil Directorate"
+					long_name = "Gulf Oil Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Gulf Oil Directorate"
+					long_name = "Gulf Oil Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = SYR
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	TXS_establish_rk_MEC = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 754
+			  state = 679
+			  state = 982
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			754 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			679 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			982 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 754
+				transfer_state = 679
+				transfer_state = 982
+				### Leader
+				create_country_leader = {
+					name = ""
+					picture = "gfx/leaders/OIL/Portrait_Texaco_Mecca_administration_.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = ""
+					picture = "gfx/leaders/OIL/Portrait_Texaco_Mecca_administration_.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Texaco Mecca administration Directorate"
+					long_name = "Texaco Mecca administration Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Texaco Mecca administration Directorate"
+					long_name = "Texaco Mecca administration Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_MEC
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = texaco_mecca_administration
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:texaco_mecca_administration
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:texaco_mecca_administration = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+
+	TXS_establish_rk_TRU = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 347
+			  state = 658
+			  state = 656
+			  state = 991
+			  state = 993
+			  state = 907
+			  state = 812
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			347 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			658 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			656 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			991 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			993 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			907 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			812 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = TRU
+			TRU = {
+				every_core_state = {
+					remove_core_of = TRU
+				}
+			}
+			347 = { add_core_of = TRU }
+			658 = { add_core_of = TRU }
+			656 = { add_core_of = TRU }
+			991 = { add_core_of = TRU }
+			993 = { add_core_of = TRU }
+			907 = { add_core_of = TRU }
+			812 = { add_core_of = TRU }
+	
+			TRU = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = TRU
+				}
+			}
+			TRU = {
+				set_cosmetic_tag = TXS_TRU
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = ""
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Texaco_Arabia_.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Texaco Arabia Directorate"
+					long_name = "Texaco Arabia Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Texaco Arabia Directorate"
+					long_name = "Texaco Arabia Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = TRU
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	TXS_establish_rk_SAU = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 1035
+			  state = 915
+			  state = 994
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			1035 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			915 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			994 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = SAU
+			SAU = {
+				every_core_state = {
+					remove_core_of = SAU
+				}
+			}
+			1035 = { add_core_of = SAU }
+			915 = { add_core_of = SAU }
+			994 = { add_core_of = SAU }
+	
+			SAU = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = SAU
+				}
+			}
+			SAU = {
+				set_cosmetic_tag = TXS_SAU
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "William Stamps Farish II"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Humble_Oil_William_Stamps_Farish_II.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Humble Oil Directorate"
+					long_name = "Humble Oil Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Humble Oil Directorate"
+					long_name = "Humble Oil Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = SAU
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	TXS_establish_rk_HEJ = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 678
+			  state = 292
+			  state = 675
+			  state = 981
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			678 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			292 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			675 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			981 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = HEJ
+			HEJ = {
+				every_core_state = {
+					remove_core_of = HEJ
+				}
+			}
+			678 = { add_core_of = HEJ }
+			292 = { add_core_of = HEJ }
+			675 = { add_core_of = HEJ }
+			981 = { add_core_of = HEJ }
+	
+			HEJ = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = HEJ
+				}
+			}
+			HEJ = {
+				set_cosmetic_tag = TXS_HEJ
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "Frank Phillips"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Phillips_Petroleum_Company_Frank_Phillips.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Phillips Petroleum Company Directorate"
+					long_name = "Phillips Petroleum Company Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Phillips Petroleum Company Directorate"
+					long_name = "Phillips Petroleum Company Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = HEJ
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	TXS_establish_rk_PER = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 412
+			  state = 413
+			  state = 414
+			  state = 410
+			  state = 421
+			  state = 417
+			  state = 419
+			  state = 266
+			  state = 411
+			  state = 420
+			  state = 416
+			  state = 418
+			  state = 804
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			412 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			413 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			414 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			410 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			421 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			417 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			419 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			266 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			411 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			420 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			416 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			418 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			804 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = PER
+			PER = {
+				every_core_state = {
+					remove_core_of = PER
+				}
+			}
+			412 = { add_core_of = PER }
+			413 = { add_core_of = PER }
+			414 = { add_core_of = PER }
+			410 = { add_core_of = PER }
+			421 = { add_core_of = PER }
+			417 = { add_core_of = PER }
+			419 = { add_core_of = PER }
+			266 = { add_core_of = PER }
+			411 = { add_core_of = PER }
+			420 = { add_core_of = PER }
+			416 = { add_core_of = PER }
+			418 = { add_core_of = PER }
+			804 = { add_core_of = PER }
+	
+			PER = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = PER
+				}
+			}
+			PER = {
+				set_cosmetic_tag = TXS_PER
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "William Knox D'Arcy"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_AngloIranian_Oil_Company_William_Knox_D'Arcy.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Anglo-Iranian Oil Company Directorate"
+					long_name = "Anglo-Iranian Oil Company Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Anglo-Iranian Oil Company Directorate"
+					long_name = "Anglo-Iranian Oil Company Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+
+	TXS_establish_rk_CEPSA = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 177
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			177 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 177
+				### Leader
+				create_country_leader = {
+					name = "Francisco Recasens"
+					picture = "gfx/leaders/OIL/Portrait_CEPSA__Francisco_Recasens.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = "Francisco Recasens"
+					picture = "gfx/leaders/OIL/Portrait_CEPSA__Francisco_Recasens.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "CEPSA  Directorate"
+					long_name = "CEPSA  Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "CEPSA  Directorate"
+					long_name = "CEPSA  Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_CEPSA
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = cepsa_
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:cepsa_
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:cepsa_ = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+	
+	
+	TXS_establish_rk_BAS = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 940
+			  state = 166
+			  state = 172
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			940 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			166 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			172 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = BAS
+			BAS = {
+				every_core_state = {
+					remove_core_of = BAS
+				}
+			}
+			940 = { add_core_of = BAS }
+			166 = { add_core_of = BAS }
+			172 = { add_core_of = BAS }
+	
+			BAS = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = BAS
+				}
+			}
+			BAS = {
+				set_cosmetic_tag = TXS_BAS
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "Tomás de Zubiría e Ybarra"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Altos_Hornos_de_Vizcaya_Tomás_de_Zubiría_e_Ybarra.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Altos Hornos de Vizcaya Directorate"
+					long_name = "Altos Hornos de Vizcaya Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Altos Hornos de Vizcaya Directorate"
+					long_name = "Altos Hornos de Vizcaya Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = BAS
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	
+	TXS_establish_rk_HIS_SUIZA = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 167
+			  state = 165
+			  state = 1313
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			167 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			165 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			1313 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 167
+				transfer_state = 165
+				transfer_state = 1313
+				### Leader
+				create_country_leader = {
+					name = "Damián Mateu"
+					picture = "gfx/leaders/OIL/Portrait_HispanoSuiza_Damián_Mateu.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = "Damián Mateu"
+					picture = "gfx/leaders/OIL/Portrait_HispanoSuiza_Damián_Mateu.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Hispano-Suiza Directorate"
+					long_name = "Hispano-Suiza Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Hispano-Suiza Directorate"
+					long_name = "Hispano-Suiza Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_HIS_SUIZA
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = hispanosuiza
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:hispanosuiza
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:hispanosuiza = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+	
+	
+	TXS_establish_rk_SPR = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 41
+			  state = 175
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			41 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			175 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = SPR
+			SPR = {
+				every_core_state = {
+					remove_core_of = SPR
+				}
+			}
+			41 = { add_core_of = SPR }
+			175 = { add_core_of = SPR }
+	
+			SPR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = SPR
+				}
+			}
+			SPR = {
+				set_cosmetic_tag = TXS_SPR
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "José María Gil-Robles y Quiñones"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait_Telefónica_José_María_Gil-Robles_y_Quiñones.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Telefónica Directorate"
+					long_name = "Telefónica Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Telefónica Directorate"
+					long_name = "Telefónica Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	
+	TXS_establish_rk_MINERO_SIDE_DE_PON = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 176
+			  state = 174
+			  state = 793
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			176 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			174 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			793 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 176
+				transfer_state = 174
+				transfer_state = 793
+				### Leader
+				create_country_leader = {
+					name = "José Luis de Ussía y Cubas"
+					picture = "gfx/leaders/OIL/Portrait_Minero_Siderúrgica_de_Ponferrada_José_Luis_de_Ussía_y_Cubas.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = "José Luis de Ussía y Cubas"
+					picture = "gfx/leaders/OIL/Portrait_Minero_Siderúrgica_de_Ponferrada_José_Luis_de_Ussía_y_Cubas.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Minero Siderúrgica de Ponferrada Directorate"
+					long_name = "Minero Siderúrgica de Ponferrada Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Minero Siderúrgica de Ponferrada Directorate"
+					long_name = "Minero Siderúrgica de Ponferrada Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_MINERO_SIDE_DE_PON
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = minero_siderúrgica_de_ponferrada
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:minero_siderúrgica_de_ponferrada
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:minero_siderúrgica_de_ponferrada = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+	
+	TXS_establish_rk_TABACALERA = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 169
+			  state = 795
+			  state = 170
+			  state = 951
+			  state = 1316
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			169 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			795 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			170 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			951 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			1316 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 169
+				transfer_state = 795
+				transfer_state = 170
+				transfer_state = 951
+				transfer_state = 1316
+				### Leader
+				create_country_leader = {
+					name = "Antonio López y López"
+					picture = "gfx/leaders/OIL/Portrait_Tabacalera_Antonio_López_y_López.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = "Antonio López y López"
+					picture = "gfx/leaders/OIL/Portrait_Tabacalera_Antonio_López_y_López.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Tabacalera Directorate"
+					long_name = "Tabacalera Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Tabacalera Directorate"
+					long_name = "Tabacalera Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_TABACALERA
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = tabacalera
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:tabacalera
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:tabacalera = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+	
+	
+	TXS_establish_rk_GLC = {
+		icon = GFX_decision_oil
+		
+		highlight_states = {
+			highlight_state_targets = {
+			  state = 171
+	
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			171 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = GLC
+			GLC = {
+				every_core_state = {
+					remove_core_of = GLC
+				}
+			}
+			171 = { add_core_of = GLC }
+	
+			GLC = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = TXS
+							}
+							OR = {
+								is_owned_by = TXS
+								OWNER = { is_subject_of = TXS } 
+							}
+						}
+					}
+					transfer_state_to = GLC
+				}
+			}
+			GLC = {
+				set_cosmetic_tag = TXS_GLC
+				load_focus_tree = generic_focus            
+	
+				# create_texaco_rk_government = yes
+				create_country_leader = {
+					name = "José Barreras Massó"
+					desc = ""
+					picture = "gfx/leaders/OIL/Portrait__Hijos_de_J_Barreras_José_Barreras_Massó.png"
+					expire = "1.1.1"
+					ideology = right_technocracy_subtype
+				}
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = " Hijos de J. Barreras Directorate"
+					long_name = " Hijos de J. Barreras Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = " Hijos de J. Barreras Directorate"
+					long_name = " Hijos de J. Barreras Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+			TXS = {
+				set_autonomy = {
+					target = GLC
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+		}
+	}
+	
+	
+	TXS_establish_rk_CRUZ_BREW = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 173
+			  state = 168
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			173 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			168 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 173
+				transfer_state = 168
+				### Leader
+				create_country_leader = {
+					name = "Tomás Osborne"
+					picture = "gfx/leaders/OIL/Portrait_Cruzcampo_Brewery_Tomás_Osborne.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = "Tomás Osborne"
+					picture = "gfx/leaders/OIL/Portrait_Cruzcampo_Brewery_Tomás_Osborne.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Cruzcampo Brewery Directorate"
+					long_name = "Cruzcampo Brewery Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Cruzcampo Brewery Directorate"
+					long_name = "Cruzcampo Brewery Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_CRUZ_BREW
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = cruzcampo_brewery
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:cruzcampo_brewery
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:cruzcampo_brewery = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+	
+	TXS_establish_rk_COM_PUNI_FAB = {
+		icon = GFX_decision_oil
+		
+			highlight_states = {
+				highlight_state_targets = {
+				  state = 180
+			  state = 181
+			  state = 112
+			  state = 179
+	
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+		available = {
+			180 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			181 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			112 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+			179 = { owner = { OR = { original_tag = TXS is_subject_of = TXS } } }
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			create_dynamic_country = {
+				original_tag = NFL
+				copy_tag = NFL
+	
+				#State
+	
+				transfer_state = 180
+				transfer_state = 181
+				transfer_state = 112
+				transfer_state = 179
+				### Leader
+				create_country_leader = {
+					name = "Manuel de Mello"
+					picture = "gfx/leaders/OIL/Portrait_Companhia_União_Fabril_Manuel_de_Mello.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				create_country_leader = {
+					name = "Manuel de Mello"
+					picture = "gfx/leaders/OIL/Portrait_Companhia_União_Fabril_Manuel_de_Mello.png"
+					expire = "1.1.1"
+					ideology = natpop_corporatocracy_subtype
+				}
+	
+				### Politics
+				set_popularities = {
+					totalist = 0
+					radical_socialist = 0
+					syndicalist = 0
+					social_democrat = 0
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 0
+					authoritarian_democrat = 0
+					paternal_autocrat = 70
+					national_populist = 30
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Companhia União Fabril Directorate"
+					long_name = "Companhia União Fabril Directorate"
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = "Companhia União Fabril Directorate"
+					long_name = "Companhia União Fabril Directorate"
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_cosmetic_tag = TXS_COM_PUNI_FAB
+				load_focus_tree = generic_focus
+	
+				#Units
+				#Event Target
+				save_global_event_target_as = companhia_união_fabril
+			}
+	
+			TXS = {
+				set_autonomy = {
+					target = event_target:companhia_união_fabril
+					autonomous_state = texas_global_corporate_syndicate
+				}
+			}
+			event_target:companhia_união_fabril = {
+				restore_previous_government_type = yes
+			}
+		}
+	}
+	
+
+
 }
 
 economy_decisions = {
