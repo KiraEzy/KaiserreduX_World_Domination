@@ -752,7 +752,6 @@ POR_iberia_cat = {
 			original_tag = POR
 			owns_state = 171
 			owns_state = 118
-			FROM = { owns_state = 41 owns_state = 165 owns_state = 169 owns_state = 176 }
 		}
 
 		visible = {
@@ -780,10 +779,10 @@ POR_iberia_cat = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove POR_KSP target: [From.GetName]"
 			POR = {
-				declare_war_on = {
-					type = annex_everything
-					target = FROM
-				}
+				create_wargoal = { type = annex_everything target = 290.owner }
+				create_wargoal = { type = annex_everything target = 178.owner }
+				create_wargoal = { type = annex_everything target = 699.owner }
+				create_wargoal = { type = annex_everything target = 968.owner }
 			}
 		}
 
@@ -4264,10 +4263,34 @@ POR_colonial_matters = {
 		icon = generic_form_nation
 		fire_only_once = yes
 		allowed = { tag = POR }
-
+		available = {
+			has_completed_focus = POR_pinko
+			owns_state = 965
+			owns_state = 925
+			owns_state = 660
+			owns_state = 927
+			owns_state = 558
+			owns_state = 1183
+			539 = {
+			is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+			881 = {
+			is_owned_and_controlled_by_ROOT_or_subject = yes
+			}
+			MAF = {
+			exists = no
+			}
+			COG = { exists = no }
+		}
+		visible = {
+			tag = POR
+			has_completed_focus = POR_pinko
+			COG = { exists = no }
+		}
 		
 		cost = 100
 		days_remove = 0
+		fire_only_once = yes
 		
 		cancel_if_not_visible = yes
 		cancel_effect = {

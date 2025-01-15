@@ -658,7 +658,9 @@ PER_empire_satrapy = {
 				id = 2097
 				name = "Ctesiphon"
 			}
-			set_capital = 291
+			set_capital = {
+				state = 291
+			}
 			291 = { set_state_name = "Ctesiphon" }
 			PER = { set_country_flag = PER_RENAMED_BAGHDAD } # this will disable name funny business
 			291 = {}
@@ -1432,7 +1434,9 @@ PER_empire_satrapy = {
 						JBS_ottoman_lapdogs
 						ott_army_training
 					}
-					set_capital = 754
+					set_capital = {
+						state = 754
+					}
 					load_focus_tree = persia_empty
 				}
 			}
@@ -1458,10 +1462,14 @@ PER_empire_satrapy = {
 		fire_only_once = yes
 		
 		icon = PER_oman_satrapy_icon
+		highlight_states = {
+			highlight_state_targets = {  
+				state = 993 state = 658 state = 294 state = 859 state = 1024
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		  }
 		
-		highlight_state_targets = {  
-			state = 993 state = 658 state = 294 state = 859 state = 1024
-		}
 		
 		days_remove = 1
 		

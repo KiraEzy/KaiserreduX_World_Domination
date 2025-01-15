@@ -2298,7 +2298,7 @@ TXS_texaco_rks_actions = {
 		complete_effect = {
 			GRP = {
 				set_cosmetic_tag = TXS_BAH
-				load_focus_tree = generic_focus_GRP_RJM
+				load_focus_tree = generic_focus
 				create_texaco_rk_government = yes
 			}
 			TXS = {

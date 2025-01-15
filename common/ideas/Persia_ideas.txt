@@ -116,7 +116,6 @@ ideas = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea PER_respected_beliefs"}
 			picture = PER_respected_beliefs
 			modifier = {
-				occupation_cost = -0.8
 				compliance_growth_on_our_occupied_states = 0.8
 			}
 		}

@@ -1504,11 +1504,8 @@ RUS_War_Preparations = {
     }
 	RUS_Supply_Alaska = {
 		icon = GFX_decision_generic_construction
-		allowed = {
-			tag = RUS
-	        ALA = { is_subject_of = RUS }
-		}
 		available = {
+			tag = RUS
 		   ALA = { is_subject_of = RUS }
 			463 = { is_owned_and_controlled_by = ALA }
 			num_of_civilian_factories_available_for_projects > 2
@@ -1654,12 +1651,10 @@ RUS_War_Preparations = {
 	}	
 	RUS_Urban_Warfare = {
 		icon = hol_draw_up_staff_plans
-		allowed = {
+		available = {
 			FROM = {
 				has_war = yes
-			}	
-		}
-		available = {
+			}
 		    has_army_experience > 100
 			tag = RUS
 		}

@@ -6212,7 +6212,11 @@ JAP_mantetsu_projects = {
 				any_owned_state = {
 					is_core_of = PREV
 					is_controlled_by = PREV
-					free_building_slots = { building = infrastructure size > 0 include_locked = yes }
+					free_building_slots = { 
+						building = infrastructure 
+						size > 0 
+						include_locked = yes 
+					}
 				}
 			}
 		}
