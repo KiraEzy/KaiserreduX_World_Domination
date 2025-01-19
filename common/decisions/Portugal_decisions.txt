@@ -628,14 +628,12 @@ POR_iberia_cat = {
 		}
 
 		available = {
-		    	original_tag = POR
-                        owns_state = 180
-                FROM = { controls_state = 171 }
+		    original_tag = POR
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
+            has_completed_focus = POR_trumph
                 
 		}
 
@@ -648,7 +646,7 @@ POR_iberia_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision POR_GAL target: [From.GetName]"
                         
-                171 = { add_claim_by = POR }
+			171 = { add_claim_by = POR }
 
 			
 		}
@@ -658,9 +656,10 @@ POR_iberia_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 171.owner
 				}
 			}
+			set_variable = { global.gal_target = 171.owner }
 		}
 
 		ai_will_do = {
@@ -691,14 +690,11 @@ POR_iberia_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 171
-                FROM = { controls_state = 118 }
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
-                
+			has_completed_focus = POR_trumph
 		}
 
 		fire_only_once = yes
@@ -719,9 +715,10 @@ POR_iberia_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 118.owner
 				}
 			}
+			set_variable = { global.gbr_target = 118.owner }
 		}
 
 		ai_will_do = {
@@ -818,13 +815,11 @@ POR_SEA_cat = {
 
 		available = {
 			original_tag = POR
-			FROM = { controls_state = 753 }
 		}
 
 		visible = {
 	    	original_tag = POR
 			has_completed_focus = POR_trumph
-			
 		}
 
 		fire_only_once = yes
@@ -846,9 +841,10 @@ POR_SEA_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 753.owner
 				}
 			}
+			set_variable = { global.suez_target = 753.owner }
 		}
 
 		ai_will_do = {
@@ -877,7 +873,6 @@ POR_SEA_cat = {
 
 		available = {
 		    	original_tag = POR
-                FROM = { controls_state = 685 }
 		}
 
 		visible = {
@@ -897,6 +892,7 @@ POR_SEA_cat = {
                         
                 685 = { add_claim_by = POR }
 
+
 			
 		}
 
@@ -905,9 +901,11 @@ POR_SEA_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 685.owner
 				}
 			}
+			set_variable = { global.suez_target = 685.owner }
+
 		}
 
 		ai_will_do = {
@@ -937,7 +935,6 @@ POR_SEA_cat = {
 
 		available = {
 				original_tag = POR
-				FROM = { controls_state = 336 }
 		}
 
 		visible = {
@@ -966,9 +963,11 @@ POR_SEA_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 336.owner
 				}
 			}
+			set_variable = { global.singapore_target = 336.owner }
+
 		}
 
 		ai_will_do = {
@@ -1000,7 +999,6 @@ POR_SEA_cat = {
 		available = {
 				original_tag = POR
 						owns_state = 753
-				FROM = { controls_state = 268 }
 		}
 
 		visible = {
@@ -1029,13 +1027,15 @@ POR_SEA_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 659.owner
 				}
 				declare_war_on = {
 					type = annex_everything
-					target = YEM
+					target = 268.owner
 				}
 			}
+			set_variable = { global.aden_target = 659.owner }
+			set_variable = { global.djibouti_target = 268.owner }
 		}
 
 		ai_will_do = {
@@ -1064,7 +1064,6 @@ POR_SEA_cat = {
 
 		available = {
 				original_tag = POR
-				FROM = { controls_state = 773 }
 		}
 
 		visible = {
@@ -1094,9 +1093,11 @@ POR_SEA_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 773.owner
 				}
 			}
+			set_variable = { global.constantinople_target = 773.owner }
+
 		}
 
 		ai_will_do = {
@@ -1106,6 +1107,7 @@ POR_SEA_cat = {
 				POR = {
 					has_war = yes
 				}
+				
 			}
 			
 			modifier = {
@@ -1130,7 +1132,6 @@ POR_OIL_cat = {
 
 		available = {
 		    	original_tag = POR
-                FROM = { controls_state = 812 }
 		}
 
 		visible = {
@@ -1161,8 +1162,9 @@ POR_OIL_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 291.owner
 				}
+				set_variable = { global.tur_target = 291.owner }
 			}
 		}
 
@@ -1193,27 +1195,22 @@ POR_OIL_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 812
-                FROM = { controls_state = 413 }
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
-                
+			has_completed_focus = POR_trumph
 		}
 
 		fire_only_once = yes
 		
 		days_remove = 30
 
-                cost = 30
+        cost = 30
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision POR_IRA target: [From.GetName]"
-                        
-                413 = { add_claim_by = POR }
-			
+			log = "[GetDateText]: [Root.GetName]: Decision POR_IRA target: [From.GetName]"        
+            413 = { add_claim_by = POR }
 		}
 
 		remove_effect = {
@@ -1221,9 +1218,10 @@ POR_OIL_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 413.owner
 				}
 			}
+			set_variable = { global.ira_target = 413.owner }
 		}
 
 		ai_will_do = {
@@ -1233,6 +1231,7 @@ POR_OIL_cat = {
 				POR = {
 					has_war = yes
 				}
+				
 			}
 			
 			modifier = {
@@ -1253,13 +1252,12 @@ POR_OIL_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 498
-                FROM = { controls_state = 489 }
+                owns_state = 498
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
+			has_completed_focus = POR_trumph
                 
 		}
 
@@ -1272,7 +1270,7 @@ POR_OIL_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision POR_VEN target: [From.GetName]"
                         
-                489 = { add_claim_by = POR }
+			489 = { add_claim_by = POR }
 			
 		}
 
@@ -1281,9 +1279,10 @@ POR_OIL_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 489.owner
 				}
 			}
+			set_variable = { global.ven_target = 489.owner }
 		}
 
 		ai_will_do = {
@@ -2756,11 +2755,11 @@ POR_empire_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision POR_MOR target: [From.GetName]"
                         
-                699 = { add_claim_by = POR }
-                462 = { add_claim_by = POR }
-                461 = { add_claim_by = POR }
-                968 = { add_claim_by = POR }
-                290 = { add_claim_by = POR }
+			699 = { add_claim_by = POR }
+			462 = { add_claim_by = POR }
+			461 = { add_claim_by = POR }
+			968 = { add_claim_by = POR }
+			290 = { add_claim_by = POR }
 
 			
 		}
@@ -2941,45 +2940,33 @@ POR_empire_cat = {
 	}
 
 	POR_NFA = {
-		war_with_on_remove = NFA
+		war_with_on_remove = 807.owner
 		icon = generic_decision
-
-		target_trigger = {
-			FROM = {
-				tag = NFA
-			}
-		}
 
 		allowed = {
 		}
 
 		available = {
-		    	original_tag = POR
+			original_tag = POR
+			NOT = {owns_state = 700}
+			NOT = {owns_state = 806}
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
-			NFA = {
-				exists = yes
-
-			}
+			has_completed_focus = POR_trumph
 		}
 
 		fire_only_once = yes
 		
 		days_remove = 30
 
-                cost = 50
+		cost = 50
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision POR_NFA target: [From.GetName]"
-                        
-                700 = { add_claim_by = POR }
-                806 = { add_claim_by = POR }
-
-
-			
+			log = "[GetDateText]: [Root.GetName]: Decision POR_NFA target: [From.GetName]"         
+			700 = { add_claim_by = POR }
+			806 = { add_claim_by = POR }
 		}
 
 		remove_effect = {
@@ -2987,9 +2974,10 @@ POR_empire_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = NFA
+					target = 806.owner
 				}
 			}
+			set_variable = { global.guinea_target = 806.owner }
 		}
 
 		ai_will_do = {
@@ -3011,28 +2999,22 @@ POR_empire_cat = {
 	}
 
 	POR_LIB = {
-		war_with_on_remove = LIB
+		war_with_on_remove = 298.owner
 		icon = generic_decision
-
-		target_trigger = {
-			FROM = {
-				tag = LIB
-			}
-		}
 
 		allowed = {
 		}
 
 		available = {
-		    	original_tag = POR
-                        owns_state = 806
-                        owns_state = 700
+			original_tag = POR
+			NOT = {owns_state = 298}
+			NOT = {owns_state = 966}
 		}
 
 		visible = {
 	    	original_tag = POR
                 has_completed_focus = POR_trumph
-			LIB = {
+			298.owner = {
 				exists = yes
 
 			}
@@ -3042,15 +3024,12 @@ POR_empire_cat = {
 		
 		days_remove = 30
 
-                cost = 50
+        cost = 50
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision POR_LIB target: [From.GetName]"
-                        
-                298 = { add_claim_by = POR }
-
-
-			
+			log = "[GetDateText]: [Root.GetName]: Decision POR_LIB target: [From.GetName]"           
+			298 = { add_claim_by = POR }
+			966 = { add_claim_by = POR }
 		}
 
 		remove_effect = {
@@ -3058,8 +3037,11 @@ POR_empire_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = LIB
+					target = 298.owner
 				}
+
+				set_variable = { global.libera_war_target = 298.owner }
+
 			}
 		}
 
@@ -3092,14 +3074,16 @@ POR_empire_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 966
-                        owns_state = 298
-                FROM = { controls_state = 807 }
+				OR = {
+					NOT = { POR = { controls_state = 807 } }
+					NOT = { POR = { controls_state = 963 } }
+					NOT = { POR = { controls_state = 274 } }
+				}
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
+			has_completed_focus = POR_trumph
                 
 		}
 
@@ -3110,13 +3094,11 @@ POR_empire_cat = {
                 cost = 50
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision POR_WAF target: [From.GetName]"
-                        
+			log = "[GetDateText]: [Root.GetName]: Decision POR_WAF target: [From.GetName]"        
                 807 = { add_claim_by = POR }
-                963 = { add_claim_by = POR }
+                963 = { add_claim_by = POR }	
+				274 = { add_claim_by = POR }	
 
-
-			
 		}
 
 		remove_effect = {
@@ -3126,6 +3108,7 @@ POR_empire_cat = {
 					type = annex_everything
 					target = FROM
 				}
+				set_variable = { global.gold_coast_war_target = 807.owner }
 			}
 		}
 
@@ -3158,9 +3141,7 @@ POR_empire_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 950
-                        owns_state = 813
-                FROM = { controls_state = 545 }
+				NOT = { POR = { controls_state = 545 } }
 		}
 
 		visible = {
@@ -3173,14 +3154,11 @@ POR_empire_cat = {
 		
 		days_remove = 30
 
-                cost = 50
+        cost = 50
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision POR_RHO target: [From.GetName]"
-                        
-                545 = { add_claim_by = POR }
-
-			
+			log = "[GetDateText]: [Root.GetName]: Decision POR_RHO target: [From.GetName]"      
+			545 = { add_claim_by = POR }
 		}
 
 		remove_effect = {
@@ -3188,9 +3166,10 @@ POR_empire_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 545.owner
 				}
 			}
+			set_variable = { global.rho_war_target = 545.owner }
 		}
 
 		ai_will_do = {
@@ -3222,28 +3201,24 @@ POR_empire_cat = {
 
 		available = {
 		    	original_tag = POR
-                FROM = { controls_state = 422 }
+                NOT = { POR = { controls_state = 422 } }
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
-                
+            has_completed_focus = POR_trumph    
 		}
 
 		fire_only_once = yes
 		
-		days_remove = 30
+		days_remove = 2
 
                 cost = 50
 
 		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision POR_CEY target: [From.GetName]"
-                        
-                422 = { add_claim_by = POR }
-                281 = { add_claim_by = POR }
-
-			
+			log = "[GetDateText]: [Root.GetName]: Decision POR_CEY target: [From.GetName]"       
+			422 = { add_claim_by = POR }
+			281 = { add_claim_by = POR }
 		}
 
 		remove_effect = {
@@ -3251,9 +3226,10 @@ POR_empire_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 422.owner
 				}
 			}
+			set_variable = { global.ceylon_war_target = 422.owner }
 		}
 
 		ai_will_do = {
@@ -3285,8 +3261,8 @@ POR_empire_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 321
-                FROM = { controls_state = 868 }
+                owns_state = 321
+                NOT = {POR = { controls_state = 868 }}
 		}
 
 		visible = {
@@ -3310,13 +3286,15 @@ POR_empire_cat = {
 		}
 
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove POR_IND target: [From.GetName]"
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 868.owner
 				}
 			}
+			set_variable = { global.goa_war_target = 868.owner }
+			log = "[GetDateText]: [Root.GetName]: Decision remove POR_IND target: [?868.owner], add goa_war_target target: [?global.goa_war_target.GetName]"
+
 		}
 
 		ai_will_do = {
@@ -3337,7 +3315,7 @@ POR_empire_cat = {
 	}
 
 	POR_DEI = {
-		war_with_on_remove = FROM
+		war_with_on_remove = 1017.owner
 		icon = generic_decision
 
 		
@@ -3347,14 +3325,13 @@ POR_empire_cat = {
 
 		available = {
 		    	original_tag = POR
-                        owns_state = 721
-                        owns_state = 972
-                FROM = { controls_state = 1017 }
+				owns_state = 721
+				owns_state = 972
 		}
 
 		visible = {
 	    	original_tag = POR
-                has_completed_focus = POR_trumph
+			has_completed_focus = POR_trumph
                 
 		}
 
@@ -3367,11 +3344,11 @@ POR_empire_cat = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision POR_DEI target: [From.GetName]"
                         
-                1017 = { add_claim_by = POR }
-                1018 = { add_claim_by = POR }
-                667 = { add_claim_by = POR }
-                1020 = { add_claim_by = POR }
-                672 = { add_claim_by = POR }
+			1017 = { add_claim_by = POR }
+			1018 = { add_claim_by = POR }
+			667 = { add_claim_by = POR }
+			1020 = { add_claim_by = POR }
+			672 = { add_claim_by = POR }
 
 
 			
@@ -3382,8 +3359,9 @@ POR_empire_cat = {
 			POR = {
 				declare_war_on = {
 					type = annex_everything
-					target = FROM
+					target = 1017.owner
 				}
+				set_variable = { global.dei_war_target = 1017.owner }
 			}
 		}
 
@@ -3868,10 +3846,7 @@ POR_colonial_development_cat = {
 			add_ideas = POR_timor_charter_companies
 		}
 	}
-}
 
-
-POR_colonial_development_cat = {
 	POR_core_angola = {
 		icon = GFX_decision_generic_nationalism
 
@@ -4078,9 +4053,7 @@ POR_colonial_development_cat = {
 			add_state_core = 729
 		}
 	}
-}
 
-POR_colonial_development_cat = {
 	POR_core_timor = {
 		icon = GFX_decision_generic_nationalism
 
@@ -4120,10 +4093,7 @@ POR_colonial_development_cat = {
                          add_state_core = 972
 		}
 	}
-}
 
-
-POR_colonial_development_cat = {
 	POR_core_guinea = {
 		icon = GFX_decision_generic_nationalism
 
@@ -4159,7 +4129,6 @@ POR_colonial_development_cat = {
 		}
 	}
 }
-
 
 ### political_actions
 political_actions = {
