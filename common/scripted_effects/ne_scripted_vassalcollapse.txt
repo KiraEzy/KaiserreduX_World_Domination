@@ -1,0 +1,66 @@
+#######################
+## Idea Improvement ###
+####################### 
+europa_downfall_of_amerika = {
+	CSA = {
+		release = QUE
+	}
+	balkanize_america = yes
+	ENG = {
+		puppet = CSA
+		puppet = NYC
+		puppet = NEE 
+		puppet = CGL 
+		end_puppet = CSA
+		end_puppet = NYC
+		end_puppet = NEE
+		end_puppet = CGL
+	
+	}
+	CSA = {
+		leave_faction = yes
+		create_faction = "American Loyalist Front"
+		add_to_faction = CGL
+		add_to_faction = NYC
+		add_to_faction = NEE
+	}
+	FSA = {
+		create_faction = "Southern Emergency Government"
+		add_to_faction = TXS
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = "American National Party"
+			name = "ANP"
+		}
+	}
+	TXS = {
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = "American National Party"
+			name = "ANP"
+		}
+		set_country_leader_ideology = klan_nationalism_subtype
+	}
+	CAL = {
+		create_faction = "United Federation of America"
+		add_to_faction = DSR
+	}
+	AML = {
+		create_faction = "Midwest Military Command"
+		create_country_leader = {
+			name = "Curtis LeMay"
+			desc = "POLITICS_LEMAY_EU_DESC"
+			picture = "gfx/leaders/WCC/Portrait_WCC_Curtis_LeMay.png"
+			expire = "1965.1.1"
+			ideology = militarism_subtype
+			traits = {
+				}
+		}
+	}
+}

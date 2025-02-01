@@ -1,0 +1,373 @@
+#######################
+## Idea Improvement ###
+####################### 
+party_name_change_post_mosley = {
+			set_party_name = { #I will put Politt here
+				ideology = syndicalist
+				long_name = "European Union of Syndicalist Parties"
+				name = "European Syndicalists"
+			}
+			set_party_name = { #Altiero Spinnelli
+				ideology = radical_socialist
+				long_name = "Antimosleyite Action"
+				name = "AntiMos"
+			}
+			set_party_name = { #Maybe Keynes
+				ideology = social_democrat
+				long_name = "Progressive Alliance of Socialists and Democrats"
+				name = "PAoSaD"
+			}
+			set_party_name = { #some random lib
+				ideology = social_liberal
+				long_name = "European People's Party - Liberals"
+				name = "EPP"
+			}
+			set_party_name = { #again some random lib
+				ideology = market_liberal
+				long_name = "European People's Party - Radical Liberals"
+				name = "EPP"
+			}
+			set_party_name = { #some random conservative guy, maybe Kalergi
+				ideology = social_conservative
+				long_name = "European People's Party - Conservatives"
+				name = "EPP"
+			}
+			set_party_name = { #Maybe some former mosleyite who turned against his policies
+				ideology = authoritarian_democrat
+				long_name = "Identity Group"
+				name = "Identity Europa"
+			}
+			set_party_name = { #military coup, which will lead to the collapse of european union
+				ideology = paternal_autocrat
+				long_name = "Identity Group"
+				name = "Identity Europa"
+			}
+			set_party_name = { #Thiriart
+				ideology = national_populist
+				long_name = "Identity Group - Young Europe"
+				name = "Identity Europa"
+			}
+}
+america_mosley_leader_swap = {
+	CSA = {
+		create_country_leader = { #Totalist
+				name = "Franklin Delano Roosevelt Jr."
+				desc = "POLITICS_FDR_JR_DESC"
+				picture = "gfx/leaders/NYC/Portrait_NYC_Franklin_Delano_Roosevelt_Jr.png"
+				expire = "1965.1.1"
+				ideology = tot_reformed_natsynd_subtype
+		}
+		create_country_leader = { #Syndie
+				name = "Elizabeth Gurley Flynn"
+				desc = "POLITICS_FLYNN_EU_DESC"
+				picture = "gfx/leaders/CSA/Portrait_CSA_Elizabeth_Gurley_Flynn.png"
+				expire = "1965.1.1"
+				ideology = anarcho_syndicalist_subtype
+		}
+		create_country_leader = { #Radsoc
+				name = "Bayard Rustin"
+				desc = "POLITICS_RUSTIN_EU_DESC"
+				picture = "gfx/leaders/CSA/Portrait_CSA_Bayard_Rustin.png"
+				expire = "1965.1.1"
+				ideology = radical_progressivism_subtype
+		}
+		create_country_leader = { #Socdem
+				name = "Ernest Hemingway"
+				desc = "POLITICS_HEMINWAY_EU_DESC"
+				picture = "gfx/leaders/CSA/Portrait_CSA_Ernest_Hemingway_General.png"
+				expire = "1965.1.1"
+				ideology = syndie_social_democrat_subtype
+		}
+		create_country_leader = { #Soclib
+				name = "Quentin Roosevelt"
+				desc = "POLITICS_ROOSEVELT_EU_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_quentin_roosevelt.png"
+				expire = "1965.1.1"
+				ideology = centrist_subtype
+		}
+		create_country_leader = { #Marlib
+				name = "Harry Truman"
+				desc = "POLITICS_TRUMAN_EU_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_Harry_Truman_KR.png"
+				expire = "1965.1.1"
+				ideology = free_market_capitalist_subtype
+		}
+		create_country_leader = { #Soccon
+				name = "Dwight Eisenhower"
+				desc = "POLITICS_ROOSEVELT_EU_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_Dwight_Eisenhower.png"
+				expire = "1965.1.1"
+				ideology = moderate_authoritarianism_subtype
+		}
+		create_country_leader = { #Authdem
+				name = "George Wallace"
+				desc = "POLITICS_WALLACE_EU_DESC"
+				picture = "gfx/leaders/COR/Portrait_COR_George_Wallace_Army.png"
+				expire = "1965.1.1"
+				ideology = washingtonism_subtype
+		}
+		create_country_leader = { #Pataut
+				name = "Charles Lindberg"
+				desc = "POLITICS_LINDBERG_EU_DESC"
+				picture = "gfx/leaders/COR/COR_Lindy_General.png"
+				expire = "1965.1.1"
+				ideology = jacksonianism_subtype
+		}
+		create_country_leader = { #NATPOP 
+				name = "George Lincoln Rockwell"
+				desc = "POLITICS_COCKWELL_EU_DESC"
+				picture = "gfx/leaders/COR/COR_bump.png"
+				expire = "1965.1.1"
+				ideology = klan_nationalism_subtype
+		}
+	}
+}
+china_mosley_leader_swap = {
+	CHI = {
+		create_country_leader = { #Totalist
+				name = "Fred Copeman"
+				desc = "POLITICS_COPEMAN_DESC"
+				picture = "gfx/leaders/ENG/Portrait_England_Fred_Copeman.png"
+				expire = "1965.1.1"
+				ideology = tot_reformed_natsynd_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = totalist
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Syndie
+				name = "Wang Jingwei"
+				desc = "POLITICS_JINGWEI_EU_DESC"
+				picture = "gfx/leaders/CHI/Portrait_CHI_Wang_Jingwei_KX.png"
+				expire = "1965.1.1"
+				ideology = agrarian_syndicalism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = syndicalist
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Radsoc
+				name = "Feng Yuxiang"
+				desc = "POLITICS_YUXIANG_EU_DESC"
+				picture = "gfx/leaders/SHX/Portrait_Shanxi_Feng_Yuxiang.png"
+				expire = "1965.1.1"
+				ideology = christian_socialism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = radical_socialist
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Socdem
+				name = "Sun Fo"
+				desc = "POLITICS_FO_EU_DESC"
+				picture = "gfx/leaders/CHI/Portrait_CHI_Sun_Fo.png"
+				expire = "1965.1.1"
+				ideology = socdem_tridemism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = social_democrat
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Soclib
+				name = "Sun Chuanfang"
+				desc = "POLITICS_CHUANFANG_EU_DESC"
+				picture = "gfx/leaders/LEP/Portrait_LEP_Sun_Chuanfang.png"
+				expire = "1965.1.1"
+				ideology = soclib_tridemism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = social_liberal
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Marlib
+				name = "Zhang Xueliang"
+				desc = "POLITICS_XUELIANG_EU_DESC"
+				picture = "gfx/leaders/FNG/Portrait_FNG_Zhang_Xueliang_Army.png"
+				expire = "1965.1.1"
+				ideology = marlib_national_liberalism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = market_liberal
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Soccon
+				name = "Xuāntǒng Dì"
+				desc = "POLITICS_UYI_EU_DESC"
+				picture = "gfx/leaders/QIE/Portrait_QIE_Puyi_Suit.png"
+				expire = "1965.1.1"
+				ideology = moderate_authoritarianism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = social_conservative
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Authdem
+				name = "Chiang Ching Kuo"
+				desc = "POLITICS_CHINGKUO_EU_DESC"
+				picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.png"
+				expire = "1965.1.1"
+				ideology = authdem_tridemism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = authoritarian_democrat
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #Pataut
+				name = "Deng Xiaoping"
+				desc = "POLITICS_DENG_EU_DESC"
+				picture = "gfx/leaders/MON/Portrait_MON_Deng_Xiaoping_Black.png"
+				expire = "1965.1.1"
+				ideology = corporatocracy_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = paternal_autocrat
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+		create_country_leader = { #NATPOP 
+				name = "Chiang Wei Kuo"
+				desc = "POLITICS_CHIANG_EU_DESC"
+				picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Wei_kuo.png"
+				expire = "1965.1.1"
+				ideology = natpop_pan_asianism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = national_populist
+				long_name = "Kuomintang"
+				name = "KMT"
+		}
+	}
+}
+africa_mosley_leader_swap = {
+	KIK = {
+		create_country_leader = { #Totalist
+				name = "Harry St. John Philby"
+				desc = "POLITICS_PHILBY_DESC"
+				picture = "gfx/leaders/ENG/Portrait_England_Harry_St_John_Philby.png"
+				expire = "1965.1.1"
+				ideology = tot_reformed_natsynd_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = totalist
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Totalist
+				name = "Moses Kotane"
+				desc = "POLITICS_KOTANE_EU_DESC"
+				picture = "gfx/leaders/SAF/Moses_Kotane_I.png"
+				expire = "1965.1.1"
+				ideology = syn_left_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = syndicalist
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Radsoc
+				name = "Jomo Kenyatta"
+				desc = "POLITICS_KENYATTA_EU_DESC"
+				picture = "gfx/leaders/MAF/MAF_Jomo_Kenyatta.png"
+				expire = "1965.1.1"
+				ideology = radsoc_left_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = radical_socialist
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Marlib
+				name = "Wiliam Tubman"
+				desc = "POLITICS_TUBMAN_EU_DESC"
+				picture = "gfx/leaders/LIB/Portrait_LIB_William_Tubman_Hat_Cigar.png"
+				expire = "1965.1.1"
+				ideology = socdem_republican_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = social_democrat
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Marlib
+				name = "Wiliam Tubman"
+				desc = "POLITICS_TUBMAN_EU_DESC"
+				picture = "gfx/leaders/LIB/Portrait_LIB_William_Tubman_Hat_Cigar.png"
+				expire = "1965.1.1"
+				ideology = marlib_republican_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = social_liberal
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Marlib
+				name = "Wiliam Tubman"
+				desc = "POLITICS_TUBMAN_EU_DESC"
+				picture = "gfx/leaders/LIB/Portrait_LIB_William_Tubman_Hat_Cigar.png"
+				expire = "1965.1.1"
+				ideology = soclib_republican_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = radical_socialist
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Marlib
+				name = "Wiliam Tubman"
+				desc = "POLITICS_TUBMAN_EU_DESC"
+				picture = "gfx/leaders/LIB/Portrait_LIB_William_Tubman_Hat_Cigar.png"
+				expire = "1965.1.1"
+				ideology = moderate_authoritarianism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = social_conservative
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Marlib
+				name = "Wiliam Tubman"
+				desc = "POLITICS_TUBMAN_EU_DESC"
+				picture = "gfx/leaders/LIB/Portrait_LIB_William_Tubman_Hat_Cigar.png"
+				expire = "1965.1.1"
+				ideology = authdem_right_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = authoritarian_democrat
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #Marlib
+				name = "Wiliam Tubman"
+				desc = "POLITICS_TUBMAN_EU_DESC"
+				picture = "gfx/leaders/LIB/Portrait_LIB_William_Tubman_Hat_Cigar.png"
+				expire = "1965.1.1"
+				ideology = pataut_right_panafricanism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = paternal_autocrat
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+		create_country_leader = { #NATPOP 
+				name = "Chiang Wei Kuo"
+				desc = "POLITICS_CHIANG_EU_DESC"
+				picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Wei_kuo.png"
+				expire = "1965.1.1"
+				ideology = natpop_pan_asianism_subtype
+		}
+		set_party_name = { #Thiriart
+				ideology = national_populist
+				long_name = "Pan African Party"
+				name = "PAP"
+		}
+	}
+}
+

@@ -1,0 +1,164 @@
+#######################
+## Idea Improvement ###
+####################### 
+europa_reforging_amerika = {
+	ENG = {
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = ENG_europa_commie
+					has_cosmetic_tag = ENG_eurasia_commie
+				}
+			}
+			set_autonomy = {
+				target = CSA
+				autonomy_state = eu_workers_union
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			CSA = {
+				set_cosmetic_tag = ENG_america_commie
+				create_country_leader = {
+					name = "Earl Browder"
+					picture = "gfx/leaders/CSA/Browder_2.png"
+					expire = "1965.1.1"
+					ideology = popcom_subtype
+					traits = {  }
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = ENG_europa_free
+					has_cosmetic_tag = ENG_europa_auth
+					has_cosmetic_tag = ENG_eurasia_normal
+				}
+			}
+			set_autonomy = {
+				target = CSA
+				autonomy_state = eu_demolibally
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			CSA = {
+				set_cosmetic_tag = ENG_america_euro
+			}
+		}
+	}
+}
+europa_reforging_asia = {
+	ENG = {
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = ENG_europa_commie
+					has_cosmetic_tag = ENG_eurasia_commie
+				}
+			}
+			set_autonomy = {
+				target = CHI
+				autonomy_state = eu_workers_union
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			CHI = {
+				set_cosmetic_tag = ENG_asia_commie
+				create_country_leader = {
+					name = "Mao Zedong"
+					picture = "gfx/leaders/MON/Portrait_MON_Mao_Zedong.png"
+					expire = "1965.1.1"
+					ideology = totalist_subtype
+					traits = { CHI_epic_teacher }
+				}
+				set_country_leader_ideology = agrarian_socialism_subtype
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = ENG_europa_free
+					has_cosmetic_tag = ENG_europa_auth
+					has_cosmetic_tag = ENG_eurasia_normal
+				}
+			}
+			set_autonomy = {
+				target = CHI
+				autonomy_state = eu_demolibally
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			CHI = {
+				set_cosmetic_tag = ENG_asia_euro
+			}
+		}
+	}
+}
+europa_reforging_africa = {
+	ENG = {
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = ENG_europa_commie
+					has_cosmetic_tag = ENG_eurasia_commie
+				}
+			}
+			set_autonomy = {
+				target = MAF
+				autonomy_state = eu_workers_union
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			MAF = {
+				set_cosmetic_tag = ENG_africa_commie
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = ENG_europa_free
+					has_cosmetic_tag = ENG_europa_auth
+					has_cosmetic_tag = ENG_eurasia_normal
+				}
+			}
+			set_autonomy = {
+				target = MAF
+				autonomy_state = eu_demolibally
+				end_wars = yes
+				end_civil_wars = yes
+			}
+			MAF = {
+				set_cosmetic_tag = ENG_africa_euro
+			}
+		}
+	}
+}
+AUS_puppet_setup = {
+	var:tag_to_release = {
+		if = {
+			limit = {
+				ROOT = { 
+					tag = GER 
+				} 
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.20
+			}
+			remove_all_ministers = yes
+			meta_effect = {
+				text = {
+					create_country_leader = {
+						name = "Friedrich Paulus"
+						desc = "POLITICS_PAULUS_EU_DESC"
+						picture = "gfx/leaders/GER/Portrait_Germany_Friedrich_Paulus_kr.png"
+						expire = "1965.1.1"
+						ideology = [OVERLORD_IDEOLOGY]
+					}
+				}
+				OVERLORD_IDEOLOGY = "[ROOT.GetRulingIdeologySubtype]"
+			}
+			set_cosmetic_tag = AUS_kommission
+		}
+	}
+}
