@@ -1,0 +1,225 @@
+﻿add_namespace = uob_eu_mongolia
+
+
+country_event = { #Tsar election
+	id = uob_eu_mongolia.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_mongolia.1" }
+	title = uob_eu_mongolia.1.t
+	desc = uob_eu_mongolia.1.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Vladimir!"
+		ai_chance = {
+			factor = 34
+		}
+		RUS_setup_tsar_vladimir = yes
+		set_country_leader_name = {
+			ideology = paternal_autocrat
+			name = "Wangshu"
+		}
+		set_country_leader_name = {
+			ideology = authoritarian_democrat
+			name = "Wangshu"
+		}
+		set_country_leader_name = {
+			ideology = social_conservative
+			name = "Wangshu"
+		}
+		set_country_leader_name = {
+			ideology = market_liberal
+			name = "Wangshu"
+		}
+		set_country_leader_name = {
+			ideology = social_democrat
+			name = "Wangshu"
+		}
+		
+	}
+
+	option = {
+		name = "Dmitriy!"
+		RUS_setup_tsar_dmitriy = yes
+		ai_chance = {
+			factor = 33
+		}
+		set_country_leader_name = {
+			ideology = paternal_autocrat
+			name = "Duyi"
+		}
+		set_country_leader_name = {
+			ideology = authoritarian_democrat
+			name = "Duyi"
+		}
+		set_country_leader_name = {
+			ideology = social_conservative
+			name = "Duyi"
+		}
+		set_country_leader_name = {
+			ideology = market_liberal
+			name = "Duyi"
+		}
+		set_country_leader_name = {
+			ideology = social_democrat
+			name = "Duyi"
+		}
+		
+	}
+	
+	option = {
+		name = "Vsevolod!"
+		RUS_setup_tsar_vsevolod = yes
+		ai_chance = {
+			factor = 33
+		}
+		set_country_leader_name = {
+			ideology = paternal_autocrat
+			name = "Weizhe"
+		}
+		set_country_leader_name = {
+			ideology = authoritarian_democrat
+			name = "Weizhe"
+		}
+		set_country_leader_name = {
+			ideology = social_conservative
+			name = "Weizhe"
+		}
+		set_country_leader_name = {
+			ideology = market_liberal
+			name = "Weizhe"
+		}
+		set_country_leader_name = {
+			ideology = social_democrat
+			name = "Weizhe"
+		}
+		
+	}
+}
+country_event = { #chinese protests, do we get a constitution
+	id = uob_eu_mongolia.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_mongolia.2" }
+	title = uob_eu_mongolia.2.t
+	desc = uob_eu_mongolia.2.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "We should obey to our subjects."
+		ai_chance = {
+			factor = 51
+		}
+		country_event = {
+			id = uob_eu_mongolia.3
+			days = 7
+		}
+		hidden_effect = {
+			set_popularities = {
+				social_democrat = 20
+				social_conservative = 15
+				authoritarian_democrat = 15
+				market_liberal = 20
+				paternal_autocrat = 15
+				national_populist = 5
+				syndicalist = 5
+				radical_socialist = 5
+				totalist = 0
+			}
+		}
+		
+	}
+
+	option = {
+		name = "We shall stay strong!"
+		RUS_setup_tsar_dmitriy = yes
+		ai_chance = {
+			factor = 49
+		}
+		add_stability = -0.1
+	}
+	
+}
+country_event = { #constitution route, who do we will get into our govt
+	id = uob_eu_mongolia.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_mongolia.3" }
+	title = uob_eu_mongolia.3.t
+	desc = uob_eu_mongolia.3.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "Left Kuomintang seems popular."
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = "Kuomintang"
+			name = "Kuomintang"
+		}
+		set_country_leader_ideology = socdem_clientelism_subtype
+		
+	}
+
+	option = {
+		name = "Right Kuomintang is not really radical."
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = "Kuomintang"
+			name = "Kuomintang"
+		}
+		set_country_leader_ideology = conservative_populism_subtype
+		
+	}
+	
+	option = {
+		name = "Zhili Clique won't get in our way."
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = "Zhili"
+			name = "Zhili"
+		}
+		set_country_leader_ideology = oligarchy_subtype
+		
+	}
+	
+	option = {
+		name = "Merchant Corps won't mind our rule."
+		ai_chance = {
+			factor = 25
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+			last_election = "1935.12.17"
+			election_frequency = 48
+			long_name = "Merchants' Public Safety Organization"
+			name = "Merchant Corps"
+		}
+		set_country_leader_ideology = liberal_conservative_subtype
+		
+	}
+	
+	
+
+}
+
+

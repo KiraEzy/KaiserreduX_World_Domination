@@ -1,0 +1,71 @@
+###########################################
+# Constitutional American Republic
+# Decisions by Matthew
+# SIKE THEY AINT - kalmus
+###########################################
+UOB_mosley_mega_projects = {
+	ENG_atlantropa_project = {
+		icon = GFX_decision_generic_army_support
+		allowed = { original_tag = ENG }
+		available = {
+			
+		}
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_Mosley_Europe
+		}
+		fire_only_once = yes
+		cost = 0
+		days_remove = 365
+		ai_will_do = {
+			factor = 5
+		}
+
+		remove_effect = {
+			add_ideas = ENG_atlantropa
+		}
+	}
+	ENG_eurobahn_project = { #reichsautobahn mosley edition
+		icon = GFX_decision_railroad
+		allowed = { original_tag = ENG }
+		available = {
+			always = yes
+		}
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_Mosley_Europe
+		}
+		fire_only_once = yes
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 180
+		remove_effect = {
+			add_ideas = ENG_highway
+		}
+	}
+	ENG_palaceofunions_project = { #reichsautobahn mosley edition
+		icon = GFX_decision_generic_army_support
+		allowed = { original_tag = ENG }
+		available = {
+			always = yes
+		}
+		visible = {
+			tag = ENG
+			has_country_flag = ENG_Mosley_Europe
+		}
+		fire_only_once = yes
+		cost = 0
+
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 70
+		remove_effect = {
+			add_ideas = ENG_tucbuilding
+		}
+	}
+
+}

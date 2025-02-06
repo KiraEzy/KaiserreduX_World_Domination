@@ -1,0 +1,261 @@
+###########################################
+# Constitutional American Republic
+# Decisions by Matthew
+# SIKE THEY AINT - kalmus
+###########################################
+UOB_struggle_for_power_category = {
+	ENG_boost_govt = {
+		visible = {
+			tag = ENG 
+			has_country_flag = mosley_infighting
+			
+		}
+        days_remove = 5 
+		days_re_enable = 5
+		remove_effect = {
+			add_to_variable = {
+        	    var = commie_influence 
+				value = -10
+			}
+			add_to_variable = {
+        	    var = lib_influence 
+				value = -10
+			}
+			add_to_variable = {
+        	    var = nationalist_influence 
+				value = -10
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = 5
+			}
+			
+        }
+    }
+	ENG_boost_commies = {
+		visible = {
+			tag = ENG 
+			has_country_flag = mosley_infighting
+			
+		}
+        days_remove = 5 
+		days_re_enable = 5
+		remove_effect = {
+			add_to_variable = {
+        	    var = commie_influence 
+				value = 5
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = -10
+			}
+        }
+    }
+	ENG_boost_libs = {
+		visible = {
+			tag = ENG 
+			has_country_flag = mosley_infighting
+			
+		}
+        days_remove = 5 
+		days_re_enable = 5
+		remove_effect = {
+			add_to_variable = {
+        	    var = lib_influence 
+				value = 5
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = -10
+			}
+        }
+    }
+	ENG_boost_nats = {
+		visible = {
+			tag = ENG 
+			has_country_flag = mosley_infighting
+			
+		}
+        days_remove = 5 
+		days_re_enable = 5
+		remove_effect = {
+			add_to_variable = {
+        	    var = nationalist_influence 
+				value = 5
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = -10
+			}
+        }
+    }
+	ENG_commie_growth = {
+		icon = GFX_generic_agreement 
+
+		allowed = { 
+			tag = ENG
+			
+		}
+		available = {
+			always = no
+		}
+		activation = {                      
+            tag = ENG 
+			has_country_flag = mosley_infighting
+        }
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 5
+        timeout_effect = {
+			add_to_variable = {
+        	    var = commie_influence 
+				value = 5
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = -5
+			}
+			activate_mission = ENG_commie_growth
+		}
+	}
+	ENG_lib_growth = {
+		icon = GFX_generic_agreement 
+
+		allowed = { 
+			tag = ENG
+			
+		}
+		available = {
+			always = no
+		}
+		activation = {                      
+            tag = ENG 
+			has_country_flag = mosley_infighting
+        }
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 5
+        timeout_effect = {
+			add_to_variable = {
+        	    var = lib_influence 
+				value = 5
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = -5
+			}
+			activate_mission = ENG_lib_growth
+		}
+	}
+	ENG_nat_growth = {
+		icon = GFX_generic_agreement 
+
+		allowed = { 
+			tag = ENG
+			
+		}
+		available = {
+			always = no
+		}
+		activation = {                      
+            tag = ENG 
+			has_country_flag = mosley_infighting
+        }
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 5
+        timeout_effect = {
+			add_to_variable = {
+        	    var = nationalist_influence 
+				value = 5
+			}
+			add_to_variable = {
+        	    var = govt_influence 
+				value = -5
+			}
+			activate_mission = ENG_boost_nats
+		}
+	}
+	ENG_gov_secure = { 
+		icon = GFX_generic_agreement 
+
+		allowed = { 
+			tag = ENG
+			
+		}
+		available = {
+			check_variable = { govt_influence > 50 }
+			has_completed_focus = ENG_destroy_antieuropean_sentiment
+		}
+		activation = {                      
+            tag = ENG 
+			has_country_flag = mosley_infighting
+        }
+		is_good = yes
+		selectable_mission = yes
+		days_mission_timeout = 106
+        timeout_effect = {
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = commie_influence
+							value = lib_influence
+							compare = greater_than
+						}
+						check_variable = {
+							var = commie_influence
+							value = nationalist_influence
+							compare = greater_than
+						}
+					}
+				}
+				country_event = {
+					id = uob_eu.8
+					days = 0
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = nationalist_influence
+							value = lib_influence
+							compare = greater_than
+						}
+						check_variable = {
+							var = nationalist_influence
+							value = commie_influence
+							compare = greater_than
+						}
+					}
+				}
+				country_event = {
+					id = uob_eu.10
+					days = 0
+				}
+			}
+			if = {
+				limit = {
+					AND = {
+						check_variable = {
+							var = lib_influence
+							value = nationalist_influence
+							compare = greater_than
+						}
+						check_variable = {
+							var = lib_influence
+							value = commie_influence
+							compare = greater_than
+						}
+					}
+				}
+				country_event = {
+					id = uob_eu.9
+					days = 0
+				}
+			}
+			
+		}
+	}
+} 

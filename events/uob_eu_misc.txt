@@ -1,0 +1,247 @@
+﻿add_namespace = uob_eu_misc
+add_namespace = uob_eu_misc_news 
+
+country_event = { #paneuropeanism embraced
+	id = uob_eu_misc.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_misc.0" }
+	title = uob_eu_misc.0.t
+	desc = uob_eu_misc.0.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+
+	option = {
+		name = "We cant stop the progress of history!"
+		news_event = {
+			id = uob_eu_misc_news.1
+			days = 0
+		}
+	}
+
+}
+
+country_event = { #Bucard France + Spain
+	id = uob_eu_misc.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_misc.1" }
+	title = uob_eu_misc.1.t
+	desc = uob_eu_misc.1.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		NOT = {
+			OR = {
+				has_cosmetic_tag = FRA_bucard_germany_union
+				has_cosmetic_tag = FRA_bucard_england_union
+				has_cosmetic_tag = FRA_bucard_iberia_union
+			}
+		}
+	}
+
+	option = {
+		name = "Latin Spirit shall never die!"
+		set_cosmetic_tag = FRA_bucard_spain_union
+		every_state = {
+			limit = {
+				is_owned_by = CNT 
+			}
+			add_claim_by = FRA 
+			add_core_of = FRA 
+		}
+		annex_country = {
+			target = CNT 
+			transfer_troops = yes 
+		}
+	}
+	
+	option = {
+		name = "We don't need Madrid's weight upon our shoulders."
+	}
+
+}
+
+country_event = { #Bucard France + England
+	id = uob_eu_misc.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_misc.2" }
+	title = uob_eu_misc.2.t
+	desc = uob_eu_misc.2.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		NOT = {
+			OR = {
+				has_cosmetic_tag = FRA_bucard_germany_union
+				has_cosmetic_tag = FRA_bucard_england_union
+				has_cosmetic_tag = FRA_bucard_iberia_union
+			}
+		}
+	}
+
+	option = {
+		name = "Legacy of William lays upon us!"
+		set_cosmetic_tag = FRA_bucard_england_union
+		every_state = {
+			limit = {
+				is_owned_by = ENG 
+			}
+			add_claim_by = FRA 
+			add_core_of = FRA 
+		}
+		annex_country = {
+			target = ENG 
+			transfer_troops = yes 
+		}
+	}
+	
+	option = {
+		name = "Ew, not with the English!"
+	}
+
+}
+
+country_event = { #Bucard France + Germany
+	id = uob_eu_misc.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_misc.3" }
+	title = uob_eu_misc.3.t
+	desc = uob_eu_misc.3.d
+	picture = GFX_report_event_generic_map_brit
+
+	is_triggered_only = yes
+	
+	trigger = { 
+		NOT = {
+			OR = {
+				has_cosmetic_tag = FRA_bucard_germany_union
+				has_cosmetic_tag = FRA_bucard_england_union
+				has_cosmetic_tag = FRA_bucard_iberia_union
+			}
+		}
+	}
+
+	option = {
+		name = "Heir of Charlemagne sits upon the Throne."
+		set_cosmetic_tag = FRA_bucard_germany_union
+		every_state = {
+			limit = {
+				is_owned_by = GRU 
+			}
+			add_claim_by = FRA 
+			add_core_of = FRA 
+		}
+		annex_country = {
+			target = GRU 
+			transfer_troops = yes 
+		}
+	}
+	
+	option = {
+		name = "The Bosch doesn't deserve us"
+	}
+
+}
+
+news_event = { ##Mosley embraces European frontier
+	id = uob_eu_misc_news.1
+	title = uob_eu_misc_news.1.t #done
+	desc = uob_eu_misc_news.1.desc  #done
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+
+	option = { #GOOD TO KNOW, THANKS
+		name = "Hail Mosley!"
+		trigger = {
+			tag = ENG
+		}
+		
+	}
+	
+	option = { #GOOD TO KNOW, THANKS
+		name = "This is worrying"
+		trigger = {
+			NOT = {
+				tag = ENG
+			}
+		}
+		
+	}
+}
+
+news_event = { ##Mosley forms Europa
+	id = uob_eu_misc_news.2
+	title = uob_eu_misc_news.2.t
+	desc = uob_eu_misc_news.2.desc #done
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+
+	option = { #GOOD TO KNOW, THANKS
+		name = uob_eu_misc_news.2.a
+		
+		
+	}
+}
+
+news_event = { ##Mosley dies
+	id = uob_eu_misc_news.3
+	title = uob_eu_misc_news.3.t
+	desc = uob_eu_misc_news.3.desc #done
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+
+	option = { #GOOD TO KNOW, THANKS
+		name = uob_eu_misc_news.3.a
+		
+		
+	}
+}
+
+news_event = { ##Commie coup
+	id = uob_eu_misc_news.4
+	title = uob_eu_misc_news.4.t
+	desc = uob_eu_misc_news.4.desc #done
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+
+	option = { #GOOD TO KNOW, THANKS
+		name = uob_eu_misc_news.4.a
+		
+		
+	}
+}
+
+news_event = { ##Lib coup
+	id = uob_eu_misc_news.6
+	title = uob_eu_misc_news.6.t
+	desc = uob_eu_misc_news.6.desc #done
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+
+	option = { #GOOD TO KNOW, THANKS
+		name = uob_eu_misc_news.6.a
+		
+		
+	}
+}
+
+news_event = { ##Nat coup
+	id = uob_eu_misc_news.7
+	title = uob_eu_misc_news.7.t
+	desc = uob_eu_misc_news.7.desc #done
+	picture = GFX_news_event_050
+	
+	is_triggered_only = yes
+
+	option = { #GOOD TO KNOW, THANKS
+		name = uob_eu_misc_news.7.a
+		
+		
+	}
+}
+

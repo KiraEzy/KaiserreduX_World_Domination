@@ -1,0 +1,847 @@
+ideas = {
+	country = {
+		ENG_crusade_for_europe = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_crusade_for_europe"}
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_morale = 10
+				army_org = 15
+				local_non_core_manpower = 0.05
+				
+			}
+			picture = EUR_crusade
+		}
+		ENG_achieved_dream = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_achieved_dream"}
+			modifier = {
+				stability_factor = 0.1
+
+			}
+			picture = EUR_eurodream
+		}
+		ENG_building_europa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_building_europa"}
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.10
+				global_building_slots_factor = 0.10
+				production_speed_buildings_factor = 0.10
+
+			}
+			picture = EUR_eurobuild
+		}
+
+		ENG_national_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_national_socialism"}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+
+			}
+			picture = GFX_idea_ENG_maximist
+		}
+
+		ENG_new_marx = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_new_marx"}
+			modifier = {
+				totalist_drift = 0.5
+				stability_weekly = 0.0005
+			}
+			picture = EUR_mosleymarx
+		}
+
+		ENG_new_nation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_new_nation"}
+			modifier = {
+				stability_factor = 0.1
+
+			}
+			picture = SOV_proletarian_religion_idea
+		}
+
+		ENG_great_trial = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_great_trial"}
+			modifier = {
+				stability_factor = -0.35
+				war_support_factor = -0.35
+				totalist_drift = 1
+				weekly_manpower = -1500
+				army_attack_factor = -0.20
+				army_defence_factor = -0.20
+
+			}
+			picture = EUR_trial
+		}
+
+		ENG_centre_of_civilization = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_centre_of_civilization"}
+			targeted_modifier = {
+				tag = USA 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = CSA  
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = COR 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = WCC 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = BBR 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = CAL 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = CAN 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = ALA  
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = QUE 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = TEX 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			targeted_modifier = {
+				tag = TXS 
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+
+			}
+			picture = EUR_shinybritain
+		}
+		#####MEGASTRUCTURES
+		ENG_atlantropa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_atlantropa"}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				consumer_goods_factor = -0.10
+				acclimatization_hot_climate_gain_factor = 0.15
+
+			}
+			picture = EUR_atlandam
+		}
+		
+		ENG_highway = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_highway"}
+			modifier = {
+				supply_factor = 0.15
+				attrition = -0.1
+				supply_node_range = 0.15
+				army_speed_factor = 0.25
+				
+			}
+			picture = EUR_highway
+		}
+		
+		ENG_tucbuilding = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea ENG_tucbuilding"}
+			modifier = {
+				surrender_limit = 0.1
+				totalist_drift = 0.03
+				army_core_defence_factor = 0.1
+				
+				
+			}
+			picture = EUR_tucbuilding
+		}
+		#######################################################################################SRI
+		SRI_volkshierarchy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_volkshierarchy"}
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.15
+			}
+			picture = SRI_italianhierarchy
+		}
+		
+		SRI_market_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_volkshierarchy"}
+			modifier = {
+				consumer_goods_factor = -0.15
+				global_building_slots_factor = 0.25
+				compliance_growth = 0.15
+				party_popularity_stability_factor = 0.3
+				
+			}
+			picture = SRI_italianmarketsocialism
+		}
+		
+		SRI_national_corporatism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_volkshierarchy"}
+			modifier = {
+				consumer_goods_factor = -0.25
+				global_building_slots_factor = 0.25
+				compliance_growth = -0.05
+				party_popularity_stability_factor = 0.3
+			}
+			picture = SRI_italiancorporatism
+		}
+		
+		SRI_mussolini_aeterna = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_mussolini_aeterna"}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+			picture = SRI_eternalmusso
+		}
+		
+		SRI_bianchi_aeterna = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_bianchi_aeterna"}
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.2
+				drift_defence_factor = 0.3
+			}
+			picture = SRI_eternalbianchi
+		}
+		SRI_orthodox_mussolinism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_orthodox_mussolinism"}
+			modifier = {
+				political_power_factor = 0.15
+				party_popularity_stability_factor = 0.15
+			}
+			picture = SRI_mussolinism
+		}
+		SRI_new_thesis = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_new_thesis"}
+			modifier = {
+				defensive_war_stability_factor = 0.5
+				army_morale_factor = 0.3
+				surrender_limit = 0.25
+			}
+			picture = SRI_bianchism
+		}
+		
+		SRI_italian_reforge = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_italian_reforge"}
+			modifier = {
+				monthly_population = -0.25
+				stability_weekly = -0.025
+				totalist_drift = 1
+				resistance_activity = 0.5
+				enemy_operative_detection_chance_factor = 1
+				conscription_factor = -0.3
+			}
+			picture = SRI_italyreforge
+		}
+		
+		SRI_peasant_vanguard = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_peasant_vanguard"}
+			modifier = {
+				monthly_population = 0.15
+				stability_factor = 0.15
+			}
+			picture = SRI_peasantvanguard
+		}
+		
+		SRI_revolutionary_spirit = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_revolutionary_spirit"}
+			modifier = {
+				stability_factor = 0.25
+				war_support_factor = 0.25
+			}
+			picture = SRI_revspirit
+		}
+		
+		SRI_catholic_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_catholic_socialism"}
+			modifier = {
+				political_power_factor = 0.15
+				drift_defence_factor = 0.3
+				resistance_activity = -0.15
+			}
+			picture = SRI_christiansocialism
+		}
+		#anarchists
+		SRI_free_unions = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_free_unions"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_free_people = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_free_people"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_new_enemies = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_new_enemies"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_old_enemies = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_old_enemies"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_egoism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_egoism"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_anarchist_ride = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_anarchist_ride"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_new_people = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_new_people"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		#socdems
+		SRI_moderate_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_moderate_policy"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_socdem_policy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_socdem_policy"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_deregulations = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_deregulations"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_antihabsurgism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_antihabsurgism"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_meridionalist_insitute_idea = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_open_market = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		#syndies
+		SRI_unions_rallied = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_status_quo = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_unity = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_antiauthoritarianism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_steady_sail = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_great_sprint = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_liberation_of_folks = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_unity_against_reactionaries = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		#commies
+		SRI_mobilization_of_proletariat = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_one_union = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_bandiera_rossa = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_preople_front = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_total_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_sovietunion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_workerism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_commienationalism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		#christians
+		SRI_mended_divide = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_christian_ethos = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_left_christdem = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_republic_of_god = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_no_masters = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		#sansepolcrists
+		SRI_cultural_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_unitary_italy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_unions_for_stata = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_avanti = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		SRI_cult_of_italy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea SRI_meridionalist_insitute"}
+			modifier = {
+				
+			}
+			picture = SRI_christiansocialism
+		}
+		
+		#############################GALITSIA
+		GAL_wesele = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_wesele"}
+			modifier = {
+				political_power_factor = -0.15
+				resistance_activity = 0.15
+				stability_factor = -0.25
+				offence = -0.15
+				defence = -0.15
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		GAL_united_in_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_united_in_revolution"}
+			modifier = {
+				political_power_factor = 0.05
+				resistance_activity = -0.25
+				stability_factor = 0.05
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		GAL_exist_by_revolution = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_exist_by_revolution"}
+			modifier = {
+				political_power_factor = 0.25
+				stability_factor = 0.25
+				war_support_factor = 0.25
+				offence = 0.25
+				defence = 0.25
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		GAL_step_towards_socialism  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea GAL_step_towards_socialism"}
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.1
+				consumer_goods_factor = -0.25
+				global_building_slots_factor = 0.3
+				
+			}
+			picture = EUR_tucbuilding
+		}
+		
+		####COF
+		FRA_organic_socialism  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_organic_socialism"}
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				war_support_factor = 0.1
+				
+			}
+			picture = FRA_frenchhierarchy
+		}
+		
+		FRA_one_way_for_france  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_one_way_for_france"}
+			modifier = {
+				drift_defence_factor = 1
+			}
+			picture = FRA_onefrenchway
+		}
+		
+		FRA_order_in_society  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_order_in_society"}
+			modifier = {
+				defensive_war_stability_factor = 0.25
+				resistance_growth_on_our_occupied_states = 0.15
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.15
+				
+			}
+			picture = FRA_orderinsociety
+		}
+		
+		FRA_ideal_frenchman  = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_ideal_frenchman"}
+			modifier = {
+				monthly_population  = 0.1
+				surrender_limit = 0.15
+				conscription_factor = 0.1
+				army_morale_factor = 0.3
+				army_org_factor = 0.3
+				
+			}
+			picture = FRA_frenchchad
+		}
+		
+		FRA_one_doctrine_one_rule = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea FRA_one_doctrine_one_rule"}
+			modifier = {
+				drift_defence_factor = 0.3
+			}
+			picture = FRA_onedoctrine
+		}
+		#################################EGYPT NASSER
+		EGY_new_arabi = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_new_arabi"}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.15
+			}
+			picture = EGY_newarabs
+		}
+		
+		EGY_crackdown_on_religion = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_crackdown_on_religion"}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = 0.3
+				radical_socialist_drift = 0.15
+				
+			}
+			picture = EGY_quranburning
+		}
+		
+		EGY_arab_socialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_arab_socialism"}
+			modifier = {
+				stability_factor = 0.15
+				radical_socialist_drift = 0.15
+				local_resources_factor = 0.3
+				consumer_goods_factor = -0.05
+				global_building_slots_factor = 0.15
+			}
+			picture = EGY_arabsocialism
+		}
+		
+		EGY_arab_socialism_based = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_arab_socialism"}
+			modifier = {
+				stability_factor = 0.20
+				radical_socialist_drift = 0.30
+				local_resources_factor = 0.35
+				consumer_goods_factor = -0.1
+				global_building_slots_factor = 0.20
+			}
+			picture = EGY_arabsocialism
+		}
+		
+		EGY_academical_golden_age = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_academical_golden_age"}
+			modifier = {
+				research_speed_factor = 0.15
+				political_power_gain = 0.2
+			}
+			picture = EGY_bigbrain
+		}
+		
+		EGY_suez_broken_administration = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_suez_broken_administration"}
+			modifier = {
+				offence = -1
+				defence = -1
+			}
+			picture = MEX_revolutionary_army
+		}
+		
+		EGY_anti_colonialism = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_anti_colonialism"}
+			modifier = {
+				compliance_growth = 0.5
+				stability_factor = 0.1
+				non_core_manpower = 0.3
+			}
+			picture = EGY_anticolonialism
+		}
+		
+		EGY_leaders_of_arab_world = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_leaders_of_arab_world"}
+			modifier = {
+				offence = 0.15
+				defence = 0.15
+				stability_factor = 0.1
+				surrender_limit = 0.2
+			}
+			picture = EGY_arabmasters
+		}
+		##############EGYPT NAGUIB
+		EGY_pragmatic_methods = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_pragmatic_methods"}
+			modifier = {
+				drift_defence_factor = 0.3
+				faction_trade_opinion_factor = 0.5
+				consumer_goods_factor = -0.05
+				
+			}
+			picture = EGY_trade
+		}
+		
+		EGY_naguib_military = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_naguib_military"}
+			modifier = {
+				send_volunteer_factor = 0.3
+				heat_attrition_factor = -0.15
+				conscription_factor = 0.2
+				army_org_factor = 0.3
+			}
+			picture = EGY_egyptianarmy
+		}
+		EGY_conservatism_naguib = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_conservatism_naguib"}
+			modifier = {
+				stability_factor = 0.3
+				political_power_gain = 0.3
+				radical_socialist_drift = -0.5
+				syndicalist_drift = -0.5
+				totalist_drift = -0.5
+				research_speed_factor = -0.1
+			}
+			picture = EGY_conservatism
+		}
+		###########GYPT CENTRE
+		EGY_mixed_economy = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_mixed_economy"}
+			modifier = {
+				drift_defence_factor = 0.15
+				faction_trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
+				global_building_slots_factor = 0.05
+			}
+			picture = EGY_mixedeconomy
+		}
+		EGY_centrist_army = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_centrist_army"}
+			modifier = {
+				send_volunteer_factor = 0.15
+				heat_attrition_factor = -0.15
+				conscription_factor = 0.1
+				army_org_factor = 0.15
+				army_morale_factor = 0.1
+				
+			}
+			picture = EGY_egyptianarmy
+		}
+		EGY_freedom_of_speech = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_freedom_of_speech"}
+			modifier = {
+				party_popularity_stability_factor = 0.3
+				offensive_war_stability_factor = -0.15
+				political_power_factor = 0.15
+				stability_weekly = 0.01
+				
+			}
+			picture = EGY_freedomofspeech
+		}
+		EGY_benelovent_republic = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_benelovent_republic"}
+			modifier = {
+				stability_factor = 0.15
+				
+			}
+			picture = EGY_liberty
+		}
+		EGY_secularism_in_public = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea EGY_secularism_in_public"}
+			modifier = {
+				stability_factor = -0.05
+				
+				
+			}
+			picture = EGY_secularism
+		}
+	}
+	
+	
+}

@@ -1,0 +1,256 @@
+﻿add_namespace = uob_eu_lib
+
+country_event = { #elections in the union
+	id = uob_eu_lib.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_lib.1" }
+	title = uob_eu_lib.1.t
+	desc = uob_eu_lib.1.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "...the Social Democrats won!"
+		add_stability = 0.15
+		create_country_leader = {
+			name = "Harold Macmillan"
+			desc = "POLITICS_MACMILLAN_EUROPEAN_DESC"
+			picture = "gfx/leaders/ENG/Portrait_Britain_Harold_MacMillan.png"
+			expire = "1965.1.1"
+			ideology = social_democrat_subtype
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		hidden_effect = {
+			country_event = {
+				id = uob_eu_as.0
+				days = 30
+			}
+		}
+	}
+	
+	option = { #based and bluepilled
+		name = "...the Conservatives won!"
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		create_country_leader = {
+			name = "Wincenty Witos"
+			desc = "POLITICS_WITOS_EUROPEAN_DESC"
+			picture = "gfx/leaders/GAL/Portrait_GAL_Wincenty_Witos.png"
+			expire = "1965.1.1"
+			ideology = christian_democracy_subtype
+			traits = {
+			}
+		}
+		add_stability = 0.15
+		hidden_effect = {
+			country_event = {
+				id = uob_eu_as.0
+				days = 30
+			}
+		}
+	}
+	option = { #based and orangepilled
+		name = "...The Liberals won!"
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		create_country_leader = {
+			name = "Paul von Lettow Vorbeck"
+			desc = "POLITICS_VORBECK_EUROPEAN_DESC"
+			picture = "gfx/leaders/GER/Portrait_Germany_Paul_von_Lettow_Vorbeck.png"
+			expire = "1965.1.1"
+			ideology = classical_liberalism_subtype
+			traits = {
+			}
+		}
+		add_stability = 0.15
+		hidden_effect = {
+			country_event = {
+				id = uob_eu_as.0
+				days = 30
+			}
+		}
+	}
+	option = { #based and yellowpilled
+		name = "...The Radical Liberals won!"
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		create_country_leader = {
+			name = "Albert Speer"
+			desc = "POLITICS_SPEER_EUROPEAN_DESC"
+			picture = "gfx/leaders/LEB/Portrait_Lebanon_Albert_Speer.png"
+			expire = "1965.1.1"
+			ideology = libertarian_subtype
+			traits = {
+			}
+		}
+		set_country_leader_ideology = authoritarian_liberalism_subtype
+		add_stability = 0.15
+		hidden_effect = {
+			country_event = {
+				id = uob_eu_as.0
+				days = 30
+			}
+		}
+	}
+
+}
+
+country_event = { #second elections in the union
+	id = uob_eu_lib.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_lib.2" }
+	title = uob_eu_lib.2.t
+	desc = uob_eu_lib.2.d
+	picture = GFX_report_event_ENG_lord_blair
+	
+	trigger = {
+		tag = ENG 
+		OR = {
+			has_cosmetic_tag = ENG_europa_free
+			has_cosmetic_tag = ENG_eurasia_normal
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			create_country_leader = {
+				name = "Leon Blum"
+				desc = "POLITICS_BLUM_EU_DESC"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Leon_Blum_KX.png"
+				expire = "1965.1.1"
+				ideology = social_democrat_subtype
+				traits = {
+					}
+			}
+			create_country_leader = {
+				name = "Otto von Habsburg"
+				desc = "POLITICS_OTTO_EUROPEAN_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1965.1.1"
+				ideology = christian_democracy_subtype
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Gustav Krupp"
+				desc = "POLITICS_KRUpp_EUROPEAN_DESC"
+				picture = "gfx/leaders/GRU/Portrait_GRU_Gustav_Krupp.png"
+				expire = "1965.1.1"
+				ideology = free_market_capitalist_subtype
+				traits = {
+				}
+			}
+			create_country_leader = {
+				name = "Mihály Károlyi"
+				desc = "POLITICS_KAROLYI_EUROPEAN_DESC"
+				picture = "gfx/leaders/HUN/Portrait_HUN_Mihaly_Karolyi.png"
+				expire = "1965.1.1"
+				ideology = paneuropeanism_subtype
+				traits = {
+				}
+			}
+
+		
+		}
+	
+	}
+	
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "...the Social Democrats won!"
+		add_stability = 0.15
+		create_country_leader = {
+			name = "Leon Blum"
+			desc = "POLITICS_BLUM_EU_DESC"
+			picture = "gfx/leaders/FRA/Portrait_FRA_Leon_Blum_KX.png"
+			expire = "1965.1.1"
+			ideology = social_democrat_subtype
+			traits = {
+			}
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+	}
+	
+	option = { #based and bluepilled
+		name = "...the Conservatives won!"
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		create_country_leader = {
+			name = "Otto von Habsburg"
+			desc = "POLITICS_OTTO_EUROPEAN_DESC"
+			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+			expire = "1965.1.1"
+			ideology = christian_democracy_subtype
+			traits = {
+			}
+		}
+		add_stability = 0.15
+	}
+	option = { #based and orangepilled
+		name = "...The Liberals won!"
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		create_country_leader = {
+			name = "Mihály Károlyi"
+			desc = "POLITICS_KAROLYI_EUROPEAN_DESC"
+			picture = "gfx/leaders/HUN/Portrait_HUN_Mihaly_Karolyi.png"
+			expire = "1965.1.1"
+			ideology = paneuropeanism_subtype
+			traits = {
+			}
+		}
+		add_stability = 0.15
+	}
+	option = { #based and yellowpilled
+		name = "...The Radical Liberals won!"
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+			last_election = "1935.12.17"
+			election_frequency = 48
+		}
+		create_country_leader = {
+			name = "Gustav Krupp"
+			desc = "POLITICS_KRUpp_EUROPEAN_DESC"
+			picture = "gfx/leaders/GRU/Portrait_GRU_Gustav_Krupp.png"
+			expire = "1965.1.1"
+			ideology = free_market_capitalist_subtype
+			traits = {
+			}
+		}
+		add_stability = 0.15
+	}
+
+}

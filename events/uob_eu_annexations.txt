@@ -1,0 +1,129 @@
+###########################
+# Annexation Events
+###########################
+# By lots of folks
+# Converted from on_actions to decisions by Rylock and Dr_Njitram
+# Any new post-annexation events need to have their triggers in the KR_on_actions file
+###########################
+
+add_namespace = uobeu_anex
+
+country_event = { #America ist wunderbar
+	id = uobeu_anex.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uobeu_anex.1" }
+	title = uobeu_annex.1.t
+	desc = uobeu_annex.1.t
+	
+	is_triggered_only = yes
+	
+	immediate = {#DO A COSMETIC TAG WHEN AVAILABLE
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = ENG 
+					is_on_continent = north_america
+				}
+				transfer_state_to = CSA
+				add_claim_by = CSA
+			}
+			ENG = {
+				set_autonomy = {
+					target = CSA
+					autonomy_state = eu_ass_state
+					end_wars = yes
+					end_civil_wars = yes
+				}
+			}
+			america_mosley_leader_swap = yes 
+			CSA = {
+				set_cosmetic_tag = ENG_america_mosley
+			}
+		}
+	}
+
+	option = { 
+		name = uobeu_anex.1.a
+		add_stability = 0.15
+	}
+
+}
+country_event = { #East Asia Puppet
+	id = uobeu_anex.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uobeu_anex.2" }
+	title = uobeu_annex.2.t
+	desc = uobeu_annex.2.t
+	
+	is_triggered_only = yes
+	
+	immediate = {#DO A COSMETIC TAG WHEN AVAILABLE
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = ENG 
+					is_on_continent = asia
+				}
+				transfer_state_to = CHI
+				add_claim_by = CHI
+			}
+			ENG = {
+				set_autonomy = {
+					target = CHI
+					autonomy_state = eu_ass_state
+					end_wars = no
+					end_civil_wars = no
+				}
+			}
+			CHI = {
+				set_cosmetic_tag = ENG_asia_mosley
+			}
+			china_mosley_leader_swap = yes
+		}
+	}
+
+	option = { #Zhou Enlai
+		name = uobeu_anex.2.a
+		add_stability = 0.15
+	}
+	
+
+}
+country_event = { 
+	id = uobeu_anex.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uobeu_anex.3" }
+	title = uobeu_annex.3.t
+	desc = uobeu_annex.3.t
+	
+	is_triggered_only = yes
+	
+	immediate = {#DO A COSMETIC TAG WHEN AVAILABLE
+		
+	}
+
+	option = { 
+		name = uobeu_anex.1.a
+		add_stability = 0.15
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_owned_by = ENG 
+					is_on_continent = africa
+				}
+				transfer_state_to = KIK
+				add_claim_by = KIK
+			}
+			ENG = {
+				set_autonomy = {
+					target = KIK
+					autonomy_state = eu_ass_state
+					end_wars = yes
+					end_civil_wars = yes
+				}
+			}
+			KIK = {
+				set_cosmetic_tag = ENG_africa_mosley
+			}
+			africa_mosley_leader_swap = yes 
+		}
+	}
+
+}

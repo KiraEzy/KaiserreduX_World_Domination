@@ -1,0 +1,33 @@
+﻿add_namespace = uob_eu_factions
+
+country_event = { #Italian Sphere
+	id = uob_eu_factions.0
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_factions.0" }
+	title = uob_eu_factions.0.t
+	desc = uob_eu_factions.0.d
+	picture = GFX_report_event_generic_map_brit
+
+	trigger = {
+		tag = SRI 
+		has_socialist_government = yes
+		is_major = yes 
+		is_in_faction = yes
+		num_subjects > 5
+		has_war = no
+	}
+	
+	mean_time_to_happen = { days = 31 }
+
+	option = {
+		name = "We are good on our own."
+		leave_faction = yes
+		create_faction = "Mediterranean Union"
+	}
+	
+	option = {
+		name = "We will stay."
+		
+	}
+
+}
+

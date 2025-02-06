@@ -1,0 +1,463 @@
+﻿add_namespace = uob_eu_commie
+
+country_event = { #Solution to instability
+	id = uob_eu_commie.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.1" }
+	title = uob_eu_commie.1.t
+	desc = uob_eu_commie.1.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+	
+	option = { #we will need allies, event chain about a coalition with the succdumbs
+		name = "We can't take risks now, let's gather some allies."
+		set_country_leader_ideology = authcom_subtype
+		hidden_effect = {
+			country_event = {
+				id = uob_eu_as.0
+				days = 30
+			}
+			country_event = {
+				id = uob_eu_commie.2
+				days = 7
+			}
+		}
+	}
+
+}
+
+country_event = { #Attlee comes to the table
+	id = uob_eu_commie.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.2" }
+	title = uob_eu_commie.2.t
+	desc = uob_eu_commie.2.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "As the youth calls it - based"
+		set_country_leader_ideology = radsoc_communism_subtype
+		set_party_name = { #
+				ideology = totalist
+				long_name = "All-Union Socialist Party - Communists"
+				name = "AUSP"
+			}
+		set_party_name = { #
+				ideology = social_democrat
+				long_name = "All-Union Socialist Party - Moderates"
+				name = "AUSP"
+			}
+		
+	}
+}
+
+country_event = { #Antimo and EuroSyndies join the fray
+	id = uob_eu_commie.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.3" }
+	title = uob_eu_commie.3.t
+	desc = uob_eu_commie.3.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "As the youth calls it - based"
+		set_party_name = { #
+				ideology = syndicalist
+				long_name = "All-Union Socialist Party - Syndicalists"
+				name = "AUSP"
+			}
+		set_party_name = { #
+				ideology = radical_socialist
+				long_name = "All-Union Socialist Party - Radicals"
+				name = "AUSP"
+			}
+		
+	}
+}
+
+country_event = { #division between the soccdumbs
+	id = uob_eu_commie.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.4" }
+	title = uob_eu_commie.4.t
+	desc = uob_eu_commie.4.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "Social Democrats were always against the workers."
+		set_party_name = { #
+				ideology = social_liberal
+				long_name = "European People's Party - Liberal Socialists"
+				name = "EPP"
+		}
+		
+	}
+}
+
+country_event = { #Creation of the Europarliament
+	id = uob_eu_commie.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.5" }
+	title = uob_eu_commie.5.t
+	desc = uob_eu_commie.5.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "Workers democracy is the most beautiful thing."
+		set_party_name = { #
+				ideology = social_liberal
+				long_name = "European Democratic Party - Liberal Socialists"
+				name = "EDP"
+		}
+		set_party_name = { #
+				ideology = market_liberal
+				long_name = "European Democratic Party - Radical Liberals"
+				name = "EDP"
+		}
+		set_party_name = { #
+				ideology = social_conservative
+				long_name = "Common Good Party"
+				name = "CGP"
+		}
+		
+	}
+}
+
+country_event = { #Elections question
+	id = uob_eu_commie.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.6" }
+	title = uob_eu_commie.6.t
+	desc = uob_eu_commie.6.d
+	picture = GFX_report_event_ENG_lord_blair
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "The tuletage is over."
+		set_politics = {
+				ruling_party = totalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		hold_election = ROOT
+		
+	}
+}
+
+country_event = { #Elections 
+	id = uob_eu_commie.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.7"}
+	title = uob_eu_commie.7.t
+	desc = uob_eu_commie.7.d
+	picture = GFX_report_event_ENG_lord_blair
+	
+	trigger = {
+		tag = ENG 
+		OR = {
+			has_cosmetic_tag = ENG_europa_commie
+			has_cosmetic_tag = ENG_eurasia_commie
+		}
+
+	}
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "Communists win!"
+		set_politics = {
+				ruling_party = totalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = {
+				name = "Konstanty Rokossowski"
+				desc = "POLITICS_ROKOSSOWSKI_EUROPEAN_DESC"
+				picture = "gfx/leaders/POL/Portrait_POL_Konstanty_Rokossowski.png"
+				expire = "1965.1.1"
+				ideology = authcom_subtype
+				traits = {}
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Syndicalists win!"
+		set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Annie Kenney"
+				desc = "POLITICS_Kenney_EU_DESC"
+				picture = "gfx/leaders/ENG/Portrait_England_Annie_Kenney.png"
+				expire = "1965.1.1"
+				ideology = democratic_syndicalism_subtype
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Radicals win!"
+		set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Leon Blum"
+				desc = "POLITICS_BLUM_EU_DESC"
+				picture = "gfx/leaders/FRA/Portrait_FRA_Leon_Blum_KX.png"
+				expire = "1965.1.1"
+				ideology = radical_progressivism_subtype
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Moderates win!"
+		set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Clement Attlee"
+				desc = "POLITICS_BLUM_EU_DESC"
+				picture = "gfx/leaders/ENG/Portrait_England_Clem_Attlee.png"
+				expire = "1965.1.1"
+				ideology = syndie_social_democrat_subtype
+		}
+		
+	}
+}
+
+country_event = { #Elections 2
+	id = uob_eu_commie.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.8"}
+	title = uob_eu_commie.8.t
+	desc = uob_eu_commie.8.d
+	picture = GFX_report_event_ENG_lord_blair
+	
+	trigger = {
+		tag = ENG 
+		OR = {
+			has_cosmetic_tag = ENG_europa_commie
+			has_cosmetic_tag = ENG_eurasia_commie
+		}
+		OR = {
+			has_country_leader = {
+				name = "Konstanty Rokossowski"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Annie Kenney"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Leon Blum"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Clement Attlee"
+				ruling_only = yes
+			}
+		}
+
+	}
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "Communists win!"
+		set_politics = {
+				ruling_party = totalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = {
+				name = "Wilhelm Pieck"
+				desc = "POLITICS_PIECK_EUROPEAN_DESC"
+				picture = "gfx/leaders/GRU/Portrait_Germany_Wilhelm_Pieck_I.png"
+				expire = "1965.1.1"
+				ideology = authcom_subtype
+				traits = {}
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Syndicalists win!"
+		set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Róża Luksemburg"
+				desc = "POLITICS_LUXEMBURG_EU_DESC"
+				picture = "gfx/leaders/POL/Portriat_POL_Roza_Luksemburg.png"
+				expire = "1965.1.1"
+				ideology = democratic_syndicalism_subtype
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Radicals win!"
+		set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Riccardo Lombardi"
+				desc = "POLITICS_BLUM_EU_DESC"
+				picture = "gfx/leaders/SRI/Portrait_SRI_Riccardo_Lombardi.png"
+				expire = "1965.1.1"
+				ideology = fascism_subtype
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Moderates win!"
+		set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Karl Renner"
+				desc = "POLITICS_RENNER_EU_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Karl_Renner.png"
+				expire = "1965.1.1"
+				ideology = austromarxism_subtype
+		}
+		
+	}
+}
+
+country_event = { #Elections 3
+	id = uob_eu_commie.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.9"}
+	title = uob_eu_commie.9.t
+	desc = uob_eu_commie.9.d
+	picture = GFX_report_event_ENG_lord_blair
+	
+	trigger = {
+		tag = ENG 
+		OR = {
+			has_cosmetic_tag = ENG_europa_commie
+			has_cosmetic_tag = ENG_eurasia_commie
+		}
+		OR = {
+			has_country_leader = {
+				name = "Wilhelm Pieck"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Róża Luksemburg"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Riccardo Lombardi"
+				ruling_only = yes
+			}
+			has_country_leader = {
+				name = "Karl Renner"
+				ruling_only = yes
+			}
+		}
+
+	}
+
+	is_triggered_only = yes
+
+	option = { #based and redpilled
+		name = "Communists win!"
+		set_politics = {
+				ruling_party = totalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = {
+				name = "Bela Kun"
+				desc = "POLITICS_KUN_EUROPEAN_DESC"
+				picture = "gfx/leaders/HUN/Portrait_HUN_Bela_Kun.png"
+				expire = "1965.1.1"
+				ideology = authcom_subtype
+				traits = {}
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Syndicalists win!"
+		set_politics = {
+				ruling_party = syndicalist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Marcel Cachin"
+				desc = "POLITICS_CACHIN_EU_DESC"
+				picture = "gfx/leaders/FRA/Portrait_France_Marcel_Cachin.png"
+				expire = "1965.1.1"
+				ideology = liberalized_syndicalism_subtype
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Radicals win!"
+		set_politics = {
+				ruling_party = radical_socialist
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Nikolai Bukharin"
+				desc = "POLITICS_BUKHARIN_EU_DESC"
+				picture = "gfx/leaders/RUS/Portrait_RUS_Nikolay_Bukharin.png"
+				expire = "1965.1.1"
+				ideology = bukharinist_subtype
+		}
+		
+	}
+	
+	option = { #based and redpilled
+		name = "Moderates win!"
+		set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = yes
+				last_election = "1935.12.17"
+				election_frequency = 24
+		}
+		create_country_leader = { #Syndie
+				name = "Josip Broz Tito"
+				desc = "POLITICS_TITO_EU_DESC"
+				picture = "gfx/leaders/CRO/CRO_tito.png"
+				expire = "1965.1.1"
+				ideology = syndie_social_democrat_subtype
+		}
+		
+	}
+}
+
