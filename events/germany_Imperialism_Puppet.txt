@@ -2750,7 +2750,7 @@ country_event = {
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event GERoccupation.25"
 	}
-	title = "Deal With Kriegsflagge of the Baltic Landwehr"
+	title = "Deal With United Baltic Duchy"
 	desc = GERoccupation.25.d
 	picture = GFX_event_NFA_versaille_treaty
 	is_triggered_only = yes
@@ -2758,7 +2758,7 @@ country_event = {
 	option = {
 		release = LAT
 
-		name = "The Kriegsflagge of the Baltic Landwehr is formed!"
+		name = "The United Baltic Duchy is formed!"
 		add_political_power = 75
         LAT = {
             if = {

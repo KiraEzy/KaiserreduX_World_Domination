@@ -133,32 +133,3 @@ europa_reforging_africa = {
 		}
 	}
 }
-AUS_puppet_setup = {
-	var:tag_to_release = {
-		if = {
-			limit = {
-				ROOT = { 
-					tag = GER 
-				} 
-			}
-			add_popularity = {
-				ideology = paternal_autocrat
-				popularity = 0.20
-			}
-			remove_all_ministers = yes
-			meta_effect = {
-				text = {
-					create_country_leader = {
-						name = "Friedrich Paulus"
-						desc = "POLITICS_PAULUS_EU_DESC"
-						picture = "gfx/leaders/GER/Portrait_Germany_Friedrich_Paulus_kr.png"
-						expire = "1965.1.1"
-						ideology = [OVERLORD_IDEOLOGY]
-					}
-				}
-				OVERLORD_IDEOLOGY = "[ROOT.GetRulingIdeologySubtype]"
-			}
-			set_cosmetic_tag = AUS_kommission
-		}
-	}
-}
