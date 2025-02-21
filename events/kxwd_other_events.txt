@@ -1,0 +1,217 @@
+add_namespace = kxOther
+country_event = {
+	#Revenge! But Swiss????
+	id = kxOther.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event kxOther.1"
+	}
+	title = "Fate of the Lowlands: Holland's Future"
+	desc = kxOther.1.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "Release as the Kingdom of Holland"
+		hidden_effect = {
+			release = HOL
+			add_political_power = 75
+			HOL = {
+			  load_focus_tree = generic_focus
+	
+			  set_capital = { state = 7 }
+			  
+			  NFA = {
+				set_autonomy = {
+				  target = HOL
+				  autonomous_state = kx_colored_puppet
+				}
+			  }
+
+			  ### Leader
+			  create_country_leader = {
+				name = "Napoleon VI"
+				desc = "POLITICS_NAPOLEON_IV_DESC"
+				picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI_emperor.png"
+				expire = "1.1.1"
+				ideology = pataut_bonapartism_subtype
+				traits = {}
+			  }
+	
+			  ### Politics
+			  set_popularities = {
+				totalist = 0
+				radical_socialist = 0
+				syndicalist = 0
+				social_democrat = 10
+				social_liberal = 0
+				market_liberal = 10
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 40
+				national_populist = 10
+			  }
+			  set_party_name = {
+				  name = "Gouvernement des Pays-Bas"
+				  long_name = "Gouvernement des Pays-Bas"
+				  ideology = paternal_autocrat
+			  }
+			  set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			  }
+			  set_cosmetic_tag = nfa_formable
+			  set_cosmetic_tag = HOL_napoleonic
+			}
+			
+			HOL = { 
+			  every_core_state = {
+				remove_core_of = HOL
+			  }
+			  866 = { add_core_of = HOL }
+			  35 = { add_core_of = HOL }
+			  36 = { add_core_of = HOL }
+			  7 = { add_core_of = HOL }
+			  978 = { add_core_of = HOL }
+			  979 = { add_core_of = HOL }
+			  HOL = { 
+				every_core_state = {
+				  limit = {
+					AND = {
+					  NOT = { 
+						is_core_of = NFA
+					  }
+					  OR = {
+						is_owned_by = NFA
+						OWNER = { is_subject_of = NFA} 
+					  }
+					}
+				  }
+				  transfer_state_to = HOL
+				}
+			  }
+			}
+		}
+	}
+
+    option = {
+		name = "Annex Holland"
+		add_political_power = 75
+        866 = { add_core_of = NFA }
+        35 = { add_core_of = NFA }
+        36 = { add_core_of = NFA }
+        7 = { add_core_of = NFA }
+        978 = { add_core_of = NFA }
+        979 = { add_core_of = NFA }
+
+        866 = { transfer_state_to = NFA } 
+        35 = { transfer_state_to = NFA }
+        36 = { transfer_state_to = NFA }
+        7 = { transfer_state_to = NFA }
+        978 = { transfer_state_to = NFA }
+        979 = { transfer_state_to = NFA }
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = kxOther.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event kxOther.2"
+	}
+	title = "Fate of the Lowlands: Belgium's Future"
+	desc = kxOther.2.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "Establish Belgium as a Province"
+		hidden_effect = {
+			release = BEL
+			add_political_power = 75
+			BEL = {
+			  load_focus_tree = generic_focus
+	
+			  set_capital = { state = 8 }
+			  NFA = {
+				set_autonomy = {
+				  target = BEL
+				  autonomous_state = kx_colored_puppet
+				}
+			  }
+			  ### Leader
+			  create_country_leader = {
+				name = "Henri de Man"
+				picture = "gfx/leaders/NFA/Portrait_Henri_de_Man.png"
+				expire = "1.1.1"
+				ideology = pataut_bonapartism_subtype
+				traits = {}
+			  }
+	
+			  ### Politics
+			  set_popularities = {
+				totalist = 0
+				radical_socialist = 0
+				syndicalist = 0
+				social_democrat = 10
+				social_liberal = 0
+				market_liberal = 10
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 40
+				national_populist = 10
+			  }
+			  set_party_name = {
+				  name = "Gouvernement général de la Belgique"
+				  long_name = "Gouvernement général de la Belgique"
+				  ideology = paternal_autocrat
+			  }
+			  set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			  }
+			  set_cosmetic_tag = nfa_formable
+			  set_cosmetic_tag = BEL_napoleonic_province
+			}
+			
+			BEL = { 
+			  every_core_state = {
+				remove_core_of = BEL
+			  }
+			  741 = { add_core_of = BEL }
+			  34 = { add_core_of = BEL }
+			  29 = { add_core_of = BEL }
+			  6 = { add_core_of = BEL }
+			  BEL = { 
+				every_core_state = {
+				  limit = {
+					AND = {
+					  NOT = { 
+						is_core_of = NFA
+					  }
+					  OR = {
+						is_owned_by = NFA
+						OWNER = { is_subject_of = NFA} 
+					  }
+					}
+				  }
+				  transfer_state_to = BEL
+				}
+			  }
+			}
+		}
+	}
+
+    option = {
+		name = "Annex Belgium"
+		add_political_power = 75
+            741 = { add_core_of = NFA }
+            34 = { add_core_of = NFA }
+            29 = { add_core_of = NFA }
+            6 = { add_core_of = NFA }
+            
+            741 = { transfer_state_to = NFA }
+            34 = { transfer_state_to = NFA }
+            29 = { transfer_state_to = NFA }
+            6 = { transfer_state_to = NFA }
+	}
+}

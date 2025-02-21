@@ -1,0 +1,16 @@
+################################
+# Japan Decisions Categories   #
+################################
+# 		 By wchishun2	  	   #
+################################
+NAP_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		has_completed_focus = NFE_abandon_the_entente 
+	}
+}

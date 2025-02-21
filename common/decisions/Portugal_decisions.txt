@@ -1307,18 +1307,224 @@ POR_OIL_cat = {
 POR_china_cat = {
 	POR_release_GXC = {
 		icon = GFX_decision_generic_nationalism
-
-		allowed = {
-			OR = {
-				tag = POR
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1044
+				state = 1045
+				state = 1047
+				state = 1048
+				state = 1049
+				state = 1050
+				state = 1051
+				state = 1052
+				state = 1053
+				state = 1054
+				state = 1055
+				state = 1056
+				state = 1058
+				state = 1059
+				state = 1060
+				state = 1061
+				state = 1062
+				state = 1063
+				state = 1064
+				state = 1065
+				state = 1067
+				state = 1068
+				state = 1069
+				state = 1072
+				state = 1075
+				state = 1083
+				state = 1084
+				state = 1085
+				state = 1086
+				state = 591
+				state = 592
+				state = 593
+				state = 594
+				state = 596
+				state = 597
+				state = 598
+				state = 599
+				state = 601
+				state = 603
+				state = 604
+				state = 605
+				state = 606
+				state = 607
+				state = 608
+				state = 610
+				state = 611
+				state = 612
+				state = 613
+				state = 614
+				state = 615
+				state = 616
+				state = 617
+				state = 618
+				state = 619
+				state = 620
+				state = 621
+				state = 622
+				state = 650
+				state = 661
+				state = 693
+				state = 714
+				state = 715
+				state = 716
+				state = 717
+				state = 748
+				state = 774
+				state = 788
+				state = 283
+				state = 287
+				state = 799
+				state = 800
+				state = 803
+				state = 816 
+				state = 322
+				state = 325
+				state = 328
+				state = 330
+				state = 348
+				state = 353
+				state = 883
+				state = 884
+				state = 885
+				state = 886
+				state = 897
+				state = 1012
+				state = 1014
+		
+				state = 1015
+				state = 1013
+				state = 602
+				state = 600
+				state = 595
+				state = 1046
+				state = 1066
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = POR
 		}
 
 		available = {
-			594 = {
-				is_fully_controlled_by = ROOT
-			}
-		}
+			AND = {
+			  AND = {
+				if = {
+				  limit = {
+					country_exists = GXC
+				  }
+				  GXC = { 
+					is_subject_of = POR
+				  }
+				}
+				GXC = { 
+				  1044 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1045 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1047 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1048 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1049 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1050 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1051 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1052 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1053 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1054 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1055 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1056 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1058 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1059 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1060 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1061 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1062 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1063 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1064 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1065 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1067 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1068 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1069 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1072 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1075 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1083 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1084 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1085 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1086 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  591 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  592 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  593 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  594 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  596 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  597 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  598 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  599 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  601 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  603 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  604 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  605 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  606 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  607 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  608 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  610 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  611 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  612 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  613 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  614 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  615 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  616 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  617 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  618 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  619 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  620 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  621 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  622 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  650 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  661 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  693 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  714 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  715 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  716 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  717 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  748 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  774 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  788 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  283 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  287 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  799 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  800 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  803 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  816 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  322 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  325 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  328 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  330 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  348 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  353 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  883 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  884 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  885 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  886 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  897 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1012 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1014 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1015 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1013 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  602 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  600 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  595 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1046 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				  1066 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+				}
+			  }
+			  NOT = {
+				GXC = { 
+					has_country_flag = por_formable 
+				}
+			  }
+			}                
+		  }
 		#2
 		visible = {
 			has_completed_focus = POR_trumph 
@@ -1332,25 +1538,174 @@ POR_china_cat = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision POR_release_GXC"
-			release = GXC
-			puppet = GXC
-			GXC = { 
-				load_focus_tree = generic_focus
-				set_cosmetic_tag = PCN
-				set_politics = {
-					ruling_party = national_populist 
-					elections_allowed = no
+			# release = GXC
+			# puppet = GXC
+			# GXC = { 
+			# 	load_focus_tree = generic_focus
+			# 	set_cosmetic_tag = PCN
+			# 	set_politics = {
+			# 		ruling_party = national_populist 
+			# 		elections_allowed = no
+			# 	}
+			# 	create_country_leader = {
+			# 		name = "Emperor Duarte I of China"
+			# 		desc = "POLITICS_GXC_DUARTE_DESC"
+			# 		picture = "gfx/leaders/POR/Portrait_Portugal_Duarte_Nuno.png"
+			# 		expire = "1965.1.1"
+			# 		ideology = national_populist_subtype
+			# 		traits = { }
+			# 	}
+			# 	remove_ideas = { GXC_backwards_guangxi GXC_AOG_leftovers GXC_bailing_out_peasants GXC_bailing_out_merchants GXC_guangxi_militarism GXC_militia_corps GXC_factionalism GXC_divided_military }
+			# 	add_ideas = GXC_portugese_puppet
+			# }
+
+			hidden_effect = { 
+				release = GXC
+				add_political_power = 75
+				GXC = {
+					load_focus_tree = generic_focus
+								
+					GXC = { 
+						load_focus_tree = generic_focus
+						set_politics = {
+							ruling_party = national_populist 
+							elections_allowed = no
+						}
+						create_country_leader = {
+							name = "Emperor Duarte I of China"
+							desc = "POLITICS_GXC_DUARTE_DESC"
+							picture = "gfx/leaders/POR/Portrait_Portugal_Duarte_Nuno.png"
+							expire = "1965.1.1"
+							ideology = national_populist_subtype
+							traits = { }
+						}
+						remove_ideas = { GXC_backwards_guangxi GXC_AOG_leftovers GXC_bailing_out_peasants GXC_bailing_out_merchants GXC_guangxi_militarism GXC_militia_corps GXC_factionalism GXC_divided_military }
+						add_ideas = GXC_portugese_puppet
+					}
+
+					set_cosmetic_tag = por_formable
+					set_cosmetic_tag = POR_PCN
 				}
-				create_country_leader = {
-					name = "Emperor Duarte I of China"
-					desc = "POLITICS_GXC_DUARTE_DESC"
-					picture = "gfx/leaders/POR/Portrait_Portugal_Duarte_Nuno.png"
-					expire = "1965.1.1"
-					ideology = national_populist_subtype
-					traits = { }
+				POR = {
+					set_autonomy = {
+					target = GXC
+					autonomous_state = kx_colored_puppet
+					}
 				}
-				remove_ideas = { GXC_backwards_guangxi GXC_AOG_leftovers GXC_bailing_out_peasants GXC_bailing_out_merchants GXC_guangxi_militarism GXC_militia_corps GXC_factionalism GXC_divided_military }
-				add_ideas = GXC_portugese_puppet
+				GXC = { 
+					every_core_state = {
+					remove_core_of = GXC
+					}
+					1044 = { add_core_of = GXC }
+					1045 = { add_core_of = GXC }
+					1047 = { add_core_of = GXC }
+					1048 = { add_core_of = GXC }
+					1049 = { add_core_of = GXC }
+					1050 = { add_core_of = GXC }
+					1051 = { add_core_of = GXC }
+					1052 = { add_core_of = GXC }
+					1053 = { add_core_of = GXC }
+					1054 = { add_core_of = GXC }
+					1055 = { add_core_of = GXC }
+					1056 = { add_core_of = GXC }
+					1058 = { add_core_of = GXC }
+					1059 = { add_core_of = GXC }
+					1060 = { add_core_of = GXC }
+					1061 = { add_core_of = GXC }
+					1062 = { add_core_of = GXC }
+					1063 = { add_core_of = GXC }
+					1064 = { add_core_of = GXC }
+					1065 = { add_core_of = GXC }
+					1067 = { add_core_of = GXC }
+					1068 = { add_core_of = GXC }
+					1069 = { add_core_of = GXC }
+					1072 = { add_core_of = GXC }
+					1075 = { add_core_of = GXC }
+					1083 = { add_core_of = GXC }
+					1084 = { add_core_of = GXC }
+					1085 = { add_core_of = GXC }
+					1086 = { add_core_of = GXC }
+					591 = { add_core_of = GXC }
+					592 = { add_core_of = GXC }
+					593 = { add_core_of = GXC }
+					594 = { add_core_of = GXC }
+					596 = { add_core_of = GXC }
+					597 = { add_core_of = GXC }
+					598 = { add_core_of = GXC }
+					599 = { add_core_of = GXC }
+					601 = { add_core_of = GXC }
+					603 = { add_core_of = GXC }
+					604 = { add_core_of = GXC }
+					605 = { add_core_of = GXC }
+					606 = { add_core_of = GXC }
+					607 = { add_core_of = GXC }
+					608 = { add_core_of = GXC }
+					610 = { add_core_of = GXC }
+					611 = { add_core_of = GXC }
+					612 = { add_core_of = GXC }
+					613 = { add_core_of = GXC }
+					614 = { add_core_of = GXC }
+					615 = { add_core_of = GXC }
+					616 = { add_core_of = GXC }
+					617 = { add_core_of = GXC }
+					618 = { add_core_of = GXC }
+					619 = { add_core_of = GXC }
+					620 = { add_core_of = GXC }
+					621 = { add_core_of = GXC }
+					622 = { add_core_of = GXC }
+					650 = { add_core_of = GXC }
+					661 = { add_core_of = GXC }
+					693 = { add_core_of = GXC }
+					714 = { add_core_of = GXC }
+					715 = { add_core_of = GXC }
+					716 = { add_core_of = GXC }
+					717 = { add_core_of = GXC }
+					748 = { add_core_of = GXC }
+					774 = { add_core_of = GXC }
+					788 = { add_core_of = GXC }
+					283 = { add_core_of = GXC }
+					287 = { add_core_of = GXC }
+					799 = { add_core_of = GXC }
+					800 = { add_core_of = GXC }
+					803 = { add_core_of = GXC }
+					816 = { add_core_of = GXC }
+					322 = { add_core_of = GXC }
+					325 = { add_core_of = GXC }
+					328 = { add_core_of = GXC }
+					330 = { add_core_of = GXC }
+					348 = { add_core_of = GXC }
+					353 = { add_core_of = GXC }
+					883 = { add_core_of = GXC }
+					884 = { add_core_of = GXC }
+					885 = { add_core_of = GXC }
+					886 = { add_core_of = GXC }
+					897 = { add_core_of = GXC }
+					1012 = { add_core_of = GXC }
+					1014 = { add_core_of = GXC }
+					1015 = { add_core_of = GXC }
+					1013 = { add_core_of = GXC }
+					602 = { add_core_of = GXC }
+					600 = { add_core_of = GXC }
+					595 = { add_core_of = GXC }
+					1046 = { add_core_of = GXC }
+					1066 = { add_core_of = GXC }
+					GXC = { 
+					every_core_state = {
+						limit = {
+						AND = {
+							NOT = { 
+							is_core_of = POR
+							}
+							OR = {
+							is_owned_by = POR
+							OWNER = { is_subject_of = POR} 
+							}
+						}
+						}
+						transfer_state_to = GXC
+					}
+					}
+				}
 			}
 		}
 	}
@@ -1797,7 +2152,7 @@ POR_china_cat = {
 
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision POR_CHI target: [From.GetName]"
-															every_state = {
+				every_state = {
 				limit = {
 					is_owned_by = CHI
 				}
