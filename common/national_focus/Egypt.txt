@@ -7055,12 +7055,17 @@ focus_tree = {
 		cost = 1.00
 		prerequisite = { focus = EGY_the_great_game }
 		available = {
-			has_country_leader = {
+			NOT = {
+				has_country_leader = {
 					name = "Mohamed Naguib"
 					ruling_only = yes
+				}
 			}
 			NOT = {
-				has_government = paternal_autocrat
+				has_country_leader = {
+					name = "Gamal Abdel Nasser"
+					ruling_only = yes
+				}
 			}
 			custom_trigger_tooltip = {
   				#  tooltip = arab_dream_egypt_tt		

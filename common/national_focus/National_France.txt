@@ -16666,8 +16666,11 @@ focus_tree = {
 			focus = NFA_retore_france_enternal
 		}
 		available = {
-			has_country_flag = NFA_nap_pataut
-			has_country_flag = NFA_nap_socdem
+			OR = {
+				has_country_flag = NFA_nap_pataut
+				has_country_flag = NFA_nap_socdem
+			}
+			
 		}
 		
 		completion_reward = {
