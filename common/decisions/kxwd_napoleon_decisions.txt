@@ -22,24 +22,25 @@ NAP_great_game = {
 	NFA_africa_domination = {
 		icon = generic_prepare_civil_war
 		complete_effect = {
-			limit = {
-				FAR = { is_subject_of = NFA }
-			}
-			every_state = {
+			if = {
 				limit = {
-					AND = {
-						is_on_continent = africa
-					}
-					NOT = {
-						is_core_of = ALG
-					}
-					NOT = {
-						is_core_of = MAG
-					}
+					FAR = { is_subject_of = NFA }
 				}
-				add_core_of = FAR
+				every_state = {
+					limit = {
+						AND = {
+							is_on_continent = africa
+						}
+						NOT = {
+							is_core_of = ALG
+						}
+						NOT = {
+							is_core_of = MAG
+						}
+					}
+					add_core_of = FAR
+				}
 			}
-
 			FAR = { 
 				every_core_state = {
 					limit = {
@@ -179,109 +180,109 @@ NAP_great_game = {
 			highlight_color_before_active = 2
 		  }
 		available = {
-				1096 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1150 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1151 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1152 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1153 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1154 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1155 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1156 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1157 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1158 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1159 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1160 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1161 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1162 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1163 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1164 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1165 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1166 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1167 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1168 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1169 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1170 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1171 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1172 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1173 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1174 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1175 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				682 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				683 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				730 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				739 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				740 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				261 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				276 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				796 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				797 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				798 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1330 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1331 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1332 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				829 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				832 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				833 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				331 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				332 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				357 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				358 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				359 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				360 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				361 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				362 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				363 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				364 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				365 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				366 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				367 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				368 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				369 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				370 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				371 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				372 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				373 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				374 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				375 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				376 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				377 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				378 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				379 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				380 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				381 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				382 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				383 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				384 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				385 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				386 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				387 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				388 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				389 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				390 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				391 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				392 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				393 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				394 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				395 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				396 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				929 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				930 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				931 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				932 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				933 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				934 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				935 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				463 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				464 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				465 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				466 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				467 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				468 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				469 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				470 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				471 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				472 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				473 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1096 = { owner = { original_tag = NFA } }
+				1150 = { owner = { original_tag = NFA } }
+				1151 = { owner = { original_tag = NFA } }
+				1152 = { owner = { original_tag = NFA } }
+				1153 = { owner = { original_tag = NFA } }
+				1154 = { owner = { original_tag = NFA } }
+				1155 = { owner = { original_tag = NFA } }
+				1156 = { owner = { original_tag = NFA } }
+				1157 = { owner = { original_tag = NFA } }
+				1158 = { owner = { original_tag = NFA } }
+				1159 = { owner = { original_tag = NFA } }
+				1160 = { owner = { original_tag = NFA } }
+				1161 = { owner = { original_tag = NFA } }
+				1162 = { owner = { original_tag = NFA } }
+				1163 = { owner = { original_tag = NFA } }
+				1164 = { owner = { original_tag = NFA } }
+				1165 = { owner = { original_tag = NFA } }
+				1166 = { owner = { original_tag = NFA } }
+				1167 = { owner = { original_tag = NFA } }
+				1168 = { owner = { original_tag = NFA } }
+				1169 = { owner = { original_tag = NFA } }
+				1170 = { owner = { original_tag = NFA } }
+				1171 = { owner = { original_tag = NFA } }
+				1172 = { owner = { original_tag = NFA } }
+				1173 = { owner = { original_tag = NFA } }
+				1174 = { owner = { original_tag = NFA } }
+				1175 = { owner = { original_tag = NFA } }
+				682 = { owner = { original_tag = NFA } }
+				683 = { owner = { original_tag = NFA } }
+				730 = { owner = { original_tag = NFA } }
+				739 = { owner = { original_tag = NFA } }
+				740 = { owner = { original_tag = NFA } }
+				261 = { owner = { original_tag = NFA } }
+				276 = { owner = { original_tag = NFA } }
+				796 = { owner = { original_tag = NFA } }
+				797 = { owner = { original_tag = NFA } }
+				798 = { owner = { original_tag = NFA } }
+				1330 = { owner = { original_tag = NFA } }
+				1331 = { owner = { original_tag = NFA } }
+				1332 = { owner = { original_tag = NFA } }
+				829 = { owner = { original_tag = NFA } }
+				832 = { owner = { original_tag = NFA } }
+				833 = { owner = { original_tag = NFA } }
+				331 = { owner = { original_tag = NFA } }
+				332 = { owner = { original_tag = NFA } }
+				357 = { owner = { original_tag = NFA } }
+				358 = { owner = { original_tag = NFA } }
+				359 = { owner = { original_tag = NFA } }
+				360 = { owner = { original_tag = NFA } }
+				361 = { owner = { original_tag = NFA } }
+				362 = { owner = { original_tag = NFA } }
+				363 = { owner = { original_tag = NFA } }
+				364 = { owner = { original_tag = NFA } }
+				365 = { owner = { original_tag = NFA } }
+				366 = { owner = { original_tag = NFA } }
+				367 = { owner = { original_tag = NFA } }
+				368 = { owner = { original_tag = NFA } }
+				369 = { owner = { original_tag = NFA } }
+				370 = { owner = { original_tag = NFA } }
+				371 = { owner = { original_tag = NFA } }
+				372 = { owner = { original_tag = NFA } }
+				373 = { owner = { original_tag = NFA } }
+				374 = { owner = { original_tag = NFA } }
+				375 = { owner = { original_tag = NFA } }
+				376 = { owner = { original_tag = NFA } }
+				377 = { owner = { original_tag = NFA } }
+				378 = { owner = { original_tag = NFA } }
+				379 = { owner = { original_tag = NFA } }
+				380 = { owner = { original_tag = NFA } }
+				381 = { owner = { original_tag = NFA } }
+				382 = { owner = { original_tag = NFA } }
+				383 = { owner = { original_tag = NFA } }
+				384 = { owner = { original_tag = NFA } }
+				385 = { owner = { original_tag = NFA } }
+				386 = { owner = { original_tag = NFA } }
+				387 = { owner = { original_tag = NFA } }
+				388 = { owner = { original_tag = NFA } }
+				389 = { owner = { original_tag = NFA } }
+				390 = { owner = { original_tag = NFA } }
+				391 = { owner = { original_tag = NFA } }
+				392 = { owner = { original_tag = NFA } }
+				393 = { owner = { original_tag = NFA } }
+				394 = { owner = { original_tag = NFA } }
+				395 = { owner = { original_tag = NFA } }
+				396 = { owner = { original_tag = NFA } }
+				929 = { owner = { original_tag = NFA } }
+				930 = { owner = { original_tag = NFA } }
+				931 = { owner = { original_tag = NFA } }
+				932 = { owner = { original_tag = NFA } }
+				933 = { owner = { original_tag = NFA } }
+				934 = { owner = { original_tag = NFA } }
+				935 = { owner = { original_tag = NFA } }
+				463 = { owner = { original_tag = NFA } }
+				464 = { owner = { original_tag = NFA } }
+				465 = { owner = { original_tag = NFA } }
+				466 = { owner = { original_tag = NFA } }
+				467 = { owner = { original_tag = NFA } }
+				468 = { owner = { original_tag = NFA } }
+				469 = { owner = { original_tag = NFA } }
+				470 = { owner = { original_tag = NFA } }
+				471 = { owner = { original_tag = NFA } }
+				472 = { owner = { original_tag = NFA } }
+				473 = { owner = { original_tag = NFA } }
 		}
 		complete_effect = {
 			every_state = {
@@ -421,6 +422,7 @@ NAP_great_game = {
 				  autonomous_state = kx_colored_puppet
 				}
 			}
+			set_cosmetic_tag = NFL_WAB
 
 			NVN = {
 				transfer_state = 386
@@ -952,7 +954,7 @@ NAP_great_game = {
 			  ### Leader
 			  create_country_leader = {
 				name = "Joseph Bech"
-				picture = "gfx/leaders/NFA/Portrait_Luxemburg_Joseph_Bech.png"
+				picture = "gfx/leaders/LUX/Portrait_Luxemburg_Joseph_Bech.png"
 				expire = "1.1.1"
 				ideology = pataut_bonapartism_subtype
 				traits = {}
@@ -6536,46 +6538,46 @@ NAP_great_game = {
 				remove_core_of = SIB
 			  }
 			  574 = { add_core_of = SIB }
-			  560 = { add_core_of = SIB }
-			  561 = { add_core_of = SIB }
-			  562 = { add_core_of = SIB }
-			  563 = { add_core_of = SIB }
-			  564 = { add_core_of = SIB }
-			  565 = { add_core_of = SIB }
-			  657 = { add_core_of = SIB }
-			  408 = { add_core_of = SIB }
-			  409 = { add_core_of = SIB }
-			  637 = { add_core_of = SIB }
-			  1246 = { add_core_of = SIB }
-			  4567 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  580 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  653 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  403 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  1200 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  577 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  1201 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  572 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  582 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  571 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  578 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  40 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  570 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  569 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  568 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  576 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  567 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  566 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  516 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  544 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  1202 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  583 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  575 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  644 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  588 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  811 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  1293 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  654 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-			  1292 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+			  574 = { add_core_of = SIB }
+			560 = { add_core_of = SIB }
+			561 = { add_core_of = SIB }
+			562 = { add_core_of = SIB }
+			563 = { add_core_of = SIB }
+			564 = { add_core_of = SIB }
+			565 = { add_core_of = SIB }
+			657 = { add_core_of = SIB }
+			408 = { add_core_of = SIB }
+			409 = { add_core_of = SIB }
+			637 = { add_core_of = SIB }
+			1246 = { add_core_of = SIB }
+			580 = { add_core_of = SIB }
+			653 = { add_core_of = SIB }
+			403 = { add_core_of = SIB }
+			1200 = { add_core_of = SIB }
+			577 = { add_core_of = SIB }
+			1201 = { add_core_of = SIB }
+			572 = { add_core_of = SIB }
+			582 = { add_core_of = SIB }
+			571 = { add_core_of = SIB }
+			578 = { add_core_of = SIB }
+			40 = { add_core_of = SIB }
+			570 = { add_core_of = SIB }
+			569 = { add_core_of = SIB }
+			568 = { add_core_of = SIB }
+			576 = { add_core_of = SIB }
+			567 = { add_core_of = SIB }
+			566 = { add_core_of = SIB }
+			516 = { add_core_of = SIB }
+			544 = { add_core_of = SIB }
+			1202 = { add_core_of = SIB }
+			583 = { add_core_of = SIB }
+			575 = { add_core_of = SIB }
+			644 = { add_core_of = SIB }
+			588 = { add_core_of = SIB }
+			811 = { add_core_of = SIB }
+			1293 = { add_core_of = SIB }
+			654 = { add_core_of = SIB }
+			1292 = { add_core_of = SIB }
 			  SIB = { 
 				every_core_state = {
 				  limit = {
