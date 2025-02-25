@@ -8,7 +8,7 @@ country_event = { #Solution to instability
 	picture = GFX_report_event_ENG_lord_blair
 
 	is_triggered_only = yes
-	
+	fire_only_once = yes
 	option = { #we will need allies, event chain about a coalition with the succdumbs
 		name = "We can't take risks now, let's gather some allies."
 		set_country_leader_ideology = authcom_subtype
@@ -34,7 +34,7 @@ country_event = { #Attlee comes to the table
 	picture = GFX_report_event_ENG_lord_blair
 
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #based and redpilled
 		name = "As the youth calls it - based"
 		set_country_leader_ideology = radsoc_communism_subtype
@@ -52,102 +52,103 @@ country_event = { #Attlee comes to the table
 	}
 }
 
-country_event = { #Antimo and EuroSyndies join the fray
-	id = uob_eu_commie.3
-	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.3" }
-	title = uob_eu_commie.3.t
-	desc = uob_eu_commie.3.d
-	picture = GFX_report_event_ENG_lord_blair
+# country_event = { #Antimo and EuroSyndies join the fray
+# 	id = uob_eu_commie.3
+# 	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.3" }
+# 	title = uob_eu_commie.3.t
+# 	desc = uob_eu_commie.3.d
+# 	picture = GFX_report_event_ENG_lord_blair
 
-	is_triggered_only = yes
-
-	option = { #based and redpilled
-		name = "As the youth calls it - based"
-		set_party_name = { #
-				ideology = syndicalist
-				long_name = "All-Union Socialist Party - Syndicalists"
-				name = "AUSP"
-			}
-		set_party_name = { #
-				ideology = radical_socialist
-				long_name = "All-Union Socialist Party - Radicals"
-				name = "AUSP"
-			}
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
+# 	option = { #based and redpilled
+# 		name = "As the youth calls it - based"
+# 		set_party_name = { #
+# 				ideology = syndicalist
+# 				long_name = "All-Union Socialist Party - Syndicalists"
+# 				name = "AUSP"
+# 			}
+# 		set_party_name = { #
+# 				ideology = radical_socialist
+# 				long_name = "All-Union Socialist Party - Radicals"
+# 				name = "AUSP"
+# 			}
 		
-	}
-}
+# 	}
+# }
 
-country_event = { #division between the soccdumbs
-	id = uob_eu_commie.4
-	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.4" }
-	title = uob_eu_commie.4.t
-	desc = uob_eu_commie.4.d
-	picture = GFX_report_event_ENG_lord_blair
+# country_event = { #division between the soccdumbs
+# 	id = uob_eu_commie.4
+# 	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.4" }
+# 	title = uob_eu_commie.4.t
+# 	desc = uob_eu_commie.4.d
+# 	picture = GFX_report_event_ENG_lord_blair
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
+# 	fire_only_once = yes
 
-	option = { #based and redpilled
-		name = "Social Democrats were always against the workers."
-		set_party_name = { #
-				ideology = social_liberal
-				long_name = "European People's Party - Liberal Socialists"
-				name = "EPP"
-		}
+# 	option = { #based and redpilled
+# 		name = "Social Democrats were always against the workers."
+# 		set_party_name = { #
+# 				ideology = social_liberal
+# 				long_name = "European People's Party - Liberal Socialists"
+# 				name = "EPP"
+# 		}
 		
-	}
-}
+# 	}
+# }
 
-country_event = { #Creation of the Europarliament
-	id = uob_eu_commie.5
-	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.5" }
-	title = uob_eu_commie.5.t
-	desc = uob_eu_commie.5.d
-	picture = GFX_report_event_ENG_lord_blair
+# country_event = { #Creation of the Europarliament
+# 	id = uob_eu_commie.5
+# 	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.5" }
+# 	title = uob_eu_commie.5.t
+# 	desc = uob_eu_commie.5.d
+# 	picture = GFX_report_event_ENG_lord_blair
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = { #based and redpilled
-		name = "Workers democracy is the most beautiful thing."
-		set_party_name = { #
-				ideology = social_liberal
-				long_name = "European Democratic Party - Liberal Socialists"
-				name = "EDP"
-		}
-		set_party_name = { #
-				ideology = market_liberal
-				long_name = "European Democratic Party - Radical Liberals"
-				name = "EDP"
-		}
-		set_party_name = { #
-				ideology = social_conservative
-				long_name = "Common Good Party"
-				name = "CGP"
-		}
+# 	option = { #based and redpilled
+# 		name = "Workers democracy is the most beautiful thing."
+# 		set_party_name = { #
+# 				ideology = social_liberal
+# 				long_name = "European Democratic Party - Liberal Socialists"
+# 				name = "EDP"
+# 		}
+# 		set_party_name = { #
+# 				ideology = market_liberal
+# 				long_name = "European Democratic Party - Radical Liberals"
+# 				name = "EDP"
+# 		}
+# 		set_party_name = { #
+# 				ideology = social_conservative
+# 				long_name = "Common Good Party"
+# 				name = "CGP"
+# 		}
 		
-	}
-}
+# 	}
+# }
 
-country_event = { #Elections question
-	id = uob_eu_commie.6
-	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.6" }
-	title = uob_eu_commie.6.t
-	desc = uob_eu_commie.6.d
-	picture = GFX_report_event_ENG_lord_blair
+# country_event = { #Elections question
+# 	id = uob_eu_commie.6
+# 	immediate = { log = "[GetDateText]: [Root.GetName]: event uob_eu_commie.6" }
+# 	title = uob_eu_commie.6.t
+# 	desc = uob_eu_commie.6.d
+# 	picture = GFX_report_event_ENG_lord_blair
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	option = { #based and redpilled
-		name = "The tuletage is over."
-		set_politics = {
-				ruling_party = totalist
-				elections_allowed = yes
-				last_election = "1935.12.17"
-				election_frequency = 24
-		}
-		hold_election = ROOT
+# 	option = { #based and redpilled
+# 		name = "The tuletage is over."
+# 		set_politics = {
+# 				ruling_party = totalist
+# 				elections_allowed = yes
+# 				last_election = "1935.12.17"
+# 				election_frequency = 24
+# 		}
+# 		hold_election = ROOT
 		
-	}
-}
+# 	}
+# }
 
 country_event = { #Elections 
 	id = uob_eu_commie.7
@@ -166,6 +167,7 @@ country_event = { #Elections
 	}
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = { #based and redpilled
 		name = "Communists win!"
@@ -276,6 +278,7 @@ country_event = { #Elections 2
 	}
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = { #based and redpilled
 		name = "Communists win!"
@@ -386,6 +389,7 @@ country_event = { #Elections 3
 	}
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = { #based and redpilled
 		name = "Communists win!"

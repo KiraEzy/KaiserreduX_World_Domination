@@ -1,0 +1,19 @@
+################################
+# Japan Decisions
+################################
+# By KiraEzy/wchishun2
+################################
+
+CAR_great_game = {
+	CAR_great_game_testing = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			JAP = { 
+				every_core_state = {
+					log = "[state.GetID]"
+				}
+			}
+		}
+		days_remove = 0
+	}
+}

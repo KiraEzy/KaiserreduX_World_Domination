@@ -15,7 +15,8 @@ country_event = { #America ist wunderbar
 	desc = uobeu_annex.1.t
 	
 	is_triggered_only = yes
-	
+	fire_only_once = yes
+
 	immediate = {#DO A COSMETIC TAG WHEN AVAILABLE
 		hidden_effect = {
 			every_state = {
@@ -54,7 +55,8 @@ country_event = { #East Asia Puppet
 	desc = uobeu_annex.2.t
 	
 	is_triggered_only = yes
-	
+	fire_only_once = yes
+
 	immediate = {#DO A COSMETIC TAG WHEN AVAILABLE
 		hidden_effect = {
 			every_state = {
@@ -94,7 +96,8 @@ country_event = {
 	desc = uobeu_annex.3.t
 	
 	is_triggered_only = yes
-	
+	fire_only_once = yes
+
 	immediate = {#DO A COSMETIC TAG WHEN AVAILABLE
 		
 	}

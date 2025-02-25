@@ -8,7 +8,7 @@ country_event = { #elections in the union
 	picture = GFX_report_event_ENG_lord_blair
 
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #based and redpilled
 		name = "...the Social Democrats won!"
 		add_stability = 0.15
@@ -120,7 +120,7 @@ country_event = { #second elections in the union
 	title = uob_eu_lib.2.t
 	desc = uob_eu_lib.2.d
 	picture = GFX_report_event_ENG_lord_blair
-	
+	fire_only_once = yes
 	trigger = {
 		tag = ENG 
 		OR = {

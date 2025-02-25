@@ -43,7 +43,7 @@ country_event = { # Ba'athists gather the support
 	title = nasser.2.t
 	desc = nasser.2.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "Storm their locations!"
 		add_political_power = 10
@@ -103,7 +103,7 @@ country_event = { # chaos
 	title = nasser.3.t
 	desc = nasser.3.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #fuck
 		name = "It's over..."
 		add_political_power = -100
@@ -124,7 +124,7 @@ country_event = { # watabi habiiibi
 	title = nasser.4.t
 	desc = nasser.4.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "3ash!"
 		add_political_power = 200
@@ -153,7 +153,7 @@ country_event = { # aneksja event chain
 	title = nasser.5.t
 	desc = nasser.5.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "Send the message!"
 				every_country = {
@@ -207,7 +207,7 @@ country_event = { # pytanie o aneksję
 	title = nasser.6.t
 	desc = nasser.6.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	trigger = {
 		NOT = {
 			OR = {
@@ -281,7 +281,7 @@ country_event = { # suez - decyzja o ataku
 	title = nasser.7.t
 	desc = nasser.7.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "Move, in the name of the Arabic people!"
 		start_border_war = {
@@ -309,7 +309,7 @@ country_event = { # suez - egipt wygrywa
 	title = nasser.8.t
 	desc = nasser.8.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "3ash!"
 		EGY = {
@@ -325,7 +325,7 @@ country_event = { # suez - niemcy wygyrwają
 	title = nasser.9.t
 	desc = nasser.9.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "Oh no..."
 		EGY = {
@@ -341,7 +341,7 @@ country_event = { # Francja - żądanie wycofania z Arabii
 	title = nasser.10.t
 	desc = nasser.10.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #beat them up
 		name = "3ash!"
 		NFA = { 
@@ -360,7 +360,7 @@ country_event = { # Francja - francuzi decydują
 	title = nasser.11.t
 	desc = nasser.11.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #wycofają się
 		name = "We need to retreat..."
 		EGY = {
@@ -389,7 +389,7 @@ country_event = { # Francja - Arabowie dostają swoje
 	title = nasser.12.t
 	desc = nasser.12.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #URRRAAAA
 		name = "Next stop - Casablanca!"
 		EGY = {
@@ -439,7 +439,7 @@ country_event = { # Francja - francuzi nie chcą oddać nic
 	title = nasser.13.t
 	desc = nasser.13.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #KURRRRRWAA
 		name = "They won't stop us!"
 		458 = {
@@ -508,7 +508,7 @@ country_event = { # Maroko - żądanie
 	title = nasser.15.t
 	desc = nasser.15.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #tak
 		name = "We have no other choice."
 		EGY = {
@@ -543,7 +543,7 @@ country_event = { # Joining Faction - Internationale
 	title = nasser.16.t
 	desc = nasser.16.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #leave them be
 		name = "We shall destroy colonialism together!"
 			FRA = {
@@ -558,7 +558,7 @@ country_event = { # Joining Faction - Soviet Faction
 	title = nasser.17.t
 	desc = nasser.17.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #leave them be
 		name = "We are stronger together!"
 			RUS = {
@@ -574,7 +574,7 @@ country_event = { # Sending the Invitation
 	title = nasser.18.t
 	desc = nasser.18.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #leave them be
 		name = nasser.18.a
 			every_country = {
@@ -600,7 +600,7 @@ country_event = { # decyzja
 	title = nasser.19.t
 	desc = nasser.19.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #ok
 		name = nasser.19.a
 			EGY = {
@@ -625,7 +625,7 @@ country_event = { # wezwanie do unifikacji
 	title = nasser.20.t
 	desc = nasser.20.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #ok
 		name = nasser.19.a
 			every_country = {
@@ -647,7 +647,7 @@ country_event = { # unifikacja
 	title = nasser.21.t
 	desc = nasser.21.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #ok
 		name = nasser.19.a
 			every_owned_state = {
@@ -672,7 +672,7 @@ country_event = { # kraje nie chcą dołączyć
 	title = nasser.21.t
 	desc = nasser.21.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #ok
 		name = nasser.19.a
 	}
@@ -683,7 +683,7 @@ country_event = { #asking for Khuzestan
 	title = nasser.23.t
 	desc = nasser.23.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #ok
 		name = nasser.23.a
 		EGY = {
@@ -711,7 +711,7 @@ country_event = { #Khuzestan rejected
 	title = nasser.23.t
 	desc = nasser.23.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #ok
 		name = nasser.23.a
 		create_wargoal = {
@@ -733,7 +733,7 @@ country_event = { # ECONOMIC DEBATE
 	title = nasser_internal.1.t
 	desc = nasser_internal.1.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "We need workplace democracy!"
 		add_power_balance_value = {
@@ -763,7 +763,7 @@ country_event = { # ARMY DEBATE
 	title = nasser_internal.2.t
 	desc = nasser_internal.2.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "Army and the Party have to be one!"
 		add_power_balance_value = {
@@ -793,7 +793,7 @@ country_event = { # SECULARISM DEBATE
 	title = nasser_internal.3.t
 	desc = nasser_internal.3.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "We need to modernize Egypt!"
 		add_power_balance_value = {
@@ -823,7 +823,7 @@ country_event = { # POLITICAL DEBATE
 	title = nasser_internal.4.t
 	desc = nasser_internal.4.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "Premier and the Parliament need to have more power!"
 		add_power_balance_value = {
@@ -853,7 +853,7 @@ country_event = { # REPUBLICAN DEBATE
 	title = nasser_internal.5.t
 	desc = nasser_internal.5.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "Shatter the Kings, destroy the Nobles!"
 		add_power_balance_value = {
@@ -883,7 +883,7 @@ country_event = { # UNITED PARTY DEBATE
 	title = nasser_internal.6.t
 	desc = nasser_internal.6.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "One, United, Socialist Front!"
 		add_power_balance_value = {
@@ -913,7 +913,7 @@ country_event = { # SYNDICALIST DEBATE
 	title = nasser_internal.7.t
 	desc = nasser_internal.7.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "We need to embrace syndicalist ideas more!"
 		add_power_balance_value = {
@@ -943,7 +943,7 @@ country_event = { # Naguib Front
 	title = nasser_internal.8.t
 	desc = nasser_internal.8.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "3ash!"
 		add_popularity = {
@@ -986,7 +986,7 @@ country_event = { # removal of Nasser
 	title = nasser_internal.9.t
 	desc = nasser_internal.9.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "You are not needed anymore."
 		kill_ideology_leader = radical_socialist
@@ -1001,7 +1001,7 @@ country_event = { # centrist political party formage
 	title = nasser_internal.10.t
 	desc = nasser_internal.10.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "Egypt is finally united!"
 		set_party_name = {
@@ -1060,7 +1060,7 @@ country_event = { # nasserist political party formage
 	title = nasser_internal.11.t
 	desc = nasser_internal.11.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "United for Misr!"
 		set_party_name = {
@@ -1109,7 +1109,7 @@ country_event = { #Sayyid Qutb - Naguib moves into natpop
 	title = nasser_internal.12.t
 	desc = nasser_internal.12.d
 	is_triggered_only = yes
-
+	fire_only_once = yes
 	option = { #Nasser
 		name = "Integrate the Movements!"
 		create_country_leader = {

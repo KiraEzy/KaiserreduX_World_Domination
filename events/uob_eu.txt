@@ -372,6 +372,7 @@ country_event = { #countercoup by the nazis
 	picture = GFX_report_event_ENG_lord_blair
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = { #bruh stays the same
 		name = "...that has failed - and we will keep them short"
@@ -413,6 +414,7 @@ country_event = { #liberalize maybe
 	picture = GFX_report_event_ENG_lord_blair
 
 	is_triggered_only = yes
+	fire_only_once = yes
 
 	option = { #yeah, maybe
 		name = "We need to ease the burden of our people."

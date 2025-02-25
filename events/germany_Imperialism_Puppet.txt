@@ -54,10 +54,7 @@ country_event = {
 					long_name = "Royalist Party"
 					name = "Royalist Party"
 				}
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -75,6 +72,10 @@ country_event = {
 						target = USA
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 				set_capital = {
@@ -216,10 +217,7 @@ country_event = {
                         CAN_autocratic_tendencies
                     }
                 }
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -237,6 +235,10 @@ country_event = {
 						target = CAN
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -318,10 +320,7 @@ country_event = {
                     expire = "1.1.1"
                     ideology = prussian_constitutionalism_subtype
                 }
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -339,6 +338,10 @@ country_event = {
 						target = SWE
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -410,10 +413,7 @@ country_event = {
                     expire = "1.1.1"
                     ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -431,6 +431,10 @@ country_event = {
 						target = DEN
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -496,10 +500,7 @@ country_event = {
                     ideology = prussian_constitutionalism_subtype
                 }
 				
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -517,6 +518,11 @@ country_event = {
 						target = FIN
 						autonomous_state = kx_colored_puppet
 					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -593,10 +599,7 @@ country_event = {
                     ideology = prussian_constitutionalism_subtype
                 }
 				
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -614,6 +617,10 @@ country_event = {
 						target = NOR
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -682,10 +689,7 @@ country_event = {
                     ideology = authoritarian_democrat_subtype
                 }
 				
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -703,6 +707,11 @@ country_event = {
 						target = ICE
 						autonomous_state = kx_colored_puppet
 					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -765,10 +774,7 @@ country_event = {
                     traits = { UKR_hetman_title }
                 }
 				
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -786,6 +792,11 @@ country_event = {
 						target = UKR
 						autonomous_state = kx_colored_puppet
 					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -890,10 +901,7 @@ country_event = {
                     ideology = authoritarian_democrat_subtype
                 }
 				
-                set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 19
 					radical_socialist = 6
@@ -911,6 +919,11 @@ country_event = {
 						target = IRE
 						autonomous_state = kx_colored_puppet
 					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -944,7 +957,7 @@ country_event = {
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event GERoccupation.10"
 	}
-	title = "Deal With Brazil Empire"
+	title = "Deal With Brazilian Empire"
 	desc = GERoccupation.10.d
 	picture = GFX_event_NFA_versaille_treaty
 	is_triggered_only = yes
@@ -952,7 +965,7 @@ country_event = {
 	option = {
 		release = BRA
 
-		name = "The Brazil Empire is formed!"
+		name = "The Brazilian Empire is formed!"
 		add_political_power = 75
 		BRA = {
 			if = {
@@ -1037,16 +1050,17 @@ country_event = {
                         nationalist_symbol
                     }
                 }
+				GER = {
+					set_autonomy = {
+						target = LEP
+						autonomous_state = kx_colored_puppet
+					}
+				}
 				set_politics = {
 					ruling_party = paternal_autocrat
 					elections_allowed = no
 				}
-				GER = {
-					set_autonomy = {
-						target = BRA
-						autonomous_state = kx_colored_puppet
-					}
-				}
+
 				load_focus_tree = generic_focus
 			}
 			BRA = {
@@ -1176,16 +1190,17 @@ country_event = {
                     expire = "1.1.1"
                     ideology = national_radicalism_subtype
                 }
+				GER = {
+					set_autonomy = {
+						target = LEP
+						autonomous_state = kx_colored_puppet
+					}
+				}
 				set_politics = {
 					ruling_party = paternal_autocrat
 					elections_allowed = no
 				}
-				GER = {
-					set_autonomy = {
-						target = POL
-						autonomous_state = kx_colored_puppet
-					}
-				}
+
 				load_focus_tree = generic_focus
 			}
 			POL = {
@@ -1256,16 +1271,17 @@ country_event = {
 					expire = "1.1.1"
 					ideology = absolute_monarchy_subtype
 				}
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
 				GER = {
 					set_autonomy = {
 						target = LEP
 						autonomous_state = kx_colored_puppet
 					}
 				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+
 				load_focus_tree = generic_focus
 			}
 			LEP = {
@@ -1414,16 +1430,17 @@ country_event = {
 				set_country_flag = ger_formable
 				set_cosmetic_tag = ITA_ANI_KINGDOM
 				
+				GER = {
+					set_autonomy = {
+						target = LEP
+						autonomous_state = kx_colored_puppet
+					}
+				}
 				set_politics = {
 					ruling_party = paternal_autocrat
 					elections_allowed = no
 				}
-				GER = {
-					set_autonomy = {
-						target = ITA
-						autonomous_state = kx_colored_puppet
-					}
-				}
+
 				load_focus_tree = generic_focus
 			}
 			ITA = {
@@ -1504,10 +1521,7 @@ country_event = {
                     expire = "1.1.1"
                     ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -1525,6 +1539,11 @@ country_event = {
 						target = JAP
 						autonomous_state = kx_colored_puppet
 					}
+				}
+
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -1606,10 +1625,7 @@ country_event = {
                     expire = "1.1.1"
                     ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+               
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -1627,6 +1643,10 @@ country_event = {
 						target = BUL
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -1710,10 +1730,7 @@ country_event = {
 						MON_the_popular_prince_trait
 					}
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -1731,6 +1748,10 @@ country_event = {
 						target = MON
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -1805,10 +1826,7 @@ country_event = {
 					ideology = authoritarian_democrat_subtype
 					traits = {}	
 				}
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -1826,6 +1844,10 @@ country_event = {
 						target = KOR
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -1893,10 +1915,7 @@ country_event = {
                     expire = "1.1.1"
                     ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -1914,6 +1933,10 @@ country_event = {
 						target = AST
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2030,10 +2053,7 @@ country_event = {
 					ideology = absolute_monarchy_subtype
 					traits = {}
 				}
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2051,6 +2071,10 @@ country_event = {
 						target = SPR
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2142,10 +2166,7 @@ country_event = {
 					expire = "1.1.1"
                     ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2163,6 +2184,10 @@ country_event = {
 						target = RUS
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2347,10 +2372,7 @@ country_event = {
 					expire = "1.1.1"
 					ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2368,6 +2390,10 @@ country_event = {
 						target = TXS
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2438,10 +2464,7 @@ country_event = {
 					expire = "1.1.1"
 					ideology = authoritarian_democrat_subtype
 				}
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2459,6 +2482,10 @@ country_event = {
 						target = TUR
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2578,10 +2605,7 @@ country_event = {
                     ideology = authoritarian_democrat_subtype
 				}
 
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2599,6 +2623,10 @@ country_event = {
 						target = WHR
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2672,10 +2700,7 @@ country_event = {
 					expire = "1.1.1"
                     ideology = authoritarian_democrat_subtype
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2693,6 +2718,10 @@ country_event = {
 						target = GEO
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2784,10 +2813,7 @@ country_event = {
 						BAT_puppet_fuhrer
 					}
                 }
-                set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+                
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2805,6 +2831,10 @@ country_event = {
 						target = LAT
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
@@ -2883,10 +2913,7 @@ country_event = {
 					expire = "1.1.1"
 					ideology = authoritarian_democrat_subtype
 				}
-				set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
+				
 				set_popularities = {
 					totalist = 5
 					radical_socialist = 6
@@ -2904,6 +2931,10 @@ country_event = {
 						target = PER
 						autonomous_state = kx_colored_puppet
 					}
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
 				}
 				load_focus_tree = generic_focus
 			}
