@@ -317,21 +317,21 @@ ideas = {
 				infantry_equipment = {
 					build_cost_ic = -0.15 instant = yes
 				}
-				armor = {
-					build_cost_ic = -0.05 instant = yes
-				}
 			}
 			picture = man_five_year_plan_tank
 		}
 
 		POR_knights = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POR_knights"}
-			modifier = { army_speed_factor = 0.1 }
+			allowed = { always = no }
+            modifier = { cavalry_attack_factor = 0.10
+				cavalry_defence_factor = 0.10 }
 			picture = MON_scourge_of_the_steppes
 		}
 		POR_trainingi = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POR_trainingi"}
-			modifier = { training_time_factor = -0.1 }
+			allowed = { always = no }
+            modifier = { training_time_factor = -0.1 special_forces_training_time_factor = -0.08 }
 			picture = generic_army_war_college
 		}
 
@@ -412,7 +412,7 @@ ideas = {
 			allowed = { always = no }
             modifier = {
 				ai_focus_aggressive_factor = 0.5
-				justify_war_goal_time = -0.25
+				justify_war_goal_time = -0.05
 				war_support_factor = 0.05
 				war_support_weekly = 0.002
 			}

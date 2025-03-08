@@ -46,50 +46,58 @@ country_event = {
 	option = {
 		name = austria.3.a
 		set_global_flag = AUS_Kaiser_Otto_I
-		create_country_leader = {
-			name = "Otto"
-			desc = "POLITICS_OTTO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
-			expire = "1.1.1"
-			ideology = austromarxism_subtype
-		}
-		create_country_leader = {
-			name = "Otto"
-			desc = "POLITICS_OTTO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
-			expire = "1.1.1"
-			ideology = paneuropeanism_subtype
-		}
-		create_country_leader = {
-			name = "Otto"
-			desc = "POLITICS_OTTO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
-			expire = "1.1.1"
-			ideology = market_liberal_subtype
-		}
-		create_country_leader = {
-			name = "Otto"
-			desc = "POLITICS_OTTO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
-			expire = "1.1.1"
-			ideology = social_conservative_subtype
-		}
-		create_country_leader = {
-			name = "Otto"
-			desc = "POLITICS_OTTO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
-			expire = "1.1.1"
-			ideology = authoritarian_democrat_subtype
-		}
-		create_country_leader = {
-			name = "Otto"
-			desc = "POLITICS_OTTO_DESC"
-			picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
-			expire = "1.1.1"
-			ideology = austropopulism_subtype
-		}
-		hidden_effect = {
-			remove_ideas = AUS_karl_habsburg
+		if = {
+			limit = { 
+				has_country_leader = {
+					name = "Karl I"
+					ruling_only = yes
+				}
+			}
+			create_country_leader = {
+				name = "Otto"
+				desc = "POLITICS_OTTO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1.1.1"
+				ideology = austromarxism_subtype
+			}
+			create_country_leader = {
+				name = "Otto"
+				desc = "POLITICS_OTTO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1.1.1"
+				ideology = paneuropeanism_subtype
+			}
+			create_country_leader = {
+				name = "Otto"
+				desc = "POLITICS_OTTO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1.1.1"
+				ideology = market_liberal_subtype
+			}
+			create_country_leader = {
+				name = "Otto"
+				desc = "POLITICS_OTTO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1.1.1"
+				ideology = social_conservative_subtype
+			}
+			create_country_leader = {
+				name = "Otto"
+				desc = "POLITICS_OTTO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1.1.1"
+				ideology = authoritarian_democrat_subtype
+			}
+			create_country_leader = {
+				name = "Otto"
+				desc = "POLITICS_OTTO_DESC"
+				picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+				expire = "1.1.1"
+				ideology = austropopulism_subtype
+			}
+			hidden_effect = {
+				remove_ideas = AUS_karl_habsburg
+			}
 		}
 	}
 }
@@ -550,6 +558,7 @@ country_event = {
 			}
 		}
 		add_ideas = AUS_divided_society
+		remove_ideas = AUS_fatherland_front
 		set_country_flag = NAZ_soccon
 	}
 	
@@ -587,6 +596,7 @@ country_event = {
 			}
 		}
 		add_ideas = AUS_divided_society
+		remove_ideas = AUS_fatherland_front
 		set_country_flag = NAZ_soccon
 	}
 }
@@ -1353,6 +1363,10 @@ country_event = {
 							rule = BUL_foreign_policy
 							option = BUL_FOREIGN_POLICY_REICHSPAKT
 						}
+						has_game_rule = {
+							rule = BUL_foreign_policy
+							option = BUL_FOREIGN_POLICY_UKRAINE
+						}
 					}
 				}
 			}
@@ -1376,6 +1390,10 @@ country_event = {
 						has_game_rule = {
 							rule = GRE_foreign_policy
 							option = GRE_FOREIGN_POLICY_RUSSIA
+						}
+						has_game_rule = {
+							rule = BUL_foreign_policy
+							option = BUL_FOREIGN_POLICY_UKRAINE
 						}
 					}
 				}
@@ -1450,6 +1468,10 @@ country_event = {
 						has_game_rule = {
 							rule = BUL_foreign_policy
 							option = BUL_FOREIGN_POLICY_REICHSPAKT
+						}
+						has_game_rule = {
+							rule = BUL_foreign_policy
+							option = BUL_FOREIGN_POLICY_UKRAINE
 						}
 					}
 				}

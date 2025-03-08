@@ -1414,14 +1414,9 @@ country_event = { # jihad called by clergies
 	is_triggered_only = yes
 
 	trigger = {
-		AND = {
 		has_defensive_war = yes
 		NOT = {
 			has_idea = PER_jihad
-		}
-		NOT = {
-			has_completed_focus = PER_a_new_dynasty
-		}
 		}
 	}
 
@@ -2045,6 +2040,10 @@ country_event = { # Iran war with azerbaijan
 		name = pers.44.a
 		ai_chance = {
 			factor = 30
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_PER }
+			}
 		}
 		add_state_claim = 1304
 		add_state_claim = 990
@@ -2087,6 +2086,16 @@ country_event = { # Iran war with azerbaijan
 		name = pers.44.b
 		ai_chance = {
 			factor = 70
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_GER }
+					has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_RUS }
+					has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_INT }
+					has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_UKR }
+					has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_NEUTRALITY }
+				}
+			}
 		}
 		add_state_claim = 1304
 		add_state_claim = 990
@@ -2434,6 +2443,10 @@ country_event = { # EVENT FOR ARMENIA - iran wants help against azerbaijan
 		name = pers.58.b
 		ai_chance = {
 			factor = 20
+			modifier = {
+				factor = 0
+				has_game_rule = { rule = ARM_forpol option = ARM_FORPOL_PER }
+			}
 		}
 		PER = {
 			country_event = {
@@ -2682,6 +2695,7 @@ country_event = { # EVENT FOR IRAN - india good with alliance
 			}
 		}
 		add_state_claim = 444
+		add_state_claim = 1219
 		create_wargoal = {
 			type = annex_everything
 			target = DEH
@@ -2703,6 +2717,7 @@ country_event = { # EVENT FOR IRAN - commune said no
 			factor = 90
 		}
 		add_state_claim = 444
+		add_state_claim = 1219
 		create_wargoal = {
 			type = annex_everything
 			target = DEH
@@ -3571,13 +3586,11 @@ country_event = { #peace with germans
 			is_faction_leader = yes
 		}
 		is_subject = no
-		OR = {
-			NOT = { country_exists = AZE }
-			AZE = {
-				is_in_faction_with = GER
-				has_capitulated = yes
-			}
+		AZE = {
+			is_in_faction_with = GER
+			has_capitulated = yes
 		}
+		990 = { is_controlled_by = PER }
 	}
 
 	option = {
@@ -3693,12 +3706,10 @@ country_event = { # Muharram
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event pers.91"
 		hidden_effect = {
-		if = { limit = { NOT = { has_completed_focus = PER_a_new_dynasty } }
 			country_event = {
 				days = 709
 				id = pers.92
 			}
-		}
 		}
 	}
 
@@ -3720,12 +3731,10 @@ country_event = { #Muharram
 		name = pers.92.a
 		add_stability = 0.01
 		hidden_effect = {
-		if = { limit = { NOT = { has_completed_focus = PER_a_new_dynasty } }
 			country_event = {
 				days = 709
 				id = pers.92
 			}
-		}
 		}
 	}
 }
@@ -3815,12 +3824,10 @@ country_event = { # ramadan
 	immediate = {
 		log = "[GetDateText]: [Root.GetName]: event pers.97"
 		hidden_effect = {
-		if = { limit = { NOT = { has_completed_focus = PER_a_new_dynasty } }
 			country_event = {
 				days = 709
 				id = pers.98
 			}
-		}
 		}
 	}
 
@@ -3843,11 +3850,9 @@ country_event = { #ramadan
 		name = pers.98.a
 		add_stability = 0.01
 		hidden_effect = {
-			if = { limit = { NOT = { has_completed_focus = PER_a_new_dynasty } }
 			country_event = {
 				days = 709
 				id = pers.98
-			}
 			}
 		}
 	}

@@ -2811,91 +2811,6 @@ GER_great_game = {
 	}
 }
 
-GER_syndie_problem = {
-	GER_send_agitators_syndie = {
-		target_root_trigger = {
-			tag = GER 
-		}
-		state_target = yes
-		targets = { 42 51 780 50 55 57 56 59 54 53 52}
-		target_trigger = {
-			FROM = {
-				is_owned_by = GER
-			}
-			NOT = {
-				has_country_flag = will_join_revolt
-			}
-		}
-		visible = {
-			NOT = {
-				has_country_flag = no_cw
-			}
-		}
-		on_map_mode = map_only
-		fire_only_once = yes
-		icon = ban_iron_front
-		cost = 50
-		complete_effect = {
-			FROM = {
-				set_country_flag = will_join_revolt
-			}
-			add_popularity = {
-				ideology = syndicalist
-				popularity = 0.03
-			}
-			custom_effect_tooltip = will_join_revolt_tt
-		}
-	}
-	GER_fire_the_revolt = {
-		icon = generic_agreement
-		allowed = {
-			original_tag = GER
-		}
-
-		visible = {
-			is_ai = no
-		}
-		cost = 150
-		icon = trumpet
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 0
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GER_Flag_Picker"
-			country_event = rotermorgenGCW.5
-		}
-	}
-	GER_revolt = { 
-		icon = GFX_generic_agreement 
-
-		allowed = { 
-			tag = GER
-			
-		}
-		available = {
-		
-		}
-		activation = {                      
-            tag = GER 
-			NOT = {
-				has_country_flag = no_cw
-			}
-        }
-		icon = trumpet
-		is_good = no
-		selectable_mission = no
-		days_mission_timeout = 180
-        timeout_effect = {
-			country_event = {
-				id = rotermorgenGCW.5
-				days = 0
-			}
-		}
-	}
-}
-
 political_actions = {
 	GER_form_ostland = {
 		icon = soldierly_discipline
@@ -3024,6 +2939,11 @@ political_actions = {
 					is_faction_leader = yes
 					is_in_faction = no
 				}
+				NOT = { 
+					tag = event_target:KR_internationale_leader 
+					is_in_faction_with = INT
+					is_in_faction_with = FRA
+				}
 			}
 		}
 		cost = freedec?0
@@ -3033,9 +2953,16 @@ political_actions = {
 			factor = 2000
 			modifier = {
 				factor = 0
-				DKB = {
-					is_ai = no
-					has_war_with = RUS
+				OR = {
+					DKB = {
+						is_ai = no
+						has_war_with = RUS
+					}
+					any_other_country = {
+						is_ai = no
+						is_in_faction_with = GER
+						has_war_with = RUS
+					}
 				}
 			}
 		}

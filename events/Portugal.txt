@@ -541,6 +541,71 @@ country_event = {
 	}
 }
 
+# Seize Olivença?
+country_event = {
+    id = por.310
+    title = por.310.t
+    desc = por.310.d
+	picture = GFX_Portugal_310
+    
+	fire_only_once = yes
+	
+    trigger = {
+        tag = POR
+        has_global_flag = spanish_civil_war
+        SPR = { owns_state = 1316 }
+        SPR = { has_full_control_of_state = 1316 }
+    }
+    
+    option = { #Let's liberate the town from the Spanish Yoke!
+    name = por.310.a
+    ai_chance = { factor = 99 } 
+    
+	add_political_power = 30
+    add_state_core = 1316
+    SPR = { country_event = { id = por.311 days = 1 } }
+    
+    }
+    
+    option = { #We can't antagonize the old Kingdom...
+    name = por.310.b
+    ai_chance = { factor = 1 } 
+    
+    add_political_power = -30
+    
+    }
+
+}
+
+# Kingdom of Spain Reaction 
+
+country_event = {
+    id = por.311
+    title = por.311.t
+    desc = por.311.d
+	picture = GFX_Portugal_310
+
+    is_triggered_only = yes
+
+    immediate = { 
+	POR = { 
+	transfer_state = 1316 
+	1316 = { set_state_name = "Olivença" }
+		}
+	}
+	
+	option = { #They are nothing more than Jackals!
+	name = por.311.a 
+	
+	add_political_power = -10
+	
+	SPR = { add_opinion_modifier = {
+			target = POR
+			modifier = POR_Jackals 
+		} }
+	}
+}
+
 
 ### End of the Spanish Civil War and Post Civil War Events
 
@@ -593,6 +658,54 @@ country_event = { #The Burden We Bear, National Populist Path
 ### Portuguese Alliance Events
 
 # Portugal Formally Rejoins the Entente
+country_event = {
+	id = por.315
+	immediate = { log = "[GetDateText]: [Root.GetName]: event por.315" }
+	title = por.315.t
+	desc = por.315.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		has_war = no
+		is_subject = no
+		is_in_faction = no
+		NOT = {
+			has_socialist_government = yes
+			MAF = {
+				has_idea = MAF_border_shit_show
+			}
+		}
+		country_exists = ENT
+		ENT = {
+			is_faction_leader = yes
+			has_socialist_government = no
+		}
+		OR = {
+			has_global_flag = MAF_NoAttack_Portugal
+			owns_state = 957
+		}
+		date > 1937.1.1
+	}
+
+	option = { #"We will formally rejoin the Entente!"
+		ai_chance = {
+			factor = 100
+		}
+		name = por.315.a
+		ENT = {
+			country_event = por.316
+		}
+	}
+
+	option = { #"We'll refrain for now."
+		ai_chance = {
+			factor = 0
+		}
+		name = por.315.b
+	}
+}
 
 # Portugal Asks Us To Rejoin the Entente Formally
 
@@ -774,6 +887,43 @@ country_event = {# The Fate of our Familial Ties
 			add_core_of = POR
 		}
 		add_state_core = 300
+		set_cosmetic_tag = POR_BRA
+	}
+	option = {
+		name = por.325.b
+		ai_chance = {
+			factor = 100
+		}
+		add_political_power = 75
+		add_stability = 0.05
+	}
+}
+
+country_event = {# The Fate of our Familial Ties
+	id = por.326
+	immediate = { log = "[GetDateText]: [Root.GetName]: event por.326" }
+	title = por.325.t
+	desc = por.325.d
+	picture = GFX_report_event_generic_diplomacy3
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = por.325.a
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		create_wargoal = {
+			type = annex_everything
+			target = POR
+		}
+		every_state = {
+			limit = { is_core_of = POR }
+			add_core_of = BRA
+		}
 		set_cosmetic_tag = POR_BRA
 	}
 	option = {

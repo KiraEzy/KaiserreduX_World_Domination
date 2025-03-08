@@ -135,10 +135,10 @@ spriteTypes = {
 
 	SpriteType = {
 		name = "GFX_goal_MON_tengri_of_the_new_world_shine"
-		texturefile = "gfx/interface/goals/goal_MON_tengri_of_the_new_world.png"
+		texturefile = "gfx/interface/goals/GFX_goal_MON_tengri_of_new_world.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_MON_tengri_of_the_new_world.png"
+			animationmaskfile = "gfx/interface/goals/GFX_goal_MON_tengri_of_new_world.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -151,7 +151,7 @@ spriteTypes = {
 		}
 		
 		animation = {
-			animationmaskfile = "gfx/interface/goals/goal_MON_tengri_of_the_new_world.png"
+			animationmaskfile = "gfx/interface/goals/GFX_goal_MON_tengri_of_new_world.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

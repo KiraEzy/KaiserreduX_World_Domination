@@ -7165,7 +7165,11 @@ shared_focus = {
 		plsr_in_power = no
 	}
 	bypass = {
-		hidden_trigger = { has_war_with = AFG }
+		OR = {
+			NOT = { country_exists = AFG }
+			is_in_faction_with = AFG
+			hidden_trigger = { has_war_with = AFG }
+		}
 	}
 	prerequisite = {
 		focus = RUS_Demand_North_Iran
@@ -15332,6 +15336,10 @@ focus_tree = {
 		prerequisite = {
 			focus = RUS_General_Civil_Nationalism
 		}
+		bypass = {
+			set_temp_variable = { law_id = 43 }
+			RUS_has_law_blocked = yes
+		}
 		relative_position_id = RUS_NSNP_In_Power
 		x = 0
 		y = 5
@@ -15791,7 +15799,7 @@ focus_tree = {
 			nsnp_in_power = yes
 		}
 		bypass = {
-			has_country_flag = bolsheviks_banned
+			hidden_trigger = { has_country_flag = bolsheviks_banned }
 		}
 		relative_position_id = RUS_Second_Term_Of_NSNP
 		x = 1
@@ -15940,7 +15948,10 @@ focus_tree = {
 					add_idea = RUS_solidarity_forever_2
 				}
 			}
-			set_cosmetic_tag = RUS_SOL
+			if = {
+				limit = { RUS_russian_monarch = no }
+				set_cosmetic_tag = RUS_SOL
+			}
 		}
 	}
 
@@ -17566,7 +17577,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus  {
+	focus = {
 		id = RUS_Ban_NSP_PLSR
 		icon = GFX_RUS_Ban_Socialists
 		cost = 6
