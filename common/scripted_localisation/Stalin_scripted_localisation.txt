@@ -1,0 +1,222 @@
+
+
+defined_text = {
+	name = GEOAftermathPP
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_political_power < 0 }
+			AND = {
+				check_variable = { GEO.GEO_aftermath_stability = 0 }
+				check_variable = { GEO.GEO_aftermath_war_support = 0 }
+				check_variable = { GEO.GEO_aftermath_construction_speed = 0 }
+				check_variable = { GEO.GEO_aftermath_max_efficiency = 0 }
+				check_variable = { GEO.GEO_aftermath_factory_output = 0 }
+				check_variable = { GEO.GEO_aftermath_army_org = 0 }
+				check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+				check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+			}
+		}
+		localization_key = GEO_aftermath_political_power_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_political_power < 0 }
+		}
+		localization_key = GEO_aftermath_political_power_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GEOAftermathStability
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_stability < 0 }
+			AND = {
+				check_variable = { GEO.GEO_aftermath_war_support = 0 }
+				check_variable = { GEO.GEO_aftermath_construction_speed = 0 }
+				check_variable = { GEO.GEO_aftermath_max_efficiency = 0 }
+				check_variable = { GEO.GEO_aftermath_factory_output = 0 }
+				check_variable = { GEO.GEO_aftermath_army_org = 0 }
+				check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+				check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+			}
+		}
+		localization_key = GEO_aftermath_stability_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_stability < 0 }
+		}
+		localization_key = GEO_aftermath_stability_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GEOAftermathWarSupport
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_war_support < 0 }
+			AND = {
+				check_variable = { GEO.GEO_aftermath_construction_speed = 0 }
+				check_variable = { GEO.GEO_aftermath_max_efficiency = 0 }
+				check_variable = { GEO.GEO_aftermath_factory_output = 0 }
+				check_variable = { GEO.GEO_aftermath_army_org = 0 }
+				check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+				check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+			}
+		}
+		localization_key = GEO_aftermath_war_support_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_war_support < 0 }
+		}
+		localization_key = GEO_aftermath_war_support_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GEOAftermathConstructionSpeed
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_construction_speed < 0 }
+			AND = {
+				check_variable = { GEO.GEO_aftermath_max_efficiency = 0 }
+				check_variable = { GEO.GEO_aftermath_factory_output = 0 }
+				check_variable = { GEO.GEO_aftermath_army_org = 0 }
+				check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+				check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+			}
+		}
+		localization_key = GEO_aftermath_construction_speed_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_construction_speed < 0 }
+		}
+		localization_key = GEO_aftermath_construction_speed_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GEOAftermathMaxEfficiency
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_max_efficiency < 0 }
+			AND = {
+				check_variable = { GEO.GEO_aftermath_factory_output = 0 }
+				check_variable = { GEO.GEO_aftermath_army_org = 0 }
+				check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+				check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+			}
+		}
+		localization_key = GEO_aftermath_max_efficiency_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_max_efficiency < 0 }
+		}
+		localization_key = GEO_aftermath_max_efficiency_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = GEOAftermathFactoryOutput
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_factory_output < 0 }
+			check_variable = { GEO.GEO_aftermath_army_org = 0 }
+			check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+			check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+		}
+		localization_key = GEO_aftermath_factory_output_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_factory_output < 0 }
+		}
+		localization_key = GEO_aftermath_factory_output_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GEOAftermathArmyOrg
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_army_org < 0 }
+			check_variable = { GEO.GEO_aftermath_morale_factor = 0 }
+			check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+		}
+		localization_key = GEO_aftermath_army_org_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { GEO.GEO_aftermath_army_org < 0 }
+		}
+		localization_key = GEO_aftermath_army_org_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GEOAftermathArmyMorale
+	text = {
+		trigger = {
+			check_variable = { 
+				var = GEO.GEO_aftermath_morale_factor
+				value = 0
+				compare = not_equals
+			}
+			check_variable = { GEO.GEO_aftermath_ideology_drift = 0 }
+		}
+		localization_key = GEO_aftermath_army_moral_text_last
+	}
+	text = {
+		trigger = {
+			check_variable = { 
+				var = GEO.GEO_aftermath_morale_factor
+				value = 0
+				compare = not_equals
+			}
+		}
+		localization_key = GEO_aftermath_army_moral_text
+	}
+	text = {
+		localization_key = ""
+	}
+}
+defined_text = {
+	name = GEOAftermathRulingPartyDrift
+	text = {
+		trigger = {
+			check_variable = { 
+				var = GEO.GEO_aftermath_ideology_drift
+				value = 0
+				compare = not_equals
+			}
+		}
+		localization_key = GEO_aftermath_ideology_drift_text_last
+	}
+	text = {
+		localization_key = ""
+	}
+}
+

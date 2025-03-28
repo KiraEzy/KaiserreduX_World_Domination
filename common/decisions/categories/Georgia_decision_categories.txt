@@ -1,0 +1,111 @@
+GEO_foreign_policy_decisions = {
+	icon = generic_foreign_policy
+	allowed = { always = no }
+	visible = {
+		is_subject = no
+	}
+}
+
+GEO_economic_decisions = {
+	icon = generic_industry
+	allowed = { }
+	visible = {
+		has_completed_focus = GEO_Economic_Integration
+	}
+}
+
+GEO_mission_decisions = {
+	icon = ger_mefo_bills
+	allowed = { always = no }
+}
+
+GEO_militarize_decisions = {
+	icon = ger_military_buildup
+	allowed = { always = no }
+}
+
+GEO_army_decisions = {
+	icon = army_reform
+	allowed = { always = no }
+}
+ABK_foreign_relations = {
+	icon = generic_foreign_policy
+	allowed = {
+		original_tag = ABK
+	}
+}
+ABK_economic_decisions = {
+	icon = generic_industry
+	allowed = { always = no }
+}
+
+GEO_China_Policy_decisions = {
+	icon = GFX_decision_category_jap_intervene_in_china	
+	picture = GFX_decision_cat_picture_unification_conference
+	priority = 80
+
+	allowed = {
+		tag = GEO
+		NOT = { tag = MON }
+	}
+
+	visible = {
+		is_subject = no
+		has_completed_focus = GEO_China_Policy
+	}
+}
+
+
+GEO_Integration_decisions = {
+	icon = GFX_decision_cat_annexation
+	picture = GFX_decision_cat_picture_annexation
+	priority = 80
+
+	allowed = {
+		tag = GEO
+	}
+	visible = { has_country_flag = RUS_can_integrate 
+				has_completed_focus = GEO_Reclaim_Lands
+	}
+}
+
+GEO_Integration_decisions_caucasus = {
+	icon = GFX_decision_cat_annexation
+	picture = GFX_decision_cat_picture_annexation
+	priority = 80
+
+	allowed = {
+		tag = GEO
+	}
+	visible = {
+	tag = GEO
+	}
+}
+
+
+GEO_Spreading_The_Revolution_decisions = {
+	icon = GFX_decision_category_export_revolution
+	priority = 100
+
+	allowed = {
+		OR = {
+			tag = GEO
+		}
+	}
+
+	visible = {
+		is_subject = no
+
+		has_completed_focus = GEO_Reclaim_Lands
+
+	}
+}
+
+GEO_gulag_decisions = {
+	icon = GFX_decision_category_nkvd
+	priority = 80
+
+	allowed = {
+		has_completed_focus = GEO_beria_gulag
+	}
+}

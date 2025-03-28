@@ -3369,9 +3369,8 @@ POR_empire_cat = {
 		visible = {
 	    	original_tag = POR
                 has_completed_focus = POR_trumph
-			298.owner = {
+			var:298.owner = {
 				exists = yes
-
 			}
 		}
 

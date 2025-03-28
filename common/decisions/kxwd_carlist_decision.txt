@@ -3,17 +3,2747 @@
 ################################
 # By KiraEzy/wchishun2
 ################################
-
 CAR_great_game = {
 	CAR_great_game_testing = {
 		icon = generic_prepare_civil_war
 		complete_effect = {
-			JAP = { 
-				every_core_state = {
+			ICE = {
+				every_owned_state = {
 					log = "[state.GetID]"
 				}
 			}
 		}
 		days_remove = 0
 	}
-}
+	CAR_great_game_royal_audience_of_auraucania_patagonia = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 270
+				state = 507
+				state = 512
+				state = 579
+				state = 1029
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = FOP
+						}
+						FOP = {
+							is_subject_of = CAR
+						}
+					}
+					FOP = {
+						270 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						507 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						512 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						579 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1029 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					FOP = {
+						has_country_flag = car_formable
+					}
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = FOP
+				add_political_power = 75
+				FOP = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 507
+					}
+					### Leader
+					create_country_leader = {
+						name = "Juan Domingo Peron"
+						desc = "POLITICS_DOMINGO_PERON_DESC"
+						picture = "gfx/leaders/ARG/Portrait_Argentine_Domingo_Peron.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+					### Politics
+					set_popularities = {
+						totalist = 0
+						radical_socialist = 0
+						syndicalist = 0
+						social_democrat = 10
+						social_liberal = 0
+						market_liberal = 10
+						social_conservative = 20
+						authoritarian_democrat = 10
+						paternal_autocrat = 40
+						national_populist = 10
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = "Real Audienca de Araucania y Patagonia"
+						name = "Real Audienca de Araucania y Patagonia"
+					}
+					CAR = {
+						set_autonomy = {
+							target = FOP
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+					set_cosmetic_tag = car_formable
+					set_cosmetic_tag = CAR_VICEROY_PATAGONIA
+				}
+				FOP = {
+					every_core_state = {
+						remove_core_of = FOP
+					}
+					270 = {
+						add_core_of = FOP
+					}
+					507 = {
+						add_core_of = FOP
+					}
+					512 = {
+						add_core_of = FOP
+					}
+					579 = {
+						add_core_of = FOP
+					}
+					1029 = {
+						add_core_of = FOP
+					}
+					FOP = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = FOP
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_royal_audience_of_buenos_aires = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 278
+				state = 1028
+				state = 449
+				state = 508
+				state = 509
+				state = 511
+				state = 720
+				state = 901
+				state = 902
+				state = 903
+				state = 904
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = ARG
+						}
+						ARG = {
+							is_subject_of = CAR
+						}
+					}
+					ARG = {
+						278 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1028 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						449 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						508 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						509 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						511 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						720 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						901 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						902 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						903 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						904 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					ARG = {
+						has_country_flag = car_formable
+					}
+				}
+				ARG = {
+					has_cosmetic_tag = CAR_VICEROY_LA_PLATA
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = ARG
+				add_political_power = 75
+				ARG = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 278
+					}
+					### Politics
+					set_popularities = {
+						totalist = 0
+						radical_socialist = 0
+						syndicalist = 0
+						social_democrat = 10
+						social_liberal = 0
+						market_liberal = 10
+						social_conservative = 20
+						authoritarian_democrat = 10
+						paternal_autocrat = 40
+						national_populist = 10
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = "Real Audienca de Buenos Aires"
+						name = "Real Audienca de Buenos Aires"
+					}
+					CAR = {
+						set_autonomy = {
+							target = ARG
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+					set_cosmetic_tag = car_formable
+					set_cosmetic_tag = CAR_VICEROY_BUENO_ARIES
+				}
+				ARG = {
+					every_core_state = {
+						remove_core_of = ARG
+					}
+					278 = {
+						add_core_of = ARG
+					}
+					1028 = {
+						add_core_of = ARG
+					}
+					449 = {
+						add_core_of = ARG
+					}
+					508 = {
+						add_core_of = ARG
+					}
+					509 = {
+						add_core_of = ARG
+					}
+					511 = {
+						add_core_of = ARG
+					}
+					720 = {
+						add_core_of = ARG
+					}
+					901 = {
+						add_core_of = ARG
+					}
+					902 = {
+						add_core_of = ARG
+					}
+					903 = {
+						add_core_of = ARG
+					}
+					904 = {
+						add_core_of = ARG
+					}
+					ARG = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = ARG
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_royal_audience_of_charcas = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 302
+				state = 487
+				state = 688
+				state = 847
+				state = 848
+				state = 873
+				state = 1027
+				state = 1073
+				state = 855
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = BOL
+						}
+						BOL = {
+							is_subject_of = CAR
+						}
+					}
+					BOL = {
+						302 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						487 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						688 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						847 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						848 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						873 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1027 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1073 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						855 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					BOL = {
+						has_country_flag = car_formable
+					}
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = BOL
+				add_political_power = 75
+				BOL = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 302
+					}
+				}
+				BOL = {
+					every_core_state = {
+						remove_core_of = BOL
+					}
+					302 = {
+						add_core_of = BOL
+					}
+					487 = {
+						add_core_of = BOL
+					}
+					688 = {
+						add_core_of = BOL
+					}
+					847 = {
+						add_core_of = BOL
+					}
+					848 = {
+						add_core_of = BOL
+					}
+					873 = {
+						add_core_of = BOL
+					}
+					1027 = {
+						add_core_of = BOL
+					}
+					1073 = {
+						add_core_of = BOL
+					}
+					855 = {
+						add_core_of = BOL
+					}
+					BOL = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = BOL
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_royal_audience_of_montevideo = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 300
+				state = 301
+				state = 502
+				state = 503
+				state = 510
+				state = 894
+				state = 1041
+				state = 1043
+				state = 1074
+				state = 299
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = URG
+						}
+						URG = {
+							is_subject_of = CAR
+						}
+					}
+					URG = {
+						300 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						301 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						502 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						503 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						510 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						894 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1041 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1043 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1074 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						299 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					URG = {
+						has_country_flag = car_formable
+					}
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = URG
+				add_political_power = 75
+				URG = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 300
+					}
+					### Leader
+					create_country_leader = {
+						name = "Alfredo Baldomir Ferrari"
+						desc = "POLITICS_ALFREDO_FERRARI_DESC"
+						picture = "gfx/leaders/URG/Portrait_Uruguay_Alfredo_Ferrari.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+					### Politics
+					set_popularities = {
+						totalist = 0
+						radical_socialist = 0
+						syndicalist = 0
+						social_democrat = 10
+						social_liberal = 0
+						market_liberal = 10
+						social_conservative = 20
+						authoritarian_democrat = 10
+						paternal_autocrat = 40
+						national_populist = 10
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = "Real Audienca de Montevideo"
+						name = "Real Audienca de Montevideo"
+					}
+					CAR = {
+						set_autonomy = {
+							target = URG
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+					set_cosmetic_tag = car_formable
+					set_cosmetic_tag = CAR_VICEROY_MONTEVIDEO
+				}
+				URG = {
+					every_core_state = {
+						remove_core_of = URG
+					}
+					300 = {
+						add_core_of = URG
+					}
+					301 = {
+						add_core_of = URG
+					}
+					502 = {
+						add_core_of = URG
+					}
+					503 = {
+						add_core_of = URG
+					}
+					510 = {
+						add_core_of = URG
+					}
+					894 = {
+						add_core_of = URG
+					}
+					1041 = {
+						add_core_of = URG
+					}
+					1043 = {
+						add_core_of = URG
+					}
+					1074 = {
+						add_core_of = URG
+					}
+					299 = {
+						add_core_of = URG
+					}
+					URG = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = URG
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_nueva_navarra = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 261
+				state = 276
+				state = 331
+				state = 332
+				state = 391
+				state = 393
+				state = 394
+				state = 395
+				state = 396
+				state = 464
+				state = 465
+				state = 466
+				state = 467
+				state = 468
+				state = 469
+				state = 470
+				state = 472
+				state = 682
+				state = 683
+				state = 739
+				state = 832
+				state = 1151
+				state = 1152
+				state = 1153
+				state = 1154
+				state = 1173
+				state = 1330
+				state = 1331
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = QUE
+						}
+						QUE = {
+							is_subject_of = CAR
+						}
+					}
+					QUE = {
+						261 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						276 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						331 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						332 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						391 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						393 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						394 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						395 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						396 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						464 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						465 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						466 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						467 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						468 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						469 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						470 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						472 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						682 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						683 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						739 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						832 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1151 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1152 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1153 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1154 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1173 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1330 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1331 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					QUE = {
+						has_country_flag = car_formable
+					}
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = QUE
+				add_political_power = 75
+				QUE = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 466
+					}
+					### Leader
+					create_country_leader = {
+						name = "Lionel Groulx"
+						picture = "gfx/leaders/QUE/Portrait_Quebec_Lionel_Groulx.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+					### Politics
+					set_popularities = {
+						totalist = 0
+						radical_socialist = 0
+						syndicalist = 0
+						social_democrat = 10
+						social_liberal = 0
+						market_liberal = 10
+						social_conservative = 20
+						authoritarian_democrat = 10
+						paternal_autocrat = 40
+						national_populist = 10
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = "Real Audiencia de Nueva Navarra"
+						name = "Real Audiencia de Nueva Navarra"
+					}
+					CAR = {
+						set_autonomy = {
+							target = QUE
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+					set_cosmetic_tag = car_formable
+					set_cosmetic_tag = CAR_VICEROY_NVA_NAVARRA
+				}
+				QUE = {
+					every_core_state = {
+						remove_core_of = QUE
+					}
+					261 = {
+						add_core_of = QUE
+					}
+					276 = {
+						add_core_of = QUE
+					}
+					331 = {
+						add_core_of = QUE
+					}
+					332 = {
+						add_core_of = QUE
+					}
+					391 = {
+						add_core_of = QUE
+					}
+					393 = {
+						add_core_of = QUE
+					}
+					394 = {
+						add_core_of = QUE
+					}
+					395 = {
+						add_core_of = QUE
+					}
+					396 = {
+						add_core_of = QUE
+					}
+					464 = {
+						add_core_of = QUE
+					}
+					465 = {
+						add_core_of = QUE
+					}
+					466 = {
+						add_core_of = QUE
+					}
+					467 = {
+						add_core_of = QUE
+					}
+					468 = {
+						add_core_of = QUE
+					}
+					469 = {
+						add_core_of = QUE
+					}
+					470 = {
+						add_core_of = QUE
+					}
+					472 = {
+						add_core_of = QUE
+					}
+					682 = {
+						add_core_of = QUE
+					}
+					683 = {
+						add_core_of = QUE
+					}
+					739 = {
+						add_core_of = QUE
+					}
+					832 = {
+						add_core_of = QUE
+					}
+					1151 = {
+						add_core_of = QUE
+					}
+					1152 = {
+						add_core_of = QUE
+					}
+					1153 = {
+						add_core_of = QUE
+					}
+					1154 = {
+						add_core_of = QUE
+					}
+					1173 = {
+						add_core_of = QUE
+					}
+					1330 = {
+						add_core_of = QUE
+					}
+					1331 = {
+						add_core_of = QUE
+					}
+					QUE = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = QUE
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_captaincy_general_of_chile = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 279
+				state = 506
+				state = 874
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = CHL
+						}
+						CHL = {
+							is_subject_of = CAR
+						}
+					}
+					CHL = {
+						279 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						506 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						874 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					CHL = {
+						has_country_flag = car_formable
+					}
+				}
+				CHL = {
+					has_cosmetic_tag = CAR_AUDENCIA_CHILE
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = CHL
+				add_political_power = 75
+				CHL = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 279
+					}
+					
+					CAR = {
+						set_autonomy = {
+							target = CHL
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+				CHL = {
+					every_core_state = {
+						remove_core_of = CHL
+					}
+					279 = {
+						add_core_of = CHL
+					}
+					506 = {
+						add_core_of = CHL
+					}
+					874 = {
+						add_core_of = CHL
+					}
+					CHL = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = CHL
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_nueva_aragon = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 357
+				state = 358
+				state = 359
+				state = 360
+				state = 361
+				state = 362
+				state = 363
+				state = 364
+				state = 365
+				state = 367
+				state = 368
+				state = 369
+				state = 796
+				state = 929
+				state = 930
+				state = 931
+				state = 932
+				state = 933
+				state = 934
+				state = 935
+				state = 1155
+				state = 1158
+				state = 1159
+				state = 1160
+				state = 1162
+				state = 1167
+				state = 1168
+				state = 1169
+				state = 1170
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = NFL
+						}
+						NFL = {
+							is_subject_of = CAR
+						}
+					}
+					NFL = {
+						357 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						358 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						359 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						360 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						361 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						362 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						363 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						364 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						365 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						367 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						368 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						369 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						796 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						929 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						930 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						931 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						932 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						933 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						934 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						935 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1155 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1158 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1159 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1160 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1162 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1167 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1168 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1169 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1170 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					NFL = {
+						has_country_flag = car_formable
+					}
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = NFL
+				add_political_power = 75
+				NFL = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 361
+					}
+					### Leader
+					create_country_leader = {
+						name = "Manuel Fal Conde"
+						picture = "gfx/leaders/CAR/Portrait_CAR_Manuel_Fal_Conde.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+					### Politics
+					set_popularities = {
+						totalist = 0
+						radical_socialist = 0
+						syndicalist = 0
+						social_democrat = 10
+						social_liberal = 0
+						market_liberal = 10
+						social_conservative = 20
+						authoritarian_democrat = 10
+						paternal_autocrat = 40
+						national_populist = 10
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = "Real Audiencia de Nueva Aragon"
+						name = "Real Audiencia de Nueva Aragon"
+					}
+					CAR = {
+						set_autonomy = {
+							target = NFL
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+					set_cosmetic_tag = car_formable
+					set_cosmetic_tag = CAR_VICEROY_NUEVA_ARAGON
+				}
+				NFL = {
+					every_core_state = {
+						remove_core_of = NFL
+					}
+					357 = {
+						add_core_of = NFL
+					}
+					358 = {
+						add_core_of = NFL
+					}
+					359 = {
+						add_core_of = NFL
+					}
+					360 = {
+						add_core_of = NFL
+					}
+					361 = {
+						add_core_of = NFL
+					}
+					362 = {
+						add_core_of = NFL
+					}
+					363 = {
+						add_core_of = NFL
+					}
+					364 = {
+						add_core_of = NFL
+					}
+					365 = {
+						add_core_of = NFL
+					}
+					367 = {
+						add_core_of = NFL
+					}
+					368 = {
+						add_core_of = NFL
+					}
+					369 = {
+						add_core_of = NFL
+					}
+					796 = {
+						add_core_of = NFL
+					}
+					929 = {
+						add_core_of = NFL
+					}
+					930 = {
+						add_core_of = NFL
+					}
+					931 = {
+						add_core_of = NFL
+					}
+					932 = {
+						add_core_of = NFL
+					}
+					933 = {
+						add_core_of = NFL
+					}
+					934 = {
+						add_core_of = NFL
+					}
+					935 = {
+						add_core_of = NFL
+					}
+					1155 = {
+						add_core_of = NFL
+					}
+					1158 = {
+						add_core_of = NFL
+					}
+					1159 = {
+						add_core_of = NFL
+					}
+					1160 = {
+						add_core_of = NFL
+					}
+					1162 = {
+						add_core_of = NFL
+					}
+					1167 = {
+						add_core_of = NFL
+					}
+					1168 = {
+						add_core_of = NFL
+					}
+					1169 = {
+						add_core_of = NFL
+					}
+					1170 = {
+						add_core_of = NFL
+					}
+					NFL = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = NFL
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_royal_audience_of_la_florida_and_west_indies = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 308
+				state = 309
+				state = 310
+				state = 315
+				state = 318
+				state = 319
+				state = 366
+				state = 686
+				state = 687
+				state = 689
+				state = 690
+				state = 691
+				state = 692
+				state = 694
+				state = 696
+				state = 820
+				state = 912
+				state = 1037
+				state = 1038
+				state = 1039
+				state = 1077
+				state = 1078
+				state = 1171
+				state = 1172
+				state = 1305
+				state = 1306
+				state = 1308
+				state = 1309
+				state = 1310
+				state = 1311
+				state = 1312
+				state = 1079
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+		}
+		available = {
+			AND = {
+				AND = {
+					if = {
+						limit = {
+							country_exists = CAF
+						}
+						CAF = {
+							is_subject_of = CAR
+						}
+					}
+					CAF = {
+						308 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						309 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						310 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						315 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						318 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						319 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						366 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						686 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						687 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						689 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						690 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						691 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						692 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						694 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						696 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						820 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						912 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1037 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1038 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1039 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1077 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1078 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1171 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1172 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1305 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1306 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1308 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1309 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1310 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1311 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1312 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+						1079 = {
+							owner = {
+								OR = {
+									original_tag = CAR
+									is_subject_of = CAR
+								}
+							}
+						}
+					}
+				}
+				NOT = {
+					CAF = {
+						has_country_flag = car_formable
+					}
+				}
+			}
+		}
+		cost = 30
+		remove_effect = {
+			hidden_effect = {
+				release = CAF
+				add_political_power = 75
+				CAF = {
+					load_focus_tree = generic_focus
+					set_capital = {
+						state = 366
+					}
+					### Leader
+					create_country_leader = {
+						name = "General José Enrique Varela"
+						picture = "gfx/leaders/WDCAR/Portrait_General_Jose_Enrique_Varela.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+					### Politics
+					set_popularities = {
+						totalist = 0
+						radical_socialist = 0
+						syndicalist = 0
+						social_democrat = 10
+						social_liberal = 0
+						market_liberal = 10
+						social_conservative = 20
+						authoritarian_democrat = 10
+						paternal_autocrat = 40
+						national_populist = 10
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						long_name = "Real Audiencia de la Florida y las Indias Occidentales"
+						name = "Real Audiencia de la Florida y las Indias Occidentales"
+					}
+					CAR = {
+						set_autonomy = {
+							target = CAF
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+					set_cosmetic_tag = car_formable
+					set_cosmetic_tag = CAR_VICEROY_FLORIDA
+				}
+				CAF = {
+					every_core_state = {
+						remove_core_of = CAF
+					}
+					308 = {
+						add_core_of = CAF
+					}
+					309 = {
+						add_core_of = CAF
+					}
+					310 = {
+						add_core_of = CAF
+					}
+					315 = {
+						add_core_of = CAF
+					}
+					318 = {
+						add_core_of = CAF
+					}
+					319 = {
+						add_core_of = CAF
+					}
+					366 = {
+						add_core_of = CAF
+					}
+					686 = {
+						add_core_of = CAF
+					}
+					687 = {
+						add_core_of = CAF
+					}
+					689 = {
+						add_core_of = CAF
+					}
+					690 = {
+						add_core_of = CAF
+					}
+					691 = {
+						add_core_of = CAF
+					}
+					692 = {
+						add_core_of = CAF
+					}
+					694 = {
+						add_core_of = CAF
+					}
+					696 = {
+						add_core_of = CAF
+					}
+					820 = {
+						add_core_of = CAF
+					}
+					912 = {
+						add_core_of = CAF
+					}
+					1037 = {
+						add_core_of = CAF
+					}
+					1038 = {
+						add_core_of = CAF
+					}
+					1039 = {
+						add_core_of = CAF
+					}
+					1077 = {
+						add_core_of = CAF
+					}
+					1078 = {
+						add_core_of = CAF
+					}
+					1171 = {
+						add_core_of = CAF
+					}
+					1172 = {
+						add_core_of = CAF
+					}
+					1305 = {
+						add_core_of = CAF
+					}
+					1306 = {
+						add_core_of = CAF
+					}
+					1308 = {
+						add_core_of = CAF
+					}
+					1309 = {
+						add_core_of = CAF
+					}
+					1310 = {
+						add_core_of = CAF
+					}
+					1311 = {
+						add_core_of = CAF
+					}
+					1312 = {
+						add_core_of = CAF
+					}
+					1079 = {
+						add_core_of = CAF
+					}
+					CAF = {
+						every_core_state = {
+							limit = {
+								AND = {
+									NOT = {
+										is_core_of = CAR
+									}
+									OR = {
+										is_owned_by = CAR
+										OWNER = {
+											is_subject_of = CAR
+										}
+									}
+								}
+							}
+							transfer_state_to = CAF
+						}
+					}
+				}
+			}
+		}
+		days_remove = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_nueva_galicia = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 740
+			  state = 473
+			  state = 463
+			  state = 471
+			  state = 1332
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+	
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = ALA
+				}
+				ALA = { 
+				  is_subject_of = CAR
+				}
+			  }
+			  ALA = { 
+				740 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				473 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				463 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				471 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1332 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+			  }
+			}
+			NOT = {
+			  ALA = { 
+				  has_country_flag = car_formable 
+			  }
+			}
+		  }                
+		}
+	
+		cost = 30
+	
+		remove_effect = {
+		  hidden_effect = { 
+			release = ALA
+			add_political_power = 75
+			ALA = {
+			  load_focus_tree = generic_focus
+	  
+			  set_capital = { state = 473 }
+			  
+			  ### Leader
+				create_country_leader = {
+					name = "Franz Joseph II"
+					desc = "POLITICS_FRANZJOSEPH_II_DESC"
+					picture = "gfx/leaders/ALA/Portrait_ALA_Franz_Joseph_II.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {  }
+				}
+	  
+			  ### Politics
+			  set_popularities = {
+				totalist = 0
+				radical_socialist = 0
+				syndicalist = 0
+				social_democrat = 10
+				social_liberal = 0
+				market_liberal = 10
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 40
+				national_populist = 10
+			  }
+			  set_party_name = {
+				ideology = paternal_autocrat
+				long_name = "House of Liechtenstein"
+				name = "House of Liechtenstein"
+			  }
+			  
+			  CAR = {
+				set_autonomy = {
+				  target = ALA
+				  autonomous_state = kx_colored_puppet
+				}
+			  }
+			
+			  set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			  }
+			  
+			  set_cosmetic_tag = car_formable
+			  set_cosmetic_tag = CAR_VICEROY_NUEVA_GALICIA
+			}
+			
+			ALA = { 
+			  every_core_state = {
+				remove_core_of = ALA
+			  }
+			  740 = { add_core_of = ALA }
+			  473 = { add_core_of = ALA }
+			  463 = { add_core_of = ALA }
+			  471 = { add_core_of = ALA }
+			  1332 = { add_core_of = ALA }
+			  ALA = { 
+				every_core_state = {
+				  limit = {
+					AND = {
+					  NOT = { 
+						is_core_of = CAR
+					  }
+					  OR = {
+						is_owned_by = CAR
+						OWNER = { is_subject_of = CAR} 
+					  }
+					}
+				  }
+				  transfer_state_to = ALA
+				}
+			  }
+			}
+		  }
+		}
+	
+		days_remove = 0
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 60
+		}
+	}
+	CAR_great_game_viceroyalty_of_new_spain = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+		  highlight_state_targets = {
+			  state = 277
+			  state = 370
+			  state = 371
+			  state = 372
+			  state = 373
+			  state = 374
+			  state = 375
+			  state = 376
+			  state = 377
+			  state = 378
+			  state = 379
+			  state = 380
+			  state = 381
+			  state = 382
+			  state = 383
+			  state = 384
+			  state = 385
+			  state = 386
+			  state = 387
+			  state = 388
+			  state = 389
+			  state = 390
+			  state = 392
+			  state = 1252
+			  state = 1175
+			  state = 1174
+			  state = 476
+			  state = 477
+			  state = 478
+			  state = 479
+			  state = 480
+			  state = 481
+			  state = 482
+			  state = 483
+			  state = 484
+			  state = 485
+			  state = 797
+			  state = 798
+			  state = 829
+			  state = 833
+			  state = 1096
+			  state = 1150
+			  state = 1156
+			  state = 1157
+			  state = 1161
+			  state = 1163
+			  state = 1164
+			  state = 1165
+			  state = 1166
+		  }
+		  highlight_color_while_active = 3
+		  highlight_color_before_active = 2
+		}
+		allowed = {
+			tag = CAR
+		}
+		visible = {
+	
+		}
+		available = {
+		  AND = {
+			AND = {
+			  if = {
+				limit = {
+				  country_exists = MEX
+				}
+				MEX = { 
+				  is_subject_of = CAR
+				}
+			  }
+			  MEX = { 
+				277 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				370 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				371 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				372 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				373 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				374 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				375 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				376 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				377 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				378 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				379 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				380 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				381 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				382 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				383 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				384 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				385 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				386 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				387 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				388 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				389 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				390 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				392 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1252 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1175 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1174 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				476 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				477 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				478 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				479 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				480 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				481 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				482 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				483 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				484 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				485 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				797 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				798 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				829 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				833 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1096 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1150 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1156 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1157 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1161 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1163 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1164 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1165 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1166 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+			  }
+			}
+		  }                
+		}
+	
+		cost = 30
+	
+		remove_effect = {
+		  hidden_effect = { 
+			release = MEX
+			add_political_power = 75
+			
+			MEX = { 
+			  every_core_state = {
+				remove_core_of = MEX
+			  }
+			  277 = { add_core_of = MEX }
+			  370 = { add_core_of = MEX }
+			  371 = { add_core_of = MEX }
+			  372 = { add_core_of = MEX }
+			  373 = { add_core_of = MEX }
+			  374 = { add_core_of = MEX }
+			  375 = { add_core_of = MEX }
+			  376 = { add_core_of = MEX }
+			  377 = { add_core_of = MEX }
+			  378 = { add_core_of = MEX }
+			  379 = { add_core_of = MEX }
+			  380 = { add_core_of = MEX }
+			  381 = { add_core_of = MEX }
+			  382 = { add_core_of = MEX }
+			  383 = { add_core_of = MEX }
+			  384 = { add_core_of = MEX }
+			  385 = { add_core_of = MEX }
+			  386 = { add_core_of = MEX }
+			  387 = { add_core_of = MEX }
+			  388 = { add_core_of = MEX }
+			  389 = { add_core_of = MEX }
+			  390 = { add_core_of = MEX }
+			  392 = { add_core_of = MEX }
+			  1252 = { add_core_of = MEX }
+			  1175 = { add_core_of = MEX }
+			  1174 = { add_core_of = MEX }
+			  476 = { add_core_of = MEX }
+			  477 = { add_core_of = MEX }
+			  478 = { add_core_of = MEX }
+			  479 = { add_core_of = MEX }
+			  480 = { add_core_of = MEX }
+			  481 = { add_core_of = MEX }
+			  482 = { add_core_of = MEX }
+			  483 = { add_core_of = MEX }
+			  484 = { add_core_of = MEX }
+			  485 = { add_core_of = MEX }
+			  797 = { add_core_of = MEX }
+			  798 = { add_core_of = MEX }
+			  829 = { add_core_of = MEX }
+			  833 = { add_core_of = MEX }
+			  1096 = { add_core_of = MEX }
+			  1150 = { add_core_of = MEX }
+			  1156 = { add_core_of = MEX }
+			  1157 = { add_core_of = MEX }
+			  1161 = { add_core_of = MEX }
+			  1163 = { add_core_of = MEX }
+			  1164 = { add_core_of = MEX }
+			  1165 = { add_core_of = MEX }
+			  1166 = { add_core_of = MEX }
+			  MEX = { 
+				every_core_state = {
+				  limit = {
+					AND = {
+					  NOT = { 
+						is_core_of = CAR
+					  }
+					  OR = {
+						is_owned_by = CAR
+						OWNER = { is_subject_of = CAR} 
+					  }
+					}
+				  }
+				  transfer_state_to = MEX
+				}
+			  }
+			}
+		  }
+		}
+	
+		days_remove = 0
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 60
+		}
+	}
+
+} 

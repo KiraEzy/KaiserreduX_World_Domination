@@ -329,8 +329,17 @@ SOV_Great_Game_SSR_decisions = {
 	priority = 100
 
 	allowed = {
-		tag = RUS
-		# RUS = { 
+		OR = {
+			tag = RUS
+			AND = {
+				tag = GEO
+				OR = {
+					has_cosmetic_tag = PPS_SOV
+					has_cosmetic_tag = PPS
+				}
+			}
+		}
+				# RUS = { 
 		# 	OR = {
 		# 		has_cosmetic_tag = SOV_union
 		# 		has_cosmetic_tag = SOV_union_alternative
