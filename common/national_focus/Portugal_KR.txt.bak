@@ -1006,7 +1006,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-
 	focus = {
 		id = POR_capital_shipyrds
 		available = {
@@ -1300,6 +1299,9 @@ focus_tree = {
 				has_global_flag = MAF_NoAttack_Portugal
 				NOT = { country_exists = MAF }
 			}
+		}
+		ai_will_do = {
+			factor = 100
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus POR_trumph"
