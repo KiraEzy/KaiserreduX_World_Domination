@@ -114,10 +114,8 @@ ideas = {
 
 		POR_unlimited_powa = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POR_unlimited_powa"}
-			modifier = {
-				army_core_defence_factor = 0.10
-				army_morale_factor = 0.1
-			}
+			allowed = { always = no }
+            modifier = { industrial_capacity_factory = 0.04 production_speed_buildings_factor = 0.09 production_speed_dockyard_factor = 0.03 production_factory_efficiency_gain_factor = 0.05 consumer_goods_factor = -0.06 weekly_manpower = 30  }
 			picture = generic_oppression
 		}
 

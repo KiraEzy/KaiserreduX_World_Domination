@@ -7690,7 +7690,7 @@ MON_red_diplomacy = {
 		cost = 10
 		fire_only_once = yes
 		days_remove = 14
-		targets = { ALO TRK TAJ KYR UZB }
+		targets = { ALO UZB KHI TRK KYR TAJ } 
 		target_root_trigger = {
 			OR = {
 				has_completed_focus = MON_paradise_under_red_khan			
@@ -8362,7 +8362,8 @@ MON_economic_decisions = {# Economic Decisions
 		allowed = { tag = MON }
 		available = {
 			date > 1936.6.1
-						NOT = { has_country_flag = MON_ongoing_industrial_effort }
+			NOT = { has_country_flag = MON_ongoing_industrial_effort }
+			num_of_military_factories < 20
 		}
 		cost = 75
 		days_remove = 45
@@ -8398,7 +8399,8 @@ MON_economic_decisions = {# Economic Decisions
 		allowed = { tag = MON }
 		available = {
 			date > 1936.6.1
-						NOT = { has_country_flag = MON_ongoing_industrial_effort }
+			NOT = { has_country_flag = MON_ongoing_industrial_effort }
+			num_of_civilian_factories < 20
 		}
 		cost = 75
 		days_remove = 45

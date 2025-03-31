@@ -46,6 +46,13 @@ ideas = {
 			}
 		}
 
+		POR_kingpath = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POR_kingpath"}
+			allowed = { always = no }
+            modifier = { political_power_factor = 0.06 party_popularity_stability_factor = 0.08 monthly_population = 0.1 special_forces_cap = 0.03 }
+			picture = generic_pp_unity_bonus
+		}
+
 		POR_burden_or_civilization = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea POR_burden_or_civilization"}
 			allowed = { always = no }

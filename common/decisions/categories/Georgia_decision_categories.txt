@@ -8,10 +8,7 @@ GEO_foreign_policy_decisions = {
 
 GEO_economic_decisions = {
 	icon = generic_industry
-	allowed = { }
-	visible = {
-		has_completed_focus = GEO_Economic_Integration
-	}
+	allowed = { always = no }
 }
 
 GEO_mission_decisions = {

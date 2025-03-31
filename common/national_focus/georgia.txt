@@ -4730,7 +4730,6 @@ focus_tree = {
 		prerequisite = {
 			focus = GEO_expand_motherland_focus
 		}
-		mutually_exclusive = { focus = GEO_isolation }
 		ai_will_do = {
 			factor = 50
 		}
@@ -6886,6 +6885,65 @@ focus_tree = {
 			custom_effect_tooltip = RUS_Attack_Central_Asia_TRK_tooltip
 		}
 	}
+	
+
+
+	
+
+	focus = {
+		id = GEO_SOV_Enemy_In_The_East
+		text = RUS_Enemy_In_The_East
+		icon = GFX_RUS_japan
+		relative_position_id = GEO_Reclaim_Lands
+		x = 3
+		y = 1
+		cost = 4
+		available = { is_subject = no }
+		bypass = {
+			hidden_trigger = { 
+				OR = {
+					has_war_with = TRM
+					has_war_with = JAP
+				}
+			}
+		}
+
+		prerequisite = {
+			focus = GEO_Reclaim_Lands
+		}
+
+		ai_will_do = {
+			factor = 15
+			modifier = {
+				factor = 0
+				has_stability < 0.25
+			}
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 0
+				has_completed_focus = SOV_Enemy_In_The_West
+				NOT = {
+					96 = { is_owned_by_ROOT_or_subject = yes } #Vilnius
+					202 = { is_owned_by_ROOT_or_subject = yes } #Kiev
+					206 = { is_owned_by_ROOT_or_subject = yes } #Minsk
+					1091 = { is_owned_by_ROOT_or_subject = yes } #Riga
+				}
+			}
+	    }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus RUS_Enemy_In_The_East"
+			add_war_support = 0.05
+			add_state_claim = 537 #Sakhalin
+			add_to_array = { RUS_integration_state_array = 537 }
+		}
+	}	
 	focus = {
 		id = GEO_Attack_Mongolia
 		text = RUS_Mongolian_Issue
@@ -6964,7 +7022,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = GEO_China_Policy
 		text = RUS_China_Policy
@@ -7021,62 +7078,7 @@ focus_tree = {
 			unlock_decision_tooltip = RUS_kvzhd_question
 		}
 	}	
-
-	focus = {
-		id = GEO_SOV_Enemy_In_The_East
-		text = RUS_Enemy_In_The_East
-		icon = GFX_RUS_japan
-		relative_position_id = GEO_Reclaim_Lands
-		x = 3
-		y = 1
-		cost = 4
-		available = { is_subject = no }
-		bypass = {
-			hidden_trigger = { 
-				OR = {
-					has_war_with = TRM
-					has_war_with = JAP
-				}
-			}
-		}
-
-		prerequisite = {
-			focus = GEO_Reclaim_Lands
-		}
-
-		ai_will_do = {
-			factor = 15
-			modifier = {
-				factor = 0
-				has_stability < 0.25
-			}
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_stability < 0.3
-			}
-			modifier = {
-				factor = 0
-				has_completed_focus = SOV_Enemy_In_The_West
-				NOT = {
-					96 = { is_owned_by_ROOT_or_subject = yes } #Vilnius
-					202 = { is_owned_by_ROOT_or_subject = yes } #Kiev
-					206 = { is_owned_by_ROOT_or_subject = yes } #Minsk
-					1091 = { is_owned_by_ROOT_or_subject = yes } #Riga
-				}
-			}
-	    }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus RUS_Enemy_In_The_East"
-			add_war_support = 0.05
-			add_state_claim = 537 #Sakhalin
-			add_to_array = { RUS_integration_state_array = 537 }
-		}
-	}	
-
+	
 	focus = {
 		id = GEO_Integrate_Far_Eastern_Republic
 		icon = GFX_focus_rus_integrate_dvr

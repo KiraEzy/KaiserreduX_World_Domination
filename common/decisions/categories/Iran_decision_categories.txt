@@ -5,24 +5,12 @@ PER_coring_conquered_territory = {
 		original_tag = PER
 	}
 }
-PER_ottos_are_weak_decision_category = { # disabled cause its dumb
+PER_ottos_are_weak_decision_category = {
 	icon = GFX_decision_category_military_operation
 
 	allowed = {
-		always = no
-	}
-}
-PER_debug = {	
-	allowed = {
 		original_tag = PER
 	}
-}
-PER_war_for_the_gulf = {
-
-	allowed = {
-		original_tag = PER
-	}
-	picture = GFX_decision_cat_picture_flood_yellow_river
 }
 PER_empire_satrapy = {
 
