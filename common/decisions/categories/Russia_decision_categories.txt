@@ -601,13 +601,7 @@ SOV_Great_Game_SSR_decisions = {
 	allowed = {
 		OR = {
 			tag = RUS
-			AND = {
-				tag = GEO
-				OR = {
-					has_cosmetic_tag = PPS_SOV
-					has_cosmetic_tag = PPS
-				}
-			}
+			tag = GEO
 		}
 				# RUS = { 
 		# 	OR = {
@@ -638,10 +632,14 @@ SOV_Great_Game_SSR_decisions = {
 	}
 
 	visible = {
-		is_subject = no
 		OR = {
-			has_completed_focus = RUS_The_Fourth_Internationale
-			has_completed_focus = RUS_Join_The_Internationale
+			ROOT = {
+				has_completed_focus = RUS_The_War_Effort
+			}
+
+			ROOT = {
+				has_completed_focus = GEO_Aftermath_Of_Civil_War
+			}		
 		}
 	}
 }
