@@ -15510,6 +15510,9 @@ country_event = { #The Annexation of Azerbaijan
 			set_temp_variable = { target = AZE }
 			SOV_puppet_TARGET_effect = yes
 		}
+		AZE = {
+			drop_cosmetic_tag = yes
+		}
 	}
 
 	option = { #Integrate
@@ -19201,6 +19204,32 @@ country_event = { #Fate of Mexico
 					name = MEX_DL_authoritarian_democrat_party
 					long_name = MEX_DL_authoritarian_democrat_party_long
 					ideology = authoritarian_democrat
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							OR = {
+								state = 1252
+								state = 1253
+								state = 1254
+								state = 1255
+								state = 277
+								state = 474
+								state = 475
+								state = 476
+								state = 477
+								state = 478
+								state = 479
+								state = 480
+								state = 481
+								state = 482
+								state = 483
+								state = 484
+								state = 485
+							}
+						}
+					}
+					MEX = { remove_state_core = PREV }
 				}
 			}
 		}
@@ -50112,7 +50141,8 @@ country_event = { #The fate of Kazakhstan
 			every_state = {
 				limit = {
 					is_core_of = ALO
-					is_claim_or_core_of_ROOT = no					
+					is_claim_or_core_of_ROOT = no	
+					NOT = { has_state_flag = retain_state_@ROOT }
 				}
 				add_claim_of_ROOT = yes
 			}
@@ -50122,9 +50152,18 @@ country_event = { #The fate of Kazakhstan
 					limit = { original_tag = RUS }
 					country_event = {
 						id = rusfor.499
-						days = 10
+						days = 30
 					}
 				}
+			}
+		}
+		else_if = {
+			limit = { tag = URL }
+			every_state = {
+				limit = {
+					is_core_of = ALO
+				}
+				add_core_of = ROOT
 			}
 		}
 		else = {

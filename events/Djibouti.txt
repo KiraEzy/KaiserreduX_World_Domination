@@ -221,7 +221,9 @@ country_event = { #Tsar guy?
 	
 	option = { #Funny Andorra man
 		name = djibouti.3.b
-		trigger = { is_ai = no }
+		trigger = {
+			NOT = { has_global_flag = SPR_BORIS_ANDORRA } 
+		}
 		ai_chance = {
 			factor = 100
 			modifier = {

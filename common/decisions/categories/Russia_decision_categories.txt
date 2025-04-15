@@ -368,7 +368,10 @@ SOV_politburo_decisions = {
 			nsp_in_power = yes
 			has_government = totalist
 			AND = {
-				has_country_flag = SOV_congress_elections_after_nep
+				OR = {
+					has_country_flag = SOV_congress_elections_after_nep
+					has_country_flag = SOV_congress_elections_after_nep_success
+				}
 				has_country_leader = { name = "Congress of Soviets" ruling_only = yes }
 			}
 		}
@@ -597,12 +600,29 @@ russian_debug_decisions = {
 SOV_Great_Game_SSR_decisions = {
 	icon = GFX_decision_category_russia
 	priority = 100
-
 	allowed = {
 		OR = {
-			tag = RUS
-			tag = GEO
+			original_tag = RUS
+			original_tag = GEO
 		}
+	}
+	visible = {
+		OR = {
+			RUS = {
+				AND = {
+					is_ai = no
+					has_completed_focus = RUS_The_War_Effort
+				}
+			}
+
+			GEO = {
+				AND = {
+					is_ai = no
+					has_completed_focus = GEO_Aftermath_Of_Civil_War
+				}
+			}	
+		}
+	}
 				# RUS = { 
 		# 	OR = {
 		# 		has_cosmetic_tag = SOV_union
@@ -629,17 +649,6 @@ SOV_Great_Game_SSR_decisions = {
 		# 		has_cosmetic_tag = SOV_union_labor_republic_2
 		# 	}
 		# }
-	}
+	
 
-	visible = {
-		OR = {
-			ROOT = {
-				has_completed_focus = RUS_The_War_Effort
-			}
-
-			ROOT = {
-				has_completed_focus = GEO_Aftermath_Of_Civil_War
-			}		
-		}
-	}
 }
