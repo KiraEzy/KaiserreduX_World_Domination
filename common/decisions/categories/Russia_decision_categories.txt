@@ -224,37 +224,6 @@ RUS_Siberian_War = {
 	visible_when_empty = yes
 }
 
-RUS_War_Preparations = {
-	icon = GFX_decision_category_marching_soldiers
-	picture = GFX_decision_cat_picture_annexation
-	priority = 200
-	
-	allowed = {
-		tag = RUS
-	}
-	
-	visible = {
-	    has_completed_focus = RUS_WW_Three_Weapons
-		is_faction_leader = yes
-	}
-}
-
-RUS_Faction_Interaction = {
-	icon = GFX_decision_category_marching_soldiers
-	picture = GFX_decision_cat_picture_annexation
-	priority = 200
-	
-	allowed = {
-	  tag = RUS
-	}
-	
-	visible = {
-	    OR = {
-		has_completed_focus = RUS_Supremacy
-		}
-	}
-}
-
 RUS_Puppet_Management = {
 	icon = GFX_decision_category_marching_soldiers
 	picture = GFX_decision_cat_picture_annexation
@@ -614,13 +583,6 @@ SOV_Great_Game_SSR_decisions = {
 					has_completed_focus = RUS_The_War_Effort
 				}
 			}
-
-			GEO = {
-				AND = {
-					is_ai = no
-					has_completed_focus = GEO_Aftermath_Of_Civil_War
-				}
-			}	
 		}
 	}
 				# RUS = { 
