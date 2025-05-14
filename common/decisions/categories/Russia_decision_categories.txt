@@ -245,6 +245,22 @@ RUS_Puppet_Management = {
 	}
 }
 
+RUS_Faction_Interaction = {
+	icon = GFX_decision_category_marching_soldiers
+	picture = GFX_decision_cat_picture_annexation
+	priority = 200
+	
+	allowed = {
+	  tag = RUS
+	}
+	
+	visible = {
+	    OR = {
+		has_completed_focus = RUS_Supremacy
+		}
+	}
+}
+
 RUS_Separate_Peace = {
 	icon = GFX_decision_category_marching_soldiers
 	picture = GFX_decision_cat_picture_annexation
