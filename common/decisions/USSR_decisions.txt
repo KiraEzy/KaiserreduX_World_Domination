@@ -13029,6 +13029,15 @@ SOV_Great_Game_SSR_decisions = {
 				state = 795
 				state = 169
 				state = 173
+				state = 1344
+				state = 1339
+				state = 1338
+				state = 1340
+				state = 1341
+				state = 1342
+				state = 1336
+				state = 1337
+				state = 1343
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -13157,6 +13166,78 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
+						1344 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1339 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1338 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1340 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1341 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1342 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1336 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1337 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+			1343 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
 					}
 				}
 				NOT = {
@@ -13230,6 +13311,15 @@ SOV_Great_Game_SSR_decisions = {
 					173 = {
 						add_core_of = SPR
 					}
+					1344 = { add_core_of = SPR }
+					1339 = { add_core_of = SPR }
+					1338 = { add_core_of = SPR }
+					1340 = { add_core_of = SPR }
+					1341 = { add_core_of = SPR }
+					1342 = { add_core_of = SPR }
+					1336 = { add_core_of = SPR }
+					1337 = { add_core_of = SPR }
+					1343 = { add_core_of = SPR }
 					SPR = {
 						every_core_state = {
 							limit = {

@@ -4194,6 +4194,15 @@ CAN_great_game = {
 				state = 41
 				state = 699
 				state = 793
+				state = 1344
+				state = 1339
+				state = 1338
+				state = 1340
+				state = 1341
+				state = 1342
+				state = 1336
+				state = 1337
+				state = 1343
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -4448,6 +4457,78 @@ CAN_great_game = {
 							}
 						}
 						793 = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
+							owner = {
+								OR = {
+									original_tag = CAN
+									is_subject_of = CAN
+								}
+							}
+						}
+						state = {
 							owner = {
 								OR = {
 									original_tag = CAN

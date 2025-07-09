@@ -2646,6 +2646,7 @@ country_event = { #Liberation of Austria
 				add_core_of = AUS
 			}
 			1235 = { remove_core_of = AUS } #Liechtenstein
+			1272 = { retain_state = yes }
 		}
 	}
 
@@ -5173,6 +5174,50 @@ country_event = { #Fate of Finland
 			SOV_puppet_TARGET_effect = yes
 		}	
 	}
+	option = { #liberate + Sami
+		name = annex.25.a2
+		ai_chance = { factor = 0 }
+		trigger = {
+			is_scandinavian_tag = no
+			is_russian_tag_that_can_integrate = no
+			NOT = { tag = KAR }
+		}
+		set_temp_variable = { tag_to_release = SAM }
+		every_owned_state = {
+			limit = {
+				OR = {
+                state = 148
+				state = 844 
+				}
+			}
+			transfer_state_and_add_core = yes
+		}
+		release_targeted_tag = yes
+		set_temp_variable = { tag_to_release = FIN }
+		release_targeted_tag = yes
+		if = {
+			limit = {
+				NOT = { tag = GER }
+			}
+			hidden_effect = { 
+				FIN = { FIN_setup_republican_leaders = yes }
+			}
+		}
+		else_if = {
+			limit = { tag = GER }
+			FIN = {
+				FIN_setup_kingdom = yes
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				set_political_party = {
+					ideology = paternal_autocrat
+					popularity = 60
+				}
+			}
+		}
+	}
 	option = { #integrate
 		name = annex.25.b
 		trigger = {
@@ -5349,6 +5394,26 @@ country_event = { #NOR liberation
 				}
 			}
 		}
+		set_temp_variable = { tag_to_release = NOR }
+		release_targeted_tag = yes
+	}
+
+	option = { #liberate + Sami
+		name = annex.27.a2
+		ai_chance = { factor = 0 }
+		trigger = { is_scandinavian_tag = no }
+		set_temp_variable = { tag_to_release = SAM }
+		every_owned_state = {
+			limit = {
+				OR = {
+                state = 144
+				state = 937 
+				state = 936
+				}
+			}
+			transfer_state_and_add_core = yes
+		}
+		release_targeted_tag = yes
 		set_temp_variable = { tag_to_release = NOR }
 		release_targeted_tag = yes
 	}
@@ -5940,6 +6005,78 @@ country_event = { #SWE liberation
 				has_socialist_government = yes
 			}
 		}
+		set_temp_variable = { tag_to_release = SWE }
+		release_targeted_tag = yes
+		var:tag_to_release = {
+			set_cosmetic_tag = SWEREP	
+			SWE_create_republic = yes
+			if = {
+				limit = { has_socialist_government = yes }
+				hidden_effect = { SWE_remove_reactionary_generals = yes }
+			}
+			else = {
+				SWE_add_reactionary_generals = yes
+			}
+		}
+		recheck_annexations = yes
+	}
+
+	option = { #liberate as monarchy + Sami
+		name = annex.29.a2
+		ai_chance = { factor = 0 }
+		trigger = { 
+			has_socialist_government = no 
+			is_scandinavian_tag = no
+		}
+		set_temp_variable = { tag_to_release = SAM }
+		every_owned_state = {
+			limit = {
+				OR = {
+                state = 666
+				state = 960 
+				state = 909
+				}
+			}
+			transfer_state_and_add_core = yes
+		}
+		release_targeted_tag = yes
+		set_temp_variable = { tag_to_release = SWE }
+		release_targeted_tag = yes
+		var:tag_to_release = {
+			SWE_add_reactionary_generals = yes
+			SWE_create_gustaf = yes
+			clr_country_flag = SWE_Republic_Declared
+		}
+		recheck_annexations = yes
+	}
+
+	option = { #liberate as republic + Sami
+		name = annex.29.b2
+		ai_chance = { factor = 0 }
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						original_tag = GER
+						original_tag = AUS
+					}
+				}
+				has_socialist_government = yes
+			}
+			is_scandinavian_tag = no
+		}
+		set_temp_variable = { tag_to_release = SAM }
+		every_owned_state = {
+			limit = {
+				OR = {
+                state = 666
+				state = 960 
+				state = 909
+				}
+			}
+			transfer_state_and_add_core = yes
+		}
+		release_targeted_tag = yes
 		set_temp_variable = { tag_to_release = SWE }
 		release_targeted_tag = yes
 		var:tag_to_release = {
@@ -9494,6 +9631,49 @@ country_event = { #The Fate of Russia
 				}
 			}
 		}
+		hidden_effect = {
+			242 = { clear_retain_state = yes }  #Smolensk
+			1287 = { clear_retain_state = yes }  #Smolensk
+			243 = { clear_retain_state = yes }  #Krichev
+			755 = { clear_retain_state = yes }  #Vitebsk
+			1287 = { clear_retain_state = yes } 
+			213 = { clear_retain_state = yes }   #Murmansk
+			722 = { clear_retain_state = yes }   #Petsamo
+			1274 = { clear_retain_state = yes }   #Petsamo
+			215 = { clear_retain_state = yes }   #Kem
+			216 = { clear_retain_state = yes }   #Petrozavodsk
+			1327 = { clear_retain_state = yes }   #Petrozavodsk
+			880 = { clear_retain_state = yes }   #Dvinsk
+			1208 = { clear_retain_state = yes }   #Orenburg
+			583 = { clear_retain_state = yes }   #Kustanai
+			590 = { clear_retain_state = yes }   #Akmolinsk
+			588 = { clear_retain_state = yes }   #Pavlodar
+			240 = { clear_retain_state = yes }   #Belgorod
+			821 = { clear_retain_state = yes }   #Sudzha
+			564 = { clear_retain_state = yes }   #Verkhneudinsk
+			563 = { clear_retain_state = yes }   #Chita
+			574 = { clear_retain_state = yes }   #Yakutsk
+			654 = { clear_retain_state = yes }   #Ulala
+			811 = { clear_retain_state = yes }   #Minusinsk
+			1293 = { clear_retain_state = yes }   #Minusinsk
+			329 = { clear_retain_state = yes }   #Tuva
+			1224 = { clear_retain_state = yes }   #Urda
+			236 = { clear_retain_state = yes }   #Astrakhan
+			582 = { clear_retain_state = yes }   #Orsk
+			651 = { clear_retain_state = yes }   #Bashkurdistan
+			1194 = { clear_retain_state = yes }   #Bashkurdistan
+			1197 = { clear_retain_state = yes }   #Bashkurdistan
+			1195 = { clear_retain_state = yes }   #Bashkurdistan
+			249 = { clear_retain_state = yes }   #Tatarstan
+			1198 = { clear_retain_state = yes }   #Tatarstan
+			1199 = { clear_retain_state = yes }   #Tatarstan
+			1197 = { clear_retain_state = yes }   #Tatarstan			
+			537 = { clear_retain_state = yes } #Sakhalin
+			555 = { clear_retain_state = yes } #Kuril Islands
+			564 = { clear_retain_state = yes }   #Verkhneudinsk
+			563 = { clear_retain_state = yes }   #Chita
+			574 = { clear_retain_state = yes }   #Yakutsk
+		}
 		add_to_temp_array = { target_cores_to_release = RUS }
 		add_to_temp_array = { target_cores_to_release = TRM }
 		set_temp_variable = { tag_to_release = RUS }
@@ -10505,6 +10685,41 @@ country_event = { #Fate of America
 			   load_focus_tree = generic_focus
 		    }
 	    }
+	}
+
+	option = { #Give it to America
+		name = annex.52.i
+		trigger = {
+			any_allied_country = { is_american_tag = yes }
+		}
+		ai_chance = {
+			factor = 0
+		}
+		random_other_country = {
+			limit = {
+				is_american_tag = yes
+				is_ally_with = ROOT
+			}
+			set_temp_variable = { tag_to_release = THIS }
+		}
+		every_owned_state = {
+			limit = {
+				is_mainland_america = yes
+				is_not_claim_or_core_of_ROOT = yes
+			}
+			hidden_effect = {
+				remove_claim_by = USA
+				add_core_of = USA
+				remove_core_of = CSA
+				remove_claim_by = CSA
+				remove_core_of = TEX
+				remove_claim_by = TEX
+				remove_core_of = CAL
+				remove_claim_by = CAL
+			}
+		}
+		add_to_temp_array = { target_cores_to_release = USA }
+		transfer_territory_from_core_regions = yes
 	}
 
 	option = { #Occupy USA
@@ -12800,6 +13015,7 @@ country_event = { #The fate of Georgia
 			OR = {
 				has_authoritarian_government = yes
 				RUS_russian_monarch = yes
+				tag = GER
 			}
 		}
 		ai_chance = {
@@ -13172,9 +13388,6 @@ country_event = { #Releasing Spain (if not POR)
 	option = { #Release/Give to Kingdom
 		name = annex.73.b
 		trigger = {
-		    NOT = {
-			tag = CAN
-			}
 			has_socialist_government = no
 			OR = {
 				is_in_faction_with = SPR
@@ -13288,6 +13501,29 @@ country_event = { #Releasing Spain (if not POR)
 				}
 			}
 			if = {
+				limit = {
+					has_government = social_democrat
+				}
+				set_party_name = {
+					ideology = social_democrat
+					long_name = SPR_social_democrat_party_alt_long
+					name = SPR_social_democrat_party_alt
+				}
+				set_country_flag = SPR_allow_psoe
+			}
+			if = {
+				limit = {
+					has_democratic_government = yes
+				}
+				set_country_flag = SPR_constitutional_monarchy
+			}
+			if = {
+				limit = {
+					has_authoritarian_government = yes
+				}
+				set_country_flag = SPR_absolute_monarchy
+			}
+			if = {
 				limit = { tag = GER }
 				country_event = annex.74
 			}
@@ -13356,7 +13592,6 @@ country_event = { #Releasing Spain (if not POR)
 				country_exists = SPR
 				is_in_faction_with = CAR
 				is_in_faction_with = CNT
-				tag = CAN
 			}
 			has_socialist_government = no
 		}
@@ -13389,38 +13624,63 @@ country_event = { #Releasing Spain (if not POR)
 		}
 		set_temp_variable = { tag_to_release = SPR }
 		puppet_released_tag = yes
-		SPR = {
-			set_cosmetic_tag = SPR_republic
-			create_country_leader = {
-				name = "Francisco Franco Bahamonde"
-				desc = "POLITICS_FRANSISCO_FRANCO_DESC"
-				picture = "gfx/leaders/SPR/Portrait_SPR_Franco_Bahamonde.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-			}
-			create_country_leader = {
-				name = "Niceto Alcalá-Zamora"
-				picture = "gfx/leaders/CNT/Portrait_CNT_Niceto_Alcala_Zamora.png"
-				expire = "1.1.1"
-				ideology = christian_democracy_subtype
-			}
-			create_country_leader = {
-				name = "Josep Tarradellas"
-				picture = "gfx/leaders/CNT/Portrait_CNT_Josep_Tarradellas.png"
-				expire = "1.1.1"
-				ideology = marlib_national_liberalism_subtype
-			}
-			create_country_leader = {
-				name = "Manuel Azaña Díaz"
-				picture = "gfx/leaders/CNT/Portrait_CNT_Manuel_Azana_Diaz.png"
-				expire = "1.1.1"
-				ideology = radical_liberalism_subtype
-			}
-			create_country_leader = {
-				name = "Augusto Barcia Trelles"
-				picture = "gfx/leaders/CNT/Portrait_CNT_Augusto_Barcia_Trelles.png"
-				expire = "1.1.1"
-				ideology = socdem_democratic_socialism_subtype
+		hidden_effect = {
+			SPR = {
+				set_cosmetic_tag = SPR_republic
+				create_country_leader = {
+					name = "Francisco Franco Bahamonde"
+					desc = "POLITICS_FRANSISCO_FRANCO_DESC"
+					picture = "gfx/leaders/SPR/Portrait_SPR_Franco_Bahamonde.png"
+					expire = "1.1.1"
+					ideology = authdem_junta_subtype
+				}
+				create_country_leader = {
+					name = "Niceto Alcalá-Zamora"
+					picture = "gfx/leaders/CNT/Portrait_CNT_Niceto_Alcala_Zamora.png"
+					expire = "1.1.1"
+					ideology = christian_democracy_subtype
+				}
+				create_country_leader = {
+					name = "Josep Tarradellas"
+					picture = "gfx/leaders/CNT/Portrait_CNT_Josep_Tarradellas.png"
+					expire = "1.1.1"
+					ideology = marlib_national_liberalism_subtype
+				}
+				create_country_leader = {
+					name = "Manuel Azaña Díaz"
+					picture = "gfx/leaders/CNT/Portrait_CNT_Manuel_Azana_Diaz.png"
+					expire = "1.1.1"
+					ideology = radical_liberalism_subtype
+				}
+				create_country_leader = {
+					name = "Augusto Barcia Trelles"
+					picture = "gfx/leaders/CNT/Portrait_CNT_Augusto_Barcia_Trelles.png"
+					expire = "1.1.1"
+					ideology = socdem_democratic_socialism_subtype
+				}
+				if = {
+					limit = {
+						has_government = social_democrat
+					}
+					set_party_name = {
+						ideology = social_democrat
+						long_name = SPR_social_democrat_party_alt_long
+						name = SPR_social_democrat_party_alt
+					}
+					set_country_flag = SPR_allow_psoe
+				}
+				if = {
+					limit = {
+						has_democratic_government = yes
+					}
+					set_country_flag = SPR_constitutional_republic
+				}
+				if = {
+					limit = {
+						has_authoritarian_government = yes
+					}
+					set_country_flag = SPR_francoism
+				}
 			}
 		}
 	}
@@ -13479,12 +13739,74 @@ country_event = { #Releasing Spain (if not POR)
 				transfer_state = PREV
 			}
 		}
-		if = { 
-			limit = { has_socialist_government = yes } 
-			SPR = { load_focus_tree = generic_focus }
-		}
 		set_temp_variable = { tag_to_release = SPR }
 		puppet_released_tag = yes
+		hidden_effect = {
+			if = { 
+				limit = { has_socialist_government = yes } 
+				SPR = { load_focus_tree = generic_focus }
+			}
+			if = {
+				limit = { has_socialist_government = no }
+				SPR = {
+					set_cosmetic_tag = SPR_republic
+					create_country_leader = {
+						name = "Francisco Franco Bahamonde"
+						desc = "POLITICS_FRANSISCO_FRANCO_DESC"
+						picture = "gfx/leaders/SPR/Portrait_SPR_Franco_Bahamonde.png"
+						expire = "1.1.1"
+						ideology = authdem_junta_subtype
+					}
+					create_country_leader = {
+						name = "Niceto Alcalá-Zamora"
+						picture = "gfx/leaders/CNT/Portrait_CNT_Niceto_Alcala_Zamora.png"
+						expire = "1.1.1"
+						ideology = christian_democracy_subtype
+					}
+					create_country_leader = {
+						name = "Josep Tarradellas"
+						picture = "gfx/leaders/CNT/Portrait_CNT_Josep_Tarradellas.png"
+						expire = "1.1.1"
+						ideology = marlib_national_liberalism_subtype
+					}
+					create_country_leader = {
+						name = "Manuel Azaña Díaz"
+						picture = "gfx/leaders/CNT/Portrait_CNT_Manuel_Azana_Diaz.png"
+						expire = "1.1.1"
+						ideology = radical_liberalism_subtype
+					}
+					create_country_leader = {
+						name = "Augusto Barcia Trelles"
+						picture = "gfx/leaders/CNT/Portrait_CNT_Augusto_Barcia_Trelles.png"
+						expire = "1.1.1"
+						ideology = socdem_democratic_socialism_subtype
+					}
+					if = {
+						limit = {
+							has_government = social_democrat
+						}
+						set_party_name = {
+							ideology = social_democrat
+							long_name = SPR_social_democrat_party_alt_long
+							name = SPR_social_democrat_party_alt
+						}
+						set_country_flag = SPR_allow_psoe
+					}
+					if = {
+						limit = {
+							has_democratic_government = yes
+						}
+						set_country_flag = SPR_constitutional_republic
+					}
+					if = {
+						limit = {
+							has_authoritarian_government = yes
+						}
+						set_country_flag = SPR_francoism
+					}
+				}
+			}
+		}
 	}
 
 	option = { #occupy
@@ -15802,6 +16124,38 @@ country_event = { #The Annexation of Afghanistan
 		hidden_effect = {
 			AFG = {
 				create_country_leader = {
+					name = "Ghulam Muhammad Ghobar"
+					desc = ""
+					picture = "gfx/leaders/AFG/Portrait_AFG_Ghulam_Muhammad_Ghobar.png"
+					expire = "1.1.1"
+					ideology = socdem_islamism_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Abdul Rauf Benawa"
+					desc = ""
+					picture = "gfx/leaders/AFG/Portrait_AFG_Abdul_Rauf_Benawa.png"
+					expire = "1.1.1"
+					ideology = soclib_progressive_democracy_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Abdul Hadi Dawi"
+					desc = ""
+					picture = "gfx/leaders/AFG/Portrait_AFG_Abdul_Hadi_Dawi.png"
+					expire = "1.1.1"
+					ideology = marlib_kemalism_subtype
+					traits = {}
+				}
+				create_country_leader = {
+					name = "Muhammad Iqbal"
+					desc = ""
+					picture = "gfx/leaders/AFG/Portrait_AFG_Muhammad_Iqbal.png"
+					expire = "1.1.1"
+					ideology = soccon_islamism_subtype
+					traits = {}
+				}
+				create_country_leader = {
 					name = "Inayatullah Khan"
 					desc = ""
 					picture = "gfx/leaders/AFG/Portrait_AFG_Inayatullah_Khan_Suit.png"
@@ -17807,78 +18161,6 @@ country_event = { #Fate of Bhutan
 	}
 }
 
-country_event = { #Britain/England government
-
-	id = annex.131
-	immediate = { log = "[GetDateText]: [Root.GetName]: event annex.131" }
-	title = annex.131.t
-	desc = annex.131.d
-	is_triggered_only = yes
-
-	option = {
-
-		name = annex.131.a
-
-		if = {
-			limit = {
-				OR = {
-					has_government = social_conservative
-					has_government = market_liberal
-					has_government = social_liberal
-					has_government = social_democrat
-				}
-			}
-			create_democratic_english_government = yes
-		}
-		if = {
-			limit = {
-				OR = {
-					has_government = authoritarian_democrat
-					has_government = paternal_autocrat
-					has_government = national_populist
-				}
-			}
-			create_autocratic_english_government = yes
-		}
-	}
-}
-
-country_event = { #Scottish Government
-
-	id = annex.132
-	immediate = { log = "[GetDateText]: [Root.GetName]: event annex.132" }
-	title = annex.132.t
-	desc = annex.132.d
-	is_triggered_only = yes
-
-	option = {
-
-		name = annex.131.a
-
-		if = {
-			limit = {
-				OR = {
-					has_government = social_conservative
-					has_government = market_liberal
-					has_government = social_liberal
-					has_government = social_democrat
-				}
-			}
-			create_democratic_scottish_government = yes
-		}
-		if = {
-			limit = {
-				OR = {
-					has_government = authoritarian_democrat
-					has_government = paternal_autocrat
-					has_government = national_populist
-				}
-			}
-			create_autocratic_scottish_government = yes
-		}
-	}
-}
-
 country_event = { #Fate of Chile
 	id = annex.133
 	immediate = { log = "[GetDateText]: [Root.GetName]: event annex.133" }
@@ -18822,6 +19104,7 @@ country_event = { #Fate of the West Indies Federation
 			}
 			CAF = {
 				clr_country_flag = CAF_syndie_revolution
+				set_country_flag = CAF_revolution_wont_happen_puppet
 				set_politics = { ruling_party = authoritarian_democrat }
 				add_popularity = {
 					ideology = authoritarian_democrat
@@ -19126,42 +19409,6 @@ country_event = { #Fate of the Dominican Republic
 		}
 		set_country_flag = DOM_CONQ
 		occupy_small_country = yes
-	}
-}
-
-country_event = { #Fate of Wales
-
-	id = annex.144
-	immediate = { log = "[GetDateText]: [Root.GetName]: event annex.144" }
-	title = annex.144.t
-	desc = annex.144.d
-	is_triggered_only = yes
-
-	option = {
-
-		name = annex.131.a
-
-		if = {
-			limit = {
-				OR = {
-					has_government = social_conservative
-					has_government = market_liberal
-					has_government = social_liberal
-					has_government = social_democrat
-				}
-			}
-			create_democratic_welsh_government = yes
-		}
-		if = {
-			limit = {
-				OR = {
-					has_government = authoritarian_democrat
-					has_government = paternal_autocrat
-					has_government = national_populist
-				}
-			}
-			create_autocratic_welsh_government = yes
-		}
 	}
 }
 
@@ -24159,6 +24406,19 @@ country_event = { #Fate of Flanders
 		add_to_temp_array = { target_cores_to_release = FLN }
 		set_temp_variable = { tag_to_release = HOL }
 		transfer_territory_from_core_regions = yes
+		hidden_effect = {
+			HOL = { add_state_claim = 6 }
+			if = {
+				limit = { 
+					29 = {
+						is_owned_by = ROOT
+						is_claimed_by = FLN
+					}
+				}
+				set_temp_variable = { tag_to_release = HOL }
+				29 = { transfer_state_and_add_claim = yes }
+			}
+		}
 	}
 
 	option = { #Give Flanders to Wallonia
@@ -24503,11 +24763,13 @@ country_event = { #Fate of Lithuania
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { 11 = { is_core_of = POL } } #Kaunas == PLC formed
+				limit = { POL = { has_cosmetic_tag = POL_PLC } }
 				every_state = {
 					limit = {
-						is_core_of = LIT
-						is_core_of = POL
+						AND = {
+							is_core_of = LIT
+						    is_core_of = POL
+						}
 					}
 					remove_core_of = POL
 					if = {
@@ -27980,8 +28242,13 @@ country_event = { #Fate of Argentina
 					}
 				}
 			}
+			if = {
+				limit = {
+					NOT = { tag = PAR }
+				}
+				1074 = { remove_core_of = ARG }
+			}
 			901 = { remove_core_of = ARG }
-			1074 = { remove_core_of = ARG }
 			901 = { remove_core_of = FOP }
 			1074 = { remove_core_of = FOP }
 		}
@@ -28691,6 +28958,9 @@ country_event = { #Fate of Canada
 					}
 				}
 				CAN = { save_global_event_target_as = Socialist_Canada_Target }
+			}
+			else = {
+				CAN = { load_focus_tree = generic_focus }
 			}
 			331 = { remove_core_of = CAN }
 			332 = { remove_core_of = CAN }
@@ -30924,45 +31194,19 @@ country_event = { #Annexation of South Africa
 				owns_state = 545
 			}
 		}
-		set_temp_variable = { tag_to_release = SAF }
-		release_targeted_tag = yes
-		SAF_puppet_setup = yes
-	}
-	option = { #with the protectorates
-		name = "We shall restore the dominion!"
-		trigger = {
-			tag = CAN
-		}
-		ai_chance = {
-			factor = 40
-			modifier = {
-				factor = 0
-				OR = {
-					has_socialist_government = yes
-					tag = MAF
-					tag = GER
-					tag = GEX
-				}
+		hidden_effect = {
+			if = {
+				limit = { owns_state = 542 }
+				SAF = { add_state_core = 542 }
 			}
-		}
-		trigger = {
-			NOT = { tag = ZIM }
-			OR = {
-				owns_state = 542
-				owns_state = 545
+			if = {
+				limit = { owns_state = 545 }
+				SAF = { add_state_core = 545 }
 			}
 		}
 		set_temp_variable = { tag_to_release = SAF }
 		release_targeted_tag = yes
 		SAF_puppet_setup = yes
-		SAF = {
-		set_cosmetic_tag = SAF_DOMINION
-		set_party_name = {
-				ideology = paternal_autocrat
-				long_name = "Dominion Party of South Africa"
-				name = "Dominion Party"
-				}
-		}
 	}
 
 	option = { #occupy
@@ -31398,8 +31642,16 @@ country_event = { #Fate of Transamur
 					var:566.owner = { #Irkutsk
 						original_tag = RUS
 						ROOT_can_grant_land = yes
+						is_ally_of_ROOT = yes
 					}
-					TRM = { is_ally_of_ROOT = yes }
+					TRB = { 
+						is_ally_of_ROOT = yes 
+						has_government = paternal_autocrat
+					}
+					YAK = { 
+						is_ally_of_ROOT = yes 
+						has_government = paternal_autocrat
+					}
 				}
 			}
 		}
@@ -31482,17 +31734,122 @@ country_event = { #Fate of Transamur
 			}
 		}
 		ai_chance = {
-			base = 300
+			base = 20
 			modifier = {
 				factor = 0
 				is_german_tag = yes
 			}
 			modifier = {
 				factor = 0
-				TRM = { is_ally_of_ROOT = yes }
+				original_tag = JAP
+				RUS = { is_ally_of_ROOT = no }
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					TRB = { 
+						is_ally_of_ROOT = yes 
+						has_government = paternal_autocrat
+					}
+					YAK = { 
+						is_ally_of_ROOT = yes 
+						has_government = paternal_autocrat
+					}
+				}
 			}
 		}
 		set_temp_variable = { tag_to_release = 566.owner }
+		hidden_effect = {
+			every_state = {
+				limit = { is_russian_far_east = yes }
+				add_core_of = var:tag_to_release
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_russian_far_east = yes
+				is_claim_or_core_of_ROOT = no
+			}
+			transfer_state_to = var:tag_to_release
+		}
+		recheck_annexations = yes
+	}
+	
+	option = {
+		name = annex.226.e
+		trigger = {
+			TRB = {
+				ROOT_can_grant_land = yes
+				is_ally_of_ROOT = yes
+				has_government = paternal_autocrat
+			}
+		}
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_german_tag = yes
+			}
+			modifier = {
+				factor = 2
+				original_tag = JAP
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					RUS = { is_ally_of_ROOT = yes }
+					YAK = { 
+						is_ally_of_ROOT = yes 
+						has_government = paternal_autocrat
+					}
+				}
+			}
+		}
+		set_temp_variable = { tag_to_release = TRB }
+		hidden_effect = {
+			every_state = {
+				limit = { is_russian_far_east = yes }
+				add_core_of = var:tag_to_release
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_russian_far_east = yes
+				is_claim_or_core_of_ROOT = no
+			}
+			transfer_state_to = var:tag_to_release
+		}
+		recheck_annexations = yes
+	}
+	option = {
+		name = annex.226.f
+		trigger = {
+			YAK = {
+				ROOT_can_grant_land = yes
+				is_ally_of_ROOT = yes
+				has_government = paternal_autocrat
+			}
+		}
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 0
+				is_german_tag = yes
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					TRB = { 
+						is_ally_of_ROOT = yes 
+						has_government = paternal_autocrat
+					}
+					RUS = { 
+						is_ally_of_ROOT = yes 
+					}
+				}
+			}
+		}
+		set_temp_variable = { tag_to_release = YAK }
 		hidden_effect = {
 			every_state = {
 				limit = { is_russian_far_east = yes }
@@ -31515,7 +31872,14 @@ country_event = { #Fate of Transamur
 			factor = 200
 		}
 		trigger = {
-			is_russian_tag_that_can_integrate = yes
+			OR = {
+				is_russian_tag_that_can_integrate = yes
+				tag = TRB
+				AND = {
+					tag = YAK
+					has_government = paternal_autocrat
+				}
+			}
 		}
 		every_owned_state = {
 			limit = {
@@ -35799,6 +36163,32 @@ country_event = { #Danish Atlantic possessions Liberation
 				}
 			}
 		}
+		hidden_effect = {
+			if = { 
+				limit = { 
+					OR = {
+						tag = CAN
+						tag = GBR
+					}
+				}
+				ICE = { ICE_create_british_monarchy = yes }
+			}
+			else_if = { 
+				limit = { 
+					tag = DEN
+				}
+				ICE = { ICE_create_frederick = yes }
+			}
+			else_if = { 
+				limit = { 
+					tag = NOR
+				}
+				ICE = { ICE_create_haakon = yes }
+			}
+			else = { 
+				ICE = { ICE_create_republic = yes }
+			}
+		}
 		set_temp_variable = { tag_to_release = ICE }
 		release_targeted_tag = yes
 	}
@@ -35820,6 +36210,26 @@ country_event = { #Danish Atlantic possessions Liberation
 			DEN = { is_ally_of_ROOT = yes }
 			NOT = { tag = DEN }
 			owns_state = 101
+		}
+		hidden_effect = {
+			if = { 
+				limit = { 
+					OR = {
+						tag = CAN
+						tag = GBR
+					}
+				}
+				ICE = { ICE_create_british_monarchy = yes }
+			}
+			else_if = { 
+				limit = { 
+					tag = NOR
+				}
+				ICE = { ICE_create_haakon = yes }
+			}
+			else = { 
+				ICE = { ICE_create_republic = yes }
+			}
 		}
 		set_temp_variable = { tag_to_release = ICE }
 		release_targeted_tag = yes
@@ -35850,6 +36260,26 @@ country_event = { #Danish Atlantic possessions Liberation
 			NOR = { is_ally_of_ROOT = yes }
 			NOT = { tag = NOR }
 			owns_state = 101
+		}
+		hidden_effect = {
+			if = { 
+				limit = { 
+					OR = {
+						tag = CAN
+						tag = GBR
+					}
+				}
+				ICE = { ICE_create_british_monarchy = yes }
+			}
+			else_if = { 
+				limit = { 
+					tag = DEN
+				}
+				ICE = { ICE_create_frederick = yes }
+			}
+			else = { 
+				ICE = { ICE_create_republic = yes }
+			}
 		}
 		set_temp_variable = { tag_to_release = ICE }
 		release_targeted_tag = yes
@@ -35882,7 +36312,32 @@ country_event = { #Danish Atlantic possessions Liberation
 			NOT = { tag = SWE }
 			owns_state = 101
 		}
-
+        hidden_effect = {
+			if = { 
+				limit = { 
+					OR = {
+						tag = CAN
+						tag = GBR
+					}
+				}
+				ICE = { ICE_create_british_monarchy = yes }
+			}
+			else_if = { 
+				limit = { 
+					tag = DEN
+				}
+				ICE = { ICE_create_frederick = yes }
+			}
+			else_if = { 
+				limit = { 
+					tag = NOR
+				}
+				ICE = { ICE_create_haakon = yes }
+			}
+			else = { 
+				ICE = { ICE_create_republic = yes }
+			}
+		}
 		set_temp_variable = { tag_to_release = ICE }
 		release_targeted_tag = yes
 
@@ -48203,7 +48658,7 @@ country_event = { #Fate of Urda
 			}
 		}
 		set_temp_variable = { tag_to_release = 406.owner }
-		406 = { transfer_state_and_add_core = yes }
+		1224 = { transfer_state_and_add_core = yes }
 	}
 	
 	option = { #Integrate
@@ -50554,7 +51009,7 @@ country_event = { #The fate of Oyil
 		ai_chance = { base = 80 }
 		set_temp_variable = { ROOT.tag_to_release = event_target:turkestan_ally_target }
 		every_owned_state = {
-			limit = { state = 589 }
+			limit = { state = 1212 }
 			transfer_state_and_add_core = yes
 		}
 	}
@@ -53539,27 +53994,40 @@ country_event = { #Fate of the East Galicia
 					limit = { is_owned_by = ROOT }
 					var:202.owner = { transfer_state = PREV }
 				}
-				if = {
-					limit = { 
-						OR = {
-							state = 89
-							state = 1140
-							state = 1126
-						}
-					}
+				89 = {
 					if = {
-						limit = { is_claimed_by = var:202.owner }
-						remove_claim_by = var:202.owner
-					}			
-					if = {
-						limit = { NOT = { is_core_of = var:202.owner } }
-						add_core_of = var:202.owner
+						limit = { NOT = { is_core_of = ROOT } }
+						add_core_of = ROOT
 					}
 				}
-				else = {				
+				1140 = {
 					if = {
-						limit = { NOT = { is_claimed_by = var:202.owner } }
-						add_claim_by = var:202.owner
+						limit = { NOT = { is_core_of = ROOT } }
+						add_core_of = ROOT
+					}
+				}
+				1126 = {
+					if = {
+						limit = { NOT = { is_core_of = ROOT } }
+						add_core_of = ROOT
+					}
+				}
+				91 = {
+					if = {
+						limit = { NOT = { is_claimed_by = ROOT } }
+						add_claim_by = ROOT
+					}
+				}
+				1127 = {
+					if = {
+						limit = { NOT = { is_claimed_by = ROOT } }
+						add_claim_by = ROOT
+					}
+				}
+				80 = {
+					if = {
+						limit = { NOT = { is_claimed_by = ROOT } }
+						add_claim_by = ROOT
 					}
 				}
 			}

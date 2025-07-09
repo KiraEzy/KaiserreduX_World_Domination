@@ -2145,6 +2145,15 @@ MON_great_game = {
 			  state = 795
 			  state = 940
 			  state = 951
+			  state = 1344
+			  state = 1339
+			  state = 1338
+			  state = 1340
+			  state = 1341
+			  state = 1342
+			  state = 1336
+			  state = 1337
+			  state = 1343
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -2245,6 +2254,15 @@ MON_great_game = {
 				795 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				940 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				951 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1344 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1339 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1338 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1340 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1341 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1342 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1336 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1337 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
+				1343 = { owner = { OR = { original_tag = MON is_subject_of = MON } } }
 				}
 			}
 			NOT = {

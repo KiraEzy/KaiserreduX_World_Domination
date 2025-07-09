@@ -1,0 +1,19 @@
+################################
+# Japan Decisions Categories   #
+################################
+# 		 By wchishun2	  	   #
+################################
+OTT_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = OTT
+	}
+
+	visible = { 
+		OR = {
+			has_completed_focus = OTT_United_Once_More
+			has_completed_focus = OTT_Egypt_Khedivate
+		}
+	}
+}

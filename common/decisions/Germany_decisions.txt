@@ -1731,6 +1731,16 @@ GER_great_game = {
 			  state = 112
 			  state = 118
 			  state = 940
+			  state = 1344
+			  state = 1339
+			  state = 1338
+			  state = 1340
+			  state = 1341
+			  state = 1342
+			  state = 1336
+			  state = 1337
+			  state = 1343
+			  
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -1783,6 +1793,15 @@ GER_great_game = {
 				112 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 				118 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 				940 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1344 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1339 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1338 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1340 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1341 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1342 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1336 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1337 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+				1343 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 			  }
 			}
 			NOT = {
@@ -2812,56 +2831,6 @@ GER_great_game = {
 }
 
 political_actions = {
-	GER_form_ostland = {
-		icon = soldierly_discipline
-		allowed = {
-			original_tag = GER
-		}
-		
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = "Paktkommission in Lithuania is established"
-				LIT = {
-					has_cosmetic_tag = LIT_paktkommission
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = "Paktkommission in White Ruthenia is established"	
-				WHR = {
-					has_cosmetic_tag = WHR_paktkommission
-				}
-			}
-		}
-
-		visible = {
-			is_ai = no
-		}
-		cost = 50
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 100
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GER_Flag_Picker"
-			every_state = {
-				limit = {
-					is_owned_by = LIT 
-				}
-				add_claim_by = WHR 
-				add_core_of = WHR 
-			}
-			WHR = {
-				annex_country = {
-					target = LIT 
-					transfer_troops = yes 
-				}
-				set_cosmetic_tag = WHR_paktkommission_ost
-			}
-			
-		}
-	}
-	
 	GER_Flag_Picker = {
 		icon = generic_agreement
 		allowed = {
@@ -2932,6 +2901,7 @@ political_actions = {
 					tag = event_target:KR_internationale_leader 
 					is_in_faction_with = INT
 					is_in_faction_with = FRA
+					is_subject = yes
 				}
 			}
 		}

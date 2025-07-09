@@ -1475,21 +1475,18 @@ focus_tree = {
 			has_government = national_populist
 			is_subject = no
 			
-			custom_trigger_tooltip = {
-				tooltip = MON_control_manchuria
-				AND = {
-					KUB = {
-						has_cosmetic_tag = KUB_GOH    # This will point to any country in the global.arab_countries array if they have the ARABIA_UNITED cosmetic tag, provided they exist.
-						exists = yes
-					}
-					TRK = {
-						has_cosmetic_tag = TRK_ILK    # This will point to any country in the global.arab_countries array if they have the ARABIA_UNITED cosmetic tag, provided they exist.
-						exists = yes
-					}
-					DEH = {
-						has_cosmetic_tag = DEH_CHK    # This will point to any country in the global.arab_countries array if they have the ARABIA_UNITED cosmetic tag, provided they exist.
-						exists = yes
-					}
+			AND = {
+				KUB = {
+					has_cosmetic_tag = KUB_GOH    # This will point to any country in the global.arab_countries array if they have the ARABIA_UNITED cosmetic tag, provided they exist.
+					exists = yes
+				}
+				TRK = {
+					has_cosmetic_tag = TRK_ILK    # This will point to any country in the global.arab_countries array if they have the ARABIA_UNITED cosmetic tag, provided they exist.
+					exists = yes
+				}
+				DEH = {
+					has_cosmetic_tag = DEH_CHK    # This will point to any country in the global.arab_countries array if they have the ARABIA_UNITED cosmetic tag, provided they exist.
+					exists = yes
 				}
 			}
 		}	
