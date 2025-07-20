@@ -1,0 +1,12 @@
+country = {
+    MLT_an_army_worth_of_god = {
+        on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
+        allowed = {always = no}
+        picture = CAN_church_idea
+        modifier = {
+            conscription = 0.15
+            army_attack_factor = 0.15
+            army_speed_factor = 0.15
+        }
+    }
+}

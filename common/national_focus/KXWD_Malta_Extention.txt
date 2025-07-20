@@ -1,0 +1,257 @@
+
+####################################
+####### SHARED AFRICAN TREES #######
+####################################
+
+
+### Economy ###
+
+shared_focus = {
+	id = MLTWD_Call_the_pope
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        has_country_flag = MLT_call_on_all
+    }
+	x = 65
+	y = 0
+	offset = {
+		x = 5
+		trigger = {
+			tag = MLT
+		}
+	}
+	cost = 0
+		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus MLTWD_Call_the_pope"
+		
+	}
+}
+
+shared_focus = {
+	id = MLTWD_harken_to_peoples_crusade
+    icon = GFX_goal_COG_Heralds
+    x = -1
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_Call_the_pope
+    }
+    relative_position_id = MLTWD_Call_the_pope
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_harken_to_peoples_crusade"
+        add_ideas = MLT_peoples_crusade
+    }
+}
+
+shared_focus = {
+	id = MLTWD_honor_our_lady_of_philermos
+    icon = GFX_goal_ATH_greco_catholicism
+    x = 0
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_harken_to_peoples_crusade
+    }
+    relative_position_id = MLTWD_harken_to_peoples_crusade
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_honor_our_lady_of_philermos"
+        add_ideas = MLT_our_lady
+        add_research_slot = 1
+    }
+}
+
+shared_focus = {
+	id = MLTWD_seize_rhodes
+    icon = GFX_islandsupplychains
+    x = 0
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_honor_our_lady_of_philermos
+    }
+    relative_position_id = MLTWD_honor_our_lady_of_philermos
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_seize_rhodes"
+        TUR = {
+            country_event = mlt.36
+        }
+
+        183 = {
+            add_claim_by = MLT
+        }
+        TUR = {
+            country_event = {
+                id = mlt.59
+                days = 5
+            }
+        }
+    
+    }
+}
+
+shared_focus = {
+	id = MLTWD_buy_sicily
+    icon = GFX_goal_USA_military_feints
+    x = 0
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_seize_rhodes
+    }
+    relative_position_id = MLTWD_seize_rhodes
+    completion_reward = {
+        add_state_core = 115
+        every_country = {
+            limit = {
+                owns_state = 115
+            }
+            country_event = mlt.39
+        }
+    
+    }
+}
+
+shared_focus = {
+	id = MLTWD_make_blessed_gerard_proud
+    icon = GFX_goal_NFA_ultranational_catholicism
+    x = 1
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_Call_the_pope
+    }
+    relative_position_id = MLTWD_Call_the_pope
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_make_blessed_gerard_proud"
+        add_ideas = MLT_blessed_gerard
+    
+    }
+}
+
+shared_focus = {
+	id = MLTWD_tuitio_fide
+    icon = GFX_goal_MEX_catholic_monarch
+    x = 0
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_make_blessed_gerard_proud
+    }
+    relative_position_id = MLTWD_make_blessed_gerard_proud
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_tuitio_fide"
+        add_ideas = MLT_defender_of_faith
+        hidden_effect = {
+            country_event = {
+                id = mlt.133
+                days = 21
+            }
+        }
+    }
+}
+
+shared_focus = {
+	id = MLTWD_purchase_ships
+    icon = GFX_goal_navy_decision
+    x = 0
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_tuitio_fide
+    }
+    relative_position_id = MLTWD_tuitio_fide
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_purchase_ships"
+    
+    }
+}
+
+shared_focus = {
+	id = MLTWD_an_army_worth_of_god
+    icon = GFX_goal_SIC_knights_of_grail
+    x = 0
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_purchase_ships
+    }
+    relative_position_id = MLTWD_purchase_ships
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_an_army_worth_of_god"
+        # add_ideas = MLT_an_army_worth_of_god
+    
+    }
+}
+
+shared_focus = {
+    id = MLTWD_deus_vult
+    icon = GFX_goal_SRI_crusade
+    x = -1
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_an_army_worth_of_god
+    }
+    prerequisite = {
+        focus = MLTWD_buy_sicily
+    }
+    relative_position_id = MLTWD_an_army_worth_of_god
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_deus_vult"
+        swap_ideas = {
+			remove_idea = MLT_blessed_gerard
+			add_idea = MLT_blessed_gerard2
+        }
+    }
+}
+
+
+shared_focus = {
+    id = MLTWD_reclaim_latin_empire
+    icon = GFX_goal_GRE_byzantine_warfare
+    x = -1
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_deus_vult
+    }
+    relative_position_id = MLTWD_deus_vult
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_reclaim_latin_empire"
+        create_wargoal = {
+            target = GRE
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_destroy_albania
+    icon = GFX_goal_ALB_Tragedy_Zogu
+    x = 1
+    y = 1
+    cost = 5
+    
+    prerequisite = {
+        focus = MLTWD_deus_vult
+    }
+    relative_position_id = MLTWD_deus_vult
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus MLTWD_destroy_albania"
+        create_wargoal = {
+            target = ALB
+            type = annex_everything
+        }
+    }
+}
