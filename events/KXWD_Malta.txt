@@ -7,47 +7,71 @@
 add_namespace = kxwd_mlt	
 
 country_event = { #malta wants to buy sicily
-	# id = kxwd_mlt.48
-	# immediate = { log = "[GetDateText]: [Root.GetName]: event kxwd_mlt.48" }
-	# title = kxwd_mlt.48.t
-	# desc = kxwd_mlt.48.d
+	id = kxwd_mlt.48
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kxwd_mlt.48" }
+	title = kxwd_mlt.48.t
+	desc = kxwd_mlt.48.d
 	
-	# picture = GFX_report_event_MLT_carribean
+	picture = GFX_report_event_MLT_carribean
 
-	# is_triggered_only = yes
+	is_triggered_only = yes
 
-	# fire_only_once = yes
+	fire_only_once = yes
 
-	# option = { #ok sure
-	# 	name = kxwd_mlt.48.a
-	# 	trigger = {
-	# 		MLT = { is_ai = no }
-	# 	}
-	# 	add_political_power = -25
-	# 	hidden_effect = {
-	# 		MLT = {
-	# 			country_event = {
-	# 				id = mlt.49
-	# 			days = 3
-	# 			}
-	# 		}
-	# 	}
+	option = { #ok sure
+		name = kxwd_mlt.48.a
+		trigger = {
+			MLT = { is_ai = no }
+		}
+		add_political_power = -25
+		hidden_effect = {
+			MLT = {
+				country_event = {
+					id = kxwd_mlt.49
+				days = 3
+				}
+			}
+		}
 
-	# }
-	# option = { #no
-	# 	name = kxwd_mlt.48.b
-	# 	add_political_power = 25
-	# 	trigger = {
-	# 		MLT = { is_ai = yes }
-	# 	}
-	# 	hidden_effect = {
-	# 		MLT = {
-	# 			country_event = {
-	# 				id = mlt.50
-	# 			days = 3
-	# 			}
-	# 		}
-	# 	}
+	}
+	option = { #no
+		name = kxwd_mlt.48.b
+		add_political_power = 25
+		trigger = {
+			MLT = { is_ai = yes }
+		}
+		hidden_effect = {
+			MLT = {
+				country_event = {
+					id = kxwd_mlt.50
+				days = 3
+				}
+			}
+		}
 
-	# }
+	}
+	
 }	
+country_event = { #malta bought sicily
+	id = kxwd_mlt.49
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kxwd_mlt.49" }
+	title = kxwd_mlt.49.t
+	desc = kxwd_mlt.49.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #ok sure
+		name = kxwd_mlt.49.a
+		trigger = {
+			MLT = { is_ai = no }
+		}
+		add_political_power = -200
+		115 = {
+			transfer_state_to = MLT
+		}		
+		115 = { add_core_of = MLT }
+	}
+}

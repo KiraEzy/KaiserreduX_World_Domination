@@ -10,3 +10,62 @@ MLT_great_game = {
 	}
 }
 
+MLT_buy_equipment = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = MLT
+	}
+
+	visible = { 
+		has_completed_focus = MLTWD_purchase_ships
+	}
+}
+
+MLT_buy_ships = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = MLT
+	}
+
+	visible = { 
+		has_completed_focus = MLTWD_purchase_ships
+	}
+}
+
+MLTWD_call_the_world = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = MLT
+	}
+
+	visible = { 
+		has_completed_focus = MLTWD_Call_the_pope
+	}
+}
+
+MLTWD_call_the_pope_decision = {
+	icon = GFX_decision_category_foreign_policy
+	visible_when_empty = yes
+	allowed = {
+		original_tag = MLT
+	}
+
+	visible = { 
+		has_completed_focus = MLTWD_Call_the_pope
+	}
+}	
+
+MLTWD_rhodes_cyprus_battles = {
+	icon = GFX_decision_category_foreign_policy
+	visible_when_empty = yes
+	allowed = {
+		original_tag = MLT
+	}
+
+	visible = { 
+		has_completed_focus = MLTWD_seize_rhodes
+	}
+}	

@@ -1,6 +1,7 @@
 ###########################
 # Malta Decisions
 ###########################
+
 MLT_great_game = {
   MLT_great_game_merge_egypt= {
     icon = generic_prepare_civil_war
@@ -3242,3 +3243,940 @@ MLT_great_game = {
 
 }
 
+MLT_buy_ships = {
+  MLT_buy_heavy_crusier= {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+    available = {
+      
+    }
+    remove_effect = {
+      if = {
+				limit = { has_dlc = "Man the Guns" }
+				if = {
+					limit = { NOT = { has_tech = basic_ship_hull_light } }
+					set_technology = { basic_ship_hull_light = 1 }
+				}
+				create_equipment_variant = {
+					name = "Ararat Class"
+					type = ship_hull_light_2
+					name_group = NAME_THEME_HISTORICAL_DESTROYERS
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_light_battery_2
+						fixed_ship_anti_air_slot = ship_anti_air_1
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+						fixed_ship_radar_slot = ship_sonar_1
+						fixed_ship_engine_slot = light_ship_engine_2
+						fixed_ship_torpedo_slot = ship_torpedo_1
+						mid_1_custom_slot = ship_torpedo_1
+						rear_1_custom_slot = ship_depth_charge_1
+					}
+				}
+				create_ship = { type = ship_hull_light_2 equipment_variant = "Ararat Class" creator = MLT }
+				create_ship = { type = ship_hull_light_2 equipment_variant = "Ararat Class" creator = MLT }
+				create_ship = { type = ship_hull_light_2 equipment_variant = "Ararat Class" creator = MLT }
+				create_ship = { type = ship_hull_light_2 equipment_variant = "Ararat Class" creator = MLT }
+			}
+			else = {
+				if = {
+					limit = { NOT = { has_tech = basic_destroyer } }
+					set_technology = { basic_destroyer = 1 }
+				}
+				create_ship = { type = destroyer_2 equipment_variant = "Improved Destroyer" creator = MLT }
+				create_ship = { type = destroyer_2 equipment_variant = "Improved Destroyer" creator = MLT }
+				create_ship = { type = destroyer_2 equipment_variant = "Improved Destroyer" creator = MLT }
+				create_ship = { type = destroyer_2 equipment_variant = "Improved Destroyer" creator = MLT }
+			}
+    }
+    cost = 100
+    days_remove = 30
+   
+    ai_will_do = {
+        factor = 0
+    }
+    
+  }
+}
+
+MLT_buy_equipment = {
+  MLT_buy_infantry_equipment = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			
+		}
+  }
+
+  MLT_buy_support_equipment = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+		}
+  }
+
+  MLT_buy_artillery = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			
+		}
+  }
+
+  MLT_buy_anti_air = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 500
+			}
+			
+		}
+  }
+  MLT_buy_anti_tank = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 500
+			}
+			
+		}
+  }
+  MLT_buy_trucks = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 250
+			}
+			
+		}
+  }
+  MLT_buy_trains = {
+    icon = generic_prepare_civil_war
+    allowed = {
+      tag = MLT
+    }
+		cancel_if_not_visible = yes
+    available = {
+      
+    }
+    remove_effect = {
+      
+    }
+    cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+   
+    ai_will_do = {
+        factor = 0
+    }
+    remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove MLT_buy_infantry_equipment"
+      add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 10
+			}
+			
+		}
+  }
+}
+
+MLTWD_call_the_world = {
+	gain_support_teutonic_order = {
+		icon = generic_prepare_civil_war
+		allowed = { always = yes }
+		cancel_if_not_visible = yes
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel gain_support_teutonic_order"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision gain_support_teutonic_order"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove gain_support_teutonic_order"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+			}
+			add_manpower = 10000
+		}
+	}
+
+	gain_support_holy_sepulchre = {
+		icon = generic_prepare_civil_war
+		allowed = { always = yes }
+		cancel_if_not_visible = yes
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel gain_support_holy_sepulchre"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision gain_support_holy_sepulchre"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove gain_support_holy_sepulchre"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+			}
+			add_manpower = 10000
+		}
+	}
+
+	restore_livonian_order = {
+		icon = generic_prepare_civil_war
+		allowed = { always = yes }
+		cancel_if_not_visible = yes
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel restore_livonian_order"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision restore_livonian_order"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove restore_livonian_order"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+			}
+			add_manpower = 10000
+		}
+	}
+
+	restore_saint_lazarus_order = {
+		icon = generic_prepare_civil_war
+		allowed = { always = yes }
+		cancel_if_not_visible = yes
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel restore_saint_lazarus_order"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision restore_saint_lazarus_order"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove restore_saint_lazarus_order"
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 2500
+			}
+			add_manpower = 10000
+		}
+	}
+
+	restore_templar_order = {
+		icon = generic_prepare_civil_war
+		allowed = { always = yes }
+		cancel_if_not_visible = yes
+		
+		cost = 50
+		fire_only_once = yes
+		days_remove = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel restore_templar_order"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision restore_templar_order"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove restore_templar_order"
+			set_country_flag = restored_templar_order
+			# add_ideas = restored_order_of_the_templars
+		}
+	}
+}
+
+MLTWD_call_the_pope_decision = {
+  MLTWD_better_our_chance = {
+		icon = generic_prepare_civil_war
+		allowed = { always = yes }
+		cancel_if_not_visible = yes
+		visible = {
+      country_exists = PAP
+    }
+		cost = 50
+		fire_only_once = no
+		days_remove = 10
+    days_re_enable = 20
+		
+		ai_will_do = {
+			factor = 0
+		}
+
+		cancel_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision cancel gain_support_teutonic_order"
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision gain_support_teutonic_order"
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove gain_support_teutonic_order, value: [global.MLTWD_pope_support]"
+      add_to_variable = {
+        global.MLTWD_pope_support = 10   
+      }
+      clamp_variable = {
+          var = global.MLTWD_pope_support
+          min = 40
+          max = 100
+      }
+		}
+	}
+
+  MLTWD_papal_relations = {
+    icon = generic_agreement
+    allowed = { always = yes }
+    visible = {country_exists = PAP}
+    cancel_if_not_visible = yes
+    
+    cost = 50
+    fire_only_once = yes
+    days_remove = 20
+    
+    ai_will_do = {factor = 0}
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove improve_papal_relations, value: [global.MLTWD_pope_support]"
+      add_to_variable = {
+        global.MLTWD_pope_support = 30
+        
+      }
+      clamp_variable = {
+          var = global.MLTWD_pope_support
+          min = 40
+          max = 100
+      }
+      set_country_flag = improved_papal_relations
+    }
+  }
+
+  MLTWD_papal_partial_support = {
+    icon = generic_agreement
+    allowed = { always = yes }
+    visible = {country_exists = PAP}
+    cancel_if_not_visible = yes
+    
+    cost = 50
+    fire_only_once = yes
+    days_remove = 20
+    
+    ai_will_do = {factor = 0}
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_papal_partial_support"
+      set_temp_variable = { no_chance = 100 }
+      subtract_from_temp_variable = { no_chance = global.MLTWD_pope_support }   # assuming your var is an integer value here, else set a second temp var, multiply it by a 100 and then subtract the first temp var by it
+
+      random_list = {
+        var:global.MLTWD_pope_support = {
+            add_stability = 0.15
+            add_war_support = 0.15
+        }
+        var:no_chance = {
+            add_political_power = -20
+        }
+      }
+      
+      
+      log = "[GetDateText] MLTWD_papal_partial_support: [?global.MLTWD_pope_support]"
+    }
+  }
+
+  MLTWD_papal_full_support = {
+    icon = generic_agreement
+    allowed = { always = yes }
+    visible = {
+      country_exists = PAP
+    }
+    cancel_if_not_visible = yes
+    
+    cost = 50
+    fire_only_once = yes
+    days_remove = 20
+    
+    ai_will_do = {
+      factor = 0
+    }
+
+    cancel_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision cancel improve_papal_relations"
+    }
+    complete_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision improve_papal_relations"
+    }
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove improve_papal_relations"
+      set_temp_variable = { no_chance = 100 }
+      subtract_from_temp_variable = { no_chance = global.MLTWD_pope_support }   # assuming your var is an integer value here, else set a second temp var, multiply it by a 100 and then subtract the first temp var by it
+
+      random_list = {
+        var:global.MLTWD_pope_support = {
+          MLT = {
+            set_autonomy = {
+              target = PAP
+              autonomous_state = kx_colored_puppet
+            }
+          }
+        }
+        var:no_chance = {
+            add_political_power = -100
+        }
+      }
+      
+      
+    }
+  }
+}
+
+MLTWD_rhodes_cyprus_battles = {
+  MLTWD_battle_for_rhodes = {
+    activation = {
+        has_completed_focus = MLTWD_seize_rhodes
+    }
+    available = {
+        has_completed_focus = MLTWD_seize_rhodes
+    }
+    cancel_trigger = {
+        NOT = { country_exists = TUR }
+    }
+    icon = mission_icon     # For GFX_decision_mission_icon
+    is_good = no
+    war_with_on_timeout = TUR
+    days_mission_timeout = 150
+    selectable_mission = yes
+    complete_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision complete MLTWD_battle_for_rhodes"
+      set_temp_variable = { no_chance = 100 }
+      subtract_from_temp_variable = { no_chance = global.MLTWD_rhode_cyprus_preperation }   # assuming your var is an integer value here, else set a second temp var, multiply it by a 100 and then subtract the first temp var by it
+
+      random_list = {
+        var:global.MLTWD_rhode_cyprus_preperation = {
+          164 = {
+            transfer_state_to = MLT
+          }
+          164 = { add_core_of = MLT }
+        }
+        var:no_chance = {
+
+        }
+      }
+
+      random_list = {
+        var:global.MLTWD_rhode_cyprus_preperation = {
+          183 = {
+            transfer_state_to = MLT
+          }
+          183 = { add_core_of = MLT }
+        }
+        var:no_chance = {
+          
+        }
+      }
+
+      random_list = {
+        var:global.MLTWD_rhode_cyprus_preperation = {
+          TUR = {
+            declare_war_on = {
+              target = FROM
+              type = annex_everything
+            }
+          }
+        }
+        var:no_chance = {
+
+        }
+      }
+    }
+    timeout_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision timeout MLTWD_battle_for_rhodes"
+      set_temp_variable = { no_chance = 100 }
+      subtract_from_temp_variable = { no_chance = global.MLTWD_rhode_cyprus_preperation }   # assuming your var is an integer value here, else set a second temp var, multiply it by a 100 and then subtract the first temp var by it
+
+      random_list = {
+        var:global.MLTWD_rhode_cyprus_preperation = {
+          164 = {
+            transfer_state_to = MLT
+          }
+          164 = { add_core_of = MLT }
+        }
+        var:no_chance = {
+
+        }
+      }
+
+      random_list = {
+        var:global.MLTWD_rhode_cyprus_preperation = {
+          183 = {
+            transfer_state_to = MLT
+          }
+          183 = { add_core_of = MLT }
+
+        }
+        var:no_chance = {
+          
+        }
+      }
+
+      random_list = {
+        var:global.MLTWD_rhode_cyprus_preperation = {
+          TUR = {
+            declare_war_on = {
+              target = FROM
+              type = annex_everything
+            }
+          }
+        }
+        var:no_chance = {
+
+        }
+      }
+    }
+  }
+
+  # prepare the marines (+5% doable 2 times) 25pp
+  # prepare the fleet (+5% doable 2 times) 25pp
+  # prepare the airforce (+5% doable 2 times) 25pp
+  # ask (insert current owner of crete) for docking rights (+10% if they agree) 50pp
+  # mobilize the christian partisans (+20%) 100pp
+  # create distraction in anatolia (+20%) 100pp
+  # gain the support of the greeks of cyprus (+20%) 150pp
+  # bribe ottoman politicians (+10%) 100pp
+  # send out our spies (+10% needs a agency) 50pp
+
+  MLTWD_prepare_the_marines = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 25
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_prepare_the_marines"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 5
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_prepare_the_fleet = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 25
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_prepare_the_fleet"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 5
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_prepare_the_airforce = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 25
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_prepare_the_airforce"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 5
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_ask_for_docking_rights = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    days_re_enable = 15
+
+    visible = {
+      check_variable = { global.MLTWD_rhode_docking_right_attempts < 3 }
+    }
+
+    cost = 50
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_ask_for_docking_rights"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 10
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_mobilize_the_christian_partisans = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 100
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_mobilize_the_christian_partisans"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 20
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    } 
+  }
+
+  MLTWD_create_distraction_in_anatolia = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 100
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_create_distraction_in_anatolia"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 20
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_gain_the_support_of_the_greeks_of_cyprus = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 150
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_gain_the_support_of_the_greeks_of_cyprus"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 20
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_bribe_ottoman_politicians = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    cost = 100
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_bribe_ottoman_politicians"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 10
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+
+  MLTWD_send_out_our_spies = {
+    icon = generic_prepare_civil_war
+    allowed = { always = yes }
+    cancel_if_not_visible = yes
+    
+    visible = {
+      has_intelligence_agency = yes
+    }
+
+    cost = 50
+    fire_only_once = no
+    days_remove = 10
+
+    ai_will_do = {
+      factor = 0
+    }
+
+    remove_effect = {
+      log = "[GetDateText]: [Root.GetName]: Decision remove MLTWD_send_out_our_spies"
+      add_to_variable = {
+        global.MLTWD_rhode_cyprus_preperation = 10
+      }
+      clamp_variable = {
+        var = global.MLTWD_rhode_cyprus_preperation
+        min = 0
+        max = 100
+      }
+    }
+  }
+}

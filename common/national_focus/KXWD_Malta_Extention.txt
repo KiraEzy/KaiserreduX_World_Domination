@@ -24,7 +24,7 @@ shared_focus = {
 		
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus MLTWD_Call_the_pope"
-		
+        set_variable = { global.MLTWD_pope_support = 40 }
 	}
 }
 
@@ -41,7 +41,7 @@ shared_focus = {
     relative_position_id = MLTWD_Call_the_pope
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_harken_to_peoples_crusade"
-        add_ideas = MLT_peoples_crusade
+        add_ideas = MLTWD_international_christian_volunteers
     }
 }
 
@@ -58,7 +58,7 @@ shared_focus = {
     relative_position_id = MLTWD_harken_to_peoples_crusade
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_honor_our_lady_of_philermos"
-        add_ideas = MLT_our_lady
+        add_ideas = MLTWD_our_lady
         add_research_slot = 1
     }
 }
@@ -76,20 +76,9 @@ shared_focus = {
     relative_position_id = MLTWD_honor_our_lady_of_philermos
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_seize_rhodes"
-        TUR = {
-            country_event = mlt.36
-        }
+        set_variable = { global.MLTWD_rhode_cyprus_preperation = 0 }
+        set_variable = { global.MLTWD_rhode_docking_right_attempts = 0 }
 
-        183 = {
-            add_claim_by = MLT
-        }
-        TUR = {
-            country_event = {
-                id = mlt.59
-                days = 5
-            }
-        }
-    
     }
 }
 
@@ -129,7 +118,7 @@ shared_focus = {
     relative_position_id = MLTWD_Call_the_pope
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_make_blessed_gerard_proud"
-        add_ideas = MLT_blessed_gerard
+        add_ideas = MLTWD_blessed_gerard
     
     }
 }
@@ -147,7 +136,7 @@ shared_focus = {
     relative_position_id = MLTWD_make_blessed_gerard_proud
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_tuitio_fide"
-        add_ideas = MLT_defender_of_faith
+        add_ideas = MLTWD_defender_of_faith
         hidden_effect = {
             country_event = {
                 id = mlt.133
@@ -170,7 +159,7 @@ shared_focus = {
     relative_position_id = MLTWD_tuitio_fide
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_purchase_ships"
-    
+        
     }
 }
 
@@ -187,7 +176,7 @@ shared_focus = {
     relative_position_id = MLTWD_purchase_ships
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_an_army_worth_of_god"
-        # add_ideas = MLT_an_army_worth_of_god
+        add_ideas = MLTWD_an_army_worth_of_god_idea
     
     }
 }
@@ -208,10 +197,8 @@ shared_focus = {
     relative_position_id = MLTWD_an_army_worth_of_god
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_deus_vult"
-        swap_ideas = {
-			remove_idea = MLT_blessed_gerard
-			add_idea = MLT_blessed_gerard2
-        }
+        add_manpower = 50000
+        add_ideas = MLTWD_preparations_complete
     }
 }
 
@@ -251,6 +238,1118 @@ shared_focus = {
         log = "[GetDateText]: [Root.GetName]: Focus MLTWD_destroy_albania"
         create_wargoal = {
             target = ALB
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_rebuilding_the_holy_land
+    icon = GFX_ITA_rise
+    x = 65
+	y = 9
+    cost = 0
+    
+    available = {
+        AND = {
+            has_completed_focus = MLT_rebuilding_holy_place
+            has_completed_focus = MLT_encourge_pilgrimages
+            has_completed_focus = MLT_fate_of_the_status_quo
+            has_completed_focus = MLTWD_deus_vult
+        }
+    }
+
+    completion_reward = {
+        add_ideas = MLTWD_rebuilding_the_holy_land_1
+    }
+}
+
+shared_focus = {
+    id = MLTWD_establish_guild_economy
+    icon = GFX_ITA_corrupt
+    x = 1
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_rebuilding_the_holy_land
+    }
+    relative_position_id = MLTWD_rebuilding_the_holy_land
+    completion_reward = {
+        add_ideas = MLTWD_christian_guild_economy
+    }
+}
+
+shared_focus = {
+    id = MLTWD_develop_all_provinces
+    icon = GFX_goal_NEE_Meritocracy_Focused_Growing_Urban_Heart
+    x = -1
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_rebuilding_the_holy_land
+    }
+    relative_position_id = MLTWD_rebuilding_the_holy_land
+    completion_reward = {
+        MLT = {
+            every_core_state = {
+                add_extra_state_shared_building_slots = 5
+                add_building_construction = {
+                    type = infrastructure
+                    level = 2
+                    instant_build = yes
+                } 
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_establish_the_grand_missionary_council
+    icon = GFX_ITA_armed
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_establish_guild_economy
+    }
+    relative_position_id = MLTWD_establish_guild_economy
+    completion_reward = {
+        add_ideas = MLTWD_grand_missionary_council
+    }
+}
+
+shared_focus = {
+    id = MLTWD_rebuilding_completed
+    icon = GFX_goal_IRE_generic_construction
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_develop_all_provinces
+    }
+    relative_position_id = MLTWD_develop_all_provinces
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = MLTWD_rebuilding_the_holy_land_1
+            add_idea = MLTWD_rebuilding_the_holy_land_2
+        }
+        random_core_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }        
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            } 
+        }
+        random_core_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }        
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            } 
+        }
+        random_core_state = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            } 
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }        
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_renew_the_crusades
+    icon = GFX_BBR_power_of_faith
+    x = 1
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_rebuilding_completed
+    }
+    prerequisite = {
+        focus = MLTWD_establish_the_grand_missionary_council
+    }
+    relative_position_id = MLTWD_rebuilding_completed
+    completion_reward = {
+        add_political_power = 200
+        add_war_support = 0.2
+    }
+}
+
+shared_focus = {
+    id = MLTWD_retake_the_italian_peninsula
+    icon = GFX_ITA_united
+    x = -2
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_renew_the_crusades
+    }
+    relative_position_id = MLTWD_renew_the_crusades
+    completion_reward = {
+        create_wargoal = {
+            target = SIC
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ITA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = SRI
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = SRD
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_cursade_aginst_the_heart_of_syndicalism
+    icon = GFX_ITA_syndie_kill
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_retake_the_italian_peninsula
+    }
+    relative_position_id = MLTWD_retake_the_italian_peninsula
+    completion_reward = {
+        create_wargoal = {
+            target = FRA
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_restore_british_catholicism
+    icon = GFX_goal_CAN_britain_surrounded
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_cursade_aginst_the_heart_of_syndicalism
+    }
+    relative_position_id = MLTWD_cursade_aginst_the_heart_of_syndicalism
+    completion_reward = {
+        create_wargoal = {
+            target = ENG
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_take_iberian_peninsula
+    icon = GFX_goal_MLTWD_take_iberian_peninsula
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_restore_british_catholicism
+    }
+    relative_position_id = MLTWD_restore_british_catholicism
+    completion_reward = {
+        create_wargoal = {
+            target = POR
+            type = annex_everything
+        }
+        41 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+
+    }
+}
+
+shared_focus = {
+    id = MLTWD_sail_to_the_new_world
+    icon = GFX_goal_MLTWD_take_south_america
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_take_iberian_peninsula
+    }
+    relative_position_id = MLTWD_take_iberian_peninsula
+    completion_reward = {
+        create_wargoal = {
+            target = BRA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ARG
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = CHL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = PAR
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = BOL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = COL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = VEN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ECU
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = FOP
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = CAF
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_expand_in_the_new_world
+    icon = GFX_goal_MLTWD_take_north_america
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_sail_to_the_new_world
+    }
+    relative_position_id = MLTWD_sail_to_the_new_world
+    completion_reward = {
+        361 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+
+        375 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+
+        797 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+
+        797 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+
+        395 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        create_wargoal = {
+            target = CAN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = QUE
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = NFL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ALA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = MEX
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = GUA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = HON
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ELS
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = NIC
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = PAN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = COS
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = CEN
+            type = annex_everything
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shared_focus = {
+    id = MLTWD_crusade_to_africa
+    icon = GFX_goal_MLTWD_take_west_africa
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_renew_the_crusades
+    }
+    relative_position_id = MLTWD_renew_the_crusades
+    completion_reward = {
+        create_wargoal = {
+            target = NFA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = MOR
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_take_the_horn
+    icon = GFX_goal_MLTWD_take_horn_of_africa
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_crusade_to_africa
+    }
+    relative_position_id = MLTWD_crusade_to_africa
+    completion_reward = {
+        create_wargoal = {
+            target = ETH
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ERI
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = SOM
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = DJI
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = KEN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = KIK
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_into_mittelafrika
+    icon = GFX_goal_MLTWD_take_mittleafrika
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_take_the_horn
+    }
+    relative_position_id = MLTWD_take_the_horn
+    completion_reward = {
+        
+        881 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        879 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        718 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        1185 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        928 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        952 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        975 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        813 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_last_part_of_africa
+    icon = GFX_goal_MLTWD_take_south_africa
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_into_mittelafrika
+    }
+    relative_position_id = MLTWD_into_mittelafrika
+    completion_reward = {
+        541 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        275 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        946 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        545 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        540 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        544 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_asia_through_persia
+    icon = GFX_goal_MLTWD_take_persia
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_last_part_of_africa
+    }
+    relative_position_id = MLTWD_last_part_of_africa
+    completion_reward = {
+        create_wargoal = {
+            target = PER
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = AFG
+            type = annex_everything
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shared_focus = {
+    id = MLTWD_to_the_balkans
+    icon = GFX_goal_MLTWD_take_balkan
+    x = 2
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_renew_the_crusades
+    }
+    relative_position_id = MLTWD_renew_the_crusades
+    completion_reward = {
+        create_wargoal = {
+            target = BUL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = SER
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ROM
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = HUN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ALB
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_reconqour_former_austria
+    icon = GFX_BAY_TAKE_AUSTRIA
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_to_the_balkans
+    }
+    relative_position_id = MLTWD_to_the_balkans
+    completion_reward = {
+        create_wargoal = {
+            target = AUS
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = HOL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = BEL
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_reinstate_the_hre
+    icon = GFX_goal_AUS_HRE
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_reconqour_former_austria
+    }
+    relative_position_id = MLTWD_reconqour_former_austria
+    completion_reward = {
+        create_wargoal = {
+            target = SWE
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = NOR
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = DEN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = ICE
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = FIN
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_nordic_crusade
+    icon = GFX_goal_MLTWD_take_nordic
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_reinstate_the_hre
+    }
+    relative_position_id = MLTWD_reinstate_the_hre
+    completion_reward = {
+        create_wargoal = {
+            target = POL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = LAT
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = LIT
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = EST
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = BAT
+            type = annex_everything
+        }
+        219 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        create_wargoal = {
+            target = POL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = UKR
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = WHR
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_eastern_crusade
+    icon = GFX_goal_MLTWD_take_east
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_nordic_crusade
+    }
+    relative_position_id = MLTWD_nordic_crusade
+    completion_reward = {
+        
+    }
+}
+
+shared_focus = {
+    id = MLTWD_destroy_central_asia
+    icon = GFX_goal_MLTWD_take_indochina
+    x = 1
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_eastern_crusade
+    }
+
+    prerequisite = {
+        focus = MLTWD_asia_through_persia
+    }
+
+    relative_position_id = MLTWD_asia_through_persia
+    completion_reward = {
+        create_wargoal = {
+            target = ALO
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = TRK
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = KHI
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = UZB
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_slay_the_sun_and_dragon
+    icon = GFX_goal_MLTWD_slay_sun_and_dragon
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_destroy_central_asia
+    }
+
+    relative_position_id = MLTWD_destroy_central_asia
+    completion_reward = {
+        create_wargoal = {
+            target = JAP
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = KOR
+            type = annex_everything
+        }
+        613 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        1006 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        602 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        593 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        325 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        605 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        597 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        1072 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        604 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        322 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        330 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        716 = { 
+            owner = { 
+                MLT = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_crusade_to_india
+    icon = GFX_goal_MLTWD_take_india
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_slay_the_sun_and_dragon
+    }
+
+    relative_position_id = MLTWD_slay_the_sun_and_dragon
+    completion_reward = {
+        create_wargoal = {
+            target = DEH
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = PRF
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = BHC
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = MAD
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_crusade_to_indochina
+    icon = GFX_goal_MLTWD_take_indochina
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_crusade_to_india
+    }
+
+    relative_position_id = MLTWD_crusade_to_india
+    completion_reward = {
+        create_wargoal = {
+            target = BRM
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = GEA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = SIA
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = VIN
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = CAM
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = LAO
             type = annex_everything
         }
     }
