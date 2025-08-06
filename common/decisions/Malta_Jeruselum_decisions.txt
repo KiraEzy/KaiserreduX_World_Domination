@@ -199,6 +199,7 @@ MLT_great_game = {
           state = 785
           state = 762
           state = 763
+          state = 779
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -249,6 +250,7 @@ MLT_great_game = {
             785 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             762 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             763 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            779 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -342,6 +344,7 @@ MLT_great_game = {
           785 = { add_core_of = FRA }
           762 = { add_core_of = FRA }
           763 = { add_core_of = FRA }
+          779 = { add_core_of = FRA }
           FRA = { 
             every_core_state = {
               limit = {
@@ -860,7 +863,34 @@ MLT_great_game = {
         state = 797
         state = 829
         state = 798
- 
+ 				state = 276
+				state = 464
+				state = 465
+				state = 466
+				state = 467
+				state = 468
+				state = 469
+				state = 470
+				state = 471
+				state = 472
+				state = 473
+				state = 682
+				state = 683
+				state = 739
+				state = 740
+				state = 832
+				state = 1330
+				state = 1331
+				state = 1332
+				state = 331
+				state = 332
+				state = 730
+        state = 1350
+				state = 463
+				state = 1273
+				state = 1348
+				state = 1349
+        state = 696
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -964,6 +994,34 @@ MLT_great_game = {
 						797 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
 						829 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
 						798 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            276 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        464 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        465 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        466 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        467 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        468 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        469 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        470 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        471 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        472 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        473 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        682 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        683 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        739 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        740 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        832 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1330 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1331 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1332 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        331 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        332 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        730 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1350 = { owner = { OR = { original_tag = mlt is_subject_of = mlt } } }
+		        463 = { owner = { OR = { original_tag = mlt is_subject_of = mlt } } }
+		        1273 = { owner = { OR = { original_tag = mlt is_subject_of = mlt } } }
+		        1348 = { owner = { OR = { original_tag = mlt is_subject_of = mlt } } }
+		        1349 = { owner = { OR = { original_tag = mlt is_subject_of = mlt } } }
+            696 = { owner = { OR = { original_tag = mlt is_subject_of = mlt } } }
 					}
 				}
         NOT = {
@@ -1110,7 +1168,34 @@ MLT_great_game = {
           797 = { add_core_of = USA }
           829 = { add_core_of = USA }
           798 = { add_core_of = USA }
-					
+				  276 = { add_core_of = USA }
+		      464 = { add_core_of = USA }
+	      	465 = { add_core_of = USA }
+	      	466 = { add_core_of = USA }
+		      467 = { add_core_of = USA }
+		      468 = { add_core_of = USA }
+		      469 = { add_core_of = USA }
+		      470 = { add_core_of = USA }
+		      471 = { add_core_of = USA }
+		      472 = { add_core_of = USA }
+		      473 = { add_core_of = USA }
+	      	682 = { add_core_of = USA }
+	      	683 = { add_core_of = USA }
+	      	739 = { add_core_of = USA }
+		      740 = { add_core_of = USA }
+		      832 = { add_core_of = USA }
+	      	1330 = { add_core_of = USA }
+		      1331 = { add_core_of = USA }
+		      1332 = { add_core_of = USA }
+		      331 = { add_core_of = USA }
+		      332 = { add_core_of = USA }
+		      730 = { add_core_of = USA }
+          1350 = { add_core_of = USA }
+		      463 = { add_core_of = USA }
+		      1273 = { add_core_of = USA }
+		      1348 = { add_core_of = USA }
+		      1349 = { add_core_of = USA }
+          696 = { add_core_of = USA }
           USA = { 
             every_core_state = {
               limit = {
@@ -1149,7 +1234,6 @@ MLT_great_game = {
           state = 1144
           state = 1100
           state = 1206
-          state = 182
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -1178,7 +1262,6 @@ MLT_great_game = {
             1144 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1100 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1206 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-            182 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -1249,9 +1332,8 @@ MLT_great_game = {
           759 = { add_core_of = VNC }
           736 = { add_core_of = VNC }
           1144 = { add_core_of = VNC }
-          1108 = { add_core_of = VNC }
+          1100 = { add_core_of = VNC }
           1206 = { add_core_of = VNC }
-          182 = { add_core_of = VNC }
           VNC = { 
             every_core_state = {
               limit = {
@@ -1403,131 +1485,110 @@ MLT_great_game = {
     }
   }
 
-  MLT_great_game_republic_of_genoa = {
-    icon = generic_prepare_civil_war
-    highlight_states = {
-      highlight_state_targets = {
-        state = 838
-        state = 158
-      }
-      highlight_color_while_active = 3
-      highlight_color_before_active = 2
-    } 
-    allowed = {
-        tag = MLT
-    }
-    visible = {
+MLT_Great_Game_Sardinia_Piedmont = {
+	icon = generic_prepare_civil_war
 
-    }
-    available = {
-      AND = {
-        AND = {
-          if = {
-            limit = {
-              country_exists = ITA
-            }
-            ITA = { 
-              is_subject_of = MLT
-            }
-          }
-          ITA = { 
-            838 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-            158 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-          }
-        }
-        NOT = {
-          ITA = { 
-              has_country_flag = mlt_formable 
-          }
-        }
-      }                
-    }
+		highlight_states = {
+			highlight_state_targets = {
+				state = 158
+				state = 838
+				state = 1003
+				state = 114
+				state = 1002
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 
-    cost = 30
+	available = {
+		158 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		838 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1003 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		114 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1002 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
 
-    remove_effect = {
-      hidden_effect = { 
-        release = ITA
-        add_political_power = 75
-        ITA = {
-          load_focus_tree = generic_focus
-  
-          set_capital = { state = 160 }
-          
-          ### Leader
-          create_country_leader = {
-            name = "Ferdinando Bocca"
-            picture = "gfx/leaders/ITA/Portrait_ITA_Ferdinando_Bocca.png"
-            expire = "1.1.1"
-            ideology = absolute_monarchy_subtype
-            traits = {}
-          }
-  
-          ### Politics
-          set_popularities = {
-            totalist = 0
-            radical_socialist = 0
-            syndicalist = 0
-            social_democrat = 10
-            social_liberal = 0
-            market_liberal = 10
-            social_conservative = 20
-            authoritarian_democrat = 10
-            paternal_autocrat = 40
-            national_populist = 10
-          }
-          set_party_name = {
-            ideology = paternal_autocrat
-            long_name = "Order of St John"
-            name = "OSJ"
-          }
-          set_politics = {
-            ruling_party = paternal_autocrat
-            elections_allowed = no
-          }
-          set_cosmetic_tag = mlt_formable
-          set_cosmetic_tag = ITA_MLT_OCC
-        }
-        MLT = {
-          set_autonomy = {
-            target = ITA
-            autonomous_state = kx_colored_puppet
-          }
-        }
-        ITA = { 
-          every_core_state = {
-            remove_core_of = ITA
-          }
+	fire_only_once = yes
 
-          838 = { add_core_of = ITA }
-          158 = { add_core_of = ITA }
-          ITA = { 
-            every_core_state = {
-              limit = {
-                AND = {
-                  NOT = { 
-                    is_core_of = MLT
-                  }
-                  OR = {
-                    is_owned_by = MLT
-                    OWNER = { is_subject_of = MLT} 
-                  }
-                }
-              }
-              transfer_state_to = ITA
-            }
-          }
-        }
-      }
-    }
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = SRD
+		SRD = {
+			every_core_state = {
+				remove_core_of = SRD
+			}
+		}
+		158 = { add_core_of = SRD }
+		838 = { add_core_of = SRD }
+		1003 = { add_core_of = SRD }
+		114 = { add_core_of = SRD }
+		1002 = { add_core_of = SRD }
 
-    days_remove = 0
-    fire_only_once = yes
+		SRD = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = SRD
+			}
+		}
+		SRD = { 
+			set_cosmetic_tag = MLT_SRD_OCC
+			load_focus_tree = generic_focus            
 
-    ai_will_do = {
-        factor = 60
-    }
-  }
+			create_country_leader = {
+				name = "Amadeo I"
+				picture = "gfx/leaders/SRD/Portrait_SRD_King_Amedeo.png"
+				expire = "1.1.1"
+				ideology = Absolute_monarchy_subtype
+				traits = {}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of the Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "OSJ"
+				long_name = "OSJ"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = SRD
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
 
   MLT_great_game_duchy_of_modena = {
       icon = generic_prepare_civil_war
@@ -1695,6 +1756,10 @@ MLT_great_game = {
           state = 567
           state = 571
           state = 1202
+          state = 654
+          state = 1293
+          state = 811
+          state = 329
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -1753,6 +1818,10 @@ MLT_great_game = {
             567 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             571 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1202 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            654 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1293 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            811 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            329 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -1855,6 +1924,10 @@ MLT_great_game = {
           567 = { add_core_of = SIB }
           571 = { add_core_of = SIB }
           1202 = { add_core_of = SIB }
+          654 = { add_core_of = SIB }
+          1293 = { add_core_of = SIB }
+          811 = { add_core_of = SIB }
+          329 = { add_core_of = SIB }
     
           SIB = { 
             every_core_state = {
@@ -1943,7 +2016,6 @@ MLT_great_game = {
           state = 260
           state = 262
           state = 1287
-          state = 1288
           state = 1289
           state = 1290
           state = 1291
@@ -1955,12 +2027,45 @@ MLT_great_game = {
           state = 1328
           state = 821
           state = 351
-          state = 880
           state = 397
           state = 398
           state = 399
           state = 400
           state = 401
+          state = 218
+				  state = 237
+				  state = 238
+				  state = 245
+				  state = 1226
+				  state = 1231
+				  state = 1263
+				  state = 1264
+				  state = 1265
+				  state = 137
+				  state = 196
+				  state = 200
+				  state = 227
+				  state = 228
+				  state = 1220
+				  state = 1221
+				  state = 1234
+				  state = 1282
+				  state = 1283
+				  state = 1286
+				  state = 221
+				  state = 225
+				  state = 259
+				  state = 1238
+				  state = 1239
+				  state = 1243
+				  state = 1285
+				  state = 1284
+				  state = 193
+				  state = 241
+				  state = 1230
+				  state = 1237
+				  state = 1242
+          state = 406
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -2038,7 +2143,6 @@ MLT_great_game = {
             260 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             262 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1287 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-            1288 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1289 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1290 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1291 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
@@ -2050,12 +2154,45 @@ MLT_great_game = {
             1328 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             821 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             351 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-            880 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             397 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             398 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             399 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             400 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             401 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            218 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        237 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        238 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	245 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1226 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1231 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1263 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1264 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1265 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        137 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        196 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	200 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        227 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        228 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        1220 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1221 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1234 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	         	1282 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1283 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1286 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	221 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	225 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	259 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	        	1238 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1239 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1243 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1285 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1284 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	193 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	241 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1230 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1237 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		      	1242 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            406 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -2080,7 +2217,7 @@ MLT_great_game = {
           ### Leader
           create_country_leader = {
             name = "Jan Cieplak"
-            picture = "gfx/leaders/NFA/Portrait_Jan_Cieplak.png"
+            picture = "gfx/leaders/MLTCRU/Portrait_Jan_Cieplak.png"
             expire = "1.1.1"
             ideology = absolute_monarchy_subtype
             traits = {}
@@ -2176,7 +2313,6 @@ MLT_great_game = {
           260 = { add_core_of = RUS }
           262 = { add_core_of = RUS }
           1287 = { add_core_of = RUS }
-          1288 = { add_core_of = RUS }
           1289 = { add_core_of = RUS }
           1290 = { add_core_of = RUS }
           1291 = { add_core_of = RUS }
@@ -2188,12 +2324,50 @@ MLT_great_game = {
           1328 = { add_core_of = RUS }
           821 = { add_core_of = RUS }
           351 = { add_core_of = RUS }
-          880 = { add_core_of = RUS }
+          880 = { remove_core_of = RUS }
           397 = { add_core_of = RUS }
           398 = { add_core_of = RUS }
           399 = { add_core_of = RUS }
           400 = { add_core_of = RUS }
           401 = { add_core_of = RUS }
+          654 = { remove_core_of = RUS }
+          1293 = { remove_core_of = RUS }
+          811 = { remove_core_of = RUS }
+          218 = { add_core_of = RUS }
+		      237 = { add_core_of = RUS }
+		      238 = { add_core_of = RUS }
+		      245 = { add_core_of = RUS }
+		      1226 = { add_core_of = RUS }
+		      1231 = { add_core_of = RUS }
+		      1263 = { add_core_of = RUS }
+		      1264 = { add_core_of = RUS }
+		      1265 = { add_core_of = RUS }
+		      137 = { add_core_of = RUS }
+		      196 = { add_core_of = RUS }
+		      200 = { add_core_of = RUS }
+		      227 = { add_core_of = RUS }
+		      228 = { add_core_of = RUS }
+		      1220 = { add_core_of = RUS }
+		      1221 = { add_core_of = RUS }
+		      1234 = { add_core_of = RUS }
+		      1282 = { add_core_of = RUS }
+		      1283 = { add_core_of = RUS }
+		      1286 = { add_core_of = RUS }
+		      221 = { add_core_of = RUS }
+		      225 = { add_core_of = RUS }
+		      259 = { add_core_of = RUS }
+		      1238 = { add_core_of = RUS }
+		      1239 = { add_core_of = RUS }
+		      1243 = { add_core_of = RUS }
+		      1285 = { add_core_of = RUS }
+		      1284 = { add_core_of = RUS }
+		      193 = { add_core_of = RUS }
+		      241 = { add_core_of = RUS }
+		      1230 = { add_core_of = RUS }
+		      1237 = { add_core_of = RUS }
+		      1242 = { add_core_of = RUS }
+          406 = { add_core_of = RUS }
+          1288 = { remove_core_of = RUS }
           RUS = { 
             every_core_state = {
               limit = {
@@ -2312,7 +2486,6 @@ MLT_great_game = {
           state = 897
           state = 1012
           state = 1014
-
           state = 1015
           state = 1013
           state = 602
@@ -2320,6 +2493,16 @@ MLT_great_game = {
           state = 595
           state = 1046
           state = 1066
+          state = 747
+				  state = 609
+				  state = 743
+				  state = 746
+				  state = 326
+				  state = 728
+				  state = 729
+				  state = 744
+				  state = 801
+				  state = 996
         }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -2435,6 +2618,16 @@ MLT_great_game = {
             595 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1046 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1066 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            747 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        609 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        743 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        746 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        326 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        728 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        729 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        744 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        801 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		        996 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -2593,6 +2786,16 @@ MLT_great_game = {
           595 = { add_core_of = CHI }
           1046 = { add_core_of = CHI }
           1066 = { add_core_of = CHI }
+          747 = { add_core_of = HUN }
+		      609 = { add_core_of = HUN }
+		      743 = { add_core_of = HUN }
+          746 = { add_core_of = HUN }
+		      326 = { add_core_of = HUN }
+		      728 = { add_core_of = HUN }
+		      729 = { add_core_of = HUN }
+		      744 = { add_core_of = HUN }
+		      801 = { add_core_of = HUN }
+		      996 = { add_core_of = HUN }
           CHI = { 
             every_core_state = {
               limit = {
@@ -2641,6 +2844,12 @@ MLT_great_game = {
           state = 536
           state = 537
           state = 282
+          state = 1353
+          state = 1354
+          state = 1356
+          state = 1355
+          state = 1351
+          state = 1352
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -2679,6 +2888,12 @@ MLT_great_game = {
             536 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             537 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             282 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1351 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1352 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1353 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1354 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1355 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1356 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -2760,6 +2975,12 @@ MLT_great_game = {
           536 = { add_core_of = JAP }
           537 = { add_core_of = JAP }
           282 = { add_core_of = JAP }
+          1351 = { add_core_of = JAP }
+          1352 = { add_core_of = JAP }
+          1353 = { add_core_of = JAP }
+          1354 = { add_core_of = JAP }
+          1355 = { add_core_of = JAP }
+          1356 = { add_core_of = JAP }
           JAP = { 
             every_core_state = {
               limit = {
@@ -2794,6 +3015,9 @@ MLT_great_game = {
       highlight_state_targets = {
           state = 525
           state = 527
+          state = 1347
+          state = 1345
+          state = 1346
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -2818,6 +3042,9 @@ MLT_great_game = {
           KOR = { 
             525 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             527 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1347= { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1346 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1345 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -2885,6 +3112,9 @@ MLT_great_game = {
           }
           525 = { add_core_of = KOR }
           527 = { add_core_of = KOR }
+          1347 = { add_core_of = KOR }
+          1346 = { add_core_of = KOR }
+          1345 = { add_core_of = KOR }
           KOR = { 
             every_core_state = {
               limit = {
@@ -3072,6 +3302,8 @@ MLT_great_game = {
           state = 461
           state = 462
           state = 860
+          state = 515
+          state = 911
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -3119,6 +3351,8 @@ MLT_great_game = {
             461 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             462 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             860 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            515 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            911 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -3213,6 +3447,8 @@ MLT_great_game = {
           461 = { add_core_of = ALG }
           462 = { add_core_of = ALG }
           860 = { add_core_of = ALG }
+          515 = { add_core_of = ALG }
+          911 = { add_core_of = ALG }
           ALG = { 
             every_core_state = {
               limit = {
@@ -3241,6 +3477,4372 @@ MLT_great_game = {
     }
   }
 
+MLT_Great_Game_Lombardy = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 159
+        state = 761
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		159 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+    761 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = LOM
+		LOM = {
+			every_core_state = {
+				remove_core_of = LOM
+			}
+		}
+		159 = { add_core_of = LOM }
+    761 = { add_core_of = LOM }
+
+		LOM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = LOM
+			}
+		}
+		LOM = { 
+			set_cosmetic_tag = MLT_LOM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Marcello Visconti di Modrone"
+                picture = "gfx/leaders/LOM/Portrait_LOM_Marcello_Visconti_Modrone.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of the Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "OSJ"
+				long_name = "OSJ"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = LOM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_Great_Game_Naples = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 156
+				state = 117
+				state = 1006
+				state = 837
+				state = 742
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		156 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		117 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1006 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		837 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		742 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = SIC
+		SIC = {
+			every_core_state = {
+				remove_core_of = SIC
+			}
+		}
+		156 = { add_core_of = SIC }
+		117 = { add_core_of = SIC }
+		1006 = { add_core_of = SIC }
+		837 = { add_core_of = SIC }
+		742 = { add_core_of = SIC }
+
+		SIC = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = SIC
+			}
+		}
+		SIC = { 
+			set_cosmetic_tag = MLT_SIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Ferdinando III"
+                picture = "gfx/leaders/SIC/Portrait_SIC_Ferdinand_Pius_di_Borbone.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of the Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "OSJ"
+				long_name = "OSJ"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = SIC
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_IRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 135
+				state = 113
+				state = 134
+				state = 119
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		135 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		113 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		134 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		119 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = IRE
+		IRE = {
+			every_core_state = {
+				remove_core_of = IRE
+			}
+		}
+		135 = { add_core_of = IRE }
+		113 = { add_core_of = IRE }
+		134 = { add_core_of = IRE }
+		119 = { add_core_of = IRE }
+
+		IRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = IRE
+			}
+		}
+		IRE = { 
+			set_cosmetic_tag = MLT_IRE_OCC
+			load_focus_tree = generic_focus            
+
+			 create_country_leader = {
+                name = "Hugo O'Neill"
+                picture = "gfx/leaders/IRE/Portrait_Ireland_Hugo_O'Neill_Royal.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of the Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "OSJ"
+				long_name = "Order of the Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = IRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_ENG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 120
+				state = 121
+				state = 122
+				state = 123
+				state = 125
+				state = 126
+				state = 127
+				state = 128
+				state = 129
+				state = 130
+				state = 131
+				state = 132
+				state = 133
+				state = 136
+				state = 338
+				state = 938
+				state = 1225
+				state = 1315
+				state = 1317
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		120 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		121 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		122 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		123 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		125 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		126 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		127 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		128 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		129 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		130 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		131 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		132 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		133 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		136 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		338 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		938 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1225 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1315 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1317 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = ENG
+		ENG = {
+			every_core_state = {
+				remove_core_of = ENG
+			}
+		}
+		120 = { add_core_of = ENG }
+		121 = { add_core_of = ENG }
+		122 = { add_core_of = ENG }
+		123 = { add_core_of = ENG }
+		125 = { add_core_of = ENG }
+		126 = { add_core_of = ENG }
+		127 = { add_core_of = ENG }
+		128 = { add_core_of = ENG }
+		129 = { add_core_of = ENG }
+		130 = { add_core_of = ENG }
+		131 = { add_core_of = ENG }
+		132 = { add_core_of = ENG }
+		133 = { add_core_of = ENG }
+		136 = { add_core_of = ENG }
+		338 = { add_core_of = ENG }
+		938 = { add_core_of = ENG }
+		1225 = { add_core_of = ENG }
+		1315 = { add_core_of = ENG }
+		1317 = { add_core_of = ENG }
+
+		ENG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = ENG
+			}
+		}
+		ENG = { 
+			set_cosmetic_tag = MLT_ENG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "James III"
+                picture = "gfx/leaders/GER/Portrait_Germany_Rupprecht_Jacobite.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = ENG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_AUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1235
+				state = 8
+				state = 28
+				state = 42
+				state = 50
+				state = 51
+				state = 52
+				state = 53
+				state = 54
+				state = 55
+				state = 56
+				state = 57
+				state = 58
+				state = 59
+				state = 60
+				state = 61
+				state = 62
+				state = 63
+				state = 64
+				state = 65
+				state = 66
+				state = 67
+				state = 68
+				state = 86
+				state = 1144
+				state = 1139
+				state = 1138
+				state = 780
+				state = 781
+				state = 782
+				state = 839
+				state = 1357
+				state = 4
+				state = 9
+				state = 39
+				state = 69
+				state = 71
+				state = 74
+				state = 75
+				state = 102
+				state = 152
+				state = 153
+				state = 736
+				state = 775
+				state = 783
+				state = 1272
+				state = 786
+				state = 835
+				state = 836
+				state = 942
+				state = 1100
+				state = 1101
+				state = 1103
+				state = 1104
+				state = 1129
+				state = 1130
+				state = 1131
+				state = 1132
+				state = 1133
+				state = 1134
+				state = 1137
+				state = 3
+				state = 151
+				state = 760
+				state = 6
+				state = 7
+				state = 34
+				state = 35
+				state = 36
+				state = 741
+				state = 866
+				state = 978
+				state = 979
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1235 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		8 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		28 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		42 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		50 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		51 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		52 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		53 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		54 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		55 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		56 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		57 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		58 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		59 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		60 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		61 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		62 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		63 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		64 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		65 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		66 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		67 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		68 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		86 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1144 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1139 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1138 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		780 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		781 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		782 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		839 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1357 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		4 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		9 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		39 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		69 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		71 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		74 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		75 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		102 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		152 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		153 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		736 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		775 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		783 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1272 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		786 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		835 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		836 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		942 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1100 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1101 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1103 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1104 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1129 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1130 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1131 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1132 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1133 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1134 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1137 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		3 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		151 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		760 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		6 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		7 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		34 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		35 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		36 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		741 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		866 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		978 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		979 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = AUS
+		AUS = {
+			every_core_state = {
+				remove_core_of = AUS
+			}
+		}
+		1235 = { add_core_of = AUS }
+		8 = { add_core_of = AUS }
+		28 = { add_core_of = AUS }
+		42 = { add_core_of = AUS }
+		50 = { add_core_of = AUS }
+		51 = { add_core_of = AUS }
+		52 = { add_core_of = AUS }
+		53 = { add_core_of = AUS }
+		54 = { add_core_of = AUS }
+		55 = { add_core_of = AUS }
+		56 = { add_core_of = AUS }
+		57 = { add_core_of = AUS }
+		58 = { add_core_of = AUS }
+		59 = { add_core_of = AUS }
+		60 = { add_core_of = AUS }
+		61 = { add_core_of = AUS }
+		62 = { add_core_of = AUS }
+		63 = { add_core_of = AUS }
+		64 = { add_core_of = AUS }
+		65 = { add_core_of = AUS }
+		66 = { add_core_of = AUS }
+		67 = { add_core_of = AUS }
+		68 = { add_core_of = AUS }
+		86 = { add_core_of = AUS }
+		1144 = { remove_core_of = AUS }
+		1139 = { add_core_of = AUS }
+		1138 = { add_core_of = AUS }
+		780 = { add_core_of = AUS }
+		781 = { add_core_of = AUS }
+		782 = { add_core_of = AUS }
+		839 = { add_core_of = AUS }
+		1357 = { add_core_of = AUS }
+		4 = { add_core_of = AUS }
+		9 = { add_core_of = AUS }
+		39 = { add_core_of = AUS }
+		69 = { add_core_of = AUS }
+		71 = { add_core_of = AUS }
+		74 = { add_core_of = AUS }
+		75 = { add_core_of = AUS }
+		102 = { add_core_of = AUS }
+		152 = { add_core_of = AUS }
+		153 = { add_core_of = AUS }
+		736 = { remove_core_of = AUS }
+		775 = { add_core_of = AUS }
+		783 = { add_core_of = AUS }
+		1272 = { add_core_of = AUS }
+		786 = { add_core_of = AUS }
+		835 = { add_core_of = AUS }
+		836 = { add_core_of = AUS }
+		942 = { add_core_of = AUS }
+		1100 = { remove_core_of = AUS }
+		1101 = { add_core_of = AUS }
+		1103 = { add_core_of = AUS }
+		1104 = { add_core_of = AUS }
+		1129 = { add_core_of = AUS }
+		1130 = { add_core_of = AUS }
+		1131 = { add_core_of = AUS }
+		1132 = { add_core_of = AUS }
+		1133 = { add_core_of = AUS }
+		1134 = { add_core_of = AUS }
+		1137 = { add_core_of = AUS }
+		3 = { add_core_of = AUS }
+		151 = { add_core_of = AUS }
+		760 = { add_core_of = AUS }
+		6 = { add_core_of = AUS }
+		7 = { add_core_of = AUS }
+		34 = { add_core_of = AUS }
+		35 = { add_core_of = AUS }
+		36 = { add_core_of = AUS }
+		741 = { add_core_of = AUS }
+		866 = { add_core_of = AUS }
+		978 = { add_core_of = AUS }
+		979 = { add_core_of = AUS }
+    784 = { remove_core_of = AUS }
+
+		AUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+		AUS = { 
+			set_cosmetic_tag = MLT_AUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Karl I"
+				picture = "gfx/leader/AUS/Portrait_AUS_Karl_I.png"
+				expire = "1.1.1"
+				ideology = absolute_monarchy_subtype
+				traits = {}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = AUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_CAR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+				state = 118
+				state = 165
+				state = 166
+				state = 167
+				state = 168
+				state = 169
+				state = 170
+				state = 171
+				state = 172
+				state = 173
+				state = 174
+				state = 175
+				state = 176
+				state = 177
+				state = 178
+				state = 793
+				state = 795
+				state = 940
+				state = 951
+				state = 1313
+				state = 1316
+				state = 1336
+				state = 1337
+				state = 1338
+				state = 1339
+				state = 1340
+				state = 1341
+				state = 1342
+				state = 1343
+				state = 1344
+				state = 112
+				state = 179
+				state = 180
+				state = 181
+				state = 697
+				state = 698
+				state = 702
+				state = 705
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		41 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		118 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		165 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		166 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		167 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		168 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		169 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		170 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		171 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		172 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		173 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		174 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		175 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		176 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		177 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		178 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		793 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		795 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		940 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		951 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1313 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1316 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1336 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1337 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1338 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1339 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1340 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1341 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1342 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1343 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1344 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		112 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		179 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		180 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		181 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		697 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		698 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		702 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		705 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = CAR
+		CAR = {
+			every_core_state = {
+				remove_core_of = CAR
+			}
+		}
+		41 = { add_core_of = CAR }
+		118 = { add_core_of = CAR }
+		165 = { add_core_of = CAR }
+		166 = { add_core_of = CAR }
+		167 = { add_core_of = CAR }
+		168 = { add_core_of = CAR }
+		169 = { add_core_of = CAR }
+		170 = { add_core_of = CAR }
+		171 = { add_core_of = CAR }
+		172 = { add_core_of = CAR }
+		173 = { add_core_of = CAR }
+		174 = { add_core_of = CAR }
+		175 = { add_core_of = CAR }
+		176 = { add_core_of = CAR }
+		177 = { add_core_of = CAR }
+		178 = { add_core_of = CAR }
+		793 = { add_core_of = CAR }
+		795 = { add_core_of = CAR }
+		940 = { add_core_of = CAR }
+		951 = { add_core_of = CAR }
+		1313 = { add_core_of = CAR }
+		1316 = { add_core_of = CAR }
+		1336 = { add_core_of = CAR }
+		1337 = { add_core_of = CAR }
+		1338 = { add_core_of = CAR }
+		1339 = { add_core_of = CAR }
+		1340 = { add_core_of = CAR }
+		1341 = { add_core_of = CAR }
+		1342 = { add_core_of = CAR }
+		1343 = { add_core_of = CAR }
+		1344 = { add_core_of = CAR }
+		112 = { add_core_of = CAR }
+		179 = { add_core_of = CAR }
+		180 = { add_core_of = CAR }
+		181 = { add_core_of = CAR }
+		697 = { add_core_of = CAR }
+		698 = { add_core_of = CAR }
+		702 = { add_core_of = CAR }
+		705 = { add_core_of = CAR }
+
+		CAR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = CAR
+			}
+		}
+		CAR = { 
+			set_cosmetic_tag = MLT_CAR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Carlos VIII"
+				picture = "gfx/leader/CAR/Portrait_CAR_Carlos_VIII.png"
+				expire = "1.1.1"
+				ideology = Absolute_monarchy_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = CAR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+MLT_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+				state = 45
+				state = 70
+				state = 73
+				state = 76
+				state = 82
+				state = 83
+				state = 84
+				state = 154
+				state = 155
+				state = 664
+				state = 784
+				state = 789
+				state = 875
+				state = 1106
+				state = 1107
+				state = 1108
+				state = 1109
+				state = 1110
+				state = 1111
+				state = 1112
+				state = 1113
+				state = 1114
+				state = 1115
+				state = 1116
+				state = 1117
+				state = 1118
+				state = 1119
+				state = 1120
+				state = 1121
+				state = 1122
+				state = 1123
+				state = 1135
+				state = 1136
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		43 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		45 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		70 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		73 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		76 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		82 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		83 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		84 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		154 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		155 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		664 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		784 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		789 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		875 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1106 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1107 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1108 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1109 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1110 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1111 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1112 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1113 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1114 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1115 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1116 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1117 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1118 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1119 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1120 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1121 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1122 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1123 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1135 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1136 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = HUN
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+		}
+		43 = { add_core_of = HUN }
+		45 = { add_core_of = HUN }
+		70 = { add_core_of = HUN }
+		73 = { add_core_of = HUN }
+		76 = { add_core_of = HUN }
+		82 = { add_core_of = HUN }
+		83 = { add_core_of = HUN }
+		84 = { add_core_of = HUN }
+		154 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		664 = { add_core_of = HUN }
+		784 = { add_core_of = HUN }
+		789 = { add_core_of = HUN }
+		875 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		1111 = { add_core_of = HUN }
+		1112 = { add_core_of = HUN }
+		1113 = { add_core_of = HUN }
+		1114 = { add_core_of = HUN }
+		1115 = { add_core_of = HUN }
+		1116 = { add_core_of = HUN }
+		1117 = { add_core_of = HUN }
+		1118 = { add_core_of = HUN }
+		1119 = { add_core_of = HUN }
+		1120 = { add_core_of = HUN }
+		1121 = { add_core_of = HUN }
+		1122 = { add_core_of = HUN }
+		1123 = { add_core_of = HUN }
+		1135 = { add_core_of = HUN }
+		1136 = { add_core_of = HUN }
+
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = MLT_HUN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Otto I"
+                picture = "gfx/leaders/AUS/Portrait_AUS_Otto_I.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_POL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+				state = 11
+				state = 78
+				state = 80
+				state = 87
+				state = 88
+				state = 89
+				state = 90
+				state = 91
+				state = 92
+				state = 93
+				state = 94
+				state = 95
+				state = 96
+				state = 97
+				state = 98
+				state = 189
+				state = 192
+				state = 194
+				state = 197
+				state = 198
+				state = 199
+				state = 201
+				state = 202
+				state = 203
+				state = 204
+				state = 206
+				state = 207
+				state = 226
+				state = 655
+				state = 791
+				state = 792
+				state = 997
+				state = 1087
+				state = 1088
+				state = 1124
+				state = 1125
+				state = 1126
+				state = 1127
+				state = 1140
+				state = 1148
+				state = 1222
+				state = 1228
+				state = 1232
+				state = 1233
+				state = 1240
+				state = 1241
+				state = 1244
+				state = 1245
+				state = 1294
+				state = 1295
+				state = 1314
+				state = 1319
+				state = 1320
+				state = 1329
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		10 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		11 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		78 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		80 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		87 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		88 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		89 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		90 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		91 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		92 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		93 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		94 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		95 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		96 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		97 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		98 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		189 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		192 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		194 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		197 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		198 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		199 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		201 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		202 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		203 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		204 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		206 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		207 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		226 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		655 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		791 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		792 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		997 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1087 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1088 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1124 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1125 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1126 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1127 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1140 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1148 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1222 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1228 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1232 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1233 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1240 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1241 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1244 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1245 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1294 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1295 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1314 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1319 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1320 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1329 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = POL
+		POL = {
+			every_core_state = {
+				remove_core_of = POL
+			}
+		}
+		10 = { add_core_of = POL }
+		11 = { add_core_of = POL }
+		78 = { add_core_of = POL }
+		80 = { add_core_of = POL }
+		87 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+		89 = { add_core_of = POL }
+		90 = { add_core_of = POL }
+		91 = { add_core_of = POL }
+		92 = { add_core_of = POL }
+		93 = { add_core_of = POL }
+		94 = { add_core_of = POL }
+		95 = { add_core_of = POL }
+		96 = { add_core_of = POL }
+		97 = { add_core_of = POL }
+		98 = { add_core_of = POL }
+		189 = { add_core_of = POL }
+		192 = { add_core_of = POL }
+		194 = { add_core_of = POL }
+		197 = { add_core_of = POL }
+		198 = { add_core_of = POL }
+		199 = { add_core_of = POL }
+		201 = { add_core_of = POL }
+		202 = { add_core_of = POL }
+		203 = { add_core_of = POL }
+		204 = { add_core_of = POL }
+		206 = { add_core_of = POL }
+		207 = { add_core_of = POL }
+		226 = { add_core_of = POL }
+		655 = { add_core_of = POL }
+		791 = { add_core_of = POL }
+		792 = { add_core_of = POL }
+		997 = { add_core_of = POL }
+		1087 = { add_core_of = POL }
+		1088 = { add_core_of = POL }
+		1124 = { add_core_of = POL }
+		1125 = { add_core_of = POL }
+		1126 = { add_core_of = POL }
+		1127 = { add_core_of = POL }
+		1140 = { add_core_of = POL }
+		1148 = { add_core_of = POL }
+		1222 = { add_core_of = POL }
+		1228 = { add_core_of = POL }
+		1232 = { add_core_of = POL }
+		1233 = { add_core_of = POL }
+		1240 = { add_core_of = POL }
+		1241 = { add_core_of = POL }
+		1244 = { add_core_of = POL }
+		1245 = { add_core_of = POL }
+		1294 = { add_core_of = POL }
+		1295 = { add_core_of = POL }
+		1314 = { add_core_of = POL }
+		1319 = { add_core_of = POL }
+		1320 = { add_core_of = POL }
+		1329 = { add_core_of = POL }
+
+		POL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = POL
+			}
+		}
+		POL = { 
+			set_cosmetic_tag = MLT_POL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Karol I"
+                picture = "gfx/leaders/POL/Portrait_POL_Karol_Olbracht.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = POL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_BUL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 46
+				state = 48
+				state = 77
+				state = 79
+				state = 81
+				state = 103
+				state = 104
+				state = 105
+				state = 106
+				state = 107
+				state = 108
+				state = 109
+				state = 163
+				state = 211
+				state = 212
+				state = 713
+				state = 765
+				state = 766
+				state = 767
+				state = 770
+				state = 771
+				state = 772
+				state = 794
+				state = 841
+				state = 1089
+				state = 1090
+				state = 1097
+				state = 1098
+				state = 1099
+				state = 1102
+				state = 1105
+				state = 1128
+				state = 1141
+				state = 1142
+				state = 1143
+				state = 1145
+				state = 1268
+				state = 1269
+				state = 1270
+				state = 1271
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		44 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		46 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		48 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		77 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		79 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		81 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		103 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		104 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		105 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		106 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		107 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		108 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		109 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		163 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		211 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		212 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		713 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		765 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		766 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		767 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		770 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		771 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		772 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		794 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		841 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1089 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1090 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1097 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1098 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1099 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1102 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1105 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1128 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1141 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1142 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1143 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1145 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1268 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1269 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1270 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1271 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = BUL
+		BUL = {
+			every_core_state = {
+				remove_core_of = BUL
+			}
+		}
+		44 = { add_core_of = BUL }
+		46 = { add_core_of = BUL }
+		48 = { add_core_of = BUL }
+		77 = { add_core_of = BUL }
+		79 = { add_core_of = BUL }
+		81 = { add_core_of = BUL }
+		103 = { add_core_of = BUL }
+		104 = { add_core_of = BUL }
+		105 = { add_core_of = BUL }
+		106 = { add_core_of = BUL }
+		107 = { add_core_of = BUL }
+		108 = { add_core_of = BUL }
+		109 = { add_core_of = BUL }
+		163 = { add_core_of = BUL }
+		211 = { add_core_of = BUL }
+		212 = { add_core_of = BUL }
+		713 = { add_core_of = BUL }
+		765 = { add_core_of = BUL }
+		766 = { add_core_of = BUL }
+		767 = { add_core_of = BUL }
+		770 = { add_core_of = BUL }
+		771 = { add_core_of = BUL }
+		772 = { add_core_of = BUL }
+		794 = { add_core_of = BUL }
+		841 = { add_core_of = BUL }
+		1089 = { add_core_of = BUL }
+		1090 = { add_core_of = BUL }
+		1097 = { add_core_of = BUL }
+		1098 = { add_core_of = BUL }
+		1099 = { add_core_of = BUL }
+		1102 = { add_core_of = BUL }
+		1105 = { add_core_of = BUL }
+		1128 = { add_core_of = BUL }
+		1141 = { add_core_of = BUL }
+		1142 = { add_core_of = BUL }
+		1143 = { add_core_of = BUL }
+		1145 = { add_core_of = BUL }
+		1268 = { add_core_of = BUL }
+		1269 = { add_core_of = BUL }
+		1270 = { add_core_of = BUL }
+		1271 = { add_core_of = BUL }
+    184 = { remove_core_of = BUL }
+    769 = { remove_core_of = BUL }
+    731 = { remove_core_of = BUL }
+
+		BUL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = BUL
+			}
+		}
+		BUL = { 
+			set_cosmetic_tag = MLT_BUL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = BUL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_SWE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 38
+				state = 124
+				state = 138
+				state = 139
+				state = 140
+				state = 141
+				state = 145
+				state = 666
+				state = 778
+				state = 908
+				state = 909
+				state = 960
+				state = 37
+				state = 99
+				state = 100
+				state = 101
+				state = 110
+				state = 111
+				state = 142
+				state = 143
+				state = 144
+				state = 146
+				state = 147
+				state = 148
+				state = 149
+				state = 150
+				state = 337
+				state = 840
+				state = 844
+				state = 863
+				state = 864
+				state = 865
+				state = 926
+				state = 936
+				state = 937
+				state = 1146
+				state = 1147
+				state = 1324
+				state = 1325
+				state = 1326
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		38 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		124 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		138 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		139 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		140 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		141 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		145 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		666 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		778 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		908 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		909 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		960 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		37 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		99 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		100 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		101 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		110 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		111 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		142 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		143 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		144 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		146 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		147 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		148 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		149 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		150 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		337 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		840 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		844 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		863 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		864 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		865 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		926 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		936 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		937 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1146 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1147 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1324 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1325 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1326 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = SWE
+		SWE = {
+			every_core_state = {
+				remove_core_of = SWE
+			}
+		}
+		38 = { add_core_of = SWE }
+		124 = { add_core_of = SWE }
+		138 = { add_core_of = SWE }
+		139 = { add_core_of = SWE }
+		140 = { add_core_of = SWE }
+		141 = { add_core_of = SWE }
+		145 = { add_core_of = SWE }
+		666 = { add_core_of = SWE }
+		778 = { add_core_of = SWE }
+		908 = { add_core_of = SWE }
+		909 = { add_core_of = SWE }
+		960 = { add_core_of = SWE }
+		37 = { add_core_of = SWE }
+		99 = { add_core_of = SWE }
+		100 = { add_core_of = SWE }
+		101 = { add_core_of = SWE }
+		110 = { add_core_of = SWE }
+		111 = { add_core_of = SWE }
+		142 = { add_core_of = SWE }
+		143 = { add_core_of = SWE }
+		144 = { add_core_of = SWE }
+		146 = { add_core_of = SWE }
+		147 = { add_core_of = SWE }
+		148 = { add_core_of = SWE }
+		149 = { add_core_of = SWE }
+		150 = { add_core_of = SWE }
+		337 = { add_core_of = SWE }
+		840 = { add_core_of = SWE }
+		844 = { add_core_of = SWE }
+		863 = { add_core_of = SWE }
+		864 = { add_core_of = SWE }
+		865 = { add_core_of = SWE }
+		926 = { add_core_of = SWE }
+		936 = { add_core_of = SWE }
+		937 = { add_core_of = SWE }
+		1146 = { add_core_of = SWE }
+		1147 = { add_core_of = SWE }
+		1324 = { add_core_of = SWE }
+		1325 = { add_core_of = SWE }
+		1326 = { add_core_of = SWE }
+
+		SWE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = SWE
+			}
+		}
+		SWE = { 
+			set_cosmetic_tag = MLT_SWE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Gustaf VI"
+                picture = "gfx/leaders/SWE/Portrait_Sweden_Gustaf_Adolf.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = SWE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+				state = 1080
+				state = 1082
+				state = 1188
+				state = 1190
+				state = 1213
+				state = 229
+				state = 230
+				state = 232
+				state = 233
+				state = 234
+				state = 235
+				state = 787
+				state = 990
+				state = 998
+				state = 1000
+				state = 1081
+				state = 1186
+				state = 1187
+				state = 1189
+				state = 1191
+				state = 1227
+				state = 1266
+				state = 1267
+				state = 1298
+				state = 1299
+				state = 1300
+				state = 1301
+				state = 1302
+				state = 1303
+				state = 1304
+				state = 1001
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		231 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1080 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1082 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1188 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1190 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1213 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		229 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		230 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		232 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		233 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		234 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		235 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		787 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		990 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		998 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1000 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1081 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1186 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1187 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1189 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1191 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1227 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1266 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1267 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1298 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1299 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1300 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1301 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1302 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1303 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1304 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1001 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = GEO
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+		}
+		231 = { add_core_of = GEO }
+		1080 = { add_core_of = GEO }
+		1082 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		1213 = { add_core_of = GEO }
+		229 = { add_core_of = GEO }
+		230 = { add_core_of = GEO }
+		232 = { add_core_of = GEO }
+		233 = { add_core_of = GEO }
+		234 = { add_core_of = GEO }
+		235 = { add_core_of = GEO }
+		787 = { add_core_of = GEO }
+		990 = { add_core_of = GEO }
+		998 = { add_core_of = GEO }
+		1000 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1186 = { add_core_of = GEO }
+		1187 = { add_core_of = GEO }
+		1189 = { add_core_of = GEO }
+		1191 = { add_core_of = GEO }
+		1227 = { add_core_of = GEO }
+		1266 = { add_core_of = GEO }
+		1267 = { add_core_of = GEO }
+		1298 = { add_core_of = GEO }
+		1299 = { add_core_of = GEO }
+		1300 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		1302 = { add_core_of = GEO }
+		1303 = { add_core_of = GEO }
+		1304 = { add_core_of = GEO }
+		1001 = { add_core_of = GEO }
+
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = MLT_GEO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Georgi XIII"
+                picture = "gfx/leaders/GEO/Portrait_GEO_George_Bagriaton_Mukhraneli.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "OSJ"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Provisional Government"
+				long_name = "Provisional Government"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+MLT_establish_rk_MAD = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 320
+				state = 1095
+				state = 281
+				state = 321
+				state = 422
+				state = 423
+				state = 424
+				state = 425
+				state = 426
+				state = 427
+				state = 428
+				state = 429
+				state = 430
+				state = 431
+				state = 432
+				state = 433
+				state = 434
+				state = 435
+				state = 436
+				state = 437
+				state = 438
+				state = 439
+				state = 440
+				state = 441
+				state = 443
+				state = 733
+				state = 815
+				state = 867
+				state = 868
+				state = 889
+				state = 890
+				state = 891
+				state = 893
+				state = 1034
+				state = 1057
+				state = 1092
+				state = 1093
+				state = 1094
+				state = 442
+				state = 444
+				state = 445
+				state = 323
+				state = 324
+				state = 814
+				state = 887
+				state = 888
+				state = 858
+				state = 710
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		320 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1095 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		281 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		321 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		422 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		423 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		424 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		425 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		426 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		427 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		428 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		429 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		430 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		431 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		432 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		433 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		434 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		435 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		436 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		437 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		438 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		439 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		440 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		441 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		443 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		733 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		815 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		867 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		868 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		889 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		890 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		891 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		893 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1034 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1057 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1092 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1093 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1094 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		442 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		444 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		445 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		323 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		324 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		814 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		887 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		888 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		858 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		710 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = MAD
+		MAD = {
+			every_core_state = {
+				remove_core_of = MAD
+			}
+		}
+		320 = { add_core_of = MAD }
+		1095 = { add_core_of = MAD }
+		281 = { add_core_of = MAD }
+		321 = { add_core_of = MAD }
+		422 = { add_core_of = MAD }
+		423 = { add_core_of = MAD }
+		424 = { add_core_of = MAD }
+		425 = { add_core_of = MAD }
+		426 = { add_core_of = MAD }
+		427 = { add_core_of = MAD }
+		428 = { add_core_of = MAD }
+		429 = { add_core_of = MAD }
+		430 = { add_core_of = MAD }
+		431 = { add_core_of = MAD }
+		432 = { add_core_of = MAD }
+		433 = { add_core_of = MAD }
+		434 = { add_core_of = MAD }
+		435 = { add_core_of = MAD }
+		436 = { add_core_of = MAD }
+		437 = { add_core_of = MAD }
+		438 = { add_core_of = MAD }
+		439 = { add_core_of = MAD }
+		440 = { add_core_of = MAD }
+		441 = { add_core_of = MAD }
+		443 = { add_core_of = MAD }
+		733 = { add_core_of = MAD }
+		815 = { add_core_of = MAD }
+		867 = { add_core_of = MAD }
+		868 = { add_core_of = MAD }
+		889 = { add_core_of = MAD }
+		890 = { add_core_of = MAD }
+		891 = { add_core_of = MAD }
+		893 = { add_core_of = MAD }
+		1034 = { add_core_of = MAD }
+		1057 = { add_core_of = MAD }
+		1092 = { add_core_of = MAD }
+		1093 = { add_core_of = MAD }
+		1094 = { add_core_of = MAD }
+		442 = { add_core_of = MAD }
+		444 = { add_core_of = MAD }
+		445 = { add_core_of = MAD }
+		323 = { add_core_of = MAD }
+		324 = { add_core_of = MAD }
+		814 = { add_core_of = MAD }
+		887 = { add_core_of = MAD }
+		888 = { add_core_of = MAD }
+		858 = { add_core_of = MAD }
+		710 = { add_core_of = MAD }
+
+		MAD = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = MAD
+			}
+		}
+		MAD = { 
+			set_cosmetic_tag = MLT_MAD_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Salvador III"
+                picture = "gfx/leaders/MAD/Portrait_Madras_Salvador_III_de_Bourbon.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = MAD
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 417
+				state = 418
+				state = 419
+				state = 420
+				state = 421
+				state = 804
+				state = 267
+				state = 415
+				state = 1217
+				state = 1218
+				state = 1219
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		266 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		410 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		411 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		412 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		413 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		414 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		416 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		417 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		418 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		419 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		420 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		421 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		804 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		267 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		415 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1217 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1218 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1219 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = PER
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+		}
+		266 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		267 = { add_core_of = PER }
+		415 = { add_core_of = PER }
+		1217 = { add_core_of = PER }
+		1218 = { add_core_of = PER }
+		1219 = { add_core_of = PER }
+
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = MLT_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_ALO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 402
+				state = 404
+				state = 1212
+				state = 587
+				state = 589
+				state = 590
+				state = 810
+				state = 1203
+				state = 405
+				state = 407
+				state = 584
+				state = 585
+				state = 586
+				state = 712
+				state = 732
+				state = 861
+				state = 1042
+				state = 1196
+				state = 1209
+				state = 1210
+				state = 1211
+				state = 1275
+				state = 1276
+				state = 1277
+				state = 1278
+				state = 1279
+				state = 1281
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		402 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		404 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1212 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		587 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		589 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		590 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		810 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1203 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		405 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		407 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		584 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		585 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		586 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		712 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		732 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		861 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1042 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1196 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1209 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1210 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1211 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1275 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1276 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1277 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1278 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1279 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1281 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = ALO
+		ALO = {
+			every_core_state = {
+				remove_core_of = ALO
+			}
+		}
+		402 = { add_core_of = ALO }
+		404 = { add_core_of = ALO }
+		1212 = { add_core_of = ALO }
+		587 = { add_core_of = ALO }
+		589 = { add_core_of = ALO }
+		590 = { add_core_of = ALO }
+		810 = { add_core_of = ALO }
+		1203 = { add_core_of = ALO }
+		405 = { add_core_of = ALO }
+		407 = { add_core_of = ALO }
+		584 = { add_core_of = ALO }
+		585 = { add_core_of = ALO }
+		586 = { add_core_of = ALO }
+		712 = { add_core_of = ALO }
+		732 = { add_core_of = ALO }
+		861 = { add_core_of = ALO }
+		1042 = { add_core_of = ALO }
+		1196 = { add_core_of = ALO }
+		1209 = { add_core_of = ALO }
+		1210 = { add_core_of = ALO }
+		1211 = { add_core_of = ALO }
+		1275 = { add_core_of = ALO }
+		1276 = { add_core_of = ALO }
+		1277 = { add_core_of = ALO }
+		1278 = { add_core_of = ALO }
+		1279 = { add_core_of = ALO }
+		1281 = { add_core_of = ALO }
+
+		ALO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = ALO
+			}
+		}
+		ALO = { 
+			set_cosmetic_tag = MLT_ALO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = ALO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_SIA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 289
+				state = 724
+				state = 749
+				state = 751
+				state = 822
+				state = 823
+				state = 824
+				state = 825
+				state = 830
+				state = 882
+				state = 999
+				state = 72
+				state = 288
+				state = 640
+				state = 701
+				state = 756
+				state = 790
+				state = 831
+				state = 286
+				state = 670
+				state = 671
+				state = 750
+				state = 826
+				state = 827
+				state = 856
+				state = 857
+				state = 333
+				state = 336
+				state = 828
+				state = 846
+				state = 334
+				state = 335
+				state = 667
+				state = 668
+				state = 669
+				state = 672
+				state = 673
+				state = 721
+				state = 843
+				state = 972
+				state = 1016
+				state = 1017
+				state = 1018
+				state = 1019
+				state = 1020
+				state = 1021
+				state = 1022
+				state = 1023
+				state = 1333
+				state = 327
+				state = 523
+				state = 623
+				state = 624
+				state = 625
+				state = 626
+				state = 627
+				state = 628
+				state = 633
+				state = 634
+				state = 635
+				state = 636
+				state = 639
+				state = 641
+				state = 643
+				state = 646
+				state = 647
+				state = 684
+				state = 725
+				state = 638
+				state = 734
+				state = 737
+				state = 941
+				state = 757
+				state = 711
+				state = 629
+				state = 630
+				state = 631
+				state = 632
+				state = 642
+				state = 727
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		289 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		724 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		749 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		751 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		822 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		823 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		824 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		825 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		830 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		882 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		999 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		72 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		288 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		640 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		701 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		756 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		790 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		831 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		286 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		670 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		671 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		750 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		826 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		827 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		856 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		857 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		333 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		336 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		828 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		846 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		334 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		335 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		667 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		668 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		669 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		672 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		673 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		721 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		843 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		972 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1016 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1017 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1018 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1019 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1020 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1021 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1022 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1023 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1333 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		327 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		523 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		623 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		624 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		625 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		626 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		627 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		628 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		633 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		634 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		635 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		636 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		639 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		641 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		643 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		646 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		647 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		684 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		725 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		638 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		734 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		737 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		941 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		757 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		711 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		629 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		630 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		631 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		632 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		642 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		727 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = SIA
+		SIA = {
+			every_core_state = {
+				remove_core_of = SIA
+			}
+		}
+		289 = { add_core_of = SIA }
+		724 = { add_core_of = SIA }
+		749 = { add_core_of = SIA }
+		751 = { add_core_of = SIA }
+		822 = { add_core_of = SIA }
+		823 = { add_core_of = SIA }
+		824 = { add_core_of = SIA }
+		825 = { add_core_of = SIA }
+		830 = { add_core_of = SIA }
+		882 = { add_core_of = SIA }
+		999 = { add_core_of = SIA }
+		72 = { add_core_of = SIA }
+		288 = { add_core_of = SIA }
+		640 = { add_core_of = SIA }
+		701 = { add_core_of = SIA }
+		756 = { add_core_of = SIA }
+		790 = { add_core_of = SIA }
+		831 = { add_core_of = SIA }
+		286 = { add_core_of = SIA }
+		670 = { add_core_of = SIA }
+		671 = { add_core_of = SIA }
+		750 = { add_core_of = SIA }
+		826 = { add_core_of = SIA }
+		827 = { add_core_of = SIA }
+		856 = { add_core_of = SIA }
+		857 = { add_core_of = SIA }
+		333 = { add_core_of = SIA }
+		336 = { add_core_of = SIA }
+		828 = { add_core_of = SIA }
+		846 = { add_core_of = SIA }
+		334 = { add_core_of = SIA }
+		335 = { add_core_of = SIA }
+		667 = { add_core_of = SIA }
+		668 = { add_core_of = SIA }
+		669 = { add_core_of = SIA }
+		672 = { add_core_of = SIA }
+		673 = { add_core_of = SIA }
+		721 = { add_core_of = SIA }
+		843 = { add_core_of = SIA }
+		972 = { add_core_of = SIA }
+		1016 = { add_core_of = SIA }
+		1017 = { add_core_of = SIA }
+		1018 = { add_core_of = SIA }
+		1019 = { add_core_of = SIA }
+		1020 = { add_core_of = SIA }
+		1021 = { add_core_of = SIA }
+		1022 = { add_core_of = SIA }
+		1023 = { add_core_of = SIA }
+		1333 = { add_core_of = SIA }
+		327 = { add_core_of = SIA }
+		523 = { add_core_of = SIA }
+		623 = { add_core_of = SIA }
+		624 = { add_core_of = SIA }
+		625 = { add_core_of = SIA }
+		626 = { add_core_of = SIA }
+		627 = { add_core_of = SIA }
+		628 = { add_core_of = SIA }
+		633 = { add_core_of = SIA }
+		634 = { add_core_of = SIA }
+		635 = { add_core_of = SIA }
+		636 = { add_core_of = SIA }
+		639 = { add_core_of = SIA }
+		641 = { add_core_of = SIA }
+		643 = { add_core_of = SIA }
+		646 = { add_core_of = SIA }
+		647 = { add_core_of = SIA }
+		684 = { add_core_of = SIA }
+		725 = { add_core_of = SIA }
+		638 = { add_core_of = SIA }
+		734 = { add_core_of = SIA }
+		737 = { add_core_of = SIA }
+		941 = { add_core_of = SIA }
+		757 = { add_core_of = SIA }
+		711 = { add_core_of = SIA }
+		629 = { add_core_of = SIA }
+		630 = { add_core_of = SIA }
+		631 = { add_core_of = SIA }
+		632 = { add_core_of = SIA }
+		642 = { add_core_of = SIA }
+		727 = { add_core_of = SIA }
+
+		SIA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = SIA
+			}
+		}
+		SIA = { 
+			set_cosmetic_tag = MLT_SIA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = SIA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_ETH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 271
+				state = 919
+				state = 920
+				state = 921
+				state = 922
+				state = 923
+				state = 924
+				state = 944
+				state = 268
+				state = 269
+				state = 547
+				state = 550
+				state = 559
+				state = 892
+				state = 906
+				state = 925
+				state = 961
+				state = 970
+				state = 544
+				state = 546
+				state = 548
+				state = 869
+				state = 870
+				state = 871
+				state = 899
+				state = 918
+				state = 954
+				state = 955
+				state = 965
+				state = 969
+				state = 1032
+				state = 543
+				state = 706
+				state = 707
+				state = 708
+				state = 709
+				state = 905
+				state = 1177
+				state = 1178
+				state = 1179
+				state = 1297
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		271 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		919 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		920 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		921 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		922 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		923 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		924 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		944 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		268 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		269 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		547 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		550 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		559 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		892 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		906 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		925 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		961 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		970 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		544 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		546 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		548 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		869 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		870 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		871 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		899 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		918 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		954 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		955 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		965 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		969 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1032 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		543 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		706 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		707 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		708 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		709 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		905 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1177 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1178 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1179 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1297 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = ETH
+		ETH = {
+			every_core_state = {
+				remove_core_of = ETH
+			}
+		}
+		271 = { add_core_of = ETH }
+		919 = { add_core_of = ETH }
+		920 = { add_core_of = ETH }
+		921 = { add_core_of = ETH }
+		922 = { add_core_of = ETH }
+		923 = { add_core_of = ETH }
+		924 = { add_core_of = ETH }
+		944 = { add_core_of = ETH }
+		268 = { add_core_of = ETH }
+		269 = { add_core_of = ETH }
+		547 = { add_core_of = ETH }
+		550 = { add_core_of = ETH }
+		559 = { add_core_of = ETH }
+		892 = { add_core_of = ETH }
+		906 = { add_core_of = ETH }
+		925 = { add_core_of = ETH }
+		961 = { add_core_of = ETH }
+		970 = { add_core_of = ETH }
+		544 = { add_core_of = ETH }
+		546 = { add_core_of = ETH }
+		548 = { add_core_of = ETH }
+		869 = { add_core_of = ETH }
+		870 = { add_core_of = ETH }
+		871 = { add_core_of = ETH }
+		899 = { add_core_of = ETH }
+		918 = { add_core_of = ETH }
+		954 = { add_core_of = ETH }
+		955 = { add_core_of = ETH }
+		965 = { add_core_of = ETH }
+		969 = { add_core_of = ETH }
+		1032 = { add_core_of = ETH }
+		543 = { add_core_of = ETH }
+		706 = { add_core_of = ETH }
+		707 = { add_core_of = ETH }
+		708 = { add_core_of = ETH }
+		709 = { add_core_of = ETH }
+		905 = { add_core_of = ETH }
+		1177 = { add_core_of = ETH }
+		1178 = { add_core_of = ETH }
+		1179 = { add_core_of = ETH }
+		1297 = { add_core_of = ETH }
+
+		ETH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = ETH
+			}
+		}
+		ETH = { 
+			set_cosmetic_tag = MLT_ETH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = ETH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_KOG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 928
+				state = 953
+				state = 974
+				state = 295
+				state = 538
+				state = 539
+				state = 540
+				state = 718
+				state = 813
+				state = 879
+				state = 881
+				state = 914
+				state = 916
+				state = 917
+				state = 948
+				state = 949
+				state = 956
+				state = 957
+				state = 958
+				state = 959
+				state = 976
+				state = 977
+				state = 1025
+				state = 1026
+				state = 1180
+				state = 1181
+				state = 1182
+				state = 1183
+				state = 1184
+				state = 1185
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		928 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		953 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		974 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		295 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		538 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		539 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		540 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		718 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		813 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		879 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		881 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		914 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		916 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		917 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		948 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		949 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		956 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		957 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		958 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		959 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		976 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		977 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1025 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1026 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1180 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1181 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1182 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1183 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1184 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1185 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = KOG
+		KOG = {
+			every_core_state = {
+				remove_core_of = KOG
+			}
+		}
+		928 = { add_core_of = KOG }
+		953 = { add_core_of = KOG }
+		974 = { add_core_of = KOG }
+		295 = { add_core_of = KOG }
+		538 = { add_core_of = KOG }
+		539 = { add_core_of = KOG }
+		540 = { add_core_of = KOG }
+		718 = { add_core_of = KOG }
+		813 = { add_core_of = KOG }
+		879 = { add_core_of = KOG }
+		881 = { add_core_of = KOG }
+		914 = { add_core_of = KOG }
+		916 = { add_core_of = KOG }
+		917 = { add_core_of = KOG }
+		948 = { add_core_of = KOG }
+		949 = { add_core_of = KOG }
+		956 = { add_core_of = KOG }
+		957 = { add_core_of = KOG }
+		958 = { add_core_of = KOG }
+		959 = { add_core_of = KOG }
+		976 = { add_core_of = KOG }
+		977 = { add_core_of = KOG }
+		1025 = { add_core_of = KOG }
+		1026 = { add_core_of = KOG }
+		1180 = { add_core_of = KOG }
+		1181 = { add_core_of = KOG }
+		1182 = { add_core_of = KOG }
+		1183 = { add_core_of = KOG }
+		1184 = { add_core_of = KOG }
+		1185 = { add_core_of = KOG }
+
+		KOG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = KOG
+			}
+		}
+		KOG = { 
+			set_cosmetic_tag = MLT_KOG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Pedro VII"
+                picture = "gfx/leaders/KOG/Portrait_Kongo_Pedro_VII_Afonso.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = KOG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_SAF = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1176
+				state = 275
+				state = 681
+				state = 719
+				state = 947
+				state = 945
+				state = 946
+				state = 85
+				state = 541
+				state = 542
+				state = 545
+				state = 738
+				state = 950
+				state = 964
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1176 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		275 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		681 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		719 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		947 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		945 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		946 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		85 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		541 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		542 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		545 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		738 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		950 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		964 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = SAF
+		SAF = {
+			every_core_state = {
+				remove_core_of = SAF
+			}
+		}
+		1176 = { add_core_of = SAF }
+		275 = { add_core_of = SAF }
+		681 = { add_core_of = SAF }
+		719 = { add_core_of = SAF }
+		947 = { add_core_of = SAF }
+		945 = { add_core_of = SAF }
+		946 = { add_core_of = SAF }
+		85 = { add_core_of = SAF }
+		541 = { add_core_of = SAF }
+		542 = { add_core_of = SAF }
+		545 = { add_core_of = SAF }
+		738 = { add_core_of = SAF }
+		950 = { add_core_of = SAF }
+		964 = { add_core_of = SAF }
+
+		SAF = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = SAF
+			}
+		}
+		SAF = { 
+			set_cosmetic_tag = MLT_SAF_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = SAF
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_CIV = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 807
+				state = 876
+				state = 877
+				state = 963
+				state = 1323
+				state = 1321
+				state = 1322
+				state = 274
+				state = 298
+				state = 558
+				state = 662
+				state = 703
+				state = 704
+				state = 878
+				state = 913
+				state = 962
+				state = 966
+				state = 973
+				state = 297
+				state = 660
+				state = 705
+				state = 927
+				state = 952
+				state = 971
+				state = 975
+				state = 1335
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		807 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		876 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		877 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		963 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1323 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1321 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1322 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		274 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		298 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		558 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		662 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		703 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		704 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		878 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		913 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		962 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		966 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		973 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		297 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		660 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		705 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		927 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		952 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		971 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		975 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1335 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = CIV
+		CIV = {
+			every_core_state = {
+				remove_core_of = CIV
+			}
+		}
+		807 = { add_core_of = CIV }
+		876 = { add_core_of = CIV }
+		877 = { add_core_of = CIV }
+		963 = { add_core_of = CIV }
+		1323 = { add_core_of = CIV }
+		1321 = { add_core_of = CIV }
+		1322 = { add_core_of = CIV }
+		274 = { add_core_of = CIV }
+		298 = { add_core_of = CIV }
+		558 = { add_core_of = CIV }
+		662 = { add_core_of = CIV }
+		703 = { add_core_of = CIV }
+		704 = { add_core_of = CIV }
+		878 = { add_core_of = CIV }
+		913 = { add_core_of = CIV }
+		962 = { add_core_of = CIV }
+		966 = { add_core_of = CIV }
+		973 = { add_core_of = CIV }
+		297 = { add_core_of = CIV }
+		660 = { add_core_of = CIV }
+		705 = { add_core_of = CIV }
+		927 = { add_core_of = CIV }
+		952 = { add_core_of = CIV }
+		971 = { add_core_of = CIV }
+		975 = { add_core_of = CIV }
+		1335 = { add_core_of = CIV }
+
+		CIV = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = CIV
+			}
+		}
+		CIV = { 
+			set_cosmetic_tag = MLT_CIV_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = CIV
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+				state = 285
+				state = 517
+				state = 518
+				state = 519
+				state = 520
+				state = 521
+				state = 522
+				state = 674
+				state = 723
+				state = 985
+				state = 986
+				state = 987
+				state = 988
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		284 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		285 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		517 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		518 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		519 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		520 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		521 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		522 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		674 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		723 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		985 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		986 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		987 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		988 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = AST
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+		}
+		284 = { add_core_of = AST }
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		723 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		986 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = MLT_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Missionary Council"
+                picture = "gfx/leaders/TEX/Portrait_TEX_Holy_American_Council.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_BOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 302
+				state = 487
+				state = 506
+				state = 688
+				state = 847
+				state = 848
+				state = 1027
+				state = 1073
+				state = 270
+				state = 278
+				state = 279
+				state = 299
+				state = 301
+				state = 303
+				state = 305
+				state = 306
+				state = 307
+				state = 449
+				state = 486
+				state = 488
+				state = 489
+				state = 490
+				state = 491
+				state = 492
+				state = 493
+				state = 494
+				state = 507
+				state = 508
+				state = 509
+				state = 510
+				state = 511
+				state = 512
+				state = 579
+				state = 649
+				state = 720
+				state = 845
+				state = 849
+				state = 850
+				state = 851
+				state = 852
+				state = 853
+				state = 855
+				state = 872
+				state = 873
+				state = 874
+				state = 901
+				state = 902
+				state = 903
+				state = 904
+				state = 912
+				state = 1028
+				state = 1029
+				state = 1036
+				state = 1040
+				state = 1074
+				state = 1214
+				state = 1215
+				state = 1216
+				state = 1280
+				state = 1296
+				state = 277
+				state = 304
+				state = 311
+				state = 312
+				state = 313
+				state = 314
+				state = 316
+				state = 317
+				state = 474
+				state = 475
+				state = 476
+				state = 477
+				state = 478
+				state = 479
+				state = 480
+				state = 481
+				state = 482
+				state = 483
+				state = 484
+				state = 485
+				state = 685
+				state = 842
+				state = 854
+				state = 1070
+				state = 1071
+				state = 1247
+				state = 1248
+				state = 1249
+				state = 1250
+				state = 1251
+				state = 1252
+				state = 1253
+				state = 1254
+				state = 1255
+				state = 1256
+				state = 1257
+				state = 1258
+				state = 1259
+				state = 1260
+				state = 1261
+				state = 1262
+				state = 308
+				state = 315
+				state = 318
+				state = 319
+				state = 686
+				state = 689
+				state = 690
+				state = 691
+				state = 692
+				state = 694
+				state = 695
+				state = 818
+				state = 820
+				state = 1077
+				state = 1312
+				state = 300
+				state = 1043
+				state = 502
+				state = 1041
+				state = 503
+				state = 894
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		302 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		487 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		506 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		688 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		847 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		848 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1027 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1073 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		270 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		278 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		279 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		299 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		301 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		303 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		305 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		306 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		307 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		449 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		486 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		488 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		489 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		490 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		491 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		492 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		493 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		494 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		507 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		508 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		509 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		510 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		511 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		512 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		579 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		649 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		720 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		845 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		849 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		850 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		851 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		852 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		853 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		855 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		872 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		873 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		874 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		901 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		902 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		903 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		904 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		912 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1028 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1029 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1036 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1040 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1074 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1214 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1215 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1216 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1280 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1296 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		277 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		304 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		311 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		312 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		313 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		314 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		316 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		317 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		474 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		475 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		476 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		477 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		478 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		479 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		480 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		481 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		482 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		483 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		484 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		485 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		685 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		842 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		854 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1070 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1071 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1247 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1248 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1249 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1250 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1251 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1252 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1253 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1254 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1255 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1256 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1257 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1258 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1259 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1260 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1261 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1262 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		308 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		315 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		318 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		319 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		686 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		689 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		690 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		691 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		692 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		694 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		695 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		818 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		820 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1077 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1312 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		300 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1043 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		502 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1041 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		503 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		894 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = BOL
+		BOL = {
+			every_core_state = {
+				remove_core_of = BOL
+			}
+		}
+		302 = { add_core_of = BOL }
+		487 = { add_core_of = BOL }
+		506 = { add_core_of = BOL }
+		688 = { add_core_of = BOL }
+		847 = { add_core_of = BOL }
+		848 = { add_core_of = BOL }
+		1027 = { add_core_of = BOL }
+		1073 = { add_core_of = BOL }
+		270 = { add_core_of = BOL }
+		278 = { add_core_of = BOL }
+		279 = { add_core_of = BOL }
+		299 = { add_core_of = BOL }
+		301 = { add_core_of = BOL }
+		303 = { add_core_of = BOL }
+		305 = { add_core_of = BOL }
+		306 = { add_core_of = BOL }
+		307 = { add_core_of = BOL }
+		449 = { add_core_of = BOL }
+		486 = { add_core_of = BOL }
+		488 = { add_core_of = BOL }
+		489 = { add_core_of = BOL }
+		490 = { add_core_of = BOL }
+		491 = { add_core_of = BOL }
+		492 = { add_core_of = BOL }
+		493 = { add_core_of = BOL }
+		494 = { add_core_of = BOL }
+		507 = { add_core_of = BOL }
+		508 = { add_core_of = BOL }
+		509 = { add_core_of = BOL }
+		510 = { add_core_of = BOL }
+		511 = { add_core_of = BOL }
+		512 = { add_core_of = BOL }
+		579 = { add_core_of = BOL }
+		649 = { add_core_of = BOL }
+		720 = { add_core_of = BOL }
+		845 = { add_core_of = BOL }
+		849 = { add_core_of = BOL }
+		850 = { add_core_of = BOL }
+		851 = { add_core_of = BOL }
+		852 = { add_core_of = BOL }
+		853 = { add_core_of = BOL }
+		855 = { add_core_of = BOL }
+		872 = { add_core_of = BOL }
+		873 = { add_core_of = BOL }
+		874 = { add_core_of = BOL }
+		901 = { add_core_of = BOL }
+		902 = { add_core_of = BOL }
+		903 = { add_core_of = BOL }
+		904 = { add_core_of = BOL }
+		912 = { add_core_of = BOL }
+		1028 = { add_core_of = BOL }
+		1029 = { add_core_of = BOL }
+		1036 = { add_core_of = BOL }
+		1040 = { add_core_of = BOL }
+		1074 = { add_core_of = BOL }
+		1214 = { add_core_of = BOL }
+		1215 = { add_core_of = BOL }
+		1216 = { add_core_of = BOL }
+		1280 = { add_core_of = BOL }
+		1296 = { add_core_of = BOL }
+		277 = { add_core_of = BOL }
+		304 = { add_core_of = BOL }
+		311 = { add_core_of = BOL }
+		312 = { add_core_of = BOL }
+		313 = { add_core_of = BOL }
+		314 = { add_core_of = BOL }
+		316 = { add_core_of = BOL }
+		317 = { add_core_of = BOL }
+		474 = { add_core_of = BOL }
+		475 = { add_core_of = BOL }
+		476 = { add_core_of = BOL }
+		477 = { add_core_of = BOL }
+		478 = { add_core_of = BOL }
+		479 = { add_core_of = BOL }
+		480 = { add_core_of = BOL }
+		481 = { add_core_of = BOL }
+		482 = { add_core_of = BOL }
+		483 = { add_core_of = BOL }
+		484 = { add_core_of = BOL }
+		485 = { add_core_of = BOL }
+		685 = { add_core_of = BOL }
+		842 = { add_core_of = BOL }
+		854 = { add_core_of = BOL }
+		1070 = { add_core_of = BOL }
+		1071 = { add_core_of = BOL }
+		1247 = { add_core_of = BOL }
+		1248 = { add_core_of = BOL }
+		1249 = { add_core_of = BOL }
+		1250 = { add_core_of = BOL }
+		1251 = { add_core_of = BOL }
+		1252 = { add_core_of = BOL }
+		1253 = { add_core_of = BOL }
+		1254 = { add_core_of = BOL }
+		1255 = { add_core_of = BOL }
+		1256 = { add_core_of = BOL }
+		1257 = { add_core_of = BOL }
+		1258 = { add_core_of = BOL }
+		1259 = { add_core_of = BOL }
+		1260 = { add_core_of = BOL }
+		1261 = { add_core_of = BOL }
+		1262 = { add_core_of = BOL }
+		308 = { add_core_of = BOL }
+		315 = { add_core_of = BOL }
+		318 = { add_core_of = BOL }
+		319 = { add_core_of = BOL }
+		686 = { add_core_of = BOL }
+		689 = { add_core_of = BOL }
+		690 = { add_core_of = BOL }
+		691 = { add_core_of = BOL }
+		692 = { add_core_of = BOL }
+		694 = { add_core_of = BOL }
+		695 = { add_core_of = BOL }
+		818 = { add_core_of = BOL }
+		820 = { add_core_of = BOL }
+		1077 = { add_core_of = BOL }
+		1312 = { add_core_of = BOL }
+		300 = { add_core_of = BOL }
+		1043 = { add_core_of = BOL }
+		502 = { add_core_of = BOL }
+		1041 = { add_core_of = BOL }
+		503 = { add_core_of = BOL }
+		894 = { add_core_of = BOL }
+
+		BOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = BOL
+			}
+		}
+		BOL = { 
+			set_cosmetic_tag = MLT_BOL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Jose de la Riva Aguero"
+                picture = "gfx/leaders/PRU/Portrait_Peru_Jose_Aguero.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = BOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+MLT_establish_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 280
+				state = 495
+				state = 496
+				state = 497
+				state = 498
+				state = 499
+				state = 500
+				state = 501
+				state = 504
+				state = 505
+				state = 895
+				state = 896
+				state = 898
+				state = 900
+				state = 1030
+				state = 1031
+				state = 1033
+				state = 1309
+				state = 1305
+				state = 1306
+				state = 1307
+				state = 1310
+				state = 1311
+				state = 309
+				state = 310
+				state = 687
+				state = 1037
+				state = 1038
+				state = 1039
+				state = 1078
+				state = 1079
+				state = 1308
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		280 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		495 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		496 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		497 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		498 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		499 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		500 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		501 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		504 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		505 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		895 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		896 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		898 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		900 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1030 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1031 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1033 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1309 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1305 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1306 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1307 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1310 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1311 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		309 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		310 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		687 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1037 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1038 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1039 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1078 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1079 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+		1308 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		release = BRA
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+		}
+		280 = { add_core_of = BRA }
+		495 = { add_core_of = BRA }
+		496 = { add_core_of = BRA }
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		500 = { add_core_of = BRA }
+		501 = { add_core_of = BRA }
+		504 = { add_core_of = BRA }
+		505 = { add_core_of = BRA }
+		895 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		898 = { add_core_of = BRA }
+		900 = { add_core_of = BRA }
+		1030 = { add_core_of = BRA }
+		1031 = { add_core_of = BRA }
+		1033 = { add_core_of = BRA }
+		1309 = { add_core_of = BRA }
+		1305 = { add_core_of = BRA }
+		1306 = { add_core_of = BRA }
+		1307 = { add_core_of = BRA }
+		1310 = { add_core_of = BRA }
+		1311 = { add_core_of = BRA }
+		309 = { add_core_of = BRA }
+		310 = { add_core_of = BRA }
+		687 = { add_core_of = BRA }
+		1037 = { add_core_of = BRA }
+		1038 = { add_core_of = BRA }
+		1039 = { add_core_of = BRA }
+		1078 = { add_core_of = BRA }
+		1079 = { add_core_of = BRA }
+		1308 = { add_core_of = BRA }
+
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = MLT
+						}
+						OR = {
+							is_owned_by = MLT
+							OWNER = { is_subject_of = MLT} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = MLT_BRA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+                name = "Pedro III"
+                picture = "gfx/leaders/BRA/Portrait_BRA_Pedro_Henrique_KX.png"
+                expire = "1.1.1"
+                ideology = absolute_monarchy_subtype
+                traits = {}
+              }
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Order of Saint John"
+				long_name = "Order of Saint John"
+			}
+
+			MLT = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
 }
 
 MLT_buy_ships = {
@@ -3300,6 +7902,7 @@ MLT_buy_ships = {
     
   }
 }
+
 
 MLT_buy_equipment = {
   MLT_buy_infantry_equipment = {
@@ -4179,4 +8782,5 @@ MLTWD_rhodes_cyprus_battles = {
       }
     }
   }
+  
 }
