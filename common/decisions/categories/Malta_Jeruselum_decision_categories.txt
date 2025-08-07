@@ -30,7 +30,10 @@ MLT_buy_ships = {
 	}
 
 	visible = { 
-		has_completed_focus = MLTWD_purchase_ships
+		AND = {
+			has_completed_focus = MLTWD_purchase_ships
+			NOT = { has_country_flag = MLTWD_papal_full_support }
+		}
 	}
 }
 
@@ -66,6 +69,9 @@ MLTWD_rhodes_cyprus_battles = {
 	}
 
 	visible = { 
-		has_completed_focus = MLTWD_seize_rhodes
+		AND = {
+			has_completed_focus = MLTWD_seize_rhodes
+			NOT = { has_country_flag = MLTWD_battle_for_rhodes_completed }
+		}
 	}
 }	
