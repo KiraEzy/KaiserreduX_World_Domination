@@ -38,14 +38,11 @@ ideas = {
             allowed = {always = no}
             picture = BBR_interracial_churches
             modifier = {
-                stability_weekly = 0.002
-				political_power_gain = 0.03
-				consumer_goods_factor = 0.07
-				monthly_population = 0.02
-				local_manpower = 0.02
-				production_factory_start_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = -0.03
-				industry_repair_factor = 0.05
+                local_resources_factor = 0.20
+                industrial_capacity_factory = 0.05
+				local_manpower = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industry_repair_factor = 0.25
             }
         }
 
@@ -81,8 +78,8 @@ ideas = {
             allowed = {always = no}
             picture = MEX_christero_war_idea
             modifier = {
-                war_support_weekly = 0.5
-                stability_weekly = 0.5
+                war_support_weekly = 0.005
+                stability_weekly = 0.005
                 army_core_defence_factor = 0.30
             }
         }
@@ -92,7 +89,7 @@ ideas = {
             allowed = {always = no}
             picture = WAB_indian_saints
             modifier = {
-                war_support_weekly = 0.5
+                war_support_weekly = 0.005
                 naval_invasion_capacity = 10
                 compliance_gain = 0.20
                 resistance_growth = -0.40
