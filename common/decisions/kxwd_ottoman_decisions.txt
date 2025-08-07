@@ -1742,7 +1742,7 @@ OTT_great_game = {
 					state = 188
 					state = 776
 					state = 777
-	
+					state = 1357
 				}
 				highlight_color_while_active = 3
 				highlight_color_before_active = 2
@@ -1762,6 +1762,7 @@ OTT_great_game = {
 			188 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			776 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			777 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1357 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 		}
 	
 		fire_only_once = yes
@@ -1789,7 +1790,7 @@ OTT_great_game = {
 			188 = { add_core_of = DDR }
 			776 = { add_core_of = DDR }
 			777 = { add_core_of = DDR }
-	
+			1357 = { add_core_of = DDR }
 			DDR = { 
 				every_core_state = {
 				  limit = {
@@ -2766,9 +2767,11 @@ OTT_great_game = {
 		
 			highlight_states = {
 				highlight_state_targets = {
-							state = 525
+					state = 525
 					state = 527
-	
+					state = 1345
+					state = 1346
+					state = 1347
 				}
 				highlight_color_while_active = 3
 				highlight_color_before_active = 2
@@ -2777,6 +2780,9 @@ OTT_great_game = {
 		available = {
 			525 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			527 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1345 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1346 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1347 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 		}
 	
 		fire_only_once = yes
@@ -2793,7 +2799,9 @@ OTT_great_game = {
 			}
 			525 = { add_core_of = KOR }
 			527 = { add_core_of = KOR }
-	
+			1345 = { add_core_of = KOR }
+			1346 = { add_core_of = KOR }
+			1347 = { add_core_of = KOR }
 			KOR = { 
 				every_core_state = {
 				  limit = {
@@ -2993,15 +3001,19 @@ OTT_great_game = {
 			highlight_states = {
 				highlight_state_targets = {
 							state = 282
-					state = 525
 					state = 526
-					state = 527
 					state = 528
 					state = 529
 					state = 530
 					state = 531
 					state = 532
 					state = 533
+					state = 1351
+					state = 1352
+					state = 1353
+					state = 1354
+					state = 1355
+					state = 1356
 					state = 534
 					state = 535
 					state = 536
@@ -3026,15 +3038,19 @@ OTT_great_game = {
 	
 		available = {
 			282 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
-			525 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			526 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
-			527 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			528 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			529 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			530 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			531 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			532 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			533 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1351 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1352 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1353 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1354 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1355 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1356 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			534 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			535 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			536 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
@@ -3066,15 +3082,19 @@ OTT_great_game = {
 				}
 			}
 			282 = { add_core_of = JAP }
-			525 = { add_core_of = JAP }
 			526 = { add_core_of = JAP }
-			527 = { add_core_of = JAP }
 			528 = { add_core_of = JAP }
 			529 = { add_core_of = JAP }
 			530 = { add_core_of = JAP }
 			531 = { add_core_of = JAP }
 			532 = { add_core_of = JAP }
 			533 = { add_core_of = JAP }
+			1351 = { add_core_of = JAP }
+			1352 = { add_core_of = JAP }
+			1353 = { add_core_of = JAP }
+			1354 = { add_core_of = JAP }
+			1355 = { add_core_of = JAP }
+			1356 = { add_core_of = JAP }
 			534 = { add_core_of = JAP }
 			535 = { add_core_of = JAP }
 			536 = { add_core_of = JAP }
@@ -11056,6 +11076,9 @@ OTT_great_game = {
 					state = 331
 					state = 332
 					state = 463
+					state = 1348
+					state = 1349
+					state = 1350
 					state = 464
 					state = 465
 					state = 466
@@ -11086,6 +11109,9 @@ OTT_great_game = {
 			331 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			332 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			463 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1348 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1349 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
+			1350 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			464 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			465 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
 			466 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
@@ -11123,6 +11149,9 @@ OTT_great_game = {
 			331 = { add_core_of = CAN }
 			332 = { add_core_of = CAN }
 			463 = { add_core_of = CAN }
+			1348 = { add_core_of = CAN }
+			1349 = { add_core_of = CAN }
+			1350 = { add_core_of = CAN }
 			464 = { add_core_of = CAN }
 			465 = { add_core_of = CAN }
 			466 = { add_core_of = CAN }

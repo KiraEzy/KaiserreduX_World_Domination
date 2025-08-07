@@ -1726,8 +1726,11 @@ MING_great_game = {
 		
 			highlight_states = {
 				highlight_state_targets = {
-							state = 525
+					state = 525
 					state = 527
+					state = 1345
+					state = 1346
+					state = 1347
 
 				}
 				highlight_color_while_active = 3
@@ -1737,6 +1740,9 @@ MING_great_game = {
 		available = {
 			525 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			527 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1345 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1346 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1347 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 		}
 
 		fire_only_once = yes
@@ -1753,7 +1759,9 @@ MING_great_game = {
 			}
 			525 = { add_core_of = KOR }
 			527 = { add_core_of = KOR }
-
+			1345 = { add_core_of = KOR }
+			1346 = { add_core_of = KOR }
+			1347 = { add_core_of = KOR }
 			KOR = { 
 				every_core_state = {
 				limit = {
@@ -1823,6 +1831,12 @@ MING_great_game = {
 					state = 531
 					state = 532
 					state = 533
+					state = 1351
+					state = 1352
+					state = 1353
+					state = 1354
+					state = 1355
+					state = 1356
 					state = 534
 					state = 535
 					state = 536
@@ -1844,6 +1858,12 @@ MING_great_game = {
 			531 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			532 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			533 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1351 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1352 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1353 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1354 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1355 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1356 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			534 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			535 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			536 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
@@ -1872,6 +1892,12 @@ MING_great_game = {
 			531 = { add_core_of = JAP }
 			532 = { add_core_of = JAP }
 			533 = { add_core_of = JAP }
+			1351 = { add_core_of = JAP }
+			1352 = { add_core_of = JAP }
+			1353 = { add_core_of = JAP }
+			1354 = { add_core_of = JAP }
+			1355 = { add_core_of = JAP }
+			1356 = { add_core_of = JAP }
 			534 = { add_core_of = JAP }
 			535 = { add_core_of = JAP }
 			536 = { add_core_of = JAP }
@@ -3939,7 +3965,7 @@ MING_great_game = {
 					state = 188
 					state = 776
 					state = 777
-
+					state = 1357
 				}
 				highlight_color_while_active = 3
 				highlight_color_before_active = 2
@@ -3959,6 +3985,7 @@ MING_great_game = {
 			188 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			776 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			777 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1357 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 		}
 
 		fire_only_once = yes
@@ -3986,7 +4013,7 @@ MING_great_game = {
 			188 = { add_core_of = DDR }
 			776 = { add_core_of = DDR }
 			777 = { add_core_of = DDR }
-
+			1357 = { add_core_of = DDR }
 			DDR = { 
 				every_core_state = {
 				limit = {
@@ -10635,6 +10662,10 @@ MING_great_game = {
 			highlight_states = {
 				highlight_state_targets = {
 							state = 463
+							state = 1348
+							state = 1349
+							state = 1350
+
 					state = 1273
 
 				}
@@ -10645,6 +10676,9 @@ MING_great_game = {
 		available = {
 			463 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			1273 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1348 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1349 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1350 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 		}
 
 		fire_only_once = yes
@@ -10661,6 +10695,9 @@ MING_great_game = {
 			}
 			463 = { add_core_of = ALA }
 			1273 = { add_core_of = ALA }
+			1348 = { add_core_of = ALA }
+			1349 = { add_core_of = ALA }
+			1350 = { add_core_of = ALA }
 
 			ALA = { 
 				every_core_state = {

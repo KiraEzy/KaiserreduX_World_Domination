@@ -3,7 +3,7 @@ ideas = {
         MLTWD_an_army_worth_of_god_idea = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = GFX_goal_MEX_Consecrate_Native_Mexican_Church
             modifier = {
                 army_org_factor = 0.15
 				surrender_limit = 0.25
@@ -14,7 +14,7 @@ ideas = {
         MLTWD_rebuilding_the_holy_land_1 = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = ALB_unified_church
             modifier = {
                 industrial_capacity_factory = -0.05
 				production_speed_buildings_factor = -0.10
@@ -25,7 +25,7 @@ ideas = {
         MLTWD_rebuilding_the_holy_land_2 = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = ALB_unified_church
             modifier = {
                 industrial_capacity_factory = 0.15
 				production_speed_buildings_factor = 0.15
@@ -36,7 +36,7 @@ ideas = {
         MLTWD_christian_guild_economy = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = BBR_interracial_churches
             modifier = {
                 stability_weekly = 0.002
 				political_power_gain = 0.03
@@ -52,7 +52,7 @@ ideas = {
         MLTWD_grand_missionary_council = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = NFA_council_of_trent
             modifier = {
                 political_power_gain = 1.0
 		        paternal_autocrat_drift = 0.1
@@ -62,7 +62,7 @@ ideas = {
         MLTWD_international_christian_volunteers = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = army_cooperation
             modifier = {
                 weekly_manpower = 1000
 				army_attack_factor = 0.10
@@ -79,7 +79,7 @@ ideas = {
         MLTWD_our_lady = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = MEX_christero_war_idea
             modifier = {
                 war_support_weekly = 0.5
                 stability_weekly = 0.5
@@ -90,7 +90,7 @@ ideas = {
         MLTWD_blessed_gerard = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = WAB_indian_saints
             modifier = {
                 war_support_weekly = 0.5
                 naval_invasion_capacity = 10
@@ -102,7 +102,7 @@ ideas = {
         MLTWD_defender_of_faith = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = BAN_gray_army_mobilize
             modifier = {
                 war_support_weekly = 0.005
                 planning_speed = 0.25
@@ -116,7 +116,7 @@ ideas = {
         MLTWD_preparations_complete = {
             on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
             allowed = {always = no}
-            picture = CAN_church_idea
+            picture = GEN_army_doctrine_def
             modifier = {
                 war_support_weekly = 0.05
                 army_attack_factor = 0.05

@@ -2161,6 +2161,7 @@ JAP_great_game = {
 			  state = 86
 			  state = 741
 			  state = 753
+			  state = 1357
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -2219,6 +2220,7 @@ JAP_great_game = {
 					86 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 					741 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 					753 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+					1357 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 				}
 			}
 			NOT = {

@@ -2918,9 +2918,57 @@ TXS_texaco_rks_actions = {
 					}
 				}
 			}
+			1348 = {
+				owner = {
+					OR = {
+						original_tag = TXS
+						is_subject_of = TXS
+					}
+				}
+			}
+			1349 = {
+				owner = {
+					OR = {
+						original_tag = TXS
+						is_subject_of = TXS
+					}
+				}
+			}
+			1350 = {
+				owner = {
+					OR = {
+						original_tag = TXS
+						is_subject_of = TXS
+					}
+				}
+			}
 		}
 		visible = {
 			463 = {
+				owner = {
+					OR = {
+						original_tag = TXS
+						is_subject_of = TXS
+					}
+				}
+			}
+			1348 = {
+				owner = {
+					OR = {
+						original_tag = TXS
+						is_subject_of = TXS
+					}
+				}
+			}
+			1349 = {
+				owner = {
+					OR = {
+						original_tag = TXS
+						is_subject_of = TXS
+					}
+				}
+			}
+			1350 = {
 				owner = {
 					OR = {
 						original_tag = TXS
@@ -2941,6 +2989,15 @@ TXS_texaco_rks_actions = {
 				}
 			}
 			463 = {
+				add_core_of = ALA
+			}
+			1348 = {
+				add_core_of = ALA
+			}
+			1349 = {
+				add_core_of = ALA
+			}
+			1350 = {
 				add_core_of = ALA
 			}
 			ALA = {

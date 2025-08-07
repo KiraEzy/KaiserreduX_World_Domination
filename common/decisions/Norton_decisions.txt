@@ -4547,12 +4547,21 @@ PSA_great_game = {
             state = 555
             state = 525
             state = 527
+            state = 1345
+            state = 1346
+            state = 1347
             state = 528
             state = 529
             state = 530
             state = 531
             state = 532
             state = 533
+            state = 1351
+            state = 1352
+            state = 1353
+            state = 1354
+            state = 1355
+            state = 1356
             state = 534
             state = 535
             state = 536
@@ -4619,6 +4628,15 @@ PSA_great_game = {
                 }
               }
             }
+            1345 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1346 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1347 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1351 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1352 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1353 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1354 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1355 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
+            1356 = { owner = { OR = { original_tag = CAL is_subject_of = CAL } } }
             528 = {
               owner = {
                 OR = {
@@ -7790,6 +7808,7 @@ PSA_great_game = {
             state = 68
             state = 839
             state = 86
+            state = 1357
         }
         highlight_color_while_active = 3
         highlight_color_before_active = 2
@@ -7996,6 +8015,14 @@ PSA_great_game = {
               }
             }
             64 = {
+              owner = {
+                OR = {
+                  original_tag = CAL
+                  is_subject_of = CAL
+                }
+              }
+            }
+            1357 = {
               owner = {
                 OR = {
                   original_tag = CAL
