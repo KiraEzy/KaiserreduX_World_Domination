@@ -2398,6 +2398,9 @@ CAR_great_game = {
 			  state = 740
 			  state = 473
 			  state = 463
+			  state = 1350
+			  state = 1349
+			  state = 1348
 			  state = 471
 			  state = 1332
 		  }
@@ -2425,6 +2428,9 @@ CAR_great_game = {
 				740 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				473 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				463 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1348 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1349 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1350 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				471 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				1332 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 			  }
@@ -2500,6 +2506,9 @@ CAR_great_game = {
 			  740 = { add_core_of = ALA }
 			  473 = { add_core_of = ALA }
 			  463 = { add_core_of = ALA }
+			  1348 = { add_core_of = ALA }
+			  1349 = { add_core_of = ALA }
+			  1350 = { add_core_of = ALA }
 			  471 = { add_core_of = ALA }
 			  1332 = { add_core_of = ALA }
 			  ALA = { 
@@ -3597,6 +3606,7 @@ CAR_great_game = {
 			  state = 188
 			  state = 777
 			  state = 776
+			  state = 1357
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -3632,6 +3642,7 @@ CAR_great_game = {
 				188 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				777 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				776 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1357 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 			  }
 			}
 			NOT = {
@@ -3707,6 +3718,7 @@ CAR_great_game = {
 			  62 = { add_core_of = DDR }
 			  63 = { add_core_of = DDR }
 			  64 = { add_core_of = DDR }
+			  1357 = { add_core_of = DDR }
 			  65 = { add_core_of = DDR }
 			  66 = { add_core_of = DDR }
 			  5 = { add_core_of = DDR }
@@ -9621,6 +9633,12 @@ CAR_great_game = {
 			  state = 531
 			  state = 532
 			  state = 533
+			  state = 1351
+			  state = 1352
+			  state = 1353
+			  state = 1354
+			  state = 1355
+			  state = 1356
 			  state = 534
 			  state = 535
 			  state = 536
@@ -9658,6 +9676,12 @@ CAR_great_game = {
 				531 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				532 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				533 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1351 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1352 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1353 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1354 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1355 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1356 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				534 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				535 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				536 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
@@ -9742,6 +9766,12 @@ CAR_great_game = {
 			  531 = { add_core_of = JAP }
 			  532 = { add_core_of = JAP }
 			  533 = { add_core_of = JAP }
+			  1351 = { add_core_of = JAP }
+			  1352 = { add_core_of = JAP }
+			  1353 = { add_core_of = JAP }
+			  1354 = { add_core_of = JAP }
+			  1355 = { add_core_of = JAP }
+			  1356 = { add_core_of = JAP }
 			  534 = { add_core_of = JAP }
 			  535 = { add_core_of = JAP }
 			  536 = { add_core_of = JAP }
@@ -10620,6 +10650,9 @@ CAR_great_game = {
 		  highlight_state_targets = {
 			  state = 525
 			  state = 527
+			  state = 1345
+			  state = 1346
+			  state = 1347
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -10644,6 +10677,9 @@ CAR_great_game = {
 			  KOR = { 
 				525 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 				527 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1345 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1346 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1347 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 			  }
 			}
 			NOT = {
@@ -10715,6 +10751,9 @@ CAR_great_game = {
 			  }
 			  525 = { add_core_of = KOR }
 			  527 = { add_core_of = KOR }
+			  1345 = { add_core_of = KOR }
+			  1346 = { add_core_of = KOR }
+			  1347 = { add_core_of = KOR }
 			  KOR = { 
 				every_core_state = {
 				  limit = {

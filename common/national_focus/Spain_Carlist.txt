@@ -808,7 +808,7 @@ focus_tree = {
 			}
 		}
 		cost = 5.00
-		x = 58
+		x = 53
 		y = 0
 		ai_will_do = {
 			factor = 50
@@ -866,34 +866,6 @@ focus_tree = {
 			add_political_power = 100
 			add_opinion_modifier = { target = POR modifier = KR_approves_of_govt }
 			reverse_add_opinion_modifier = { target = POR modifier = KR_approves_of_govt }
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-	}
-	focus = {# Iberian Trade
-		id = CAR_iberian_reunion
-		icon = GFX_goal_portugal
-		cost = 5.00
-		prerequisite = {
-			focus = CAR_iberian_trade
-		}
-		relative_position_id = CAR_join_entente
-		x = -3
-		y = 2
-		ai_will_do = { factor = 20  }
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus CAR_iberian_trade"
-			ROOT = { 
-				set_cosmetic_tag = CAR_IBERIA 
-				POR = {
-					every_owned_state = { add_core_of = CAR }
-				}
-				annex_country = {
-					target = POR
-					transfer_troops = yes
-				}
-
-				
-			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1657,7 +1629,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			297 = {
+			1335 = {
 				add_building_construction = {
 					type = coastal_bunker
 					level = 3
@@ -2022,6 +1994,17 @@ focus_tree = {
 				}
 			}
 			297 = {
+				if = {
+					limit = { is_owned_by = CAR	}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = air_base
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+			1335 = {
 				if = {
 					limit = { is_owned_by = CAR	}
 					add_extra_state_shared_building_slots = 1
@@ -3145,6 +3128,10 @@ focus = {
 			383 = { add_claim_by = CAR }
 			384 = { add_claim_by = CAR }
 			463 = { add_claim_by = CAR }
+			1348 = { add_claim_by = CAR }
+			1349 = { add_claim_by = CAR }
+			1350 = { add_claim_by = CAR }
+			1273 = { add_claim_by = CAR }
 			370 = { add_claim_by = CAR }
 			1173 = { add_claim_by = CAR }
 		if = {
@@ -3195,6 +3182,10 @@ focus = {
 			383 = { add_core_of = MEX }
 			384 = { add_core_of = MEX }
 			463 = { add_core_of = MEX }
+			1348 = { add_claim_by = MEX }
+			1349 = { add_claim_by = MEX }
+			1350 = { add_claim_by = MEX }
+			1273 = { add_claim_by = MEX }
 			370 = { add_core_of = MEX }
 			1173 = { add_core_of = MEX }
 		}
@@ -3249,6 +3240,10 @@ focus = {
 			383 = { add_claim_by = MEX }
 			384 = { add_claim_by = MEX }
 			463 = { add_claim_by = MEX }
+			1348 = { add_claim_by = MEX }
+			1349 = { add_claim_by = MEX }
+			1350 = { add_claim_by = MEX }
+			1273 = { add_claim_by = MEX }
 			370 = { add_claim_by = MEX }
 			1173 = { add_claim_by = MEX }
 		}

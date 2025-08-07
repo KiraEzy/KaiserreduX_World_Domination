@@ -2839,6 +2839,12 @@ MLT_Great_Game_Sardinia_Piedmont = {
           state = 531
           state = 532
           state = 533
+          state = 1351
+          state = 1352
+          state = 1353
+          state = 1354
+          state = 1355
+          state = 1356
           state = 534
           state = 535
           state = 536
@@ -2883,6 +2889,12 @@ MLT_Great_Game_Sardinia_Piedmont = {
             531 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             532 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             533 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1351 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1352 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1353 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1354 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1355 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1356 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             534 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             535 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             536 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
@@ -2970,6 +2982,12 @@ MLT_Great_Game_Sardinia_Piedmont = {
           531 = { add_core_of = JAP }
           532 = { add_core_of = JAP }
           533 = { add_core_of = JAP }
+          1351 = { add_core_of = JAP }
+          1352 = { add_core_of = JAP }
+          1353 = { add_core_of = JAP }
+          1354 = { add_core_of = JAP }
+          1355 = { add_core_of = JAP }
+          1356 = { add_core_of = JAP }
           534 = { add_core_of = JAP }
           535 = { add_core_of = JAP }
           536 = { add_core_of = JAP }
@@ -3015,9 +3033,9 @@ MLT_Great_Game_Sardinia_Piedmont = {
       highlight_state_targets = {
           state = 525
           state = 527
-          state = 1347
           state = 1345
           state = 1346
+          state = 1347
       }
       highlight_color_while_active = 3
       highlight_color_before_active = 2
@@ -3042,9 +3060,9 @@ MLT_Great_Game_Sardinia_Piedmont = {
           KOR = { 
             525 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             527 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-            1347= { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
-            1346 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
             1345 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1346 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
+            1347 = { owner = { OR = { original_tag = MLT is_subject_of = MLT } } }
           }
         }
         NOT = {
@@ -3112,9 +3130,9 @@ MLT_Great_Game_Sardinia_Piedmont = {
           }
           525 = { add_core_of = KOR }
           527 = { add_core_of = KOR }
-          1347 = { add_core_of = KOR }
-          1346 = { add_core_of = KOR }
           1345 = { add_core_of = KOR }
+          1346 = { add_core_of = KOR }
+          1347 = { add_core_of = KOR }
           KOR = { 
             every_core_state = {
               limit = {

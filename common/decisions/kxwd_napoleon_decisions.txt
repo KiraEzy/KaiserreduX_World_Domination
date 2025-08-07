@@ -165,6 +165,9 @@ NAP_great_game = {
 				state = 934
 				state = 935
 				state = 463
+				state = 1348
+				state = 1349
+				state = 1350
 				state = 464
 				state = 465
 				state = 466
@@ -283,6 +286,9 @@ NAP_great_game = {
 				471 = { owner = { original_tag = NFA } }
 				472 = { owner = { original_tag = NFA } }
 				473 = { owner = { original_tag = NFA } }
+				1348 = { owner = { original_tag = NFA } }
+				1349 = { owner = { original_tag = NFA } }
+				1350 = { owner = { original_tag = NFA } }
 		}
 		complete_effect = {
 			every_state = {
@@ -422,7 +428,9 @@ NAP_great_game = {
 				  autonomous_state = kx_colored_puppet
 				}
 			}
-			set_cosmetic_tag = NFL_WAB
+			WAB = {
+				set_cosmetic_tag = NFL_WAB
+			}
 
 			NVN = {
 				transfer_state = 386
@@ -477,6 +485,12 @@ NAP_great_game = {
 
 				#State
 				transfer_state = 463
+				transfer_state = 1348
+				transfer_state = 1349
+				transfer_state = 1350
+				add_state_core = 1348
+				add_state_core = 1349
+				add_state_core = 1350
 				add_state_core = 463
 				transfer_state = 473
 				transfer_state = 1332
@@ -5671,8 +5685,9 @@ NAP_great_game = {
 				}
 				183 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 
-			  }
+			  } 
 			  CYP = { 
+				183 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 			  }
 			}
 			NOT = {
@@ -5740,7 +5755,7 @@ NAP_great_game = {
 			  every_core_state = {
 				remove_core_of = CYP
 			  }
-			  183 = { add_core_of = IRQ }
+			  183 = { add_core_of = CYP }
 
 			  CYP = { 
 				every_core_state = {
@@ -6620,6 +6635,12 @@ NAP_great_game = {
 			  state = 531
 			  state = 532
 			  state = 533
+			  state = 1351
+			  state = 1352
+			  state = 1353
+			  state = 1354
+			  state = 1355
+			  state = 1356
 			  state = 534
 			  state = 535
 			  state = 536
@@ -6657,6 +6678,12 @@ NAP_great_game = {
 				531 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				532 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				533 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1351 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1352 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1353 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1354 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1355 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1356 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				534 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				535 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				536 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -6739,6 +6766,12 @@ NAP_great_game = {
 			  531 = { add_core_of = JAP }
 			  532 = { add_core_of = JAP }
 			  533 = { add_core_of = JAP }
+			  1351 = { add_core_of = JAP }
+			  1352 = { add_core_of = JAP }
+			  1353 = { add_core_of = JAP }
+			  1354 = { add_core_of = JAP }
+			  1355 = { add_core_of = JAP }
+			  1356 = { add_core_of = JAP }
 			  534 = { add_core_of = JAP }
 			  535 = { add_core_of = JAP }
 			  536 = { add_core_of = JAP }
@@ -7463,6 +7496,9 @@ NAP_great_game = {
 		  highlight_state_targets = {
 			  state = 525
 			  state = 527
+			  state = 1345
+			  state = 1346
+			  state = 1347
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -7487,6 +7523,9 @@ NAP_great_game = {
 			  KOR = { 
 				525 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				527 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1345 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1346 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+				1347 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 			  }
 			}
 			NOT = {
@@ -7556,6 +7595,9 @@ NAP_great_game = {
 			  }
 			  525 = { add_core_of = KOR }
 			  527 = { add_core_of = KOR }
+			  1345 = { add_core_of = KOR }
+			  1346 = { add_core_of = KOR }
+			  1347 = { add_core_of = KOR }
 			  KOR = { 
 				every_core_state = {
 				  limit = {

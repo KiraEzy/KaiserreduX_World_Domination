@@ -10,33 +10,19 @@ SOV_Great_Game_SSR_decisions = {
 				state = 648
 				state = 555
 				state = 524
-				state = 525
 				state = 526
-				state = 527
 				state = 528
 				state = 529
 				state = 530
 				state = 531
 				state = 532
 				state = 533
-				state = 534
-				state = 535
-				state = 536
-				state = 537
-				state = 282
-				state = 645
-				state = 648
-				state = 555
-				state = 524
-				state = 525
-				state = 526
-				state = 527
-				state = 528
-				state = 529
-				state = 530
-				state = 531
-				state = 532
-				state = 533
+				state = 1351
+				state = 1352
+				state = 1353
+				state = 1354
+				state = 1355
+				state = 1356
 				state = 534
 				state = 535
 				state = 536
@@ -98,23 +84,7 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
-						525 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
 						526 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
-						527 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -163,6 +133,54 @@ SOV_Great_Game_SSR_decisions = {
 							}
 						}
 						533 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1351 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1352 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1353 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1354 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1355 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1356 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -255,13 +273,7 @@ SOV_Great_Game_SSR_decisions = {
 					524 = {
 						add_core_of = JAP
 					}
-					525 = {
-						add_core_of = JAP
-					}
 					526 = {
-						add_core_of = JAP
-					}
-					527 = {
 						add_core_of = JAP
 					}
 					528 = {
@@ -280,6 +292,24 @@ SOV_Great_Game_SSR_decisions = {
 						add_core_of = JAP
 					}
 					533 = {
+						add_core_of = JAP
+					}
+					1351 = {
+						add_core_of = JAP
+					}
+					1352 = {
+						add_core_of = JAP
+					}
+					1353 = {
+						add_core_of = JAP
+					}
+					1354 = {
+						add_core_of = JAP
+					}
+					1355 = {
+						add_core_of = JAP
+					}
+					1356 = {
 						add_core_of = JAP
 					}
 					534 = {
@@ -3056,8 +3086,9 @@ SOV_Great_Game_SSR_decisions = {
 			highlight_state_targets = {
 				state = 525
 				state = 527
-				state = 525
-				state = 527
+				state = 1345
+				state = 1346
+				state = 1347
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -3098,6 +3129,9 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
+						1345 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+						1346 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+						1347 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 					}
 				}
 				NOT = {
@@ -3136,6 +3170,15 @@ SOV_Great_Game_SSR_decisions = {
 						add_core_of = KOR
 					}
 					527 = {
+						add_core_of = KOR
+					}
+					1345 = {
+						add_core_of = KOR
+					}
+					1346 = {
+						add_core_of = KOR
+					}
+					1347 = {
 						add_core_of = KOR
 					}
 					KOR = {
@@ -7870,6 +7913,14 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
+						1357 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
 						63 = {
 							owner = {
 								OR = {
@@ -7962,6 +8013,9 @@ SOV_Great_Game_SSR_decisions = {
 						add_core_of = DDR
 					}
 					64 = {
+						add_core_of = DDR
+					}
+					1357 = {
 						add_core_of = DDR
 					}
 					63 = {
@@ -16385,7 +16439,10 @@ SOV_Great_Game_SSR_decisions = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 463
-				state = 463
+				state = 1348
+				state = 1349
+				state = 1350
+				state = 1273
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -16411,6 +16468,38 @@ SOV_Great_Game_SSR_decisions = {
 					}
 					ALA = {
 						463 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1273 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1348 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1349 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1350 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -16453,6 +16542,18 @@ SOV_Great_Game_SSR_decisions = {
 						remove_core_of = ALA
 					}
 					463 = {
+						add_core_of = ALA
+					}
+					1273 = {
+						add_core_of = ALA
+					}
+					1348 = {
+						add_core_of = ALA
+					}
+					1349 = {
+						add_core_of = ALA
+					}
+					1350 = {
 						add_core_of = ALA
 					}
 					ALA = {
