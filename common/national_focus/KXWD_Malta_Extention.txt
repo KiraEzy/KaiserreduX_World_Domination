@@ -966,10 +966,6 @@ shared_focus = {
             type = annex_everything
         }
         create_wargoal = {
-            target = HUN
-            type = annex_everything
-        }
-        create_wargoal = {
             target = ALB
             type = annex_everything
         }
@@ -992,11 +988,15 @@ shared_focus = {
             type = annex_everything
         }
         create_wargoal = {
-            target = HOL
+            target = HUN
             type = annex_everything
         }
         create_wargoal = {
-            target = BEL
+            target = CZE
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = GAL
             type = annex_everything
         }
     }
@@ -1012,6 +1012,32 @@ shared_focus = {
         focus = MLTWD_reconqour_former_austria
     }
     relative_position_id = MLTWD_reconqour_former_austria
+    completion_reward = {
+        create_wargoal = {
+            target = HOL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = BEL
+            type = annex_everything
+        }
+        create_wargoal = {
+            target = GER
+            type = annex_everything
+        }
+    }
+}
+
+shared_focus = {
+    id = MLTWD_nordic_crusade
+    icon = GFX_goal_MLTWD_take_nordic
+    x = 0
+	y = 1
+    cost = 5
+    prerequisite = {
+        focus = MLTWD_reinstate_the_hre
+    }
+    relative_position_id = MLTWD_reinstate_the_hre
     completion_reward = {
         create_wargoal = {
             target = SWE
@@ -1037,17 +1063,17 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = MLTWD_nordic_crusade
-    icon = GFX_goal_MLTWD_take_nordic
+    id = MLTWD_eastern_crusade
+    icon = GFX_goal_MLTWD_take_east
     x = 0
 	y = 1
     cost = 5
     prerequisite = {
-        focus = MLTWD_reinstate_the_hre
+        focus = MLTWD_nordic_crusade
     }
-    relative_position_id = MLTWD_reinstate_the_hre
+    relative_position_id = MLTWD_nordic_crusade
     completion_reward = {
-        create_wargoal = {
+                create_wargoal = {
             target = POL
             type = annex_everything
         }
@@ -1089,21 +1115,6 @@ shared_focus = {
             target = WHR
             type = annex_everything
         }
-    }
-}
-
-shared_focus = {
-    id = MLTWD_eastern_crusade
-    icon = GFX_goal_MLTWD_take_east
-    x = 0
-	y = 1
-    cost = 5
-    prerequisite = {
-        focus = MLTWD_nordic_crusade
-    }
-    relative_position_id = MLTWD_nordic_crusade
-    completion_reward = {
-        
     }
 }
 
