@@ -8297,7 +8297,7 @@ MLTWD_call_the_world = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove restore_templar_order"
 			set_country_flag = restored_templar_order
-			add_ideas = restored_order_of_the_templars
+			add_ideas = MLTWD_restored_order_of_the_templars
 		}
 	}
 }
