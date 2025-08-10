@@ -121,5 +121,18 @@ ideas = {
                 army_org_factor = 0.10
             }
         }
+
+        MLTWD_restored_order_of_the_templars = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea MLT_an_army_worth_of_god"}
+            allowed = {always = no}
+            picture = CRE_iron_cross_idea
+            modifier = {
+                political_power_gain = 0.5
+                war_support_weekly = 0.05
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_org_factor = 0.1
+            }
+        }
     }	
 }

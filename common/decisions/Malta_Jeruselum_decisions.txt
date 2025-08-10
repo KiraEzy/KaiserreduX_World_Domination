@@ -1513,13 +1513,16 @@ MLT_Great_Game_Sardinia_Piedmont = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = SRD
 		SRD = {
 			every_core_state = {
 				remove_core_of = SRD
 			}
 		}
+    
+    release = SRD
+		
 		158 = { add_core_of = SRD }
 		838 = { add_core_of = SRD }
 		1003 = { add_core_of = SRD }
@@ -3517,13 +3520,16 @@ MLT_Great_Game_Lombardy = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = LOM
 		LOM = {
 			every_core_state = {
 				remove_core_of = LOM
 			}
 		}
+    
+    release = LOM
+		
 		159 = { add_core_of = LOM }
     761 = { add_core_of = LOM }
 
@@ -3619,13 +3625,16 @@ MLT_Great_Game_Naples = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = SIC
 		SIC = {
 			every_core_state = {
 				remove_core_of = SIC
 			}
 		}
+    
+    release = SIC
+		
 		156 = { add_core_of = SIC }
 		117 = { add_core_of = SIC }
 		1006 = { add_core_of = SIC }
@@ -3722,13 +3731,15 @@ MLT_establish_rk_IRE = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = IRE
-		IRE = {
+    IRE = {
 			every_core_state = {
 				remove_core_of = IRE
 			}
 		}
+    release = IRE
+		
 		135 = { add_core_of = IRE }
 		113 = { add_core_of = IRE }
 		134 = { add_core_of = IRE }
@@ -3854,50 +3865,53 @@ MLT_establish_rk_ENG = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = ENG
 		ENG = {
 			every_core_state = {
 				remove_core_of = ENG
 			}
-		}
-		120 = { add_core_of = ENG }
-		121 = { add_core_of = ENG }
-		122 = { add_core_of = ENG }
-		123 = { add_core_of = ENG }
-		125 = { add_core_of = ENG }
-		126 = { add_core_of = ENG }
-		127 = { add_core_of = ENG }
-		128 = { add_core_of = ENG }
-		129 = { add_core_of = ENG }
-		130 = { add_core_of = ENG }
-		131 = { add_core_of = ENG }
-		132 = { add_core_of = ENG }
-		133 = { add_core_of = ENG }
-		136 = { add_core_of = ENG }
-		338 = { add_core_of = ENG }
-		938 = { add_core_of = ENG }
-		1225 = { add_core_of = ENG }
-		1315 = { add_core_of = ENG }
-		1317 = { add_core_of = ENG }
 
-		ENG = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = MLT
-						}
-						OR = {
-							is_owned_by = MLT
-							OWNER = { is_subject_of = MLT} 
-						}
-					}
-				}
-				transfer_state_to = ENG
-			}
 		}
-		ENG = { 
+    
+    release = ENG
+		
+    ENG = {
+      
+      120 = { add_core_of = ENG }
+      121 = { add_core_of = ENG }
+      122 = { add_core_of = ENG }
+      123 = { add_core_of = ENG }
+      125 = { add_core_of = ENG }
+      126 = { add_core_of = ENG }
+      127 = { add_core_of = ENG }
+      128 = { add_core_of = ENG }
+      129 = { add_core_of = ENG }
+      130 = { add_core_of = ENG }
+      131 = { add_core_of = ENG }
+      132 = { add_core_of = ENG }
+      133 = { add_core_of = ENG }
+      136 = { add_core_of = ENG }
+      338 = { add_core_of = ENG }
+      938 = { add_core_of = ENG }
+      1225 = { add_core_of = ENG }
+      1315 = { add_core_of = ENG }
+      1317 = { add_core_of = ENG }
+
+      ENG = { 
+        every_core_state = {
+          limit = {
+            NOT = { 
+              is_core_of = MLT
+            }
+          }
+          transfer_state_to = ENG
+        }
+      }
+    }
+    
+
+    ENG = { 
 			set_cosmetic_tag = MLT_ENG_OCC
 			load_focus_tree = generic_focus            
 
@@ -4109,13 +4123,16 @@ MLT_establish_rk_AUS = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = AUS
 		AUS = {
 			every_core_state = {
 				remove_core_of = AUS
 			}
 		}
+
+    release = AUS
+		
 		1235 = { add_core_of = AUS }
 		8 = { add_core_of = AUS }
 		28 = { add_core_of = AUS }
@@ -4351,13 +4368,16 @@ MLT_establish_rk_CAR = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = CAR
 		CAR = {
 			every_core_state = {
 				remove_core_of = CAR
 			}
 		}
+    
+    release = CAR
+		
 		41 = { add_core_of = CAR }
 		118 = { add_core_of = CAR }
 		165 = { add_core_of = CAR }
@@ -4548,13 +4568,16 @@ MLT_establish_rk_HUN = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = HUN
 		HUN = {
 			every_core_state = {
 				remove_core_of = HUN
 			}
 		}
+    
+    release = HUN
+		
 		43 = { add_core_of = HUN }
 		45 = { add_core_of = HUN }
 		70 = { add_core_of = HUN }
@@ -4782,13 +4805,16 @@ MLT_establish_rk_POL = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = POL
 		POL = {
 			every_core_state = {
 				remove_core_of = POL
 			}
 		}
+    
+    release = POL
+		
 		10 = { add_core_of = POL }
 		11 = { add_core_of = POL }
 		78 = { add_core_of = POL }
@@ -5009,13 +5035,16 @@ MLT_establish_rk_BUL = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = BUL
 		BUL = {
 			every_core_state = {
 				remove_core_of = BUL
 			}
 		}
+    
+    release = BUL
+		
 		44 = { add_core_of = BUL }
 		46 = { add_core_of = BUL }
 		48 = { add_core_of = BUL }
@@ -5222,13 +5251,16 @@ MLT_establish_rk_SWE = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = SWE
 		SWE = {
 			every_core_state = {
-				remove_core_of = SWE
+				remove_core = SWE
 			}
 		}
+    
+    release = SWE
+		
 		38 = { add_core_of = SWE }
 		124 = { add_core_of = SWE }
 		138 = { add_core_of = SWE }
@@ -5416,13 +5448,16 @@ MLT_establish_rk_GEO = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = GEO
 		GEO = {
 			every_core_state = {
-				remove_core_of = GEO
+				remove_core = GEO
 			}
 		}
+    
+    release = GEO
+		
 		231 = { add_core_of = GEO }
 		1080 = { add_core_of = GEO }
 		1082 = { add_core_of = GEO }
@@ -5633,13 +5668,16 @@ MLT_establish_rk_MAD = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = MAD
 		MAD = {
 			every_core_state = {
-				remove_core_of = MAD
+				remove_core = MAD
 			}
 		}
+    
+    release = MAD
+		
 		320 = { add_core_of = MAD }
 		1095 = { add_core_of = MAD }
 		281 = { add_core_of = MAD }
@@ -5807,13 +5845,16 @@ MLT_establish_rk_PER = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = PER
 		PER = {
 			every_core_state = {
-				remove_core_of = PER
+				remove_core = PER
 			}
 		}
+    
+    release = PER
+		
 		266 = { add_core_of = PER }
 		410 = { add_core_of = PER }
 		411 = { add_core_of = PER }
@@ -5969,13 +6010,16 @@ MLT_establish_rk_ALO = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = ALO
 		ALO = {
 			every_core_state = {
-				remove_core_of = ALO
+				remove_core = ALO
 			}
 		}
+    
+    release = ALO
+		
 		402 = { add_core_of = ALO }
 		404 = { add_core_of = ALO }
 		1212 = { add_core_of = ALO }
@@ -6246,13 +6290,16 @@ MLT_establish_rk_SIA = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = SIA
 		SIA = {
 			every_core_state = {
-				remove_core_of = SIA
+				remove_core = SIA
 			}
 		}
+    
+    release = SIA
+		
 		289 = { add_core_of = SIA }
 		724 = { add_core_of = SIA }
 		749 = { add_core_of = SIA }
@@ -6498,13 +6545,16 @@ MLT_establish_rk_ETH = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = ETH
-		ETH = {
+    
+    ETH = {
 			every_core_state = {
 				remove_core_of = ETH
 			}
 		}
+    release = ETH
+		
 		271 = { add_core_of = ETH }
 		919 = { add_core_of = ETH }
 		920 = { add_core_of = ETH }
@@ -6688,13 +6738,16 @@ MLT_establish_rk_KOG = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = KOG
 		KOG = {
 			every_core_state = {
 				remove_core_of = KOG
 			}
 		}
+    
+    release = KOG
+		
 		928 = { add_core_of = KOG }
 		953 = { add_core_of = KOG }
 		974 = { add_core_of = KOG }
@@ -6836,13 +6889,16 @@ MLT_establish_rk_SAF = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = SAF
 		SAF = {
 			every_core_state = {
 				remove_core_of = SAF
 			}
 		}
+    
+    release = SAF
+		
 		1176 = { add_core_of = SAF }
 		275 = { add_core_of = SAF }
 		681 = { add_core_of = SAF }
@@ -6991,13 +7047,16 @@ MLT_establish_rk_CIV = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = CIV
 		CIV = {
 			every_core_state = {
 				remove_core_of = CIV
 			}
 		}
+    
+    release = CIV
+		
 		807 = { add_core_of = CIV }
 		876 = { add_core_of = CIV }
 		877 = { add_core_of = CIV }
@@ -7135,13 +7194,16 @@ MLT_establish_rk_AST = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = AST
 		AST = {
 			every_core_state = {
 				remove_core_of = AST
 			}
 		}
+    
+    release = AST
+		
 		284 = { add_core_of = AST }
 		285 = { add_core_of = AST }
 		517 = { add_core_of = AST }
@@ -7483,13 +7545,16 @@ MLT_establish_rk_BOL = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = BOL
 		BOL = {
 			every_core_state = {
 				remove_core_of = BOL
 			}
 		}
+    
+    release = BOL
+		
 		302 = { add_core_of = BOL }
 		487 = { add_core_of = BOL }
 		506 = { add_core_of = BOL }
@@ -7759,13 +7824,16 @@ MLT_establish_rk_BRA = {
 	ai_will_do = {
 		factor = 5
 	}
+  cost = 30
 	complete_effect = {
-		release = BRA
 		BRA = {
 			every_core_state = {
 				remove_core_of = BRA
 			}
 		}
+    
+    release = BRA
+		
 		280 = { add_core_of = BRA }
 		495 = { add_core_of = BRA }
 		496 = { add_core_of = BRA }
@@ -8297,7 +8365,7 @@ MLTWD_call_the_world = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove restore_templar_order"
 			set_country_flag = restored_templar_order
-			# add_ideas = restored_order_of_the_templars
+			add_ideas = MLTWD_restored_order_of_the_templars
 		}
 	}
 }
@@ -8432,7 +8500,7 @@ MLTWD_call_the_pope_decision = {
           }
           
           release = PAP 
-          
+
           MLT = {
             set_autonomy = {
               target = PAP
