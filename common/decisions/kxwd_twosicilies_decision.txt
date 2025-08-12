@@ -1623,12 +1623,8 @@ SIC_establish_rk_WGR = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 866
-				state = 753
-				state = 422
-				state = 710
 				state = 36
 				state = 51
-				state = 281
 				state = 68
 				state = 7
 				state = 55
@@ -1651,12 +1647,8 @@ SIC_establish_rk_WGR = {
 
 	available = {
 		866 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		753 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		422 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		710 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		36 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		51 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		281 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		68 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		7 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		55 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
@@ -1687,12 +1679,8 @@ SIC_establish_rk_WGR = {
 			}
 		}
 		866 = { add_core_of = WGR }
-		753 = { add_core_of = WGR }
-		422 = { add_core_of = WGR }
-		710 = { add_core_of = WGR }
 		36 = { add_core_of = WGR }
 		51 = { add_core_of = WGR }
-		281 = { add_core_of = WGR }
 		68 = { add_core_of = WGR }
 		7 = { add_core_of = WGR }
 		55 = { add_core_of = WGR }
