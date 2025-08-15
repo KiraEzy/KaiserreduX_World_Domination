@@ -47,6 +47,28 @@ SIC_great_game = {
 				state = 1268
 				state = 1270
 				state = 1271
+
+				state = 158
+				state = 1003
+				state = 838
+				state = 159
+				state = 160
+				state = 759
+				state = 1004
+				state = 162
+				state = 161
+				state = 157
+				state = 1236
+				state = 1005
+				state = 764
+				state = 742
+				state = 1149
+				state = 2
+				state = 117
+				state = 837
+				state = 1006
+				state = 156
+				state = 115
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -109,186 +131,201 @@ SIC_great_game = {
 		1268 = { add_claim_by = SIC }
 		1270 = { add_claim_by = SIC }
 		1271 = { add_claim_by = SIC }
+		158 = { add_core_of = SIC }
+		1003 = { add_core_of = SIC }
+		838 = { add_core_of = SIC }
+		159 = { add_core_of = SIC }
+		160 = { add_core_of = SIC }
+		759 = { add_core_of = SIC }
+		1004 = { add_core_of = SIC }
+		162 = { add_core_of = SIC }
+		161 = { add_core_of = SIC }
+		157 = { add_core_of = SIC }
+		1236 = { add_core_of = SIC }
+		1005 = { add_core_of = SIC }
+		764 = { add_core_of = SIC }
+		742 = { add_core_of = SIC }
+		1149 = { add_core_of = SIC }
+		2 = { add_core_of = SIC }
+		117 = { add_core_of = SIC }
+		837 = { add_core_of = SIC }
+		1006 = { add_core_of = SIC }
+		156 = { add_core_of = SIC }
+		115 = { add_core_of = SIC }
         }
     }
 
     SIC_Integrate_greater_italy_france = {
-	icon = generic_prepare_civil_war
+		icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 735
-				state = 21
-				state = 32
-				state = 762
-				state = 763
-				state = 943
-				state = 1
+			highlight_states = {
+				highlight_state_targets = {
+					state = 735
+					state = 21
+					state = 32
+					state = 762
+					state = 763
+					state = 943
+					state = 1
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
+
+		available = {
+			735 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			21 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			32 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			762 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			763 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			943 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		}
 
-	available = {
-		735 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		21 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		32 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		762 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		763 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		943 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-	}
+		fire_only_once = yes
 
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		735 = { add_core_of = SIC }
-		21 = { add_core_of = SIC }
-		32 = { add_core_of = SIC }
-		762 = { add_core_of = SIC }
-		763 = { add_core_of = SIC }
-		943 = { add_core_of = SIC }
-		1 = { add_core_of = SIC }	
-		735 = { transfer_state_to = SIC }
-		21 = { transfer_state_to = SIC }
-		32 = { transfer_state_to = SIC }
-		762 = { transfer_state_to = SIC }
-		763 = { transfer_state_to = SIC }
-		943 = { transfer_state_to = SIC }
-		1 = { transfer_state_to = SIC }	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			735 = { add_core_of = SIC }
+			21 = { add_core_of = SIC }
+			32 = { add_core_of = SIC }
+			762 = { add_core_of = SIC }
+			763 = { add_core_of = SIC }
+			943 = { add_core_of = SIC }
+			1 = { add_core_of = SIC }	
+			735 = { transfer_state_to = SIC }
+			21 = { transfer_state_to = SIC }
+			32 = { transfer_state_to = SIC }
+			762 = { transfer_state_to = SIC }
+			763 = { transfer_state_to = SIC }
+			943 = { transfer_state_to = SIC }
+			1 = { transfer_state_to = SIC }	
 	    }
     }
 	SIC_integrate_greece = {
-	icon = generic_prepare_civil_war
+		icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 182
-				state = 164
-				state = 185
-				state = 758
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
+			highlight_states = {
+				highlight_state_targets = {
+					state = 182
+					state = 164
+					state = 185
+					state = 758
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			} 
+
+		available = {
+			182 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			164 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			185 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			758 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		}
 
-	available = {
-		182 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		164 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		185 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		758 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-	}
+		fire_only_once = yes
 
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		release = SIC
-		SIC = {
-			every_core_state = {
-				remove_core_of = SIC
-			}
+		ai_will_do = {
+			factor = 5
 		}
-		182 = { add_core_of = SIC }
-		164 = { add_core_of = SIC }
-		185 = { add_core_of = SIC }
-		758 = { add_core_of = SIC }
-        182 = { transfer_state_to = SIC }
-		164 = { transfer_state_to = SIC }
-		185 = { transfer_state_to = SIC }
-		758 = { transfer_state_to = SIC }
+		complete_effect = {
+			182 = { add_core_of = SIC }
+			164 = { add_core_of = SIC }
+			185 = { add_core_of = SIC }
+			758 = { add_core_of = SIC }
+			182 = { transfer_state_to = SIC }
+			164 = { transfer_state_to = SIC }
+			185 = { transfer_state_to = SIC }
+			758 = { transfer_state_to = SIC }
 	    }
     }
 	SIC_Integrate_greater_italy_illyria = {
-	icon = generic_prepare_civil_war
+		icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 105
-				state = 1097
-				state = 1270
-				state = 102
-				state = 103
-				state = 163
-				state = 736
-				state = 1098
-				state = 1099
-				state = 1100
-				state = 1101
-				state = 1103
-				state = 1105
-				state = 1144
-				state = 1145
-				state = 1206
+			highlight_states = {
+				highlight_state_targets = {
+					state = 105
+					state = 1097
+					state = 1270
+					state = 102
+					state = 103
+					state = 163
+					state = 736
+					state = 1098
+					state = 1099
+					state = 1100
+					state = 1101
+					state = 1103
+					state = 1105
+					state = 1144
+					state = 1145
+					state = 1206
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
+
+		available = {
+			105 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1097 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1270 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			102 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			103 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			163 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			736 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1098 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1099 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1100 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1101 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1103 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1105 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1144 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1145 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1206 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		}
 
-	available = {
-		105 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1097 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1270 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		102 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		103 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		163 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		736 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1098 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1099 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1100 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1101 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1103 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1105 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1144 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1145 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-		1206 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-	}
+		fire_only_once = yes
 
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			105 = { add_core_of = SIC }
+			1097 = { add_core_of = SIC }
+			1270 = { add_core_of = SIC }
+			102 = { add_core_of = SIC }
+			103 = { add_core_of = SIC }
+			163 = { add_core_of = SIC }
+			736 = { add_core_of = SIC }
+			1098 = { add_core_of = SIC }
+			1099 = { add_core_of = SIC }
+			1100 = { add_core_of = SIC }
+			1101 = { add_core_of = SIC }
+			1103 = { add_core_of = SIC }
+			1105 = { add_core_of = SIC }
+			1144 = { add_core_of = SIC }
+			1145 = { add_core_of = SIC }
+			1206 = { add_core_of = SIC }
+			105 = { transfer_state_to = SIC }
+			1097 = { transfer_state_to = SIC }
+			1270 = { transfer_state_to = SIC }
+			102 = { transfer_state_to = SIC }
+			103 = { transfer_state_to = SIC }
+			163 = { transfer_state_to = SIC }
+			736 = { transfer_state_to = SIC }
+			1098 = { transfer_state_to = SIC }
+			1099 = { transfer_state_to = SIC }
+			1100 = { transfer_state_to = SIC }
+			1101 = { transfer_state_to = SIC }
+			1103 = { transfer_state_to = SIC }
+			1105 = { transfer_state_to = SIC }
+			1144 = { transfer_state_to = SIC }
+			1145 = { transfer_state_to = SIC } 
+			1206 = { transfer_state_to = SIC }
+		}
 	}
-	complete_effect = {
-		105 = { add_core_of = SIC }
-		1097 = { add_core_of = SIC }
-		1270 = { add_core_of = SIC }
-		102 = { add_core_of = SIC }
-		103 = { add_core_of = SIC }
-		163 = { add_core_of = SIC }
-		736 = { add_core_of = SIC }
-		1098 = { add_core_of = SIC }
-		1099 = { add_core_of = SIC }
-		1100 = { add_core_of = SIC }
-		1101 = { add_core_of = SIC }
-		1103 = { add_core_of = SIC }
-		1105 = { add_core_of = SIC }
-		1144 = { add_core_of = SIC }
-		1145 = { add_core_of = SIC }
-		1206 = { add_core_of = SIC }
-        105 = { transfer_state_to = SIC }
-		1097 = { transfer_state_to = SIC }
-		1270 = { transfer_state_to = SIC }
-		102 = { transfer_state_to = SIC }
-		103 = { transfer_state_to = SIC }
-		163 = { transfer_state_to = SIC }
-		736 = { transfer_state_to = SIC }
-		1098 = { transfer_state_to = SIC }
-		1099 = { transfer_state_to = SIC }
-		1100 = { transfer_state_to = SIC }
-		1101 = { transfer_state_to = SIC }
-		1103 = { transfer_state_to = SIC }
-		1105 = { transfer_state_to = SIC }
-		1144 = { transfer_state_to = SIC }
-		1145 = { transfer_state_to = SIC }
-		1206 = { transfer_state_to = SIC }
-	}
-}
 SIC_integrate_albania = {
 	icon = generic_prepare_civil_war
 

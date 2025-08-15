@@ -52,6 +52,30 @@ country_event = { #malta wants to buy sicily
 	}
 	
 }	
+country_event = { #malta cannot buy sicily
+	id = kxwd_mlt.50
+	immediate = { log = "[GetDateText]: [Root.GetName]: event kxwd_mlt.50" }
+	title = kxwd_mlt.50.t
+	desc = kxwd_mlt.50.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #force the sicilians to submit
+		name = kxwd_mlt.50.a
+		hidden_effect = {
+			MLT = {
+				country_event = {
+					id = mlt.39
+				days = 3
+				}
+			}
+		}
+	}
+}
+
 country_event = { #malta bought sicily
 	id = kxwd_mlt.49
 	immediate = { log = "[GetDateText]: [Root.GetName]: event kxwd_mlt.49" }

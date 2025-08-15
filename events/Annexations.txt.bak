@@ -260,6 +260,12 @@ country_event = { #Annexation of Bulgaria
 		set_country_flag = BUL_CONQ
 		occupy_medium_country = yes
 	}
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = BUL_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 country_event = { #Fate of Brest
 	id = annex.4
@@ -1879,6 +1885,12 @@ country_event = { #Greece liberation
 		set_country_flag = GRE_CONQ
 		occupy_medium_country = yes
 	}
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = GRE_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #Fate of Volkovysk
@@ -2328,13 +2340,6 @@ country_event = { #Fate of Karelia
 	
 	option = { #liberate
 		name = annex.13.a
-		trigger = {
-			if = {
-				limit = { is_russian_tag_that_can_integrate = yes }
-				has_country_flag = soviet_russia_restored
-				NOT = { has_global_flag = SOV_unitary_state }
-			}
-		}
 		ai_chance = {
 			base = 10
 			modifier = {
@@ -2362,7 +2367,6 @@ country_event = { #Fate of Karelia
 	option = { #Give it to Finland
 		name = annex.13.b
 		trigger = {
-			is_russian_tag_that_can_integrate = no
 			NOT = {
 				tag = FIN
 				tag = SCA
@@ -2405,7 +2409,6 @@ country_event = { #Fate of Karelia
 	option = { #Give it to the Russians
 		name = annex.13.c
 		trigger = {
-			is_russian_tag_that_can_integrate = no
 			NOT = {
 				tag = FIN
 				tag = SCA
@@ -2460,7 +2463,6 @@ country_event = { #Fate of Karelia
 	option = { #Split (give Petrozavodsk to Russia)
 		name = annex.13.e
 		trigger = {
-			is_russian_tag_that_can_integrate = no
 			NOT = {
 				tag = FIN
 				tag = SCA
@@ -2504,7 +2506,6 @@ country_event = { #Fate of Karelia
 		name = annex.integration
 		trigger = {
 			OR = {
-				is_russian_tag_that_can_integrate = yes
 				tag = FIN
 				tag = SCA
 			}
@@ -2524,13 +2525,9 @@ country_event = { #Fate of Karelia
 			}			
 			if = {
 				limit = {
-					PREV = { is_russian_tag_that_can_integrate = no }
 					is_claim_or_core_of_ROOT = no
 				}
 				add_core_of = ROOT
-			}
-			else = {
-				add_claim_of_ROOT = yes
 			}
 		}
 		custom_effect_tooltip = tooltip_white_line
@@ -2541,16 +2538,9 @@ country_event = { #Fate of Karelia
 					state = 216 #Petrozavodsk
 					state = 1327 #Petrozavodsk
 				}
+				is_claim_or_core_of_ROOT = no
 			}
-			if = {
-				limit = { 
-					is_claim_or_core_of_ROOT = no
-				}
-				add_claim_by = ROOT
-			}
-			else = {
-				add_core_of = ROOT
-			}
+			add_claim_by = ROOT
 		}
 		recheck_annexations = yes
 	}
@@ -4397,18 +4387,6 @@ country_event = { #Fate of Poland
 			}
 			set_temp_variable = { target = POL }
 			SOV_puppet_TARGET_effect = yes
-			if = {
-				limit = { SOV_left_communists_in_power = yes }
-				POL = {
-					set_politics = { ruling_party = totalist }
-					create_country_leader = {
-						name = "Józef Unszlicht"
-						picture = "gfx/leaders/POL/Portrait_POL_Jozef_Unszlicht.png"
-						expire = "1965.1.1"
-						ideology = zinovievism_subtype
-					}
-				}
-			}
 		}	
 	}
 
@@ -11063,7 +11041,7 @@ country_event = { #Fate of Latvia
 				}
 				if = {
 					limit = {
-						ROOT = { RUS_savinkov_in_power = no }
+						is_russian_tag_that_can_integrate = no
 					}
 					set_party_name = {
 						ideology = national_populist
@@ -11099,29 +11077,6 @@ country_event = { #Fate of Latvia
 				}
 				set_temp_variable = { target = LAT }
 				SOV_puppet_TARGET_effect = yes
-				if = {
-					limit = { SOV_left_communists_in_power = yes }
-					LAT = {
-					set_politics = { ruling_party = totalist }	
-					create_country_leader = {	
-						name = "Ivars Smilga"
-						picture = "gfx/leaders/LAT/Portrait_LAT_Ivar_Smilga.png"
-						expire = "1.1.1"
-						ideology = zinovievism_subtype
-					}
-					}
-				}
-				else = {
-					LAT = {
-					create_country_leader = {	
-						name = "Jēkabs Peterss"
-						desc = "POLITICS_JEKABS_PETERSS_DESC"
-						picture = "gfx/leaders/LAT/Portrait_LAT_Jekabs_Peterss.png"
-						expire = "1.1.1"
-						ideology = socialist_security_state_subtype
-					}
-				    }
-				}
 			}	
 		}
 	}
@@ -13426,6 +13381,12 @@ country_event = { #The fate of Georgia
 		set_country_flag = GEO_CONQ
 		occupy_medium_country = yes
 	}
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = GEO_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #Releasing Spain (if not POR)
@@ -15017,6 +14978,12 @@ country_event = { #The Annexation of Arabia
 		occupy_medium_country = yes
 		set_country_flag = ARA_CONQ
 	}
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = ARA_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #Fate of Cyrenaica
@@ -15410,6 +15377,13 @@ country_event = { #The Annexation of Egypt
 		occupy_medium_country = yes
 		set_country_flag = EGY_CONQ
 	}
+	#PERSIA SUBMOD
+	option = {
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = EGY_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #The Annexation of Sudan
@@ -15530,34 +15504,7 @@ country_event = { #The Annexation of Persia
 		puppet_released_tag_nocosmetic = yes
 		hidden_effect = {
 			var:tag_to_release = {
-				PER = { 
-					drop_cosmetic_tag = yes 
-					create_country_leader = {
-				    name = "Hassan Taqizādeh"
-					desc = "POLITICS_SAYYED_HASAN_TAQIZADEH_DESC"
-				    picture = "gfx/leaders/PER/Portrait_Persia_Sayyed_Hasan_Taqizadeh.png"
-				    expire = "1.1.1"
-				    ideology = socdem_radical_progressivism_subtype
-			        }
-			        create_country_leader = {
-				    name = "Mohammad-Sadegh Tabatabaei"
-				    picture = "gfx/leaders/PER/Portrait_Persia_Mohammad_Sadegh_Tabatabaei.png"
-				    expire = "1.1.1"
-				    ideology = jadidism_subtype
-			        }
-			        create_country_leader = {
-				    name = "Abdolhossein Teymūrtāsh"
-				    picture = "gfx/leaders/PER/Portrait_Persia_Abdolhossein_Teymourtash.png"
-				    expire = "1.1.1"
-				    ideology = marlib_national_liberalism_subtype
-			        }
-			        create_country_leader = {
-				    name = "Hassan Modarres"
-				    picture = "gfx/leaders/PER/Portrait_Persia_Hassan_Modarres.png"
-				    expire = "1.1.1"
-				    ideology = soccon_islamism_subtype
-			        }
-				}
+				PER = { drop_cosmetic_tag = yes }
 				if = {
 					limit = { has_socialist_government = no }
 					remove_ideas = {
@@ -15722,6 +15669,12 @@ country_event = { #The Annexation of Yemen
 		occupy_medium_country = yes
 		set_country_flag = YEM_CONQ
 	}
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = YEM_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #The Annexation of Oman
@@ -15789,6 +15742,13 @@ country_event = { #The Annexation of Oman
 		trigger = { is_ai = no }
 		occupy_small_country = yes
 		set_country_flag = OMA_CONQ
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = OMA_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -15955,6 +15915,13 @@ country_event = { #The Annexation of Armenia
 		occupy_small_country = yes
 		set_country_flag = ARM_CONQ
 	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = ARM_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #The Annexation of Azerbaijan
@@ -16067,6 +16034,13 @@ country_event = { #The Annexation of Azerbaijan
 		}
 		occupy_small_country = yes
 		set_country_flag = AZE_CONQ
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = AZE_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -16572,6 +16546,13 @@ country_event = { #The Annexation of Afghanistan
 		occupy_medium_country = yes
 
 		set_country_flag = AFG_CONQ
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = AFG_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -17093,6 +17074,13 @@ country_event = { #Fate of Anatolia
 		set_country_flag = TUR_CONQ
 		occupy_large_country = yes
 	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = TUR_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #The Fate of the Levant
@@ -17214,6 +17202,13 @@ country_event = { #The Fate of the Levant
 		trigger = { is_ai = no }
 		set_country_flag = SYR_CONQ
 		occupy_medium_country = yes
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = SYR_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -17724,25 +17719,7 @@ country_event = { #Fate of Ukraine
 				}
 			}
 			add_claim_by = ROOT
-		}	
-		if = {
-			limit = { 
-				has_country_flag = soviet_russia_restored 
-				220 = { has_dynamic_modifier = { modifier = SOV_ukrainian_government } }
-			}
-			220 = {
-				remove_dynamic_modifier = { modifier = SOV_ukrainian_government }
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						region = 130 #Western Ukraine
-						region = 165 #Eastern Ukraine
-					}
-				}
-				add_dynamic_modifier = { modifier = SOV_ukrainian_government }
-			}	
-		}
+		}		
 		occupy_large_country = yes
 		recheck_annexations = yes
 	}
@@ -22809,7 +22786,7 @@ country_event = { #Denmark Liberation
 						desc = "CHRISTIAN_X_DESC"
 						picture = "gfx/leaders/DEN/Portrait_Denmark_Christian_X.png"
 						expire = "1.1.1"
-						ideology = nordic_model_subtype
+						ideology = social_democrat_subtype
 					}
 					create_country_leader = {
 						name = "Christian X"
@@ -22841,7 +22818,7 @@ country_event = { #Denmark Liberation
 						name = "Frederick IX"
 						picture = "gfx/leaders/DEN/Portrait_Denmark_Frederick.png"
 						expire = "1.1.1"
-						ideology = nordic_model_subtype
+						ideology = social_democrat_subtype
 					}
 					create_country_leader = {
 						name = "Frederick IX"
@@ -25234,6 +25211,13 @@ country_event = { #Fate of Thessaloniki
 		set_country_flag = THESSA_CONQ
 		occupy_small_country = yes
 	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = THESSA_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #The Annexation of Algeria
@@ -26339,10 +26323,6 @@ country_event = { #Fate of Australasia
 				limit = { tag = JAP }
 				AST = {
 					AST_become_republic = yes
-					clr_country_flag = AST_dem_focus_move
-					clr_country_flag = AST_red_focus_move
-					set_country_flag = AST_whites_focus_move
-					mark_focus_tree_layout_dirty = yes
 					set_politics = {
 						ruling_party = paternal_autocrat
 						elections_allowed = no
@@ -26460,9 +26440,6 @@ country_event = { #Fate of Australasia
 			else = {
 				AST = {
 					AST_become_republic = yes
-					clr_country_flag = AST_dem_focus_move
-					clr_country_flag = AST_red_focus_move
-					set_country_flag = AST_whites_focus_move
 					set_politics = {
 						ruling_party = paternal_autocrat
 						elections_allowed = no
@@ -31839,6 +31816,13 @@ country_event = { #Cyprus Liberation
 		occupy_small_country = yes
 		set_country_flag = CYP_CONQ
 	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = CYP_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { #Fate of Indonesia
@@ -31979,7 +31963,7 @@ country_event = { #Fate of Transamur
 						state = 565
 						state = 574
 						state = 562
-						state = 637
+						state = 673
 					}
 				}
 					remove_core_of = TRM
@@ -31999,7 +31983,7 @@ country_event = { #Fate of Transamur
 							state = 565
 							state = 574
 							state = 562
-							state = 637
+							state = 673
 						}
 					}
 					add_core_of = TRM
@@ -32032,23 +32016,16 @@ country_event = { #Fate of Transamur
 			}
 			if = {
 				limit = {
-					tag = JAP
+					ROOT = { tag = JAP }
 				}
-				if = {
-					limit = { owns_state = 637 }
-					add_state_claim = 637
-				}
-				if = {
-					limit = { owns_state = 562 }
-					add_state_claim = 562
-				}
+				add_state_claim = 637
+				add_state_claim = 562
 			}
 			537 = { retain_state = yes } #Sakhalin
 			555 = { retain_state = yes } #Kuril Islands
 			564 = { retain_state = yes }   #Verkhneudinsk
 			563 = { retain_state = yes }   #Chita
 			574 = { retain_state = yes }   #Yakutsk
-			565 = { retain_state = yes }   #Bodaybo
 		}
 	}
 
@@ -32086,13 +32063,7 @@ country_event = { #Fate of Transamur
 		set_temp_variable = { tag_to_release = TRM }
 		release_targeted_tag = yes
 		var:tag_to_release = { set_cosmetic_tag = TRM_FE }
-		hidden_effect = { 
-			RUS_puppet_setup = yes 
-			if = { 
-				limit = { tag = JAP }
-				country_event = { id = tram.10000 days = 4 }
-			}
-		}
+		hidden_effect = { RUS_puppet_setup = yes }
 	}
 	option = { #liberate Green Ukraine
 		name = annex.226.d
@@ -32159,8 +32130,7 @@ country_event = { #Fate of Transamur
 		name = annex.226.b
 		trigger = {
 			var:566.owner = { #Irkutsk
-				is_russian_tag_that_can_integrate = yes
-				is_ally_of_ROOT = yes
+				original_tag = RUS
 				ROOT_can_grant_land = yes
 			}
 		}
@@ -33042,6 +33012,13 @@ country_event = { #The Fate of Hejaz
 		set_country_flag = HEJ_CONQ
 		occupy_small_country = yes
 	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = HEJ_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
+	}
 }
 
 country_event = { # Sinai
@@ -33134,6 +33111,13 @@ country_event = { # Sinai
 		trigger = { is_ai = no }
 		occupy_small_country = yes
 		set_country_flag = SINAI_CONQ
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = SINAI_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -33405,6 +33389,13 @@ country_event = { #The Annexation of Iraq
 		trigger = { is_ai = no }
 		set_country_flag = IRQ_CONQ
 		occupy_medium_country = yes
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = IRQ_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -33883,6 +33874,13 @@ country_event = { #Fate of Kurdistan
 		ai_chance = { base = 0 }
 		occupy_medium_country = yes
 		set_country_flag = KUR_CONQ
+	}
+
+	option = {#PERSIA SUBMOD
+		name = per_satrapy.option
+		trigger = { AND = { original_tag = PER has_country_flag = PER_EMPIRE_RESTORED_1 } }
+		set_country_flag = KUR_CONQ
+		custom_effect_tooltip = per_satrapy.option_tt
 	}
 }
 
@@ -42759,7 +42757,7 @@ country_event = { #Fate of Papua New Guinea
 		}
 	}
 	
-	option = { #Give it to the Indonesians
+	option = { #Give it to the Insulindians
 		name = annex.299.c
 		ai_chance = {
 			factor = 80
@@ -42832,7 +42830,7 @@ country_event = { #Fate of Sarawak
 		}
 	}
 	
-	option = { #Give it to the Indonesians
+	option = { #Give it to the Insulindians
 		name = annex.299.c
 		ai_chance = {
 			factor = 80
@@ -49902,7 +49900,6 @@ country_event = { #Fate of Transbaikalia
 				limit = { 
 					NOT = {
 						state = 564
-						state = 565
 					}
 				}
 				BRY = { 
@@ -49911,10 +49908,6 @@ country_event = { #Fate of Transbaikalia
 				}
 			}
 			564 = { 
-				clear_retain_state = yes 
-				add_core_of = BRY
-			} 
-			565 = { 
 				clear_retain_state = yes 
 				add_core_of = BRY
 			}   
@@ -49969,12 +49962,7 @@ country_event = { #Fate of Transbaikalia
 		}
 		set_temp_variable = { tag_to_release = MON }
 		every_owned_state = {
-			limit = { 
-				OR = {
-					state = 564 
-					state = 565 
-				}
-			}
+			limit = { state = 564 }
 			transfer_state_and_add_core = yes
 		}
 	}
@@ -50001,12 +49989,7 @@ country_event = { #Fate of Transbaikalia
 		}
 		set_temp_variable = { tag_to_release = SIB }
 		every_owned_state = {
-			limit = { 
-				OR = {
-					state = 564 
-					state = 565 
-				}
-			}
+			limit = { state = 564 }
 			transfer_state_and_add_core = yes
 		}
 	}
@@ -50018,7 +50001,6 @@ country_event = { #Fate of Transbaikalia
 			TRM = {
 				is_ally_of_ROOT = yes
 				ROOT_can_grant_land = yes
-				NOT = { has_cosmetic_tag = TRM_GU }
 			}
 		}
 		ai_chance = {
@@ -50034,12 +50016,7 @@ country_event = { #Fate of Transbaikalia
 		}
 		set_temp_variable = { tag_to_release = TRM }
 		every_owned_state = {
-			limit = { 
-				OR = {
-					state = 564 
-					state = 565 
-				}
-			}
+			limit = { state = 564 }
 			transfer_state_and_add_core = yes
 		}
 	}
@@ -50071,12 +50048,7 @@ country_event = { #Fate of Transbaikalia
 		}
 		set_temp_variable = { tag_to_release = var:566.owner }
 		every_owned_state = {
-			limit = { 
-				OR = {
-					state = 564 
-					state = 565 
-				}
-			}
+			limit = { state = 564 }
 			transfer_state_and_add_core = yes
 		}
 	}
@@ -50099,12 +50071,7 @@ country_event = { #Fate of Transbaikalia
 		}
 		set_temp_variable = { tag_to_release = TRB }
 		every_owned_state = {
-			limit = { 
-				OR = {
-					state = 564 
-					state = 565 
-				}
-			}
+			limit = { state = 564 }
 			transfer_state_and_add_core = yes
 		}
 	}
@@ -50292,7 +50259,6 @@ country_event = { #Fate of Transbaikalia
 			TRM = {
 				is_ally_of_ROOT = yes
 				ROOT_can_grant_land = yes
-				NOT = { has_cosmetic_tag = TRM_GU }
 			}
 		}
 		ai_chance = {
@@ -50463,7 +50429,6 @@ country_event = { #Fate of Yakutia
 			TRM = {
 				is_ally_of_ROOT = yes
 				ROOT_can_grant_land = yes
-				NOT = { has_cosmetic_tag = TRM_GU }
 			}
 		}
 		ai_chance = {
@@ -51099,7 +51064,6 @@ country_event = { #The fate of Kazakhstan
 			ALO = { 
 				drop_cosmetic_tag = yes 
 				clr_country_flag = turkestan_is_potential_government 
-				clr_country_flag = ALO_puppeted_by_RUS 
 			}
 			406 = { retain_state = yes } #Uralsk
 			583 = { retain_state = yes } #Petropavlovsk
@@ -51164,12 +51128,6 @@ country_event = { #The fate of Kazakhstan
 			}
 			set_temp_variable = { target = ALO }
 			turkestan_puppet_TARGET_effect = yes
-		}
-		hidden_effect = {
-			if = {
-				limit = { is_russian_tag_that_can_integrate = yes }
-				ALO = { set_country_flag = ALO_puppeted_by_RUS }
-			}
 		}
 	}
 	option = { #Integrate
@@ -53334,6 +53292,7 @@ country_event = { #Fate of Don
 				add_state_core = 1263
 				drop_cosmetic_tag = yes
 			}			
+			1231 = { retain_state = yes }
 		}
 	}
 	title = annexation_DKB_CONQ
@@ -54098,7 +54057,7 @@ country_event = { #Fate of the Crimea
 					desc = "POLITICS_SULTAN_KADYR_DESC"
 					picture = "gfx/leaders/CRM/Portrait_CRM_Kadyr_Giray.png"
 					expire = "1.1.1"
-					ideology = kemalism_subtype
+					ideology = authoritarian_democrat_subtype
 				}
 				create_country_leader = {
 					name = "Sultan Kadyr I"
@@ -54112,7 +54071,7 @@ country_event = { #Fate of the Crimea
 					desc = "POLITICS_SULTAN_KADYR_DESC"
 					picture = "gfx/leaders/CRM/Portrait_CRM_Kadyr_Giray.png"
 					expire = "1.1.1"
-					ideology = marlib_kemalism_subtype
+					ideology = marlib_national_liberalism_subtype
 				}
 				create_country_leader = {
 					name = "Sultan Kadyr I"
@@ -54656,16 +54615,6 @@ country_event = { #Fate of the East Galicia
 				is_claim_or_core_of_ROOT = no
 			}
 			add_claim_by = ROOT
-		}
-		if = {
-			limit = { 
-				has_country_flag = soviet_russia_restored 
-				202 = { has_dynamic_modifier = { modifier = SOV_ukrainian_government } }
-			}
-			every_state = {
-				limit = { is_core_of = WSU }
-				add_dynamic_modifier = { modifier = SOV_ukrainian_government }
-			}	
 		}
 		occupy_medium_country = yes
 		recheck_annexations = yes

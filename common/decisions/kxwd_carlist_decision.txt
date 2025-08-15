@@ -7447,9 +7447,14 @@ CAR_great_game = {
 		icon = generic_prepare_civil_war
 		highlight_states = {
 		  highlight_state_targets = {
-			  state = 37
-			  state = 99
-			  state = 337
+			  state = 98
+			  state = 87
+			  state = 1148
+			  state = 97
+			  state = 10
+			  state = 92
+			  state = 90
+			  state = 1088
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -7472,9 +7477,14 @@ CAR_great_game = {
 				}
 			  }
 			  POL = { 
-				37 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				99 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				337 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				98 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				87 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1148 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				97 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				10 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				92 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				90 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1088 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 			  }
 			}
 			NOT = {
@@ -7544,9 +7554,14 @@ CAR_great_game = {
 			  every_core_state = {
 				remove_core_of = POL
 			  }
-			  37 = { add_core_of = POL }
-			  99 = { add_core_of = POL }
-			  337 = { add_core_of = POL }
+			  98 = { add_core_of = POL }
+			  87 = { add_core_of = POL }
+			  1148 = { add_core_of = POL }
+			  97 = { add_core_of = POL }
+			  10 = { add_core_of = POL }
+			  92 = { add_core_of = POL }
+			  90 = { add_core_of = POL }
+			  1088 = { add_core_of = POL }
 			  POL = { 
 				every_core_state = {
 				  limit = {
@@ -12049,16 +12064,10 @@ CAR_great_game = {
 		icon = generic_prepare_civil_war
 		highlight_states = {
 		  highlight_state_targets = {
-			  state = 714
-			  state = 715
-			  state = 886
-			  state = 328
-			  state = 716
-			  state = 610
-			  state = 885
-			  state = 717
-			  state = 884
-			  state = 883
+			state = 1218
+			state = 415
+			state = 267
+			state = 1217
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -12081,16 +12090,10 @@ CAR_great_game = {
 				}
 			  }
 			  AFG = { 
-				714 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				715 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				886 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				328 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				716 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				610 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				885 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				717 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				884 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				883 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1218 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				415 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				267 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1217 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 			  }
 			}
 			NOT = {
@@ -12160,16 +12163,10 @@ CAR_great_game = {
 			  every_core_state = {
 				remove_core_of = AFG
 			  }
-			  714 = { add_core_of = AFG }
-			  715 = { add_core_of = AFG }
-			  886 = { add_core_of = AFG }
-			  328 = { add_core_of = AFG }
-			  716 = { add_core_of = AFG }
-			  610 = { add_core_of = AFG }
-			  885 = { add_core_of = AFG }
-			  717 = { add_core_of = AFG }
-			  884 = { add_core_of = AFG }
-			  883 = { add_core_of = AFG }
+			  1218 = { add_core_of = AFG }
+			  415 = { add_core_of = AFG }
+			  267 = { add_core_of = AFG }
+			  1217 = { add_core_of = AFG }
 			  AFG = { 
 				every_core_state = {
 				  limit = {
@@ -12202,16 +12199,19 @@ CAR_great_game = {
 		icon = generic_prepare_civil_war
 		highlight_states = {
 		  highlight_state_targets = {
-			  state = 714
-			  state = 715
-			  state = 886
-			  state = 328
-			  state = 716
-			  state = 610
-			  state = 885
-			  state = 717
-			  state = 884
-			  state = 883
+			  state = 446
+			  state = 447
+			  state = 452
+			  state = 456
+			  state = 457
+			  state = 549
+			  state = 551
+			  state = 552
+			  state = 862
+			  state = 1007
+			  state = 1008
+			  state = 1010
+			  state = 1011
 		  }
 		  highlight_color_while_active = 3
 		  highlight_color_before_active = 2
@@ -12234,16 +12234,19 @@ CAR_great_game = {
 				}
 			  }
 			  EGY = { 
-				714 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				715 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				886 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				328 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				716 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				610 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				885 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				717 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				884 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
-				883 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				446 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				447 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				452 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				456 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				457 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				549 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				551 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				552 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				862 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1007 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1008 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1010 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+				1011 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
 			  }
 			}
 			NOT = {
@@ -12313,16 +12316,19 @@ CAR_great_game = {
 			  every_core_state = {
 				remove_core_of = EGY
 			  }
-			  714 = { add_core_of = EGY }
-			  715 = { add_core_of = EGY }
-			  886 = { add_core_of = EGY }
-			  328 = { add_core_of = EGY }
-			  716 = { add_core_of = EGY }
-			  610 = { add_core_of = EGY }
-			  885 = { add_core_of = EGY }
-			  717 = { add_core_of = EGY }
-			  884 = { add_core_of = EGY }
-			  883 = { add_core_of = EGY }
+			446 = { add_core_of = EGY }
+			447 = { add_core_of = EGY }
+			452 = { add_core_of = EGY }
+			456 = { add_core_of = EGY }
+			457 = { add_core_of = EGY }
+			549 = { add_core_of = EGY }
+			551 = { add_core_of = EGY }
+			552 = { add_core_of = EGY }
+			862 = { add_core_of = EGY }
+			1007 = { add_core_of = EGY }
+			1008 = { add_core_of = EGY }
+			1010 = { add_core_of = EGY }
+			1011 = { add_core_of = EGY }
 			  EGY = { 
 				every_core_state = {
 				  limit = {
