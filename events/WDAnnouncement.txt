@@ -1,0 +1,22 @@
+###########################
+# Political Events
+###########################
+# By Kallar, Nijato, Sir Rogers, Zankoas and ~mw~
+###########################
+
+add_namespace = kxwd.announcement
+
+####################################
+### AI Event Fired At Game Start ###
+####################################
+
+
+country_event = {
+    id = kxwd.announcement.1
+    title = kxwd.announcement.1.t
+    desc = kxwd.announcement.1.d
+    fire_only_once = yes
+    option = {
+        name = kxwd.announcement.1.a
+    }
+}

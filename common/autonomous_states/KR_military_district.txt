@@ -43,6 +43,10 @@ autonomy_state = {
 	}
 
 	allowed = {
+		OR = {
+			tag = TRB
+			tag = ALO
+		}
 		overlord = { 
 			OR = {
 				tag = TRM

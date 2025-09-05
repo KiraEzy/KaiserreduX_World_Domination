@@ -3187,7 +3187,7 @@ RUS_Faction_Interaction = {
 		} }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3237,7 +3237,7 @@ RUS_Faction_Interaction = {
 		} }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3273,7 +3273,7 @@ RUS_Faction_Interaction = {
 		has_idea = RUS_Faction_Investment_1 }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3312,7 +3312,7 @@ RUS_Faction_Interaction = {
 		has_idea = RUS_Faction_Investment_2 }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3351,7 +3351,7 @@ RUS_Faction_Interaction = {
 		has_idea = RUS_Faction_Investment_3 }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3390,7 +3390,7 @@ RUS_Faction_Interaction = {
 		has_idea = RUS_Faction_Investment_4 }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3431,7 +3431,7 @@ RUS_Puppet_Management = {
 		}
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -3591,7 +3591,7 @@ RUS_Puppet_Management = {
 		} }
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -4668,51 +4668,6 @@ RUS_Puppet_Management = {
 		}
 	}	
 }
-RUS_War_Preparations = {
-    
-	RUS_Supply_Alaska = {
-		icon = GFX_decision_generic_construction
-		available = {
-			tag = RUS
-		   ALA = { is_subject_of = RUS }
-			463 = { is_owned_and_controlled_by = ALA }
-			num_of_civilian_factories_available_for_projects > 2
-		}
-		highlight_states = {
-			highlight_state_targets = { state = 463 } #Irkutsk
-		}
-		cost = 15
-		days_remove = 50
-		fire_only_once = yes
-		modifier = {
-			civilian_factory_use = 3
-		}
-		ai_will_do = {
-			factor = 10			
-		}
-		cancel_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision cancelled RUS_Supply_Alaska target: [From.GetName]"
-			add_political_power = 15
-		}
-		
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision RUS_Supply_Alaska target: [From.GetName]"
-		}
-
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Supply_Alaska target: [From.GetName]"
-			set_country_flag = RUS_supply_buff_alaska
-			463 = {
-				add_state_modifier = {
-					modifier = {
-						local_supplies = 2.0
-						army_speed_factor_for_controller = 0.5
-					}
-				}
-			}
-		}
-	}
-} 
 
 RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Albania = {
@@ -8094,7 +8049,7 @@ RUS_Foreign_Policy_decisions = {
 		}
     }
 		visible = {
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -8139,7 +8094,7 @@ RUS_Foreign_Policy_decisions = {
 		    has_completed_focus = AFR_Reform_Mittelafrika 
 			}
 			}
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 			
 		}	
     target_root_trigger = {
@@ -8179,7 +8134,7 @@ RUS_Foreign_Policy_decisions = {
 		visible = {
 		    AND = {
 		    has_completed_focus = RUS_China_Policy
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 			}
 		}	
     target_root_trigger = {
@@ -8226,7 +8181,7 @@ RUS_Foreign_Policy_decisions = {
 		visible = {
 		    AND = {
 		    has_completed_focus = RUS_India_Policy
-			has_completed_focus = RUS_Supremacy
+			has_completed_focus = RUS_The_Iron_Curtain
 			}
 		}	
     target_root_trigger = {

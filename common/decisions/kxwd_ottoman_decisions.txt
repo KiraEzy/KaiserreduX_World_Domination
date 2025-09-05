@@ -993,92 +993,6 @@
 # 		days_remove = 0
 # 	}
 OTT_great_game = {
-	TUR_establish_rk_ICE = {
-		icon = generic_prepare_civil_war
-	
-		
-			highlight_states = {
-				highlight_state_targets = {
-							state = 100
-	
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
-			}
-	
-		available = {
-			100 = { owner = { OR = { original_tag = TUR is_subject_of = TUR } } }
-		}
-	
-		fire_only_once = yes
-	
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			release = ICE
-			ICE = {
-				every_core_state = {
-					remove_core_of = ICE
-				}
-			}
-			100 = { add_core_of = ICE }
-	
-			ICE = { 
-				every_core_state = {
-				  limit = {
-					AND = {
-					  NOT = { 
-						is_core_of = TUR
-					  }
-					  OR = {
-						is_owned_by = TUR
-						OWNER = { is_subject_of = TUR} 
-					  }
-					}
-				  }
-				  transfer_state_to = ICE
-				}
-			  }
-			ICE = { 
-				set_cosmetic_tag = OTT_ICE_OCC
-				load_focus_tree = generic_focus            
-	
-				set_popularities = {
-					syndicalist = 5
-					social_democrat = 5
-					social_liberal = 0
-					market_liberal = 0
-					social_conservative = 20
-					authoritarian_democrat = 50
-					paternal_autocrat = 10
-					national_populist = 10
-				}
-				set_party_name = {
-					ideology = paternal_autocrat
-					name = "Iceland Vilayet"
-					long_name = "Iceland Vilayet"
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = "Iceland Vilayet"
-					long_name = "Iceland Vilayet"
-				}
-	
-				TUR = {
-					set_autonomy = {
-						target = ICE
-						autonomous_state = kx_colored_puppet
-					}
-				}
-	
-				set_politics = {
-					ruling_party = authoritarian_democrat
-					elections_allowed = no
-				}
-			}
-		}
-	}
 	TUR_establish_rk_SPR = {
 		icon = generic_prepare_civil_war
 	
@@ -10345,19 +10259,19 @@ OTT_great_game = {
 			factor = 5
 		}
 		complete_effect = {
-			release = SCO
-			SCO = {
+			release = SCT
+			SCT = {
 				every_core_state = {
-					remove_core_of = SCO
+					remove_core_of = SCT
 				}
 			}
-			120 = { add_core_of = SCO }
-			121 = { add_core_of = SCO }
-			133 = { add_core_of = SCO }
-			136 = { add_core_of = SCO }
-			938 = { add_core_of = SCO }
+			120 = { add_core_of = SCT }
+			121 = { add_core_of = SCT }
+			133 = { add_core_of = SCT }
+			136 = { add_core_of = SCT }
+			938 = { add_core_of = SCT }
 	
-			SCO = { 
+			SCT = { 
 				every_core_state = {
 				  limit = {
 					AND = {
@@ -10370,11 +10284,11 @@ OTT_great_game = {
 					  }
 					}
 				  }
-				  transfer_state_to = SCO
+				  transfer_state_to = SCT
 				}
 			  }
-			SCO = { 
-				set_cosmetic_tag = OTT_SCO_OCC
+			SCT = { 
+				set_cosmetic_tag = OTT_SCT_OCC
 				load_focus_tree = generic_focus            
 	
 				set_popularities = {
@@ -10400,7 +10314,7 @@ OTT_great_game = {
 	
 				TUR = {
 					set_autonomy = {
-						target = SCO
+						target = SCT
 						autonomous_state = kx_colored_puppet
 					}
 				}

@@ -1,0 +1,12 @@
+on_actions = {
+    on_startup = {
+        effect = { # NEVER FORGET! Important to include this line to distinguish it from random_events = { ... }
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+                country_event = kxwd.announcement.1
+            }
+        }
+    }
+}

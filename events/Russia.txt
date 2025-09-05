@@ -12343,6 +12343,7 @@ country_event = { #NSP
 			limit = { has_country_flag = soviet_russia_restored }
 			create_country_leader = {
 				name = "Lev Kamenev"
+				desc = "POLITICS_LEV_KAMENEV_DESC"
 				picture = "gfx/leaders/RUS/Portrait_SOV_Lev_Kamenev.png"
 				expire = "1.1.1"
 				ideology = bukharinist_subtype 
@@ -24267,7 +24268,20 @@ country_event = {
 		if = {
 			limit = { has_idea = RUS_Valerian_Kuybyshev_eco_tot }
 			remove_ideas_with_trait = economy_minister
-			add_ideas = RUS_Lazar_Kaganovich_eco_tot
+			if = {
+				limit = { SOV_kaganovich_in_power = yes }
+				add_ideas = RUS_Mikhail_M_Kaganovich_eco_tot
+			}
+			else_if = {
+				limit = { 
+					SOV_molotov_in_power = no
+					SOV_zinoviev_in_power = no
+				}
+				add_ideas = RUS_Nikolay_Voznesensky_eco_rso
+			}
+			else = {
+				add_ideas = RUS_Lazar_Kaganovich_eco_tot
+			}
 		}
 		set_country_flag = SOV_gosplan_krzhizhanovsky
 		set_temp_variable = { politburo_change = -1 }
@@ -24306,7 +24320,20 @@ country_event = {
 		if = {
 			limit = { has_idea = RUS_Valerian_Kuybyshev_eco_tot }
 			remove_ideas_with_trait = economy_minister
-			add_ideas = RUS_Lazar_Kaganovich_eco_tot
+			if = {
+				limit = { SOV_kaganovich_in_power = yes }
+				add_ideas = RUS_Mikhail_M_Kaganovich_eco_tot
+			}
+			else_if = {
+				limit = { 
+					SOV_molotov_in_power = no
+					SOV_zinoviev_in_power = no
+				}
+				add_ideas = RUS_Nikolay_Voznesensky_eco_rso
+			}
+			else = {
+				add_ideas = RUS_Lazar_Kaganovich_eco_tot
+			}
 		}
 		set_country_flag = SOV_gosplan_mezhlauk	
 		set_country_flag = SOV_cleanse_gosplan_completed	
@@ -24390,7 +24417,20 @@ country_event = {
 		if = {
 			limit = { has_idea = RUS_Valerian_Kuybyshev_eco_tot }
 			remove_ideas_with_trait = economy_minister
-			add_ideas = RUS_Lazar_Kaganovich_eco_tot
+			if = {
+				limit = { SOV_kaganovich_in_power = yes }
+				add_ideas = RUS_Mikhail_M_Kaganovich_eco_tot
+			}
+			else_if = {
+				limit = { 
+					SOV_molotov_in_power = no
+					SOV_zinoviev_in_power = no
+				}
+				add_ideas = RUS_Nikolay_Voznesensky_eco_rso
+			}
+			else = {
+				add_ideas = RUS_Lazar_Kaganovich_eco_tot
+			}
 		}
 		set_country_flag = SOV_gosplan_strumilin
 		set_temp_variable = { politburo_change = 1 }
@@ -28163,6 +28203,7 @@ country_event = {#Results
 			else = {
 				create_country_leader = {
 					name = "Lev Kamenev"
+					desc = "POLITICS_LEV_KAMENEV_DESC"
 					picture = "gfx/leaders/RUS/Portrait_SOV_Lev_Kamenev.png"
 					expire = "1.1.1"
 					ideology = bukharinist_subtype
@@ -29344,6 +29385,7 @@ country_event = { #
 		RUS_increase_nsp_pop_small = yes
 		create_country_leader = {
 			name = "Lev Kamenev"
+			desc = "POLITICS_LEV_KAMENEV_DESC"
 			picture = "gfx/leaders/RUS/Portrait_SOV_Lev_Kamenev.png"
 			expire = "1.1.1"
 			ideology = radsoc_communism_subtype 
@@ -34554,6 +34596,7 @@ country_event = { #
 				limit = { NOT = { has_country_flag = RUS_nsp_rkp_united } }
 				create_country_leader = {
 					name = "Lev Kamenev"
+					desc = "POLITICS_LEV_KAMENEV_DESC"
 					picture = "gfx/leaders/RUS/Portrait_SOV_Lev_Kamenev.png"
 					expire = "1.1.1"
 					ideology = radsoc_communism_subtype 
@@ -42823,6 +42866,7 @@ country_event = { #
 	option = {
 		name = russoc.374.a
 		add_ideas = SOV_army_party_control
+		hidden_effect = {
 		random_unit_leader = {
 			limit = { has_id = 448 }
 			set_unit_leader_flag = SOV_unreliable_general
@@ -42855,8 +42899,7 @@ country_event = { #
 			limit = { has_id = 1958 }
 			set_unit_leader_flag = SOV_unreliable_general
 		}
-		hidden_effect = {
-			country_event = { id = russoc.375 days = 180 random_days = 180 }
+		country_event = { id = russoc.375 days = 180 random_days = 180 }
 		}
 	}	
 	option = {
@@ -43598,8 +43641,8 @@ country_event = { #
 country_event = { #
 	id = russoc.386
 	immediate = { log = "[GetDateText]: [Root.GetName]: event russoc.383" }
-	title = russoc.383.t
-	desc = russoc.383.d
+	title = russoc.386.t
+	desc = russoc.386.d
 			
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -43623,6 +43666,7 @@ country_event = { #
 			}
 		}
 		hidden_effect = {
+			country_event = { id = russoc.346 days = 7 random_days = 2 }
 			country_event = { id = russoc.381 days = 14 random_days = 7 }
 			random_other_country = { news_event = russoc.2002 }
 		}
@@ -44557,6 +44601,44 @@ country_event = { #
 				ideology = tot_bukharinist_subtype 
 				traits = { RUS_ex_bolshevik }
 			}
+			hidden_effect = {
+				set_temp_variable = { RUS_new_tot = party_popularity_100@totalist }
+				set_temp_variable = { RUS_new_radsoc = party_popularity_100@radical_socialist }
+				divide_temp_variable = { RUS_new_radsoc = 2 }
+				add_to_temp_variable = { RUS_new_tot = RUS_new_radsoc }
+
+				set_temp_variable = { sum = 100 }
+				subtract_from_temp_variable = { sum = RUS_new_tot }
+				subtract_from_temp_variable = { sum = party_popularity_100@syndicalist }
+				subtract_from_temp_variable = { sum = RUS_new_radsoc }
+				subtract_from_temp_variable = { sum = party_popularity_100@social_democrat }
+				subtract_from_temp_variable = { sum = party_popularity_100@social_liberal }
+				subtract_from_temp_variable = { sum = party_popularity_100@market_liberal }
+				subtract_from_temp_variable = { sum = party_popularity_100@social_conservative }
+				subtract_from_temp_variable = { sum = party_popularity_100@authoritarian_democrat }
+				subtract_from_temp_variable = { sum = party_popularity_100@paternal_autocrat }
+				subtract_from_temp_variable = { sum = party_popularity_100@national_populist }
+				
+				add_to_temp_variable = { RUS_new_tot = sum } #avoid rounding errors
+
+				set_popularities = {
+					totalist = RUS_new_tot
+					syndicalist = party_popularity_100@syndicalist
+					radical_socialist = RUS_new_radsoc
+					social_democrat = party_popularity_100@social_democrat
+					social_liberal = party_popularity_100@social_liberal
+					market_liberal = party_popularity_100@market_liberal
+					social_conservative = party_popularity_100@social_conservative
+					authoritarian_democrat = party_popularity_100@authoritarian_democrat
+					paternal_autocrat = party_popularity_100@paternal_autocrat
+					national_populist = party_popularity_100@national_populist
+				}
+			}
+			if = {
+				limit = { has_country_flag = SOV_rsrpi_united_with_rkp }
+				add_socdem_to_coalition = yes
+			}
+			add_radsoc_to_coalition = yes		
 		}
 	}
 }
@@ -46799,7 +46881,10 @@ country_event = { #Union formation
 				}
 				set_cosmetic_tag = SOV_union_yezhov
 			}			
-			else = {
+			else_if = {
+				limit = {
+					NOT = { has_cosmetic_tag = SOV_zhdanov }
+				}
 				set_cosmetic_tag = SOV_union
 			}
 		}
@@ -52936,7 +53021,10 @@ country_event = { #Russian demands GEO
 			factor = 25
 			modifier = {
 				factor = 0
-				FROM = { has_completed_focus = RUS_Expansionism }
+				OR = {
+					FROM = { has_completed_focus = RUS_Expansionism }
+					is_subject = yes
+				}
 			}
 		}
 		add_stability = -0.04
@@ -52957,7 +53045,10 @@ country_event = { #Russian demands GEO
 			factor = 50
 			modifier = {
 				factor = 0
-				FROM = { is_ai = no }
+				OR = {
+					FROM = { is_ai = no }
+					is_subject = yes
+				}
 			}
 		}
 		add_stability = 0.08
@@ -52994,7 +53085,10 @@ country_event = { #Russian demands GEO
 			factor = 20
 			modifier = {
 				factor = 0
-				FROM = { has_completed_focus = RUS_Expansionism }
+				OR = {
+					FROM = { has_completed_focus = RUS_Expansionism }
+					is_subject = yes
+				}
 			}
 		}
 		add_stability = -0.08
@@ -53068,6 +53162,10 @@ country_event = { #Russian coup GEO
 		name = rusfor.1029.a #The rebels take over the capital!
 		ai_chance = {
 			factor = 60
+			modifier = {
+				factor = 0
+				is_subject = yes
+			}
 		}
 		set_politics = {
 			ruling_party = paternal_autocrat
@@ -61258,11 +61356,6 @@ country_event = { #Kvzhd
 			transfer_state = 883
 			transfer_state = 714
 			transfer_state = 717
-			add_to_array = { global.RUS_integration_state_array = 885 }
-			add_to_array = { global.RUS_integration_state_array = 884 }
-			add_to_array = { global.RUS_integration_state_array = 883 }
-			add_to_array = { global.RUS_integration_state_array = 714 }
-			add_to_array = { global.RUS_integration_state_array = 717 }
 			country_event = {
 				id = rusfor.1403
 				days = 2
@@ -61305,6 +61398,26 @@ country_event = { #Kvzhd
 	option = {
 		name = rusfor.1403.a
 		add_political_power = 25
+		885 = { 
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		884 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		883 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		714 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		717 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
 	}
 }
 country_event = { #Kvzhd
@@ -61317,6 +61430,26 @@ country_event = { #Kvzhd
 	
 	option = {
 		name = rusfor.1404.a
+		885 = { 
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		884 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		883 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		714 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
+		717 = {  
+			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes 
+		} 
 		activate_targeted_decision = { target = FROM decision = RUS_Attack_Country_default }
 	}
 	option = {
@@ -61374,11 +61507,6 @@ country_event = { #Kvzhd
 			transfer_state = 883
 			transfer_state = 714
 			transfer_state = 717
-			add_to_array = { global.RUS_integration_state_array = 885 }
-			add_to_array = { global.RUS_integration_state_array = 884 }
-			add_to_array = { global.RUS_integration_state_array = 883 }
-			add_to_array = { global.RUS_integration_state_array = 714 }
-			add_to_array = { global.RUS_integration_state_array = 717 }
 			country_event = {
 				id = rusfor.1403
 				days = 2
