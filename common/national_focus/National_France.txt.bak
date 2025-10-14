@@ -689,6 +689,7 @@ focus_tree = {
 				remove_idea = NFA_republican_ideal2 
 				add_idea = NFA_united_govt
 			}
+			set_country_leader_ideology = authoritarian_liberalism_subtype
 		}
 	}
 	
@@ -6031,6 +6032,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_political_power = 45
+			custom_effect_tooltip = NFA_Companies_tt
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -15258,6 +15260,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_ideas = NFE_levee_en_masse
 			if = {
 				limit = {
 					country_exists = WGR

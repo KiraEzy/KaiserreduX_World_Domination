@@ -1136,9 +1136,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus XSM_three_province_plan"
 			add_ideas = MLT_holy_leftism
 			hidden_effect = {
-				country_event = {
-					id = mlt.108
-					days = 20
+				if = {
+					limit = { has_government = social_democrat }
+					country_event = {
+						id = mlt.108
+						days = 20
+					}
 				}
 			}
 		
@@ -2662,7 +2665,6 @@ focus_tree = {
 		relative_position_id = MLT_take_the_cross
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus XSM_three_province_plan"
-			add_state_core = 115
 			every_country = {
 				limit = {
 					owns_state = 115
@@ -4073,7 +4075,15 @@ focus_tree = {
 					days = 3
 				}
 				}
-		
+			if = {
+				limit = { 187 = { is_owned_by = TUR } }
+				TUR = {
+				country_event = {
+					id = mlt.751
+					days = 3
+				}
+				}
+			}	
 		}
 	}
 	focus = {

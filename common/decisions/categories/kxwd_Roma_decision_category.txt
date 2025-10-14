@@ -1,0 +1,21 @@
+ROMA_great_game = {
+	priority = 10
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = SIC
+	}
+
+	visible = { 
+		# AND = {
+		has_completed_focus = SIC_sovereign_beyond_state
+		# 	OR = {
+		# 		has_cosmetic_tag = SIC_erome
+		# 		has_cosmetic_tag = SIC_krome
+		# 		has_cosmetic_tag = SIC_arome
+		# 		has_cosmetic_tag = SIC_trome
+		# 		has_cosmetic_tag = SIC_europa
+		# 	}
+		# }
+	}
+}
