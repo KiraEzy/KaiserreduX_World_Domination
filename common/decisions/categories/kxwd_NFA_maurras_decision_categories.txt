@@ -1,0 +1,11 @@
+NFA_great_game_MAU = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		has_completed_focus = NFA_emphasise_maurrasisme
+	}
+}
