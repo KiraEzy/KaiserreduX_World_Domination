@@ -9,4 +9,15 @@ on_actions = {
             }
         }
     }
+    on_state_control_changed = {
+        effect = {
+            if = {
+                limit = {
+                    FROM.FROM = { state = 773 }
+                    ROOT = { tag = GRE }
+                }
+                GRE = {country_event = KXWD_GRE.2}
+            }
+        }
+    }
 }

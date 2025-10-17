@@ -1,0 +1,849 @@
+
+###################################
+####### KXWD BYZANTIUM TREE #######
+###################################
+
+
+shared_focus = {
+	id = KXWD_GRE_monarchism_to_rejuvenate_greece
+	icon = KXWD_placeholder
+    available = {
+        has_country_flag = KXWD_GRE_eastern_empire
+    }
+    bypass = {
+        has_country_flag = KXWD_GRE_eastern_empire
+    }
+	x = 9
+	y = 0
+	relative_position_id = GRE_byz
+	cost = 0
+		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_monarchism_to_rejuvenate_greece"
+	}
+}
+
+shared_focus = {
+	id = KXWD_GRE_restore_the_kingdom
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_monarchism_to_rejuvenate_greece
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_monarchism_to_rejuvenate_greece
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_restore_the_kingdom"
+		remove_ideas = GRE_memories_of_king
+        country_event = {
+			id = KXWD_GRE.1
+		}
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_destroy_the_venizelist_ideas
+    icon = KXWD_placeholder
+    x = -2
+    y = 1
+	relative_position_id = KXWD_GRE_restore_the_kingdom
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_restore_the_kingdom
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_destroy_the_venizelist_ideas"
+        add_stability = 0.15
+        add_popularity = {
+							ideology = social_liberal
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = market_liberal
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = social_conservative
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = authoritarian_democrat
+							popularity = -0.20
+		}
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_dreams_of_a_greek_empire_of_old
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_restore_the_kingdom
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_restore_the_kingdom
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_dreams_of_a_greek_empire_of_old"
+        add_ideas = KXWD_GRE_dreams_of_eastern_rome_1
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_free_and_loyal_greece
+    icon = KXWD_placeholder
+    x = 2
+    y = 1
+	relative_position_id = KXWD_GRE_restore_the_kingdom
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_restore_the_kingdom
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_free_and_loyal_greece"
+        add_ideas = KXWD_GRE_free_and_loyal
+        add_research_slot = 1
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_destroy_the_socialist_threat
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_destroy_the_venizelist_ideas
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_destroy_the_venizelist_ideas
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_destroy_the_socialist_threat"
+        add_stability = 0.15
+        add_popularity = {
+							ideology = totalist
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = syndicalist
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = radical_socialist
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = social_democrat
+							popularity = -0.20
+		}
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_prepare_for_the_reconquest_of_our_past
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_dreams_of_a_greek_empire_of_old
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_dreams_of_a_greek_empire_of_old
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_prepare_for_the_reconquest_of_our_past"
+        swap_ideas = {
+            remove_idea = KXWD_GRE_dreams_of_eastern_rome_1 
+            add_idea = KXWD_GRE_dreams_of_eastern_rome_2
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_empower_the_king
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_free_and_loyal_greece
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_free_and_loyal_greece
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_empower_the_king"
+        swap_ideas = {
+            remove_idea = KXWD_GRE_free_and_loyal
+            add_idea = KXWD_GRE_empowered_monarch
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_stabilize_the_kingdom
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_destroy_the_socialist_threat
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_destroy_the_socialist_threat
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_stabilize_the_kingdom"
+        add_ideas = KXWD_GRE_stabilize_the_kingdom
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_create_turkophobia
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_prepare_for_the_reconquest_of_our_past
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_prepare_for_the_reconquest_of_our_past
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_create_turkophobia"
+        add_ideas = KXWD_GRE_turkophobia
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_entrench_royalism_in_the_army
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_empower_the_king
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_empower_the_king
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_entrench_royalism_in_the_army"
+        add_ideas = KXWD_GRE_royal_army
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_rearming_complete_nation_prepared
+    icon = KXWD_placeholder
+    x = 1
+    y = 1
+	relative_position_id = KXWD_GRE_stabilize_the_kingdom
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_stabilize_the_kingdom
+    }
+    prerequisite = {
+        focus = KXWD_GRE_create_turkophobia
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_rearming_complete_nation_prepared"
+        swap_ideas = {
+            remove_idea = KXWD_GRE_stabilize_the_kingdom
+            add_idea = KXWD_GRE_nation_prepared
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_create_the_neo_varangian_guard
+    icon = KXWD_placeholder
+    x = 1
+    y = 1
+	relative_position_id = KXWD_GRE_create_turkophobia
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_create_turkophobia
+    }
+    prerequisite = {
+        focus = KXWD_GRE_entrench_royalism_in_the_army
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_create_the_neo_varangian_guard"
+        swap_ideas = {
+            remove_idea = KXWD_GRE_royal_army
+            add_idea = KXWD_GRE_neo_varangian_guard
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_reconquer_the_eastern_roman_empire
+    icon = KXWD_placeholder
+    x = 1
+    y = 1
+	relative_position_id = KXWD_GRE_rearming_complete_nation_prepared
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_rearming_complete_nation_prepared
+    }
+    prerequisite = {
+        focus = KXWD_GRE_create_the_neo_varangian_guard
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_reconquer_the_eastern_roman_empire"
+        add_timed_idea = {
+				idea = KXWD_GRE_retake_constantinople
+				days = 180
+		}
+        declare_war_on = {
+            target = TUR
+            type = annex_everything
+        }
+        hidden_effect = {
+				add_state_core = 341
+				add_state_core = 773
+				add_state_core = 340
+				add_state_core = 164
+				add_state_core = 187
+				add_state_core = 339
+				add_state_core = 342
+				add_state_core = 343
+				add_state_core = 346
+				add_state_core = 49
+				add_state_core = 356
+				add_state_core = 345
+				add_state_core = 355
+				add_state_core = 344
+				add_state_core = 350
+				add_state_core = 677
+				add_state_core = 680
+                add_state_core = 995
+				add_state_core = 955
+				add_state_core = 553
+				add_state_core = 554
+				add_state_core = 992
+				add_state_core = 455
+				add_state_core = 454
+				add_state_core = 453
+				add_state_core = 753
+				add_state_core = 183
+			}
+        custom_effect_tooltip = KXWD_GRE_first_core_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_reconquer_the_eastern_roman_empire
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_reconquer_the_eastern_roman_empire
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_grant_our_generals_and_admirals_royal_titles"
+        custom_effect_tooltip = KXWD_GRE_benevolence
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_take_the_balkans
+    icon = KXWD_placeholder
+    x = -2
+    y = 1
+	relative_position_id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_take_the_balkans"
+        hidden_effect = {
+				add_state_claim = 766
+				add_state_claim = 44
+				add_state_claim = 1268
+				add_state_claim = 106
+				add_state_claim = 1271
+				add_state_claim = 765
+				add_state_claim = 1089
+				add_state_claim = 212
+				add_state_claim = 211
+				add_state_claim = 48
+				add_state_claim = 771
+				add_state_claim = 770
+				add_state_claim = 1090
+				add_state_claim = 841
+				add_state_claim = 77
+				add_state_claim = 772
+				add_state_claim = 767
+				add_state_claim = 108
+				add_state_claim = 107
+				add_state_claim = 1269
+				add_state_claim = 1097
+				add_state_claim = 105
+				add_state_claim = 1270
+				add_state_claim = 1145
+				add_state_claim = 104
+				add_state_claim = 1141
+				add_state_claim = 1143
+				add_state_claim = 1142
+				add_state_claim = 1098
+				add_state_claim = 163
+				add_state_claim = 1206
+				add_state_claim = 103
+				add_state_claim = 1099
+				add_state_claim = 1105
+				add_state_claim = 109
+				add_state_claim = 1102
+				add_state_claim = 794
+				add_state_claim = 1128
+				add_state_claim = 1101
+				add_state_claim = 1104
+				add_state_claim = 1103
+				add_state_claim = 102
+				add_state_claim = 1144
+				add_state_claim = 736
+				add_state_claim = 1100
+				add_state_claim = 81
+				add_state_claim = 46
+				add_state_claim = 1222
+				add_state_claim = 78
+				add_state_claim = 79
+				add_state_claim = 713
+				add_state_claim = 1320
+				add_state_claim = 80
+				add_state_claim = 1220
+				add_state_claim = 137
+				add_state_claim = 1221
+		}
+        hidden_effect = {
+            country_event = {
+			id = KXWD_generic.1
+            }
+        }
+        custom_effect_tooltip = KXWD_GRE_first_claim_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_retake_egypt
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_retake_egypt"
+        hidden_effect = {
+				add_state_claim = 446
+				add_state_claim = 447
+				add_state_claim = 452
+				add_state_claim = 1008
+				add_state_claim = 457
+				add_state_claim = 456
+				add_state_claim = 552
+				add_state_claim = 451
+				add_state_claim = 450
+				add_state_claim = 663
+				add_state_claim = 1009
+				add_state_claim = 448
+				add_state_claim = 273
+				add_state_claim = 665
+				add_state_claim = 458
+		}
+        hidden_effect = {
+            country_event = {
+			id = KXWD_generic.1
+            }
+        }
+        custom_effect_tooltip = KXWD_GRE_second_claim_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_italian_expedition
+    icon = KXWD_placeholder
+    x = 2
+    y = 1
+	relative_position_id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_italian_expedition"
+        hidden_effect = {
+				add_state_claim = 116
+				add_state_claim = 115
+				add_state_claim = 156
+				add_state_claim = 1006
+				add_state_claim = 837
+				add_state_claim = 117
+				add_state_claim = 742
+		}
+        hidden_effect = {
+            country_event = {
+			id = KXWD_generic.1
+            }
+        }
+        custom_effect_tooltip = KXWD_GRE_third_claim_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_integrate_the_balkans
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_take_the_balkans
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_take_the_balkans
+    }
+    available = {
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_bulgarian_claims
+            }
+            FROM = {
+				owns_state = 106
+				owns_state = 1271
+				owns_state = 1089
+				owns_state = 212
+				owns_state = 211
+				owns_state = 48
+				owns_state = 771
+				owns_state = 770
+				owns_state = 1090
+				owns_state = 841
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_wallachian_claims
+            }
+            FROM = {
+                owns_state = 81
+                owns_state = 46
+                owns_state = 77
+                owns_state = 772
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_moldavian_claims
+            }
+            FROM = {
+                owns_state = 78
+                owns_state = 79
+                owns_state = 1222
+                owns_state = 1320
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_bukovinian_claims
+            }
+            FROM = {
+				owns_state = 713
+				owns_state = 80
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_crimean_claims
+            }
+            FROM = {
+				owns_state = 1220
+				owns_state = 1221
+				owns_state = 137
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_albanian_claims
+            }
+            FROM = {
+                owns_state = 766
+                owns_state = 44
+                owns_state = 1268
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_serbian_claims
+            }
+            FROM = {
+                owns_state = 765
+                owns_state = 767
+                owns_state = 107
+                owns_state = 108
+                owns_state = 1269
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_illyrian_claims
+            }
+            FROM = {
+                owns_state = 1097
+				owns_state = 105
+				owns_state = 1270
+				owns_state = 1145
+				owns_state = 104
+				owns_state = 1141
+				owns_state = 1143
+				owns_state = 1142
+				owns_state = 1098
+				owns_state = 163
+				owns_state = 1206
+				owns_state = 103
+				owns_state = 1099
+				owns_state = 1105
+				owns_state = 109
+				owns_state = 1102
+				owns_state = 794
+				owns_state = 1128
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_slovenian_claims
+            }
+            FROM = {
+				owns_state = 1101
+				owns_state = 1104
+				owns_state = 1103
+				owns_state = 102
+				owns_state = 1144
+				owns_state = 736
+				owns_state = 1100
+            }
+        }
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_integrate_the_balkans"
+        hidden_effect = {
+				add_state_core = 766
+				add_state_core = 44
+				add_state_core = 1268
+				add_state_core = 106
+				add_state_core = 1271
+				add_state_core = 765
+				add_state_core = 1089
+				add_state_core = 212
+				add_state_core = 211
+				add_state_core = 48
+				add_state_core = 771
+				add_state_core = 770
+				add_state_core = 1090
+				add_state_core = 841
+				add_state_core = 77
+				add_state_core = 772
+				add_state_core = 767
+				add_state_core = 108
+				add_state_core = 107
+				add_state_core = 1269
+				add_state_core = 1097
+				add_state_core = 105
+				add_state_core = 1270
+				add_state_core = 1145
+				add_state_core = 104
+				add_state_core = 1141
+				add_state_core = 1143
+				add_state_core = 1142
+				add_state_core = 1098
+				add_state_core = 163
+				add_state_core = 1206
+				add_state_core = 103
+				add_state_core = 1099
+				add_state_core = 1105
+				add_state_core = 109
+				add_state_core = 1102
+				add_state_core = 794
+				add_state_core = 1128
+				add_state_core = 1101
+				add_state_core = 1104
+				add_state_core = 1103
+				add_state_core = 102
+				add_state_core = 1144
+				add_state_core = 736
+				add_state_core = 1100
+				add_state_core = 81
+				add_state_core = 46
+				add_state_core = 1222
+				add_state_core = 78
+				add_state_core = 79
+				add_state_core = 713
+				add_state_core = 1320
+				add_state_core = 80
+				add_state_core = 1220
+				add_state_core = 137
+				add_state_core = 1221
+			}
+        custom_effect_tooltip = KXWD_GRE_second_core_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_integrate_north_africa
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_retake_egypt
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_retake_egypt
+    }
+    available = {
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_egyptian_claims
+            }
+            FROM = {
+                owns_state = 446
+                owns_state = 447
+                owns_state = 452
+                owns_state = 1008
+                owns_state = 457
+                owns_state = 456
+                owns_state = 552
+            }
+        }
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_north_african_claims
+            }
+            FROM = {
+                owns_state = 451
+                owns_state = 450
+                owns_state = 663
+                owns_state = 1009
+                owns_state = 448
+                owns_state = 273
+                owns_state = 665
+                owns_state = 458
+            }
+        }
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_integrate_north_africa"
+        hidden_effect = {
+				add_state_core = 446
+				add_state_core = 447
+				add_state_core = 452
+				add_state_core = 1008
+				add_state_core = 457
+				add_state_core = 456
+				add_state_core = 552
+				add_state_core = 451
+				add_state_core = 450
+				add_state_core = 663
+				add_state_core = 1009
+				add_state_core = 448
+				add_state_core = 273
+				add_state_core = 665
+				add_state_core = 458
+		}
+        custom_effect_tooltip = KXWD_GRE_third_core_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_integrate_italy
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_italian_expedition
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_italian_expedition
+    }
+    available = {
+        custom_override_tooltip = {
+            tooltip = {
+                localization_key = KXWD_GRE_own_italian_claims
+            }
+            FROM = {
+                owns_state = 116
+                owns_state = 115
+                owns_state = 156
+                owns_state = 1006
+                owns_state = 837
+                owns_state = 117
+                owns_state = 742
+            }
+        }
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_integrate_italy"
+        hidden_effect = {
+				add_state_core = 116
+				add_state_core = 115
+				add_state_core = 156
+				add_state_core = 1006
+				add_state_core = 837
+				add_state_core = 117
+				add_state_core = 742
+		}
+        custom_effect_tooltip = KXWD_GRE_fourth_core_wave
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_the_purple_phoenix_rises_again
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_integrate_north_africa
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_integrate_the_balkans
+    }
+    prerequisite = {
+        focus = KXWD_GRE_integrate_north_africa
+    }
+    prerequisite = {
+        focus = KXWD_GRE_integrate_italy
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_the_purple_phoenix_rises_again"
+        add_ideas = KXWD_GRE_the_purple_phoenix_rises
+    }
+}
+
+shared_focus = {
+	id = KXWD_GRE_glory_of_the_empire
+    icon = KXWD_placeholder
+    x = 0
+    y = 1
+	relative_position_id = KXWD_GRE_the_purple_phoenix_rises_again
+    cost = 5
+    prerequisite = {
+        focus = KXWD_GRE_the_purple_phoenix_rises_again
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_for_the_glory_of_the_empire"
+        add_ideas = KXWD_GRE_for_the_glory_of_the_empire
+    }
+}

@@ -1,0 +1,33 @@
+###################################
+####### KXWD Generic Events #######
+###################################
+
+add_namespace = KXWD_generic
+	
+
+# Wargoals against any Country that holds FROM claims
+country_event = {
+	id = KXWD_generic.1
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_generic.1"
+		every_country = {
+			limit = {
+				THIS = {
+					any_owned_state = {
+						is_claimed_by = FROM
+					}
+				}
+				NOT = { tag = FROM }
+				NOT = { FROM = { has_wargoal_against = THIS } }
+			}
+			FROM = {
+				create_wargoal = {
+					target = PREV
+					type = annex_everything
+				}
+			}
+		}
+	}
+}	

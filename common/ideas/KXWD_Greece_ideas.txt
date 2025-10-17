@@ -1,0 +1,169 @@
+##############
+# Greece ideas
+##############
+
+ideas = {
+	country = {
+		KXWD_GRE_dreams_of_eastern_rome_1= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea dreams_of_eastern_rome_1"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				political_power_factor = 0.05
+				war_support_weekly = 0.01
+				recruitable_population_factor = 0.2
+				war_support_factor = 0.1
+				stability_factor = 0.1
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_GRE_dreams_of_eastern_rome_2= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea dreams_of_eastern_rome_2"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				political_power_factor = 0.15
+				war_support_weekly = 0.015
+				recruitable_population_factor = 0.4
+				recruitable_population = 0.025
+				war_support_factor = 0.1
+				stability_factor = 0.1
+				army_attack_factor = 0.05
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_GRE_turkophobia= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea turkophobia"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_regain = 0.2
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_GRE_free_and_loyal= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea free_and_loyal"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.1
+				drift_defence_factor = 0.25
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_GRE_empowered_monarch= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea empowered_monarch"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_speed_buildings_factor = 0.25
+				research_speed_factor = 0.25
+				drift_defence_factor = 0.5
+				stability_factor = 0.25
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_GRE_royal_army= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea royal_army"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.15
+				land_reinforce_rate = 1.5
+			}
+			removal_cost = -1
+		}
+
+		KXWD_GRE_neo_varangian_guard= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea neo_varangian_guard"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				army_org_factor = 0.2
+				army_morale_factor = 0.2
+				land_reinforce_rate = 2.5
+				army_speed_factor = 0.2
+			}
+			removal_cost = -1
+		}
+
+		KXWD_GRE_stabilize_the_kingdom= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea stabilize_the_kingdom"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				stability_weekly = 0.005
+				stability_factor = 0.1
+		        paternal_autocrat_drift = 0.05
+				industrial_capacity_factory = 0.2
+			}
+			removal_cost = -1
+		}
+
+		KXWD_GRE_nation_prepared= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea nation_prepared"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				stability_weekly = 0.01
+				stability_factor = 0.1
+		        paternal_autocrat_drift = 0.1
+				industrial_capacity_factory = 0.3
+			}
+			removal_cost = -1
+		}
+
+		KXWD_GRE_retake_constantinople= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea retake_constantinople"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = TUR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+
+		KXWD_GRE_the_purple_phoenix_rises= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_purple_phoenix_rises"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				monthly_population = 1
+				compliance_gain = 0.1
+			}
+			removal_cost = -1
+		}
+
+		KXWD_GRE_for_the_glory_of_the_empire= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea for_the_glory_of_the_empire"}
+			allowed = {always = no}
+			picture = KXWD_placeholder
+			modifier = {
+				justify_war_goal_time = -0.9
+				consumer_goods_factor = -0.25				
+			}
+			removal_cost = -1
+		}
+}
