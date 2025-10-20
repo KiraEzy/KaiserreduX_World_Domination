@@ -1,0 +1,25 @@
+add_namespace = wd_pathguide
+
+country_event = { #Sicily Pathguide
+	id = wd_pathguide.1
+	title = wd_pathguide.1.t
+	desc = wd_pathguide.1.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.1.a
+	}
+}
+
+country_event = { #Italy Pathguide
+	id = wd_pathguide.2
+	title = wd_pathguide.2.t
+	desc = wd_pathguide.2.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.2.a
+	}
+}

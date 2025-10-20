@@ -2,17 +2,17 @@ GRE_great_game = {
 	GRE_establish_rk_ASY = {
 		icon = generic_prepare_civil_war
 
-			highlight_states = {
-				highlight_state_targets = {
-					state = 291
-					state = 349
-					state = 676
-					state = 812
-					state = 819
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
+		highlight_states = {
+			highlight_state_targets = {
+				state = 291
+				state = 349
+				state = 676
+				state = 812
+				state = 819
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 
 		available = {
 			291 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
@@ -98,7 +98,6 @@ GRE_great_game = {
 			}
 		}
 	}
-
 	GRE_establish_rk_SAU = {
 		icon = generic_prepare_civil_war
 
@@ -156,7 +155,7 @@ GRE_great_game = {
 			1035 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 		}
 
-		fire_only_once = yes
+			fire_only_once = yes
 
 		ai_will_do = {
 			factor = 5
@@ -211,29 +210,29 @@ GRE_great_game = {
 				set_cosmetic_tag = GRE_SAU_OCC
 				load_focus_tree = generic_focus            
 
-				create_country_leader = {
-					name = "Vasileios Vrachnos"
-					picture = "gfx/leaders/GRE/Portrait_GRE_Vasileios_Vrachnos.png"
-					expire = "1.1.1"
-					ideology = junta_subtype
-					traits = {
+					create_country_leader = {
+						name = "Vasileios Vrachnos"
+						picture = "gfx/leaders/GRE/Portrait_GRE_Vasileios_Vrachnos.png"
+						expire = "1.1.1"
+						ideology = junta_subtype
+						traits = {
+						}
 					}
-				}
 
-				set_popularities = {
-					authoritarian_democrat = 50.0
-					paternal_autocrat = 50.0
-				}
-				set_party_name = {
-					ideology = paternal_autocrat
-					name = "Byzantine Military"
-					long_name = "Byzantine Military"
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = "Byzantine Military"
-					long_name = "Byzantine Military"
-				}
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						name = "Byzantine Military"
+						long_name = "Byzantine Military"
+					}
+					set_party_name = {
+						ideology = authoritarian_democrat
+						name = "Byzantine Military"
+						long_name = "Byzantine Military"
+					}
 
 				GRE = {
 					set_autonomy = {
@@ -242,35 +241,354 @@ GRE_great_game = {
 					}
 				}
 
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
 				}
 			}
 		}
+
+		GRE_establish_rk_CAN = {
+			icon = generic_prepare_civil_war
+
+				highlight_states = {
+					highlight_state_targets = {
+						state = 261
+						state = 276
+						state = 277
+						state = 304
+						state = 308
+						state = 311
+						state = 312
+						state = 313
+						state = 314
+						state = 315
+						state = 316
+						state = 317
+						state = 318
+						state = 319
+						state = 331
+						state = 332
+						state = 357
+						state = 358
+						state = 359
+						state = 360
+						state = 361
+						state = 362
+						state = 363
+						state = 364
+						state = 365
+						state = 366
+						state = 367
+						state = 368
+						state = 369
+						state = 370
+						state = 371
+						state = 372
+						state = 373
+						state = 374
+						state = 375
+						state = 376
+						state = 377
+						state = 378
+						state = 379
+						state = 380
+						state = 381
+						state = 382
+						state = 383
+						state = 384
+						state = 385
+						state = 386
+						state = 387
+						state = 388
+						state = 389
+						state = 390
+						state = 391
+						state = 392
+						state = 393
+						state = 394
+						state = 395
+						state = 396
+						state = 463
+						state = 464
+						state = 465
+						state = 466
+						state = 467
+						state = 468
+						state = 469
+						state = 470
+						state = 471
+						state = 472
+						state = 473
+						state = 474
+						state = 475
+						state = 476
+						state = 477
+						state = 478
+						state = 479
+						state = 480
+						state = 481
+						state = 482
+						state = 483
+						state = 484
+						state = 485
+						state = 682
+						state = 683
+						state = 685
+						state = 686
+						state = 689
+						state = 690
+						state = 692
+						state = 694
+						state = 696
+						state = 730
+						state = 739
+						state = 740
+						state = 796
+						state = 797
+						state = 798
+						state = 818
+						state = 820
+						state = 829
+						state = 832
+						state = 833
+						state = 842
+						state = 854
+						state = 929
+						state = 930
+						state = 931
+						state = 932
+						state = 933
+						state = 934
+						state = 935
+						state = 1070
+						state = 1071
+						state = 1077
+						state = 1096
+						state = 1150
+						state = 1151
+						state = 1152
+						state = 1153
+						state = 1154
+						state = 1155
+						state = 1156
+						state = 1157
+						state = 1158
+						state = 1159
+						state = 1160
+						state = 1161
+						state = 1162
+						state = 1163
+						state = 1164
+						state = 1165
+						state = 1166
+						state = 1167
+						state = 1168
+						state = 1169
+						state = 1170
+						state = 1171
+						state = 1172
+						state = 1173
+						state = 1174
+						state = 1175
+						state = 1247
+						state = 1248
+						state = 1249
+						state = 1250
+						state = 1251
+						state = 1252
+						state = 1253
+						state = 1254
+						state = 1255
+						state = 1256
+						state = 1257
+						state = 1258
+						state = 1259
+						state = 1260
+						state = 1261
+						state = 1262
+						state = 1273
+						state = 1312
+						state = 1330
+						state = 1331
+						state = 1332
+						state = 1348
+						state = 1349
+						state = 1350
+					}
+					highlight_color_while_active = 3
+					highlight_color_before_active = 2
+				}
+			highlight_states = {
+				highlight_state_targets = {
+					state = 276
+					state = 331
+					state = 332
+					state = 463
+					state = 464
+					state = 465
+					state = 466
+					state = 467
+					state = 468
+					state = 469
+					state = 470
+					state = 471
+					state = 472
+					state = 473
+					state = 682
+					state = 683
+					state = 730
+					state = 739
+					state = 740
+					state = 832
+					state = 1273
+					state = 1330
+					state = 1331
+					state = 1332
+					state = 1348
+					state = 1349
+					state = 1350
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				276 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				331 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				332 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				463 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				464 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				465 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				466 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				467 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				468 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				469 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				470 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				471 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				472 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				473 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				682 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				683 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				730 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				739 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				740 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				832 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1273 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1330 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1331 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1332 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1348 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1349 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1350 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = CAN
+				CAN = {
+					every_core_state = {
+						remove_core_of = CAN
+					}
+				}
+				276 = { add_core_of = CAN }
+				331 = { add_core_of = CAN }
+				332 = { add_core_of = CAN }
+				463 = { add_core_of = CAN }
+				464 = { add_core_of = CAN }
+				465 = { add_core_of = CAN }
+				466 = { add_core_of = CAN }
+				467 = { add_core_of = CAN }
+				468 = { add_core_of = CAN }
+				469 = { add_core_of = CAN }
+				470 = { add_core_of = CAN }
+				471 = { add_core_of = CAN }
+				472 = { add_core_of = CAN }
+				473 = { add_core_of = CAN }
+				682 = { add_core_of = CAN }
+				683 = { add_core_of = CAN }
+				730 = { add_core_of = CAN }
+				739 = { add_core_of = CAN }
+				740 = { add_core_of = CAN }
+				832 = { add_core_of = CAN }
+				1273 = { add_core_of = CAN }
+				1330 = { add_core_of = CAN }
+				1331 = { add_core_of = CAN }
+				1332 = { add_core_of = CAN }
+				1348 = { add_core_of = CAN }
+				1349 = { add_core_of = CAN }
+				1350 = { add_core_of = CAN }
+
+				CAN = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = CAN
+					}
+				}
+				CAN = { 
+					set_cosmetic_tag = GRE_CAN_OCC
+					load_focus_tree = generic_focus            
+
+					create_country_leader = {
+						name = "George I"
+						picture = "gfx/leaders/GRE/Portrait_GRE_George.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						name = "House of Greece"
+						long_name = "House of Greece"
+					}
+					set_party_name = {
+						ideology = authoritarian_democrat
+						name = "House of Greece"
+						long_name = "House of Greece"
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = CAN
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
 	}
 
-	GRE_establish_rk_CAN = {
+	GRE_establish_rk_USA = {
 		icon = generic_prepare_civil_war
 
 			highlight_states = {
 				highlight_state_targets = {
 					state = 261
-					state = 276
-					state = 277
-					state = 304
-					state = 308
-					state = 311
-					state = 312
-					state = 313
-					state = 314
-					state = 315
-					state = 316
-					state = 317
-					state = 318
-					state = 319
-					state = 331
-					state = 332
 					state = 357
 					state = 358
 					state = 359
@@ -311,51 +629,11 @@ GRE_great_game = {
 					state = 394
 					state = 395
 					state = 396
-					state = 463
-					state = 464
-					state = 465
-					state = 466
-					state = 467
-					state = 468
-					state = 469
-					state = 470
-					state = 471
-					state = 472
-					state = 473
-					state = 474
-					state = 475
-					state = 476
-					state = 477
-					state = 478
-					state = 479
-					state = 480
-					state = 481
-					state = 482
-					state = 483
-					state = 484
-					state = 485
-					state = 682
-					state = 683
-					state = 685
-					state = 686
-					state = 689
-					state = 690
-					state = 692
-					state = 694
-					state = 696
-					state = 730
-					state = 739
-					state = 740
 					state = 796
 					state = 797
 					state = 798
-					state = 818
-					state = 820
 					state = 829
-					state = 832
 					state = 833
-					state = 842
-					state = 854
 					state = 929
 					state = 930
 					state = 931
@@ -363,9 +641,6 @@ GRE_great_game = {
 					state = 933
 					state = 934
 					state = 935
-					state = 1070
-					state = 1071
-					state = 1077
 					state = 1096
 					state = 1150
 					state = 1151
@@ -393,15 +668,390 @@ GRE_great_game = {
 					state = 1173
 					state = 1174
 					state = 1175
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				261 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				357 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				358 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				359 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				360 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				361 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				362 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				363 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				364 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				365 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				366 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				367 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				368 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				369 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				370 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				371 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				372 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				373 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				374 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				375 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				376 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				377 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				378 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				379 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				380 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				381 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				382 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				383 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				384 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				385 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				386 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				387 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				388 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				389 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				390 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				391 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				392 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				393 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				394 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				395 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				396 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				796 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				797 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				798 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				829 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				833 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				929 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				930 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				931 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				932 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				933 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				934 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				935 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1096 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1150 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1151 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1152 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1153 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1154 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1155 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1156 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1157 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1158 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1159 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1160 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1161 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1162 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1163 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1164 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1165 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1166 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1167 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1168 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1169 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1170 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1171 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1172 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1173 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1174 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1175 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+			
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = USA
+				USA = {
+					every_core_state = {
+						remove_core_of = USA
+					}
+				}
+				261 = { add_core_of = USA }
+				357 = { add_core_of = USA }
+				358 = { add_core_of = USA }
+				359 = { add_core_of = USA }
+				360 = { add_core_of = USA }
+				361 = { add_core_of = USA }
+				362 = { add_core_of = USA }
+				363 = { add_core_of = USA }
+				364 = { add_core_of = USA }
+				365 = { add_core_of = USA }
+				366 = { add_core_of = USA }
+				367 = { add_core_of = USA }
+				368 = { add_core_of = USA }
+				369 = { add_core_of = USA }
+				370 = { add_core_of = USA }
+				371 = { add_core_of = USA }
+				372 = { add_core_of = USA }
+				373 = { add_core_of = USA }
+				374 = { add_core_of = USA }
+				375 = { add_core_of = USA }
+				376 = { add_core_of = USA }
+				377 = { add_core_of = USA }
+				378 = { add_core_of = USA }
+				379 = { add_core_of = USA }
+				380 = { add_core_of = USA }
+				381 = { add_core_of = USA }
+				382 = { add_core_of = USA }
+				383 = { add_core_of = USA }
+				384 = { add_core_of = USA }
+				385 = { add_core_of = USA }
+				386 = { add_core_of = USA }
+				387 = { add_core_of = USA }
+				388 = { add_core_of = USA }
+				389 = { add_core_of = USA }
+				390 = { add_core_of = USA }
+				391 = { add_core_of = USA }
+				392 = { add_core_of = USA }
+				393 = { add_core_of = USA }
+				394 = { add_core_of = USA }
+				395 = { add_core_of = USA }
+				396 = { add_core_of = USA }
+				796 = { add_core_of = USA }
+				797 = { add_core_of = USA }
+				798 = { add_core_of = USA }
+				829 = { add_core_of = USA }
+				833 = { add_core_of = USA }
+				929 = { add_core_of = USA }
+				930 = { add_core_of = USA }
+				931 = { add_core_of = USA }
+				932 = { add_core_of = USA }
+				933 = { add_core_of = USA }
+				934 = { add_core_of = USA }
+				935 = { add_core_of = USA }
+				1096 = { add_core_of = USA }
+				1150 = { add_core_of = USA }
+				1151 = { add_core_of = USA }
+				1152 = { add_core_of = USA }
+				1153 = { add_core_of = USA }
+				1154 = { add_core_of = USA }
+				1155 = { add_core_of = USA }
+				1156 = { add_core_of = USA }
+				1157 = { add_core_of = USA }
+				1158 = { add_core_of = USA }
+				1159 = { add_core_of = USA }
+				1160 = { add_core_of = USA }
+				1161 = { add_core_of = USA }
+				1162 = { add_core_of = USA }
+				1163 = { add_core_of = USA }
+				1164 = { add_core_of = USA }
+				1165 = { add_core_of = USA }
+				1166 = { add_core_of = USA }
+				1167 = { add_core_of = USA }
+				1168 = { add_core_of = USA }
+				1169 = { add_core_of = USA }
+				1170 = { add_core_of = USA }
+				1171 = { add_core_of = USA }
+				1172 = { add_core_of = USA }
+				1173 = { add_core_of = USA }
+				1174 = { add_core_of = USA }
+				1175 = { add_core_of = USA }
+
+				USA = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = USA
+					}
+				}
+				USA = { 
+					set_cosmetic_tag = GRE_USA_OCC
+					load_focus_tree = generic_focus            
+
+					create_country_leader = {
+						name = "George I"
+						picture = "gfx/leaders/GRE/Portrait_GRE_George.png"
+						expire = "1.1.1"
+						ideology = absolute_monarchy_subtype
+						traits = {
+						}
+					}
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+					set_party_name = {
+						ideology = paternal_autocrat
+						name = "House of Greece"
+						long_name = "House of Greece"
+					}
+					set_party_name = {
+						ideology = authoritarian_democrat
+						name = "House of Greece"
+						long_name = "House of Greece"
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = CAN
+							autonomous_state = kx_colored_puppet
+						}
+					}
+					GRE = {
+						set_autonomy = {
+							target = USA
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_MEX = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 277
+					state = 474
+					state = 475
+					state = 476
+					state = 477
+					state = 478
+					state = 479
+					state = 480
+					state = 481
+					state = 482
+					state = 483
+					state = 484
+					state = 485
+					state = 1252
+					state = 1253
+					state = 1254
+					state = 1255
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				277 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				474 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				475 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				476 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				477 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				478 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				479 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				480 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				481 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				482 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				483 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				484 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				485 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1252 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1253 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1254 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1255 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = MEX
+				MEX = {
+					every_core_state = {
+						remove_core_of = MEX
+					}
+				}
+				277 = { add_core_of = MEX }
+				474 = { add_core_of = MEX }
+				475 = { add_core_of = MEX }
+				476 = { add_core_of = MEX }
+				477 = { add_core_of = MEX }
+				478 = { add_core_of = MEX }
+				479 = { add_core_of = MEX }
+				480 = { add_core_of = MEX }
+				481 = { add_core_of = MEX }
+				482 = { add_core_of = MEX }
+				483 = { add_core_of = MEX }
+				484 = { add_core_of = MEX }
+				485 = { add_core_of = MEX }
+				1252 = { add_core_of = MEX }
+				1253 = { add_core_of = MEX }
+				1254 = { add_core_of = MEX }
+				1255 = { add_core_of = MEX }
+
+				MEX = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = MEX
+					}
+				}
+				MEX = { 
+					set_cosmetic_tag = GRE_MEX_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = MEX
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_PAN = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 304
+					state = 311
+					state = 312
+					state = 313
+					state = 314
+					state = 316
+					state = 317
+					state = 842
+					state = 854
+					state = 1070
+					state = 1071
 					state = 1247
 					state = 1248
 					state = 1249
 					state = 1250
 					state = 1251
-					state = 1252
-					state = 1253
-					state = 1254
-					state = 1255
 					state = 1256
 					state = 1257
 					state = 1258
@@ -409,182 +1059,1273 @@ GRE_great_game = {
 					state = 1260
 					state = 1261
 					state = 1262
-					state = 1273
-					state = 1312
-					state = 1330
-					state = 1331
-					state = 1332
-					state = 1348
-					state = 1349
-					state = 1350
 				}
 				highlight_color_while_active = 3
 				highlight_color_before_active = 2
 			}
 
+			available = {
+				304 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				311 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				312 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				313 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				314 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				316 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				317 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				842 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				854 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1070 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1071 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1247 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1248 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1249 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1250 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1251 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1256 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1257 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1258 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1259 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1260 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1261 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1262 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = PAN
+				PAN = {
+					every_core_state = {
+						remove_core_of = PAN
+					}
+				}
+				304 = { add_core_of = PAN }
+				311 = { add_core_of = PAN }
+				312 = { add_core_of = PAN }
+				313 = { add_core_of = PAN }
+				314 = { add_core_of = PAN }
+				316 = { add_core_of = PAN }
+				317 = { add_core_of = PAN }
+				842 = { add_core_of = PAN }
+				854 = { add_core_of = PAN }
+				1070 = { add_core_of = PAN }
+				1071 = { add_core_of = PAN }
+				1247 = { add_core_of = PAN }
+				1248 = { add_core_of = PAN }
+				1249 = { add_core_of = PAN }
+				1250 = { add_core_of = PAN }
+				1251 = { add_core_of = PAN }
+				1256 = { add_core_of = PAN }
+				1257 = { add_core_of = PAN }
+				1258 = { add_core_of = PAN }
+				1259 = { add_core_of = PAN }
+				1260 = { add_core_of = PAN }
+				1261 = { add_core_of = PAN }
+				1262 = { add_core_of = PAN }
+
+				PAN = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = PAN
+					}
+				}
+				PAN = { 
+					set_cosmetic_tag = GRE_PAN_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = PAN
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_COL = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 305
+					state = 306
+					state = 307
+					state = 486
+					state = 488
+					state = 489
+					state = 490
+					state = 493
+					state = 649
+					state = 849
+					state = 850
+					state = 851
+					state = 852
+					state = 853
+					state = 912
+					state = 1036
+					state = 1214
+					state = 1215
+					state = 1216
+					state = 1280
+					state = 1296
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				305 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				306 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				307 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				486 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				488 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				489 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				490 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				493 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				649 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				849 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				850 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				851 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				852 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				853 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				912 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1036 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1214 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1215 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1216 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1280 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1296 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = COL
+				COL = {
+					every_core_state = {
+						remove_core_of = COL
+					}
+				}
+				305 = { add_core_of = COL }
+				306 = { add_core_of = COL }
+				307 = { add_core_of = COL }
+				486 = { add_core_of = COL }
+				488 = { add_core_of = COL }
+				489 = { add_core_of = COL }
+				490 = { add_core_of = COL }
+				493 = { add_core_of = COL }
+				649 = { add_core_of = COL }
+				849 = { add_core_of = COL }
+				850 = { add_core_of = COL }
+				851 = { add_core_of = COL }
+				852 = { add_core_of = COL }
+				853 = { add_core_of = COL }
+				912 = { add_core_of = COL }
+				1036 = { add_core_of = COL }
+				1214 = { add_core_of = COL }
+				1215 = { add_core_of = COL }
+				1216 = { add_core_of = COL }
+				1280 = { add_core_of = COL }
+				1296 = { add_core_of = COL }
+
+				COL = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = COL
+					}
+				}
+				COL = { 
+					set_cosmetic_tag = GRE_COL_OCC
+					load_focus_tree = generic_focus
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = COL
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_PRU = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 302
+					state = 303
+					state = 487
+					state = 491
+					state = 492
+					state = 494
+					state = 845
+					state = 847
+					state = 848
+					state = 1027
+					state = 1073
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				302 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				303 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				487 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				491 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				492 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				494 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				845 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				847 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				848 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1027 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1073 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = PRU
+				PRU = {
+					every_core_state = {
+						remove_core_of = PRU
+					}
+				}
+				302 = { add_core_of = PRU }
+				303 = { add_core_of = PRU }
+				487 = { add_core_of = PRU }
+				491 = { add_core_of = PRU }
+				492 = { add_core_of = PRU }
+				494 = { add_core_of = PRU }
+				845 = { add_core_of = PRU }
+				847 = { add_core_of = PRU }
+				848 = { add_core_of = PRU }
+				1027 = { add_core_of = PRU }
+				1073 = { add_core_of = PRU }
+
+				PRU = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = PRU
+					}
+				}
+				PRU = { 
+					set_cosmetic_tag = GRE_PRU_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = PRU
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_CHL = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 270
+					state = 279
+					state = 506
+					state = 507
+					state = 872
+					state = 873
+					state = 874
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				270 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				279 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				506 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				507 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				872 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				873 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				874 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = CHL
+				CHL = {
+					every_core_state = {
+						remove_core_of = CHL
+					}
+				}
+				270 = { add_core_of = CHL }
+				279 = { add_core_of = CHL }
+				506 = { add_core_of = CHL }
+				507 = { add_core_of = CHL }
+				872 = { add_core_of = CHL }
+				873 = { add_core_of = CHL }
+				874 = { add_core_of = CHL }
+
+				CHL = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = CHL
+					}
+				}
+				CHL = { 
+					set_cosmetic_tag = GRE_CHL_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = CHL
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_ARG = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 278
+					state = 299
+					state = 301
+					state = 449
+					state = 508
+					state = 509
+					state = 510
+					state = 511
+					state = 512
+					state = 579
+					state = 688
+					state = 720
+					state = 901
+					state = 902
+					state = 903
+					state = 904
+					state = 1028
+					state = 1029
+					state = 1074
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				278 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				299 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				301 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				449 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				508 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				509 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				510 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				511 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				512 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				579 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				688 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				720 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				901 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				902 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				903 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				904 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1028 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1029 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1074 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = ARG
+				ARG = {
+					every_core_state = {
+						remove_core_of = ARG
+					}
+				}
+				278 = { add_core_of = ARG }
+				299 = { add_core_of = ARG }
+				301 = { add_core_of = ARG }
+				449 = { add_core_of = ARG }
+				508 = { add_core_of = ARG }
+				509 = { add_core_of = ARG }
+				510 = { add_core_of = ARG }
+				511 = { add_core_of = ARG }
+				512 = { add_core_of = ARG }
+				579 = { add_core_of = ARG }
+				688 = { add_core_of = ARG }
+				720 = { add_core_of = ARG }
+				901 = { add_core_of = ARG }
+				902 = { add_core_of = ARG }
+				903 = { add_core_of = ARG }
+				904 = { add_core_of = ARG }
+				1028 = { add_core_of = ARG }
+				1029 = { add_core_of = ARG }
+				1074 = { add_core_of = ARG }
+
+				ARG = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = ARG
+					}
+				}
+				ARG = { 
+					set_cosmetic_tag = GRE_ARG_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = ARG
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_BRA = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 280
+					state = 300
+					state = 495
+					state = 496
+					state = 497
+					state = 498
+					state = 499
+					state = 500
+					state = 501
+					state = 502
+					state = 503
+					state = 504
+					state = 505
+					state = 855
+					state = 894
+					state = 895
+					state = 896
+					state = 898
+					state = 900
+					state = 1030
+					state = 1031
+					state = 1033
+					state = 1040
+					state = 1041
+					state = 1043
+					state = 1305
+					state = 1306
+					state = 1307
+					state = 1310
+					state = 1311
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				280 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				300 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				495 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				496 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				497 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				498 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				499 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				500 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				501 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				502 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				503 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				504 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				505 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				855 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				894 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				895 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				896 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				898 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				900 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1030 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1031 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1033 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1040 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1041 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1043 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1305 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1306 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1307 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1310 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1311 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = BRA
+				BRA = {
+					every_core_state = {
+						remove_core_of = BRA
+					}
+				}
+				280 = { add_core_of = BRA }
+				300 = { add_core_of = BRA }
+				495 = { add_core_of = BRA }
+				496 = { add_core_of = BRA }
+				497 = { add_core_of = BRA }
+				498 = { add_core_of = BRA }
+				499 = { add_core_of = BRA }
+				500 = { add_core_of = BRA }
+				501 = { add_core_of = BRA }
+				502 = { add_core_of = BRA }
+				503 = { add_core_of = BRA }
+				504 = { add_core_of = BRA }
+				505 = { add_core_of = BRA }
+				855 = { add_core_of = BRA }
+				894 = { add_core_of = BRA }
+				895 = { add_core_of = BRA }
+				896 = { add_core_of = BRA }
+				898 = { add_core_of = BRA }
+				900 = { add_core_of = BRA }
+				1030 = { add_core_of = BRA }
+				1031 = { add_core_of = BRA }
+				1033 = { add_core_of = BRA }
+				1040 = { add_core_of = BRA }
+				1041 = { add_core_of = BRA }
+				1043 = { add_core_of = BRA }
+				1305 = { add_core_of = BRA }
+				1306 = { add_core_of = BRA }
+				1307 = { add_core_of = BRA }
+				1310 = { add_core_of = BRA }
+				1311 = { add_core_of = BRA }
+
+				BRA = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = BRA
+					}
+				}
+				BRA = { 
+					set_cosmetic_tag = GRE_BRA_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = BRA
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_CAF = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 308
+					state = 309
+					state = 310
+					state = 315
+					state = 318
+					state = 319
+					state = 686
+					state = 687
+					state = 689
+					state = 690
+					state = 691
+					state = 692
+					state = 694
+					state = 696
+					state = 820
+					state = 1037
+					state = 1038
+					state = 1039
+					state = 1077
+					state = 1078
+					state = 1079
+					state = 1308
+					state = 1309
+					state = 1312
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				308 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				309 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				310 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				315 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				318 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				319 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				686 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				687 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				689 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				690 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				691 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				692 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				694 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				696 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				820 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1037 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1038 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1039 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1077 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1078 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1079 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1308 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1309 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1312 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = CAF
+				CAF = {
+					every_core_state = {
+						remove_core_of = CAF
+					}
+				}
+				308 = { add_core_of = CAF }
+				309 = { add_core_of = CAF }
+				310 = { add_core_of = CAF }
+				315 = { add_core_of = CAF }
+				318 = { add_core_of = CAF }
+				319 = { add_core_of = CAF }
+				686 = { add_core_of = CAF }
+				687 = { add_core_of = CAF }
+				689 = { add_core_of = CAF }
+				690 = { add_core_of = CAF }
+				691 = { add_core_of = CAF }
+				692 = { add_core_of = CAF }
+				694 = { add_core_of = CAF }
+				696 = { add_core_of = CAF }
+				820 = { add_core_of = CAF }
+				1037 = { add_core_of = CAF }
+				1038 = { add_core_of = CAF }
+				1039 = { add_core_of = CAF }
+				1077 = { add_core_of = CAF }
+				1078 = { add_core_of = CAF }
+				1079 = { add_core_of = CAF }
+				1308 = { add_core_of = CAF }
+				1309 = { add_core_of = CAF }
+				1312 = { add_core_of = CAF }
+
+				CAF = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = CAF
+					}
+				}
+				CAF = { 
+					set_cosmetic_tag = GRE_CAF_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = CAF
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_BRM = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 72
+					state = 288
+					state = 640
+					state = 701
+					state = 790
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				72 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				288 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				640 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				701 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				790 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = BRM
+				BRM = {
+					every_core_state = {
+						remove_core_of = BRM
+					}
+				}
+				72 = { add_core_of = BRM }
+				288 = { add_core_of = BRM }
+				640 = { add_core_of = BRM }
+				701 = { add_core_of = BRM }
+				790 = { add_core_of = BRM }
+
+				BRM = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = BRM
+					}
+				}
+				BRM = { 
+					set_cosmetic_tag = GRE_BRM_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = BRM
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_INC = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 286
+					state = 289
+					state = 336
+					state = 670
+					state = 671
+					state = 724
+					state = 749
+					state = 750
+					state = 751
+					state = 756
+					state = 822
+					state = 823
+					state = 824
+					state = 825
+					state = 826
+					state = 827
+					state = 830
+					state = 831
+					state = 846
+					state = 856
+					state = 857
+					state = 882
+					state = 999
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				286 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				289 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				336 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				670 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				671 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				724 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				749 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				750 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				751 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				756 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				822 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				823 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				824 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				825 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				826 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				827 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				830 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				831 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				846 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				856 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				857 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				882 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				999 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = INC
+				INC = {
+					every_core_state = {
+						remove_core_of = INC
+					}
+				}
+				286 = { add_core_of = INC }
+				289 = { add_core_of = INC }
+				336 = { add_core_of = INC }
+				670 = { add_core_of = INC }
+				671 = { add_core_of = INC }
+				724 = { add_core_of = INC }
+				749 = { add_core_of = INC }
+				750 = { add_core_of = INC }
+				751 = { add_core_of = INC }
+				756 = { add_core_of = INC }
+				822 = { add_core_of = INC }
+				823 = { add_core_of = INC }
+				824 = { add_core_of = INC }
+				825 = { add_core_of = INC }
+				826 = { add_core_of = INC }
+				827 = { add_core_of = INC }
+				830 = { add_core_of = INC }
+				831 = { add_core_of = INC }
+				846 = { add_core_of = INC }
+				856 = { add_core_of = INC }
+				857 = { add_core_of = INC }
+				882 = { add_core_of = INC }
+				999 = { add_core_of = INC }
+
+				INC = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = INC
+					}
+				}
+				INC = { 
+					set_cosmetic_tag = GRE_INC_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = INC
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_INS = {
+		icon = generic_prepare_civil_war
+
+			highlight_states = {
+				highlight_state_targets = {
+					state = 327
+					state = 333
+					state = 334
+					state = 335
+					state = 523
+					state = 623
+					state = 624
+					state = 625
+					state = 626
+					state = 627
+					state = 628
+					state = 634
+					state = 635
+					state = 636
+					state = 667
+					state = 668
+					state = 669
+					state = 672
+					state = 673
+					state = 721
+					state = 725
+					state = 734
+					state = 737
+					state = 757
+					state = 828
+					state = 843
+					state = 972
+					state = 1016
+					state = 1017
+					state = 1018
+					state = 1019
+					state = 1020
+					state = 1021
+					state = 1022
+					state = 1023
+					state = 1333
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+
+			available = {
+				327 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				333 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				334 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				335 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				523 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				623 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				624 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				625 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				626 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				627 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				628 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				634 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				635 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				636 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				667 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				668 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				669 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				672 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				673 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				721 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				725 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				734 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				737 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				757 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				828 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				843 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				972 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1016 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1017 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1018 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1019 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1020 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1021 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1022 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1023 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+				1333 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			}
+
+			fire_only_once = yes
+
+			ai_will_do = {
+				factor = 5
+			}
+			complete_effect = {
+				release = INS
+				INS = {
+					every_core_state = {
+						remove_core_of = INS
+					}
+				}
+				327 = { add_core_of = INS }
+				333 = { add_core_of = INS }
+				334 = { add_core_of = INS }
+				335 = { add_core_of = INS }
+				523 = { add_core_of = INS }
+				623 = { add_core_of = INS }
+				624 = { add_core_of = INS }
+				625 = { add_core_of = INS }
+				626 = { add_core_of = INS }
+				627 = { add_core_of = INS }
+				628 = { add_core_of = INS }
+				634 = { add_core_of = INS }
+				635 = { add_core_of = INS }
+				636 = { add_core_of = INS }
+				667 = { add_core_of = INS }
+				668 = { add_core_of = INS }
+				669 = { add_core_of = INS }
+				672 = { add_core_of = INS }
+				673 = { add_core_of = INS }
+				721 = { add_core_of = INS }
+				725 = { add_core_of = INS }
+				734 = { add_core_of = INS }
+				737 = { add_core_of = INS }
+				757 = { add_core_of = INS }
+				828 = { add_core_of = INS }
+				843 = { add_core_of = INS }
+				972 = { add_core_of = INS }
+				1016 = { add_core_of = INS }
+				1017 = { add_core_of = INS }
+				1018 = { add_core_of = INS }
+				1019 = { add_core_of = INS }
+				1020 = { add_core_of = INS }
+				1021 = { add_core_of = INS }
+				1022 = { add_core_of = INS }
+				1023 = { add_core_of = INS }
+				1333 = { add_core_of = INS }
+
+				INS = { 
+					every_core_state = {
+						limit = {
+							AND = {
+								NOT = { 
+									is_core_of = GRE
+								}
+								OR = {
+									is_owned_by = GRE
+									OWNER = { is_subject_of = GRE} 
+								}
+							}
+						}
+						transfer_state_to = INS
+					}
+				}
+				INS = { 
+					set_cosmetic_tag = GRE_INS_OCC
+					load_focus_tree = generic_focus            
+
+					set_popularities = {
+						authoritarian_democrat = 50.0
+						paternal_autocrat = 50.0
+					}
+
+					GRE = {
+						set_autonomy = {
+							target = INS
+							autonomous_state = kx_colored_puppet
+						}
+					}
+
+					set_politics = {
+						ruling_party = paternal_autocrat
+						elections_allowed = no
+					}
+				}
+			}
+	}
+
+	GRE_establish_rk_AST = {
+		icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+				state = 285
+				state = 517
+				state = 518
+				state = 519
+				state = 520
+				state = 521
+				state = 522
+				state = 674
+				state = 723
+				state = 985
+				state = 986
+				state = 987
+				state = 988
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
 		available = {
-			261 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			276 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			277 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			304 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			308 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			311 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			312 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			313 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			314 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			315 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			316 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			317 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			318 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			319 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			331 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			332 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			357 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			358 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			359 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			360 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			361 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			362 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			363 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			364 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			365 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			366 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			367 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			368 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			369 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			370 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			371 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			372 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			373 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			374 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			375 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			376 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			377 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			378 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			379 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			380 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			381 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			382 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			383 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			384 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			385 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			386 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			387 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			388 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			389 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			390 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			391 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			392 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			393 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			394 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			395 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			396 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			463 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			464 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			465 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			466 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			467 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			468 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			469 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			470 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			471 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			472 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			473 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			474 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			475 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			476 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			477 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			478 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			479 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			480 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			481 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			482 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			483 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			484 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			485 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			682 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			683 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			685 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			686 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			689 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			690 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			692 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			694 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			696 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			730 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			739 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			740 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			796 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			797 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			798 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			818 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			820 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			829 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			832 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			833 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			842 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			854 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			929 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			930 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			931 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			932 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			933 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			934 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			935 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1070 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1071 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1077 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1096 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1150 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1151 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1152 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1153 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1154 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1155 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1156 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1157 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1158 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1159 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1160 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1161 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1162 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1163 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1164 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1165 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1166 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1167 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1168 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1169 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1170 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1171 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1172 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1173 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1174 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1175 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1247 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1248 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1249 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1250 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1251 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1252 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1253 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1254 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1255 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1256 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1257 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1258 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1259 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1260 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1261 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1262 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1273 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1312 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1330 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1331 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1332 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1348 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1349 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1350 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			284 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			285 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			517 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			518 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			519 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			520 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			521 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			522 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			674 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			723 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			985 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			986 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			987 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			988 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 		}
 
 		fire_only_once = yes
@@ -593,176 +2334,28 @@ GRE_great_game = {
 			factor = 5
 		}
 		complete_effect = {
-			release = CAN
-			CAN = {
+			release = AST
+			AST = {
 				every_core_state = {
-					remove_core_of = CAN
+					remove_core_of = AST
 				}
 			}
-			261 = { add_core_of = CAN }
-			276 = { add_core_of = CAN }
-			277 = { add_core_of = CAN }
-			304 = { add_core_of = CAN }
-			308 = { add_core_of = CAN }
-			311 = { add_core_of = CAN }
-			312 = { add_core_of = CAN }
-			313 = { add_core_of = CAN }
-			314 = { add_core_of = CAN }
-			315 = { add_core_of = CAN }
-			316 = { add_core_of = CAN }
-			317 = { add_core_of = CAN }
-			318 = { add_core_of = CAN }
-			319 = { add_core_of = CAN }
-			331 = { add_core_of = CAN }
-			332 = { add_core_of = CAN }
-			357 = { add_core_of = CAN }
-			358 = { add_core_of = CAN }
-			359 = { add_core_of = CAN }
-			360 = { add_core_of = CAN }
-			361 = { add_core_of = CAN }
-			362 = { add_core_of = CAN }
-			363 = { add_core_of = CAN }
-			364 = { add_core_of = CAN }
-			365 = { add_core_of = CAN }
-			366 = { add_core_of = CAN }
-			367 = { add_core_of = CAN }
-			368 = { add_core_of = CAN }
-			369 = { add_core_of = CAN }
-			370 = { add_core_of = CAN }
-			371 = { add_core_of = CAN }
-			372 = { add_core_of = CAN }
-			373 = { add_core_of = CAN }
-			374 = { add_core_of = CAN }
-			375 = { add_core_of = CAN }
-			376 = { add_core_of = CAN }
-			377 = { add_core_of = CAN }
-			378 = { add_core_of = CAN }
-			379 = { add_core_of = CAN }
-			380 = { add_core_of = CAN }
-			381 = { add_core_of = CAN }
-			382 = { add_core_of = CAN }
-			383 = { add_core_of = CAN }
-			384 = { add_core_of = CAN }
-			385 = { add_core_of = CAN }
-			386 = { add_core_of = CAN }
-			387 = { add_core_of = CAN }
-			388 = { add_core_of = CAN }
-			389 = { add_core_of = CAN }
-			390 = { add_core_of = CAN }
-			391 = { add_core_of = CAN }
-			392 = { add_core_of = CAN }
-			393 = { add_core_of = CAN }
-			394 = { add_core_of = CAN }
-			395 = { add_core_of = CAN }
-			396 = { add_core_of = CAN }
-			463 = { add_core_of = CAN }
-			464 = { add_core_of = CAN }
-			465 = { add_core_of = CAN }
-			466 = { add_core_of = CAN }
-			467 = { add_core_of = CAN }
-			468 = { add_core_of = CAN }
-			469 = { add_core_of = CAN }
-			470 = { add_core_of = CAN }
-			471 = { add_core_of = CAN }
-			472 = { add_core_of = CAN }
-			473 = { add_core_of = CAN }
-			474 = { add_core_of = CAN }
-			475 = { add_core_of = CAN }
-			476 = { add_core_of = CAN }
-			477 = { add_core_of = CAN }
-			478 = { add_core_of = CAN }
-			479 = { add_core_of = CAN }
-			480 = { add_core_of = CAN }
-			481 = { add_core_of = CAN }
-			482 = { add_core_of = CAN }
-			483 = { add_core_of = CAN }
-			484 = { add_core_of = CAN }
-			485 = { add_core_of = CAN }
-			682 = { add_core_of = CAN }
-			683 = { add_core_of = CAN }
-			685 = { add_core_of = CAN }
-			686 = { add_core_of = CAN }
-			689 = { add_core_of = CAN }
-			690 = { add_core_of = CAN }
-			692 = { add_core_of = CAN }
-			694 = { add_core_of = CAN }
-			696 = { add_core_of = CAN }
-			730 = { add_core_of = CAN }
-			739 = { add_core_of = CAN }
-			740 = { add_core_of = CAN }
-			796 = { add_core_of = CAN }
-			797 = { add_core_of = CAN }
-			798 = { add_core_of = CAN }
-			818 = { add_core_of = CAN }
-			820 = { add_core_of = CAN }
-			829 = { add_core_of = CAN }
-			832 = { add_core_of = CAN }
-			833 = { add_core_of = CAN }
-			842 = { add_core_of = CAN }
-			854 = { add_core_of = CAN }
-			929 = { add_core_of = CAN }
-			930 = { add_core_of = CAN }
-			931 = { add_core_of = CAN }
-			932 = { add_core_of = CAN }
-			933 = { add_core_of = CAN }
-			934 = { add_core_of = CAN }
-			935 = { add_core_of = CAN }
-			1070 = { add_core_of = CAN }
-			1071 = { add_core_of = CAN }
-			1077 = { add_core_of = CAN }
-			1096 = { add_core_of = CAN }
-			1150 = { add_core_of = CAN }
-			1151 = { add_core_of = CAN }
-			1152 = { add_core_of = CAN }
-			1153 = { add_core_of = CAN }
-			1154 = { add_core_of = CAN }
-			1155 = { add_core_of = CAN }
-			1156 = { add_core_of = CAN }
-			1157 = { add_core_of = CAN }
-			1158 = { add_core_of = CAN }
-			1159 = { add_core_of = CAN }
-			1160 = { add_core_of = CAN }
-			1161 = { add_core_of = CAN }
-			1162 = { add_core_of = CAN }
-			1163 = { add_core_of = CAN }
-			1164 = { add_core_of = CAN }
-			1165 = { add_core_of = CAN }
-			1166 = { add_core_of = CAN }
-			1167 = { add_core_of = CAN }
-			1168 = { add_core_of = CAN }
-			1169 = { add_core_of = CAN }
-			1170 = { add_core_of = CAN }
-			1171 = { add_core_of = CAN }
-			1172 = { add_core_of = CAN }
-			1173 = { add_core_of = CAN }
-			1174 = { add_core_of = CAN }
-			1175 = { add_core_of = CAN }
-			1247 = { add_core_of = CAN }
-			1248 = { add_core_of = CAN }
-			1249 = { add_core_of = CAN }
-			1250 = { add_core_of = CAN }
-			1251 = { add_core_of = CAN }
-			1252 = { add_core_of = CAN }
-			1253 = { add_core_of = CAN }
-			1254 = { add_core_of = CAN }
-			1255 = { add_core_of = CAN }
-			1256 = { add_core_of = CAN }
-			1257 = { add_core_of = CAN }
-			1258 = { add_core_of = CAN }
-			1259 = { add_core_of = CAN }
-			1260 = { add_core_of = CAN }
-			1261 = { add_core_of = CAN }
-			1262 = { add_core_of = CAN }
-			1273 = { add_core_of = CAN }
-			1312 = { add_core_of = CAN }
-			1330 = { add_core_of = CAN }
-			1331 = { add_core_of = CAN }
-			1332 = { add_core_of = CAN }
-			1348 = { add_core_of = CAN }
-			1349 = { add_core_of = CAN }
-			1350 = { add_core_of = CAN }
+			284 = { add_core_of = AST }
+			285 = { add_core_of = AST }
+			517 = { add_core_of = AST }
+			518 = { add_core_of = AST }
+			519 = { add_core_of = AST }
+			520 = { add_core_of = AST }
+			521 = { add_core_of = AST }
+			522 = { add_core_of = AST }
+			674 = { add_core_of = AST }
+			723 = { add_core_of = AST }
+			985 = { add_core_of = AST }
+			986 = { add_core_of = AST }
+			987 = { add_core_of = AST }
+			988 = { add_core_of = AST }
 
-			CAN = { 
+			AST = { 
 				every_core_state = {
 					limit = {
 						AND = {
@@ -775,69 +2368,108 @@ GRE_great_game = {
 							}
 						}
 					}
-					transfer_state_to = CAN
+					transfer_state_to = AST
 				}
 			}
-			CAN = { 
-				set_cosmetic_tag = GRE_CAN_OCC
+			AST = { 
+				set_cosmetic_tag = GRE_AST_OCC
 				load_focus_tree = generic_focus            
-
-				if = {
-					limit = {
-						GRE = {
-							has_country_leader = {ruling_only = yes name = "Geórgios II"}
-						}
-					}
-					create_country_leader = {
-						name = "Geórgios II"
-						picture = "gfx/leaders/GRE/Portrait_GRE_George_emporer.png"
-						expire = "1.1.1"
-						ideology = absolute_monarchy_subtype
-						traits = {}
-					}
-				}
-				else_if = {
-					limit = {
-						GRE = {
-							has_country_leader = {ruling_only = yes name = "Pávlos I"}
-						}
-					}
-					create_country_leader = {
-						name = "Pávlos I"
-						picture = "gfx/leaders/GRE/Portrait_GRE_Paul_emporer.png"
-						expire = "1.1.1"
-						ideology = absolute_monarchy_subtype
-						traits = {}
-					}
-				}
-				else = {
-					create_country_leader = {
-						name = "Aléxandros III"
-						picture = "gfx/leaders/GRE/Portrait_GRE_Alexander_emporer.png"
-						expire = "1.1.1"
-						ideology = absolute_monarchy_subtype
-						traits = {}
-					}
-				}
 
 				set_popularities = {
 					authoritarian_democrat = 50.0
 					paternal_autocrat = 50.0
 				}
-				set_party_name = {
-					ideology = paternal_autocrat
-					name = "House of Greece"
-					long_name = "House of Greece"
+
+				GRE = {
+					set_autonomy = {
+						target = AST
+						autonomous_state = kx_colored_puppet
+					}
 				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = "House of Greece"
-					long_name = "House of Greece"
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+
+	GRE_establish_rk_AFG = {
+		icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 267
+				state = 415
+				state = 442
+				state = 445
+				state = 1217
+				state = 1218
+				state = 1219
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+		available = {
+			267 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			415 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			442 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			445 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			1217 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			1218 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+			1219 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			release = AFG
+			AFG = {
+				every_core_state = {
+					remove_core_of = AFG
+				}
+			}
+			267 = { add_core_of = AFG }
+			415 = { add_core_of = AFG }
+			442 = { add_core_of = AFG }
+			445 = { add_core_of = AFG }
+			1217 = { add_core_of = AFG }
+			1218 = { add_core_of = AFG }
+			1219 = { add_core_of = AFG }
+
+			AFG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = GRE
+							}
+							OR = {
+								is_owned_by = GRE
+								OWNER = { is_subject_of = GRE} 
+							}
+						}
+					}
+					transfer_state_to = AFG
+				}
+			}
+			AFG = { 
+				set_cosmetic_tag = GRE_AFG_OCC
+				load_focus_tree = generic_focus            
+
+				set_popularities = {
+					authoritarian_democrat = 50.0
+					paternal_autocrat = 50.0
 				}
 
 				GRE = {
 					set_autonomy = {
-						target = CAN
+						target = AFG
 						autonomous_state = kx_colored_puppet
 					}
 				}
@@ -986,14 +2618,14 @@ GRE_great_game = {
 				set_cosmetic_tag = GRE_GER_OCC
 				load_focus_tree = generic_focus            
 
-				create_country_leader = {
-					name = "Alexandros Papagos"
-					picture = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Papagos_kr.png"
-					expire = "1.1.1"
-					ideology = absolute_monarchy_subtype
-					traits = {
-					}
+			create_country_leader = {
+				name = "Alexandros Papagos"
+				picture = "gfx/leaders/GRE/Portrait_GRE_Alexandros_Papagos_kr.png"
+				expire = "1.1.1"
+				ideology = absolute_monarchy_subtype
+				traits = {
 				}
+			}
 
 				set_popularities = {
 					authoritarian_democrat = 50.0
@@ -1010,12 +2642,12 @@ GRE_great_game = {
 					long_name = "House of Papagos"
 				}
 
-				GRE = {
-					set_autonomy = {
-						target = GER
-						autonomous_state = kx_colored_puppet
-					}
+			GRE = {
+				set_autonomy = {
+					target = GER
+					autonomous_state = kx_colored_puppet
 				}
+			}
 
 				set_politics = {
 					ruling_party = paternal_autocrat
@@ -1225,63 +2857,34 @@ GRE_great_game = {
 			1235 = { add_core_of = SVK }
 			1272 = { add_core_of = SVK }
 
-			SVK = { 
-				every_core_state = {
-					limit = {
-						AND = {
-							NOT = { 
-								is_core_of = GRE
-							}
-							OR = {
-								is_owned_by = GRE
-								OWNER = { is_subject_of = GRE} 
-							}
+		SVK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GRE
+						}
+						OR = {
+							is_owned_by = GRE
+							OWNER = { is_subject_of = GRE} 
 						}
 					}
-					transfer_state_to = SVK
+				}
+				transfer_state_to = SVK
+			}
+		}
+		SVK = { 
+			set_cosmetic_tag = GRE_SVK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "George I"
+				picture = "gfx/leaders/GRE/Portrait_GRE_George.png"
+				expire = "1.1.1"
+				ideology = absolute_monarchy_subtype
+				traits = {
 				}
 			}
-			SVK = { 
-				set_cosmetic_tag = GRE_SVK_OCC
-				load_focus_tree = generic_focus            
-
-				if = {
-					limit = {
-						GRE = {
-							has_country_leader = {ruling_only = yes name = "Geórgios II"}
-						}
-					}
-					create_country_leader = {
-						name = "Geórgios II"
-						picture = "gfx/leaders/GRE/Portrait_GRE_George_emporer.png"
-						expire = "1.1.1"
-						ideology = absolute_monarchy_subtype
-						traits = {}
-					}
-				}
-				else_if = {
-					limit = {
-						GRE = {
-							has_country_leader = {ruling_only = yes name = "Pávlos I"}
-						}
-					}
-					create_country_leader = {
-						name = "Pávlos I"
-						picture = "gfx/leaders/GRE/Portrait_GRE_Paul_emporer.png"
-						expire = "1.1.1"
-						ideology = absolute_monarchy_subtype
-						traits = {}
-					}
-				}
-				else = {
-					create_country_leader = {
-						name = "Aléxandros III"
-						picture = "gfx/leaders/GRE/Portrait_GRE_Alexander_emporer.png"
-						expire = "1.1.1"
-						ideology = absolute_monarchy_subtype
-						traits = {}
-					}
-				}
 
 				set_popularities = {
 					authoritarian_democrat = 50.0
@@ -1316,42 +2919,36 @@ GRE_great_game = {
 	GRE_establish_rk_ARM = {
 		icon = generic_prepare_civil_war
 
-			highlight_states = {
-				highlight_state_targets = {
-					state = 229
-					state = 230
-					state = 352
-					state = 354
-					state = 417
-					state = 419
-					state = 990
-					state = 998
-					state = 1000
-					state = 1001
-					state = 1082
-					state = 1213
-					state = 1298
-					state = 1299
-					state = 1300
-					state = 1302
-					state = 1303
-					state = 1304
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
+		highlight_states = {
+			highlight_state_targets = {
+				state = 229
+				state = 230
+				state = 352
+				state = 417
+				state = 419
+				state = 990
+				state = 998
+				state = 1082
+				state = 1298
+				state = 1299
+				state = 1300
+				state = 1302
+				state = 1303
+				state = 1304
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
 
 		available = {
 			229 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			230 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			352 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			354 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			417 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			419 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			990 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			998 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1000 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1001 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			1082 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			1213 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			1298 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
@@ -2352,129 +3949,137 @@ GRE_great_game = {
 	GRE_establish_rk_FRA = {
 		icon = generic_prepare_civil_war
 
-			highlight_states = {
-				highlight_state_targets = {
-					state = 1
-					state = 2
-					state = 3
-					state = 6
-					state = 8
-					state = 14
-					state = 15
-					state = 16
-					state = 17
-					state = 18
-					state = 19
-					state = 20
-					state = 21
-					state = 22
-					state = 23
-					state = 24
-					state = 25
-					state = 26
-					state = 27
-					state = 28
-					state = 29
-					state = 30
-					state = 31
-					state = 32
-					state = 33
-					state = 34
-					state = 35
-					state = 39
-					state = 41
-					state = 42
-					state = 112
-					state = 114
-					state = 118
-					state = 123
-					state = 125
-					state = 126
-					state = 127
-					state = 128
-					state = 129
-					state = 130
-					state = 131
-					state = 132
-					state = 151
-					state = 157
-					state = 158
-					state = 159
-					state = 160
-					state = 161
-					state = 162
-					state = 165
-					state = 166
-					state = 167
-					state = 168
-					state = 169
-					state = 170
-					state = 171
-					state = 172
-					state = 173
-					state = 174
-					state = 175
-					state = 176
-					state = 177
-					state = 179
-					state = 180
-					state = 181
-					state = 290
-					state = 338
-					state = 459
-					state = 460
-					state = 461
-					state = 462
-					state = 697
-					state = 698
-					state = 735
-					state = 741
-					state = 759
-					state = 760
-					state = 761
-					state = 762
-					state = 763
-					state = 764
-					state = 779
-					state = 781
-					state = 783
-					state = 785
-					state = 793
-					state = 795
-					state = 805
-					state = 817
-					state = 838
-					state = 940
-					state = 943
-					state = 951
-					state = 978
-					state = 979
-					state = 980
-					state = 983
-					state = 984
-					state = 1002
-					state = 1003
-					state = 1004
-					state = 1005
-					state = 1149
-					state = 1236
-					state = 1313
-					state = 1316
-					state = 1318
-					state = 1334
-					state = 1336
-					state = 1337
-					state = 1338
-					state = 1339
-					state = 1340
-					state = 1341
-					state = 1342
-					state = 1343
-					state = 1344
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1
+				state = 2
+				state = 3
+				state = 6
+				state = 8
+				state = 14
+				state = 15
+				state = 16
+				state = 17
+				state = 18
+				state = 19
+				state = 20
+				state = 21
+				state = 22
+				state = 23
+				state = 24
+				state = 25
+				state = 26
+				state = 27
+				state = 28
+				state = 29
+				state = 30
+				state = 31
+				state = 32
+				state = 33
+				state = 34
+				state = 35
+				state = 39
+				state = 41
+				state = 42
+				state = 112
+				state = 114
+				state = 118
+				state = 123
+				state = 125
+				state = 126
+				state = 127
+				state = 128
+				state = 129
+				state = 130
+				state = 131
+				state = 132
+				state = 151
+				state = 157
+				state = 158
+				state = 159
+				state = 160
+				state = 161
+				state = 162
+				state = 165
+				state = 166
+				state = 167
+				state = 168
+				state = 169
+				state = 170
+				state = 171
+				state = 172
+				state = 173
+				state = 174
+				state = 175
+				state = 176
+				state = 177
+				state = 179
+				state = 180
+				state = 181
+				state = 290
+				state = 338
+				state = 459
+				state = 460
+				state = 461
+				state = 462
+				state = 697
+				state = 698
+				state = 735
+				state = 741
+				state = 759
+				state = 760
+				state = 761
+				state = 762
+				state = 763
+				state = 764
+				state = 779
+				state = 781
+				state = 783
+				state = 785
+				state = 793
+				state = 795
+				state = 805
+				state = 817
+				state = 838
+				state = 940
+				state = 943
+				state = 951
+				state = 978
+				state = 979
+				state = 980
+				state = 983
+				state = 984
+				state = 1002
+				state = 1003
+				state = 1004
+				state = 1005
+				state = 1149
+				state = 1236
+				state = 1313
+				state = 1316
+				state = 1318
+				state = 1334
+				state = 1336
+				state = 1337
+				state = 1338
+				state = 1339
+				state = 1340
+				state = 1341
+				state = 1342
+				state = 1343
+				state = 1344
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		
+		visible = {
+			GRE = {
+				NOT = {
+					has_completed_focus = GRE_byz_establish_dioceses
+				}
+			}
+		}
 
 		available = {
 			1 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
@@ -2974,390 +4579,381 @@ GRE_great_game = {
 		}
 	}
 
-	GRE_establish_rk_URG = {
-		icon = generic_prepare_civil_war
-
-			highlight_states = {
-				highlight_state_targets = {
-					state = 270
-					state = 278
-					state = 279
-					state = 280
-					state = 299
-					state = 300
-					state = 301
-					state = 302
-					state = 303
-					state = 305
-					state = 306
-					state = 307
-					state = 309
-					state = 310
-					state = 449
-					state = 486
-					state = 487
-					state = 488
-					state = 489
-					state = 490
-					state = 491
-					state = 492
-					state = 493
-					state = 494
-					state = 495
-					state = 496
-					state = 497
-					state = 498
-					state = 499
-					state = 500
-					state = 501
-					state = 502
-					state = 503
-					state = 504
-					state = 505
-					state = 506
-					state = 507
-					state = 508
-					state = 509
-					state = 510
-					state = 511
-					state = 512
-					state = 579
-					state = 649
-					state = 687
-					state = 688
-					state = 691
-					state = 695
-					state = 720
-					state = 845
-					state = 847
-					state = 848
-					state = 849
-					state = 850
-					state = 851
-					state = 852
-					state = 853
-					state = 855
-					state = 872
-					state = 873
-					state = 874
-					state = 894
-					state = 895
-					state = 896
-					state = 898
-					state = 900
-					state = 901
-					state = 902
-					state = 903
-					state = 904
-					state = 912
-					state = 1027
-					state = 1028
-					state = 1029
-					state = 1030
-					state = 1031
-					state = 1033
-					state = 1036
-					state = 1037
-					state = 1038
-					state = 1039
-					state = 1040
-					state = 1041
-					state = 1043
-					state = 1073
-					state = 1074
-					state = 1078
-					state = 1079
-					state = 1214
-					state = 1215
-					state = 1216
-					state = 1280
-					state = 1296
-					state = 1305
-					state = 1306
-					state = 1307
-					state = 1308
-					state = 1309
-					state = 1310
-					state = 1311
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
-			}
-
-		available = {
-			270 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			278 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			279 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			280 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			299 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			300 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			301 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			302 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			303 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			305 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			306 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			307 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			309 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			310 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			449 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			486 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			487 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			488 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			489 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			490 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			491 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			492 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			493 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			494 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			495 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			496 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			497 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			498 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			499 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			500 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			501 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			502 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			503 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			504 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			505 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			506 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			507 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			508 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			509 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			510 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			511 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			512 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			579 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			649 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			687 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			688 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			691 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			695 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			720 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			845 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			847 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			848 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			849 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			850 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			851 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			852 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			853 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			855 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			872 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			873 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			874 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			894 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			895 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			896 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			898 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			900 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			901 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			902 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			903 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			904 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			912 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1027 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1028 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1029 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1030 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1031 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1033 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1036 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1037 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1038 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1039 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1040 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1041 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1043 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1073 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1074 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1078 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1079 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1214 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1215 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1216 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1280 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1296 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1305 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1306 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1307 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1308 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1309 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1310 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1311 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-		}
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			release = URG
-			URG = {
-				every_core_state = {
-					remove_core_of = URG
-				}
-			}
-			270 = { add_core_of = URG }
-			278 = { add_core_of = URG }
-			279 = { add_core_of = URG }
-			280 = { add_core_of = URG }
-			299 = { add_core_of = URG }
-			300 = { add_core_of = URG }
-			301 = { add_core_of = URG }
-			302 = { add_core_of = URG }
-			303 = { add_core_of = URG }
-			305 = { add_core_of = URG }
-			306 = { add_core_of = URG }
-			307 = { add_core_of = URG }
-			309 = { add_core_of = URG }
-			310 = { add_core_of = URG }
-			449 = { add_core_of = URG }
-			486 = { add_core_of = URG }
-			487 = { add_core_of = URG }
-			488 = { add_core_of = URG }
-			489 = { add_core_of = URG }
-			490 = { add_core_of = URG }
-			491 = { add_core_of = URG }
-			492 = { add_core_of = URG }
-			493 = { add_core_of = URG }
-			494 = { add_core_of = URG }
-			495 = { add_core_of = URG }
-			496 = { add_core_of = URG }
-			497 = { add_core_of = URG }
-			498 = { add_core_of = URG }
-			499 = { add_core_of = URG }
-			500 = { add_core_of = URG }
-			501 = { add_core_of = URG }
-			502 = { add_core_of = URG }
-			503 = { add_core_of = URG }
-			504 = { add_core_of = URG }
-			505 = { add_core_of = URG }
-			506 = { add_core_of = URG }
-			507 = { add_core_of = URG }
-			508 = { add_core_of = URG }
-			509 = { add_core_of = URG }
-			510 = { add_core_of = URG }
-			511 = { add_core_of = URG }
-			512 = { add_core_of = URG }
-			579 = { add_core_of = URG }
-			649 = { add_core_of = URG }
-			687 = { add_core_of = URG }
-			688 = { add_core_of = URG }
-			691 = { add_core_of = URG }
-			695 = { add_core_of = URG }
-			720 = { add_core_of = URG }
-			845 = { add_core_of = URG }
-			847 = { add_core_of = URG }
-			848 = { add_core_of = URG }
-			849 = { add_core_of = URG }
-			850 = { add_core_of = URG }
-			851 = { add_core_of = URG }
-			852 = { add_core_of = URG }
-			853 = { add_core_of = URG }
-			855 = { add_core_of = URG }
-			872 = { add_core_of = URG }
-			873 = { add_core_of = URG }
-			874 = { add_core_of = URG }
-			894 = { add_core_of = URG }
-			895 = { add_core_of = URG }
-			896 = { add_core_of = URG }
-			898 = { add_core_of = URG }
-			900 = { add_core_of = URG }
-			901 = { add_core_of = URG }
-			902 = { add_core_of = URG }
-			903 = { add_core_of = URG }
-			904 = { add_core_of = URG }
-			912 = { add_core_of = URG }
-			1027 = { add_core_of = URG }
-			1028 = { add_core_of = URG }
-			1029 = { add_core_of = URG }
-			1030 = { add_core_of = URG }
-			1031 = { add_core_of = URG }
-			1033 = { add_core_of = URG }
-			1036 = { add_core_of = URG }
-			1037 = { add_core_of = URG }
-			1038 = { add_core_of = URG }
-			1039 = { add_core_of = URG }
-			1040 = { add_core_of = URG }
-			1041 = { add_core_of = URG }
-			1043 = { add_core_of = URG }
-			1073 = { add_core_of = URG }
-			1074 = { add_core_of = URG }
-			1078 = { add_core_of = URG }
-			1079 = { add_core_of = URG }
-			1214 = { add_core_of = URG }
-			1215 = { add_core_of = URG }
-			1216 = { add_core_of = URG }
-			1280 = { add_core_of = URG }
-			1296 = { add_core_of = URG }
-			1305 = { add_core_of = URG }
-			1306 = { add_core_of = URG }
-			1307 = { add_core_of = URG }
-			1308 = { add_core_of = URG }
-			1309 = { add_core_of = URG }
-			1310 = { add_core_of = URG }
-			1311 = { add_core_of = URG }
-
-			URG = { 
-				every_core_state = {
-					limit = {
-						AND = {
-							NOT = { 
-								is_core_of = GRE
-							}
-							OR = {
-								is_owned_by = GRE
-								OWNER = { is_subject_of = GRE} 
-							}
-						}
-					}
-					transfer_state_to = URG
-				}
-			}
-			URG = { 
-				set_cosmetic_tag = GRE_URG_OCC
-				load_focus_tree = generic_focus            
-
-				create_country_leader = {
-					name = "Konstantinos Bakopoulos"
-					picture = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Bakopoulos.png"
-					expire = "1.1.1"
-					ideology = junta_subtype
-					traits = {
-					}
-				}
-
-				set_popularities = {
-					authoritarian_democrat = 50.0
-					paternal_autocrat = 50.0
-				}
-				set_party_name = {
-					ideology = paternal_autocrat
-					name = "Byzantine Colonial Government"
-					long_name = "Byzantine Colonial Government"
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = "Byzantine Colonial Government"
-					long_name = "Byzantine Colonial Government"
-				}
-
-				GRE = {
-					set_autonomy = {
-						target = URG
-						autonomous_state = kx_colored_puppet
-					}
-				}
-
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
-			}
-		}
-	}
+# GRE_establish_rk_URG = {
+# 	icon = generic_prepare_civil_war
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 270
+# 				state = 278
+# 				state = 279
+# 				state = 280
+# 				state = 299
+# 				state = 300
+# 				state = 301
+# 				state = 302
+# 				state = 303
+# 				state = 305
+# 				state = 306
+# 				state = 307
+# 				state = 309
+# 				state = 310
+# 				state = 449
+# 				state = 486
+# 				state = 487
+# 				state = 488
+# 				state = 489
+# 				state = 490
+# 				state = 491
+# 				state = 492
+# 				state = 493
+# 				state = 494
+# 				state = 495
+# 				state = 496
+# 				state = 497
+# 				state = 498
+# 				state = 499
+# 				state = 500
+# 				state = 501
+# 				state = 502
+# 				state = 503
+# 				state = 504
+# 				state = 505
+# 				state = 506
+# 				state = 507
+# 				state = 508
+# 				state = 509
+# 				state = 510
+# 				state = 511
+# 				state = 512
+# 				state = 579
+# 				state = 649
+# 				state = 687
+# 				state = 688
+# 				state = 691
+# 				state = 695
+# 				state = 720
+# 				state = 845
+# 				state = 847
+# 				state = 848
+# 				state = 849
+# 				state = 850
+# 				state = 851
+# 				state = 852
+# 				state = 853
+# 				state = 855
+# 				state = 872
+# 				state = 873
+# 				state = 874
+# 				state = 894
+# 				state = 895
+# 				state = 896
+# 				state = 898
+# 				state = 900
+# 				state = 901
+# 				state = 902
+# 				state = 903
+# 				state = 904
+# 				state = 912
+# 				state = 1027
+# 				state = 1028
+# 				state = 1029
+# 				state = 1030
+# 				state = 1031
+# 				state = 1033
+# 				state = 1036
+# 				state = 1037
+# 				state = 1038
+# 				state = 1039
+# 				state = 1040
+# 				state = 1041
+# 				state = 1043
+# 				state = 1073
+# 				state = 1074
+# 				state = 1078
+# 				state = 1079
+# 				state = 1214
+# 				state = 1215
+# 				state = 1216
+# 				state = 1280
+# 				state = 1296
+# 				state = 1305
+# 				state = 1306
+# 				state = 1307
+# 				state = 1308
+# 				state = 1309
+# 				state = 1310
+# 				state = 1311
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
+# 	available = {
+# 		270 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		278 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		279 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		280 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		299 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		300 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		301 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		302 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		303 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		305 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		306 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		307 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		309 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		310 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		449 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		486 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		487 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		488 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		489 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		490 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		491 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		492 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		493 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		494 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		495 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		496 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		497 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		498 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		499 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		500 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		501 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		502 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		503 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		504 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		505 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		506 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		507 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		508 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		509 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		510 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		511 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		512 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		579 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		649 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		687 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		688 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		691 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		695 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		720 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		845 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		847 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		848 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		849 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		850 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		851 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		852 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		853 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		855 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		872 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		873 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		874 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		894 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		895 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		896 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		898 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		900 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		901 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		902 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		903 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		904 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		912 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1027 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1028 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1029 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1030 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1031 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1033 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1036 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1037 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1038 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1039 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1040 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1041 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1043 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1073 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1074 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1078 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1079 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1214 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1215 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1216 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1280 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1296 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1305 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1306 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1307 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1308 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1309 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1310 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 		1311 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
+# 	}
+# 	fire_only_once = yes
+# 	ai_will_do = {
+# 		factor = 5
+# 	}
+# 	complete_effect = {
+# 		release = URG
+# 		URG = {
+# 			every_core_state = {
+# 				remove_core_of = URG
+# 			}
+# 		}
+# 		270 = { add_core_of = URG }
+# 		278 = { add_core_of = URG }
+# 		279 = { add_core_of = URG }
+# 		280 = { add_core_of = URG }
+# 		299 = { add_core_of = URG }
+# 		300 = { add_core_of = URG }
+# 		301 = { add_core_of = URG }
+# 		302 = { add_core_of = URG }
+# 		303 = { add_core_of = URG }
+# 		305 = { add_core_of = URG }
+# 		306 = { add_core_of = URG }
+# 		307 = { add_core_of = URG }
+# 		309 = { add_core_of = URG }
+# 		310 = { add_core_of = URG }
+# 		449 = { add_core_of = URG }
+# 		486 = { add_core_of = URG }
+# 		487 = { add_core_of = URG }
+# 		488 = { add_core_of = URG }
+# 		489 = { add_core_of = URG }
+# 		490 = { add_core_of = URG }
+# 		491 = { add_core_of = URG }
+# 		492 = { add_core_of = URG }
+# 		493 = { add_core_of = URG }
+# 		494 = { add_core_of = URG }
+# 		495 = { add_core_of = URG }
+# 		496 = { add_core_of = URG }
+# 		497 = { add_core_of = URG }
+# 		498 = { add_core_of = URG }
+# 		499 = { add_core_of = URG }
+# 		500 = { add_core_of = URG }
+# 		501 = { add_core_of = URG }
+# 		502 = { add_core_of = URG }
+# 		503 = { add_core_of = URG }
+# 		504 = { add_core_of = URG }
+# 		505 = { add_core_of = URG }
+# 		506 = { add_core_of = URG }
+# 		507 = { add_core_of = URG }
+# 		508 = { add_core_of = URG }
+# 		509 = { add_core_of = URG }
+# 		510 = { add_core_of = URG }
+# 		511 = { add_core_of = URG }
+# 		512 = { add_core_of = URG }
+# 		579 = { add_core_of = URG }
+# 		649 = { add_core_of = URG }
+# 		687 = { add_core_of = URG }
+# 		688 = { add_core_of = URG }
+# 		691 = { add_core_of = URG }
+# 		695 = { add_core_of = URG }
+# 		720 = { add_core_of = URG }
+# 		845 = { add_core_of = URG }
+# 		847 = { add_core_of = URG }
+# 		848 = { add_core_of = URG }
+# 		849 = { add_core_of = URG }
+# 		850 = { add_core_of = URG }
+# 		851 = { add_core_of = URG }
+# 		852 = { add_core_of = URG }
+# 		853 = { add_core_of = URG }
+# 		855 = { add_core_of = URG }
+# 		872 = { add_core_of = URG }
+# 		873 = { add_core_of = URG }
+# 		874 = { add_core_of = URG }
+# 		894 = { add_core_of = URG }
+# 		895 = { add_core_of = URG }
+# 		896 = { add_core_of = URG }
+# 		898 = { add_core_of = URG }
+# 		900 = { add_core_of = URG }
+# 		901 = { add_core_of = URG }
+# 		902 = { add_core_of = URG }
+# 		903 = { add_core_of = URG }
+# 		904 = { add_core_of = URG }
+# 		912 = { add_core_of = URG }
+# 		1027 = { add_core_of = URG }
+# 		1028 = { add_core_of = URG }
+# 		1029 = { add_core_of = URG }
+# 		1030 = { add_core_of = URG }
+# 		1031 = { add_core_of = URG }
+# 		1033 = { add_core_of = URG }
+# 		1036 = { add_core_of = URG }
+# 		1037 = { add_core_of = URG }
+# 		1038 = { add_core_of = URG }
+# 		1039 = { add_core_of = URG }
+# 		1040 = { add_core_of = URG }
+# 		1041 = { add_core_of = URG }
+# 		1043 = { add_core_of = URG }
+# 		1073 = { add_core_of = URG }
+# 		1074 = { add_core_of = URG }
+# 		1078 = { add_core_of = URG }
+# 		1079 = { add_core_of = URG }
+# 		1214 = { add_core_of = URG }
+# 		1215 = { add_core_of = URG }
+# 		1216 = { add_core_of = URG }
+# 		1280 = { add_core_of = URG }
+# 		1296 = { add_core_of = URG }
+# 		1305 = { add_core_of = URG }
+# 		1306 = { add_core_of = URG }
+# 		1307 = { add_core_of = URG }
+# 		1308 = { add_core_of = URG }
+# 		1309 = { add_core_of = URG }
+# 		1310 = { add_core_of = URG }
+# 		1311 = { add_core_of = URG }            
+# 		URG = { 
+# 			every_core_state = {
+# 				limit = {
+# 					AND = {
+# 						NOT = { 
+# 							is_core_of = GRE
+# 						}
+# 						OR = {
+# 							is_owned_by = GRE
+# 							OWNER = { is_subject_of = GRE} 
+# 						}
+# 					}
+# 				}
+# 				transfer_state_to = URG
+# 			}
+# 		}
+# 		URG = { 
+# 			set_cosmetic_tag = GRE_URG_OCC
+# 			load_focus_tree = generic_focus            
+# 			create_country_leader = {
+# 				name = "Konstantinos Bakopoulos"
+# 				picture = "gfx/leaders/GRE/Portrait_GRE_Konstantinos_Bakopoulos.png"
+# 				expire = "1.1.1"
+# 				ideology = junta_subtype
+# 				traits = {
+# 				}
+# 			}
+# 			set_popularities = {
+# 				authoritarian_democrat = 50.0
+# 				paternal_autocrat = 50.0
+# 			}
+# 			set_party_name = {
+# 				ideology = paternal_autocrat
+# 				name = "Byzantine Colonial Government"
+# 				long_name = "Byzantine Colonial Government"
+# 			}
+# 			set_party_name = {
+# 				ideology = authoritarian_democrat
+# 				name = "Byzantine Colonial Government"
+# 				long_name = "Byzantine Colonial Government"
+# 			}
+# 			GRE = {
+# 				set_autonomy = {
+# 					target = URG
+# 					autonomous_state = kx_colored_puppet
+# 				}
+# 			}
+# 			set_politics = {
+# 				ruling_party = paternal_autocrat
+# 				elections_allowed = no
+# 			}
+# 		}
+# 	}
+# }
 
 	GRE_establish_rk_MAL = {
 		icon = generic_prepare_civil_war
@@ -4091,64 +5687,56 @@ GRE_great_game = {
 
 	GRE_establish_rk_MAD = {
 		icon = generic_prepare_civil_war
-
-			highlight_states = {
-				highlight_state_targets = {
-					state = 72
-					state = 288
-					state = 320
-					state = 321
-					state = 323
-					state = 324
-					state = 423
-					state = 424
-					state = 425
-					state = 426
-					state = 427
-					state = 428
-					state = 429
-					state = 430
-					state = 431
-					state = 432
-					state = 433
-					state = 434
-					state = 435
-					state = 436
-					state = 437
-					state = 438
-					state = 439
-					state = 440
-					state = 441
-					state = 443
-					state = 444
-					state = 640
-					state = 701
-					state = 790
-					state = 814
-					state = 815
-					state = 858
-					state = 867
-					state = 868
-					state = 887
-					state = 888
-					state = 889
-					state = 890
-					state = 891
-					state = 893
-					state = 1034
-					state = 1057
-					state = 1092
-					state = 1093
-					state = 1094
-					state = 1095
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
+		highlight_states = {
+			highlight_state_targets = {
+				state = 320
+				state = 321
+				state = 323
+				state = 324
+				state = 423
+				state = 424
+				state = 425
+				state = 426
+				state = 427
+				state = 428
+				state = 429
+				state = 430
+				state = 431
+				state = 432
+				state = 433
+				state = 434
+				state = 435
+				state = 436
+				state = 437
+				state = 438
+				state = 439
+				state = 440
+				state = 441
+				state = 443
+				state = 444
+				state = 814
+				state = 815
+				state = 858
+				state = 867
+				state = 868
+				state = 887
+				state = 888
+				state = 889
+				state = 890
+				state = 891
+				state = 893
+				state = 1034
+				state = 1057
+				state = 1092
+				state = 1093
+				state = 1094
+				state = 1095
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 
 		available = {
-			72 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			288 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			320 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			321 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			323 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
@@ -4174,9 +5762,6 @@ GRE_great_game = {
 			441 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			443 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			444 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			640 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			701 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			790 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			814 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			815 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			858 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
@@ -4208,8 +5793,6 @@ GRE_great_game = {
 					remove_core_of = MAD
 				}
 			}
-			72 = { add_core_of = MAD }
-			288 = { add_core_of = MAD }
 			320 = { add_core_of = MAD }
 			321 = { add_core_of = MAD }
 			323 = { add_core_of = MAD }
@@ -4235,9 +5818,6 @@ GRE_great_game = {
 			441 = { add_core_of = MAD }
 			443 = { add_core_of = MAD }
 			444 = { add_core_of = MAD }
-			640 = { add_core_of = MAD }
-			701 = { add_core_of = MAD }
-			790 = { add_core_of = MAD }
 			814 = { add_core_of = MAD }
 			815 = { add_core_of = MAD }
 			858 = { add_core_of = MAD }
@@ -4317,51 +5897,36 @@ GRE_great_game = {
 
 	GRE_establish_rk_PER = {
 		icon = generic_prepare_civil_war
-
-			highlight_states = {
-				highlight_state_targets = {
-					state = 266
-					state = 267
-					state = 410
-					state = 411
-					state = 412
-					state = 413
-					state = 414
-					state = 415
-					state = 416
-					state = 418
-					state = 420
-					state = 421
-					state = 442
-					state = 445
-					state = 804
-					state = 1217
-					state = 1218
-					state = 1219
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 418
+				state = 420
+				state = 421
+				state = 804
 			}
-
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+			
 		available = {
 			266 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			267 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			410 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			411 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			412 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			413 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			414 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			415 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			416 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			418 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			420 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			421 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			442 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			445 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 			804 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1217 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1218 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1219 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
 		}
 
 		fire_only_once = yes
@@ -4377,23 +5942,16 @@ GRE_great_game = {
 				}
 			}
 			266 = { add_core_of = PER }
-			267 = { add_core_of = PER }
 			410 = { add_core_of = PER }
 			411 = { add_core_of = PER }
 			412 = { add_core_of = PER }
 			413 = { add_core_of = PER }
 			414 = { add_core_of = PER }
-			415 = { add_core_of = PER }
 			416 = { add_core_of = PER }
 			418 = { add_core_of = PER }
 			420 = { add_core_of = PER }
 			421 = { add_core_of = PER }
-			442 = { add_core_of = PER }
-			445 = { add_core_of = PER }
 			804 = { add_core_of = PER }
-			1217 = { add_core_of = PER }
-			1218 = { add_core_of = PER }
-			1219 = { add_core_of = PER }
 
 			PER = { 
 				every_core_state = {
@@ -4442,367 +6000,6 @@ GRE_great_game = {
 				GRE = {
 					set_autonomy = {
 						target = PER
-						autonomous_state = kx_colored_puppet
-					}
-				}
-
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-				}
-			}
-		}
-	}
-
-	GRE_establish_rk_PHI = {
-		icon = generic_prepare_civil_war
-
-			highlight_states = {
-				highlight_state_targets = {
-					state = 284
-					state = 285
-					state = 286
-					state = 289
-					state = 327
-					state = 333
-					state = 334
-					state = 335
-					state = 336
-					state = 517
-					state = 518
-					state = 519
-					state = 520
-					state = 521
-					state = 522
-					state = 523
-					state = 623
-					state = 624
-					state = 625
-					state = 626
-					state = 627
-					state = 628
-					state = 629
-					state = 630
-					state = 631
-					state = 632
-					state = 633
-					state = 634
-					state = 635
-					state = 636
-					state = 638
-					state = 639
-					state = 641
-					state = 642
-					state = 643
-					state = 646
-					state = 647
-					state = 667
-					state = 668
-					state = 669
-					state = 670
-					state = 671
-					state = 672
-					state = 673
-					state = 674
-					state = 684
-					state = 711
-					state = 721
-					state = 723
-					state = 724
-					state = 725
-					state = 726
-					state = 727
-					state = 728
-					state = 733
-					state = 734
-					state = 737
-					state = 749
-					state = 750
-					state = 751
-					state = 756
-					state = 757
-					state = 822
-					state = 823
-					state = 824
-					state = 825
-					state = 826
-					state = 827
-					state = 828
-					state = 830
-					state = 831
-					state = 843
-					state = 846
-					state = 856
-					state = 857
-					state = 882
-					state = 941
-					state = 972
-					state = 985
-					state = 986
-					state = 987
-					state = 988
-					state = 999
-					state = 1016
-					state = 1017
-					state = 1018
-					state = 1019
-					state = 1020
-					state = 1021
-					state = 1022
-					state = 1023
-					state = 1333
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
-			}
-
-		available = {
-			284 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			285 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			286 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			289 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			327 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			333 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			334 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			335 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			336 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			517 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			518 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			519 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			520 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			521 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			522 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			523 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			623 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			624 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			625 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			626 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			627 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			628 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			629 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			630 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			631 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			632 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			633 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			634 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			635 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			636 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			638 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			639 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			641 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			642 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			643 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			646 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			647 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			667 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			668 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			669 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			670 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			671 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			672 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			673 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			674 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			684 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			711 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			721 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			723 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			724 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			725 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			726 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			727 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			728 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			733 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			734 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			737 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			749 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			750 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			751 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			756 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			757 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			822 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			823 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			824 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			825 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			826 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			827 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			828 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			830 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			831 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			843 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			846 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			856 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			857 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			882 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			941 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			972 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			985 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			986 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			987 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			988 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			999 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1016 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1017 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1018 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1019 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1020 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1021 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1022 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1023 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-			1333 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
-		}
-
-		fire_only_once = yes
-
-		ai_will_do = {
-			factor = 5
-		}
-		complete_effect = {
-			release = PHI
-			PHI = {
-				every_core_state = {
-					remove_core_of = PHI
-				}
-			}
-			284 = { add_core_of = PHI }
-			285 = { add_core_of = PHI }
-			286 = { add_core_of = PHI }
-			289 = { add_core_of = PHI }
-			327 = { add_core_of = PHI }
-			333 = { add_core_of = PHI }
-			334 = { add_core_of = PHI }
-			335 = { add_core_of = PHI }
-			336 = { add_core_of = PHI }
-			517 = { add_core_of = PHI }
-			518 = { add_core_of = PHI }
-			519 = { add_core_of = PHI }
-			520 = { add_core_of = PHI }
-			521 = { add_core_of = PHI }
-			522 = { add_core_of = PHI }
-			523 = { add_core_of = PHI }
-			623 = { add_core_of = PHI }
-			624 = { add_core_of = PHI }
-			625 = { add_core_of = PHI }
-			626 = { add_core_of = PHI }
-			627 = { add_core_of = PHI }
-			628 = { add_core_of = PHI }
-			629 = { add_core_of = PHI }
-			630 = { add_core_of = PHI }
-			631 = { add_core_of = PHI }
-			632 = { add_core_of = PHI }
-			633 = { add_core_of = PHI }
-			634 = { add_core_of = PHI }
-			635 = { add_core_of = PHI }
-			636 = { add_core_of = PHI }
-			638 = { add_core_of = PHI }
-			639 = { add_core_of = PHI }
-			641 = { add_core_of = PHI }
-			642 = { add_core_of = PHI }
-			643 = { add_core_of = PHI }
-			646 = { add_core_of = PHI }
-			647 = { add_core_of = PHI }
-			667 = { add_core_of = PHI }
-			668 = { add_core_of = PHI }
-			669 = { add_core_of = PHI }
-			670 = { add_core_of = PHI }
-			671 = { add_core_of = PHI }
-			672 = { add_core_of = PHI }
-			673 = { add_core_of = PHI }
-			674 = { add_core_of = PHI }
-			684 = { add_core_of = PHI }
-			711 = { add_core_of = PHI }
-			721 = { add_core_of = PHI }
-			723 = { add_core_of = PHI }
-			724 = { add_core_of = PHI }
-			725 = { add_core_of = PHI }
-			726 = { add_core_of = PHI }
-			727 = { add_core_of = PHI }
-			728 = { add_core_of = PHI }
-			733 = { add_core_of = PHI }
-			734 = { add_core_of = PHI }
-			737 = { add_core_of = PHI }
-			749 = { add_core_of = PHI }
-			750 = { add_core_of = PHI }
-			751 = { add_core_of = PHI }
-			756 = { add_core_of = PHI }
-			757 = { add_core_of = PHI }
-			822 = { add_core_of = PHI }
-			823 = { add_core_of = PHI }
-			824 = { add_core_of = PHI }
-			825 = { add_core_of = PHI }
-			826 = { add_core_of = PHI }
-			827 = { add_core_of = PHI }
-			828 = { add_core_of = PHI }
-			830 = { add_core_of = PHI }
-			831 = { add_core_of = PHI }
-			843 = { add_core_of = PHI }
-			846 = { add_core_of = PHI }
-			856 = { add_core_of = PHI }
-			857 = { add_core_of = PHI }
-			882 = { add_core_of = PHI }
-			941 = { add_core_of = PHI }
-			972 = { add_core_of = PHI }
-			985 = { add_core_of = PHI }
-			986 = { add_core_of = PHI }
-			987 = { add_core_of = PHI }
-			988 = { add_core_of = PHI }
-			999 = { add_core_of = PHI }
-			1016 = { add_core_of = PHI }
-			1017 = { add_core_of = PHI }
-			1018 = { add_core_of = PHI }
-			1019 = { add_core_of = PHI }
-			1020 = { add_core_of = PHI }
-			1021 = { add_core_of = PHI }
-			1022 = { add_core_of = PHI }
-			1023 = { add_core_of = PHI }
-			1333 = { add_core_of = PHI }
-
-			PHI = { 
-				every_core_state = {
-					limit = {
-						AND = {
-							NOT = { 
-								is_core_of = GRE
-							}
-							OR = {
-								is_owned_by = GRE
-								OWNER = { is_subject_of = GRE} 
-							}
-						}
-					}
-					transfer_state_to = PHI
-				}
-			}
-			PHI = { 
-				set_cosmetic_tag = GRE_PHI_OCC
-				load_focus_tree = generic_focus            
-
-				create_country_leader = {
-					name = "Petros Voulgaris"
-					picture = "gfx/leaders/GRE/Portrait_GRE_Petros_Voulgaris.png"
-					expire = "1.1.1"
-					ideology = junta_subtype
-					traits = {
-					}
-				}
-
-				set_popularities = {
-					authoritarian_democrat = 50.0
-					paternal_autocrat = 50.0
-				}
-				set_party_name = {
-					ideology = paternal_autocrat
-					name = "Byzantine Colonial Government"
-					long_name = "Byzantine Colonial Government"
-				}
-				set_party_name = {
-					ideology = authoritarian_democrat
-					name = "Byzantine Colonial Government"
-					long_name = "Byzantine Colonial Government"
-				}
-
-				GRE = {
-					set_autonomy = {
-						target = PHI
 						autonomous_state = kx_colored_puppet
 					}
 				}
@@ -5386,33 +6583,33 @@ GRE_great_game = {
 	GRE_establish_rk_JAP = {
 		icon = generic_prepare_civil_war
 
-			highlight_states = {
-				highlight_state_targets = {
-					state = 282
-					state = 526
-					state = 528
-					state = 529
-					state = 530
-					state = 531
-					state = 532
-					state = 533
-					state = 534
-					state = 535
-					state = 536
-					state = 537
-					state = 555
-					state = 645
-					state = 648
-					state = 1351
-					state = 1352
-					state = 1353
-					state = 1354
-					state = 1355
-					state = 1356
-				}
-				highlight_color_while_active = 3
-				highlight_color_before_active = 2
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+				state = 526
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 532
+				state = 533
+				state = 534
+				state = 535
+				state = 536
+				state = 537
+				state = 555
+				state = 645
+				state = 648
+				state = 1351
+				state = 1352
+				state = 1353
+				state = 1354
+				state = 1355
+				state = 1356
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
 
 		available = {
 			282 = { owner = { OR = { original_tag = GRE is_subject_of = GRE } } }
@@ -5489,8 +6686,8 @@ GRE_great_game = {
 				}
 			}
 			JAP = { 
-				set_cosmetic_tag = GRE_JAP_OCD
-				load_focus_tree = generic_focus            
+				set_cosmetic_tag = GRE_JAP_OCC_Rome
+				load_focus_tree = generic_focus                  
 
 				create_country_leader = {
 					name = "Stylianos Lykoudis"

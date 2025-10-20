@@ -1,0 +1,32 @@
+SIC_WD_pathguide = {
+	SIC_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = SIC
+		}
+		available = {
+			original_tag = SIC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.1
+		}
+	}
+	SIC_Italy_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = SIC
+		}
+		available = {
+			original_tag = SIC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.2
+		}
+	}
+}
