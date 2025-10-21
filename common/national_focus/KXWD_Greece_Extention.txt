@@ -45,7 +45,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_destroy_the_venizelist_ideas
-    icon = KXWD_placeholder
+    icon = RUS_Oust_Liberals_Conservatives
     x = -2
     y = 1
 	relative_position_id = KXWD_GRE_restore_the_kingdom
@@ -78,7 +78,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_dreams_of_a_greek_empire_of_old
-    icon = KXWD_placeholder
+    icon = focus_GRE_reviving_the_double_headed_eagle
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_restore_the_kingdom
@@ -95,7 +95,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_free_and_loyal_greece
-    icon = KXWD_placeholder
+    icon = focus_GRE_a_land_of_mountains
     x = 2
     y = 1
 	relative_position_id = KXWD_GRE_restore_the_kingdom
@@ -113,7 +113,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_destroy_the_socialist_threat
-    icon = KXWD_placeholder
+    icon = MEX_crush_socialists
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_destroy_the_venizelist_ideas
@@ -146,7 +146,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_prepare_for_the_reconquest_of_our_past
-    icon = KXWD_placeholder
+    icon = generic_eagle
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_dreams_of_a_greek_empire_of_old
@@ -166,7 +166,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_empower_the_king
-    icon = KXWD_placeholder
+    icon = SPR_question_monarchy
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_free_and_loyal_greece
@@ -186,7 +186,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_stabilize_the_kingdom
-    icon = KXWD_placeholder
+    icon = focus_GRE_an_orthodox_state
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_destroy_the_socialist_threat
@@ -203,7 +203,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_create_turkophobia
-    icon = KXWD_placeholder
+    icon = focus_GRE_byzantine_themata
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_prepare_for_the_reconquest_of_our_past
@@ -220,7 +220,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_entrench_royalism_in_the_army
-    icon = KXWD_placeholder
+    icon = focus_GRE_hellenic_armed_forces
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_empower_the_king
@@ -237,7 +237,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_rearming_complete_nation_prepared
-    icon = KXWD_placeholder
+    icon = focus_GRE_following_in_the_footsteps_of_giants
     x = 1
     y = 1
 	relative_position_id = KXWD_GRE_stabilize_the_kingdom
@@ -260,7 +260,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_create_the_neo_varangian_guard
-    icon = KXWD_placeholder
+    icon = focus_GRE_reviving_the_spartan_warrior_spirit
     x = 1
     y = 1
 	relative_position_id = KXWD_GRE_create_turkophobia
@@ -283,7 +283,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_reconquer_the_eastern_roman_empire
-    icon = KXWD_placeholder
+    icon = GRE_byzantine_warfare
     x = 1
     y = 1
 	relative_position_id = KXWD_GRE_rearming_complete_nation_prepared
@@ -340,7 +340,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
-    icon = KXWD_placeholder
+    icon = POR_royal_edicts
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_reconquer_the_eastern_roman_empire
@@ -357,7 +357,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_take_the_balkans
-    icon = KXWD_placeholder
+    icon = balkan_fist
     x = -2
     y = 1
 	relative_position_id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
@@ -437,7 +437,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_retake_egypt
-    icon = KXWD_placeholder
+    icon = EGY_Pyramids
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
@@ -476,7 +476,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_italian_expedition
-    icon = KXWD_placeholder
+    icon = generic_mediterranean
     x = 2
     y = 1
 	relative_position_id = KXWD_GRE_grant_our_generals_and_admirals_royal_titles
@@ -506,19 +506,25 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = KXWD_GRE_integrate_the_balkans
-    icon = KXWD_placeholder
+	id = KXWD_GRE_the_purple_phoenix_rises_again
+    icon = GRE_purple_pheonix
     x = 0
     y = 1
-	relative_position_id = KXWD_GRE_take_the_balkans
+	relative_position_id = KXWD_GRE_retake_egypt
     cost = 5
     prerequisite = {
         focus = KXWD_GRE_take_the_balkans
     }
+    prerequisite = {
+        focus = KXWD_GRE_retake_egypt
+    }
+    prerequisite = {
+        focus = KXWD_GRE_italian_expedition
+    }
     available = {
         custom_override_tooltip = {
             tooltip = {
-                localization_key = KXWD_GRE_own_bulgarian_claims
+                localization_key = KXWD_GRE_own_all_claims
             }
             FROM = {
 				owns_state = 106
@@ -531,76 +537,27 @@ shared_focus = {
 				owns_state = 770
 				owns_state = 1090
 				owns_state = 841
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_wallachian_claims
-            }
-            FROM = {
                 owns_state = 81
                 owns_state = 46
                 owns_state = 77
                 owns_state = 772
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_moldavian_claims
-            }
-            FROM = {
                 owns_state = 78
                 owns_state = 79
                 owns_state = 1222
                 owns_state = 1320
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_bukovinian_claims
-            }
-            FROM = {
 				owns_state = 713
 				owns_state = 80
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_crimean_claims
-            }
-            FROM = {
 				owns_state = 1220
 				owns_state = 1221
 				owns_state = 137
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_albanian_claims
-            }
-            FROM = {
                 owns_state = 766
                 owns_state = 44
                 owns_state = 1268
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_serbian_claims
-            }
-            FROM = {
                 owns_state = 765
                 owns_state = 767
                 owns_state = 107
                 owns_state = 108
                 owns_state = 1269
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_illyrian_claims
-            }
-            FROM = {
                 owns_state = 1097
 				owns_state = 105
 				owns_state = 1270
@@ -619,13 +576,6 @@ shared_focus = {
 				owns_state = 1102
 				owns_state = 794
 				owns_state = 1128
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_slovenian_claims
-            }
-            FROM = {
 				owns_state = 1101
 				owns_state = 1104
 				owns_state = 1103
@@ -633,90 +583,13 @@ shared_focus = {
 				owns_state = 1144
 				owns_state = 736
 				owns_state = 1100
-            }
-        }
-    }
-
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_integrate_the_balkans"
-        hidden_effect = {
-				add_state_core = 766
-				add_state_core = 44
-				add_state_core = 1268
-				add_state_core = 106
-				add_state_core = 1271
-				add_state_core = 765
-				add_state_core = 1089
-				add_state_core = 212
-				add_state_core = 211
-				add_state_core = 48
-				add_state_core = 771
-				add_state_core = 770
-				add_state_core = 1090
-				add_state_core = 841
-				add_state_core = 77
-				add_state_core = 772
-				add_state_core = 767
-				add_state_core = 108
-				add_state_core = 107
-				add_state_core = 1269
-				add_state_core = 1097
-				add_state_core = 105
-				add_state_core = 1270
-				add_state_core = 1145
-				add_state_core = 104
-				add_state_core = 1141
-				add_state_core = 1143
-				add_state_core = 1142
-				add_state_core = 1098
-				add_state_core = 163
-				add_state_core = 1206
-				add_state_core = 103
-				add_state_core = 1099
-				add_state_core = 1105
-				add_state_core = 109
-				add_state_core = 1102
-				add_state_core = 794
-				add_state_core = 1128
-				add_state_core = 1101
-				add_state_core = 1104
-				add_state_core = 1103
-				add_state_core = 102
-				add_state_core = 1144
-				add_state_core = 736
-				add_state_core = 1100
-				add_state_core = 81
-				add_state_core = 46
-				add_state_core = 1222
-				add_state_core = 78
-				add_state_core = 79
-				add_state_core = 713
-				add_state_core = 1320
-				add_state_core = 80
-				add_state_core = 1220
-				add_state_core = 137
-				add_state_core = 1221
-			}
-        custom_effect_tooltip = KXWD_GRE_second_core_wave
-    }
-}
-
-shared_focus = {
-	id = KXWD_GRE_integrate_north_africa
-    icon = KXWD_placeholder
-    x = 0
-    y = 1
-	relative_position_id = KXWD_GRE_retake_egypt
-    cost = 5
-    prerequisite = {
-        focus = KXWD_GRE_retake_egypt
-    }
-    available = {
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_egyptian_claims
-            }
-            FROM = {
+                owns_state = 116
+                owns_state = 115
+                owns_state = 156
+                owns_state = 1006
+                owns_state = 837
+                owns_state = 117
+                owns_state = 742
                 owns_state = 446
                 owns_state = 447
                 owns_state = 452
@@ -724,13 +597,6 @@ shared_focus = {
                 owns_state = 457
                 owns_state = 456
                 owns_state = 552
-            }
-        }
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_north_african_claims
-            }
-            FROM = {
                 owns_state = 451
                 owns_state = 450
                 owns_state = 663
@@ -744,88 +610,6 @@ shared_focus = {
     }
 
     completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_integrate_north_africa"
-        hidden_effect = {
-				add_state_core = 446
-				add_state_core = 447
-				add_state_core = 452
-				add_state_core = 1008
-				add_state_core = 457
-				add_state_core = 456
-				add_state_core = 552
-				add_state_core = 451
-				add_state_core = 450
-				add_state_core = 663
-				add_state_core = 1009
-				add_state_core = 448
-				add_state_core = 273
-				add_state_core = 665
-				add_state_core = 458
-		}
-        custom_effect_tooltip = KXWD_GRE_third_core_wave
-    }
-}
-
-shared_focus = {
-	id = KXWD_GRE_integrate_italy
-    icon = KXWD_placeholder
-    x = 0
-    y = 1
-	relative_position_id = KXWD_GRE_italian_expedition
-    cost = 5
-    prerequisite = {
-        focus = KXWD_GRE_italian_expedition
-    }
-    available = {
-        custom_override_tooltip = {
-            tooltip = {
-                localization_key = KXWD_GRE_own_italian_claims
-            }
-            FROM = {
-                owns_state = 116
-                owns_state = 115
-                owns_state = 156
-                owns_state = 1006
-                owns_state = 837
-                owns_state = 117
-                owns_state = 742
-            }
-        }
-    }
-
-    completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_integrate_italy"
-        hidden_effect = {
-				add_state_core = 116
-				add_state_core = 115
-				add_state_core = 156
-				add_state_core = 1006
-				add_state_core = 837
-				add_state_core = 117
-				add_state_core = 742
-		}
-        custom_effect_tooltip = KXWD_GRE_fourth_core_wave
-    }
-}
-
-shared_focus = {
-	id = KXWD_GRE_the_purple_phoenix_rises_again
-    icon = KXWD_placeholder
-    x = 0
-    y = 1
-	relative_position_id = KXWD_GRE_integrate_north_africa
-    cost = 5
-    prerequisite = {
-        focus = KXWD_GRE_integrate_the_balkans
-    }
-    prerequisite = {
-        focus = KXWD_GRE_integrate_north_africa
-    }
-    prerequisite = {
-        focus = KXWD_GRE_integrate_italy
-    }
-
-    completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus KXWD_GRE_the_purple_phoenix_rises_again"
         add_ideas = KXWD_GRE_the_purple_phoenix_rises
     }
@@ -833,7 +617,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_GRE_glory_of_the_empire
-    icon = KXWD_placeholder
+    icon = orthodox_state
     x = 0
     y = 1
 	relative_position_id = KXWD_GRE_the_purple_phoenix_rises_again
