@@ -1697,18 +1697,18 @@ POR_establish_rk_BAS = {
 		factor = 5
 	}
 	complete_effect = {
-		BAS = {
+		GLC = {
 			every_core_state = {
-				remove_core_of = BAS
+				remove_core_of = GLC
 			}
 		}
-		172 = { add_core_of = BAS }
-		176 = { add_core_of = BAS }
-		1338 = { add_core_of = BAS }
-		1339 = { add_core_of = BAS }
-		1344 = { add_core_of = BAS }
-		release = BAS
-		BAS = { 
+		172 = { add_core_of = GLC }
+		176 = { add_core_of = GLC }
+		1338 = { add_core_of = GLC }
+		1339 = { add_core_of = GLC }
+		1344 = { add_core_of = GLC }
+		release = GLC
+		GLC = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -1721,11 +1721,11 @@ POR_establish_rk_BAS = {
 						}
 					}
 				}
-				transfer_state_to = BAS
+				transfer_state_to = GLC
 			}
 		}
-		BAS = { 
-			set_cosmetic_tag = POR_BAS_OCC
+		GLC = { 
+			set_cosmetic_tag = POR_GLC_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1760,7 +1760,7 @@ POR_establish_rk_BAS = {
 
 			POR = {
 				set_autonomy = {
-					target = BAS
+					target = GLC
 					autonomous_state = kx_colored_puppet
 				}
 			}
