@@ -1,0 +1,20 @@
+FIN_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = FIN
+	}
+
+	visible = { 
+    has_country_leader = {
+	character = FIN_Fredrik_Kaarle_I
+	ruling_only = yes
+	    or = {
+	    has_country_leader = {
+	    character = FIN_Vaino_I
+	    ruling_only = yes
+        }
+	    }
+	}
+    }
+}

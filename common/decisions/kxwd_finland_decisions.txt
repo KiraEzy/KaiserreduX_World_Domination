@@ -1,0 +1,1540 @@
+FIN_great_game = {
+FIN1 = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			
+			log = "SWE"
+			SWE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "NOR"
+			NOR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TTR"
+			TTR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "RUS"
+			RUS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "URL"
+			URL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIB"
+			SIB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TRM"
+			TRM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ALO"
+			ALO = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "DKB"
+			DKB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+		}
+		days_remove = 0
+	}
+    POR_early_WAR = {
+	icon = GFX_decision_icon_default
+
+	available = {
+
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	complete_effect = {
+		add_ideas = {
+        KXWD_BUL_quick_war
+        }
+	}	
+}
+    FIN_establish_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 215
+				state = 213
+				state = 216
+				state = 722
+				state = 1274
+				state = 1327
+				state = 1328
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		215 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		213 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		216 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		722 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1274 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1327 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1328 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		215 = { add_core_of = FIN }
+		213 = { add_core_of = FIN }
+		216 = { add_core_of = FIN }
+		722 = { add_core_of = FIN }
+		1274 = { add_core_of = FIN }
+		1327 = { add_core_of = FIN }
+		1328 = { add_core_of = FIN }
+		215 = { transfer_state_to = FIN }
+		213 = { transfer_state_to = FIN }
+		216 = { transfer_state_to = FIN }
+		722 = { transfer_state_to = FIN }
+		1274 = { transfer_state_to = FIN }
+		1327 = { transfer_state_to = FIN }
+		1328 = { transfer_state_to = FIN }
+		
+		FIN = { 
+			set_cosmetic_tag = FIN_FIN_OCC
+		}
+	}
+}
+FIN_establish_rk_SAM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 909
+				state = 144
+				state = 666
+				state = 937
+				state = 960
+				state = 936
+				state = 1147
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		909 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		144 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		666 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		937 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		960 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		936 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1147 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		909 = { add_core_of = FIN }
+		144 = { add_core_of = FIN }
+		666 = { add_core_of = FIN }
+		937 = { add_core_of = FIN }
+		960 = { add_core_of = FIN }
+		936 = { add_core_of = FIN }
+		1147 = { add_core_of = FIN }
+		909 = { transfer_state_to = FIN }
+		144 = { transfer_state_to = FIN }
+		666 = { transfer_state_to = FIN }
+		937 = { transfer_state_to = FIN }
+		960 = { transfer_state_to = FIN }
+		936 = { transfer_state_to = FIN }
+		1147 = { transfer_state_to = FIN }
+	}
+}
+FIN_establish_rk_WRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1289
+				state = 195
+				state = 208
+				state = 209
+				state = 210
+				state = 244
+				state = 263
+				state = 264
+				state = 1288
+				state = 1290
+				state = 1291
+				state = 880
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1289 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		195 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		208 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		209 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		210 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		244 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		263 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		264 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1288 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1290 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1291 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		880 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1289 = { add_core_of = FIN }
+		195 = { add_core_of = FIN }
+		208 = { add_core_of = FIN }
+		209 = { add_core_of = FIN }
+		210 = { add_core_of = FIN }
+		244 = { add_core_of = FIN }
+		263 = { add_core_of = FIN }
+		264 = { add_core_of = FIN }
+		1288 = { add_core_of = FIN }
+		1290 = { add_core_of = FIN }
+		1291 = { add_core_of = FIN }
+		880 = { add_core_of = FIN }
+		1289 = { transfer_state_to = FIN }
+		195 = { transfer_state_to = FIN }
+		208 = { transfer_state_to = FIN }
+		209 = { transfer_state_to = FIN }
+		210 = { transfer_state_to = FIN }
+		244 = { transfer_state_to = FIN }
+		263 = { transfer_state_to = FIN }
+		264 = { transfer_state_to = FIN }
+		1288 = { transfer_state_to = FIN }
+		1290 = { transfer_state_to = FIN }
+		1291 = { transfer_state_to = FIN }
+		880 = { transfer_state_to = FIN }
+	}
+}
+FIN_establish_rk_EST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 13
+				state = 191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		13 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		191 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		13 = { add_core_of = FIN }
+		191 = { add_core_of = FIN }
+		13 = { transfer_state_to = FIN}
+		191 = { transfer_state_to = FIN}
+	}
+}
+FIN_establish_rk_LAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 190
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		12 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		190 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1091 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		12 = { add_core_of = FIN }
+		190 = { add_core_of = FIN }
+		1091 = { add_core_of = FIN }
+		12 = { transfer_state_to = FIN }
+		190 = { transfer_state_to = FIN }
+		1091 = { transfer_state_to = FIN }
+	}
+}
+FIN_buy_BAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 190
+				state = 1091
+				state = 13
+				state = 191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		12 = {
+        is_owned_by = BAT
+		}
+		190 = {
+        is_owned_by = BAT
+		}
+		1091 = {
+        is_owned_by = BAT
+		}
+		13 = {
+        is_owned_by = BAT
+		}
+		191 = {
+        is_owned_by = BAT
+		}
+	}
+
+	cost = 150
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		12 = { transfer_state_to = FIN }
+		190 = { transfer_state_to = FIN }
+		1091 = { transfer_state_to = FIN }
+		13 = { transfer_state_to = FIN }
+		191 = { transfer_state_to = FIN }
+		add_timed_idea = {
+        idea = KXWD_bought_colonies
+        days = 60
+	}
+}
+}
+FIN_establish_rk_SWE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 38
+				state = 124
+				state = 138
+				state = 139
+				state = 140
+				state = 141
+				state = 908
+				state = 778
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		38 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		124 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		138 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		139 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		140 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		141 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		908 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		778 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWE = {
+			every_core_state = {
+				remove_core_of = SWE
+			}
+		}
+		38 = { add_core_of = SWE }
+		124 = { add_core_of = SWE }
+		138 = { add_core_of = SWE }
+		139 = { add_core_of = SWE }
+		140 = { add_core_of = SWE }
+		141 = { add_core_of = SWE }
+		908 = { add_core_of = SWE }
+		778 = { add_core_of = SWE }
+		release = SWE
+		SWE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = SWE
+			}
+		}
+		SWE = { 
+			set_cosmetic_tag = FIN_SWE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Didrik von Essen"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Didrik_von_Essen.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = SWE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_NOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 110
+				state = 142
+				state = 143
+				state = 1146
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		110 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		142 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		143 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1146 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NOR = {
+			every_core_state = {
+				remove_core_of = NOR
+			}
+		}
+		110 = { add_core_of = NOR }
+		142 = { add_core_of = NOR }
+		143 = { add_core_of = NOR }
+		1146 = { add_core_of = NOR }
+		release = NOR
+		NOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = NOR
+			}
+		}
+		NOR = { 
+			set_cosmetic_tag = FIN_NOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Ruben Lagus"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Ruben_Lagus_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = NOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_TTR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1199
+				state = 249
+				state = 256
+				state = 398
+				state = 399
+				state = 651
+				state = 1193
+				state = 1194
+				state = 1197
+				state = 1198
+				state = 214
+				state = 262
+				state = 351
+				state = 397
+				state = 400
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1199 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		249 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		256 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		398 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		399 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		651 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1193 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1194 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1197 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1198 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		214 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		262 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		351 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		397 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		400 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TTR = {
+			every_core_state = {
+				remove_core_of = TTR
+			}
+		}
+		1199 = { add_core_of = TTR }
+		249 = { add_core_of = TTR }
+		256 = { add_core_of = TTR }
+		398 = { add_core_of = TTR }
+		399 = { add_core_of = TTR }
+		651 = { add_core_of = TTR }
+		1193 = { add_core_of = TTR }
+		1194 = { add_core_of = TTR }
+		1197 = { add_core_of = TTR }
+		1198 = { add_core_of = TTR }
+		214 = { add_core_of = TTR }
+		262 = { add_core_of = TTR }
+		351 = { add_core_of = TTR }
+		397 = { add_core_of = TTR }
+		400 = { add_core_of = TTR }
+		release = TTR
+		TTR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = TTR
+			}
+		}
+		TTR = { 
+			set_cosmetic_tag = FIN_TTR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Erik Heinrichs"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Erik_Heinrichs_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = TTR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 248
+				state = 254
+				state = 205
+				state = 224
+				state = 242
+				state = 252
+				state = 253
+				state = 246
+				state = 223
+				state = 247
+				state = 222
+				state = 219
+				state = 220
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		248 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		254 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		205 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		224 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		242 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		252 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		253 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		246 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		223 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		247 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		222 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		219 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		220 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+		}
+		248 = { add_core_of = RUS }
+		254 = { add_core_of = RUS }
+		205 = { add_core_of = RUS }
+		224 = { add_core_of = RUS }
+		242 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		246 = { add_core_of = RUS }
+		223 = { add_core_of = RUS }
+		247 = { add_core_of = RUS }
+		222 = { add_core_of = RUS }
+		219 = { add_core_of = RUS }
+		220 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = FIN_RUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Karl Lennart Oesch"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Karl_Lennart_Oesch_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_URL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 406
+				state = 217
+				state = 236
+				state = 239
+				state = 250
+				state = 251
+				state = 258
+				state = 401
+				state = 652
+				state = 1207
+				state = 1224
+				state = 1229
+				state = 265
+				state = 255
+				state = 1205
+				state = 1204
+				state = 260
+				state = 257
+				state = 1208
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		406 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		217 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		236 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		239 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		250 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		251 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		258 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		401 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		652 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1207 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1224 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1229 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		265 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		255 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1205 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1204 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		260 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		257 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1208 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		URL = {
+			every_core_state = {
+				remove_core_of = URL
+			}
+		}
+		406 = { add_core_of = URL }
+		217 = { add_core_of = URL }
+		236 = { add_core_of = URL }
+		239 = { add_core_of = URL }
+		250 = { add_core_of = URL }
+		251 = { add_core_of = URL }
+		258 = { add_core_of = URL }
+		401 = { add_core_of = URL }
+		652 = { add_core_of = URL }
+		1207 = { add_core_of = URL }
+		1224 = { add_core_of = URL }
+		1229 = { add_core_of = URL }
+		265 = { add_core_of = URL }
+		255 = { add_core_of = URL }
+		1205 = { add_core_of = URL }
+		1204 = { add_core_of = URL }
+		260 = { add_core_of = URL }
+		257 = { add_core_of = URL }
+		1208 = { add_core_of = URL }
+		release = URL
+		URL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = URL
+			}
+		}
+		URL = { 
+			set_cosmetic_tag = FIN_URL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Aksel Airo"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Aksel_Airo_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = URL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_SIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 570
+				state = 40
+				state = 568
+				state = 569
+				state = 575
+				state = 576
+				state = 577
+				state = 578
+				state = 1292
+				state = 403
+				state = 571
+				state = 572
+				state = 573
+				state = 580
+				state = 581
+				state = 582
+				state = 653
+				state = 1195
+				state = 1200
+				state = 1201
+				state = 516
+				state = 567
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		570 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		40 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		568 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		569 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		575 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		576 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		577 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		578 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1292 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		403 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		571 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		572 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		573 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		580 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		581 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		582 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		653 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1195 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1200 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1201 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		516 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		567 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+		}
+		570 = { add_core_of = SIB }
+		40 = { add_core_of = SIB }
+		568 = { add_core_of = SIB }
+		569 = { add_core_of = SIB }
+		575 = { add_core_of = SIB }
+		576 = { add_core_of = SIB }
+		577 = { add_core_of = SIB }
+		578 = { add_core_of = SIB }
+		1292 = { add_core_of = SIB }
+		403 = { add_core_of = SIB }
+		571 = { add_core_of = SIB }
+		572 = { add_core_of = SIB }
+		573 = { add_core_of = SIB }
+		580 = { add_core_of = SIB }
+		581 = { add_core_of = SIB }
+		582 = { add_core_of = SIB }
+		653 = { add_core_of = SIB }
+		1195 = { add_core_of = SIB }
+		1200 = { add_core_of = SIB }
+		1201 = { add_core_of = SIB }
+		516 = { add_core_of = SIB }
+		567 = { add_core_of = SIB }
+		release = SIB
+		SIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = SIB
+			}
+		}
+		SIB = { 
+			set_cosmetic_tag = FIN_SIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Aaro Pajari"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Aaro_Pajari.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_TRM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 408
+				state = 409
+				state = 560
+				state = 561
+				state = 562
+				state = 563
+				state = 564
+				state = 565
+				state = 574
+				state = 637
+				state = 657
+				state = 1246
+				state = 566
+				state = 644
+				state = 1202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		408 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		409 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		560 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		561 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		562 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		563 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		564 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		565 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		574 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		637 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		657 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1246 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		566 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		644 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1202 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRM = {
+			every_core_state = {
+				remove_core_of = TRM
+			}
+		}
+		408 = { add_core_of = TRM }
+		409 = { add_core_of = TRM }
+		560 = { add_core_of = TRM }
+		561 = { add_core_of = TRM }
+		562 = { add_core_of = TRM }
+		563 = { add_core_of = TRM }
+		564 = { add_core_of = TRM }
+		565 = { add_core_of = TRM }
+		574 = { add_core_of = TRM }
+		637 = { add_core_of = TRM }
+		657 = { add_core_of = TRM }
+		1246 = { add_core_of = TRM }
+		566 = { add_core_of = TRM }
+		644 = { add_core_of = TRM }
+		1202 = { add_core_of = TRM }
+		release = TRM
+		TRM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = TRM
+			}
+		}
+		TRM = { 
+			set_cosmetic_tag = FIN_TRM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Wiljo Tuompo"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Wiljo_Tuompo.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = TRM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_ALO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 402
+				state = 404
+				state = 1212
+				state = 583
+				state = 587
+				state = 588
+				state = 589
+				state = 590
+				state = 810
+				state = 1203
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		402 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		404 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1212 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		583 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		587 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		588 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		589 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		590 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		810 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1203 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALO = {
+			every_core_state = {
+				remove_core_of = ALO
+			}
+		}
+		402 = { add_core_of = ALO }
+		404 = { add_core_of = ALO }
+		1212 = { add_core_of = ALO }
+		583 = { add_core_of = ALO }
+		587 = { add_core_of = ALO }
+		588 = { add_core_of = ALO }
+		589 = { add_core_of = ALO }
+		590 = { add_core_of = ALO }
+		810 = { add_core_of = ALO }
+		1203 = { add_core_of = ALO }
+		release = ALO
+		ALO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = ALO
+			}
+		}
+		ALO = { 
+			set_cosmetic_tag = FIN_ALO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hjalmar Siilasvuo"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Hjalmar_Siilasvuo_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = ALO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+FIN_establish_rk_DKB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+				state = 237
+				state = 238
+				state = 245
+				state = 1266
+				state = 1226
+				state = 1227
+				state = 1263
+				state = 1264
+				state = 1265
+				state = 234
+				state = 235
+				state = 1231
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		218 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		237 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		238 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		245 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1266 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1226 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1227 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1263 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1264 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1265 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		234 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		235 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1231 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DKB = {
+			every_core_state = {
+				remove_core_of = DKB
+			}
+		}
+		218 = { add_core_of = DKB }
+		237 = { add_core_of = DKB }
+		238 = { add_core_of = DKB }
+		245 = { add_core_of = DKB }
+		1266 = { add_core_of = DKB }
+		1226 = { add_core_of = DKB }
+		1227 = { add_core_of = DKB }
+		1263 = { add_core_of = DKB }
+		1264 = { add_core_of = DKB }
+		1265 = { add_core_of = DKB }
+		234 = { add_core_of = DKB }
+		235 = { add_core_of = DKB }
+		1231 = { add_core_of = DKB }
+		release = DKB
+		DKB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = DKB
+			}
+		}
+		DKB = { 
+			set_cosmetic_tag = FIN_DKB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Harry Alfthan"
+				picture = "gfx/leaders/FIN/Portrait_FIN_Harry_Alfthan.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Finnish Administration"
+				long_name = "Finnish Administration"
+			}
+
+			FIN = {
+				set_autonomy = {
+					target = DKB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+}
