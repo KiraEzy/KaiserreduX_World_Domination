@@ -6,6 +6,17 @@ BUL_great_game = {
 	}
 
 	visible = { 
-		has_completed_focus = BUL_the_absolutist_have_seized_power
+		has_completed_focus = BUL_maintaining_the_hegemony
+	}
+}
+BUL_late_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = BUL
+	}
+
+	visible = { 
+		has_completed_focus = BUL_expand_the_tsars_powers
 	}
 }

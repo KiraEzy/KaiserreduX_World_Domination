@@ -1,10 +1,73 @@
 BUL_great_game = {  
-    BUL_great_game_testing = {
+    BUL1 = {
 		icon = generic_prepare_civil_war
 		complete_effect = {
 			
-			log = "BUL"
-			BUL = {
+			log = "SVK"
+			SVK = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GAL"
+			GAL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "MOL"
+			MOL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GRE"
+			GRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TUR"
+			TUR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ARM"
+			ARM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PER"
+			PER = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SYR"
+			SYR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SAU"
+			SAU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "EGY"
+			EGY = {
 				every_owned_state = {
 					log = "[state.GetID]"
 				}
@@ -12,4 +75,1810 @@ BUL_great_game = {
 		}
 		days_remove = 0
 	}
+	POR_early_WAR = {
+	icon = GFX_decision_icon_default
+
+	available = {
+
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	complete_effect = {
+		add_ideas = {
+        KXWD_BUL_quick_war
+        }
+	}	
+}
+BUL_early_pat_aut = {
+		icon = generic_prepare_civil_war
+        
+        available = {
+        has_subject = SER
+	    }
+
+	    fire_only_once = yes
+
+        ai_will_do = {
+		factor = 0
+	    }
+
+		complete_effect = {
+			BUL = {
+			set_politics = {
+            ruling_party = paternal_autocrat
+            }
+			}
+		}
+		days_remove = 0
+	}
+}
+
+BUL_late_game = {
+BUL_establish_rk_BUL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 107
+				state = 108
+				state = 765
+				state = 767
+				state = 1269
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		107 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		108 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		765 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		767 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1269 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		107 = { add_core_of = BUL }
+		108 = { add_core_of = BUL }
+		765 = { add_core_of = BUL }
+		767 = { add_core_of = BUL }
+		1269 = { add_core_of = BUL }
+        107 = { transfer_state_to = BUL }
+		108 = { transfer_state_to = BUL }
+		765 = { transfer_state_to = BUL }
+		767 = { transfer_state_to = BUL }
+		1269 = { transfer_state_to = BUL }
+		BUL = { 
+			set_cosmetic_tag = BUL_BUL_OCC
+	    }
+    }
+}
+BUL_establish_rk_ALB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 766
+				state = 1268
+				state = 185
+				state = 758
+				state = 768
+				state = 989
+				state = 1076
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		44 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		766 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1268 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		185 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		758 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		768 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		989 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1076 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		44 = { add_core_of = BUL }
+		766 = { add_core_of = BUL }
+		1268 = { add_core_of = BUL }
+		185 = { add_core_of = BUL }
+		758 = { add_core_of = BUL }
+		768 = { add_core_of = BUL }
+		989 = { add_core_of = BUL }
+		1076 = { add_core_of = BUL }
+        44 = { transfer_state_to = BUL }
+		766 = { transfer_state_to = BUL }
+		1268 = { transfer_state_to = BUL }
+		185 = { transfer_state_to = BUL }
+		758 = { transfer_state_to = BUL }
+		768 = { transfer_state_to = BUL }
+		989 = { transfer_state_to = BUL }
+		1076 = { transfer_state_to = BUL }
+	}
+}
+BUL_establish_rk_KUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 773
+				state = 341
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		773 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		341 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		773 = { add_core_of = BUL }
+		341 = { add_core_of = BUL }
+        773 = { transfer_state_to = BUL }
+		341 = { transfer_state_to = BUL }
+	}
+}
+BUL_establish_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		46 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		81 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		46 = { add_core_of = BUL }
+		81 = { add_core_of = BUL }
+        46 = { transfer_state_to = BUL }
+		81 = { transfer_state_to = BUL }
+	}
+}
+BUL_establish_rk_SLO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+				state = 1101
+				state = 1103
+				state = 1104
+				state = 736
+				state = 1100
+				state = 1111
+				state = 1144
+				state = 1272
+				state = 45
+				state = 103
+				state = 109
+				state = 163
+				state = 794
+				state = 1099
+				state = 1102
+				state = 1105
+				state = 1128
+				state = 1206
+				state = 104
+				state = 105
+				state = 1097
+				state = 1098
+				state = 1141
+				state = 1142
+				state = 1143
+				state = 1145
+				state = 1270
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		102 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1101 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1103 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1104 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		736 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1100 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1111 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1144 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1272 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		45 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		103 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		109 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		163 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		794 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1099 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1102 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1105 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1128 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1206 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		104 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		105 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1097 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1098 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1141 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1142 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1143 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1145 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1270 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		102 = { add_core_of = BUL }
+		1101 = { add_core_of = BUL }
+		1103 = { add_core_of = BUL }
+		1104 = { add_core_of = BUL }
+		736 = { add_core_of = BUL }
+		1100 = { add_core_of = BUL }
+		1111 = { add_core_of = BUL }
+		1144 = { add_core_of = BUL }
+		1272 = { add_core_of = BUL }
+		45 = { add_core_of = BUL }
+		103 = { add_core_of = BUL }
+		109 = { add_core_of = BUL }
+		163 = { add_core_of = BUL }
+		794 = { add_core_of = BUL }
+		1099 = { add_core_of = BUL }
+		1102 = { add_core_of = BUL }
+		1105 = { add_core_of = BUL }
+		1128 = { add_core_of = BUL }
+		1206 = { add_core_of = BUL }
+		104 = { add_core_of = BUL }
+		105 = { add_core_of = BUL }
+		1097 = { add_core_of = BUL }
+		1098 = { add_core_of = BUL }
+		1141 = { add_core_of = BUL }
+		1142 = { add_core_of = BUL }
+		1143 = { add_core_of = BUL }
+		1145 = { add_core_of = BUL }
+		1270 = { add_core_of = BUL }
+		102 = { transfer_state_to = BUL }
+		1101 = { transfer_state_to = BUL }
+		1103 = { transfer_state_to = BUL }
+		1104 = { transfer_state_to = BUL }
+		736 = { transfer_state_to = BUL }
+		1100 = { transfer_state_to = BUL }
+		1111 = { transfer_state_to = BUL }
+		1144 = { transfer_state_to = BUL }
+		1272 = { transfer_state_to = BUL }
+		45 = { transfer_state_to = BUL }
+		103 = { transfer_state_to = BUL }
+		109 = { transfer_state_to = BUL }
+		163 = { transfer_state_to = BUL }
+		794 = { transfer_state_to = BUL }
+		1099 = { transfer_state_to = BUL }
+		1102 = { transfer_state_to = BUL }
+		1105 = { transfer_state_to = BUL }
+		1128 = { transfer_state_to = BUL }
+		1206 = { transfer_state_to = BUL }
+		104 = { transfer_state_to = BUL }
+		105 = { transfer_state_to = BUL }
+		1097 = { transfer_state_to = BUL }
+		1098 = { transfer_state_to = BUL }
+		1141 = { transfer_state_to = BUL }
+		1142 = { transfer_state_to = BUL }
+		1143 = { transfer_state_to = BUL }
+		1145 = { transfer_state_to = BUL }
+		1270 = { transfer_state_to = BUL }
+	}
+}
+BUL_establish_rk_TRS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1114
+				state = 82
+				state = 84
+				state = 875
+				state = 1113
+				state = 1116
+				state = 83
+				state = 1115
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1114 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		82 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		84 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		875 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1113 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1116 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		83 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1115 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1114 = { add_core_of = BUL }
+		82 = { add_core_of = BUL }
+		84 = { add_core_of = BUL }
+		875 = { add_core_of = BUL }
+		1113 = { add_core_of = BUL }
+		1116 = { add_core_of = BUL }
+		83 = { add_core_of = BUL }
+		1115 = { add_core_of = BUL }
+        1114 = { transfer_state_to = BUL }
+		82 = { transfer_state_to = BUL }
+		84 = { transfer_state_to = BUL }
+		875 = { transfer_state_to = BUL }
+		1113 = { transfer_state_to = BUL }
+		1116 = { transfer_state_to = BUL }
+		83 = { transfer_state_to = BUL }
+		1115 = { transfer_state_to = BUL }
+	}
+}
+BUL_establish_rk_SVK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+				state = 70
+				state = 73
+				state = 76
+				state = 154
+				state = 155
+				state = 664
+				state = 789
+				state = 1106
+				state = 1107
+				state = 1108
+				state = 1109
+				state = 1110
+				state = 1112
+				state = 1117
+				state = 1118
+				state = 1119
+				state = 1120
+				state = 1121
+				state = 1122
+				state = 1123
+				state = 1135
+				state = 1136
+				state = 4
+				state = 9
+				state = 39
+				state = 69
+				state = 71
+				state = 74
+				state = 75
+				state = 152
+				state = 153
+				state = 775
+				state = 783
+				state = 784
+				state = 786
+				state = 835
+				state = 836
+				state = 942
+				state = 1129
+				state = 1130
+				state = 1131
+				state = 1132
+				state = 1133
+				state = 1134
+				state = 1137
+				state = 1138
+				state = 1139
+				state = 1235
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		43 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		70 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		73 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		76 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		154 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		155 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		664 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		789 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1106 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1107 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1108 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1109 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1110 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1112 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1117 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1118 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1119 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1120 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1121 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1122 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1123 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1135 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1136 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		4 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		9 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		39 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		69 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		71 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		74 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		75 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		152 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		153 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		775 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		783 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		784 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		786 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		835 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		836 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		942 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1129 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1130 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1131 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1132 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1133 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1134 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1137 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1138 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1139 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1235 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SVK = {
+			every_core_state = {
+				remove_core_of = SVK
+			}
+		}
+		43 = { add_core_of = SVK }
+		70 = { add_core_of = SVK }
+		73 = { add_core_of = SVK }
+		76 = { add_core_of = SVK }
+		154 = { add_core_of = SVK }
+		155 = { add_core_of = SVK }
+		664 = { add_core_of = SVK }
+		789 = { add_core_of = SVK }
+		1106 = { add_core_of = SVK }
+		1107 = { add_core_of = SVK }
+		1108 = { add_core_of = SVK }
+		1109 = { add_core_of = SVK }
+		1110 = { add_core_of = SVK }
+		1112 = { add_core_of = SVK }
+		1117 = { add_core_of = SVK }
+		1118 = { add_core_of = SVK }
+		1119 = { add_core_of = SVK }
+		1120 = { add_core_of = SVK }
+		1121 = { add_core_of = SVK }
+		1122 = { add_core_of = SVK }
+		1123 = { add_core_of = SVK }
+		1135 = { add_core_of = SVK }
+		1136 = { add_core_of = SVK }
+		4 = { add_core_of = SVK }
+		9 = { add_core_of = SVK }
+		39 = { add_core_of = SVK }
+		69 = { add_core_of = SVK }
+		71 = { add_core_of = SVK }
+		74 = { add_core_of = SVK }
+		75 = { add_core_of = SVK }
+		152 = { add_core_of = SVK }
+		153 = { add_core_of = SVK }
+		775 = { add_core_of = SVK }
+		783 = { add_core_of = SVK }
+		784 = { add_core_of = SVK }
+		786 = { add_core_of = SVK }
+		835 = { add_core_of = SVK }
+		836 = { add_core_of = SVK }
+		942 = { add_core_of = SVK }
+		1129 = { add_core_of = SVK }
+		1130 = { add_core_of = SVK }
+		1131 = { add_core_of = SVK }
+		1132 = { add_core_of = SVK }
+		1133 = { add_core_of = SVK }
+		1134 = { add_core_of = SVK }
+		1137 = { add_core_of = SVK }
+		1138 = { add_core_of = SVK }
+		1139 = { add_core_of = SVK }
+		1235 = { add_core_of = SVK }
+		release = SVK
+		SVK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = SVK
+			}
+		}
+		SVK = { 
+			set_cosmetic_tag = BUL_SVK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Kyril I"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Prince_Kyril.png"
+				expire = "1.1.1"
+				ideology = absolute_monarchy_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = SVK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_GAL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 80
+				state = 88
+				state = 89
+				state = 91
+				state = 713
+				state = 1124
+				state = 1125
+				state = 1126
+				state = 1127
+				state = 1140
+				state = 1314
+				state = 1319
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		80 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		88 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		89 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		91 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		713 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1124 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1125 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1126 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1127 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1140 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1314 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1319 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GAL = {
+			every_core_state = {
+				remove_core_of = GAL
+			}
+		}
+		80 = { add_core_of = GAL }
+		88 = { add_core_of = GAL }
+		89 = { add_core_of = GAL }
+		91 = { add_core_of = GAL }
+		713 = { add_core_of = GAL }
+		1124 = { add_core_of = GAL }
+		1125 = { add_core_of = GAL }
+		1126 = { add_core_of = GAL }
+		1127 = { add_core_of = GAL }
+		1140 = { add_core_of = GAL }
+		1314 = { add_core_of = GAL }
+		1319 = { add_core_of = GAL }
+		release = GAL
+		GAL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = GAL
+			}
+		}
+		GAL = { 
+			set_cosmetic_tag = BUL_GAL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Nikola Nedev"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Nikola_Nedev.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = GAL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_MOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 78
+				state = 79
+				state = 1222
+				state = 1320
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		78 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		79 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1222 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1320 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MOL = {
+			every_core_state = {
+				remove_core_of = MOL
+			}
+		}
+		78 = { add_core_of = MOL }
+		79 = { add_core_of = MOL }
+		1222 = { add_core_of = MOL }
+		1320 = { add_core_of = MOL }
+		release = MOL
+		MOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = MOL
+			}
+		}
+		MOL = { 
+			set_cosmetic_tag = BUL_MOL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Nikola Mihov"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Nikola_Mihov_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = MOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+				state = 182
+				state = 186
+				state = 939
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		47 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		182 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		186 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		939 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+		}
+		47 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = BUL_GRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Asen Nikolov"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Asen_Nikolov_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_ARM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 229
+				state = 230
+				state = 231
+				state = 1302
+				state = 1304
+				state = 1303
+				state = 990
+				state = 998
+				state = 1000
+				state = 1001
+				state = 1080
+				state = 1081
+				state = 1082
+				state = 1188
+				state = 1190
+				state = 1213
+				state = 1267
+				state = 1298
+				state = 1299
+				state = 1300
+				state = 1301
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		229 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		230 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		231 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1302 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1304 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1303 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		990 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		998 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1000 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1001 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1080 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1081 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1082 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1188 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1190 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1213 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1267 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1298 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1299 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1300 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1301 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ARM = {
+			every_core_state = {
+				remove_core_of = ARM
+			}
+		}
+		229 = { add_core_of = ARM }
+		230 = { add_core_of = ARM }
+		231 = { add_core_of = ARM }
+		1302 = { add_core_of = ARM }
+		1304 = { add_core_of = ARM }
+		1303 = { add_core_of = ARM }
+		990 = { add_core_of = ARM }
+		998 = { add_core_of = ARM }
+		1000 = { add_core_of = ARM }
+		1001 = { add_core_of = ARM }
+		1080 = { add_core_of = ARM }
+		1081 = { add_core_of = ARM }
+		1082 = { add_core_of = ARM }
+		1188 = { add_core_of = ARM }
+		1190 = { add_core_of = ARM }
+		1213 = { add_core_of = ARM }
+		1267 = { add_core_of = ARM }
+		1298 = { add_core_of = ARM }
+		1299 = { add_core_of = ARM }
+		1300 = { add_core_of = ARM }
+		1301 = { add_core_of = ARM }
+		release = ARM
+		ARM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = ARM
+			}
+		}
+		ARM = { 
+			set_cosmetic_tag = BUL_ARM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Konstantin Lukash"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Konstantin_Lukash_KX.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = ARM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+				state = 164
+				state = 187
+				state = 339
+				state = 340
+				state = 342
+				state = 343
+				state = 356
+				state = 346
+				state = 345
+				state = 354
+				state = 355
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		49 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		164 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		187 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		339 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		340 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		342 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		343 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		356 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		346 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		345 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		354 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		355 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+		}
+		49 = { add_core_of = TUR }
+		164 = { add_core_of = TUR }
+		187 = { add_core_of = TUR }
+		339 = { add_core_of = TUR }
+		340 = { add_core_of = TUR }
+		342 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		354 = { add_core_of = TUR }
+		355 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = BUL_TUR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Konstantin Ivanov Bekyarov"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Konstantin_Ivanov_Bekyarov.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 291
+				state = 349
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 417
+				state = 418
+				state = 419
+				state = 420
+				state = 421
+				state = 676
+				state = 804
+				state = 812
+				state = 819
+				state = 352
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		266 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		291 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		349 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		410 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		411 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		412 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		413 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		414 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		416 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		417 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		418 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		419 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		420 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		421 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		676 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		804 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		812 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		819 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		352 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+		}
+		266 = { add_core_of = PER }
+		291 = { add_core_of = PER }
+		349 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		676 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		812 = { add_core_of = PER }
+		819 = { add_core_of = PER }
+		352 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = BUL_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Pencho Zlatev"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Pencho_Zlatev.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_LEB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 183
+				state = 344
+				state = 350
+				state = 453
+				state = 454
+				state = 455
+				state = 553
+				state = 554
+				state = 677
+				state = 680
+				state = 992
+				state = 995
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		183 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		344 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		350 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		453 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		454 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		455 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		553 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		554 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		677 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		680 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		992 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		995 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEB = {
+			every_core_state = {
+				remove_core_of = LEB
+			}
+		}
+		183 = { add_core_of = LEB }
+		344 = { add_core_of = LEB }
+		350 = { add_core_of = LEB }
+		453 = { add_core_of = LEB }
+		454 = { add_core_of = LEB }
+		455 = { add_core_of = LEB }
+		553 = { add_core_of = LEB }
+		554 = { add_core_of = LEB }
+		677 = { add_core_of = LEB }
+		680 = { add_core_of = LEB }
+		992 = { add_core_of = LEB }
+		995 = { add_core_of = LEB }
+		release = LEB
+		LEB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = LEB
+			}
+		}
+		LEB = { 
+			set_cosmetic_tag = BUL_LEB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Teodosi Daskalov"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Teodosi_Daskalov.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_SAU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 292
+				state = 293
+				state = 294
+				state = 347
+				state = 656
+				state = 658
+				state = 659
+				state = 675
+				state = 678
+				state = 679
+				state = 752
+				state = 754
+				state = 859
+				state = 907
+				state = 915
+				state = 981
+				state = 982
+				state = 991
+				state = 993
+				state = 994
+				state = 1024
+				state = 1035
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		292 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		293 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		294 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		347 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		656 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		658 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		659 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		675 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		678 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		679 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		752 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		754 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		859 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		907 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		915 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		981 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		982 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		991 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		993 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		994 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1024 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1035 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SAU = {
+			every_core_state = {
+				remove_core_of = SAU
+			}
+		}
+		292 = { add_core_of = SAU }
+		293 = { add_core_of = SAU }
+		294 = { add_core_of = SAU }
+		347 = { add_core_of = SAU }
+		656 = { add_core_of = SAU }
+		658 = { add_core_of = SAU }
+		659 = { add_core_of = SAU }
+		675 = { add_core_of = SAU }
+		678 = { add_core_of = SAU }
+		679 = { add_core_of = SAU }
+		752 = { add_core_of = SAU }
+		754 = { add_core_of = SAU }
+		859 = { add_core_of = SAU }
+		907 = { add_core_of = SAU }
+		915 = { add_core_of = SAU }
+		981 = { add_core_of = SAU }
+		982 = { add_core_of = SAU }
+		991 = { add_core_of = SAU }
+		993 = { add_core_of = SAU }
+		994 = { add_core_of = SAU }
+		1024 = { add_core_of = SAU }
+		1035 = { add_core_of = SAU }
+		release = SAU
+		SAU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = SAU
+			}
+		}
+		SAU = { 
+			set_cosmetic_tag = BUL_SAU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rusi Rusev"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Rusi_Rusev.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = SAU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+BUL_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 273
+				state = 446
+				state = 447
+				state = 448
+				state = 450
+				state = 451
+				state = 452
+				state = 456
+				state = 457
+				state = 549
+				state = 551
+				state = 552
+				state = 663
+				state = 862
+				state = 1007
+				state = 1008
+				state = 1009
+				state = 1010
+				state = 1011
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		273 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		446 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		447 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		448 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		450 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		451 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		452 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		456 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		457 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		549 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		551 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		552 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		663 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		862 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1007 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1008 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1009 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1010 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1011 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+		}
+		273 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		448 = { add_core_of = EGY }
+		450 = { add_core_of = EGY }
+		451 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		549 = { add_core_of = EGY }
+		551 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		663 = { add_core_of = EGY }
+		862 = { add_core_of = EGY }
+		1007 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		1009 = { add_core_of = EGY }
+		1010 = { add_core_of = EGY }
+		1011 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = BUL
+						}
+						OR = {
+							is_owned_by = BUL
+							OWNER = { is_subject_of = BUL} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = BUL_EGY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Ivan Valkov"
+				picture = "gfx/leaders/BUL/Portrait_BUL_Ivan_Valkov.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				paternal_autocrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Bulgarian Military"
+				long_name = "Bulgarian Military"
+			}
+
+			BUL = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
 }
