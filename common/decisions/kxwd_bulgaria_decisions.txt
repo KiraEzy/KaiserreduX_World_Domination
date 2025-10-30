@@ -1,122 +1,122 @@
-BUL_great_game = {  
-    BUL1 = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
+# BUL_great_game = {  
+#     BUL1 = {
+# 		icon = generic_prepare_civil_war
+# 		complete_effect = {
 			
-			log = "SVK"
-			SVK = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "SVK"
+# 			SVK = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "GAL"
-			GAL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "GAL"
+# 			GAL = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "MOL"
-			MOL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "MOL"
+# 			MOL = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "GRE"
-			GRE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "GRE"
+# 			GRE = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "TUR"
-			TUR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "TUR"
+# 			TUR = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "ARM"
-			ARM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "ARM"
+# 			ARM = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "PER"
-			PER = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "PER"
+# 			PER = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "SYR"
-			SYR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "SYR"
+# 			SYR = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "SAU"
-			SAU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
+# 			log = "SAU"
+# 			SAU = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
 
-			log = "EGY"
-			EGY = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-		}
-		days_remove = 0
-	}
-	POR_early_WAR = {
-	icon = GFX_decision_icon_default
+# 			log = "EGY"
+# 			EGY = {
+# 				every_owned_state = {
+# 					log = "[state.GetID]"
+# 				}
+# 			}
+# 		}
+# 		days_remove = 0
+# 	}
+# 	POR_early_WAR = {
+# 		icon = GFX_decision_icon_default
 
-	available = {
+# 		available = {
 
-	}
+# 		}
 
-	fire_only_once = yes
+# 		fire_only_once = yes
 
-	ai_will_do = {
-		factor = 0
-	}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
 
-	complete_effect = {
-		add_ideas = {
-        KXWD_BUL_quick_war
-        }
-	}	
-}
-BUL_early_pat_aut = {
-		icon = generic_prepare_civil_war
+# 		complete_effect = {
+# 			add_ideas = {
+# 			KXWD_BUL_quick_war
+# 			}
+# 		}	
+# 	}
+# 	BUL_early_pat_aut = {
+# 		icon = generic_prepare_civil_war
         
-        available = {
-        has_subject = SER
-	    }
+#         available = {
+#         has_subject = SER
+# 	    }
 
-	    fire_only_once = yes
+# 	    fire_only_once = yes
 
-        ai_will_do = {
-		factor = 0
-	    }
+#         ai_will_do = {
+# 		factor = 0
+# 	    }
 
-		complete_effect = {
-			BUL = {
-			set_politics = {
-            ruling_party = paternal_autocrat
-            }
-			}
-		}
-		days_remove = 0
-	}
-}
+# 		complete_effect = {
+# 			BUL = {
+# 			set_politics = {
+#             ruling_party = paternal_autocrat
+#             }
+# 			}
+# 		}
+# 		days_remove = 0
+# 	}
+# }
 
 BUL_late_game = {
 BUL_establish_rk_BUL = {

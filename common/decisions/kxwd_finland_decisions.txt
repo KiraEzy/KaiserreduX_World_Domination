@@ -200,7 +200,9 @@ FIN_establish_rk_EST = {
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
-
+	visible = {
+		has_completed_focus = FIN_proclaim_greater_finland
+	}
 	available = {
 		13 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
 		191 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
@@ -230,7 +232,9 @@ FIN_establish_rk_LAT = {
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
-
+	visible = {
+		has_completed_focus = FIN_proclaim_greater_finland
+	}
 	available = {
 		12 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
 		190 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
@@ -251,57 +255,57 @@ FIN_establish_rk_LAT = {
 		1091 = { transfer_state_to = FIN }
 	}
 }
-FIN_buy_BAT = {
-	icon = generic_prepare_civil_war
+# FIN_buy_BAT = {
+# 	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 12
-				state = 190
-				state = 1091
-				state = 13
-				state = 191
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 12
+# 				state = 190
+# 				state = 1091
+# 				state = 13
+# 				state = 191
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
 
-	available = {
-		12 = {
-        is_owned_by = BAT
-		}
-		190 = {
-        is_owned_by = BAT
-		}
-		1091 = {
-        is_owned_by = BAT
-		}
-		13 = {
-        is_owned_by = BAT
-		}
-		191 = {
-        is_owned_by = BAT
-		}
-	}
+# 	available = {
+# 		12 = {
+#         is_owned_by = BAT
+# 		}
+# 		190 = {
+#         is_owned_by = BAT
+# 		}
+# 		1091 = {
+#         is_owned_by = BAT
+# 		}
+# 		13 = {
+#         is_owned_by = BAT
+# 		}
+# 		191 = {
+#         is_owned_by = BAT
+# 		}
+# 	}
 
-	cost = 150
-	fire_only_once = yes
+# 	cost = 150
+# 	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		12 = { transfer_state_to = FIN }
-		190 = { transfer_state_to = FIN }
-		1091 = { transfer_state_to = FIN }
-		13 = { transfer_state_to = FIN }
-		191 = { transfer_state_to = FIN }
-		add_timed_idea = {
-        idea = KXWD_bought_colonies
-        days = 60
-	}
-}
-}
+# 	ai_will_do = {
+# 		factor = 5
+# 	}
+# 	complete_effect = {
+# 		12 = { transfer_state_to = FIN }
+# 		190 = { transfer_state_to = FIN }
+# 		1091 = { transfer_state_to = FIN }
+# 		13 = { transfer_state_to = FIN }
+# 		191 = { transfer_state_to = FIN }
+# 		add_timed_idea = {
+#         idea = KXWD_bought_colonies
+#         days = 60
+# 	}
+# }
+# }
 FIN_establish_rk_SWE = {
 	icon = generic_prepare_civil_war
 

@@ -6,15 +6,19 @@ FIN_great_game = {
 	}
 
 	visible = { 
-    has_country_leader = {
-	character = FIN_Fredrik_Kaarle_I
-	ruling_only = yes
-	    or = {
-	    has_country_leader = {
-	    character = FIN_Vaino_I
-	    ruling_only = yes
-        }
-	    }
-	}
+		AND = {#Aid
+			has_completed_focus = FIN_foreign_policy
+			OR = {
+				has_country_leader = {
+					name = "Fredrik Kaarle I"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Väinö I"
+					ruling_only = yes
+				}
+			}
+		}
+		
     }
 }
