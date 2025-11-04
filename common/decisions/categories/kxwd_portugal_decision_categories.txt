@@ -1,0 +1,22 @@
+POR_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = POR
+	}
+
+	visible = { 
+		has_completed_focus = POR_angola_e_nossa
+	}
+}
+POR_alliance_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = POR
+	}
+
+	visible = { 
+		has_completed_focus = POR_trumph
+	}
+}

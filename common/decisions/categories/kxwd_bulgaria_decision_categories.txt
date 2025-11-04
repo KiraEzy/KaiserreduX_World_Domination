@@ -1,0 +1,23 @@
+BUL_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = BUL
+	}
+
+	visible = { 
+		has_completed_focus = BUL_maintaining_the_hegemony
+		# push back to the last focus
+	}
+}
+BUL_late_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = BUL
+	}
+
+	visible = { 
+		has_completed_focus = BUL_expand_the_tsars_powers
+	}
+}

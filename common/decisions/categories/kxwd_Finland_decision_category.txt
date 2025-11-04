@@ -1,0 +1,24 @@
+FIN_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = FIN
+	}
+
+	visible = { 
+		AND = {#Aid
+			has_completed_focus = FIN_foreign_policy
+			OR = {
+				has_country_leader = {
+					name = "Fredrik Kaarle I"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Väinö I"
+					ruling_only = yes
+				}
+			}
+		}
+		
+    }
+}

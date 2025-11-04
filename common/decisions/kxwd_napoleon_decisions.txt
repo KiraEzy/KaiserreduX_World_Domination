@@ -2249,7 +2249,6 @@ NAP_great_game = {
 			state = 769
 			state = 184
 			state = 341
-			state = 1225
 			state = 1089
 			state = 339
 			state = 342
@@ -2293,7 +2292,6 @@ NAP_great_game = {
 				769 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				184 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				341 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				1225 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				1089 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				339 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				342 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -2382,7 +2380,6 @@ NAP_great_game = {
 			  769 = { add_core_of = GRE }
 			  184 = { add_core_of = GRE }
 			  341 = { add_core_of = GRE }
-			  1225 = { add_core_of = GRE }
 			  1089 = { add_core_of = GRE }
 			  339 = { add_core_of = GRE }
 			  342 = { add_core_of = GRE }
@@ -6413,7 +6410,6 @@ NAP_great_game = {
 				state = 567
 				state = 566
 				state = 516
-				state = 544
 				state = 1202
 				state = 583
 				state = 575
@@ -6475,7 +6471,6 @@ NAP_great_game = {
 				567 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				566 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				516 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-				544 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				1202 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				583 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 				575 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -6583,7 +6578,6 @@ NAP_great_game = {
 			567 = { add_core_of = SIB }
 			566 = { add_core_of = SIB }
 			516 = { add_core_of = SIB }
-			544 = { add_core_of = SIB }
 			1202 = { add_core_of = SIB }
 			583 = { add_core_of = SIB }
 			575 = { add_core_of = SIB }
