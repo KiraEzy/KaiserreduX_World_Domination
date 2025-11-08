@@ -30,3 +30,271 @@ SIC_WD_pathguide = {
 		}
 	}
 }
+
+GER_WD_pathguide = {
+	GER_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = GER
+		}
+		available = {
+			original_tag = GER
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.3
+		}
+	}
+}
+
+CAN_WD_pathguide = {
+	CAN_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = CAN
+		}
+		available = {
+			original_tag = CAN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.4
+		}
+	}
+}
+
+CAR_WD_pathguide = {
+	CAR_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = CAR
+		}
+		available = {
+			original_tag = CAR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.5
+		}
+	}
+}
+
+NFA_WD_pathguide = {
+	NFA_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = NFA
+		}
+		available = {
+			original_tag = NFA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.6
+		}
+	}
+}
+
+GRE_WD_pathguide = {
+	GRE_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = GRE
+		}
+		available = {
+			original_tag = GRE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.7
+		}
+	}
+}
+
+JAP_WD_pathguide = {
+	JAP_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = JAP
+		}
+		available = {
+			original_tag = JAP
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.8
+		}
+	}
+}
+
+CHI_WD_pathguide = {
+	CHI_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = CHI
+		}
+		available = {
+			original_tag = CHI
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.9
+		}
+	}
+}
+
+TUR_WD_pathguide = {
+	TUR_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = TUR
+		}
+		available = {
+			original_tag = TUR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.10
+		}
+	}
+}
+
+MLT_WD_pathguide = {
+	MLT_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = MLT
+		}
+		available = {
+			original_tag = MLT
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.11
+		}
+	}
+}
+
+CAL_WD_pathguide = {
+	CAL_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = CAL
+		}
+		available = {
+			original_tag = CAL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.12
+		}
+	}
+}
+
+MON_WD_pathguide = {
+	MON_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = MON
+		}
+		available = {
+			original_tag = MON
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.13
+		}
+	}
+}
+
+RUS_WD_pathguide = {
+	RUS_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = RUS
+		}
+		available = {
+			original_tag = RUS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.14
+		}
+	}
+
+	USSR_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = RUS
+		}
+		available = {
+			original_tag = RUS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.15
+		}
+	}
+}
+
+YUN_WD_pathguide = {
+	YUN_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = YUN
+		}
+		available = {
+			original_tag = YUN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.16
+		}
+	}
+}
+
+TXS_WD_pathguide = {
+	TXS_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = TXS
+		}
+		available = {
+			original_tag = TXS
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.17
+		}
+	}
+}

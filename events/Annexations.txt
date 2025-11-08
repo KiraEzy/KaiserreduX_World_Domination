@@ -297,7 +297,7 @@ country_event = { #Fate of Brest
 			POL = { ROOT_can_grant_land = yes }
 		}
 		ai_chance = {
-			base = 40
+			base = 45
 			modifier = {
 				factor = 0
 				OR = {
@@ -338,7 +338,7 @@ country_event = { #Fate of Brest
 			}
 		}
 		ai_chance = {
-			base = 40
+			base = 35
 			modifier = {
 				factor = 0
 				OR = {
@@ -377,7 +377,7 @@ country_event = { #Fate of Brest
 			}
 		}
 		ai_chance = {
-			base = 20
+			base = 25
 			modifier = {
 				factor = 0
 				OR = {
@@ -410,7 +410,7 @@ country_event = { #Fate of Brest
 			}
 		}
 		ai_chance = {
-			base = 20
+			base = 25
 			modifier = {
 				factor = 0
 				OR = {
@@ -445,7 +445,7 @@ country_event = { #Fate of Brest
 			}
 		}
 		ai_chance = {
-			base = 80
+			base = 20
 			modifier = {
 				factor = 0
 				OR = {
@@ -4471,7 +4471,7 @@ country_event = { #Fate of Poland
 	}	
 
 	option = { #integrate
-		name = eurasian_integration.option
+		name = annex.integration
 		trigger = {
 			is_russian_tag_that_can_integrate = yes
 			OR = {
@@ -4998,6 +4998,15 @@ country_event = { #Fate of Finland
 			}
 			FIN = {
 				drop_cosmetic_tag = yes
+				if = {
+					limit = { has_country_flag = FIN_was_puppeted_by_sav }
+					set_party_name = {
+						ideology = national_populist
+						name = FIN_national_populist_party
+						long_name = FIN_national_populist_party_long
+					}
+					clr_country_flag = FIN_was_puppeted_by_sav
+				}
 				if = {				# Removing socialist ideas from non-socialist puppet
 					limit = { ROOT = { NOT = { has_socialist_government = yes } }}
 					remove_ideas = {
@@ -5123,6 +5132,13 @@ country_event = { #Fate of Finland
 						expire = "1.1.1"
 						ideology = savinkovism_subtype
 					}
+					set_party_name = {
+						ideology = national_populist
+						name = KAR_elf_party
+						long_name = KAR_elf_party_long
+					}
+					set_cosmetic_tag = KAR_finland
+					set_country_flag = FIN_was_puppeted_by_sav
 				}	
 				hidden_effect = {
 					KAR = {
@@ -7864,7 +7880,7 @@ country_event = { #Fate of Transcarpathia
 		}
 	}
 	option = { #integrate
-		name = eurasian_integration.option
+		name = annex.integration
 		trigger = {
 			tag = RUS
 			OR = {
@@ -8715,6 +8731,7 @@ country_event = { #Fate of Bucovina
 			}
 		}
 		80 = { add_claim_of_ROOT = yes } #Cernauti
+		80 = { enable_state_integration_80_compliance = yes } #Cernauti
 	}
 
 	option = { #annex
@@ -16420,6 +16437,29 @@ country_event = { #The Annexation of India
 		PRF = {
 			set_cosmetic_tag = IND_EMP
 		}
+		
+		if = {
+		limit = {
+			AND = {
+				OR = {
+					tag = NFA
+					tag = SPR
+				}
+				OR = {
+				has_country_leader = { ruling_only = yes name = "Jean III" }
+				has_country_leader = { ruling_only = yes name = "Henri VI" }
+				has_country_leader = { ruling_only = yes name = "Alfonso XIII" }
+				has_country_leader = { ruling_only = yes name = "Juan III" }
+				has_country_leader = { ruling_only = yes name = "Jaime I" }
+				has_country_leader = { ruling_only = yes name = "Alfonso XIV" }
+				has_country_leader = { ruling_only = yes name = "Gonzalo I" }
+				}
+			}
+		}
+		country_event = {
+					id = flavorfra.119 days = 14
+			}
+		}
 	}
 
 	option = { #BHC
@@ -18068,15 +18108,15 @@ country_event = { #Fate of the Aegean Coast
 			modifier = {
 				factor = 0.5
 				GRE = { is_ally_of_ROOT = yes }
-				NOT = { is_ally_with = 343.owner }
+				NOT = { is_ally_with = TUR }
 			}
 			modifier = {
 				factor = 0.5
-				is_ally_with = 343.owner
+				is_ally_with = TUR
 				NOT = { is_ally_with = GRE }
 			}
 		}
-		set_temp_variable = { tag_to_release = 343.owner }
+		set_temp_variable = { tag_to_release = TUR }
 		every_owned_state = {
 			limit = {
 				OR = {
@@ -18786,14 +18826,6 @@ country_event = { #Fate of Bolivia
 			factor = 0
 		}
 		trigger = {
-			OR = {
-				tag = BBR
-				tag = HAI
-				tag = KOG
-				tag = ETH
-				has_completed_focus = NYC_unchained_black_man
-				has_completed_focus = NYC_Harlem_Mobsters
-			}
 			AND = {
 				OR = {
 					tag = BBR
@@ -18803,6 +18835,7 @@ country_event = { #Fate of Bolivia
 					tag = CEA
 					has_completed_focus = NYC_unchained_black_man
 					has_completed_focus = NYC_Harlem_Mobsters
+					has_country_flag = BAS_colonial_crusade
 				}
 				has_socialist_government = no
 			}
@@ -20991,7 +21024,7 @@ country_event = { #Fate of Galicia
 		}
 	}
 	option = { #integrate
-		name = eurasian_integration.option
+		name = annex.integration
 		trigger = {
 			is_russian_tag_that_can_integrate = yes
 			OR = {
@@ -21013,15 +21046,7 @@ country_event = { #Fate of Galicia
 				is_claim_or_core_of_ROOT = no
 			}
 			add_claim_by = ROOT
-		}
-		if = {
-			limit = { 
-				OR = {
-					has_completed_focus = RUS_Panslavist_Internationalism
-					has_completed_focus = RUS_Panslavist
-				}
-			}
-			GAL = { enable_coring_at_eighty_compliance = yes }
+			enable_state_integration_80_compliance = yes
 		}
 		occupy_medium_country = yes
 		recheck_annexations = yes
@@ -23696,7 +23721,17 @@ country_event = { #Fate of France
 		}
 		trigger = {
 			has_socialist_government = yes
-			NOT = { country_exists = FRA }
+			NOT = { 
+				country_exists = FRA
+				AND = {
+					is_in_faction_with = GER
+					GER = { is_faction_leader = yes }
+				}
+				AND = {
+					is_in_faction_with = ENT
+					ENT = { is_faction_leader = yes }
+				}
+			}
 		}
 		hidden_effect = {
 		if = {
@@ -24513,7 +24548,22 @@ country_event = { #Fate of Britain
 					event_target:KR_king_base = { exists = yes }
 				}
 			}
-			has_socialist_government = no
+			OR = {
+				has_socialist_government = no
+				AND = {
+					has_socialist_government = yes
+					OR = {
+						AND = {
+							is_in_faction_with = GER
+							GER = { is_faction_leader = yes }
+						}
+						AND = {
+							is_in_faction_with = ENT
+							ENT = { is_faction_leader = yes }
+						}
+				}	
+				}
+			}
 		}
 		ai_chance = {
 			factor = 4
@@ -24567,7 +24617,22 @@ country_event = { #Fate of Britain
 				event_target:KR_king_base = { exists = yes }
 			}
 		}
+		OR = {
 			has_socialist_government = no
+			AND = {
+				has_socialist_government = yes
+				OR = {
+					AND = {
+						is_in_faction_with = GER
+						GER = { is_faction_leader = yes }
+					}
+					AND = {
+						is_in_faction_with = ENT
+						ENT = { is_faction_leader = yes }
+					}
+				}
+			}
+		}
 		}
 		ai_chance = {
 			base = 30
@@ -24720,7 +24785,17 @@ country_event = { #Fate of Britain
 			}
 		trigger = {
 			has_socialist_government = yes
-			NOT = { country_exists = ENG }
+			NOT = { 
+				country_exists = ENG 
+				AND = {
+					is_in_faction_with = GER
+					GER = { is_faction_leader = yes }
+				}
+				AND = {
+					is_in_faction_with = ENT
+					ENT = { is_faction_leader = yes }
+				}
+			}
 		}
 		set_temp_variable = { tag_to_release = ENG }
 		release_targeted_tag = yes
@@ -27355,6 +27430,23 @@ country_event = { #Fate of Mongolia
 		log = "[GetDateText]: [Root.GetName]: event annex.175"
 		determine_chinese_ally = yes
 		hidden_effect = {
+			every_state = {
+				limit = {
+					NOT = {
+						state = 330
+						state = 1084
+						state = 329
+					}
+				}
+				remove_core_of = MON
+				remove_claim_by = MON
+			}
+			MON = {
+				add_state_core = 330
+				add_state_core = 1084
+				add_state_core = 329
+				drop_cosmetic_tag = yes
+			}			
 			if = {
 				limit = { tag = RUS }
 				add_state_claim = 329
@@ -32125,6 +32217,65 @@ country_event = { #Annexation of South Africa
 		release_targeted_tag = yes
 		SAF_puppet_setup = yes
 	}
+	
+	option = { #zululand
+		name = annex.219.e
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			AND = {
+				OR = {
+					tag = BBR
+					tag = HAI
+					tag = KOG
+					tag = ETH
+					tag = CEA
+					has_completed_focus = NYC_unchained_black_man
+					has_completed_focus = NYC_Harlem_Mobsters
+					has_country_flag = BAS_colonial_crusade
+				}
+				has_socialist_government = no
+			}
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = SAF
+				is_claim_or_core_of_ROOT = no
+				NOT = {
+					state = 542
+					state = 545
+				}
+			}
+			SAF = { transfer_state = PREV }
+		}
+		set_temp_variable = { tag_to_release = SAF }
+		puppet_released_tag = yes
+		SAF_puppet_setup = yes
+		SAF = {
+		set_politics = {
+			    ruling_party = paternal_autocrat
+			    elections_allowed = no
+			}
+        add_popularity = {
+			    ideology = paternal_autocrat
+			    popularity = 0.6
+			}
+		create_country_leader = {
+			name = "Cyprian Bhekuzulu"
+			picture = "gfx/leaders/SAF/Portrait_SAF_Cyprian_Bhekuzulu.png"
+			desc = ""
+			expire = "1.1.1"
+			ideology = pataut_tribal_chiefdom_subtype
+		}
+		set_party_name = {
+					ideology = paternal_autocrat
+					long_name = SAF_zulu_party_long
+					name = SAF_zulu_party
+			}
+		set_cosmetic_tag = SAF_zulu
+		}
+	}
 
 	option = { #occupy
 		name = annex.occupation
@@ -32655,6 +32806,7 @@ country_event = { #Fate of Transamur
 				is_russian_tag_that_can_integrate = yes
 				is_ally_of_ROOT = yes
 				ROOT_can_grant_land = yes
+				is_ally_of_ROOT = yes
 			}
 		}
 		ai_chance = {
@@ -34608,7 +34760,12 @@ country_event = { #Fate of Vietnam
 
 		set_temp_variable = { tag_to_release = VIN }
 		release_targeted_tag = yes
-		hidden_effect = { VIN = { set_country_flag = VIN_released_as_puppet } }
+		hidden_effect = { 
+			VIN = { 
+				set_country_flag = VIN_released_as_puppet 
+				set_cosmetic_tag = VIN_puppet_cosmetic
+			} 
+		}
 	}
 
 	option = { #Occupy it
@@ -46508,6 +46665,7 @@ country_event = { #Fate of West Prussia
 			base = 1000
 		}
 		add_state_claim = 776
+		776 = { enable_state_integration_80_compliance = yes }
 		POL = { add_state_core = 776 }
 		recheck_annexations = yes
 	}
@@ -46687,6 +46845,12 @@ country_event = { #Fate of East Prussia
 			}
 		}
 		add_state_claim = 5
+		if = {
+			limit = {
+				NOT = { tag = POL }
+			}
+			5 = { enable_state_integration_80_compliance = yes }
+		}
 		occupy_small_country = yes
 		recheck_annexations = yes
 	}
@@ -46809,6 +46973,7 @@ country_event = { #Fate of Posen
 			base = 1000
 		}
 		add_state_claim = 86
+		86 = { enable_state_integration_80_compliance = yes }
 		POL = { add_state_core = 86 }
 		recheck_annexations = yes
 	}
@@ -46927,6 +47092,7 @@ country_event = { #Fate of Masuria
 			base = 1000
 		}
 		add_state_claim = 777
+		777 = { enable_state_integration_80_compliance = yes }
 		if = {
 			limit = {
 				10 = { is_claimed_by = ROOT }
@@ -47222,6 +47388,7 @@ country_event = { #Fate of Upper Silesia
 			base = 1000
 		}
 		add_state_claim = 67
+		67 = { enable_state_integration_80_compliance = yes }
 		POL = { add_state_core = 67 }
 		recheck_annexations = yes
 	}
@@ -49630,7 +49797,7 @@ country_event = { #Fate of Southern Belarus
 			}
 		}
 		ai_chance = {
-			base = 40
+			base = 45
 			modifier = {
 				factor = 0
 				NOT = { is_ally_with = WHR }
@@ -49678,7 +49845,7 @@ country_event = { #Fate of Southern Belarus
 			}
 		}
 		ai_chance = {
-			base = 40
+			base = 35
 			modifier = {
 				factor = 0
 				NOT = { is_ally_with = 202.owner }
@@ -49720,7 +49887,7 @@ country_event = { #Fate of Southern Belarus
 			}
 		}
 		ai_chance = {
-			base = 40
+			base = 45
 			modifier = {
 				factor = 0
 				NOT = { is_ally_with = 219.owner }
@@ -56103,6 +56270,7 @@ country_event = { #Fate of the East Galicia
 				is_claim_or_core_of_ROOT = no
 			}
 			add_claim_by = ROOT
+			enable_state_integration_80_compliance = yes
 		}
 		if = {
 			limit = { 
