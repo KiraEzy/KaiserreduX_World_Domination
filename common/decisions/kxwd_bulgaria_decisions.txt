@@ -119,6 +119,25 @@
 # }
 
 BUL_late_game = {
+	POR_early_WAR = {
+		icon = GFX_decision_icon_default
+
+		available = {
+			has_completed_focus = BUL_a_stronger_and_loyal_bulgaria
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_ideas = {
+			KXWD_BUL_quick_war
+			}
+		}	
+	}
 BUL_form_third_empire = {
 	icon = generic_prepare_civil_war
 	highlight_states = {
