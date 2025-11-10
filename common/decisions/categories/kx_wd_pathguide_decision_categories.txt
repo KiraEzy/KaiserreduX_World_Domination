@@ -162,3 +162,14 @@ TXS_WD_pathguide = {
 		tag = TXS
 	}
 }
+
+BUL_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = BUL
+	}
+
+	visible = {
+		tag = BUL
+	}
+}

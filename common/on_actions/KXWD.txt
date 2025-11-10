@@ -13,8 +13,15 @@ on_actions = {
         effect = {
             if = {
                 limit = {
-                    FROM.FROM = { state = 773 }
-                    ROOT = { tag = GRE }
+                        FROM.FROM = { state = 773 }
+                        ROOT = { tag = GRE }
+                        GRE = { is_ai = no }
+                        GRE = { 
+                            OR = { 
+                                has_completed_focus = GRE_byz 
+                                has_completed_focus = KXWD_GRE_monarchism_to_rejuvenate_greece 
+                            } 
+                        }
                 }
                 GRE = {country_event = KXWD_GRE.2}
             }

@@ -298,3 +298,21 @@ TXS_WD_pathguide = {
 		}
 	}
 }
+
+BUL_WD_pathguide = {
+	BUL_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = BUL
+		}
+		available = {
+			original_tag = BUL
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.18
+		}
+	}
+}

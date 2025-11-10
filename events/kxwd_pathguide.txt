@@ -203,3 +203,15 @@ country_event = { #Texaco Pathguide
 		name = wd_pathguide.17.a
 	}
 }
+
+country_event = { #Bulgaria Pathguide
+	id = wd_pathguide.18
+	title = wd_pathguide.18.t
+	desc = wd_pathguide.18.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.18.a
+	}
+}
