@@ -13,7 +13,10 @@ GRE_great_game = {
 	}
 }
 KXWD_GRE_coring_time = {
-	icon = GFX_decision_cat_generic_byzantine_empire
+	title = KXWD_GRE_coring_time
+	desc = KXWD_GRE_coring_time_desc
+	icon = GFX_decision_generic_flags
+	picture = GFX_decision_cat_generic_byzantine_empire
 
 	allowed = {
 		original_tag = GRE
@@ -30,17 +33,5 @@ KXWD_GRE_coring_time = {
 				owns_state = 137
 			}
 		}
-	}
-}
-
-KXWD_GRE_crimean_gambit = {
-	icon = KXWD_placeholder
-
-	allowed = {
-		original_tag = GRE
-	}
-
-	visible = { 
-		has_completed_focus = KXWD_GRE_restore_the_kingdom
 	}
 }
