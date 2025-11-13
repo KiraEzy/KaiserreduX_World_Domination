@@ -7,7 +7,7 @@ ideas = {
 		KXWD_GRE_dreams_of_eastern_rome_1= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea dreams_of_eastern_rome_1"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = GRE_orthodox_defence
 			modifier = {
 				political_power_factor = 0.05
 				war_support_weekly = 0.01
@@ -21,7 +21,7 @@ ideas = {
 		KXWD_GRE_dreams_of_eastern_rome_2= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea dreams_of_eastern_rome_2"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = GRE_orthodox_defence
 			modifier = {
 				political_power_factor = 0.15
 				war_support_weekly = 0.015
@@ -37,7 +37,7 @@ ideas = {
 		KXWD_GRE_turkophobia= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea turkophobia"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = TUR_ottoman_hegemony
 			modifier = {
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -49,7 +49,7 @@ ideas = {
 		KXWD_GRE_free_and_loyal= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea free_and_loyal"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = KXWDGRE_free_and_loyal_greece
 			modifier = {
 				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.1
@@ -62,7 +62,7 @@ ideas = {
 		KXWD_GRE_empowered_monarch= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea empowered_monarch"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = NOR_established_monarch_cult
 			modifier = {
 				industrial_capacity_factory = 0.25
 				production_speed_buildings_factor = 0.25
@@ -76,7 +76,7 @@ ideas = {
 		KXWD_GRE_royal_army= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea royal_army"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = KXWDGRE_royal_army
 			modifier = {
 				army_attack_factor = 0.05
 				army_defence_factor = 0.05
@@ -90,7 +90,7 @@ ideas = {
 		KXWD_GRE_neo_varangian_guard= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea neo_varangian_guard"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = KXWDGRE_neo_varangian_guard
 			modifier = {
 				army_attack_factor = 0.15
 				army_defence_factor = 0.15
@@ -105,7 +105,7 @@ ideas = {
 		KXWD_GRE_stabilize_the_kingdom= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea stabilize_the_kingdom"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = KXWDGRE_stabilize_the_kingdom
 			modifier = {
 				stability_weekly = 0.005
 				stability_factor = 0.1
@@ -118,7 +118,7 @@ ideas = {
 		KXWD_GRE_nation_prepared= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea nation_prepared"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = LIB_frontier_preparing
 			modifier = {
 				stability_weekly = 0.01
 				stability_factor = 0.1
@@ -131,7 +131,7 @@ ideas = {
 		KXWD_GRE_retake_constantinople= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea retake_constantinople"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = KXWDGRE_retake_constantinople
 			modifier = {
 				army_speed_factor = 0.2
 			}
@@ -146,7 +146,7 @@ ideas = {
 		KXWD_GRE_the_purple_phoenix_rises= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea the_purple_phoenix_rises"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = GRE_purple_pheonix
 			modifier = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
@@ -159,7 +159,7 @@ ideas = {
 		KXWD_GRE_for_the_glory_of_the_empire= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea for_the_glory_of_the_empire"}
 			allowed = {always = no}
-			picture = KXWD_placeholder
+			picture = KXWDGRE_for_the_glory_of_the_empire
 			modifier = {
 				justify_war_goal_time = -0.9
 				consumer_goods_factor = -0.25				

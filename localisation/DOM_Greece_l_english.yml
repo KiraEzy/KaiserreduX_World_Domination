@@ -2,18 +2,31 @@
 
 ### Decisions ###
 GRE_great_game:0 "An Empire Reborn"
+
 GRE_establish_rk_ASY:0 "Establish Kingdom of Assyria"
+GRE_ASY_OCC:0 "Kingdom of Assyria"
+
 GRE_establish_rk_SAU:0 "Establish Byzantine Military Administration of Arabia"
+GRE_SAU_OCC:0 "Byzantine Military Administration of Arabia"
 
 GRE_CAN_OCC:0 "Exarchate of Canada"
 GRE_establish_rk_CAN:0 "Establish Exarchate of Canada"
 
 GRE_GER_OCC:0 "Kingdom of Germania"
 GRE_establish_rk_GER:0 "Establish Kingdom of Germania"
+
+GRE_SVK_OCC:0 "Kingdom of Danubia"
 GRE_establish_rk_SVK:0 "Establish Kingdom of Danubia"
+
+GRE_ARM_OCC:0 "Kingdom of Armenia"
 GRE_establish_rk_ARM:0 "Establish Kingdom of Armenia"
+
+GRE_RUS_OCC:0 "Roman Empire of Russia"
 GRE_establish_rk_RUS:0 "Establish Roman Empire of Russia"
+GRE_FRA_OCC:0 "Western Roman Empire"
 GRE_establish_rk_FRA:0 "Establish Western Roman Empire"
+
+GRE_DEN_OCC:0 "Kingdom of Scandinavia"
 GRE_establish_rk_DEN:0 "Establish Kingdom of Scandinavia"
 
 GRE_URG_OCC:0 "Exarchate of South America"
@@ -94,6 +107,20 @@ GRE_establish_rk_USA:0 "Establish Exarchate of United States"
 GRE_JAP_OCC_Rome:0 "Exarchate of Japan"
 GRE_establish_rk_JAP_Rome:0 "Establish Exarchate of Japan"
 
+KXWD_GRE_coring_time:0 "Coring The Homelands"
+KXWD_GRE_coring_time_desc:0 "Spending time and money will be key to win our subjects' trust."
+KXWD_GRE_core_bulgaria:0 "Core former Bulgarian lands"
+KXWD_GRE_core_wallachia:0 "Core former Wallachian lands"
+KXWD_GRE_core_moldavia:0 "Core former Moldavian lands"
+KXWD_GRE_core_bukovina:0 "Core former Bukovinian lands"
+KXWD_GRE_core_crimea:0 "Core former Crimean lands"
+KXWD_GRE_core_albania:0 "Core former Albanian lands"
+KXWD_GRE_core_serbia:0 "Core former Serbian lands"
+KXWD_GRE_core_illyria:0 "Core former Illyrian lands"
+KXWD_GRE_core_slovenia:0 "Core former Slovenian lands"
+KXWD_GRE_core_egypt:0 "Core former Egyptian lands"
+KXWD_GRE_core_north_africa:0 "Core former North African lands"
+KXWD_GRE_core_italy:0 "Core former Italian lands"
 ### Events ###
 KXWD_GRE.1.t:0 "A New King"
 KXWD_GRE.1.d:0 "Who shall guide our growing empire into a new era of prosperity?"
@@ -174,3 +201,4 @@ KXWD_GRE_second_claim_wave:0 "We shall reconquer our lost lands to the south."
 KXWD_GRE_third_claim_wave:0 "We shall reconquer our lost lands to the west."
 KXWD_GRE_own_all_claims:0 "We have recovered all of our claims."
 KXWD_GRE_own_partial_claims:0 "We own all highlighted states."
+KXWD_GRE_core_partial_claims:0 "We will core all highlighted states."

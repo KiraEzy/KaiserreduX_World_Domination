@@ -119,6 +119,179 @@
 # }
 
 BUL_late_game = {
+	POR_early_WAR = {
+		icon = GFX_decision_icon_default
+
+		available = {
+			has_completed_focus = BUL_a_stronger_and_loyal_bulgaria
+		}
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_ideas = {
+			KXWD_BUL_quick_war
+			}
+		}	
+	}
+BUL_form_third_empire = {
+	icon = generic_prepare_civil_war
+	highlight_states = {
+		highlight_state_targets = {
+			state = 768
+			state = 758
+			state = 185
+			state = 1076
+			state = 766
+			state = 44
+			state = 731
+			state = 106
+			state = 989
+			state = 1271
+			state = 1268
+			state = 769
+			state = 184
+			state = 341
+			state = 773
+			state = 211
+			state = 212
+			state = 1089
+			state = 48
+			state = 770
+			state = 771
+			state = 77
+			state = 772
+			state = 46
+			state = 84
+			state = 1116
+			state = 81
+			state = 1113
+			state = 1115
+			state = 83
+			state = 82
+			state = 1114
+			state = 875
+			state = 767
+			state = 1090
+			state = 841
+			state = 765
+			state = 1097
+			state = 1269
+			state = 105
+			state = 1270
+			state = 1098
+			state = 1145
+			state = 1143
+			state = 163
+			state = 103
+			state = 1099
+			state = 1105
+			state = 1144
+			state = 736
+			state = 1100
+			state = 102
+			state = 1272
+			state = 1101
+			state = 1103
+			state = 109
+			state = 1111
+			state = 1102
+			state = 45
+			state = 107
+			state = 108
+			state = 1128
+			state = 794
+			state = 1141
+			state = 104
+			state = 1142
+			state = 1104
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+	available = {
+		768 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		758 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		185 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1076 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		766 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		44 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		731 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		106 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		989 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1271 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1268 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		769 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		184 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		341 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		773 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		211 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		212 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1089 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		48 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		770 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		771 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		77 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		772 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		46 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		84 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1116 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		81 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1113 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1115 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		83 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		82 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1114 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		875 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		767 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1090 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		841 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		765 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1097 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1269 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		105 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1270 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1098 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1145 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1143 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		163 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		103 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1099 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1105 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1144 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		736 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1100 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		102 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1272 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1101 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1103 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		109 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1111 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1102 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		45 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		107 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		108 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1128 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		794 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1141 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		104 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1142 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+		1104 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
+	}
+	
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BUL = { set_cosmetic_tag = BUL_BUL_OCC }
+	}
+}
 BUL_establish_rk_BUL = {
 	icon = generic_prepare_civil_war
 
@@ -158,9 +331,6 @@ BUL_establish_rk_BUL = {
 		765 = { transfer_state_to = BUL }
 		767 = { transfer_state_to = BUL }
 		1269 = { transfer_state_to = BUL }
-		BUL = { 
-			set_cosmetic_tag = BUL_BUL_OCC
-	    }
     }
 }
 BUL_establish_rk_ALB = {
@@ -503,7 +673,6 @@ BUL_establish_rk_SVK = {
 				state = 786
 				state = 835
 				state = 836
-				state = 942
 				state = 1129
 				state = 1130
 				state = 1131
@@ -513,7 +682,6 @@ BUL_establish_rk_SVK = {
 				state = 1137
 				state = 1138
 				state = 1139
-				state = 1235
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -558,7 +726,6 @@ BUL_establish_rk_SVK = {
 		786 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		835 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		836 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
-		942 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		1129 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		1130 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		1131 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
@@ -568,7 +735,6 @@ BUL_establish_rk_SVK = {
 		1137 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		1138 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 		1139 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
-		1235 = { owner = { OR = { original_tag = BUL is_subject_of = BUL } } }
 	}
 
 	fire_only_once = yes
@@ -620,7 +786,6 @@ BUL_establish_rk_SVK = {
 		786 = { add_core_of = SVK }
 		835 = { add_core_of = SVK }
 		836 = { add_core_of = SVK }
-		942 = { add_core_of = SVK }
 		1129 = { add_core_of = SVK }
 		1130 = { add_core_of = SVK }
 		1131 = { add_core_of = SVK }
@@ -630,7 +795,6 @@ BUL_establish_rk_SVK = {
 		1137 = { add_core_of = SVK }
 		1138 = { add_core_of = SVK }
 		1139 = { add_core_of = SVK }
-		1235 = { add_core_of = SVK }
 		release = SVK
 		SVK = { 
 			every_core_state = {

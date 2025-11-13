@@ -6724,19 +6724,24 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 50
+		days_remove = 100
 		remove_effect = {
-			add_state_core = 106
-			add_state_core = 1271
-			add_state_core = 1089
-			add_state_core = 212
-			add_state_core = 211
-			add_state_core = 48
-			add_state_core = 771
-			add_state_core = 770
-			add_state_core = 1090
-			add_state_core = 841
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 106
+				add_state_core = 1271
+				add_state_core = 1089
+				add_state_core = 212
+				add_state_core = 211
+				add_state_core = 48
+				add_state_core = 771
+				add_state_core = 770
+				add_state_core = 1090
+				add_state_core = 841
+			}
 		}
 	}
 	KXWD_GRE_core_wallachia = {
@@ -6771,13 +6776,18 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 20
+		days_remove = 40
 		remove_effect = {
-			add_state_core = 81
-			add_state_core = 46
-			add_state_core = 77
-			add_state_core = 772
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 81
+				add_state_core = 46
+				add_state_core = 77
+				add_state_core = 772
+			}
 		}
 	}
 	KXWD_GRE_core_moldavia = {
@@ -6812,13 +6822,18 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 20
+		days_remove = 40
 		remove_effect = {
-			add_state_core = 78
-			add_state_core = 79
-			add_state_core = 1222
-			add_state_core = 1320
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 78
+				add_state_core = 79
+				add_state_core = 1222
+				add_state_core = 1320
+			}
 		}
 	}
 	KXWD_GRE_core_bukovina = {
@@ -6849,11 +6864,16 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 10
+		days_remove = 20
 		remove_effect = {
-			add_state_core = 713
-			add_state_core = 80
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 713
+				add_state_core = 80
+			}
 		}
 	}
 	KXWD_GRE_core_crimea = {
@@ -6893,19 +6913,18 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
-		complete_effect = {
-			hidden_effect = {
-				add_state_claim = 1220
-				add_state_claim = 1221
-				add_state_claim = 137
-			}
-		}
+		cost = 15
+		days_remove = 30
 		remove_effect = {
-			add_state_core = 1220
-			add_state_core = 1221
-			add_state_core = 137
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 1220
+				add_state_core = 1221
+				add_state_core = 137
+				clr_country_flag = KXWD_GRE_crimea_gambit_time
+			}
 		}
 	}
 	KXWD_GRE_core_albania = {
@@ -6938,12 +6957,17 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 15
+		days_remove = 30
 		remove_effect = {
-			add_state_core = 766
-			add_state_core = 44
-			add_state_core = 1268
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 766
+				add_state_core = 44
+				add_state_core = 1268
+			}
 		}
 	}
 	KXWD_GRE_core_serbia = {
@@ -6980,14 +7004,19 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 25
+		days_remove = 50
 		remove_effect = {
-			add_state_core = 765
-			add_state_core = 767
-			add_state_core = 107
-			add_state_core = 108
-			add_state_core = 1269
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 765
+				add_state_core = 767
+				add_state_core = 107
+				add_state_core = 108
+				add_state_core = 1269
+			}
 		}
 	}
 	KXWD_GRE_core_illyria = {
@@ -7050,27 +7079,32 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 90
+		days_remove = 180
 		remove_effect = {
-			add_state_core = 1097
-			add_state_core = 105
-			add_state_core = 1270
-			add_state_core = 1145
-			add_state_core = 104
-			add_state_core = 1141
-			add_state_core = 1143
-			add_state_core = 1142
-			add_state_core = 1098
-			add_state_core = 163
-			add_state_core = 1206
-			add_state_core = 103
-			add_state_core = 1099
-			add_state_core = 1105
-			add_state_core = 109
-			add_state_core = 1102
-			add_state_core = 794
-			add_state_core = 1128
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 1097
+				add_state_core = 105
+				add_state_core = 1270
+				add_state_core = 1145
+				add_state_core = 104
+				add_state_core = 1141
+				add_state_core = 1143
+				add_state_core = 1142
+				add_state_core = 1098
+				add_state_core = 163
+				add_state_core = 1206
+				add_state_core = 103
+				add_state_core = 1099
+				add_state_core = 1105
+				add_state_core = 109
+				add_state_core = 1102
+				add_state_core = 794
+				add_state_core = 1128
+			}
 		}
 	}
 	KXWD_GRE_core_slovenia = {
@@ -7111,16 +7145,21 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 35
+		days_remove = 70
 		remove_effect = {
-			add_state_core = 1101
-			add_state_core = 1104
-			add_state_core = 1103
-			add_state_core = 102
-			add_state_core = 1144
-			add_state_core = 736
-			add_state_core = 1100
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 1101
+				add_state_core = 1104
+				add_state_core = 1103
+				add_state_core = 102
+				add_state_core = 1144
+				add_state_core = 736
+				add_state_core = 1100
+			}
 		}
 	}
 	KXWD_GRE_core_egypt = {
@@ -7161,16 +7200,21 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 35
+		days_remove = 70
 		remove_effect = {
-			add_state_core = 446
-			add_state_core = 447
-			add_state_core = 452
-			add_state_core = 1008
-			add_state_core = 457
-			add_state_core = 456
-			add_state_core = 552
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 446
+				add_state_core = 447
+				add_state_core = 452
+				add_state_core = 1008
+				add_state_core = 457
+				add_state_core = 456
+				add_state_core = 552
+			}
 		}
 	}
 	KXWD_GRE_core_north_africa = {
@@ -7213,17 +7257,22 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 40
+		days_remove = 80
 		remove_effect = {
-			add_state_core = 451
-			add_state_core = 450
-			add_state_core = 663
-			add_state_core = 1009
-			add_state_core = 448
-			add_state_core = 273
-			add_state_core = 665
-			add_state_core = 458
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 451
+				add_state_core = 450
+				add_state_core = 663
+				add_state_core = 1009
+				add_state_core = 448
+				add_state_core = 273
+				add_state_core = 665
+				add_state_core = 458
+			}
 		}
 	}
 	KXWD_GRE_core_italy = {
@@ -7264,20 +7313,21 @@ KXWD_GRE_coring_time = {
 		ai_will_do = {
 			factor = 5
 		}
-		cost = 30
-		days_remove = 90
+		cost = 35
+		days_remove = 70
 		remove_effect = {
-			add_state_core = 116
-			add_state_core = 115
-			add_state_core = 156
-			add_state_core = 1006
-			add_state_core = 837
-			add_state_core = 117
-			add_state_core = 742
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = KXWD_GRE_core_partial_claims
+				}
+				add_state_core = 116
+				add_state_core = 115
+				add_state_core = 156
+				add_state_core = 1006
+				add_state_core = 837
+				add_state_core = 117
+				add_state_core = 742
+			}
 		}
 	}
-}
-
-KXWD_GRE_crimean_gambit = {
-
 }
