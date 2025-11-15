@@ -316,3 +316,21 @@ BUL_WD_pathguide = {
 		}
 	}
 }
+
+POR_WD_pathguide = {
+	POR_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = POR
+		}
+		available = {
+			original_tag = POR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.19
+		}
+	}
+}

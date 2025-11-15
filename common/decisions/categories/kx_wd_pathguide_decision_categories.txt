@@ -173,3 +173,14 @@ BUL_WD_pathguide = {
 		tag = BUL
 	}
 }
+
+POR_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = POR
+	}
+
+	visible = {
+		tag = POR
+	}
+}

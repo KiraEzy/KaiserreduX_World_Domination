@@ -215,3 +215,15 @@ country_event = { #Bulgaria Pathguide
 		name = wd_pathguide.18.a
 	}
 }
+
+country_event = { #Portugal Pathguide
+	id = wd_pathguide.19
+	title = wd_pathguide.19.t
+	desc = wd_pathguide.19.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.19.a
+	}
+}
