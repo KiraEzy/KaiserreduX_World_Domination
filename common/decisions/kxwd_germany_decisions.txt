@@ -3034,7 +3034,7 @@ GER_establish_rk_UKR = {
 			}
 		}
 		UKR = { 
-			set_cosmetic_tag = GER_UKR_OCC
+			set_cosmetic_tag = UKR_GER_union
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3370,7 +3370,7 @@ GER_establish_rk_CRM = {
 			}
 		}
 		CRM = { 
-			set_cosmetic_tag = GER_CRM_OCC
+			set_cosmetic_tag = CRM_GER
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6210,7 +6210,7 @@ GER_establish_rk_USA = {
 			}
 		}
 		USA = { 
-			set_cosmetic_tag = GER_USA_OCC
+			set_cosmetic_tag = USA_GER1
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7849,7 +7849,7 @@ GER_establish_rk_MAF = {
     }
     annex_country = {
     target = NGR
-    transfer_troops = MAG
+    transfer_troops = yes
     }
 	}
 }
@@ -7938,80 +7938,80 @@ GER_establish_rk_TZN = {
 		}
 
 	available = {
-		546 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		899 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		905 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		918 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		965 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1032 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		295 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		538 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		541 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		547 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		548 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		718 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		813 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		869 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		870 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		871 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		879 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		881 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		892 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		925 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		948 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		949 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		955 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		956 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		957 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		958 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		964 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		969 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		970 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		976 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		977 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1025 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1026 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1180 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1181 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1182 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1183 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1184 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1185 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		539 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		660 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		927 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		928 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		952 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		953 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		971 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		974 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		975 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		274 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		558 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		662 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		807 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		876 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		877 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		878 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		913 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		962 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		963 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		973 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1321 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1322 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1323 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		543 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		703 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		704 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		706 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		707 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		708 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		709 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1177 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1178 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1179 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-        268 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1297 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		546 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		899 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		905 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		918 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		965 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1032 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		295 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		538 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		541 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		547 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		548 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		718 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		813 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		869 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		870 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		871 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		879 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		881 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		892 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		925 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		948 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		949 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		955 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		956 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		957 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		958 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		964 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		969 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		970 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		976 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		977 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1025 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1026 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1180 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1181 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1182 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1183 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1184 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1185 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		539 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		660 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		927 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		928 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		952 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		953 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		971 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		974 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		975 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		274 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		558 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		662 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		807 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		876 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		877 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		878 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		913 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		962 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		963 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		973 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1321 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1322 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1323 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		543 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		703 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		704 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		706 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		707 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		708 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		709 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1177 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1178 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1179 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+        268 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
+		1297 = { owner = { OR = { original_tag = GER is_subject_of = GER original_tag = MAF is_subject_of = MAF } } }
 	}
 
 	fire_only_once = yes
@@ -8110,6 +8110,8 @@ GER_establish_rk_TZN = {
 						OR = {
 							is_owned_by = GER
 							OWNER = { is_subject_of = GER} 
+							is_owned_by = MAF
+							OWNER = { is_subject_of = MAF} 
 						}
 					}
 				}
@@ -8180,6 +8182,7 @@ GER_establish_rk_ANG = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		540 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		914 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		916 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8217,6 +8220,7 @@ GER_establish_rk_ZIM = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		545 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 	}
 
@@ -8244,6 +8248,7 @@ GER_establish_rk_MZB = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		544 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		950 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		954 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8277,6 +8282,7 @@ GER_establish_rk_GAB = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		297 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		705 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		1335 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8320,6 +8326,7 @@ GER_establish_rk_ETH = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		269 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		271 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		550 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8386,6 +8393,7 @@ GER_establish_rk_SUD = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		549 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		551 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		862 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8429,6 +8437,7 @@ GER_establish_rk_WAD = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		515 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		910 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		911 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8475,6 +8484,7 @@ GER_establish_rk_MAL = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		272 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		296 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		556 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
@@ -8537,6 +8547,7 @@ GER_establish_rk_LIB = {
 		}
 
 	available = {
+		TZN = { has_cosmetic_tag = GER_TZN_OCC }
 		298 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		966 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 	}
