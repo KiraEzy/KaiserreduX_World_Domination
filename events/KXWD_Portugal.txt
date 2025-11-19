@@ -1,0 +1,17 @@
+add_namespace = PORWD
+
+country_event = { #Introduction to National Syndicalist Movement
+	id = PORWD.1
+	title = PORWD.1.t
+	desc = PORWD.1.d
+	# picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Ok
+		name = PORWD.1.a
+        hidden_effect = {
+			country_event = { id = PORWD.2 days = 7 }
+		}
+	}
+}
+

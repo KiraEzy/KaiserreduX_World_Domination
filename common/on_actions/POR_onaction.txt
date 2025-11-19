@@ -1,0 +1,9 @@
+on_actions = {
+    on_startup = {
+        effect = { # Intro to National Syndicalist Movement
+            POR = {
+                country_event = { id = PORWD.1 days = 37 } #
+            }
+        }
+    }
+}
