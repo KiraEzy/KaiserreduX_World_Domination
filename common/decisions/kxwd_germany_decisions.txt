@@ -8564,33 +8564,6 @@ GER_establish_rk_LIB = {
 		966 = { transfer_state_to = TZN }
 	}
 }
-GER_Grab_africa2 = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
-			
-			log = "SAF"
-			SAF = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TUN"
-			TUN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MOR"
-			MOR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-		}
-		days_remove = 0
-	}
     GER_establish_rk_BOT = {
 	icon = generic_prepare_civil_war
 
