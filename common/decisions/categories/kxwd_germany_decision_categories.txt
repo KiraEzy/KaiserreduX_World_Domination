@@ -39,7 +39,13 @@ GER_africa_game = {
 				has_completed_focus = GER_europakammer
 				has_completed_focus = GER_europakommission
 			}
-			MAF = { exists = yes }
+			OR = {
+				MAF = { exists = yes } 
+				AND = {
+					TZN = { exists = yes }
+					TZN = { has_cosmetic_tag = GER_TZN_OCC }
+				}
+			} 
 		}
 	}
 }
