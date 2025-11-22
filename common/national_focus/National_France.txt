@@ -3531,9 +3531,6 @@ focus_tree = {
 			add_ideas = {
 				NFA_young_france
 			}
-			hidden_effect = {
-				country_event = { id = flavorfra.116 days = 41 }
-			}
 		}
 	}
 	focus = {
@@ -15230,7 +15227,12 @@ focus_tree = {
 					}
 					leave_faction = yes
 				}
-				create_faction = "Continental System"
+			create_faction_from_template = { 
+				template = faction_template_generic_dominance              
+				name = "Continental System"
+				icon = "GFX_faction_continental_system"
+			}				
+
 			}
 		}
 	}
