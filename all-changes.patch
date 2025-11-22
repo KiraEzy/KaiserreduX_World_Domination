@@ -1,0 +1,1251 @@
+diff --git a/common/decisions/Russia_decisions.txt b/common/decisions/Russia_decisions.txt
+index 9ca2e2f..c97ad4b 100644
+--- a/common/decisions/Russia_decisions.txt
++++ b/common/decisions/Russia_decisions.txt
+@@ -743,7 +743,7 @@ RUS_Resource_decisions = {
+ 			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_KuzBass_Coal_Mining"
+ 			569 = {
+ 				add_resource = {
+-					type = steel
++					type = coal
+ 					amount = 24
+ 				}
+ 			}
+@@ -851,7 +851,7 @@ RUS_Resource_decisions = {
+ 			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Tunguss_Basin_Coal_Mining"
+ 			568 = {
+ 				add_resource = {
+-					type = steel
++					type = coal
+ 					amount = 16
+ 				}
+ 			}
+@@ -1635,6 +1635,19 @@ RUS_Alliance_decisions = {
+ 					}
+ 				}
+ 			}
++			modifier = {
++				factor = 0
++				OR = {
++					AND = {
++						has_socialist_government = no
++						BUL = { has_socialist_government = yes }
++					}
++					AND = {
++						has_socialist_government = yes
++						BUL = { has_socialist_government = no }
++					}
++				}
++			}
+ 		}
+ 
+ 		complete_effect = {
+@@ -1735,6 +1748,19 @@ RUS_Alliance_decisions = {
+ 					}
+ 				}
+ 			}
++			modifier = {
++				factor = 0
++				OR = {
++					AND = {
++						has_socialist_government = no
++						ROM = { has_socialist_government = yes }
++					}
++					AND = {
++						has_socialist_government = yes
++						ROM = { has_socialist_government = no }
++					}
++				}
++			}
+ 		}
+ 
+ 		complete_effect = {
+@@ -9617,7 +9643,12 @@ RUS_Foreign_Policy_decisions = {
+ 				if = {
+ 					limit = {
+ 						has_socialist_government = no
+-							WHR = {
++						has_left_democratic_government = no
++						NOT = { 
++							is_in_faction_with = GER 
++							has_war_with = WHR
++						}
++						WHR = {
+ 							has_country_leader = {
+ 								ruling_only = yes
+ 								name = "Stanis?a? Bu?ak-Ba?achowi?"
+diff --git a/common/national_focus/Canada_KR.txt b/common/national_focus/Canada_KR.txt
+index 27fd700..34c7ca1 100644
+--- a/common/national_focus/Canada_KR.txt
++++ b/common/national_focus/Canada_KR.txt
+@@ -12099,7 +12099,12 @@ focus_tree = {
+ 		completion_reward = {
+ 			log = "[GetDateText]: [Root.GetName]: Focus CAN_our_own_alliance"
+ 			effect_tooltip = {
+-				create_faction = CAN_nato
++			create_faction_from_template = { 
++				template = faction_template_generic_dominance              
++				name = CAN_nato
++				icon = "GFX_faction_inter_commonwealth_treaty_organization"
++			}			
++
+ 			}
+ 			add_ideas = CAN_nato_leader
+ 			unlock_decision_category_tooltip = CAN_nato_decisions
+@@ -12109,10 +12114,29 @@ focus_tree = {
+ 					limit = {
+ 						is_faction_leader = no
+ 					}
+-					create_faction = CAN_nato
++			create_faction_from_template = { 
++				template = faction_template_generic_dominance              
++				name = CAN_nato
++				icon = "GFX_faction_north_american_treaty_organization"
++			}
+ 				}
+ 				else = {
+-					set_faction_name = CAN_nato
++					effect_tooltip = { set_faction_name = CAN_nato }
++					hidden_effect = {
++						every_faction_member = {
++							add_to_temp_array = { temp_faction_members = THIS.id }
++						}
++						dismantle_faction = yes
++						create_faction_from_template = {
++							template = faction_template_defender_of_democracy
++							name = CAN_nato
++							icon = GFX_faction_north_american_treaty_organization
++						}
++						every_country = {
++							limit = { is_in_array = { temp_faction_members = THIS.id } }
++							CAN = { add_to_faction = PREV }
++						}
++					}
+ 				}
+ 			}
+ 					
+diff --git a/common/national_focus/Mongolia.txt b/common/national_focus/Mongolia.txt
+index 65b9c9a..4ffe910 100644
+--- a/common/national_focus/Mongolia.txt
++++ b/common/national_focus/Mongolia.txt
+@@ -913,7 +913,12 @@ focus_tree = {
+ 		completion_reward = {
+ 			log = "[GetDateText]: [Root.GetName]: Focus MON_brotherhood_alliance"
+ 			custom_effect_tooltip = MON_alliance_tooltip
+-			create_faction =  "Brotherhood of Eurasia"
++			create_faction_from_template = { 
++				template = faction_template_generic_dominance              
++				name = "Brotherhood of Eurasia"
++				icon = "GFX_faction_brotherhood_of_eurasia"
++			}			
++
+ 			add_ideas = Eurasian_alliance_idea
+ 			if = {
+ 				limit = { 
+diff --git a/common/national_focus/National_France.txt b/common/national_focus/National_France.txt
+index 2cecf26..3b53ca9 100644
+--- a/common/national_focus/National_France.txt
++++ b/common/national_focus/National_France.txt
+@@ -3531,9 +3531,6 @@ focus_tree = {
+ 			add_ideas = {
+ 				NFA_young_france
+ 			}
+-			hidden_effect = {
+-				country_event = { id = flavorfra.116 days = 41 }
+-			}
+ 		}
+ 	}
+ 	focus = {
+@@ -15230,7 +15227,12 @@ focus_tree = {
+ 					}
+ 					leave_faction = yes
+ 				}
+-				create_faction = "Continental System"
++			create_faction_from_template = { 
++				template = faction_template_generic_dominance              
++				name = "Continental System"
++				icon = "GFX_faction_continental_system"
++			}				
++
+ 			}
+ 		}
+ 	}
+diff --git a/common/national_focus/Spain_Carlist.txt b/common/national_focus/Spain_Carlist.txt
+index 43c9b0c..eb1c8fd 100644
+--- a/common/national_focus/Spain_Carlist.txt
++++ b/common/national_focus/Spain_Carlist.txt
+@@ -1977,7 +1977,11 @@ focus = {
+ 	}
+ 	completion_reward = {
+ 		add_political_power = 40
+-		create_faction =  "Latin Union"
++			create_faction_from_template = { 
++				template = faction_template_generic_dominance              
++				name = "Latin Union"
++				icon = "GFX_faction_logo_generic_5"
++			}		  
+ 		custom_effect_tooltip = COR_factions_tooltip
+ 	}
+ }
+diff --git a/descriptor.mod b/descriptor.mod
+index 3f9586f..9557b86 100644
+--- a/descriptor.mod
++++ b/descriptor.mod
+@@ -9,5 +9,5 @@ tags={
+ }
+ name="Kaiserredux: World Domination"
+ picture="thumbnail.png"
+-supported_version="1.16.*"
++supported_version="1.17.*"
+ remote_file_id="3325164444"
+\ No newline at end of file
+diff --git a/events/Annexations.txt b/events/Annexations.txt
+index 72417eb..5154484 100644
+--- a/events/Annexations.txt
++++ b/events/Annexations.txt
+@@ -2880,7 +2880,7 @@ country_event = { #Austrian Littoral liberation
+ 					ITA = { is_subject_of = ROOT }
+ 				}
+ 			}
+-			every_state = {
++			every_owned_state = {
+ 				limit = {
+ 					OR = {
+ 						state = 736
+@@ -2909,7 +2909,7 @@ country_event = { #Austrian Littoral liberation
+ 					VNC = { is_subject_of = ROOT }
+ 				}
+ 			}
+-			every_state = {
++			every_owned_state = {
+ 				limit = {
+ 					OR = {
+ 						state = 736
+@@ -2938,7 +2938,7 @@ country_event = { #Austrian Littoral liberation
+ 					SRD = { is_subject_of = ROOT }
+ 				}
+ 			}
+-			every_state = {
++			every_owned_state = {
+ 				limit = {
+ 					OR = {
+ 						state = 736
+@@ -2967,7 +2967,7 @@ country_event = { #Austrian Littoral liberation
+ 					SIC = { is_subject_of = ROOT }
+ 				}
+ 			}
+-			every_state = {
++			every_owned_state = {
+ 				limit = {
+ 					OR = {
+ 						state = 736
+@@ -2996,7 +2996,7 @@ country_event = { #Austrian Littoral liberation
+ 					SRI = { is_subject_of = ROOT }
+ 				}
+ 			}
+-			every_state = {
++			every_owned_state = {
+ 				limit = {
+ 					OR = {
+ 						state = 736
+@@ -3037,7 +3037,7 @@ country_event = { #Austrian Littoral liberation
+ 		ai_chance = {
+ 			factor = 90
+ 		}
+-		every_state = {
++		every_owned_state = {
+ 			limit = {
+ 				OR = {
+ 					state = 736
+@@ -3074,7 +3074,7 @@ country_event = { #Austrian Littoral liberation
+ 		ai_chance = {
+ 			factor = 90
+ 		}
+-		every_state = {
++		every_owned_state = {
+ 			limit = {
+ 				OR = {
+ 					state = 736
+@@ -3117,7 +3117,7 @@ country_event = { #Austrian Littoral liberation
+ 		ai_chance = {
+ 			factor = 50
+ 		}
+-		every_state = {
++		every_owned_state = {
+ 			limit = {
+ 				OR = {
+ 					state = 736
+@@ -3161,7 +3161,7 @@ country_event = { #Austrian Littoral liberation
+ 		ai_chance = {
+ 			factor = 1
+ 		}
+-		every_state = {
++		every_owned_state = {
+ 			limit = {
+ 				OR = {
+ 					state = 736
+@@ -3229,7 +3229,7 @@ country_event = { #Austrian Littoral liberation
+ 		}
+ 		759 = {
+ 			owner = {
+-				every_state = {
++				every_owned_state = {
+ 					limit = {
+ 						OR = {
+ 							state = 736
+@@ -3293,7 +3293,7 @@ country_event = { #Austrian Littoral liberation
+ 					tag = CRO
+ 				}
+ 			}
+-			every_state = {
++			every_owned_state = {
+ 				limit = {
+ 					OR = {
+ 						state = 736
+@@ -3831,7 +3831,10 @@ country_event = { #Liberation of Croatia
+ 				add_core_of = AUS
+ 			}
+ 			if = {
+-				limit = { is_owned_by = ROOT }
++				limit = { 
++					is_owned_by = ROOT 
++					is_claim_or_core_of_ROOT = no
++				}
+ 				AUS = { transfer_state = PREV }
+ 			}
+ 		}
+@@ -3874,7 +3877,10 @@ country_event = { #Liberation of Croatia
+ 				add_claim_by = SER
+ 			}
+ 			if = {
+-				limit = { is_owned_by = ROOT }
++				limit = { 
++					is_owned_by = ROOT 
++					is_claim_or_core_of_ROOT = no
++				}
+ 				SER = { transfer_state = PREV }
+ 			}
+ 		}
+@@ -3915,7 +3921,10 @@ country_event = { #Liberation of Croatia
+ 				add_core_of = HUN
+ 			}
+ 			if = {
+-				limit = { is_owned_by = ROOT }
++				limit = { 
++					is_owned_by = ROOT 
++					is_claim_or_core_of_ROOT = no
++				}
+ 				HUN = { transfer_state = PREV }
+ 			}
+ 		}
+@@ -3955,6 +3964,7 @@ country_event = { #Liberation of Croatia
+ 					state = 1142
+ 					state = 1143
+ 				}
++				is_claim_or_core_of_ROOT = no
+ 			}
+ 			transfer_state_and_add_core = yes
+ 		}
+@@ -3962,6 +3972,7 @@ country_event = { #Liberation of Croatia
+ 		every_owned_state = {
+ 			limit = {
+ 				is_core_of = BOS
++				is_claim_or_core_of_ROOT = no
+ 			}
+ 			transfer_state_and_add_claim = yes
+ 		}
+@@ -8950,14 +8961,14 @@ country_event = { #Fate of Friuli
+ 		ai_chance = {
+ 			factor = 40
+ 		}
+-		set_temp_variable = { tag_to_release = AUS }
+-		if = {
+-			limit = { owns_state = 45 }
+-			45 = { transfer_state_and_add_core = yes }
+-		}
+-		if = {
+-			limit = { owns_state = 875 }
+-			875 = { transfer_state_and_add_core = yes }
++		reverse_add_opinion_modifier = { target = ITA modifier = KR_returned_land }
++
++		every_owned_state = {
++			limit = {
++				state = 759
++			}
++			AUS = { transfer_state = PREV }
++			AUS = { add_state_core = PREV }
+ 		}
+ 	}
+ 	option = {
+@@ -9955,7 +9966,7 @@ country_event = { #Fate of West Banat
+ 	option = {
+ 		name = annex.49.e #Give it to AUS
+ 		trigger = {
+-			can_annex_vojvodina = no
++			can_annex_west_banat = no
+ 			AUS = {
+ 				owns_state = 45 #Vojvodina
+ 				AUS_is_unified = yes
+@@ -10244,6 +10255,10 @@ country_event = { #Fate of America
+ 	option = { #Liberate USA
+ 		trigger = {
+ 			has_socialist_government = no
++			NOT = {
++				tag = MEX
++				tag = HAW
++			}
+ 		}
+ 		name = annex.52.a
+ 		ai_chance = {
+@@ -10266,6 +10281,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 			}
+ 			USA = {
+ 				transfer_state = PREV
+@@ -10479,6 +10498,10 @@ country_event = { #Fate of America
+ 		name = annex.52.b
+ 		ai_chance = {
+ 			factor = 20
++			modifier = {
++				factor = 0
++				tag = MEX
++			}
+ 		}
+ 		trigger = {
+ 			has_socialist_government = no
+@@ -10517,6 +10540,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 			}
+ 		}
+ 
+@@ -10537,6 +10564,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 			}
+ 			USA = {
+ 				transfer_state = PREV
+@@ -10751,6 +10782,13 @@ country_event = { #Fate of America
+ 		trigger = { BBR = { exists = no } }
+ 		ai_chance = {
+ 			factor = 10
++			modifier = {
++				factor = 0
++				OR = {
++					tag = MEX
++					tag = HAW
++				}
++			}
+ 		}
+ 		
+ 		hidden_effect = {
+@@ -10804,6 +10842,13 @@ country_event = { #Fate of America
+ 		name = annex.52.f
+ 		ai_chance = {
+ 			factor = 10
++			modifier = {
++				factor = 0
++				OR = {
++					tag = MEX
++					tag = HAW
++				}
++			}
+ 		}
+ 		
+ 		hidden_effect = {
+@@ -10857,6 +10902,10 @@ country_event = { #Fate of America
+ 	option = { #Liberate CSA
+ 		trigger = {
+ 			has_socialist_government = yes
++			NOT = {
++				tag = MEX
++				tag = HAW
++			}
+ 		}
+ 		name = annex.52.c
+ 		ai_chance = {
+@@ -10879,6 +10928,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 			}
+ 			CSA = {
+ 				transfer_state = PREV
+@@ -11011,6 +11064,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 				add_core_of = HAW
+ 				}
+ 			}
+@@ -11046,7 +11103,7 @@ country_event = { #Fate of America
+ 		}
+ 		name = annex.52.h
+ 		ai_chance = {
+-			factor = 60
++			factor = 99
+ 		}
+ 		every_owned_state = {
+ 			limit = {
+@@ -11065,6 +11122,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 			}
+ 			USA = {
+ 				transfer_state = PREV
+@@ -11116,6 +11177,10 @@ country_event = { #Fate of America
+ 				remove_claim_by = TEX
+ 				remove_core_of = CAL
+ 				remove_claim_by = CAL
++				remove_core_of = COR
++				remove_claim_by = COR
++				remove_core_of = WCC
++				remove_claim_by = WCC
+ 			}
+ 		}
+ 		add_to_temp_array = { target_cores_to_release = USA }
+@@ -12002,67 +12067,6 @@ country_event = { #The Fate of Guatemala
+ 				}
+ 			}
+ 		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_socialist_government = yes
+-				}
+-			}
+-			GUA = {
+-				set_politics = {
+-					ruling_party = radical_socialist
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = radical_socialist
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = social_conservative
+-					has_government = market_liberal
+-					has_government = social_liberal
+-					AND = {
+-						NOT = {
+-							tag = NIC
+-						}
+-						has_government = social_democrat
+-					}
+-				}
+-			}
+-			GUA = {
+-				set_politics = {
+-					ruling_party = social_conservative
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = social_conservative
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = national_populist
+-					has_government = paternal_autocrat
+-					has_government = authoritarian_democrat
+-				}
+-			}
+-			GUA = {
+-				set_politics = {
+-					ruling_party = paternal_autocrat
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = paternal_autocrat
+-					popularity = 0.40
+-				}
+-			}
+-		}
+ 		GUA_setleaders = yes
+ 	}
+ 
+@@ -12087,65 +12091,6 @@ country_event = { #The Fate of Guatemala
+ 		set_temp_variable = { tag_to_release = GUA }
+ 		release_targeted_tag = yes
+ 
+-		if = {
+-			limit = {
+-				has_socialist_government = yes
+-			}
+-			GUA = {
+-				set_politics = {
+-					ruling_party = radical_socialist
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = radical_socialist
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = social_conservative
+-					has_government = market_liberal
+-					has_government = social_liberal
+-					AND = {
+-						NOT = {
+-							tag = NIC
+-						}
+-						has_government = social_democrat
+-					}
+-				}
+-			}
+-			GUA = {
+-				set_politics = {
+-					ruling_party = social_conservative
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = social_conservative
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = national_populist
+-					has_government = paternal_autocrat
+-					has_government = authoritarian_democrat
+-				}
+-			}
+-			GUA = {
+-				set_politics = {
+-					ruling_party = paternal_autocrat
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = paternal_autocrat
+-					popularity = 0.40
+-				}
+-			}
+-		}
+ 		GUA_setleaders = yes
+ 	}
+ 
+@@ -12177,65 +12122,6 @@ country_event = { #The Fate of El Salvador
+ 		set_temp_variable = { tag_to_release = ELS }
+ 		release_targeted_tag = yes
+ 
+-		if = {
+-			limit = {
+-				has_socialist_government = yes
+-			}
+-			ELS = {
+-				set_politics = {
+-					ruling_party = syndicalist
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = syndicalist
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = social_conservative
+-					has_government = market_liberal
+-					has_government = social_liberal
+-					AND = {
+-						NOT = {
+-							tag = NIC
+-						}
+-						has_government = social_democrat
+-					}
+-				}
+-			}
+-			ELS = {
+-				set_politics = {
+-					ruling_party = social_democrat
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = social_democrat
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = national_populist
+-					has_government = paternal_autocrat
+-					has_government = authoritarian_democrat
+-				}
+-			}
+-			ELS = {
+-				set_politics = {
+-					ruling_party = paternal_autocrat
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = paternal_autocrat
+-					popularity = 0.40
+-				}
+-			}
+-		}
+ 		ELS_setleaders = yes
+ 	}
+ 
+@@ -13675,6 +13561,22 @@ country_event = { #Releasing Spain (if not POR)
+ 	desc = annexation_SPA_CONQ_desc
+ 	is_triggered_only = yes
+ 
++	immediate = { 
++		hidden_effect = {
++			every_state = {
++				limit = {
++					is_spain = no
++				}
++				remove_core_of = SPR
++				remove_claim_by = SPR
++				remove_core_of = CNT
++				remove_claim_by = CNT
++				remove_core_of = CAR
++				remove_claim_by = CAR
++			}
++		}
++	}
++
+ 	option = { #Give to Carlists
+ 		name = annex.73.a
+ 		trigger = {
+@@ -15410,6 +15312,7 @@ country_event = { #The Annexation of Egypt
+ 						region = 126 #Egypt
+ 						region = 128 #Sudan
+ 						state = 552
++						state = 862
+ 					}
+ 				}
+ 				remove_core_of = EGY
+@@ -15955,6 +15858,37 @@ country_event = { #The Annexation of Yemen
+ 				}
+ 			}
+ 		}
++		hidden_effect = {
++			if = {
++				limit = {
++					1024 = {
++						is_owned_by = ROOT
++						is_claim_or_core_of_ROOT = no
++					}
++				}
++				if = {
++					limit = {
++						1024 = { is_claimed_by = YEM }
++						OMA = {
++							is_ally_of_ROOT = no
++							NOT = { is_subject_of = ROOT }
++						}
++					}
++					YEM = { transfer_state = 1024 }
++				}
++				else_if = {
++					limit = {
++						OMA = {
++							OR = {
++								is_ally_of_ROOT = yes
++								is_subject_of = ROOT
++							}
++						}
++					}
++					OMA = { transfer_state = 1024 }
++				}
++			}
++		}
+ 	}
+ 
+ 	option = { #occupy
+@@ -20299,7 +20233,7 @@ country_event = { #Fate of Mexico
+ 						desc = "POLITICS_DONA_ITURBIDE_DESC"
+ 						picture = "gfx/leaders/MEX/Portrait_Mexico_Maria.png"
+ 						expire = "1.1.1"
+-						ideology = social_liberal_subtype
++						ideology = soclib_progressive_democracy_subtype
+ 						female = yes
+ 					}
+ 					create_country_leader = {
+@@ -20399,7 +20333,7 @@ country_event = { #Fate of Mexico
+ 						desc = "POLITICS_DON_LUIS"
+ 						picture = "gfx/leaders/MEX/Portrait_Mexico_Luis_Moctezuma.png"
+ 						expire = "1.1.1"
+-						ideology = social_liberal_subtype
++						ideology = soclib_progressive_democracy_subtype
+ 						traits = {}
+ 					}
+ 					create_country_leader = {
+@@ -20673,7 +20607,7 @@ country_event = { #Fate of Mexico
+ 						desc = "POLITICS_DON_LUIS"
+ 						picture = "gfx/leaders/MEX/Portrait_Mexico_Luis_Moctezuma.png"
+ 						expire = "1.1.1"
+-						ideology = social_liberal_subtype
++						ideology = soclib_progressive_democracy_subtype
+ 						traits = {}
+ 					}
+ 					create_country_leader = {
+@@ -30039,13 +29973,19 @@ country_event = { #Fate of Canada
+ 				tag = COR
+ 				has_country_leader = { ruling_only = yes name = "George W. Christians" }
+ 			}
+-		CAN = { 
++		set_autonomy = {
++		target = CAN
++		autonomous_state = kx_colored_puppet
++		}
++		CAN = {
++			set_cosmetic_tag = CAN_KLAN
+ 			set_politics = {
+ 			ruling_party = national_populist
+ 			elections_allowed = no
+ 			}
+ 		add_popularity = { ideology = national_populist popularity = 0.60 }
+ 				}
++			
+ 			}
+ 		}
+ 	}
+@@ -30190,13 +30130,19 @@ country_event = { #Fate of Canada
+ 				tag = COR
+ 				has_country_leader = { ruling_only = yes name = "George W. Christians" }
+ 			}
+-		CAN = { 
++		set_autonomy = {
++		target = CAN
++		autonomous_state = kx_colored_puppet
++		}
++		CAN = {
++			set_cosmetic_tag = CAN_KLAN
+ 			set_politics = {
+ 			ruling_party = national_populist
+ 			elections_allowed = no
+ 			}
+ 		add_popularity = { ideology = national_populist popularity = 0.60 }
+ 				}
++			
+ 			}
+ 		}
+ 	}
+@@ -34798,65 +34744,6 @@ country_event = { #The Fate of Honduras
+ 		set_temp_variable = { tag_to_release = HON }
+ 		release_targeted_tag = yes
+ 
+-		if = {
+-			limit = {
+-				has_socialist_government = yes
+-			}
+-			HON = {
+-				set_politics = {
+-					ruling_party = totalist
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = totalist
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = social_conservative
+-					has_government = market_liberal
+-					has_government = social_liberal
+-					AND = {
+-						NOT = {
+-							tag = NIC
+-						}
+-						has_government = social_democrat
+-					}
+-				}
+-			}
+-			HON = {
+-				set_politics = {
+-					ruling_party = social_liberal
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = social_liberal
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = national_populist
+-					has_government = paternal_autocrat
+-					has_government = authoritarian_democrat
+-				}
+-			}
+-			HON = {
+-				set_politics = {
+-					ruling_party = paternal_autocrat
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = paternal_autocrat
+-					popularity = 0.40
+-				}
+-			}
+-		}
+ 		HON_setleaders = yes
+ 	}
+ 
+@@ -34901,60 +34788,6 @@ country_event = { #The Fate of Nicaragua
+ 			}
+ 		}
+ 
+-		if = {
+-			limit = {
+-				has_socialist_government = yes
+-			}
+-			NIC = {
+-				set_politics = {
+-					ruling_party = syndicalist
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = syndicalist
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = social_conservative
+-					has_government = market_liberal
+-					has_government = social_liberal
+-					has_government = social_democrat
+-				}
+-			}
+-			NIC = {
+-				set_politics = {
+-					ruling_party = social_liberal
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = social_liberal
+-					popularity = 0.40
+-				}
+-			}
+-		}
+-		if = {
+-			limit = {
+-				OR = {
+-					has_government = national_populist
+-					has_government = paternal_autocrat
+-					has_government = authoritarian_democrat
+-				}
+-			}
+-			NIC = {
+-				set_politics = {
+-					ruling_party = paternal_autocrat
+-					elections_allowed = no
+-				}
+-				add_popularity = {
+-					ideology = paternal_autocrat
+-					popularity = 0.40
+-				}
+-			}
+-		}
+ 		NIC_setleaders = yes
+ 		NIC = { clr_country_flag = NIC_USA_JUNTA }
+ 	}
+@@ -35106,7 +34939,7 @@ country_event = { # The fate of an unified central America
+ 					set_party_name = {
+ 						ideology = social_democrat
+ 						name = CEN_social_democrat_liberal
+-						long_name = CEN_social_democrat_liberal
++						long_name = CEN_social_democrat_liberal_long
+ 					}
+ 				}
+ 				else_if = {
+@@ -43958,7 +43791,7 @@ country_event = { #Fate of South Seas Islands
+ 				}
+ 				set_party_name = {
+ 					ideology = paternal_autocrat
+-					name = SSI__paternal_autocrat_party
++					name = SSI_paternal_autocrat_party
+ 					long_name = SSI_paternal_autocrat_party_long
+ 				}
+ 				set_party_name = {
+diff --git a/events/Canada_Entente.txt b/events/Canada_Entente.txt
+index 5638771..d300e23 100644
+--- a/events/Canada_Entente.txt
++++ b/events/Canada_Entente.txt
+@@ -9866,7 +9866,10 @@ country_event = {
+ 			}
+ 		}
+ 		any_owned_state = {
+-			is_not_claim_or_core_of_ROOT = yes
++			NOT = {
++				state = 29
++				state = 779
++			}
+ 			is_european_france = yes
+ 		}
+ 	}
+@@ -9884,18 +9887,32 @@ country_event = {
+ 					NOT = { has_war_with = ROOT }
+ 				}
+ 			}
+-			every_owned_state = {
++			every_state = {
+ 				limit = {
+-					is_not_claim_or_core_of_ROOT = yes
++					NOT = {
++						state = 29
++						state = 779
++					}
++					OR = {
++						is_owned_by = GER
++						owner = { is_subject_of = GER }
++					}
+ 					is_european_france = yes
+ 				}
+ 				NFA = { transfer_state = PREV }
+ 			}
+ 		}
+ 		else = {
+-			every_owned_state = {
++			every_state = {
+ 				limit = {
+-					is_not_claim_or_core_of_ROOT = yes
++					NOT = {
++						state = 29
++						state = 779
++					}
++					OR = {
++						is_owned_by = GER
++						owner = { is_subject_of = GER }
++					}
+ 					is_european_france = yes
+ 				}
+ 				ENT = { transfer_state = PREV }
+@@ -9947,7 +9964,6 @@ country_event = {
+ 			}
+ 		}
+ 		any_owned_state = {
+-			is_not_claim_or_core_of_ROOT = yes
+ 			is_british_isles = yes
+ 		}
+ 	}
+@@ -9965,18 +9981,24 @@ country_event = {
+ 					NOT = { has_war_with = ROOT }
+ 				}
+ 			}
+-			every_owned_state = {
++			every_state = {
+ 				limit = {
+-					is_not_claim_or_core_of_ROOT = yes
++					OR = {
++						is_owned_by = GER
++						owner = { is_subject_of = GER }
++					}
+ 					is_british_isles = yes
+ 				}
+ 				GBR = { transfer_state = PREV }
+ 			}
+ 		}
+ 		else = {
+-			every_owned_state = {
++			every_state = {
+ 				limit = {
+-					is_not_claim_or_core_of_ROOT = yes
++					OR = {
++						is_owned_by = GER
++						owner = { is_subject_of = GER }
++					}
+ 					is_british_isles = yes
+ 				}
+ 				ENT = { transfer_state = PREV }
+diff --git a/localisation/KR_Canada_l_english.yml b/localisation/KR_Canada_l_english.yml
+index 486002b..73ae3e3 100644
+--- a/localisation/KR_Canada_l_english.yml
++++ b/localisation/KR_Canada_l_english.yml
+@@ -3324,10 +3324,11 @@ canada.7601.b:0 "Stop Diefenbaker! Drew will retain leadership!"
+ canada.7601.c:0 "Stop Diefenbaker! Freshman Yukon MP Erik Nielsen shall assume leadership!"
+ 
+ canada.761.t:0 "Liberal Leadership Contest"
+-canada.761.d_lib_PM:0 "Louis St. Laurent, undoubtedly one of the great Prime Ministers of his time, has fallen from grace, and has been unseated as Prime Minister in our nation's most recent election. St. Laurent continues to lead a battered Liberal caucus, still reeling from their losses in the recent election. The Liberals continue to stand by the undoubtedly charismatic and popular St. Laurent, despite some tying their loss in the election directly to him. The most likely candidate to replace him in the event he resigns is the popular Minister of Foreign Affairs, Lester B. Pearson, who is also notable for spearheading the charge for designing a new Canadian flag."
+-canada.761.d:0 "Louis St. Laurent, undoubtedly one of the great Politicians of his time, has fallen from grace, and has failed to capture a Liberal majority in our nation's most recent election. St. Laurent continues to lead a battered Liberal caucus, still reeling from their losses in the recent election. The Liberals continue to stand by the undoubtedly charismatic and popular St. Laurent, despite some tying their loss in the election directly to him. The most likely candidate to replace him in the event he resigns is the popular Diplomat, Lester B. Pearson, who is also notable for spearheading the charge for designing a new Canadian flag."
++canada.761.d_lib_PM:0 "Louis St. Laurent, undoubtedly one of the great Prime Ministers of his time, has fallen from grace, and has been unseated as Prime Minister in our nation's most recent election. St. Laurent continues to lead a battered Liberal caucus, still reeling from their losses in the recent election. The Liberals continue to stand by the undoubtedly charismatic and popular St. Laurent, despite some tying their loss in the election directly to him. The most likely candidate to replace him in the event he resigns is the popular Minister of Foreign Affairs, Lester B. Pearson, who is also notable for spearheading the charge for designing a new Canadian flag, however other candidates, notably former Cabinet Minister Paul Martin, have been floated as possible contenders."
++canada.761.d:0 "Louis St. Laurent, undoubtedly one of the great Politicians of his time, has fallen from grace, and has failed to capture a Liberal majority in our nation's most recent election. St. Laurent continues to lead a battered Liberal caucus, still reeling from their losses in the recent election. The Liberals continue to stand by the undoubtedly charismatic and popular St. Laurent, despite some tying their loss in the election directly to him. The most likely candidate to replace him in the event he resigns is the popular Diplomat, Lester B. Pearson, who is also notable for spearheading the charge for designing a new Canadian flag, however other candidates, notably former Cabinet Minister Paul Martin, have been floated as possible contenders."
+ canada.761.a:0 "'Mike' Pearson is just the man the Liberals need!"
+ canada.761.b:0 "St. Laurent is a good man and we trust in his leadership."
++canada.761.c:0 "Paul Martin will steer the Grits in the right direction!"
+ 
+ canada.762.t:0 "CCF Leadership Contest"
+ canada.762.d_CCF_PM:0 "The newfound popularity of the [GetCCFLongName] appears to have been short lived - as Major James Coldwell, leader of the party and the first representative of the [GetCCFName] to be elected Prime Minister, has lost Canada’s most recent election, returning the CCF to a minority party within Parliament. In light of the CCF’s loss, Coldwell has officially announced his resignation from leadership of the party, in hopes that his successor can help recapture the [GetCCFLongName]’s lost popularity. Coldwell’s favoured successor is the young upstart Thomas Clement Douglas, a baptist minister and the former Premier of Saskatchewan. Douglas is notable for implementing North America’s single-payer, universal health care program, a program which he promises to expand to the federal level if elected Prime Minister. The other proposed candidate is Hazen Argue, who despite Coldwell mistrusting him, has gained the support of many MPs. With a new head of the CCF, many hope that the party can revive itself and heal from its losses, united and energized under a new banner."
+@@ -3714,7 +3715,7 @@ canada.229.d:0 "While the [From.GetAdjective] government acknowledges that our h
+ canada.229.a:0 "Ah well."
+ 
+ canada.2290.t:0 "Maine Repudiates the Webster-Ashburton Treaty"
+-canada.2290.d:0 "In a bizarre incident with the folks across the border, Maine Governor Lewis O. Barrows has passed a declaration renouncing the Webster-Ashburton Treaty, and recognizing the former disputed zone as part of the Canadian Province of New Brunswick. The Governor has stated that if Canada does not take hold of its rightful territory within two weeks, the State Legislature will refuse to rescind this act, rebuking the legitimacy of the treaty and recognizing the Canadian sector of the Disputed Zone in Québec and New Brunswick as part of the State of Maine. Barrows accordingly has threatened the Prime Minister, stating that he intends to send the Maine National Guard into the disputed zone unless Canada recognizes the redrawn borders.\n\n This altercation has puzzled the Prime Minister, who made a phone call to Governor Barrows to query into the source of this unusual episode. Barrows confessed that their decision was meant to provoke Canada into saving the citizens of the disputed zone from the chaos and lawlessness that has engulfed the State since the outbreak of the Civil War. Prime Minister [CAN_pm_name], rattled by the call, has suggested that Canadian forces could move into Maine and restore order if it is what the majority of the State’s populace wants, and has stated that the Maine National Guard may invade Canadian territory if we refuse."
++canada.2290.d:0 "In a bizarre incident with the folks across the border, Maine Governor Lewis O. Barrows has passed a declaration renouncing the Webster-Ashburton Treaty, and recognizing the former disputed zone as part of the Canadian Province of New Brunswick. The Governor has stated that if Canada does not take hold of its rightful territory within two weeks, the State Legislature will refuse to rescind this act, rebuking the legitimacy of the treaty and recognizing the Canadian sector of the Disputed Zone in Québec and New Brunswick as part of the State of Maine. Barrows accordingly has threatened the Prime Minister, stating that he intends to send the Maine National Guard into the disputed zone unless Canada recognizes the redrawn borders.\n\n This altercation has puzzled the Prime Minister, who made a phone call to Governor Barrows to query into the source of this unusual episode. Barrows confessed that their decision was meant to provoke Canada into saving the citizens of the disputed zone from the chaos and lawlessness that has engulfed the State since the outbreak of the Civil War. Prime Minister [CAN.GetPrimeMinister], rattled by the call, has suggested that Canadian forces could move into Maine and restore order if it is what the majority of the State’s populace wants, and has stated that the Maine National Guard may invade Canadian territory if we refuse."
+ canada.2290.a:0 "Very well then."
+ canada.2290.b:0 "We won't play these games with the Yanks."
+ 
+@@ -4006,8 +4007,8 @@ canada.328.c:0 "King [CAN_king_first_name] takes the Icelandic throne for himsel
+ canada.328.e:0 "Iceland shall enjoy direct rule from Ottawa."
+ 
+ canada.400.t:0 "[CAN_king_full_name] Opens Parliament"
+-canada.400.d:0 "Addressing a joint session of Parliament, [CAN_king_full_name] has commended Prime Minister [CAN_pm_name] on not only passing Bill C-7 but also weathering one of the biggest constitutional crises in recent memory. In addition to the expected praise and commitments to restoring peace and freedom to the Home Isles, the King made an additional unprecedented move: he knighted the Prime Minister. This predictably led to raucous applause from the Canadian contingent in the audience, but even the Exiles showed an increasingly common show of solidarity to their Canadian peers and joined them in the standing ovation."
+-canada.400.a:0 "I dub thee, Sir [CAN_pm_name]."
++canada.400.d:0 "Addressing a joint session of Parliament, [CAN_king_full_name] has commended Prime Minister [CAN.GetPrimeMinister] on not only passing Bill C-7 but also weathering one of the biggest constitutional crises in recent memory. In addition to the expected praise and commitments to restoring peace and freedom to the Home Isles, the King made an additional unprecedented move: he knighted the Prime Minister. This predictably led to raucous applause from the Canadian contingent in the audience, but even the Exiles showed an increasingly common show of solidarity to their Canadian peers and joined them in the standing ovation."
++canada.400.a:0 "I dub thee, Sir [CAN.GetPrimeMinister]."
+ 
+ canada.401.t:0 "Appointing Bible Bill"
+ canada.401.d:0 "With the King’s decision to appoint the SocCreds to the government being announced to the nation today, a telegram has been sent to Albertan Premier and de-facto leader of the SocCreds: William Aberhart, offering him the position of Prime Minister. Leadership of the Federal Government would be beyond the wildest dream of the SocCreds, who didn’t even expect to win their own election; however the prospect of Prime Minister Aberhart is hindered by one key variable: Bible Bill’s firm commitment to his Albertan constituents. Aberhart has been reluctant to assume the position of Prime Minister, viewing it as abandonment of his Albertan constituents. If he were not to assume the position, Aberhart’s strong ally and de-facto second in command Ernest Manning would be a perfect choice for PM, one who Aberhart could easily control while still retaining his position as Premier of Alberta. If Manning would gain the appointment, he would become the youngest Prime Minister in Canadian history at only 27, beating out the previous record holder, Arthur Meighen by almost 20 years."
+@@ -5367,11 +5368,11 @@ entente.324.d:0 "The sudden yet inevitable betrayal of [From.GetNameDef] is clea
+ entente.324.a:0 "How did we not see this coming?"
+ 
+ entente.5000.t:0 "Vertical Developments"
+-entente.5000.d:0 "Utilizing economic ties with domestic businesses and military contractors, we have been able to develop experimental ‘helicopter’ prototypes for the armies of the Entente. Named the Sikorsky R-4 ‘Hoverfly’ and the Platt-LePage XR-1, along with the experimental Type 171 Sycamore of our own design, these unique aerial vehicles were developed in contact with our old American counterparts and are capable of vertical take-off and landing, making them perfect for use in rough terrain. Though expensive and fragile, we have been able to send a few models to the major allies, allowing our armies and the armies of our friends to utilize this unique technology. With our growing airfleet also using autogyros, rotabuggies, and other novel transports devised by crack scientists and our allied lackeys, we shall be able to ferry our populace, our goods, and our troops all around the world without issue or delay while also delivering devastating payloads at a moment’s notice. Just be careful not to crash any, for we only have a fragile few, and they are currently very temperamental and very hard to replace."
++entente.5000.d:0 "Utilizing economic ties with domestic businesses and military contractors, we have been able to develop experimental ‘helicopter’ prototypes for the armies of the Entente. Named the the Platt-LePage XR-1, along with the experimental Type 171 Sycamore of our own design, these unique aerial vehicles were developed in contact with our old American counterparts and are capable of vertical take-off and landing, making them perfect for use in rough terrain. Though expensive and fragile, we have been able to send a few models to the major allies, allowing our armies and the armies of our friends to utilize this unique technology. With our growing airfleet also using autogyros, rotabuggies, and other novel transports devised by crack scientists and our allied lackeys, we shall be able to ferry our populace, our goods, and our troops all around the world without issue or delay while also delivering devastating payloads at a moment’s notice. Just be careful not to crash any, for we only have a fragile few, and they are currently very temperamental and very hard to replace."
+ entente.5000.a:0 "Onwards and upwards!"
+ 
+ entente.5001.t:0 "Experimental Technologies from the Anglos"
+-entente.5001.d:0 "Seeking to put their recent technological breakthroughs to the test, the few Americans friendly to our cause worked feverishly with Entente aeronautical engineers, helping to create new military hardware to be tested on the frontlines here at the fringes of the Entente’s sphere. The centerpiece inventions of these new shipments are the Sikorsky R-4 and the Platt-LePage XR-1, along with the experimental Type 171 Sycamore of Anglo design. These ‘hoverflies’ are unique aircraft that can take off and land vertically, and have been dubbed helicopters by the initial designers. Primarily designed to quickly ferry supplies and precious cargo in and out of rough areas and terrain, some of these helicopters have also been out-fitted with weaponry, functioning as basic light aerial gunships and bombers while also being adept at recon and supply. Looking more like something out of Da Vinci’s sketchbooks and less like a real war machine, we shall give these new helicopters and the other tech the Anglos sent us a thorough testing against the varied enemies of our alliance."
++entente.5001.d:0 "Seeking to put their recent technological breakthroughs to the test, the few Americans friendly to our cause worked feverishly with Entente aeronautical engineers, helping to create new military hardware to be tested on the frontlines here at the fringes of the Entente’s sphere. The centerpiece inventions of these new shipments are the the Platt-LePage XR-1 and the Type 171 Sycamore of Anglo design. These ‘hoverflies’ are unique aircraft that can take off and land vertically, and have been dubbed helicopters by the initial designers. Primarily designed to quickly ferry supplies and precious cargo in and out of rough areas and terrain, some of these helicopters have also been out-fitted with weaponry, functioning as basic light aerial gunships and bombers while also being adept at recon and supply. Looking more like something out of Da Vinci’s sketchbooks and less like a real war machine, we shall give these new helicopters and the other tech the Anglos sent us a thorough testing against the varied enemies of our alliance."
+ entente.5001.a:0 "We will ensure these are put to good use."
+ 
+ entente.2105.t:0 "The UK Proposes the Sterling Area"
+diff --git a/localisation/KR_Texas_l_english.yml b/localisation/KR_Texas_l_english.yml
+index b08ce6e..45d7ffa 100644
+--- a/localisation/KR_Texas_l_english.yml
++++ b/localisation/KR_Texas_l_english.yml
+@@ -1446,11 +1446,11 @@ TXS_one_nation_under_profit_desc:0 "The world shall unite under a single ideolog
+ 
+ USA_bleeding_texas:0 "Bleeding Texas"
+ TXS_looming_crisis:0 "Bleeding Texas"
+-TXS_looming_crisis_desc:0 "Texas has been hit hard in recent years. The fires still burn, the stores are still looted; Texas still is barely under the rule of law. We must respond to this crisis soon, or our nation might collapse"
++TXS_looming_crisis_desc:0 "Texas has been hit hard in recent years. The fires still burn, the stores are still looted; Texas still is barely under the rule of law. We must respond to this crisis soon, or our nation might collapse."
+ TXS_looming_crisis_2:0 "Looming Crisis"
+-TXS_looming_crisis_2_desc:0 "Even though the Minutemen have retreated into the American Union State, and the Reds have fled to Mexico; the Government is still unstable, and a crisis seems imminent"
++TXS_looming_crisis_2_desc:0 "Even though the Minutemen have retreated into the American Union State, and the Reds have fled to Mexico; the Government is still unstable, and a crisis seems imminent."
+ TXS_looming_crisis_3:0 "Restoring Stability"
+-TXS_looming_crisis_3_desc:0 "With the Military being successfully deployed, Texas is gradually becoming safe from looters and criminals. The people of Texas can soon rest easy, knowing that they are now safe in their own homes again"
++TXS_looming_crisis_3_desc:0 "With the Military being successfully deployed, Texas is gradually becoming safe from looters and criminals. The people of Texas can soon rest easy, knowing that they are now safe in their own homes again."
+ TXS_improve_prod_infantry_equipment:0 "Guns of the Lone Star State"
+ TXS_improve_prod_infantry_equipment_desc:0 "Texas has increased administrative oversight for armaments factories. Texan factories are operating more efficiently than ever before."
+ TXS_williams_reorganization:0 "Williams' Reorganization"
+@@ -1844,7 +1844,7 @@ TXS.31.d:0 "With the infighting, and the chaos surrounding the Second American C
+ TXS.31.a:0 "We're glad that this is settled"
+ 
+ TXS.32.t:0 "The Second Republic"
+-TXS.32.d:0 "Texas regaining independence after almost 100 years of sticking with the United States was not something expected, however if history has taught us one thing: it is to expect the unexpected. The collapse of the United States, the fall from grace of the Federal Government in Texas, the Bleeding Texas Crisis that the government left unaddressed, all added fuel to the fire of Texan Secessionism. The loyalty of Texas is not to Washington, to Chicago or New Orleans, but the people of Texas, which will always be put first. We are the Lone Star State, alone by ourselves while America burns around us. We made the grave mistake of joining the union in 1848, but we won’t make that mistake again. \n As the world falls apart around us, our nation chants, “Texas Forever!”"
++TXS.32.d:0 "Texas regaining independence after almost 100 years of sticking with the United States was not something expected, however if history has taught us one thing: it is to expect the unexpected. The collapse of the United States, the fall from grace of the Federal Government in Texas, the Bleeding Texas Crisis that the government left unaddressed, all added fuel to the fire of Texan Secessionism. The loyalty of Texas is not to Washington, to Chicago or New Orleans, but the people of Texas, which will always be put first. We are the Lone Star State, alone by ourselves while America burns around us. We made the grave mistake of joining the union in 1848, but we won’t make that mistake again.\n As the world falls apart around us, our nation chants, “Texas Forever!”"
+ TXS.32.a:0 "...There's a Yellow Rose in Texas..."
+ 
+ TXS.33.t:0 "The Most Decorated Soldier"
+@@ -2205,7 +2205,7 @@ TXS.117.a:0 "Bring them home!"
+ TXS.117.b:0 "Send them out to boost morale!"
+ 
+ TXS.118.t:0 "Collected Western Stories of Robert E. Howard"
+-TXS.118.d:0 "The current revival of American culture has been followed by the renaissance of Westerns as a genre of literature. One interesting case of this is a collection of short stories by Texas writer R. E. Howard, which has just been released. These stories, like 'The Pride of Bear Creek' or 'Pistol Politics', focus on describing adventurous life in the American Frontier. Stories about gunslingers such as the Sonora Kid are especially popular in this genre, appealing to a wide swath of readers. This does not mean, however, that the author wrote Western stories only in this narrowly understood subgenre. Literary works such as the adventures of the Texan traveler Francis Xavier Gordon in 'The Coming of El Borak', 'Hawk of the Hills' or 'The Country of the Knife' or even horrors stories such as 'Black Canaan'  or 'Pigeons from Hell' are all part of the Western genre, even if they are less traditional. Meanwhile, the popularity of Howard's Westerns is now so great that no one remembers the rest of the literary attempts to create other pulp heroes, such as the boring Conan the Barbarian or the naive puritan Solomon Kane."
++TXS.118.d:0 "The current revival of American culture has been followed by the renaissance of Westerns as a genre of literature. One interesting case of this is a collection of short stories by Texas writer R. E. Howard, which has just been released. These stories, like 'The Pride of Bear Creek' or 'Pistol Politics', focus on describing adventurous life in the American Frontier. Stories about gunslingers such as the Sonora Kid are especially popular in this genre, appealing to a wide swath of readers. This does not mean, however, that the author wrote Western stories only in this narrowly understood subgenre. Literary works such as the adventures of the Texan traveler Francis Xavier Gordon in 'The Coming of El Borak', 'Hawk of the Hills' or 'The Country of the Knife' or even horrors stories such as 'Black Canaan' or 'Pigeons from Hell' are all part of the Western genre, even if they are less traditional. Meanwhile, the popularity of Howard's Westerns is now so great that no one remembers the rest of the literary attempts to create other pulp heroes, such as the boring Conan the Barbarian or the naive puritan Solomon Kane."
+ TXS.118.a:0 "Robert E. Howard will be remembered as the Father of Westerns"
+ 
+ TXS.119.t:0 "The Debate over Pensions"
+@@ -2292,7 +2292,7 @@ TXS.134.a:0 "There shall be no concessions, Texas shall span from the Gulf to th
+ TXS.134.b:0 "A New Nation shall rise in Western America."
+ 
+ TXS.135.t:0 "The Johnson City Windmill"
+-TXS.135.d:0 "It has been recently suggested to Lyndon B. Johnson that he fly around in one of our newly-procured prototype helicopters sourced from contacts up north in order to drum up support for his campaign and platform across the Lone Star Republic, owing to the size of Texas and because many Texans live in highly isolated small towns where the roads were usually just mud tracks. Finding the prospect of such an endeavor to be a rootin’ tootin’ adventure, President LBJ jumped on board immediately with gusto as Johnson's campaign dubbed the new aircraft - a Sikorsky R-4 helicopter - the ‘Johnson City Windmill’. Johnson has since made campaign appearances all around Texas six days a week from dawn to dusk and the spectacle has drawn large crowds to fairgrounds and other impromptu landing sites. Due to their experimental nature and recent invention, most people in Texas had never seen such a flying machine as Johnson’s heli, making the aircraft an instant draw with any and all from every walk of life in Texas. One newspaper spoke of Johnson ‘flitting around in a strange sort of flying machine’ that had never been seen in Texas before while others likened him to a modern angel made manifest. Attached to the helicopter was a giant loudspeaker, which allowed Johnson to speak to any audience he could fly over, famously announcing to farmers working their fields as he hovered above them ‘’Hello, down there! This is your friend, Lyndon Johnson, your candidate for the President of the independent Republic of Texas. I hope you'll vote for me on Primary day. And bring along your relatives to vote, too’’. As Johnson campaigned in the Rio Grande valley, one journalist wrote: ‘Johnson brought people rushing out of their homes and places of business as he circled cities in the thickly populated valley, waving his hat and urging people to come and see him’, and with stories like these spreading across the state, there is no doubt that LBJ is more popular, more well known, and more widely beloved than ever as he reaches his widest audience yet. Whether he can turn this popularity into prosperity and political harmony, however, remains yet to be seen. \nCuriously, our armed forces have also shown an interest in Johnson’s Windmill, and have since begun to quietly procure a small fleet of these helicopters while working to set up some form of domestic production for the experimental craft, all in order to help defend the skies of Texas forevermore."
++TXS.135.d:0 "It has been recently suggested to Lyndon B. Johnson that he fly around in one of our newly-procured prototype helicopters sourced from contacts up north in order to drum up support for his campaign and platform across the Lone Star Republic, owing to the size of Texas and because many Texans live in highly isolated small towns where the roads were usually just mud tracks. Finding the prospect of such an endeavor to be a rootin’ tootin’ adventure, President LBJ jumped on board immediately with gusto as Johnson's campaign dubbed the new helicopter the ‘Johnson City Windmill’. Johnson has since made campaign appearances all around Texas six days a week from dawn to dusk and the spectacle has drawn large crowds to fairgrounds and other impromptu landing sites. Due to their experimental nature and recent invention, most people in Texas had never seen such a flying machine as Johnson’s heli, making the aircraft an instant draw with any and all from every walk of life in Texas. One newspaper spoke of Johnson ‘flitting around in a strange sort of flying machine’ that had never been seen in Texas before while others likened him to a modern angel made manifest. Attached to the helicopter was a giant loudspeaker, which allowed Johnson to speak to any audience he could fly over, famously announcing to farmers working their fields as he hovered above them ‘’Hello, down there! This is your friend, Lyndon Johnson, your candidate for the President of the independent Republic of Texas. I hope you'll vote for me on Primary day. And bring along your relatives to vote, too’’. As Johnson campaigned in the Rio Grande valley, one journalist wrote: ‘Johnson brought people rushing out of their homes and places of business as he circled cities in the thickly populated valley, waving his hat and urging people to come and see him’, and with stories like these spreading across the state, there is no doubt that LBJ is more popular, more well known, and more widely beloved than ever as he reaches his widest audience yet. Whether he can turn this popularity into prosperity and political harmony, however, remains yet to be seen.\nCuriously, our armed forces have also shown an interest in Johnson’s Windmill, and have since begun to quietly procure a small fleet of these helicopters while working to set up some form of domestic production for the experimental craft, all in order to help defend the skies of Texas forevermore."
+ TXS.135.a:0 "The fortunate son of Texas takes flight!"
+ 
+ TXS.136.t:0 "Fate of the United States"
+@@ -2301,7 +2301,7 @@ TXS.136.a:0 "The time has come to liquidate this unprofitable asset."
+ TXS.136.b:0 "We refuse to part with America."
+ 
+ TXS.137.t:0 "America Auctioned Off"
+-TXS.137.d:0 "America was once a land of vast opportunity, and it still is. The nature of that opportunity however has been drastically changed. At 6:00 AM today, the former United States went up for sale. Texaco Inc., the overlord of the once-United States, fielded countless lucrative offers from some of the richest and most powerful petroleum companies on the face of Planet Earth. Texaco CEO Rieber, whether out of patriotism or pragmatism, only accepted bids from American concerns.\n First to go was the Pacific, bought up quickly by Chevron, officially Standard Oil Company of California (SOCAL). As a close ally of Texaco, even operating a joint venture by the name of Caltex, SOCAL has been given a favorable price for the Pacific States as a gesture of friendship. \n Much of the territory of the former Western Command Center was purchased by Wyoming-based Sinclair Oil, who in addition to controlling their home state, are now the proud owners of Montana, Idaho, Utah and parts of Colorado. As they assume control of their newly-bought lands, the green Brontosaurus logo adopted by the company now flies above much of the American Rockies, even going so far as to distribute a promotional line of rubber brontosaurus, complete with wiggling heads and tails to their new citizenry. \n Acquiring America's heartland is the Oklahoma-based Marland Oil Company, who have gained much of the former Louisiana Purchase for a fraction of what Thomas Jefferson paid. While Marland's support for the American Union State was frowned on by CEO Rieber, our business is business, and we aren't one to turn down paying customers\n Scoring the South for a very affordable price is Hunt Oil, the company started by Texas Native H.L. Hunt. Hunt, while not on the friendliest terms with Texaco, has been given a steep discount on the Southern United States, mainly owing to his status as a virulent racist and ODP sympathizer.\n Snapping up the Steel Belt is Getty Oil, chaired by Anglo-American Oil Magnate Jean Paul Getty. Getty, famously a miser, has haggled for every mile of territory, even if Texaco was more than happy to part with much of America's Syndicalist Heartland.\n Finally, Standard Oil has obtained New England, as well as their home state of New Jersey and New York City. While Texaco has always maintained a mistrust of the 'Carpetbagger' Standard Oil, Rieber is more than happy to conduct business with them in their own territory.\n Opting to take over control of America's former capital is Texaco themselves, who have aimed to exert their control over the new America by holding on to Washington. The instruments of governance for the old United States have been re-used by a new 'American Oil Consortium', a group representing the Oil Companies presiding over this new America. Together, the Petrol Giants who have come to dominate America will bask in untold profits together, free from the clutches of regulation and government oversight.  "
++TXS.137.d:0 "America was once a land of vast opportunity, and it still is. The nature of that opportunity however has been drastically changed. At 6:00 AM today, the former United States went up for sale. Texaco Inc., the overlord of the once-United States, fielded countless lucrative offers from some of the richest and most powerful petroleum companies on the face of Planet Earth. Texaco CEO Rieber, whether out of patriotism or pragmatism, only accepted bids from American concerns.\nFirst to go was the Pacific, bought up quickly by Chevron, officially Standard Oil Company of California (SOCAL). As a close ally of Texaco, even operating a joint venture by the name of Caltex, SOCAL has been given a favorable price for the Pacific States as a gesture of friendship.\nMuch of the territory of the former Western Command Center was purchased by Wyoming-based Sinclair Oil, who in addition to controlling their home state, are now the proud owners of Montana, Idaho, Utah and parts of Colorado. As they assume control of their newly-bought lands, the green Brontosaurus logo adopted by the company now flies above much of the American Rockies, even going so far as to distribute a promotional line of rubber brontosaurus, complete with wiggling heads and tails to their new citizenry.\nAcquiring America's heartland is the Oklahoma-based Marland Oil Company, who have gained much of the former Louisiana Purchase for a fraction of what Thomas Jefferson paid. While Marland's support for the American Union State was frowned on by CEO Rieber, our business is business, and we aren't one to turn down paying customers\nScoring the South for a very affordable price is Hunt Oil, the company started by Texas Native H.L. Hunt. Hunt, while not on the friendliest terms with Texaco, has been given a steep discount on the Southern United States, mainly owing to his status as a virulent racist and ODP sympathizer.\nSnapping up the Steel Belt is Getty Oil, chaired by Anglo-American Oil Magnate Jean Paul Getty. Getty, famously a miser, has haggled for every mile of territory, even if Texaco was more than happy to part with much of America's Syndicalist Heartland.\nFinally, Standard Oil has obtained New England, as well as their home state of New Jersey and New York City. While Texaco has always maintained a mistrust of the 'Carpetbagger' Standard Oil, Rieber is more than happy to conduct business with them in their own territory.\nOpting to take over control of America's former capital is Texaco themselves, who have aimed to exert their control over the new America by holding on to Washington. The instruments of governance for the old United States have been re-used by a new 'American Oil Consortium', a group representing the Oil Companies presiding over this new America. Together, the Petrol Giants who have come to dominate America will bask in untold profits together, free from the clutches of regulation and government oversight."
+ TXS.137.a:0 "Let us maximize profits together."
+ 
+ TXS.138.t:0 "Expanding Tenayuca’s Women’s Union"
+@@ -2597,7 +2597,7 @@ TXS_deal_with_syndies_desc:0 "The time has come to fight the outsiders who have
+ TXS_radio_broadcasts:0 "On the Radio"
+ TXS_radio_broadcasts_desc:0 "From his early days in the Flour industry, O'Daniel has used the radio to great effect. Through the radio, he has reached a larger audience than ever before, and this audience now clamors to hear his reassuring speeches in even the darkest of days. Even better, O'Daniel has also managed to use his radio following as a political weapon against those who wish to block his agenda."
+ TXS_hunt_waste:0 "Hunt Waste"
+-TXS_hunt_waste_desc:0 "Some of W. Lee O'Daniel's largest foes in Texas were those who promised their constituents money one way or another but then spent it elsewhere, either to enrich themselves or otherwise pursue their own interests. In fact, O'Daniel believes a significant amount of government spending is nothing more than corruption, and it is rarely used to truly benefit the common man. We must change this, and make spending a more economical, and representative, affair."  
++TXS_hunt_waste_desc:0 "Some of W. Lee O'Daniel's largest foes in Texas were those who promised their constituents money one way or another but then spent it elsewhere, either to enrich themselves or otherwise pursue their own interests. In fact, O'Daniel believes a significant amount of government spending is nothing more than corruption, and it is rarely used to truly benefit the common man. We must change this, and make spending a more economical, and representative, affair."
+ TXS_beautiful_texas:0 "Beautiful Texas"
+ TXS_beautiful_texas_desc:0 "This land of the free, established by our ancestors, will be made beautiful once more under the leadership of Pappy O'Daniel. We are proud of our poorest farmers and workers, and no matter where a Texan lives, they will live in the most beautiful country we know."
+ TXS_cut_taxes:0 "Cut Taxes"
+@@ -2742,7 +2742,7 @@ TXS_kingdom_of_liberty_desc:0 "While our nation is a far cry from the once proud
+ TXS_share_our_wealth_kingdom:0 "Every Man a King, but Only One Wears a Crown"
+ TXS_share_our_wealth_kingdom_desc:0 "While Huey Long does have his issues, his message of Sharing the Wealth was one that won over the minds of many a Texan. King Andrew Houston was no exception. Although Long now fights to implement his ideals throughout the United States in a bloody civil war, we are not. Thus, the King has seen fit to issue a decree making Long’s Share the Wealth program the law of the land. Wealthcaps, distribution systems, along with others now form the basis of a Texan safety net. While it will take time to fully implement, in Texas at least, Every Man is a King, but only one wears the Crown!"
+ TXS_break_corruption:0 "Smash Corruption"
+-TXS_break_corruption_desc:0 "While as of yet making little use of them, today the King has made sweeping use of vast political authority, in an anti-corruption campaign. Targeting mostly the remaining Texaco loyalists, Klan members and Republicans, the Texas of today is far different then the one of yesterday. Along with these corrupt individuals being sacked and jailed, a new anti-corruption task force has been forced to ensure its stain never again returns to the Lone Star Kingdom.  "
++TXS_break_corruption_desc:0 "While as of yet making little use of them, today the King has made sweeping use of vast political authority, in an anti-corruption campaign. Targeting mostly the remaining Texaco loyalists, Klan members and Republicans, the Texas of today is far different then the one of yesterday. Along with these corrupt individuals being sacked and jailed, a new anti-corruption task force has been forced to ensure its stain never again returns to the Lone Star Kingdom."
+ TXS_affirm_the_founders:0 "Affirm the Founders' Vision"
+ TXS_affirm_the_founders_desc:0 "America’s Founding Fathers were great men, with great virtue and morals. After all, they created one of the greatest nations on Earth, and before the Civil War and the Dictatorship that now rules over her, one of the freest. That America, unfortunately, is dead, burning with the rest of the nation. Only one place does the vision of the founders live on, and that place is Texas. While we may not be a strict Republic anymore, and a King may rule over us, the Rights to Life, Liberty and the Pursuit of Happiness live on, in the Lone Star Kingdom."
+ TXS_legacy_of_houston:0 "Honor Sam Houston's Legacy"
+@@ -2795,7 +2795,7 @@ TXS_import_german_institutions:0 "German Educational Institutions"
+ TXS_import_german_institutions_desc:0 "The Young state of Texas after its departure from the US has struggled to ensure its local educational system can keep pace with the Union, with aid, expertise and lessons from the most prestigious institutions in Germany, Texas will be one step closer to being the intellectual center of the new world."
+ TXS_oil_supplier_of_the_reich:0 "Oil Fields of the Reich"
+ TXS_oil_supplier_of_the_reich_desc:0 "Germany has always been reliant on the oil of the Caucasus, Arabia or other foreign sources, sources well within the sights of foreign powers, this gives us the unique opportunity as one of the foremost oil producers of the Americas, to serve as the Fuel Silo of the Reichspakt"
+-TXS_german_military_model:0 "Adopt a German Styled Army"    
++TXS_german_military_model:0 "Adopt a German Styled Army"
+ TXS_german_military_model_desc:0 "Though above expectation, it still remains a fact that much of the current Texan army has its roots in its pre independence national guard rather than any truly professional force, we must rectify this with experience from the Reich to form a truly formidable fighting force"
+ TXS_german_identity:0 "The New Texan Identity"
+ TXS_german_identity_desc:0 "Despite the apparent controversy surrounding our regime, under our fair rule the naysayers have been silenced, and the people view themselves as part of the Reich, with our Kaiser a core pillar of the New Texan Identity."
+@@ -2850,7 +2850,7 @@ TXS_tumbleweed_tank_desc:0 "Cheap to produce, easy to assemble, and thought up b
+ TXS_whartons_expertise:0 "Wharton's Determination"
+ TXS_whartons_expertise_desc:0 "John A. Wharton, a commander in 'Terry's Texas Rangers' and perhaps the Confederacy's greatest cavalry commanders, shall become the source of inspiration for our armed forces. As we ride forward with our Steel Steeds, Texas can put their longstanding equine mastery to work defending our country; even if living horses have little place in the modern army."
+ TXS_crocketts_passion:0 "Crockett's Passion"
+-TXS_crocketts_passion_desc:0 "Davy Crockett, the famed coonskin cap wearing soldier of the Texan Revolution who gained fame for being among those to die at the Alamo, has become the symbol of Texas' new infantry-oriented army. As a Volunteer Mounted Riflemen, Crockett's ability to master both the horse and the rifle shall make him the ideal mascot for the Texan Armed Forces.  "
++TXS_crocketts_passion_desc:0 "Davy Crockett, the famed coonskin cap wearing soldier of the Texan Revolution who gained fame for being among those to die at the Alamo, has become the symbol of Texas' new infantry-oriented army. As a Volunteer Mounted Riflemen, Crockett's ability to master both the horse and the rifle shall make him the ideal mascot for the Texan Armed Forces."
+ TXS_texan_motors:0 "Texan Trucks"
+ TXS_texan_motors_desc:0 "Motorization is the way of the future, and as a nation with a rich abundance of domestic oil and gas, replacing our aging cavalry brigades with fresh new motorized brigades shall greatly improve the mobility of the Texan Armed Forces. While cavalry shall still serve an important role, a gradual transition to wheel-based army transportation is ultimately for the best."
+ TXS_ike:0 "Ike's Expertise"
