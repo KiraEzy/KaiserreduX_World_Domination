@@ -7619,7 +7619,6 @@ RUS_establish_rk_RUSINTBAT = {
 				state = 13
 				state = 190
 				state = 191
-				state = 1091
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -7630,7 +7629,6 @@ RUS_establish_rk_RUSINTBAT = {
 		13 = { owner = { OR = { original_tag = RUS is_subject_of = RUS } } }
 		190 = { owner = { OR = { original_tag = RUS is_subject_of = RUS } } }
 		191 = { owner = { OR = { original_tag = RUS is_subject_of = RUS } } }
-		1091 = { owner = { OR = { original_tag = RUS is_subject_of = RUS } } }
 	}
 
 	fire_only_once = yes
@@ -7643,11 +7641,34 @@ RUS_establish_rk_RUSINTBAT = {
 		13 = { add_core_of = RUS }
 		190 = { add_core_of = RUS }
 		191 = { add_core_of = RUS }
-		1091 = { add_core_of = RUS }
 		12 = { transfer_state_to = RUS }
 		13 = { transfer_state_to = RUS }
 		190 = { transfer_state_to = RUS }
 		191 = { transfer_state_to = RUS }
+	}
+}
+
+RUS_establish_rk_RUSINTRIGA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1091 = { owner = { OR = { original_tag = RUS is_subject_of = RUS } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
 		1091 = { transfer_state_to = RUS }
 	}
 }
