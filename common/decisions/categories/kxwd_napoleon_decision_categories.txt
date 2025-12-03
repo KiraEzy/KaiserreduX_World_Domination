@@ -5,12 +5,29 @@
 ################################
 NAP_great_game = {
 	icon = GFX_decision_category_foreign_policy
+	priority = 6
 
 	allowed = {
 		original_tag = NFA
 	}
 
 	visible = { 
-		has_completed_focus = NFE_abandon_the_entente 
+		has_completed_focus = NFA_democratic_restoration 
+	}
+}
+
+NFA_africa_game_NAP = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 5
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		has_completed_focus = NFA_democratic_restoration
+		FAR = {
+        exists = yes
+		}
 	}
 }
