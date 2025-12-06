@@ -5542,7 +5542,6 @@ focus_tree = {
 				name = NFA_Aviation_Cruisers
 				bonus = 1
 				uses = 2
-				category = cl_tech
 				category = ca_tech
 			}
 		}
@@ -16931,6 +16930,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = NFA_our_own_empire
+			hidden_effect = {
+				country_event = { id = flavorfra.116 days = 41 }
+			}
 		}
 	}
 	focus = {

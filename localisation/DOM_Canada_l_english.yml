@@ -53,17 +53,19 @@ CAN_establish_rk_NZLFED:0 "Integrate New Zealand"
 
 CAN_establish_rk_PNGFED:0 "Integrate Papua and Fiji"
 
-CAN_annex_rk_SAFFED:0 "Annex South Africa"
+CAN_annex_rk_SAFFED:0 "Annex South Africa and its army"
 
-CAN_annex_rk_DEHFED:0 "Annex Dominion of Delhi"
+CAN_annex_rk_DEHFED:0 "Annex Dominion of Delhi and its army"
 
-CAN_annex_rk_ASTFED:0 "Annex Australasia"
+CAN_annex_rk_ASTFED:0 "Annex Australasia and its army"
 
 CAN_new_game:0 "Restoring the Empire"
 
-CAN_annex_rk_ZIM:0 "Annex South Rhodesia"
+CAN_new_game_desc:0 "The decision category allow you to annex, integrate and form new colonies and dominions.\n\nIntegration Decision: These decision will transfer the ownership of the highlighted states to you and add core of the state to you. Therefore they will be available under following circumstances:\n- Formed the §YImperial Federation§! or the §0Arch-Imperial Empire of the Supreme Rulership of the Monarch of Great Britain and all it's Territories§!\n- You or your puppet owns all the highlighted states\n- You do not own one of the highlighted states or you do not have core on one of the highlighted states\n\nEstablishing Puppet Decision: These decision will form custom formables once the following conditions are met:\n- You or your puppet owns all the highlighted states\n- You do not have core on all of the highlighted states, as your core would not be transferred to the formed country, if you already have core on all of the highlighted states, it don't works so it is not available.\n\nAnnex decision: On top of the condition on the decision hover description, you also need to form the §YImperial Federation§! or the §0A-IEotSRotMoGBaaiT§!(short form of the formable mentioned above).",
 
-CAN_annex_rk_AFG:0 "Annex the Dominion of Afghanistan"
+CAN_annex_rk_ZIM:0 "Annex South Rhodesia and its army"
+
+CAN_annex_rk_AFG:0 "Annex the Dominion of Afghanistan and its army"
 
 CAN_establish_rk_IRE:0 "Integrate Ireland"
 
@@ -74,6 +76,8 @@ CAN_establish_rk_WGR:0 "Integrate Hannover"
 CAN_establish_rk_CAR:0 "Integrate Gibraltar"
 
 CAN_establish_rk_NRM:0 "Integrate Normandy"
+
+CAN_establish_rk_ICE:0 "Establish Crown Colony of Iceland"
 
 CAN_MEX_OCC:0 "Dominion of Mexico"
 CAN_establish_rk_MEX:0 "Establish Dominion of Mexico"
@@ -111,8 +115,8 @@ CAN_establish_rk_NMB:0 "Establish Crown Colony of Namibia"
 CAN_ANG_OCC:0 "Crown Colony of Angola"
 CAN_establish_rk_ANG:0 "Establish Crown Colony of Angola"
 
-CAN_MZB_OCC:0 "Crown Colony of Mozambiquex"
-CAN_establish_rk_MZB:0 "Establish Crown Colony of Mozambiquex"
+CAN_MZB_OCC:0 "Crown Colony of Mozambique"
+CAN_establish_rk_MZB:0 "Establish Crown Colony of Mozambique"
 
 CAN_KOG_OCC:0 "Crown Colony of Congo"
 CAN_establish_rk_KOG:0 "Establish Crown Colony of Congo"
@@ -147,8 +151,8 @@ CAN_establish_rk_EGY:0 "Establish Crown Colony of Egypt"
 CAN_ETH_OCC:0 "Crown Colony of East Africa"
 CAN_establish_rk_ETH:0 "Establish Crown Colony of East Africa"
 
-CAN_INS_OCC:0 "British East Asia"
-CAN_establish_rk_INS:0 "Establish British East Asia"
+CAN_INS_OCC:0 "British East Indies"
+CAN_establish_rk_INS:0 "Establish British East Indies"
 
 CAN_MLY_OCC:0 "Crown Colony of Malaya"
 CAN_establish_rk_MLY:0 "Establish Crown Colony of Malaya"
@@ -294,4 +298,114 @@ CAN_establish_rk_JAP:0 "Establish Crown Colony of Japan"
 CAN_UKR_OCC:0 "Dominion of Ukraine"
 CAN_establish_rk_UKR:0 "Establish Dominion of Ukraine"
 
-CAN_annex_rk_CAFFED:0 "Annex West Indies"
+CAN_annex_rk_CAFFED:0 "Annex West Indies and its army"
+
+#LEP 
+# The Occupation of the Yangtze River
+UKoccupationNew.95.t:0 ""
+UKoccupationNew.95.d:0 "The expansive and strategically vital region of the Yangtze Basin has been established as the Imperial Dominion of Yangtze. This territory, encompassing the entire Yangtze River basin, represents a crucial asset due to its significant economic, agricultural, and strategic value. As an Imperial Dominion, Yangtze will operate with a blend of local governance and British administrative oversight, ensuring both effective management and integration into our broader imperial strategy. Our focus will be on harnessing the region’s rich natural resources, developing infrastructure, and maximizing its agricultural and industrial potential. The Imperial Dominion of Yangtze will play a key role in reinforcing British influence in East Asia, securing vital trade routes, and enhancing our economic and strategic presence in the region."
+
+#AFG 
+# The Occupation of Afghanistan
+UKoccupationNew.94.t:0 ""
+UKoccupationNew.94.d:0 "The Dominion of Afghanistan has now been established as a self-governing realm within the British Empire, securing the mountain passes and frontier approaches that once threatened India and now safeguard it. Drawing on Afghanistan’s fierce martial traditions and its pivotal position between Central Asia and the Indian subcontinent, this Dominion will serve as both a bulwark against northern rivals and a vital overland corridor for imperial trade and diplomacy. While retaining its own monarch and internal administration under British oversight, the Dominion of Afghanistan will benefit from modern infrastructure, military reform, and economic investment, binding Kabul more closely to London and ensuring that this once-contested frontier becomes a loyal pillar of imperial stability and power."
+
+#SIB 
+# The Occupation of Siberia
+UKoccupationNew.93.t:0 ""
+UKoccupationNew.93.d:0 "The vast and frigid reaches of Siberia have been organized as the Crown Colony of Siberia, securing for the British Empire a dominion of immense resources and unrivalled strategic depth. From the forests and tundra rich in timber, furs, and minerals to the great river systems that link Europe and the Pacific, this colony will serve as a northern engine of industry and a vital overland corridor for imperial commerce. Administered directly by the Crown, the Colony of Siberia will see the expansion of railways, mines, and port facilities, transforming a once-distant frontier into a key pillar of British power in northern Asia and a lasting monument to imperial ambition."
+
+#CRM 
+# The Occupation of Crimea
+UKoccupationNew.92.t:0 ""
+UKoccupationNew.92.d:0 "The sun‑drenched peninsula of Crimea has been constituted as the Crown Colony of Crimea, granting the British Empire a permanent stronghold at the gateway between the Black Sea and the wider Mediterranean. From the fortified harbours of Sevastopol and the thriving ports that ring its coasts to the fertile interior plains, the colony will anchor imperial sea power, safeguard vital trade routes, and project influence deep into Eastern Europe and the Caucasus. Under direct Crown administration, the Crown Colony of Crimea will see its docks, railways, and coastal fortifications expanded, transforming this once-contested battleground into a showcase of British authority and a keystone of imperial strategy in the Black Sea."
+
+#DKB 
+# The Occupation of Don-Kuban
+UKoccupationNew.91.t:0 ""
+UKoccupationNew.91.d:0 "The sweeping steppe lands between the Don and Kuban rivers have been united as the Dominion of Don‑Kuban, giving the British Empire a loyal Cossack frontier state at the gates of the Caucasus. Drawing on the region’s famed cavalry traditions and fertile black-earth plains, this Dominion will serve as both a granary for the Empire and a hardened shield against turmoil in southern Russia and the Near East. Under British guidance but with extensive local self-government, the Dominion of Don‑Kuban will see its ports, railways, and river routes expanded, turning these once-restless borderlands into a prosperous, disciplined bastion of imperial power."
+#AZE 
+# The Occupation of Azerbaijan
+UKoccupationNew.90.t:0 ""
+UKoccupationNew.90.d:0 "The oil-rich lands of Azerbaijan have been established as the Crown Colony of Azerbaijan, securing for the British Empire command of the vast petroleum reserves of Baku and the strategic Caspian littoral. This territory, with its unmatched energy resources and position at the crossroads of Asia, will fuel imperial industry and project power deep into Central Asia and Persia. Under direct Crown administration, the Colony will see expanded refineries, pipelines, and port facilities, transforming this once-contested frontier into a vital engine of British prosperity and influence."
+
+#GEO 
+# The Occupation of Georgia
+UKoccupationNew.89.t:0 ""
+UKoccupationNew.89.d:0 "The ancient kingdom of Georgia has been reconstituted as the Dominion of Georgia within the British Empire, preserving its proud traditions while securing the vital passes of the Caucasus. From the Black Sea ports of Batumi to the mountain fortresses that guard the routes between Europe and Asia, this self-governing Dominion will serve as both a cultural jewel and a strategic bulwark. Under British guidance, Georgia will modernize its infrastructure and economy while maintaining its distinctive heritage, ensuring stability and loyalty in this crucial highland realm."
+
+#ARM 
+# The Occupation of Armenia
+UKoccupationNew.88.t:0 ""
+UKoccupationNew.88.d:0 "The storied lands of Armenia have been established as the Dominion of Armenia, bringing protection and prosperity to a people long buffeted by empire and conflict. This mountainous realm, with its deep Christian heritage and strategic position between the Black and Caspian seas, will flourish under British oversight while retaining extensive self-government. Investment in roads, industry, and agriculture will revitalize the Dominion, transforming Armenia into a loyal partner and a bridge between British interests in the Caucasus and the Middle East."
+
+#ASY 
+# The Occupation of Assyria
+UKoccupationNew.87.t:0 ""
+UKoccupationNew.87.d:0 "The fertile valley between the Tigris and Euphrates, cradle of civilization itself, has been organized as the Crown Colony of Mesopotamia under British rule. From the ancient cities of Baghdad and Basra to the oil fields that promise untold wealth, this colony will anchor imperial power in the Middle East and secure the routes to India. Administered directly by the Crown, Mesopotamia will see the construction of modern infrastructure, irrigation works, and commercial facilities, binding this historic land to the Empire's future."
+
+#TRU 
+# The Occupation of Arabia
+UKoccupationNew.86.t:0 ""
+UKoccupationNew.86.d:0 "The vast deserts and sacred cities of Arabia have been brought under British authority as the Crown Colony of Arabia, ensuring control of the pilgrimage routes and the strategic approaches to the Red Sea and Persian Gulf. From the holy precincts of Mecca and Medina to the emerging oil wealth beneath the sands, this colony will be managed with sensitivity to local custom while advancing imperial interests. Direct Crown administration will bring order, development, and prosperity to a region vital to both commerce and prestige."
+
+#LEB 
+# The Occupation of Levent
+UKoccupationNew.85.t:0 ""
+UKoccupationNew.85.d:0 "The storied shores of the Levant have been established as the Crown Colony of Levant, securing British dominion over the eastern Mediterranean coastline and its historic trade routes. From the bustling ports of Beirut and Tripoli to the inland cities steeped in millennia of history, this colony will serve as a commercial and cultural gateway between Europe, Africa, and Asia. Under Crown administration, the Levant will see expanded harbors, railways, and modern infrastructure, transforming this crossroads of civilizations into a showcase of imperial governance and prosperity."
+
+#HUN 
+# The Occupation of Hungary
+UKoccupationNew.84.t:0 ""
+UKoccupationNew.84.d:0 "The broad plains and historic cities of Hungary have been organized as the Crown Colony of Hungary, bringing British order and investment to the heart of Central Europe. This territory, with its agricultural wealth and strategic position commanding the Danube, will serve as a cornerstone of imperial influence on the continent. Direct Crown administration will modernize industry, agriculture, and infrastructure, binding Hungary firmly to British interests and ensuring stability in a region long torn by rivalry and conflict."
+
+#SER 
+# The Occupation of Yugoslavia
+UKoccupationNew.83.t:0 ""
+UKoccupationNew.83.d:0 "The diverse lands of the South Slavs have been united as the Dominion of Yugoslavia within the British Empire, balancing local autonomy with imperial guidance. From the Adriatic coast to the inland mountains and valleys, this self-governing Dominion will benefit from British investment in railways, ports, and industry while maintaining its own character and traditions. The Dominion of Yugoslavia will serve as a loyal partner in the Balkans, promoting stability and prosperity in a historically turbulent region."
+
+#DDR 
+# The Occupation of Prussia
+UKoccupationNew.82.t:0 ""
+UKoccupationNew.82.d:0 "The disciplined heartland of Prussia has been constituted as the Crown Colony of Prussia, bringing British administration to the very core of German military and industrial power. From the Baltic ports to the factories and estates of the interior, this colony will be thoroughly integrated into the imperial system, its formidable capacities redirected toward peaceful commerce and development. Under direct Crown rule, Prussia will be transformed from a source of continental conflict into a productive member of the British Empire."
+
+#CZE 
+# The Occupation of Czechoslovakia
+UKoccupationNew.81.t:0 ""
+UKoccupationNew.81.d:0 "The historic lands of Bohemia, Moravia, and Slovakia have been joined as the Dominion of Czecho-slovakia, a self-governing realm within the British Empire. With its thriving industries, skilled workforce, and central European position, this Dominion will prosper under British guidance while preserving its distinctive Czech and Slovak cultures. Investment in infrastructure and institutions will ensure that Czecho-slovakia becomes a stable, prosperous partner in maintaining British influence across Central Europe."
+
+#SIE 
+# The Occupation of West Africa
+UKoccupationNew.80.t:0 ""
+UKoccupationNew.80.d:0 "The resource-rich territories of West Africa have been organized as the Crown Colony of West Africa, consolidating British authority along the Atlantic coast and into the interior savannas and forests. From ports handling gold, timber, and agricultural wealth to the development of roads and railways penetrating the hinterland, this colony will be a model of tropical administration. Direct Crown governance will bring order, commerce, and development to a region of immense potential."
+
+#NGR 
+# The Occupation of Nigeria
+UKoccupationNew.79.t:0 ""
+UKoccupationNew.79.d:0 "The populous and diverse lands of Nigeria have been elevated to the status of a Dominion within the British Empire, recognizing its scale and potential while maintaining close imperial ties. With its vast agricultural resources, emerging oil wealth, and position commanding West Africa's heartland, the Dominion of Nigeria will be a cornerstone of British power on the continent. Self-government under British oversight will foster development, education, and prosperity, ensuring Nigeria's loyalty and contribution to the Empire."
+
+#WAD 
+# The Occupation of Central Africa
+UKoccupationNew.78.t:0 ""
+UKoccupationNew.78.d:0 "The expansive interior of Central Africa has been designated the Crown Colony of Central Africa, bringing British rule to vast territories rich in minerals, timber, and agricultural potential. From the great river systems to the highland plateaus, this colony will be systematically developed with infrastructure and governance that unlock its wealth. Under direct Crown administration, Central Africa will be transformed from remote wilderness into a productive imperial asset."
+
+#CMR 
+# The Occupation of Cameroon
+UKoccupationNew.77.t:0 ""
+UKoccupationNew.77.d:0 "The diverse landscapes of Cameroon, from Atlantic coastline to inland mountains and forests, have been established as the Crown Colony of Cameroon under British authority. This territory's agricultural wealth, timber resources, and strategic position will be leveraged to strengthen imperial interests in West-Central Africa. Crown administration will bring modern infrastructure, orderly governance, and economic development to this promising colony."
+
+#KOG 
+# The Occupation of Congo
+UKoccupationNew.76.t:0 ""
+UKoccupationNew.76.d:0 "The vast basin of the Congo River has been organized as the Crown Colony of Congo, securing British control over one of Africa's richest and most strategic territories. From the dense rainforests to the mineral wealth of the interior, this colony presents extraordinary opportunities for development and commerce. Direct Crown administration will ensure responsible governance, infrastructure expansion, and the harnessing of resources that will benefit both the Empire and the local populations."
+
+#ZIM 
+# The Occupation of South Rhodesia
+UKoccupationNew.75.t:0 ""
+UKoccupationNew.75.d:0 "The highlands of Rhodesia have been formally recognized as the Dominion of Rhodesia within the British Empire, honoring the European settlers' contributions while maintaining close imperial bonds. With its temperate climate, mineral wealth, and agricultural potential, this self-governing Dominion will be a pillar of British power in southern Africa. Under British guidance, Rhodesia will continue to develop its economy and infrastructure, serving as a model of settler governance and loyalty to the Crown."
+
+UKoccupationNew.45.d:0 "The humid and verdant coasts of Central America have been unified as the Crown Colony of Central America, securing for the British Empire a vital foothold on the isthmus that links the oceans. Consolidating the territories of British Honduras with the Mosquito Coast and strategic Bay Islands, this colony will serve as a bastion of maritime power and a gateway to the Pacific trade. Under direct Crown administration, the Colony of Central America will see its valuable timber resources, plantations, and harbors developed, transforming a scattered collection of settlements into a coherent and prosperous imperial stronghold in the New World."
+UKoccupationNew.11.d:0 "The sweeping savannas and highlands of East Africa have been constituted as the Crown Colony of East Africa, establishing a permanent British dominion over this vast and varied landscape. From the humid coastal belt and the great port of Mombasa to the fertile White Highlands and the shores of Lake Victoria, this colony will serve as a model of agricultural development and orderly settlement. Under direct Crown administration, the Colony of East Africa will see the expansion of railways, the modernization of farming, and the growth of commerce, binding the diverse peoples and territories of this strategic region into a prosperous and loyal component of the Empire."
+UKoccupationNew.7.d:0 "The Scandinavian kingdoms have been united as the Dominion of Scandinavia, a self-governing realm within the British Empire. Drawing on the shared cultural heritage of Denmark, Norway, and Sweden, this Dominion will preserve its distinctive national identities while integrating into the broader imperial system. Under British guidance, the Dominion of Scandinavia will modernize its infrastructure, industries, and military, ensuring stability and loyalty in this region of strategic importance."
+
+UKoccupationNew.71.d:0 "The rugged and windswept shores of Iceland have been organized as the Dominion of Iceland, securing for the British Empire a permanent stronghold at the edge of the North Atlantic. From the geothermal springs and the fishing villages of the Westfjords to the volcanic peaks of the interior, this dominion will serve as a gateway to the Arctic and a bastion of British influence in the North Atlantic. Under direct Dominion administration, the Dominion of Iceland will see its ports, fisheries, and infrastructure expanded, transforming this remote frontier into a vital asset of British power and commerce."

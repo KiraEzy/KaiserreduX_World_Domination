@@ -1,6 +1,6 @@
 CAN_new_game = {
 	icon = GFX_decision_category_foreign_policy
-
+	
 	allowed = {
 		tag = CAN
 	}
@@ -29,6 +29,10 @@ CAN_IMPFED_game = {
 	}
 
 	visible = {
-		has_completed_focus = CAN_god_save_empire
+		OR = {
+			CAN = { has_cosmetic_tag = ENT_IMPERIAL_FEDERATION }
+			CAN = { has_cosmetic_tag = ENT_IMPERIAL_FEDERATION_HARGRAVE }
+			CAN = { has_cosmetic_tag = ENT_IMPERIAL_FEDERATION_EXTREME }
+		}
 	}
 }

@@ -1,0 +1,7794 @@
+#Imperialism path puppets
+add_namespace = UKoccupationNew
+country_event = {
+	#Revenge!
+	id = UKoccupationNew.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.1"
+	}
+	title = "The Occupation of South Germany"
+	desc = UKoccupation.1.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Kraut shall forever stay under the British boot!"
+		add_political_power = 75
+		custom_effect_tooltip = NFA_germany_will_be_ruled_by_von_kluge
+		hidden_effect = {
+			
+			BAY = {
+				every_core_state = {
+					remove_core_of = BAY
+				}
+			}
+			release = BAY
+			42 = { add_core_of = BAY }
+			50 = { add_core_of = BAY }
+			52 = { add_core_of = BAY }
+			53 = { add_core_of = BAY }
+			54 = { add_core_of = BAY }
+			55 = { add_core_of = BAY }
+			60 = { add_core_of = BAY }
+			780 = { add_core_of = BAY }
+			
+			BAY = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = BAY
+				}
+			}
+			BAY = { 
+				set_cosmetic_tag = CAN_BAY_OCC
+				load_focus_tree = generic_focus            
+                add_ideas = NFA_versaille_treaty_for_GRU
+				create_country_leader = {
+					name = "Günther von Kluge"
+					picture = "gfx/leaders/GER/Portrait_Germany_Gunther_Kluge_kr.png"
+					expire = "1965.1.1"
+					ideology = junta_subtype
+					traits = {
+						hog_respected_war_hero
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration Authority"
+					long_name = "British Administration Authority of South Germany"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration Authority"
+					long_name = "British Administration Authority of South Germany"
+				}
+				set_capital = {
+					state = 60
+				}
+				CAN = {
+					set_autonomy = {
+						target = BAY
+						autonomous_state = canada_british_protectorate
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But France
+	id = UKoccupationNew.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.2"
+	}
+	title = "The Occupation of France"
+	desc = UKoccupation.2.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Franks shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			CAN = {
+				set_state_owner = 15
+				add_state_claim = 15
+			}
+			FRP = {
+				every_core_state = {
+					remove_core_of = FRP
+				}
+			}
+			release = FRP
+			1 = { add_core_of = FRP }
+			16 = { add_core_of = FRP }
+			17 = { add_core_of = FRP }
+			18 = { add_core_of = FRP }
+			19 = { add_core_of = FRP }
+			20 = { add_core_of = FRP }
+			21 = { add_core_of = FRP }
+			22 = { add_core_of = FRP }
+			24 = { add_core_of = FRP }
+			25 = { add_core_of = FRP }
+			26 = { add_core_of = FRP }
+			27 = { add_core_of = FRP }
+			28 = { add_core_of = FRP }
+			29 = { add_core_of = FRP }
+			31 = { add_core_of = FRP }
+			32 = { add_core_of = FRP }
+			33 = { add_core_of = FRP }
+			735 = { add_core_of = FRP }
+			762 = { add_core_of = FRP }
+			763 = { add_core_of = FRP }
+			779 = { add_core_of = FRP }
+			785 = { add_core_of = FRP }
+			817 = { add_core_of = FRP }
+			943 = { add_core_of = FRP }
+			980 = { add_core_of = FRP }
+			984 = { add_core_of = FRP }
+			1334 = { add_core_of = FRP }
+			14 = { add_core_of = FRP }
+			983 = { add_core_of = FRP }
+			23 = { add_core_of = FRP }
+			30 = { add_core_of = FRP }
+			
+			FRP = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = FRP
+				}
+			}
+			FRP = { 
+				set_cosmetic_tag = CAN_FRP_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "George I"
+					picture = "gfx/leaders/CAN/Portrait_Canada_King_GeorgeVI.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = FRP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Russia?
+	id = UKoccupationNew.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.3"
+	}
+	title = "The Occupation of Russia"
+	desc = UKoccupation.3.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Russ shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			RUS = {
+				every_core_state = {
+					remove_core_of = RUS
+				}
+			}
+			release = RUS
+			195 = { add_core_of = RUS }
+			204 = { add_core_of = RUS }
+			205 = { add_core_of = RUS }
+			206 = { add_core_of = RUS }
+			208 = { add_core_of = RUS }
+			209 = { add_core_of = RUS }
+			210 = { add_core_of = RUS }
+			213 = { add_core_of = RUS }
+			214 = { add_core_of = RUS }
+			215 = { add_core_of = RUS }
+			216 = { add_core_of = RUS }
+			217 = { add_core_of = RUS }
+			219 = { add_core_of = RUS }
+			220 = { add_core_of = RUS }
+			222 = { add_core_of = RUS }
+			223 = { add_core_of = RUS }
+			224 = { add_core_of = RUS }
+			236 = { add_core_of = RUS }
+			239 = { add_core_of = RUS }
+			242 = { add_core_of = RUS }
+			243 = { add_core_of = RUS }
+			244 = { add_core_of = RUS }
+			246 = { add_core_of = RUS }
+			247 = { add_core_of = RUS }
+			248 = { add_core_of = RUS }
+			249 = { add_core_of = RUS }
+			250 = { add_core_of = RUS }
+			251 = { add_core_of = RUS }
+			252 = { add_core_of = RUS }
+			253 = { add_core_of = RUS }
+			254 = { add_core_of = RUS }
+			255 = { add_core_of = RUS }
+			256 = { add_core_of = RUS }
+			257 = { add_core_of = RUS }
+			258 = { add_core_of = RUS }
+			260 = { add_core_of = RUS }
+			262 = { add_core_of = RUS }
+			263 = { add_core_of = RUS }
+			264 = { add_core_of = RUS }
+			265 = { add_core_of = RUS }
+			351 = { add_core_of = RUS }
+			397 = { add_core_of = RUS }
+			398 = { add_core_of = RUS }
+			399 = { add_core_of = RUS }
+			400 = { add_core_of = RUS }
+			401 = { add_core_of = RUS }
+			651 = { add_core_of = RUS }
+			652 = { add_core_of = RUS }
+			722 = { add_core_of = RUS }
+			755 = { add_core_of = RUS }
+			1087 = { add_core_of = RUS }
+			1193 = { add_core_of = RUS }
+			1194 = { add_core_of = RUS }
+			1197 = { add_core_of = RUS }
+			1198 = { add_core_of = RUS }
+			1199 = { add_core_of = RUS }
+			1204 = { add_core_of = RUS }
+			1205 = { add_core_of = RUS }
+			1207 = { add_core_of = RUS }
+			1224 = { add_core_of = RUS }
+			1229 = { add_core_of = RUS }
+			1274 = { add_core_of = RUS }
+			1287 = { add_core_of = RUS }
+			1288 = { add_core_of = RUS }
+			1289 = { add_core_of = RUS }
+			1290 = { add_core_of = RUS }
+			1291 = { add_core_of = RUS }
+			1294 = { add_core_of = RUS }
+			1327 = { add_core_of = RUS }
+			1328 = { add_core_of = RUS }
+			
+			RUS = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = RUS
+				}
+			}
+			RUS = { 
+				set_cosmetic_tag = CAN_RUS_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Elizabeth I"
+					picture = "gfx/leaders/CAN/Portrait_Canada_Elizabeth_II.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = RUS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Austria??
+	id = UKoccupationNew.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.4"
+	}
+	title = "The Occupation of Austria"
+	desc = UKoccupation.4.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Austrians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			
+			AUS = {
+				every_core_state = {
+					remove_core_of = AUS
+				}
+			}
+			release = AUS
+			4 = { add_core_of = AUS }
+			39 = { add_core_of = AUS }
+			152 = { add_core_of = AUS }
+			153 = { add_core_of = AUS }
+			775 = { add_core_of = AUS }
+			783 = { add_core_of = AUS }
+			784 = { add_core_of = AUS }
+			835 = { add_core_of = AUS }
+			836 = { add_core_of = AUS }
+			942 = { add_core_of = AUS }
+			1111 = { add_core_of = AUS }
+			1137 = { add_core_of = AUS }
+			1235 = { add_core_of = AUS }
+			1272 = { add_core_of = AUS }
+			
+			AUS = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = AUS
+				}
+			}
+			AUS = { 
+				set_cosmetic_tag = CAN_AUS_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = AUS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Spain???
+	id = UKoccupationNew.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.5"
+	}
+	title = "The Occupation of Spain"
+	desc = UKoccupation.5.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Spaniards shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			SPR = {
+				every_core_state = {
+					remove_core_of = SPR
+				}
+			}
+			release = SPR
+			41 = { add_core_of = SPR }
+			1344 = { add_core_of = SPR }
+			165 = { add_core_of = SPR }
+			166 = { add_core_of = SPR }
+			167 = { add_core_of = SPR }
+			168 = { add_core_of = SPR }
+			169 = { add_core_of = SPR }
+			170 = { add_core_of = SPR }
+			171 = { add_core_of = SPR }
+			172 = { add_core_of = SPR }
+			173 = { add_core_of = SPR }
+			174 = { add_core_of = SPR }
+			175 = { add_core_of = SPR }
+			176 = { add_core_of = SPR }
+			177 = { add_core_of = SPR }
+			178 = { add_core_of = SPR }
+			793 = { add_core_of = SPR }
+			795 = { add_core_of = SPR }
+			940 = { add_core_of = SPR }
+			951 = { add_core_of = SPR }
+			1313 = { add_core_of = SPR }
+			1316 = { add_core_of = SPR }
+			1336 = { add_core_of = SPR }
+			1337 = { add_core_of = SPR }
+			1338 = { add_core_of = SPR }
+			1339 = { add_core_of = SPR }
+			1340 = { add_core_of = SPR }
+			1341 = { add_core_of = SPR }
+			1342 = { add_core_of = SPR }
+			1343 = { add_core_of = SPR }
+			
+			SPR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = SPR
+				}
+			}
+			SPR = { 
+				set_cosmetic_tag = CAN_SPR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = SPR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Italy????
+	id = UKoccupationNew.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.6"
+	}
+	title = "The Occupation of Italy"
+	desc = UKoccupation.6.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Italians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ITA = {
+				every_core_state = {
+					remove_core_of = ITA
+				}
+			}
+			release = ITA
+			2 = { add_core_of = ITA }
+			114 = { add_core_of = ITA }
+			115 = { add_core_of = ITA }
+			117 = { add_core_of = ITA }
+			156 = { add_core_of = ITA }
+			157 = { add_core_of = ITA }
+			158 = { add_core_of = ITA }
+			159 = { add_core_of = ITA }
+			160 = { add_core_of = ITA }
+			161 = { add_core_of = ITA }
+			162 = { add_core_of = ITA }
+			742 = { add_core_of = ITA }
+			759 = { add_core_of = ITA }
+			764 = { add_core_of = ITA }
+			837 = { add_core_of = ITA }
+			838 = { add_core_of = ITA }
+			1002 = { add_core_of = ITA }
+			1003 = { add_core_of = ITA }
+			1004 = { add_core_of = ITA }
+			1005 = { add_core_of = ITA }
+			1006 = { add_core_of = ITA }
+			1149 = { add_core_of = ITA }
+			1236 = { add_core_of = ITA }
+			
+			ITA = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ITA
+				}
+			}
+			ITA = { 
+				set_cosmetic_tag = CAN_ITA_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Albert I"
+					picture = "gfx/leaders/CAN/Portrait_Canada_King_Albert.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ITA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Scandinavian?????
+	id = UKoccupationNew.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.7"
+	}
+	title = "The Occupation of Scandinavia"
+	desc = UKoccupation.7.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Scandinavians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			NOR = {
+				every_core_state = {
+					remove_core_of = NOR
+				}
+			}
+			release = NOR
+			37 = { add_core_of = NOR }
+			38 = { add_core_of = NOR }
+			58 = { add_core_of = NOR }
+			99 = { add_core_of = NOR }
+			110 = { add_core_of = NOR }
+			111 = { add_core_of = NOR }
+			124 = { add_core_of = NOR }
+			138 = { add_core_of = NOR }
+			139 = { add_core_of = NOR }
+			140 = { add_core_of = NOR }
+			141 = { add_core_of = NOR }
+			142 = { add_core_of = NOR }
+			143 = { add_core_of = NOR }
+			144 = { add_core_of = NOR }
+			145 = { add_core_of = NOR }
+			146 = { add_core_of = NOR }
+			147 = { add_core_of = NOR }
+			148 = { add_core_of = NOR }
+			149 = { add_core_of = NOR }
+			150 = { add_core_of = NOR }
+			337 = { add_core_of = NOR }
+			666 = { add_core_of = NOR }
+			778 = { add_core_of = NOR }
+			782 = { add_core_of = NOR }
+			839 = { add_core_of = NOR }
+			840 = { add_core_of = NOR }
+			844 = { add_core_of = NOR }
+			863 = { add_core_of = NOR }
+			864 = { add_core_of = NOR }
+			865 = { add_core_of = NOR }
+			908 = { add_core_of = NOR }
+			909 = { add_core_of = NOR }
+			936 = { add_core_of = NOR }
+			937 = { add_core_of = NOR }
+			960 = { add_core_of = NOR }
+			1146 = { add_core_of = NOR }
+			1147 = { add_core_of = NOR }
+			1324 = { add_core_of = NOR }
+			1325 = { add_core_of = NOR }
+			1326 = { add_core_of = NOR }
+			
+			NOR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = NOR
+				}
+			}
+			NOR = { 
+				set_cosmetic_tag = CAN_NOR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Henry I"
+					picture = "gfx/leaders/CAN/Portrait_Canada_King_Henry.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "House of Windsor"
+					long_name = "House of Windsor"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = NOR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Brazil????
+	id = UKoccupationNew.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.8"
+	}
+	title = "The Occupation of Brazil"
+	desc = UKoccupation.8.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Brazilians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			BRA = {
+				every_core_state = {
+					remove_core_of = BRA
+				}
+			}
+			release = BRA
+			280 = { add_core_of = BRA }
+			495 = { add_core_of = BRA }
+			496 = { add_core_of = BRA }
+			497 = { add_core_of = BRA }
+			498 = { add_core_of = BRA }
+			499 = { add_core_of = BRA }
+			500 = { add_core_of = BRA }
+			501 = { add_core_of = BRA }
+			502 = { add_core_of = BRA }
+			503 = { add_core_of = BRA }
+			504 = { add_core_of = BRA }
+			505 = { add_core_of = BRA }
+			855 = { add_core_of = BRA }
+			894 = { add_core_of = BRA }
+			895 = { add_core_of = BRA }
+			896 = { add_core_of = BRA }
+			898 = { add_core_of = BRA }
+			900 = { add_core_of = BRA }
+			1030 = { add_core_of = BRA }
+			1031 = { add_core_of = BRA }
+			1033 = { add_core_of = BRA }
+			1040 = { add_core_of = BRA }
+			1041 = { add_core_of = BRA }
+			1043 = { add_core_of = BRA }
+			1305 = { add_core_of = BRA }
+			1306 = { add_core_of = BRA }
+			1307 = { add_core_of = BRA }
+			1310 = { add_core_of = BRA }
+			1311 = { add_core_of = BRA }
+			
+			BRA = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = BRA
+				}
+			}
+			BRA = { 
+				set_cosmetic_tag = BRA_CAN_DOMINION
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Hugh Gurney"
+					picture = "gfx/leaders/WDCAN/Hugh-Gurney.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = BRA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Egypt????
+	id = UKoccupationNew.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.10"
+	}
+	title = "The Occupation of Egypt"
+	desc = UKoccupation.10.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Egyptian shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			EGY = {
+				every_core_state = {
+					remove_core_of = EGY
+				}
+			}
+			release = EGY
+			446 = { add_core_of = EGY }
+			447 = { add_core_of = EGY }
+			452 = { add_core_of = EGY }
+			456 = { add_core_of = EGY }
+			457 = { add_core_of = EGY }
+			549 = { add_core_of = EGY }
+			551 = { add_core_of = EGY }
+			552 = { add_core_of = EGY }
+			862 = { add_core_of = EGY }
+			1007 = { add_core_of = EGY }
+			1008 = { add_core_of = EGY }
+			1010 = { add_core_of = EGY }
+			1011 = { add_core_of = EGY }
+			
+			EGY = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = EGY
+				}
+			}
+			EGY = { 
+				set_cosmetic_tag = CAN_EGY_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Miles Wedderburn Lampson"
+					picture = "gfx/leaders/WDCAN/Miles-Wedderburn-Lampson.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Colonial Authority of Egypt"
+					long_name = "British Colonial Authority of Egypt"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Colonial Authority of Egypt"
+					long_name = "British Colonial Authority of Egypt"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = EGY
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But East Africa????
+	id = UKoccupationNew.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.11"
+	}
+	title = "The Occupation of East Africa"
+	desc = UKoccupationNew.11.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The African shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ETH = {
+				every_core_state = {
+					remove_core_of = ETH
+				}
+			}
+			release = ETH
+			268 = { add_core_of = ETH }
+			269 = { add_core_of = ETH }
+			271 = { add_core_of = ETH }
+			550 = { add_core_of = ETH }
+			559 = { add_core_of = ETH }
+			906 = { add_core_of = ETH }
+			919 = { add_core_of = ETH }
+			920 = { add_core_of = ETH }
+			921 = { add_core_of = ETH }
+			922 = { add_core_of = ETH }
+			923 = { add_core_of = ETH }
+			924 = { add_core_of = ETH }
+			944 = { add_core_of = ETH }
+			961 = { add_core_of = ETH }
+			1297 = { add_core_of = ETH }
+			
+			ETH = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ETH
+				}
+			}
+			ETH = { 
+				set_cosmetic_tag = CAN_ETH_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Robert Brooke Popham"
+					picture = "gfx/leaders/WDCAN/Robert-Brooke_Popham.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Colonial Authority of Ethiopia"
+					long_name = "British Colonial Authority of Ethiopia"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Colonial Authority of Ethiopia"
+					long_name = "British Colonial Authority of Ethiopia"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ETH
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Patagonia????
+	id = UKoccupationNew.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.12"
+	}
+	title = "The Occupation of Patagonia"
+	desc = UKoccupation.12.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Patagonian shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ARG = {
+				every_core_state = {
+					remove_core_of = ARG
+				}
+			}
+			release = ARG
+			270 = { add_core_of = ARG }
+			278 = { add_core_of = ARG }
+			279 = { add_core_of = ARG }
+			449 = { add_core_of = ARG }
+			507 = { add_core_of = ARG }
+			508 = { add_core_of = ARG }
+			509 = { add_core_of = ARG }
+			510 = { add_core_of = ARG }
+			511 = { add_core_of = ARG }
+			512 = { add_core_of = ARG }
+			579 = { add_core_of = ARG }
+			874 = { add_core_of = ARG }
+			901 = { add_core_of = ARG }
+			902 = { add_core_of = ARG }
+			903 = { add_core_of = ARG }
+			904 = { add_core_of = ARG }
+			1028 = { add_core_of = ARG }
+			1029 = { add_core_of = ARG }
+			1074 = { add_core_of = ARG }
+			
+			ARG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ARG
+				}
+			}
+			ARG = { 
+				set_cosmetic_tag = CAN_ARG_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Bernard Rawdon Reilly"
+					picture = "gfx/leaders/WDCAN/BERNARD-RAWDON-REILLY.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ARG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Urugray????
+	id = UKoccupationNew.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.13"
+	}
+	title = "The Occupation of Urugray"
+	desc = UKoccupation.13.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Urugrays shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+
+			URG = {
+				every_core_state = {
+					remove_core_of = URG
+				}
+			}
+			release = URG
+			300 = { add_core_of = URG }
+			
+			URG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = URG
+				}
+			}
+			URG = { 
+				set_cosmetic_tag = CAN_URG_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Andrew Caldecott"
+					picture = "gfx/leaders/WDCAN/Andrew-Caldecott.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = URG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Morocco????
+	id = UKoccupationNew.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.14"
+	}
+	title = "The Occupation of Morocco"
+	desc = UKoccupation.14.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Moroccian shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MOR = {
+				every_core_state = {
+					remove_core_of = MOR
+				}
+			}
+			release = MOR
+			1318 = { add_core_of = MOR }
+			461 = { add_core_of = MOR }
+			462 = { add_core_of = MOR }
+			699 = { add_core_of = MOR }
+			290 = { add_core_of = MOR }
+			
+			MOR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MOR
+				}
+			}
+			MOR = { 
+				set_cosmetic_tag = CAN_MOR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Frederick Lugard"
+					picture = "gfx/leaders/WDCAN/Frederick-Lugard.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "UEL"
+					long_name = "United Empire League (Moroccan Loyalists)"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "UEL"
+					long_name = "United Empire League (Moroccan Loyalists)"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MOR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Urugray????
+	id = UKoccupationNew.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.13"
+	}
+	title = "The Occupation of Paraguay"
+	desc = UKoccupation.17.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Paraguays shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			PAR = {
+				every_core_state = {
+					remove_core_of = PAR
+				}
+			}
+			release = PAR
+			301 = { add_core_of = PAR }
+			688 = { add_core_of = PAR }
+			
+			PAR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = PAR
+				}
+			}
+			PAR = { 
+				set_cosmetic_tag = CAN_PAR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Sir Malcolm Robertson"
+					picture = "gfx/leaders/WDCAN/Sir-Malcolm-Robertson.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = PAR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Peru????
+	id = UKoccupationNew.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.13"
+	}
+	title = "The Occupation of Peru"
+	desc = UKoccupation.18.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Peruvian shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			PRU = {
+				every_core_state = {
+					remove_core_of = PRU
+				}
+			}
+			release = PRU
+			872 = { add_core_of = PRU }
+			303 = { add_core_of = PRU }
+			845 = { add_core_of = PRU }
+			491 = { add_core_of = PRU }
+			492 = { add_core_of = PRU }
+			494 = { add_core_of = PRU }
+			
+			PRU = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = PRU
+				}
+			}
+			PRU = { 
+				set_cosmetic_tag = CAN_PRU_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Courtenay Walter Forbes"
+					picture = "gfx/leaders/WDCAN/Courtenay-Walter-Forbes.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = PRU
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Bolivia????
+	id = UKoccupationNew.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.19"
+	}
+	title = "The Occupation of Bolivia"
+	desc = UKoccupation.19.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Bolivians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			BOL = {
+				every_core_state = {
+					remove_core_of = BOL
+				}
+			}
+			release = BOL
+			1073 = { add_core_of = BOL }
+			302 = { add_core_of = BOL }
+			487 = { add_core_of = BOL }
+			847 = { add_core_of = BOL }
+			848 = { add_core_of = BOL }
+			506 = { add_core_of = BOL }
+			873 = { add_core_of = BOL }
+			1027 = { add_core_of = BOL }
+			BOL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = BOL
+				}
+			}
+			BOL = { 
+				set_cosmetic_tag = CAN_BOL_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Sir Robert Carminowe Michell"
+					picture = "gfx/leaders/WDCAN/Sir-Robert-Carminowe-Michell.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = BOL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Colombia????
+	id = UKoccupationNew.21
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.21"
+	}
+	title = "The Occupation of Colombia"
+	desc = UKoccupation.21.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Columbian shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			COL = {
+				every_core_state = {
+					remove_core_of = COL
+				}
+			}
+			release = COL
+			305 = { add_core_of = COL }
+			306 = { add_core_of = COL }
+			307 = { add_core_of = COL }
+			486 = { add_core_of = COL }
+			488 = { add_core_of = COL }
+			489 = { add_core_of = COL }
+			490 = { add_core_of = COL }
+			493 = { add_core_of = COL }
+			649 = { add_core_of = COL }
+			849 = { add_core_of = COL }
+			850 = { add_core_of = COL }
+			851 = { add_core_of = COL }
+			852 = { add_core_of = COL }
+			853 = { add_core_of = COL }
+			912 = { add_core_of = COL }
+			1036 = { add_core_of = COL }
+			1214 = { add_core_of = COL }
+			1215 = { add_core_of = COL }
+			1216 = { add_core_of = COL }
+			1280 = { add_core_of = COL }
+			1296 = { add_core_of = COL }
+			
+			COL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = COL
+				}
+			}
+			COL = { 
+				set_cosmetic_tag = CAN_COL_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "William Seeds"
+					picture = "gfx/leaders/WDCAN/William-Seeds.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = COL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Suriname????
+	id = UKoccupationNew.22
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.22"
+	}
+	title = "The Occupation of Greece"
+	desc = UKoccupation.22.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Greece shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			GRE = {
+				every_core_state = {
+					remove_core_of = GRE
+				}
+			}
+			release = GRE
+			47 = { add_core_of = GRE }
+			164 = { add_core_of = GRE }
+			182 = { add_core_of = GRE }
+			183 = { add_core_of = GRE }
+			184 = { add_core_of = GRE }
+			185 = { add_core_of = GRE }
+			186 = { add_core_of = GRE }
+			187 = { add_core_of = GRE }
+			339 = { add_core_of = GRE }
+			340 = { add_core_of = GRE }
+			341 = { add_core_of = GRE }
+			342 = { add_core_of = GRE }
+			731 = { add_core_of = GRE }
+			758 = { add_core_of = GRE }
+			766 = { add_core_of = GRE }
+			768 = { add_core_of = GRE }
+			769 = { add_core_of = GRE }
+			773 = { add_core_of = GRE }
+			939 = { add_core_of = GRE }
+			989 = { add_core_of = GRE }
+			1076 = { add_core_of = GRE }
+			
+			GRE = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = GRE
+				}
+			}
+			GRE = { 
+				set_cosmetic_tag = CAN_GRC_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = GRE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Benelux????
+	id = UKoccupationNew.25
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.25"
+	}
+	title = "The Occupation of Central Asia"
+	desc = UKoccupation.25.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Islams shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			TRK = {
+				every_core_state = {
+					remove_core_of = TRK
+				}
+			}
+			release = TRK
+			402 = { add_core_of = TRK }
+			404 = { add_core_of = TRK }
+			405 = { add_core_of = TRK }
+			406 = { add_core_of = TRK }
+			407 = { add_core_of = TRK }
+			583 = { add_core_of = TRK }
+			584 = { add_core_of = TRK }
+			585 = { add_core_of = TRK }
+			586 = { add_core_of = TRK }
+			587 = { add_core_of = TRK }
+			588 = { add_core_of = TRK }
+			589 = { add_core_of = TRK }
+			590 = { add_core_of = TRK }
+			712 = { add_core_of = TRK }
+			732 = { add_core_of = TRK }
+			810 = { add_core_of = TRK }
+			861 = { add_core_of = TRK }
+			1042 = { add_core_of = TRK }
+			1196 = { add_core_of = TRK }
+			1203 = { add_core_of = TRK }
+			1208 = { add_core_of = TRK }
+			1209 = { add_core_of = TRK }
+			1210 = { add_core_of = TRK }
+			1211 = { add_core_of = TRK }
+			1212 = { add_core_of = TRK }
+			1275 = { add_core_of = TRK }
+			1276 = { add_core_of = TRK }
+			1277 = { add_core_of = TRK }
+			1278 = { add_core_of = TRK }
+			1279 = { add_core_of = TRK }
+			1281 = { add_core_of = TRK }
+			
+			TRK = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = TRK
+				}
+			}
+			TRK = { 
+				set_cosmetic_tag = CAN_TRK_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = TRK
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But sinkiang????
+	id = UKoccupationNew.26
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.26"
+	}
+	title = "The Occupation Sinkiang"
+	desc = UKoccupation.26.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Chinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			SIK = {
+				every_core_state = {
+					remove_core_of = SIK
+				}
+			}
+			release = SIK
+			287 = { add_core_of = SIK }
+			617 = { add_core_of = SIK }
+			618 = { add_core_of = SIK }
+			619 = { add_core_of = SIK }
+			897 = { add_core_of = SIK }
+			1083 = { add_core_of = SIK }
+			1085 = { add_core_of = SIK }
+			
+			SIK = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = SIK
+				}
+			}
+			SIK = { 
+				set_cosmetic_tag = CAN_SIK_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Khalid Sheldrake"
+					desc = ""
+					picture = "gfx/leaders/ETS/Portrait_ETS_Khalid_Sheldrake.png"
+					expire = "1965.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = SIK
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Tibet????
+	id = UKoccupationNew.27
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.27"
+	}
+	title = "The Occupation of Tibet"
+	desc = UKoccupation.27.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Tibetians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			TIB = {
+				every_core_state = {
+					remove_core_of = TIB
+				}
+			}
+			release = TIB
+
+			322 = { add_core_of = TIB }
+			1086 = { add_core_of = TIB }
+			693 = { add_core_of = TIB }
+			748 = { add_core_of = TIB }
+			353 = { add_core_of = TIB }
+			
+			
+			TIB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = TIB
+				}
+			}
+			TIB = {
+				set_cosmetic_tag = CAN_TIB_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = TIB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But persia????
+	id = UKoccupationNew.28
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.28"
+	}
+	title = "The Occupation of Persia"
+	desc = UKoccupation.28.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Persians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			PER = {
+				every_core_state = {
+					remove_core_of = PER
+				}
+			}
+			release = PER
+			266 = { add_core_of = PER }
+			410 = { add_core_of = PER }
+			411 = { add_core_of = PER }
+			412 = { add_core_of = PER }
+			413 = { add_core_of = PER }
+			414 = { add_core_of = PER }
+			416 = { add_core_of = PER }
+			417 = { add_core_of = PER }
+			418 = { add_core_of = PER }
+			419 = { add_core_of = PER }
+			420 = { add_core_of = PER }
+			421 = { add_core_of = PER }
+			804 = { add_core_of = PER }
+			
+			PER = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = PER
+				}
+			}
+			PER = { 
+				set_cosmetic_tag = CAN_PER_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = PER
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But persia????
+	id = UKoccupationNew.30
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.30"
+	}
+	title = "The Occupation of Turkey"
+	desc = UKoccupation.30.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Turkeys shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			TUR = {
+				every_core_state = {
+					remove_core_of = TUR
+				}
+			}
+			release = TUR
+			49 = { add_core_of = TUR }
+			343 = { add_core_of = TUR }
+			345 = { add_core_of = TUR }
+			346 = { add_core_of = TUR }
+			355 = { add_core_of = TUR }
+			356 = { add_core_of = TUR }
+			
+			TUR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = TUR
+				}
+			}
+			TUR = { 
+				set_cosmetic_tag = CAN_TUR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = TUR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But persia????
+	id = UKoccupationNew.32
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.32"
+	}
+	title = "The Occupation of Indochina"
+	desc = UKoccupation.32.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Indochinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			INC = {
+				every_core_state = {
+					remove_core_of = INC
+				}
+			}
+			release = INC
+			286 = { add_core_of = INC }
+			289 = { add_core_of = INC }
+			670 = { add_core_of = INC }
+			671 = { add_core_of = INC }
+			724 = { add_core_of = INC }
+			750 = { add_core_of = INC }
+			822 = { add_core_of = INC }
+			823 = { add_core_of = INC }
+			824 = { add_core_of = INC }
+			825 = { add_core_of = INC }
+			826 = { add_core_of = INC }
+			827 = { add_core_of = INC }
+			856 = { add_core_of = INC }
+			857 = { add_core_of = INC }
+			882 = { add_core_of = INC }
+			
+			INC = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = INC
+				}
+			}
+			INC = { 
+				set_cosmetic_tag = CAN_INC_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Sir Reginald Tyrwhitt"
+					picture = "gfx/leaders/WDCAN/Reginald-Tyrwhitt.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Indochina Colonial Committee"
+					long_name = "British Indochina Colonial Committee"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Indochina Colonial Committee"
+					long_name = "British Indochina Colonial Committee"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = INC
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But persia????
+	id = UKoccupationNew.33
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.33"
+	}
+	title = "The Occupation of Philipines"
+	desc = UKoccupation.33.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Philipines shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			PHI = {
+				every_core_state = {
+					remove_core_of = PHI
+				}
+			}
+			release = PHI
+			327 = { add_core_of = PHI }
+			623 = { add_core_of = PHI }
+			624 = { add_core_of = PHI }
+			625 = { add_core_of = PHI }
+			626 = { add_core_of = PHI }
+			627 = { add_core_of = PHI }
+			628 = { add_core_of = PHI }
+			
+			PHI = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = PHI
+				}
+			}
+			PHI = { 
+				set_cosmetic_tag = CAN_PHI_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Geoffry Alexander Stafford Northcote"
+					picture = "gfx/leaders/WDCAN/Geoffry-Alexander-Stafford-Northcote.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Colonial Administration"
+					long_name = "British Colonial Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Colonial Administration"
+					long_name = "British Colonial Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = PHI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But mexico????
+	id = UKoccupationNew.34
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.33"
+	}
+	title = "The Occupation of Mexico"
+	desc = UKoccupation.34.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Mexicans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MEX = {
+				every_core_state = {
+					remove_core_of = MEX
+				}
+			}
+			release = MEX
+			277 = { add_core_of = MEX }
+			474 = { add_core_of = MEX }
+			475 = { add_core_of = MEX }
+			476 = { add_core_of = MEX }
+			477 = { add_core_of = MEX }
+			478 = { add_core_of = MEX }
+			479 = { add_core_of = MEX }
+			480 = { add_core_of = MEX }
+			481 = { add_core_of = MEX }
+			482 = { add_core_of = MEX }
+			483 = { add_core_of = MEX }
+			484 = { add_core_of = MEX }
+			485 = { add_core_of = MEX }
+			1252 = { add_core_of = MEX }
+			1253 = { add_core_of = MEX }
+			1254 = { add_core_of = MEX }
+			1255 = { add_core_of = MEX }
+			
+			MEX = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MEX
+				}
+			}
+			MEX = { 
+				set_cosmetic_tag = CAN_MEX_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Edumun Monson"
+					picture = "gfx/leaders/WDCAN/Edumond-Monson.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MEX
+						autonomous_state = canada_british_protectorate
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But africa????
+	id = UKoccupationNew.37
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.36"
+	}
+	title = "The Occupation of Africa"
+	desc = UKoccupation.36.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Africans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			KEN = {
+				every_core_state = {
+					remove_core_of = KEN
+				}
+			}
+			release = KEN
+			546 = { add_core_of = KEN }
+			547 = { add_core_of = KEN }
+			548 = { add_core_of = KEN }
+			869 = { add_core_of = KEN }
+			870 = { add_core_of = KEN }
+			892 = { add_core_of = KEN }
+			899 = { add_core_of = KEN }
+			905 = { add_core_of = KEN }
+			918 = { add_core_of = KEN }
+			925 = { add_core_of = KEN }
+			965 = { add_core_of = KEN }
+			969 = { add_core_of = KEN }
+			970 = { add_core_of = KEN }
+			1032 = { add_core_of = KEN }
+			
+			KEN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = KEN
+				}
+			}
+			KEN = { 
+				set_cosmetic_tag = CAN_KEN_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Jack Churchill"
+					desc = ""
+					picture = "gfx/leaders/KEN/KEN_Jack_Churchill.png"
+					expire = "1965.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					long_name = "United Empire League (Kenyan Loyalists)"
+					name = "UEL"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = "United Empire League (Kenyan Loyalists)"
+					name = "UEL"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = KEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But mexico????
+	id = UKoccupationNew.38
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.38"
+	}
+	title = "The Occupation of Mozambique"
+	desc = UKoccupation.38.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		#
+		name = "The Mozambiques shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MZB = {
+				every_core_state = {
+					remove_core_of = MZB
+				}
+			}
+			release = MZB
+			544 = { add_core_of = MZB }
+			950 = { add_core_of = MZB }
+			954 = { add_core_of = MZB }
+			
+			MZB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MZB
+				}
+			}
+			MZB = { 
+				set_cosmetic_tag = CAN_MZB_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Joseph Aloysius Byrne"
+					picture = "gfx/leaders/WDCAN/Joseph-Aloysius-Byrne.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MZB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But namibians????
+	id = UKoccupationNew.39
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.39"
+	}
+	title = "The Occupation of Namibian"
+	desc = UKoccupation.39.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Namibians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			NMB = {
+				every_core_state = {
+					remove_core_of = NMB
+				}
+			}
+			release = NMB
+			541 = { add_core_of = NMB }
+			964 = { add_core_of = NMB }
+			
+			NMB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = NMB
+				}
+			}
+			NMB = { 
+				set_cosmetic_tag = CAN_NMB_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Donald Charles Cameron"
+					picture = "gfx/leaders/WDCAN/Donald-Charles-Cameron.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = NMB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	#Revenge! But namibians????
+	id = UKoccupationNew.40
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.40"
+	}
+	title = "The Occupation of Angola"
+	desc = UKoccupation.40.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Angolians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ANG = {
+				every_core_state = {
+					remove_core_of = ANG
+				}
+			}
+			release = ANG
+			540 = { add_core_of = ANG }
+			914 = { add_core_of = ANG }
+			916 = { add_core_of = ANG }
+			917 = { add_core_of = ANG }
+			959 = { add_core_of = ANG }
+			
+			ANG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ANG
+				}
+			}
+			ANG = { 
+				set_cosmetic_tag = CAN_ANG_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Edward Grigg"
+					picture = "gfx/leaders/WDCAN/Edward-Grigg.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					long_name = "United Empire League (Angolan Loyalists)"
+					name = "UEL"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = "United Empire League (Angolan Loyalists)"
+					name = "UEL"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ANG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Tunisia????
+	id = UKoccupationNew.41
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.41"
+	}
+	title = "The Occupation of North Africa"
+	desc = UKoccupation.41.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The North African shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			TUN = {
+				every_core_state = {
+					remove_core_of = TUN
+				}
+			}
+			release = TUN
+			273 = { add_core_of = TUN }
+			448 = { add_core_of = TUN }
+			450 = { add_core_of = TUN }
+			451 = { add_core_of = TUN }
+			458 = { add_core_of = TUN }
+			459 = { add_core_of = TUN }
+			460 = { add_core_of = TUN }
+			513 = { add_core_of = TUN }
+			514 = { add_core_of = TUN }
+			663 = { add_core_of = TUN }
+			665 = { add_core_of = TUN }
+			805 = { add_core_of = TUN }
+			1009 = { add_core_of = TUN }
+			
+			TUN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = TUN
+				}
+			}
+			TUN = { 
+				set_cosmetic_tag = CAN_TUN_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "George Lloyd"
+					picture = "gfx/leaders/ENG/Portrait_Wales_David_Lloyd_George.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "UEL"
+					long_name = "United Empire League (Tunisian Loyalists)"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "UEL"
+					long_name = "United Empire League (Tunisian Loyalists)"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = TUN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Thailand????
+	id = UKoccupationNew.43
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.43"
+	}
+	title = "The Occupation of East Indies"
+	desc = UKoccupation.43.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The East Indies shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			INS = {
+				every_core_state = {
+					remove_core_of = INS
+				}
+			}
+			release = INS
+			334 = { add_core_of = INS }
+			335 = { add_core_of = INS }
+			1333 = { add_core_of = INS }
+			1016 = { add_core_of = INS }
+			1023 = { add_core_of = INS }
+			1022 = { add_core_of = INS }
+			1021 = { add_core_of = INS }
+			1020 = { add_core_of = INS }
+			1019 = { add_core_of = INS }
+			667 = { add_core_of = INS }
+			668 = { add_core_of = INS }
+			972 = { add_core_of = INS }
+			672 = { add_core_of = INS }
+			673 = { add_core_of = INS }
+			1018 = { add_core_of = INS }
+			721 = { add_core_of = INS }
+			1017 = { add_core_of = INS }
+			630 = { add_core_of = INS }
+			631 = { add_core_of = INS }
+			632 = { add_core_of = INS }
+			633 = { add_core_of = INS }
+			634 = { add_core_of = INS }
+			635 = { add_core_of = INS }
+			638 = { add_core_of = INS }
+			639 = { add_core_of = INS }
+			641 = { add_core_of = INS }
+			642 = { add_core_of = INS }
+			643 = { add_core_of = INS }
+			645 = { add_core_of = INS }
+			646 = { add_core_of = INS }
+			647 = { add_core_of = INS }
+			648 = { add_core_of = INS }
+			669 = { add_core_of = INS }
+			684 = { add_core_of = INS }
+			725 = { add_core_of = INS }
+			726 = { add_core_of = INS }
+			727 = { add_core_of = INS }
+			734 = { add_core_of = INS }
+			737 = { add_core_of = INS }
+			757 = { add_core_of = INS }
+			843 = { add_core_of = INS }
+			941 = { add_core_of = INS }
+			INS = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = INS
+				}
+			}
+			INS = { 
+				set_cosmetic_tag = CAN_INS_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Laurence Nunns Guillemard"
+					picture = "gfx/leaders/WDCAN/Laurence-Nunns-Guillemard.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British East Indies Colonial Committee"
+					long_name = "British East Indies Colonial Committee"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British East Indies Colonial Committee"
+					long_name = "British East Indies Colonial Committee"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = INS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Central America????
+	id = UKoccupationNew.45
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.45"
+	}
+	title = "The Occupation of Central America"
+	desc = UKoccupationNew.45.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Central American shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			PAN = {
+				every_core_state = {
+					remove_core_of = PAN
+				}
+			}
+			release = PAN
+			304 = { add_core_of = PAN }
+			312 = { add_core_of = PAN }
+			313 = { add_core_of = PAN }
+			314 = { add_core_of = PAN }
+			316 = { add_core_of = PAN }
+			317 = { add_core_of = PAN }
+			685 = { add_core_of = PAN }
+			842 = { add_core_of = PAN }
+			854 = { add_core_of = PAN }
+			1070 = { add_core_of = PAN }
+			1071 = { add_core_of = PAN }
+			1247 = { add_core_of = PAN }
+			1248 = { add_core_of = PAN }
+			1249 = { add_core_of = PAN }
+			1250 = { add_core_of = PAN }
+			1251 = { add_core_of = PAN }
+			1256 = { add_core_of = PAN }
+			1257 = { add_core_of = PAN }
+			1258 = { add_core_of = PAN }
+			1259 = { add_core_of = PAN }
+			1260 = { add_core_of = PAN }
+			1261 = { add_core_of = PAN }
+			1262 = { add_core_of = PAN }
+			
+			PAN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = PAN
+				}
+			}
+			PAN = { 
+				set_cosmetic_tag = CAN_PAN_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Alan Cuthbert Maxwell Burns"
+					picture = "gfx/leaders/WDCAN/Alan-Cuthbert-Maxwell-Burns.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = PAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.47
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.47"
+	}
+	title = "The Occupation of Switzerland"
+	desc = UKoccupation.47.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Swiss shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			SWI = {
+				every_core_state = {
+					remove_core_of = SWI
+				}
+			}
+			release = SWI
+			3 = { add_core_of = SWI }
+			151 = { add_core_of = SWI }
+			760 = { add_core_of = SWI }
+			761 = { add_core_of = SWI }
+			
+			SWI = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = SWI
+				}
+			}
+			SWI = { 
+				set_cosmetic_tag = CAN_SWI_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = SWI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.48
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.48"
+	}
+	title = "The Occupation of Baltic States"
+	desc = UKoccupation.48.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Baltics shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			BAT = {
+				every_core_state = {
+					remove_core_of = BAT
+				}
+			}
+			release = BAT
+			11 = { add_core_of = BAT }
+			12 = { add_core_of = BAT }
+			13 = { add_core_of = BAT }
+			188 = { add_core_of = BAT }
+			189 = { add_core_of = BAT }
+			190 = { add_core_of = BAT }
+			191 = { add_core_of = BAT }
+			655 = { add_core_of = BAT }
+			880 = { add_core_of = BAT }
+			1091 = { add_core_of = BAT }
+			
+			BAT = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = BAT
+				}
+			}
+			BAT = { 
+				set_cosmetic_tag = CAN_BAT_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = BAT
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.49
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.49"
+	}
+	title = "The Occupation of Romania"
+	desc = UKoccupation.49.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Romanias shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ROM = {
+				every_core_state = {
+					remove_core_of = ROM
+				}
+			}
+			release = ROM
+			46 = { add_core_of = ROM }
+			76 = { add_core_of = ROM }
+			78 = { add_core_of = ROM }
+			79 = { add_core_of = ROM }
+			80 = { add_core_of = ROM }
+			81 = { add_core_of = ROM }
+			82 = { add_core_of = ROM }
+			83 = { add_core_of = ROM }
+			84 = { add_core_of = ROM }
+			713 = { add_core_of = ROM }
+			772 = { add_core_of = ROM }
+			789 = { add_core_of = ROM }
+			1112 = { add_core_of = ROM }
+			1113 = { add_core_of = ROM }
+			1114 = { add_core_of = ROM }
+			1115 = { add_core_of = ROM }
+			1116 = { add_core_of = ROM }
+			1117 = { add_core_of = ROM }
+			1118 = { add_core_of = ROM }
+			1222 = { add_core_of = ROM }
+			1320 = { add_core_of = ROM }
+			
+			ROM = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ROM
+				}
+			}
+			ROM = { 
+				set_cosmetic_tag = CAN_ROM_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ROM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.50
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.50"
+	}
+	title = "The Occupation of Bulgaria"
+	desc = UKoccupation.50.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Bulgarians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			BUL = {
+				every_core_state = {
+					remove_core_of = BUL
+				}
+			}
+			release = BUL
+			48 = { add_core_of = BUL }
+			77 = { add_core_of = BUL }
+			211 = { add_core_of = BUL }
+			212 = { add_core_of = BUL }
+			770 = { add_core_of = BUL }
+			771 = { add_core_of = BUL }
+			1089 = { add_core_of = BUL }
+			1090 = { add_core_of = BUL }
+			
+			BUL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = BUL
+				}
+			}
+			BUL = { 
+				set_cosmetic_tag = CAN_BUL_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = BUL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.51
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.51"
+	}
+	title = "The Occupation of Ukraine"
+	desc = UKoccupation.51.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Ukrainians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			UKR = {
+				every_core_state = {
+					remove_core_of = UKR
+				}
+			}
+			release = UKR
+			1286 = { add_core_of = UKR }
+			192 = { add_core_of = UKR }
+			193 = { add_core_of = UKR }
+			196 = { add_core_of = UKR }
+			197 = { add_core_of = UKR }
+			198 = { add_core_of = UKR }
+			200 = { add_core_of = UKR }
+			201 = { add_core_of = UKR }
+			202 = { add_core_of = UKR }
+			203 = { add_core_of = UKR }
+			221 = { add_core_of = UKR }
+			225 = { add_core_of = UKR }
+			226 = { add_core_of = UKR }
+			227 = { add_core_of = UKR }
+			228 = { add_core_of = UKR }
+			241 = { add_core_of = UKR }
+			259 = { add_core_of = UKR }
+			791 = { add_core_of = UKR }
+			1285 = { add_core_of = UKR }
+			1284 = { add_core_of = UKR }
+			1230 = { add_core_of = UKR }
+			1232 = { add_core_of = UKR }
+			1233 = { add_core_of = UKR }
+			1234 = { add_core_of = UKR }
+			1237 = { add_core_of = UKR }
+			1238 = { add_core_of = UKR }
+			1239 = { add_core_of = UKR }
+			1240 = { add_core_of = UKR }
+			1241 = { add_core_of = UKR }
+			1242 = { add_core_of = UKR }
+			1243 = { add_core_of = UKR }
+			1244 = { add_core_of = UKR }
+			1245 = { add_core_of = UKR }
+			1282 = { add_core_of = UKR }
+			1283 = { add_core_of = UKR }
+			194 = { add_core_of = UKR }
+			240 = { add_core_of = UKR }
+			821 = { add_core_of = UKR }
+			
+			UKR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = UKR
+				}
+			}
+			UKR = { 
+				set_cosmetic_tag = CAN_UKR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = UKR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.52
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.52"
+	}
+	title = "The Occupation of Burma"
+	desc = UKoccupation.52.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Burmas shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			BRM = {
+				every_core_state = {
+					remove_core_of = BRM
+				}
+			}
+			release = BRM
+			72 = { add_core_of = BRM }
+			288 = { add_core_of = BRM }
+			640 = { add_core_of = BRM }
+			701 = { add_core_of = BRM }
+			749 = { add_core_of = BRM }
+			756 = { add_core_of = BRM }
+			790 = { add_core_of = BRM }
+			831 = { add_core_of = BRM }
+			
+			BRM = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = BRM
+				}
+			}
+			BRM = { 
+				set_cosmetic_tag = CAN_BRM_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Samuel Hoare"
+					picture = "gfx/leaders/WDCAN/Samuel-Hoare.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Burma Colonial Committee"
+					long_name = "British Burma Colonial Committee"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Burma Colonial Committee"
+					long_name = "British Burma Colonial Committee"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = BRM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.53
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.53"
+	}
+	title = "The Occupation of Himalaya"
+	desc = UKoccupation.53.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Himalayans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			NEP = {
+				every_core_state = {
+					remove_core_of = NEP
+				}
+			}
+			release = NEP
+			323 = { add_core_of = NEP }
+			324 = { add_core_of = NEP }
+			887 = { add_core_of = NEP }
+			888 = { add_core_of = NEP }
+			
+			NEP = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = NEP
+				}
+			}
+			NEP = { 
+				set_cosmetic_tag = CAN_NEP_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = NEP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.55
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.55"
+	}
+	title = "The Occupation of Guangzhou"
+	desc = UKoccupation.55.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Chinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			GXC = {
+				every_core_state = {
+					remove_core_of = GXC
+				}
+			}
+			release = GXC
+			592 = { add_core_of = GXC }
+			593 = { add_core_of = GXC }
+			594 = { add_core_of = GXC }
+			599 = { add_core_of = GXC }
+			800 = { add_core_of = GXC }
+			1012 = { add_core_of = GXC }
+			1053 = { add_core_of = GXC }
+			1054 = { add_core_of = GXC }
+			1055 = { add_core_of = GXC }
+			1056 = { add_core_of = GXC }
+			GXC = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = GXC
+				}
+			}
+			GXC = { 
+				set_cosmetic_tag = CAN_GXC_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = GXC
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.56
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.56"
+	}
+	title = "The Occupation of China Ports"
+	desc = UKoccupation.56.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Chinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			LEC = {
+				every_core_state = {
+					remove_core_of = LEC
+				}
+			}
+			release = LEC
+			326 = { add_core_of = LEC }
+			591 = { add_core_of = LEC }
+			595 = { add_core_of = LEC }
+			596 = { add_core_of = LEC }
+			609 = { add_core_of = LEC }
+			728 = { add_core_of = LEC }
+			729 = { add_core_of = LEC }
+			743 = { add_core_of = LEC }
+			744 = { add_core_of = LEC }
+			745 = { add_core_of = LEC }
+			746 = { add_core_of = LEC }
+			747 = { add_core_of = LEC }
+			801 = { add_core_of = LEC }
+			802 = { add_core_of = LEC }
+			803 = { add_core_of = LEC }
+			996 = { add_core_of = LEC }
+			1046 = { add_core_of = LEC }
+			1065 = { add_core_of = LEC }
+			1066 = { add_core_of = LEC }
+			1067 = { add_core_of = LEC }
+			1068 = { add_core_of = LEC }
+			1069 = { add_core_of = LEC }
+			1075 = { add_core_of = LEC }
+			
+			LEC = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = LEC
+				}
+			}
+			LEC = { 
+				set_cosmetic_tag = CAN_LEC_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = LEC
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.57
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.57"
+	}
+	title = "The Occupation of Mongolia"
+	desc = UKoccupation.57.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Mongolians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MON = {
+				every_core_state = {
+					remove_core_of = MON
+				}
+			}
+			release = MON
+			329 = { add_core_of = MON }
+			330 = { add_core_of = MON }
+			612 = { add_core_of = MON }
+			621 = { add_core_of = MON }
+			1084 = { add_core_of = MON }
+			
+			MON = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MON
+				}
+			}
+			MON = { 
+				set_cosmetic_tag = CAN_MON_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MON
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.58
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.58"
+	}
+	title = "The Occupation of Qing Empire"
+	desc = UKoccupation.58.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+
+		name = "The Chinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			QIE = {
+				every_core_state = {
+					remove_core_of = QIE
+				}
+			}
+			release = QIE
+			283 = { add_core_of = QIE }
+			348 = { add_core_of = QIE }
+			597 = { add_core_of = QIE }
+			604 = { add_core_of = QIE }
+			607 = { add_core_of = QIE }
+			608 = { add_core_of = QIE }
+			611 = { add_core_of = QIE }
+			614 = { add_core_of = QIE }
+			615 = { add_core_of = QIE }
+			616 = { add_core_of = QIE }
+			622 = { add_core_of = QIE }
+			774 = { add_core_of = QIE }
+			1015 = { add_core_of = QIE }
+			1047 = { add_core_of = QIE }
+			1059 = { add_core_of = QIE }
+			1060 = { add_core_of = QIE }
+			1061 = { add_core_of = QIE }
+			1062 = { add_core_of = QIE }
+			1063 = { add_core_of = QIE }
+			1064 = { add_core_of = QIE }
+			1072 = { add_core_of = QIE }
+			
+			QIE = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = QIE
+				}
+			}
+			QIE = { 
+				load_focus_tree = generic_focus            
+
+				set_cosmetic_tag = QIE_CAN_DOMINION
+				create_country_leader = {
+					name = "Edward VIII"
+					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
+					expire = "1965.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = { hog_emperor_of_china }
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = QIE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.59
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.59"
+	}
+	title = "The Occupation of Manchuria"
+	desc = UKoccupation.59.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Chinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MAN = {
+				every_core_state = {
+					remove_core_of = MAN
+				}
+			}
+			release = MAN
+			328 = { add_core_of = MAN }
+			610 = { add_core_of = MAN }
+			714 = { add_core_of = MAN }
+			715 = { add_core_of = MAN }
+			716 = { add_core_of = MAN }
+			717 = { add_core_of = MAN }
+			883 = { add_core_of = MAN }
+			884 = { add_core_of = MAN }
+			885 = { add_core_of = MAN }
+			886 = { add_core_of = MAN }
+			
+			MAN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MAN
+				}
+			}
+			MAN = { 
+				set_cosmetic_tag = CAN_MAN_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = absolute_monarchy_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.61
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.61"
+	}
+	title = "The Occupation of Taiwan"
+	desc = UKoccupation.61.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Taiwanese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			TAI = {
+				every_core_state = {
+					remove_core_of = TAI
+				}
+			}
+			release = TAI
+			524 = { add_core_of = TAI }
+			TAI = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = TAI
+				}
+			}
+			TAI = { 
+				set_cosmetic_tag = CAN_TAI_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = TAI
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.62
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupation.62"
+	}
+	title = "The Occupation of Korea"
+	desc = UKoccupation.62.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Korean shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			KOR = {
+				every_core_state = {
+					remove_core_of = KOR
+				}
+			}
+			release = KOR
+			525 = { add_core_of = KOR }
+			527 = { add_core_of = KOR }
+			1345 = { add_core_of = KOR }
+			1346 = { add_core_of = KOR }
+			1347 = { add_core_of = KOR }
+			
+			KOR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = KOR
+				}
+			}
+			KOR = { 
+				set_cosmetic_tag = CAN_KOR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = KOR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.63
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.63"
+	}
+	title = "The Occupation of Poland"
+	desc = UKoccupation.63.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Polands shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			POL = {
+				every_core_state = {
+					remove_core_of = POL
+				}
+			}
+			release = POL
+			10 = { add_core_of = POL }
+			67 = { add_core_of = POL }
+			86 = { add_core_of = POL }
+			87 = { add_core_of = POL }
+			88 = { add_core_of = POL }
+			89 = { add_core_of = POL }
+			90 = { add_core_of = POL }
+			91 = { add_core_of = POL }
+			92 = { add_core_of = POL }
+			93 = { add_core_of = POL }
+			94 = { add_core_of = POL }
+			95 = { add_core_of = POL }
+			96 = { add_core_of = POL }
+			97 = { add_core_of = POL }
+			98 = { add_core_of = POL }
+			199 = { add_core_of = POL }
+			207 = { add_core_of = POL }
+			776 = { add_core_of = POL }
+			777 = { add_core_of = POL }
+			792 = { add_core_of = POL }
+			997 = { add_core_of = POL }
+			1088 = { add_core_of = POL }
+			1124 = { add_core_of = POL }
+			1125 = { add_core_of = POL }
+			1126 = { add_core_of = POL }
+			1127 = { add_core_of = POL }
+			1140 = { add_core_of = POL }
+			1148 = { add_core_of = POL }
+			1228 = { add_core_of = POL }
+			1295 = { add_core_of = POL }
+			1314 = { add_core_of = POL }
+			1319 = { add_core_of = POL }
+			1329 = { add_core_of = POL }
+			
+			POL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = POL
+				}
+			}
+			POL = { 
+				set_cosmetic_tag = CAN_POL_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = POL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+
+				POL = {
+					set_capital = {
+						state = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.65
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.65"
+	}
+	title = "The Occupation of Japan"
+	desc = UKoccupation.65.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Japanese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			JAP = {
+				every_core_state = {
+					remove_core_of = JAP
+				}
+			}
+			release = JAP
+			282 = { add_core_of = JAP }
+			526 = { add_core_of = JAP }
+			528 = { add_core_of = JAP }
+			529 = { add_core_of = JAP }
+			530 = { add_core_of = JAP }
+			531 = { add_core_of = JAP }
+			532 = { add_core_of = JAP }
+			533 = { add_core_of = JAP }
+			534 = { add_core_of = JAP }
+			535 = { add_core_of = JAP }
+			536 = { add_core_of = JAP }
+			537 = { add_core_of = JAP }
+			555 = { add_core_of = JAP }
+			1355 = { add_core_of = JAP }
+			1356 = { add_core_of = JAP }
+			1351 = { add_core_of = JAP }
+			1352 = { add_core_of = JAP }
+			1353 = { add_core_of = JAP }
+			1354 = { add_core_of = JAP }
+			JAP = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = JAP
+				}
+			}
+			JAP = { 
+				set_cosmetic_tag = JAP_CAN_DOMINION
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Edward VIII"
+					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
+					expire = "1965.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = JAP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.67
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.67"
+	}
+	title = "The Occupation of Portugal"
+	desc = UKoccupation.67.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Portugese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			POR = {
+				every_core_state = {
+					remove_core_of = POR
+				}
+			}
+			release = POR
+			112 = { add_core_of = POR }
+			179 = { add_core_of = POR }
+			180 = { add_core_of = POR }
+			181 = { add_core_of = POR }
+			697 = { add_core_of = POR }
+			698 = { add_core_of = POR }
+			
+			POR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = POR
+				}
+			}
+			POR = { 
+				set_cosmetic_tag = CAN_PRT_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Edward VIII"
+					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
+					expire = "1965.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = POR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.70
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.70"
+	}
+	title = "The Occupation of Malaya"
+	desc = UKoccupation.70.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Malayians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MLY = {
+				every_core_state = {
+					remove_core_of = MLY
+				}
+			}
+			release = MLY
+			333 = { add_core_of = MLY }
+			336 = { add_core_of = MLY }
+			751 = { add_core_of = MLY }
+			828 = { add_core_of = MLY }
+			830 = { add_core_of = MLY }
+			846 = { add_core_of = MLY }
+			999 = { add_core_of = MLY }
+			
+			MLY = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MLY
+				}
+			}
+			MLY = { 
+				set_cosmetic_tag = CAN_MLY_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Shenton Thomas"
+					picture = "gfx/leaders/WDCAN/Shenton-Thomas.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Malaya Colonial Committee"
+					long_name = "British Malaya Colonial Committee"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Malaya Colonial Committee"
+					long_name = "British Malaya Colonial Committee"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MLY
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.71
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.71"
+	}
+	title = "The Occupation of Iceland"
+	desc = UKoccupation.71.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Icelanders shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ICE = {
+				every_core_state = {
+					remove_core_of = ICE
+				}
+			}
+			release = ICE
+			100 = { add_core_of = ICE }
+			ICE = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ICE
+				}
+			}
+			ICE = { 
+				set_cosmetic_tag = ICE_fuck_dragon
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ICE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Swiss????
+	id = UKoccupationNew.74
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.74"
+	}
+	title = "The Occupation of Madagascar"
+	desc = UKoccupation.74.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Madagascars shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			MAG = {
+				every_core_state = {
+					remove_core_of = MAG
+				}
+			}
+			release = MAG
+			543 = { add_core_of = MAG }
+			706 = { add_core_of = MAG }
+			707 = { add_core_of = MAG }
+			708 = { add_core_of = MAG }
+			709 = { add_core_of = MAG }
+			1177 = { add_core_of = MAG }
+			1178 = { add_core_of = MAG }
+			1179 = { add_core_of = MAG }
+			
+			MAG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = MAG
+				}
+			}
+			MAG = { 
+				set_cosmetic_tag = CAN_MAG_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "'Mad' Mike Hoare"
+					picture = "gfx/leaders/COG/Portrait_Katanga_Mad_Mike_Hoare.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "UEL"
+					long_name = "United Empire League (Madagascar Loyalists)"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "UEL"
+					long_name = "United Empire League (Madagascar Loyalists)"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = MAG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But South Rhodesia????
+	id = UKoccupationNew.75
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.75"
+	}
+	title = "The Occupation of South Rhodesia"
+	desc = UKoccupationNew.75.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Rhodesians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ZIM = {
+				every_core_state = {
+					remove_core_of = ZIM
+				}
+			}
+			release = ZIM
+			545 = { add_core_of = ZIM }
+			813 = { add_core_of = ZIM }
+			871 = { add_core_of = ZIM }
+			955 = { add_core_of = ZIM }
+			956 = { add_core_of = ZIM }
+			957 = { add_core_of = ZIM }
+			958 = { add_core_of = ZIM }
+			
+			
+
+			ZIM = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ZIM
+				}
+			}
+			ZIM = { 
+				set_cosmetic_tag = CAN_ZIM_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Evelyn Baring"
+					picture = "gfx/leaders/ZIM/Portrait_ZIM_Evelyn_Baring.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ZIM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Congo????
+	id = UKoccupationNew.76
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.76"
+	}
+	title = "The Occupation of Congo"
+	desc = UKoccupationNew.76.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Congolese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			KOG = {
+				every_core_state = {
+					remove_core_of = KOG
+				}
+			}
+			release = KOG
+			295 = { add_core_of = KOG }
+			538 = { add_core_of = KOG }
+			539 = { add_core_of = KOG }
+			704 = { add_core_of = KOG }
+			718 = { add_core_of = KOG }
+			879 = { add_core_of = KOG }
+			881 = { add_core_of = KOG }
+			928 = { add_core_of = KOG }
+			948 = { add_core_of = KOG }
+			949 = { add_core_of = KOG }
+			953 = { add_core_of = KOG }
+			974 = { add_core_of = KOG }
+			976 = { add_core_of = KOG }
+			977 = { add_core_of = KOG }
+			1025 = { add_core_of = KOG }
+			1026 = { add_core_of = KOG }
+			1180 = { add_core_of = KOG }
+			1181 = { add_core_of = KOG }
+			1182 = { add_core_of = KOG }
+			1183 = { add_core_of = KOG }
+			1184 = { add_core_of = KOG }
+			1185 = { add_core_of = KOG }
+			
+			KOG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = KOG
+				}
+			}
+			KOG = { 
+				set_cosmetic_tag = CAN_KOG_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Ronald Storrsn"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = KOG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Cameroon????
+	id = UKoccupationNew.77
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.77"
+	}
+	title = "The Occupation of Cameroon"
+	desc = UKoccupationNew.77.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Cameroonians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			CMR = {
+				every_core_state = {
+					remove_core_of = CMR
+				}
+			}
+			release = CMR
+			297 = { add_core_of = CMR }
+			705 = { add_core_of = CMR }
+			927 = { add_core_of = CMR }
+			952 = { add_core_of = CMR }
+			962 = { add_core_of = CMR }
+			971 = { add_core_of = CMR }
+			1335 = { add_core_of = CMR }
+
+			CMR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = CMR
+				}
+			}
+			CMR = { 
+				set_cosmetic_tag = CAN_CMR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Frederick Joseph Loftus-Tottenham"
+					picture = "gfx/leaders/CIV/CIV_Frederick_Joseph_Loftus-Tottenham.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					long_name = "United Empire League (Cameroon Loyalists)"
+					name = "UEL"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = "United Empire League (Cameroon Loyalists)"
+					name = "UEL"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = CMR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Central Africa????
+	id = UKoccupationNew.78
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.78"
+	}
+	title = "The Occupation of Central Africa"
+	desc = UKoccupationNew.78.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Central Africans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			WAD = {
+				every_core_state = {
+					remove_core_of = WAD
+				}
+			}
+			release = WAD
+			515 = { add_core_of = WAD }
+			660 = { add_core_of = WAD }
+			911 = { add_core_of = WAD }
+			975 = { add_core_of = WAD }
+			
+			WAD = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = WAD
+				}
+			}
+			WAD = { 
+				set_cosmetic_tag = CAN_WAD_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Charles Macpherson Dobell"
+					picture = "gfx/leaders/CIV/CIV_Charles_Macpherson_Dobell.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					long_name = "United Empire League (Central African Loyalists)"
+					name = "UEL"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = "United Empire League (Central African Loyalists)"
+					name = "UEL"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = WAD
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Nigeria????
+	id = UKoccupationNew.79
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.79"
+	}
+	title = "The Occupation of Nigeria"
+	desc = UKoccupationNew.79.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Nigerians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			NGR = {
+				every_core_state = {
+					remove_core_of = NGR
+				}
+			}
+			release = NGR
+			558 = { add_core_of = NGR }
+			662 = { add_core_of = NGR }
+			878 = { add_core_of = NGR }
+			913 = { add_core_of = NGR }
+			973 = { add_core_of = NGR }
+			
+			NGR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = NGR
+				}
+			}
+			NGR = { 
+				set_cosmetic_tag = CAN_NGR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Hugh Clifford"
+					picture = "gfx/leaders/NGR/NGR_Hugh_Clifford.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "UEL"
+					long_name = "United Empire League (Nigerian Loyalists)"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "UEL"
+					long_name = "United Empire League (Nigerian Loyalists)"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = NGR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But West Africa????
+	id = UKoccupationNew.80
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.80"
+	}
+	title = "The Occupation of West Africa"
+	desc = UKoccupationNew.80.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The West Africans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			SIE = {
+				every_core_state = {
+					remove_core_of = SIE
+				}
+			}
+			release = SIE
+			272 = { add_core_of = SIE }
+			274 = { add_core_of = SIE }
+			296 = { add_core_of = SIE }
+			298 = { add_core_of = SIE }
+			556 = { add_core_of = SIE }
+			557 = { add_core_of = SIE }
+			700 = { add_core_of = SIE }
+			702 = { add_core_of = SIE }
+			703 = { add_core_of = SIE }
+			806 = { add_core_of = SIE }
+			807 = { add_core_of = SIE }
+			808 = { add_core_of = SIE }
+			809 = { add_core_of = SIE }
+			834 = { add_core_of = SIE }
+			860 = { add_core_of = SIE }
+			876 = { add_core_of = SIE }
+			877 = { add_core_of = SIE }
+			910 = { add_core_of = SIE }
+			963 = { add_core_of = SIE }
+			966 = { add_core_of = SIE }
+			967 = { add_core_of = SIE }
+			968 = { add_core_of = SIE }
+			1192 = { add_core_of = SIE }
+			1321 = { add_core_of = SIE }
+			1322 = { add_core_of = SIE }
+			1323 = { add_core_of = SIE }
+			
+			SIE = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = SIE
+				}
+			}
+			SIE = { 
+				set_cosmetic_tag = CAN_SIE_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Graeme Thompson"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "UEL"
+					long_name = "United Empire League (West African Loyalists)"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "UEL"
+					long_name = "United Empire League (West African Loyalists)"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = SIE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But West Africa????
+	id = UKoccupationNew.81
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.81"
+	}
+	title = "The Occupation of Czechoslovakia"
+	desc = UKoccupationNew.81.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Czechoslovakians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			CZE = {
+				every_core_state = {
+					remove_core_of = CZE
+				}
+			}
+			release = CZE
+			9 = { add_core_of = CZE }
+			69 = { add_core_of = CZE }
+			70 = { add_core_of = CZE }
+			71 = { add_core_of = CZE }
+			73 = { add_core_of = CZE }
+			74 = { add_core_of = CZE }
+			75 = { add_core_of = CZE }
+			664 = { add_core_of = CZE }
+			786 = { add_core_of = CZE }
+			1119 = { add_core_of = CZE }
+			1120 = { add_core_of = CZE }
+			1121 = { add_core_of = CZE }
+			1122 = { add_core_of = CZE }
+			1123 = { add_core_of = CZE }
+			1129 = { add_core_of = CZE }
+			1130 = { add_core_of = CZE }
+			1131 = { add_core_of = CZE }
+			1132 = { add_core_of = CZE }
+			1133 = { add_core_of = CZE }
+			1134 = { add_core_of = CZE }
+			1135 = { add_core_of = CZE }
+			1136 = { add_core_of = CZE }
+			1138 = { add_core_of = CZE }
+			1139 = { add_core_of = CZE }
+			
+			CZE = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = CZE
+				}
+			}
+			CZE = { 
+				set_cosmetic_tag = CAN_CZE_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = CZE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Prussia????
+	id = UKoccupationNew.82
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.82"
+	}
+	title = "The Occupation of Prussia"
+	desc = UKoccupationNew.82.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Prussians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			DDR = {
+				every_core_state = {
+					remove_core_of = DDR
+				}
+			}
+			release = DDR
+			5 = { add_core_of = DDR }
+			61 = { add_core_of = DDR }
+			62 = { add_core_of = DDR }
+			63 = { add_core_of = DDR }
+			64 = { add_core_of = DDR }
+			65 = { add_core_of = DDR }
+			66 = { add_core_of = DDR }
+			68 = { add_core_of = DDR }
+			1357 = { add_core_of = DDR }
+			
+			DDR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = DDR
+				}
+			}
+			DDR = { 
+				set_cosmetic_tag = CAN_DDR_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = DDR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.83
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.83"
+	}
+	title = "The Occupation of Yugoslavia"
+	desc = UKoccupationNew.83.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Yugoslavians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			SER = {
+				every_core_state = {
+					remove_core_of = SER
+				}
+			}
+			release = SER
+			44 = { add_core_of = SER }
+			45 = { add_core_of = SER }
+			102 = { add_core_of = SER }
+			103 = { add_core_of = SER }
+			104 = { add_core_of = SER }
+			105 = { add_core_of = SER }
+			106 = { add_core_of = SER }
+			107 = { add_core_of = SER }
+			108 = { add_core_of = SER }
+			109 = { add_core_of = SER }
+			163 = { add_core_of = SER }
+			736 = { add_core_of = SER }
+			765 = { add_core_of = SER }
+			767 = { add_core_of = SER }
+			794 = { add_core_of = SER }
+			841 = { add_core_of = SER }
+			875 = { add_core_of = SER }
+			1097 = { add_core_of = SER }
+			1098 = { add_core_of = SER }
+			1099 = { add_core_of = SER }
+			1100 = { add_core_of = SER }
+			1101 = { add_core_of = SER }
+			1102 = { add_core_of = SER }
+			1103 = { add_core_of = SER }
+			1104 = { add_core_of = SER }
+			1105 = { add_core_of = SER }
+			1128 = { add_core_of = SER }
+			1141 = { add_core_of = SER }
+			1142 = { add_core_of = SER }
+			1143 = { add_core_of = SER }
+			1144 = { add_core_of = SER }
+			1145 = { add_core_of = SER }
+			1206 = { add_core_of = SER }
+			1268 = { add_core_of = SER }
+			1269 = { add_core_of = SER }
+			1270 = { add_core_of = SER }
+			1271 = { add_core_of = SER }
+			
+			SER = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = SER
+				}
+			}
+			SER = { 
+				set_cosmetic_tag = CAN_SER_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = SER
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.84
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.84"
+	}
+	title = "The Occupation of Hungary"
+	desc = UKoccupationNew.84.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Hungarians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			HUN = {
+				every_core_state = {
+					remove_core_of = HUN
+				}
+			}
+			release = HUN
+			43 = { add_core_of = HUN }
+			154 = { add_core_of = HUN }
+			155 = { add_core_of = HUN }
+			1106 = { add_core_of = HUN }
+			1107 = { add_core_of = HUN }
+			1108 = { add_core_of = HUN }
+			1109 = { add_core_of = HUN }
+			1110 = { add_core_of = HUN }
+			
+			HUN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = HUN
+				}
+			}
+			HUN = { 
+				set_cosmetic_tag = CAN_HUN_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = HUN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.85
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.85"
+	}
+	title = "The Occupation of Levent"
+	desc = UKoccupationNew.85.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Leventinians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			LEB = {
+				every_core_state = {
+					remove_core_of = LEB
+				}
+			}
+			release = LEB
+			344 = { add_core_of = LEB }
+			350 = { add_core_of = LEB }
+			453 = { add_core_of = LEB }
+			454 = { add_core_of = LEB }
+			455 = { add_core_of = LEB }
+			553 = { add_core_of = LEB }
+			554 = { add_core_of = LEB }
+			677 = { add_core_of = LEB }
+			680 = { add_core_of = LEB }
+			992 = { add_core_of = LEB }
+			995 = { add_core_of = LEB }
+			
+			LEB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = LEB
+				}
+			}
+			LEB = { 
+				set_cosmetic_tag = CAN_LEB_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = LEB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.86
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.86"
+	}
+	title = "The Occupation of Arabia"
+	desc = UKoccupationNew.86.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Arabs shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			TRU = {
+				every_core_state = {
+					remove_core_of = TRU
+				}
+			}
+			release = TRU
+			292 = { add_core_of = TRU }
+			293 = { add_core_of = TRU }
+			294 = { add_core_of = TRU }
+			347 = { add_core_of = TRU }
+			656 = { add_core_of = TRU }
+			658 = { add_core_of = TRU }
+			659 = { add_core_of = TRU }
+			675 = { add_core_of = TRU }
+			678 = { add_core_of = TRU }
+			679 = { add_core_of = TRU }
+			752 = { add_core_of = TRU }
+			754 = { add_core_of = TRU }
+			859 = { add_core_of = TRU }
+			907 = { add_core_of = TRU }
+			915 = { add_core_of = TRU }
+			981 = { add_core_of = TRU }
+			982 = { add_core_of = TRU }
+			991 = { add_core_of = TRU }
+			993 = { add_core_of = TRU }
+			994 = { add_core_of = TRU }
+			1024 = { add_core_of = TRU }
+			1035 = { add_core_of = TRU }
+			
+			TRU = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = TRU
+				}
+			}
+			TRU = { 
+				set_cosmetic_tag = CAN_TRU_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = TRU
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.87
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.87"
+	}
+	title = "The Occupation of Assyria"
+	desc = UKoccupationNew.87.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Assyrians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ASY = {
+				every_core_state = {
+					remove_core_of = ASY
+				}
+			}
+			release = ASY
+			291 = { add_core_of = ASY }
+			349 = { add_core_of = ASY }
+			676 = { add_core_of = ASY }
+			812 = { add_core_of = ASY }
+			819 = { add_core_of = ASY }
+			
+			ASY = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ASY
+				}
+			}
+			ASY = { 
+				set_cosmetic_tag = CAN_ASY_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "Harold Jones"
+					desc = ""
+					picture = "gfx/leaders/ASY/Portrait_Assyria_Charles_Jones.png"
+					expire = "1965.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+						}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ASY
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.88
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.88"
+	}
+	title = "The Occupation of Armenia"
+	desc = UKoccupationNew.88.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Armenians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			ARM = {
+				every_core_state = {
+					remove_core_of = ARM
+				}
+			}
+			release = ARM
+			230 = { add_core_of = ARM }
+			352 = { add_core_of = ARM }
+			354 = { add_core_of = ARM }
+			998 = { add_core_of = ARM }
+			1000 = { add_core_of = ARM }
+			1082 = { add_core_of = ARM }
+			1298 = { add_core_of = ARM }
+			1299 = { add_core_of = ARM }
+			1300 = { add_core_of = ARM }
+			1302 = { add_core_of = ARM }
+			1303 = { add_core_of = ARM }
+			
+			ARM = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = ARM
+				}
+			}
+			ARM = { 
+				set_cosmetic_tag = CAN_ARM_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = ARM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.89
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.89"
+	}
+	title = "The Occupation of Georgia"
+	desc = UKoccupationNew.89.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Georgians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			GEO = {
+				every_core_state = {
+					remove_core_of = GEO
+				}
+			}
+			release = GEO
+			231 = { add_core_of = GEO }
+			1001 = { add_core_of = GEO }
+			1080 = { add_core_of = GEO }
+			1081 = { add_core_of = GEO }
+			1188 = { add_core_of = GEO }
+			1190 = { add_core_of = GEO }
+			1213 = { add_core_of = GEO }
+			1301 = { add_core_of = GEO }
+			
+			GEO = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = GEO
+				}
+			}
+			GEO = { 
+				set_cosmetic_tag = CAN_GEO_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = GEO
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.90
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.90"
+	}
+	title = "The Occupation of Azerbaijan"
+	desc = UKoccupationNew.90.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Azerbaijanis shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			AZE = {
+				every_core_state = {
+					remove_core_of = AZE
+				}
+			}
+			release = AZE
+			229 = { add_core_of = AZE }
+			990 = { add_core_of = AZE }
+			1267 = { add_core_of = AZE }
+			1304 = { add_core_of = AZE }
+			
+			AZE = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = AZE
+				}
+			}
+			AZE = { 
+				set_cosmetic_tag = CAN_AZE_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = AZE
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.91
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.91"
+	}
+	title = "The Occupation of Don-Kuban"
+	desc = UKoccupationNew.91.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Don-Kubanians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			DKB = {
+				every_core_state = {
+					remove_core_of = DKB
+				}
+			}
+			release = DKB
+			218 = { add_core_of = DKB }
+			232 = { add_core_of = DKB }
+			233 = { add_core_of = DKB }
+			234 = { add_core_of = DKB }
+			235 = { add_core_of = DKB }
+			237 = { add_core_of = DKB }
+			238 = { add_core_of = DKB }
+			245 = { add_core_of = DKB }
+			787 = { add_core_of = DKB }
+			1186 = { add_core_of = DKB }
+			1187 = { add_core_of = DKB }
+			1189 = { add_core_of = DKB }
+			1191 = { add_core_of = DKB }
+			1226 = { add_core_of = DKB }
+			1227 = { add_core_of = DKB }
+			1231 = { add_core_of = DKB }
+			1263 = { add_core_of = DKB }
+			1264 = { add_core_of = DKB }
+			1265 = { add_core_of = DKB }
+			1266 = { add_core_of = DKB }
+			
+			DKB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = DKB
+				}
+			}
+			DKB = { 
+				set_cosmetic_tag = CAN_DKB_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "George I"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = DKB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.92
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.92"
+	}
+	title = "The Occupation of Crimea"
+	desc = UKoccupationNew.92.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Crimeans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			CRM = {
+				every_core_state = {
+					remove_core_of = CRM
+				}
+			}
+			release = CRM
+			137 = { add_core_of = CRM }
+			1220 = { add_core_of = CRM }
+			1221 = { add_core_of = CRM }
+			
+			CRM = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = CRM
+				}
+			}
+			CRM = { 
+				set_cosmetic_tag = CAN_CRM_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = CRM
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.93
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.93"
+	}
+	title = "The Occupation of Siberia"
+	desc = UKoccupationNew.93.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Siberians shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			SIB = {
+				every_core_state = {
+					remove_core_of = SIB
+				}
+			}
+			release = SIB
+			40 = { add_core_of = SIB }
+			403 = { add_core_of = SIB }
+			408 = { add_core_of = SIB }
+			409 = { add_core_of = SIB }
+			516 = { add_core_of = SIB }
+			560 = { add_core_of = SIB }
+			561 = { add_core_of = SIB }
+			562 = { add_core_of = SIB }
+			563 = { add_core_of = SIB }
+			564 = { add_core_of = SIB }
+			565 = { add_core_of = SIB }
+			566 = { add_core_of = SIB }
+			567 = { add_core_of = SIB }
+			568 = { add_core_of = SIB }
+			569 = { add_core_of = SIB }
+			570 = { add_core_of = SIB }
+			571 = { add_core_of = SIB }
+			572 = { add_core_of = SIB }
+			573 = { add_core_of = SIB }
+			574 = { add_core_of = SIB }
+			575 = { add_core_of = SIB }
+			576 = { add_core_of = SIB }
+			577 = { add_core_of = SIB }
+			578 = { add_core_of = SIB }
+			580 = { add_core_of = SIB }
+			581 = { add_core_of = SIB }
+			582 = { add_core_of = SIB }
+			637 = { add_core_of = SIB }
+			644 = { add_core_of = SIB }
+			653 = { add_core_of = SIB }
+			654 = { add_core_of = SIB }
+			657 = { add_core_of = SIB }
+			811 = { add_core_of = SIB }
+			1195 = { add_core_of = SIB }
+			1200 = { add_core_of = SIB }
+			1201 = { add_core_of = SIB }
+			1202 = { add_core_of = SIB }
+			1246 = { add_core_of = SIB }
+			1292 = { add_core_of = SIB }
+			1293 = { add_core_of = SIB }
+			
+			SIB = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = SIB
+				}
+			}
+			SIB = { 
+				set_cosmetic_tag = CAN_SIB_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = SIB
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.94
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.94"
+	}
+	title = "The Occupation of Afghanistan"
+	desc = UKoccupationNew.94.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Afghans shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			AFG = {
+				every_core_state = {
+					remove_core_of = AFG
+				}
+			}
+			release = AFG
+			267 = { add_core_of = AFG }
+			415 = { add_core_of = AFG }
+			1217 = { add_core_of = AFG }
+			1218 = { add_core_of = AFG }
+			
+			AFG = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = AFG
+				}
+			}
+			AFG = { 
+				set_cosmetic_tag = CAN_AFG_OCC
+				load_focus_tree = generic_focus            
+
+				create_country_leader = {
+					name = "British Administration"
+					picture = "gfx/leaders/WDCAN/Portrait_Canada_Vacant_Office.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = AFG
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	#Revenge! But Yugoslavia????
+	id = UKoccupationNew.95
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event UKoccupationNew.95"
+	}
+	title = "The Occupation of the Yangtze River"
+	desc = UKoccupationNew.95.d
+	picture = GFX_event_NFA_versaille_treaty
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "The Chinese shall forever stay under the British boot!"
+		add_political_power = 75
+		hidden_effect = {
+			LEP = {
+				every_core_state = {
+					remove_core_of = LEP
+				}
+			}
+			release = LEP
+			325 = { add_core_of = LEP }
+			598 = { add_core_of = LEP }
+			600 = { add_core_of = LEP }
+			601 = { add_core_of = LEP }
+			602 = { add_core_of = LEP }
+			603 = { add_core_of = LEP }
+			605 = { add_core_of = LEP }
+			606 = { add_core_of = LEP }
+			613 = { add_core_of = LEP }
+			620 = { add_core_of = LEP }
+			650 = { add_core_of = LEP }
+			661 = { add_core_of = LEP }
+			788 = { add_core_of = LEP }
+			799 = { add_core_of = LEP }
+			816 = { add_core_of = LEP }
+			1013 = { add_core_of = LEP }
+			1014 = { add_core_of = LEP }
+			1044 = { add_core_of = LEP }
+			1045 = { add_core_of = LEP }
+			1048 = { add_core_of = LEP }
+			1049 = { add_core_of = LEP }
+			1050 = { add_core_of = LEP }
+			1051 = { add_core_of = LEP }
+			1052 = { add_core_of = LEP }
+			1058 = { add_core_of = LEP }
+			
+			LEP = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = CAN
+							}
+							OR = {
+								is_owned_by = CAN
+								OWNER = { is_subject_of = CAN} 
+							}
+						}
+					}
+					transfer_state_to = LEP
+				}
+			}
+			LEP = { 
+				set_cosmetic_tag = SZC_CAN_DOMINION
+				load_focus_tree = generic_focus            
+				create_country_leader = {
+					name = "Edward VIII"
+					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
+					expire = "1965.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = { hog_emperor_of_china }
+				}
+
+				set_popularities = {
+					totalist = 19
+					radical_socialist = 6
+					syndicalist = 10
+					social_democrat = 4
+					social_liberal = 4
+					market_liberal = 3
+					social_conservative = 5
+					authoritarian_democrat = 4
+					paternal_autocrat = 24
+					national_populist = 21
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "British Administration"
+					long_name = "British Administration"
+				}
+
+				CAN = {
+					set_autonomy = {
+						target = LEP
+						autonomous_state = kx_colored_puppet
+					}
+				}
+
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
