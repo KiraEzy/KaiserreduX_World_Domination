@@ -1,0 +1,46 @@
+scripted_gui = {
+	StatCollector_Window = {
+		context_type = player_context
+		window_name = "Stat_Collector_Window"
+
+		visible = {
+			has_global_flag  = Stat_Collector_Visible
+		}
+
+		triggers = {
+			WD_Stat_Collector = {
+				has_global_flag = WD_Stat_Collector_Visible
+			}
+		}
+
+		properties = {
+			
+		}
+
+		effects = {
+			Stat_Collector_Accept_click = {
+				clr_global_flag = Stat_Collector_Visible
+				set_global_flag = Stat_Collector_Accepted
+				if = {
+					clr_global_flag = Stat_Collector_Visible
+					limit = {	
+						has_global_flag = WD_Stat_Collector_Visible
+					}
+					clr_global_flag  = WD_Stat_Collector_Visible
+				}
+			}
+			
+			Stat_Collector_Refuse_click = {
+				clr_global_flag = Stat_Collector_Visible
+				set_global_flag = Stat_Collector_Refused
+				if = {
+					clr_global_flag = Stat_Collector_Visible
+					limit = {	
+						has_global_flag = WD_Stat_Collector_Visible
+					}
+					clr_global_flag  = WD_Stat_Collector_Visible
+				}
+			}
+		}
+	}
+}

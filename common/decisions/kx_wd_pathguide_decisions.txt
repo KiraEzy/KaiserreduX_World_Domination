@@ -334,3 +334,13 @@ POR_WD_pathguide = {
 		}
 	}
 }
+
+WD_Stat_Collector = {
+	WD_Stat_Collector_tree = {
+		icon = GFX_decision_generic_agreement
+		complete_effect = {
+			set_global_flag = Stat_Collector_Visible
+			set_global_flag = WD_Stat_Collector_Visible
+		}
+	}
+}
