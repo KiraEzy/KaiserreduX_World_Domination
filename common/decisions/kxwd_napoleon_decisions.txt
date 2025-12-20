@@ -280,7 +280,10 @@ NFA_integrate_rk_NGF = {
 		}
 
 	available = {
-		42 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		OR = {
+			GER = { has_country_flag = has_napoleonic_tag }
+			GRU = { has_country_flag = has_napoleonic_tag }
+		}		42 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		51 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		56 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		57 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -968,7 +971,10 @@ NAP_establish_rk_WGR = {
 		}
 
 	available = {
-		GER = { has_country_flag = has_napoleonic_tag }
+		OR = {
+			GER = { has_country_flag = has_napoleonic_tag }
+			GRU = { has_country_flag = has_napoleonic_tag }
+		}
 		50 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		52 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		53 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -8388,6 +8394,143 @@ NAP_establish_rk_GYA = {
 			NFA = {
 				set_autonomy = {
 					target = GYA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+NAP_establish_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				146 865 1324 1325 1326 150 840 864 111 863 149 150 147 148 844
+				
+				state = 146
+				state = 865
+				state = 1324
+				state = 1325
+				state = 1326
+				state = 150
+				state = 840
+				state = 864
+				state = 111
+				state = 863
+				state = 149
+				state = 150
+				state = 147
+				state = 148
+				state = 844
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		146 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		865 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		1324 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		1325 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		1326 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		150 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		840 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		864 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		111 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		863 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		149 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		150 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		147 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		148 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		844 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FIN = {
+			every_core_state = {
+				remove_core_of = FIN
+			}
+		}
+		146 = { add_core_of = FIN }
+		865 = { add_core_of = FIN }
+		1324 = { add_core_of = FIN }
+		1325 = { add_core_of = FIN }
+		1326 = { add_core_of = FIN }
+		150 = { add_core_of = FIN }
+		840 = { add_core_of = FIN }
+		864 = { add_core_of = FIN }
+		111 = { add_core_of = FIN }
+		863 = { add_core_of = FIN }
+		149 = { add_core_of = FIN }
+		150 = { add_core_of = FIN }
+		147 = { add_core_of = FIN }
+		148 = { add_core_of = FIN }
+		844 = { add_core_of = FIN }
+		release = FIN
+		FIN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = NFA
+						}
+						OR = {
+							is_owned_by = NFA
+							OWNER = { is_subject_of = NFA} 
+						}
+					}
+				}
+				transfer_state_to = FIN
+			}
+		}
+		FIN = { 
+			set_cosmetic_tag = NAP_FIN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administration impériale"
+				picture = "gfx/leaders/NFA/Portrait_NFA_Imperial_Regency.png"
+				expire = "1.1.1"
+				ideology = socdem_bonapartism_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5.0
+				social_democrat = 5.0
+				social_liberal = 0.0
+				market_liberal = 0.0
+				social_conservative = 20.0
+				authoritarian_democrat = 50.0
+				social_democrat = 10.0
+				national_populist = 10.0
+			}
+			set_party_name = {
+				ideology = social_democrat
+				name = "Administration impériale"
+				long_name = "Administration impériale"
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Administration impériale"
+				long_name = "Administration impériale"
+			}
+
+			NFA = {
+				set_autonomy = {
+					target = FIN
 					autonomous_state = kx_colored_puppet
 				}
 			}
