@@ -18,5 +18,8 @@ country_event = {
     fire_only_once = yes
     option = {
         name = kxwd.announcement.1.a
+        hidden_effect = {
+			set_variable = { global.weblink = "https://kiraezy.github.io/WDStatFrontend/" }
+		}
     }
 }

@@ -77,10 +77,10 @@ guiTypes = {
             name = "Stat_Collector_Accept"
             position = { x = 120 y = 300 }
             quadTextureSprite = "GFX_event_option_entry"
-			buttonText = "Check The Stat!"
+			buttonText = global.weblink
 			buttonFont = "hoi_24header"
             clicksound = click_close
-			web_link = "https://kiraezy.github.io/WDStatFrontend/"
+			web_link = global.weblink
         }
 		buttonType = {
             name = "Stat_Collector_Refuse"
