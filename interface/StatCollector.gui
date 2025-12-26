@@ -55,7 +55,7 @@ guiTypes = {
 			position = { x = 25 y = 60 }
 			font = "hoi_20mbs"
 			borderSize = {x = 0 y = 0 }
-			text = "Do you want to submit your current run statistics to be included in the World Domination global statistic website 'Kaisiserredux: World Domination Global Statistic'?"
+			text = "You could choose to submit your current run statistics to be included in the World Domination global statistic website 'Kaisiserredux: World Domination Global Statistic' Anytime when you want. Here are the stat that would be submitted when you click the submit button."
 			maxWidth = 550
 			maxHeight = 79
 			fixedsize = yes	
@@ -64,7 +64,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name = "Stat_Collector_Info_List_textbox"
-			position = { x = 25 y = 120 }
+			position = { x = 25 y = 140 }
 			font = "hoi_20mbs"
 			borderSize = {x = 0 y = 0 }
 			text = "Stat_Collector_Info_List_loc"
@@ -77,7 +77,7 @@ guiTypes = {
             name = "Stat_Collector_Accept"
             position = { x = 120 y = 300 }
             quadTextureSprite = "GFX_event_option_entry"
-			buttonText = "Sure, why not?"
+			buttonText = "Check The Stat!"
 			buttonFont = "hoi_24header"
             clicksound = click_close
 			web_link = "https://kiraezy.github.io/WDStatFrontend/"
@@ -86,7 +86,7 @@ guiTypes = {
             name = "Stat_Collector_Refuse"
             position = { x = 120 y = 350 }
             quadTextureSprite = "GFX_event_option_entry"
-			buttonText = "No Thanks"
+			buttonText = "OK"
 			buttonFont = "hoi_24header"
             clicksound = click_close
         }

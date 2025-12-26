@@ -343,4 +343,19 @@ WD_Stat_Collector = {
 			set_global_flag = WD_Stat_Collector_Visible
 		}
 	}
+
+	WD_Stat_Collector_submit_click = {
+		icon = GFX_decision_generic_agreement
+		complete_effect = {
+			clr_global_flag = Stat_Collector_Visible
+			set_global_flag = Stat_Collector_Accepted
+			if = {
+				clr_global_flag = Stat_Collector_Visible
+				limit = {	
+					has_global_flag = WD_Stat_Collector_Visible
+				}
+				clr_global_flag  = WD_Stat_Collector_Visible
+			}
+		}
+	}
 }
