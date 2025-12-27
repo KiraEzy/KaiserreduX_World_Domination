@@ -19,7 +19,8 @@ country_event = {
     option = {
         name = kxwd.announcement.1.a
         hidden_effect = {
-			set_variable = { global.weblink = "https://kiraezy.github.io/WDStatFrontend/" }
-		}
+			set_variable = { global.m_weblink = 1 }
+            log = "weblinksss: [?global.m_weblink]"
+        }
     }
 }
