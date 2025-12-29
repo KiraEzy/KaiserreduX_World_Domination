@@ -1,0 +1,11 @@
+TEX_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+	original_tag = TEX
+	}
+
+	visible = { 
+	has_completed_focus = TEX_treaty_of_tord
+	}	
+}
