@@ -1,0 +1,346 @@
+
+####################################
+####### delhi churchill tree #######
+####################################
+
+shared_focus = {
+	id = DEHWD_Chuchills_Acension
+	icon = GFX_goal_AFG_Meeting_Viceroy_Churchill
+	available = {
+        is_ai = no
+		has_government = paternal_autocrat
+        has_country_leader = {
+	        character = DEH_Winston_Churchill
+	        ruling_only = yes
+        }
+	}
+
+	x = 0
+	y = 3
+    relative_position_id = DEH_unifyindia_2
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus DEHWD_Chuchills_Acension"
+        add_ideas = KXWD_DEH_rule_of_chuchill1
+	}
+}
+
+shared_focus = {
+	id = DEHWD_loyalty_to_king
+    icon = GFX_goal_ZAM_god_save_the_king
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_Chuchills_Acension
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_Chuchills_Acension
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_loyalty_to_king"
+        add_ideas = KXWD_DEH_loyal_to_the_king
+    }
+}
+
+shared_focus = {
+	id = DEHWD_prepare_expeditions
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_loyalty_to_king
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_loyalty_to_king
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_prepare_expeditions"
+        add_ideas = KXWD_DEH_expedition_preperations
+    }
+}
+
+shared_focus = {
+	id = DEHWD_grand_rearming
+    icon = GFX_goal_generic_drafted_army
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_prepare_expeditions
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_prepare_expeditions
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_grand_rearming"
+        add_offsite_building = { type = arms_factory level = 5 }
+        add_offsite_building = { type = industrial_complex level = 5 }
+        add_offsite_building = { type = dockyard level = 5 }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_expeditions_begin
+    icon = GFX_goal_AFG_british_protectorate
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_grand_rearming
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_grand_rearming
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_expeditions_begin"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_expedition_preperations
+            add_idea = KXWD_DEH_expeditions_begin
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_empires_bastion
+    icon = GFX_goal_RAJ_british_india
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_expeditions_begin
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_expeditions_begin
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_empires_bastion"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_rule_of_chuchill1
+            add_idea = KXWD_DEH_rule_of_chuchill2
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_save_raj
+    icon = GFX_goal_NEE_open_warfare
+    x = -2
+    y = 1
+	relative_position_id = DEHWD_loyalty_to_king
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_loyalty_to_king
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_save_raj"
+        add_ideas = KXWD_DEH_to_save_the_raj
+    }
+}
+
+shared_focus = {
+	id = DEHWD_invite_settlers
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_save_raj
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_save_raj
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_invite_settlers"
+        add_ideas = KXWD_DEH_inviting_settlers1
+        add_political_power = 250
+        add_manpower = 50000
+        add_research_slot = 1
+    }
+}
+
+shared_focus = {
+	id = DEHWD_civilizing_mission
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_invite_settlers
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_invite_settlers
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_civilizing_mission"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_inviting_settlers1
+            add_idea = KXWD_DEH_inviting_settlers2
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_civilizing_mission_complete
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_civilizing_mission
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_civilizing_mission
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_civilizing_mission_complete"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_inviting_settlers2
+            add_idea = KXWD_DEH_inviting_settlers3
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_push_ganga_singh_out_of_politics
+    icon = GFX_goal_NEE_open_warfare
+    x = 2
+    y = 1
+	relative_position_id = DEHWD_loyalty_to_king
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_loyalty_to_king
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_push_ganga_singh_out_of_politics"
+        add_popularity = {
+							ideology = social_liberal
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = market_liberal
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = social_conservative
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = authoritarian_democrat
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = social_democrat
+							popularity = -0.20
+		}
+        add_popularity = {
+							ideology = radical_socialist
+							popularity = -0.20
+		}
+    }
+}
+
+shared_focus = {
+	id = DEHWD_prepare_spies
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_push_ganga_singh_out_of_politics
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_push_ganga_singh_out_of_politics
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_prepare_spies"
+        create_intelligence_agency = yes
+        upgrade_intelligence_agency = upgrade_form_department
+        add_ideas = KXWD_DEH_Spymasters
+    }
+}
+
+shared_focus = {
+	id = DEHWD_all_for_king
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_prepare_spies
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_prepare_spies
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_all_for_king"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_loyal_to_the_king
+            add_idea = KXWD_DEH_all_for_the_king
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_jewel_of_the_crown
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_all_for_king
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_all_for_king
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_jewel_of_the_crown"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_all_for_the_king
+            add_idea = KXWD_DEH_jewel_of_the_crown
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_saviour_churchill
+    icon = GFX_goal_GBR_britannia
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_empires_bastion
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_civilizing_mission_complete
+    }
+    prerequisite = {
+        focus = DEHWD_jewel_of_the_crown
+    }
+    prerequisite = {
+        focus = DEHWD_empires_bastion
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_saviour_churchill"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_rule_of_chuchill2
+            add_idea = KXWD_DEH_rule_of_chuchill3
+        }
+    }
+}
+
+shared_focus = {
+	id = DEHWD_a_new_age
+    icon = GFX_goal_NEE_open_warfare
+    x = 0
+    y = 1
+	relative_position_id = DEHWD_saviour_churchill
+    cost = 5
+    prerequisite = {
+        focus = DEHWD_saviour_churchill
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus DEHWD_a_new_age"
+        swap_ideas = {
+            remove_idea = KXWD_DEH_rule_of_chuchill3
+            add_idea = KXWD_DEH_rule_of_chuchill4
+        }
+    }
+}

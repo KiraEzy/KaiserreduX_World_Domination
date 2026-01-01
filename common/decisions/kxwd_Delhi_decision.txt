@@ -1,0 +1,434 @@
+DEH_int_game = {
+	DEH_establish_rk_AKC = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 897
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		897 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		897 = { add_core_of = DEH }
+		897 = { transfer_state_to = DEH }
+	}
+}
+
+DEH_establish_rk_SBU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 756
+				state = 749
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		756 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		749 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		756 = { add_core_of = DEH }
+		749 = { add_core_of = DEH }
+		756 = { transfer_state_to = DEH }
+		749 = { transfer_state_to = DEH }
+	}
+}
+
+DEH_establish_rk_NPL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 323
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		323 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		323 = { add_core_of = DEH }
+		323 = { transfer_state_to = DEH }
+	}
+}
+
+DEH_establish_rk_BHU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 324
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		324 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		324 = { add_core_of = DEH }
+		324 = { transfer_state_to = DEH }
+	}
+}
+
+DEH_establish_rk_DJI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 268
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		268 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		268 = { add_core_of = DEH }
+		268 = { transfer_state_to = DEH }
+	}
+}
+
+DEH_establish_rk_ADN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 752
+				state = 659
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		752 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		659 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		752 = { add_core_of = DEH }
+		659 = { add_core_of = DEH }
+		752 = { transfer_state_to = DEH }
+		659 = { transfer_state_to = DEH }
+	}
+}
+
+DEH_establish_rk_OMA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1024
+				state = 294
+				state = 859
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1024 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		294 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		859 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1024 = { add_core_of = DEH }
+		294 = { add_core_of = DEH }
+		859 = { add_core_of = DEH }
+		1024 = { transfer_state_to = DEH }
+		294 = { transfer_state_to = DEH }
+		859 = { transfer_state_to = DEH }
+	}
+}
+}
+
+
+
+DEH_great_game = {
+DEHgrab = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			
+			log = "AFG"
+			AFG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PER"
+			PER = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "IRQ"
+			IRQ = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TIB"
+			TIB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIA"
+			SIA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TRU"
+			TRU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "LEB"
+			LEB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "EGY"
+			EGY = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ERI"
+			ERI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TRP"
+			TRP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "UZB"
+			UZB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIK"
+			SIK = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GXC"
+			GXC = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "LEP"
+			LEP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "QIE"
+			QIE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "MAN"
+			MAN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "MON"
+			MON = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIB"
+			SIB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "KOR"
+			KOR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "JAP"
+			JAP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TAI"
+			TAI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "INS"
+			INS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "AZE"
+			AZE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ARM"
+			ARM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GEO"
+			GEO = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "DKB"
+			DKB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TUR"
+			TUR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "KEN"
+			KEN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "NGR"
+			NGR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GHA"
+			GHA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "MAG"
+			MAG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "RUS"
+			RUS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+		}
+		days_remove = 0
+	}
+}

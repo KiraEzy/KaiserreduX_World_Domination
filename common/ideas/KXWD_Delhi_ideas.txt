@@ -1,0 +1,193 @@
+ideas = {
+	country = {
+        KXWD_DEH_rule_of_chuchill1= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rule_of_chuchill1"}
+			allowed = {always = no}
+			picture = DEH_churchill_icon
+			modifier = {
+			war_support_factor = 0.1
+			stability_factor = 0.1
+            political_power_factor = 0.05
+            recruitable_population = 0.01
+            paternal_autocrat_drift = 0.1
+			}
+			removal_cost = -1
+		}
+        
+        KXWD_DEH_rule_of_chuchill2= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rule_of_chuchill2"}
+			allowed = {always = no}
+			picture = DEH_churchill_icon
+			modifier = {
+			war_support_factor = 0.15
+			stability_factor = 0.15
+            political_power_factor = 0.1
+            recruitable_population = 0.02
+            paternal_autocrat_drift = 0.5
+            army_attack_factor = 0.05
+			army_defence_factor = 0.05
+            army_speed_factor = 0.05
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_rule_of_chuchill3= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rule_of_chuchill3"}
+			allowed = {always = no}
+			picture = DEH_churchill_icon
+			modifier = {
+			war_support_factor = 0.25
+			stability_factor = 0.25
+            political_power_factor = 0.25
+            recruitable_population = 0.04
+            paternal_autocrat_drift = 1.0
+            army_attack_factor = 0.1
+			army_defence_factor = 0.1
+            army_speed_factor = 0.15
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_rule_of_chuchill4= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea rule_of_chuchill4"}
+			allowed = {always = no}
+			picture = DEH_churchill_icon
+			modifier = {
+			war_support_factor = 0.25
+			stability_factor = 0.25
+            political_power_factor = 0.25
+            recruitable_population = 0.05
+            paternal_autocrat_drift = 2.5
+            army_attack_factor = 0.2
+			army_defence_factor = 0.2
+            army_speed_factor = 0.3
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_loyal_to_the_king= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea loyal_to_the_king"}
+			allowed = {always = no}
+			picture = UK_military_loyal_idea
+			modifier = {
+			stability_weekly = 0.005
+            war_support_weekly = 0.005
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_to_save_the_raj= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea to_save_the_raj"}
+			allowed = {always = no}
+			picture = big_entente_idea
+			modifier = {
+			    army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+                local_resources_factor = 0.25
+                consumer_goods_factor = -0.25
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_inviting_settlers1= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea inviting_settlers_1"}
+			allowed = {always = no}
+			picture = CAN_british_return_idea
+			modifier = {
+			    monthly_population = 1.0
+                weekly_manpower = 1000
+                research_speed_factor = 0.1
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_inviting_settlers2= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea inviting_settlers_2"}
+			allowed = {always = no}
+			picture = CAN_british_return_idea
+			modifier = {
+			    monthly_population = 1.5
+                weekly_manpower = 1500
+                research_speed_factor = 0.15
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_inviting_settlers3= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea inviting_settlers_3"}
+			allowed = {always = no}
+			picture = CAN_british_return_idea
+			modifier = {
+			    monthly_population = 2.5
+                weekly_manpower = 2500
+                research_speed_factor = 0.25
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_expedition_preperations= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea expedition_preperations"}
+			allowed = {always = no}
+			picture = advisors_british_india
+			modifier = {
+			    production_speed_buildings_factor = 0.15
+                industrial_capacity_factory = 0.15
+                production_factory_efficiency_gain_factor = 0.2
+                production_factory_max_efficiency_factor = 0.2
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_expeditions_begin= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea expedition_preperations"}
+			allowed = {always = no}
+			picture = advisors_british_india
+			modifier = {
+			    production_speed_buildings_factor = 0.25
+                industrial_capacity_factory = 0.25
+                production_factory_efficiency_gain_factor = 0.25
+                production_factory_max_efficiency_factor = 0.25
+                breakthrough_factor = 0.15
+                supply_consumption_factor = -0.15
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_all_for_the_king= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea all_for_the_king"}
+			allowed = {always = no}
+			picture = LIT_crown_4
+			modifier = {
+			stability_weekly = 0.01
+            war_support_weekly = 0.01
+            recruitable_population_factor = 0.25
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_jewel_of_the_crown= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea all_for_the_king"}
+			allowed = {always = no}
+			picture = LIT_crown_4
+			modifier = {
+			stability_weekly = 0.02
+            war_support_weekly = 0.02
+            recruitable_population_factor = 0.5
+            army_morale_factor = 0.15
+			}
+			removal_cost = -1
+		}
+
+        KXWD_DEH_Spymasters= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea Spymasters"}
+			allowed = {always = no}
+			picture = CSA_spy_cat
+			modifier = {
+			agency_upgrade_time = -0.5
+            intel_network_gain_factor = 0.5
+            operative_slot = 3
+			}
+			removal_cost = -1
+		}
+    }
+}
