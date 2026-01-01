@@ -1,0 +1,379 @@
+QING_great_game = {
+	QING_great_game_testing = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			every_country = {
+				log = "--------------------------------"
+				log = "[THIS.GetTag] claim states:"
+				THIS = {
+					every_owned_state = {
+						if = {
+							limit = {
+								not = { is_core_of = THIS} 
+							}
+							log = "[state.GetID]"
+						}
+					}
+				}
+				log = "--------------------------------"
+				log = "[THIS.GetTag] core states:"
+				THIS = {
+					every_owned_state = {
+						if = {
+							limit = {
+								is_core_of = THIS 
+							}
+							log = "[state.GetID]"
+						}
+					}
+				}
+				log = "--------------------------------"
+			}
+			
+		}
+	}
+
+	QIE_establish_rk_MEX = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 277
+					state = 1253
+					state = 475
+					state = 476
+					state = 477
+					state = 478
+					state = 479
+					state = 480
+					state = 481
+					state = 482
+					state = 483
+					state = 484
+					state = 485
+					state = 1252
+					state = 474
+					state = 1254
+					state = 1255
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					MEX = { exists = yes }
+				}
+				MEX = { is_subject_of = QIE }
+			}
+			OR = {
+			277 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1253 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			475 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			476 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			477 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			478 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			479 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			480 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			481 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			482 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			483 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			484 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			485 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1252 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			474 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1254 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1255 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+				OR = {
+					277 = { NOT = { is_core_of = QIE } }
+					1253 = { NOT = { is_core_of = QIE } }
+					475 = { NOT = { is_core_of = QIE } }
+					476 = { NOT = { is_core_of = QIE } }
+					477 = { NOT = { is_core_of = QIE } }
+					478 = { NOT = { is_core_of = QIE } }
+					479 = { NOT = { is_core_of = QIE } }
+					480 = { NOT = { is_core_of = QIE } }
+					481 = { NOT = { is_core_of = QIE } }
+					482 = { NOT = { is_core_of = QIE } }
+					483 = { NOT = { is_core_of = QIE } }
+					484 = { NOT = { is_core_of = QIE } }
+					485 = { NOT = { is_core_of = QIE } }
+					1252 = { NOT = { is_core_of = QIE } }
+					474 = { NOT = { is_core_of = QIE } }
+					1254 = { NOT = { is_core_of = QIE } }
+					1255 = { NOT = { is_core_of = QIE } }
+				}
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			MEX = {
+				every_core_state = {
+					remove_core_of = MEX
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = MEX
+					}
+					remove_claim_by = MEX
+				}
+			}
+			798 = { add_core_of = MEX }
+			829 = { add_core_of = MEX }
+			277 = { add_core_of = MEX }
+			1253 = { add_core_of = MEX }
+			475 = { add_core_of = MEX }
+			476 = { add_core_of = MEX }
+			477 = { add_core_of = MEX }
+			478 = { add_core_of = MEX }
+			479 = { add_core_of = MEX }
+			480 = { add_core_of = MEX }
+			481 = { add_core_of = MEX }
+			482 = { add_core_of = MEX }
+			483 = { add_core_of = MEX }
+			484 = { add_core_of = MEX }
+			485 = { add_core_of = MEX }
+			1252 = { add_core_of = MEX }
+			474 = { add_core_of = MEX }
+			1254 = { add_core_of = MEX }
+			1255 = { add_core_of = MEX }
+			release = MEX
+			MEX = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = MEX
+				}
+			}
+			MEX = { 
+				set_cosmetic_tag = QIE_MEX_OCC
+				load_focus_tree = generic_focus            
+	
+	
+				set_popularities = {
+					syndicalist = 5.0
+					social_democrat = 5.0
+					social_liberal = 0.0
+					market_liberal = 0.0
+					social_conservative = 20.0
+					authoritarian_democrat = 50.0
+					paternal_autocrat = 10.0
+					national_populist = 10.0
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Provisional Government"
+					long_name = "Provisional Government"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "Provisional Government"
+					long_name = "Provisional Government"
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = MEX
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_WSU = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 91
+					state = 89
+					state = 1140
+					state = 1127
+					state = 1126
+					state = 80
+					state = 1245
+					state = 201
+					state = 1244
+					state = 791
+					state = 192
+					state = 1240
+					state = 202
+					state = 203
+					state = 1233
+					state = 226
+					state = 197
+					state = 1232
+					state = 1241
+					state = 198
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					WSU = { exists = yes }
+				}
+				WSU = { is_subject_of = QIE }
+			}
+			OR = {
+			91 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			89 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1140 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1127 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1126 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			80 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1245 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			201 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1244 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			791 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			192 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1240 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			202 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			203 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1233 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			226 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			197 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1232 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1241 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			198 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+				OR = {
+					91 = { NOT = { is_core_of = QIE } }
+					89 = { NOT = { is_core_of = QIE } }
+					1140 = { NOT = { is_core_of = QIE } }
+					1127 = { NOT = { is_core_of = QIE } }
+					1126 = { NOT = { is_core_of = QIE } }
+					80 = { NOT = { is_core_of = QIE } }
+					1245 = { NOT = { is_core_of = QIE } }
+					201 = { NOT = { is_core_of = QIE } }
+					1244 = { NOT = { is_core_of = QIE } }
+					791 = { NOT = { is_core_of = QIE } }
+					192 = { NOT = { is_core_of = QIE } }
+					1240 = { NOT = { is_core_of = QIE } }
+					202 = { NOT = { is_core_of = QIE } }
+					203 = { NOT = { is_core_of = QIE } }
+					1233 = { NOT = { is_core_of = QIE } }
+					226 = { NOT = { is_core_of = QIE } }
+					197 = { NOT = { is_core_of = QIE } }
+					1232 = { NOT = { is_core_of = QIE } }
+					1241 = { NOT = { is_core_of = QIE } }
+					198 = { NOT = { is_core_of = QIE } }
+				}
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			WSU = {
+				every_core_state = {
+					remove_core_of = WSU
+					remove_claim_by = WSU
+				}
+			}
+			199 = { add_core_of = WSU }
+			792 = { add_core_of = WSU }
+			1228 = { add_core_of = WSU }
+			91 = { add_core_of = WSU }
+			89 = { add_core_of = WSU }
+			1140 = { add_core_of = WSU }
+			1127 = { add_core_of = WSU }
+			1126 = { add_core_of = WSU }
+			80 = { add_core_of = WSU }
+			1245 = { add_core_of = WSU }
+			201 = { add_core_of = WSU }
+			1244 = { add_core_of = WSU }
+			791 = { add_core_of = WSU }
+			192 = { add_core_of = WSU }
+			1240 = { add_core_of = WSU }
+			202 = { add_core_of = WSU }
+			203 = { add_core_of = WSU }
+			1233 = { add_core_of = WSU }
+			226 = { add_core_of = WSU }
+			197 = { add_core_of = WSU }
+			1232 = { add_core_of = WSU }
+			1241 = { add_core_of = WSU }
+			198 = { add_core_of = WSU }
+			release = WSU
+			WSU = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = WSU
+				}
+			}
+			WSU = { 
+				set_cosmetic_tag = QIE_WSU_OCC
+				load_focus_tree = generic_focus            
+	
+	
+				set_popularities = {
+					syndicalist = 5.0
+					social_democrat = 5.0
+					social_liberal = 0.0
+					market_liberal = 0.0
+					social_conservative = 20.0
+					authoritarian_democrat = 50.0
+					paternal_autocrat = 10.0
+					national_populist = 10.0
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Provisional Government"
+					long_name = "Provisional Government"
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					name = "Provisional Government"
+					long_name = "Provisional Government"
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = WSU
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+}
