@@ -113,6 +113,7 @@ DEH_establish_rk_DJI = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 268
+				state = 1297
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -120,6 +121,7 @@ DEH_establish_rk_DJI = {
 
 	available = {
 		268 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1297 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
 	}
 
 	fire_only_once = yes
@@ -130,6 +132,8 @@ DEH_establish_rk_DJI = {
 	complete_effect = {
 		268 = { add_core_of = DEH }
 		268 = { transfer_state_to = DEH }
+		1297 = { add_core_of = DEH }
+		1297 = { transfer_state_to = DEH }
 	}
 }
 
@@ -196,10 +200,5293 @@ DEH_establish_rk_OMA = {
 		859 = { transfer_state_to = DEH }
 	}
 }
+DEH_establish_rk_SEZ = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 753
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		753 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		753 = { add_core_of = DEH }
+		753 = { transfer_state_to = DEH }
+	}
+}
 }
 
 
 
 DEH_great_game = {
+DEH_establish_rk_AFG = {
+	icon = generic_prepare_civil_war
 
+		highlight_states = {
+			highlight_state_targets = {
+				state = 267
+				state = 415
+				state = 1217
+				state = 1218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AFG = { exists = yes }
+			}
+			AFG = { is_subject_of = DEH }
+		}
+		267 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		415 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1217 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1218 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				267 = { NOT = { is_core_of = DEH } }
+				415 = { NOT = { is_core_of = DEH } }
+				1217 = { NOT = { is_core_of = DEH } }
+				1218 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AFG = {
+			every_core_state = {
+				remove_core_of = AFG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AFG
+				}
+				remove_claim_by = AFG
+			}
+		}
+		267 = { add_core_of = AFG }
+		415 = { add_core_of = AFG }
+		1217 = { add_core_of = AFG }
+		1218 = { add_core_of = AFG }
+		release = AFG
+		AFG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = AFG
+			}
+		}
+		AFG = { 
+			set_cosmetic_tag = DEH_AFG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = AFG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 417
+				state = 418
+				state = 419
+				state = 420
+				state = 421
+				state = 804
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = DEH }
+		}
+		266 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		410 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		411 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		412 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		413 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		414 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		416 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		417 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		418 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		419 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		420 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		421 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		804 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				266 = { NOT = { is_core_of = DEH } }
+				410 = { NOT = { is_core_of = DEH } }
+				411 = { NOT = { is_core_of = DEH } }
+				412 = { NOT = { is_core_of = DEH } }
+				413 = { NOT = { is_core_of = DEH } }
+				414 = { NOT = { is_core_of = DEH } }
+				416 = { NOT = { is_core_of = DEH } }
+				417 = { NOT = { is_core_of = DEH } }
+				418 = { NOT = { is_core_of = DEH } }
+				419 = { NOT = { is_core_of = DEH } }
+				420 = { NOT = { is_core_of = DEH } }
+				421 = { NOT = { is_core_of = DEH } }
+				804 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		266 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = DEH_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_ASY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 291
+				state = 349
+				state = 676
+				state = 812
+				state = 819
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ASY = { exists = yes }
+			}
+			ASY = { is_subject_of = DEH }
+		}
+		291 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		349 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		676 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		812 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		819 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				291 = { NOT = { is_core_of = DEH } }
+				349 = { NOT = { is_core_of = DEH } }
+				676 = { NOT = { is_core_of = DEH } }
+				812 = { NOT = { is_core_of = DEH } }
+				819 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ASY = {
+			every_core_state = {
+				remove_core_of = ASY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ASY
+				}
+				remove_claim_by = ASY
+			}
+		}
+		291 = { add_core_of = ASY }
+		349 = { add_core_of = ASY }
+		676 = { add_core_of = ASY }
+		812 = { add_core_of = ASY }
+		819 = { add_core_of = ASY }
+		release = ASY
+		ASY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = ASY
+			}
+		}
+		ASY = { 
+			set_cosmetic_tag = DEH_ASY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = ASY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_TIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 322
+				state = 693
+				state = 748
+				state = 1086
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TIB = { exists = yes }
+			}
+			TIB = { is_subject_of = DEH }
+		}
+		322 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		693 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		748 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1086 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				322 = { NOT = { is_core_of = DEH } }
+				693 = { NOT = { is_core_of = DEH } }
+				748 = { NOT = { is_core_of = DEH } }
+				1086 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TIB = {
+			every_core_state = {
+				remove_core_of = TIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TIB
+				}
+				remove_claim_by = TIB
+			}
+		}
+		322 = { add_core_of = TIB }
+		693 = { add_core_of = TIB }
+		748 = { add_core_of = TIB }
+		1086 = { add_core_of = TIB }
+		release = TIB
+		TIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = TIB
+			}
+		}
+		TIB = { 
+			set_cosmetic_tag = DEH_TIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = TIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_SIA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 289
+				state = 822
+				state = 823
+				state = 824
+				state = 286
+				state = 670
+				state = 671
+				state = 750
+				state = 825
+				state = 826
+				state = 827
+				state = 856
+				state = 857
+				state = 882
+				state = 336
+				state = 724
+				state = 751
+				state = 830
+				state = 846
+				state = 999
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIA = { exists = yes }
+			}
+			SIA = { is_subject_of = DEH }
+		}
+		289 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		822 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		823 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		824 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		286 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		670 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		671 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		750 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		825 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		826 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		827 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		856 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		857 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		882 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		336 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		724 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		751 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		830 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		846 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		999 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				289 = { NOT = { is_core_of = DEH } }
+				822 = { NOT = { is_core_of = DEH } }
+				823 = { NOT = { is_core_of = DEH } }
+				824 = { NOT = { is_core_of = DEH } }
+				286 = { NOT = { is_core_of = DEH } }
+				670 = { NOT = { is_core_of = DEH } }
+				671 = { NOT = { is_core_of = DEH } }
+				750 = { NOT = { is_core_of = DEH } }
+				825 = { NOT = { is_core_of = DEH } }
+				826 = { NOT = { is_core_of = DEH } }
+				827 = { NOT = { is_core_of = DEH } }
+				856 = { NOT = { is_core_of = DEH } }
+				857 = { NOT = { is_core_of = DEH } }
+				882 = { NOT = { is_core_of = DEH } }
+				336 = { NOT = { is_core_of = DEH } }
+				724 = { NOT = { is_core_of = DEH } }
+				751 = { NOT = { is_core_of = DEH } }
+				830 = { NOT = { is_core_of = DEH } }
+				846 = { NOT = { is_core_of = DEH } }
+				999 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIA = {
+			every_core_state = {
+				remove_core_of = SIA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIA
+				}
+				remove_claim_by = SIA
+			}
+		}
+		289 = { add_core_of = SIA }
+		822 = { add_core_of = SIA }
+		823 = { add_core_of = SIA }
+		824 = { add_core_of = SIA }
+		286 = { add_core_of = SIA }
+		670 = { add_core_of = SIA }
+		671 = { add_core_of = SIA }
+		750 = { add_core_of = SIA }
+		825 = { add_core_of = SIA }
+		826 = { add_core_of = SIA }
+		827 = { add_core_of = SIA }
+		856 = { add_core_of = SIA }
+		857 = { add_core_of = SIA }
+		882 = { add_core_of = SIA }
+		336 = { add_core_of = SIA }
+		724 = { add_core_of = SIA }
+		751 = { add_core_of = SIA }
+		830 = { add_core_of = SIA }
+		846 = { add_core_of = SIA }
+		999 = { add_core_of = SIA }
+		release = SIA
+		SIA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = SIA
+			}
+		}
+		SIA = { 
+			set_cosmetic_tag = DEH_SIA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = SIA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_TRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 292
+				state = 293
+				state = 347
+				state = 656
+				state = 658
+				state = 675
+				state = 678
+				state = 679
+				state = 754
+				state = 907
+				state = 915
+				state = 981
+				state = 982
+				state = 991
+				state = 993
+				state = 994
+				state = 1035
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRU = { exists = yes }
+			}
+			TRU = { is_subject_of = DEH }
+		}
+		292 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		293 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		347 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		656 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		658 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		675 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		678 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		679 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		754 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		907 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		915 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		981 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		982 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		991 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		993 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		994 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1035 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				292 = { NOT = { is_core_of = DEH } }
+				293 = { NOT = { is_core_of = DEH } }
+				347 = { NOT = { is_core_of = DEH } }
+				656 = { NOT = { is_core_of = DEH } }
+				658 = { NOT = { is_core_of = DEH } }
+				675 = { NOT = { is_core_of = DEH } }
+				678 = { NOT = { is_core_of = DEH } }
+				679 = { NOT = { is_core_of = DEH } }
+				754 = { NOT = { is_core_of = DEH } }
+				907 = { NOT = { is_core_of = DEH } }
+				915 = { NOT = { is_core_of = DEH } }
+				981 = { NOT = { is_core_of = DEH } }
+				982 = { NOT = { is_core_of = DEH } }
+				991 = { NOT = { is_core_of = DEH } }
+				993 = { NOT = { is_core_of = DEH } }
+				994 = { NOT = { is_core_of = DEH } }
+				1035 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRU = {
+			every_core_state = {
+				remove_core_of = TRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRU
+				}
+				remove_claim_by = TRU
+			}
+		}
+		292 = { add_core_of = TRU }
+		293 = { add_core_of = TRU }
+		347 = { add_core_of = TRU }
+		656 = { add_core_of = TRU }
+		658 = { add_core_of = TRU }
+		675 = { add_core_of = TRU }
+		678 = { add_core_of = TRU }
+		679 = { add_core_of = TRU }
+		754 = { add_core_of = TRU }
+		907 = { add_core_of = TRU }
+		915 = { add_core_of = TRU }
+		981 = { add_core_of = TRU }
+		982 = { add_core_of = TRU }
+		991 = { add_core_of = TRU }
+		993 = { add_core_of = TRU }
+		994 = { add_core_of = TRU }
+		1035 = { add_core_of = TRU }
+		release = TRU
+		TRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = TRU
+			}
+		}
+		TRU = { 
+			set_cosmetic_tag = DEH_TRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = TRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_LEB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 344
+				state = 350
+				state = 454
+				state = 455
+				state = 553
+				state = 554
+				state = 677
+				state = 680
+				state = 992
+				state = 995
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LEB = { exists = yes }
+			}
+			LEB = { is_subject_of = DEH }
+		}
+		344 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		350 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		454 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		455 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		553 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		554 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		677 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		680 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		992 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		995 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				344 = { NOT = { is_core_of = DEH } }
+				350 = { NOT = { is_core_of = DEH } }
+				454 = { NOT = { is_core_of = DEH } }
+				455 = { NOT = { is_core_of = DEH } }
+				553 = { NOT = { is_core_of = DEH } }
+				554 = { NOT = { is_core_of = DEH } }
+				677 = { NOT = { is_core_of = DEH } }
+				680 = { NOT = { is_core_of = DEH } }
+				992 = { NOT = { is_core_of = DEH } }
+				995 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEB = {
+			every_core_state = {
+				remove_core_of = LEB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LEB
+				}
+				remove_claim_by = LEB
+			}
+		}
+		344 = { add_core_of = LEB }
+		350 = { add_core_of = LEB }
+		454 = { add_core_of = LEB }
+		455 = { add_core_of = LEB }
+		553 = { add_core_of = LEB }
+		554 = { add_core_of = LEB }
+		677 = { add_core_of = LEB }
+		680 = { add_core_of = LEB }
+		992 = { add_core_of = LEB }
+		995 = { add_core_of = LEB }
+		release = LEB
+		LEB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = LEB
+			}
+		}
+		LEB = { 
+			set_cosmetic_tag = DEH_LEB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+				state = 447
+				state = 452
+				state = 453
+				state = 456
+				state = 457
+				state = 549
+				state = 551
+				state = 552
+				state = 862
+				state = 1007
+				state = 1008
+				state = 1010
+				state = 1011
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = DEH }
+		}
+		446 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		447 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		452 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		453 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		456 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		457 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		549 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		551 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		552 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		862 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1007 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1008 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1010 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1011 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				446 = { NOT = { is_core_of = DEH } }
+				447 = { NOT = { is_core_of = DEH } }
+				452 = { NOT = { is_core_of = DEH } }
+				453 = { NOT = { is_core_of = DEH } }
+				456 = { NOT = { is_core_of = DEH } }
+				457 = { NOT = { is_core_of = DEH } }
+				549 = { NOT = { is_core_of = DEH } }
+				551 = { NOT = { is_core_of = DEH } }
+				552 = { NOT = { is_core_of = DEH } }
+				862 = { NOT = { is_core_of = DEH } }
+				1007 = { NOT = { is_core_of = DEH } }
+				1008 = { NOT = { is_core_of = DEH } }
+				1010 = { NOT = { is_core_of = DEH } }
+				1011 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		446 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		453 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		549 = { add_core_of = EGY }
+		551 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		862 = { add_core_of = EGY }
+		1007 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		1010 = { add_core_of = EGY }
+		1011 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = DEH_EGY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_ERI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 269
+				state = 271
+				state = 550
+				state = 559
+				state = 906
+				state = 919
+				state = 920
+				state = 921
+				state = 922
+				state = 923
+				state = 924
+				state = 944
+				state = 961
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ERI = { exists = yes }
+			}
+			ERI = { is_subject_of = DEH }
+		}
+		269 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		271 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		550 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		559 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		906 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		919 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		920 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		921 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		922 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		923 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		924 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		944 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		961 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				269 = { NOT = { is_core_of = DEH } }
+				271 = { NOT = { is_core_of = DEH } }
+				550 = { NOT = { is_core_of = DEH } }
+				559 = { NOT = { is_core_of = DEH } }
+				906 = { NOT = { is_core_of = DEH } }
+				919 = { NOT = { is_core_of = DEH } }
+				920 = { NOT = { is_core_of = DEH } }
+				921 = { NOT = { is_core_of = DEH } }
+				922 = { NOT = { is_core_of = DEH } }
+				923 = { NOT = { is_core_of = DEH } }
+				924 = { NOT = { is_core_of = DEH } }
+				944 = { NOT = { is_core_of = DEH } }
+				961 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ERI = {
+			every_core_state = {
+				remove_core_of = ERI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ERI
+				}
+				remove_claim_by = ERI
+			}
+		}
+		269 = { add_core_of = ERI }
+		271 = { add_core_of = ERI }
+		550 = { add_core_of = ERI }
+		559 = { add_core_of = ERI }
+		906 = { add_core_of = ERI }
+		919 = { add_core_of = ERI }
+		920 = { add_core_of = ERI }
+		921 = { add_core_of = ERI }
+		922 = { add_core_of = ERI }
+		923 = { add_core_of = ERI }
+		924 = { add_core_of = ERI }
+		944 = { add_core_of = ERI }
+		961 = { add_core_of = ERI }
+		release = ERI
+		ERI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = ERI
+			}
+		}
+		ERI = { 
+			set_cosmetic_tag = DEH_ERI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = ERI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_TRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 273
+				state = 448
+				state = 450
+				state = 451
+				state = 663
+				state = 1009
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRP = { exists = yes }
+			}
+			TRP = { is_subject_of = DEH }
+		}
+		273 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		448 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		450 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		451 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		663 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1009 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				273 = { NOT = { is_core_of = DEH } }
+				448 = { NOT = { is_core_of = DEH } }
+				450 = { NOT = { is_core_of = DEH } }
+				451 = { NOT = { is_core_of = DEH } }
+				663 = { NOT = { is_core_of = DEH } }
+				1009 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRP = {
+			every_core_state = {
+				remove_core_of = TRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRP
+				}
+				remove_claim_by = TRP
+			}
+		}
+		273 = { add_core_of = TRP }
+		448 = { add_core_of = TRP }
+		450 = { add_core_of = TRP }
+		451 = { add_core_of = TRP }
+		663 = { add_core_of = TRP }
+		1009 = { add_core_of = TRP }
+		release = TRP
+		TRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = TRP
+			}
+		}
+		TRP = { 
+			set_cosmetic_tag = DEH_TRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = TRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_UZB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 405
+				state = 407
+				state = 584
+				state = 585
+				state = 586
+				state = 712
+				state = 732
+				state = 861
+				state = 1042
+				state = 1196
+				state = 1209
+				state = 1210
+				state = 1211
+				state = 1275
+				state = 1276
+				state = 1277
+				state = 1278
+				state = 1279
+				state = 1281
+				state = 402
+				state = 404
+				state = 406
+				state = 583
+				state = 587
+				state = 588
+				state = 589
+				state = 590
+				state = 810
+				state = 1203
+				state = 1208
+				state = 1212
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				UZB = { exists = yes }
+			}
+			UZB = { is_subject_of = DEH }
+		}
+		405 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		407 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		584 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		585 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		586 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		712 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		732 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		861 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1042 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1196 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1209 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1210 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1211 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1275 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1276 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1277 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1278 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1279 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1281 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		402 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		404 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		406 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		583 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		587 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		588 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		589 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		590 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		810 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1203 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1208 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1212 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				405 = { NOT = { is_core_of = DEH } }
+				407 = { NOT = { is_core_of = DEH } }
+				584 = { NOT = { is_core_of = DEH } }
+				585 = { NOT = { is_core_of = DEH } }
+				586 = { NOT = { is_core_of = DEH } }
+				712 = { NOT = { is_core_of = DEH } }
+				732 = { NOT = { is_core_of = DEH } }
+				861 = { NOT = { is_core_of = DEH } }
+				1042 = { NOT = { is_core_of = DEH } }
+				1196 = { NOT = { is_core_of = DEH } }
+				1209 = { NOT = { is_core_of = DEH } }
+				1210 = { NOT = { is_core_of = DEH } }
+				1211 = { NOT = { is_core_of = DEH } }
+				1275 = { NOT = { is_core_of = DEH } }
+				1276 = { NOT = { is_core_of = DEH } }
+				1277 = { NOT = { is_core_of = DEH } }
+				1278 = { NOT = { is_core_of = DEH } }
+				1279 = { NOT = { is_core_of = DEH } }
+				1281 = { NOT = { is_core_of = DEH } }
+				402 = { NOT = { is_core_of = DEH } }
+				404 = { NOT = { is_core_of = DEH } }
+				406 = { NOT = { is_core_of = DEH } }
+				583 = { NOT = { is_core_of = DEH } }
+				587 = { NOT = { is_core_of = DEH } }
+				588 = { NOT = { is_core_of = DEH } }
+				589 = { NOT = { is_core_of = DEH } }
+				590 = { NOT = { is_core_of = DEH } }
+				810 = { NOT = { is_core_of = DEH } }
+				1203 = { NOT = { is_core_of = DEH } }
+				1208 = { NOT = { is_core_of = DEH } }
+				1212 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		UZB = {
+			every_core_state = {
+				remove_core_of = UZB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = UZB
+				}
+				remove_claim_by = UZB
+			}
+		}
+		405 = { add_core_of = UZB }
+		407 = { add_core_of = UZB }
+		584 = { add_core_of = UZB }
+		585 = { add_core_of = UZB }
+		586 = { add_core_of = UZB }
+		712 = { add_core_of = UZB }
+		732 = { add_core_of = UZB }
+		861 = { add_core_of = UZB }
+		1042 = { add_core_of = UZB }
+		1196 = { add_core_of = UZB }
+		1209 = { add_core_of = UZB }
+		1210 = { add_core_of = UZB }
+		1211 = { add_core_of = UZB }
+		1275 = { add_core_of = UZB }
+		1276 = { add_core_of = UZB }
+		1277 = { add_core_of = UZB }
+		1278 = { add_core_of = UZB }
+		1279 = { add_core_of = UZB }
+		1281 = { add_core_of = UZB }
+		402 = { add_core_of = UZB }
+		404 = { add_core_of = UZB }
+		406 = { add_core_of = UZB }
+		583 = { add_core_of = UZB }
+		587 = { add_core_of = UZB }
+		588 = { add_core_of = UZB }
+		589 = { add_core_of = UZB }
+		590 = { add_core_of = UZB }
+		810 = { add_core_of = UZB }
+		1203 = { add_core_of = UZB }
+		1208 = { add_core_of = UZB }
+		1212 = { add_core_of = UZB }
+		release = UZB
+		UZB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = UZB
+			}
+		}
+		UZB = { 
+			set_cosmetic_tag = DEH_UZB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = UZB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_SIK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 287
+				state = 617
+				state = 618
+				state = 619
+				state = 1083
+				state = 1085
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIK = { exists = yes }
+			}
+			SIK = { is_subject_of = DEH }
+		}
+		287 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		617 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		618 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		619 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1083 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1085 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				287 = { NOT = { is_core_of = DEH } }
+				617 = { NOT = { is_core_of = DEH } }
+				618 = { NOT = { is_core_of = DEH } }
+				619 = { NOT = { is_core_of = DEH } }
+				1083 = { NOT = { is_core_of = DEH } }
+				1085 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIK = {
+			every_core_state = {
+				remove_core_of = SIK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIK
+				}
+				remove_claim_by = SIK
+			}
+		}
+		287 = { add_core_of = SIK }
+		617 = { add_core_of = SIK }
+		618 = { add_core_of = SIK }
+		619 = { add_core_of = SIK }
+		1083 = { add_core_of = SIK }
+		1085 = { add_core_of = SIK }
+		release = SIK
+		SIK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = SIK
+			}
+		}
+		SIK = { 
+			set_cosmetic_tag = DEH_SIK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = SIK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_GXC = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 326
+				state = 591
+				state = 592
+				state = 593
+				state = 594
+				state = 599
+				state = 728
+				state = 800
+				state = 801
+				state = 1012
+				state = 1053
+				state = 1054
+				state = 1055
+				state = 1056
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GXC = { exists = yes }
+			}
+			GXC = { is_subject_of = DEH }
+		}
+		326 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		591 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		592 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		593 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		594 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		599 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		728 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		800 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		801 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1012 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1053 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1054 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1055 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1056 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				326 = { NOT = { is_core_of = DEH } }
+				591 = { NOT = { is_core_of = DEH } }
+				592 = { NOT = { is_core_of = DEH } }
+				593 = { NOT = { is_core_of = DEH } }
+				594 = { NOT = { is_core_of = DEH } }
+				599 = { NOT = { is_core_of = DEH } }
+				728 = { NOT = { is_core_of = DEH } }
+				800 = { NOT = { is_core_of = DEH } }
+				801 = { NOT = { is_core_of = DEH } }
+				1012 = { NOT = { is_core_of = DEH } }
+				1053 = { NOT = { is_core_of = DEH } }
+				1054 = { NOT = { is_core_of = DEH } }
+				1055 = { NOT = { is_core_of = DEH } }
+				1056 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GXC = {
+			every_core_state = {
+				remove_core_of = GXC
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GXC
+				}
+				remove_claim_by = GXC
+			}
+		}
+		326 = { add_core_of = GXC }
+		591 = { add_core_of = GXC }
+		592 = { add_core_of = GXC }
+		593 = { add_core_of = GXC }
+		594 = { add_core_of = GXC }
+		599 = { add_core_of = GXC }
+		728 = { add_core_of = GXC }
+		800 = { add_core_of = GXC }
+		801 = { add_core_of = GXC }
+		1012 = { add_core_of = GXC }
+		1053 = { add_core_of = GXC }
+		1054 = { add_core_of = GXC }
+		1055 = { add_core_of = GXC }
+		1056 = { add_core_of = GXC }
+		release = GXC
+		GXC = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = GXC
+			}
+		}
+		GXC = { 
+			set_cosmetic_tag = DEH_GXC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = GXC
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_LEP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 325
+				state = 595
+				state = 596
+				state = 597
+				state = 598
+				state = 600
+				state = 601
+				state = 602
+				state = 603
+				state = 605
+				state = 606
+				state = 607
+				state = 613
+				state = 620
+				state = 650
+				state = 661
+				state = 743
+				state = 744
+				state = 746
+				state = 747
+				state = 788
+				state = 799
+				state = 802
+				state = 803
+				state = 816
+				state = 996
+				state = 1013
+				state = 1014
+				state = 1044
+				state = 1045
+				state = 1046
+				state = 1047
+				state = 1048
+				state = 1049
+				state = 1050
+				state = 1051
+				state = 1052
+				state = 1058
+				state = 1059
+				state = 1064
+				state = 1065
+				state = 1066
+				state = 1067
+				state = 1068
+				state = 1069
+				state = 1075
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LEP = { exists = yes }
+			}
+			LEP = { is_subject_of = DEH }
+		}
+		325 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		595 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		596 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		597 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		598 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		600 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		601 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		602 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		603 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		605 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		606 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		607 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		613 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		620 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		650 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		661 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		743 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		744 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		746 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		747 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		788 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		799 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		802 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		803 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		816 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		996 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1013 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1014 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1044 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1045 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1046 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1047 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1048 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1049 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1050 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1051 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1052 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1058 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1059 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1064 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1065 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1066 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1067 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1068 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1069 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1075 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				325 = { NOT = { is_core_of = DEH } }
+				595 = { NOT = { is_core_of = DEH } }
+				596 = { NOT = { is_core_of = DEH } }
+				597 = { NOT = { is_core_of = DEH } }
+				598 = { NOT = { is_core_of = DEH } }
+				600 = { NOT = { is_core_of = DEH } }
+				601 = { NOT = { is_core_of = DEH } }
+				602 = { NOT = { is_core_of = DEH } }
+				603 = { NOT = { is_core_of = DEH } }
+				605 = { NOT = { is_core_of = DEH } }
+				606 = { NOT = { is_core_of = DEH } }
+				607 = { NOT = { is_core_of = DEH } }
+				613 = { NOT = { is_core_of = DEH } }
+				620 = { NOT = { is_core_of = DEH } }
+				650 = { NOT = { is_core_of = DEH } }
+				661 = { NOT = { is_core_of = DEH } }
+				743 = { NOT = { is_core_of = DEH } }
+				744 = { NOT = { is_core_of = DEH } }
+				746 = { NOT = { is_core_of = DEH } }
+				747 = { NOT = { is_core_of = DEH } }
+				788 = { NOT = { is_core_of = DEH } }
+				799 = { NOT = { is_core_of = DEH } }
+				802 = { NOT = { is_core_of = DEH } }
+				803 = { NOT = { is_core_of = DEH } }
+				816 = { NOT = { is_core_of = DEH } }
+				996 = { NOT = { is_core_of = DEH } }
+				1013 = { NOT = { is_core_of = DEH } }
+				1014 = { NOT = { is_core_of = DEH } }
+				1044 = { NOT = { is_core_of = DEH } }
+				1045 = { NOT = { is_core_of = DEH } }
+				1046 = { NOT = { is_core_of = DEH } }
+				1047 = { NOT = { is_core_of = DEH } }
+				1048 = { NOT = { is_core_of = DEH } }
+				1049 = { NOT = { is_core_of = DEH } }
+				1050 = { NOT = { is_core_of = DEH } }
+				1051 = { NOT = { is_core_of = DEH } }
+				1052 = { NOT = { is_core_of = DEH } }
+				1058 = { NOT = { is_core_of = DEH } }
+				1059 = { NOT = { is_core_of = DEH } }
+				1064 = { NOT = { is_core_of = DEH } }
+				1065 = { NOT = { is_core_of = DEH } }
+				1066 = { NOT = { is_core_of = DEH } }
+				1067 = { NOT = { is_core_of = DEH } }
+				1068 = { NOT = { is_core_of = DEH } }
+				1069 = { NOT = { is_core_of = DEH } }
+				1075 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEP = {
+			every_core_state = {
+				remove_core_of = LEP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LEP
+				}
+				remove_claim_by = LEP
+			}
+		}
+		325 = { add_core_of = LEP }
+		595 = { add_core_of = LEP }
+		596 = { add_core_of = LEP }
+		597 = { add_core_of = LEP }
+		598 = { add_core_of = LEP }
+		600 = { add_core_of = LEP }
+		601 = { add_core_of = LEP }
+		602 = { add_core_of = LEP }
+		603 = { add_core_of = LEP }
+		605 = { add_core_of = LEP }
+		606 = { add_core_of = LEP }
+		607 = { add_core_of = LEP }
+		613 = { add_core_of = LEP }
+		620 = { add_core_of = LEP }
+		650 = { add_core_of = LEP }
+		661 = { add_core_of = LEP }
+		743 = { add_core_of = LEP }
+		744 = { add_core_of = LEP }
+		746 = { add_core_of = LEP }
+		747 = { add_core_of = LEP }
+		788 = { add_core_of = LEP }
+		799 = { add_core_of = LEP }
+		802 = { add_core_of = LEP }
+		803 = { add_core_of = LEP }
+		816 = { add_core_of = LEP }
+		996 = { add_core_of = LEP }
+		1013 = { add_core_of = LEP }
+		1014 = { add_core_of = LEP }
+		1044 = { add_core_of = LEP }
+		1045 = { add_core_of = LEP }
+		1046 = { add_core_of = LEP }
+		1047 = { add_core_of = LEP }
+		1048 = { add_core_of = LEP }
+		1049 = { add_core_of = LEP }
+		1050 = { add_core_of = LEP }
+		1051 = { add_core_of = LEP }
+		1052 = { add_core_of = LEP }
+		1058 = { add_core_of = LEP }
+		1059 = { add_core_of = LEP }
+		1064 = { add_core_of = LEP }
+		1065 = { add_core_of = LEP }
+		1066 = { add_core_of = LEP }
+		1067 = { add_core_of = LEP }
+		1068 = { add_core_of = LEP }
+		1069 = { add_core_of = LEP }
+		1075 = { add_core_of = LEP }
+		release = LEP
+		LEP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = LEP
+			}
+		}
+		LEP = { 
+			set_cosmetic_tag = DEH_LEP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = LEP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 283
+				state = 348
+				state = 353
+				state = 604
+				state = 608
+				state = 609
+				state = 611
+				state = 614
+				state = 615
+				state = 616
+				state = 621
+				state = 622
+				state = 774
+				state = 1015
+				state = 1060
+				state = 1061
+				state = 1062
+				state = 1063
+				state = 1072
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = DEH }
+		}
+		283 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		348 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		353 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		604 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		608 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		609 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		611 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		614 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		615 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		616 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		621 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		622 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		774 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1015 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1060 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1061 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1062 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1063 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1072 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				283 = { NOT = { is_core_of = DEH } }
+				348 = { NOT = { is_core_of = DEH } }
+				353 = { NOT = { is_core_of = DEH } }
+				604 = { NOT = { is_core_of = DEH } }
+				608 = { NOT = { is_core_of = DEH } }
+				609 = { NOT = { is_core_of = DEH } }
+				611 = { NOT = { is_core_of = DEH } }
+				614 = { NOT = { is_core_of = DEH } }
+				615 = { NOT = { is_core_of = DEH } }
+				616 = { NOT = { is_core_of = DEH } }
+				621 = { NOT = { is_core_of = DEH } }
+				622 = { NOT = { is_core_of = DEH } }
+				774 = { NOT = { is_core_of = DEH } }
+				1015 = { NOT = { is_core_of = DEH } }
+				1060 = { NOT = { is_core_of = DEH } }
+				1061 = { NOT = { is_core_of = DEH } }
+				1062 = { NOT = { is_core_of = DEH } }
+				1063 = { NOT = { is_core_of = DEH } }
+				1072 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		283 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		621 = { add_core_of = QIE }
+		622 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = DEH_QIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_MAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 328
+				state = 610
+				state = 714
+				state = 715
+				state = 716
+				state = 717
+				state = 745
+				state = 883
+				state = 884
+				state = 885
+				state = 886
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MAN = { exists = yes }
+			}
+			MAN = { is_subject_of = DEH }
+		}
+		328 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		610 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		714 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		715 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		716 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		717 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		745 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		883 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		884 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		885 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		886 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				328 = { NOT = { is_core_of = DEH } }
+				610 = { NOT = { is_core_of = DEH } }
+				714 = { NOT = { is_core_of = DEH } }
+				715 = { NOT = { is_core_of = DEH } }
+				716 = { NOT = { is_core_of = DEH } }
+				717 = { NOT = { is_core_of = DEH } }
+				745 = { NOT = { is_core_of = DEH } }
+				883 = { NOT = { is_core_of = DEH } }
+				884 = { NOT = { is_core_of = DEH } }
+				885 = { NOT = { is_core_of = DEH } }
+				886 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MAN = {
+			every_core_state = {
+				remove_core_of = MAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MAN
+				}
+				remove_claim_by = MAN
+			}
+		}
+		328 = { add_core_of = MAN }
+		610 = { add_core_of = MAN }
+		714 = { add_core_of = MAN }
+		715 = { add_core_of = MAN }
+		716 = { add_core_of = MAN }
+		717 = { add_core_of = MAN }
+		745 = { add_core_of = MAN }
+		883 = { add_core_of = MAN }
+		884 = { add_core_of = MAN }
+		885 = { add_core_of = MAN }
+		886 = { add_core_of = MAN }
+		release = MAN
+		MAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = MAN
+			}
+		}
+		MAN = { 
+			set_cosmetic_tag = DEH_MAN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = MAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_MON = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 330
+				state = 612
+				state = 1084
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MON = { exists = yes }
+			}
+			MON = { is_subject_of = DEH }
+		}
+		330 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		612 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1084 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				330 = { NOT = { is_core_of = DEH } }
+				612 = { NOT = { is_core_of = DEH } }
+				1084 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MON = {
+			every_core_state = {
+				remove_core_of = MON
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MON
+				}
+				remove_claim_by = MON
+			}
+		}
+		330 = { add_core_of = MON }
+		612 = { add_core_of = MON }
+		1084 = { add_core_of = MON }
+		release = MON
+		MON = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = MON
+			}
+		}
+		MON = { 
+			set_cosmetic_tag = DEH_MON_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = MON
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_SIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 40
+				state = 329
+				state = 403
+				state = 408
+				state = 409
+				state = 516
+				state = 560
+				state = 561
+				state = 562
+				state = 563
+				state = 564
+				state = 565
+				state = 566
+				state = 567
+				state = 568
+				state = 569
+				state = 570
+				state = 571
+				state = 572
+				state = 573
+				state = 574
+				state = 575
+				state = 576
+				state = 577
+				state = 578
+				state = 580
+				state = 581
+				state = 582
+				state = 637
+				state = 644
+				state = 653
+				state = 654
+				state = 657
+				state = 811
+				state = 1195
+				state = 1200
+				state = 1201
+				state = 1202
+				state = 1246
+				state = 1292
+				state = 1293
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIB = { exists = yes }
+			}
+			SIB = { is_subject_of = DEH }
+		}
+		40 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		329 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		403 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		408 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		409 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		516 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		560 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		561 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		562 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		563 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		564 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		565 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		566 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		567 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		568 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		569 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		570 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		571 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		572 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		573 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		574 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		575 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		576 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		577 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		578 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		580 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		581 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		582 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		637 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		644 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		653 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		654 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		657 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		811 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1195 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1200 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1201 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1202 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1246 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1292 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1293 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				40 = { NOT = { is_core_of = DEH } }
+				329 = { NOT = { is_core_of = DEH } }
+				403 = { NOT = { is_core_of = DEH } }
+				408 = { NOT = { is_core_of = DEH } }
+				409 = { NOT = { is_core_of = DEH } }
+				516 = { NOT = { is_core_of = DEH } }
+				560 = { NOT = { is_core_of = DEH } }
+				561 = { NOT = { is_core_of = DEH } }
+				562 = { NOT = { is_core_of = DEH } }
+				563 = { NOT = { is_core_of = DEH } }
+				564 = { NOT = { is_core_of = DEH } }
+				565 = { NOT = { is_core_of = DEH } }
+				566 = { NOT = { is_core_of = DEH } }
+				567 = { NOT = { is_core_of = DEH } }
+				568 = { NOT = { is_core_of = DEH } }
+				569 = { NOT = { is_core_of = DEH } }
+				570 = { NOT = { is_core_of = DEH } }
+				571 = { NOT = { is_core_of = DEH } }
+				572 = { NOT = { is_core_of = DEH } }
+				573 = { NOT = { is_core_of = DEH } }
+				574 = { NOT = { is_core_of = DEH } }
+				575 = { NOT = { is_core_of = DEH } }
+				576 = { NOT = { is_core_of = DEH } }
+				577 = { NOT = { is_core_of = DEH } }
+				578 = { NOT = { is_core_of = DEH } }
+				580 = { NOT = { is_core_of = DEH } }
+				581 = { NOT = { is_core_of = DEH } }
+				582 = { NOT = { is_core_of = DEH } }
+				637 = { NOT = { is_core_of = DEH } }
+				644 = { NOT = { is_core_of = DEH } }
+				653 = { NOT = { is_core_of = DEH } }
+				654 = { NOT = { is_core_of = DEH } }
+				657 = { NOT = { is_core_of = DEH } }
+				811 = { NOT = { is_core_of = DEH } }
+				1195 = { NOT = { is_core_of = DEH } }
+				1200 = { NOT = { is_core_of = DEH } }
+				1201 = { NOT = { is_core_of = DEH } }
+				1202 = { NOT = { is_core_of = DEH } }
+				1246 = { NOT = { is_core_of = DEH } }
+				1292 = { NOT = { is_core_of = DEH } }
+				1293 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIB
+				}
+				remove_claim_by = SIB
+			}
+		}
+		40 = { add_core_of = SIB }
+		329 = { add_core_of = SIB }
+		403 = { add_core_of = SIB }
+		408 = { add_core_of = SIB }
+		409 = { add_core_of = SIB }
+		516 = { add_core_of = SIB }
+		560 = { add_core_of = SIB }
+		561 = { add_core_of = SIB }
+		562 = { add_core_of = SIB }
+		563 = { add_core_of = SIB }
+		564 = { add_core_of = SIB }
+		565 = { add_core_of = SIB }
+		566 = { add_core_of = SIB }
+		567 = { add_core_of = SIB }
+		568 = { add_core_of = SIB }
+		569 = { add_core_of = SIB }
+		570 = { add_core_of = SIB }
+		571 = { add_core_of = SIB }
+		572 = { add_core_of = SIB }
+		573 = { add_core_of = SIB }
+		574 = { add_core_of = SIB }
+		575 = { add_core_of = SIB }
+		576 = { add_core_of = SIB }
+		577 = { add_core_of = SIB }
+		578 = { add_core_of = SIB }
+		580 = { add_core_of = SIB }
+		581 = { add_core_of = SIB }
+		582 = { add_core_of = SIB }
+		637 = { add_core_of = SIB }
+		644 = { add_core_of = SIB }
+		653 = { add_core_of = SIB }
+		654 = { add_core_of = SIB }
+		657 = { add_core_of = SIB }
+		811 = { add_core_of = SIB }
+		1195 = { add_core_of = SIB }
+		1200 = { add_core_of = SIB }
+		1201 = { add_core_of = SIB }
+		1202 = { add_core_of = SIB }
+		1246 = { add_core_of = SIB }
+		1292 = { add_core_of = SIB }
+		1293 = { add_core_of = SIB }
+		release = SIB
+		SIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = SIB
+			}
+		}
+		SIB = { 
+			set_cosmetic_tag = DEH_SIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_KOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+				state = 527
+				state = 1345
+				state = 1346
+				state = 1347
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KOR = { exists = yes }
+			}
+			KOR = { is_subject_of = DEH }
+		}
+		525 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		527 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1345 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1346 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1347 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				525 = { NOT = { is_core_of = DEH } }
+				527 = { NOT = { is_core_of = DEH } }
+				1345 = { NOT = { is_core_of = DEH } }
+				1346 = { NOT = { is_core_of = DEH } }
+				1347 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KOR = {
+			every_core_state = {
+				remove_core_of = KOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KOR
+				}
+				remove_claim_by = KOR
+			}
+		}
+		525 = { add_core_of = KOR }
+		527 = { add_core_of = KOR }
+		1345 = { add_core_of = KOR }
+		1346 = { add_core_of = KOR }
+		1347 = { add_core_of = KOR }
+		release = KOR
+		KOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = KOR
+			}
+		}
+		KOR = { 
+			set_cosmetic_tag = DEH_KOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = KOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+				state = 526
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 532
+				state = 533
+				state = 534
+				state = 535
+				state = 536
+				state = 537
+				state = 555
+				state = 645
+				state = 648
+				state = 1351
+				state = 1352
+				state = 1353
+				state = 1354
+				state = 1355
+				state = 1356
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = DEH }
+		}
+		282 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		526 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		528 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		529 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		530 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		531 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		532 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		533 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		534 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		535 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		536 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		537 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		555 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		645 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		648 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1351 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1352 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1353 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1354 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1355 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1356 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				282 = { NOT = { is_core_of = DEH } }
+				526 = { NOT = { is_core_of = DEH } }
+				528 = { NOT = { is_core_of = DEH } }
+				529 = { NOT = { is_core_of = DEH } }
+				530 = { NOT = { is_core_of = DEH } }
+				531 = { NOT = { is_core_of = DEH } }
+				532 = { NOT = { is_core_of = DEH } }
+				533 = { NOT = { is_core_of = DEH } }
+				534 = { NOT = { is_core_of = DEH } }
+				535 = { NOT = { is_core_of = DEH } }
+				536 = { NOT = { is_core_of = DEH } }
+				537 = { NOT = { is_core_of = DEH } }
+				555 = { NOT = { is_core_of = DEH } }
+				645 = { NOT = { is_core_of = DEH } }
+				648 = { NOT = { is_core_of = DEH } }
+				1351 = { NOT = { is_core_of = DEH } }
+				1352 = { NOT = { is_core_of = DEH } }
+				1353 = { NOT = { is_core_of = DEH } }
+				1354 = { NOT = { is_core_of = DEH } }
+				1355 = { NOT = { is_core_of = DEH } }
+				1356 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		282 = { add_core_of = JAP }
+		526 = { add_core_of = JAP }
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		537 = { add_core_of = JAP }
+		555 = { add_core_of = JAP }
+		645 = { add_core_of = JAP }
+		648 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = DEH_JPN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_TAI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 524
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TAI = { exists = yes }
+			}
+			TAI = { is_subject_of = DEH }
+		}
+		524 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				524 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TAI = {
+			every_core_state = {
+				remove_core_of = TAI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TAI
+				}
+				remove_claim_by = TAI
+			}
+		}
+		524 = { add_core_of = TAI }
+		release = TAI
+		TAI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = TAI
+			}
+		}
+		TAI = { 
+			set_cosmetic_tag = DEH_TAI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = TAI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_INS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 334
+				state = 335
+				state = 633
+				state = 634
+				state = 635
+				state = 639
+				state = 641
+				state = 643
+				state = 646
+				state = 647
+				state = 667
+				state = 668
+				state = 669
+				state = 672
+				state = 673
+				state = 684
+				state = 725
+				state = 734
+				state = 737
+				state = 757
+				state = 843
+				state = 941
+				state = 1016
+				state = 1017
+				state = 1018
+				state = 1019
+				state = 1020
+				state = 1021
+				state = 1022
+				state = 1023
+				state = 1333
+				state = 327
+				state = 333
+				state = 623
+				state = 624
+				state = 625
+				state = 626
+				state = 627
+				state = 628
+				state = 828
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				INS = { exists = yes }
+			}
+			INS = { is_subject_of = DEH }
+		}
+		334 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		335 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		633 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		634 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		635 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		639 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		641 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		643 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		646 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		647 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		667 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		668 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		669 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		672 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		673 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		684 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		725 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		734 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		737 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		757 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		843 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		941 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1016 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1017 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1018 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1019 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1020 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1021 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1022 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1023 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1333 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		327 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		333 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		623 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		624 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		625 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		626 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		627 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		628 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		828 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				334 = { NOT = { is_core_of = DEH } }
+				335 = { NOT = { is_core_of = DEH } }
+				633 = { NOT = { is_core_of = DEH } }
+				634 = { NOT = { is_core_of = DEH } }
+				635 = { NOT = { is_core_of = DEH } }
+				639 = { NOT = { is_core_of = DEH } }
+				641 = { NOT = { is_core_of = DEH } }
+				643 = { NOT = { is_core_of = DEH } }
+				646 = { NOT = { is_core_of = DEH } }
+				647 = { NOT = { is_core_of = DEH } }
+				667 = { NOT = { is_core_of = DEH } }
+				668 = { NOT = { is_core_of = DEH } }
+				669 = { NOT = { is_core_of = DEH } }
+				672 = { NOT = { is_core_of = DEH } }
+				673 = { NOT = { is_core_of = DEH } }
+				684 = { NOT = { is_core_of = DEH } }
+				725 = { NOT = { is_core_of = DEH } }
+				734 = { NOT = { is_core_of = DEH } }
+				737 = { NOT = { is_core_of = DEH } }
+				757 = { NOT = { is_core_of = DEH } }
+				843 = { NOT = { is_core_of = DEH } }
+				941 = { NOT = { is_core_of = DEH } }
+				1016 = { NOT = { is_core_of = DEH } }
+				1017 = { NOT = { is_core_of = DEH } }
+				1018 = { NOT = { is_core_of = DEH } }
+				1019 = { NOT = { is_core_of = DEH } }
+				1020 = { NOT = { is_core_of = DEH } }
+				1021 = { NOT = { is_core_of = DEH } }
+				1022 = { NOT = { is_core_of = DEH } }
+				1023 = { NOT = { is_core_of = DEH } }
+				1333 = { NOT = { is_core_of = DEH } }
+				327 = { NOT = { is_core_of = DEH } }
+				333 = { NOT = { is_core_of = DEH } }
+				623 = { NOT = { is_core_of = DEH } }
+				624 = { NOT = { is_core_of = DEH } }
+				625 = { NOT = { is_core_of = DEH } }
+				626 = { NOT = { is_core_of = DEH } }
+				627 = { NOT = { is_core_of = DEH } }
+				628 = { NOT = { is_core_of = DEH } }
+				828 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		INS = {
+			every_core_state = {
+				remove_core_of = INS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INS
+				}
+				remove_claim_by = INS
+			}
+		}
+		334 = { add_core_of = INS }
+		335 = { add_core_of = INS }
+		633 = { add_core_of = INS }
+		634 = { add_core_of = INS }
+		635 = { add_core_of = INS }
+		639 = { add_core_of = INS }
+		641 = { add_core_of = INS }
+		643 = { add_core_of = INS }
+		646 = { add_core_of = INS }
+		647 = { add_core_of = INS }
+		667 = { add_core_of = INS }
+		668 = { add_core_of = INS }
+		669 = { add_core_of = INS }
+		672 = { add_core_of = INS }
+		673 = { add_core_of = INS }
+		684 = { add_core_of = INS }
+		725 = { add_core_of = INS }
+		734 = { add_core_of = INS }
+		737 = { add_core_of = INS }
+		757 = { add_core_of = INS }
+		843 = { add_core_of = INS }
+		941 = { add_core_of = INS }
+		1016 = { add_core_of = INS }
+		1017 = { add_core_of = INS }
+		1018 = { add_core_of = INS }
+		1019 = { add_core_of = INS }
+		1020 = { add_core_of = INS }
+		1021 = { add_core_of = INS }
+		1022 = { add_core_of = INS }
+		1023 = { add_core_of = INS }
+		1333 = { add_core_of = INS }
+		327 = { add_core_of = INS }
+		333 = { add_core_of = INS }
+		623 = { add_core_of = INS }
+		624 = { add_core_of = INS }
+		625 = { add_core_of = INS }
+		626 = { add_core_of = INS }
+		627 = { add_core_of = INS }
+		628 = { add_core_of = INS }
+		828 = { add_core_of = INS }
+		release = INS
+		INS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = INS
+			}
+		}
+		INS = { 
+			set_cosmetic_tag = DEH_INS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_AZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 229
+				state = 990
+				state = 1267
+				state = 1304
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AZE = { exists = yes }
+			}
+			AZE = { is_subject_of = DEH }
+		}
+		229 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		990 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1267 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1304 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				229 = { NOT = { is_core_of = DEH } }
+				990 = { NOT = { is_core_of = DEH } }
+				1267 = { NOT = { is_core_of = DEH } }
+				1304 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AZE = {
+			every_core_state = {
+				remove_core_of = AZE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AZE
+				}
+				remove_claim_by = AZE
+			}
+		}
+		229 = { add_core_of = AZE }
+		990 = { add_core_of = AZE }
+		1267 = { add_core_of = AZE }
+		1304 = { add_core_of = AZE }
+		release = AZE
+		AZE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = AZE
+			}
+		}
+		AZE = { 
+			set_cosmetic_tag = DEH_AZE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = AZE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_ARM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 230
+				state = 352
+				state = 354
+				state = 998
+				state = 1000
+				state = 1298
+				state = 1299
+				state = 1300
+				state = 1302
+				state = 1303
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ARM = { exists = yes }
+			}
+			ARM = { is_subject_of = DEH }
+		}
+		230 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		352 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		354 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		998 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1000 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1298 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1299 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1300 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1302 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1303 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				230 = { NOT = { is_core_of = DEH } }
+				352 = { NOT = { is_core_of = DEH } }
+				354 = { NOT = { is_core_of = DEH } }
+				998 = { NOT = { is_core_of = DEH } }
+				1000 = { NOT = { is_core_of = DEH } }
+				1298 = { NOT = { is_core_of = DEH } }
+				1299 = { NOT = { is_core_of = DEH } }
+				1300 = { NOT = { is_core_of = DEH } }
+				1302 = { NOT = { is_core_of = DEH } }
+				1303 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ARM = {
+			every_core_state = {
+				remove_core_of = ARM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ARM
+				}
+				remove_claim_by = ARM
+			}
+		}
+		230 = { add_core_of = ARM }
+		352 = { add_core_of = ARM }
+		354 = { add_core_of = ARM }
+		998 = { add_core_of = ARM }
+		1000 = { add_core_of = ARM }
+		1298 = { add_core_of = ARM }
+		1299 = { add_core_of = ARM }
+		1300 = { add_core_of = ARM }
+		1302 = { add_core_of = ARM }
+		1303 = { add_core_of = ARM }
+		release = ARM
+		ARM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = ARM
+			}
+		}
+		ARM = { 
+			set_cosmetic_tag = DEH_ARM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = ARM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+				state = 1001
+				state = 1080
+				state = 1081
+				state = 1082
+				state = 1188
+				state = 1190
+				state = 1213
+				state = 1301
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GEO = { exists = yes }
+			}
+			GEO = { is_subject_of = DEH }
+		}
+		231 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1001 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1080 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1081 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1082 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1188 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1190 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1213 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1301 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				231 = { NOT = { is_core_of = DEH } }
+				1001 = { NOT = { is_core_of = DEH } }
+				1080 = { NOT = { is_core_of = DEH } }
+				1081 = { NOT = { is_core_of = DEH } }
+				1082 = { NOT = { is_core_of = DEH } }
+				1188 = { NOT = { is_core_of = DEH } }
+				1190 = { NOT = { is_core_of = DEH } }
+				1213 = { NOT = { is_core_of = DEH } }
+				1301 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GEO
+				}
+				remove_claim_by = GEO
+			}
+		}
+		231 = { add_core_of = GEO }
+		1001 = { add_core_of = GEO }
+		1080 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1082 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		1213 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		release = GEO
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = DEH_GEO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_DKB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+				state = 232
+				state = 233
+				state = 234
+				state = 235
+				state = 237
+				state = 238
+				state = 245
+				state = 787
+				state = 1186
+				state = 1187
+				state = 1189
+				state = 1191
+				state = 1226
+				state = 1227
+				state = 1231
+				state = 1263
+				state = 1264
+				state = 1265
+				state = 1266
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DKB = { exists = yes }
+			}
+			DKB = { is_subject_of = DEH }
+		}
+		218 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		232 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		233 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		234 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		235 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		237 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		238 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		245 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		787 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1186 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1187 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1189 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1191 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1226 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1227 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1231 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1263 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1264 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1265 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1266 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				218 = { NOT = { is_core_of = DEH } }
+				232 = { NOT = { is_core_of = DEH } }
+				233 = { NOT = { is_core_of = DEH } }
+				234 = { NOT = { is_core_of = DEH } }
+				235 = { NOT = { is_core_of = DEH } }
+				237 = { NOT = { is_core_of = DEH } }
+				238 = { NOT = { is_core_of = DEH } }
+				245 = { NOT = { is_core_of = DEH } }
+				787 = { NOT = { is_core_of = DEH } }
+				1186 = { NOT = { is_core_of = DEH } }
+				1187 = { NOT = { is_core_of = DEH } }
+				1189 = { NOT = { is_core_of = DEH } }
+				1191 = { NOT = { is_core_of = DEH } }
+				1226 = { NOT = { is_core_of = DEH } }
+				1227 = { NOT = { is_core_of = DEH } }
+				1231 = { NOT = { is_core_of = DEH } }
+				1263 = { NOT = { is_core_of = DEH } }
+				1264 = { NOT = { is_core_of = DEH } }
+				1265 = { NOT = { is_core_of = DEH } }
+				1266 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DKB = {
+			every_core_state = {
+				remove_core_of = DKB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DKB
+				}
+				remove_claim_by = DKB
+			}
+		}
+		218 = { add_core_of = DKB }
+		232 = { add_core_of = DKB }
+		233 = { add_core_of = DKB }
+		234 = { add_core_of = DKB }
+		235 = { add_core_of = DKB }
+		237 = { add_core_of = DKB }
+		238 = { add_core_of = DKB }
+		245 = { add_core_of = DKB }
+		787 = { add_core_of = DKB }
+		1186 = { add_core_of = DKB }
+		1187 = { add_core_of = DKB }
+		1189 = { add_core_of = DKB }
+		1191 = { add_core_of = DKB }
+		1226 = { add_core_of = DKB }
+		1227 = { add_core_of = DKB }
+		1231 = { add_core_of = DKB }
+		1263 = { add_core_of = DKB }
+		1264 = { add_core_of = DKB }
+		1265 = { add_core_of = DKB }
+		1266 = { add_core_of = DKB }
+		release = DKB
+		DKB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = DKB
+			}
+		}
+		DKB = { 
+			set_cosmetic_tag = DEH_DKB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = DKB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+				state = 339
+				state = 340
+				state = 341
+				state = 342
+				state = 343
+				state = 345
+				state = 346
+				state = 355
+				state = 356
+				state = 773
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TUR = { exists = yes }
+			}
+			TUR = { is_subject_of = DEH }
+		}
+		49 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		339 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		340 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		341 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		342 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		343 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		345 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		346 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		355 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		356 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		773 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				49 = { NOT = { is_core_of = DEH } }
+				339 = { NOT = { is_core_of = DEH } }
+				340 = { NOT = { is_core_of = DEH } }
+				341 = { NOT = { is_core_of = DEH } }
+				342 = { NOT = { is_core_of = DEH } }
+				343 = { NOT = { is_core_of = DEH } }
+				345 = { NOT = { is_core_of = DEH } }
+				346 = { NOT = { is_core_of = DEH } }
+				355 = { NOT = { is_core_of = DEH } }
+				356 = { NOT = { is_core_of = DEH } }
+				773 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TUR
+				}
+				remove_claim_by = TUR
+			}
+		}
+		49 = { add_core_of = TUR }
+		339 = { add_core_of = TUR }
+		340 = { add_core_of = TUR }
+		341 = { add_core_of = TUR }
+		342 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		355 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		773 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = DEH_TUR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_KEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 295
+				state = 538
+				state = 539
+				state = 541
+				state = 546
+				state = 547
+				state = 548
+				state = 660
+				state = 704
+				state = 718
+				state = 813
+				state = 869
+				state = 870
+				state = 871
+				state = 879
+				state = 881
+				state = 892
+				state = 899
+				state = 905
+				state = 918
+				state = 925
+				state = 927
+				state = 928
+				state = 948
+				state = 949
+				state = 952
+				state = 953
+				state = 955
+				state = 956
+				state = 957
+				state = 958
+				state = 962
+				state = 964
+				state = 965
+				state = 969
+				state = 970
+				state = 971
+				state = 974
+				state = 975
+				state = 976
+				state = 977
+				state = 1025
+				state = 1026
+				state = 1032
+				state = 1180
+				state = 1181
+				state = 1182
+				state = 1183
+				state = 1184
+				state = 1185
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KEN = { exists = yes }
+			}
+			KEN = { is_subject_of = DEH }
+		}
+		295 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		538 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		539 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		541 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		546 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		547 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		548 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		660 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		704 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		718 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		813 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		869 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		870 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		871 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		879 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		881 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		892 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		899 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		905 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		918 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		925 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		927 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		928 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		948 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		949 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		952 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		953 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		955 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		956 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		957 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		958 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		962 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		964 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		965 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		969 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		970 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		971 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		974 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		975 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		976 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		977 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1025 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1026 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1032 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1180 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1181 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1182 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1183 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1184 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1185 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				295 = { NOT = { is_core_of = DEH } }
+				538 = { NOT = { is_core_of = DEH } }
+				539 = { NOT = { is_core_of = DEH } }
+				541 = { NOT = { is_core_of = DEH } }
+				546 = { NOT = { is_core_of = DEH } }
+				547 = { NOT = { is_core_of = DEH } }
+				548 = { NOT = { is_core_of = DEH } }
+				660 = { NOT = { is_core_of = DEH } }
+				704 = { NOT = { is_core_of = DEH } }
+				718 = { NOT = { is_core_of = DEH } }
+				813 = { NOT = { is_core_of = DEH } }
+				869 = { NOT = { is_core_of = DEH } }
+				870 = { NOT = { is_core_of = DEH } }
+				871 = { NOT = { is_core_of = DEH } }
+				879 = { NOT = { is_core_of = DEH } }
+				881 = { NOT = { is_core_of = DEH } }
+				892 = { NOT = { is_core_of = DEH } }
+				899 = { NOT = { is_core_of = DEH } }
+				905 = { NOT = { is_core_of = DEH } }
+				918 = { NOT = { is_core_of = DEH } }
+				925 = { NOT = { is_core_of = DEH } }
+				927 = { NOT = { is_core_of = DEH } }
+				928 = { NOT = { is_core_of = DEH } }
+				948 = { NOT = { is_core_of = DEH } }
+				949 = { NOT = { is_core_of = DEH } }
+				952 = { NOT = { is_core_of = DEH } }
+				953 = { NOT = { is_core_of = DEH } }
+				955 = { NOT = { is_core_of = DEH } }
+				956 = { NOT = { is_core_of = DEH } }
+				957 = { NOT = { is_core_of = DEH } }
+				958 = { NOT = { is_core_of = DEH } }
+				962 = { NOT = { is_core_of = DEH } }
+				964 = { NOT = { is_core_of = DEH } }
+				965 = { NOT = { is_core_of = DEH } }
+				969 = { NOT = { is_core_of = DEH } }
+				970 = { NOT = { is_core_of = DEH } }
+				971 = { NOT = { is_core_of = DEH } }
+				974 = { NOT = { is_core_of = DEH } }
+				975 = { NOT = { is_core_of = DEH } }
+				976 = { NOT = { is_core_of = DEH } }
+				977 = { NOT = { is_core_of = DEH } }
+				1025 = { NOT = { is_core_of = DEH } }
+				1026 = { NOT = { is_core_of = DEH } }
+				1032 = { NOT = { is_core_of = DEH } }
+				1180 = { NOT = { is_core_of = DEH } }
+				1181 = { NOT = { is_core_of = DEH } }
+				1182 = { NOT = { is_core_of = DEH } }
+				1183 = { NOT = { is_core_of = DEH } }
+				1184 = { NOT = { is_core_of = DEH } }
+				1185 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KEN = {
+			every_core_state = {
+				remove_core_of = KEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KEN
+				}
+				remove_claim_by = KEN
+			}
+		}
+		295 = { add_core_of = KEN }
+		538 = { add_core_of = KEN }
+		539 = { add_core_of = KEN }
+		541 = { add_core_of = KEN }
+		546 = { add_core_of = KEN }
+		547 = { add_core_of = KEN }
+		548 = { add_core_of = KEN }
+		660 = { add_core_of = KEN }
+		704 = { add_core_of = KEN }
+		718 = { add_core_of = KEN }
+		813 = { add_core_of = KEN }
+		869 = { add_core_of = KEN }
+		870 = { add_core_of = KEN }
+		871 = { add_core_of = KEN }
+		879 = { add_core_of = KEN }
+		881 = { add_core_of = KEN }
+		892 = { add_core_of = KEN }
+		899 = { add_core_of = KEN }
+		905 = { add_core_of = KEN }
+		918 = { add_core_of = KEN }
+		925 = { add_core_of = KEN }
+		927 = { add_core_of = KEN }
+		928 = { add_core_of = KEN }
+		948 = { add_core_of = KEN }
+		949 = { add_core_of = KEN }
+		952 = { add_core_of = KEN }
+		953 = { add_core_of = KEN }
+		955 = { add_core_of = KEN }
+		956 = { add_core_of = KEN }
+		957 = { add_core_of = KEN }
+		958 = { add_core_of = KEN }
+		962 = { add_core_of = KEN }
+		964 = { add_core_of = KEN }
+		965 = { add_core_of = KEN }
+		969 = { add_core_of = KEN }
+		970 = { add_core_of = KEN }
+		971 = { add_core_of = KEN }
+		974 = { add_core_of = KEN }
+		975 = { add_core_of = KEN }
+		976 = { add_core_of = KEN }
+		977 = { add_core_of = KEN }
+		1025 = { add_core_of = KEN }
+		1026 = { add_core_of = KEN }
+		1032 = { add_core_of = KEN }
+		1180 = { add_core_of = KEN }
+		1181 = { add_core_of = KEN }
+		1182 = { add_core_of = KEN }
+		1183 = { add_core_of = KEN }
+		1184 = { add_core_of = KEN }
+		1185 = { add_core_of = KEN }
+		release = KEN
+		KEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = KEN
+			}
+		}
+		KEN = { 
+			set_cosmetic_tag = DEH_KEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = KEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_NGR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 558
+				state = 662
+				state = 878
+				state = 913
+				state = 973
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NGR = { exists = yes }
+			}
+			NGR = { is_subject_of = DEH }
+		}
+		558 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		662 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		878 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		913 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		973 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				558 = { NOT = { is_core_of = DEH } }
+				662 = { NOT = { is_core_of = DEH } }
+				878 = { NOT = { is_core_of = DEH } }
+				913 = { NOT = { is_core_of = DEH } }
+				973 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NGR = {
+			every_core_state = {
+				remove_core_of = NGR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NGR
+				}
+				remove_claim_by = NGR
+			}
+		}
+		558 = { add_core_of = NGR }
+		662 = { add_core_of = NGR }
+		878 = { add_core_of = NGR }
+		913 = { add_core_of = NGR }
+		973 = { add_core_of = NGR }
+		release = NGR
+		NGR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = NGR
+			}
+		}
+		NGR = { 
+			set_cosmetic_tag = DEH_NGR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = NGR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_GHA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 274
+				state = 703
+				state = 807
+				state = 876
+				state = 877
+				state = 963
+				state = 1321
+				state = 1322
+				state = 1323
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GHA = { exists = yes }
+			}
+			GHA = { is_subject_of = DEH }
+		}
+		274 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		703 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		807 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		876 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		877 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		963 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1321 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1322 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1323 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				274 = { NOT = { is_core_of = DEH } }
+				703 = { NOT = { is_core_of = DEH } }
+				807 = { NOT = { is_core_of = DEH } }
+				876 = { NOT = { is_core_of = DEH } }
+				877 = { NOT = { is_core_of = DEH } }
+				963 = { NOT = { is_core_of = DEH } }
+				1321 = { NOT = { is_core_of = DEH } }
+				1322 = { NOT = { is_core_of = DEH } }
+				1323 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GHA = {
+			every_core_state = {
+				remove_core_of = GHA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GHA
+				}
+				remove_claim_by = GHA
+			}
+		}
+		274 = { add_core_of = GHA }
+		703 = { add_core_of = GHA }
+		807 = { add_core_of = GHA }
+		876 = { add_core_of = GHA }
+		877 = { add_core_of = GHA }
+		963 = { add_core_of = GHA }
+		1321 = { add_core_of = GHA }
+		1322 = { add_core_of = GHA }
+		1323 = { add_core_of = GHA }
+		release = GHA
+		GHA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = GHA
+			}
+		}
+		GHA = { 
+			set_cosmetic_tag = DEH_GHA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = GHA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_MAG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 543
+				state = 706
+				state = 707
+				state = 708
+				state = 709
+				state = 1177
+				state = 1178
+				state = 1179
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MAG = { exists = yes }
+			}
+			MAG = { is_subject_of = DEH }
+		}
+		543 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		706 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		707 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		708 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		709 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1177 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1178 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1179 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				543 = { NOT = { is_core_of = DEH } }
+				706 = { NOT = { is_core_of = DEH } }
+				707 = { NOT = { is_core_of = DEH } }
+				708 = { NOT = { is_core_of = DEH } }
+				709 = { NOT = { is_core_of = DEH } }
+				1177 = { NOT = { is_core_of = DEH } }
+				1178 = { NOT = { is_core_of = DEH } }
+				1179 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MAG = {
+			every_core_state = {
+				remove_core_of = MAG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MAG
+				}
+				remove_claim_by = MAG
+			}
+		}
+		543 = { add_core_of = MAG }
+		706 = { add_core_of = MAG }
+		707 = { add_core_of = MAG }
+		708 = { add_core_of = MAG }
+		709 = { add_core_of = MAG }
+		1177 = { add_core_of = MAG }
+		1178 = { add_core_of = MAG }
+		1179 = { add_core_of = MAG }
+		release = MAG
+		MAG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = MAG
+			}
+		}
+		MAG = { 
+			set_cosmetic_tag = DEH_MAG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = MAG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
+
+DEH_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+				state = 205
+				state = 208
+				state = 209
+				state = 210
+				state = 213
+				state = 214
+				state = 215
+				state = 216
+				state = 217
+				state = 219
+				state = 220
+				state = 222
+				state = 223
+				state = 224
+				state = 236
+				state = 239
+				state = 240
+				state = 242
+				state = 243
+				state = 244
+				state = 246
+				state = 247
+				state = 248
+				state = 249
+				state = 250
+				state = 251
+				state = 252
+				state = 253
+				state = 254
+				state = 255
+				state = 256
+				state = 257
+				state = 258
+				state = 260
+				state = 262
+				state = 263
+				state = 264
+				state = 265
+				state = 351
+				state = 397
+				state = 398
+				state = 399
+				state = 400
+				state = 401
+				state = 651
+				state = 652
+				state = 722
+				state = 755
+				state = 821
+				state = 880
+				state = 1193
+				state = 1194
+				state = 1197
+				state = 1198
+				state = 1199
+				state = 1204
+				state = 1205
+				state = 1207
+				state = 1224
+				state = 1229
+				state = 1274
+				state = 1287
+				state = 1288
+				state = 1289
+				state = 1290
+				state = 1291
+				state = 1327
+				state = 1328
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				RUS = { exists = yes }
+			}
+			RUS = { is_subject_of = DEH }
+		}
+		195 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		205 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		208 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		209 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		210 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		213 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		214 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		215 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		216 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		217 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		219 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		220 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		222 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		223 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		224 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		236 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		239 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		240 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		242 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		243 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		244 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		246 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		247 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		248 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		249 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		250 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		251 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		252 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		253 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		254 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		255 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		256 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		257 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		258 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		260 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		262 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		263 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		264 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		265 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		351 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		397 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		398 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		399 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		400 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		401 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		651 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		652 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		722 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		755 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		821 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		880 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1193 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1194 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1197 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1198 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1199 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1204 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1205 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1207 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1224 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1229 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1274 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1287 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1288 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1289 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1290 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1291 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1327 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		1328 = { owner = { OR = { original_tag = DEH is_subject_of = DEH } } }
+		OR = {
+				195 = { NOT = { is_core_of = DEH } }
+				205 = { NOT = { is_core_of = DEH } }
+				208 = { NOT = { is_core_of = DEH } }
+				209 = { NOT = { is_core_of = DEH } }
+				210 = { NOT = { is_core_of = DEH } }
+				213 = { NOT = { is_core_of = DEH } }
+				214 = { NOT = { is_core_of = DEH } }
+				215 = { NOT = { is_core_of = DEH } }
+				216 = { NOT = { is_core_of = DEH } }
+				217 = { NOT = { is_core_of = DEH } }
+				219 = { NOT = { is_core_of = DEH } }
+				220 = { NOT = { is_core_of = DEH } }
+				222 = { NOT = { is_core_of = DEH } }
+				223 = { NOT = { is_core_of = DEH } }
+				224 = { NOT = { is_core_of = DEH } }
+				236 = { NOT = { is_core_of = DEH } }
+				239 = { NOT = { is_core_of = DEH } }
+				240 = { NOT = { is_core_of = DEH } }
+				242 = { NOT = { is_core_of = DEH } }
+				243 = { NOT = { is_core_of = DEH } }
+				244 = { NOT = { is_core_of = DEH } }
+				246 = { NOT = { is_core_of = DEH } }
+				247 = { NOT = { is_core_of = DEH } }
+				248 = { NOT = { is_core_of = DEH } }
+				249 = { NOT = { is_core_of = DEH } }
+				250 = { NOT = { is_core_of = DEH } }
+				251 = { NOT = { is_core_of = DEH } }
+				252 = { NOT = { is_core_of = DEH } }
+				253 = { NOT = { is_core_of = DEH } }
+				254 = { NOT = { is_core_of = DEH } }
+				255 = { NOT = { is_core_of = DEH } }
+				256 = { NOT = { is_core_of = DEH } }
+				257 = { NOT = { is_core_of = DEH } }
+				258 = { NOT = { is_core_of = DEH } }
+				260 = { NOT = { is_core_of = DEH } }
+				262 = { NOT = { is_core_of = DEH } }
+				263 = { NOT = { is_core_of = DEH } }
+				264 = { NOT = { is_core_of = DEH } }
+				265 = { NOT = { is_core_of = DEH } }
+				351 = { NOT = { is_core_of = DEH } }
+				397 = { NOT = { is_core_of = DEH } }
+				398 = { NOT = { is_core_of = DEH } }
+				399 = { NOT = { is_core_of = DEH } }
+				400 = { NOT = { is_core_of = DEH } }
+				401 = { NOT = { is_core_of = DEH } }
+				651 = { NOT = { is_core_of = DEH } }
+				652 = { NOT = { is_core_of = DEH } }
+				722 = { NOT = { is_core_of = DEH } }
+				755 = { NOT = { is_core_of = DEH } }
+				821 = { NOT = { is_core_of = DEH } }
+				880 = { NOT = { is_core_of = DEH } }
+				1193 = { NOT = { is_core_of = DEH } }
+				1194 = { NOT = { is_core_of = DEH } }
+				1197 = { NOT = { is_core_of = DEH } }
+				1198 = { NOT = { is_core_of = DEH } }
+				1199 = { NOT = { is_core_of = DEH } }
+				1204 = { NOT = { is_core_of = DEH } }
+				1205 = { NOT = { is_core_of = DEH } }
+				1207 = { NOT = { is_core_of = DEH } }
+				1224 = { NOT = { is_core_of = DEH } }
+				1229 = { NOT = { is_core_of = DEH } }
+				1274 = { NOT = { is_core_of = DEH } }
+				1287 = { NOT = { is_core_of = DEH } }
+				1288 = { NOT = { is_core_of = DEH } }
+				1289 = { NOT = { is_core_of = DEH } }
+				1290 = { NOT = { is_core_of = DEH } }
+				1291 = { NOT = { is_core_of = DEH } }
+				1327 = { NOT = { is_core_of = DEH } }
+				1328 = { NOT = { is_core_of = DEH } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = RUS
+				}
+				remove_claim_by = RUS
+			}
+		}
+		195 = { add_core_of = RUS }
+		205 = { add_core_of = RUS }
+		208 = { add_core_of = RUS }
+		209 = { add_core_of = RUS }
+		210 = { add_core_of = RUS }
+		213 = { add_core_of = RUS }
+		214 = { add_core_of = RUS }
+		215 = { add_core_of = RUS }
+		216 = { add_core_of = RUS }
+		217 = { add_core_of = RUS }
+		219 = { add_core_of = RUS }
+		220 = { add_core_of = RUS }
+		222 = { add_core_of = RUS }
+		223 = { add_core_of = RUS }
+		224 = { add_core_of = RUS }
+		236 = { add_core_of = RUS }
+		239 = { add_core_of = RUS }
+		240 = { add_core_of = RUS }
+		242 = { add_core_of = RUS }
+		243 = { add_core_of = RUS }
+		244 = { add_core_of = RUS }
+		246 = { add_core_of = RUS }
+		247 = { add_core_of = RUS }
+		248 = { add_core_of = RUS }
+		249 = { add_core_of = RUS }
+		250 = { add_core_of = RUS }
+		251 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		254 = { add_core_of = RUS }
+		255 = { add_core_of = RUS }
+		256 = { add_core_of = RUS }
+		257 = { add_core_of = RUS }
+		258 = { add_core_of = RUS }
+		260 = { add_core_of = RUS }
+		262 = { add_core_of = RUS }
+		263 = { add_core_of = RUS }
+		264 = { add_core_of = RUS }
+		265 = { add_core_of = RUS }
+		351 = { add_core_of = RUS }
+		397 = { add_core_of = RUS }
+		398 = { add_core_of = RUS }
+		399 = { add_core_of = RUS }
+		400 = { add_core_of = RUS }
+		401 = { add_core_of = RUS }
+		651 = { add_core_of = RUS }
+		652 = { add_core_of = RUS }
+		722 = { add_core_of = RUS }
+		755 = { add_core_of = RUS }
+		821 = { add_core_of = RUS }
+		880 = { add_core_of = RUS }
+		1193 = { add_core_of = RUS }
+		1194 = { add_core_of = RUS }
+		1197 = { add_core_of = RUS }
+		1198 = { add_core_of = RUS }
+		1199 = { add_core_of = RUS }
+		1204 = { add_core_of = RUS }
+		1205 = { add_core_of = RUS }
+		1207 = { add_core_of = RUS }
+		1224 = { add_core_of = RUS }
+		1229 = { add_core_of = RUS }
+		1274 = { add_core_of = RUS }
+		1287 = { add_core_of = RUS }
+		1288 = { add_core_of = RUS }
+		1289 = { add_core_of = RUS }
+		1290 = { add_core_of = RUS }
+		1291 = { add_core_of = RUS }
+		1327 = { add_core_of = RUS }
+		1328 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = DEH
+						}
+						OR = {
+							is_owned_by = DEH
+							OWNER = { is_subject_of = DEH} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = DEH_RUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Raj Administration"
+				picture = "gfx/leaders/DEH/Portrait_DEH_Chamber_of_Princes.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Raj Administration"
+				long_name = "Raj Administration"
+			}
+
+
+			DEH = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_popularities = {
+				authoritarian_democrat = 15
+				paternal_autocrat = 75
+				national_populist = 10
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+		}
+	}
+}
 }
