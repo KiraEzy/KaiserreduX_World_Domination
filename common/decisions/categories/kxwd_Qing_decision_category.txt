@@ -7,6 +7,9 @@ QING_great_game = {
 	}
 
 	visible = {
-		# has_completed_focus = SIC_sovereign_beyond_state
+		OR = {
+			has_completed_focus = QIE_demand_fealty
+			has_completed_focus = QIE_imperial_consolidation
+		}
 	}
 }
