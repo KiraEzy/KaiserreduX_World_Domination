@@ -1,0 +1,364 @@
+
+
+####################################
+####### Guominjun extension  #######
+####################################
+
+
+shared_focus = {
+	id = SHXWD_guominjun_china
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+    available = {
+        has_completed_focus = SHX_Fengs_Crusade
+    }
+	x = 0
+	y = 5
+	cost = 1
+		
+    relative_position_id = SHX_Fengs_Crusade
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_guominjun_china"
+        add_ideas = KXWD_SHX_christian_china
+	}
+}
+
+shared_focus = {
+	id = SHXWD_order_of_china
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = -2
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_guominjun_china
+    }	
+    relative_position_id = SHXWD_guominjun_china
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_order_of_china"
+        add_ideas = KXWD_SHX_order_of_china_1
+        country_event = SHXWD.1
+	}
+}
+
+shared_focus = {
+	id = SHXWD_order_youth
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_order_of_china
+    }	
+    relative_position_id = SHXWD_order_of_china
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_order_youth"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_order_of_china_1
+            add_idea = KXWD_SHX_order_of_china_2
+        }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_order_expand
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_order_youth
+    }	
+    relative_position_id = SHXWD_order_youth
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_order_expand"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_order_of_china_2
+            add_idea = KXWD_SHX_order_of_china_3
+        }
+        country_event = SHXWD.2
+	}
+}
+
+shared_focus = {
+	id = SHXWD_conversion
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_guominjun_china
+    }	
+    relative_position_id = SHXWD_guominjun_china
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_conversion"
+        add_ideas = KXWD_SHX_conversion_1
+	}
+}
+
+shared_focus = {
+	id = SHXWD_christian_socialism
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_conversion
+    }	
+    relative_position_id = SHXWD_conversion
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_conversion"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_christian_china
+            add_idea = KXWD_SHX_christian_socialist_china
+        }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_china_for_faithfull
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_christian_socialism
+    }	
+    relative_position_id = SHXWD_christian_socialism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_china_for_faithfull"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_conversion_1
+            add_idea = KXWD_SHX_conversion_2
+        }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_papal_mission
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 2
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_guominjun_china
+    }	
+    relative_position_id = SHXWD_guominjun_china
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_papal_mission"
+        add_ideas = KXWD_SHX_papal_mission_1
+	}
+}
+
+shared_focus = {
+	id = SHXWD_papal_backing
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_papal_mission
+    }	
+    relative_position_id = SHXWD_papal_mission
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_papal_backing"
+        add_ideas = KXWD_SHX_papal_mission_2
+	}
+}
+
+shared_focus = {
+	id = SHXWD_china_church
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_papal_backing
+    }	
+    relative_position_id = SHXWD_papal_backing
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_china_church"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_papal_mission_2
+            add_idea = KXWD_SHX_china_church
+        }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_united_under_god
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_china_for_faithfull
+    }	
+    prerequisite = {
+        focus = SHXWD_china_church
+    }	
+    prerequisite = {
+        focus = SHXWD_order_expand
+    }
+    relative_position_id = SHXWD_china_for_faithfull
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_china_for_faithfull"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_conversion_2
+            add_idea = KXWD_SHX_conversion_3
+        }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_holy_protector
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_united_under_god
+    }	
+    relative_position_id = SHXWD_united_under_god
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_holy_protector"
+        add_ideas = KXWD_SHX_holy_protector
+	}
+}
+
+shared_focus = {
+	id = SHXWD_crusade
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = SHXWD_holy_protector
+    }	
+    relative_position_id = SHXWD_holy_protector
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_crusade"
+        add_ideas = KXWD_SHX_crusade
+	}
+}
+
+shared_focus = {
+	id = SHXWD_national_fleet_begin
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 6
+	cost = 5
+    available = {
+        has_completed_focus = SHX_Fengs_Crusade
+        any_owned_state = {
+            is_coastal = yes
+        }
+    }
+
+    relative_position_id = SHX_fight_the_opium_trade
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_national_fleet_begin"
+        add_ideas = KXWD_SHX_national_fleet_1
+	}
+}
+
+shared_focus = {
+	id = SHXWD_national_fleet_research
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = -2
+	y = 1
+	cost = 5
+    
+    prerequisite = {
+        focus = SHXWD_national_fleet_begin
+    }
+    relative_position_id = SHXWD_national_fleet_begin
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_national_fleet_research"
+        add_tech_bonus = {
+            bonus = 2.0
+            uses = 20
+            category = radar_tech 
+            category = ship_modules_tech
+            category = dd_tech
+            category = ca_tech
+            category = cv_tech
+            category = bc_tech
+            category = bb_tech
+            category = shbb_tech
+            category = ss_tech
+            category = tp_tech
+        }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_national_fleet_xp
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+    
+    prerequisite = {
+        focus = SHXWD_national_fleet_begin
+    }
+    relative_position_id = SHXWD_national_fleet_begin
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_national_fleet_xp"
+        add_research_slot = 1
+        navy_experience = 250
+	}
+}
+
+shared_focus = {
+	id = SHXWD_national_fleet_dockyard
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 2
+	y = 1
+	cost = 5
+    
+    prerequisite = {
+        focus = SHXWD_national_fleet_begin
+    }
+    relative_position_id = SHXWD_national_fleet_begin
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_national_fleet_dockyard"
+        add_offsite_building = { type = dockyard level = 10 }
+	}
+}
+
+shared_focus = {
+	id = SHXWD_national_fleet_complete
+	icon = GFX_goal_MLTWD_slay_sun_and_dragon
+	x = 0
+	y = 1
+	cost = 5
+    
+    prerequisite = {
+        focus = SHXWD_national_fleet_xp
+    }
+    prerequisite = {
+        focus = SHXWD_national_fleet_research
+    }
+    prerequisite = {
+        focus = SHXWD_national_fleet_dockyard
+    }
+    relative_position_id = SHXWD_national_fleet_xp
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_national_fleet_complete"
+        swap_ideas = {
+            remove_idea = KXWD_SHX_national_fleet_1
+            add_idea = KXWD_SHX_national_fleet_2
+        } 
+	}
+}
