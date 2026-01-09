@@ -10,6 +10,7 @@ shared_focus = {
 	icon = GFX_goal_MLTWD_slay_sun_and_dragon
     available = {
         has_completed_focus = SHX_Fengs_Crusade
+		is_ai = no
     }
 	x = 0
 	y = 5
@@ -168,7 +169,10 @@ shared_focus = {
     relative_position_id = SHXWD_papal_mission
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_papal_backing"
-        add_ideas = KXWD_SHX_papal_mission_2
+        swap_ideas = {
+            remove_idea = KXWD_SHX_papal_mission_1
+            add_idea = KXWD_SHX_papal_mission_2
+        }
 	}
 }
 
@@ -198,6 +202,29 @@ shared_focus = {
 	x = 0
 	y = 1
 	cost = 5
+	available = {
+        AND = {
+			FNG = {
+    			exists = no
+			}
+			CHI = {
+    			exists = no
+			}
+			QIE = {
+    			exists = no
+			}
+			GXC = {
+    			exists = no
+			}
+			LEP = {
+    			exists = no
+			}
+			owns_state = 613
+			owns_state = 716
+			owns_state = 608
+			owns_state = 592
+		}
+    }
 
     prerequisite = {
         focus = SHXWD_china_for_faithfull
