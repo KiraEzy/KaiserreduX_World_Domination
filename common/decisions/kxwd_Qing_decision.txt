@@ -785,8 +785,231 @@ QING_great_game = {
 	# 		# 	}
 	# 		# 	log = "--------------------------------"
 	# 		# }
+	# 		TXS = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+			
+	# 		PSA = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
 
-	# 		HUN = {
+	# 		AML = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		PAN = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		MEX = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		FSA = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		DSR = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		CGL = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		CEN = {
 	# 			log = "--------------------------------"
 	# 			log = "[THIS.GetTag] claim states:"
 	# 			THIS = {
@@ -885,6 +1108,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_ALB_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -908,6 +1139,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1039,6 +1275,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_AUS_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1062,6 +1306,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1135,6 +1384,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_BAS_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1158,6 +1415,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1231,6 +1493,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_BAY_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1254,6 +1524,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1335,6 +1610,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_BEL_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1358,6 +1641,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1431,6 +1719,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_BRI_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1454,6 +1750,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1531,6 +1832,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_CAT_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1554,6 +1863,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1644,6 +1958,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_CZE_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1667,6 +1989,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1749,6 +2076,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_DDR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1772,6 +2107,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -1887,6 +2227,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_FRP_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -1910,6 +2258,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2027,6 +2380,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_ITA_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2050,6 +2411,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2126,6 +2492,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_NGF_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2149,6 +2523,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2218,6 +2597,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_NRM_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2241,6 +2628,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2362,6 +2754,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_OCC_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2385,6 +2785,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2458,6 +2863,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_PAP_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2481,6 +2894,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2568,6 +2986,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_POL_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2591,6 +3017,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2716,6 +3147,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SAF_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2739,6 +3178,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2828,6 +3272,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SIC_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2851,6 +3303,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -2949,6 +3406,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SPR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -2972,6 +3437,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3075,6 +3545,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SRD_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3098,6 +3576,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3175,6 +3658,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_WGR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3198,6 +3689,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3292,6 +3788,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_BUL_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3315,6 +3819,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3396,6 +3905,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_GAL_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3419,6 +3936,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3506,6 +4028,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_GRE_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3529,6 +4059,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3606,6 +4141,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_MOL_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3629,6 +4172,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -3714,6 +4262,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_ROM_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -3737,6 +4293,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4062,6 +4623,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_RUS_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4085,6 +4654,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4294,6 +4868,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SER_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4317,6 +4899,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4486,6 +5073,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SIB_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4509,6 +5104,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4598,6 +5198,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_LAT_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4621,6 +5229,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4697,6 +5310,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_TUR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4720,6 +5341,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4811,6 +5437,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_UKR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4834,6 +5468,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -4917,6 +5556,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_WHR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -4940,6 +5587,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5081,6 +5733,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_JAP_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5104,6 +5764,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5189,6 +5854,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_KOR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5212,6 +5885,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5306,6 +5984,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_TRK_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5329,6 +6015,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5435,6 +6126,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SIA_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5458,6 +6157,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5559,6 +6263,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_VIN_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5582,6 +6294,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5663,6 +6380,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_AFG_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5686,6 +6411,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5869,6 +6599,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_ALG_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -5892,6 +6630,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -5998,6 +6741,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_ARM_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6021,6 +6772,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6100,6 +6856,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_AZE_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6123,6 +6887,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6240,6 +7009,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_EGY_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6263,6 +7040,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6356,6 +7138,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_HEJ_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6379,6 +7169,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6456,6 +7251,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_MOR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6479,6 +7282,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6558,6 +7366,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_PER_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6581,6 +7397,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6658,6 +7479,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_SYR_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6681,6 +7510,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -6810,6 +7644,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_ETH_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -6833,6 +7675,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -7110,6 +7957,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_KIV_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -7133,6 +7988,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -7266,6 +8126,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_MAG_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -7289,6 +8157,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -7448,6 +8321,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_CRM_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -7471,6 +8352,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -7565,6 +8451,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_WSU_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -7588,6 +8482,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -7664,6 +8563,14 @@ QING_great_game = {
 				set_cosmetic_tag = QIE_NSW_OCC
 				load_focus_tree = generic_focus            
 	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}	
 	
 				QIE = {
 					set_autonomy = {
@@ -7687,6 +8594,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 	
 			}
@@ -7764,7 +8676,15 @@ QING_great_game = {
 			ENG = { 
 				set_cosmetic_tag = QIE_ENG_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -7788,6 +8708,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -7859,7 +8784,15 @@ QING_great_game = {
 			IRE = { 
 				set_cosmetic_tag = QIE_IRE_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -7883,6 +8816,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -7955,7 +8893,15 @@ QING_great_game = {
 			SCT = { 
 				set_cosmetic_tag = QIE_SCT_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -7979,6 +8925,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8051,7 +9002,15 @@ QING_great_game = {
 			WAL = { 
 				set_cosmetic_tag = QIE_WAL_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8075,6 +9034,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8159,7 +9123,15 @@ QING_great_game = {
 			IRQ = { 
 				set_cosmetic_tag = QIE_IRQ_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8183,6 +9155,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8299,7 +9276,15 @@ QING_great_game = {
 			DEH = { 
 				set_cosmetic_tag = QIE_DEH_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8323,6 +9308,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8423,7 +9413,15 @@ QING_great_game = {
 			BHC = { 
 				set_cosmetic_tag = QIE_BHC_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8447,6 +9445,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8531,7 +9534,15 @@ QING_great_game = {
 			PRF = { 
 				set_cosmetic_tag = QIE_PRF_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8555,6 +9566,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8637,7 +9653,15 @@ QING_great_game = {
 			BRM = { 
 				set_cosmetic_tag = QIE_BRM_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8661,6 +9685,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8809,7 +9838,15 @@ QING_great_game = {
 			INS = { 
 				set_cosmetic_tag = QIE_INS_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8833,6 +9870,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -8925,7 +9967,15 @@ QING_great_game = {
 			PHI = { 
 				set_cosmetic_tag = QIE_PHI_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -8949,6 +9999,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9061,7 +10116,15 @@ QING_great_game = {
 			AST = { 
 				set_cosmetic_tag = QIE_AST_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9085,6 +10148,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9157,7 +10225,15 @@ QING_great_game = {
 			NZL = { 
 				set_cosmetic_tag = QIE_NZL_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9181,6 +10257,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9249,7 +10330,15 @@ QING_great_game = {
 			GLC = { 
 				set_cosmetic_tag = QIE_GLC_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9273,6 +10362,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9357,7 +10451,15 @@ QING_great_game = {
 			SWI = { 
 				set_cosmetic_tag = QIE_SWI_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9381,6 +10483,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9487,7 +10594,15 @@ QING_great_game = {
 			SWE = { 
 				set_cosmetic_tag = QIE_SWE_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9511,6 +10626,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9579,7 +10699,15 @@ QING_great_game = {
 			ICE = { 
 				set_cosmetic_tag = QIE_ICE_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9603,6 +10731,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9707,7 +10840,15 @@ QING_great_game = {
 			SPO = { 
 				set_cosmetic_tag = QIE_SPO_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9731,6 +10872,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9871,7 +11017,15 @@ QING_great_game = {
 			GRP = { 
 				set_cosmetic_tag = QIE_GRP_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -9895,6 +11049,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -9976,7 +11135,15 @@ QING_great_game = {
 			PRU = { 
 				set_cosmetic_tag = QIE_PRU_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10000,6 +11167,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -10130,7 +11302,15 @@ QING_great_game = {
 			ARG = { 
 				set_cosmetic_tag = QIE_ARG_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10154,6 +11334,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -10246,7 +11431,15 @@ QING_great_game = {
 			CHL = { 
 				set_cosmetic_tag = QIE_CHL_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10270,6 +11463,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -10338,7 +11536,15 @@ QING_great_game = {
 			URG = { 
 				set_cosmetic_tag = QIE_URG_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10362,6 +11568,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -10477,7 +11688,15 @@ QING_great_game = {
 			COL = { 
 				set_cosmetic_tag = QIE_COL_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10501,6 +11720,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -10645,7 +11869,15 @@ QING_great_game = {
 			CAF = { 
 				set_cosmetic_tag = QIE_CAF_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10669,6 +11901,11 @@ QING_great_game = {
 					authoritarian_democrat = 50
 					paternal_autocrat = 10
 					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
 				}
 
 			}
@@ -10745,7 +11982,15 @@ QING_great_game = {
 			CUB = { 
 				set_cosmetic_tag = QIE_CUB_OCC
 				load_focus_tree = generic_focus            
-
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
 
 				QIE = {
 					set_autonomy = {
@@ -10770,7 +12015,1246 @@ QING_great_game = {
 					paternal_autocrat = 10
 					national_populist = 10
 				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
 
+			}
+		}
+	}
+
+	QIE_establish_rk_TXS = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 375
+					state = 833
+					state = 1096
+					state = 1161
+					state = 1166
+					state = 1175
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					TXS = { exists = yes }
+				}
+				TXS = { is_subject_of = QIE }
+			}
+			375 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			833 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1096 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1161 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1166 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1175 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					375 = { NOT = { is_core_of = QIE } }
+					833 = { NOT = { is_core_of = QIE } }
+					1096 = { NOT = { is_core_of = QIE } }
+					1161 = { NOT = { is_core_of = QIE } }
+					1166 = { NOT = { is_core_of = QIE } }
+					1175 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			TXS = {
+				every_core_state = {
+					remove_core_of = TXS
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = TXS
+					}
+					remove_claim_by = TXS
+				}
+			}
+			375 = { add_core_of = TXS }
+			833 = { add_core_of = TXS }
+			1096 = { add_core_of = TXS }
+			1161 = { add_core_of = TXS }
+			1166 = { add_core_of = TXS }
+			1175 = { add_core_of = TXS }
+			release = TXS
+			TXS = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = TXS
+				}
+			}
+			TXS = { 
+				set_cosmetic_tag = QIE_TXS_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = TXS
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_AML = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 384
+					state = 381
+					state = 382
+					state = 387
+					state = 388
+					state = 389
+					state = 390
+					state = 1150
+					state = 1157
+					state = 1164
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					AML = { exists = yes }
+				}
+				AML = { is_subject_of = QIE }
+			}
+			384 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			381 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			382 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			387 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			388 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			389 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			390 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1150 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1157 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1164 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					384 = { NOT = { is_core_of = QIE } }
+					381 = { NOT = { is_core_of = QIE } }
+					382 = { NOT = { is_core_of = QIE } }
+					387 = { NOT = { is_core_of = QIE } }
+					388 = { NOT = { is_core_of = QIE } }
+					389 = { NOT = { is_core_of = QIE } }
+					390 = { NOT = { is_core_of = QIE } }
+					1150 = { NOT = { is_core_of = QIE } }
+					1157 = { NOT = { is_core_of = QIE } }
+					1164 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			AML = {
+				every_core_state = {
+					remove_core_of = AML
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = AML
+					}
+					remove_claim_by = AML
+				}
+			}
+			384 = { add_core_of = AML }
+			381 = { add_core_of = AML }
+			382 = { add_core_of = AML }
+			387 = { add_core_of = AML }
+			388 = { add_core_of = AML }
+			389 = { add_core_of = AML }
+			390 = { add_core_of = AML }
+			1150 = { add_core_of = AML }
+			1157 = { add_core_of = AML }
+			1164 = { add_core_of = AML }
+			release = AML
+			AML = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = AML
+				}
+			}
+			AML = { 
+				set_cosmetic_tag = QIE_AML_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = AML
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_PAN = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 304
+					state = 854
+					state = 1248
+					state = 1257
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					PAN = { exists = yes }
+				}
+				PAN = { is_subject_of = QIE }
+			}
+			304 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			854 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1248 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1257 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					304 = { NOT = { is_core_of = QIE } }
+					854 = { NOT = { is_core_of = QIE } }
+					1248 = { NOT = { is_core_of = QIE } }
+					1257 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			PAN = {
+				every_core_state = {
+					remove_core_of = PAN
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = PAN
+					}
+					remove_claim_by = PAN
+				}
+			}
+			304 = { add_core_of = PAN }
+			854 = { add_core_of = PAN }
+			1248 = { add_core_of = PAN }
+			1257 = { add_core_of = PAN }
+			release = PAN
+			PAN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = PAN
+				}
+			}
+			PAN = { 
+				set_cosmetic_tag = QIE_PAN_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = PAN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_MEX = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 277
+					state = 474
+					state = 475
+					state = 476
+					state = 477
+					state = 478
+					state = 479
+					state = 480
+					state = 481
+					state = 482
+					state = 483
+					state = 484
+					state = 485
+					state = 1252
+					state = 1253
+					state = 1254
+					state = 1255
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					MEX = { exists = yes }
+				}
+				MEX = { is_subject_of = QIE }
+			}
+			277 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			474 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			475 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			476 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			477 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			478 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			479 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			480 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			481 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			482 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			483 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			484 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			485 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1252 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1253 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1254 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1255 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					277 = { NOT = { is_core_of = QIE } }
+					474 = { NOT = { is_core_of = QIE } }
+					475 = { NOT = { is_core_of = QIE } }
+					476 = { NOT = { is_core_of = QIE } }
+					477 = { NOT = { is_core_of = QIE } }
+					478 = { NOT = { is_core_of = QIE } }
+					479 = { NOT = { is_core_of = QIE } }
+					480 = { NOT = { is_core_of = QIE } }
+					481 = { NOT = { is_core_of = QIE } }
+					482 = { NOT = { is_core_of = QIE } }
+					483 = { NOT = { is_core_of = QIE } }
+					484 = { NOT = { is_core_of = QIE } }
+					485 = { NOT = { is_core_of = QIE } }
+					1252 = { NOT = { is_core_of = QIE } }
+					1253 = { NOT = { is_core_of = QIE } }
+					1254 = { NOT = { is_core_of = QIE } }
+					1255 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			MEX = {
+				every_core_state = {
+					remove_core_of = MEX
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = MEX
+					}
+					remove_claim_by = MEX
+				}
+			}
+			277 = { add_core_of = MEX }
+			474 = { add_core_of = MEX }
+			475 = { add_core_of = MEX }
+			476 = { add_core_of = MEX }
+			477 = { add_core_of = MEX }
+			478 = { add_core_of = MEX }
+			479 = { add_core_of = MEX }
+			480 = { add_core_of = MEX }
+			481 = { add_core_of = MEX }
+			482 = { add_core_of = MEX }
+			483 = { add_core_of = MEX }
+			484 = { add_core_of = MEX }
+			485 = { add_core_of = MEX }
+			1252 = { add_core_of = MEX }
+			1253 = { add_core_of = MEX }
+			1254 = { add_core_of = MEX }
+			1255 = { add_core_of = MEX }
+			release = MEX
+			MEX = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = MEX
+				}
+			}
+			MEX = { 
+				set_cosmetic_tag = QIE_MEX_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = MEX
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_FSA = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1172
+					state = 1171
+					state = 1170
+					state = 1169
+					state = 1168
+					state = 1167
+					state = 1160
+					state = 1158
+					state = 1156
+					state = 1155
+					state = 363
+					state = 362
+					state = 374
+					state = 368
+					state = 369
+					state = 370
+					state = 371
+					state = 372
+					state = 364
+					state = 365
+					state = 366
+					state = 367
+					state = 383
+					state = 1163
+					state = 373
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					FSA = { exists = yes }
+				}
+				FSA = { is_subject_of = QIE }
+			}
+			1172 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1171 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1170 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1169 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1168 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1167 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1160 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1158 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1156 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1155 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			363 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			362 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			374 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			368 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			369 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			370 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			371 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			372 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			364 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			365 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			366 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			367 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			383 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1163 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			373 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					1172 = { NOT = { is_core_of = QIE } }
+					1171 = { NOT = { is_core_of = QIE } }
+					1170 = { NOT = { is_core_of = QIE } }
+					1169 = { NOT = { is_core_of = QIE } }
+					1168 = { NOT = { is_core_of = QIE } }
+					1167 = { NOT = { is_core_of = QIE } }
+					1160 = { NOT = { is_core_of = QIE } }
+					1158 = { NOT = { is_core_of = QIE } }
+					1156 = { NOT = { is_core_of = QIE } }
+					1155 = { NOT = { is_core_of = QIE } }
+					363 = { NOT = { is_core_of = QIE } }
+					362 = { NOT = { is_core_of = QIE } }
+					374 = { NOT = { is_core_of = QIE } }
+					368 = { NOT = { is_core_of = QIE } }
+					369 = { NOT = { is_core_of = QIE } }
+					370 = { NOT = { is_core_of = QIE } }
+					371 = { NOT = { is_core_of = QIE } }
+					372 = { NOT = { is_core_of = QIE } }
+					364 = { NOT = { is_core_of = QIE } }
+					365 = { NOT = { is_core_of = QIE } }
+					366 = { NOT = { is_core_of = QIE } }
+					367 = { NOT = { is_core_of = QIE } }
+					383 = { NOT = { is_core_of = QIE } }
+					1163 = { NOT = { is_core_of = QIE } }
+					373 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			FSA = {
+				every_core_state = {
+					remove_core_of = FSA
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = FSA
+					}
+					remove_claim_by = FSA
+				}
+			}
+			1172 = { add_core_of = FSA }
+			1171 = { add_core_of = FSA }
+			1170 = { add_core_of = FSA }
+			1169 = { add_core_of = FSA }
+			1168 = { add_core_of = FSA }
+			1167 = { add_core_of = FSA }
+			1160 = { add_core_of = FSA }
+			1158 = { add_core_of = FSA }
+			1156 = { add_core_of = FSA }
+			1155 = { add_core_of = FSA }
+			363 = { add_core_of = FSA }
+			362 = { add_core_of = FSA }
+			374 = { add_core_of = FSA }
+			368 = { add_core_of = FSA }
+			369 = { add_core_of = FSA }
+			370 = { add_core_of = FSA }
+			371 = { add_core_of = FSA }
+			372 = { add_core_of = FSA }
+			364 = { add_core_of = FSA }
+			365 = { add_core_of = FSA }
+			366 = { add_core_of = FSA }
+			367 = { add_core_of = FSA }
+			383 = { add_core_of = FSA }
+			1163 = { add_core_of = FSA }
+			373 = { add_core_of = FSA }
+			release = FSA
+			FSA = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = FSA
+				}
+			}
+			FSA = { 
+				set_cosmetic_tag = QIE_FSA_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = FSA
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_DSR = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 376
+					state = 377
+					state = 379
+					state = 380
+					state = 1174
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					DSR = { exists = yes }
+				}
+				DSR = { is_subject_of = QIE }
+			}
+			376 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			377 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			379 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			380 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1174 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					376 = { NOT = { is_core_of = QIE } }
+					377 = { NOT = { is_core_of = QIE } }
+					379 = { NOT = { is_core_of = QIE } }
+					380 = { NOT = { is_core_of = QIE } }
+					1174 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			DSR = {
+				every_core_state = {
+					remove_core_of = DSR
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = DSR
+					}
+					remove_claim_by = DSR
+				}
+			}
+			376 = { add_core_of = DSR }
+			377 = { add_core_of = DSR }
+			379 = { add_core_of = DSR }
+			380 = { add_core_of = DSR }
+			1174 = { add_core_of = DSR }
+			release = DSR
+			DSR = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = DSR
+				}
+			}
+			DSR = { 
+				set_cosmetic_tag = QIE_DSR_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = DSR
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_CGL = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 1173
+					state = 261
+					state = 391
+					state = 392
+					state = 393
+					state = 1162
+					state = 394
+					state = 1159
+					state = 395
+					state = 396
+					state = 1154
+					state = 929
+					state = 1153
+					state = 1152
+					state = 1151
+					state = 930
+					state = 361
+					state = 360
+					state = 359
+					state = 358
+					state = 933
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					CGL = { exists = yes }
+				}
+				CGL = { is_subject_of = QIE }
+			}
+			1173 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			261 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			391 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			392 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			393 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1162 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			394 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1159 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			395 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			396 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1154 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			929 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1153 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1152 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1151 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			930 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			361 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			360 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			359 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			358 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			933 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					1173 = { NOT = { is_core_of = QIE } }
+					261 = { NOT = { is_core_of = QIE } }
+					391 = { NOT = { is_core_of = QIE } }
+					392 = { NOT = { is_core_of = QIE } }
+					393 = { NOT = { is_core_of = QIE } }
+					1162 = { NOT = { is_core_of = QIE } }
+					394 = { NOT = { is_core_of = QIE } }
+					1159 = { NOT = { is_core_of = QIE } }
+					395 = { NOT = { is_core_of = QIE } }
+					396 = { NOT = { is_core_of = QIE } }
+					1154 = { NOT = { is_core_of = QIE } }
+					929 = { NOT = { is_core_of = QIE } }
+					1153 = { NOT = { is_core_of = QIE } }
+					1152 = { NOT = { is_core_of = QIE } }
+					1151 = { NOT = { is_core_of = QIE } }
+					930 = { NOT = { is_core_of = QIE } }
+					361 = { NOT = { is_core_of = QIE } }
+					360 = { NOT = { is_core_of = QIE } }
+					359 = { NOT = { is_core_of = QIE } }
+					358 = { NOT = { is_core_of = QIE } }
+					933 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			CGL = {
+				every_core_state = {
+					remove_core_of = CGL
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = CGL
+					}
+					remove_claim_by = CGL
+				}
+			}
+			932 = { add_core_of = CGL }
+			931 = { add_core_of = CGL }
+			357 = { add_core_of = CGL }
+			934 = { add_core_of = CGL }
+			935 = { add_core_of = CGL }
+			796 = { add_core_of = CGL }
+			1173 = { add_core_of = CGL }
+			261 = { add_core_of = CGL }
+			391 = { add_core_of = CGL }
+			392 = { add_core_of = CGL }
+			393 = { add_core_of = CGL }
+			1162 = { add_core_of = CGL }
+			394 = { add_core_of = CGL }
+			1159 = { add_core_of = CGL }
+			395 = { add_core_of = CGL }
+			396 = { add_core_of = CGL }
+			1154 = { add_core_of = CGL }
+			929 = { add_core_of = CGL }
+			1153 = { add_core_of = CGL }
+			1152 = { add_core_of = CGL }
+			1151 = { add_core_of = CGL }
+			930 = { add_core_of = CGL }
+			361 = { add_core_of = CGL }
+			360 = { add_core_of = CGL }
+			359 = { add_core_of = CGL }
+			358 = { add_core_of = CGL }
+			933 = { add_core_of = CGL }
+			release = CGL
+			CGL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = CGL
+				}
+			}
+			CGL = { 
+				set_cosmetic_tag = QIE_CGL_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = CGL
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+	
+	QIE_establish_rk_CEN = {
+		icon = generic_prepare_civil_war
+	
+			highlight_states = {
+				highlight_state_targets = {
+					state = 311
+					state = 312
+					state = 313
+					state = 314
+					state = 316
+					state = 317
+					state = 842
+					state = 1070
+					state = 1071
+					state = 1247
+					state = 1249
+					state = 1250
+					state = 1251
+					state = 1256
+					state = 1258
+					state = 1259
+					state = 1260
+					state = 1261
+					state = 1262
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					CEN = { exists = yes }
+				}
+				CEN = { is_subject_of = QIE }
+			}
+			311 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			312 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			313 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			314 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			316 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			317 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			842 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1070 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1071 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1247 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1249 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1250 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1251 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1256 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1258 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1259 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1260 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1261 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1262 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					311 = { NOT = { is_core_of = QIE } }
+					312 = { NOT = { is_core_of = QIE } }
+					313 = { NOT = { is_core_of = QIE } }
+					314 = { NOT = { is_core_of = QIE } }
+					316 = { NOT = { is_core_of = QIE } }
+					317 = { NOT = { is_core_of = QIE } }
+					842 = { NOT = { is_core_of = QIE } }
+					1070 = { NOT = { is_core_of = QIE } }
+					1071 = { NOT = { is_core_of = QIE } }
+					1247 = { NOT = { is_core_of = QIE } }
+					1249 = { NOT = { is_core_of = QIE } }
+					1250 = { NOT = { is_core_of = QIE } }
+					1251 = { NOT = { is_core_of = QIE } }
+					1256 = { NOT = { is_core_of = QIE } }
+					1258 = { NOT = { is_core_of = QIE } }
+					1259 = { NOT = { is_core_of = QIE } }
+					1260 = { NOT = { is_core_of = QIE } }
+					1261 = { NOT = { is_core_of = QIE } }
+					1262 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			CEN = {
+				every_core_state = {
+					remove_core_of = CEN
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = CEN
+					}
+					remove_claim_by = CEN
+				}
+			}
+			311 = { add_core_of = CEN }
+			312 = { add_core_of = CEN }
+			313 = { add_core_of = CEN }
+			314 = { add_core_of = CEN }
+			316 = { add_core_of = CEN }
+			317 = { add_core_of = CEN }
+			842 = { add_core_of = CEN }
+			1070 = { add_core_of = CEN }
+			1071 = { add_core_of = CEN }
+			1247 = { add_core_of = CEN }
+			1249 = { add_core_of = CEN }
+			1250 = { add_core_of = CEN }
+			1251 = { add_core_of = CEN }
+			1256 = { add_core_of = CEN }
+			1258 = { add_core_of = CEN }
+			1259 = { add_core_of = CEN }
+			1260 = { add_core_of = CEN }
+			1261 = { add_core_of = CEN }
+			1262 = { add_core_of = CEN }
+			release = CEN
+			CEN = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = CEN
+				}
+			}
+			CEN = { 
+				set_cosmetic_tag = QIE_CEN_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = CEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
 			}
 		}
 	}
