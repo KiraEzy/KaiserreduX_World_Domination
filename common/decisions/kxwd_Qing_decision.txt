@@ -785,231 +785,8 @@ QING_great_game = {
 	# 		# 	}
 	# 		# 	log = "--------------------------------"
 	# 		# }
-	# 		TXS = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-			
-	# 		PSA = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
 
-	# 		AML = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-
-	# 		PAN = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-
-	# 		MEX = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-
-	# 		FSA = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-
-	# 		DSR = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-
-	# 		CGL = {
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] claim states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							not = { is_core_of = THIS} 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 			log = "[THIS.GetTag] core states:"
-	# 			THIS = {
-	# 				every_owned_state = {
-	# 					if = {
-	# 						limit = {
-	# 							is_core_of = THIS 
-	# 						}
-	# 						log = "[state.GetID]"
-	# 					}
-	# 				}
-	# 			}
-	# 			log = "--------------------------------"
-	# 		}
-
-	# 		CEN = {
+	# 		CAL = {
 	# 			log = "--------------------------------"
 	# 			log = "[THIS.GetTag] claim states:"
 	# 			THIS = {
@@ -12918,7 +12695,6 @@ QING_great_game = {
 					state = 360
 					state = 359
 					state = 358
-					state = 933
 				}
 				highlight_color_while_active = 3
 				highlight_color_before_active = 2
@@ -12951,7 +12727,6 @@ QING_great_game = {
 			360 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
 			359 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
 			358 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
-			933 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
 			OR = {
 					1173 = { NOT = { is_core_of = QIE } }
 					261 = { NOT = { is_core_of = QIE } }
@@ -12973,7 +12748,6 @@ QING_great_game = {
 					360 = { NOT = { is_core_of = QIE } }
 					359 = { NOT = { is_core_of = QIE } }
 					358 = { NOT = { is_core_of = QIE } }
-					933 = { NOT = { is_core_of = QIE } }
 			}
 		}
 	
@@ -13230,6 +13004,134 @@ QING_great_game = {
 				QIE = {
 					set_autonomy = {
 						target = CEN
+						autonomous_state = kx_colored_puppet
+					}
+				}
+	
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+	
+	
+				set_popularities = {
+					syndicalist = 5
+					social_democrat = 5
+					social_liberal = 0
+					market_liberal = 0
+					social_conservative = 20
+					authoritarian_democrat = 50
+					paternal_autocrat = 10
+					national_populist = 10
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = "Qing Royal Administration"
+					long_name = "Qing Royal Administration"
+				}
+			}
+		}
+	}
+
+	QIE_establish_rk_CAL = {
+		icon = generic_prepare_civil_war
+		
+			highlight_states = {
+				highlight_state_targets = {
+					state = 378
+					state = 385
+					state = 386
+					state = 797
+					state = 798
+					state = 829
+					state = 1165
+				}
+				highlight_color_while_active = 3
+				highlight_color_before_active = 2
+			}
+	
+		available = {
+			if = {
+				limit = {
+					CAL = { exists = yes }
+				}
+				CAL = { is_subject_of = QIE }
+			}
+			378 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			385 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			386 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			797 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			798 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			829 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1165 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			OR = {
+					378 = { NOT = { is_core_of = QIE } }
+					385 = { NOT = { is_core_of = QIE } }
+					386 = { NOT = { is_core_of = QIE } }
+					797 = { NOT = { is_core_of = QIE } }
+					798 = { NOT = { is_core_of = QIE } }
+					829 = { NOT = { is_core_of = QIE } }
+					1165 = { NOT = { is_core_of = QIE } }
+			}
+		}
+	
+		fire_only_once = yes
+	
+		ai_will_do = {
+			factor = 5
+		}
+		complete_effect = {
+			CAL = {
+				every_core_state = {
+					remove_core_of = CAL
+				}
+				every_state = {
+					limit = {
+						is_claimed_by = CAL
+					}
+					remove_claim_by = CAL
+				}
+			}
+			378 = { add_core_of = CAL }
+			385 = { add_core_of = CAL }
+			386 = { add_core_of = CAL }
+			797 = { add_core_of = CAL }
+			798 = { add_core_of = CAL }
+			829 = { add_core_of = CAL }
+			1165 = { add_core_of = CAL }
+			release = CAL
+			CAL = { 
+				every_core_state = {
+					limit = {
+						AND = {
+							NOT = { 
+								is_core_of = QIE
+							}
+							OR = {
+								is_owned_by = QIE
+								OWNER = { is_subject_of = QIE} 
+							}
+						}
+					}
+					transfer_state_to = CAL
+				}
+			}
+			CAL = { 
+				set_cosmetic_tag = QIE_PSA_OCC
+				load_focus_tree = generic_focus            
+	
+				create_country_leader = {
+					name = "Qing Royal Administration"
+					picture = "gfx/leaders/WDQIE/qing_administration.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+					traits = {
+					}
+				}
+	
+				QIE = {
+					set_autonomy = {
+						target = CAL
 						autonomous_state = kx_colored_puppet
 					}
 				}
