@@ -4543,9 +4543,6 @@ country_event = {
 
 	option = {
 		name = gre.114.a
-		ai_chance = {
-			factor = 100
-		}
 		clr_country_flag = GRE_republicans_win_referendum
 		add_stability = -0.10
 		add_political_power = -200
@@ -5201,7 +5198,7 @@ country_event = {
 				if = {
 					limit = { NOT = { has_unit_leader = 571 } }
 					create_field_marshal = {
-						name = "Aris Velouchiotis"
+						name = "Aris Velouchiotis "
 						portrait_path = "gfx/leaders/GRE/Portrait_GRE_Athanasios_Klaras.png"
 						traits = {
 							trickster
