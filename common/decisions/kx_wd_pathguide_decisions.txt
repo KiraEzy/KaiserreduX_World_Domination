@@ -334,3 +334,21 @@ POR_WD_pathguide = {
 		}
 	}
 }
+
+QIE_WD_pathguide = {
+	QIE_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = QIE
+		}
+		available = {
+			original_tag = QIE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.20
+		}
+	}
+}
