@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+        KXWD_TRM_siberian_war_idea = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea TRMWD_siberian_war_idea"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                army_attack_factor = 0.35
+                army_defence_factor = 0.35
+                army_speed_factor = 0.35
+            }
+            cancel = {
+                owns_state = 195
+                owns_state = 219
+                owns_state = 217
+            }
+            removal_cost = -1
+        }
+    }	
+}

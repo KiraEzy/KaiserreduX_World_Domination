@@ -1,0 +1,153 @@
+
+#################################
+####### SIBERIAN WAR TREE #######
+#################################
+
+shared_focus = {
+	id = TRMWD_Siberian_War
+	icon = GFX_goal_goal_MLTWD_take_east
+    available = {
+       has_war_with = RUS 
+       is_ai = no
+    }
+	x = 0
+	y = 2
+	cost = 1
+	
+    relative_position_id = TRM_End_Germany
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_Warfare"
+        add_ideas = KXWD_TRM_siberian_war_idea
+	}
+}
+
+shared_focus = {
+	id = TRMWD_Siberian_War_equip
+	icon = GFX_goal_goal_MLTWD_take_east
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 1
+	
+    prerequisite = {
+        focus = TRMWD_Siberian_War
+    }
+    relative_position_id = TRMWD_Siberian_War
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_equip"
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 15000
+            producer = TRM
+        }
+	}
+}
+
+shared_focus = {
+	id = TRMWD_Siberian_War_aid
+	icon = GFX_goal_goal_MLTWD_take_east
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 1
+	
+
+    prerequisite = {
+        focus = TRMWD_Siberian_War_equip
+    }
+    relative_position_id = TRMWD_Siberian_War_equip
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_equip"
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 5000
+            producer = TRM
+        }
+        add_manpower = 10000
+	}
+}
+
+shared_focus = {
+	id = TRMWD_Siberian_War_artillery
+	icon = GFX_goal_goal_MLTWD_take_east
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 1
+	
+
+    prerequisite = {
+        focus = TRMWD_Siberian_War_equip
+        focus = TRMWD_Siberian_War_manpower
+    }
+    relative_position_id = TRMWD_Siberian_War_equip
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_artillery"
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 3500
+            producer = TRM
+        }
+	}
+}
+
+shared_focus = {
+	id = TRMWD_Siberian_War_manpower
+	icon = GFX_goal_goal_MLTWD_take_east
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 1
+	
+    prerequisite = {
+        focus = TRMWD_Siberian_War
+    }
+    relative_position_id = TRMWD_Siberian_War
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_manpower"
+        add_manpower = 25000
+	}
+}
+
+shared_focus = {
+	id = TRMWD_Siberian_War_support
+	icon = GFX_goal_goal_MLTWD_take_east
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 1
+	
+
+    prerequisite = {
+        focus = TRMWD_Siberian_War_manpower
+    }
+    relative_position_id = TRMWD_Siberian_War_manpower
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_support"
+        add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 1000
+            producer = TRM
+        }
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 500
+            producer = TRM
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 1000
+            producer = TRM
+        }
+	}
+}
