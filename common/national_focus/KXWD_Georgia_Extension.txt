@@ -1,0 +1,644 @@
+
+#################################
+####### KXWD GEORGIA TREE #######
+#################################
+
+shared_focus = {
+	id = GEOWD_kings_ambition
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        has_completed_focus = GEO_form_a_government
+		is_ai = no
+    }
+	x = 9
+	y = 0
+	cost = 1
+		
+    relative_position_id = GEO_form_a_government
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_kings_ambition"
+        add_ideas = KXWD_GEO_kings_ambition
+	}
+}
+
+shared_focus = {
+	id = GEOWD_preparations
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+    }
+    
+	x = 0
+	y = 2
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_kings_ambition
+	}
+
+    relative_position_id = GEOWD_kings_ambition
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_preparations"
+        add_ideas = KXWD_GEO_giant
+        add_equipment_to_stockpile = {
+            type = infantry_equipment
+            amount = 5000
+            producer = GEO
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 2500
+            producer = GEO
+        }
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 2500
+            producer = GEO
+        }
+        add_political_power = 100
+        add_war_support = 0.15
+        add_manpower = 50000
+        army_experience = 150
+        231 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = bunker
+                level = 10
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+        1082 = {
+            add_building_construction = {
+                type = bunker
+                level = 10
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+        1080 = {
+            add_building_construction = {
+                type = bunker
+                level = 10
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+        1190 = {
+            add_building_construction = {
+                type = bunker
+                level = 10
+                instant_build = yes
+                province = {
+                    all_provinces = yes
+                    limit_to_border = yes
+                }
+            }
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_towards_autarky
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_kings_ambition
+	}
+
+    relative_position_id = GEOWD_kings_ambition
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_towards_autarky"
+        add_ideas = KXWD_GEO_autarky_1
+	}
+}
+
+shared_focus = {
+	id = GEOWD_expand_church_powers
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_kings_ambition
+	}
+
+    relative_position_id = GEOWD_kings_ambition
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_expand_church_powers"
+        add_ideas = KXWD_GEO_powerful_church_1
+	}
+}
+
+shared_focus = {
+	id = GEOWD_for_king_country_god
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_expand_church_powers
+	}
+
+    relative_position_id = GEOWD_expand_church_powers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_for_king_country_god"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_powerful_church_1
+            add_idea = KXWD_GEO_powerful_church_2
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_nationalize_german_companies
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_towards_autarky
+	}
+
+    relative_position_id = GEOWD_towards_autarky
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_nationalize_german_companies"
+        231 = {
+            add_extra_state_shared_building_slots = 10
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }
+            add_resource = {
+                type = coal
+                amount = 20
+            }
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_national_foundry
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_nationalize_german_companies
+	}
+
+    relative_position_id = GEOWD_nationalize_german_companies
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_national_foundry"
+        231 = {
+            add_resource = {
+                type = steel
+                amount = 75
+            }
+            add_resource = {
+                type = aluminium
+                amount = 25
+            }
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_orthodox_bastion
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_for_king_country_god
+	}
+
+    relative_position_id = GEOWD_for_king_country_god
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_orthodox_bastion"
+        add_ideas = KXWD_GEO_orthodoxy_1
+	}
+}
+
+shared_focus = {
+	id = GEOWD_conquest
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+    }
+    
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_preparations
+	}
+
+    relative_position_id = GEOWD_preparations
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_conquest"
+        1266 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        137 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        990 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        230 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        233 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        234 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        419 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        1221 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        352 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        355 = { 
+            owner = { 
+                GEO = {
+                    create_wargoal = {
+                        target = PREV
+                        type = annex_everything
+                    }
+                }
+            } 
+        }
+        229 = { add_core_of = GEO }
+		990 = { add_core_of = GEO }
+		998 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1267 = { add_core_of = GEO }
+		1298 = { add_core_of = GEO }
+		1299 = { add_core_of = GEO }
+		1300 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		1302 = { add_core_of = GEO }
+		1303 = { add_core_of = GEO }
+		1304 = { add_core_of = GEO }
+		137 = { add_core_of = GEO }
+		230 = { add_core_of = GEO }
+		232 = { add_core_of = GEO }
+		233 = { add_core_of = GEO }
+		234 = { add_core_of = GEO }
+		235 = { add_core_of = GEO }
+		352 = { add_core_of = GEO }
+		354 = { add_core_of = GEO }
+		355 = { add_core_of = GEO }
+		417 = { add_core_of = GEO }
+		419 = { add_core_of = GEO }
+		787 = { add_core_of = GEO }
+		1000 = { add_core_of = GEO }
+		1001 = { add_core_of = GEO }
+		1186 = { add_core_of = GEO }
+		1187 = { add_core_of = GEO }
+		1189 = { add_core_of = GEO }
+		1191 = { add_core_of = GEO }
+		1220 = { add_core_of = GEO }
+		1221 = { add_core_of = GEO }
+		1227 = { add_core_of = GEO }
+		1266 = { add_core_of = GEO }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_orthodox_protector
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_orthodox_bastion
+	}
+    prerequisite = {
+		focus = GEOWD_conquest
+	}
+
+    relative_position_id = GEOWD_orthodox_bastion
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_orthodox_protector"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_orthodoxy_1
+            add_idea = KXWD_GEO_orthodoxy_2
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_seize_baku_oil
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_national_foundry
+	}
+    prerequisite = {
+		focus = GEOWD_conquest
+	}
+
+    relative_position_id = GEOWD_national_foundry
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_seize_baku_oil"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_autarky_1
+            add_idea = KXWD_GEO_autarky_2
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_orthodox_new_age
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_orthodox_protector
+	}
+
+    relative_position_id = GEOWD_orthodox_protector
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_orthodox_new_age"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_orthodoxy_2
+            add_idea = KXWD_GEO_orthodoxy_3
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_autarky
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_seize_baku_oil
+	}
+
+    relative_position_id = GEOWD_seize_baku_oil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_autarky"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_autarky_2
+            add_idea = KXWD_GEO_autarky_3
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_new_roman_empire
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_autarky
+	}
+    prerequisite = {
+		focus = GEOWD_orthodox_new_age
+	}
+
+    relative_position_id = GEOWD_orthodox_new_age
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_new_roman_empire"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_orthodoxy_3
+            add_idea = KXWD_GEO_orthodoxy_4
+        }
+        350 = { add_core_of = GEO }
+		819 = { add_core_of = GEO }
+		49 = { add_core_of = GEO }
+		164 = { add_core_of = GEO }
+		183 = { add_core_of = GEO }
+		187 = { add_core_of = GEO }
+		339 = { add_core_of = GEO }
+		340 = { add_core_of = GEO }
+		341 = { add_core_of = GEO }
+		342 = { add_core_of = GEO }
+		343 = { add_core_of = GEO }
+		344 = { add_core_of = GEO }
+		345 = { add_core_of = GEO }
+		346 = { add_core_of = GEO }
+		356 = { add_core_of = GEO }
+		453 = { add_core_of = GEO }
+		454 = { add_core_of = GEO }
+		455 = { add_core_of = GEO }
+		553 = { add_core_of = GEO }
+		554 = { add_core_of = GEO }
+		677 = { add_core_of = GEO }
+		680 = { add_core_of = GEO }
+		773 = { add_core_of = GEO }
+		992 = { add_core_of = GEO }
+		995 = { add_core_of = GEO }
+		47 = { add_core_of = GEO }
+		182 = { add_core_of = GEO }
+		184 = { add_core_of = GEO }
+		185 = { add_core_of = GEO }
+		186 = { add_core_of = GEO }
+		731 = { add_core_of = GEO }
+		758 = { add_core_of = GEO }
+		768 = { add_core_of = GEO }
+		769 = { add_core_of = GEO }
+		939 = { add_core_of = GEO }
+		989 = { add_core_of = GEO }
+		1076 = { add_core_of = GEO }
+        753 = { add_core_of = GEO }
+        GEO = { 
+			set_cosmetic_tag = GEO_GEO_OCC
+		}
+	}
+}
+
+shared_focus = {
+	id = GEOWD_capital_constantinopol
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_new_roman_empire
+	}
+    mutually_exclusive = { focus = GEOWD_capital_tbilisi }
+
+    relative_position_id = GEOWD_new_roman_empire
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_capital_constantinopol"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_orthodoxy_4
+            add_idea = KXWD_GEO_orthodoxy_4C
+        }
+        set_capital = {
+            state = 773
+            remember_old_capital = yes
+        }
+	}
+}
+
+shared_focus = {
+	id = GEOWD_capital_tbilisi
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    available = {
+        
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+		focus = GEOWD_new_roman_empire
+	}
+    mutually_exclusive = { focus = GEOWD_capital_constantinopol }
+
+    relative_position_id = GEOWD_new_roman_empire
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GEOWD_capital_tbilisi"
+        swap_ideas = {
+            remove_idea = KXWD_GEO_orthodoxy_4
+            add_idea = KXWD_GEO_orthodoxy_4T
+        }
+	}
+}
