@@ -1,23 +1,452 @@
 FIN_great_game = {
+	# great_game_state_logger = {
+	# 	icon = generic_prepare_civil_war
+	# 	complete_effect = {j                                                                                                                            
+	# 		WHR = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		UKR = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		WSU = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		MOL = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		ROM = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		CZE = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		BUL = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		ALB = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		GRE = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		SER = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		MNT = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		CRO = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		AUS = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+
+	# 		CRI = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+	# 		DEN = {
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] claim states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							not = { is_core_of = THIS} 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 			log = "[THIS.GetTag] core states:"
+	# 			THIS = {
+	# 				every_owned_state = {
+	# 					if = {
+	# 						limit = {
+	# 							is_core_of = THIS 
+	# 						}
+	# 						log = "[state.GetID]"
+	# 					}
+	# 				}
+	# 			}
+	# 			log = "--------------------------------"
+	# 		}
+	# 	}
+
+		
+	# }
     FIN_early_WAR = {
-	icon = GFX_decision_icon_default
+		icon = GFX_decision_icon_default
 
-	available = {
+		available = {
+			AND = {
+				has_completed_focus = FIN_proclaim_greater_finland
+				has_completed_focus = FIN_urbanisation
+				has_completed_focus = FIN_encircle_and_destroy
 
+			}
+		}
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			add_ideas = {
+			KXWD_BUL_quick_war
+			}
+		}	
 	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 0
-	}
-
-	complete_effect = {
-		add_ideas = {
-        KXWD_BUL_quick_war
-        }
-	}	
-}
     FIN_establish_rk_FIN = {
 	icon = generic_prepare_civil_war
 
@@ -1469,6 +1898,1731 @@ FIN_establish_rk_DKB = {
 				ruling_party = paternal_autocrat
 				elections_allowed = no
 			}
+		}
+	}
+}
+
+FIN_establish_rk_UKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 192
+				state = 193
+				state = 197
+				state = 198
+				state = 199
+				state = 200
+				state = 201
+				state = 202
+				state = 203
+				state = 221
+				state = 225
+				state = 226
+				state = 227
+				state = 228
+				state = 259
+				state = 791
+				state = 792
+				state = 1228
+				state = 1232
+				state = 1233
+				state = 1234
+				state = 1237
+				state = 1238
+				state = 1239
+				state = 1240
+				state = 1241
+				state = 1242
+				state = 1243
+				state = 1244
+				state = 1245
+				state = 1282
+				state = 1283
+				state = 1284
+				state = 1285
+				state = 1286
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				UKR = { exists = yes }
+			}
+			UKR = { is_subject_of = FIN }
+		}
+		192 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		193 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		197 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		198 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		199 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		200 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		201 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		202 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		203 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		221 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		225 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		226 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		227 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		228 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		259 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		791 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		792 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1228 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1232 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1233 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1234 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1237 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1238 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1239 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1240 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1241 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1242 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1243 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1244 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1245 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1282 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1283 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1284 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1285 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1286 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				192 = { NOT = { is_core_of = FIN } }
+				193 = { NOT = { is_core_of = FIN } }
+				197 = { NOT = { is_core_of = FIN } }
+				198 = { NOT = { is_core_of = FIN } }
+				199 = { NOT = { is_core_of = FIN } }
+				200 = { NOT = { is_core_of = FIN } }
+				201 = { NOT = { is_core_of = FIN } }
+				202 = { NOT = { is_core_of = FIN } }
+				203 = { NOT = { is_core_of = FIN } }
+				221 = { NOT = { is_core_of = FIN } }
+				225 = { NOT = { is_core_of = FIN } }
+				226 = { NOT = { is_core_of = FIN } }
+				227 = { NOT = { is_core_of = FIN } }
+				228 = { NOT = { is_core_of = FIN } }
+				259 = { NOT = { is_core_of = FIN } }
+				791 = { NOT = { is_core_of = FIN } }
+				792 = { NOT = { is_core_of = FIN } }
+				1228 = { NOT = { is_core_of = FIN } }
+				1232 = { NOT = { is_core_of = FIN } }
+				1233 = { NOT = { is_core_of = FIN } }
+				1234 = { NOT = { is_core_of = FIN } }
+				1237 = { NOT = { is_core_of = FIN } }
+				1238 = { NOT = { is_core_of = FIN } }
+				1239 = { NOT = { is_core_of = FIN } }
+				1240 = { NOT = { is_core_of = FIN } }
+				1241 = { NOT = { is_core_of = FIN } }
+				1242 = { NOT = { is_core_of = FIN } }
+				1243 = { NOT = { is_core_of = FIN } }
+				1244 = { NOT = { is_core_of = FIN } }
+				1245 = { NOT = { is_core_of = FIN } }
+				1282 = { NOT = { is_core_of = FIN } }
+				1283 = { NOT = { is_core_of = FIN } }
+				1284 = { NOT = { is_core_of = FIN } }
+				1285 = { NOT = { is_core_of = FIN } }
+				1286 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		UKR = {
+			every_core_state = {
+				remove_core_of = UKR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = UKR
+				}
+				remove_claim_by = UKR
+			}
+		}
+		93 = { add_core_of = UKR }
+		137 = { add_core_of = UKR }
+		196 = { add_core_of = UKR }
+		240 = { add_core_of = UKR }
+		821 = { add_core_of = UKR }
+		997 = { add_core_of = UKR }
+		1220 = { add_core_of = UKR }
+		1221 = { add_core_of = UKR }
+		1230 = { add_core_of = UKR }
+		192 = { add_core_of = UKR }
+		193 = { add_core_of = UKR }
+		197 = { add_core_of = UKR }
+		198 = { add_core_of = UKR }
+		199 = { add_core_of = UKR }
+		200 = { add_core_of = UKR }
+		201 = { add_core_of = UKR }
+		202 = { add_core_of = UKR }
+		203 = { add_core_of = UKR }
+		221 = { add_core_of = UKR }
+		225 = { add_core_of = UKR }
+		226 = { add_core_of = UKR }
+		227 = { add_core_of = UKR }
+		228 = { add_core_of = UKR }
+		259 = { add_core_of = UKR }
+		791 = { add_core_of = UKR }
+		792 = { add_core_of = UKR }
+		1228 = { add_core_of = UKR }
+		1232 = { add_core_of = UKR }
+		1233 = { add_core_of = UKR }
+		1234 = { add_core_of = UKR }
+		1237 = { add_core_of = UKR }
+		1238 = { add_core_of = UKR }
+		1239 = { add_core_of = UKR }
+		1240 = { add_core_of = UKR }
+		1241 = { add_core_of = UKR }
+		1242 = { add_core_of = UKR }
+		1243 = { add_core_of = UKR }
+		1244 = { add_core_of = UKR }
+		1245 = { add_core_of = UKR }
+		1282 = { add_core_of = UKR }
+		1283 = { add_core_of = UKR }
+		1284 = { add_core_of = UKR }
+		1285 = { add_core_of = UKR }
+		1286 = { add_core_of = UKR }
+		release = UKR
+		UKR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = UKR
+			}
+		}
+		UKR = { 
+			set_cosmetic_tag = FIN_UKR_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = UKR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_WSU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 89
+				state = 91
+				state = 1126
+				state = 1127
+				state = 1140
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				WSU = { exists = yes }
+			}
+			WSU = { is_subject_of = FIN }
+		}
+		89 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		91 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1126 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1127 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1140 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				89 = { NOT = { is_core_of = FIN } }
+				91 = { NOT = { is_core_of = FIN } }
+				1126 = { NOT = { is_core_of = FIN } }
+				1127 = { NOT = { is_core_of = FIN } }
+				1140 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		WSU = {
+			every_core_state = {
+				remove_core_of = WSU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = WSU
+				}
+				remove_claim_by = WSU
+			}
+		}
+		89 = { add_core_of = WSU }
+		91 = { add_core_of = WSU }
+		1126 = { add_core_of = WSU }
+		1127 = { add_core_of = WSU }
+		1140 = { add_core_of = WSU }
+		release = WSU
+		WSU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = WSU
+			}
+		}
+		WSU = { 
+			set_cosmetic_tag = FIN_WSU_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = WSU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_MOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 78
+				state = 79
+				state = 1222
+				state = 1320
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MOL = { exists = yes }
+			}
+			MOL = { is_subject_of = FIN }
+		}
+		78 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		79 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1222 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1320 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				78 = { NOT = { is_core_of = FIN } }
+				79 = { NOT = { is_core_of = FIN } }
+				1222 = { NOT = { is_core_of = FIN } }
+				1320 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MOL = {
+			every_core_state = {
+				remove_core_of = MOL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MOL
+				}
+				remove_claim_by = MOL
+			}
+		}
+		80 = { add_core_of = MOL }
+		713 = { add_core_of = MOL }
+		78 = { add_core_of = MOL }
+		79 = { add_core_of = MOL }
+		1222 = { add_core_of = MOL }
+		1320 = { add_core_of = MOL }
+		release = MOL
+		MOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = MOL
+			}
+		}
+		MOL = { 
+			set_cosmetic_tag = FIN_MOL_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = MOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ROM = { exists = yes }
+			}
+			ROM = { is_subject_of = FIN }
+		}
+		46 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		81 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				46 = { NOT = { is_core_of = FIN } }
+				81 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ROM = {
+			every_core_state = {
+				remove_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ROM
+				}
+				remove_claim_by = ROM
+			}
+		}
+		77 = { add_core_of = ROM }
+		772 = { add_core_of = ROM }
+		46 = { add_core_of = ROM }
+		81 = { add_core_of = ROM }
+		release = ROM
+		ROM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = ROM
+			}
+		}
+		ROM = { 
+			set_cosmetic_tag = FIN_ROM_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = ROM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_CZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 9
+				state = 69
+				state = 70
+				state = 71
+				state = 74
+				state = 75
+				state = 664
+				state = 786
+				state = 1120
+				state = 1121
+				state = 1122
+				state = 1123
+				state = 1129
+				state = 1130
+				state = 1131
+				state = 1132
+				state = 1133
+				state = 1134
+				state = 1135
+				state = 1136
+				state = 1138
+				state = 1139
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CZE = { exists = yes }
+			}
+			CZE = { is_subject_of = FIN }
+		}
+		9 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		69 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		70 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		71 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		74 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		75 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		664 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		786 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1120 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1121 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1122 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1123 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1129 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1130 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1131 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1132 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1133 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1134 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1135 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1136 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1138 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1139 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				9 = { NOT = { is_core_of = FIN } }
+				69 = { NOT = { is_core_of = FIN } }
+				70 = { NOT = { is_core_of = FIN } }
+				71 = { NOT = { is_core_of = FIN } }
+				74 = { NOT = { is_core_of = FIN } }
+				75 = { NOT = { is_core_of = FIN } }
+				664 = { NOT = { is_core_of = FIN } }
+				786 = { NOT = { is_core_of = FIN } }
+				1120 = { NOT = { is_core_of = FIN } }
+				1121 = { NOT = { is_core_of = FIN } }
+				1122 = { NOT = { is_core_of = FIN } }
+				1123 = { NOT = { is_core_of = FIN } }
+				1129 = { NOT = { is_core_of = FIN } }
+				1130 = { NOT = { is_core_of = FIN } }
+				1131 = { NOT = { is_core_of = FIN } }
+				1132 = { NOT = { is_core_of = FIN } }
+				1133 = { NOT = { is_core_of = FIN } }
+				1134 = { NOT = { is_core_of = FIN } }
+				1135 = { NOT = { is_core_of = FIN } }
+				1136 = { NOT = { is_core_of = FIN } }
+				1138 = { NOT = { is_core_of = FIN } }
+				1139 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CZE = {
+			every_core_state = {
+				remove_core_of = CZE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CZE
+				}
+				remove_claim_by = CZE
+			}
+		}
+		9 = { add_core_of = CZE }
+		69 = { add_core_of = CZE }
+		70 = { add_core_of = CZE }
+		71 = { add_core_of = CZE }
+		74 = { add_core_of = CZE }
+		75 = { add_core_of = CZE }
+		664 = { add_core_of = CZE }
+		786 = { add_core_of = CZE }
+		1120 = { add_core_of = CZE }
+		1121 = { add_core_of = CZE }
+		1122 = { add_core_of = CZE }
+		1123 = { add_core_of = CZE }
+		1129 = { add_core_of = CZE }
+		1130 = { add_core_of = CZE }
+		1131 = { add_core_of = CZE }
+		1132 = { add_core_of = CZE }
+		1133 = { add_core_of = CZE }
+		1134 = { add_core_of = CZE }
+		1135 = { add_core_of = CZE }
+		1136 = { add_core_of = CZE }
+		1138 = { add_core_of = CZE }
+		1139 = { add_core_of = CZE }
+		release = CZE
+		CZE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = CZE
+			}
+		}
+		CZE = { 
+			set_cosmetic_tag = FIN_CZE_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = CZE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_BUL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 48
+				state = 211
+				state = 212
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BUL = { exists = yes }
+			}
+			BUL = { is_subject_of = FIN }
+		}
+		48 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		211 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		212 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				48 = { NOT = { is_core_of = FIN } }
+				211 = { NOT = { is_core_of = FIN } }
+				212 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BUL = {
+			every_core_state = {
+				remove_core_of = BUL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BUL
+				}
+				remove_claim_by = BUL
+			}
+		}
+		770 = { add_core_of = BUL }
+		771 = { add_core_of = BUL }
+		1090 = { add_core_of = BUL }
+		106 = { add_core_of = BUL }
+		1271 = { add_core_of = BUL }
+		841 = { add_core_of = BUL }
+		731 = { add_core_of = BUL }
+		769 = { add_core_of = BUL }
+		989 = { add_core_of = BUL }
+		48 = { add_core_of = BUL }
+		211 = { add_core_of = BUL }
+		212 = { add_core_of = BUL }
+		release = BUL
+		BUL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = BUL
+			}
+		}
+		BUL = { 
+			set_cosmetic_tag = FIN_BUL_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = BUL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_ALB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 1268
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ALB = { exists = yes }
+			}
+			ALB = { is_subject_of = FIN }
+		}
+		44 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1268 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				44 = { NOT = { is_core_of = FIN } }
+				1268 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALB = {
+			every_core_state = {
+				remove_core_of = ALB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ALB
+				}
+				remove_claim_by = ALB
+			}
+		}
+		766 = { add_core_of = ALB }
+		44 = { add_core_of = ALB }
+		1268 = { add_core_of = ALB }
+		release = ALB
+		ALB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = ALB
+			}
+		}
+		ALB = { 
+			set_cosmetic_tag = FIN_ALB_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = ALB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+				state = 185
+				state = 186
+				state = 758
+				state = 768
+				state = 939
+				state = 1076
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = FIN }
+		}
+		47 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		185 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		186 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		758 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		768 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		939 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1076 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				47 = { NOT = { is_core_of = FIN } }
+				185 = { NOT = { is_core_of = FIN } }
+				186 = { NOT = { is_core_of = FIN } }
+				758 = { NOT = { is_core_of = FIN } }
+				768 = { NOT = { is_core_of = FIN } }
+				939 = { NOT = { is_core_of = FIN } }
+				1076 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		47 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = FIN_GRE_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_SER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1269
+				state = 767
+				state = 765
+				state = 108
+				state = 107
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SER = { exists = yes }
+			}
+			SER = { is_subject_of = FIN }
+		}
+		1269 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		767 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		765 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		108 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		107 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				1269 = { NOT = { is_core_of = FIN } }
+				767 = { NOT = { is_core_of = FIN } }
+				765 = { NOT = { is_core_of = FIN } }
+				108 = { NOT = { is_core_of = FIN } }
+				107 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SER = {
+			every_core_state = {
+				remove_core_of = SER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SER
+				}
+				remove_claim_by = SER
+			}
+		}
+		1269 = { add_core_of = SER }
+		767 = { add_core_of = SER }
+		765 = { add_core_of = SER }
+		108 = { add_core_of = SER }
+		107 = { add_core_of = SER }
+		release = SER
+		SER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = SER
+			}
+		}
+		SER = { 
+			set_cosmetic_tag = FIN_SER_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = SER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_MNT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 105
+				state = 1097
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MNT = { exists = yes }
+			}
+			MNT = { is_subject_of = FIN }
+		}
+		105 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1097 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				105 = { NOT = { is_core_of = FIN } }
+				1097 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MNT = {
+			every_core_state = {
+				remove_core_of = MNT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MNT
+				}
+				remove_claim_by = MNT
+			}
+		}
+		105 = { add_core_of = MNT }
+		1097 = { add_core_of = MNT }
+		release = MNT
+		MNT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = MNT
+			}
+		}
+		MNT = { 
+			set_cosmetic_tag = FIN_MNT_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = MNT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_CRO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 103
+				state = 109
+				state = 163
+				state = 794
+				state = 1098
+				state = 1099
+				state = 1102
+				state = 1105
+				state = 1128
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CRO = { exists = yes }
+			}
+			CRO = { is_subject_of = FIN }
+		}
+		103 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		109 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		163 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		794 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1098 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1099 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1102 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1105 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1128 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				103 = { NOT = { is_core_of = FIN } }
+				109 = { NOT = { is_core_of = FIN } }
+				163 = { NOT = { is_core_of = FIN } }
+				794 = { NOT = { is_core_of = FIN } }
+				1098 = { NOT = { is_core_of = FIN } }
+				1099 = { NOT = { is_core_of = FIN } }
+				1102 = { NOT = { is_core_of = FIN } }
+				1105 = { NOT = { is_core_of = FIN } }
+				1128 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CRO = {
+			every_core_state = {
+				remove_core_of = CRO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CRO
+				}
+				remove_claim_by = CRO
+			}
+		}
+		102 = { add_core_of = CRO }
+		104 = { add_core_of = CRO }
+		736 = { add_core_of = CRO }
+		1100 = { add_core_of = CRO }
+		1101 = { add_core_of = CRO }
+		1103 = { add_core_of = CRO }
+		1104 = { add_core_of = CRO }
+		1141 = { add_core_of = CRO }
+		1142 = { add_core_of = CRO }
+		1143 = { add_core_of = CRO }
+		1144 = { add_core_of = CRO }
+		1145 = { add_core_of = CRO }
+		1206 = { add_core_of = CRO }
+		1270 = { add_core_of = CRO }
+		103 = { add_core_of = CRO }
+		109 = { add_core_of = CRO }
+		163 = { add_core_of = CRO }
+		794 = { add_core_of = CRO }
+		1098 = { add_core_of = CRO }
+		1099 = { add_core_of = CRO }
+		1102 = { add_core_of = CRO }
+		1105 = { add_core_of = CRO }
+		1128 = { add_core_of = CRO }
+		release = CRO
+		CRO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = CRO
+			}
+		}
+		CRO = { 
+			set_cosmetic_tag = FIN_CRO_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = CRO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_AUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4
+				state = 152
+				state = 153
+				state = 775
+				state = 835
+				state = 836
+				state = 942
+				state = 1137
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AUS = { exists = yes }
+			}
+			AUS = { is_subject_of = FIN }
+		}
+		4 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		152 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		153 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		775 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		835 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		836 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		942 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		1137 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				4 = { NOT = { is_core_of = FIN } }
+				152 = { NOT = { is_core_of = FIN } }
+				153 = { NOT = { is_core_of = FIN } }
+				775 = { NOT = { is_core_of = FIN } }
+				835 = { NOT = { is_core_of = FIN } }
+				836 = { NOT = { is_core_of = FIN } }
+				942 = { NOT = { is_core_of = FIN } }
+				1137 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AUS = {
+			every_core_state = {
+				remove_core_of = AUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AUS
+				}
+				remove_claim_by = AUS
+			}
+		}
+		39 = { add_core_of = AUS }
+		783 = { add_core_of = AUS }
+		1235 = { add_core_of = AUS }
+		1272 = { add_core_of = AUS }
+		4 = { add_core_of = AUS }
+		152 = { add_core_of = AUS }
+		153 = { add_core_of = AUS }
+		775 = { add_core_of = AUS }
+		835 = { add_core_of = AUS }
+		836 = { add_core_of = AUS }
+		942 = { add_core_of = AUS }
+		1137 = { add_core_of = AUS }
+		release = AUS
+		AUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+		AUS = { 
+			set_cosmetic_tag = FIN_AUS_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = AUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+				state = 99
+				state = 101
+				state = 337
+				state = 926
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = FIN }
+		}
+		37 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		99 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		101 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		337 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		926 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		OR = {
+				37 = { NOT = { is_core_of = FIN } }
+				99 = { NOT = { is_core_of = FIN } }
+				101 = { NOT = { is_core_of = FIN } }
+				337 = { NOT = { is_core_of = FIN } }
+				926 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		37 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = FIN_DEN_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
+		}
+	}
+}
+
+FIN_establish_rk_WHR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 206
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				WHR = { exists = yes }
+			}
+			WHR = { is_subject_of = FIN }
+		}
+		206 = { owner = { OR = { original_tag = FIN is_subject_of = FIN } } }
+		
+		OR = {
+				206 = { NOT = { is_core_of = FIN } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		WHR = {
+			every_core_state = {
+				remove_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = WHR
+				}
+				remove_claim_by = WHR
+			}
+		}
+		206 = { add_core_of = WHR }
+		207 = { add_core_of = WHR }
+		1287 = { add_core_of = WHR }
+		1294 = { add_core_of = WHR }
+		755 = { add_core_of = WHR }
+		241 = { add_core_of = WHR }
+		243 = { add_core_of = WHR }
+		95 = { add_core_of = WHR }
+		194 = { add_core_of = WHR }
+		1295 = { add_core_of = WHR }
+		204 = { add_core_of = WHR }
+		1087 = { add_core_of = WHR }
+		release = WHR
+		WHR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = FIN
+						}
+						OR = {
+							is_owned_by = FIN
+							OWNER = { is_subject_of = FIN} 
+						}
+					}
+				}
+				transfer_state_to = WHR
+			}
+		}
+		WHR = { 
+			set_cosmetic_tag = FIN_WHR_OCC
+			load_focus_tree = generic_focus            
+
+
+			FIN = {
+				set_autonomy = {
+					target = WHR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 10
+				paternal_autocrat = 50
+				national_populist = 10
+			}
+
 		}
 	}
 }

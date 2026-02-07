@@ -184,3 +184,25 @@ POR_WD_pathguide = {
 		tag = POR
 	}
 }
+
+UKR_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = UKR
+	}
+
+	visible = {
+		tag = UKR
+	}
+}
+
+FIN_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = FIN
+	}
+
+	visible = {
+		tag = FIN
+	}
+}

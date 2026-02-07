@@ -352,3 +352,39 @@ QIE_WD_pathguide = {
 		}
 	}
 }
+
+UKR_WD_pathguide = {
+	UKR_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = UKR
+		}
+		available = {
+			original_tag = UKR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.21
+		}
+	}
+}
+
+FIN_WD_pathguide = {
+	FIN_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = FIN
+		}
+		available = {
+			original_tag = FIN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.22
+		}
+	}
+}
