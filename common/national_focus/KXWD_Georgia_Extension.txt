@@ -593,7 +593,8 @@ shared_focus = {
 	id = GEOWD_capital_constantinopol
 	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
     available = {
-        
+        owns_state = 773
+        controls_state = 773
     }
 	x = 1
 	y = 1

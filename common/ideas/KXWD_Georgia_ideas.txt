@@ -38,7 +38,7 @@ ideas = {
                 political_power_gain = 1.0
                 army_core_attack_factor = 0.15
 				army_core_defence_factor = 0.15
-                recruitable_population = 0.02
+                conscription = 0.02
 			}
 			removal_cost = -1
 		}
@@ -47,7 +47,7 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_placeholder
 			modifier = {
-				recruitable_population_factor = 0.25
+				conscription_factor = 0.25
                 drift_defence_factor = 0.25
                 monthly_population = 0.5
                 compliance_gain = 0.2
@@ -60,7 +60,7 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_placeholder
 			modifier = {
-				recruitable_population_factor = 0.5
+				conscription_factor = 0.5
                 drift_defence_factor = 0.3
                 monthly_population = 1.0
                 compliance_gain = 0.3
@@ -73,7 +73,7 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_placeholder
 			modifier = {
-				recruitable_population_factor = 0.5
+				conscription_factor = 0.5
                 drift_defence_factor = 0.4
                 monthly_population = 1.5
                 compliance_gain = 0.3
@@ -86,7 +86,7 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_placeholder
 			modifier = {
-				recruitable_population_factor = 0.5
+				conscription_factor = 0.5
                 drift_defence_factor = 0.5
                 monthly_population = 2.0
                 compliance_gain = 0.4
@@ -100,7 +100,7 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_placeholder
 			modifier = {
-				recruitable_population_factor = 0.5
+				conscription_factor = 0.5
                 drift_defence_factor = 0.5
                 monthly_population = 2.0
                 compliance_gain = 0.4
@@ -115,13 +115,13 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_placeholder
 			modifier = {
-				recruitable_population_factor = 0.75
+				conscription_factor = 0.75
                 drift_defence_factor = 0.5
                 monthly_population = 2.0
                 compliance_gain = 0.4
                 weekly_manpower = 3000
                 local_resources_factor = 0.25
-                recruitable_population = 0.03
+                conscription = 0.03
 			}
 			removal_cost = -1
 		}
