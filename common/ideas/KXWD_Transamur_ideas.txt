@@ -5,15 +5,18 @@ ideas = {
             allowed = {always = no}
             picture = KXWD_placeholder
             modifier = {
-                army_attack_factor = 0.35
-                army_defence_factor = 0.35
-                army_speed_factor = 0.35
+                army_attack_factor = 0.4
+                army_defence_factor = 0.4
+                army_speed_factor = 0.4
                 attrition = -0.3
+                army_org_factor = 0.4
             }
             cancel = {
                 owns_state = 195
                 owns_state = 219
                 owns_state = 217
+                owns_state = 209
+                owns_state = 257
             }
             removal_cost = -1
         }

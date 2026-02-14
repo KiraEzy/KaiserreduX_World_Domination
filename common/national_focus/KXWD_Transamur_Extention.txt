@@ -14,7 +14,7 @@ shared_focus = {
 	y = 2
 	cost = 1
 	
-    relative_position_id = TRM_End_Germany
+    relative_position_id = TRM_For_Freedom_Of_Slavic_Peoples
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_Warfare"
         add_ideas = KXWD_TRM_siberian_war_idea
@@ -39,7 +39,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_equip"
         add_equipment_to_stockpile = {
             type = infantry_equipment_1
-            amount = 15000
+            amount = 20000
             producer = TRM
         }
 	}
@@ -64,7 +64,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_equip"
         add_equipment_to_stockpile = {
             type = infantry_equipment_1
-            amount = 5000
+            amount = 7500
             producer = TRM
         }
         add_manpower = 10000
@@ -91,7 +91,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_artillery"
         add_equipment_to_stockpile = {
             type = artillery_equipment
-            amount = 3500
+            amount = 4000
             producer = TRM
         }
 	}
@@ -136,17 +136,17 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_support"
         add_equipment_to_stockpile = {
             type = infantry_equipment_1
-            amount = 1000
+            amount = 2500
             producer = TRM
         }
         add_equipment_to_stockpile = {
             type = artillery_equipment
-            amount = 500
+            amount = 1000
             producer = TRM
         }
         add_equipment_to_stockpile = {
             type = support_equipment
-            amount = 1000
+            amount = 1500
             producer = TRM
         }
 	}
