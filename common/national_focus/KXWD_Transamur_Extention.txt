@@ -42,6 +42,11 @@ shared_focus = {
             amount = 20000
             producer = TRM
         }
+        add_equipment_to_stockpile = {
+            type = motorized_equipment
+            amount = 5000
+            producer = TRM
+        }
 	}
 }
 
@@ -114,6 +119,13 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus TRMWD_Siberian_War_manpower"
         add_manpower = 25000
+        load_oob = TRMWD_sib_war
+        set_technology = {
+            tech_mountaineers = 1
+        }
+        set_technology = {
+            tech_logistics_company = 1
+        }
 	}
 }
 
