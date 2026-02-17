@@ -1,0 +1,2038 @@
+TRM_slavic_claim_game = {
+
+TRM_claim_rk_SVK = {
+	icon = generic_prepare_civil_war
+	available = {
+
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		9 = { add_claim_by = TRM }
+		10 = { add_claim_by = TRM }
+		48 = { add_claim_by = TRM }
+		69 = { add_claim_by = TRM }
+		70 = { add_claim_by = TRM }
+		71 = { add_claim_by = TRM }
+		73 = { add_claim_by = TRM }
+		74 = { add_claim_by = TRM }
+		75 = { add_claim_by = TRM }
+		77 = { add_claim_by = TRM }
+		87 = { add_claim_by = TRM }
+		88 = { add_claim_by = TRM }
+		89 = { add_claim_by = TRM }
+		90 = { add_claim_by = TRM }
+		91 = { add_claim_by = TRM }
+		92 = { add_claim_by = TRM }
+		93 = { add_claim_by = TRM }
+		95 = { add_claim_by = TRM }
+		97 = { add_claim_by = TRM }
+		98 = { add_claim_by = TRM }
+		103 = { add_claim_by = TRM }
+		104 = { add_claim_by = TRM }
+		105 = { add_claim_by = TRM }
+		106 = { add_claim_by = TRM }
+		107 = { add_claim_by = TRM }
+		108 = { add_claim_by = TRM }
+		109 = { add_claim_by = TRM }
+		137 = { add_claim_by = TRM }
+		163 = { add_claim_by = TRM }
+		192 = { add_claim_by = TRM }
+		193 = { add_claim_by = TRM }
+		194 = { add_claim_by = TRM }
+		196 = { add_claim_by = TRM }
+		197 = { add_claim_by = TRM }
+		198 = { add_claim_by = TRM }
+		199 = { add_claim_by = TRM }
+		200 = { add_claim_by = TRM }
+		201 = { add_claim_by = TRM }
+		202 = { add_claim_by = TRM }
+		203 = { add_claim_by = TRM }
+		204 = { add_claim_by = TRM }
+		206 = { add_claim_by = TRM }
+		207 = { add_claim_by = TRM }
+		211 = { add_claim_by = TRM }
+		212 = { add_claim_by = TRM }
+		221 = { add_claim_by = TRM }
+		225 = { add_claim_by = TRM }
+		226 = { add_claim_by = TRM }
+		227 = { add_claim_by = TRM }
+		228 = { add_claim_by = TRM }
+		241 = { add_claim_by = TRM }
+		259 = { add_claim_by = TRM }
+		664 = { add_claim_by = TRM }
+		765 = { add_claim_by = TRM }
+		767 = { add_claim_by = TRM }
+		770 = { add_claim_by = TRM }
+		771 = { add_claim_by = TRM }
+		786 = { add_claim_by = TRM }
+		791 = { add_claim_by = TRM }
+		792 = { add_claim_by = TRM }
+		794 = { add_claim_by = TRM }
+		841 = { add_claim_by = TRM }
+		997 = { add_claim_by = TRM }
+		1087 = { add_claim_by = TRM }
+		1088 = { add_claim_by = TRM }
+		1089 = { add_claim_by = TRM }
+		1090 = { add_claim_by = TRM }
+		1097 = { add_claim_by = TRM }
+		1098 = { add_claim_by = TRM }
+		1099 = { add_claim_by = TRM }
+		1102 = { add_claim_by = TRM }
+		1105 = { add_claim_by = TRM }
+		1119 = { add_claim_by = TRM }
+		1120 = { add_claim_by = TRM }
+		1121 = { add_claim_by = TRM }
+		1122 = { add_claim_by = TRM }
+		1123 = { add_claim_by = TRM }
+		1124 = { add_claim_by = TRM }
+		1125 = { add_claim_by = TRM }
+		1126 = { add_claim_by = TRM }
+		1127 = { add_claim_by = TRM }
+		1128 = { add_claim_by = TRM }
+		1129 = { add_claim_by = TRM }
+		1130 = { add_claim_by = TRM }
+		1131 = { add_claim_by = TRM }
+		1132 = { add_claim_by = TRM }
+		1133 = { add_claim_by = TRM }
+		1134 = { add_claim_by = TRM }
+		1135 = { add_claim_by = TRM }
+		1136 = { add_claim_by = TRM }
+		1138 = { add_claim_by = TRM }
+		1139 = { add_claim_by = TRM }
+		1140 = { add_claim_by = TRM }
+		1141 = { add_claim_by = TRM }
+		1142 = { add_claim_by = TRM }
+		1143 = { add_claim_by = TRM }
+		1145 = { add_claim_by = TRM }
+		1148 = { add_claim_by = TRM }
+		1206 = { add_claim_by = TRM }
+		1220 = { add_claim_by = TRM }
+		1221 = { add_claim_by = TRM }
+		1228 = { add_claim_by = TRM }
+		1230 = { add_claim_by = TRM }
+		1232 = { add_claim_by = TRM }
+		1233 = { add_claim_by = TRM }
+		1234 = { add_claim_by = TRM }
+		1237 = { add_claim_by = TRM }
+		1238 = { add_claim_by = TRM }
+		1239 = { add_claim_by = TRM }
+		1240 = { add_claim_by = TRM }
+		1241 = { add_claim_by = TRM }
+		1242 = { add_claim_by = TRM }
+		1243 = { add_claim_by = TRM }
+		1244 = { add_claim_by = TRM }
+		1245 = { add_claim_by = TRM }
+		1269 = { add_claim_by = TRM }
+		1270 = { add_claim_by = TRM }
+		1271 = { add_claim_by = TRM }
+		1282 = { add_claim_by = TRM }
+		1283 = { add_claim_by = TRM }
+		1284 = { add_claim_by = TRM }
+		1285 = { add_claim_by = TRM }
+		1286 = { add_claim_by = TRM }
+		1294 = { add_claim_by = TRM }
+		1295 = { add_claim_by = TRM }
+		1314 = { add_claim_by = TRM }
+		1319 = { add_claim_by = TRM }
+	}
+}
+
+TRM_claim_rk_GSL = {
+	icon = generic_prepare_civil_war
+	available = {
+
+    }
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		11 = { add_claim_by = TRM }
+		12 = { add_claim_by = TRM }
+		13 = { add_claim_by = TRM }
+		111 = { add_claim_by = TRM }
+		145 = { add_claim_by = TRM }
+		146 = { add_claim_by = TRM }
+		147 = { add_claim_by = TRM }
+		148 = { add_claim_by = TRM }
+		149 = { add_claim_by = TRM }
+		150 = { add_claim_by = TRM }
+		188 = { add_claim_by = TRM }
+		189 = { add_claim_by = TRM }
+		190 = { add_claim_by = TRM }
+		191 = { add_claim_by = TRM }
+		218 = { add_claim_by = TRM }
+		229 = { add_claim_by = TRM }
+		230 = { add_claim_by = TRM }
+		231 = { add_claim_by = TRM }
+		232 = { add_claim_by = TRM }
+		233 = { add_claim_by = TRM }
+		234 = { add_claim_by = TRM }
+		235 = { add_claim_by = TRM }
+		237 = { add_claim_by = TRM }
+		238 = { add_claim_by = TRM }
+		245 = { add_claim_by = TRM }
+		287 = { add_claim_by = TRM }
+		328 = { add_claim_by = TRM }
+		329 = { add_claim_by = TRM }
+		330 = { add_claim_by = TRM }
+		352 = { add_claim_by = TRM }
+		354 = { add_claim_by = TRM }
+		355 = { add_claim_by = TRM }
+		402 = { add_claim_by = TRM }
+		404 = { add_claim_by = TRM }
+		405 = { add_claim_by = TRM }
+		406 = { add_claim_by = TRM }
+		407 = { add_claim_by = TRM }
+		417 = { add_claim_by = TRM }
+		418 = { add_claim_by = TRM }
+		419 = { add_claim_by = TRM }
+		420 = { add_claim_by = TRM }
+		463 = { add_claim_by = TRM }
+		537 = { add_claim_by = TRM }
+		555 = { add_claim_by = TRM }
+		583 = { add_claim_by = TRM }
+		584 = { add_claim_by = TRM }
+		585 = { add_claim_by = TRM }
+		586 = { add_claim_by = TRM }
+		587 = { add_claim_by = TRM }
+		588 = { add_claim_by = TRM }
+		589 = { add_claim_by = TRM }
+		590 = { add_claim_by = TRM }
+		610 = { add_claim_by = TRM }
+		612 = { add_claim_by = TRM }
+		617 = { add_claim_by = TRM }
+		618 = { add_claim_by = TRM }
+		619 = { add_claim_by = TRM }
+		621 = { add_claim_by = TRM }
+		654 = { add_claim_by = TRM }
+		655 = { add_claim_by = TRM }
+		712 = { add_claim_by = TRM }
+		714 = { add_claim_by = TRM }
+		715 = { add_claim_by = TRM }
+		716 = { add_claim_by = TRM }
+		717 = { add_claim_by = TRM }
+		732 = { add_claim_by = TRM }
+		745 = { add_claim_by = TRM }
+		787 = { add_claim_by = TRM }
+		804 = { add_claim_by = TRM }
+		810 = { add_claim_by = TRM }
+		811 = { add_claim_by = TRM }
+		840 = { add_claim_by = TRM }
+		844 = { add_claim_by = TRM }
+		861 = { add_claim_by = TRM }
+		863 = { add_claim_by = TRM }
+		864 = { add_claim_by = TRM }
+		865 = { add_claim_by = TRM }
+		883 = { add_claim_by = TRM }
+		884 = { add_claim_by = TRM }
+		885 = { add_claim_by = TRM }
+		886 = { add_claim_by = TRM }
+		990 = { add_claim_by = TRM }
+		998 = { add_claim_by = TRM }
+		1000 = { add_claim_by = TRM }
+		1001 = { add_claim_by = TRM }
+		1042 = { add_claim_by = TRM }
+		1080 = { add_claim_by = TRM }
+		1081 = { add_claim_by = TRM }
+		1082 = { add_claim_by = TRM }
+		1083 = { add_claim_by = TRM }
+		1084 = { add_claim_by = TRM }
+		1085 = { add_claim_by = TRM }
+		1091 = { add_claim_by = TRM }
+		1186 = { add_claim_by = TRM }
+		1187 = { add_claim_by = TRM }
+		1188 = { add_claim_by = TRM }
+		1189 = { add_claim_by = TRM }
+		1190 = { add_claim_by = TRM }
+		1191 = { add_claim_by = TRM }
+		1196 = { add_claim_by = TRM }
+		1203 = { add_claim_by = TRM }
+		1208 = { add_claim_by = TRM }
+		1209 = { add_claim_by = TRM }
+		1210 = { add_claim_by = TRM }
+		1211 = { add_claim_by = TRM }
+		1212 = { add_claim_by = TRM }
+		1213 = { add_claim_by = TRM }
+		1226 = { add_claim_by = TRM }
+		1227 = { add_claim_by = TRM }
+		1231 = { add_claim_by = TRM }
+		1263 = { add_claim_by = TRM }
+		1264 = { add_claim_by = TRM }
+		1265 = { add_claim_by = TRM }
+		1266 = { add_claim_by = TRM }
+		1267 = { add_claim_by = TRM }
+		1273 = { add_claim_by = TRM }
+		1275 = { add_claim_by = TRM }
+		1276 = { add_claim_by = TRM }
+		1277 = { add_claim_by = TRM }
+		1278 = { add_claim_by = TRM }
+		1279 = { add_claim_by = TRM }
+		1281 = { add_claim_by = TRM }
+		1293 = { add_claim_by = TRM }
+		1298 = { add_claim_by = TRM }
+		1299 = { add_claim_by = TRM }
+		1300 = { add_claim_by = TRM }
+		1301 = { add_claim_by = TRM }
+		1302 = { add_claim_by = TRM }
+		1303 = { add_claim_by = TRM }
+		1304 = { add_claim_by = TRM }
+		1324 = { add_claim_by = TRM }
+		1325 = { add_claim_by = TRM }
+		1326 = { add_claim_by = TRM }
+		1348 = { add_claim_by = TRM }
+		1349 = { add_claim_by = TRM }
+		1350 = { add_claim_by = TRM }
+        43 = { add_claim_by = TRM }
+		46 = { add_claim_by = TRM }
+		76 = { add_claim_by = TRM }
+		79 = { add_claim_by = TRM }
+		81 = { add_claim_by = TRM }
+		82 = { add_claim_by = TRM }
+		83 = { add_claim_by = TRM }
+		84 = { add_claim_by = TRM }
+		154 = { add_claim_by = TRM }
+		155 = { add_claim_by = TRM }
+		713 = { add_claim_by = TRM }
+		784 = { add_claim_by = TRM }
+		789 = { add_claim_by = TRM }
+		1106 = { add_claim_by = TRM }
+		1107 = { add_claim_by = TRM }
+		1108 = { add_claim_by = TRM }
+		1109 = { add_claim_by = TRM }
+		1110 = { add_claim_by = TRM }
+		1112 = { add_claim_by = TRM }
+		1113 = { add_claim_by = TRM }
+		1114 = { add_claim_by = TRM }
+		1115 = { add_claim_by = TRM }
+		1116 = { add_claim_by = TRM }
+		1117 = { add_claim_by = TRM }
+		1118 = { add_claim_by = TRM }
+        5 = { add_claim_by = TRM }
+		44 = { add_claim_by = TRM }
+		45 = { add_claim_by = TRM }
+		63 = { add_claim_by = TRM }
+		65 = { add_claim_by = TRM }
+		66 = { add_claim_by = TRM }
+		67 = { add_claim_by = TRM }
+		68 = { add_claim_by = TRM }
+		78 = { add_claim_by = TRM }
+		80 = { add_claim_by = TRM }
+		86 = { add_claim_by = TRM }
+		94 = { add_claim_by = TRM }
+		96 = { add_claim_by = TRM }
+		102 = { add_claim_by = TRM }
+		184 = { add_claim_by = TRM }
+		340 = { add_claim_by = TRM }
+		341 = { add_claim_by = TRM }
+		731 = { add_claim_by = TRM }
+		736 = { add_claim_by = TRM }
+		766 = { add_claim_by = TRM }
+		769 = { add_claim_by = TRM }
+		772 = { add_claim_by = TRM }
+		773 = { add_claim_by = TRM }
+		776 = { add_claim_by = TRM }
+		777 = { add_claim_by = TRM }
+		875 = { add_claim_by = TRM }
+		989 = { add_claim_by = TRM }
+		1100 = { add_claim_by = TRM }
+		1101 = { add_claim_by = TRM }
+		1103 = { add_claim_by = TRM }
+		1104 = { add_claim_by = TRM }
+		1111 = { add_claim_by = TRM }
+		1144 = { add_claim_by = TRM }
+		1222 = { add_claim_by = TRM }
+		1268 = { add_claim_by = TRM }
+		1272 = { add_claim_by = TRM }
+		1320 = { add_claim_by = TRM }
+		1329 = { add_claim_by = TRM }
+		1357 = { add_claim_by = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTLIT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 11
+				state = 94
+				state = 96
+				state = 189
+				state = 655
+				state = 1329
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		11 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		94 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		96 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		189 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		655 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1329 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		11 = { add_core_of = TRM }
+		94 = { add_core_of = TRM }
+		96 = { add_core_of = TRM }
+		189 = { add_core_of = TRM }
+		655 = { add_core_of = TRM }
+		1329 = { add_core_of = TRM }
+		11 = { transfer_state_to = TRM }
+		94 = { transfer_state_to = TRM }
+		96 = { transfer_state_to = TRM }
+		189 = { transfer_state_to = TRM }
+		655 = { transfer_state_to = TRM }
+		1329 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTBAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 13
+				state = 190
+				state = 191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		12 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		13 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		190 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		191 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		12 = { add_core_of = TRM }
+		13 = { add_core_of = TRM }
+		190 = { add_core_of = TRM }
+		191 = { add_core_of = TRM }
+		12 = { transfer_state_to = TRM }
+		13 = { transfer_state_to = TRM }
+		190 = { transfer_state_to = TRM }
+		191 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTRIGA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1091 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1091 = { transfer_state_to = TRM }
+        1091 = { add_core_of = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTFIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 111
+				state = 145
+				state = 146
+				state = 147
+				state = 148
+				state = 149
+				state = 150
+				state = 840
+				state = 844
+				state = 863
+				state = 864
+				state = 865
+				state = 1324
+				state = 1325
+				state = 1326
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		111 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		145 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		146 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		147 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		148 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		149 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		150 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		840 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		844 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		863 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		864 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		865 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1324 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1325 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1326 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		111 = { add_core_of = TRM }
+		145 = { add_core_of = TRM }
+		146 = { add_core_of = TRM }
+		147 = { add_core_of = TRM }
+		148 = { add_core_of = TRM }
+		149 = { add_core_of = TRM }
+		150 = { add_core_of = TRM }
+		840 = { add_core_of = TRM }
+		844 = { add_core_of = TRM }
+		863 = { add_core_of = TRM }
+		864 = { add_core_of = TRM }
+		865 = { add_core_of = TRM }
+		1324 = { add_core_of = TRM }
+		1325 = { add_core_of = TRM }
+		1326 = { add_core_of = TRM }
+		111 = { transfer_state_to = TRM }
+		145 = { transfer_state_to = TRM }
+		146 = { transfer_state_to = TRM }
+		147 = { transfer_state_to = TRM }
+		148 = { transfer_state_to = TRM }
+		149 = { transfer_state_to = TRM }
+		150 = { transfer_state_to = TRM }
+		840 = { transfer_state_to = TRM }
+		844 = { transfer_state_to = TRM }
+		863 = { transfer_state_to = TRM }
+		864 = { transfer_state_to = TRM }
+		865 = { transfer_state_to = TRM }
+		1324 = { transfer_state_to = TRM }
+		1325 = { transfer_state_to = TRM }
+		1326 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTMOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 78
+				state = 1222
+				state = 1320
+                state = 80
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		78 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1222 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1320 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+        80 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		78 = { add_core_of = TRM }
+		1222 = { add_core_of = TRM }
+		1320 = { add_core_of = TRM }
+        80 = { add_core_of = TRM }
+		78 = { transfer_state_to = TRM }
+		1222 = { transfer_state_to = TRM }
+		1320 = { transfer_state_to = TRM }
+        80 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTDKB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+				state = 238
+				state = 245
+				state = 1226
+				state = 1231
+				state = 1263
+				state = 1264
+				state = 1265
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		218 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		238 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		245 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1226 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1231 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1263 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1264 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1265 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		218 = { add_core_of = TRM }
+		238 = { add_core_of = TRM }
+		245 = { add_core_of = TRM }
+		1226 = { add_core_of = TRM }
+		1231 = { add_core_of = TRM }
+		1263 = { add_core_of = TRM }
+		1264 = { add_core_of = TRM }
+		1265 = { add_core_of = TRM }
+		218 = { transfer_state_to = TRM }
+		238 = { transfer_state_to = TRM }
+		245 = { transfer_state_to = TRM }
+		1226 = { transfer_state_to = TRM }
+		1231 = { transfer_state_to = TRM }
+		1263 = { transfer_state_to = TRM }
+		1264 = { transfer_state_to = TRM }
+		1265 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTKLM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 237
+				state = 1266
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		237 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1266 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		237 = { add_core_of = TRM }
+		1266 = { add_core_of = TRM }
+		237 = { transfer_state_to = TRM }
+		1266 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTKUB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 234
+				state = 235
+				state = 1227
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		234 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		235 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1227 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		234 = { add_core_of = TRM }
+		235 = { add_core_of = TRM }
+		1227 = { add_core_of = TRM }
+		234 = { transfer_state_to = TRM }
+		235 = { transfer_state_to = TRM }
+		1227 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTNCAU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 232
+				state = 233
+				state = 787
+				state = 1186
+				state = 1187
+				state = 1189
+				state = 1191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		232 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		233 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		787 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1186 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1187 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1189 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1191 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		232 = { add_core_of = TRM }
+		233 = { add_core_of = TRM }
+		787 = { add_core_of = TRM }
+		1186 = { add_core_of = TRM }
+		1187 = { add_core_of = TRM }
+		1189 = { add_core_of = TRM }
+		1191 = { add_core_of = TRM }
+		232 = { transfer_state_to = TRM }
+		233 = { transfer_state_to = TRM }
+		787 = { transfer_state_to = TRM }
+		1186 = { transfer_state_to = TRM }
+		1187 = { transfer_state_to = TRM }
+		1189 = { transfer_state_to = TRM }
+		1191 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTGEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+				state = 1080
+				state = 1082
+				state = 1188
+				state = 1190
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		231 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1080 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1082 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1188 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1190 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		231 = { add_core_of = TRM }
+		1080 = { add_core_of = TRM }
+		1082 = { add_core_of = TRM }
+		1188 = { add_core_of = TRM }
+		1190 = { add_core_of = TRM }
+		231 = { transfer_state_to = TRM }
+		1080 = { transfer_state_to = TRM }
+		1082 = { transfer_state_to = TRM }
+		1188 = { transfer_state_to = TRM }
+		1190 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTAZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 229
+				state = 990
+				state = 998
+				state = 1081
+				state = 1267
+				state = 1298
+				state = 1299
+				state = 1300
+				state = 1301
+				state = 1302
+				state = 1303
+				state = 1304
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		229 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		990 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		998 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1081 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1267 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1298 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1299 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1300 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1301 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1302 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1303 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1304 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		229 = { add_core_of = TRM }
+		990 = { add_core_of = TRM }
+		998 = { add_core_of = TRM }
+		1081 = { add_core_of = TRM }
+		1267 = { add_core_of = TRM }
+		1298 = { add_core_of = TRM }
+		1299 = { add_core_of = TRM }
+		1300 = { add_core_of = TRM }
+		1301 = { add_core_of = TRM }
+		1302 = { add_core_of = TRM }
+		1303 = { add_core_of = TRM }
+		1304 = { add_core_of = TRM }
+		229 = { transfer_state_to = TRM }
+		990 = { transfer_state_to = TRM }
+		998 = { transfer_state_to = TRM }
+		1081 = { transfer_state_to = TRM }
+		1267 = { transfer_state_to = TRM }
+		1298 = { transfer_state_to = TRM }
+		1299 = { transfer_state_to = TRM }
+		1300 = { transfer_state_to = TRM }
+		1301 = { transfer_state_to = TRM }
+		1302 = { transfer_state_to = TRM }
+		1303 = { transfer_state_to = TRM }
+		1304 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTARM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 230
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		230 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		230 = { add_core_of = TRM }
+		230 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTALO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 402
+				state = 404
+				state = 406
+				state = 583
+				state = 587
+				state = 588
+				state = 589
+				state = 590
+				state = 810
+				state = 1203
+				state = 1208
+				state = 1212
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		402 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		404 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		406 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		583 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		587 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		588 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		589 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		590 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		810 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1203 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1208 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1212 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		402 = { add_core_of = TRM }
+		404 = { add_core_of = TRM }
+		406 = { add_core_of = TRM }
+		583 = { add_core_of = TRM }
+		587 = { add_core_of = TRM }
+		588 = { add_core_of = TRM }
+		589 = { add_core_of = TRM }
+		590 = { add_core_of = TRM }
+		810 = { add_core_of = TRM }
+		1203 = { add_core_of = TRM }
+		1208 = { add_core_of = TRM }
+		1212 = { add_core_of = TRM }
+		402 = { transfer_state_to = TRM }
+		404 = { transfer_state_to = TRM }
+		406 = { transfer_state_to = TRM }
+		583 = { transfer_state_to = TRM }
+		587 = { transfer_state_to = TRM }
+		588 = { transfer_state_to = TRM }
+		589 = { transfer_state_to = TRM }
+		590 = { transfer_state_to = TRM }
+		810 = { transfer_state_to = TRM }
+		1203 = { transfer_state_to = TRM }
+		1208 = { transfer_state_to = TRM }
+		1212 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTTRK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 585
+				state = 586
+				state = 712
+				state = 1042
+				state = 1196
+				state = 1209
+				state = 1211
+				state = 1278
+				state = 1279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		407 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		585 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		586 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		712 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1042 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1196 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1209 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1211 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1278 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1279 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		407 = { add_core_of = TRM }
+		585 = { add_core_of = TRM }
+		586 = { add_core_of = TRM }
+		712 = { add_core_of = TRM }
+		1042 = { add_core_of = TRM }
+		1196 = { add_core_of = TRM }
+		1209 = { add_core_of = TRM }
+		1211 = { add_core_of = TRM }
+		1278 = { add_core_of = TRM }
+		1279 = { add_core_of = TRM }
+		407 = { transfer_state_to = TRM }
+		585 = { transfer_state_to = TRM }
+		586 = { transfer_state_to = TRM }
+		712 = { transfer_state_to = TRM }
+		1042 = { transfer_state_to = TRM }
+		1196 = { transfer_state_to = TRM }
+		1209 = { transfer_state_to = TRM }
+		1211 = { transfer_state_to = TRM }
+		1278 = { transfer_state_to = TRM }
+		1279 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTKHV = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 584
+				state = 861
+				state = 1275
+				state = 1281
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		584 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		861 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1275 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1281 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		584 = { add_core_of = TRM }
+		861 = { add_core_of = TRM }
+		1275 = { add_core_of = TRM }
+		1281 = { add_core_of = TRM }
+		584 = { transfer_state_to = TRM }
+		861 = { transfer_state_to = TRM }
+		1275 = { transfer_state_to = TRM }
+		1281 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTBKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 405
+				state = 732
+				state = 1210
+				state = 1276
+				state = 1277
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		405 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		732 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1210 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1276 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1277 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		405 = { add_core_of = TRM }
+		732 = { add_core_of = TRM }
+		1210 = { add_core_of = TRM }
+		1276 = { add_core_of = TRM }
+		1277 = { add_core_of = TRM }
+		405 = { transfer_state_to = TRM }
+		732 = { transfer_state_to = TRM }
+		1210 = { transfer_state_to = TRM }
+		1276 = { transfer_state_to = TRM }
+		1277 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTMON = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 330
+				state = 1084
+				state = 612
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		330 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1084 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		612 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		330 = { add_core_of = TRM }
+		1084 = { add_core_of = TRM }
+		612 = { add_core_of = TRM }
+		330 = { transfer_state_to = TRM }
+		1084 = { transfer_state_to = TRM }
+		612 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTSUI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 621
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		621 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		621 = { add_core_of = TRM }
+		621 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTMAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 328
+				state = 610
+				state = 714
+				state = 715
+				state = 716
+				state = 717
+				state = 883
+				state = 884
+				state = 885
+				state = 886
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		328 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		610 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		714 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		715 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		716 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		717 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		883 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		884 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		885 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		886 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		328 = { add_core_of = TRM }
+		610 = { add_core_of = TRM }
+		714 = { add_core_of = TRM }
+		715 = { add_core_of = TRM }
+		716 = { add_core_of = TRM }
+		717 = { add_core_of = TRM }
+		883 = { add_core_of = TRM }
+		884 = { add_core_of = TRM }
+		885 = { add_core_of = TRM }
+		886 = { add_core_of = TRM }
+		328 = { transfer_state_to = TRM }
+		610 = { transfer_state_to = TRM }
+		714 = { transfer_state_to = TRM }
+		715 = { transfer_state_to = TRM }
+		716 = { transfer_state_to = TRM }
+		717 = { transfer_state_to = TRM }
+		883 = { transfer_state_to = TRM }
+		884 = { transfer_state_to = TRM }
+		885 = { transfer_state_to = TRM }
+		886 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTPRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 745
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		745 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		745 = { add_core_of = TRM }
+		745 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTMRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1293
+				state = 654
+				state = 811
+				state = 329
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1293 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		654 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		811 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		329 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1293 = { add_core_of = TRM }
+		654 = { add_core_of = TRM }
+		811 = { add_core_of = TRM }
+		329 = { add_core_of = TRM }
+		1293 = { transfer_state_to = TRM }
+		654 = { transfer_state_to = TRM }
+		811 = { transfer_state_to = TRM }
+		329 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTANA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 352
+				state = 354
+				state = 355
+				state = 1000
+				state = 1001
+				state = 1213
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		352 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		354 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		355 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1000 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1001 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1213 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		352 = { add_core_of = TRM }
+		354 = { add_core_of = TRM }
+		355 = { add_core_of = TRM }
+		1000 = { add_core_of = TRM }
+		1001 = { add_core_of = TRM }
+		1213 = { add_core_of = TRM }
+		352 = { transfer_state_to = TRM }
+		354 = { transfer_state_to = TRM }
+		355 = { transfer_state_to = TRM }
+		1000 = { transfer_state_to = TRM }
+		1001 = { transfer_state_to = TRM }
+		1213 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTNPE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 417
+				state = 419
+				state = 418
+				state = 804
+				state = 420
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		417 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		419 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		418 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		804 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		420 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		417 = { add_core_of = TRM }
+		419 = { add_core_of = TRM }
+		418 = { add_core_of = TRM }
+		804 = { add_core_of = TRM }
+		420 = { add_core_of = TRM }
+		417 = { transfer_state_to = TRM }
+		419 = { transfer_state_to = TRM }
+		418 = { transfer_state_to = TRM }
+		804 = { transfer_state_to = TRM }
+		420 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTPPO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 67
+				state = 86
+				state = 776
+				state = 777
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		67 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		86 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		776 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		777 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		67 = { add_core_of = TRM }
+		86 = { add_core_of = TRM }
+		776 = { add_core_of = TRM }
+		777 = { add_core_of = TRM }
+		67 = { transfer_state_to = TRM }
+		86 = { transfer_state_to = TRM }
+		776 = { transfer_state_to = TRM }
+		777 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTSAK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 537
+				state = 555
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		537 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		555 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		537 = { add_core_of = TRM }
+		555 = { add_core_of = TRM }
+		537 = { transfer_state_to = TRM }
+		555 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTALA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1350
+				state = 463
+				state = 1348
+				state = 1349
+				state = 1273
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1350 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		463 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1348 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1349 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1273 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1350 = { add_core_of = TRM }
+		463 = { add_core_of = TRM }
+		1348 = { add_core_of = TRM }
+		1349 = { add_core_of = TRM }
+		1273 = { add_core_of = TRM }
+		1350 = { transfer_state_to = TRM }
+		463 = { transfer_state_to = TRM }
+		1348 = { transfer_state_to = TRM }
+		1349 = { transfer_state_to = TRM }
+		1273 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTETR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 287
+				state = 617
+				state = 618
+				state = 619
+				state = 1083
+				state = 1085
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		287 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		617 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		618 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		619 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1083 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1085 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		287 = { add_core_of = TRM }
+		617 = { add_core_of = TRM }
+		618 = { add_core_of = TRM }
+		619 = { add_core_of = TRM }
+		1083 = { add_core_of = TRM }
+		1085 = { add_core_of = TRM }
+		287 = { transfer_state_to = TRM }
+		617 = { transfer_state_to = TRM }
+		618 = { transfer_state_to = TRM }
+		619 = { transfer_state_to = TRM }
+		1083 = { transfer_state_to = TRM }
+		1085 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTTSG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 773
+				state = 341
+				state = 340
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		773 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		341 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		340 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		773 = { add_core_of = TRM }
+		341 = { add_core_of = TRM }
+		340 = { add_core_of = TRM }
+		773 = { transfer_state_to = TRM }
+		341 = { transfer_state_to = TRM }
+		340 = { transfer_state_to = TRM }
+	}
+}
+
+TRMslavic_establish_rk_TRMINTEPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 5
+                state = 188
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		5 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+        188 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		5 = { add_core_of = TRM }
+		5 = { transfer_state_to = TRM }
+        188 = { add_core_of = TRM }
+		188 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_BNT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 875
+				state = 45
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		875 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		45 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		875 = { add_core_of = TRM }
+		45 = { add_core_of = TRM }
+        875 = { transfer_state_to = TRM }
+		45 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+				state = 1106
+				state = 1107
+				state = 1108
+				state = 1109
+				state = 1110
+				state = 154
+				state = 155
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		43 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1106 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1107 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1108 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1109 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1110 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		154 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		155 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		43 = { add_core_of = TRM }
+		1106 = { add_core_of = TRM }
+		1107 = { add_core_of = TRM }
+		1108 = { add_core_of = TRM }
+		1109 = { add_core_of = TRM }
+		1110 = { add_core_of = TRM }
+		154 = { add_core_of = TRM }
+		155 = { add_core_of = TRM }
+        43 = { transfer_state_to = TRM }
+		1106 = { transfer_state_to = TRM }
+		1107 = { transfer_state_to = TRM }
+		1108 = { transfer_state_to = TRM }
+		1109 = { transfer_state_to = TRM }
+		1110 = { transfer_state_to = TRM }
+		154 = { transfer_state_to = TRM }
+		155 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_DBR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 772
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		772 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		772 = { add_core_of = TRM }
+        772 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_TRS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 83
+				state = 76
+				state = 82
+				state = 84
+				state = 789
+				state = 1112
+				state = 1113
+				state = 1114
+				state = 1115
+				state = 1117
+				state = 1118
+				state = 1116
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		83 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		76 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		82 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		84 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		789 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1112 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1113 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1114 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1115 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1117 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1118 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1116 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		83 = { add_core_of = TRM }
+		76 = { add_core_of = TRM }
+		82 = { add_core_of = TRM }
+		84 = { add_core_of = TRM }
+		789 = { add_core_of = TRM }
+		1112 = { add_core_of = TRM }
+		1113 = { add_core_of = TRM }
+		1114 = { add_core_of = TRM }
+		1115 = { add_core_of = TRM }
+		1117 = { add_core_of = TRM }
+		1118 = { add_core_of = TRM }
+		1116 = { add_core_of = TRM }
+        83 = { transfer_state_to = TRM }
+		76 = { transfer_state_to = TRM }
+		82 = { transfer_state_to = TRM }
+		84 = { transfer_state_to = TRM }
+		789 = { transfer_state_to = TRM }
+		1112 = { transfer_state_to = TRM }
+		1113 = { transfer_state_to = TRM }
+		1114 = { transfer_state_to = TRM }
+		1115 = { transfer_state_to = TRM }
+		1117 = { transfer_state_to = TRM }
+		1118 = { transfer_state_to = TRM }
+		1116 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 713
+				state = 79
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		46 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		713 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		79 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		81 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		46 = { add_core_of = TRM }
+		713 = { add_core_of = TRM }
+		79 = { add_core_of = TRM }
+		81 = { add_core_of = TRM }
+        46 = { transfer_state_to = TRM }
+		713 = { transfer_state_to = TRM }
+		79 = { transfer_state_to = TRM }
+		81 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_ABL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 184
+				state = 731
+				state = 769
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		184 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		731 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		769 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		184 = { add_core_of = TRM }
+		731 = { add_core_of = TRM }
+		769 = { add_core_of = TRM }
+        184 = { transfer_state_to = TRM }
+		731 = { transfer_state_to = TRM }
+		769 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_SLN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 989
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		989 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		989 = { add_core_of = TRM }
+        989 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_ALB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 766
+				state = 1268
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		44 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		766 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1268 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		44 = { add_core_of = TRM }
+		766 = { add_core_of = TRM }
+		1268 = { add_core_of = TRM }
+        44 = { transfer_state_to = TRM }
+		766 = { transfer_state_to = TRM }
+		1268 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_SLO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 102
+				state = 1101
+				state = 1103
+				state = 1104
+				state = 736
+				state = 1100
+				state = 1111
+				state = 1144
+				state = 1272
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		102 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1101 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1103 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1104 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		736 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1100 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1111 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1144 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1272 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		102 = { add_core_of = TRM }
+		1101 = { add_core_of = TRM }
+		1103 = { add_core_of = TRM }
+		1104 = { add_core_of = TRM }
+		736 = { add_core_of = TRM }
+		1100 = { add_core_of = TRM }
+		1111 = { add_core_of = TRM }
+		1144 = { add_core_of = TRM }
+		1272 = { add_core_of = TRM }
+        102 = { transfer_state_to = TRM }
+		1101 = { transfer_state_to = TRM }
+		1103 = { transfer_state_to = TRM }
+		1104 = { transfer_state_to = TRM }
+		736 = { transfer_state_to = TRM }
+		1100 = { transfer_state_to = TRM }
+		1111 = { transfer_state_to = TRM }
+		1144 = { transfer_state_to = TRM }
+		1272 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_NGF = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 66
+				state = 63
+				state = 65
+				state = 68
+				state = 1357
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		66 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		63 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		65 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		68 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1357 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		66 = { add_core_of = TRM }
+		63 = { add_core_of = TRM }
+		65 = { add_core_of = TRM }
+		68 = { add_core_of = TRM }
+		1357 = { add_core_of = TRM }
+        66 = { transfer_state_to = TRM }
+		63 = { transfer_state_to = TRM }
+		65 = { transfer_state_to = TRM }
+		68 = { transfer_state_to = TRM }
+		1357 = { transfer_state_to = TRM }
+	}
+}
+
+TRM_integrate_rk_GWH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 784
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		784 = { add_core_of = TRM }
+        784 = { transfer_state_to = TRM }
+	}
+}
+
+}
