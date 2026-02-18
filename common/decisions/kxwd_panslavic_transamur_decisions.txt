@@ -2036,3 +2036,5214 @@ TRM_integrate_rk_GWH = {
 }
 
 }
+
+
+
+TRM_slavic_great_game = {
+
+TRM_establish_slavic_rk_AFG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 267
+				state = 415
+				state = 1217
+				state = 1218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AFG = { exists = yes }
+			}
+			AFG = { is_subject_of = TRM }
+		}
+		267 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		415 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1217 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1218 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				267 = { NOT = { is_core_of = TRM } }
+				415 = { NOT = { is_core_of = TRM } }
+				1217 = { NOT = { is_core_of = TRM } }
+				1218 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AFG = {
+			every_core_state = {
+				remove_core_of = AFG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AFG
+				}
+				remove_claim_by = AFG
+			}
+		}
+		267 = { add_core_of = AFG }
+		415 = { add_core_of = AFG }
+		1217 = { add_core_of = AFG }
+		1218 = { add_core_of = AFG }
+		release = AFG
+		AFG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = AFG
+			}
+		}
+		AFG = { 
+			set_cosmetic_tag = TRM_AFG_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = AFG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 421
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = TRM }
+		}
+		266 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		410 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		411 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		412 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		413 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		414 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		416 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		421 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				266 = { NOT = { is_core_of = TRM } }
+				410 = { NOT = { is_core_of = TRM } }
+				411 = { NOT = { is_core_of = TRM } }
+				412 = { NOT = { is_core_of = TRM } }
+				413 = { NOT = { is_core_of = TRM } }
+				414 = { NOT = { is_core_of = TRM } }
+				416 = { NOT = { is_core_of = TRM } }
+				421 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		266 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = TRM_PER_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_IRQ = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 291
+				state = 349
+				state = 676
+				state = 812
+				state = 819
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRQ = { exists = yes }
+			}
+			IRQ = { is_subject_of = TRM }
+		}
+		291 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		349 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		676 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		812 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		819 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				291 = { NOT = { is_core_of = TRM } }
+				349 = { NOT = { is_core_of = TRM } }
+				676 = { NOT = { is_core_of = TRM } }
+				812 = { NOT = { is_core_of = TRM } }
+				819 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRQ = {
+			every_core_state = {
+				remove_core_of = IRQ
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRQ
+				}
+				remove_claim_by = IRQ
+			}
+		}
+		291 = { add_core_of = IRQ }
+		349 = { add_core_of = IRQ }
+		676 = { add_core_of = IRQ }
+		812 = { add_core_of = IRQ }
+		819 = { add_core_of = IRQ }
+		release = IRQ
+		IRQ = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = IRQ
+			}
+		}
+		IRQ = { 
+			set_cosmetic_tag = TRM_IRQ_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = IRQ
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+				state = 339
+				state = 342
+				state = 343
+				state = 345
+				state = 346
+				state = 356
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TUR = { exists = yes }
+			}
+			TUR = { is_subject_of = TRM }
+		}
+		49 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		339 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		342 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		343 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		345 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		346 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		356 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				49 = { NOT = { is_core_of = TRM } }
+				339 = { NOT = { is_core_of = TRM } }
+				342 = { NOT = { is_core_of = TRM } }
+				343 = { NOT = { is_core_of = TRM } }
+				345 = { NOT = { is_core_of = TRM } }
+				346 = { NOT = { is_core_of = TRM } }
+				356 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TUR
+				}
+				remove_claim_by = TUR
+			}
+		}
+		49 = { add_core_of = TUR }
+		339 = { add_core_of = TUR }
+		342 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = TRM_TUR_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_LEB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 553
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LEB = { exists = yes }
+			}
+			LEB = { is_subject_of = TRM }
+		}
+		553 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				553 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEB = {
+			every_core_state = {
+				remove_core_of = LEB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LEB
+				}
+				remove_claim_by = LEB
+			}
+		}
+		344 = { add_core_of = LEB }
+		350 = { add_core_of = LEB }
+		453 = { add_core_of = LEB }
+		454 = { add_core_of = LEB }
+		455 = { add_core_of = LEB }
+		554 = { add_core_of = LEB }
+		677 = { add_core_of = LEB }
+		680 = { add_core_of = LEB }
+		753 = { add_core_of = LEB }
+		992 = { add_core_of = LEB }
+		995 = { add_core_of = LEB }
+		553 = { add_core_of = LEB }
+		release = LEB
+		LEB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = LEB
+			}
+		}
+		LEB = { 
+			set_cosmetic_tag = TRM_LEB_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_SAU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 292
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SAU = { exists = yes }
+			}
+			SAU = { is_subject_of = TRM }
+		}
+		292 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				292 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SAU = {
+			every_core_state = {
+				remove_core_of = SAU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SAU
+				}
+				remove_claim_by = SAU
+			}
+		}
+		293 = { add_core_of = SAU }
+		294 = { add_core_of = SAU }
+		347 = { add_core_of = SAU }
+		656 = { add_core_of = SAU }
+		658 = { add_core_of = SAU }
+		659 = { add_core_of = SAU }
+		675 = { add_core_of = SAU }
+		678 = { add_core_of = SAU }
+		679 = { add_core_of = SAU }
+		752 = { add_core_of = SAU }
+		754 = { add_core_of = SAU }
+		859 = { add_core_of = SAU }
+		907 = { add_core_of = SAU }
+		915 = { add_core_of = SAU }
+		981 = { add_core_of = SAU }
+		982 = { add_core_of = SAU }
+		991 = { add_core_of = SAU }
+		993 = { add_core_of = SAU }
+		994 = { add_core_of = SAU }
+		1024 = { add_core_of = SAU }
+		1035 = { add_core_of = SAU }
+		292 = { add_core_of = SAU }
+		release = SAU
+		SAU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SAU
+			}
+		}
+		SAU = { 
+			set_cosmetic_tag = TRM_SAU_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SAU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+				state = 185
+				state = 186
+				state = 758
+				state = 768
+				state = 939
+				state = 1076
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = TRM }
+		}
+		47 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		185 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		186 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		758 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		768 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		939 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1076 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				47 = { NOT = { is_core_of = TRM } }
+				185 = { NOT = { is_core_of = TRM } }
+				186 = { NOT = { is_core_of = TRM } }
+				758 = { NOT = { is_core_of = TRM } }
+				768 = { NOT = { is_core_of = TRM } }
+				939 = { NOT = { is_core_of = TRM } }
+				1076 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		164 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		183 = { add_core_of = GRE }
+		187 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = TRM_GRE_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_EMI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+				state = 157
+				state = 158
+				state = 161
+				state = 162
+				state = 764
+				state = 838
+				state = 1003
+				state = 1004
+				state = 1005
+				state = 1149
+				state = 1236
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EMI = { exists = yes }
+			}
+			EMI = { is_subject_of = TRM }
+		}
+		2 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		157 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		158 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		161 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		162 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		764 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		838 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1003 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1004 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1005 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1149 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1236 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				2 = { NOT = { is_core_of = TRM } }
+				157 = { NOT = { is_core_of = TRM } }
+				158 = { NOT = { is_core_of = TRM } }
+				161 = { NOT = { is_core_of = TRM } }
+				162 = { NOT = { is_core_of = TRM } }
+				764 = { NOT = { is_core_of = TRM } }
+				838 = { NOT = { is_core_of = TRM } }
+				1003 = { NOT = { is_core_of = TRM } }
+				1004 = { NOT = { is_core_of = TRM } }
+				1005 = { NOT = { is_core_of = TRM } }
+				1149 = { NOT = { is_core_of = TRM } }
+				1236 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EMI = {
+			every_core_state = {
+				remove_core_of = EMI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EMI
+				}
+				remove_claim_by = EMI
+			}
+		}
+		114 = { add_core_of = EMI }
+		115 = { add_core_of = EMI }
+		117 = { add_core_of = EMI }
+		156 = { add_core_of = EMI }
+		159 = { add_core_of = EMI }
+		160 = { add_core_of = EMI }
+		742 = { add_core_of = EMI }
+		759 = { add_core_of = EMI }
+		761 = { add_core_of = EMI }
+		783 = { add_core_of = EMI }
+		837 = { add_core_of = EMI }
+		1002 = { add_core_of = EMI }
+		1006 = { add_core_of = EMI }
+		2 = { add_core_of = EMI }
+		157 = { add_core_of = EMI }
+		158 = { add_core_of = EMI }
+		161 = { add_core_of = EMI }
+		162 = { add_core_of = EMI }
+		764 = { add_core_of = EMI }
+		838 = { add_core_of = EMI }
+		1003 = { add_core_of = EMI }
+		1004 = { add_core_of = EMI }
+		1005 = { add_core_of = EMI }
+		1149 = { add_core_of = EMI }
+		1236 = { add_core_of = EMI }
+		release = EMI
+		EMI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = EMI
+			}
+		}
+		EMI = { 
+			set_cosmetic_tag = TRM_EMI_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = EMI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_AUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1137
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AUS = { exists = yes }
+			}
+			AUS = { is_subject_of = TRM }
+		}
+		1137 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				1137 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AUS = {
+			every_core_state = {
+				remove_core_of = AUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AUS
+				}
+				remove_claim_by = AUS
+			}
+		}
+		3 = { add_core_of = AUS }
+		4 = { add_core_of = AUS }
+		39 = { add_core_of = AUS }
+		50 = { add_core_of = AUS }
+		52 = { add_core_of = AUS }
+		53 = { add_core_of = AUS }
+		54 = { add_core_of = AUS }
+		151 = { add_core_of = AUS }
+		152 = { add_core_of = AUS }
+		153 = { add_core_of = AUS }
+		775 = { add_core_of = AUS }
+		780 = { add_core_of = AUS }
+		835 = { add_core_of = AUS }
+		836 = { add_core_of = AUS }
+		942 = { add_core_of = AUS }
+		1235 = { add_core_of = AUS }
+		1137 = { add_core_of = AUS }
+		release = AUS
+		AUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+		AUS = { 
+			set_cosmetic_tag = TRM_AUS_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = AUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_WGR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				WGR = { exists = yes }
+			}
+			WGR = { is_subject_of = TRM }
+		}
+		51 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				51 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		WGR = {
+			every_core_state = {
+				remove_core_of = WGR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = WGR
+				}
+				remove_claim_by = WGR
+			}
+		}
+		42 = { add_core_of = WGR }
+		55 = { add_core_of = WGR }
+		56 = { add_core_of = WGR }
+		57 = { add_core_of = WGR }
+		58 = { add_core_of = WGR }
+		59 = { add_core_of = WGR }
+		60 = { add_core_of = WGR }
+		61 = { add_core_of = WGR }
+		62 = { add_core_of = WGR }
+		64 = { add_core_of = WGR }
+		781 = { add_core_of = WGR }
+		51 = { add_core_of = WGR }
+		release = WGR
+		WGR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = WGR
+			}
+		}
+		WGR = { 
+			set_cosmetic_tag = TRM_WGR_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = WGR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+				state = 99
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = TRM }
+		}
+		37 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		99 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				37 = { NOT = { is_core_of = TRM } }
+				99 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		38 = { add_core_of = DEN }
+		100 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		110 = { add_core_of = DEN }
+		124 = { add_core_of = DEN }
+		138 = { add_core_of = DEN }
+		139 = { add_core_of = DEN }
+		140 = { add_core_of = DEN }
+		141 = { add_core_of = DEN }
+		142 = { add_core_of = DEN }
+		143 = { add_core_of = DEN }
+		144 = { add_core_of = DEN }
+		666 = { add_core_of = DEN }
+		778 = { add_core_of = DEN }
+		782 = { add_core_of = DEN }
+		839 = { add_core_of = DEN }
+		908 = { add_core_of = DEN }
+		909 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		936 = { add_core_of = DEN }
+		937 = { add_core_of = DEN }
+		960 = { add_core_of = DEN }
+		1146 = { add_core_of = DEN }
+		1147 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		37 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = TRM_DEN_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_BEL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = { is_subject_of = TRM }
+		}
+		6 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				6 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BEL = {
+			every_core_state = {
+				remove_core_of = BEL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BEL
+				}
+				remove_claim_by = BEL
+			}
+		}
+		7 = { add_core_of = BEL }
+		8 = { add_core_of = BEL }
+		34 = { add_core_of = BEL }
+		35 = { add_core_of = BEL }
+		36 = { add_core_of = BEL }
+		741 = { add_core_of = BEL }
+		866 = { add_core_of = BEL }
+		978 = { add_core_of = BEL }
+		979 = { add_core_of = BEL }
+		6 = { add_core_of = BEL }
+		release = BEL
+		BEL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BEL
+			}
+		}
+		BEL = { 
+			set_cosmetic_tag = TRM_BEL_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BEL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = TRM }
+		}
+		16 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				16 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		1 = { add_core_of = FRP }
+		14 = { add_core_of = FRP }
+		15 = { add_core_of = FRP }
+		17 = { add_core_of = FRP }
+		18 = { add_core_of = FRP }
+		19 = { add_core_of = FRP }
+		20 = { add_core_of = FRP }
+		21 = { add_core_of = FRP }
+		22 = { add_core_of = FRP }
+		23 = { add_core_of = FRP }
+		24 = { add_core_of = FRP }
+		25 = { add_core_of = FRP }
+		26 = { add_core_of = FRP }
+		27 = { add_core_of = FRP }
+		28 = { add_core_of = FRP }
+		29 = { add_core_of = FRP }
+		30 = { add_core_of = FRP }
+		31 = { add_core_of = FRP }
+		32 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		735 = { add_core_of = FRP }
+		760 = { add_core_of = FRP }
+		762 = { add_core_of = FRP }
+		763 = { add_core_of = FRP }
+		779 = { add_core_of = FRP }
+		785 = { add_core_of = FRP }
+		817 = { add_core_of = FRP }
+		943 = { add_core_of = FRP }
+		980 = { add_core_of = FRP }
+		983 = { add_core_of = FRP }
+		984 = { add_core_of = FRP }
+		1334 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = TRM_FRP_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_SPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SPR = { exists = yes }
+			}
+			SPR = { is_subject_of = TRM }
+		}
+		41 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				41 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SPR = {
+			every_core_state = {
+				remove_core_of = SPR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SPR
+				}
+				remove_claim_by = SPR
+			}
+		}
+		118 = { add_core_of = SPR }
+		165 = { add_core_of = SPR }
+		166 = { add_core_of = SPR }
+		167 = { add_core_of = SPR }
+		168 = { add_core_of = SPR }
+		169 = { add_core_of = SPR }
+		170 = { add_core_of = SPR }
+		171 = { add_core_of = SPR }
+		172 = { add_core_of = SPR }
+		173 = { add_core_of = SPR }
+		174 = { add_core_of = SPR }
+		175 = { add_core_of = SPR }
+		176 = { add_core_of = SPR }
+		177 = { add_core_of = SPR }
+		178 = { add_core_of = SPR }
+		793 = { add_core_of = SPR }
+		795 = { add_core_of = SPR }
+		940 = { add_core_of = SPR }
+		951 = { add_core_of = SPR }
+		1313 = { add_core_of = SPR }
+		1316 = { add_core_of = SPR }
+		1336 = { add_core_of = SPR }
+		1337 = { add_core_of = SPR }
+		1338 = { add_core_of = SPR }
+		1339 = { add_core_of = SPR }
+		1340 = { add_core_of = SPR }
+		1341 = { add_core_of = SPR }
+		1342 = { add_core_of = SPR }
+		1343 = { add_core_of = SPR }
+		1344 = { add_core_of = SPR }
+		41 = { add_core_of = SPR }
+		release = SPR
+		SPR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SPR
+			}
+		}
+		SPR = { 
+			set_cosmetic_tag = TRM_SPR_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = TRM }
+		}
+		126 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				126 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		120 = { add_core_of = GBP }
+		121 = { add_core_of = GBP }
+		122 = { add_core_of = GBP }
+		123 = { add_core_of = GBP }
+		125 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		130 = { add_core_of = GBP }
+		131 = { add_core_of = GBP }
+		132 = { add_core_of = GBP }
+		133 = { add_core_of = GBP }
+		136 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		938 = { add_core_of = GBP }
+		1225 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		1317 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = TRM_GBP_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_IRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 113
+				state = 119
+				state = 134
+				state = 135
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRE = { exists = yes }
+			}
+			IRE = { is_subject_of = TRM }
+		}
+		113 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		119 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		134 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		135 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				113 = { NOT = { is_core_of = TRM } }
+				119 = { NOT = { is_core_of = TRM } }
+				134 = { NOT = { is_core_of = TRM } }
+				135 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRE = {
+			every_core_state = {
+				remove_core_of = IRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRE
+				}
+				remove_claim_by = IRE
+			}
+		}
+		113 = { add_core_of = IRE }
+		119 = { add_core_of = IRE }
+		134 = { add_core_of = IRE }
+		135 = { add_core_of = IRE }
+		release = IRE
+		IRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = IRE
+			}
+		}
+		IRE = { 
+			set_cosmetic_tag = TRM_IRE_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = IRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_POR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 112
+				state = 179
+				state = 180
+				state = 181
+				state = 697
+				state = 698
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POR = { exists = yes }
+			}
+			POR = { is_subject_of = TRM }
+		}
+		112 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		179 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		180 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		181 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		697 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		698 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				112 = { NOT = { is_core_of = TRM } }
+				179 = { NOT = { is_core_of = TRM } }
+				180 = { NOT = { is_core_of = TRM } }
+				181 = { NOT = { is_core_of = TRM } }
+				697 = { NOT = { is_core_of = TRM } }
+				698 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POR = {
+			every_core_state = {
+				remove_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POR
+				}
+				remove_claim_by = POR
+			}
+		}
+		112 = { add_core_of = POR }
+		179 = { add_core_of = POR }
+		180 = { add_core_of = POR }
+		181 = { add_core_of = POR }
+		697 = { add_core_of = POR }
+		698 = { add_core_of = POR }
+		release = POR
+		POR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = POR
+			}
+		}
+		POR = { 
+			set_cosmetic_tag = TRM_POR_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = POR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+				state = 447
+				state = 452
+				state = 456
+				state = 457
+				state = 552
+				state = 1008
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = TRM }
+		}
+		446 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		447 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		452 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		456 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		457 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		552 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1008 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				446 = { NOT = { is_core_of = TRM } }
+				447 = { NOT = { is_core_of = TRM } }
+				452 = { NOT = { is_core_of = TRM } }
+				456 = { NOT = { is_core_of = TRM } }
+				457 = { NOT = { is_core_of = TRM } }
+				552 = { NOT = { is_core_of = TRM } }
+				1008 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		273 = { add_core_of = EGY }
+		290 = { add_core_of = EGY }
+		448 = { add_core_of = EGY }
+		450 = { add_core_of = EGY }
+		451 = { add_core_of = EGY }
+		458 = { add_core_of = EGY }
+		459 = { add_core_of = EGY }
+		460 = { add_core_of = EGY }
+		461 = { add_core_of = EGY }
+		462 = { add_core_of = EGY }
+		513 = { add_core_of = EGY }
+		514 = { add_core_of = EGY }
+		663 = { add_core_of = EGY }
+		665 = { add_core_of = EGY }
+		805 = { add_core_of = EGY }
+		1009 = { add_core_of = EGY }
+		1318 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = TRM_EGY_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_SUD = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 549
+				state = 551
+				state = 862
+				state = 1007
+				state = 1010
+				state = 1011
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SUD = { exists = yes }
+			}
+			SUD = { is_subject_of = TRM }
+		}
+		549 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		551 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		862 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1007 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1010 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1011 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				549 = { NOT = { is_core_of = TRM } }
+				551 = { NOT = { is_core_of = TRM } }
+				862 = { NOT = { is_core_of = TRM } }
+				1007 = { NOT = { is_core_of = TRM } }
+				1010 = { NOT = { is_core_of = TRM } }
+				1011 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SUD = {
+			every_core_state = {
+				remove_core_of = SUD
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SUD
+				}
+				remove_claim_by = SUD
+			}
+		}
+		268 = { add_core_of = SUD }
+		269 = { add_core_of = SUD }
+		271 = { add_core_of = SUD }
+		547 = { add_core_of = SUD }
+		550 = { add_core_of = SUD }
+		559 = { add_core_of = SUD }
+		892 = { add_core_of = SUD }
+		906 = { add_core_of = SUD }
+		919 = { add_core_of = SUD }
+		920 = { add_core_of = SUD }
+		921 = { add_core_of = SUD }
+		922 = { add_core_of = SUD }
+		923 = { add_core_of = SUD }
+		924 = { add_core_of = SUD }
+		925 = { add_core_of = SUD }
+		944 = { add_core_of = SUD }
+		961 = { add_core_of = SUD }
+		969 = { add_core_of = SUD }
+		970 = { add_core_of = SUD }
+		1297 = { add_core_of = SUD }
+		549 = { add_core_of = SUD }
+		551 = { add_core_of = SUD }
+		862 = { add_core_of = SUD }
+		1007 = { add_core_of = SUD }
+		1010 = { add_core_of = SUD }
+		1011 = { add_core_of = SUD }
+		release = SUD
+		SUD = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SUD
+			}
+		}
+		SUD = { 
+			set_cosmetic_tag = TRM_SUD_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SUD
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_SIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 700
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIE = { exists = yes }
+			}
+			SIE = { is_subject_of = TRM }
+		}
+		700 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				700 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIE = {
+			every_core_state = {
+				remove_core_of = SIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIE
+				}
+				remove_claim_by = SIE
+			}
+		}
+		272 = { add_core_of = SIE }
+		274 = { add_core_of = SIE }
+		296 = { add_core_of = SIE }
+		298 = { add_core_of = SIE }
+		515 = { add_core_of = SIE }
+		556 = { add_core_of = SIE }
+		557 = { add_core_of = SIE }
+		558 = { add_core_of = SIE }
+		662 = { add_core_of = SIE }
+		699 = { add_core_of = SIE }
+		702 = { add_core_of = SIE }
+		703 = { add_core_of = SIE }
+		806 = { add_core_of = SIE }
+		807 = { add_core_of = SIE }
+		808 = { add_core_of = SIE }
+		809 = { add_core_of = SIE }
+		834 = { add_core_of = SIE }
+		860 = { add_core_of = SIE }
+		876 = { add_core_of = SIE }
+		877 = { add_core_of = SIE }
+		878 = { add_core_of = SIE }
+		910 = { add_core_of = SIE }
+		911 = { add_core_of = SIE }
+		913 = { add_core_of = SIE }
+		963 = { add_core_of = SIE }
+		966 = { add_core_of = SIE }
+		967 = { add_core_of = SIE }
+		968 = { add_core_of = SIE }
+		973 = { add_core_of = SIE }
+		1192 = { add_core_of = SIE }
+		1321 = { add_core_of = SIE }
+		1322 = { add_core_of = SIE }
+		1323 = { add_core_of = SIE }
+		700 = { add_core_of = SIE }
+		release = SIE
+		SIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SIE
+			}
+		}
+		SIE = { 
+			set_cosmetic_tag = TRM_SIE_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_TZN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 546
+				state = 899
+				state = 905
+				state = 918
+				state = 965
+				state = 1032
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TZN = { exists = yes }
+			}
+			TZN = { is_subject_of = TRM }
+		}
+		546 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		899 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		905 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		918 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		965 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1032 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				546 = { NOT = { is_core_of = TRM } }
+				899 = { NOT = { is_core_of = TRM } }
+				905 = { NOT = { is_core_of = TRM } }
+				918 = { NOT = { is_core_of = TRM } }
+				965 = { NOT = { is_core_of = TRM } }
+				1032 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TZN = {
+			every_core_state = {
+				remove_core_of = TZN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TZN
+				}
+				remove_claim_by = TZN
+			}
+		}
+		295 = { add_core_of = TZN }
+		297 = { add_core_of = TZN }
+		538 = { add_core_of = TZN }
+		539 = { add_core_of = TZN }
+		540 = { add_core_of = TZN }
+		543 = { add_core_of = TZN }
+		544 = { add_core_of = TZN }
+		548 = { add_core_of = TZN }
+		660 = { add_core_of = TZN }
+		704 = { add_core_of = TZN }
+		705 = { add_core_of = TZN }
+		706 = { add_core_of = TZN }
+		707 = { add_core_of = TZN }
+		708 = { add_core_of = TZN }
+		709 = { add_core_of = TZN }
+		718 = { add_core_of = TZN }
+		813 = { add_core_of = TZN }
+		869 = { add_core_of = TZN }
+		870 = { add_core_of = TZN }
+		871 = { add_core_of = TZN }
+		879 = { add_core_of = TZN }
+		881 = { add_core_of = TZN }
+		914 = { add_core_of = TZN }
+		916 = { add_core_of = TZN }
+		917 = { add_core_of = TZN }
+		927 = { add_core_of = TZN }
+		928 = { add_core_of = TZN }
+		948 = { add_core_of = TZN }
+		949 = { add_core_of = TZN }
+		952 = { add_core_of = TZN }
+		953 = { add_core_of = TZN }
+		954 = { add_core_of = TZN }
+		955 = { add_core_of = TZN }
+		956 = { add_core_of = TZN }
+		957 = { add_core_of = TZN }
+		958 = { add_core_of = TZN }
+		959 = { add_core_of = TZN }
+		962 = { add_core_of = TZN }
+		971 = { add_core_of = TZN }
+		974 = { add_core_of = TZN }
+		975 = { add_core_of = TZN }
+		976 = { add_core_of = TZN }
+		977 = { add_core_of = TZN }
+		1025 = { add_core_of = TZN }
+		1026 = { add_core_of = TZN }
+		1177 = { add_core_of = TZN }
+		1178 = { add_core_of = TZN }
+		1179 = { add_core_of = TZN }
+		1180 = { add_core_of = TZN }
+		1181 = { add_core_of = TZN }
+		1182 = { add_core_of = TZN }
+		1183 = { add_core_of = TZN }
+		1184 = { add_core_of = TZN }
+		1185 = { add_core_of = TZN }
+		1335 = { add_core_of = TZN }
+		546 = { add_core_of = TZN }
+		899 = { add_core_of = TZN }
+		905 = { add_core_of = TZN }
+		918 = { add_core_of = TZN }
+		965 = { add_core_of = TZN }
+		1032 = { add_core_of = TZN }
+		release = TZN
+		TZN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TZN
+			}
+		}
+		TZN = { 
+			set_cosmetic_tag = TRM_TZN_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TZN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_NMB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 541
+				state = 964
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NMB = { exists = yes }
+			}
+			NMB = { is_subject_of = TRM }
+		}
+		541 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		964 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				541 = { NOT = { is_core_of = TRM } }
+				964 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NMB = {
+			every_core_state = {
+				remove_core_of = NMB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NMB
+				}
+				remove_claim_by = NMB
+			}
+		}
+		85 = { add_core_of = NMB }
+		275 = { add_core_of = NMB }
+		542 = { add_core_of = NMB }
+		545 = { add_core_of = NMB }
+		681 = { add_core_of = NMB }
+		719 = { add_core_of = NMB }
+		738 = { add_core_of = NMB }
+		945 = { add_core_of = NMB }
+		946 = { add_core_of = NMB }
+		947 = { add_core_of = NMB }
+		950 = { add_core_of = NMB }
+		1176 = { add_core_of = NMB }
+		541 = { add_core_of = NMB }
+		964 = { add_core_of = NMB }
+		release = NMB
+		NMB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = NMB
+			}
+		}
+		NMB = { 
+			set_cosmetic_tag = TRM_NMB_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = NMB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_KOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+				state = 527
+				state = 1345
+				state = 1346
+				state = 1347
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KOR = { exists = yes }
+			}
+			KOR = { is_subject_of = TRM }
+		}
+		525 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		527 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1345 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1346 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1347 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				525 = { NOT = { is_core_of = TRM } }
+				527 = { NOT = { is_core_of = TRM } }
+				1345 = { NOT = { is_core_of = TRM } }
+				1346 = { NOT = { is_core_of = TRM } }
+				1347 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KOR = {
+			every_core_state = {
+				remove_core_of = KOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KOR
+				}
+				remove_claim_by = KOR
+			}
+		}
+		525 = { add_core_of = KOR }
+		527 = { add_core_of = KOR }
+		1345 = { add_core_of = KOR }
+		1346 = { add_core_of = KOR }
+		1347 = { add_core_of = KOR }
+		release = KOR
+		KOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = KOR
+			}
+		}
+		KOR = { 
+			set_cosmetic_tag = TRM_KOR_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = KOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 532
+				state = 533
+				state = 534
+				state = 535
+				state = 536
+				state = 1351
+				state = 1352
+				state = 1353
+				state = 1354
+				state = 1355
+				state = 1356
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = TRM }
+		}
+		282 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		528 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		529 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		530 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		531 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		532 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		533 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		534 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		535 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		536 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1351 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1352 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1353 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1354 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1355 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1356 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				282 = { NOT = { is_core_of = TRM } }
+				528 = { NOT = { is_core_of = TRM } }
+				529 = { NOT = { is_core_of = TRM } }
+				530 = { NOT = { is_core_of = TRM } }
+				531 = { NOT = { is_core_of = TRM } }
+				532 = { NOT = { is_core_of = TRM } }
+				533 = { NOT = { is_core_of = TRM } }
+				534 = { NOT = { is_core_of = TRM } }
+				535 = { NOT = { is_core_of = TRM } }
+				536 = { NOT = { is_core_of = TRM } }
+				1351 = { NOT = { is_core_of = TRM } }
+				1352 = { NOT = { is_core_of = TRM } }
+				1353 = { NOT = { is_core_of = TRM } }
+				1354 = { NOT = { is_core_of = TRM } }
+				1355 = { NOT = { is_core_of = TRM } }
+				1356 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		282 = { add_core_of = JAP }
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = TRM_JAP_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = TRM }
+		}
+		608 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				608 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		283 = { add_core_of = QIE }
+		325 = { add_core_of = QIE }
+		326 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		524 = { add_core_of = QIE }
+		591 = { add_core_of = QIE }
+		592 = { add_core_of = QIE }
+		593 = { add_core_of = QIE }
+		594 = { add_core_of = QIE }
+		595 = { add_core_of = QIE }
+		596 = { add_core_of = QIE }
+		597 = { add_core_of = QIE }
+		598 = { add_core_of = QIE }
+		599 = { add_core_of = QIE }
+		600 = { add_core_of = QIE }
+		601 = { add_core_of = QIE }
+		602 = { add_core_of = QIE }
+		603 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		605 = { add_core_of = QIE }
+		606 = { add_core_of = QIE }
+		607 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		613 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		620 = { add_core_of = QIE }
+		622 = { add_core_of = QIE }
+		650 = { add_core_of = QIE }
+		661 = { add_core_of = QIE }
+		693 = { add_core_of = QIE }
+		728 = { add_core_of = QIE }
+		729 = { add_core_of = QIE }
+		743 = { add_core_of = QIE }
+		744 = { add_core_of = QIE }
+		746 = { add_core_of = QIE }
+		747 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		788 = { add_core_of = QIE }
+		799 = { add_core_of = QIE }
+		800 = { add_core_of = QIE }
+		801 = { add_core_of = QIE }
+		802 = { add_core_of = QIE }
+		803 = { add_core_of = QIE }
+		816 = { add_core_of = QIE }
+		996 = { add_core_of = QIE }
+		1012 = { add_core_of = QIE }
+		1013 = { add_core_of = QIE }
+		1014 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1044 = { add_core_of = QIE }
+		1045 = { add_core_of = QIE }
+		1046 = { add_core_of = QIE }
+		1047 = { add_core_of = QIE }
+		1048 = { add_core_of = QIE }
+		1049 = { add_core_of = QIE }
+		1050 = { add_core_of = QIE }
+		1051 = { add_core_of = QIE }
+		1052 = { add_core_of = QIE }
+		1053 = { add_core_of = QIE }
+		1054 = { add_core_of = QIE }
+		1055 = { add_core_of = QIE }
+		1056 = { add_core_of = QIE }
+		1058 = { add_core_of = QIE }
+		1059 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1064 = { add_core_of = QIE }
+		1065 = { add_core_of = QIE }
+		1066 = { add_core_of = QIE }
+		1067 = { add_core_of = QIE }
+		1068 = { add_core_of = QIE }
+		1069 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		1075 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = TRM_QIE_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_TIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 322
+				state = 748
+				state = 1086
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TIB = { exists = yes }
+			}
+			TIB = { is_subject_of = TRM }
+		}
+		322 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		748 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1086 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				322 = { NOT = { is_core_of = TRM } }
+				748 = { NOT = { is_core_of = TRM } }
+				1086 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TIB = {
+			every_core_state = {
+				remove_core_of = TIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TIB
+				}
+				remove_claim_by = TIB
+			}
+		}
+		322 = { add_core_of = TIB }
+		748 = { add_core_of = TIB }
+		1086 = { add_core_of = TIB }
+		release = TIB
+		TIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TIB
+			}
+		}
+		TIB = { 
+			set_cosmetic_tag = TRM_TIB_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = TRM }
+		}
+		439 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				439 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		72 = { add_core_of = DEH }
+		281 = { add_core_of = DEH }
+		288 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		323 = { add_core_of = DEH }
+		324 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		428 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		440 = { add_core_of = DEH }
+		441 = { add_core_of = DEH }
+		442 = { add_core_of = DEH }
+		443 = { add_core_of = DEH }
+		444 = { add_core_of = DEH }
+		445 = { add_core_of = DEH }
+		640 = { add_core_of = DEH }
+		701 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		733 = { add_core_of = DEH }
+		756 = { add_core_of = DEH }
+		790 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		890 = { add_core_of = DEH }
+		891 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		897 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		1219 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = TRM_DEH_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_SIA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 289
+				state = 724
+				state = 749
+				state = 750
+				state = 751
+				state = 822
+				state = 823
+				state = 824
+				state = 825
+				state = 830
+				state = 831
+				state = 882
+				state = 999
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIA = { exists = yes }
+			}
+			SIA = { is_subject_of = TRM }
+		}
+		289 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		724 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		749 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		750 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		751 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		822 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		823 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		824 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		825 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		830 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		831 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		882 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		999 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				289 = { NOT = { is_core_of = TRM } }
+				724 = { NOT = { is_core_of = TRM } }
+				749 = { NOT = { is_core_of = TRM } }
+				750 = { NOT = { is_core_of = TRM } }
+				751 = { NOT = { is_core_of = TRM } }
+				822 = { NOT = { is_core_of = TRM } }
+				823 = { NOT = { is_core_of = TRM } }
+				824 = { NOT = { is_core_of = TRM } }
+				825 = { NOT = { is_core_of = TRM } }
+				830 = { NOT = { is_core_of = TRM } }
+				831 = { NOT = { is_core_of = TRM } }
+				882 = { NOT = { is_core_of = TRM } }
+				999 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIA = {
+			every_core_state = {
+				remove_core_of = SIA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIA
+				}
+				remove_claim_by = SIA
+			}
+		}
+		286 = { add_core_of = SIA }
+		336 = { add_core_of = SIA }
+		670 = { add_core_of = SIA }
+		671 = { add_core_of = SIA }
+		826 = { add_core_of = SIA }
+		827 = { add_core_of = SIA }
+		846 = { add_core_of = SIA }
+		856 = { add_core_of = SIA }
+		857 = { add_core_of = SIA }
+		289 = { add_core_of = SIA }
+		724 = { add_core_of = SIA }
+		749 = { add_core_of = SIA }
+		750 = { add_core_of = SIA }
+		751 = { add_core_of = SIA }
+		822 = { add_core_of = SIA }
+		823 = { add_core_of = SIA }
+		824 = { add_core_of = SIA }
+		825 = { add_core_of = SIA }
+		830 = { add_core_of = SIA }
+		831 = { add_core_of = SIA }
+		882 = { add_core_of = SIA }
+		999 = { add_core_of = SIA }
+		release = SIA
+		SIA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SIA
+			}
+		}
+		SIA = { 
+			set_cosmetic_tag = TRM_SIA_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SIA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_INS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 334
+				state = 335
+				state = 667
+				state = 668
+				state = 672
+				state = 673
+				state = 1016
+				state = 1017
+				state = 1018
+				state = 1019
+				state = 1020
+				state = 1021
+				state = 1022
+				state = 1023
+				state = 1333
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				INS = { exists = yes }
+			}
+			INS = { is_subject_of = TRM }
+		}
+		334 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		335 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		667 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		668 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		672 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		673 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1016 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1017 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1018 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1019 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1020 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1021 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1022 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1023 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1333 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				334 = { NOT = { is_core_of = TRM } }
+				335 = { NOT = { is_core_of = TRM } }
+				667 = { NOT = { is_core_of = TRM } }
+				668 = { NOT = { is_core_of = TRM } }
+				672 = { NOT = { is_core_of = TRM } }
+				673 = { NOT = { is_core_of = TRM } }
+				1016 = { NOT = { is_core_of = TRM } }
+				1017 = { NOT = { is_core_of = TRM } }
+				1018 = { NOT = { is_core_of = TRM } }
+				1019 = { NOT = { is_core_of = TRM } }
+				1020 = { NOT = { is_core_of = TRM } }
+				1021 = { NOT = { is_core_of = TRM } }
+				1022 = { NOT = { is_core_of = TRM } }
+				1023 = { NOT = { is_core_of = TRM } }
+				1333 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		INS = {
+			every_core_state = {
+				remove_core_of = INS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INS
+				}
+				remove_claim_by = INS
+			}
+		}
+		327 = { add_core_of = INS }
+		333 = { add_core_of = INS }
+		523 = { add_core_of = INS }
+		526 = { add_core_of = INS }
+		623 = { add_core_of = INS }
+		624 = { add_core_of = INS }
+		625 = { add_core_of = INS }
+		626 = { add_core_of = INS }
+		627 = { add_core_of = INS }
+		628 = { add_core_of = INS }
+		629 = { add_core_of = INS }
+		630 = { add_core_of = INS }
+		631 = { add_core_of = INS }
+		632 = { add_core_of = INS }
+		633 = { add_core_of = INS }
+		634 = { add_core_of = INS }
+		635 = { add_core_of = INS }
+		636 = { add_core_of = INS }
+		638 = { add_core_of = INS }
+		639 = { add_core_of = INS }
+		641 = { add_core_of = INS }
+		642 = { add_core_of = INS }
+		643 = { add_core_of = INS }
+		645 = { add_core_of = INS }
+		646 = { add_core_of = INS }
+		647 = { add_core_of = INS }
+		648 = { add_core_of = INS }
+		669 = { add_core_of = INS }
+		684 = { add_core_of = INS }
+		711 = { add_core_of = INS }
+		721 = { add_core_of = INS }
+		725 = { add_core_of = INS }
+		726 = { add_core_of = INS }
+		727 = { add_core_of = INS }
+		734 = { add_core_of = INS }
+		737 = { add_core_of = INS }
+		757 = { add_core_of = INS }
+		828 = { add_core_of = INS }
+		843 = { add_core_of = INS }
+		941 = { add_core_of = INS }
+		972 = { add_core_of = INS }
+		334 = { add_core_of = INS }
+		335 = { add_core_of = INS }
+		667 = { add_core_of = INS }
+		668 = { add_core_of = INS }
+		672 = { add_core_of = INS }
+		673 = { add_core_of = INS }
+		1016 = { add_core_of = INS }
+		1017 = { add_core_of = INS }
+		1018 = { add_core_of = INS }
+		1019 = { add_core_of = INS }
+		1020 = { add_core_of = INS }
+		1021 = { add_core_of = INS }
+		1022 = { add_core_of = INS }
+		1023 = { add_core_of = INS }
+		1333 = { add_core_of = INS }
+		release = INS
+		INS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = INS
+			}
+		}
+		INS = { 
+			set_cosmetic_tag = TRM_INS_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 285
+				state = 517
+				state = 518
+				state = 519
+				state = 520
+				state = 521
+				state = 522
+				state = 674
+				state = 985
+				state = 986
+				state = 987
+				state = 988
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = TRM }
+		}
+		285 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		517 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		518 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		519 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		520 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		521 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		522 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		674 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		985 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		986 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		987 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		988 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				285 = { NOT = { is_core_of = TRM } }
+				517 = { NOT = { is_core_of = TRM } }
+				518 = { NOT = { is_core_of = TRM } }
+				519 = { NOT = { is_core_of = TRM } }
+				520 = { NOT = { is_core_of = TRM } }
+				521 = { NOT = { is_core_of = TRM } }
+				522 = { NOT = { is_core_of = TRM } }
+				674 = { NOT = { is_core_of = TRM } }
+				985 = { NOT = { is_core_of = TRM } }
+				986 = { NOT = { is_core_of = TRM } }
+				987 = { NOT = { is_core_of = TRM } }
+				988 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		986 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = TRM_AST_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_NZL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+				state = 723
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NZL = { exists = yes }
+			}
+			NZL = { is_subject_of = TRM }
+		}
+		284 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		723 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				284 = { NOT = { is_core_of = TRM } }
+				723 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NZL = {
+			every_core_state = {
+				remove_core_of = NZL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NZL
+				}
+				remove_claim_by = NZL
+			}
+		}
+		284 = { add_core_of = NZL }
+		723 = { add_core_of = NZL }
+		release = NZL
+		NZL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = NZL
+			}
+		}
+		NZL = { 
+			set_cosmetic_tag = TRM_NZL_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = NZL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_CAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 276
+				state = 464
+				state = 465
+				state = 466
+				state = 467
+				state = 468
+				state = 469
+				state = 470
+				state = 471
+				state = 472
+				state = 473
+				state = 682
+				state = 683
+				state = 739
+				state = 740
+				state = 832
+				state = 1330
+				state = 1331
+				state = 1332
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAN = { exists = yes }
+			}
+			CAN = { is_subject_of = TRM }
+		}
+		276 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		464 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		465 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		466 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		467 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		468 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		469 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		470 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		471 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		472 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		473 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		682 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		683 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		739 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		740 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		832 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1330 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1331 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1332 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				276 = { NOT = { is_core_of = TRM } }
+				464 = { NOT = { is_core_of = TRM } }
+				465 = { NOT = { is_core_of = TRM } }
+				466 = { NOT = { is_core_of = TRM } }
+				467 = { NOT = { is_core_of = TRM } }
+				468 = { NOT = { is_core_of = TRM } }
+				469 = { NOT = { is_core_of = TRM } }
+				470 = { NOT = { is_core_of = TRM } }
+				471 = { NOT = { is_core_of = TRM } }
+				472 = { NOT = { is_core_of = TRM } }
+				473 = { NOT = { is_core_of = TRM } }
+				682 = { NOT = { is_core_of = TRM } }
+				683 = { NOT = { is_core_of = TRM } }
+				739 = { NOT = { is_core_of = TRM } }
+				740 = { NOT = { is_core_of = TRM } }
+				832 = { NOT = { is_core_of = TRM } }
+				1330 = { NOT = { is_core_of = TRM } }
+				1331 = { NOT = { is_core_of = TRM } }
+				1332 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAN = {
+			every_core_state = {
+				remove_core_of = CAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAN
+				}
+				remove_claim_by = CAN
+			}
+		}
+		332 = { add_core_of = CAN }
+		331 = { add_core_of = CAN }
+		730 = { add_core_of = CAN }
+		276 = { add_core_of = CAN }
+		464 = { add_core_of = CAN }
+		465 = { add_core_of = CAN }
+		466 = { add_core_of = CAN }
+		467 = { add_core_of = CAN }
+		468 = { add_core_of = CAN }
+		469 = { add_core_of = CAN }
+		470 = { add_core_of = CAN }
+		471 = { add_core_of = CAN }
+		472 = { add_core_of = CAN }
+		473 = { add_core_of = CAN }
+		682 = { add_core_of = CAN }
+		683 = { add_core_of = CAN }
+		739 = { add_core_of = CAN }
+		740 = { add_core_of = CAN }
+		832 = { add_core_of = CAN }
+		1330 = { add_core_of = CAN }
+		1331 = { add_core_of = CAN }
+		1332 = { add_core_of = CAN }
+		release = CAN
+		CAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = CAN
+			}
+		}
+		CAN = { 
+			set_cosmetic_tag = TRM_CAN_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = CAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = TRM }
+		}
+		361 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				361 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
+				}
+				remove_claim_by = USA
+			}
+		}
+		261 = { add_core_of = USA }
+		357 = { add_core_of = USA }
+		358 = { add_core_of = USA }
+		359 = { add_core_of = USA }
+		360 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		366 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		370 = { add_core_of = USA }
+		371 = { add_core_of = USA }
+		372 = { add_core_of = USA }
+		373 = { add_core_of = USA }
+		374 = { add_core_of = USA }
+		375 = { add_core_of = USA }
+		376 = { add_core_of = USA }
+		377 = { add_core_of = USA }
+		378 = { add_core_of = USA }
+		379 = { add_core_of = USA }
+		380 = { add_core_of = USA }
+		381 = { add_core_of = USA }
+		382 = { add_core_of = USA }
+		383 = { add_core_of = USA }
+		384 = { add_core_of = USA }
+		385 = { add_core_of = USA }
+		386 = { add_core_of = USA }
+		387 = { add_core_of = USA }
+		388 = { add_core_of = USA }
+		389 = { add_core_of = USA }
+		390 = { add_core_of = USA }
+		391 = { add_core_of = USA }
+		392 = { add_core_of = USA }
+		393 = { add_core_of = USA }
+		394 = { add_core_of = USA }
+		395 = { add_core_of = USA }
+		396 = { add_core_of = USA }
+		696 = { add_core_of = USA }
+		796 = { add_core_of = USA }
+		797 = { add_core_of = USA }
+		798 = { add_core_of = USA }
+		829 = { add_core_of = USA }
+		833 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		930 = { add_core_of = USA }
+		931 = { add_core_of = USA }
+		932 = { add_core_of = USA }
+		933 = { add_core_of = USA }
+		934 = { add_core_of = USA }
+		935 = { add_core_of = USA }
+		1096 = { add_core_of = USA }
+		1150 = { add_core_of = USA }
+		1151 = { add_core_of = USA }
+		1152 = { add_core_of = USA }
+		1153 = { add_core_of = USA }
+		1154 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1156 = { add_core_of = USA }
+		1157 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1161 = { add_core_of = USA }
+		1162 = { add_core_of = USA }
+		1163 = { add_core_of = USA }
+		1164 = { add_core_of = USA }
+		1165 = { add_core_of = USA }
+		1166 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1171 = { add_core_of = USA }
+		1172 = { add_core_of = USA }
+		1173 = { add_core_of = USA }
+		1174 = { add_core_of = USA }
+		1175 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = TRM_USA_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_MEX = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 277
+				state = 474
+				state = 475
+				state = 476
+				state = 477
+				state = 478
+				state = 479
+				state = 480
+				state = 481
+				state = 482
+				state = 483
+				state = 484
+				state = 485
+				state = 1252
+				state = 1253
+				state = 1254
+				state = 1255
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MEX = { exists = yes }
+			}
+			MEX = { is_subject_of = TRM }
+		}
+		277 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		474 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		475 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		476 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		477 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		478 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		479 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		480 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		481 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		482 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		483 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		484 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		485 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1252 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1253 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1254 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1255 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				277 = { NOT = { is_core_of = TRM } }
+				474 = { NOT = { is_core_of = TRM } }
+				475 = { NOT = { is_core_of = TRM } }
+				476 = { NOT = { is_core_of = TRM } }
+				477 = { NOT = { is_core_of = TRM } }
+				478 = { NOT = { is_core_of = TRM } }
+				479 = { NOT = { is_core_of = TRM } }
+				480 = { NOT = { is_core_of = TRM } }
+				481 = { NOT = { is_core_of = TRM } }
+				482 = { NOT = { is_core_of = TRM } }
+				483 = { NOT = { is_core_of = TRM } }
+				484 = { NOT = { is_core_of = TRM } }
+				485 = { NOT = { is_core_of = TRM } }
+				1252 = { NOT = { is_core_of = TRM } }
+				1253 = { NOT = { is_core_of = TRM } }
+				1254 = { NOT = { is_core_of = TRM } }
+				1255 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MEX = {
+			every_core_state = {
+				remove_core_of = MEX
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MEX
+				}
+				remove_claim_by = MEX
+			}
+		}
+		304 = { add_core_of = MEX }
+		308 = { add_core_of = MEX }
+		311 = { add_core_of = MEX }
+		312 = { add_core_of = MEX }
+		313 = { add_core_of = MEX }
+		314 = { add_core_of = MEX }
+		315 = { add_core_of = MEX }
+		316 = { add_core_of = MEX }
+		317 = { add_core_of = MEX }
+		318 = { add_core_of = MEX }
+		319 = { add_core_of = MEX }
+		685 = { add_core_of = MEX }
+		686 = { add_core_of = MEX }
+		689 = { add_core_of = MEX }
+		690 = { add_core_of = MEX }
+		691 = { add_core_of = MEX }
+		692 = { add_core_of = MEX }
+		694 = { add_core_of = MEX }
+		695 = { add_core_of = MEX }
+		818 = { add_core_of = MEX }
+		820 = { add_core_of = MEX }
+		842 = { add_core_of = MEX }
+		854 = { add_core_of = MEX }
+		1070 = { add_core_of = MEX }
+		1071 = { add_core_of = MEX }
+		1077 = { add_core_of = MEX }
+		1247 = { add_core_of = MEX }
+		1248 = { add_core_of = MEX }
+		1249 = { add_core_of = MEX }
+		1250 = { add_core_of = MEX }
+		1251 = { add_core_of = MEX }
+		1256 = { add_core_of = MEX }
+		1257 = { add_core_of = MEX }
+		1258 = { add_core_of = MEX }
+		1259 = { add_core_of = MEX }
+		1260 = { add_core_of = MEX }
+		1261 = { add_core_of = MEX }
+		1262 = { add_core_of = MEX }
+		1312 = { add_core_of = MEX }
+		277 = { add_core_of = MEX }
+		474 = { add_core_of = MEX }
+		475 = { add_core_of = MEX }
+		476 = { add_core_of = MEX }
+		477 = { add_core_of = MEX }
+		478 = { add_core_of = MEX }
+		479 = { add_core_of = MEX }
+		480 = { add_core_of = MEX }
+		481 = { add_core_of = MEX }
+		482 = { add_core_of = MEX }
+		483 = { add_core_of = MEX }
+		484 = { add_core_of = MEX }
+		485 = { add_core_of = MEX }
+		1252 = { add_core_of = MEX }
+		1253 = { add_core_of = MEX }
+		1254 = { add_core_of = MEX }
+		1255 = { add_core_of = MEX }
+		release = MEX
+		MEX = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = MEX
+			}
+		}
+		MEX = { 
+			set_cosmetic_tag = TRM_MEX_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = MEX
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_VEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 307
+				state = 488
+				state = 489
+				state = 849
+				state = 850
+				state = 912
+				state = 1036
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				VEN = { exists = yes }
+			}
+			VEN = { is_subject_of = TRM }
+		}
+		307 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		488 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		489 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		849 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		850 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		912 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1036 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				307 = { NOT = { is_core_of = TRM } }
+				488 = { NOT = { is_core_of = TRM } }
+				489 = { NOT = { is_core_of = TRM } }
+				849 = { NOT = { is_core_of = TRM } }
+				850 = { NOT = { is_core_of = TRM } }
+				912 = { NOT = { is_core_of = TRM } }
+				1036 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		VEN = {
+			every_core_state = {
+				remove_core_of = VEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = VEN
+				}
+				remove_claim_by = VEN
+			}
+		}
+		305 = { add_core_of = VEN }
+		306 = { add_core_of = VEN }
+		486 = { add_core_of = VEN }
+		490 = { add_core_of = VEN }
+		493 = { add_core_of = VEN }
+		649 = { add_core_of = VEN }
+		851 = { add_core_of = VEN }
+		852 = { add_core_of = VEN }
+		853 = { add_core_of = VEN }
+		1214 = { add_core_of = VEN }
+		1215 = { add_core_of = VEN }
+		1216 = { add_core_of = VEN }
+		1280 = { add_core_of = VEN }
+		1296 = { add_core_of = VEN }
+		307 = { add_core_of = VEN }
+		488 = { add_core_of = VEN }
+		489 = { add_core_of = VEN }
+		849 = { add_core_of = VEN }
+		850 = { add_core_of = VEN }
+		912 = { add_core_of = VEN }
+		1036 = { add_core_of = VEN }
+		release = VEN
+		VEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = VEN
+			}
+		}
+		VEN = { 
+			set_cosmetic_tag = TRM_VEN_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = VEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_PRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 303
+				state = 491
+				state = 492
+				state = 494
+				state = 845
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PRU = { exists = yes }
+			}
+			PRU = { is_subject_of = TRM }
+		}
+		303 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		491 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		492 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		494 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		845 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				303 = { NOT = { is_core_of = TRM } }
+				491 = { NOT = { is_core_of = TRM } }
+				492 = { NOT = { is_core_of = TRM } }
+				494 = { NOT = { is_core_of = TRM } }
+				845 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PRU = {
+			every_core_state = {
+				remove_core_of = PRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PRU
+				}
+				remove_claim_by = PRU
+			}
+		}
+		302 = { add_core_of = PRU }
+		487 = { add_core_of = PRU }
+		506 = { add_core_of = PRU }
+		688 = { add_core_of = PRU }
+		847 = { add_core_of = PRU }
+		848 = { add_core_of = PRU }
+		872 = { add_core_of = PRU }
+		873 = { add_core_of = PRU }
+		901 = { add_core_of = PRU }
+		903 = { add_core_of = PRU }
+		1027 = { add_core_of = PRU }
+		1073 = { add_core_of = PRU }
+		303 = { add_core_of = PRU }
+		491 = { add_core_of = PRU }
+		492 = { add_core_of = PRU }
+		494 = { add_core_of = PRU }
+		845 = { add_core_of = PRU }
+		release = PRU
+		PRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = PRU
+			}
+		}
+		PRU = { 
+			set_cosmetic_tag = TRM_PRU_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = PRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 280
+				state = 495
+				state = 496
+				state = 497
+				state = 498
+				state = 499
+				state = 500
+				state = 501
+				state = 502
+				state = 503
+				state = 504
+				state = 505
+				state = 855
+				state = 894
+				state = 895
+				state = 896
+				state = 898
+				state = 900
+				state = 1030
+				state = 1031
+				state = 1033
+				state = 1040
+				state = 1041
+				state = 1043
+				state = 1305
+				state = 1306
+				state = 1307
+				state = 1310
+				state = 1311
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRA = { exists = yes }
+			}
+			BRA = { is_subject_of = TRM }
+		}
+		280 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		495 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		496 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		497 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		498 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		499 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		500 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		501 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		502 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		503 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		504 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		505 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		855 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		894 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		895 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		896 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		898 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		900 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1030 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1031 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1033 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1040 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1041 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1043 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1305 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1306 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1307 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1310 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1311 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				280 = { NOT = { is_core_of = TRM } }
+				495 = { NOT = { is_core_of = TRM } }
+				496 = { NOT = { is_core_of = TRM } }
+				497 = { NOT = { is_core_of = TRM } }
+				498 = { NOT = { is_core_of = TRM } }
+				499 = { NOT = { is_core_of = TRM } }
+				500 = { NOT = { is_core_of = TRM } }
+				501 = { NOT = { is_core_of = TRM } }
+				502 = { NOT = { is_core_of = TRM } }
+				503 = { NOT = { is_core_of = TRM } }
+				504 = { NOT = { is_core_of = TRM } }
+				505 = { NOT = { is_core_of = TRM } }
+				855 = { NOT = { is_core_of = TRM } }
+				894 = { NOT = { is_core_of = TRM } }
+				895 = { NOT = { is_core_of = TRM } }
+				896 = { NOT = { is_core_of = TRM } }
+				898 = { NOT = { is_core_of = TRM } }
+				900 = { NOT = { is_core_of = TRM } }
+				1030 = { NOT = { is_core_of = TRM } }
+				1031 = { NOT = { is_core_of = TRM } }
+				1033 = { NOT = { is_core_of = TRM } }
+				1040 = { NOT = { is_core_of = TRM } }
+				1041 = { NOT = { is_core_of = TRM } }
+				1043 = { NOT = { is_core_of = TRM } }
+				1305 = { NOT = { is_core_of = TRM } }
+				1306 = { NOT = { is_core_of = TRM } }
+				1307 = { NOT = { is_core_of = TRM } }
+				1310 = { NOT = { is_core_of = TRM } }
+				1311 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRA
+				}
+				remove_claim_by = BRA
+			}
+		}
+		300 = { add_core_of = BRA }
+		301 = { add_core_of = BRA }
+		309 = { add_core_of = BRA }
+		310 = { add_core_of = BRA }
+		510 = { add_core_of = BRA }
+		687 = { add_core_of = BRA }
+		1037 = { add_core_of = BRA }
+		1038 = { add_core_of = BRA }
+		1039 = { add_core_of = BRA }
+		1074 = { add_core_of = BRA }
+		1078 = { add_core_of = BRA }
+		1079 = { add_core_of = BRA }
+		1308 = { add_core_of = BRA }
+		1309 = { add_core_of = BRA }
+		280 = { add_core_of = BRA }
+		495 = { add_core_of = BRA }
+		496 = { add_core_of = BRA }
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		500 = { add_core_of = BRA }
+		501 = { add_core_of = BRA }
+		502 = { add_core_of = BRA }
+		503 = { add_core_of = BRA }
+		504 = { add_core_of = BRA }
+		505 = { add_core_of = BRA }
+		855 = { add_core_of = BRA }
+		894 = { add_core_of = BRA }
+		895 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		898 = { add_core_of = BRA }
+		900 = { add_core_of = BRA }
+		1030 = { add_core_of = BRA }
+		1031 = { add_core_of = BRA }
+		1033 = { add_core_of = BRA }
+		1040 = { add_core_of = BRA }
+		1041 = { add_core_of = BRA }
+		1043 = { add_core_of = BRA }
+		1305 = { add_core_of = BRA }
+		1306 = { add_core_of = BRA }
+		1307 = { add_core_of = BRA }
+		1310 = { add_core_of = BRA }
+		1311 = { add_core_of = BRA }
+		release = BRA
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = TRM_BRA_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_establish_slavic_rk_CHL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 270
+				state = 279
+				state = 507
+				state = 874
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CHL = { exists = yes }
+			}
+			CHL = { is_subject_of = TRM }
+		}
+		270 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		279 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		507 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		874 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				270 = { NOT = { is_core_of = TRM } }
+				279 = { NOT = { is_core_of = TRM } }
+				507 = { NOT = { is_core_of = TRM } }
+				874 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CHL = {
+			every_core_state = {
+				remove_core_of = CHL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CHL
+				}
+				remove_claim_by = CHL
+			}
+		}
+		278 = { add_core_of = CHL }
+		299 = { add_core_of = CHL }
+		449 = { add_core_of = CHL }
+		508 = { add_core_of = CHL }
+		509 = { add_core_of = CHL }
+		511 = { add_core_of = CHL }
+		512 = { add_core_of = CHL }
+		579 = { add_core_of = CHL }
+		720 = { add_core_of = CHL }
+		902 = { add_core_of = CHL }
+		904 = { add_core_of = CHL }
+		1028 = { add_core_of = CHL }
+		1029 = { add_core_of = CHL }
+		270 = { add_core_of = CHL }
+		279 = { add_core_of = CHL }
+		507 = { add_core_of = CHL }
+		874 = { add_core_of = CHL }
+		release = CHL
+		CHL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = CHL
+			}
+		}
+		CHL = { 
+			set_cosmetic_tag = TRM_CHL_SLAVIC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/SVA_portrait.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = CHL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Slavyanskaya Voyennaya Administratsiya"
+				long_name = "Slavyanskaya Voyennaya Administratsiya"
+			}
+		}
+	}
+}
+
+}
