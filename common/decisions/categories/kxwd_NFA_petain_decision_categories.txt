@@ -1,0 +1,30 @@
+NFA_africa_game_PET = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 5
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		has_completed_focus = NFA_martial_law
+		FAR = {
+        exists = yes
+		}
+	}
+}
+NFA_great_game_PET = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 6
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		OR = {
+		has_completed_focus = NFA_military_supremacy
+		has_completed_focus = NFA_break_parliamentarism
+		}
+	}
+}
