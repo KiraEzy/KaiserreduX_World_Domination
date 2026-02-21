@@ -152,7 +152,7 @@ shared_focus = {
     relative_position_id = SHXWD_guominjun_china
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_papal_mission"
-        add_ideas = KXWD_SHX_papal_mission_1
+        add_political_power = 500
 	}
 }
 
@@ -169,10 +169,15 @@ shared_focus = {
     relative_position_id = SHXWD_papal_mission
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_papal_backing"
-        swap_ideas = {
-            remove_idea = KXWD_SHX_papal_mission_1
-            add_idea = KXWD_SHX_papal_mission_2
-        }
+		SHX = {
+			every_owned_state = {
+				set_building_level = {
+    				type = infrastructure
+    				level = 10
+    				instant_build = yes
+				}
+			}
+		}
 	}
 }
 
@@ -189,10 +194,7 @@ shared_focus = {
     relative_position_id = SHXWD_papal_backing
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SHXWD_china_church"
-        swap_ideas = {
-            remove_idea = KXWD_SHX_papal_mission_2
-            add_idea = KXWD_SHX_china_church
-        }
+        add_ideas = { KXWD_SHX_china_church }
 	}
 }
 
