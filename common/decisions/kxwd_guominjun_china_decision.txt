@@ -1,4 +1,34 @@
 SHX_great_game = {
+	SHXWD_flag_picker = {
+		icon = rus_flag
+		
+		allowed = {
+			tag = SHX
+		}
+		visible = {
+			OR ={ 
+				has_cosmetic_tag = ROC
+				has_cosmetic_tag = SHX_ROC_1
+				has_cosmetic_tag = SHX_ROC_2
+				has_cosmetic_tag = SHX_ROC_3
+				has_cosmetic_tag = SHX_ROC_4
+				has_cosmetic_tag = SHX_ROC_5
+				has_cosmetic_tag = SHX_ROC_6
+				has_cosmetic_tag = SHX_ROC_7
+				has_cosmetic_tag = SHX_ROC_8
+			}
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 5
+		
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wdflag.1
+		}
+	}
     SHX_establish_rk_KOR = {
 	icon = generic_prepare_civil_war
 
