@@ -6829,7 +6829,11 @@ ROMA_great_game = {
 			highlight_states = {
 				highlight_state_targets = {
 							state = 426
-					state = 430
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 431
 					state = 432
 					state = 434
@@ -6845,7 +6849,11 @@ ROMA_great_game = {
 	
 		available = {
 			426 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
-			430 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1358 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+1359 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+1362 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+1363 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+430 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			431 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			432 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			434 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
@@ -6868,7 +6876,11 @@ ROMA_great_game = {
 			}
 			release = BHC
 			426 = { add_core_of = BHC }
-			430 = { add_core_of = BHC }
+			1358 = { add_core_of = BHC }
+1359 = { add_core_of = BHC }
+1362 = { add_core_of = BHC }
+1363 = { add_core_of = BHC }
+430 = { add_core_of = BHC }
 			431 = { add_core_of = BHC }
 			432 = { add_core_of = BHC }
 			434 = { add_core_of = BHC }
@@ -7383,9 +7395,12 @@ ROMA_great_game = {
 		
 			highlight_states = {
 				highlight_state_targets = {
-							state = 424
+					state = 424
 					state = 427
-					state = 429
+					state = 1361
+					state = 1360
+					state = 429	
+					state = 430
 					state = 868
 					state = 889
 					state = 893
@@ -7398,6 +7413,8 @@ ROMA_great_game = {
 		available = {
 			424 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			427 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1361 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+			1360 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			429 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			868 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 			889 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
@@ -7418,7 +7435,9 @@ ROMA_great_game = {
 			release = PRF
 			424 = { add_core_of = PRF }
 			427 = { add_core_of = PRF }
-			429 = { add_core_of = PRF }
+			1361 = { add_core_of = PRF}
+			1360 = { add_core_of = PRF}
+			429 = { add_core_of = PRF}
 			868 = { add_core_of = PRF }
 			889 = { add_core_of = PRF }
 			893 = { add_core_of = PRF }

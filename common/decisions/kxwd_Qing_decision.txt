@@ -9102,7 +9102,11 @@ QING_great_game = {
 			highlight_states = {
 				highlight_state_targets = {
 					state = 426
-					state = 430
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 431
 					state = 432
 					state = 434
@@ -9123,7 +9127,11 @@ QING_great_game = {
 				BHC = { is_subject_of = QIE }
 			}
 			426 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
-			430 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+			1358 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+1359 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+1362 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+1363 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
+430 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
 			431 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
 			432 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
 			434 = { owner = { OR = { original_tag = QIE is_subject_of = QIE } } }
@@ -9162,7 +9170,11 @@ QING_great_game = {
 				}
 			}
 			426 = { add_core_of = BHC }
-			430 = { add_core_of = BHC }
+			1358 = { add_core_of = BHC }
+1359 = { add_core_of = BHC }
+1362 = { add_core_of = BHC }
+1363 = { add_core_of = BHC }
+430 = { add_core_of = BHC }
 			431 = { add_core_of = BHC }
 			432 = { add_core_of = BHC }
 			434 = { add_core_of = BHC }
@@ -9277,7 +9289,9 @@ QING_great_game = {
 					remove_claim_by = PRF
 				}
 			}
-			429 = { add_core_of = PRF }
+			1361 = { add_core_of = PRF}
+		1360 = { add_core_of = PRF}
+		429 = { add_core_of = PRF}
 			893 = { add_core_of = PRF }
 			425 = { add_core_of = PRF }
 			424 = { add_core_of = PRF }
