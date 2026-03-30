@@ -3486,19 +3486,25 @@ RUS_Foreign_Policy_decisions = {
 
 		available = {
 			tag = RUS
-			OR = {
-			RUS_is_absolute_monarchy = yes
-			RUS_natpops_in_power = yes
-			RUS_kornilov_in_power = yes
-			RUS_denikin_in_power = yes
-			RUS_wrangel_in_power = yes
-			has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+			has_completed_focus = RUS_Expansionism
+	        ALB = { is_subject_of = RUS }
 		}
 		
 		visible = {
-			has_completed_focus = RUS_Expansionism
-	        ALB = { is_subject_of = RUS }
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
 		cost = 25
