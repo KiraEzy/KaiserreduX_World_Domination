@@ -366,7 +366,7 @@ JAP_establish_rk_SQI = {
 	}
 }
 
-JAP_establish_rk_ANQ = {
+JAP_establish_rk_CHI = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -380,9 +380,9 @@ JAP_establish_rk_ANQ = {
 	available = {
 		if = {
 			limit = {
-				ANQ = { exists = yes }
+				CHI = { exists = yes }
 			}
-			ANQ = { is_subject_of = JAP }
+			CHI = { is_subject_of = JAP }
 		}
 		613 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		OR = {
@@ -396,46 +396,46 @@ JAP_establish_rk_ANQ = {
 		factor = 5
 	}
 	complete_effect = {
-		ANQ = {
+		CHI = {
 			every_core_state = {
-				remove_core_of = ANQ
+				remove_core_of = CHI
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = ANQ
+					is_claimed_by = CHI
 				}
-				remove_claim_by = ANQ
+				remove_claim_by = CHI
 			}
 		}
-		595 = { add_core_of = ANQ }
-		596 = { add_core_of = ANQ }
-		598 = { add_core_of = ANQ }
-		600 = { add_core_of = ANQ }
-		606 = { add_core_of = ANQ }
-		607 = { add_core_of = ANQ }
-		620 = { add_core_of = ANQ }
-		743 = { add_core_of = ANQ }
-		746 = { add_core_of = ANQ }
-		747 = { add_core_of = ANQ }
-		802 = { add_core_of = ANQ }
-		803 = { add_core_of = ANQ }
-		1014 = { add_core_of = ANQ }
-		1044 = { add_core_of = ANQ }
-		1045 = { add_core_of = ANQ }
-		1046 = { add_core_of = ANQ }
-		1047 = { add_core_of = ANQ }
-		1048 = { add_core_of = ANQ }
-		1050 = { add_core_of = ANQ }
-		1058 = { add_core_of = ANQ }
-		1059 = { add_core_of = ANQ }
-		1066 = { add_core_of = ANQ }
-		1067 = { add_core_of = ANQ }
-		1068 = { add_core_of = ANQ }
-		1069 = { add_core_of = ANQ }
-		1075 = { add_core_of = ANQ }
-		613 = { add_core_of = ANQ }
-		release = ANQ
-		ANQ = { 
+		595 = { add_core_of = CHI }
+		596 = { add_core_of = CHI }
+		598 = { add_core_of = CHI }
+		600 = { add_core_of = CHI }
+		606 = { add_core_of = CHI }
+		607 = { add_core_of = CHI }
+		620 = { add_core_of = CHI }
+		743 = { add_core_of = CHI }
+		746 = { add_core_of = CHI }
+		747 = { add_core_of = CHI }
+		802 = { add_core_of = CHI }
+		803 = { add_core_of = CHI }
+		1014 = { add_core_of = CHI }
+		1044 = { add_core_of = CHI }
+		1045 = { add_core_of = CHI }
+		1046 = { add_core_of = CHI }
+		1047 = { add_core_of = CHI }
+		1048 = { add_core_of = CHI }
+		1050 = { add_core_of = CHI }
+		1058 = { add_core_of = CHI }
+		1059 = { add_core_of = CHI }
+		1066 = { add_core_of = CHI }
+		1067 = { add_core_of = CHI }
+		1068 = { add_core_of = CHI }
+		1069 = { add_core_of = CHI }
+		1075 = { add_core_of = CHI }
+		613 = { add_core_of = CHI }
+		release = CHI
+		CHI = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -448,11 +448,11 @@ JAP_establish_rk_ANQ = {
 						}
 					}
 				}
-				transfer_state_to = ANQ
+				transfer_state_to = CHI
 			}
 		}
-		ANQ = { 
-			set_cosmetic_tag = JAP_ANQ_OCC
+		CHI = { 
+			set_cosmetic_tag = JAP_CHI_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -466,7 +466,7 @@ JAP_establish_rk_ANQ = {
 
 			JAP = {
 				set_autonomy = {
-					target = ANQ
+					target = CHI
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -5384,7 +5384,7 @@ JAP_establish_rk_IRQ = {
 	}
 }
 
-JAP_establish_rk_SAU = {
+JAP_establish_rk_TRU = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -5401,9 +5401,9 @@ JAP_establish_rk_SAU = {
 	available = {
 		if = {
 			limit = {
-				SAU = { exists = yes }
+				TRU = { exists = yes }
 			}
-			SAU = { is_subject_of = JAP }
+			TRU = { is_subject_of = JAP }
 		}
 		292 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		675 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -5423,41 +5423,41 @@ JAP_establish_rk_SAU = {
 		factor = 5
 	}
 	complete_effect = {
-		SAU = {
+		TRU = {
 			every_core_state = {
-				remove_core_of = SAU
+				remove_core_of = TRU
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = SAU
+					is_claimed_by = TRU
 				}
-				remove_claim_by = SAU
+				remove_claim_by = TRU
 			}
 		}
-		293 = { add_core_of = SAU }
-		294 = { add_core_of = SAU }
-		347 = { add_core_of = SAU }
-		656 = { add_core_of = SAU }
-		658 = { add_core_of = SAU }
-		659 = { add_core_of = SAU }
-		679 = { add_core_of = SAU }
-		752 = { add_core_of = SAU }
-		754 = { add_core_of = SAU }
-		859 = { add_core_of = SAU }
-		907 = { add_core_of = SAU }
-		915 = { add_core_of = SAU }
-		981 = { add_core_of = SAU }
-		982 = { add_core_of = SAU }
-		993 = { add_core_of = SAU }
-		994 = { add_core_of = SAU }
-		1024 = { add_core_of = SAU }
-		1035 = { add_core_of = SAU }
-		292 = { add_core_of = SAU }
-		675 = { add_core_of = SAU }
-		678 = { add_core_of = SAU }
-		991 = { add_core_of = SAU }
-		release = SAU
-		SAU = { 
+		293 = { add_core_of = TRU }
+		294 = { add_core_of = TRU }
+		347 = { add_core_of = TRU }
+		656 = { add_core_of = TRU }
+		658 = { add_core_of = TRU }
+		659 = { add_core_of = TRU }
+		679 = { add_core_of = TRU }
+		752 = { add_core_of = TRU }
+		754 = { add_core_of = TRU }
+		859 = { add_core_of = TRU }
+		907 = { add_core_of = TRU }
+		915 = { add_core_of = TRU }
+		981 = { add_core_of = TRU }
+		982 = { add_core_of = TRU }
+		993 = { add_core_of = TRU }
+		994 = { add_core_of = TRU }
+		1024 = { add_core_of = TRU }
+		1035 = { add_core_of = TRU }
+		292 = { add_core_of = TRU }
+		675 = { add_core_of = TRU }
+		678 = { add_core_of = TRU }
+		991 = { add_core_of = TRU }
+		release = TRU
+		TRU = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -5470,11 +5470,11 @@ JAP_establish_rk_SAU = {
 						}
 					}
 				}
-				transfer_state_to = SAU
+				transfer_state_to = TRU
 			}
 		}
-		SAU = { 
-			set_cosmetic_tag = JAP_SAU_OCC
+		TRU = { 
+			set_cosmetic_tag = JAP_TRU_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5488,7 +5488,7 @@ JAP_establish_rk_SAU = {
 
 			JAP = {
 				set_autonomy = {
-					target = SAU
+					target = TRU
 					autonomous_state = kx_colored_puppet
 				}
 			}
