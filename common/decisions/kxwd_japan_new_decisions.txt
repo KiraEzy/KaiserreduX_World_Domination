@@ -257,7 +257,7 @@ JAP_establish_rk_QIE = {
 	}
 }
 
-JAP_establish_rk_SHQ = {
+JAP_establish_rk_SQI = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -273,9 +273,9 @@ JAP_establish_rk_SHQ = {
 	available = {
 		if = {
 			limit = {
-				SHQ = { exists = yes }
+				SQI = { exists = yes }
 			}
-			SHQ = { is_subject_of = JAP }
+			SQI = { is_subject_of = JAP }
 		}
 		597 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		1064 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
@@ -293,24 +293,24 @@ JAP_establish_rk_SHQ = {
 		factor = 5
 	}
 	complete_effect = {
-		SHQ = {
+		SQI = {
 			every_core_state = {
-				remove_core_of = SHQ
+				remove_core_of = SQI
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = SHQ
+					is_claimed_by = SQI
 				}
-				remove_claim_by = SHQ
+				remove_claim_by = SQI
 			}
 		}
-		744 = { add_core_of = SHQ }
-		996 = { add_core_of = SHQ }
-		597 = { add_core_of = SHQ }
-		1064 = { add_core_of = SHQ }
-		1065 = { add_core_of = SHQ }
-		release = SHQ
-		SHQ = { 
+		744 = { add_core_of = SQI }
+		996 = { add_core_of = SQI }
+		597 = { add_core_of = SQI }
+		1064 = { add_core_of = SQI }
+		1065 = { add_core_of = SQI }
+		release = SQI
+		SQI = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -323,11 +323,11 @@ JAP_establish_rk_SHQ = {
 						}
 					}
 				}
-				transfer_state_to = SHQ
+				transfer_state_to = SQI
 			}
 		}
-		SHQ = { 
-			set_cosmetic_tag = JAP_SHQ_OCC
+		SQI = { 
+			set_cosmetic_tag = JAP_SQI_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -341,7 +341,7 @@ JAP_establish_rk_SHQ = {
 
 			JAP = {
 				set_autonomy = {
-					target = SHQ
+					target = SQI
 					autonomous_state = kx_colored_puppet
 				}
 			}
