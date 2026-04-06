@@ -4104,15 +4104,13 @@ JAP_establish_rk_UKR = {
 	}
 }
 
-JAP_establish_rk_LIT = {
+JAP_establish_rk_LAT = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 11
-				state = 96
-				state = 189
-				state = 655
+				state = 12
+				state = 190
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -4121,19 +4119,15 @@ JAP_establish_rk_LIT = {
 	available = {
 		if = {
 			limit = {
-				LIT = { exists = yes }
+				LAT = { exists = yes }
 			}
-			LIT = { is_subject_of = JAP }
+			LAT = { is_subject_of = JAP }
 		}
-		11 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-		96 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-		189 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-		655 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+		12 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+		190 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		OR = {
-				11 = { NOT = { is_core_of = JAP } }
-				96 = { NOT = { is_core_of = JAP } }
-				189 = { NOT = { is_core_of = JAP } }
-				655 = { NOT = { is_core_of = JAP } }
+				12 = { NOT = { is_core_of = JAP } }
+				190 = { NOT = { is_core_of = JAP } }
 		}
 	}
 
@@ -4143,45 +4137,45 @@ JAP_establish_rk_LIT = {
 		factor = 5
 	}
 	complete_effect = {
-		LIT = {
+		LAT = {
 			every_core_state = {
-				remove_core_of = LIT
+				remove_core_of = LAT
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = LIT
+					is_claimed_by = LAT
 				}
-				remove_claim_by = LIT
+				remove_claim_by = LAT
 			}
 		}
-		12 = { add_core_of = LIT }
-		13 = { add_core_of = LIT }
-		94 = { add_core_of = LIT }
-		188 = { add_core_of = LIT }
-		190 = { add_core_of = LIT }
-		191 = { add_core_of = LIT }
-		204 = { add_core_of = LIT }
-		206 = { add_core_of = LIT }
-		207 = { add_core_of = LIT }
-		209 = { add_core_of = LIT }
-		243 = { add_core_of = LIT }
-		755 = { add_core_of = LIT }
-		880 = { add_core_of = LIT }
-		1087 = { add_core_of = LIT }
-		1091 = { add_core_of = LIT }
-		1287 = { add_core_of = LIT }
-		1288 = { add_core_of = LIT }
-		1290 = { add_core_of = LIT }
-		1291 = { add_core_of = LIT }
-		1294 = { add_core_of = LIT }
-		1295 = { add_core_of = LIT }
-		1329 = { add_core_of = LIT }
-		11 = { add_core_of = LIT }
-		96 = { add_core_of = LIT }
-		189 = { add_core_of = LIT }
-		655 = { add_core_of = LIT }
-		release = LIT
-		LIT = { 
+		12 = { add_core_of = LAT }
+		13 = { add_core_of = LAT }
+		94 = { add_core_of = LAT }
+		188 = { add_core_of = LAT }
+		190 = { add_core_of = LAT }
+		191 = { add_core_of = LAT }
+		204 = { add_core_of = LAT }
+		206 = { add_core_of = LAT }
+		207 = { add_core_of = LAT }
+		209 = { add_core_of = LAT }
+		243 = { add_core_of = LAT }
+		755 = { add_core_of = LAT }
+		880 = { add_core_of = LAT }
+		1087 = { add_core_of = LAT }
+		1091 = { add_core_of = LAT }
+		1287 = { add_core_of = LAT }
+		1288 = { add_core_of = LAT }
+		1290 = { add_core_of = LAT }
+		1291 = { add_core_of = LAT }
+		1294 = { add_core_of = LAT }
+		1295 = { add_core_of = LAT }
+		1329 = { add_core_of = LAT }
+		11 = { add_core_of = LAT }
+		96 = { add_core_of = LAT }
+		189 = { add_core_of = LAT }
+		655 = { add_core_of = LAT }
+		release = LAT
+		LAT = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -4194,11 +4188,11 @@ JAP_establish_rk_LIT = {
 						}
 					}
 				}
-				transfer_state_to = LIT
+				transfer_state_to = LAT
 			}
 		}
-		LIT = { 
-			set_cosmetic_tag = JAP_LIT_OCC
+		LAT = { 
+			set_cosmetic_tag = JAP_LAT_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4212,7 +4206,7 @@ JAP_establish_rk_LIT = {
 
 			JAP = {
 				set_autonomy = {
-					target = LIT
+					target = LAT
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -5389,10 +5383,9 @@ JAP_establish_rk_TRU = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 292
-				state = 675
-				state = 678
-				state = 991
+				state = 907
+				state = 993
+				state = 658
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -5405,15 +5398,13 @@ JAP_establish_rk_TRU = {
 			}
 			TRU = { is_subject_of = JAP }
 		}
-		292 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-		675 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-		678 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
-		991 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+		907 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+		993 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+		658 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		OR = {
-				292 = { NOT = { is_core_of = JAP } }
-				675 = { NOT = { is_core_of = JAP } }
-				678 = { NOT = { is_core_of = JAP } }
-				991 = { NOT = { is_core_of = JAP } }
+				907 = { NOT = { is_core_of = JAP } }
+				993 = { NOT = { is_core_of = JAP } }
+				658 = { NOT = { is_core_of = JAP } }
 		}
 	}
 
