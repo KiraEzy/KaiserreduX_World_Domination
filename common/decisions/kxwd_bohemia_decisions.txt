@@ -1,0 +1,7348 @@
+CZE_HUS_great_game = {
+	CZE_establish_rk_SWI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 3
+				state = 151
+				state = 760
+				state = 761
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SWI = { exists = yes }
+			}
+			SWI = { is_subject_of = CZE }
+		}
+		3 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		151 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		760 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		761 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				3 = { NOT = { is_core_of = CZE } }
+				151 = { NOT = { is_core_of = CZE } }
+				760 = { NOT = { is_core_of = CZE } }
+				761 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWI = {
+			every_core_state = {
+				remove_core_of = SWI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SWI
+				}
+				remove_claim_by = SWI
+			}
+		}
+		3 = { add_core_of = SWI }
+		151 = { add_core_of = SWI }
+		760 = { add_core_of = SWI }
+		761 = { add_core_of = SWI }
+		release = SWI
+		SWI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = SWI
+			}
+		}
+		SWI = { 
+			set_cosmetic_tag = CZE_SWI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = SWI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_HOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 7
+				state = 35
+				state = 36
+				state = 979
+				state = 978
+				state = 866
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HOL = { exists = yes }
+			}
+			HOL = { is_subject_of = CZE }
+		}
+		7 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		35 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		36 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		979 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		978 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		866 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				7 = { NOT = { is_core_of = CZE } }
+				35 = { NOT = { is_core_of = CZE } }
+				36 = { NOT = { is_core_of = CZE } }
+				979 = { NOT = { is_core_of = CZE } }
+				978 = { NOT = { is_core_of = CZE } }
+				866 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HOL = {
+			every_core_state = {
+				remove_core_of = HOL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HOL
+				}
+				remove_claim_by = HOL
+			}
+		}
+		7 = { add_core_of = HOL }
+		35 = { add_core_of = HOL }
+		36 = { add_core_of = HOL }
+		979 = { add_core_of = HOL }
+		978 = { add_core_of = HOL }
+		866 = { add_core_of = HOL }
+		release = HOL
+		HOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = HOL
+			}
+		}
+		HOL = { 
+			set_cosmetic_tag = CZE_HOL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = HOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_BEL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+				state = 741
+				state = 34
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = { is_subject_of = CZE }
+		}
+		6 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		741 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		34 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				6 = { NOT = { is_core_of = CZE } }
+				741 = { NOT = { is_core_of = CZE } }
+				34 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BEL = {
+			every_core_state = {
+				remove_core_of = BEL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BEL
+				}
+				remove_claim_by = BEL
+			}
+		}
+		6 = { add_core_of = BEL }
+		741 = { add_core_of = BEL }
+		34 = { add_core_of = BEL }
+		release = BEL
+		BEL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = BEL
+			}
+		}
+		BEL = { 
+			set_cosmetic_tag = CZE_BEL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = BEL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+				state = 99
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = CZE }
+		}
+		37 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		99 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				37 = { NOT = { is_core_of = CZE } }
+				99 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		38 = { add_core_of = DEN }
+		124 = { add_core_of = DEN }
+		138 = { add_core_of = DEN }
+		139 = { add_core_of = DEN }
+		140 = { add_core_of = DEN }
+		141 = { add_core_of = DEN }
+		666 = { add_core_of = DEN }
+		778 = { add_core_of = DEN }
+		908 = { add_core_of = DEN }
+		909 = { add_core_of = DEN }
+		960 = { add_core_of = DEN }
+		110 = { add_core_of = DEN }
+		111 = { add_core_of = DEN }
+		142 = { add_core_of = DEN }
+		143 = { add_core_of = DEN }
+		144 = { add_core_of = DEN }
+		145 = { add_core_of = DEN }
+		146 = { add_core_of = DEN }
+		147 = { add_core_of = DEN }
+		148 = { add_core_of = DEN }
+		149 = { add_core_of = DEN }
+		150 = { add_core_of = DEN }
+		840 = { add_core_of = DEN }
+		844 = { add_core_of = DEN }
+		863 = { add_core_of = DEN }
+		864 = { add_core_of = DEN }
+		865 = { add_core_of = DEN }
+		936 = { add_core_of = DEN }
+		937 = { add_core_of = DEN }
+		1146 = { add_core_of = DEN }
+		1147 = { add_core_of = DEN }
+		1324 = { add_core_of = DEN }
+		1325 = { add_core_of = DEN }
+		1326 = { add_core_of = DEN }
+		100 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		37 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = CZE_DEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_BAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BAT = { exists = yes }
+			}
+			BAT = { is_subject_of = CZE }
+		}
+		1091 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				1091 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BAT = {
+			every_core_state = {
+				remove_core_of = BAT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BAT
+				}
+				remove_claim_by = BAT
+			}
+		}
+		12 = { add_core_of = BAT }
+		13 = { add_core_of = BAT }
+		190 = { add_core_of = BAT }
+		191 = { add_core_of = BAT }
+		880 = { add_core_of = BAT }
+		1288 = { add_core_of = BAT }
+		1091 = { add_core_of = BAT }
+		release = BAT
+		BAT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = BAT
+			}
+		}
+		BAT = { 
+			set_cosmetic_tag = CZE_BAT_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = BAT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = CZE }
+		}
+		16 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				16 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		14 = { add_core_of = FRP }
+		15 = { add_core_of = FRP }
+		1334 = { add_core_of = FRP }
+		17 = { add_core_of = FRP }
+		18 = { add_core_of = FRP }
+		19 = { add_core_of = FRP }
+		20 = { add_core_of = FRP }
+		21 = { add_core_of = FRP }
+		22 = { add_core_of = FRP }
+		23 = { add_core_of = FRP }
+		24 = { add_core_of = FRP }
+		25 = { add_core_of = FRP }
+		26 = { add_core_of = FRP }
+		27 = { add_core_of = FRP }
+		30 = { add_core_of = FRP }
+		31 = { add_core_of = FRP }
+		32 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		735 = { add_core_of = FRP }
+		762 = { add_core_of = FRP }
+		763 = { add_core_of = FRP }
+		785 = { add_core_of = FRP }
+		817 = { add_core_of = FRP }
+		943 = { add_core_of = FRP }
+		980 = { add_core_of = FRP }
+		983 = { add_core_of = FRP }
+		984 = { add_core_of = FRP }
+		779 = { add_core_of = FRP }
+		1 = { add_core_of = FRP }
+		29 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = CZE_FRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_ITA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 159
+				state = 160
+				state = 759
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ITA = { exists = yes }
+			}
+			ITA = { is_subject_of = CZE }
+		}
+		159 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		160 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		759 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				159 = { NOT = { is_core_of = CZE } }
+				160 = { NOT = { is_core_of = CZE } }
+				759 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ITA = {
+			every_core_state = {
+				remove_core_of = ITA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ITA
+				}
+				remove_claim_by = ITA
+			}
+		}
+		115 = { add_core_of = ITA }
+		117 = { add_core_of = ITA }
+		156 = { add_core_of = ITA }
+		742 = { add_core_of = ITA }
+		837 = { add_core_of = ITA }
+		1006 = { add_core_of = ITA }
+		2 = { add_core_of = ITA }
+		114 = { add_core_of = ITA }
+		157 = { add_core_of = ITA }
+		158 = { add_core_of = ITA }
+		161 = { add_core_of = ITA }
+		162 = { add_core_of = ITA }
+		764 = { add_core_of = ITA }
+		838 = { add_core_of = ITA }
+		1002 = { add_core_of = ITA }
+		1003 = { add_core_of = ITA }
+		1004 = { add_core_of = ITA }
+		1005 = { add_core_of = ITA }
+		1149 = { add_core_of = ITA }
+		1236 = { add_core_of = ITA }
+		116 = { add_core_of = ITA }
+		159 = { add_core_of = ITA }
+		160 = { add_core_of = ITA }
+		759 = { add_core_of = ITA }
+		release = ITA
+		ITA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = ITA
+			}
+		}
+		ITA = { 
+			set_cosmetic_tag = CZE_ITA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = ITA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_SPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+				state = 118
+				state = 165
+				state = 166
+				state = 167
+				state = 168
+				state = 169
+				state = 170
+				state = 171
+				state = 172
+				state = 173
+				state = 174
+				state = 175
+				state = 176
+				state = 177
+				state = 178
+				state = 1344
+				state = 1341
+				state = 1343
+				state = 793
+				state = 795
+				state = 940
+				state = 951
+				state = 1313
+				state = 1316
+				state = 1342
+				state = 1340
+				state = 1336
+				state = 1337
+				state = 1338
+				state = 1339
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SPR = { exists = yes }
+			}
+			SPR = { is_subject_of = CZE }
+		}
+		41 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		118 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		165 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		166 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		167 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		168 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		169 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		170 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		171 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		172 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		173 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		174 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		175 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		176 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		177 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		178 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1344 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1341 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1343 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		793 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		795 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		940 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		951 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1313 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1316 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1342 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1340 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1336 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1337 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1338 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1339 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				41 = { NOT = { is_core_of = CZE } }
+				118 = { NOT = { is_core_of = CZE } }
+				165 = { NOT = { is_core_of = CZE } }
+				166 = { NOT = { is_core_of = CZE } }
+				167 = { NOT = { is_core_of = CZE } }
+				168 = { NOT = { is_core_of = CZE } }
+				169 = { NOT = { is_core_of = CZE } }
+				170 = { NOT = { is_core_of = CZE } }
+				171 = { NOT = { is_core_of = CZE } }
+				172 = { NOT = { is_core_of = CZE } }
+				173 = { NOT = { is_core_of = CZE } }
+				174 = { NOT = { is_core_of = CZE } }
+				175 = { NOT = { is_core_of = CZE } }
+				176 = { NOT = { is_core_of = CZE } }
+				177 = { NOT = { is_core_of = CZE } }
+				178 = { NOT = { is_core_of = CZE } }
+				1344 = { NOT = { is_core_of = CZE } }
+				1341 = { NOT = { is_core_of = CZE } }
+				1343 = { NOT = { is_core_of = CZE } }
+				793 = { NOT = { is_core_of = CZE } }
+				795 = { NOT = { is_core_of = CZE } }
+				940 = { NOT = { is_core_of = CZE } }
+				951 = { NOT = { is_core_of = CZE } }
+				1313 = { NOT = { is_core_of = CZE } }
+				1316 = { NOT = { is_core_of = CZE } }
+				1342 = { NOT = { is_core_of = CZE } }
+				1340 = { NOT = { is_core_of = CZE } }
+				1336 = { NOT = { is_core_of = CZE } }
+				1337 = { NOT = { is_core_of = CZE } }
+				1338 = { NOT = { is_core_of = CZE } }
+				1339 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SPR = {
+			every_core_state = {
+				remove_core_of = SPR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SPR
+				}
+				remove_claim_by = SPR
+			}
+		}
+		41 = { add_core_of = SPR }
+		118 = { add_core_of = SPR }
+		165 = { add_core_of = SPR }
+		166 = { add_core_of = SPR }
+		167 = { add_core_of = SPR }
+		168 = { add_core_of = SPR }
+		169 = { add_core_of = SPR }
+		170 = { add_core_of = SPR }
+		171 = { add_core_of = SPR }
+		172 = { add_core_of = SPR }
+		173 = { add_core_of = SPR }
+		174 = { add_core_of = SPR }
+		175 = { add_core_of = SPR }
+		176 = { add_core_of = SPR }
+		177 = { add_core_of = SPR }
+		178 = { add_core_of = SPR }
+		1344 = { add_core_of = SPR }
+		1341 = { add_core_of = SPR }
+		1343 = { add_core_of = SPR }
+		793 = { add_core_of = SPR }
+		795 = { add_core_of = SPR }
+		940 = { add_core_of = SPR }
+		951 = { add_core_of = SPR }
+		1313 = { add_core_of = SPR }
+		1316 = { add_core_of = SPR }
+		1342 = { add_core_of = SPR }
+		1340 = { add_core_of = SPR }
+		1336 = { add_core_of = SPR }
+		1337 = { add_core_of = SPR }
+		1338 = { add_core_of = SPR }
+		1339 = { add_core_of = SPR }
+		release = SPR
+		SPR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = SPR
+			}
+		}
+		SPR = { 
+			set_cosmetic_tag = CZE_SPR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_POR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 112
+				state = 179
+				state = 180
+				state = 181
+				state = 698
+				state = 702
+				state = 697
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POR = { exists = yes }
+			}
+			POR = { is_subject_of = CZE }
+		}
+		112 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		179 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		180 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		181 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		698 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		702 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		697 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				112 = { NOT = { is_core_of = CZE } }
+				179 = { NOT = { is_core_of = CZE } }
+				180 = { NOT = { is_core_of = CZE } }
+				181 = { NOT = { is_core_of = CZE } }
+				698 = { NOT = { is_core_of = CZE } }
+				702 = { NOT = { is_core_of = CZE } }
+				697 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POR = {
+			every_core_state = {
+				remove_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POR
+				}
+				remove_claim_by = POR
+			}
+		}
+		112 = { add_core_of = POR }
+		179 = { add_core_of = POR }
+		180 = { add_core_of = POR }
+		181 = { add_core_of = POR }
+		698 = { add_core_of = POR }
+		702 = { add_core_of = POR }
+		697 = { add_core_of = POR }
+		release = POR
+		POR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = POR
+			}
+		}
+		POR = { 
+			set_cosmetic_tag = CZE_POR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = POR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = CZE }
+		}
+		126 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				126 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		120 = { add_core_of = GBP }
+		121 = { add_core_of = GBP }
+		122 = { add_core_of = GBP }
+		123 = { add_core_of = GBP }
+		125 = { add_core_of = GBP }
+		1317 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		130 = { add_core_of = GBP }
+		131 = { add_core_of = GBP }
+		132 = { add_core_of = GBP }
+		133 = { add_core_of = GBP }
+		136 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		938 = { add_core_of = GBP }
+		1225 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = CZE_GBP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_IRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 113
+				state = 119
+				state = 134
+				state = 135
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRE = { exists = yes }
+			}
+			IRE = { is_subject_of = CZE }
+		}
+		113 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		119 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		134 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		135 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				113 = { NOT = { is_core_of = CZE } }
+				119 = { NOT = { is_core_of = CZE } }
+				134 = { NOT = { is_core_of = CZE } }
+				135 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRE = {
+			every_core_state = {
+				remove_core_of = IRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRE
+				}
+				remove_claim_by = IRE
+			}
+		}
+		113 = { add_core_of = IRE }
+		119 = { add_core_of = IRE }
+		134 = { add_core_of = IRE }
+		135 = { add_core_of = IRE }
+		release = IRE
+		IRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = IRE
+			}
+		}
+		IRE = { 
+			set_cosmetic_tag = CZE_IRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = IRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_POL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+				state = 87
+				state = 90
+				state = 92
+				state = 97
+				state = 98
+				state = 1088
+				state = 1148
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POL = { exists = yes }
+			}
+			POL = { is_subject_of = CZE }
+		}
+		10 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		87 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		90 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		92 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		97 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		98 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1088 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1148 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				10 = { NOT = { is_core_of = CZE } }
+				87 = { NOT = { is_core_of = CZE } }
+				90 = { NOT = { is_core_of = CZE } }
+				92 = { NOT = { is_core_of = CZE } }
+				97 = { NOT = { is_core_of = CZE } }
+				98 = { NOT = { is_core_of = CZE } }
+				1088 = { NOT = { is_core_of = CZE } }
+				1148 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POL = {
+			every_core_state = {
+				remove_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POL
+				}
+				remove_claim_by = POL
+			}
+		}
+		11 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+		89 = { add_core_of = POL }
+		91 = { add_core_of = POL }
+		93 = { add_core_of = POL }
+		94 = { add_core_of = POL }
+		95 = { add_core_of = POL }
+		96 = { add_core_of = POL }
+		189 = { add_core_of = POL }
+		199 = { add_core_of = POL }
+		207 = { add_core_of = POL }
+		655 = { add_core_of = POL }
+		792 = { add_core_of = POL }
+		997 = { add_core_of = POL }
+		1124 = { add_core_of = POL }
+		1125 = { add_core_of = POL }
+		1126 = { add_core_of = POL }
+		1127 = { add_core_of = POL }
+		1140 = { add_core_of = POL }
+		1228 = { add_core_of = POL }
+		1295 = { add_core_of = POL }
+		1314 = { add_core_of = POL }
+		1319 = { add_core_of = POL }
+		1329 = { add_core_of = POL }
+		10 = { add_core_of = POL }
+		87 = { add_core_of = POL }
+		90 = { add_core_of = POL }
+		92 = { add_core_of = POL }
+		97 = { add_core_of = POL }
+		98 = { add_core_of = POL }
+		1088 = { add_core_of = POL }
+		1148 = { add_core_of = POL }
+		release = POL
+		POL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = POL
+			}
+		}
+		POL = { 
+			set_cosmetic_tag = CZE_POL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = POL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_SVK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 70
+				state = 73
+				state = 664
+				state = 1119
+				state = 1120
+				state = 1121
+				state = 1122
+				state = 1123
+				state = 1135
+				state = 1136
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SVK = { exists = yes }
+			}
+			SVK = { is_subject_of = CZE }
+		}
+		70 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		73 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		664 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1119 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1120 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1121 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1122 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1123 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1135 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1136 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				70 = { NOT = { is_core_of = CZE } }
+				73 = { NOT = { is_core_of = CZE } }
+				664 = { NOT = { is_core_of = CZE } }
+				1119 = { NOT = { is_core_of = CZE } }
+				1120 = { NOT = { is_core_of = CZE } }
+				1121 = { NOT = { is_core_of = CZE } }
+				1122 = { NOT = { is_core_of = CZE } }
+				1123 = { NOT = { is_core_of = CZE } }
+				1135 = { NOT = { is_core_of = CZE } }
+				1136 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SVK = {
+			every_core_state = {
+				remove_core_of = SVK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SVK
+				}
+				remove_claim_by = SVK
+			}
+		}
+		70 = { add_core_of = SVK }
+		73 = { add_core_of = SVK }
+		664 = { add_core_of = SVK }
+		1119 = { add_core_of = SVK }
+		1120 = { add_core_of = SVK }
+		1121 = { add_core_of = SVK }
+		1122 = { add_core_of = SVK }
+		1123 = { add_core_of = SVK }
+		1135 = { add_core_of = SVK }
+		1136 = { add_core_of = SVK }
+		release = SVK
+		SVK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = SVK
+			}
+		}
+		SVK = { 
+			set_cosmetic_tag = CZE_SVK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = SVK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+				state = 154
+				state = 155
+				state = 1106
+				state = 1107
+				state = 1108
+				state = 1109
+				state = 1110
+				state = 1111
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HUN = { exists = yes }
+			}
+			HUN = { is_subject_of = CZE }
+		}
+		43 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		154 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		155 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1106 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1107 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1108 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1109 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1110 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1111 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				43 = { NOT = { is_core_of = CZE } }
+				154 = { NOT = { is_core_of = CZE } }
+				155 = { NOT = { is_core_of = CZE } }
+				1106 = { NOT = { is_core_of = CZE } }
+				1107 = { NOT = { is_core_of = CZE } }
+				1108 = { NOT = { is_core_of = CZE } }
+				1109 = { NOT = { is_core_of = CZE } }
+				1110 = { NOT = { is_core_of = CZE } }
+				1111 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HUN
+				}
+				remove_claim_by = HUN
+			}
+		}
+		43 = { add_core_of = HUN }
+		154 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		1111 = { add_core_of = HUN }
+		release = HUN
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = CZE_HUN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_CRO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 103
+				state = 109
+				state = 163
+				state = 794
+				state = 1098
+				state = 1099
+				state = 1102
+				state = 1105
+				state = 1128
+				state = 1206
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CRO = { exists = yes }
+			}
+			CRO = { is_subject_of = CZE }
+		}
+		103 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		109 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		163 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		794 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1098 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1099 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1102 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1105 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1128 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1206 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				103 = { NOT = { is_core_of = CZE } }
+				109 = { NOT = { is_core_of = CZE } }
+				163 = { NOT = { is_core_of = CZE } }
+				794 = { NOT = { is_core_of = CZE } }
+				1098 = { NOT = { is_core_of = CZE } }
+				1099 = { NOT = { is_core_of = CZE } }
+				1102 = { NOT = { is_core_of = CZE } }
+				1105 = { NOT = { is_core_of = CZE } }
+				1128 = { NOT = { is_core_of = CZE } }
+				1206 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CRO = {
+			every_core_state = {
+				remove_core_of = CRO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CRO
+				}
+				remove_claim_by = CRO
+			}
+		}
+		45 = { add_core_of = CRO }
+		104 = { add_core_of = CRO }
+		105 = { add_core_of = CRO }
+		107 = { add_core_of = CRO }
+		108 = { add_core_of = CRO }
+		1270 = { add_core_of = CRO }
+		767 = { add_core_of = CRO }
+		875 = { add_core_of = CRO }
+		1097 = { add_core_of = CRO }
+		1141 = { add_core_of = CRO }
+		1142 = { add_core_of = CRO }
+		1143 = { add_core_of = CRO }
+		1145 = { add_core_of = CRO }
+		1269 = { add_core_of = CRO }
+		765 = { add_core_of = CRO }
+		103 = { add_core_of = CRO }
+		109 = { add_core_of = CRO }
+		163 = { add_core_of = CRO }
+		794 = { add_core_of = CRO }
+		1098 = { add_core_of = CRO }
+		1099 = { add_core_of = CRO }
+		1102 = { add_core_of = CRO }
+		1105 = { add_core_of = CRO }
+		1128 = { add_core_of = CRO }
+		1206 = { add_core_of = CRO }
+		release = CRO
+		CRO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = CRO
+			}
+		}
+		CRO = { 
+			set_cosmetic_tag = CZE_CRO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = CRO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 79
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ROM = { exists = yes }
+			}
+			ROM = { is_subject_of = CZE }
+		}
+		46 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		79 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		81 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				46 = { NOT = { is_core_of = CZE } }
+				79 = { NOT = { is_core_of = CZE } }
+				81 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ROM = {
+			every_core_state = {
+				remove_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ROM
+				}
+				remove_claim_by = ROM
+			}
+		}
+		76 = { add_core_of = ROM }
+		78 = { add_core_of = ROM }
+		80 = { add_core_of = ROM }
+		82 = { add_core_of = ROM }
+		83 = { add_core_of = ROM }
+		84 = { add_core_of = ROM }
+		713 = { add_core_of = ROM }
+		772 = { add_core_of = ROM }
+		789 = { add_core_of = ROM }
+		1112 = { add_core_of = ROM }
+		1113 = { add_core_of = ROM }
+		1114 = { add_core_of = ROM }
+		1115 = { add_core_of = ROM }
+		1116 = { add_core_of = ROM }
+		1117 = { add_core_of = ROM }
+		1118 = { add_core_of = ROM }
+		1222 = { add_core_of = ROM }
+		1320 = { add_core_of = ROM }
+		46 = { add_core_of = ROM }
+		79 = { add_core_of = ROM }
+		81 = { add_core_of = ROM }
+		release = ROM
+		ROM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = ROM
+			}
+		}
+		ROM = { 
+			set_cosmetic_tag = CZE_ROM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = ROM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_BUL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 48
+				state = 1089
+				state = 1090
+				state = 211
+				state = 212
+				state = 770
+				state = 771
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BUL = { exists = yes }
+			}
+			BUL = { is_subject_of = CZE }
+		}
+		48 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1089 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1090 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		211 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		212 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		770 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		771 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				48 = { NOT = { is_core_of = CZE } }
+				1089 = { NOT = { is_core_of = CZE } }
+				1090 = { NOT = { is_core_of = CZE } }
+				211 = { NOT = { is_core_of = CZE } }
+				212 = { NOT = { is_core_of = CZE } }
+				770 = { NOT = { is_core_of = CZE } }
+				771 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BUL = {
+			every_core_state = {
+				remove_core_of = BUL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BUL
+				}
+				remove_claim_by = BUL
+			}
+		}
+		1271 = { add_core_of = BUL }
+		77 = { add_core_of = BUL }
+		106 = { add_core_of = BUL }
+		841 = { add_core_of = BUL }
+		48 = { add_core_of = BUL }
+		1089 = { add_core_of = BUL }
+		1090 = { add_core_of = BUL }
+		211 = { add_core_of = BUL }
+		212 = { add_core_of = BUL }
+		770 = { add_core_of = BUL }
+		771 = { add_core_of = BUL }
+		release = BUL
+		BUL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = BUL
+			}
+		}
+		BUL = { 
+			set_cosmetic_tag = CZE_BUL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = BUL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = CZE }
+		}
+		47 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				47 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		44 = { add_core_of = GRE }
+		164 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		183 = { add_core_of = GRE }
+		184 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		187 = { add_core_of = GRE }
+		339 = { add_core_of = GRE }
+		340 = { add_core_of = GRE }
+		341 = { add_core_of = GRE }
+		342 = { add_core_of = GRE }
+		731 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		766 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		769 = { add_core_of = GRE }
+		773 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		989 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		1268 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = CZE_GRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_UKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				UKR = { exists = yes }
+			}
+			UKR = { is_subject_of = CZE }
+		}
+		202 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				202 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		UKR = {
+			every_core_state = {
+				remove_core_of = UKR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = UKR
+				}
+				remove_claim_by = UKR
+			}
+		}
+		137 = { add_core_of = UKR }
+		192 = { add_core_of = UKR }
+		193 = { add_core_of = UKR }
+		196 = { add_core_of = UKR }
+		197 = { add_core_of = UKR }
+		198 = { add_core_of = UKR }
+		200 = { add_core_of = UKR }
+		201 = { add_core_of = UKR }
+		203 = { add_core_of = UKR }
+		221 = { add_core_of = UKR }
+		225 = { add_core_of = UKR }
+		226 = { add_core_of = UKR }
+		227 = { add_core_of = UKR }
+		228 = { add_core_of = UKR }
+		1286 = { add_core_of = UKR }
+		259 = { add_core_of = UKR }
+		791 = { add_core_of = UKR }
+		1220 = { add_core_of = UKR }
+		1221 = { add_core_of = UKR }
+		1285 = { add_core_of = UKR }
+		1232 = { add_core_of = UKR }
+		1233 = { add_core_of = UKR }
+		1234 = { add_core_of = UKR }
+		1237 = { add_core_of = UKR }
+		1238 = { add_core_of = UKR }
+		1239 = { add_core_of = UKR }
+		1240 = { add_core_of = UKR }
+		1241 = { add_core_of = UKR }
+		1242 = { add_core_of = UKR }
+		1243 = { add_core_of = UKR }
+		1244 = { add_core_of = UKR }
+		1245 = { add_core_of = UKR }
+		1282 = { add_core_of = UKR }
+		1283 = { add_core_of = UKR }
+		1284 = { add_core_of = UKR }
+		821 = { add_core_of = UKR }
+		240 = { add_core_of = UKR }
+		202 = { add_core_of = UKR }
+		release = UKR
+		UKR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = UKR
+			}
+		}
+		UKR = { 
+			set_cosmetic_tag = CZE_UKR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = UKR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+				state = 355
+				state = 356
+				state = 343
+				state = 354
+				state = 345
+				state = 346
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TUR = { exists = yes }
+			}
+			TUR = { is_subject_of = CZE }
+		}
+		49 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		355 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		356 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		343 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		354 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		345 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		346 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				49 = { NOT = { is_core_of = CZE } }
+				355 = { NOT = { is_core_of = CZE } }
+				356 = { NOT = { is_core_of = CZE } }
+				343 = { NOT = { is_core_of = CZE } }
+				354 = { NOT = { is_core_of = CZE } }
+				345 = { NOT = { is_core_of = CZE } }
+				346 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TUR
+				}
+				remove_claim_by = TUR
+			}
+		}
+		49 = { add_core_of = TUR }
+		355 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		354 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = CZE_TUR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1327
+				state = 195
+				state = 205
+				state = 208
+				state = 209
+				state = 210
+				state = 213
+				state = 214
+				state = 215
+				state = 216
+				state = 217
+				state = 219
+				state = 220
+				state = 222
+				state = 223
+				state = 224
+				state = 236
+				state = 239
+				state = 242
+				state = 243
+				state = 244
+				state = 246
+				state = 247
+				state = 248
+				state = 249
+				state = 250
+				state = 251
+				state = 252
+				state = 253
+				state = 254
+				state = 255
+				state = 256
+				state = 257
+				state = 258
+				state = 260
+				state = 262
+				state = 263
+				state = 264
+				state = 265
+				state = 351
+				state = 397
+				state = 398
+				state = 399
+				state = 400
+				state = 401
+				state = 1199
+				state = 1291
+				state = 1194
+				state = 1193
+				state = 1290
+				state = 1289
+				state = 1287
+				state = 1274
+				state = 1229
+				state = 1224
+				state = 1207
+				state = 1205
+				state = 1204
+				state = 722
+				state = 1197
+				state = 1198
+				state = 755
+				state = 651
+				state = 652
+				state = 1328
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				RUS = { exists = yes }
+			}
+			RUS = { is_subject_of = CZE }
+		}
+		1327 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		195 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		205 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		208 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		209 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		210 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		213 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		214 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		215 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		216 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		217 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		219 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		220 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		222 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		223 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		224 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		236 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		239 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		242 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		243 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		244 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		246 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		247 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		248 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		249 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		250 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		251 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		252 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		253 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		254 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		255 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		256 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		257 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		258 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		260 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		262 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		263 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		264 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		265 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		351 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		397 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		398 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		399 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		400 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		401 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1199 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1291 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1194 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1193 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1290 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1289 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1287 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1274 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1229 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1224 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1207 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1205 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1204 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		722 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1197 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1198 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		755 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		651 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		652 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1328 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				1327 = { NOT = { is_core_of = CZE } }
+				195 = { NOT = { is_core_of = CZE } }
+				205 = { NOT = { is_core_of = CZE } }
+				208 = { NOT = { is_core_of = CZE } }
+				209 = { NOT = { is_core_of = CZE } }
+				210 = { NOT = { is_core_of = CZE } }
+				213 = { NOT = { is_core_of = CZE } }
+				214 = { NOT = { is_core_of = CZE } }
+				215 = { NOT = { is_core_of = CZE } }
+				216 = { NOT = { is_core_of = CZE } }
+				217 = { NOT = { is_core_of = CZE } }
+				219 = { NOT = { is_core_of = CZE } }
+				220 = { NOT = { is_core_of = CZE } }
+				222 = { NOT = { is_core_of = CZE } }
+				223 = { NOT = { is_core_of = CZE } }
+				224 = { NOT = { is_core_of = CZE } }
+				236 = { NOT = { is_core_of = CZE } }
+				239 = { NOT = { is_core_of = CZE } }
+				242 = { NOT = { is_core_of = CZE } }
+				243 = { NOT = { is_core_of = CZE } }
+				244 = { NOT = { is_core_of = CZE } }
+				246 = { NOT = { is_core_of = CZE } }
+				247 = { NOT = { is_core_of = CZE } }
+				248 = { NOT = { is_core_of = CZE } }
+				249 = { NOT = { is_core_of = CZE } }
+				250 = { NOT = { is_core_of = CZE } }
+				251 = { NOT = { is_core_of = CZE } }
+				252 = { NOT = { is_core_of = CZE } }
+				253 = { NOT = { is_core_of = CZE } }
+				254 = { NOT = { is_core_of = CZE } }
+				255 = { NOT = { is_core_of = CZE } }
+				256 = { NOT = { is_core_of = CZE } }
+				257 = { NOT = { is_core_of = CZE } }
+				258 = { NOT = { is_core_of = CZE } }
+				260 = { NOT = { is_core_of = CZE } }
+				262 = { NOT = { is_core_of = CZE } }
+				263 = { NOT = { is_core_of = CZE } }
+				264 = { NOT = { is_core_of = CZE } }
+				265 = { NOT = { is_core_of = CZE } }
+				351 = { NOT = { is_core_of = CZE } }
+				397 = { NOT = { is_core_of = CZE } }
+				398 = { NOT = { is_core_of = CZE } }
+				399 = { NOT = { is_core_of = CZE } }
+				400 = { NOT = { is_core_of = CZE } }
+				401 = { NOT = { is_core_of = CZE } }
+				1199 = { NOT = { is_core_of = CZE } }
+				1291 = { NOT = { is_core_of = CZE } }
+				1194 = { NOT = { is_core_of = CZE } }
+				1193 = { NOT = { is_core_of = CZE } }
+				1290 = { NOT = { is_core_of = CZE } }
+				1289 = { NOT = { is_core_of = CZE } }
+				1287 = { NOT = { is_core_of = CZE } }
+				1274 = { NOT = { is_core_of = CZE } }
+				1229 = { NOT = { is_core_of = CZE } }
+				1224 = { NOT = { is_core_of = CZE } }
+				1207 = { NOT = { is_core_of = CZE } }
+				1205 = { NOT = { is_core_of = CZE } }
+				1204 = { NOT = { is_core_of = CZE } }
+				722 = { NOT = { is_core_of = CZE } }
+				1197 = { NOT = { is_core_of = CZE } }
+				1198 = { NOT = { is_core_of = CZE } }
+				755 = { NOT = { is_core_of = CZE } }
+				651 = { NOT = { is_core_of = CZE } }
+				652 = { NOT = { is_core_of = CZE } }
+				1328 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = RUS
+				}
+				remove_claim_by = RUS
+			}
+		}
+		194 = { add_core_of = RUS }
+		204 = { add_core_of = RUS }
+		206 = { add_core_of = RUS }
+		1087 = { add_core_of = RUS }
+		1294 = { add_core_of = RUS }
+		218 = { add_core_of = RUS }
+		234 = { add_core_of = RUS }
+		235 = { add_core_of = RUS }
+		237 = { add_core_of = RUS }
+		238 = { add_core_of = RUS }
+		241 = { add_core_of = RUS }
+		245 = { add_core_of = RUS }
+		1226 = { add_core_of = RUS }
+		1227 = { add_core_of = RUS }
+		1230 = { add_core_of = RUS }
+		1231 = { add_core_of = RUS }
+		1263 = { add_core_of = RUS }
+		1264 = { add_core_of = RUS }
+		1265 = { add_core_of = RUS }
+		1266 = { add_core_of = RUS }
+		232 = { add_core_of = RUS }
+		233 = { add_core_of = RUS }
+		787 = { add_core_of = RUS }
+		1186 = { add_core_of = RUS }
+		1187 = { add_core_of = RUS }
+		1189 = { add_core_of = RUS }
+		1191 = { add_core_of = RUS }
+		1327 = { add_core_of = RUS }
+		195 = { add_core_of = RUS }
+		205 = { add_core_of = RUS }
+		208 = { add_core_of = RUS }
+		209 = { add_core_of = RUS }
+		210 = { add_core_of = RUS }
+		213 = { add_core_of = RUS }
+		214 = { add_core_of = RUS }
+		215 = { add_core_of = RUS }
+		216 = { add_core_of = RUS }
+		217 = { add_core_of = RUS }
+		219 = { add_core_of = RUS }
+		220 = { add_core_of = RUS }
+		222 = { add_core_of = RUS }
+		223 = { add_core_of = RUS }
+		224 = { add_core_of = RUS }
+		236 = { add_core_of = RUS }
+		239 = { add_core_of = RUS }
+		242 = { add_core_of = RUS }
+		243 = { add_core_of = RUS }
+		244 = { add_core_of = RUS }
+		246 = { add_core_of = RUS }
+		247 = { add_core_of = RUS }
+		248 = { add_core_of = RUS }
+		249 = { add_core_of = RUS }
+		250 = { add_core_of = RUS }
+		251 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		254 = { add_core_of = RUS }
+		255 = { add_core_of = RUS }
+		256 = { add_core_of = RUS }
+		257 = { add_core_of = RUS }
+		258 = { add_core_of = RUS }
+		260 = { add_core_of = RUS }
+		262 = { add_core_of = RUS }
+		263 = { add_core_of = RUS }
+		264 = { add_core_of = RUS }
+		265 = { add_core_of = RUS }
+		351 = { add_core_of = RUS }
+		397 = { add_core_of = RUS }
+		398 = { add_core_of = RUS }
+		399 = { add_core_of = RUS }
+		400 = { add_core_of = RUS }
+		401 = { add_core_of = RUS }
+		1199 = { add_core_of = RUS }
+		1291 = { add_core_of = RUS }
+		1194 = { add_core_of = RUS }
+		1193 = { add_core_of = RUS }
+		1290 = { add_core_of = RUS }
+		1289 = { add_core_of = RUS }
+		1287 = { add_core_of = RUS }
+		1274 = { add_core_of = RUS }
+		1229 = { add_core_of = RUS }
+		1224 = { add_core_of = RUS }
+		1207 = { add_core_of = RUS }
+		1205 = { add_core_of = RUS }
+		1204 = { add_core_of = RUS }
+		722 = { add_core_of = RUS }
+		1197 = { add_core_of = RUS }
+		1198 = { add_core_of = RUS }
+		755 = { add_core_of = RUS }
+		651 = { add_core_of = RUS }
+		652 = { add_core_of = RUS }
+		1328 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = CZE_RUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+				state = 1080
+				state = 1082
+				state = 1188
+				state = 1190
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GEO = { exists = yes }
+			}
+			GEO = { is_subject_of = CZE }
+		}
+		231 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1080 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1082 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1188 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1190 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				231 = { NOT = { is_core_of = CZE } }
+				1080 = { NOT = { is_core_of = CZE } }
+				1082 = { NOT = { is_core_of = CZE } }
+				1188 = { NOT = { is_core_of = CZE } }
+				1190 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GEO
+				}
+				remove_claim_by = GEO
+			}
+		}
+		230 = { add_core_of = GEO }
+		229 = { add_core_of = GEO }
+		990 = { add_core_of = GEO }
+		998 = { add_core_of = GEO }
+		1000 = { add_core_of = GEO }
+		1001 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1213 = { add_core_of = GEO }
+		1267 = { add_core_of = GEO }
+		1298 = { add_core_of = GEO }
+		1299 = { add_core_of = GEO }
+		1300 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		1302 = { add_core_of = GEO }
+		1303 = { add_core_of = GEO }
+		1304 = { add_core_of = GEO }
+		231 = { add_core_of = GEO }
+		1080 = { add_core_of = GEO }
+		1082 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		release = GEO
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = CZE_GEO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_LEB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 553
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LEB = { exists = yes }
+			}
+			LEB = { is_subject_of = CZE }
+		}
+		553 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				553 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEB = {
+			every_core_state = {
+				remove_core_of = LEB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LEB
+				}
+				remove_claim_by = LEB
+			}
+		}
+		455 = { add_core_of = LEB }
+		554 = { add_core_of = LEB }
+		677 = { add_core_of = LEB }
+		680 = { add_core_of = LEB }
+		992 = { add_core_of = LEB }
+		995 = { add_core_of = LEB }
+		344 = { add_core_of = LEB }
+		350 = { add_core_of = LEB }
+		454 = { add_core_of = LEB }
+		553 = { add_core_of = LEB }
+		release = LEB
+		LEB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = LEB
+			}
+		}
+		LEB = { 
+			set_cosmetic_tag = CZE_LEB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_TRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 658
+				state = 907
+				state = 993
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRU = { exists = yes }
+			}
+			TRU = { is_subject_of = CZE }
+		}
+		658 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		907 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		993 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				658 = { NOT = { is_core_of = CZE } }
+				907 = { NOT = { is_core_of = CZE } }
+				993 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRU = {
+			every_core_state = {
+				remove_core_of = TRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRU
+				}
+				remove_claim_by = TRU
+			}
+		}
+		292 = { add_core_of = TRU }
+		656 = { add_core_of = TRU }
+		675 = { add_core_of = TRU }
+		678 = { add_core_of = TRU }
+		991 = { add_core_of = TRU }
+		293 = { add_core_of = TRU }
+		294 = { add_core_of = TRU }
+		347 = { add_core_of = TRU }
+		659 = { add_core_of = TRU }
+		679 = { add_core_of = TRU }
+		752 = { add_core_of = TRU }
+		754 = { add_core_of = TRU }
+		859 = { add_core_of = TRU }
+		915 = { add_core_of = TRU }
+		981 = { add_core_of = TRU }
+		982 = { add_core_of = TRU }
+		994 = { add_core_of = TRU }
+		1024 = { add_core_of = TRU }
+		1035 = { add_core_of = TRU }
+		658 = { add_core_of = TRU }
+		907 = { add_core_of = TRU }
+		993 = { add_core_of = TRU }
+		release = TRU
+		TRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = TRU
+			}
+		}
+		TRU = { 
+			set_cosmetic_tag = CZE_TRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = TRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+				state = 447
+				state = 452
+				state = 456
+				state = 457
+				state = 552
+				state = 1008
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = CZE }
+		}
+		446 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		447 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		452 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		456 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		457 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		552 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1008 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				446 = { NOT = { is_core_of = CZE } }
+				447 = { NOT = { is_core_of = CZE } }
+				452 = { NOT = { is_core_of = CZE } }
+				456 = { NOT = { is_core_of = CZE } }
+				457 = { NOT = { is_core_of = CZE } }
+				552 = { NOT = { is_core_of = CZE } }
+				1008 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		453 = { add_core_of = EGY }
+		753 = { add_core_of = EGY }
+		549 = { add_core_of = EGY }
+		551 = { add_core_of = EGY }
+		862 = { add_core_of = EGY }
+		1007 = { add_core_of = EGY }
+		1010 = { add_core_of = EGY }
+		1011 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = CZE_EGY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_TRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 273
+				state = 448
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRP = { exists = yes }
+			}
+			TRP = { is_subject_of = CZE }
+		}
+		273 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		448 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				273 = { NOT = { is_core_of = CZE } }
+				448 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRP = {
+			every_core_state = {
+				remove_core_of = TRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRP
+				}
+				remove_claim_by = TRP
+			}
+		}
+		451 = { add_core_of = TRP }
+		663 = { add_core_of = TRP }
+		1009 = { add_core_of = TRP }
+		450 = { add_core_of = TRP }
+		290 = { add_core_of = TRP }
+		458 = { add_core_of = TRP }
+		459 = { add_core_of = TRP }
+		460 = { add_core_of = TRP }
+		461 = { add_core_of = TRP }
+		462 = { add_core_of = TRP }
+		513 = { add_core_of = TRP }
+		514 = { add_core_of = TRP }
+		557 = { add_core_of = TRP }
+		665 = { add_core_of = TRP }
+		699 = { add_core_of = TRP }
+		805 = { add_core_of = TRP }
+		967 = { add_core_of = TRP }
+		968 = { add_core_of = TRP }
+		1318 = { add_core_of = TRP }
+		556 = { add_core_of = TRP }
+		860 = { add_core_of = TRP }
+		515 = { add_core_of = TRP }
+		808 = { add_core_of = TRP }
+		809 = { add_core_of = TRP }
+		910 = { add_core_of = TRP }
+		911 = { add_core_of = TRP }
+		1192 = { add_core_of = TRP }
+		273 = { add_core_of = TRP }
+		448 = { add_core_of = TRP }
+		release = TRP
+		TRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = TRP
+			}
+		}
+		TRP = { 
+			set_cosmetic_tag = CZE_TRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = TRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_SIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 700
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIE = { exists = yes }
+			}
+			SIE = { is_subject_of = CZE }
+		}
+		700 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				700 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIE = {
+			every_core_state = {
+				remove_core_of = SIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIE
+				}
+				remove_claim_by = SIE
+			}
+		}
+		298 = { add_core_of = SIE }
+		966 = { add_core_of = SIE }
+		272 = { add_core_of = SIE }
+		274 = { add_core_of = SIE }
+		296 = { add_core_of = SIE }
+		913 = { add_core_of = SIE }
+		1323 = { add_core_of = SIE }
+		558 = { add_core_of = SIE }
+		662 = { add_core_of = SIE }
+		806 = { add_core_of = SIE }
+		807 = { add_core_of = SIE }
+		1321 = { add_core_of = SIE }
+		973 = { add_core_of = SIE }
+		834 = { add_core_of = SIE }
+		876 = { add_core_of = SIE }
+		877 = { add_core_of = SIE }
+		878 = { add_core_of = SIE }
+		963 = { add_core_of = SIE }
+		1322 = { add_core_of = SIE }
+		703 = { add_core_of = SIE }
+		704 = { add_core_of = SIE }
+		700 = { add_core_of = SIE }
+		release = SIE
+		SIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = SIE
+			}
+		}
+		SIE = { 
+			set_cosmetic_tag = CZE_SIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = SIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_ANG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 540
+				state = 914
+				state = 916
+				state = 917
+				state = 959
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ANG = { exists = yes }
+			}
+			ANG = { is_subject_of = CZE }
+		}
+		540 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		914 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		916 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		917 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		959 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				540 = { NOT = { is_core_of = CZE } }
+				914 = { NOT = { is_core_of = CZE } }
+				916 = { NOT = { is_core_of = CZE } }
+				917 = { NOT = { is_core_of = CZE } }
+				959 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ANG = {
+			every_core_state = {
+				remove_core_of = ANG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ANG
+				}
+				remove_claim_by = ANG
+			}
+		}
+		927 = { add_core_of = ANG }
+		952 = { add_core_of = ANG }
+		962 = { add_core_of = ANG }
+		971 = { add_core_of = ANG }
+		295 = { add_core_of = ANG }
+		297 = { add_core_of = ANG }
+		538 = { add_core_of = ANG }
+		539 = { add_core_of = ANG }
+		660 = { add_core_of = ANG }
+		705 = { add_core_of = ANG }
+		718 = { add_core_of = ANG }
+		813 = { add_core_of = ANG }
+		879 = { add_core_of = ANG }
+		881 = { add_core_of = ANG }
+		928 = { add_core_of = ANG }
+		949 = { add_core_of = ANG }
+		953 = { add_core_of = ANG }
+		956 = { add_core_of = ANG }
+		957 = { add_core_of = ANG }
+		958 = { add_core_of = ANG }
+		974 = { add_core_of = ANG }
+		975 = { add_core_of = ANG }
+		976 = { add_core_of = ANG }
+		977 = { add_core_of = ANG }
+		1025 = { add_core_of = ANG }
+		1026 = { add_core_of = ANG }
+		1180 = { add_core_of = ANG }
+		1181 = { add_core_of = ANG }
+		1182 = { add_core_of = ANG }
+		1183 = { add_core_of = ANG }
+		1184 = { add_core_of = ANG }
+		1185 = { add_core_of = ANG }
+		1335 = { add_core_of = ANG }
+		540 = { add_core_of = ANG }
+		914 = { add_core_of = ANG }
+		916 = { add_core_of = ANG }
+		917 = { add_core_of = ANG }
+		959 = { add_core_of = ANG }
+		release = ANG
+		ANG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = ANG
+			}
+		}
+		ANG = { 
+			set_cosmetic_tag = CZE_ANG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = ANG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_TZN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 546
+				state = 899
+				state = 905
+				state = 918
+				state = 965
+				state = 1032
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TZN = { exists = yes }
+			}
+			TZN = { is_subject_of = CZE }
+		}
+		546 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		899 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		905 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		918 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		965 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1032 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				546 = { NOT = { is_core_of = CZE } }
+				899 = { NOT = { is_core_of = CZE } }
+				905 = { NOT = { is_core_of = CZE } }
+				918 = { NOT = { is_core_of = CZE } }
+				965 = { NOT = { is_core_of = CZE } }
+				1032 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TZN = {
+			every_core_state = {
+				remove_core_of = TZN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TZN
+				}
+				remove_claim_by = TZN
+			}
+		}
+		543 = { add_core_of = TZN }
+		706 = { add_core_of = TZN }
+		707 = { add_core_of = TZN }
+		708 = { add_core_of = TZN }
+		1177 = { add_core_of = TZN }
+		1178 = { add_core_of = TZN }
+		1179 = { add_core_of = TZN }
+		268 = { add_core_of = TZN }
+		269 = { add_core_of = TZN }
+		271 = { add_core_of = TZN }
+		547 = { add_core_of = TZN }
+		548 = { add_core_of = TZN }
+		550 = { add_core_of = TZN }
+		559 = { add_core_of = TZN }
+		869 = { add_core_of = TZN }
+		870 = { add_core_of = TZN }
+		892 = { add_core_of = TZN }
+		906 = { add_core_of = TZN }
+		919 = { add_core_of = TZN }
+		920 = { add_core_of = TZN }
+		921 = { add_core_of = TZN }
+		922 = { add_core_of = TZN }
+		923 = { add_core_of = TZN }
+		924 = { add_core_of = TZN }
+		925 = { add_core_of = TZN }
+		944 = { add_core_of = TZN }
+		948 = { add_core_of = TZN }
+		961 = { add_core_of = TZN }
+		969 = { add_core_of = TZN }
+		970 = { add_core_of = TZN }
+		1297 = { add_core_of = TZN }
+		544 = { add_core_of = TZN }
+		871 = { add_core_of = TZN }
+		954 = { add_core_of = TZN }
+		955 = { add_core_of = TZN }
+		709 = { add_core_of = TZN }
+		546 = { add_core_of = TZN }
+		899 = { add_core_of = TZN }
+		905 = { add_core_of = TZN }
+		918 = { add_core_of = TZN }
+		965 = { add_core_of = TZN }
+		1032 = { add_core_of = TZN }
+		release = TZN
+		TZN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = TZN
+			}
+		}
+		TZN = { 
+			set_cosmetic_tag = CZE_TZN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = TZN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_NMB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 541
+				state = 964
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NMB = { exists = yes }
+			}
+			NMB = { is_subject_of = CZE }
+		}
+		541 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		964 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				541 = { NOT = { is_core_of = CZE } }
+				964 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NMB = {
+			every_core_state = {
+				remove_core_of = NMB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NMB
+				}
+				remove_claim_by = NMB
+			}
+		}
+		85 = { add_core_of = NMB }
+		275 = { add_core_of = NMB }
+		542 = { add_core_of = NMB }
+		681 = { add_core_of = NMB }
+		719 = { add_core_of = NMB }
+		738 = { add_core_of = NMB }
+		945 = { add_core_of = NMB }
+		946 = { add_core_of = NMB }
+		947 = { add_core_of = NMB }
+		1176 = { add_core_of = NMB }
+		545 = { add_core_of = NMB }
+		950 = { add_core_of = NMB }
+		541 = { add_core_of = NMB }
+		964 = { add_core_of = NMB }
+		release = NMB
+		NMB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = NMB
+			}
+		}
+		NMB = { 
+			set_cosmetic_tag = CZE_NMB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = NMB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_SIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 653
+				state = 40
+				state = 403
+				state = 516
+				state = 568
+				state = 569
+				state = 570
+				state = 572
+				state = 573
+				state = 575
+				state = 576
+				state = 577
+				state = 578
+				state = 580
+				state = 581
+				state = 582
+				state = 1195
+				state = 1200
+				state = 1201
+				state = 1292
+				state = 566
+				state = 567
+				state = 571
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIB = { exists = yes }
+			}
+			SIB = { is_subject_of = CZE }
+		}
+		653 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		40 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		403 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		516 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		568 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		569 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		570 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		572 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		573 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		575 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		576 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		577 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		578 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		580 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		581 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		582 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1195 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1200 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1201 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1292 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		566 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		567 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		571 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				653 = { NOT = { is_core_of = CZE } }
+				40 = { NOT = { is_core_of = CZE } }
+				403 = { NOT = { is_core_of = CZE } }
+				516 = { NOT = { is_core_of = CZE } }
+				568 = { NOT = { is_core_of = CZE } }
+				569 = { NOT = { is_core_of = CZE } }
+				570 = { NOT = { is_core_of = CZE } }
+				572 = { NOT = { is_core_of = CZE } }
+				573 = { NOT = { is_core_of = CZE } }
+				575 = { NOT = { is_core_of = CZE } }
+				576 = { NOT = { is_core_of = CZE } }
+				577 = { NOT = { is_core_of = CZE } }
+				578 = { NOT = { is_core_of = CZE } }
+				580 = { NOT = { is_core_of = CZE } }
+				581 = { NOT = { is_core_of = CZE } }
+				582 = { NOT = { is_core_of = CZE } }
+				1195 = { NOT = { is_core_of = CZE } }
+				1200 = { NOT = { is_core_of = CZE } }
+				1201 = { NOT = { is_core_of = CZE } }
+				1292 = { NOT = { is_core_of = CZE } }
+				566 = { NOT = { is_core_of = CZE } }
+				567 = { NOT = { is_core_of = CZE } }
+				571 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIB
+				}
+				remove_claim_by = SIB
+			}
+		}
+		408 = { add_core_of = SIB }
+		409 = { add_core_of = SIB }
+		560 = { add_core_of = SIB }
+		561 = { add_core_of = SIB }
+		562 = { add_core_of = SIB }
+		563 = { add_core_of = SIB }
+		564 = { add_core_of = SIB }
+		565 = { add_core_of = SIB }
+		574 = { add_core_of = SIB }
+		637 = { add_core_of = SIB }
+		657 = { add_core_of = SIB }
+		1246 = { add_core_of = SIB }
+		644 = { add_core_of = SIB }
+		1202 = { add_core_of = SIB }
+		654 = { add_core_of = SIB }
+		811 = { add_core_of = SIB }
+		1293 = { add_core_of = SIB }
+		329 = { add_core_of = SIB }
+		653 = { add_core_of = SIB }
+		40 = { add_core_of = SIB }
+		403 = { add_core_of = SIB }
+		516 = { add_core_of = SIB }
+		568 = { add_core_of = SIB }
+		569 = { add_core_of = SIB }
+		570 = { add_core_of = SIB }
+		572 = { add_core_of = SIB }
+		573 = { add_core_of = SIB }
+		575 = { add_core_of = SIB }
+		576 = { add_core_of = SIB }
+		577 = { add_core_of = SIB }
+		578 = { add_core_of = SIB }
+		580 = { add_core_of = SIB }
+		581 = { add_core_of = SIB }
+		582 = { add_core_of = SIB }
+		1195 = { add_core_of = SIB }
+		1200 = { add_core_of = SIB }
+		1201 = { add_core_of = SIB }
+		1292 = { add_core_of = SIB }
+		566 = { add_core_of = SIB }
+		567 = { add_core_of = SIB }
+		571 = { add_core_of = SIB }
+		release = SIB
+		SIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = SIB
+			}
+		}
+		SIB = { 
+			set_cosmetic_tag = CZE_SIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_IRQ = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 291
+				state = 349
+				state = 676
+				state = 812
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRQ = { exists = yes }
+			}
+			IRQ = { is_subject_of = CZE }
+		}
+		291 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		349 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		676 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		812 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				291 = { NOT = { is_core_of = CZE } }
+				349 = { NOT = { is_core_of = CZE } }
+				676 = { NOT = { is_core_of = CZE } }
+				812 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRQ = {
+			every_core_state = {
+				remove_core_of = IRQ
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRQ
+				}
+				remove_claim_by = IRQ
+			}
+		}
+		291 = { add_core_of = IRQ }
+		349 = { add_core_of = IRQ }
+		676 = { add_core_of = IRQ }
+		812 = { add_core_of = IRQ }
+		release = IRQ
+		IRQ = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = IRQ
+			}
+		}
+		IRQ = { 
+			set_cosmetic_tag = CZE_IRQ_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = IRQ
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 417
+				state = 418
+				state = 419
+				state = 420
+				state = 421
+				state = 804
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = CZE }
+		}
+		266 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		410 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		411 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		412 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		413 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		414 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		416 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		417 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		418 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		419 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		420 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		421 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		804 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				266 = { NOT = { is_core_of = CZE } }
+				410 = { NOT = { is_core_of = CZE } }
+				411 = { NOT = { is_core_of = CZE } }
+				412 = { NOT = { is_core_of = CZE } }
+				413 = { NOT = { is_core_of = CZE } }
+				414 = { NOT = { is_core_of = CZE } }
+				416 = { NOT = { is_core_of = CZE } }
+				417 = { NOT = { is_core_of = CZE } }
+				418 = { NOT = { is_core_of = CZE } }
+				419 = { NOT = { is_core_of = CZE } }
+				420 = { NOT = { is_core_of = CZE } }
+				421 = { NOT = { is_core_of = CZE } }
+				804 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		352 = { add_core_of = PER }
+		819 = { add_core_of = PER }
+		266 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = CZE_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_AFG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 267
+				state = 415
+				state = 1217
+				state = 1218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AFG = { exists = yes }
+			}
+			AFG = { is_subject_of = CZE }
+		}
+		267 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		415 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1217 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1218 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				267 = { NOT = { is_core_of = CZE } }
+				415 = { NOT = { is_core_of = CZE } }
+				1217 = { NOT = { is_core_of = CZE } }
+				1218 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AFG = {
+			every_core_state = {
+				remove_core_of = AFG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AFG
+				}
+				remove_claim_by = AFG
+			}
+		}
+		267 = { add_core_of = AFG }
+		415 = { add_core_of = AFG }
+		1217 = { add_core_of = AFG }
+		1218 = { add_core_of = AFG }
+		release = AFG
+		AFG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = AFG
+			}
+		}
+		AFG = { 
+			set_cosmetic_tag = CZE_AFG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = AFG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_TRK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 585
+				state = 586
+				state = 712
+				state = 1042
+				state = 1196
+				state = 1209
+				state = 1211
+				state = 1278
+				state = 1279
+				state = 402
+				state = 404
+				state = 405
+				state = 406
+				state = 583
+				state = 584
+				state = 587
+				state = 588
+				state = 589
+				state = 590
+				state = 732
+				state = 810
+				state = 861
+				state = 1203
+				state = 1208
+				state = 1210
+				state = 1212
+				state = 1275
+				state = 1276
+				state = 1277
+				state = 1281
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRK = { exists = yes }
+			}
+			TRK = { is_subject_of = CZE }
+		}
+		407 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		585 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		586 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		712 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1042 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1196 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1209 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1211 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1278 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1279 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		402 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		404 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		405 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		406 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		583 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		584 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		587 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		588 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		589 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		590 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		732 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		810 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		861 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1203 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1208 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1210 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1212 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1275 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1276 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1277 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1281 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				407 = { NOT = { is_core_of = CZE } }
+				585 = { NOT = { is_core_of = CZE } }
+				586 = { NOT = { is_core_of = CZE } }
+				712 = { NOT = { is_core_of = CZE } }
+				1042 = { NOT = { is_core_of = CZE } }
+				1196 = { NOT = { is_core_of = CZE } }
+				1209 = { NOT = { is_core_of = CZE } }
+				1211 = { NOT = { is_core_of = CZE } }
+				1278 = { NOT = { is_core_of = CZE } }
+				1279 = { NOT = { is_core_of = CZE } }
+				402 = { NOT = { is_core_of = CZE } }
+				404 = { NOT = { is_core_of = CZE } }
+				405 = { NOT = { is_core_of = CZE } }
+				406 = { NOT = { is_core_of = CZE } }
+				583 = { NOT = { is_core_of = CZE } }
+				584 = { NOT = { is_core_of = CZE } }
+				587 = { NOT = { is_core_of = CZE } }
+				588 = { NOT = { is_core_of = CZE } }
+				589 = { NOT = { is_core_of = CZE } }
+				590 = { NOT = { is_core_of = CZE } }
+				732 = { NOT = { is_core_of = CZE } }
+				810 = { NOT = { is_core_of = CZE } }
+				861 = { NOT = { is_core_of = CZE } }
+				1203 = { NOT = { is_core_of = CZE } }
+				1208 = { NOT = { is_core_of = CZE } }
+				1210 = { NOT = { is_core_of = CZE } }
+				1212 = { NOT = { is_core_of = CZE } }
+				1275 = { NOT = { is_core_of = CZE } }
+				1276 = { NOT = { is_core_of = CZE } }
+				1277 = { NOT = { is_core_of = CZE } }
+				1281 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRK = {
+			every_core_state = {
+				remove_core_of = TRK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRK
+				}
+				remove_claim_by = TRK
+			}
+		}
+		287 = { add_core_of = TRK }
+		617 = { add_core_of = TRK }
+		618 = { add_core_of = TRK }
+		619 = { add_core_of = TRK }
+		1085 = { add_core_of = TRK }
+		1083 = { add_core_of = TRK }
+		407 = { add_core_of = TRK }
+		585 = { add_core_of = TRK }
+		586 = { add_core_of = TRK }
+		712 = { add_core_of = TRK }
+		1042 = { add_core_of = TRK }
+		1196 = { add_core_of = TRK }
+		1209 = { add_core_of = TRK }
+		1211 = { add_core_of = TRK }
+		1278 = { add_core_of = TRK }
+		1279 = { add_core_of = TRK }
+		402 = { add_core_of = TRK }
+		404 = { add_core_of = TRK }
+		405 = { add_core_of = TRK }
+		406 = { add_core_of = TRK }
+		583 = { add_core_of = TRK }
+		584 = { add_core_of = TRK }
+		587 = { add_core_of = TRK }
+		588 = { add_core_of = TRK }
+		589 = { add_core_of = TRK }
+		590 = { add_core_of = TRK }
+		732 = { add_core_of = TRK }
+		810 = { add_core_of = TRK }
+		861 = { add_core_of = TRK }
+		1203 = { add_core_of = TRK }
+		1208 = { add_core_of = TRK }
+		1210 = { add_core_of = TRK }
+		1212 = { add_core_of = TRK }
+		1275 = { add_core_of = TRK }
+		1276 = { add_core_of = TRK }
+		1277 = { add_core_of = TRK }
+		1281 = { add_core_of = TRK }
+		release = TRK
+		TRK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = TRK
+			}
+		}
+		TRK = { 
+			set_cosmetic_tag = CZE_TRK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = TRK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = CZE }
+		}
+		439 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				439 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		428 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		440 = { add_core_of = DEH }
+		441 = { add_core_of = DEH }
+		443 = { add_core_of = DEH }
+		444 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		890 = { add_core_of = DEH }
+		891 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		281 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		442 = { add_core_of = DEH }
+		445 = { add_core_of = DEH }
+		1219 = { add_core_of = DEH }
+		72 = { add_core_of = DEH }
+		288 = { add_core_of = DEH }
+		640 = { add_core_of = DEH }
+		701 = { add_core_of = DEH }
+		756 = { add_core_of = DEH }
+		790 = { add_core_of = DEH }
+		323 = { add_core_of = DEH }
+		324 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		897 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = CZE_DEH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_TIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 322
+				state = 1086
+				state = 748
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TIB = { exists = yes }
+			}
+			TIB = { is_subject_of = CZE }
+		}
+		322 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1086 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		748 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				322 = { NOT = { is_core_of = CZE } }
+				1086 = { NOT = { is_core_of = CZE } }
+				748 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TIB = {
+			every_core_state = {
+				remove_core_of = TIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TIB
+				}
+				remove_claim_by = TIB
+			}
+		}
+		322 = { add_core_of = TIB }
+		1086 = { add_core_of = TIB }
+		748 = { add_core_of = TIB }
+		release = TIB
+		TIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = TIB
+			}
+		}
+		TIB = { 
+			set_cosmetic_tag = CZE_TIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = TIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_MON = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1084
+				state = 330
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MON = { exists = yes }
+			}
+			MON = { is_subject_of = CZE }
+		}
+		1084 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		330 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				1084 = { NOT = { is_core_of = CZE } }
+				330 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MON = {
+			every_core_state = {
+				remove_core_of = MON
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MON
+				}
+				remove_claim_by = MON
+			}
+		}
+		1084 = { add_core_of = MON }
+		330 = { add_core_of = MON }
+		release = MON
+		MON = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = MON
+			}
+		}
+		MON = { 
+			set_cosmetic_tag = CZE_MON_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = MON
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = CZE }
+		}
+		608 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				608 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		591 = { add_core_of = QIE }
+		593 = { add_core_of = QIE }
+		594 = { add_core_of = QIE }
+		595 = { add_core_of = QIE }
+		596 = { add_core_of = QIE }
+		598 = { add_core_of = QIE }
+		599 = { add_core_of = QIE }
+		600 = { add_core_of = QIE }
+		602 = { add_core_of = QIE }
+		606 = { add_core_of = QIE }
+		613 = { add_core_of = QIE }
+		800 = { add_core_of = QIE }
+		1012 = { add_core_of = QIE }
+		1013 = { add_core_of = QIE }
+		1014 = { add_core_of = QIE }
+		1044 = { add_core_of = QIE }
+		1045 = { add_core_of = QIE }
+		1046 = { add_core_of = QIE }
+		1047 = { add_core_of = QIE }
+		1049 = { add_core_of = QIE }
+		1050 = { add_core_of = QIE }
+		1052 = { add_core_of = QIE }
+		1053 = { add_core_of = QIE }
+		1054 = { add_core_of = QIE }
+		1055 = { add_core_of = QIE }
+		1056 = { add_core_of = QIE }
+		1066 = { add_core_of = QIE }
+		1067 = { add_core_of = QIE }
+		1068 = { add_core_of = QIE }
+		1069 = { add_core_of = QIE }
+		283 = { add_core_of = QIE }
+		325 = { add_core_of = QIE }
+		326 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		592 = { add_core_of = QIE }
+		597 = { add_core_of = QIE }
+		601 = { add_core_of = QIE }
+		603 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		605 = { add_core_of = QIE }
+		607 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		620 = { add_core_of = QIE }
+		621 = { add_core_of = QIE }
+		650 = { add_core_of = QIE }
+		661 = { add_core_of = QIE }
+		693 = { add_core_of = QIE }
+		743 = { add_core_of = QIE }
+		744 = { add_core_of = QIE }
+		746 = { add_core_of = QIE }
+		747 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		788 = { add_core_of = QIE }
+		799 = { add_core_of = QIE }
+		801 = { add_core_of = QIE }
+		802 = { add_core_of = QIE }
+		803 = { add_core_of = QIE }
+		816 = { add_core_of = QIE }
+		996 = { add_core_of = QIE }
+		1048 = { add_core_of = QIE }
+		1051 = { add_core_of = QIE }
+		1058 = { add_core_of = QIE }
+		1059 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1064 = { add_core_of = QIE }
+		1065 = { add_core_of = QIE }
+		1075 = { add_core_of = QIE }
+		622 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		328 = { add_core_of = QIE }
+		524 = { add_core_of = QIE }
+		610 = { add_core_of = QIE }
+		612 = { add_core_of = QIE }
+		714 = { add_core_of = QIE }
+		715 = { add_core_of = QIE }
+		716 = { add_core_of = QIE }
+		717 = { add_core_of = QIE }
+		745 = { add_core_of = QIE }
+		883 = { add_core_of = QIE }
+		884 = { add_core_of = QIE }
+		885 = { add_core_of = QIE }
+		886 = { add_core_of = QIE }
+		729 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = CZE_QIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_KOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+				state = 527
+				state = 1345
+				state = 1346
+				state = 1347
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KOR = { exists = yes }
+			}
+			KOR = { is_subject_of = CZE }
+		}
+		525 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		527 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1345 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1346 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1347 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				525 = { NOT = { is_core_of = CZE } }
+				527 = { NOT = { is_core_of = CZE } }
+				1345 = { NOT = { is_core_of = CZE } }
+				1346 = { NOT = { is_core_of = CZE } }
+				1347 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KOR = {
+			every_core_state = {
+				remove_core_of = KOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KOR
+				}
+				remove_claim_by = KOR
+			}
+		}
+		525 = { add_core_of = KOR }
+		527 = { add_core_of = KOR }
+		1345 = { add_core_of = KOR }
+		1346 = { add_core_of = KOR }
+		1347 = { add_core_of = KOR }
+		release = KOR
+		KOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = KOR
+			}
+		}
+		KOR = { 
+			set_cosmetic_tag = CZE_KOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = KOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+				state = 1356
+				state = 1354
+				state = 526
+				state = 1353
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 532
+				state = 533
+				state = 534
+				state = 535
+				state = 536
+				state = 537
+				state = 555
+				state = 645
+				state = 648
+				state = 1355
+				state = 1352
+				state = 1351
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = CZE }
+		}
+		282 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1356 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1354 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		526 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1353 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		528 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		529 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		530 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		531 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		532 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		533 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		534 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		535 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		536 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		537 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		555 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		645 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		648 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1355 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1352 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1351 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				282 = { NOT = { is_core_of = CZE } }
+				1356 = { NOT = { is_core_of = CZE } }
+				1354 = { NOT = { is_core_of = CZE } }
+				526 = { NOT = { is_core_of = CZE } }
+				1353 = { NOT = { is_core_of = CZE } }
+				528 = { NOT = { is_core_of = CZE } }
+				529 = { NOT = { is_core_of = CZE } }
+				530 = { NOT = { is_core_of = CZE } }
+				531 = { NOT = { is_core_of = CZE } }
+				532 = { NOT = { is_core_of = CZE } }
+				533 = { NOT = { is_core_of = CZE } }
+				534 = { NOT = { is_core_of = CZE } }
+				535 = { NOT = { is_core_of = CZE } }
+				536 = { NOT = { is_core_of = CZE } }
+				537 = { NOT = { is_core_of = CZE } }
+				555 = { NOT = { is_core_of = CZE } }
+				645 = { NOT = { is_core_of = CZE } }
+				648 = { NOT = { is_core_of = CZE } }
+				1355 = { NOT = { is_core_of = CZE } }
+				1352 = { NOT = { is_core_of = CZE } }
+				1351 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		282 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		526 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		537 = { add_core_of = JAP }
+		555 = { add_core_of = JAP }
+		645 = { add_core_of = JAP }
+		648 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = CZE_JAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_SIA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 289
+				state = 724
+				state = 749
+				state = 830
+				state = 751
+				state = 999
+				state = 822
+				state = 823
+				state = 824
+				state = 831
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIA = { exists = yes }
+			}
+			SIA = { is_subject_of = CZE }
+		}
+		289 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		724 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		749 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		830 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		751 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		999 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		822 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		823 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		824 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		831 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				289 = { NOT = { is_core_of = CZE } }
+				724 = { NOT = { is_core_of = CZE } }
+				749 = { NOT = { is_core_of = CZE } }
+				830 = { NOT = { is_core_of = CZE } }
+				751 = { NOT = { is_core_of = CZE } }
+				999 = { NOT = { is_core_of = CZE } }
+				822 = { NOT = { is_core_of = CZE } }
+				823 = { NOT = { is_core_of = CZE } }
+				824 = { NOT = { is_core_of = CZE } }
+				831 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIA = {
+			every_core_state = {
+				remove_core_of = SIA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIA
+				}
+				remove_claim_by = SIA
+			}
+		}
+		286 = { add_core_of = SIA }
+		671 = { add_core_of = SIA }
+		827 = { add_core_of = SIA }
+		856 = { add_core_of = SIA }
+		857 = { add_core_of = SIA }
+		336 = { add_core_of = SIA }
+		670 = { add_core_of = SIA }
+		750 = { add_core_of = SIA }
+		825 = { add_core_of = SIA }
+		826 = { add_core_of = SIA }
+		846 = { add_core_of = SIA }
+		882 = { add_core_of = SIA }
+		289 = { add_core_of = SIA }
+		724 = { add_core_of = SIA }
+		749 = { add_core_of = SIA }
+		830 = { add_core_of = SIA }
+		751 = { add_core_of = SIA }
+		999 = { add_core_of = SIA }
+		822 = { add_core_of = SIA }
+		823 = { add_core_of = SIA }
+		824 = { add_core_of = SIA }
+		831 = { add_core_of = SIA }
+		release = SIA
+		SIA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = SIA
+			}
+		}
+		SIA = { 
+			set_cosmetic_tag = CZE_SIA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = SIA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_INS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1020
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				INS = { exists = yes }
+			}
+			INS = { is_subject_of = CZE }
+		}
+		1020 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				1020 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		INS = {
+			every_core_state = {
+				remove_core_of = INS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INS
+				}
+				remove_claim_by = INS
+			}
+		}
+		334 = { add_core_of = INS }
+		335 = { add_core_of = INS }
+		667 = { add_core_of = INS }
+		668 = { add_core_of = INS }
+		669 = { add_core_of = INS }
+		672 = { add_core_of = INS }
+		673 = { add_core_of = INS }
+		843 = { add_core_of = INS }
+		1016 = { add_core_of = INS }
+		1017 = { add_core_of = INS }
+		1018 = { add_core_of = INS }
+		1019 = { add_core_of = INS }
+		828 = { add_core_of = INS }
+		1021 = { add_core_of = INS }
+		1022 = { add_core_of = INS }
+		1023 = { add_core_of = INS }
+		1333 = { add_core_of = INS }
+		721 = { add_core_of = INS }
+		972 = { add_core_of = INS }
+		327 = { add_core_of = INS }
+		941 = { add_core_of = INS }
+		523 = { add_core_of = INS }
+		623 = { add_core_of = INS }
+		624 = { add_core_of = INS }
+		625 = { add_core_of = INS }
+		626 = { add_core_of = INS }
+		627 = { add_core_of = INS }
+		628 = { add_core_of = INS }
+		629 = { add_core_of = INS }
+		630 = { add_core_of = INS }
+		631 = { add_core_of = INS }
+		632 = { add_core_of = INS }
+		633 = { add_core_of = INS }
+		634 = { add_core_of = INS }
+		635 = { add_core_of = INS }
+		638 = { add_core_of = INS }
+		639 = { add_core_of = INS }
+		641 = { add_core_of = INS }
+		642 = { add_core_of = INS }
+		643 = { add_core_of = INS }
+		646 = { add_core_of = INS }
+		647 = { add_core_of = INS }
+		684 = { add_core_of = INS }
+		725 = { add_core_of = INS }
+		727 = { add_core_of = INS }
+		728 = { add_core_of = INS }
+		733 = { add_core_of = INS }
+		734 = { add_core_of = INS }
+		737 = { add_core_of = INS }
+		757 = { add_core_of = INS }
+		333 = { add_core_of = INS }
+		636 = { add_core_of = INS }
+		711 = { add_core_of = INS }
+		1020 = { add_core_of = INS }
+		release = INS
+		INS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = INS
+			}
+		}
+		INS = { 
+			set_cosmetic_tag = CZE_INS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 986
+				state = 285
+				state = 517
+				state = 518
+				state = 519
+				state = 520
+				state = 521
+				state = 522
+				state = 988
+				state = 987
+				state = 674
+				state = 985
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = CZE }
+		}
+		986 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		285 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		517 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		518 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		519 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		520 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		521 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		522 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		988 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		987 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		674 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		985 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				986 = { NOT = { is_core_of = CZE } }
+				285 = { NOT = { is_core_of = CZE } }
+				517 = { NOT = { is_core_of = CZE } }
+				518 = { NOT = { is_core_of = CZE } }
+				519 = { NOT = { is_core_of = CZE } }
+				520 = { NOT = { is_core_of = CZE } }
+				521 = { NOT = { is_core_of = CZE } }
+				522 = { NOT = { is_core_of = CZE } }
+				988 = { NOT = { is_core_of = CZE } }
+				987 = { NOT = { is_core_of = CZE } }
+				674 = { NOT = { is_core_of = CZE } }
+				985 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		986 = { add_core_of = AST }
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = CZE_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_NZL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+				state = 723
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NZL = { exists = yes }
+			}
+			NZL = { is_subject_of = CZE }
+		}
+		284 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		723 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				284 = { NOT = { is_core_of = CZE } }
+				723 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NZL = {
+			every_core_state = {
+				remove_core_of = NZL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NZL
+				}
+				remove_claim_by = NZL
+			}
+		}
+		284 = { add_core_of = NZL }
+		723 = { add_core_of = NZL }
+		release = NZL
+		NZL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = NZL
+			}
+		}
+		NZL = { 
+			set_cosmetic_tag = CZE_NZL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = NZL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_CAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 331
+				state = 332
+				state = 463
+				state = 730
+				state = 1273
+				state = 1348
+				state = 1349
+				state = 1350
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAN = { exists = yes }
+			}
+			CAN = { is_subject_of = CZE }
+		}
+		331 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		332 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		463 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		730 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1273 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1348 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1349 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1350 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				331 = { NOT = { is_core_of = CZE } }
+				332 = { NOT = { is_core_of = CZE } }
+				463 = { NOT = { is_core_of = CZE } }
+				730 = { NOT = { is_core_of = CZE } }
+				1273 = { NOT = { is_core_of = CZE } }
+				1348 = { NOT = { is_core_of = CZE } }
+				1349 = { NOT = { is_core_of = CZE } }
+				1350 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAN = {
+			every_core_state = {
+				remove_core_of = CAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAN
+				}
+				remove_claim_by = CAN
+			}
+		}
+		276 = { add_core_of = CAN }
+		464 = { add_core_of = CAN }
+		465 = { add_core_of = CAN }
+		466 = { add_core_of = CAN }
+		467 = { add_core_of = CAN }
+		468 = { add_core_of = CAN }
+		469 = { add_core_of = CAN }
+		470 = { add_core_of = CAN }
+		471 = { add_core_of = CAN }
+		472 = { add_core_of = CAN }
+		473 = { add_core_of = CAN }
+		682 = { add_core_of = CAN }
+		683 = { add_core_of = CAN }
+		739 = { add_core_of = CAN }
+		740 = { add_core_of = CAN }
+		832 = { add_core_of = CAN }
+		1330 = { add_core_of = CAN }
+		1331 = { add_core_of = CAN }
+		1332 = { add_core_of = CAN }
+		331 = { add_core_of = CAN }
+		332 = { add_core_of = CAN }
+		463 = { add_core_of = CAN }
+		730 = { add_core_of = CAN }
+		1273 = { add_core_of = CAN }
+		1348 = { add_core_of = CAN }
+		1349 = { add_core_of = CAN }
+		1350 = { add_core_of = CAN }
+		release = CAN
+		CAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = CAN
+			}
+		}
+		CAN = { 
+			set_cosmetic_tag = CZE_CAN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = CAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = CZE }
+		}
+		361 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				361 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
+				}
+				remove_claim_by = USA
+			}
+		}
+		261 = { add_core_of = USA }
+		357 = { add_core_of = USA }
+		358 = { add_core_of = USA }
+		359 = { add_core_of = USA }
+		360 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		366 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		370 = { add_core_of = USA }
+		371 = { add_core_of = USA }
+		372 = { add_core_of = USA }
+		373 = { add_core_of = USA }
+		374 = { add_core_of = USA }
+		375 = { add_core_of = USA }
+		376 = { add_core_of = USA }
+		377 = { add_core_of = USA }
+		378 = { add_core_of = USA }
+		379 = { add_core_of = USA }
+		380 = { add_core_of = USA }
+		381 = { add_core_of = USA }
+		382 = { add_core_of = USA }
+		383 = { add_core_of = USA }
+		384 = { add_core_of = USA }
+		385 = { add_core_of = USA }
+		386 = { add_core_of = USA }
+		387 = { add_core_of = USA }
+		388 = { add_core_of = USA }
+		389 = { add_core_of = USA }
+		390 = { add_core_of = USA }
+		391 = { add_core_of = USA }
+		392 = { add_core_of = USA }
+		393 = { add_core_of = USA }
+		394 = { add_core_of = USA }
+		395 = { add_core_of = USA }
+		396 = { add_core_of = USA }
+		1173 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1171 = { add_core_of = USA }
+		1165 = { add_core_of = USA }
+		1172 = { add_core_of = USA }
+		1175 = { add_core_of = USA }
+		696 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		726 = { add_core_of = USA }
+		1174 = { add_core_of = USA }
+		796 = { add_core_of = USA }
+		797 = { add_core_of = USA }
+		798 = { add_core_of = USA }
+		1166 = { add_core_of = USA }
+		829 = { add_core_of = USA }
+		833 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		930 = { add_core_of = USA }
+		931 = { add_core_of = USA }
+		932 = { add_core_of = USA }
+		933 = { add_core_of = USA }
+		934 = { add_core_of = USA }
+		935 = { add_core_of = USA }
+		1096 = { add_core_of = USA }
+		1150 = { add_core_of = USA }
+		1151 = { add_core_of = USA }
+		1152 = { add_core_of = USA }
+		1153 = { add_core_of = USA }
+		1154 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1156 = { add_core_of = USA }
+		1157 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1161 = { add_core_of = USA }
+		1162 = { add_core_of = USA }
+		1163 = { add_core_of = USA }
+		1164 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = CZE_USA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_MEX = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 277
+				state = 474
+				state = 475
+				state = 476
+				state = 477
+				state = 478
+				state = 479
+				state = 480
+				state = 481
+				state = 482
+				state = 483
+				state = 484
+				state = 485
+				state = 1252
+				state = 1253
+				state = 1254
+				state = 1255
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MEX = { exists = yes }
+			}
+			MEX = { is_subject_of = CZE }
+		}
+		277 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		474 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		475 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		476 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		477 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		478 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		479 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		480 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		481 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		482 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		483 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		484 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		485 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1252 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1253 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1254 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1255 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				277 = { NOT = { is_core_of = CZE } }
+				474 = { NOT = { is_core_of = CZE } }
+				475 = { NOT = { is_core_of = CZE } }
+				476 = { NOT = { is_core_of = CZE } }
+				477 = { NOT = { is_core_of = CZE } }
+				478 = { NOT = { is_core_of = CZE } }
+				479 = { NOT = { is_core_of = CZE } }
+				480 = { NOT = { is_core_of = CZE } }
+				481 = { NOT = { is_core_of = CZE } }
+				482 = { NOT = { is_core_of = CZE } }
+				483 = { NOT = { is_core_of = CZE } }
+				484 = { NOT = { is_core_of = CZE } }
+				485 = { NOT = { is_core_of = CZE } }
+				1252 = { NOT = { is_core_of = CZE } }
+				1253 = { NOT = { is_core_of = CZE } }
+				1254 = { NOT = { is_core_of = CZE } }
+				1255 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MEX = {
+			every_core_state = {
+				remove_core_of = MEX
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MEX
+				}
+				remove_claim_by = MEX
+			}
+		}
+		311 = { add_core_of = MEX }
+		313 = { add_core_of = MEX }
+		1250 = { add_core_of = MEX }
+		1251 = { add_core_of = MEX }
+		304 = { add_core_of = MEX }
+		308 = { add_core_of = MEX }
+		312 = { add_core_of = MEX }
+		314 = { add_core_of = MEX }
+		315 = { add_core_of = MEX }
+		316 = { add_core_of = MEX }
+		317 = { add_core_of = MEX }
+		318 = { add_core_of = MEX }
+		319 = { add_core_of = MEX }
+		685 = { add_core_of = MEX }
+		686 = { add_core_of = MEX }
+		689 = { add_core_of = MEX }
+		690 = { add_core_of = MEX }
+		691 = { add_core_of = MEX }
+		692 = { add_core_of = MEX }
+		694 = { add_core_of = MEX }
+		695 = { add_core_of = MEX }
+		818 = { add_core_of = MEX }
+		820 = { add_core_of = MEX }
+		842 = { add_core_of = MEX }
+		854 = { add_core_of = MEX }
+		1070 = { add_core_of = MEX }
+		1071 = { add_core_of = MEX }
+		1077 = { add_core_of = MEX }
+		1247 = { add_core_of = MEX }
+		1248 = { add_core_of = MEX }
+		1249 = { add_core_of = MEX }
+		1256 = { add_core_of = MEX }
+		1257 = { add_core_of = MEX }
+		1258 = { add_core_of = MEX }
+		1259 = { add_core_of = MEX }
+		1260 = { add_core_of = MEX }
+		1261 = { add_core_of = MEX }
+		1262 = { add_core_of = MEX }
+		1312 = { add_core_of = MEX }
+		277 = { add_core_of = MEX }
+		474 = { add_core_of = MEX }
+		475 = { add_core_of = MEX }
+		476 = { add_core_of = MEX }
+		477 = { add_core_of = MEX }
+		478 = { add_core_of = MEX }
+		479 = { add_core_of = MEX }
+		480 = { add_core_of = MEX }
+		481 = { add_core_of = MEX }
+		482 = { add_core_of = MEX }
+		483 = { add_core_of = MEX }
+		484 = { add_core_of = MEX }
+		485 = { add_core_of = MEX }
+		1252 = { add_core_of = MEX }
+		1253 = { add_core_of = MEX }
+		1254 = { add_core_of = MEX }
+		1255 = { add_core_of = MEX }
+		release = MEX
+		MEX = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = MEX
+			}
+		}
+		MEX = { 
+			set_cosmetic_tag = CZE_MEX_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = MEX
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_COL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 306
+				state = 486
+				state = 493
+				state = 851
+				state = 852
+				state = 853
+				state = 1214
+				state = 1215
+				state = 1216
+				state = 1296
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				COL = { exists = yes }
+			}
+			COL = { is_subject_of = CZE }
+		}
+		306 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		486 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		493 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		851 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		852 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		853 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1214 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1215 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1216 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1296 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				306 = { NOT = { is_core_of = CZE } }
+				486 = { NOT = { is_core_of = CZE } }
+				493 = { NOT = { is_core_of = CZE } }
+				851 = { NOT = { is_core_of = CZE } }
+				852 = { NOT = { is_core_of = CZE } }
+				853 = { NOT = { is_core_of = CZE } }
+				1214 = { NOT = { is_core_of = CZE } }
+				1215 = { NOT = { is_core_of = CZE } }
+				1216 = { NOT = { is_core_of = CZE } }
+				1296 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		COL = {
+			every_core_state = {
+				remove_core_of = COL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = COL
+				}
+				remove_claim_by = COL
+			}
+		}
+		307 = { add_core_of = COL }
+		488 = { add_core_of = COL }
+		489 = { add_core_of = COL }
+		849 = { add_core_of = COL }
+		850 = { add_core_of = COL }
+		912 = { add_core_of = COL }
+		1036 = { add_core_of = COL }
+		306 = { add_core_of = COL }
+		486 = { add_core_of = COL }
+		493 = { add_core_of = COL }
+		851 = { add_core_of = COL }
+		852 = { add_core_of = COL }
+		853 = { add_core_of = COL }
+		1214 = { add_core_of = COL }
+		1215 = { add_core_of = COL }
+		1216 = { add_core_of = COL }
+		1296 = { add_core_of = COL }
+		release = COL
+		COL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = COL
+			}
+		}
+		COL = { 
+			set_cosmetic_tag = CZE_COL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = COL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_PRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 303
+				state = 491
+				state = 492
+				state = 494
+				state = 845
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PRU = { exists = yes }
+			}
+			PRU = { is_subject_of = CZE }
+		}
+		303 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		491 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		492 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		494 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		845 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				303 = { NOT = { is_core_of = CZE } }
+				491 = { NOT = { is_core_of = CZE } }
+				492 = { NOT = { is_core_of = CZE } }
+				494 = { NOT = { is_core_of = CZE } }
+				845 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PRU = {
+			every_core_state = {
+				remove_core_of = PRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PRU
+				}
+				remove_claim_by = PRU
+			}
+		}
+		302 = { add_core_of = PRU }
+		487 = { add_core_of = PRU }
+		847 = { add_core_of = PRU }
+		848 = { add_core_of = PRU }
+		1073 = { add_core_of = PRU }
+		270 = { add_core_of = PRU }
+		278 = { add_core_of = PRU }
+		279 = { add_core_of = PRU }
+		299 = { add_core_of = PRU }
+		449 = { add_core_of = PRU }
+		490 = { add_core_of = PRU }
+		506 = { add_core_of = PRU }
+		507 = { add_core_of = PRU }
+		508 = { add_core_of = PRU }
+		509 = { add_core_of = PRU }
+		511 = { add_core_of = PRU }
+		512 = { add_core_of = PRU }
+		579 = { add_core_of = PRU }
+		688 = { add_core_of = PRU }
+		720 = { add_core_of = PRU }
+		872 = { add_core_of = PRU }
+		873 = { add_core_of = PRU }
+		874 = { add_core_of = PRU }
+		901 = { add_core_of = PRU }
+		902 = { add_core_of = PRU }
+		903 = { add_core_of = PRU }
+		904 = { add_core_of = PRU }
+		1027 = { add_core_of = PRU }
+		1028 = { add_core_of = PRU }
+		1029 = { add_core_of = PRU }
+		305 = { add_core_of = PRU }
+		649 = { add_core_of = PRU }
+		1280 = { add_core_of = PRU }
+		303 = { add_core_of = PRU }
+		491 = { add_core_of = PRU }
+		492 = { add_core_of = PRU }
+		494 = { add_core_of = PRU }
+		845 = { add_core_of = PRU }
+		release = PRU
+		PRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = PRU
+			}
+		}
+		PRU = { 
+			set_cosmetic_tag = CZE_PRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = PRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+
+CZE_establish_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 280
+				state = 495
+				state = 496
+				state = 497
+				state = 498
+				state = 499
+				state = 500
+				state = 501
+				state = 502
+				state = 503
+				state = 504
+				state = 505
+				state = 855
+				state = 894
+				state = 895
+				state = 896
+				state = 898
+				state = 900
+				state = 1030
+				state = 1031
+				state = 1033
+				state = 1040
+				state = 1041
+				state = 1043
+				state = 1305
+				state = 1306
+				state = 1307
+				state = 1310
+				state = 1311
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRA = { exists = yes }
+			}
+			BRA = { is_subject_of = CZE }
+		}
+		280 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		495 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		496 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		497 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		498 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		499 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		500 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		501 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		502 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		503 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		504 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		505 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		855 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		894 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		895 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		896 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		898 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		900 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1030 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1031 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1033 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1040 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1041 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1043 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1305 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1306 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1307 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1310 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		1311 = { owner = { OR = { original_tag = CZE is_subject_of = CZE } } }
+		OR = {
+				280 = { NOT = { is_core_of = CZE } }
+				495 = { NOT = { is_core_of = CZE } }
+				496 = { NOT = { is_core_of = CZE } }
+				497 = { NOT = { is_core_of = CZE } }
+				498 = { NOT = { is_core_of = CZE } }
+				499 = { NOT = { is_core_of = CZE } }
+				500 = { NOT = { is_core_of = CZE } }
+				501 = { NOT = { is_core_of = CZE } }
+				502 = { NOT = { is_core_of = CZE } }
+				503 = { NOT = { is_core_of = CZE } }
+				504 = { NOT = { is_core_of = CZE } }
+				505 = { NOT = { is_core_of = CZE } }
+				855 = { NOT = { is_core_of = CZE } }
+				894 = { NOT = { is_core_of = CZE } }
+				895 = { NOT = { is_core_of = CZE } }
+				896 = { NOT = { is_core_of = CZE } }
+				898 = { NOT = { is_core_of = CZE } }
+				900 = { NOT = { is_core_of = CZE } }
+				1030 = { NOT = { is_core_of = CZE } }
+				1031 = { NOT = { is_core_of = CZE } }
+				1033 = { NOT = { is_core_of = CZE } }
+				1040 = { NOT = { is_core_of = CZE } }
+				1041 = { NOT = { is_core_of = CZE } }
+				1043 = { NOT = { is_core_of = CZE } }
+				1305 = { NOT = { is_core_of = CZE } }
+				1306 = { NOT = { is_core_of = CZE } }
+				1307 = { NOT = { is_core_of = CZE } }
+				1310 = { NOT = { is_core_of = CZE } }
+				1311 = { NOT = { is_core_of = CZE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRA
+				}
+				remove_claim_by = BRA
+			}
+		}
+		309 = { add_core_of = BRA }
+		1038 = { add_core_of = BRA }
+		300 = { add_core_of = BRA }
+		301 = { add_core_of = BRA }
+		310 = { add_core_of = BRA }
+		510 = { add_core_of = BRA }
+		687 = { add_core_of = BRA }
+		1037 = { add_core_of = BRA }
+		1039 = { add_core_of = BRA }
+		1074 = { add_core_of = BRA }
+		1078 = { add_core_of = BRA }
+		1079 = { add_core_of = BRA }
+		1308 = { add_core_of = BRA }
+		1309 = { add_core_of = BRA }
+		280 = { add_core_of = BRA }
+		495 = { add_core_of = BRA }
+		496 = { add_core_of = BRA }
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		500 = { add_core_of = BRA }
+		501 = { add_core_of = BRA }
+		502 = { add_core_of = BRA }
+		503 = { add_core_of = BRA }
+		504 = { add_core_of = BRA }
+		505 = { add_core_of = BRA }
+		855 = { add_core_of = BRA }
+		894 = { add_core_of = BRA }
+		895 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		898 = { add_core_of = BRA }
+		900 = { add_core_of = BRA }
+		1030 = { add_core_of = BRA }
+		1031 = { add_core_of = BRA }
+		1033 = { add_core_of = BRA }
+		1040 = { add_core_of = BRA }
+		1041 = { add_core_of = BRA }
+		1043 = { add_core_of = BRA }
+		1305 = { add_core_of = BRA }
+		1306 = { add_core_of = BRA }
+		1307 = { add_core_of = BRA }
+		1310 = { add_core_of = BRA }
+		1311 = { add_core_of = BRA }
+		release = BRA
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CZE
+						}
+						OR = {
+							is_owned_by = CZE
+							OWNER = { is_subject_of = CZE} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = CZE_BRA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Hussite Administration"
+				picture = "gfx/leaders/WDCZE/Hussite_Admin_2.png"
+				expire = "1.1.1"
+				ideology = hussitism_subtype
+				traits = {
+				}
+			}
+
+			CZE = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Hussite Administration"
+				long_name = "Hussite Administration"
+			}
+		}
+	}
+}
+}
