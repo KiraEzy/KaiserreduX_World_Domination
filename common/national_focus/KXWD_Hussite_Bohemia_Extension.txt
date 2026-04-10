@@ -1,0 +1,208 @@
+
+
+##################################
+####### Hussite extension  #######
+##################################
+
+
+shared_focus = {
+	id = CZEWD_Jan_Hus_Footsteps
+	icon = GFX_goal_SHXWD_china_for_faithfull
+    available = {
+		or = {
+        	has_completed_focus = CZE_hustle_with_hussites
+			has_completed_focus = CZE_hussite_republicanism
+		}
+		is_ai = no
+    }
+	x = 0
+	y = 2
+	cost = 1
+		
+    relative_position_id = CZE_women_pilots
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Jan_Hus_Footsteps"
+        add_political_power = 250
+		add_stability = 0.15
+		add_war_support = 0.15
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Kingdom_1
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Jan_Hus_Footsteps }
+    available = {
+        has_completed_focus = CZE_hustle_with_hussites
+		is_ai = no
+    }
+	x = -1
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Jan_Hus_Footsteps
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Kingdom_1"
+        add_ideas = KXWD_CZE_Hussite_Kingdom_1
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Kingdom_2
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Hussite_Kingdom_1 }
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Hussite_Kingdom_1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Kingdom_2"
+        swap_ideas = {
+    		remove_idea = KXWD_CZE_Hussite_Kingdom_1
+    		add_idea = KXWD_CZE_Hussite_Kingdom_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Kingdom_3
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Hussite_Kingdom_2 }
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Hussite_Kingdom_2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Kingdom_3"
+        swap_ideas = {
+    		remove_idea = KXWD_CZE_Hussite_Kingdom_2
+    		add_idea = KXWD_CZE_Hussite_Kingdom_3
+		}
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Republic_1
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Jan_Hus_Footsteps }
+    available = {
+        has_completed_focus = CZE_hussite_republicanism
+		is_ai = no
+    }
+	x = 1
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Jan_Hus_Footsteps
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Republic_1"
+        add_ideas = KXWD_CZE_Hussite_Republic_1
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Republic_2
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Hussite_Republic_1 }
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Hussite_Republic_1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Kingdom_2"
+        swap_ideas = {
+    		remove_idea = KXWD_CZE_Hussite_Republic_1
+    		add_idea = KXWD_CZE_Hussite_Republic_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Republic_3
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Hussite_Republic_2 }
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Hussite_Republic_2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Republic_3"
+        swap_ideas = {
+    		remove_idea = KXWD_CZE_Hussite_Republic_2
+    		add_idea = KXWD_CZE_Hussite_Republic_3
+		}
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Army_1
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { 
+		focus = CZEWD_Hussite_Republic_1 
+		focus = CZEWD_Hussite_Kingdom_1
+	}
+    available = {
+    }
+	x = 0
+	y = 2
+	cost = 5
+		
+    relative_position_id = CZEWD_Jan_Hus_Footsteps
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Army_1"
+        add_ideas = KXWD_CZE_Hussite_Army_1
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Army_2
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Hussite_Army_1 }
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Hussite_Army_1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Army_2"
+        swap_ideas = {
+    		remove_idea = KXWD_CZE_Hussite_Army_1
+    		add_idea = KXWD_CZE_Hussite_Army_2
+		}
+	}
+}
+
+shared_focus = {
+	id = CZEWD_Hussite_Crusade
+	icon = GFX_goal_SHXWD_china_for_faithfull
+	prerequisite = { focus = CZEWD_Hussite_Army_2 }
+	prerequisite = { 
+		focus = CZEWD_Hussite_Republic_3
+		focus = CZEWD_Hussite_Kingdom_3
+	}
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+		
+    relative_position_id = CZEWD_Hussite_Army_2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CZEWD_Hussite_Crusade"
+    	add_ideas = KXWD_CZE_Hussite_Crusade
+	}
+}
