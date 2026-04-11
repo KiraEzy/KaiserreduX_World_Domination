@@ -3616,10 +3616,14 @@ AUS_great_game = {
 			1287 = { owner = { OR = { original_tag = AUS is_subject_of = AUS } } }
 			1294 = { owner = { OR = { original_tag = AUS is_subject_of = AUS } } }
 			1295 = { owner = { OR = { original_tag = AUS is_subject_of = AUS } } }
+			WHR = {
+				exists = yes
+				is_subject_of = AUS
+			}
 		}
 
 		fire_only_once = yes
-
+		days_remove = 3
 		ai_will_do = {
 			factor = 5
 		}

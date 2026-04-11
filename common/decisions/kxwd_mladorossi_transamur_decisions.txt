@@ -404,37 +404,9 @@ TRM_establish_rk_MAD = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 320
-				state = 1095
-				state = 1094
-				state = 423
-				state = 424
-				state = 425
-				state = 426
 				state = 427
-				state = 428
-				state = 429
-				state = 430
 				state = 431
-				state = 432
-				state = 433
-				state = 434
-				state = 435
-				state = 436
-				state = 437
-				state = 438
-				state = 439
-				state = 1093
-				state = 815
-				state = 858
-				state = 867
-				state = 868
-				state = 887
-				state = 1092
-				state = 889
-				state = 893
-				state = 1034
-				state = 1057
+				state = 438	
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -447,69 +419,13 @@ TRM_establish_rk_MAD = {
 			}
 			MAD = { is_subject_of = TRM }
 		}
-		320 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1095 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1094 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		423 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		424 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		425 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		426 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		427 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		428 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		429 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		430 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		431 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		432 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		433 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		434 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		435 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		436 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		437 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		438 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		439 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1093 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		815 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		858 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		867 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		868 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		887 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1092 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		889 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		893 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1034 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1057 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
-				320 = { NOT = { is_core_of = TRM } }
-				1095 = { NOT = { is_core_of = TRM } }
-				1094 = { NOT = { is_core_of = TRM } }
-				423 = { NOT = { is_core_of = TRM } }
-				424 = { NOT = { is_core_of = TRM } }
-				425 = { NOT = { is_core_of = TRM } }
-				426 = { NOT = { is_core_of = TRM } }
 				427 = { NOT = { is_core_of = TRM } }
-				428 = { NOT = { is_core_of = TRM } }
-				429 = { NOT = { is_core_of = TRM } }
-				430 = { NOT = { is_core_of = TRM } }
 				431 = { NOT = { is_core_of = TRM } }
-				432 = { NOT = { is_core_of = TRM } }
-				433 = { NOT = { is_core_of = TRM } }
-				434 = { NOT = { is_core_of = TRM } }
-				435 = { NOT = { is_core_of = TRM } }
-				436 = { NOT = { is_core_of = TRM } }
-				437 = { NOT = { is_core_of = TRM } }
 				438 = { NOT = { is_core_of = TRM } }
-				439 = { NOT = { is_core_of = TRM } }
-				1093 = { NOT = { is_core_of = TRM } }
-				815 = { NOT = { is_core_of = TRM } }
-				858 = { NOT = { is_core_of = TRM } }
-				867 = { NOT = { is_core_of = TRM } }
-				868 = { NOT = { is_core_of = TRM } }
-				887 = { NOT = { is_core_of = TRM } }
-				1092 = { NOT = { is_core_of = TRM } }
-				889 = { NOT = { is_core_of = TRM } }
-				893 = { NOT = { is_core_of = TRM } }
-				1034 = { NOT = { is_core_of = TRM } }
-				1057 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -576,6 +492,12 @@ TRM_establish_rk_MAD = {
 		893 = { add_core_of = MAD }
 		1034 = { add_core_of = MAD }
 		1057 = { add_core_of = MAD }
+		1360 = { add_core_of = MAD }
+		1361 = { add_core_of = MAD }
+		1358 = { add_core_of = MAD }
+		1359 = { add_core_of = MAD }
+		1362 = { add_core_of = MAD }
+		1363 = { add_core_of = MAD }
 		release = MAD
 		MAD = { 
 			every_core_state = {
@@ -1003,19 +925,6 @@ TRM_establish_rk_AFG = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 267
-				state = 415
-				state = 440
-				state = 441
-				state = 442
-				state = 443
-				state = 444
-				state = 445
-				state = 890
-				state = 891
-				state = 897
-				state = 1217
-				state = 1218
-				state = 1219
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1029,34 +938,8 @@ TRM_establish_rk_AFG = {
 			AFG = { is_subject_of = TRM }
 		}
 		267 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		415 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		440 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		441 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		442 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		443 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		444 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		445 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		890 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		891 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		897 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1217 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1218 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1219 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				267 = { NOT = { is_core_of = TRM } }
-				415 = { NOT = { is_core_of = TRM } }
-				440 = { NOT = { is_core_of = TRM } }
-				441 = { NOT = { is_core_of = TRM } }
-				442 = { NOT = { is_core_of = TRM } }
-				443 = { NOT = { is_core_of = TRM } }
-				444 = { NOT = { is_core_of = TRM } }
-				445 = { NOT = { is_core_of = TRM } }
-				890 = { NOT = { is_core_of = TRM } }
-				891 = { NOT = { is_core_of = TRM } }
-				897 = { NOT = { is_core_of = TRM } }
-				1217 = { NOT = { is_core_of = TRM } }
-				1218 = { NOT = { is_core_of = TRM } }
-				1219 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -1153,13 +1036,6 @@ TRM_establish_rk_PER = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 266
-				state = 410
-				state = 411
-				state = 412
-				state = 413
-				state = 414
-				state = 416
-				state = 421
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1173,22 +1049,8 @@ TRM_establish_rk_PER = {
 			PER = { is_subject_of = TRM }
 		}
 		266 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		410 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		411 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		412 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		413 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		414 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		416 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		421 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				266 = { NOT = { is_core_of = TRM } }
-				410 = { NOT = { is_core_of = TRM } }
-				411 = { NOT = { is_core_of = TRM } }
-				412 = { NOT = { is_core_of = TRM } }
-				413 = { NOT = { is_core_of = TRM } }
-				414 = { NOT = { is_core_of = TRM } }
-				416 = { NOT = { is_core_of = TRM } }
-				421 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -1393,10 +1255,6 @@ TRM_establish_rk_IRQ = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 291
-				state = 349
-				state = 676
-				state = 812
-				state = 819
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1410,16 +1268,8 @@ TRM_establish_rk_IRQ = {
 			IRQ = { is_subject_of = TRM }
 		}
 		291 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		349 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		676 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		812 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		819 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				291 = { NOT = { is_core_of = TRM } }
-				349 = { NOT = { is_core_of = TRM } }
-				676 = { NOT = { is_core_of = TRM } }
-				812 = { NOT = { is_core_of = TRM } }
-				819 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -1506,16 +1356,10 @@ TRM_establish_rk_LEB = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 344
-				state = 350
 				state = 454
-				state = 455
 				state = 553
 				state = 554
-				state = 677
-				state = 680
 				state = 992
-				state = 995
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1528,27 +1372,15 @@ TRM_establish_rk_LEB = {
 			}
 			LEB = { is_subject_of = TRM }
 		}
-		344 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		350 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		454 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		455 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		553 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		554 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		677 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		680 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		992 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		995 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
-				344 = { NOT = { is_core_of = TRM } }
-				350 = { NOT = { is_core_of = TRM } }
 				454 = { NOT = { is_core_of = TRM } }
-				455 = { NOT = { is_core_of = TRM } }
 				553 = { NOT = { is_core_of = TRM } }
 				554 = { NOT = { is_core_of = TRM } }
-				677 = { NOT = { is_core_of = TRM } }
-				680 = { NOT = { is_core_of = TRM } }
 				992 = { NOT = { is_core_of = TRM } }
-				995 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -1641,27 +1473,6 @@ TRM_establish_rk_SAU = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 292
-				state = 293
-				state = 294
-				state = 347
-				state = 656
-				state = 658
-				state = 659
-				state = 675
-				state = 678
-				state = 679
-				state = 752
-				state = 754
-				state = 859
-				state = 907
-				state = 915
-				state = 981
-				state = 982
-				state = 991
-				state = 993
-				state = 994
-				state = 1024
-				state = 1035
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1675,50 +1486,8 @@ TRM_establish_rk_SAU = {
 			SAU = { is_subject_of = TRM }
 		}
 		292 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		293 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		294 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		347 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		656 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		658 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		659 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		675 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		678 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		679 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		752 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		754 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		859 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		907 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		915 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		981 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		982 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		991 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		993 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		994 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1024 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1035 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				292 = { NOT = { is_core_of = TRM } }
-				293 = { NOT = { is_core_of = TRM } }
-				294 = { NOT = { is_core_of = TRM } }
-				347 = { NOT = { is_core_of = TRM } }
-				656 = { NOT = { is_core_of = TRM } }
-				658 = { NOT = { is_core_of = TRM } }
-				659 = { NOT = { is_core_of = TRM } }
-				675 = { NOT = { is_core_of = TRM } }
-				678 = { NOT = { is_core_of = TRM } }
-				679 = { NOT = { is_core_of = TRM } }
-				752 = { NOT = { is_core_of = TRM } }
-				754 = { NOT = { is_core_of = TRM } }
-				859 = { NOT = { is_core_of = TRM } }
-				907 = { NOT = { is_core_of = TRM } }
-				915 = { NOT = { is_core_of = TRM } }
-				981 = { NOT = { is_core_of = TRM } }
-				982 = { NOT = { is_core_of = TRM } }
-				991 = { NOT = { is_core_of = TRM } }
-				993 = { NOT = { is_core_of = TRM } }
-				994 = { NOT = { is_core_of = TRM } }
-				1024 = { NOT = { is_core_of = TRM } }
-				1035 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -2415,20 +2184,8 @@ TRM_establish_rk_ERI = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 550
-				state = 961
-				state = 268
-				state = 269
 				state = 271
 				state = 559
-				state = 906
-				state = 919
-				state = 920
-				state = 921
-				state = 922
-				state = 923
-				state = 924
-				state = 944
-				state = 1297
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -2442,20 +2199,8 @@ TRM_establish_rk_ERI = {
 			ERI = { is_subject_of = TRM }
 		}
 		550 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		961 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		268 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		269 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		271 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		559 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		906 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		919 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		920 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		921 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		922 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		923 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		924 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		944 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1297 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				550 = { NOT = { is_core_of = TRM } }
 				961 = { NOT = { is_core_of = TRM } }
@@ -2856,13 +2601,6 @@ TRM_establish_rk_DDR = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 64
-				state = 61
-				state = 62
-				state = 63
-				state = 65
-				state = 66
-				state = 68
-				state = 1357
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -2876,13 +2614,6 @@ TRM_establish_rk_DDR = {
 			DDR = { is_subject_of = TRM }
 		}
 		64 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		61 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		62 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		63 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		65 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		66 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		68 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1357 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				64 = { NOT = { is_core_of = TRM } }
 				61 = { NOT = { is_core_of = TRM } }
@@ -2921,21 +2652,19 @@ TRM_establish_rk_DDR = {
 		68 = { add_core_of = DDR }
 		1357 = { add_core_of = DDR }
 		release = DDR
-		DDR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = TRM
-						}
-						OR = {
-							is_owned_by = TRM
-							OWNER = { is_subject_of = TRM} 
-						}
+		
+		every_state = {
+			limit = {
+				AND = {
+					is_core_of = DDR
+					NOT = { is_core_of = TRM }
+					OR = {
+						is_owned_by = TRM
+						OWNER = { is_subject_of = TRM} 
 					}
 				}
-				transfer_state_to = DDR
 			}
+			transfer_state_to = DDR
 		}
 		DDR = { 
 			set_cosmetic_tag = TRM_DDR_OCC
@@ -3164,9 +2893,6 @@ TRM_establish_rk_ROM = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 46
-				state = 79
-				state = 81
-				state = 713
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -3180,14 +2906,8 @@ TRM_establish_rk_ROM = {
 			ROM = { is_subject_of = TRM }
 		}
 		46 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		79 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		81 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		713 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				46 = { NOT = { is_core_of = TRM } }
-				79 = { NOT = { is_core_of = TRM } }
-				81 = { NOT = { is_core_of = TRM } }
-				713 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -3411,17 +3131,7 @@ TRM_establish_rk_AUS = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 4
-				state = 39
-				state = 1235
-				state = 152
-				state = 153
 				state = 1137
-				state = 775
-				state = 784
-				state = 835
-				state = 836
-				state = 942
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -3434,29 +3144,9 @@ TRM_establish_rk_AUS = {
 			}
 			AUS = { is_subject_of = TRM }
 		}
-		4 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		39 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1235 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		152 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		153 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		1137 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		775 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		784 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		835 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		836 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		942 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
-				4 = { NOT = { is_core_of = TRM } }
-				39 = { NOT = { is_core_of = TRM } }
-				1235 = { NOT = { is_core_of = TRM } }
-				152 = { NOT = { is_core_of = TRM } }
-				153 = { NOT = { is_core_of = TRM } }
 				1137 = { NOT = { is_core_of = TRM } }
-				775 = { NOT = { is_core_of = TRM } }
-				784 = { NOT = { is_core_of = TRM } }
-				835 = { NOT = { is_core_of = TRM } }
-				836 = { NOT = { is_core_of = TRM } }
-				942 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -3552,28 +3242,6 @@ TRM_establish_rk_SER = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 107
-				state = 108
-				state = 765
-				state = 767
-				state = 1269
-				state = 103
-				state = 104
-				state = 105
-				state = 109
-				state = 163
-				state = 794
-				state = 1097
-				state = 1098
-				state = 1099
-				state = 1102
-				state = 1105
-				state = 1128
-				state = 1141
-				state = 1142
-				state = 1143
-				state = 1145
-				state = 1206
-				state = 1270
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -3587,52 +3255,8 @@ TRM_establish_rk_SER = {
 			SER = { is_subject_of = TRM }
 		}
 		107 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		108 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		765 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		767 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1269 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		103 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		104 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		105 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		109 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		163 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		794 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1097 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1098 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1099 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1102 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1105 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1128 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1141 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1142 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1143 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1145 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1206 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
-		1270 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
 		OR = {
 				107 = { NOT = { is_core_of = TRM } }
-				108 = { NOT = { is_core_of = TRM } }
-				765 = { NOT = { is_core_of = TRM } }
-				767 = { NOT = { is_core_of = TRM } }
-				1269 = { NOT = { is_core_of = TRM } }
-				103 = { NOT = { is_core_of = TRM } }
-				104 = { NOT = { is_core_of = TRM } }
-				105 = { NOT = { is_core_of = TRM } }
-				109 = { NOT = { is_core_of = TRM } }
-				163 = { NOT = { is_core_of = TRM } }
-				794 = { NOT = { is_core_of = TRM } }
-				1097 = { NOT = { is_core_of = TRM } }
-				1098 = { NOT = { is_core_of = TRM } }
-				1099 = { NOT = { is_core_of = TRM } }
-				1102 = { NOT = { is_core_of = TRM } }
-				1105 = { NOT = { is_core_of = TRM } }
-				1128 = { NOT = { is_core_of = TRM } }
-				1141 = { NOT = { is_core_of = TRM } }
-				1142 = { NOT = { is_core_of = TRM } }
-				1143 = { NOT = { is_core_of = TRM } }
-				1145 = { NOT = { is_core_of = TRM } }
-				1206 = { NOT = { is_core_of = TRM } }
-				1270 = { NOT = { is_core_of = TRM } }
 		}
 	}
 
@@ -3938,22 +3562,18 @@ TRM_establish_rk_WGR = {
 		782 = { add_core_of = WGR }
 		51 = { add_core_of = WGR }
 		release = WGR
-		WGR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = TRM
-						}
-						OR = {
-							is_owned_by = TRM
-							OWNER = { is_subject_of = TRM} 
-						}
-					}
+		every_state = {
+			limit = {
+				is_core_of = WGR
+				NOT = { is_core_of = TRM }
+				OR = {
+					is_owned_by = TRM
+					OWNER = { is_subject_of = TRM} 
 				}
-				transfer_state_to = WGR
 			}
+			transfer_state_to = WGR
 		}
+
 		WGR = { 
 			set_cosmetic_tag = TRM_WGR_OCC
 			load_focus_tree = generic_focus            
