@@ -1,0 +1,127 @@
+division_template = {
+    name = "Siberian Army"
+    division_names_group = TRM_MNT_01
+    priority = 2
+    template_counter = 1
+    regiments = {
+        mountaineers = { x = 0 y = 0 }
+        mountaineers = { x = 0 y = 1 }
+        mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 0 y = 2 }
+        mountaineers = { x = 1 y = 0 }
+        mountaineers = { x = 1 y = 1 }
+        mountaineers = { x = 1 y = 2 }
+        mountaineers = { x = 1 y = 3 }
+        mountaineers = { x = 2 y = 0 }
+        mountaineers = { x = 2 y = 1 }
+        mountaineers = { x = 2 y = 2 }
+        mountaineers = { x = 2 y = 3 }
+        artillery_brigade = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        logistics_company = { x = 0 y = 2 }
+    }
+}
+
+units = {
+    division= {
+        name = "1st Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "2nd Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "3rd Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "4th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "5th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "6th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "7th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "8th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "9th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "10th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "11th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "12th Siberian Division"
+        location = 957
+        division_template = "Siberian Army"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}
