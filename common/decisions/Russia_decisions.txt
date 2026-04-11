@@ -3562,7 +3562,8 @@ RUS_Foreign_Policy_decisions = {
 		}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        WHR = { exists = no }
 		}
@@ -3608,7 +3609,8 @@ RUS_Foreign_Policy_decisions = {
 		}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        DKB = { exists = no }
 			KUB = { exists = no }
@@ -3663,19 +3665,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_czech_legion = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        CZE = { is_subject_of = RUS }
 		}
@@ -3738,19 +3746,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Alaska = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        ALA = { is_subject_of = RUS }
 		}
@@ -3797,19 +3811,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Seize_Djibouti = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        DJI = { 
 			OR = {
@@ -3913,19 +3933,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Djibouti = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        DJI = { 
 			has_country_leader = {
@@ -3966,19 +3992,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Prussia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        DDR = { is_subject_of = RUS }
 		}
@@ -4018,19 +4050,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Scandinavia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        SWE = { is_subject_of = RUS }
 		}
@@ -4110,19 +4148,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_North_Germany = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        NGF = { is_subject_of = RUS }
 		}
@@ -4184,19 +4228,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_South_Germany = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        BAY = { is_subject_of = RUS }
 		}
@@ -4265,19 +4315,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Italy = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        ITA = { is_subject_of = RUS }
 		}
@@ -4350,19 +4406,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_France = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        FRP = { is_subject_of = RUS }
 		}
@@ -4411,19 +4473,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Venezuela = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        VEN = { is_subject_of = RUS }
 		}
@@ -4475,19 +4543,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Benelux = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        BEL = { is_subject_of = RUS }
 		}
@@ -4557,19 +4631,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Iberia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 			POR = { is_subject_of = RUS }
 		}
@@ -4640,19 +4720,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Britain = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        GBP = { is_subject_of = RUS }
 		}
@@ -4714,19 +4800,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Korea = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        KOR = { is_subject_of = RUS }
 		}
@@ -4774,19 +4866,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Japan = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        JAP = { is_subject_of = RUS }
 		}
@@ -4834,19 +4932,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_China = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 			GXC = { is_subject_of = RUS }
 		}
@@ -4902,19 +5006,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Canada = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 			CAN = { is_subject_of = RUS }
 		}
@@ -4995,19 +5105,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_California = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 			CAL = { is_subject_of = RUS }
 		}
@@ -5055,19 +5171,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Central_America = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        AML = { is_subject_of = RUS }
 		}
@@ -5127,19 +5249,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_South_America = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        FSA = { is_subject_of = RUS }
 		}
@@ -5199,19 +5327,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_East_America = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        NEE = { is_subject_of = RUS }
 			CGL = { is_subject_of = RUS }
@@ -5273,19 +5407,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Anatolia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        TUR = { is_subject_of = RUS }
 		}
@@ -5333,19 +5473,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Arabia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        IRQ = { is_subject_of = RUS }			
 		}
@@ -5442,19 +5588,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Persia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        PER = { is_subject_of = RUS }		
 		}
@@ -5522,19 +5674,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_India = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        PRF = { is_subject_of = RUS }
 		}
@@ -5611,19 +5769,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Indochina = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        INC = { is_subject_of = RUS }
 		}
@@ -5693,19 +5857,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Indonesia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        INS = { is_subject_of = RUS }
 		}
@@ -5776,19 +5946,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Australia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        AST = { is_subject_of = RUS }
 		}
@@ -5834,19 +6010,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Pacific = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        HAW = { is_subject_of = RUS }			
 		}
@@ -5907,19 +6089,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Indian_Ocean = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        MAG = { is_subject_of = RUS }			
 		}
@@ -5972,19 +6160,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Caribbean = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        CAF = { is_subject_of = RUS }
 		}
@@ -6073,19 +6267,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Egypt = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        EGY = { is_subject_of = RUS }
 		}
@@ -6144,7 +6344,8 @@ RUS_Foreign_Policy_decisions = {
 			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        HUN = { is_subject_of = RUS }
 		}
@@ -6192,19 +6393,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Brazil = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        BRA = { is_subject_of = RUS }
 		}
@@ -6256,19 +6463,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Argentina = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        ARG = { is_subject_of = RUS }	
 		}
@@ -6338,19 +6551,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_North_Africa = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        LBA = { is_subject_of = RUS }			
 		}
@@ -6427,16 +6646,21 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_East_Africa = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
 		visible = {
@@ -6504,19 +6728,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_South_Africa = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        SAF = { is_subject_of = RUS }
 		}
@@ -6599,19 +6829,25 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_West_Africa = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        LIB = { is_subject_of = RUS }		
 		}
@@ -6729,16 +6965,21 @@ RUS_Foreign_Policy_decisions = {
 	RUS_Occupy_Central_Africa = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
 		visible = {
@@ -7294,7 +7535,8 @@ RUS_Foreign_Policy_decisions = {
 			231 = { is_owned_by_ROOT_or_subject = yes } #Sakartvelo
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 			has_completed_focus = RUS_Open_The_Straits
 		}
@@ -17407,7 +17649,8 @@ RUS_Puppet_Management = {
 		}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        DJI = { 
 			has_completed_focus = AFR_Defend_Ourselves
@@ -17522,7 +17765,8 @@ RUS_Puppet_Management = {
         has_idea = RUS_Occupation_Army_1
 		is_subject_of = RUS }
     }
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 		}	
     target_root_trigger = {
@@ -17563,7 +17807,8 @@ RUS_Puppet_Management = {
         has_idea = RUS_Occupation_Army_2
 		is_subject_of = RUS }
     }
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 		}	
     target_root_trigger = {
@@ -17603,7 +17848,8 @@ RUS_Puppet_Management = {
         has_idea = RUS_Occupation_Army_3
 		is_subject_of = RUS }
     }
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 		}	
     target_root_trigger = {
@@ -17639,19 +17885,25 @@ RUS_Puppet_Management = {
 	RUS_Africa_Angola = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        DJI = { 
 			is_subject_of = RUS 
@@ -17683,19 +17935,25 @@ RUS_Puppet_Management = {
 	RUS_West_Africa = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        LIB = { 
 			is_subject_of = RUS 
@@ -17736,19 +17994,25 @@ RUS_Puppet_Management = {
 	RUS_Pakistan = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        PER = { 
 			is_subject_of = RUS 
@@ -17800,19 +18064,25 @@ RUS_Puppet_Management = {
 	RUS_Indian_Islands = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        MAG = { 
 			is_subject_of = RUS 
@@ -17864,19 +18134,25 @@ RUS_Puppet_Management = {
 	RUS_Africa_West = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        LIB = { 
 			is_subject_of = RUS 
@@ -17917,19 +18193,25 @@ RUS_Puppet_Management = {
 	RUS_Columbia = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        ALA = { 
 			is_subject_of = RUS 
@@ -17991,19 +18273,25 @@ RUS_Puppet_Management = {
 	RUS_Zambezi = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 			OR = {
 	         LPD = { 
@@ -18071,19 +18359,25 @@ RUS_Puppet_Management = {
 	RUS_Venezuela_Guyana = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        VEN = { 
 			is_subject_of = RUS 
@@ -18164,19 +18458,25 @@ RUS_Puppet_Management = {
 	RUS_Brazil_Guyana = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        BRA = { 
 			is_subject_of = RUS 
@@ -18257,19 +18557,25 @@ RUS_Puppet_Management = {
 	RUS_Atlantic_Islands = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        CAF = { 
 			is_subject_of = RUS 
@@ -18420,19 +18726,25 @@ RUS_Puppet_Management = {
 	RUS_Easter = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
-		visible = {
+		available = {
+			tag = RUS
 			has_completed_focus = RUS_Expansionism
 	        HAW = { 
 			is_subject_of = RUS 
@@ -18473,16 +18785,21 @@ RUS_Puppet_Management = {
 	RUS_East_Africa_Reorg = {
 		icon = generic_nationalism
 
-		available = {
-		tag = RUS
-        OR = {
-        RUS_is_absolute_monarchy = yes
-		RUS_natpops_in_power = yes
-		RUS_kornilov_in_power = yes
-		RUS_denikin_in_power = yes
-		RUS_wrangel_in_power = yes
-		has_completed_focus = RUS_Long_Live_Tsar 	
-		}
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
 		}
 		
 		visible = {
