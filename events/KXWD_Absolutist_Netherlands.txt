@@ -1,0 +1,275 @@
+﻿
+add_namespace = holwd
+
+country_event = { #Wilhelmina seizes control
+	id = holwd.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.2.t
+	desc = holwd.2.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Hail Wilhelmina
+		name = holwd.2.a
+		
+
+		create_country_leader = {
+			name = "Wilhelmina"
+			desc = "POLITICS_WILHELMINA_DESC"
+			picture = "gfx/leaders/HOL/Portrait_Holland_Wilhelmina.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			long_name = HOLWD_Orange_Nassau_long
+    		name = HOLWD_Orange_Nassau
+		}
+		set_country_flag = HOLWD_Absolutist
+		set_cosmetic_tag = HOL_HOL_OCC
+		remove_all_ministers = yes
+		add_ideas = HOL_Graaf_de_Marchant_et_d'Ansembourg_hog_ade
+		add_ideas = HOL_Frans_B_van_Blokland_for_ade
+		add_ideas = HOL_Kees_Staf_eco_sco
+		add_ideas = HOL_Louis_Einthoven_sec_ade
+	}
+}
+
+country_event = { #belgium purchased
+	id = holwd.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.3.t
+	desc = holwd.3.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #united at last
+		name = holwd.3.a
+
+		transfer_navy = {
+    		target = BEL
+		}
+		annex_country = {
+    		target = BEL
+    		transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #belgium coup succes
+	id = holwd.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.4.t
+	desc = holwd.4.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #united at last
+		name = holwd.4.a
+
+		transfer_navy = {
+    		target = BEL
+		}
+		annex_country = {
+    		target = BEL
+    		transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #boer question
+	id = holwd.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.5.t
+	desc = holwd.5.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #unite
+		name = holwd.5.a
+
+		add_state_core = 1176
+		add_state_core = 681
+		add_state_core = 945
+		add_state_core = 946
+		add_state_core = 719
+		add_state_core = 947
+		add_state_core = 275
+		add_state_claim = 85
+		add_state_claim = 738
+	}
+	option = { #dont unite
+		name = holwd.5.b
+	}
+}
+
+country_event = { #america question
+	id = holwd.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.6.t
+	desc = holwd.6.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #unite
+		name = holwd.6.a
+
+		add_state_core = 1162
+		add_state_core = 359
+		add_state_core = 358
+		add_state_core = 931
+		add_state_core = 935
+	}
+	option = { #dont unite
+		name = holwd.6.b
+	}
+}
+
+country_event = { #indonesia question
+	id = holwd.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.7.t
+	desc = holwd.7.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #unite
+		name = holwd.7.a
+
+		annex_country = {
+    		target = DEI
+    		transfer_troops = yes
+		}
+
+		set_country_flag = HOLWD_INS_game_flag
+
+		add_state_core = 1020
+		add_state_core = 1333
+		add_state_claim = 1022
+		add_state_claim = 1021
+		add_state_claim = 335
+		add_state_claim = 1023
+		add_state_claim = 1019
+		add_state_claim = 667
+		add_state_claim = 1018
+		add_state_claim = 1017
+		add_state_claim = 334
+		add_state_claim = 1016
+		add_state_claim = 673
+		add_state_claim = 672
+		add_state_claim = 668
+		add_state_claim = 669
+		add_state_claim = 843
+
+		unlock_decision_tooltip = HOLWD_INS_game
+	}
+	option = { #dont unite
+		name = holwd.7.b
+		INS = {
+			every_core_state = {
+				remove_core_of = INS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INS
+				}
+				remove_claim_by = INS
+			}
+		}
+		1020 = { add_core_of = INS }
+		1333 = { add_core_of = INS }
+		1022 = { add_core_of = INS }
+		1021 = { add_core_of = INS }
+		335 = { add_core_of = INS }
+		1023 = { add_core_of = INS }
+		1019 = { add_core_of = INS }
+		667 = { add_core_of = INS }
+		1018 = { add_core_of = INS }
+		1017 = { add_core_of = INS }
+		334 = { add_core_of = INS }
+		1016 = { add_core_of = INS }
+		673 = { add_core_of = INS }
+		672 = { add_core_of = INS }
+		668 = { add_core_of = INS }
+		669 = { add_core_of = INS }
+		843 = { add_core_of = INS }
+		release = INS
+		INS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = HOL
+						}
+						OR = {
+							is_owned_by = HOL
+							OWNER = { is_subject_of = HOL} 
+						}
+					}
+				}
+				transfer_state_to = INS
+			}
+		}
+		INS = { 
+			set_cosmetic_tag = HOL_INS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Dutch Administration"
+				picture = "gfx/leaders/HOL/Portrait_Holland_Junta.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			HOL = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 50
+				paternal_autocrat = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Dutch Administration"
+				long_name = "Dutch Administration"
+			}
+		}
+	}
+}

@@ -1,0 +1,658 @@
+
+######################################
+####### Absolutist Netherlands #######
+######################################
+
+shared_focus = {
+	id = HOLWD_Absolutist_Coup
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        has_country_flag = HOLWD_Absolutist
+        is_ai = no
+        has_idea = HOL_idea_instability
+    }
+	x = 0
+	y = 2
+	cost = 1
+	
+    relative_position_id = HOL_leave_indonesia
+	completion_reward = {
+		remove_ideas = HOL_idea_instability
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Rally_the_Guard
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = -2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Absolutist_Coup
+    }
+    relative_position_id = HOLWD_Absolutist_Coup
+	completion_reward = {
+		add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 3000
+            producer = HOL
+        }
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 1000
+            producer = HOL
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 1500
+            producer = HOL
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Absorb_the_Right
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Absolutist_Coup
+    }
+    relative_position_id = HOLWD_Absolutist_Coup
+	completion_reward = {
+		add_popularity = {
+            ideology = paternal_autocrat
+            popularity = 0.25
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Destroy_Socialist
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Absolutist_Coup
+    }
+    relative_position_id = HOLWD_Absolutist_Coup
+	completion_reward = {
+		add_popularity = {
+            ideology = social_democrat
+            popularity = -0.5
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = -0.5
+        }
+        add_popularity = {
+            ideology = totalist
+            popularity = -0.5
+        }
+        add_popularity = {
+            ideology = syndicalist
+            popularity = -0.5
+        }
+        add_popularity = {
+            ideology = radical_socialist
+            popularity = -0.5
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Recovery
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        has_idea = HOL_idea_economic_recovery
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Rally_the_Guard
+    }
+    prerequisite = {
+        focus = HOLWD_Destroy_Socialist
+    }
+    prerequisite = {
+        focus = HOLWD_Absorb_the_Right
+    }
+    relative_position_id = HOLWD_Destroy_Socialist
+	completion_reward = {
+		remove_ideas = HOL_idea_economic_recovery
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Golden_Age
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 0
+	y = 2
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Recovery
+    }
+    relative_position_id = HOLWD_Recovery
+	completion_reward = {
+		add_ideas = KXWD_HOL_Golden_Age
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Belgian_Question
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Golden_Age
+    }
+    relative_position_id = HOLWD_Golden_Age
+	completion_reward = {
+		add_war_support = 0.15
+        add_stability = 0.05
+        add_manpower = 15000
+        add_political_power = 250
+        add_offsite_building = { type = arms_factory level = 3 }
+        add_state_claim = 6
+        add_state_claim = 34
+        add_state_claim = 29
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Belgium_Purchased
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        BEL = {
+            is_puppet = yes
+        }
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    mutually_exclusive = { focus = HOLWD_Belgium_Coup }
+    prerequisite = {
+        focus = HOLWD_Belgian_Question
+    }
+    relative_position_id = HOLWD_Belgian_Question
+	completion_reward = {
+		country_event = holwd.3
+        add_political_power = -450
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Belgium_Coup
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        BEL = {
+            is_puppet = no
+        }
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    mutually_exclusive = { focus = HOLWD_Belgium_Purchased }
+    prerequisite = {
+        focus = HOLWD_Belgian_Question
+    }
+    relative_position_id = HOLWD_Belgian_Question
+	completion_reward = {
+		country_event = holwd.4
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Empowered_Queen
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Recovery
+    }
+    relative_position_id = HOLWD_Recovery
+	completion_reward = {
+		add_ideas = KXWD_HOL_Empowered_Queen_1
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Royal_Guard
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Empowered_Queen
+    }
+    relative_position_id = HOLWD_Empowered_Queen
+	completion_reward = {
+		add_ideas = KXWD_HOL_Royal_Guard_1
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Idealise_Queen
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Royal_Guard
+    }
+    relative_position_id = HOLWD_Royal_Guard
+	completion_reward = {
+		swap_ideas = {
+            remove_idea = KXWD_HOL_Empowered_Queen_1
+            add_idea = KXWD_HOL_Empowered_Queen_2
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_for_the_Queen
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Idealise_Queen
+    }
+    relative_position_id = HOLWD_Idealise_Queen
+	completion_reward = {
+		swap_ideas = {
+            remove_idea = KXWD_HOL_Royal_Guard_1
+            add_idea = KXWD_HOL_Royal_Guard_2
+        }
+    }
+}
+
+
+
+shared_focus = {
+	id = HOLWD_Conservative_Economy
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Recovery
+    }
+    relative_position_id = HOLWD_Recovery
+	completion_reward = {
+		add_idea = KXWD_HOL_Economy_Boom
+        36 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = arms_factory
+                level = 5
+                instant_build = yes
+            }
+        }
+        866 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = industrial_complex
+                level = 5
+                instant_build = yes
+            }
+        }
+        7 = {
+            add_extra_state_shared_building_slots = 5
+            add_building_construction = {
+                type = dockyard
+                level = 5
+                instant_build = yes
+            }
+        }
+        add_ideas = KXWD_HOL_Economy_Boom
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Education
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Conservative_Economy
+    }
+    relative_position_id = HOLWD_Conservative_Economy
+	completion_reward = {
+		swap_ideas = {
+            remove_idea = KXWD_HOL_Economy_Boom
+            add_idea = KXWD_HOL_Free_Education
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_State_Religion
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Education
+    }
+    relative_position_id = HOLWD_Education
+	completion_reward = {
+		add_ideas = KXWD_HOL_Protestant_1
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Godly_Spirit
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_State_Religion
+    }
+    relative_position_id = HOLWD_State_Religion
+	completion_reward = {
+		swap_ideas = {
+            remove_idea = KXWD_HOL_Protestant_1
+            add_idea = KXWD_HOL_Protestant_2
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Expansionism
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Godly_Spirit
+    }
+    prerequisite = {
+        focus = HOLWD_for_the_Queen
+    }
+    prerequisite = {
+        focus = HOLWD_Belgium_Coup
+        focus = HOLWD_Belgium_Purchased
+    }
+    relative_position_id = HOLWD_Belgium_Purchased
+	completion_reward = {
+		add_ideas = KXWD_HOL_Expansion_1
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Boer_Question
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = -2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Expansionism
+    }
+    relative_position_id = HOLWD_Expansionism
+	completion_reward = {
+		country_event = holwd.5
+    }
+}
+
+shared_focus = {
+	id = HOLWD_New_York_Question
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+    }
+	x = 2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Expansionism
+    }
+    relative_position_id = HOLWD_Expansionism
+	completion_reward = {
+		country_event = holwd.6
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Indonesia_Question
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        or = {
+            has_subject = DEI
+            or = {
+                has_subject = INS
+                INS = {
+                    exists = no
+                }
+            }
+        }
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Expansionism
+    }
+    relative_position_id = HOLWD_Expansionism
+	completion_reward = {
+		country_event = holwd.7
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Great_State
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        or = {
+            has_subject = DEI
+            or = {
+                has_subject = INS
+                INS = {
+                    exists = no
+                }
+            }
+        }
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Indonesia_Question
+    }
+    relative_position_id = HOLWD_Indonesia_Question
+	completion_reward = {
+		swap_ideas = {
+            remove_idea = KXWD_HOL_Expansion_1
+            add_idea = KXWD_HOL_Expansion_2
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Great_State
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        or = {
+            has_subject = DEI
+            or = {
+                has_subject = INS
+                INS = {
+                    exists = no
+                }
+            }
+        }
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Indonesia_Question
+    }
+    prerequisite = {
+        focus = HOLWD_New_York_Question
+    }
+    prerequisite = {
+        focus = HOLWD_Boer_Question
+    }
+    relative_position_id = HOLWD_Indonesia_Question
+	completion_reward = {
+		swap_ideas = {
+            remove_idea = KXWD_HOL_Expansion_1
+            add_idea = KXWD_HOL_Expansion_2
+        }
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Fight_GER
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        5 = {
+            is_core_of = HOL
+        }
+        1357 = {
+            is_core_of = HOL
+        }
+        59 = {
+            is_core_of = HOL
+        }
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Great_State
+    }
+    relative_position_id = HOLWD_Great_State
+	completion_reward = {
+        add_ideas = KXWD_HOL_Fight_GER
+    }
+}
+
+shared_focus = {
+	id = HOLWD_Fight_UOB
+	icon = GFX_goal_MLTWD_call_the_pope
+    available = {
+        NOT = {
+            5 = {
+                is_core_of = HOL
+            }
+            1357 = {
+                is_core_of = HOL
+            }
+            59 = {
+                is_core_of = HOL
+            }
+        }
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = HOLWD_Great_State
+    }
+    relative_position_id = HOLWD_Great_State
+	completion_reward = {
+        add_ideas = KXWD_HOL_Fight_UOB
+        120 = { add_core_of = HOL }
+		121 = { add_core_of = HOL }
+		122 = { add_core_of = HOL }
+		123 = { add_core_of = HOL }
+		125 = { add_core_of = HOL }
+		126 = { add_core_of = HOL }
+		127 = { add_core_of = HOL }
+		128 = { add_core_of = HOL }
+		129 = { add_core_of = HOL }
+		130 = { add_core_of = HOL }
+		131 = { add_core_of = HOL }
+		132 = { add_core_of = HOL }
+		133 = { add_core_of = HOL }
+		136 = { add_core_of = HOL }
+		338 = { add_core_of = HOL }
+		938 = { add_core_of = HOL }
+		1225 = { add_core_of = HOL }
+		1315 = { add_core_of = HOL }
+		1317 = { add_core_of = HOL }
+		113 = { add_core_of = HOL }
+		119 = { add_core_of = HOL }
+		134 = { add_core_of = HOL }
+		135 = { add_core_of = HOL }
+		14 = { add_core_of = HOL }
+		15 = { add_core_of = HOL }
+		17 = { add_core_of = HOL }
+		23 = { add_core_of = HOL }
+		24 = { add_core_of = HOL }
+		30 = { add_core_of = HOL }
+		980 = { add_core_of = HOL }
+		983 = { add_core_of = HOL }
+        create_wargoal = {
+            type = annex_everything
+            target = ENG
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = IRE
+        }
+        set_cosmetic_tag = HOL_ENG_union_OCC
+    }
+}
