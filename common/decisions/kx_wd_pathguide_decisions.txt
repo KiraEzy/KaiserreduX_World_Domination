@@ -388,3 +388,21 @@ FIN_WD_pathguide = {
 		}
 	}
 }
+
+TRM_WD_pathguide = {
+	TRM_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = TRM
+		}
+		available = {
+			original_tag = TRM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.23
+		}
+	}
+}

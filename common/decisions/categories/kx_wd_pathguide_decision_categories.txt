@@ -206,3 +206,14 @@ FIN_WD_pathguide = {
 		tag = FIN
 	}
 }
+
+TRM_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = TRM
+	}
+
+	visible = {
+		tag = TRM
+	}
+}

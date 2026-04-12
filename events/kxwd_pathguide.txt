@@ -263,3 +263,15 @@ country_event = { #Finland Pathguide
 		name = wd_pathguide.22.a
 	}
 }
+
+country_event = { #Transamur Pathguide
+	id = wd_pathguide.23
+	title = wd_pathguide.23.t
+	desc = wd_pathguide.23.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.23.a
+	}
+}
