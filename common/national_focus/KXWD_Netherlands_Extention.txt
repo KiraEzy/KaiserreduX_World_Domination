@@ -9,7 +9,10 @@ shared_focus = {
     available = {
         has_country_flag = HOLWD_Absolutist
         is_ai = no
-        has_idea = HOL_idea_instability
+        or = {
+            has_idea = HOL_idea_instability_above_50
+            has_idea = HOL_idea_instability
+        }
     }
 	x = 0
 	y = 2
@@ -18,6 +21,7 @@ shared_focus = {
     relative_position_id = HOL_leave_indonesia
 	completion_reward = {
 		remove_ideas = HOL_idea_instability
+        remove_ideas = HOL_idea_instability_above_50
     }
 }
 
