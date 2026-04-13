@@ -1,0 +1,37 @@
+
+###########################################
+####### KXWD Totalist Napoleon TREE #######
+###########################################
+
+
+shared_focus = {
+	id = KXWD_FRA_sirf_secures_hold
+	#icon =
+    available = {
+        #always false
+    }
+	x = 0
+	y = 6
+	relative_position_id = FRA_road_to_war
+	cost = 0
+		
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_sirf_secures_hold"
+	}
+}
+
+shared_focus = {
+	id = KXWD_FRA_prepare_for_coronation
+    #icon = 
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_sirf_secures_hold
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_sirf_secures_hold
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_prepare_for_coronation"
+    }
+}

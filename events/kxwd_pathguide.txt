@@ -239,3 +239,13 @@ country_event = { #QIE Pathguide
 		name = wd_pathguide.20.a
 	}
 }
+country_event = { #Totalist Napoleon Commune of France Pathguide
+	id = wd_pathguide.21
+	title = wd_pathguide.21.t
+	desc = wd_pathguide.21.d
+	picture = GFX_report_event_generic_diplomacy1
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.21.a
+	}
+}

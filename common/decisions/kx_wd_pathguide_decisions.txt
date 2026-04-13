@@ -352,3 +352,21 @@ QIE_WD_pathguide = {
 		}
 	}
 }
+
+FRA_WD_pathguide = {
+	FRA_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = FRA
+		}
+		available = {
+			original_tag = FRA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.21
+		}
+	}
+}

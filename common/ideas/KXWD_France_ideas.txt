@@ -1,0 +1,88 @@
+##############
+# France ideas
+##############
+
+ideas = {
+	country = {
+		KXWD_FRA_decentralized_empire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea decentralized_empire"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_nationalized_militias = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea nationalized_militias"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_syndicalist_welfare_empire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea syndicalist_welfare_empire"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_imperial_socialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea imperial_socialism"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_red_colonialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea red_colonialism"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_red_imperialism = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea red_imperialism"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_socialist_aristocracy_1 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea socialist_aristocracy_1"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_socialist_aristocracy_2 = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea socialist_aristocracy_2"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+		
+		KXWD_FRA_solidarity_of_all_classes = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea solidarity_of_all_classes"}
+			allowed = {always = no}
+			#picture = 
+			modifier = {
+			}
+			removal_cost = -1
+		}
+	}
+}
