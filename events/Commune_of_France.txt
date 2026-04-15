@@ -1865,11 +1865,12 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		add_stability = -0.2
-		set_country_flag = {
-			flag = FRA_SIRF
-			value = 1
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_FORMED
 		}
+		add_stability = -0.2
+		set_country_flag = FRA_SIRF_RISES
 		custom_effect_tooltip = "This strengthens the SIRF."
 	}
 }
@@ -5610,10 +5611,14 @@ country_event = {
 	}
 	option = {
 		name = KXWD_FRA_substitute.902.b
-		modify_country_flag = {
-			flag = FRA_SIRF
-			value = 1
+		ai_chance = {
+			factor = 0
 		}
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_FORMED
+		}
+		set_country_flag = FRA_SIRF_MILITARY_1
 		custom_effect_tooltip = "This strengthens the SIRF."
 	}
 }
@@ -5663,6 +5668,24 @@ country_event = {
 			set_country_flag = FRA_valois_is_dead
 		}
 	}
+	option = {
+		name = KXWD_FRA_substitute.904.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_MILITARY_1
+			has_country_flag = FRA_SIRF_MILITARY_2
+			has_country_flag = FRA_SIRF_UNIONS
+			has_country_flag = FRA_SIRF_DECENTRALIZED
+			has_country_flag = FRA_SIRF_RISES
+			has_country_flag = FRA_SIRF_ALLIES
+			has_country_flag = FRA_SIRF_FORMED
+		}
+		country_event = KXWD_FRA.1
+		custom_effect_tooltip = "SIRF Takes Power."
+	}
 }
 	
 country_event = {
@@ -5676,6 +5699,18 @@ country_event = {
 	
 	option = {
 		name = comfrance.907.a 
+	}
+	option = {
+		name = KXWD_FRA_substitute.907.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_FORMED
+		}
+		set_country_flag = FRA_SIRF_MILITARY_2
+		custom_effect_tooltip = "This strengthens the SIRF."
 	}
 }
 
@@ -5693,6 +5728,18 @@ country_event = {
 		ai_chance = {
 		factor = 60
 		}
+	}
+	option = {
+		name = KXWD_FRA_substitute.908.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_FORMED
+		}
+		set_country_flag = FRA_SIRF_DECENTRALIZED
+		custom_effect_tooltip = "This strengthens the SIRF."
 	}
 }
 
@@ -5713,6 +5760,18 @@ country_event = {
 				days = 15
 			}		
 		}
+	}
+	option = {
+		name = KXWD_FRA_substitute.909.b
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_FORMED
+		}
+		set_country_flag = FRA_SIRF_UNIONS
+		custom_effect_tooltip = "This strengthens the SIRF."
 	}
 }
 
@@ -7045,11 +7104,15 @@ country_event = {
 	}
 	option = {
 		name = KXWD_FRA_substitute.951.c
-		add_stability = 0.05
-		modify_country_flag = {
-			flag = FRA_SIRF
-			value = 1
+		ai_chance = {
+			factor = 0
 		}
+		trigger = {
+			is_ai = no
+			has_country_flag = FRA_SIRF_FORMED
+		}
+		add_stability = 0.05
+		set_country_flag = FRA_SIRF_ALLIES
 		custom_effect_tooltip = "This strengthens the SIRF."
 	}
 }

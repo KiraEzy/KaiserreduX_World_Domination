@@ -5268,6 +5268,9 @@ focus_tree = {
 		y = 5
 		available = {
 			has_government = totalist
+			NOT = {
+				has_completed_focus = KXWD_FRA_sirf_secures_hold
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus FRA_who_shall_lead"

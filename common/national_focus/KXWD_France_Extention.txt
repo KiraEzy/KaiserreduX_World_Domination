@@ -6,13 +6,13 @@
 
 shared_focus = {
 	id = KXWD_FRA_sirf_secures_hold
-	#icon =
+	icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
     available = {
-        #always false
+        always false
     }
 	x = 0
-	y = 6
-	relative_position_id = FRA_road_to_war
+	y = 2
+	relative_position_id = FRA_war_with_capitalists
 	cost = 0
 		
 	completion_reward = {
@@ -22,7 +22,7 @@ shared_focus = {
 
 shared_focus = {
 	id = KXWD_FRA_prepare_for_coronation
-    #icon = 
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
     x = 0
     y = 1
 	relative_position_id = KXWD_FRA_sirf_secures_hold
@@ -33,5 +33,316 @@ shared_focus = {
 
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_prepare_for_coronation"
+        add_political_power = 200
+        random_owned_controlled_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 3
+                instant_build = yes
+            }
+        }
+        random_owned_controlled_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 3
+                instant_build = yes
+            }
+        }
+        random_owned_controlled_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 3
+                instant_build = yes
+            }
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_hunt_sorelians
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_prepare_for_coronation
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_prepare_for_coronation
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_hunt_sorelians"
+        remove_ideas = FRA_corporate_syndie_idea
+        remove_ideas = FRA_sorelians_supreme_idea2
+        remove_ideas = FRA_french_nationalism_idea
+        remove_ideas = French_revanchism_idea
+        remove_ideas = FRA_valois_dead_idea
+        every_unit_leader = {
+            limit = {
+                has_id = 5770
+            }
+            remove_unit_leader = yes
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_army_purge
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 2
+    y = 1
+	relative_position_id = KXWD_FRA_prepare_for_coronation
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_prepare_for_coronation
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_army_purge"
+        every_unit_leader = {
+            limit = {
+                or = {
+                    has_id = 4870
+                    has_id = 200
+                    has_id = 5772
+                    has_trait = SOV_bolshevik_officer
+                }
+            }
+            remove_unit_leader = yes
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_no_allies
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = -2
+    y = 1
+	relative_position_id = KXWD_FRA_prepare_for_coronation
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_prepare_for_coronation
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_no_allies"
+        remove_from_faction = ENG
+        remove_from_faction = SRI
+        set_faction_name = KXWD_FRA_faction
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_coronation
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_hunt_sorelians
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_no_allies
+    }
+    prerequisite = {
+        focus = KXWD_FRA_army_purge
+    }
+    prerequisite = {
+        focus = KXWD_FRA_hunt_sorelians
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_coronation"
+        country_event = KXWD_FRA.2
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_coalition
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_coronation
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_coronation
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_coalition"
+        add_radsoc_to_coalition = yes
+		add_socdem_to_coalition = yes
+        add_synd_to_coalition = yes
+        add_stability = 0.15
+        add_war_support = 0.15
+        add_command_power = 100
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_imperial_socialism_focus
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_coalition
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_coalition
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_imperial_socialism_focus"
+        add_ideas = KXWD_FRA_imperial_socialism
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_colonialism
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_imperial_socialism_focus
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_imperial_socialism_focus
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_colonialism"
+        add_ideas = KXWD_FRA_red_colonialism
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_decentralized
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = -2
+    y = 1
+	relative_position_id = KXWD_FRA_coronation
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_coronation
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_decentralized"
+        add_ideas = KXWD_FRA_decentralized_empire
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_national_militia
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_decentralized
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_decentralized
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_national_militia"
+        add_ideas = KXWD_FRA_nationalized_militias
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_welfare
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_national_militia
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_national_militia
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_welfare"
+        swap_ideas = {
+            remove_idea = KXWD_FRA_decentralized_empire
+            add_idea = KXWD_FRA_syndicalist_welfare_empire
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_aristocracy_1
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 2
+    y = 1
+	relative_position_id = KXWD_FRA_coronation
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_coronation
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_aristocracy_1"
+        add_ideas = KXWD_FRA_socialist_aristocracy_1
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_aristocracy_2
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_aristocracy_1
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_aristocracy_1
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_aristocracy_2"
+        swap_ideas = {
+            remove_idea = KXWD_FRA_socialist_aristocracy_1
+            add_idea = KXWD_FRA_socialist_aristocracy_2
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_class_solidarity
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_aristocracy_2
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_aristocracy_2
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_class_solidarity"
+        swap_ideas = {
+            remove_idea = KXWD_FRA_socialist_aristocracy_2
+            add_idea = KXWD_FRA_solidarity_of_all_classes
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_FRA_imperialism
+    icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
+    x = 0
+    y = 1
+	relative_position_id = KXWD_FRA_colonialism
+    cost = 5
+    prerequisite = {
+        focus = KXWD_FRA_class_solidarity
+    }
+    prerequisite = {
+        focus = KXWD_FRA_colonialism
+    }
+    prerequisite = {
+        focus = KXWD_FRA_welfare
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus KXWD_FRA_imperialism"
+        swap_ideas = {
+            remove_idea = KXWD_FRA_red_colonialism
+            add_idea = KXWD_FRA_red_imperialism
+        }
     }
 }

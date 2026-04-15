@@ -4,32 +4,46 @@
 
 add_namespace = KXWD_FRA
 
-# Victory of SIRF
+# The Grand Coronation
+
 country_event = {
 	id = KXWD_FRA.1
 	title = KXWD_FRA.1.t
 	desc = KXWD_FRA.1.d
-	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_FRA.1" }
 	option = {
 		name = KXWD_FRA.1.a
-		complete_national_focus = KXWD_FRA_sirf_secures_hold
-		add_ideas = unruly_military
-		swap_ideas = {
-			remove_idea = FRA_Sorelian_Division
-###			add_idea = 
+		add_political_power = 100
+		add_stability = 0.15
+		add_war_support = 0.15
+		add_popularity = {
+    		ideology = totalist
+    		popularity = 0.15
+			}
+		create_country_leader = {
+			name = WDFRA_France_Imperial_Commune_Admin
+			desc = "POLITICS_SIFR_ADMIN"
+			picture = gfx/leaders/WDFRA/France_Imperial_Commune_Admin.png
+			expire = "1.1.1"
+			ideology = mladorossi_subtype
 		}
+		set_politics = {
+    		ruling_party = totalist
+    		elections_allowed = no
+    		long_name = FRA_TOTNAP_party_long
+    		name = FRA_TOTNAP_party
+		}
+		set_cosmetic_tag = France_Imperial_Commune
+		complete_national_focus = KXWD_FRA_sirf_secures_hold
 	}
 }
 
-# The Grand Coronation
 country_event = {
 	id = KXWD_FRA.2
 	title = KXWD_FRA.2.t
 	desc = KXWD_FRA.2.d
-	#picture =
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_FRA.2" }
@@ -38,5 +52,62 @@ country_event = {
 		add_political_power = 200
 		add_stability = 0.20
 		add_war_support = 0.20
+		create_corps_commander = {
+			name = "Louis-Napoléon Bonaparte "
+			portrait_path = "gfx/leaders/NFA/Portrait_NFA_Napoleon_Army.png"
+			traits = {
+				brave
+				offensive_doctrine
+				logistics_wizard
+				aggressive_assaulter
+				skilled_staffer
+				panzer_expert
+				combined_arms_expert
+				artillery_specialist
+				war_hero
+				trickster
+				brilliant_strategist
+			}
+			skill = 5
+			attack_skill = 6
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 7
+			id = 1804
+		}
+		create_country_leader = {
+			name = "Napoléon VI"
+			desc = "KXWD_POLITICS_BONAPARTE"
+			picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI_drip.png"
+			expire = "1.1.1"
+			ideology = mladorossi_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Napoléon VI"
+			desc = "KXWD_POLITICS_BONAPARTE"
+			picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI_drip.png"
+			expire = "1.1.1"
+			ideology = syn_radical_progressivism_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Napoléon VI"
+			desc = "KXWD_POLITICS_BONAPARTE"
+			picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI_drip.png"
+			expire = "1.1.1"
+			ideology = monsoc_subtype
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Napoléon VI"
+			desc = "KXWD_POLITICS_BONAPARTE"
+			picture = "gfx/leaders/NFA/Portrait_NFA_Napoleon_VI_drip.png"
+			expire = "1.1.1"
+			ideology = socdem_mladorossi_subtype
+			traits = {}
+		}
 	}
 }
+
+
