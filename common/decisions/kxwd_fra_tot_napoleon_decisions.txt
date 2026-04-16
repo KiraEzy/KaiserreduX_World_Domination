@@ -4,6 +4,7 @@
 
 FRA_SIRF_game = {
 	KXWD_FRA_form_SIRF = {
+		fire_only_once = yes
 	 	icon = generic_prepare_civil_war
 
 		available = {
@@ -29,6 +30,7 @@ FRA_SIRF_game = {
 KXWD_FRA_tot_nap = {
 	KXWD_FRA_tot_nap_exiles = {
 	 	icon = generic_prepare_civil_war
+		fire_only_once = yes
 	 	complete_effect = { #get generals from nfa
 			FRA = {
 				add_manpower = 25000
@@ -2568,7 +2570,7 @@ FRA_establish_rk_GRE = {
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Commune Impériale"
+				name = "Alexandros I"
 				picture = "gfx/leaders/GRE/Portrait_GRE_Alexander_emporer.png"
 				expire = "1.1.1"
 				ideology = mladorossi_subtype
@@ -2876,7 +2878,7 @@ FRA_establish_rk_RUS = {
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Commune Impériale"
+				name = "Andrei I"
 				picture = "gfx/leaders/TRM/Portrait_TRM_Andrei_Romanov.png"
 				expire = "1.1.1"
 				ideology = mladorossi_subtype
@@ -3792,7 +3794,7 @@ FRA_establish_rk_AFG = {
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Commune Impériale"
+				name = "Amanullah Khan"
 				picture = "gfx/leaders/AFG/Portrait_AFG_Amanullah_Khan_KX.png"
 				expire = "1.1.1"
 				ideology = mladorossi_subtype

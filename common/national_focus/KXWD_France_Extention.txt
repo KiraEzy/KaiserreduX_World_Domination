@@ -9,6 +9,7 @@ shared_focus = {
 	icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
     available = {
         always false
+        is_ai = no
     }
 	x = 0
 	y = 2
@@ -74,7 +75,6 @@ shared_focus = {
         remove_ideas = FRA_corporate_syndie_idea
         remove_ideas = FRA_sorelians_supreme_idea2
         remove_ideas = FRA_french_nationalism_idea
-        remove_ideas = French_revanchism_idea
         remove_ideas = FRA_valois_dead_idea
         every_unit_leader = {
             limit = {
