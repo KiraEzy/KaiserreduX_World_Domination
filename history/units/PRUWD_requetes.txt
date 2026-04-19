@@ -1,0 +1,122 @@
+division_template = {
+    name = "Requtes"
+    division_names_group = SPAN_INF_01
+    priority = 2
+    template_counter = 1
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+        infantry = { x = 2 y = 1 }
+        infantry = { x = 2 y = 2 }
+        artillery_brigade = { x = 3 y = 0 }
+        artillery_brigade = { x = 3 y = 1 }
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+    }
+}
+
+units = {
+    division= {
+        name = "1st Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "2nd Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "3rd Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "4th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "5th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "6th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "7th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "8th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "9th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "10th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "11th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "12th Requete Division"
+        location = 12997
+        division_template = "Requtes"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}

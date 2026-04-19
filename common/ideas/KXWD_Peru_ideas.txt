@@ -1,0 +1,363 @@
+ideas = {
+	country = {
+        PRUWD_Clergy = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Clergy"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                surrender_limit = 0.25
+                political_power_factor = 0.15
+                drift_defence_factor = 0.25
+                weekly_manpower = 750
+                min_export = -0.3
+            }
+            removal_cost = -1
+        }
+        PRUWD_Catholicism = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Catholicism"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                surrender_limit = 0.4
+                political_power_factor = 0.2
+                drift_defence_factor = 0.3
+                weekly_manpower = 1000
+                min_export = -0.5
+                offensive_war_stability_factor = 0.3
+                defensive_war_stability_factor = 0.3
+                party_popularity_stability_factor = 0.3
+                national_populist_drift = 0.03
+            }
+            removal_cost = -1
+        }
+        PRUWD_Dios_Patria_Rey = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Dios_Patria_Rey"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                command_power_gain = 0.25
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.25
+                war_support_weekly = 0.025
+                annex_cost_factor = -0.2
+                equipment_capture_factor = 0.3
+            }
+            removal_cost = -1
+        }
+        PRUWD_New_Kingdom_1 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_New_Kingdom_1"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                stability_factor = 0.15
+                stability_weekly = 0.025
+                war_stability_factor = 0.3
+                consumer_goods_factor = -0.2
+                conscription = 0.02
+                land_reinforce_rate = 0.05
+            }
+            removal_cost = -1
+        }
+        PRUWD_New_Kingdom_2 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_New_Kingdom_2"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                stability_factor = 0.2
+                stability_weekly = 0.05
+                war_stability_factor = 0.4
+                consumer_goods_factor = -0.35
+                conscription = 0.03
+                land_reinforce_rate = 0.075
+            }
+            removal_cost = -1
+        }
+        PRUWD_Traditions_1 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Traditions_1"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                research_speed_factor = 0.15
+                local_resources_factor = 0.3
+                national_populist_acceptance = 50
+                attrition = -0.3
+                production_speed_buildings_factor = 0.3
+                industrial_capacity_factory = 0.3
+                industrial_capacity_dockyard = 0.3
+            }
+            removal_cost = -1
+        }
+        PRUWD_Traditions_2 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Traditions_2"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                research_speed_factor = 0.3
+                local_resources_factor = 0.5
+                national_populist_acceptance = 75
+                attrition = -0.4
+                production_speed_buildings_factor = 0.35
+                industrial_capacity_factory = 0.35
+                industrial_capacity_dockyard = 0.35
+            }
+            removal_cost = -1
+        }
+        PRUWD_Populace_1 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Populace_1"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                monthly_population = 0.5
+                production_factory_efficiency_gain_factor = 0.2
+                production_factory_max_efficiency_factor = 0.4
+                attrition = -0.2
+                resistance_activity = -0.2
+                resistance_target = -0.4
+                intel_network_gain = 1
+            }
+            removal_cost = -1
+        }
+        PRUWD_Populace_2 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Populace_2"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                monthly_population = 0.75
+                production_factory_efficiency_gain_factor = 0.25
+                production_factory_max_efficiency_factor = 0.5
+                attrition = -0.4
+                resistance_activity = -0.4
+                resistance_target = -0.6
+                intel_network_gain = 2
+            }
+            removal_cost = -1
+        }
+        PRUWD_Reconquista_1 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Reconquista_1"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_speed_factor = 0.2
+                army_morale_factor = 0.15
+                army_org_factor = 0.15
+            }
+            removal_cost = -1
+        }
+        PRUWD_Reconquista_2 = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Reconquista_2"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                army_attack_factor = 0.15
+                army_defence_factor = 0.15
+                army_speed_factor = 0.25
+                army_morale_factor = 0.3
+                army_org_factor = 0.3
+                breakthrough_factor = 0.3
+            }
+            removal_cost = -1
+        }
+        PRUWD_Knights = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Knights"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                army_armor_attack_factor = 0.2
+                army_armor_speed_factor = 0.2
+                army_armor_defence_factor = 0.2
+                cavalry_attack_factor = 0.35
+                cavalry_defence_factor = 0.35
+                motorized_attack_factor = 0.25
+                motorized_defence_factor = 0.25
+            }
+            removal_cost = -1
+        }
+        PRUWD_War_North= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_War_North"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = ECU
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = VEN
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = COL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+        PRUWD_War_South= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_War_South"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = CHL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = FOP
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = ARG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = URG
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = PAR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+        PRUWD_War_Brazil= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_War_Brazil"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = BRA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+        PRUWD_War_Mexico= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_War_Mexico"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = MEX
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = GUA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = CEN
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = PAN
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = COS
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = NIC
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = HON
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = ELS
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+        PRUWD_War_America= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_War_America"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = USA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = TEX
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = BBR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = COR
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = CSA
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+            targeted_modifier = {
+				tag = CAL
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+        PRUWD_War_Spain= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_War_Spain"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				army_speed_factor = 0.2
+			}
+			targeted_modifier = {
+				tag = CNT
+				attack_bonus_against = 0.25
+				defense_bonus_against = 0.25
+			}
+			removal_cost = -1
+		}
+        PRUWD_Alone= {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRUWD_Alone"}
+			allowed = {always = no}
+			picture = KXWDGRE_retake_constantinople
+			modifier = {
+				ai_call_ally_desire_factor = -1000.00
+                ai_join_ally_desire_factor = -1000.00
+                ai_get_ally_desire_factor = -1000.00
+			}
+			removal_cost = -1
+		}
+    }	
+}

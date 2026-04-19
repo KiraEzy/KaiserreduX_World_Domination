@@ -1,0 +1,15 @@
+PRU_great_game = {
+	peru_grab = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			
+			log = "MEX"
+			MEX = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+		}
+		days_remove = 0
+	}
+}

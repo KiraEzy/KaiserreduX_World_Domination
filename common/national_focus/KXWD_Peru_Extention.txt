@@ -1,0 +1,538 @@
+
+##################################
+####### Peru Monarchy Tree #######
+##################################
+
+shared_focus = {
+	id = KXWD_PRU_Invite_Exiles
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+        CNT = {
+            exists = yes
+        }
+        CAR = {
+            exists = no
+        }
+        SPR = {
+            exists = no
+        }
+        is_ai = no
+        has_government = national_populist
+        NOT = {
+            has_completed_focus = PRU_peruvian_brotherhood
+        }
+    }
+	x = 0
+	y = 3
+	cost = 1
+	
+    relative_position_id = PRU_bb
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Invite_Exiles"
+        country_event = KXWD_PRU.1
+    }
+}
+
+shared_focus = {
+	id = KXWD_PRU_Carlist_Coup
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 1
+	
+    prerequisite = {
+        focus = KXWD_PRU_Invite_Exiles
+    }
+    relative_position_id = KXWD_PRU_Invite_Exiles
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Carlist_Coup"
+        country_event = KXWD_PRU.2
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Requetes
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Carlist_Coup
+    }
+    relative_position_id = KXWD_PRU_Carlist_Coup
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Requetes"
+        country_event = KXWD_PRU.3
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Clergy
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Carlist_Coup
+    }
+    relative_position_id = KXWD_PRU_Carlist_Coup
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Clergy"
+        add_ideas = PRUWD_Clergy
+        add_political_power = 250
+        add_stability = 0.15
+        add_war_support = 0.15  
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_SH
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Carlist_Coup
+    }
+    relative_position_id = KXWD_PRU_Carlist_Coup
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_SH"
+        create_intelligence_agency = {
+            name = "Santa Hermandad"
+        }
+        upgrade_intelligence_agency = upgrade_form_department
+        upgrade_intelligence_agency = upgrade_economy_civilian
+        upgrade_intelligence_agency = upgrade_army_department
+        upgrade_intelligence_agency = upgrade_naval_department
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Restoration
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Requetes
+    }
+    prerequisite = {
+        focus = KXWD_PRU_Clergy
+    }
+    prerequisite = {
+        focus = KXWD_PRU_SH
+    }
+    relative_position_id = KXWD_PRU_Requetes
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Restoration"
+        country_event = KXWD_PRU.4
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_New_Kingdom
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Restoration
+    }
+    relative_position_id = KXWD_PRU_Restoration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_New_Kingdom"
+        add_ideas = PRUWD_New_Kingdom_1
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Dios_Patria_Rey
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Restoration
+    }
+    relative_position_id = KXWD_PRU_Restoration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Dios_Patria_Rey"
+        add_ideas = PRUWD_Dios_Patria_Rey
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Catholicism
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Restoration
+    }
+    relative_position_id = KXWD_PRU_Restoration
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Catholicism"
+        swap_ideas = {
+            remove_idea = PRUWD_Clergy
+            add_idea = PRUWD_Catholicism
+        }
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Reasonable_Populace
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Catholicism
+    }
+    prerequisite = {
+        focus = KXWD_PRU_New_Kingdom
+    }
+    relative_position_id = KXWD_PRU_New_Kingdom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Reasonable_Populace"
+        add_ideas = PRUWD_Populace_1
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Enlightened_Populace
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Reasonable_Populace
+    }
+    relative_position_id = KXWD_PRU_Reasonable_Populace
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Enlightened_Populace"
+        swap_ideas = {
+            remove_idea = PRUWD_Populace_1
+            add_idea = PRUWD_Populace_2
+        }
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Traditions
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_New_Kingdom
+    }
+    prerequisite = {
+        focus = KXWD_PRU_Dios_Patria_Rey
+    }
+    relative_position_id = KXWD_PRU_New_Kingdom
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Traditions"
+        add_ideas = PRUWD_Traditions_1
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Hispanic_Pride
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Traditions
+    }
+    relative_position_id = KXWD_PRU_Traditions
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Hispanic_Pride"
+        swap_ideas = {
+            remove_idea = PRUWD_Traditions_1
+            add_idea = PRUWD_Traditions_2
+        }
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Brave_Kingdom
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Hispanic_Pride
+    }
+    prerequisite = {
+        focus = KXWD_PRU_Enlightened_Populace
+    }
+    relative_position_id = KXWD_PRU_Hispanic_Pride
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Brave_Kingdom"
+        swap_ideas = {
+            remove_idea = PRUWD_New_Kingdom_1
+            add_idea = PRUWD_New_Kingdom_2
+        }
+	}
+}
+
+###################################
+####### Peru Expansion Tree #######
+###################################
+
+shared_focus = {
+	id = KXWD_PRU_Reconquista
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+        has_completed_focus = KXWD_PRU_Restoration
+    }
+	x = 0
+	y = 3
+	cost = 5
+	
+    relative_position_id = PRU_tank_effort
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Reconquista"
+        add_ideas = PRUWD_Reconquista_1
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Christian_Army
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_PRU_Reconquista
+    }
+    relative_position_id = KXWD_PRU_Reconquista
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Christian_Army"
+        swap_ideas = {
+            remove_idea = PRUWD_Reconquista_1
+            add_idea = PRUWD_Reconquista_2
+        }
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Knights
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Reconquista
+    }
+    relative_position_id = KXWD_PRU_Reconquista
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Knights"
+        add_ideas = PRUWD_Knights
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Bolivian_Coup
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 2
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Christian_Army
+    }
+    prerequisite = {
+        focus = KXWD_PRU_Knights
+    }
+    relative_position_id = KXWD_PRU_Reconquista
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Bolivian_Coup"
+        country_event = KXWD_PRU.5
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_Hispanic_Ambition
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Bolivian_Coup
+    }
+    relative_position_id = KXWD_PRU_Bolivian_Coup
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Hispanic_Ambition"
+        country_event = KXWD_PRU.6
+        set_cosmetic_tag = PRU_HIS_KING
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_War_North
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_PRU_Hispanic_Ambition
+    }
+    relative_position_id = KXWD_PRU_Hispanic_Ambition
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_War_North"
+        country_event = KXWD_PRU.7
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_War_South
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_Hispanic_Ambition
+    }
+    relative_position_id = KXWD_PRU_Hispanic_Ambition
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_War_South"
+        country_event = KXWD_PRU.8
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_War_Brazil
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -1
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_War_South
+    }
+    prerequisite = {
+        focus = KXWD_PRU_War_North
+    }
+    relative_position_id = KXWD_PRU_War_South
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_War_Brazil"
+        country_event = KXWD_PRU.9
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_War_Mexico
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = -2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_War_Brazil
+    }
+    relative_position_id = KXWD_PRU_War_Brazil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_War_Mexico"
+        country_event = KXWD_PRU.10
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_War_Spain
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 0
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_War_Brazil
+    }
+    relative_position_id = KXWD_PRU_War_Brazil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_War_Spain"
+        country_event = KXWD_PRU.11
+	}
+}
+
+shared_focus = {
+	id = KXWD_PRU_War_America
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+    available = {
+    }
+	x = 2
+	y = 1
+	cost = 5
+	
+    prerequisite = {
+        focus = KXWD_PRU_War_Brazil
+    }
+    relative_position_id = KXWD_PRU_War_Brazil
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_War_America"
+        country_event = KXWD_PRU.12
+	}
+}
