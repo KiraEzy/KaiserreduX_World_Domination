@@ -1,15 +1,5319 @@
 PRU_great_game = {
-	peru_grab = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
-			
-			log = "MEX"
-			MEX = {
-				every_owned_state = {
-					log = "[state.GetID]"
+	PRU_establish_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = PRU }
+		}
+		361 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				361 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
 				}
+				remove_claim_by = USA
 			}
 		}
-		days_remove = 0
+		261 = { add_core_of = USA }
+		357 = { add_core_of = USA }
+		358 = { add_core_of = USA }
+		359 = { add_core_of = USA }
+		360 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		393 = { add_core_of = USA }
+		394 = { add_core_of = USA }
+		395 = { add_core_of = USA }
+		396 = { add_core_of = USA }
+		726 = { add_core_of = USA }
+		796 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		930 = { add_core_of = USA }
+		931 = { add_core_of = USA }
+		932 = { add_core_of = USA }
+		933 = { add_core_of = USA }
+		934 = { add_core_of = USA }
+		935 = { add_core_of = USA }
+		1151 = { add_core_of = USA }
+		1152 = { add_core_of = USA }
+		1153 = { add_core_of = USA }
+		1154 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1162 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1173 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = PRU_USA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
 	}
+}
+
+PRU_establish_rk_CAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 739
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAN = { exists = yes }
+			}
+			CAN = { is_subject_of = PRU }
+		}
+		739 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				739 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAN = {
+			every_core_state = {
+				remove_core_of = CAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAN
+				}
+				remove_claim_by = CAN
+			}
+		}
+		276 = { add_core_of = CAN }
+		331 = { add_core_of = CAN }
+		332 = { add_core_of = CAN }
+		464 = { add_core_of = CAN }
+		465 = { add_core_of = CAN }
+		466 = { add_core_of = CAN }
+		467 = { add_core_of = CAN }
+		468 = { add_core_of = CAN }
+		469 = { add_core_of = CAN }
+		470 = { add_core_of = CAN }
+		472 = { add_core_of = CAN }
+		682 = { add_core_of = CAN }
+		683 = { add_core_of = CAN }
+		730 = { add_core_of = CAN }
+		832 = { add_core_of = CAN }
+		1330 = { add_core_of = CAN }
+		1331 = { add_core_of = CAN }
+		739 = { add_core_of = CAN }
+		release = CAN
+		CAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = CAN
+			}
+		}
+		CAN = { 
+			set_cosmetic_tag = PRU_CAN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = CAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 497
+				state = 498
+				state = 499
+				state = 896
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRA = { exists = yes }
+			}
+			BRA = { is_subject_of = PRU }
+		}
+		497 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		498 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		499 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		896 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				497 = { NOT = { is_core_of = PRU } }
+				498 = { NOT = { is_core_of = PRU } }
+				499 = { NOT = { is_core_of = PRU } }
+				896 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRA
+				}
+				remove_claim_by = BRA
+			}
+		}
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		release = BRA
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = PRU_BRA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_POR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 112
+				state = 179
+				state = 180
+				state = 181
+				state = 697
+				state = 698
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POR = { exists = yes }
+			}
+			POR = { is_subject_of = PRU }
+		}
+		112 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		179 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		180 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		181 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		697 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		698 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				112 = { NOT = { is_core_of = PRU } }
+				179 = { NOT = { is_core_of = PRU } }
+				180 = { NOT = { is_core_of = PRU } }
+				181 = { NOT = { is_core_of = PRU } }
+				697 = { NOT = { is_core_of = PRU } }
+				698 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POR = {
+			every_core_state = {
+				remove_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POR
+				}
+				remove_claim_by = POR
+			}
+		}
+		112 = { add_core_of = POR }
+		179 = { add_core_of = POR }
+		180 = { add_core_of = POR }
+		181 = { add_core_of = POR }
+		697 = { add_core_of = POR }
+		698 = { add_core_of = POR }
+		release = POR
+		POR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = POR
+			}
+		}
+		POR = { 
+			set_cosmetic_tag = PRU_POR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = POR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = PRU }
+		}
+		16 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				16 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		1 = { add_core_of = FRP }
+		14 = { add_core_of = FRP }
+		15 = { add_core_of = FRP }
+		17 = { add_core_of = FRP }
+		18 = { add_core_of = FRP }
+		19 = { add_core_of = FRP }
+		20 = { add_core_of = FRP }
+		21 = { add_core_of = FRP }
+		22 = { add_core_of = FRP }
+		23 = { add_core_of = FRP }
+		24 = { add_core_of = FRP }
+		25 = { add_core_of = FRP }
+		26 = { add_core_of = FRP }
+		27 = { add_core_of = FRP }
+		28 = { add_core_of = FRP }
+		29 = { add_core_of = FRP }
+		30 = { add_core_of = FRP }
+		31 = { add_core_of = FRP }
+		32 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		735 = { add_core_of = FRP }
+		760 = { add_core_of = FRP }
+		762 = { add_core_of = FRP }
+		763 = { add_core_of = FRP }
+		779 = { add_core_of = FRP }
+		785 = { add_core_of = FRP }
+		817 = { add_core_of = FRP }
+		943 = { add_core_of = FRP }
+		980 = { add_core_of = FRP }
+		983 = { add_core_of = FRP }
+		984 = { add_core_of = FRP }
+		1334 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = PRU_FRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = PRU }
+		}
+		126 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				126 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		120 = { add_core_of = GBP }
+		121 = { add_core_of = GBP }
+		122 = { add_core_of = GBP }
+		123 = { add_core_of = GBP }
+		125 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		130 = { add_core_of = GBP }
+		131 = { add_core_of = GBP }
+		132 = { add_core_of = GBP }
+		133 = { add_core_of = GBP }
+		136 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		938 = { add_core_of = GBP }
+		1225 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		1317 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = PRU_GBP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_ITA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 159
+				state = 160
+				state = 759
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ITA = { exists = yes }
+			}
+			ITA = { is_subject_of = PRU }
+		}
+		159 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		160 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		759 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				159 = { NOT = { is_core_of = PRU } }
+				160 = { NOT = { is_core_of = PRU } }
+				759 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ITA = {
+			every_core_state = {
+				remove_core_of = ITA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ITA
+				}
+				remove_claim_by = ITA
+			}
+		}
+		114 = { add_core_of = ITA }
+		115 = { add_core_of = ITA }
+		116 = { add_core_of = ITA }
+		117 = { add_core_of = ITA }
+		156 = { add_core_of = ITA }
+		157 = { add_core_of = ITA }
+		158 = { add_core_of = ITA }
+		161 = { add_core_of = ITA }
+		162 = { add_core_of = ITA }
+		742 = { add_core_of = ITA }
+		761 = { add_core_of = ITA }
+		764 = { add_core_of = ITA }
+		837 = { add_core_of = ITA }
+		838 = { add_core_of = ITA }
+		1002 = { add_core_of = ITA }
+		1003 = { add_core_of = ITA }
+		1004 = { add_core_of = ITA }
+		1005 = { add_core_of = ITA }
+		1006 = { add_core_of = ITA }
+		1236 = { add_core_of = ITA }
+		159 = { add_core_of = ITA }
+		160 = { add_core_of = ITA }
+		759 = { add_core_of = ITA }
+		release = ITA
+		ITA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = ITA
+			}
+		}
+		ITA = { 
+			set_cosmetic_tag = PRU_ITA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = ITA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_IRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 113
+				state = 119
+				state = 134
+				state = 135
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRE = { exists = yes }
+			}
+			IRE = { is_subject_of = PRU }
+		}
+		113 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		119 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		134 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		135 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				113 = { NOT = { is_core_of = PRU } }
+				119 = { NOT = { is_core_of = PRU } }
+				134 = { NOT = { is_core_of = PRU } }
+				135 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRE = {
+			every_core_state = {
+				remove_core_of = IRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRE
+				}
+				remove_claim_by = IRE
+			}
+		}
+		113 = { add_core_of = IRE }
+		119 = { add_core_of = IRE }
+		134 = { add_core_of = IRE }
+		135 = { add_core_of = IRE }
+		release = IRE
+		IRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = IRE
+			}
+		}
+		IRE = { 
+			set_cosmetic_tag = PRU_IRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = IRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_PAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+				state = 1149
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PAP = { exists = yes }
+			}
+			PAP = { is_subject_of = PRU }
+		}
+		2 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1149 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				2 = { NOT = { is_core_of = PRU } }
+				1149 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PAP = {
+			every_core_state = {
+				remove_core_of = PAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PAP
+				}
+				remove_claim_by = PAP
+			}
+		}
+		2 = { add_core_of = PAP }
+		1149 = { add_core_of = PAP }
+		release = PAP
+		PAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = PAP
+			}
+		}
+		PAP = { 
+			set_cosmetic_tag = PRU_PAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Julius IV"
+				picture = "gfx/leaders/PAP/Portrait_Papal_State_Julius.png"
+				expire = "1.1.1"
+				ideology = carlism_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = PAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_BEL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = { is_subject_of = PRU }
+		}
+		6 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				6 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BEL = {
+			every_core_state = {
+				remove_core_of = BEL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BEL
+				}
+				remove_claim_by = BEL
+			}
+		}
+		7 = { add_core_of = BEL }
+		8 = { add_core_of = BEL }
+		34 = { add_core_of = BEL }
+		35 = { add_core_of = BEL }
+		36 = { add_core_of = BEL }
+		695 = { add_core_of = BEL }
+		741 = { add_core_of = BEL }
+		866 = { add_core_of = BEL }
+		978 = { add_core_of = BEL }
+		979 = { add_core_of = BEL }
+		6 = { add_core_of = BEL }
+		release = BEL
+		BEL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = BEL
+			}
+		}
+		BEL = { 
+			set_cosmetic_tag = PRU_BEL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = BEL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_BAY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 52
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BAY = { exists = yes }
+			}
+			BAY = { is_subject_of = PRU }
+		}
+		52 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				52 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BAY = {
+			every_core_state = {
+				remove_core_of = BAY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BAY
+				}
+				remove_claim_by = BAY
+			}
+		}
+		3 = { add_core_of = BAY }
+		4 = { add_core_of = BAY }
+		39 = { add_core_of = BAY }
+		50 = { add_core_of = BAY }
+		53 = { add_core_of = BAY }
+		54 = { add_core_of = BAY }
+		102 = { add_core_of = BAY }
+		151 = { add_core_of = BAY }
+		152 = { add_core_of = BAY }
+		153 = { add_core_of = BAY }
+		736 = { add_core_of = BAY }
+		775 = { add_core_of = BAY }
+		780 = { add_core_of = BAY }
+		783 = { add_core_of = BAY }
+		835 = { add_core_of = BAY }
+		836 = { add_core_of = BAY }
+		942 = { add_core_of = BAY }
+		1100 = { add_core_of = BAY }
+		1101 = { add_core_of = BAY }
+		1103 = { add_core_of = BAY }
+		1104 = { add_core_of = BAY }
+		1137 = { add_core_of = BAY }
+		1144 = { add_core_of = BAY }
+		1235 = { add_core_of = BAY }
+		1272 = { add_core_of = BAY }
+		52 = { add_core_of = BAY }
+		release = BAY
+		BAY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = BAY
+			}
+		}
+		BAY = { 
+			set_cosmetic_tag = PRU_BAY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = BAY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_GRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRU = { exists = yes }
+			}
+			GRU = { is_subject_of = PRU }
+		}
+		64 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				64 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRU = {
+			every_core_state = {
+				remove_core_of = GRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRU
+				}
+				remove_claim_by = GRU
+			}
+		}
+		42 = { add_core_of = GRU }
+		51 = { add_core_of = GRU }
+		55 = { add_core_of = GRU }
+		56 = { add_core_of = GRU }
+		57 = { add_core_of = GRU }
+		58 = { add_core_of = GRU }
+		59 = { add_core_of = GRU }
+		60 = { add_core_of = GRU }
+		61 = { add_core_of = GRU }
+		62 = { add_core_of = GRU }
+		65 = { add_core_of = GRU }
+		781 = { add_core_of = GRU }
+		782 = { add_core_of = GRU }
+		839 = { add_core_of = GRU }
+		1357 = { add_core_of = GRU }
+		64 = { add_core_of = GRU }
+		release = GRU
+		GRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = GRU
+			}
+		}
+		GRU = { 
+			set_cosmetic_tag = PRU_GRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = GRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+				state = 99
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = PRU }
+		}
+		37 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		99 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				37 = { NOT = { is_core_of = PRU } }
+				99 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		38 = { add_core_of = DEN }
+		100 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		110 = { add_core_of = DEN }
+		111 = { add_core_of = DEN }
+		124 = { add_core_of = DEN }
+		138 = { add_core_of = DEN }
+		139 = { add_core_of = DEN }
+		140 = { add_core_of = DEN }
+		141 = { add_core_of = DEN }
+		142 = { add_core_of = DEN }
+		143 = { add_core_of = DEN }
+		144 = { add_core_of = DEN }
+		145 = { add_core_of = DEN }
+		146 = { add_core_of = DEN }
+		147 = { add_core_of = DEN }
+		148 = { add_core_of = DEN }
+		149 = { add_core_of = DEN }
+		150 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		666 = { add_core_of = DEN }
+		778 = { add_core_of = DEN }
+		840 = { add_core_of = DEN }
+		844 = { add_core_of = DEN }
+		863 = { add_core_of = DEN }
+		864 = { add_core_of = DEN }
+		865 = { add_core_of = DEN }
+		908 = { add_core_of = DEN }
+		909 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		936 = { add_core_of = DEN }
+		937 = { add_core_of = DEN }
+		960 = { add_core_of = DEN }
+		1146 = { add_core_of = DEN }
+		1147 = { add_core_of = DEN }
+		1324 = { add_core_of = DEN }
+		1325 = { add_core_of = DEN }
+		1326 = { add_core_of = DEN }
+		37 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = PRU_DEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_CZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 9
+				state = 69
+				state = 71
+				state = 74
+				state = 75
+				state = 786
+				state = 1129
+				state = 1130
+				state = 1131
+				state = 1132
+				state = 1133
+				state = 1134
+				state = 1138
+				state = 1139
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CZE = { exists = yes }
+			}
+			CZE = { is_subject_of = PRU }
+		}
+		9 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		69 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		71 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		74 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		75 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		786 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1129 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1130 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1131 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1132 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1133 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1134 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1138 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1139 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				9 = { NOT = { is_core_of = PRU } }
+				69 = { NOT = { is_core_of = PRU } }
+				71 = { NOT = { is_core_of = PRU } }
+				74 = { NOT = { is_core_of = PRU } }
+				75 = { NOT = { is_core_of = PRU } }
+				786 = { NOT = { is_core_of = PRU } }
+				1129 = { NOT = { is_core_of = PRU } }
+				1130 = { NOT = { is_core_of = PRU } }
+				1131 = { NOT = { is_core_of = PRU } }
+				1132 = { NOT = { is_core_of = PRU } }
+				1133 = { NOT = { is_core_of = PRU } }
+				1134 = { NOT = { is_core_of = PRU } }
+				1138 = { NOT = { is_core_of = PRU } }
+				1139 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CZE = {
+			every_core_state = {
+				remove_core_of = CZE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CZE
+				}
+				remove_claim_by = CZE
+			}
+		}
+		9 = { add_core_of = CZE }
+		69 = { add_core_of = CZE }
+		71 = { add_core_of = CZE }
+		74 = { add_core_of = CZE }
+		75 = { add_core_of = CZE }
+		786 = { add_core_of = CZE }
+		1129 = { add_core_of = CZE }
+		1130 = { add_core_of = CZE }
+		1131 = { add_core_of = CZE }
+		1132 = { add_core_of = CZE }
+		1133 = { add_core_of = CZE }
+		1134 = { add_core_of = CZE }
+		1138 = { add_core_of = CZE }
+		1139 = { add_core_of = CZE }
+		release = CZE
+		CZE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = CZE
+			}
+		}
+		CZE = { 
+			set_cosmetic_tag = PRU_CZE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = CZE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_SVK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 70
+				state = 73
+				state = 664
+				state = 1119
+				state = 1120
+				state = 1121
+				state = 1122
+				state = 1123
+				state = 1135
+				state = 1136
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SVK = { exists = yes }
+			}
+			SVK = { is_subject_of = PRU }
+		}
+		70 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		73 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		664 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1119 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1120 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1121 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1122 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1123 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1135 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1136 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				70 = { NOT = { is_core_of = PRU } }
+				73 = { NOT = { is_core_of = PRU } }
+				664 = { NOT = { is_core_of = PRU } }
+				1119 = { NOT = { is_core_of = PRU } }
+				1120 = { NOT = { is_core_of = PRU } }
+				1121 = { NOT = { is_core_of = PRU } }
+				1122 = { NOT = { is_core_of = PRU } }
+				1123 = { NOT = { is_core_of = PRU } }
+				1135 = { NOT = { is_core_of = PRU } }
+				1136 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SVK = {
+			every_core_state = {
+				remove_core_of = SVK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SVK
+				}
+				remove_claim_by = SVK
+			}
+		}
+		70 = { add_core_of = SVK }
+		73 = { add_core_of = SVK }
+		664 = { add_core_of = SVK }
+		1119 = { add_core_of = SVK }
+		1120 = { add_core_of = SVK }
+		1121 = { add_core_of = SVK }
+		1122 = { add_core_of = SVK }
+		1123 = { add_core_of = SVK }
+		1135 = { add_core_of = SVK }
+		1136 = { add_core_of = SVK }
+		release = SVK
+		SVK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = SVK
+			}
+		}
+		SVK = { 
+			set_cosmetic_tag = PRU_SVK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = SVK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HUN = { exists = yes }
+			}
+			HUN = { is_subject_of = PRU }
+		}
+		43 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				43 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HUN
+				}
+				remove_claim_by = HUN
+			}
+		}
+		1118 = { add_core_of = HUN }
+		45 = { add_core_of = HUN }
+		76 = { add_core_of = HUN }
+		82 = { add_core_of = HUN }
+		83 = { add_core_of = HUN }
+		84 = { add_core_of = HUN }
+		154 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		784 = { add_core_of = HUN }
+		789 = { add_core_of = HUN }
+		875 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		1111 = { add_core_of = HUN }
+		1112 = { add_core_of = HUN }
+		1113 = { add_core_of = HUN }
+		1114 = { add_core_of = HUN }
+		1115 = { add_core_of = HUN }
+		1116 = { add_core_of = HUN }
+		1117 = { add_core_of = HUN }
+		43 = { add_core_of = HUN }
+		release = HUN
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = PRU_HUN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = PRU }
+		}
+		47 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				47 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		44 = { add_core_of = GRE }
+		48 = { add_core_of = GRE }
+		49 = { add_core_of = GRE }
+		77 = { add_core_of = GRE }
+		103 = { add_core_of = GRE }
+		104 = { add_core_of = GRE }
+		105 = { add_core_of = GRE }
+		106 = { add_core_of = GRE }
+		107 = { add_core_of = GRE }
+		108 = { add_core_of = GRE }
+		109 = { add_core_of = GRE }
+		163 = { add_core_of = GRE }
+		164 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		183 = { add_core_of = GRE }
+		184 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		187 = { add_core_of = GRE }
+		211 = { add_core_of = GRE }
+		212 = { add_core_of = GRE }
+		339 = { add_core_of = GRE }
+		340 = { add_core_of = GRE }
+		341 = { add_core_of = GRE }
+		342 = { add_core_of = GRE }
+		343 = { add_core_of = GRE }
+		345 = { add_core_of = GRE }
+		346 = { add_core_of = GRE }
+		354 = { add_core_of = GRE }
+		355 = { add_core_of = GRE }
+		356 = { add_core_of = GRE }
+		731 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		765 = { add_core_of = GRE }
+		766 = { add_core_of = GRE }
+		767 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		769 = { add_core_of = GRE }
+		770 = { add_core_of = GRE }
+		771 = { add_core_of = GRE }
+		772 = { add_core_of = GRE }
+		773 = { add_core_of = GRE }
+		794 = { add_core_of = GRE }
+		841 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		989 = { add_core_of = GRE }
+		1001 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		1089 = { add_core_of = GRE }
+		1090 = { add_core_of = GRE }
+		1097 = { add_core_of = GRE }
+		1098 = { add_core_of = GRE }
+		1099 = { add_core_of = GRE }
+		1102 = { add_core_of = GRE }
+		1105 = { add_core_of = GRE }
+		1128 = { add_core_of = GRE }
+		1141 = { add_core_of = GRE }
+		1142 = { add_core_of = GRE }
+		1143 = { add_core_of = GRE }
+		1145 = { add_core_of = GRE }
+		1206 = { add_core_of = GRE }
+		1268 = { add_core_of = GRE }
+		1269 = { add_core_of = GRE }
+		1270 = { add_core_of = GRE }
+		1271 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = PRU_GRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Javier I"
+				picture = "gfx/leaders/CAR/Portrait_Javier_I.png"
+				expire = "1.1.1"
+				ideology = carlism_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 79
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ROM = { exists = yes }
+			}
+			ROM = { is_subject_of = PRU }
+		}
+		46 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		79 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		81 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				46 = { NOT = { is_core_of = PRU } }
+				79 = { NOT = { is_core_of = PRU } }
+				81 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ROM = {
+			every_core_state = {
+				remove_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ROM
+				}
+				remove_claim_by = ROM
+			}
+		}
+		78 = { add_core_of = ROM }
+		80 = { add_core_of = ROM }
+		713 = { add_core_of = ROM }
+		1222 = { add_core_of = ROM }
+		1320 = { add_core_of = ROM }
+		46 = { add_core_of = ROM }
+		79 = { add_core_of = ROM }
+		81 = { add_core_of = ROM }
+		release = ROM
+		ROM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = ROM
+			}
+		}
+		ROM = { 
+			set_cosmetic_tag = PRU_ROM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = ROM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_POL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+				state = 87
+				state = 90
+				state = 92
+				state = 97
+				state = 98
+				state = 1088
+				state = 1148
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POL = { exists = yes }
+			}
+			POL = { is_subject_of = PRU }
+		}
+		10 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		87 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		90 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		92 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		97 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		98 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1088 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1148 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				10 = { NOT = { is_core_of = PRU } }
+				87 = { NOT = { is_core_of = PRU } }
+				90 = { NOT = { is_core_of = PRU } }
+				92 = { NOT = { is_core_of = PRU } }
+				97 = { NOT = { is_core_of = PRU } }
+				98 = { NOT = { is_core_of = PRU } }
+				1088 = { NOT = { is_core_of = PRU } }
+				1148 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POL = {
+			every_core_state = {
+				remove_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POL
+				}
+				remove_claim_by = POL
+			}
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		86 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+		89 = { add_core_of = POL }
+		91 = { add_core_of = POL }
+		776 = { add_core_of = POL }
+		777 = { add_core_of = POL }
+		1124 = { add_core_of = POL }
+		1125 = { add_core_of = POL }
+		1126 = { add_core_of = POL }
+		1127 = { add_core_of = POL }
+		1140 = { add_core_of = POL }
+		1314 = { add_core_of = POL }
+		1319 = { add_core_of = POL }
+		10 = { add_core_of = POL }
+		87 = { add_core_of = POL }
+		90 = { add_core_of = POL }
+		92 = { add_core_of = POL }
+		97 = { add_core_of = POL }
+		98 = { add_core_of = POL }
+		1088 = { add_core_of = POL }
+		1148 = { add_core_of = POL }
+		release = POL
+		POL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = POL
+			}
+		}
+		POL = { 
+			set_cosmetic_tag = PRU_POL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = POL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_BAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BAT = { exists = yes }
+			}
+			BAT = { is_subject_of = PRU }
+		}
+		1091 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				1091 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BAT = {
+			every_core_state = {
+				remove_core_of = BAT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BAT
+				}
+				remove_claim_by = BAT
+			}
+		}
+		11 = { add_core_of = BAT }
+		12 = { add_core_of = BAT }
+		13 = { add_core_of = BAT }
+		94 = { add_core_of = BAT }
+		96 = { add_core_of = BAT }
+		188 = { add_core_of = BAT }
+		189 = { add_core_of = BAT }
+		190 = { add_core_of = BAT }
+		191 = { add_core_of = BAT }
+		207 = { add_core_of = BAT }
+		209 = { add_core_of = BAT }
+		655 = { add_core_of = BAT }
+		880 = { add_core_of = BAT }
+		1288 = { add_core_of = BAT }
+		1291 = { add_core_of = BAT }
+		1295 = { add_core_of = BAT }
+		1329 = { add_core_of = BAT }
+		1091 = { add_core_of = BAT }
+		release = BAT
+		BAT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = BAT
+			}
+		}
+		BAT = { 
+			set_cosmetic_tag = PRU_BAT_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = BAT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_UKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				UKR = { exists = yes }
+			}
+			UKR = { is_subject_of = PRU }
+		}
+		202 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				202 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		UKR = {
+			every_core_state = {
+				remove_core_of = UKR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = UKR
+				}
+				remove_claim_by = UKR
+			}
+		}
+		93 = { add_core_of = UKR }
+		95 = { add_core_of = UKR }
+		137 = { add_core_of = UKR }
+		192 = { add_core_of = UKR }
+		193 = { add_core_of = UKR }
+		194 = { add_core_of = UKR }
+		196 = { add_core_of = UKR }
+		197 = { add_core_of = UKR }
+		198 = { add_core_of = UKR }
+		199 = { add_core_of = UKR }
+		200 = { add_core_of = UKR }
+		201 = { add_core_of = UKR }
+		203 = { add_core_of = UKR }
+		221 = { add_core_of = UKR }
+		225 = { add_core_of = UKR }
+		226 = { add_core_of = UKR }
+		227 = { add_core_of = UKR }
+		228 = { add_core_of = UKR }
+		234 = { add_core_of = UKR }
+		240 = { add_core_of = UKR }
+		241 = { add_core_of = UKR }
+		259 = { add_core_of = UKR }
+		791 = { add_core_of = UKR }
+		792 = { add_core_of = UKR }
+		821 = { add_core_of = UKR }
+		997 = { add_core_of = UKR }
+		1220 = { add_core_of = UKR }
+		1221 = { add_core_of = UKR }
+		1227 = { add_core_of = UKR }
+		1228 = { add_core_of = UKR }
+		1230 = { add_core_of = UKR }
+		1231 = { add_core_of = UKR }
+		1232 = { add_core_of = UKR }
+		1233 = { add_core_of = UKR }
+		1234 = { add_core_of = UKR }
+		1237 = { add_core_of = UKR }
+		1238 = { add_core_of = UKR }
+		1239 = { add_core_of = UKR }
+		1240 = { add_core_of = UKR }
+		1241 = { add_core_of = UKR }
+		1242 = { add_core_of = UKR }
+		1243 = { add_core_of = UKR }
+		1244 = { add_core_of = UKR }
+		1245 = { add_core_of = UKR }
+		1263 = { add_core_of = UKR }
+		1282 = { add_core_of = UKR }
+		1283 = { add_core_of = UKR }
+		1284 = { add_core_of = UKR }
+		1285 = { add_core_of = UKR }
+		1286 = { add_core_of = UKR }
+		202 = { add_core_of = UKR }
+		release = UKR
+		UKR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = UKR
+			}
+		}
+		UKR = { 
+			set_cosmetic_tag = PRU_UKR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = UKR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				RUS = { exists = yes }
+			}
+			RUS = { is_subject_of = PRU }
+		}
+		195 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				195 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = RUS
+				}
+				remove_claim_by = RUS
+			}
+		}
+		204 = { add_core_of = RUS }
+		205 = { add_core_of = RUS }
+		206 = { add_core_of = RUS }
+		208 = { add_core_of = RUS }
+		210 = { add_core_of = RUS }
+		213 = { add_core_of = RUS }
+		214 = { add_core_of = RUS }
+		215 = { add_core_of = RUS }
+		216 = { add_core_of = RUS }
+		217 = { add_core_of = RUS }
+		218 = { add_core_of = RUS }
+		219 = { add_core_of = RUS }
+		220 = { add_core_of = RUS }
+		222 = { add_core_of = RUS }
+		223 = { add_core_of = RUS }
+		224 = { add_core_of = RUS }
+		235 = { add_core_of = RUS }
+		236 = { add_core_of = RUS }
+		237 = { add_core_of = RUS }
+		238 = { add_core_of = RUS }
+		239 = { add_core_of = RUS }
+		242 = { add_core_of = RUS }
+		243 = { add_core_of = RUS }
+		244 = { add_core_of = RUS }
+		245 = { add_core_of = RUS }
+		246 = { add_core_of = RUS }
+		247 = { add_core_of = RUS }
+		248 = { add_core_of = RUS }
+		249 = { add_core_of = RUS }
+		250 = { add_core_of = RUS }
+		251 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		254 = { add_core_of = RUS }
+		255 = { add_core_of = RUS }
+		256 = { add_core_of = RUS }
+		257 = { add_core_of = RUS }
+		258 = { add_core_of = RUS }
+		260 = { add_core_of = RUS }
+		262 = { add_core_of = RUS }
+		263 = { add_core_of = RUS }
+		264 = { add_core_of = RUS }
+		265 = { add_core_of = RUS }
+		351 = { add_core_of = RUS }
+		397 = { add_core_of = RUS }
+		398 = { add_core_of = RUS }
+		399 = { add_core_of = RUS }
+		400 = { add_core_of = RUS }
+		401 = { add_core_of = RUS }
+		651 = { add_core_of = RUS }
+		652 = { add_core_of = RUS }
+		722 = { add_core_of = RUS }
+		755 = { add_core_of = RUS }
+		1087 = { add_core_of = RUS }
+		1193 = { add_core_of = RUS }
+		1194 = { add_core_of = RUS }
+		1197 = { add_core_of = RUS }
+		1198 = { add_core_of = RUS }
+		1199 = { add_core_of = RUS }
+		1204 = { add_core_of = RUS }
+		1205 = { add_core_of = RUS }
+		1207 = { add_core_of = RUS }
+		1224 = { add_core_of = RUS }
+		1226 = { add_core_of = RUS }
+		1229 = { add_core_of = RUS }
+		1264 = { add_core_of = RUS }
+		1265 = { add_core_of = RUS }
+		1266 = { add_core_of = RUS }
+		1274 = { add_core_of = RUS }
+		1287 = { add_core_of = RUS }
+		1289 = { add_core_of = RUS }
+		1290 = { add_core_of = RUS }
+		1294 = { add_core_of = RUS }
+		1327 = { add_core_of = RUS }
+		1328 = { add_core_of = RUS }
+		195 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = PRU_RUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GEO = { exists = yes }
+			}
+			GEO = { is_subject_of = PRU }
+		}
+		231 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				231 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GEO
+				}
+				remove_claim_by = GEO
+			}
+		}
+		229 = { add_core_of = GEO }
+		230 = { add_core_of = GEO }
+		232 = { add_core_of = GEO }
+		233 = { add_core_of = GEO }
+		787 = { add_core_of = GEO }
+		990 = { add_core_of = GEO }
+		998 = { add_core_of = GEO }
+		1000 = { add_core_of = GEO }
+		1080 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1082 = { add_core_of = GEO }
+		1186 = { add_core_of = GEO }
+		1187 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1189 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		1191 = { add_core_of = GEO }
+		1213 = { add_core_of = GEO }
+		1267 = { add_core_of = GEO }
+		1298 = { add_core_of = GEO }
+		1299 = { add_core_of = GEO }
+		1300 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		1302 = { add_core_of = GEO }
+		1303 = { add_core_of = GEO }
+		1304 = { add_core_of = GEO }
+		231 = { add_core_of = GEO }
+		release = GEO
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = PRU_GEO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_LEB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 553
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LEB = { exists = yes }
+			}
+			LEB = { is_subject_of = PRU }
+		}
+		553 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				553 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEB = {
+			every_core_state = {
+				remove_core_of = LEB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LEB
+				}
+				remove_claim_by = LEB
+			}
+		}
+		291 = { add_core_of = LEB }
+		292 = { add_core_of = LEB }
+		293 = { add_core_of = LEB }
+		294 = { add_core_of = LEB }
+		344 = { add_core_of = LEB }
+		347 = { add_core_of = LEB }
+		349 = { add_core_of = LEB }
+		350 = { add_core_of = LEB }
+		352 = { add_core_of = LEB }
+		446 = { add_core_of = LEB }
+		447 = { add_core_of = LEB }
+		452 = { add_core_of = LEB }
+		453 = { add_core_of = LEB }
+		454 = { add_core_of = LEB }
+		455 = { add_core_of = LEB }
+		456 = { add_core_of = LEB }
+		457 = { add_core_of = LEB }
+		552 = { add_core_of = LEB }
+		554 = { add_core_of = LEB }
+		656 = { add_core_of = LEB }
+		658 = { add_core_of = LEB }
+		659 = { add_core_of = LEB }
+		675 = { add_core_of = LEB }
+		676 = { add_core_of = LEB }
+		677 = { add_core_of = LEB }
+		678 = { add_core_of = LEB }
+		679 = { add_core_of = LEB }
+		680 = { add_core_of = LEB }
+		752 = { add_core_of = LEB }
+		753 = { add_core_of = LEB }
+		754 = { add_core_of = LEB }
+		812 = { add_core_of = LEB }
+		819 = { add_core_of = LEB }
+		859 = { add_core_of = LEB }
+		907 = { add_core_of = LEB }
+		915 = { add_core_of = LEB }
+		981 = { add_core_of = LEB }
+		982 = { add_core_of = LEB }
+		991 = { add_core_of = LEB }
+		992 = { add_core_of = LEB }
+		993 = { add_core_of = LEB }
+		994 = { add_core_of = LEB }
+		995 = { add_core_of = LEB }
+		1008 = { add_core_of = LEB }
+		1024 = { add_core_of = LEB }
+		1035 = { add_core_of = LEB }
+		553 = { add_core_of = LEB }
+		release = LEB
+		LEB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = LEB
+			}
+		}
+		LEB = { 
+			set_cosmetic_tag = PRU_LEB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Javier I"
+				picture = "gfx/leaders/CAR/Portrait_Javier_I.png"
+				expire = "1.1.1"
+				ideology = carlism_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_ALG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+				state = 460
+				state = 513
+				state = 514
+				state = 805
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ALG = { exists = yes }
+			}
+			ALG = { is_subject_of = PRU }
+		}
+		459 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		460 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		513 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		514 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		805 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				459 = { NOT = { is_core_of = PRU } }
+				460 = { NOT = { is_core_of = PRU } }
+				513 = { NOT = { is_core_of = PRU } }
+				514 = { NOT = { is_core_of = PRU } }
+				805 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALG = {
+			every_core_state = {
+				remove_core_of = ALG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ALG
+				}
+				remove_claim_by = ALG
+			}
+		}
+		273 = { add_core_of = ALG }
+		290 = { add_core_of = ALG }
+		448 = { add_core_of = ALG }
+		450 = { add_core_of = ALG }
+		451 = { add_core_of = ALG }
+		458 = { add_core_of = ALG }
+		461 = { add_core_of = ALG }
+		462 = { add_core_of = ALG }
+		663 = { add_core_of = ALG }
+		665 = { add_core_of = ALG }
+		699 = { add_core_of = ALG }
+		1009 = { add_core_of = ALG }
+		1318 = { add_core_of = ALG }
+		459 = { add_core_of = ALG }
+		460 = { add_core_of = ALG }
+		513 = { add_core_of = ALG }
+		514 = { add_core_of = ALG }
+		805 = { add_core_of = ALG }
+		release = ALG
+		ALG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = ALG
+			}
+		}
+		ALG = { 
+			set_cosmetic_tag = PRU_ALG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = ALG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_CVG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 296
+				state = 702
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CVG = { exists = yes }
+			}
+			CVG = { is_subject_of = PRU }
+		}
+		296 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		702 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				296 = { NOT = { is_core_of = PRU } }
+				702 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CVG = {
+			every_core_state = {
+				remove_core_of = CVG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CVG
+				}
+				remove_claim_by = CVG
+			}
+		}
+		272 = { add_core_of = CVG }
+		274 = { add_core_of = CVG }
+		298 = { add_core_of = CVG }
+		515 = { add_core_of = CVG }
+		556 = { add_core_of = CVG }
+		557 = { add_core_of = CVG }
+		558 = { add_core_of = CVG }
+		662 = { add_core_of = CVG }
+		700 = { add_core_of = CVG }
+		703 = { add_core_of = CVG }
+		704 = { add_core_of = CVG }
+		806 = { add_core_of = CVG }
+		807 = { add_core_of = CVG }
+		808 = { add_core_of = CVG }
+		809 = { add_core_of = CVG }
+		834 = { add_core_of = CVG }
+		860 = { add_core_of = CVG }
+		876 = { add_core_of = CVG }
+		877 = { add_core_of = CVG }
+		878 = { add_core_of = CVG }
+		910 = { add_core_of = CVG }
+		911 = { add_core_of = CVG }
+		913 = { add_core_of = CVG }
+		962 = { add_core_of = CVG }
+		963 = { add_core_of = CVG }
+		966 = { add_core_of = CVG }
+		967 = { add_core_of = CVG }
+		968 = { add_core_of = CVG }
+		973 = { add_core_of = CVG }
+		975 = { add_core_of = CVG }
+		1192 = { add_core_of = CVG }
+		1321 = { add_core_of = CVG }
+		1322 = { add_core_of = CVG }
+		1323 = { add_core_of = CVG }
+		296 = { add_core_of = CVG }
+		702 = { add_core_of = CVG }
+		release = CVG
+		CVG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = CVG
+			}
+		}
+		CVG = { 
+			set_cosmetic_tag = PRU_CVG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = CVG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_SUD = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 549
+				state = 551
+				state = 862
+				state = 1007
+				state = 1010
+				state = 1011
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SUD = { exists = yes }
+			}
+			SUD = { is_subject_of = PRU }
+		}
+		549 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		551 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		862 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1007 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1010 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1011 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				549 = { NOT = { is_core_of = PRU } }
+				551 = { NOT = { is_core_of = PRU } }
+				862 = { NOT = { is_core_of = PRU } }
+				1007 = { NOT = { is_core_of = PRU } }
+				1010 = { NOT = { is_core_of = PRU } }
+				1011 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SUD = {
+			every_core_state = {
+				remove_core_of = SUD
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SUD
+				}
+				remove_claim_by = SUD
+			}
+		}
+		268 = { add_core_of = SUD }
+		269 = { add_core_of = SUD }
+		271 = { add_core_of = SUD }
+		547 = { add_core_of = SUD }
+		550 = { add_core_of = SUD }
+		559 = { add_core_of = SUD }
+		709 = { add_core_of = SUD }
+		892 = { add_core_of = SUD }
+		906 = { add_core_of = SUD }
+		919 = { add_core_of = SUD }
+		920 = { add_core_of = SUD }
+		921 = { add_core_of = SUD }
+		922 = { add_core_of = SUD }
+		923 = { add_core_of = SUD }
+		924 = { add_core_of = SUD }
+		925 = { add_core_of = SUD }
+		944 = { add_core_of = SUD }
+		961 = { add_core_of = SUD }
+		969 = { add_core_of = SUD }
+		970 = { add_core_of = SUD }
+		1297 = { add_core_of = SUD }
+		549 = { add_core_of = SUD }
+		551 = { add_core_of = SUD }
+		862 = { add_core_of = SUD }
+		1007 = { add_core_of = SUD }
+		1010 = { add_core_of = SUD }
+		1011 = { add_core_of = SUD }
+		release = SUD
+		SUD = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = SUD
+			}
+		}
+		SUD = { 
+			set_cosmetic_tag = PRU_SUD_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = SUD
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_ANG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 540
+				state = 914
+				state = 916
+				state = 917
+				state = 959
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ANG = { exists = yes }
+			}
+			ANG = { is_subject_of = PRU }
+		}
+		540 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		914 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		916 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		917 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		959 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				540 = { NOT = { is_core_of = PRU } }
+				914 = { NOT = { is_core_of = PRU } }
+				916 = { NOT = { is_core_of = PRU } }
+				917 = { NOT = { is_core_of = PRU } }
+				959 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ANG = {
+			every_core_state = {
+				remove_core_of = ANG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ANG
+				}
+				remove_claim_by = ANG
+			}
+		}
+		295 = { add_core_of = ANG }
+		297 = { add_core_of = ANG }
+		538 = { add_core_of = ANG }
+		539 = { add_core_of = ANG }
+		546 = { add_core_of = ANG }
+		548 = { add_core_of = ANG }
+		660 = { add_core_of = ANG }
+		705 = { add_core_of = ANG }
+		718 = { add_core_of = ANG }
+		813 = { add_core_of = ANG }
+		869 = { add_core_of = ANG }
+		870 = { add_core_of = ANG }
+		871 = { add_core_of = ANG }
+		879 = { add_core_of = ANG }
+		881 = { add_core_of = ANG }
+		899 = { add_core_of = ANG }
+		905 = { add_core_of = ANG }
+		918 = { add_core_of = ANG }
+		927 = { add_core_of = ANG }
+		928 = { add_core_of = ANG }
+		948 = { add_core_of = ANG }
+		949 = { add_core_of = ANG }
+		952 = { add_core_of = ANG }
+		953 = { add_core_of = ANG }
+		955 = { add_core_of = ANG }
+		956 = { add_core_of = ANG }
+		957 = { add_core_of = ANG }
+		958 = { add_core_of = ANG }
+		965 = { add_core_of = ANG }
+		971 = { add_core_of = ANG }
+		974 = { add_core_of = ANG }
+		976 = { add_core_of = ANG }
+		977 = { add_core_of = ANG }
+		1025 = { add_core_of = ANG }
+		1026 = { add_core_of = ANG }
+		1032 = { add_core_of = ANG }
+		1180 = { add_core_of = ANG }
+		1181 = { add_core_of = ANG }
+		1182 = { add_core_of = ANG }
+		1183 = { add_core_of = ANG }
+		1184 = { add_core_of = ANG }
+		1185 = { add_core_of = ANG }
+		1335 = { add_core_of = ANG }
+		540 = { add_core_of = ANG }
+		914 = { add_core_of = ANG }
+		916 = { add_core_of = ANG }
+		917 = { add_core_of = ANG }
+		959 = { add_core_of = ANG }
+		release = ANG
+		ANG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = ANG
+			}
+		}
+		ANG = { 
+			set_cosmetic_tag = PRU_ANG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = ANG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_MZB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 544
+				state = 950
+				state = 954
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MZB = { exists = yes }
+			}
+			MZB = { is_subject_of = PRU }
+		}
+		544 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		950 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		954 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				544 = { NOT = { is_core_of = PRU } }
+				950 = { NOT = { is_core_of = PRU } }
+				954 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MZB = {
+			every_core_state = {
+				remove_core_of = MZB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MZB
+				}
+				remove_claim_by = MZB
+			}
+		}
+		85 = { add_core_of = MZB }
+		275 = { add_core_of = MZB }
+		541 = { add_core_of = MZB }
+		542 = { add_core_of = MZB }
+		543 = { add_core_of = MZB }
+		545 = { add_core_of = MZB }
+		681 = { add_core_of = MZB }
+		706 = { add_core_of = MZB }
+		707 = { add_core_of = MZB }
+		708 = { add_core_of = MZB }
+		719 = { add_core_of = MZB }
+		738 = { add_core_of = MZB }
+		945 = { add_core_of = MZB }
+		946 = { add_core_of = MZB }
+		947 = { add_core_of = MZB }
+		964 = { add_core_of = MZB }
+		1176 = { add_core_of = MZB }
+		1177 = { add_core_of = MZB }
+		1178 = { add_core_of = MZB }
+		1179 = { add_core_of = MZB }
+		544 = { add_core_of = MZB }
+		950 = { add_core_of = MZB }
+		954 = { add_core_of = MZB }
+		release = MZB
+		MZB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = MZB
+			}
+		}
+		MZB = { 
+			set_cosmetic_tag = PRU_MZB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = MZB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_SIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 653
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIB = { exists = yes }
+			}
+			SIB = { is_subject_of = PRU }
+		}
+		653 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				653 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIB
+				}
+				remove_claim_by = SIB
+			}
+		}
+		40 = { add_core_of = SIB }
+		329 = { add_core_of = SIB }
+		403 = { add_core_of = SIB }
+		408 = { add_core_of = SIB }
+		409 = { add_core_of = SIB }
+		516 = { add_core_of = SIB }
+		537 = { add_core_of = SIB }
+		555 = { add_core_of = SIB }
+		560 = { add_core_of = SIB }
+		561 = { add_core_of = SIB }
+		562 = { add_core_of = SIB }
+		563 = { add_core_of = SIB }
+		564 = { add_core_of = SIB }
+		565 = { add_core_of = SIB }
+		566 = { add_core_of = SIB }
+		567 = { add_core_of = SIB }
+		568 = { add_core_of = SIB }
+		569 = { add_core_of = SIB }
+		570 = { add_core_of = SIB }
+		571 = { add_core_of = SIB }
+		572 = { add_core_of = SIB }
+		573 = { add_core_of = SIB }
+		574 = { add_core_of = SIB }
+		575 = { add_core_of = SIB }
+		576 = { add_core_of = SIB }
+		577 = { add_core_of = SIB }
+		578 = { add_core_of = SIB }
+		580 = { add_core_of = SIB }
+		581 = { add_core_of = SIB }
+		582 = { add_core_of = SIB }
+		637 = { add_core_of = SIB }
+		644 = { add_core_of = SIB }
+		654 = { add_core_of = SIB }
+		657 = { add_core_of = SIB }
+		811 = { add_core_of = SIB }
+		1195 = { add_core_of = SIB }
+		1200 = { add_core_of = SIB }
+		1201 = { add_core_of = SIB }
+		1202 = { add_core_of = SIB }
+		1246 = { add_core_of = SIB }
+		1292 = { add_core_of = SIB }
+		1293 = { add_core_of = SIB }
+		653 = { add_core_of = SIB }
+		release = SIB
+		SIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = SIB
+			}
+		}
+		SIB = { 
+			set_cosmetic_tag = PRU_SIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_TRK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 402
+				state = 404
+				state = 405
+				state = 406
+				state = 407
+				state = 583
+				state = 584
+				state = 585
+				state = 586
+				state = 587
+				state = 588
+				state = 589
+				state = 590
+				state = 712
+				state = 732
+				state = 810
+				state = 861
+				state = 1042
+				state = 1196
+				state = 1203
+				state = 1208
+				state = 1209
+				state = 1210
+				state = 1211
+				state = 1212
+				state = 1275
+				state = 1276
+				state = 1277
+				state = 1278
+				state = 1279
+				state = 1281
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRK = { exists = yes }
+			}
+			TRK = { is_subject_of = PRU }
+		}
+		402 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		404 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		405 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		406 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		407 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		583 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		584 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		585 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		586 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		587 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		588 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		589 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		590 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		712 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		732 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		810 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		861 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1042 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1196 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1203 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1208 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1209 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1210 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1211 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1212 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1275 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1276 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1277 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1278 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1279 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1281 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				402 = { NOT = { is_core_of = PRU } }
+				404 = { NOT = { is_core_of = PRU } }
+				405 = { NOT = { is_core_of = PRU } }
+				406 = { NOT = { is_core_of = PRU } }
+				407 = { NOT = { is_core_of = PRU } }
+				583 = { NOT = { is_core_of = PRU } }
+				584 = { NOT = { is_core_of = PRU } }
+				585 = { NOT = { is_core_of = PRU } }
+				586 = { NOT = { is_core_of = PRU } }
+				587 = { NOT = { is_core_of = PRU } }
+				588 = { NOT = { is_core_of = PRU } }
+				589 = { NOT = { is_core_of = PRU } }
+				590 = { NOT = { is_core_of = PRU } }
+				712 = { NOT = { is_core_of = PRU } }
+				732 = { NOT = { is_core_of = PRU } }
+				810 = { NOT = { is_core_of = PRU } }
+				861 = { NOT = { is_core_of = PRU } }
+				1042 = { NOT = { is_core_of = PRU } }
+				1196 = { NOT = { is_core_of = PRU } }
+				1203 = { NOT = { is_core_of = PRU } }
+				1208 = { NOT = { is_core_of = PRU } }
+				1209 = { NOT = { is_core_of = PRU } }
+				1210 = { NOT = { is_core_of = PRU } }
+				1211 = { NOT = { is_core_of = PRU } }
+				1212 = { NOT = { is_core_of = PRU } }
+				1275 = { NOT = { is_core_of = PRU } }
+				1276 = { NOT = { is_core_of = PRU } }
+				1277 = { NOT = { is_core_of = PRU } }
+				1278 = { NOT = { is_core_of = PRU } }
+				1279 = { NOT = { is_core_of = PRU } }
+				1281 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRK = {
+			every_core_state = {
+				remove_core_of = TRK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRK
+				}
+				remove_claim_by = TRK
+			}
+		}
+		402 = { add_core_of = TRK }
+		404 = { add_core_of = TRK }
+		405 = { add_core_of = TRK }
+		406 = { add_core_of = TRK }
+		407 = { add_core_of = TRK }
+		583 = { add_core_of = TRK }
+		584 = { add_core_of = TRK }
+		585 = { add_core_of = TRK }
+		586 = { add_core_of = TRK }
+		587 = { add_core_of = TRK }
+		588 = { add_core_of = TRK }
+		589 = { add_core_of = TRK }
+		590 = { add_core_of = TRK }
+		712 = { add_core_of = TRK }
+		732 = { add_core_of = TRK }
+		810 = { add_core_of = TRK }
+		861 = { add_core_of = TRK }
+		1042 = { add_core_of = TRK }
+		1196 = { add_core_of = TRK }
+		1203 = { add_core_of = TRK }
+		1208 = { add_core_of = TRK }
+		1209 = { add_core_of = TRK }
+		1210 = { add_core_of = TRK }
+		1211 = { add_core_of = TRK }
+		1212 = { add_core_of = TRK }
+		1275 = { add_core_of = TRK }
+		1276 = { add_core_of = TRK }
+		1277 = { add_core_of = TRK }
+		1278 = { add_core_of = TRK }
+		1279 = { add_core_of = TRK }
+		1281 = { add_core_of = TRK }
+		release = TRK
+		TRK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = TRK
+			}
+		}
+		TRK = { 
+			set_cosmetic_tag = PRU_TRK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = TRK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 417
+				state = 418
+				state = 419
+				state = 420
+				state = 421
+				state = 804
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = PRU }
+		}
+		266 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		410 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		411 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		412 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		413 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		414 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		416 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		417 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		418 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		419 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		420 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		421 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		804 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				266 = { NOT = { is_core_of = PRU } }
+				410 = { NOT = { is_core_of = PRU } }
+				411 = { NOT = { is_core_of = PRU } }
+				412 = { NOT = { is_core_of = PRU } }
+				413 = { NOT = { is_core_of = PRU } }
+				414 = { NOT = { is_core_of = PRU } }
+				416 = { NOT = { is_core_of = PRU } }
+				417 = { NOT = { is_core_of = PRU } }
+				418 = { NOT = { is_core_of = PRU } }
+				419 = { NOT = { is_core_of = PRU } }
+				420 = { NOT = { is_core_of = PRU } }
+				421 = { NOT = { is_core_of = PRU } }
+				804 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		266 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = PRU_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = PRU }
+		}
+		608 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				608 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		283 = { add_core_of = QIE }
+		287 = { add_core_of = QIE }
+		322 = { add_core_of = QIE }
+		325 = { add_core_of = QIE }
+		326 = { add_core_of = QIE }
+		328 = { add_core_of = QIE }
+		330 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		591 = { add_core_of = QIE }
+		592 = { add_core_of = QIE }
+		593 = { add_core_of = QIE }
+		594 = { add_core_of = QIE }
+		595 = { add_core_of = QIE }
+		596 = { add_core_of = QIE }
+		597 = { add_core_of = QIE }
+		598 = { add_core_of = QIE }
+		599 = { add_core_of = QIE }
+		600 = { add_core_of = QIE }
+		601 = { add_core_of = QIE }
+		602 = { add_core_of = QIE }
+		603 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		605 = { add_core_of = QIE }
+		606 = { add_core_of = QIE }
+		607 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		610 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		612 = { add_core_of = QIE }
+		613 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		617 = { add_core_of = QIE }
+		618 = { add_core_of = QIE }
+		619 = { add_core_of = QIE }
+		620 = { add_core_of = QIE }
+		621 = { add_core_of = QIE }
+		622 = { add_core_of = QIE }
+		650 = { add_core_of = QIE }
+		661 = { add_core_of = QIE }
+		693 = { add_core_of = QIE }
+		714 = { add_core_of = QIE }
+		715 = { add_core_of = QIE }
+		716 = { add_core_of = QIE }
+		717 = { add_core_of = QIE }
+		729 = { add_core_of = QIE }
+		743 = { add_core_of = QIE }
+		744 = { add_core_of = QIE }
+		745 = { add_core_of = QIE }
+		746 = { add_core_of = QIE }
+		747 = { add_core_of = QIE }
+		748 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		788 = { add_core_of = QIE }
+		799 = { add_core_of = QIE }
+		800 = { add_core_of = QIE }
+		801 = { add_core_of = QIE }
+		802 = { add_core_of = QIE }
+		803 = { add_core_of = QIE }
+		816 = { add_core_of = QIE }
+		883 = { add_core_of = QIE }
+		884 = { add_core_of = QIE }
+		885 = { add_core_of = QIE }
+		886 = { add_core_of = QIE }
+		897 = { add_core_of = QIE }
+		996 = { add_core_of = QIE }
+		1012 = { add_core_of = QIE }
+		1013 = { add_core_of = QIE }
+		1014 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1044 = { add_core_of = QIE }
+		1045 = { add_core_of = QIE }
+		1046 = { add_core_of = QIE }
+		1047 = { add_core_of = QIE }
+		1048 = { add_core_of = QIE }
+		1049 = { add_core_of = QIE }
+		1050 = { add_core_of = QIE }
+		1051 = { add_core_of = QIE }
+		1052 = { add_core_of = QIE }
+		1053 = { add_core_of = QIE }
+		1054 = { add_core_of = QIE }
+		1055 = { add_core_of = QIE }
+		1056 = { add_core_of = QIE }
+		1058 = { add_core_of = QIE }
+		1059 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1064 = { add_core_of = QIE }
+		1065 = { add_core_of = QIE }
+		1066 = { add_core_of = QIE }
+		1067 = { add_core_of = QIE }
+		1068 = { add_core_of = QIE }
+		1069 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		1075 = { add_core_of = QIE }
+		1083 = { add_core_of = QIE }
+		1084 = { add_core_of = QIE }
+		1085 = { add_core_of = QIE }
+		1086 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = PRU_QIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = PRU }
+		}
+		439 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				439 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		72 = { add_core_of = DEH }
+		267 = { add_core_of = DEH }
+		281 = { add_core_of = DEH }
+		288 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		323 = { add_core_of = DEH }
+		324 = { add_core_of = DEH }
+		415 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		428 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		440 = { add_core_of = DEH }
+		441 = { add_core_of = DEH }
+		442 = { add_core_of = DEH }
+		443 = { add_core_of = DEH }
+		444 = { add_core_of = DEH }
+		445 = { add_core_of = DEH }
+		640 = { add_core_of = DEH }
+		701 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		733 = { add_core_of = DEH }
+		756 = { add_core_of = DEH }
+		790 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		890 = { add_core_of = DEH }
+		891 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		1217 = { add_core_of = DEH }
+		1218 = { add_core_of = DEH }
+		1219 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = PRU_DEH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_MLY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 336
+				state = 846
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MLY = { exists = yes }
+			}
+			MLY = { is_subject_of = PRU }
+		}
+		336 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		846 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				336 = { NOT = { is_core_of = PRU } }
+				846 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MLY = {
+			every_core_state = {
+				remove_core_of = MLY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MLY
+				}
+				remove_claim_by = MLY
+			}
+		}
+		286 = { add_core_of = MLY }
+		289 = { add_core_of = MLY }
+		333 = { add_core_of = MLY }
+		334 = { add_core_of = MLY }
+		335 = { add_core_of = MLY }
+		523 = { add_core_of = MLY }
+		524 = { add_core_of = MLY }
+		526 = { add_core_of = MLY }
+		629 = { add_core_of = MLY }
+		630 = { add_core_of = MLY }
+		631 = { add_core_of = MLY }
+		632 = { add_core_of = MLY }
+		633 = { add_core_of = MLY }
+		634 = { add_core_of = MLY }
+		635 = { add_core_of = MLY }
+		636 = { add_core_of = MLY }
+		638 = { add_core_of = MLY }
+		639 = { add_core_of = MLY }
+		641 = { add_core_of = MLY }
+		642 = { add_core_of = MLY }
+		643 = { add_core_of = MLY }
+		645 = { add_core_of = MLY }
+		646 = { add_core_of = MLY }
+		647 = { add_core_of = MLY }
+		648 = { add_core_of = MLY }
+		667 = { add_core_of = MLY }
+		668 = { add_core_of = MLY }
+		669 = { add_core_of = MLY }
+		670 = { add_core_of = MLY }
+		671 = { add_core_of = MLY }
+		672 = { add_core_of = MLY }
+		673 = { add_core_of = MLY }
+		684 = { add_core_of = MLY }
+		721 = { add_core_of = MLY }
+		724 = { add_core_of = MLY }
+		725 = { add_core_of = MLY }
+		727 = { add_core_of = MLY }
+		728 = { add_core_of = MLY }
+		734 = { add_core_of = MLY }
+		737 = { add_core_of = MLY }
+		749 = { add_core_of = MLY }
+		750 = { add_core_of = MLY }
+		751 = { add_core_of = MLY }
+		757 = { add_core_of = MLY }
+		822 = { add_core_of = MLY }
+		823 = { add_core_of = MLY }
+		824 = { add_core_of = MLY }
+		825 = { add_core_of = MLY }
+		826 = { add_core_of = MLY }
+		827 = { add_core_of = MLY }
+		828 = { add_core_of = MLY }
+		830 = { add_core_of = MLY }
+		831 = { add_core_of = MLY }
+		843 = { add_core_of = MLY }
+		856 = { add_core_of = MLY }
+		857 = { add_core_of = MLY }
+		882 = { add_core_of = MLY }
+		941 = { add_core_of = MLY }
+		972 = { add_core_of = MLY }
+		999 = { add_core_of = MLY }
+		1016 = { add_core_of = MLY }
+		1017 = { add_core_of = MLY }
+		1018 = { add_core_of = MLY }
+		1019 = { add_core_of = MLY }
+		1020 = { add_core_of = MLY }
+		1021 = { add_core_of = MLY }
+		1022 = { add_core_of = MLY }
+		1023 = { add_core_of = MLY }
+		1333 = { add_core_of = MLY }
+		336 = { add_core_of = MLY }
+		846 = { add_core_of = MLY }
+		release = MLY
+		MLY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = MLY
+			}
+		}
+		MLY = { 
+			set_cosmetic_tag = PRU_MLY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = MLY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 285
+				state = 517
+				state = 518
+				state = 519
+				state = 520
+				state = 521
+				state = 522
+				state = 674
+				state = 711
+				state = 985
+				state = 986
+				state = 987
+				state = 988
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = PRU }
+		}
+		285 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		517 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		518 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		519 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		520 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		521 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		522 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		674 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		711 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		985 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		986 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		987 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		988 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				285 = { NOT = { is_core_of = PRU } }
+				517 = { NOT = { is_core_of = PRU } }
+				518 = { NOT = { is_core_of = PRU } }
+				519 = { NOT = { is_core_of = PRU } }
+				520 = { NOT = { is_core_of = PRU } }
+				521 = { NOT = { is_core_of = PRU } }
+				522 = { NOT = { is_core_of = PRU } }
+				674 = { NOT = { is_core_of = PRU } }
+				711 = { NOT = { is_core_of = PRU } }
+				985 = { NOT = { is_core_of = PRU } }
+				986 = { NOT = { is_core_of = PRU } }
+				987 = { NOT = { is_core_of = PRU } }
+				988 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		711 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		986 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = PRU_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_NZL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+				state = 723
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NZL = { exists = yes }
+			}
+			NZL = { is_subject_of = PRU }
+		}
+		284 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		723 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				284 = { NOT = { is_core_of = PRU } }
+				723 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NZL = {
+			every_core_state = {
+				remove_core_of = NZL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NZL
+				}
+				remove_claim_by = NZL
+			}
+		}
+		284 = { add_core_of = NZL }
+		723 = { add_core_of = NZL }
+		release = NZL
+		NZL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = NZL
+			}
+		}
+		NZL = { 
+			set_cosmetic_tag = PRU_NZL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = NZL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_KOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+				state = 527
+				state = 1345
+				state = 1346
+				state = 1347
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KOR = { exists = yes }
+			}
+			KOR = { is_subject_of = PRU }
+		}
+		525 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		527 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1345 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1346 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1347 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				525 = { NOT = { is_core_of = PRU } }
+				527 = { NOT = { is_core_of = PRU } }
+				1345 = { NOT = { is_core_of = PRU } }
+				1346 = { NOT = { is_core_of = PRU } }
+				1347 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KOR = {
+			every_core_state = {
+				remove_core_of = KOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KOR
+				}
+				remove_claim_by = KOR
+			}
+		}
+		525 = { add_core_of = KOR }
+		527 = { add_core_of = KOR }
+		1345 = { add_core_of = KOR }
+		1346 = { add_core_of = KOR }
+		1347 = { add_core_of = KOR }
+		release = KOR
+		KOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = KOR
+			}
+		}
+		KOR = { 
+			set_cosmetic_tag = PRU_KOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = KOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
+
+PRU_establish_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 532
+				state = 533
+				state = 534
+				state = 535
+				state = 536
+				state = 1351
+				state = 1352
+				state = 1353
+				state = 1354
+				state = 1355
+				state = 1356
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = PRU }
+		}
+		282 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		528 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		529 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		530 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		531 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		532 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		533 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		534 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		535 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		536 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1351 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1352 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1353 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1354 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1355 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		1356 = { owner = { OR = { original_tag = PRU is_subject_of = PRU } } }
+		OR = {
+				282 = { NOT = { is_core_of = PRU } }
+				528 = { NOT = { is_core_of = PRU } }
+				529 = { NOT = { is_core_of = PRU } }
+				530 = { NOT = { is_core_of = PRU } }
+				531 = { NOT = { is_core_of = PRU } }
+				532 = { NOT = { is_core_of = PRU } }
+				533 = { NOT = { is_core_of = PRU } }
+				534 = { NOT = { is_core_of = PRU } }
+				535 = { NOT = { is_core_of = PRU } }
+				536 = { NOT = { is_core_of = PRU } }
+				1351 = { NOT = { is_core_of = PRU } }
+				1352 = { NOT = { is_core_of = PRU } }
+				1353 = { NOT = { is_core_of = PRU } }
+				1354 = { NOT = { is_core_of = PRU } }
+				1355 = { NOT = { is_core_of = PRU } }
+				1356 = { NOT = { is_core_of = PRU } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		282 = { add_core_of = JAP }
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = PRU
+						}
+						OR = {
+							is_owned_by = PRU
+							OWNER = { is_subject_of = PRU} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = PERU_JAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Colonial"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = natpop_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			PRU = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 25
+				national_populist = 75
+			}
+			set_party_name = {
+				ideology = national_populist
+				name = "Administración Colonial"
+				long_name = "Administración Colonial"
+			}
+		}
+	}
+}
 }
