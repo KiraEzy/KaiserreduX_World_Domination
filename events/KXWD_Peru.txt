@@ -438,13 +438,22 @@ country_event = {
     		days = 200
 		}
 		ECU = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		COL = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		VEN = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 	}
 }
@@ -484,19 +493,39 @@ country_event = {
     		days = 200
 		}
 		ARG = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		FOP = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		CHL = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		URG = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
+			diplomatic_relation = {
+                country = BRA
+                relation = guarantee
+                active = no
+            }
 		}
 		PAR = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 	}
 }
@@ -520,7 +549,10 @@ country_event = {
     		days = 200
 		}
 		BRA = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 	}
 }
@@ -568,25 +600,46 @@ country_event = {
     		days = 200
 		}
 		MEX = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		PAN = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		COS = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		NIC = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		HON = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		ELS = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		GUA = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 	}
 }
@@ -630,22 +683,40 @@ country_event = {
     		days = 200
 		}
 		USA = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		CSA = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		TEX = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		CAL = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		COR = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 		BBR = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 	}
 }
@@ -669,7 +740,10 @@ country_event = {
     		days = 200
 		}
 		CNT = {
-			add_ideas = PRUWD_Alone
+			add_timed_idea = {
+    		    idea = PRUWD_Alone
+    		    days = 200
+		    }
 		}
 	}
 }
