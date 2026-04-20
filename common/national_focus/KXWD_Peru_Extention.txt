@@ -395,6 +395,31 @@ shared_focus = {
     prerequisite = {
         focus = KXWD_PRU_Knights
     }
+    bypass = {
+        owns_state = 302
+        owns_state = 847
+        owns_state = 487
+        owns_state = 848
+        owns_state = 1073
+        302 = {
+            is_core_of = PRU
+        }
+        847 = {
+            is_core_of = PRU
+        }
+        487 = {
+            is_core_of = PRU
+        }
+        848 = {
+            is_core_of = PRU
+        }
+        1073 = {
+            is_core_of = PRU
+        }
+        1027 = {
+            is_core_of = PRU
+        }
+    }
     relative_position_id = KXWD_PRU_Reconquista
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus KXWD_PRU_Bolivian_Coup"

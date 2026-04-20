@@ -2234,6 +2234,9 @@ focus_tree = {
 		y = 0
 		available = {
 			has_government = national_populist
+			NOT = {
+            	has_completed_focus = KXWD_PRU_Invite_Exiles
+        	}
 		}
 		cost = 7
 		completion_reward = {
