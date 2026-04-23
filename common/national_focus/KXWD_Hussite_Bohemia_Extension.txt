@@ -10,8 +10,8 @@ shared_focus = {
 	icon = GFX_goal_SHXWD_china_for_faithfull
     available = {
 		or = {
-        	has_completed_focus = CZE_hustle_with_hussites
-			has_completed_focus = CZE_hussite_republicanism
+        	has_completed_focus = CZEALT_hustle_with_hussites
+			has_completed_focus = CZEALT_hussite_republicanism
 		}
 		is_ai = no
     }
@@ -33,7 +33,7 @@ shared_focus = {
 	icon = GFX_goal_SHXWD_china_for_faithfull
 	prerequisite = { focus = CZEWD_Jan_Hus_Footsteps }
     available = {
-        has_completed_focus = CZE_hustle_with_hussites
+        has_completed_focus = CZEALT_hustle_with_hussites
 		is_ai = no
     }
 	x = -1
@@ -92,7 +92,7 @@ shared_focus = {
 	icon = GFX_goal_SHXWD_china_for_faithfull
 	prerequisite = { focus = CZEWD_Jan_Hus_Footsteps }
     available = {
-        has_completed_focus = CZE_hussite_republicanism
+        has_completed_focus = CZEALT_hussite_republicanism
 		is_ai = no
     }
 	x = 1
