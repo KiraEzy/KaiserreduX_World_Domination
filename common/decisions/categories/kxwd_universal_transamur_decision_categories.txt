@@ -7,6 +7,13 @@ TRM_UNI_great_game = {
 	}
 
 	visible = { 
-    	
+		or = {
+    		has_completed_focus = TRM_Form_A_New_Cabinet
+			has_completed_focus = TRM_May_The_Country_Be_Free
+			has_completed_focus = TRM_Hail_Tsar
+			not = {
+				has_completed_focus = TRM_For_Siberian_Freedom
+			}
+		}
 	}
 }
