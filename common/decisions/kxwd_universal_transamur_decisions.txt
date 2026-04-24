@@ -1,0 +1,7033 @@
+TRM_UNI_great_game = {
+	TRM_UNI_establish_rk_MON = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 330
+				state = 1084
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MON = { exists = yes }
+			}
+			MON = { is_subject_of = TRM }
+		}
+		330 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1084 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				330 = { NOT = { is_core_of = TRM } }
+				1084 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MON = {
+			every_core_state = {
+				remove_core_of = MON
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MON
+				}
+				remove_claim_by = MON
+			}
+		}
+		328 = { add_core_of = MON }
+		610 = { add_core_of = MON }
+		714 = { add_core_of = MON }
+		715 = { add_core_of = MON }
+		716 = { add_core_of = MON }
+		717 = { add_core_of = MON }
+		883 = { add_core_of = MON }
+		884 = { add_core_of = MON }
+		885 = { add_core_of = MON }
+		886 = { add_core_of = MON }
+		612 = { add_core_of = MON }
+		621 = { add_core_of = MON }
+		745 = { add_core_of = MON }
+		287 = { add_core_of = MON }
+		617 = { add_core_of = MON }
+		618 = { add_core_of = MON }
+		619 = { add_core_of = MON }
+		1085 = { add_core_of = MON }
+		1083 = { add_core_of = MON }
+		330 = { add_core_of = MON }
+		1084 = { add_core_of = MON }
+		release = MON
+		MON = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = MON
+			}
+		}
+		MON = { 
+			set_cosmetic_tag = TRM_UNI_MON_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = MON
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = TRM }
+		}
+		608 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				608 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		622 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		283 = { add_core_of = QIE }
+		325 = { add_core_of = QIE }
+		326 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		591 = { add_core_of = QIE }
+		592 = { add_core_of = QIE }
+		593 = { add_core_of = QIE }
+		594 = { add_core_of = QIE }
+		595 = { add_core_of = QIE }
+		596 = { add_core_of = QIE }
+		597 = { add_core_of = QIE }
+		598 = { add_core_of = QIE }
+		599 = { add_core_of = QIE }
+		600 = { add_core_of = QIE }
+		601 = { add_core_of = QIE }
+		602 = { add_core_of = QIE }
+		603 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		605 = { add_core_of = QIE }
+		606 = { add_core_of = QIE }
+		607 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		613 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		620 = { add_core_of = QIE }
+		650 = { add_core_of = QIE }
+		661 = { add_core_of = QIE }
+		743 = { add_core_of = QIE }
+		744 = { add_core_of = QIE }
+		746 = { add_core_of = QIE }
+		747 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		788 = { add_core_of = QIE }
+		799 = { add_core_of = QIE }
+		800 = { add_core_of = QIE }
+		801 = { add_core_of = QIE }
+		802 = { add_core_of = QIE }
+		803 = { add_core_of = QIE }
+		816 = { add_core_of = QIE }
+		1012 = { add_core_of = QIE }
+		1013 = { add_core_of = QIE }
+		1014 = { add_core_of = QIE }
+		1044 = { add_core_of = QIE }
+		1045 = { add_core_of = QIE }
+		1046 = { add_core_of = QIE }
+		1047 = { add_core_of = QIE }
+		1048 = { add_core_of = QIE }
+		1049 = { add_core_of = QIE }
+		1050 = { add_core_of = QIE }
+		1051 = { add_core_of = QIE }
+		1052 = { add_core_of = QIE }
+		1053 = { add_core_of = QIE }
+		1054 = { add_core_of = QIE }
+		1055 = { add_core_of = QIE }
+		1056 = { add_core_of = QIE }
+		1058 = { add_core_of = QIE }
+		1059 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1064 = { add_core_of = QIE }
+		1065 = { add_core_of = QIE }
+		1066 = { add_core_of = QIE }
+		1067 = { add_core_of = QIE }
+		1068 = { add_core_of = QIE }
+		1069 = { add_core_of = QIE }
+		1075 = { add_core_of = QIE }
+		524 = { add_core_of = QIE }
+		729 = { add_core_of = QIE }
+		996 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = TRM_UNI_QIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_KOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+				state = 527
+				state = 1345
+				state = 1346
+				state = 1347
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KOR = { exists = yes }
+			}
+			KOR = { is_subject_of = TRM }
+		}
+		525 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		527 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1345 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1346 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1347 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				525 = { NOT = { is_core_of = TRM } }
+				527 = { NOT = { is_core_of = TRM } }
+				1345 = { NOT = { is_core_of = TRM } }
+				1346 = { NOT = { is_core_of = TRM } }
+				1347 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KOR = {
+			every_core_state = {
+				remove_core_of = KOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KOR
+				}
+				remove_claim_by = KOR
+			}
+		}
+		525 = { add_core_of = KOR }
+		527 = { add_core_of = KOR }
+		1345 = { add_core_of = KOR }
+		1346 = { add_core_of = KOR }
+		1347 = { add_core_of = KOR }
+		release = KOR
+		KOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = KOR
+			}
+		}
+		KOR = { 
+			set_cosmetic_tag = TRM_UNI_KOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = KOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+				state = 1351
+				state = 1355
+				state = 526
+				state = 1354
+				state = 528
+				state = 529
+				state = 530
+				state = 531
+				state = 532
+				state = 533
+				state = 534
+				state = 535
+				state = 536
+				state = 1352
+				state = 1353
+				state = 1356
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = TRM }
+		}
+		282 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1351 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1355 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		526 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1354 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		528 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		529 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		530 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		531 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		532 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		533 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		534 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		535 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		536 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1352 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1353 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1356 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				282 = { NOT = { is_core_of = TRM } }
+				1351 = { NOT = { is_core_of = TRM } }
+				1355 = { NOT = { is_core_of = TRM } }
+				526 = { NOT = { is_core_of = TRM } }
+				1354 = { NOT = { is_core_of = TRM } }
+				528 = { NOT = { is_core_of = TRM } }
+				529 = { NOT = { is_core_of = TRM } }
+				530 = { NOT = { is_core_of = TRM } }
+				531 = { NOT = { is_core_of = TRM } }
+				532 = { NOT = { is_core_of = TRM } }
+				533 = { NOT = { is_core_of = TRM } }
+				534 = { NOT = { is_core_of = TRM } }
+				535 = { NOT = { is_core_of = TRM } }
+				536 = { NOT = { is_core_of = TRM } }
+				1352 = { NOT = { is_core_of = TRM } }
+				1353 = { NOT = { is_core_of = TRM } }
+				1356 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		282 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		526 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = TRM_UNI_JAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_PHI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 327
+				state = 623
+				state = 624
+				state = 625
+				state = 626
+				state = 627
+				state = 628
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PHI = { exists = yes }
+			}
+			PHI = { is_subject_of = TRM }
+		}
+		327 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		623 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		624 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		625 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		626 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		627 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		628 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				327 = { NOT = { is_core_of = TRM } }
+				623 = { NOT = { is_core_of = TRM } }
+				624 = { NOT = { is_core_of = TRM } }
+				625 = { NOT = { is_core_of = TRM } }
+				626 = { NOT = { is_core_of = TRM } }
+				627 = { NOT = { is_core_of = TRM } }
+				628 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PHI = {
+			every_core_state = {
+				remove_core_of = PHI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PHI
+				}
+				remove_claim_by = PHI
+			}
+		}
+		327 = { add_core_of = PHI }
+		623 = { add_core_of = PHI }
+		624 = { add_core_of = PHI }
+		625 = { add_core_of = PHI }
+		626 = { add_core_of = PHI }
+		627 = { add_core_of = PHI }
+		628 = { add_core_of = PHI }
+		release = PHI
+		PHI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = PHI
+			}
+		}
+		PHI = { 
+			set_cosmetic_tag = TRM_UNI_PHI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = PHI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_TIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 322
+				state = 693
+				state = 748
+				state = 1086
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TIB = { exists = yes }
+			}
+			TIB = { is_subject_of = TRM }
+		}
+		322 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		693 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		748 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1086 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				322 = { NOT = { is_core_of = TRM } }
+				693 = { NOT = { is_core_of = TRM } }
+				748 = { NOT = { is_core_of = TRM } }
+				1086 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TIB = {
+			every_core_state = {
+				remove_core_of = TIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TIB
+				}
+				remove_claim_by = TIB
+			}
+		}
+		322 = { add_core_of = TIB }
+		693 = { add_core_of = TIB }
+		748 = { add_core_of = TIB }
+		1086 = { add_core_of = TIB }
+		release = TIB
+		TIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TIB
+			}
+		}
+		TIB = { 
+			set_cosmetic_tag = TRM_UNI_TIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_INC = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 286
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				INC = { exists = yes }
+			}
+			INC = { is_subject_of = TRM }
+		}
+		286 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				286 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		INC = {
+			every_core_state = {
+				remove_core_of = INC
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INC
+				}
+				remove_claim_by = INC
+			}
+		}
+		671 = { add_core_of = INC }
+		827 = { add_core_of = INC }
+		856 = { add_core_of = INC }
+		857 = { add_core_of = INC }
+		670 = { add_core_of = INC }
+		750 = { add_core_of = INC }
+		823 = { add_core_of = INC }
+		824 = { add_core_of = INC }
+		825 = { add_core_of = INC }
+		826 = { add_core_of = INC }
+		882 = { add_core_of = INC }
+		289 = { add_core_of = INC }
+		724 = { add_core_of = INC }
+		751 = { add_core_of = INC }
+		822 = { add_core_of = INC }
+		830 = { add_core_of = INC }
+		999 = { add_core_of = INC }
+		336 = { add_core_of = INC }
+		749 = { add_core_of = INC }
+		831 = { add_core_of = INC }
+		846 = { add_core_of = INC }
+		286 = { add_core_of = INC }
+		release = INC
+		INC = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = INC
+			}
+		}
+		INC = { 
+			set_cosmetic_tag = TRM_UNI_INC_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = INC
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_BRM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 72
+				state = 288
+				state = 640
+				state = 701
+				state = 790
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRM = { exists = yes }
+			}
+			BRM = { is_subject_of = TRM }
+		}
+		72 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		288 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		640 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		701 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		790 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				72 = { NOT = { is_core_of = TRM } }
+				288 = { NOT = { is_core_of = TRM } }
+				640 = { NOT = { is_core_of = TRM } }
+				701 = { NOT = { is_core_of = TRM } }
+				790 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRM = {
+			every_core_state = {
+				remove_core_of = BRM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRM
+				}
+				remove_claim_by = BRM
+			}
+		}
+		756 = { add_core_of = BRM }
+		72 = { add_core_of = BRM }
+		288 = { add_core_of = BRM }
+		640 = { add_core_of = BRM }
+		701 = { add_core_of = BRM }
+		790 = { add_core_of = BRM }
+		release = BRM
+		BRM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BRM
+			}
+		}
+		BRM = { 
+			set_cosmetic_tag = TRM_UNI_BRM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BRM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_INS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1020
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				INS = { exists = yes }
+			}
+			INS = { is_subject_of = TRM }
+		}
+		1020 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				1020 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		INS = {
+			every_core_state = {
+				remove_core_of = INS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INS
+				}
+				remove_claim_by = INS
+			}
+		}
+		335 = { add_core_of = INS }
+		333 = { add_core_of = INS }
+		334 = { add_core_of = INS }
+		523 = { add_core_of = INS }
+		633 = { add_core_of = INS }
+		634 = { add_core_of = INS }
+		635 = { add_core_of = INS }
+		636 = { add_core_of = INS }
+		639 = { add_core_of = INS }
+		641 = { add_core_of = INS }
+		643 = { add_core_of = INS }
+		646 = { add_core_of = INS }
+		647 = { add_core_of = INS }
+		667 = { add_core_of = INS }
+		668 = { add_core_of = INS }
+		669 = { add_core_of = INS }
+		672 = { add_core_of = INS }
+		673 = { add_core_of = INS }
+		684 = { add_core_of = INS }
+		721 = { add_core_of = INS }
+		725 = { add_core_of = INS }
+		726 = { add_core_of = INS }
+		728 = { add_core_of = INS }
+		711 = { add_core_of = INS }
+		734 = { add_core_of = INS }
+		737 = { add_core_of = INS }
+		757 = { add_core_of = INS }
+		828 = { add_core_of = INS }
+		843 = { add_core_of = INS }
+		941 = { add_core_of = INS }
+		972 = { add_core_of = INS }
+		1016 = { add_core_of = INS }
+		1017 = { add_core_of = INS }
+		1018 = { add_core_of = INS }
+		1019 = { add_core_of = INS }
+		1021 = { add_core_of = INS }
+		1022 = { add_core_of = INS }
+		1023 = { add_core_of = INS }
+		1333 = { add_core_of = INS }
+		629 = { add_core_of = INS }
+		630 = { add_core_of = INS }
+		631 = { add_core_of = INS }
+		632 = { add_core_of = INS }
+		638 = { add_core_of = INS }
+		642 = { add_core_of = INS }
+		645 = { add_core_of = INS }
+		648 = { add_core_of = INS }
+		727 = { add_core_of = INS }
+		1020 = { add_core_of = INS }
+		release = INS
+		INS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = INS
+			}
+		}
+		INS = { 
+			set_cosmetic_tag = TRM_UNI_INS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 986
+				state = 285
+				state = 517
+				state = 518
+				state = 519
+				state = 520
+				state = 521
+				state = 522
+				state = 988
+				state = 987
+				state = 674
+				state = 985
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = TRM }
+		}
+		986 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		285 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		517 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		518 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		519 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		520 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		521 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		522 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		988 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		987 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		674 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		985 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				986 = { NOT = { is_core_of = TRM } }
+				285 = { NOT = { is_core_of = TRM } }
+				517 = { NOT = { is_core_of = TRM } }
+				518 = { NOT = { is_core_of = TRM } }
+				519 = { NOT = { is_core_of = TRM } }
+				520 = { NOT = { is_core_of = TRM } }
+				521 = { NOT = { is_core_of = TRM } }
+				522 = { NOT = { is_core_of = TRM } }
+				988 = { NOT = { is_core_of = TRM } }
+				987 = { NOT = { is_core_of = TRM } }
+				674 = { NOT = { is_core_of = TRM } }
+				985 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		986 = { add_core_of = AST }
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = TRM_UNI_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_NZL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+				state = 723
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NZL = { exists = yes }
+			}
+			NZL = { is_subject_of = TRM }
+		}
+		284 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		723 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				284 = { NOT = { is_core_of = TRM } }
+				723 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NZL = {
+			every_core_state = {
+				remove_core_of = NZL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NZL
+				}
+				remove_claim_by = NZL
+			}
+		}
+		284 = { add_core_of = NZL }
+		723 = { add_core_of = NZL }
+		release = NZL
+		NZL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = NZL
+			}
+		}
+		NZL = { 
+			set_cosmetic_tag = TRM_UNI_NZL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = NZL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = TRM }
+		}
+		439 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				439 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		428 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		440 = { add_core_of = DEH }
+		441 = { add_core_of = DEH }
+		443 = { add_core_of = DEH }
+		444 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		890 = { add_core_of = DEH }
+		891 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		897 = { add_core_of = DEH }
+		323 = { add_core_of = DEH }
+		324 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		281 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		733 = { add_core_of = DEH }
+		442 = { add_core_of = DEH }
+		445 = { add_core_of = DEH }
+		1219 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = TRM_UNI_DEH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+				state = 410
+				state = 411
+				state = 412
+				state = 413
+				state = 414
+				state = 416
+				state = 417
+				state = 418
+				state = 419
+				state = 420
+				state = 421
+				state = 804
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = TRM }
+		}
+		266 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		410 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		411 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		412 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		413 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		414 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		416 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		417 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		418 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		419 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		420 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		421 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		804 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				266 = { NOT = { is_core_of = TRM } }
+				410 = { NOT = { is_core_of = TRM } }
+				411 = { NOT = { is_core_of = TRM } }
+				412 = { NOT = { is_core_of = TRM } }
+				413 = { NOT = { is_core_of = TRM } }
+				414 = { NOT = { is_core_of = TRM } }
+				416 = { NOT = { is_core_of = TRM } }
+				417 = { NOT = { is_core_of = TRM } }
+				418 = { NOT = { is_core_of = TRM } }
+				419 = { NOT = { is_core_of = TRM } }
+				420 = { NOT = { is_core_of = TRM } }
+				421 = { NOT = { is_core_of = TRM } }
+				804 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		352 = { add_core_of = PER }
+		819 = { add_core_of = PER }
+		267 = { add_core_of = PER }
+		415 = { add_core_of = PER }
+		1217 = { add_core_of = PER }
+		1218 = { add_core_of = PER }
+		266 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = TRM_UNI_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_IRQ = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 291
+				state = 349
+				state = 676
+				state = 812
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRQ = { exists = yes }
+			}
+			IRQ = { is_subject_of = TRM }
+		}
+		291 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		349 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		676 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		812 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				291 = { NOT = { is_core_of = TRM } }
+				349 = { NOT = { is_core_of = TRM } }
+				676 = { NOT = { is_core_of = TRM } }
+				812 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRQ = {
+			every_core_state = {
+				remove_core_of = IRQ
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRQ
+				}
+				remove_claim_by = IRQ
+			}
+		}
+		291 = { add_core_of = IRQ }
+		349 = { add_core_of = IRQ }
+		676 = { add_core_of = IRQ }
+		812 = { add_core_of = IRQ }
+		release = IRQ
+		IRQ = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = IRQ
+			}
+		}
+		IRQ = { 
+			set_cosmetic_tag = TRM_UNI_IRQ_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = IRQ
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+				state = 345
+				state = 356
+				state = 355
+				state = 346
+				state = 1001
+				state = 339
+				state = 340
+				state = 354
+				state = 342
+				state = 343
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TUR = { exists = yes }
+			}
+			TUR = { is_subject_of = TRM }
+		}
+		49 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		345 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		356 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		355 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		346 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1001 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		339 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		340 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		354 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		342 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		343 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				49 = { NOT = { is_core_of = TRM } }
+				345 = { NOT = { is_core_of = TRM } }
+				356 = { NOT = { is_core_of = TRM } }
+				355 = { NOT = { is_core_of = TRM } }
+				346 = { NOT = { is_core_of = TRM } }
+				1001 = { NOT = { is_core_of = TRM } }
+				339 = { NOT = { is_core_of = TRM } }
+				340 = { NOT = { is_core_of = TRM } }
+				354 = { NOT = { is_core_of = TRM } }
+				342 = { NOT = { is_core_of = TRM } }
+				343 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TUR
+				}
+				remove_claim_by = TUR
+			}
+		}
+		49 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		355 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		1001 = { add_core_of = TUR }
+		339 = { add_core_of = TUR }
+		340 = { add_core_of = TUR }
+		354 = { add_core_of = TUR }
+		342 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = TRM_UNI_TUR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_LEB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 553
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LEB = { exists = yes }
+			}
+			LEB = { is_subject_of = TRM }
+		}
+		553 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				553 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LEB = {
+			every_core_state = {
+				remove_core_of = LEB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LEB
+				}
+				remove_claim_by = LEB
+			}
+		}
+		455 = { add_core_of = LEB }
+		554 = { add_core_of = LEB }
+		677 = { add_core_of = LEB }
+		680 = { add_core_of = LEB }
+		992 = { add_core_of = LEB }
+		995 = { add_core_of = LEB }
+		344 = { add_core_of = LEB }
+		350 = { add_core_of = LEB }
+		454 = { add_core_of = LEB }
+		553 = { add_core_of = LEB }
+		release = LEB
+		LEB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = LEB
+			}
+		}
+		LEB = { 
+			set_cosmetic_tag = TRM_UNI_LEB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = LEB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_TRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 658
+				state = 907
+				state = 993
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRU = { exists = yes }
+			}
+			TRU = { is_subject_of = TRM }
+		}
+		658 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		907 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		993 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				658 = { NOT = { is_core_of = TRM } }
+				907 = { NOT = { is_core_of = TRM } }
+				993 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRU = {
+			every_core_state = {
+				remove_core_of = TRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRU
+				}
+				remove_claim_by = TRU
+			}
+		}
+		915 = { add_core_of = TRU }
+		994 = { add_core_of = TRU }
+		1035 = { add_core_of = TRU }
+		292 = { add_core_of = TRU }
+		293 = { add_core_of = TRU }
+		294 = { add_core_of = TRU }
+		347 = { add_core_of = TRU }
+		656 = { add_core_of = TRU }
+		659 = { add_core_of = TRU }
+		675 = { add_core_of = TRU }
+		678 = { add_core_of = TRU }
+		679 = { add_core_of = TRU }
+		752 = { add_core_of = TRU }
+		754 = { add_core_of = TRU }
+		859 = { add_core_of = TRU }
+		981 = { add_core_of = TRU }
+		982 = { add_core_of = TRU }
+		991 = { add_core_of = TRU }
+		1024 = { add_core_of = TRU }
+		658 = { add_core_of = TRU }
+		907 = { add_core_of = TRU }
+		993 = { add_core_of = TRU }
+		release = TRU
+		TRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TRU
+			}
+		}
+		TRU = { 
+			set_cosmetic_tag = TRM_UNI_TRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 111
+				state = 145
+				state = 148
+				state = 149
+				state = 150
+				state = 840
+				state = 844
+				state = 863
+				state = 864
+				state = 865
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FIN = { exists = yes }
+			}
+			FIN = { is_subject_of = TRM }
+		}
+		111 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		145 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		148 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		149 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		150 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		840 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		844 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		863 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		864 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		865 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				111 = { NOT = { is_core_of = TRM } }
+				145 = { NOT = { is_core_of = TRM } }
+				148 = { NOT = { is_core_of = TRM } }
+				149 = { NOT = { is_core_of = TRM } }
+				150 = { NOT = { is_core_of = TRM } }
+				840 = { NOT = { is_core_of = TRM } }
+				844 = { NOT = { is_core_of = TRM } }
+				863 = { NOT = { is_core_of = TRM } }
+				864 = { NOT = { is_core_of = TRM } }
+				865 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FIN = {
+			every_core_state = {
+				remove_core_of = FIN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FIN
+				}
+				remove_claim_by = FIN
+			}
+		}
+		111 = { add_core_of = FIN }
+		145 = { add_core_of = FIN }
+		148 = { add_core_of = FIN }
+		149 = { add_core_of = FIN }
+		150 = { add_core_of = FIN }
+		840 = { add_core_of = FIN }
+		844 = { add_core_of = FIN }
+		863 = { add_core_of = FIN }
+		864 = { add_core_of = FIN }
+		865 = { add_core_of = FIN }
+		release = FIN
+		FIN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = FIN
+			}
+		}
+		FIN = { 
+			set_cosmetic_tag = TRM_UNI_FIN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = FIN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SWE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 38
+				state = 124
+				state = 138
+				state = 139
+				state = 140
+				state = 141
+				state = 666
+				state = 778
+				state = 908
+				state = 909
+				state = 960
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SWE = { exists = yes }
+			}
+			SWE = { is_subject_of = TRM }
+		}
+		38 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		124 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		138 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		139 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		140 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		141 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		666 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		778 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		908 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		909 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		960 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				38 = { NOT = { is_core_of = TRM } }
+				124 = { NOT = { is_core_of = TRM } }
+				138 = { NOT = { is_core_of = TRM } }
+				139 = { NOT = { is_core_of = TRM } }
+				140 = { NOT = { is_core_of = TRM } }
+				141 = { NOT = { is_core_of = TRM } }
+				666 = { NOT = { is_core_of = TRM } }
+				778 = { NOT = { is_core_of = TRM } }
+				908 = { NOT = { is_core_of = TRM } }
+				909 = { NOT = { is_core_of = TRM } }
+				960 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWE = {
+			every_core_state = {
+				remove_core_of = SWE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SWE
+				}
+				remove_claim_by = SWE
+			}
+		}
+		38 = { add_core_of = SWE }
+		124 = { add_core_of = SWE }
+		138 = { add_core_of = SWE }
+		139 = { add_core_of = SWE }
+		140 = { add_core_of = SWE }
+		141 = { add_core_of = SWE }
+		666 = { add_core_of = SWE }
+		778 = { add_core_of = SWE }
+		908 = { add_core_of = SWE }
+		909 = { add_core_of = SWE }
+		960 = { add_core_of = SWE }
+		release = SWE
+		SWE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SWE
+			}
+		}
+		SWE = { 
+			set_cosmetic_tag = TRM_UNI_SWE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SWE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_NOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 110
+				state = 142
+				state = 143
+				state = 144
+				state = 936
+				state = 937
+				state = 1147
+				state = 1146
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NOR = { exists = yes }
+			}
+			NOR = { is_subject_of = TRM }
+		}
+		110 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		142 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		143 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		144 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		936 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		937 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1147 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1146 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				110 = { NOT = { is_core_of = TRM } }
+				142 = { NOT = { is_core_of = TRM } }
+				143 = { NOT = { is_core_of = TRM } }
+				144 = { NOT = { is_core_of = TRM } }
+				936 = { NOT = { is_core_of = TRM } }
+				937 = { NOT = { is_core_of = TRM } }
+				1147 = { NOT = { is_core_of = TRM } }
+				1146 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NOR = {
+			every_core_state = {
+				remove_core_of = NOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NOR
+				}
+				remove_claim_by = NOR
+			}
+		}
+		110 = { add_core_of = NOR }
+		142 = { add_core_of = NOR }
+		143 = { add_core_of = NOR }
+		144 = { add_core_of = NOR }
+		936 = { add_core_of = NOR }
+		937 = { add_core_of = NOR }
+		1147 = { add_core_of = NOR }
+		1146 = { add_core_of = NOR }
+		release = NOR
+		NOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = NOR
+			}
+		}
+		NOR = { 
+			set_cosmetic_tag = TRM_UNI_NOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = NOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_ICE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 100
+				state = 101
+				state = 337
+				state = 926
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ICE = { exists = yes }
+			}
+			ICE = { is_subject_of = TRM }
+		}
+		100 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		101 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		337 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		926 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				100 = { NOT = { is_core_of = TRM } }
+				101 = { NOT = { is_core_of = TRM } }
+				337 = { NOT = { is_core_of = TRM } }
+				926 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ICE = {
+			every_core_state = {
+				remove_core_of = ICE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ICE
+				}
+				remove_claim_by = ICE
+			}
+		}
+		100 = { add_core_of = ICE }
+		101 = { add_core_of = ICE }
+		337 = { add_core_of = ICE }
+		926 = { add_core_of = ICE }
+		release = ICE
+		ICE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = ICE
+			}
+		}
+		ICE = { 
+			set_cosmetic_tag = TRM_UNI_ICE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = ICE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+				state = 99
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = TRM }
+		}
+		37 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		99 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				37 = { NOT = { is_core_of = TRM } }
+				99 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		782 = { add_core_of = DEN }
+		839 = { add_core_of = DEN }
+		37 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = TRM_UNI_DEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_GRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRU = { exists = yes }
+			}
+			GRU = { is_subject_of = TRM }
+		}
+		64 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				64 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRU = {
+			every_core_state = {
+				remove_core_of = GRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRU
+				}
+				remove_claim_by = GRU
+			}
+		}
+		1357 = { add_core_of = GRU }
+		55 = { add_core_of = GRU }
+		56 = { add_core_of = GRU }
+		57 = { add_core_of = GRU }
+		58 = { add_core_of = GRU }
+		59 = { add_core_of = GRU }
+		60 = { add_core_of = GRU }
+		61 = { add_core_of = GRU }
+		63 = { add_core_of = GRU }
+		68 = { add_core_of = GRU }
+		42 = { add_core_of = GRU }
+		51 = { add_core_of = GRU }
+		62 = { add_core_of = GRU }
+		781 = { add_core_of = GRU }
+		64 = { add_core_of = GRU }
+		release = GRU
+		GRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = GRU
+			}
+		}
+		GRU = { 
+			set_cosmetic_tag = TRM_UNI_GRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = GRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_BAY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 52
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BAY = { exists = yes }
+			}
+			BAY = { is_subject_of = TRM }
+		}
+		52 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				52 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BAY = {
+			every_core_state = {
+				remove_core_of = BAY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BAY
+				}
+				remove_claim_by = BAY
+			}
+		}
+		54 = { add_core_of = BAY }
+		50 = { add_core_of = BAY }
+		53 = { add_core_of = BAY }
+		780 = { add_core_of = BAY }
+		52 = { add_core_of = BAY }
+		release = BAY
+		BAY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BAY
+			}
+		}
+		BAY = { 
+			set_cosmetic_tag = TRM_UNI_BAY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BAY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_CZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 9
+				state = 69
+				state = 71
+				state = 74
+				state = 75
+				state = 786
+				state = 1129
+				state = 1130
+				state = 1131
+				state = 1132
+				state = 1133
+				state = 1134
+				state = 1138
+				state = 1139
+				state = 70
+				state = 73
+				state = 664
+				state = 1119
+				state = 1120
+				state = 1121
+				state = 1122
+				state = 1123
+				state = 1135
+				state = 1136
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CZE = { exists = yes }
+			}
+			CZE = { is_subject_of = TRM }
+		}
+		9 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		69 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		71 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		74 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		75 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		786 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1129 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1130 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1131 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1132 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1133 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1134 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1138 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1139 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		70 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		73 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		664 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1119 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1120 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1121 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1122 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1123 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1135 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1136 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				9 = { NOT = { is_core_of = TRM } }
+				69 = { NOT = { is_core_of = TRM } }
+				71 = { NOT = { is_core_of = TRM } }
+				74 = { NOT = { is_core_of = TRM } }
+				75 = { NOT = { is_core_of = TRM } }
+				786 = { NOT = { is_core_of = TRM } }
+				1129 = { NOT = { is_core_of = TRM } }
+				1130 = { NOT = { is_core_of = TRM } }
+				1131 = { NOT = { is_core_of = TRM } }
+				1132 = { NOT = { is_core_of = TRM } }
+				1133 = { NOT = { is_core_of = TRM } }
+				1134 = { NOT = { is_core_of = TRM } }
+				1138 = { NOT = { is_core_of = TRM } }
+				1139 = { NOT = { is_core_of = TRM } }
+				70 = { NOT = { is_core_of = TRM } }
+				73 = { NOT = { is_core_of = TRM } }
+				664 = { NOT = { is_core_of = TRM } }
+				1119 = { NOT = { is_core_of = TRM } }
+				1120 = { NOT = { is_core_of = TRM } }
+				1121 = { NOT = { is_core_of = TRM } }
+				1122 = { NOT = { is_core_of = TRM } }
+				1123 = { NOT = { is_core_of = TRM } }
+				1135 = { NOT = { is_core_of = TRM } }
+				1136 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CZE = {
+			every_core_state = {
+				remove_core_of = CZE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CZE
+				}
+				remove_claim_by = CZE
+			}
+		}
+		67 = { add_core_of = CZE }
+		66 = { add_core_of = CZE }
+		65 = { add_core_of = CZE }
+		9 = { add_core_of = CZE }
+		69 = { add_core_of = CZE }
+		71 = { add_core_of = CZE }
+		74 = { add_core_of = CZE }
+		75 = { add_core_of = CZE }
+		786 = { add_core_of = CZE }
+		1129 = { add_core_of = CZE }
+		1130 = { add_core_of = CZE }
+		1131 = { add_core_of = CZE }
+		1132 = { add_core_of = CZE }
+		1133 = { add_core_of = CZE }
+		1134 = { add_core_of = CZE }
+		1138 = { add_core_of = CZE }
+		1139 = { add_core_of = CZE }
+		70 = { add_core_of = CZE }
+		73 = { add_core_of = CZE }
+		664 = { add_core_of = CZE }
+		1119 = { add_core_of = CZE }
+		1120 = { add_core_of = CZE }
+		1121 = { add_core_of = CZE }
+		1122 = { add_core_of = CZE }
+		1123 = { add_core_of = CZE }
+		1135 = { add_core_of = CZE }
+		1136 = { add_core_of = CZE }
+		release = CZE
+		CZE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = CZE
+			}
+		}
+		CZE = { 
+			set_cosmetic_tag = TRM_UNI_CZE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Sergey Wojciechowski"
+				picture = "gfx/leaders/TRM/Portrait_TRM_Sergey_Wojciechowski.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = CZE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_AUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1137
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AUS = { exists = yes }
+			}
+			AUS = { is_subject_of = TRM }
+		}
+		1137 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				1137 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AUS = {
+			every_core_state = {
+				remove_core_of = AUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AUS
+				}
+				remove_claim_by = AUS
+			}
+		}
+		4 = { add_core_of = AUS }
+		39 = { add_core_of = AUS }
+		942 = { add_core_of = AUS }
+		152 = { add_core_of = AUS }
+		153 = { add_core_of = AUS }
+		1235 = { add_core_of = AUS }
+		775 = { add_core_of = AUS }
+		784 = { add_core_of = AUS }
+		835 = { add_core_of = AUS }
+		836 = { add_core_of = AUS }
+		1137 = { add_core_of = AUS }
+		release = AUS
+		AUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+		AUS = { 
+			set_cosmetic_tag = TRM_UNI_AUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = AUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SWI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 3
+				state = 151
+				state = 760
+				state = 761
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SWI = { exists = yes }
+			}
+			SWI = { is_subject_of = TRM }
+		}
+		3 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		151 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		760 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		761 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				3 = { NOT = { is_core_of = TRM } }
+				151 = { NOT = { is_core_of = TRM } }
+				760 = { NOT = { is_core_of = TRM } }
+				761 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWI = {
+			every_core_state = {
+				remove_core_of = SWI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SWI
+				}
+				remove_claim_by = SWI
+			}
+		}
+		3 = { add_core_of = SWI }
+		151 = { add_core_of = SWI }
+		760 = { add_core_of = SWI }
+		761 = { add_core_of = SWI }
+		release = SWI
+		SWI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SWI
+			}
+		}
+		SWI = { 
+			set_cosmetic_tag = TRM_UNI_SWI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SWI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+				state = 155
+				state = 1110
+				state = 1109
+				state = 154
+				state = 1107
+				state = 1108
+				state = 1106
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HUN = { exists = yes }
+			}
+			HUN = { is_subject_of = TRM }
+		}
+		43 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		155 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1110 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1109 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		154 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1107 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1108 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1106 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				43 = { NOT = { is_core_of = TRM } }
+				155 = { NOT = { is_core_of = TRM } }
+				1110 = { NOT = { is_core_of = TRM } }
+				1109 = { NOT = { is_core_of = TRM } }
+				154 = { NOT = { is_core_of = TRM } }
+				1107 = { NOT = { is_core_of = TRM } }
+				1108 = { NOT = { is_core_of = TRM } }
+				1106 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HUN
+				}
+				remove_claim_by = HUN
+			}
+		}
+		43 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		154 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		release = HUN
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = TRM_UNI_HUN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+				state = 79
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ROM = { exists = yes }
+			}
+			ROM = { is_subject_of = TRM }
+		}
+		46 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		79 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		81 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				46 = { NOT = { is_core_of = TRM } }
+				79 = { NOT = { is_core_of = TRM } }
+				81 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ROM = {
+			every_core_state = {
+				remove_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ROM
+				}
+				remove_claim_by = ROM
+			}
+		}
+		76 = { add_core_of = ROM }
+		82 = { add_core_of = ROM }
+		83 = { add_core_of = ROM }
+		84 = { add_core_of = ROM }
+		789 = { add_core_of = ROM }
+		1112 = { add_core_of = ROM }
+		1113 = { add_core_of = ROM }
+		1114 = { add_core_of = ROM }
+		1115 = { add_core_of = ROM }
+		1116 = { add_core_of = ROM }
+		1117 = { add_core_of = ROM }
+		1118 = { add_core_of = ROM }
+		713 = { add_core_of = ROM }
+		46 = { add_core_of = ROM }
+		79 = { add_core_of = ROM }
+		81 = { add_core_of = ROM }
+		release = ROM
+		ROM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = ROM
+			}
+		}
+		ROM = { 
+			set_cosmetic_tag = TRM_UNI_ROM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = ROM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 107
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SER = { exists = yes }
+			}
+			SER = { is_subject_of = TRM }
+		}
+		107 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				107 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SER = {
+			every_core_state = {
+				remove_core_of = SER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SER
+				}
+				remove_claim_by = SER
+			}
+		}
+		103 = { add_core_of = SER }
+		104 = { add_core_of = SER }
+		105 = { add_core_of = SER }
+		109 = { add_core_of = SER }
+		163 = { add_core_of = SER }
+		794 = { add_core_of = SER }
+		1097 = { add_core_of = SER }
+		1098 = { add_core_of = SER }
+		1099 = { add_core_of = SER }
+		1102 = { add_core_of = SER }
+		1105 = { add_core_of = SER }
+		1128 = { add_core_of = SER }
+		1141 = { add_core_of = SER }
+		1142 = { add_core_of = SER }
+		1143 = { add_core_of = SER }
+		1145 = { add_core_of = SER }
+		1206 = { add_core_of = SER }
+		1270 = { add_core_of = SER }
+		44 = { add_core_of = SER }
+		1272 = { add_core_of = SER }
+		1144 = { add_core_of = SER }
+		1111 = { add_core_of = SER }
+		108 = { add_core_of = SER }
+		1104 = { add_core_of = SER }
+		1103 = { add_core_of = SER }
+		765 = { add_core_of = SER }
+		767 = { add_core_of = SER }
+		1101 = { add_core_of = SER }
+		1100 = { add_core_of = SER }
+		875 = { add_core_of = SER }
+		736 = { add_core_of = SER }
+		102 = { add_core_of = SER }
+		45 = { add_core_of = SER }
+		1268 = { add_core_of = SER }
+		1269 = { add_core_of = SER }
+		106 = { add_core_of = SER }
+		841 = { add_core_of = SER }
+		1271 = { add_core_of = SER }
+		48 = { add_core_of = SER }
+		77 = { add_core_of = SER }
+		211 = { add_core_of = SER }
+		212 = { add_core_of = SER }
+		770 = { add_core_of = SER }
+		771 = { add_core_of = SER }
+		772 = { add_core_of = SER }
+		1089 = { add_core_of = SER }
+		1090 = { add_core_of = SER }
+		107 = { add_core_of = SER }
+		release = SER
+		SER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SER
+			}
+		}
+		SER = { 
+			set_cosmetic_tag = TRM_UNI_SER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Petar Bojovic"
+				picture = "gfx/leaders/SER/Portrait_SER_Petar_Bojovic.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = TRM }
+		}
+		47 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				47 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		187 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		989 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		164 = { add_core_of = GRE }
+		183 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		184 = { add_core_of = GRE }
+		341 = { add_core_of = GRE }
+		731 = { add_core_of = GRE }
+		766 = { add_core_of = GRE }
+		769 = { add_core_of = GRE }
+		773 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = TRM_UNI_GRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_ITA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 159
+				state = 160
+				state = 759
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ITA = { exists = yes }
+			}
+			ITA = { is_subject_of = TRM }
+		}
+		159 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		160 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		759 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				159 = { NOT = { is_core_of = TRM } }
+				160 = { NOT = { is_core_of = TRM } }
+				759 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ITA = {
+			every_core_state = {
+				remove_core_of = ITA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ITA
+				}
+				remove_claim_by = ITA
+			}
+		}
+		114 = { add_core_of = ITA }
+		1002 = { add_core_of = ITA }
+		2 = { add_core_of = ITA }
+		115 = { add_core_of = ITA }
+		117 = { add_core_of = ITA }
+		156 = { add_core_of = ITA }
+		157 = { add_core_of = ITA }
+		158 = { add_core_of = ITA }
+		161 = { add_core_of = ITA }
+		162 = { add_core_of = ITA }
+		742 = { add_core_of = ITA }
+		764 = { add_core_of = ITA }
+		837 = { add_core_of = ITA }
+		838 = { add_core_of = ITA }
+		1003 = { add_core_of = ITA }
+		1004 = { add_core_of = ITA }
+		1005 = { add_core_of = ITA }
+		1006 = { add_core_of = ITA }
+		1149 = { add_core_of = ITA }
+		1236 = { add_core_of = ITA }
+		783 = { add_core_of = ITA }
+		116 = { add_core_of = ITA }
+		159 = { add_core_of = ITA }
+		160 = { add_core_of = ITA }
+		759 = { add_core_of = ITA }
+		release = ITA
+		ITA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = ITA
+			}
+		}
+		ITA = { 
+			set_cosmetic_tag = TRM_UNI_ITA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = ITA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_BEL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BEL = { exists = yes }
+			}
+			BEL = { is_subject_of = TRM }
+		}
+		6 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				6 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BEL = {
+			every_core_state = {
+				remove_core_of = BEL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BEL
+				}
+				remove_claim_by = BEL
+			}
+		}
+		7 = { add_core_of = BEL }
+		35 = { add_core_of = BEL }
+		36 = { add_core_of = BEL }
+		741 = { add_core_of = BEL }
+		34 = { add_core_of = BEL }
+		866 = { add_core_of = BEL }
+		978 = { add_core_of = BEL }
+		979 = { add_core_of = BEL }
+		8 = { add_core_of = BEL }
+		6 = { add_core_of = BEL }
+		release = BEL
+		BEL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BEL
+			}
+		}
+		BEL = { 
+			set_cosmetic_tag = TRM_UNI_BEL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BEL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = TRM }
+		}
+		16 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				16 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		14 = { add_core_of = FRP }
+		15 = { add_core_of = FRP }
+		1334 = { add_core_of = FRP }
+		17 = { add_core_of = FRP }
+		18 = { add_core_of = FRP }
+		19 = { add_core_of = FRP }
+		20 = { add_core_of = FRP }
+		21 = { add_core_of = FRP }
+		22 = { add_core_of = FRP }
+		23 = { add_core_of = FRP }
+		24 = { add_core_of = FRP }
+		25 = { add_core_of = FRP }
+		26 = { add_core_of = FRP }
+		27 = { add_core_of = FRP }
+		30 = { add_core_of = FRP }
+		31 = { add_core_of = FRP }
+		32 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		735 = { add_core_of = FRP }
+		762 = { add_core_of = FRP }
+		763 = { add_core_of = FRP }
+		785 = { add_core_of = FRP }
+		817 = { add_core_of = FRP }
+		980 = { add_core_of = FRP }
+		983 = { add_core_of = FRP }
+		984 = { add_core_of = FRP }
+		1 = { add_core_of = FRP }
+		28 = { add_core_of = FRP }
+		779 = { add_core_of = FRP }
+		943 = { add_core_of = FRP }
+		29 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = TRM_UNI_FRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = TRM }
+		}
+		126 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				126 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		120 = { add_core_of = GBP }
+		121 = { add_core_of = GBP }
+		122 = { add_core_of = GBP }
+		123 = { add_core_of = GBP }
+		125 = { add_core_of = GBP }
+		1317 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		130 = { add_core_of = GBP }
+		131 = { add_core_of = GBP }
+		132 = { add_core_of = GBP }
+		133 = { add_core_of = GBP }
+		136 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		938 = { add_core_of = GBP }
+		1225 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		113 = { add_core_of = GBP }
+		119 = { add_core_of = GBP }
+		134 = { add_core_of = GBP }
+		135 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = TRM_UNI_GBP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+				state = 118
+				state = 165
+				state = 166
+				state = 167
+				state = 168
+				state = 169
+				state = 170
+				state = 171
+				state = 172
+				state = 173
+				state = 174
+				state = 175
+				state = 176
+				state = 177
+				state = 178
+				state = 1344
+				state = 1341
+				state = 1342
+				state = 793
+				state = 795
+				state = 940
+				state = 951
+				state = 1313
+				state = 1316
+				state = 1343
+				state = 1340
+				state = 1336
+				state = 1337
+				state = 1338
+				state = 1339
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SPR = { exists = yes }
+			}
+			SPR = { is_subject_of = TRM }
+		}
+		41 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		118 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		165 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		166 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		167 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		168 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		169 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		170 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		171 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		172 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		173 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		174 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		175 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		176 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		177 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		178 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1344 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1341 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1342 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		793 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		795 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		940 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		951 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1313 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1316 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1343 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1340 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1336 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1337 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1338 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1339 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				41 = { NOT = { is_core_of = TRM } }
+				118 = { NOT = { is_core_of = TRM } }
+				165 = { NOT = { is_core_of = TRM } }
+				166 = { NOT = { is_core_of = TRM } }
+				167 = { NOT = { is_core_of = TRM } }
+				168 = { NOT = { is_core_of = TRM } }
+				169 = { NOT = { is_core_of = TRM } }
+				170 = { NOT = { is_core_of = TRM } }
+				171 = { NOT = { is_core_of = TRM } }
+				172 = { NOT = { is_core_of = TRM } }
+				173 = { NOT = { is_core_of = TRM } }
+				174 = { NOT = { is_core_of = TRM } }
+				175 = { NOT = { is_core_of = TRM } }
+				176 = { NOT = { is_core_of = TRM } }
+				177 = { NOT = { is_core_of = TRM } }
+				178 = { NOT = { is_core_of = TRM } }
+				1344 = { NOT = { is_core_of = TRM } }
+				1341 = { NOT = { is_core_of = TRM } }
+				1342 = { NOT = { is_core_of = TRM } }
+				793 = { NOT = { is_core_of = TRM } }
+				795 = { NOT = { is_core_of = TRM } }
+				940 = { NOT = { is_core_of = TRM } }
+				951 = { NOT = { is_core_of = TRM } }
+				1313 = { NOT = { is_core_of = TRM } }
+				1316 = { NOT = { is_core_of = TRM } }
+				1343 = { NOT = { is_core_of = TRM } }
+				1340 = { NOT = { is_core_of = TRM } }
+				1336 = { NOT = { is_core_of = TRM } }
+				1337 = { NOT = { is_core_of = TRM } }
+				1338 = { NOT = { is_core_of = TRM } }
+				1339 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SPR = {
+			every_core_state = {
+				remove_core_of = SPR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SPR
+				}
+				remove_claim_by = SPR
+			}
+		}
+		41 = { add_core_of = SPR }
+		118 = { add_core_of = SPR }
+		165 = { add_core_of = SPR }
+		166 = { add_core_of = SPR }
+		167 = { add_core_of = SPR }
+		168 = { add_core_of = SPR }
+		169 = { add_core_of = SPR }
+		170 = { add_core_of = SPR }
+		171 = { add_core_of = SPR }
+		172 = { add_core_of = SPR }
+		173 = { add_core_of = SPR }
+		174 = { add_core_of = SPR }
+		175 = { add_core_of = SPR }
+		176 = { add_core_of = SPR }
+		177 = { add_core_of = SPR }
+		178 = { add_core_of = SPR }
+		1344 = { add_core_of = SPR }
+		1341 = { add_core_of = SPR }
+		1342 = { add_core_of = SPR }
+		793 = { add_core_of = SPR }
+		795 = { add_core_of = SPR }
+		940 = { add_core_of = SPR }
+		951 = { add_core_of = SPR }
+		1313 = { add_core_of = SPR }
+		1316 = { add_core_of = SPR }
+		1343 = { add_core_of = SPR }
+		1340 = { add_core_of = SPR }
+		1336 = { add_core_of = SPR }
+		1337 = { add_core_of = SPR }
+		1338 = { add_core_of = SPR }
+		1339 = { add_core_of = SPR }
+		release = SPR
+		SPR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SPR
+			}
+		}
+		SPR = { 
+			set_cosmetic_tag = TRM_UNI_SPR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_POR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 112
+				state = 179
+				state = 180
+				state = 181
+				state = 697
+				state = 698
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POR = { exists = yes }
+			}
+			POR = { is_subject_of = TRM }
+		}
+		112 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		179 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		180 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		181 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		697 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		698 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				112 = { NOT = { is_core_of = TRM } }
+				179 = { NOT = { is_core_of = TRM } }
+				180 = { NOT = { is_core_of = TRM } }
+				181 = { NOT = { is_core_of = TRM } }
+				697 = { NOT = { is_core_of = TRM } }
+				698 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POR = {
+			every_core_state = {
+				remove_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POR
+				}
+				remove_claim_by = POR
+			}
+		}
+		112 = { add_core_of = POR }
+		179 = { add_core_of = POR }
+		180 = { add_core_of = POR }
+		181 = { add_core_of = POR }
+		697 = { add_core_of = POR }
+		698 = { add_core_of = POR }
+		release = POR
+		POR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = POR
+			}
+		}
+		POR = { 
+			set_cosmetic_tag = TRM_UNI_POR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = POR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+				state = 447
+				state = 452
+				state = 456
+				state = 457
+				state = 552
+				state = 1008
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = TRM }
+		}
+		446 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		447 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		452 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		456 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		457 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		552 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1008 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				446 = { NOT = { is_core_of = TRM } }
+				447 = { NOT = { is_core_of = TRM } }
+				452 = { NOT = { is_core_of = TRM } }
+				456 = { NOT = { is_core_of = TRM } }
+				457 = { NOT = { is_core_of = TRM } }
+				552 = { NOT = { is_core_of = TRM } }
+				1008 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		453 = { add_core_of = EGY }
+		753 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = TRM_UNI_EGY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SUD = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 549
+				state = 551
+				state = 862
+				state = 1007
+				state = 1010
+				state = 1011
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SUD = { exists = yes }
+			}
+			SUD = { is_subject_of = TRM }
+		}
+		549 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		551 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		862 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1007 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1010 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1011 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				549 = { NOT = { is_core_of = TRM } }
+				551 = { NOT = { is_core_of = TRM } }
+				862 = { NOT = { is_core_of = TRM } }
+				1007 = { NOT = { is_core_of = TRM } }
+				1010 = { NOT = { is_core_of = TRM } }
+				1011 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SUD = {
+			every_core_state = {
+				remove_core_of = SUD
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SUD
+				}
+				remove_claim_by = SUD
+			}
+		}
+		271 = { add_core_of = SUD }
+		550 = { add_core_of = SUD }
+		919 = { add_core_of = SUD }
+		920 = { add_core_of = SUD }
+		921 = { add_core_of = SUD }
+		922 = { add_core_of = SUD }
+		923 = { add_core_of = SUD }
+		924 = { add_core_of = SUD }
+		944 = { add_core_of = SUD }
+		961 = { add_core_of = SUD }
+		268 = { add_core_of = SUD }
+		269 = { add_core_of = SUD }
+		559 = { add_core_of = SUD }
+		906 = { add_core_of = SUD }
+		1297 = { add_core_of = SUD }
+		547 = { add_core_of = SUD }
+		548 = { add_core_of = SUD }
+		892 = { add_core_of = SUD }
+		925 = { add_core_of = SUD }
+		969 = { add_core_of = SUD }
+		970 = { add_core_of = SUD }
+		549 = { add_core_of = SUD }
+		551 = { add_core_of = SUD }
+		862 = { add_core_of = SUD }
+		1007 = { add_core_of = SUD }
+		1010 = { add_core_of = SUD }
+		1011 = { add_core_of = SUD }
+		release = SUD
+		SUD = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SUD
+			}
+		}
+		SUD = { 
+			set_cosmetic_tag = TRM_UNI_SUD_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SUD
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_TRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 273
+				state = 448
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRP = { exists = yes }
+			}
+			TRP = { is_subject_of = TRM }
+		}
+		273 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		448 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				273 = { NOT = { is_core_of = TRM } }
+				448 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRP = {
+			every_core_state = {
+				remove_core_of = TRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRP
+				}
+				remove_claim_by = TRP
+			}
+		}
+		451 = { add_core_of = TRP }
+		663 = { add_core_of = TRP }
+		1009 = { add_core_of = TRP }
+		290 = { add_core_of = TRP }
+		450 = { add_core_of = TRP }
+		458 = { add_core_of = TRP }
+		459 = { add_core_of = TRP }
+		460 = { add_core_of = TRP }
+		461 = { add_core_of = TRP }
+		462 = { add_core_of = TRP }
+		513 = { add_core_of = TRP }
+		514 = { add_core_of = TRP }
+		665 = { add_core_of = TRP }
+		805 = { add_core_of = TRP }
+		1318 = { add_core_of = TRP }
+		273 = { add_core_of = TRP }
+		448 = { add_core_of = TRP }
+		release = TRP
+		TRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TRP
+			}
+		}
+		TRP = { 
+			set_cosmetic_tag = TRM_UNI_TRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 700
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIE = { exists = yes }
+			}
+			SIE = { is_subject_of = TRM }
+		}
+		700 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				700 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIE = {
+			every_core_state = {
+				remove_core_of = SIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIE
+				}
+				remove_claim_by = SIE
+			}
+		}
+		296 = { add_core_of = SIE }
+		702 = { add_core_of = SIE }
+		272 = { add_core_of = SIE }
+		274 = { add_core_of = SIE }
+		298 = { add_core_of = SIE }
+		515 = { add_core_of = SIE }
+		556 = { add_core_of = SIE }
+		557 = { add_core_of = SIE }
+		558 = { add_core_of = SIE }
+		662 = { add_core_of = SIE }
+		699 = { add_core_of = SIE }
+		806 = { add_core_of = SIE }
+		807 = { add_core_of = SIE }
+		808 = { add_core_of = SIE }
+		809 = { add_core_of = SIE }
+		834 = { add_core_of = SIE }
+		860 = { add_core_of = SIE }
+		876 = { add_core_of = SIE }
+		877 = { add_core_of = SIE }
+		878 = { add_core_of = SIE }
+		910 = { add_core_of = SIE }
+		911 = { add_core_of = SIE }
+		913 = { add_core_of = SIE }
+		962 = { add_core_of = SIE }
+		963 = { add_core_of = SIE }
+		966 = { add_core_of = SIE }
+		967 = { add_core_of = SIE }
+		968 = { add_core_of = SIE }
+		973 = { add_core_of = SIE }
+		975 = { add_core_of = SIE }
+		1192 = { add_core_of = SIE }
+		1321 = { add_core_of = SIE }
+		1322 = { add_core_of = SIE }
+		1323 = { add_core_of = SIE }
+		703 = { add_core_of = SIE }
+		704 = { add_core_of = SIE }
+		700 = { add_core_of = SIE }
+		release = SIE
+		SIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SIE
+			}
+		}
+		SIE = { 
+			set_cosmetic_tag = TRM_UNI_SIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_TZN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 546
+				state = 899
+				state = 905
+				state = 918
+				state = 965
+				state = 1032
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TZN = { exists = yes }
+			}
+			TZN = { is_subject_of = TRM }
+		}
+		546 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		899 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		905 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		918 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		965 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1032 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				546 = { NOT = { is_core_of = TRM } }
+				899 = { NOT = { is_core_of = TRM } }
+				905 = { NOT = { is_core_of = TRM } }
+				918 = { NOT = { is_core_of = TRM } }
+				965 = { NOT = { is_core_of = TRM } }
+				1032 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TZN = {
+			every_core_state = {
+				remove_core_of = TZN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TZN
+				}
+				remove_claim_by = TZN
+			}
+		}
+		295 = { add_core_of = TZN }
+		538 = { add_core_of = TZN }
+		718 = { add_core_of = TZN }
+		879 = { add_core_of = TZN }
+		881 = { add_core_of = TZN }
+		949 = { add_core_of = TZN }
+		976 = { add_core_of = TZN }
+		977 = { add_core_of = TZN }
+		1025 = { add_core_of = TZN }
+		1026 = { add_core_of = TZN }
+		1180 = { add_core_of = TZN }
+		1181 = { add_core_of = TZN }
+		1182 = { add_core_of = TZN }
+		1183 = { add_core_of = TZN }
+		1184 = { add_core_of = TZN }
+		1185 = { add_core_of = TZN }
+		297 = { add_core_of = TZN }
+		539 = { add_core_of = TZN }
+		540 = { add_core_of = TZN }
+		544 = { add_core_of = TZN }
+		660 = { add_core_of = TZN }
+		705 = { add_core_of = TZN }
+		813 = { add_core_of = TZN }
+		871 = { add_core_of = TZN }
+		914 = { add_core_of = TZN }
+		916 = { add_core_of = TZN }
+		917 = { add_core_of = TZN }
+		927 = { add_core_of = TZN }
+		928 = { add_core_of = TZN }
+		952 = { add_core_of = TZN }
+		953 = { add_core_of = TZN }
+		954 = { add_core_of = TZN }
+		955 = { add_core_of = TZN }
+		956 = { add_core_of = TZN }
+		957 = { add_core_of = TZN }
+		958 = { add_core_of = TZN }
+		959 = { add_core_of = TZN }
+		971 = { add_core_of = TZN }
+		974 = { add_core_of = TZN }
+		1335 = { add_core_of = TZN }
+		543 = { add_core_of = TZN }
+		706 = { add_core_of = TZN }
+		707 = { add_core_of = TZN }
+		708 = { add_core_of = TZN }
+		709 = { add_core_of = TZN }
+		869 = { add_core_of = TZN }
+		870 = { add_core_of = TZN }
+		948 = { add_core_of = TZN }
+		1177 = { add_core_of = TZN }
+		1178 = { add_core_of = TZN }
+		1179 = { add_core_of = TZN }
+		546 = { add_core_of = TZN }
+		899 = { add_core_of = TZN }
+		905 = { add_core_of = TZN }
+		918 = { add_core_of = TZN }
+		965 = { add_core_of = TZN }
+		1032 = { add_core_of = TZN }
+		release = TZN
+		TZN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = TZN
+			}
+		}
+		TZN = { 
+			set_cosmetic_tag = TRM_UNI_TZN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = TZN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_SAF = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1176
+				state = 275
+				state = 947
+				state = 681
+				state = 719
+				state = 946
+				state = 945
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SAF = { exists = yes }
+			}
+			SAF = { is_subject_of = TRM }
+		}
+		1176 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		275 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		947 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		681 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		719 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		946 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		945 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				1176 = { NOT = { is_core_of = TRM } }
+				275 = { NOT = { is_core_of = TRM } }
+				947 = { NOT = { is_core_of = TRM } }
+				681 = { NOT = { is_core_of = TRM } }
+				719 = { NOT = { is_core_of = TRM } }
+				946 = { NOT = { is_core_of = TRM } }
+				945 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SAF = {
+			every_core_state = {
+				remove_core_of = SAF
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SAF
+				}
+				remove_claim_by = SAF
+			}
+		}
+		545 = { add_core_of = SAF }
+		85 = { add_core_of = SAF }
+		541 = { add_core_of = SAF }
+		542 = { add_core_of = SAF }
+		738 = { add_core_of = SAF }
+		950 = { add_core_of = SAF }
+		964 = { add_core_of = SAF }
+		1176 = { add_core_of = SAF }
+		275 = { add_core_of = SAF }
+		947 = { add_core_of = SAF }
+		681 = { add_core_of = SAF }
+		719 = { add_core_of = SAF }
+		946 = { add_core_of = SAF }
+		945 = { add_core_of = SAF }
+		release = SAF
+		SAF = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = SAF
+			}
+		}
+		SAF = { 
+			set_cosmetic_tag = TRM_UNI_SAF_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = SAF
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = TRM }
+		}
+		361 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				361 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
+				}
+				remove_claim_by = USA
+			}
+		}
+		261 = { add_core_of = USA }
+		357 = { add_core_of = USA }
+		358 = { add_core_of = USA }
+		359 = { add_core_of = USA }
+		360 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		366 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		370 = { add_core_of = USA }
+		371 = { add_core_of = USA }
+		372 = { add_core_of = USA }
+		373 = { add_core_of = USA }
+		374 = { add_core_of = USA }
+		375 = { add_core_of = USA }
+		376 = { add_core_of = USA }
+		377 = { add_core_of = USA }
+		378 = { add_core_of = USA }
+		379 = { add_core_of = USA }
+		380 = { add_core_of = USA }
+		381 = { add_core_of = USA }
+		382 = { add_core_of = USA }
+		383 = { add_core_of = USA }
+		384 = { add_core_of = USA }
+		385 = { add_core_of = USA }
+		386 = { add_core_of = USA }
+		387 = { add_core_of = USA }
+		388 = { add_core_of = USA }
+		389 = { add_core_of = USA }
+		390 = { add_core_of = USA }
+		391 = { add_core_of = USA }
+		392 = { add_core_of = USA }
+		393 = { add_core_of = USA }
+		394 = { add_core_of = USA }
+		395 = { add_core_of = USA }
+		396 = { add_core_of = USA }
+		463 = { add_core_of = USA }
+		1349 = { add_core_of = USA }
+		1348 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1273 = { add_core_of = USA }
+		1175 = { add_core_of = USA }
+		1174 = { add_core_of = USA }
+		1332 = { add_core_of = USA }
+		1172 = { add_core_of = USA }
+		1350 = { add_core_of = USA }
+		1173 = { add_core_of = USA }
+		796 = { add_core_of = USA }
+		797 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1171 = { add_core_of = USA }
+		829 = { add_core_of = USA }
+		833 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		930 = { add_core_of = USA }
+		931 = { add_core_of = USA }
+		932 = { add_core_of = USA }
+		933 = { add_core_of = USA }
+		934 = { add_core_of = USA }
+		935 = { add_core_of = USA }
+		1096 = { add_core_of = USA }
+		1150 = { add_core_of = USA }
+		1151 = { add_core_of = USA }
+		1152 = { add_core_of = USA }
+		1153 = { add_core_of = USA }
+		1154 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1156 = { add_core_of = USA }
+		1157 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1161 = { add_core_of = USA }
+		1162 = { add_core_of = USA }
+		1163 = { add_core_of = USA }
+		1164 = { add_core_of = USA }
+		1165 = { add_core_of = USA }
+		1166 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		798 = { add_core_of = USA }
+		276 = { add_core_of = USA }
+		331 = { add_core_of = USA }
+		332 = { add_core_of = USA }
+		464 = { add_core_of = USA }
+		465 = { add_core_of = USA }
+		466 = { add_core_of = USA }
+		467 = { add_core_of = USA }
+		468 = { add_core_of = USA }
+		469 = { add_core_of = USA }
+		470 = { add_core_of = USA }
+		471 = { add_core_of = USA }
+		472 = { add_core_of = USA }
+		473 = { add_core_of = USA }
+		682 = { add_core_of = USA }
+		683 = { add_core_of = USA }
+		730 = { add_core_of = USA }
+		739 = { add_core_of = USA }
+		740 = { add_core_of = USA }
+		832 = { add_core_of = USA }
+		1330 = { add_core_of = USA }
+		1331 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = TRM_UNI_USA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_JAM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 689
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAM = { exists = yes }
+			}
+			JAM = { is_subject_of = TRM }
+		}
+		689 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				689 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAM = {
+			every_core_state = {
+				remove_core_of = JAM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAM
+				}
+				remove_claim_by = JAM
+			}
+		}
+		308 = { add_core_of = JAM }
+		310 = { add_core_of = JAM }
+		687 = { add_core_of = JAM }
+		1309 = { add_core_of = JAM }
+		690 = { add_core_of = JAM }
+		691 = { add_core_of = JAM }
+		692 = { add_core_of = JAM }
+		694 = { add_core_of = JAM }
+		696 = { add_core_of = JAM }
+		1037 = { add_core_of = JAM }
+		1039 = { add_core_of = JAM }
+		1078 = { add_core_of = JAM }
+		1079 = { add_core_of = JAM }
+		1308 = { add_core_of = JAM }
+		309 = { add_core_of = JAM }
+		315 = { add_core_of = JAM }
+		318 = { add_core_of = JAM }
+		319 = { add_core_of = JAM }
+		686 = { add_core_of = JAM }
+		695 = { add_core_of = JAM }
+		818 = { add_core_of = JAM }
+		820 = { add_core_of = JAM }
+		1038 = { add_core_of = JAM }
+		1077 = { add_core_of = JAM }
+		1312 = { add_core_of = JAM }
+		689 = { add_core_of = JAM }
+		release = JAM
+		JAM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = JAM
+			}
+		}
+		JAM = { 
+			set_cosmetic_tag = TRM_UNI_JAM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = JAM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_MEX = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 277
+				state = 1253
+				state = 475
+				state = 476
+				state = 477
+				state = 478
+				state = 479
+				state = 480
+				state = 481
+				state = 482
+				state = 483
+				state = 484
+				state = 485
+				state = 1252
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MEX = { exists = yes }
+			}
+			MEX = { is_subject_of = TRM }
+		}
+		277 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1253 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		475 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		476 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		477 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		478 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		479 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		480 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		481 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		482 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		483 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		484 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		485 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1252 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				277 = { NOT = { is_core_of = TRM } }
+				1253 = { NOT = { is_core_of = TRM } }
+				475 = { NOT = { is_core_of = TRM } }
+				476 = { NOT = { is_core_of = TRM } }
+				477 = { NOT = { is_core_of = TRM } }
+				478 = { NOT = { is_core_of = TRM } }
+				479 = { NOT = { is_core_of = TRM } }
+				480 = { NOT = { is_core_of = TRM } }
+				481 = { NOT = { is_core_of = TRM } }
+				482 = { NOT = { is_core_of = TRM } }
+				483 = { NOT = { is_core_of = TRM } }
+				484 = { NOT = { is_core_of = TRM } }
+				485 = { NOT = { is_core_of = TRM } }
+				1252 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MEX = {
+			every_core_state = {
+				remove_core_of = MEX
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MEX
+				}
+				remove_claim_by = MEX
+			}
+		}
+		1254 = { add_core_of = MEX }
+		474 = { add_core_of = MEX }
+		1255 = { add_core_of = MEX }
+		277 = { add_core_of = MEX }
+		1253 = { add_core_of = MEX }
+		475 = { add_core_of = MEX }
+		476 = { add_core_of = MEX }
+		477 = { add_core_of = MEX }
+		478 = { add_core_of = MEX }
+		479 = { add_core_of = MEX }
+		480 = { add_core_of = MEX }
+		481 = { add_core_of = MEX }
+		482 = { add_core_of = MEX }
+		483 = { add_core_of = MEX }
+		484 = { add_core_of = MEX }
+		485 = { add_core_of = MEX }
+		1252 = { add_core_of = MEX }
+		release = MEX
+		MEX = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = MEX
+			}
+		}
+		MEX = { 
+			set_cosmetic_tag = TRM_UNI_MEX_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = MEX
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_GUA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 311
+				state = 313
+				state = 1250
+				state = 1251
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GUA = { exists = yes }
+			}
+			GUA = { is_subject_of = TRM }
+		}
+		311 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		313 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1250 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1251 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				311 = { NOT = { is_core_of = TRM } }
+				313 = { NOT = { is_core_of = TRM } }
+				1250 = { NOT = { is_core_of = TRM } }
+				1251 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GUA = {
+			every_core_state = {
+				remove_core_of = GUA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GUA
+				}
+				remove_claim_by = GUA
+			}
+		}
+		312 = { add_core_of = GUA }
+		842 = { add_core_of = GUA }
+		1249 = { add_core_of = GUA }
+		1262 = { add_core_of = GUA }
+		304 = { add_core_of = GUA }
+		314 = { add_core_of = GUA }
+		316 = { add_core_of = GUA }
+		317 = { add_core_of = GUA }
+		685 = { add_core_of = GUA }
+		854 = { add_core_of = GUA }
+		1070 = { add_core_of = GUA }
+		1071 = { add_core_of = GUA }
+		1247 = { add_core_of = GUA }
+		1248 = { add_core_of = GUA }
+		1256 = { add_core_of = GUA }
+		1257 = { add_core_of = GUA }
+		1258 = { add_core_of = GUA }
+		1259 = { add_core_of = GUA }
+		1260 = { add_core_of = GUA }
+		1261 = { add_core_of = GUA }
+		311 = { add_core_of = GUA }
+		313 = { add_core_of = GUA }
+		1250 = { add_core_of = GUA }
+		1251 = { add_core_of = GUA }
+		release = GUA
+		GUA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = GUA
+			}
+		}
+		GUA = { 
+			set_cosmetic_tag = TRM_UNI_GUA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = GUA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_VEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 307
+				state = 488
+				state = 489
+				state = 849
+				state = 850
+				state = 912
+				state = 1036
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				VEN = { exists = yes }
+			}
+			VEN = { is_subject_of = TRM }
+		}
+		307 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		488 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		489 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		849 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		850 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		912 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1036 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				307 = { NOT = { is_core_of = TRM } }
+				488 = { NOT = { is_core_of = TRM } }
+				489 = { NOT = { is_core_of = TRM } }
+				849 = { NOT = { is_core_of = TRM } }
+				850 = { NOT = { is_core_of = TRM } }
+				912 = { NOT = { is_core_of = TRM } }
+				1036 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		VEN = {
+			every_core_state = {
+				remove_core_of = VEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = VEN
+				}
+				remove_claim_by = VEN
+			}
+		}
+		306 = { add_core_of = VEN }
+		486 = { add_core_of = VEN }
+		493 = { add_core_of = VEN }
+		851 = { add_core_of = VEN }
+		852 = { add_core_of = VEN }
+		853 = { add_core_of = VEN }
+		1214 = { add_core_of = VEN }
+		1215 = { add_core_of = VEN }
+		1216 = { add_core_of = VEN }
+		1296 = { add_core_of = VEN }
+		305 = { add_core_of = VEN }
+		1280 = { add_core_of = VEN }
+		649 = { add_core_of = VEN }
+		307 = { add_core_of = VEN }
+		488 = { add_core_of = VEN }
+		489 = { add_core_of = VEN }
+		849 = { add_core_of = VEN }
+		850 = { add_core_of = VEN }
+		912 = { add_core_of = VEN }
+		1036 = { add_core_of = VEN }
+		release = VEN
+		VEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = VEN
+			}
+		}
+		VEN = { 
+			set_cosmetic_tag = TRM_UNI_VEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = VEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_PRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 303
+				state = 491
+				state = 492
+				state = 494
+				state = 845
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PRU = { exists = yes }
+			}
+			PRU = { is_subject_of = TRM }
+		}
+		303 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		491 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		492 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		494 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		845 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				303 = { NOT = { is_core_of = TRM } }
+				491 = { NOT = { is_core_of = TRM } }
+				492 = { NOT = { is_core_of = TRM } }
+				494 = { NOT = { is_core_of = TRM } }
+				845 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PRU = {
+			every_core_state = {
+				remove_core_of = PRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PRU
+				}
+				remove_claim_by = PRU
+			}
+		}
+		872 = { add_core_of = PRU }
+		490 = { add_core_of = PRU }
+		303 = { add_core_of = PRU }
+		491 = { add_core_of = PRU }
+		492 = { add_core_of = PRU }
+		494 = { add_core_of = PRU }
+		845 = { add_core_of = PRU }
+		release = PRU
+		PRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = PRU
+			}
+		}
+		PRU = { 
+			set_cosmetic_tag = TRM_UNI_PRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = PRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_BOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 302
+				state = 487
+				state = 847
+				state = 848
+				state = 1073
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BOL = { exists = yes }
+			}
+			BOL = { is_subject_of = TRM }
+		}
+		302 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		487 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		847 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		848 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1073 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				302 = { NOT = { is_core_of = TRM } }
+				487 = { NOT = { is_core_of = TRM } }
+				847 = { NOT = { is_core_of = TRM } }
+				848 = { NOT = { is_core_of = TRM } }
+				1073 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BOL = {
+			every_core_state = {
+				remove_core_of = BOL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BOL
+				}
+				remove_claim_by = BOL
+			}
+		}
+		1027 = { add_core_of = BOL }
+		688 = { add_core_of = BOL }
+		506 = { add_core_of = BOL }
+		873 = { add_core_of = BOL }
+		901 = { add_core_of = BOL }
+		903 = { add_core_of = BOL }
+		302 = { add_core_of = BOL }
+		487 = { add_core_of = BOL }
+		847 = { add_core_of = BOL }
+		848 = { add_core_of = BOL }
+		1073 = { add_core_of = BOL }
+		release = BOL
+		BOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BOL
+			}
+		}
+		BOL = { 
+			set_cosmetic_tag = TRM_UNI_BOL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_CHL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CHL = { exists = yes }
+			}
+			CHL = { is_subject_of = TRM }
+		}
+		279 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				279 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CHL = {
+			every_core_state = {
+				remove_core_of = CHL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CHL
+				}
+				remove_claim_by = CHL
+			}
+		}
+		278 = { add_core_of = CHL }
+		299 = { add_core_of = CHL }
+		449 = { add_core_of = CHL }
+		508 = { add_core_of = CHL }
+		509 = { add_core_of = CHL }
+		1028 = { add_core_of = CHL }
+		511 = { add_core_of = CHL }
+		579 = { add_core_of = CHL }
+		720 = { add_core_of = CHL }
+		904 = { add_core_of = CHL }
+		902 = { add_core_of = CHL }
+		270 = { add_core_of = CHL }
+		507 = { add_core_of = CHL }
+		512 = { add_core_of = CHL }
+		874 = { add_core_of = CHL }
+		1029 = { add_core_of = CHL }
+		279 = { add_core_of = CHL }
+		release = CHL
+		CHL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = CHL
+			}
+		}
+		CHL = { 
+			set_cosmetic_tag = TRM_UNI_CHL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = CHL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_URG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 300
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				URG = { exists = yes }
+			}
+			URG = { is_subject_of = TRM }
+		}
+		300 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				300 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		URG = {
+			every_core_state = {
+				remove_core_of = URG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = URG
+				}
+				remove_claim_by = URG
+			}
+		}
+		502 = { add_core_of = URG }
+		301 = { add_core_of = URG }
+		503 = { add_core_of = URG }
+		510 = { add_core_of = URG }
+		894 = { add_core_of = URG }
+		1041 = { add_core_of = URG }
+		1043 = { add_core_of = URG }
+		1074 = { add_core_of = URG }
+		300 = { add_core_of = URG }
+		release = URG
+		URG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = URG
+			}
+		}
+		URG = { 
+			set_cosmetic_tag = TRM_UNI_URG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = URG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+
+TRM_UNI_establish_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 280
+				state = 495
+				state = 496
+				state = 497
+				state = 498
+				state = 499
+				state = 500
+				state = 501
+				state = 1311
+				state = 1310
+				state = 504
+				state = 505
+				state = 855
+				state = 1307
+				state = 895
+				state = 896
+				state = 898
+				state = 900
+				state = 1030
+				state = 1031
+				state = 1033
+				state = 1040
+				state = 1306
+				state = 1305
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRA = { exists = yes }
+			}
+			BRA = { is_subject_of = TRM }
+		}
+		280 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		495 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		496 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		497 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		498 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		499 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		500 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		501 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1311 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1310 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		504 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		505 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		855 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1307 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		895 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		896 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		898 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		900 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1030 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1031 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1033 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1040 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1306 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		1305 = { owner = { OR = { original_tag = TRM is_subject_of = TRM } } }
+		OR = {
+				280 = { NOT = { is_core_of = TRM } }
+				495 = { NOT = { is_core_of = TRM } }
+				496 = { NOT = { is_core_of = TRM } }
+				497 = { NOT = { is_core_of = TRM } }
+				498 = { NOT = { is_core_of = TRM } }
+				499 = { NOT = { is_core_of = TRM } }
+				500 = { NOT = { is_core_of = TRM } }
+				501 = { NOT = { is_core_of = TRM } }
+				1311 = { NOT = { is_core_of = TRM } }
+				1310 = { NOT = { is_core_of = TRM } }
+				504 = { NOT = { is_core_of = TRM } }
+				505 = { NOT = { is_core_of = TRM } }
+				855 = { NOT = { is_core_of = TRM } }
+				1307 = { NOT = { is_core_of = TRM } }
+				895 = { NOT = { is_core_of = TRM } }
+				896 = { NOT = { is_core_of = TRM } }
+				898 = { NOT = { is_core_of = TRM } }
+				900 = { NOT = { is_core_of = TRM } }
+				1030 = { NOT = { is_core_of = TRM } }
+				1031 = { NOT = { is_core_of = TRM } }
+				1033 = { NOT = { is_core_of = TRM } }
+				1040 = { NOT = { is_core_of = TRM } }
+				1306 = { NOT = { is_core_of = TRM } }
+				1305 = { NOT = { is_core_of = TRM } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRA
+				}
+				remove_claim_by = BRA
+			}
+		}
+		280 = { add_core_of = BRA }
+		495 = { add_core_of = BRA }
+		496 = { add_core_of = BRA }
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		500 = { add_core_of = BRA }
+		501 = { add_core_of = BRA }
+		1311 = { add_core_of = BRA }
+		1310 = { add_core_of = BRA }
+		504 = { add_core_of = BRA }
+		505 = { add_core_of = BRA }
+		855 = { add_core_of = BRA }
+		1307 = { add_core_of = BRA }
+		895 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		898 = { add_core_of = BRA }
+		900 = { add_core_of = BRA }
+		1030 = { add_core_of = BRA }
+		1031 = { add_core_of = BRA }
+		1033 = { add_core_of = BRA }
+		1040 = { add_core_of = BRA }
+		1306 = { add_core_of = BRA }
+		1305 = { add_core_of = BRA }
+		release = BRA
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = TRM
+						}
+						OR = {
+							is_owned_by = TRM
+							OWNER = { is_subject_of = TRM} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = TRM_UNI_BRA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Rossiyskaya Administratsiya"
+				picture = "gfx/leaders/WDTRM/Russian_Admin.png"
+				expire = "1.1.1"
+				ideology = junta_subtype
+				traits = {
+				}
+			}
+
+			TRM = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				authoritarian_democrat = 20
+				paternal_autocrat = 60
+				national_populist = 20
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Rossiyskaya Administratsiya"
+				long_name = "Rossiyskaya Administratsiya"
+			}
+		}
+	}
+}
+}
