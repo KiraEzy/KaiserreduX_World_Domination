@@ -405,4 +405,19 @@ TRM_WD_pathguide = {
 			country_event = wd_pathguide.23
 		}
 	}
+	TRM_slavic_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = TRM
+		}
+		available = {
+			original_tag = TRM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.24
+		}
+	}
 }
