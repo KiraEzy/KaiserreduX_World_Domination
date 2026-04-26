@@ -5690,7 +5690,9 @@ CAN_IMPFED_game = {
 	# 				state = 426
 	# 				state = 427
 	# 				state = 428
-	# 				state = 429
+	# 				state = 1361
+	# 				state = 1360
+	# 				state = 429	
 	# 				state = 430
 	# 				state = 431
 	# 				state = 432
@@ -6471,7 +6473,11 @@ CAN_IMPFED_game = {
 			highlight_states = {
 				highlight_state_targets = {
 					state = 426
-					state = 430
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 431
 					state = 432
 					state = 434
@@ -6486,7 +6492,11 @@ CAN_IMPFED_game = {
 
 		available = {
 			426 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
-			430 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+			1358 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+1359 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+1362 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+1363 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+430 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			431 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			432 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			434 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
@@ -6514,7 +6524,11 @@ CAN_IMPFED_game = {
 		}
 		complete_effect = {
 			426 = { add_core_of = CAN }
-			430 = { add_core_of = CAN }
+			1358 = { add_core_of = CAN }
+1359 = { add_core_of = CAN }
+1362 = { add_core_of = CAN }
+1363 = { add_core_of = CAN }
+430 = { add_core_of = CAN }
 			431 = { add_core_of = CAN }
 			432 = { add_core_of = CAN }
 			434 = { add_core_of = CAN }
@@ -6545,7 +6559,14 @@ CAN_IMPFED_game = {
 					state = 424
 					state = 425
 					state = 427
-					state = 429
+					state = 1361
+					state = 1360
+					state = 429	
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 867
 					state = 868
 					state = 889
@@ -6563,6 +6584,8 @@ CAN_IMPFED_game = {
 			424 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			425 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			427 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+			1361 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
+			1360 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			429 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			867 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 			868 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
@@ -6576,6 +6599,8 @@ CAN_IMPFED_game = {
 				424 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
 				425 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
 				427 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
+				1361 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
+				1360 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
 				429 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
 				867 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
 				868 = { NOT = { AND = { is_core_of = CAN owner = { original_tag = CAN } } } }
@@ -6597,7 +6622,9 @@ CAN_IMPFED_game = {
 			424 = { add_core_of = CAN }
 			425 = { add_core_of = CAN }
 			427 = { add_core_of = CAN }
-			429 = { add_core_of = CAN }
+			1361 = { add_core_of = CAN}
+			1360 = { add_core_of = CAN}
+			429 = { add_core_of = CAN}
 			867 = { add_core_of = CAN }
 			868 = { add_core_of = CAN }
 			889 = { add_core_of = CAN }

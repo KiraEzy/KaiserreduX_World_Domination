@@ -11840,8 +11840,14 @@ PSA_great_game = {
             state = 426
             state = 427
             state = 428
+            state = 1361
+            state = 1360
             state = 429
-            state = 430
+            state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
             state = 431
             state = 432
             state = 433
@@ -11952,6 +11958,22 @@ PSA_great_game = {
               }
             }
             428 = {
+              owner = {
+                OR = {
+                  original_tag = CAL
+                  is_subject_of = CAL
+                }
+              }
+            }
+            1361 = {
+              owner = {
+                OR = {
+                  original_tag = CAL
+                  is_subject_of = CAL
+                }
+              }
+            }
+            1360 = {
               owner = {
                 OR = {
                   original_tag = CAL

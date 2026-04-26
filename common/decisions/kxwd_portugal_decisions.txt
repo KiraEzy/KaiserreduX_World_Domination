@@ -6889,7 +6889,11 @@ POR_alliance_game = {
 					state = 72
 					state = 288
 					state = 426
-					state = 430
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 431
 					state = 432
 					state = 434
@@ -6909,7 +6913,11 @@ POR_alliance_game = {
 			72 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			288 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			426 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
-			430 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+			1358 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+1359 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+1362 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+1363 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+430 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			431 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			432 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			434 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
@@ -6936,7 +6944,11 @@ POR_alliance_game = {
 			72 = { add_core_of = BRM }
 			288 = { add_core_of = BRM }
 			426 = { add_core_of = BRM }
-			430 = { add_core_of = BRM }
+			1358 = { add_core_of = BRM }
+1359 = { add_core_of = BRM }
+1362 = { add_core_of = BRM }
+1363 = { add_core_of = BRM }
+430 = { add_core_of = BRM }
 			431 = { add_core_of = BRM }
 			432 = { add_core_of = BRM }
 			434 = { add_core_of = BRM }
@@ -7020,6 +7032,8 @@ POR_alliance_game = {
 				highlight_state_targets = {
 					state = 427
 					state = 428
+					state = 1361
+					state = 1360
 					state = 429
 					state = 433
 					state = 437
@@ -7049,6 +7063,8 @@ POR_alliance_game = {
 		available = {
 			427 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			428 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+			1361 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
+			1360 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			429 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			433 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
 			437 = { owner = { OR = { original_tag = POR is_subject_of = POR } } }
@@ -7085,7 +7101,9 @@ POR_alliance_game = {
 			}
 			427 = { add_core_of = DEH }
 			428 = { add_core_of = DEH }
-			429 = { add_core_of = DEH }
+			1361 = { add_core_of = DEH}
+			1360 = { add_core_of = DEH}
+			429 = { add_core_of = DEH}
 			433 = { add_core_of = DEH }
 			437 = { add_core_of = DEH }
 			438 = { add_core_of = DEH }

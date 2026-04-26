@@ -1,36 +1,42 @@
 UKR_great_game = {
-	ukr2 = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
-			
-			log = "ALO"
-			ALO = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "RUS"
-			RUS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TRM"
-			TRM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-		}
-		days_remove = 0
-	}
+# great_game_state_logger = {
+# 		icon = generic_prepare_civil_war
+# 		complete_effect = {
+# 			every_country = {
+# 				log = "--------------------------------"
+# 				log = "[THIS.GetTag] claim states:"
+# 				THIS = {
+# 					every_owned_state = {
+# 						if = {
+# 							limit = {
+# 								not = { is_core_of = THIS} 
+# 							}
+# 							log = "[state.GetID]"
+# 						}
+# 					}
+# 				}
+# 				log = "--------------------------------"
+# 				log = "[THIS.GetTag] core states:"
+# 				THIS = {
+# 					every_owned_state = {
+# 						if = {
+# 							limit = {
+# 								is_core_of = THIS 
+# 							}
+# 							log = "[state.GetID]"
+# 						}
+# 					}
+# 				}
+# 				log = "--------------------------------"
+# 		}
+# 		days_remove = 0
+# 	}
+# }
 UKR_early_WAR = {
 	icon = GFX_decision_icon_default
 
 	available = {
-
+		has_completed_focus = UKR_Ternopil_Agreement
 	}
 
 	fire_only_once = yes
@@ -601,7 +607,7 @@ UKR_buy_UKR = {
 		}
 	}
 
-	cost = 150
+	cost = 600
 	fire_only_once = yes
 
 	ai_will_do = {
@@ -669,6 +675,12 @@ UKR_establish_rk_POL = {
 		97 = { add_core_of = POL }
 		98 = { add_core_of = POL }
 		1148 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+		1125 = { add_core_of = POL }
+		1124 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+
 		release = POL
 		POL = { 
 			every_core_state = {
@@ -743,7 +755,6 @@ UKR_establish_rk_ROM = {
 				state = 46
 				state = 79
 				state = 81
-				state = 713
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -753,7 +764,6 @@ UKR_establish_rk_ROM = {
 		46 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		79 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		81 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		713 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 	}
 
 	fire_only_once = yes
@@ -843,7 +853,6 @@ UKR_establish_rk_LIT = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 11
-				state = 94
 				state = 96
 				state = 189
 				state = 655
@@ -855,7 +864,6 @@ UKR_establish_rk_LIT = {
 
 	available = {
 		11 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		94 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		96 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		189 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		655 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
@@ -951,20 +959,11 @@ UKR_establish_rk_BUL = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 48
-				state = 77
-				state = 106
-				state = 184
 				state = 211
 				state = 212
-				state = 731
-				state = 769
 				state = 770
 				state = 771
-				state = 772
-				state = 841
-				state = 1089
 				state = 1090
-				state = 1271
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -972,20 +971,11 @@ UKR_establish_rk_BUL = {
 
 	available = {
 		48 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		77 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		106 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		184 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		211 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		212 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		731 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		769 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		770 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		771 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		772 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		841 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1089 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		1090 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1271 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 	}
 
 	fire_only_once = yes
@@ -1068,237 +1058,6 @@ UKR_establish_rk_BUL = {
 			UKR = {
 				set_autonomy = {
 					target = BUL
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
-
-UKR_establish_rk_GRE = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 47
-				state = 185
-				state = 186
-				state = 758
-				state = 768
-				state = 939
-				state = 989
-				state = 1076
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		47 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		185 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		186 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		758 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		768 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		939 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		989 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1076 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GRE = {
-			every_core_state = {
-				remove_core_of = GRE
-			}
-		}
-		47 = { add_core_of = GRE }
-		185 = { add_core_of = GRE }
-		186 = { add_core_of = GRE }
-		758 = { add_core_of = GRE }
-		768 = { add_core_of = GRE }
-		939 = { add_core_of = GRE }
-		989 = { add_core_of = GRE }
-		1076 = { add_core_of = GRE }
-		release = GRE
-		GRE = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = UKR
-						}
-						OR = {
-							is_owned_by = UKR
-							OWNER = { is_subject_of = UKR} 
-						}
-					}
-				}
-				transfer_state_to = GRE
-			}
-		}
-		GRE = { 
-			set_cosmetic_tag = UKR_GRE_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Andriy Pokrovsky"
-				picture = "gfx/leaders/UKR/Portrait_UKR_Andriy_Pokrovsky.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-				traits = {
-				}
-			}
-
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-
-			UKR = {
-				set_autonomy = {
-					target = GRE
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
-
-UKR_establish_rk_TUR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 49
-				state = 164
-				state = 343
-				state = 187
-				state = 346
-				state = 339
-				state = 345
-				state = 356
-				state = 342
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		49 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		164 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		343 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		187 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		346 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		339 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		345 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		356 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		342 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		TUR = {
-			every_core_state = {
-				remove_core_of = TUR
-			}
-		}
-		49 = { add_core_of = TUR }
-		164 = { add_core_of = TUR }
-		343 = { add_core_of = TUR }
-		187 = { add_core_of = TUR }
-		346 = { add_core_of = TUR }
-		339 = { add_core_of = TUR }
-		345 = { add_core_of = TUR }
-		356 = { add_core_of = TUR }
-		342 = { add_core_of = TUR }
-		release = TUR
-		TUR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = UKR
-						}
-						OR = {
-							is_owned_by = UKR
-							OWNER = { is_subject_of = UKR} 
-						}
-					}
-				}
-				transfer_state_to = TUR
-			}
-		}
-		TUR = { 
-			set_cosmetic_tag = UKR_TUR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Oleksandr Hrekiv"
-				picture = "gfx/leaders/UKR/Portrait_UKR_Oleksandr_Hrekiv.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-				traits = {
-				}
-			}
-
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-
-			UKR = {
-				set_autonomy = {
-					target = TUR
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -1452,117 +1211,6 @@ UKR_establish_rk_LEB = {
 	}
 }
 
-UKR_establish_rk_GEO = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 231
-				state = 1080
-				state = 1082
-				state = 1188
-				state = 1190
-				state = 1081
-				state = 1301
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		231 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1080 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1082 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1188 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1190 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1081 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1301 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GEO = {
-			every_core_state = {
-				remove_core_of = GEO
-			}
-		}
-		231 = { add_core_of = GEO }
-		1080 = { add_core_of = GEO }
-		1082 = { add_core_of = GEO }
-		1188 = { add_core_of = GEO }
-		1190 = { add_core_of = GEO }
-		1081 = { add_core_of = GEO }
-		1301 = { add_core_of = GEO }
-		release = GEO
-		GEO = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = UKR
-						}
-						OR = {
-							is_owned_by = UKR
-							OWNER = { is_subject_of = UKR} 
-						}
-					}
-				}
-				transfer_state_to = GEO
-			}
-		}
-		GEO = { 
-			set_cosmetic_tag = UKR_GEO_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Mykola Kapustyanskyi"
-				picture = "gfx/leaders/UKR/Portrait_UKR_Mykola_Kapustyanskyi.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-				traits = {
-				}
-			}
-
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-
-			UKR = {
-				set_autonomy = {
-					target = GEO
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
-
 UKR_establish_rk_PER = {
 	icon = generic_prepare_civil_war
 
@@ -1698,18 +1346,6 @@ UKR_establish_rk_ARM = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 230
-				state = 352
-				state = 354
-				state = 1000
-				state = 998
-				state = 1298
-				state = 1299
-				state = 1300
-				state = 1302
-				state = 1303
-				state = 1001
-				state = 1213
-				state = 355
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1717,18 +1353,6 @@ UKR_establish_rk_ARM = {
 
 	available = {
 		230 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		352 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		354 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1000 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		998 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1298 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1299 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1300 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1302 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1303 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1001 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1213 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		355 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 	}
 
 	fire_only_once = yes
@@ -1929,26 +1553,13 @@ UKR_establish_rk_SAU = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 292
-				state = 656
 				state = 675
 				state = 678
-				state = 991
-				state = 293
-				state = 294
-				state = 347
-				state = 658
-				state = 659
-				state = 679
-				state = 752
-				state = 754
-				state = 859
 				state = 907
 				state = 915
 				state = 981
-				state = 982
-				state = 993
+				state = 991
 				state = 994
-				state = 1024
 				state = 1035
 			}
 			highlight_color_while_active = 3
@@ -1957,26 +1568,13 @@ UKR_establish_rk_SAU = {
 
 	available = {
 		292 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		656 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		675 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		678 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		991 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		293 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		294 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		347 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		658 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		659 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		679 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		752 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		754 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		859 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		907 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		915 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		981 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		982 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		993 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		991 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		994 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1024 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 		1035 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
 	}
 
@@ -2067,419 +1665,6 @@ UKR_establish_rk_SAU = {
 			UKR = {
 				set_autonomy = {
 					target = SAU
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
-
-UKR_establish_rk_SER = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 107
-				state = 108
-				state = 765
-				state = 767
-				state = 1269
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		107 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		108 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		765 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		767 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1269 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		SER = {
-			every_core_state = {
-				remove_core_of = SER
-			}
-		}
-		107 = { add_core_of = SER }
-		108 = { add_core_of = SER }
-		765 = { add_core_of = SER }
-		767 = { add_core_of = SER }
-		1269 = { add_core_of = SER }
-		release = SER
-		SER = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = UKR
-						}
-						OR = {
-							is_owned_by = UKR
-							OWNER = { is_subject_of = UKR} 
-						}
-					}
-				}
-				transfer_state_to = SER
-			}
-		}
-		SER = { 
-			set_cosmetic_tag = UKR_SER_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Vsevolod Petriv"
-				picture = "gfx/leaders/UKR/Portrait_UKR_Vsevolod_Petriv.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-				traits = {
-				}
-			}
-
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-
-			UKR = {
-				set_autonomy = {
-					target = SER
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
-UKR_establish_rk_EGY = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 446
-				state = 447
-				state = 452
-				state = 456
-				state = 457
-				state = 549
-				state = 551
-				state = 552
-				state = 862
-				state = 1007
-				state = 1008
-				state = 1010
-				state = 1011
-				state = 273
-				state = 448
-				state = 450
-				state = 451
-				state = 663
-				state = 1009
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		446 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		447 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		452 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		456 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		457 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		549 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		551 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		552 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		862 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1007 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1008 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1010 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1011 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		273 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		448 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		450 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		451 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		663 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1009 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		EGY = {
-			every_core_state = {
-				remove_core_of = EGY
-			}
-		}
-		446 = { add_core_of = EGY }
-		447 = { add_core_of = EGY }
-		452 = { add_core_of = EGY }
-		456 = { add_core_of = EGY }
-		457 = { add_core_of = EGY }
-		549 = { add_core_of = EGY }
-		551 = { add_core_of = EGY }
-		552 = { add_core_of = EGY }
-		862 = { add_core_of = EGY }
-		1007 = { add_core_of = EGY }
-		1008 = { add_core_of = EGY }
-		1010 = { add_core_of = EGY }
-		1011 = { add_core_of = EGY }
-		273 = { add_core_of = EGY }
-		448 = { add_core_of = EGY }
-		450 = { add_core_of = EGY }
-		451 = { add_core_of = EGY }
-		663 = { add_core_of = EGY }
-		1009 = { add_core_of = EGY }
-		release = EGY
-		EGY = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = UKR
-						}
-						OR = {
-							is_owned_by = UKR
-							OWNER = { is_subject_of = UKR} 
-						}
-					}
-				}
-				transfer_state_to = EGY
-			}
-		}
-		EGY = { 
-			set_cosmetic_tag = UKR_EGY_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Sviatoslav Shramchenko"
-				picture = "gfx/leaders/UKR/Portrait_UKR_Sviatoslav_Shramchenko.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-				traits = {
-				}
-			}
-
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-
-			UKR = {
-				set_autonomy = {
-					target = EGY
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
-
-UKR_establish_rk_RUS = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1197
-				state = 214
-				state = 248
-				state = 249
-				state = 250
-				state = 251
-				state = 252
-				state = 253
-				state = 255
-				state = 256
-				state = 262
-				state = 351
-				state = 397
-				state = 398
-				state = 399
-				state = 400
-				state = 651
-				state = 1199
-				state = 1205
-				state = 1204
-				state = 1198
-				state = 1194
-				state = 1193
-				state = 652
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		1197 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		214 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		248 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		249 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		250 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		251 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		252 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		253 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		255 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		256 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		262 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		351 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		397 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		398 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		399 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		400 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		651 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1199 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1205 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1204 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1198 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1194 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		1193 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-		652 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		RUS = {
-			every_core_state = {
-				remove_core_of = RUS
-			}
-		}
-		1197 = { add_core_of = RUS }
-		214 = { add_core_of = RUS }
-		248 = { add_core_of = RUS }
-		249 = { add_core_of = RUS }
-		250 = { add_core_of = RUS }
-		251 = { add_core_of = RUS }
-		252 = { add_core_of = RUS }
-		253 = { add_core_of = RUS }
-		255 = { add_core_of = RUS }
-		256 = { add_core_of = RUS }
-		262 = { add_core_of = RUS }
-		351 = { add_core_of = RUS }
-		397 = { add_core_of = RUS }
-		398 = { add_core_of = RUS }
-		399 = { add_core_of = RUS }
-		400 = { add_core_of = RUS }
-		651 = { add_core_of = RUS }
-		1199 = { add_core_of = RUS }
-		1205 = { add_core_of = RUS }
-		1204 = { add_core_of = RUS }
-		1198 = { add_core_of = RUS }
-		1194 = { add_core_of = RUS }
-		1193 = { add_core_of = RUS }
-		652 = { add_core_of = RUS }
-		release = RUS
-		RUS = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = UKR
-						}
-						OR = {
-							is_owned_by = UKR
-							OWNER = { is_subject_of = UKR} 
-						}
-					}
-				}
-				transfer_state_to = RUS
-			}
-		}
-		RUS = { 
-			set_cosmetic_tag = UKR_RUS_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Yevhen Konovalets"
-				picture = "gfx/leaders/UKR/Portrait_UKR_Yevhen_Konovalets.png"
-				expire = "1.1.1"
-				ideology = authdem_junta_subtype
-				traits = {
-				}
-			}
-
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Ukrainian Administration"
-				long_name = "Ukrainian Administration"
-			}
-
-			UKR = {
-				set_autonomy = {
-					target = RUS
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -2871,6 +2056,4072 @@ UKR_establish_rk_ALO = {
 			set_politics = {
 				ruling_party = authoritarian_democrat
 				elections_allowed = no
+			}
+		}
+	}
+}
+
+# NEW DECISIONS
+
+UKR_establish_rk_ALB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 1268
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ALB = { exists = yes }
+			}
+			ALB = { is_subject_of = UKR }
+		}
+		44 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1268 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				44 = { NOT = { is_core_of = UKR } }
+				1268 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALB = {
+			every_core_state = {
+				remove_core_of = ALB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ALB
+				}
+				remove_claim_by = ALB
+			}
+		}
+		44 = { add_core_of = ALB }
+		1268 = { add_core_of = ALB }
+		release = ALB
+		ALB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = ALB
+			}
+		}
+		ALB = { 
+			set_cosmetic_tag = UKR_ALB_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = ALB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_AUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 4
+				state = 39
+				state = 152
+				state = 153
+				state = 775
+				state = 835
+				state = 836
+				state = 942
+				state = 1137
+				state = 1235
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AUS = { exists = yes }
+			}
+			AUS = { is_subject_of = UKR }
+		}
+		4 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		39 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		152 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		153 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		775 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		835 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		836 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		942 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1137 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1235 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				4 = { NOT = { is_core_of = UKR } }
+				39 = { NOT = { is_core_of = UKR } }
+				152 = { NOT = { is_core_of = UKR } }
+				153 = { NOT = { is_core_of = UKR } }
+				775 = { NOT = { is_core_of = UKR } }
+				835 = { NOT = { is_core_of = UKR } }
+				836 = { NOT = { is_core_of = UKR } }
+				942 = { NOT = { is_core_of = UKR } }
+				1137 = { NOT = { is_core_of = UKR } }
+				1235 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AUS = {
+			every_core_state = {
+				remove_core_of = AUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AUS
+				}
+				remove_claim_by = AUS
+			}
+		}
+		1272 = { add_core_of = AUS }
+		4 = { add_core_of = AUS }
+		39 = { add_core_of = AUS }
+		152 = { add_core_of = AUS }
+		153 = { add_core_of = AUS }
+		775 = { add_core_of = AUS }
+		835 = { add_core_of = AUS }
+		836 = { add_core_of = AUS }
+		942 = { add_core_of = AUS }
+		1137 = { add_core_of = AUS }
+		1235 = { add_core_of = AUS }
+		release = AUS
+		AUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = AUS
+			}
+		}
+		AUS = { 
+			set_cosmetic_tag = UKR_AUS_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = AUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_CRO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 103
+				state = 109
+				state = 163
+				state = 794
+				state = 1098
+				state = 1099
+				state = 1102
+				state = 1105
+				state = 1270
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CRO = { exists = yes }
+			}
+			CRO = { is_subject_of = UKR }
+		}
+		103 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		109 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		163 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		794 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1098 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1099 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1102 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1105 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1270 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				103 = { NOT = { is_core_of = UKR } }
+				109 = { NOT = { is_core_of = UKR } }
+				163 = { NOT = { is_core_of = UKR } }
+				794 = { NOT = { is_core_of = UKR } }
+				1098 = { NOT = { is_core_of = UKR } }
+				1099 = { NOT = { is_core_of = UKR } }
+				1102 = { NOT = { is_core_of = UKR } }
+				1105 = { NOT = { is_core_of = UKR } }
+				1270 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CRO = {
+			every_core_state = {
+				remove_core_of = CRO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CRO
+				}
+				remove_claim_by = CRO
+			}
+		}
+		102 = { add_core_of = CRO }
+		104 = { add_core_of = CRO }
+		1101 = { add_core_of = CRO }
+		1103 = { add_core_of = CRO }
+		1104 = { add_core_of = CRO }
+		1141 = { add_core_of = CRO }
+		1142 = { add_core_of = CRO }
+		1143 = { add_core_of = CRO }
+		1145 = { add_core_of = CRO }
+		103 = { add_core_of = CRO }
+		109 = { add_core_of = CRO }
+		163 = { add_core_of = CRO }
+		794 = { add_core_of = CRO }
+		1098 = { add_core_of = CRO }
+		1099 = { add_core_of = CRO }
+		1102 = { add_core_of = CRO }
+		1105 = { add_core_of = CRO }
+		1270 = { add_core_of = CRO }
+		release = CRO
+		CRO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = CRO
+			}
+		}
+		CRO = { 
+			set_cosmetic_tag = UKR_CRO_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = CRO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_CZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 9
+				state = 69
+				state = 71
+				state = 74
+				state = 75
+				state = 786
+				state = 1129
+				state = 1130
+				state = 1131
+				state = 1132
+				state = 1133
+				state = 1134
+				state = 1138
+				state = 1139
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CZE = { exists = yes }
+			}
+			CZE = { is_subject_of = UKR }
+		}
+		9 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		69 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		71 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		74 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		75 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		786 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1129 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1130 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1131 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1132 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1133 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1134 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1138 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1139 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				9 = { NOT = { is_core_of = UKR } }
+				69 = { NOT = { is_core_of = UKR } }
+				71 = { NOT = { is_core_of = UKR } }
+				74 = { NOT = { is_core_of = UKR } }
+				75 = { NOT = { is_core_of = UKR } }
+				786 = { NOT = { is_core_of = UKR } }
+				1129 = { NOT = { is_core_of = UKR } }
+				1130 = { NOT = { is_core_of = UKR } }
+				1131 = { NOT = { is_core_of = UKR } }
+				1132 = { NOT = { is_core_of = UKR } }
+				1133 = { NOT = { is_core_of = UKR } }
+				1134 = { NOT = { is_core_of = UKR } }
+				1138 = { NOT = { is_core_of = UKR } }
+				1139 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CZE = {
+			every_core_state = {
+				remove_core_of = CZE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CZE
+				}
+				remove_claim_by = CZE
+			}
+		}
+		9 = { add_core_of = CZE }
+		69 = { add_core_of = CZE }
+		71 = { add_core_of = CZE }
+		74 = { add_core_of = CZE }
+		75 = { add_core_of = CZE }
+		786 = { add_core_of = CZE }
+		1129 = { add_core_of = CZE }
+		1130 = { add_core_of = CZE }
+		1131 = { add_core_of = CZE }
+		1132 = { add_core_of = CZE }
+		1133 = { add_core_of = CZE }
+		1134 = { add_core_of = CZE }
+		1138 = { add_core_of = CZE }
+		1139 = { add_core_of = CZE }
+		release = CZE
+		CZE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = CZE
+			}
+		}
+		CZE = { 
+			set_cosmetic_tag = UKR_CZE_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = CZE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_DDR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 5
+				state = 61
+				state = 62
+				state = 63
+				state = 64
+				state = 65
+				state = 66
+				state = 68
+				state = 86
+				state = 188
+				state = 776
+				state = 777
+				state = 1357
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DDR = { exists = yes }
+			}
+			DDR = { is_subject_of = UKR }
+		}
+		5 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		61 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		62 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		63 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		64 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		65 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		66 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		68 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		86 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		188 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		776 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		777 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1357 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				5 = { NOT = { is_core_of = UKR } }
+				61 = { NOT = { is_core_of = UKR } }
+				62 = { NOT = { is_core_of = UKR } }
+				63 = { NOT = { is_core_of = UKR } }
+				64 = { NOT = { is_core_of = UKR } }
+				65 = { NOT = { is_core_of = UKR } }
+				66 = { NOT = { is_core_of = UKR } }
+				68 = { NOT = { is_core_of = UKR } }
+				86 = { NOT = { is_core_of = UKR } }
+				188 = { NOT = { is_core_of = UKR } }
+				776 = { NOT = { is_core_of = UKR } }
+				777 = { NOT = { is_core_of = UKR } }
+				1357 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DDR = {
+			every_core_state = {
+				remove_core_of = DDR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DDR
+				}
+				remove_claim_by = DDR
+			}
+		}
+		5 = { add_core_of = DDR }
+		61 = { add_core_of = DDR }
+		62 = { add_core_of = DDR }
+		63 = { add_core_of = DDR }
+		64 = { add_core_of = DDR }
+		65 = { add_core_of = DDR }
+		66 = { add_core_of = DDR }
+		68 = { add_core_of = DDR }
+		86 = { add_core_of = DDR }
+		188 = { add_core_of = DDR }
+		776 = { add_core_of = DDR }
+		777 = { add_core_of = DDR }
+		1357 = { add_core_of = DDR }
+		release = DDR
+		DDR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = DDR
+			}
+		}
+		DDR = { 
+			set_cosmetic_tag = UKR_DDR_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = DDR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+				state = 99
+				state = 101
+				state = 337
+				state = 926
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = UKR }
+		}
+		37 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		99 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		101 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		337 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		926 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				37 = { NOT = { is_core_of = UKR } }
+				99 = { NOT = { is_core_of = UKR } }
+				101 = { NOT = { is_core_of = UKR } }
+				337 = { NOT = { is_core_of = UKR } }
+				926 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		37 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = UKR_DEN_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 111
+				state = 145
+				state = 146
+				state = 147
+				state = 148
+				state = 149
+				state = 150
+				state = 840
+				state = 844
+				state = 863
+				state = 864
+				state = 865
+				state = 1324
+				state = 1325
+				state = 1326
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FIN = { exists = yes }
+			}
+			FIN = { is_subject_of = UKR }
+		}
+		111 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		145 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		146 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		147 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		148 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		149 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		150 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		840 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		844 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		863 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		864 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		865 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1324 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1325 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1326 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				111 = { NOT = { is_core_of = UKR } }
+				145 = { NOT = { is_core_of = UKR } }
+				146 = { NOT = { is_core_of = UKR } }
+				147 = { NOT = { is_core_of = UKR } }
+				148 = { NOT = { is_core_of = UKR } }
+				149 = { NOT = { is_core_of = UKR } }
+				150 = { NOT = { is_core_of = UKR } }
+				840 = { NOT = { is_core_of = UKR } }
+				844 = { NOT = { is_core_of = UKR } }
+				863 = { NOT = { is_core_of = UKR } }
+				864 = { NOT = { is_core_of = UKR } }
+				865 = { NOT = { is_core_of = UKR } }
+				1324 = { NOT = { is_core_of = UKR } }
+				1325 = { NOT = { is_core_of = UKR } }
+				1326 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FIN = {
+			every_core_state = {
+				remove_core_of = FIN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FIN
+				}
+				remove_claim_by = FIN
+			}
+		}
+		111 = { add_core_of = FIN }
+		145 = { add_core_of = FIN }
+		146 = { add_core_of = FIN }
+		147 = { add_core_of = FIN }
+		148 = { add_core_of = FIN }
+		149 = { add_core_of = FIN }
+		150 = { add_core_of = FIN }
+		840 = { add_core_of = FIN }
+		844 = { add_core_of = FIN }
+		863 = { add_core_of = FIN }
+		864 = { add_core_of = FIN }
+		865 = { add_core_of = FIN }
+		1324 = { add_core_of = FIN }
+		1325 = { add_core_of = FIN }
+		1326 = { add_core_of = FIN }
+		release = FIN
+		FIN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = FIN
+			}
+		}
+		FIN = { 
+			set_cosmetic_tag = UKR_FIN_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = FIN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 14
+				state = 15
+				state = 16
+				state = 17
+				state = 18
+				state = 20
+				state = 23
+				state = 24
+				state = 27
+				state = 29
+				state = 30
+				state = 33
+				state = 779
+				state = 785
+				state = 980
+				state = 983
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = UKR }
+		}
+		14 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		15 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		16 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		17 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		18 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		20 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		23 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		24 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		27 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		29 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		30 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		33 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		779 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		785 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		980 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		983 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				14 = { NOT = { is_core_of = UKR } }
+				15 = { NOT = { is_core_of = UKR } }
+				16 = { NOT = { is_core_of = UKR } }
+				17 = { NOT = { is_core_of = UKR } }
+				18 = { NOT = { is_core_of = UKR } }
+				20 = { NOT = { is_core_of = UKR } }
+				23 = { NOT = { is_core_of = UKR } }
+				24 = { NOT = { is_core_of = UKR } }
+				27 = { NOT = { is_core_of = UKR } }
+				29 = { NOT = { is_core_of = UKR } }
+				30 = { NOT = { is_core_of = UKR } }
+				33 = { NOT = { is_core_of = UKR } }
+				779 = { NOT = { is_core_of = UKR } }
+				785 = { NOT = { is_core_of = UKR } }
+				980 = { NOT = { is_core_of = UKR } }
+				983 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		1 = { add_core_of = FRP }
+		14 = { add_core_of = FRP }
+		15 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		17 = { add_core_of = FRP }
+		18 = { add_core_of = FRP }
+		20 = { add_core_of = FRP }
+		23 = { add_core_of = FRP }
+		24 = { add_core_of = FRP }
+		27 = { add_core_of = FRP }
+		29 = { add_core_of = FRP }
+		30 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		779 = { add_core_of = FRP }
+		785 = { add_core_of = FRP }
+		980 = { add_core_of = FRP }
+		983 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = UKR_FRP_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 120
+				state = 121
+				state = 122
+				state = 123
+				state = 125
+				state = 126
+				state = 127
+				state = 128
+				state = 129
+				state = 130
+				state = 131
+				state = 132
+				state = 133
+				state = 136
+				state = 338
+				state = 938
+				state = 1225
+				state = 1315
+				state = 1317
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = UKR }
+		}
+		120 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		121 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		122 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		123 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		125 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		126 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		127 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		128 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		129 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		130 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		131 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		132 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		133 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		136 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		338 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		938 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1225 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1315 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1317 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				120 = { NOT = { is_core_of = UKR } }
+				121 = { NOT = { is_core_of = UKR } }
+				122 = { NOT = { is_core_of = UKR } }
+				123 = { NOT = { is_core_of = UKR } }
+				125 = { NOT = { is_core_of = UKR } }
+				126 = { NOT = { is_core_of = UKR } }
+				127 = { NOT = { is_core_of = UKR } }
+				128 = { NOT = { is_core_of = UKR } }
+				129 = { NOT = { is_core_of = UKR } }
+				130 = { NOT = { is_core_of = UKR } }
+				131 = { NOT = { is_core_of = UKR } }
+				132 = { NOT = { is_core_of = UKR } }
+				133 = { NOT = { is_core_of = UKR } }
+				136 = { NOT = { is_core_of = UKR } }
+				338 = { NOT = { is_core_of = UKR } }
+				938 = { NOT = { is_core_of = UKR } }
+				1225 = { NOT = { is_core_of = UKR } }
+				1315 = { NOT = { is_core_of = UKR } }
+				1317 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		120 = { add_core_of = GBP }
+		121 = { add_core_of = GBP }
+		122 = { add_core_of = GBP }
+		123 = { add_core_of = GBP }
+		125 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		130 = { add_core_of = GBP }
+		131 = { add_core_of = GBP }
+		132 = { add_core_of = GBP }
+		133 = { add_core_of = GBP }
+		136 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		938 = { add_core_of = GBP }
+		1225 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		1317 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = UKR_GBP_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_GLC = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 171
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GLC = { exists = yes }
+			}
+			GLC = { is_subject_of = UKR }
+		}
+		171 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				171 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GLC = {
+			every_core_state = {
+				remove_core_of = GLC
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GLC
+				}
+				remove_claim_by = GLC
+			}
+		}
+		171 = { add_core_of = GLC }
+		release = GLC
+		GLC = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = GLC
+			}
+		}
+		GLC = { 
+			set_cosmetic_tag = UKR_GLC_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = GLC
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_HOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 6
+				state = 7
+				state = 34
+				state = 35
+				state = 36
+				state = 866
+				state = 978
+				state = 979
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HOL = { exists = yes }
+			}
+			HOL = { is_subject_of = UKR }
+		}
+		6 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		7 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		34 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		35 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		36 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		866 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		978 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		979 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				6 = { NOT = { is_core_of = UKR } }
+				7 = { NOT = { is_core_of = UKR } }
+				34 = { NOT = { is_core_of = UKR } }
+				35 = { NOT = { is_core_of = UKR } }
+				36 = { NOT = { is_core_of = UKR } }
+				866 = { NOT = { is_core_of = UKR } }
+				978 = { NOT = { is_core_of = UKR } }
+				979 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HOL = {
+			every_core_state = {
+				remove_core_of = HOL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HOL
+				}
+				remove_claim_by = HOL
+			}
+		}
+		8 = { add_core_of = HOL }
+		741 = { add_core_of = HOL }
+		6 = { add_core_of = HOL }
+		7 = { add_core_of = HOL }
+		34 = { add_core_of = HOL }
+		35 = { add_core_of = HOL }
+		36 = { add_core_of = HOL }
+		866 = { add_core_of = HOL }
+		978 = { add_core_of = HOL }
+		979 = { add_core_of = HOL }
+		release = HOL
+		HOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = HOL
+			}
+		}
+		HOL = { 
+			set_cosmetic_tag = UKR_HOL_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = HOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+				state = 45
+				state = 154
+				state = 155
+				state = 784
+				state = 875
+				state = 1106
+				state = 1107
+				state = 1108
+				state = 1109
+				state = 1110
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HUN = { exists = yes }
+			}
+			HUN = { is_subject_of = UKR }
+		}
+		43 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		45 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		154 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		155 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		784 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		875 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1106 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1107 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1108 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1109 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1110 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				43 = { NOT = { is_core_of = UKR } }
+				45 = { NOT = { is_core_of = UKR } }
+				154 = { NOT = { is_core_of = UKR } }
+				155 = { NOT = { is_core_of = UKR } }
+				784 = { NOT = { is_core_of = UKR } }
+				875 = { NOT = { is_core_of = UKR } }
+				1106 = { NOT = { is_core_of = UKR } }
+				1107 = { NOT = { is_core_of = UKR } }
+				1108 = { NOT = { is_core_of = UKR } }
+				1109 = { NOT = { is_core_of = UKR } }
+				1110 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HUN
+				}
+				remove_claim_by = HUN
+			}
+		}
+		70 = { add_core_of = HUN }
+		76 = { add_core_of = HUN }
+		82 = { add_core_of = HUN }
+		83 = { add_core_of = HUN }
+		84 = { add_core_of = HUN }
+		664 = { add_core_of = HUN }
+		789 = { add_core_of = HUN }
+		1111 = { add_core_of = HUN }
+		1112 = { add_core_of = HUN }
+		1113 = { add_core_of = HUN }
+		1114 = { add_core_of = HUN }
+		1115 = { add_core_of = HUN }
+		1116 = { add_core_of = HUN }
+		1117 = { add_core_of = HUN }
+		1118 = { add_core_of = HUN }
+		1120 = { add_core_of = HUN }
+		1121 = { add_core_of = HUN }
+		1122 = { add_core_of = HUN }
+		1123 = { add_core_of = HUN }
+		1135 = { add_core_of = HUN }
+		1136 = { add_core_of = HUN }
+		1314 = { add_core_of = HUN }
+		43 = { add_core_of = HUN }
+		45 = { add_core_of = HUN }
+		154 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		784 = { add_core_of = HUN }
+		875 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		release = HUN
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = UKR_HUN_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_ICE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 100
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ICE = { exists = yes }
+			}
+			ICE = { is_subject_of = UKR }
+		}
+		100 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				100 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ICE = {
+			every_core_state = {
+				remove_core_of = ICE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ICE
+				}
+				remove_claim_by = ICE
+			}
+		}
+		100 = { add_core_of = ICE }
+		release = ICE
+		ICE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = ICE
+			}
+		}
+		ICE = { 
+			set_cosmetic_tag = UKR_ICE_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = ICE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_IRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 113
+				state = 119
+				state = 134
+				state = 135
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRE = { exists = yes }
+			}
+			IRE = { is_subject_of = UKR }
+		}
+		113 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		119 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		134 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		135 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				113 = { NOT = { is_core_of = UKR } }
+				119 = { NOT = { is_core_of = UKR } }
+				134 = { NOT = { is_core_of = UKR } }
+				135 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRE = {
+			every_core_state = {
+				remove_core_of = IRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRE
+				}
+				remove_claim_by = IRE
+			}
+		}
+		113 = { add_core_of = IRE }
+		119 = { add_core_of = IRE }
+		134 = { add_core_of = IRE }
+		135 = { add_core_of = IRE }
+		release = IRE
+		IRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = IRE
+			}
+		}
+		IRE = { 
+			set_cosmetic_tag = UKR_IRE_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = IRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_ITA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+				state = 114
+				state = 115
+				state = 117
+				state = 156
+				state = 157
+				state = 158
+				state = 159
+				state = 160
+				state = 161
+				state = 162
+				state = 742
+				state = 759
+				state = 764
+				state = 783
+				state = 837
+				state = 838
+				state = 1002
+				state = 1003
+				state = 1004
+				state = 1005
+				state = 1006
+				state = 1149
+				state = 1236
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ITA = { exists = yes }
+			}
+			ITA = { is_subject_of = UKR }
+		}
+		2 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		114 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		115 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		117 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		156 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		157 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		158 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		159 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		160 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		161 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		162 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		742 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		759 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		764 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		783 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		837 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		838 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1002 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1003 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1004 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1005 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1006 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1149 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1236 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				2 = { NOT = { is_core_of = UKR } }
+				114 = { NOT = { is_core_of = UKR } }
+				115 = { NOT = { is_core_of = UKR } }
+				117 = { NOT = { is_core_of = UKR } }
+				156 = { NOT = { is_core_of = UKR } }
+				157 = { NOT = { is_core_of = UKR } }
+				158 = { NOT = { is_core_of = UKR } }
+				159 = { NOT = { is_core_of = UKR } }
+				160 = { NOT = { is_core_of = UKR } }
+				161 = { NOT = { is_core_of = UKR } }
+				162 = { NOT = { is_core_of = UKR } }
+				742 = { NOT = { is_core_of = UKR } }
+				759 = { NOT = { is_core_of = UKR } }
+				764 = { NOT = { is_core_of = UKR } }
+				783 = { NOT = { is_core_of = UKR } }
+				837 = { NOT = { is_core_of = UKR } }
+				838 = { NOT = { is_core_of = UKR } }
+				1002 = { NOT = { is_core_of = UKR } }
+				1003 = { NOT = { is_core_of = UKR } }
+				1004 = { NOT = { is_core_of = UKR } }
+				1005 = { NOT = { is_core_of = UKR } }
+				1006 = { NOT = { is_core_of = UKR } }
+				1149 = { NOT = { is_core_of = UKR } }
+				1236 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ITA = {
+			every_core_state = {
+				remove_core_of = ITA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ITA
+				}
+				remove_claim_by = ITA
+			}
+		}
+		736 = { add_core_of = ITA }
+		1100 = { add_core_of = ITA }
+		1144 = { add_core_of = ITA }
+		1206 = { add_core_of = ITA }
+		2 = { add_core_of = ITA }
+		114 = { add_core_of = ITA }
+		115 = { add_core_of = ITA }
+		117 = { add_core_of = ITA }
+		156 = { add_core_of = ITA }
+		157 = { add_core_of = ITA }
+		158 = { add_core_of = ITA }
+		159 = { add_core_of = ITA }
+		160 = { add_core_of = ITA }
+		161 = { add_core_of = ITA }
+		162 = { add_core_of = ITA }
+		742 = { add_core_of = ITA }
+		759 = { add_core_of = ITA }
+		764 = { add_core_of = ITA }
+		783 = { add_core_of = ITA }
+		837 = { add_core_of = ITA }
+		838 = { add_core_of = ITA }
+		1002 = { add_core_of = ITA }
+		1003 = { add_core_of = ITA }
+		1004 = { add_core_of = ITA }
+		1005 = { add_core_of = ITA }
+		1006 = { add_core_of = ITA }
+		1149 = { add_core_of = ITA }
+		1236 = { add_core_of = ITA }
+		release = ITA
+		ITA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = ITA
+			}
+		}
+		ITA = { 
+			set_cosmetic_tag = UKR_ITA_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = ITA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_NGF = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 50
+				state = 52
+				state = 53
+				state = 54
+				state = 55
+				state = 56
+				state = 57
+				state = 58
+				state = 59
+				state = 60
+				state = 780
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NGF = { exists = yes }
+			}
+			NGF = { is_subject_of = UKR }
+		}
+		50 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		52 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		53 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		54 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		55 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		56 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		57 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		58 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		59 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		60 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		780 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				50 = { NOT = { is_core_of = UKR } }
+				52 = { NOT = { is_core_of = UKR } }
+				53 = { NOT = { is_core_of = UKR } }
+				54 = { NOT = { is_core_of = UKR } }
+				55 = { NOT = { is_core_of = UKR } }
+				56 = { NOT = { is_core_of = UKR } }
+				57 = { NOT = { is_core_of = UKR } }
+				58 = { NOT = { is_core_of = UKR } }
+				59 = { NOT = { is_core_of = UKR } }
+				60 = { NOT = { is_core_of = UKR } }
+				780 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NGF = {
+			every_core_state = {
+				remove_core_of = NGF
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NGF
+				}
+				remove_claim_by = NGF
+			}
+		}
+		782 = { add_core_of = NGF }
+		839 = { add_core_of = NGF }
+		50 = { add_core_of = NGF }
+		52 = { add_core_of = NGF }
+		53 = { add_core_of = NGF }
+		54 = { add_core_of = NGF }
+		55 = { add_core_of = NGF }
+		56 = { add_core_of = NGF }
+		57 = { add_core_of = NGF }
+		58 = { add_core_of = NGF }
+		59 = { add_core_of = NGF }
+		60 = { add_core_of = NGF }
+		780 = { add_core_of = NGF }
+		release = NGF
+		NGF = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = NGF
+			}
+		}
+		NGF = { 
+			set_cosmetic_tag = UKR_NGF_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = NGF
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_OCC = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 19
+				state = 21
+				state = 22
+				state = 25
+				state = 26
+				state = 31
+				state = 32
+				state = 735
+				state = 762
+				state = 763
+				state = 817
+				state = 943
+				state = 984
+				state = 1334
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				OCC = { exists = yes }
+			}
+			OCC = { is_subject_of = UKR }
+		}
+		19 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		21 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		22 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		25 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		26 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		31 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		32 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		735 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		762 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		763 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		817 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		943 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		984 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1334 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				19 = { NOT = { is_core_of = UKR } }
+				21 = { NOT = { is_core_of = UKR } }
+				22 = { NOT = { is_core_of = UKR } }
+				25 = { NOT = { is_core_of = UKR } }
+				26 = { NOT = { is_core_of = UKR } }
+				31 = { NOT = { is_core_of = UKR } }
+				32 = { NOT = { is_core_of = UKR } }
+				735 = { NOT = { is_core_of = UKR } }
+				762 = { NOT = { is_core_of = UKR } }
+				763 = { NOT = { is_core_of = UKR } }
+				817 = { NOT = { is_core_of = UKR } }
+				943 = { NOT = { is_core_of = UKR } }
+				984 = { NOT = { is_core_of = UKR } }
+				1334 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		OCC = {
+			every_core_state = {
+				remove_core_of = OCC
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = OCC
+				}
+				remove_claim_by = OCC
+			}
+		}
+		19 = { add_core_of = OCC }
+		21 = { add_core_of = OCC }
+		22 = { add_core_of = OCC }
+		25 = { add_core_of = OCC }
+		26 = { add_core_of = OCC }
+		31 = { add_core_of = OCC }
+		32 = { add_core_of = OCC }
+		735 = { add_core_of = OCC }
+		762 = { add_core_of = OCC }
+		763 = { add_core_of = OCC }
+		817 = { add_core_of = OCC }
+		943 = { add_core_of = OCC }
+		984 = { add_core_of = OCC }
+		1334 = { add_core_of = OCC }
+		release = OCC
+		OCC = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = OCC
+			}
+		}
+		OCC = { 
+			set_cosmetic_tag = UKR_OCC_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = OCC
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_POR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 112
+				state = 179
+				state = 180
+				state = 181
+				state = 697
+				state = 698
+				state = 702
+				state = 705
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POR = { exists = yes }
+			}
+			POR = { is_subject_of = UKR }
+		}
+		112 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		179 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		180 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		181 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		697 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		698 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		702 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		705 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				112 = { NOT = { is_core_of = UKR } }
+				179 = { NOT = { is_core_of = UKR } }
+				180 = { NOT = { is_core_of = UKR } }
+				181 = { NOT = { is_core_of = UKR } }
+				697 = { NOT = { is_core_of = UKR } }
+				698 = { NOT = { is_core_of = UKR } }
+				702 = { NOT = { is_core_of = UKR } }
+				705 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POR = {
+			every_core_state = {
+				remove_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POR
+				}
+				remove_claim_by = POR
+			}
+		}
+		296 = { add_core_of = POR }
+		540 = { add_core_of = POR }
+		544 = { add_core_of = POR }
+		914 = { add_core_of = POR }
+		916 = { add_core_of = POR }
+		917 = { add_core_of = POR }
+		950 = { add_core_of = POR }
+		954 = { add_core_of = POR }
+		959 = { add_core_of = POR }
+		112 = { add_core_of = POR }
+		179 = { add_core_of = POR }
+		180 = { add_core_of = POR }
+		181 = { add_core_of = POR }
+		697 = { add_core_of = POR }
+		698 = { add_core_of = POR }
+		702 = { add_core_of = POR }
+		705 = { add_core_of = POR }
+		release = POR
+		POR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = POR
+			}
+		}
+		POR = { 
+			set_cosmetic_tag = UKR_POR_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = POR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_SPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+				state = 165
+				state = 166
+				state = 167
+				state = 168
+				state = 169
+				state = 170
+				state = 172
+				state = 173
+				state = 174
+				state = 175
+				state = 176
+				state = 177
+				state = 178
+				state = 793
+				state = 795
+				state = 940
+				state = 951
+				state = 1313
+				state = 1316
+				state = 1336
+				state = 1337
+				state = 1338
+				state = 1339
+				state = 1340
+				state = 1341
+				state = 1342
+				state = 1343
+				state = 1344
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SPR = { exists = yes }
+			}
+			SPR = { is_subject_of = UKR }
+		}
+		41 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		165 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		166 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		167 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		168 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		169 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		170 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		172 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		173 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		174 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		175 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		176 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		177 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		178 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		793 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		795 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		940 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		951 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1313 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1316 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1336 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1337 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1338 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1339 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1340 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1341 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1342 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1343 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1344 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				41 = { NOT = { is_core_of = UKR } }
+				165 = { NOT = { is_core_of = UKR } }
+				166 = { NOT = { is_core_of = UKR } }
+				167 = { NOT = { is_core_of = UKR } }
+				168 = { NOT = { is_core_of = UKR } }
+				169 = { NOT = { is_core_of = UKR } }
+				170 = { NOT = { is_core_of = UKR } }
+				172 = { NOT = { is_core_of = UKR } }
+				173 = { NOT = { is_core_of = UKR } }
+				174 = { NOT = { is_core_of = UKR } }
+				175 = { NOT = { is_core_of = UKR } }
+				176 = { NOT = { is_core_of = UKR } }
+				177 = { NOT = { is_core_of = UKR } }
+				178 = { NOT = { is_core_of = UKR } }
+				793 = { NOT = { is_core_of = UKR } }
+				795 = { NOT = { is_core_of = UKR } }
+				940 = { NOT = { is_core_of = UKR } }
+				951 = { NOT = { is_core_of = UKR } }
+				1313 = { NOT = { is_core_of = UKR } }
+				1316 = { NOT = { is_core_of = UKR } }
+				1336 = { NOT = { is_core_of = UKR } }
+				1337 = { NOT = { is_core_of = UKR } }
+				1338 = { NOT = { is_core_of = UKR } }
+				1339 = { NOT = { is_core_of = UKR } }
+				1340 = { NOT = { is_core_of = UKR } }
+				1341 = { NOT = { is_core_of = UKR } }
+				1342 = { NOT = { is_core_of = UKR } }
+				1343 = { NOT = { is_core_of = UKR } }
+				1344 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SPR = {
+			every_core_state = {
+				remove_core_of = SPR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SPR
+				}
+				remove_claim_by = SPR
+			}
+		}
+		290 = { add_core_of = SPR }
+		297 = { add_core_of = SPR }
+		699 = { add_core_of = SPR }
+		1318 = { add_core_of = SPR }
+		1335 = { add_core_of = SPR }
+		41 = { add_core_of = SPR }
+		165 = { add_core_of = SPR }
+		166 = { add_core_of = SPR }
+		167 = { add_core_of = SPR }
+		168 = { add_core_of = SPR }
+		169 = { add_core_of = SPR }
+		170 = { add_core_of = SPR }
+		172 = { add_core_of = SPR }
+		173 = { add_core_of = SPR }
+		174 = { add_core_of = SPR }
+		175 = { add_core_of = SPR }
+		176 = { add_core_of = SPR }
+		177 = { add_core_of = SPR }
+		178 = { add_core_of = SPR }
+		793 = { add_core_of = SPR }
+		795 = { add_core_of = SPR }
+		940 = { add_core_of = SPR }
+		951 = { add_core_of = SPR }
+		1313 = { add_core_of = SPR }
+		1316 = { add_core_of = SPR }
+		1336 = { add_core_of = SPR }
+		1337 = { add_core_of = SPR }
+		1338 = { add_core_of = SPR }
+		1339 = { add_core_of = SPR }
+		1340 = { add_core_of = SPR }
+		1341 = { add_core_of = SPR }
+		1342 = { add_core_of = SPR }
+		1343 = { add_core_of = SPR }
+		1344 = { add_core_of = SPR }
+		release = SPR
+		SPR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = SPR
+			}
+		}
+		SPR = { 
+			set_cosmetic_tag = UKR_SPR_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = SPR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_SWE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 38
+				state = 124
+				state = 138
+				state = 139
+				state = 140
+				state = 141
+				state = 666
+				state = 778
+				state = 908
+				state = 909
+				state = 960
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SWE = { exists = yes }
+			}
+			SWE = { is_subject_of = UKR }
+		}
+		38 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		124 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		138 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		139 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		140 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		141 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		666 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		778 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		908 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		909 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		960 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				38 = { NOT = { is_core_of = UKR } }
+				124 = { NOT = { is_core_of = UKR } }
+				138 = { NOT = { is_core_of = UKR } }
+				139 = { NOT = { is_core_of = UKR } }
+				140 = { NOT = { is_core_of = UKR } }
+				141 = { NOT = { is_core_of = UKR } }
+				666 = { NOT = { is_core_of = UKR } }
+				778 = { NOT = { is_core_of = UKR } }
+				908 = { NOT = { is_core_of = UKR } }
+				909 = { NOT = { is_core_of = UKR } }
+				960 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWE = {
+			every_core_state = {
+				remove_core_of = SWE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SWE
+				}
+				remove_claim_by = SWE
+			}
+		}
+		38 = { add_core_of = SWE }
+		124 = { add_core_of = SWE }
+		138 = { add_core_of = SWE }
+		139 = { add_core_of = SWE }
+		140 = { add_core_of = SWE }
+		141 = { add_core_of = SWE }
+		666 = { add_core_of = SWE }
+		778 = { add_core_of = SWE }
+		908 = { add_core_of = SWE }
+		909 = { add_core_of = SWE }
+		960 = { add_core_of = SWE }
+		release = SWE
+		SWE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = SWE
+			}
+		}
+		SWE = { 
+			set_cosmetic_tag = UKR_SWE_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = SWE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_SWI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 3
+				state = 151
+				state = 761
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SWI = { exists = yes }
+			}
+			SWI = { is_subject_of = UKR }
+		}
+		3 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		151 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		761 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				3 = { NOT = { is_core_of = UKR } }
+				151 = { NOT = { is_core_of = UKR } }
+				761 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWI = {
+			every_core_state = {
+				remove_core_of = SWI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SWI
+				}
+				remove_claim_by = SWI
+			}
+		}
+		760 = { add_core_of = SWI }
+		3 = { add_core_of = SWI }
+		151 = { add_core_of = SWI }
+		761 = { add_core_of = SWI }
+		release = SWI
+		SWI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = SWI
+			}
+		}
+		SWI = { 
+			set_cosmetic_tag = UKR_SWI_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = SWI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_WGR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 42
+				state = 51
+				state = 781
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				WGR = { exists = yes }
+			}
+			WGR = { is_subject_of = UKR }
+		}
+		42 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		51 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		781 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				42 = { NOT = { is_core_of = UKR } }
+				51 = { NOT = { is_core_of = UKR } }
+				781 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		WGR = {
+			every_core_state = {
+				remove_core_of = WGR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = WGR
+				}
+				remove_claim_by = WGR
+			}
+		}
+		28 = { add_core_of = WGR }
+		42 = { add_core_of = WGR }
+		51 = { add_core_of = WGR }
+		781 = { add_core_of = WGR }
+		release = WGR
+		WGR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = WGR
+			}
+		}
+		WGR = { 
+			set_cosmetic_tag = UKR_WGR_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = WGR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_EST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 13
+				state = 191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EST = { exists = yes }
+			}
+			EST = { is_subject_of = UKR }
+		}
+		13 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		191 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				13 = { NOT = { is_core_of = UKR } }
+				191 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EST = {
+			every_core_state = {
+				remove_core_of = EST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EST
+				}
+				remove_claim_by = EST
+			}
+		}
+		13 = { add_core_of = EST }
+		191 = { add_core_of = EST }
+		release = EST
+		EST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = EST
+			}
+		}
+		EST = { 
+			set_cosmetic_tag = UKR_EST_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = EST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+				state = 1081
+				state = 1082
+				state = 1301
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GEO = { exists = yes }
+			}
+			GEO = { is_subject_of = UKR }
+		}
+		231 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1081 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1082 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1301 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				231 = { NOT = { is_core_of = UKR } }
+				1081 = { NOT = { is_core_of = UKR } }
+				1082 = { NOT = { is_core_of = UKR } }
+				1301 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GEO
+				}
+				remove_claim_by = GEO
+			}
+		}
+		1080 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		231 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1082 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		release = GEO
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = UKR_GEO_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Mykola Kapustyanskyi"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Mykola_Kapustyanskyi.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+				state = 185
+				state = 186
+				state = 758
+				state = 768
+				state = 939
+				state = 989
+				state = 1076
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = UKR }
+		}
+		47 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		185 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		186 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		758 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		768 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		939 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		989 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1076 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				47 = { NOT = { is_core_of = UKR } }
+				185 = { NOT = { is_core_of = UKR } }
+				186 = { NOT = { is_core_of = UKR } }
+				758 = { NOT = { is_core_of = UKR } }
+				768 = { NOT = { is_core_of = UKR } }
+				939 = { NOT = { is_core_of = UKR } }
+				989 = { NOT = { is_core_of = UKR } }
+				1076 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		184 = { add_core_of = GRE }
+		731 = { add_core_of = GRE }
+		766 = { add_core_of = GRE }
+		769 = { add_core_of = GRE }
+		1089 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		989 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = UKR_GRE_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Andriy Pokrovsky"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Andriy_Pokrovsky.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 214
+				state = 248
+				state = 249
+				state = 250
+				state = 251
+				state = 252
+				state = 253
+				state = 255
+				state = 256
+				state = 262
+				state = 351
+				state = 397
+				state = 398
+				state = 399
+				state = 400
+				state = 651
+				state = 652
+				state = 1193
+				state = 1194
+				state = 1197
+				state = 1198
+				state = 1199
+				state = 1204
+				state = 1205
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				RUS = { exists = yes }
+			}
+			RUS = { is_subject_of = UKR }
+		}
+		214 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		248 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		249 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		250 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		251 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		252 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		253 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		255 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		256 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		262 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		351 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		397 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		398 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		399 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		400 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		651 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		652 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1193 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1194 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1197 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1198 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1199 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1204 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1205 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				214 = { NOT = { is_core_of = UKR } }
+				248 = { NOT = { is_core_of = UKR } }
+				249 = { NOT = { is_core_of = UKR } }
+				250 = { NOT = { is_core_of = UKR } }
+				251 = { NOT = { is_core_of = UKR } }
+				252 = { NOT = { is_core_of = UKR } }
+				253 = { NOT = { is_core_of = UKR } }
+				255 = { NOT = { is_core_of = UKR } }
+				256 = { NOT = { is_core_of = UKR } }
+				262 = { NOT = { is_core_of = UKR } }
+				351 = { NOT = { is_core_of = UKR } }
+				397 = { NOT = { is_core_of = UKR } }
+				398 = { NOT = { is_core_of = UKR } }
+				399 = { NOT = { is_core_of = UKR } }
+				400 = { NOT = { is_core_of = UKR } }
+				651 = { NOT = { is_core_of = UKR } }
+				652 = { NOT = { is_core_of = UKR } }
+				1193 = { NOT = { is_core_of = UKR } }
+				1194 = { NOT = { is_core_of = UKR } }
+				1197 = { NOT = { is_core_of = UKR } }
+				1198 = { NOT = { is_core_of = UKR } }
+				1199 = { NOT = { is_core_of = UKR } }
+				1204 = { NOT = { is_core_of = UKR } }
+				1205 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = RUS
+				}
+				remove_claim_by = RUS
+			}
+		}
+		213 = { add_core_of = RUS }
+		215 = { add_core_of = RUS }
+		216 = { add_core_of = RUS }
+		722 = { add_core_of = RUS }
+		1274 = { add_core_of = RUS }
+		1327 = { add_core_of = RUS }
+		214 = { add_core_of = RUS }
+		248 = { add_core_of = RUS }
+		249 = { add_core_of = RUS }
+		250 = { add_core_of = RUS }
+		251 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		255 = { add_core_of = RUS }
+		256 = { add_core_of = RUS }
+		262 = { add_core_of = RUS }
+		351 = { add_core_of = RUS }
+		397 = { add_core_of = RUS }
+		398 = { add_core_of = RUS }
+		399 = { add_core_of = RUS }
+		400 = { add_core_of = RUS }
+		651 = { add_core_of = RUS }
+		652 = { add_core_of = RUS }
+		1193 = { add_core_of = RUS }
+		1194 = { add_core_of = RUS }
+		1197 = { add_core_of = RUS }
+		1198 = { add_core_of = RUS }
+		1199 = { add_core_of = RUS }
+		1204 = { add_core_of = RUS }
+		1205 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = UKR_RUS_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Yevhen Konovalets"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Yevhen_Konovalets.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_SER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 107
+				state = 108
+				state = 767
+				state = 1269
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SER = { exists = yes }
+			}
+			SER = { is_subject_of = UKR }
+		}
+		107 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		108 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		767 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1269 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				107 = { NOT = { is_core_of = UKR } }
+				108 = { NOT = { is_core_of = UKR } }
+				767 = { NOT = { is_core_of = UKR } }
+				1269 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SER = {
+			every_core_state = {
+				remove_core_of = SER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SER
+				}
+				remove_claim_by = SER
+			}
+		}
+		105 = { add_core_of = SER }
+		765 = { add_core_of = SER }
+		1097 = { add_core_of = SER }
+		1128 = { add_core_of = SER }
+		107 = { add_core_of = SER }
+		108 = { add_core_of = SER }
+		767 = { add_core_of = SER }
+		1269 = { add_core_of = SER }
+		release = SER
+		SER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = SER
+			}
+		}
+		SER = { 
+			set_cosmetic_tag = UKR_SER_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = SER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Vsevolod Petriv"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Vsevolod_Petriv.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_LAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 190
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				LAT = { exists = yes }
+			}
+			LAT = { is_subject_of = UKR }
+		}
+		12 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		190 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1091 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				12 = { NOT = { is_core_of = UKR } }
+				190 = { NOT = { is_core_of = UKR } }
+				1091 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		LAT = {
+			every_core_state = {
+				remove_core_of = LAT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = LAT
+				}
+				remove_claim_by = LAT
+			}
+		}
+		12 = { add_core_of = LAT }
+		190 = { add_core_of = LAT }
+		1091 = { add_core_of = LAT }
+		release = LAT
+		LAT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = LAT
+			}
+		}
+		LAT = { 
+			set_cosmetic_tag = UKR_LAT_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = LAT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+
+UKR_establish_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+				state = 164
+				state = 187
+				state = 339
+				state = 342
+				state = 343
+				state = 345
+				state = 346
+				state = 356
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TUR = { exists = yes }
+			}
+			TUR = { is_subject_of = UKR }
+		}
+		49 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		164 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		187 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		339 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		342 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		343 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		345 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		346 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		356 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				49 = { NOT = { is_core_of = UKR } }
+				164 = { NOT = { is_core_of = UKR } }
+				187 = { NOT = { is_core_of = UKR } }
+				339 = { NOT = { is_core_of = UKR } }
+				342 = { NOT = { is_core_of = UKR } }
+				343 = { NOT = { is_core_of = UKR } }
+				345 = { NOT = { is_core_of = UKR } }
+				346 = { NOT = { is_core_of = UKR } }
+				356 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TUR
+				}
+				remove_claim_by = TUR
+			}
+		}
+		49 = { add_core_of = TUR }
+		164 = { add_core_of = TUR }
+		187 = { add_core_of = TUR }
+		339 = { add_core_of = TUR }
+		342 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = UKR_TUR_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Oleksandr Hrekiv"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Oleksandr_Hrekiv.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
+			}
+		}
+	}
+}
+
+UKR_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+				state = 447
+				state = 452
+				state = 456
+				state = 457
+				state = 552
+				state = 1008
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = UKR }
+		}
+		446 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		447 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		452 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		456 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		457 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		552 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		1008 = { owner = { OR = { original_tag = UKR is_subject_of = UKR } } }
+		OR = {
+				446 = { NOT = { is_core_of = UKR } }
+				447 = { NOT = { is_core_of = UKR } }
+				452 = { NOT = { is_core_of = UKR } }
+				456 = { NOT = { is_core_of = UKR } }
+				457 = { NOT = { is_core_of = UKR } }
+				552 = { NOT = { is_core_of = UKR } }
+				1008 = { NOT = { is_core_of = UKR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		273 = { add_core_of = EGY }
+		448 = { add_core_of = EGY }
+		450 = { add_core_of = EGY }
+		451 = { add_core_of = EGY }
+		549 = { add_core_of = EGY }
+		551 = { add_core_of = EGY }
+		663 = { add_core_of = EGY }
+		862 = { add_core_of = EGY }
+		1007 = { add_core_of = EGY }
+		1009 = { add_core_of = EGY }
+		1010 = { add_core_of = EGY }
+		1011 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = UKR
+						}
+						OR = {
+							is_owned_by = UKR
+							OWNER = { is_subject_of = UKR} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = UKR_EGY_OCC
+			load_focus_tree = generic_focus            
+
+
+			UKR = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+			create_country_leader = {
+				name = "Sviatoslav Shramchenko"
+				picture = "gfx/leaders/UKR/Portrait_UKR_Sviatoslav_Shramchenko.png"
+				expire = "1.1.1"
+				ideology = authdem_junta_subtype
+				traits = {
+				}
+			}
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Ukrainian Administration"
+				long_name = "Ukrainian Administration"
 			}
 		}
 	}

@@ -6746,8 +6746,14 @@ CHI_great_game = {
 					state = 426
 					state = 427
 					state = 428
+					state = 1361
+					state = 1360
 					state = 429
-					state = 430
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 431
 					state = 432
 					state = 433
@@ -6793,8 +6799,14 @@ CHI_great_game = {
 			426 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
 			427 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
 			428 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+			1361 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+			1360 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
 			429 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
-			430 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+			1358 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+1359 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+1362 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+1363 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
+430 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
 			431 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
 			432 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
 			433 = { owner = { OR = { original_tag = CHI is_subject_of = CHI } } }
@@ -6847,8 +6859,14 @@ CHI_great_game = {
 			426 = { add_core_of = BHC }
 			427 = { add_core_of = BHC }
 			428 = { add_core_of = BHC }
-			429 = { add_core_of = BHC }
-			430 = { add_core_of = BHC }
+			1361 = { add_core_of = BHC}
+			1360 = { add_core_of = BHC}
+			429 = { add_core_of = BHC}
+			1358 = { add_core_of = BHC }
+1359 = { add_core_of = BHC }
+1362 = { add_core_of = BHC }
+1363 = { add_core_of = BHC }
+430 = { add_core_of = BHC }
 			431 = { add_core_of = BHC }
 			432 = { add_core_of = BHC }
 			433 = { add_core_of = BHC }
