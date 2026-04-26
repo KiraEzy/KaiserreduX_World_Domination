@@ -5683,7 +5683,12 @@ country_event = {
 			has_country_flag = FRA_SIRF_ALLIES
 			has_country_flag = FRA_SIRF_FORMED
 		}
-		country_event = KXWD_FRA.1
+		country_event = {
+			id = KXWD_FRA.1
+			days = 1
+		}
+		add_stability = -0.1
+		set_country_flag = FRA_valois_is_dead
 		custom_effect_tooltip = "SIRF Takes Power."
 	}
 }

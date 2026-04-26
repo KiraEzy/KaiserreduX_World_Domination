@@ -8,7 +8,7 @@ shared_focus = {
 	id = KXWD_FRA_sirf_secures_hold
 	icon = GFX_goal_KXWD_GRE_destroy_the_socialist_threat
     available = {
-        always false
+        always = no
         is_ai = no
     }
 	x = 0
