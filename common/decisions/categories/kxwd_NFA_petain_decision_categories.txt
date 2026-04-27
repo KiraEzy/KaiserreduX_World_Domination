@@ -1,6 +1,6 @@
-NFA_africa_game_PET = {
+NFA_africa_game_PET_DGL = {
 	icon = GFX_decision_category_foreign_policy
-	priority = 5
+	priority = 9
 
 	allowed = {
 		original_tag = NFA
@@ -9,13 +9,13 @@ NFA_africa_game_PET = {
 	visible = { 
 		has_completed_focus = NFA_martial_law
 		FAR = {
-        exists = yes
+        	exists = yes
 		}
 	}
 }
-NFA_great_game_PET = {
+NFA_integrate_game_PET_DGL = {
 	icon = GFX_decision_category_foreign_policy
-	priority = 6
+	priority = 10
 
 	allowed = {
 		original_tag = NFA
@@ -23,8 +23,36 @@ NFA_great_game_PET = {
 
 	visible = { 
 		OR = {
-		has_completed_focus = NFA_military_supremacy
-		has_completed_focus = NFA_break_parliamentarism
+			has_completed_focus = NFA_military_supremacy
+			has_completed_focus = NFA_break_parliamentarism
 		}
+	}
+}
+NFA_great_game_PET = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 11
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		OR = {
+			has_completed_focus = NFA_continue_revolution_nationale
+			has_completed_focus = NFA_constitutional_restoration
+		}
+	}
+}
+
+NFA_great_game_DGL = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 11
+
+	allowed = {
+		original_tag = NFA
+	}
+
+	visible = { 
+		has_completed_focus = NFA_cdg_govt
 	}
 }
