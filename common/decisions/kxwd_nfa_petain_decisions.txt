@@ -1577,7 +1577,7 @@ PET_create_french_entente = {
 		}
 	}
 }
-NFA_PET_establish_rk_SPR = {
+NFA_PET_establish_rk_CAR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -1621,9 +1621,9 @@ NFA_PET_establish_rk_SPR = {
 	available = {
 		if = {
 			limit = {
-				SPR = { exists = yes }
+				CAR = { exists = yes }
 			}
-			SPR = { is_subject_of = NFA }
+			CAR = { is_subject_of = NFA }
 		}
 		41 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		118 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -1697,50 +1697,50 @@ NFA_PET_establish_rk_SPR = {
 		factor = 5
 	}
 	complete_effect = {
-		SPR = {
+		CAR = {
 			every_core_state = {
-				remove_core_of = SPR
+				remove_core_of = CAR
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = SPR
+					is_claimed_by = CAR
 				}
-				remove_claim_by = SPR
+				remove_claim_by = CAR
 			}
 		}
-		41 = { add_core_of = SPR }
-		118 = { add_core_of = SPR }
-		1344 = { add_core_of = SPR }
-		1343 = { add_core_of = SPR }
-		1342 = { add_core_of = SPR }
-		168 = { add_core_of = SPR }
-		169 = { add_core_of = SPR }
-		170 = { add_core_of = SPR }
-		171 = { add_core_of = SPR }
-		1341 = { add_core_of = SPR }
-		173 = { add_core_of = SPR }
-		174 = { add_core_of = SPR }
-		175 = { add_core_of = SPR }
-		176 = { add_core_of = SPR }
-		1338 = { add_core_of = SPR }
-		178 = { add_core_of = SPR }
-		793 = { add_core_of = SPR }
-		795 = { add_core_of = SPR }
-		1340 = { add_core_of = SPR }
-		951 = { add_core_of = SPR }
-		1339 = { add_core_of = SPR }
-		1316 = { add_core_of = SPR }
-		1336 = { add_core_of = SPR }
-		1337 = { add_core_of = SPR }
-		165 = { add_core_of = SPR }
-		166 = { add_core_of = SPR }
-		167 = { add_core_of = SPR }
-		172 = { add_core_of = SPR }
-		177 = { add_core_of = SPR }
-		940 = { add_core_of = SPR }
-		1313 = { add_core_of = SPR }
-		release = SPR
-		SPR = { 
+		41 = { add_core_of = CAR }
+		118 = { add_core_of = CAR }
+		1344 = { add_core_of = CAR }
+		1343 = { add_core_of = CAR }
+		1342 = { add_core_of = CAR }
+		168 = { add_core_of = CAR }
+		169 = { add_core_of = CAR }
+		170 = { add_core_of = CAR }
+		171 = { add_core_of = CAR }
+		1341 = { add_core_of = CAR }
+		173 = { add_core_of = CAR }
+		174 = { add_core_of = CAR }
+		175 = { add_core_of = CAR }
+		176 = { add_core_of = CAR }
+		1338 = { add_core_of = CAR }
+		178 = { add_core_of = CAR }
+		793 = { add_core_of = CAR }
+		795 = { add_core_of = CAR }
+		1340 = { add_core_of = CAR }
+		951 = { add_core_of = CAR }
+		1339 = { add_core_of = CAR }
+		1316 = { add_core_of = CAR }
+		1336 = { add_core_of = CAR }
+		1337 = { add_core_of = CAR }
+		165 = { add_core_of = CAR }
+		166 = { add_core_of = CAR }
+		167 = { add_core_of = CAR }
+		172 = { add_core_of = CAR }
+		177 = { add_core_of = CAR }
+		940 = { add_core_of = CAR }
+		1313 = { add_core_of = CAR }
+		release = CAR
+		CAR = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -1753,11 +1753,11 @@ NFA_PET_establish_rk_SPR = {
 						}
 					}
 				}
-				transfer_state_to = SPR
+				transfer_state_to = CAR
 			}
 		}
-		SPR = { 
-			set_cosmetic_tag = NFA_PET_SPR_OCC
+		CAR = { 
+			set_cosmetic_tag = NFA_PET_CAR_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1771,7 +1771,7 @@ NFA_PET_establish_rk_SPR = {
 
 			NFA = {
 				set_autonomy = {
-					target = SPR
+					target = CAR
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -2579,7 +2579,7 @@ NFA_PET_establish_rk_ITA = {
 	}
 }
 
-NFA_PET_establish_rk_GRU = {
+NFA_PET_establish_rk_DDR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -2593,9 +2593,9 @@ NFA_PET_establish_rk_GRU = {
 	available = {
 		if = {
 			limit = {
-				GRU = { exists = yes }
+				DDR = { exists = yes }
 			}
-			GRU = { is_subject_of = NFA }
+			DDR = { is_subject_of = NFA }
 		}
 		64 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		OR = {
@@ -2609,32 +2609,32 @@ NFA_PET_establish_rk_GRU = {
 		factor = 5
 	}
 	complete_effect = {
-		GRU = {
+		DDR = {
 			every_core_state = {
-				remove_core_of = GRU
+				remove_core_of = DDR
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = GRU
+					is_claimed_by = DDR
 				}
-				remove_claim_by = GRU
+				remove_claim_by = DDR
 			}
 		}
-		5 = { add_core_of = GRU }
-		1357 = { add_core_of = GRU }
-		58 = { add_core_of = GRU }
-		59 = { add_core_of = GRU }
-		62 = { add_core_of = GRU }
-		61 = { add_core_of = GRU }
-		63 = { add_core_of = GRU }
-		68 = { add_core_of = GRU }
-		60 = { add_core_of = GRU }
-		55 = { add_core_of = GRU }
-		56 = { add_core_of = GRU }
-		57 = { add_core_of = GRU }
-		64 = { add_core_of = GRU }
-		release = GRU
-		GRU = { 
+		5 = { add_core_of = DDR }
+		1357 = { add_core_of = DDR }
+		58 = { add_core_of = DDR }
+		59 = { add_core_of = DDR }
+		62 = { add_core_of = DDR }
+		61 = { add_core_of = DDR }
+		63 = { add_core_of = DDR }
+		68 = { add_core_of = DDR }
+		60 = { add_core_of = DDR }
+		55 = { add_core_of = DDR }
+		56 = { add_core_of = DDR }
+		57 = { add_core_of = DDR }
+		64 = { add_core_of = DDR }
+		release = DDR
+		DDR = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -2647,11 +2647,11 @@ NFA_PET_establish_rk_GRU = {
 						}
 					}
 				}
-				transfer_state_to = GRU
+				transfer_state_to = DDR
 			}
 		}
-		GRU = { 
-			set_cosmetic_tag = NFA_PET_GRU_OCC
+		DDR = { 
+			set_cosmetic_tag = NFA_PET_DDR_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2665,7 +2665,7 @@ NFA_PET_establish_rk_GRU = {
 
 			NFA = {
 				set_autonomy = {
-					target = GRU
+					target = DDR
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -11242,7 +11242,7 @@ DGL_create_french_entente = {
 }
 
 
-NFA_DGL_establish_rk_SPR = {
+NFA_DGL_establish_rk_CAR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -11286,9 +11286,9 @@ NFA_DGL_establish_rk_SPR = {
 	available = {
 		if = {
 			limit = {
-				SPR = { exists = yes }
+				CAR = { exists = yes }
 			}
-			SPR = { is_subject_of = NFA }
+			CAR = { is_subject_of = NFA }
 		}
 		41 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		118 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -11362,50 +11362,50 @@ NFA_DGL_establish_rk_SPR = {
 		factor = 5
 	}
 	complete_effect = {
-		SPR = {
+		CAR = {
 			every_core_state = {
-				remove_core_of = SPR
+				remove_core_of = CAR
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = SPR
+					is_claimed_by = CAR
 				}
-				remove_claim_by = SPR
+				remove_claim_by = CAR
 			}
 		}
-		41 = { add_core_of = SPR }
-		118 = { add_core_of = SPR }
-		1344 = { add_core_of = SPR }
-		1343 = { add_core_of = SPR }
-		1342 = { add_core_of = SPR }
-		168 = { add_core_of = SPR }
-		169 = { add_core_of = SPR }
-		170 = { add_core_of = SPR }
-		171 = { add_core_of = SPR }
-		1341 = { add_core_of = SPR }
-		173 = { add_core_of = SPR }
-		174 = { add_core_of = SPR }
-		175 = { add_core_of = SPR }
-		176 = { add_core_of = SPR }
-		1338 = { add_core_of = SPR }
-		178 = { add_core_of = SPR }
-		793 = { add_core_of = SPR }
-		795 = { add_core_of = SPR }
-		1340 = { add_core_of = SPR }
-		951 = { add_core_of = SPR }
-		1339 = { add_core_of = SPR }
-		1316 = { add_core_of = SPR }
-		1336 = { add_core_of = SPR }
-		1337 = { add_core_of = SPR }
-		165 = { add_core_of = SPR }
-		166 = { add_core_of = SPR }
-		167 = { add_core_of = SPR }
-		172 = { add_core_of = SPR }
-		177 = { add_core_of = SPR }
-		940 = { add_core_of = SPR }
-		1313 = { add_core_of = SPR }
-		release = SPR
-		SPR = { 
+		41 = { add_core_of = CAR }
+		118 = { add_core_of = CAR }
+		1344 = { add_core_of = CAR }
+		1343 = { add_core_of = CAR }
+		1342 = { add_core_of = CAR }
+		168 = { add_core_of = CAR }
+		169 = { add_core_of = CAR }
+		170 = { add_core_of = CAR }
+		171 = { add_core_of = CAR }
+		1341 = { add_core_of = CAR }
+		173 = { add_core_of = CAR }
+		174 = { add_core_of = CAR }
+		175 = { add_core_of = CAR }
+		176 = { add_core_of = CAR }
+		1338 = { add_core_of = CAR }
+		178 = { add_core_of = CAR }
+		793 = { add_core_of = CAR }
+		795 = { add_core_of = CAR }
+		1340 = { add_core_of = CAR }
+		951 = { add_core_of = CAR }
+		1339 = { add_core_of = CAR }
+		1316 = { add_core_of = CAR }
+		1336 = { add_core_of = CAR }
+		1337 = { add_core_of = CAR }
+		165 = { add_core_of = CAR }
+		166 = { add_core_of = CAR }
+		167 = { add_core_of = CAR }
+		172 = { add_core_of = CAR }
+		177 = { add_core_of = CAR }
+		940 = { add_core_of = CAR }
+		1313 = { add_core_of = CAR }
+		release = CAR
+		CAR = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -11418,11 +11418,11 @@ NFA_DGL_establish_rk_SPR = {
 						}
 					}
 				}
-				transfer_state_to = SPR
+				transfer_state_to = CAR
 			}
 		}
-		SPR = { 
-			set_cosmetic_tag = NFA_DGL_SPR_OCC
+		CAR = { 
+			set_cosmetic_tag = NFA_DGL_CAR_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11436,7 +11436,7 @@ NFA_DGL_establish_rk_SPR = {
 
 			NFA = {
 				set_autonomy = {
-					target = SPR
+					target = CAR
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -12244,7 +12244,7 @@ NFA_DGL_establish_rk_ITA = {
 	}
 }
 
-NFA_DGL_establish_rk_GRU = {
+NFA_DGL_establish_rk_DDR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -12258,9 +12258,9 @@ NFA_DGL_establish_rk_GRU = {
 	available = {
 		if = {
 			limit = {
-				GRU = { exists = yes }
+				DDR = { exists = yes }
 			}
-			GRU = { is_subject_of = NFA }
+			DDR = { is_subject_of = NFA }
 		}
 		64 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		OR = {
@@ -12274,32 +12274,32 @@ NFA_DGL_establish_rk_GRU = {
 		factor = 5
 	}
 	complete_effect = {
-		GRU = {
+		DDR = {
 			every_core_state = {
-				remove_core_of = GRU
+				remove_core_of = DDR
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = GRU
+					is_claimed_by = DDR
 				}
-				remove_claim_by = GRU
+				remove_claim_by = DDR
 			}
 		}
-		5 = { add_core_of = GRU }
-		1357 = { add_core_of = GRU }
-		58 = { add_core_of = GRU }
-		59 = { add_core_of = GRU }
-		62 = { add_core_of = GRU }
-		61 = { add_core_of = GRU }
-		63 = { add_core_of = GRU }
-		68 = { add_core_of = GRU }
-		60 = { add_core_of = GRU }
-		55 = { add_core_of = GRU }
-		56 = { add_core_of = GRU }
-		57 = { add_core_of = GRU }
-		64 = { add_core_of = GRU }
-		release = GRU
-		GRU = { 
+		5 = { add_core_of = DDR }
+		1357 = { add_core_of = DDR }
+		58 = { add_core_of = DDR }
+		59 = { add_core_of = DDR }
+		62 = { add_core_of = DDR }
+		61 = { add_core_of = DDR }
+		63 = { add_core_of = DDR }
+		68 = { add_core_of = DDR }
+		60 = { add_core_of = DDR }
+		55 = { add_core_of = DDR }
+		56 = { add_core_of = DDR }
+		57 = { add_core_of = DDR }
+		64 = { add_core_of = DDR }
+		release = DDR
+		DDR = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -12312,11 +12312,11 @@ NFA_DGL_establish_rk_GRU = {
 						}
 					}
 				}
-				transfer_state_to = GRU
+				transfer_state_to = DDR
 			}
 		}
-		GRU = { 
-			set_cosmetic_tag = NFA_DGL_GRU_OCC
+		DDR = { 
+			set_cosmetic_tag = NFA_DGL_DDR_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12330,7 +12330,7 @@ NFA_DGL_establish_rk_GRU = {
 
 			NFA = {
 				set_autonomy = {
-					target = GRU
+					target = DDR
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -12595,7 +12595,6 @@ NFA_DGL_establish_rk_SWE = {
 				state = 139
 				state = 140
 				state = 141
-				state = 145
 				state = 666
 				state = 778
 				state = 908
@@ -12619,7 +12618,6 @@ NFA_DGL_establish_rk_SWE = {
 		139 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		140 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		141 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		145 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		666 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		778 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		908 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -12632,7 +12630,6 @@ NFA_DGL_establish_rk_SWE = {
 				139 = { NOT = { is_core_of = NFA } }
 				140 = { NOT = { is_core_of = NFA } }
 				141 = { NOT = { is_core_of = NFA } }
-				145 = { NOT = { is_core_of = NFA } }
 				666 = { NOT = { is_core_of = NFA } }
 				778 = { NOT = { is_core_of = NFA } }
 				908 = { NOT = { is_core_of = NFA } }
@@ -12664,7 +12661,6 @@ NFA_DGL_establish_rk_SWE = {
 		139 = { add_core_of = SWE }
 		140 = { add_core_of = SWE }
 		141 = { add_core_of = SWE }
-		145 = { add_core_of = SWE }
 		666 = { add_core_of = SWE }
 		778 = { add_core_of = SWE }
 		908 = { add_core_of = SWE }
@@ -14291,6 +14287,7 @@ NFA_DGL_establish_rk_FIN = {
 				state = 864
 				state = 865
 				state = 148
+				state = 145
 				state = 149
 				state = 150
 				state = 840
@@ -14312,6 +14309,7 @@ NFA_DGL_establish_rk_FIN = {
 		864 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		865 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		148 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		145 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		149 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		150 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		840 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -14322,6 +14320,7 @@ NFA_DGL_establish_rk_FIN = {
 				864 = { NOT = { is_core_of = NFA } }
 				865 = { NOT = { is_core_of = NFA } }
 				148 = { NOT = { is_core_of = NFA } }
+				145 = { NOT = { is_core_of = NFA } }
 				149 = { NOT = { is_core_of = NFA } }
 				150 = { NOT = { is_core_of = NFA } }
 				840 = { NOT = { is_core_of = NFA } }
@@ -14354,6 +14353,7 @@ NFA_DGL_establish_rk_FIN = {
 		1274 = { add_core_of = FIN }
 		1327 = { add_core_of = FIN }
 		146 = { add_core_of = FIN }
+		145 = { add_core_of = FIN }
 		147 = { add_core_of = FIN }
 		1324 = { add_core_of = FIN }
 		1325 = { add_core_of = FIN }
