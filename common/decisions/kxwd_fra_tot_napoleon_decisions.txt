@@ -21,6 +21,7 @@ FRA_SIRF_game = {
 			FRA = {
 				add_manpower = 25000
 				set_country_flag = FRA_SIRF_FORMED
+				country_event = KXWD_FRA.3
 				custom_effect_tooltip = "You need to complete this before starting the sorelian focus tree if you want to play the totalist Napoleon Path."
 			}
 		}

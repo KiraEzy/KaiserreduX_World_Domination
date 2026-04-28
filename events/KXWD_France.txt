@@ -35,6 +35,11 @@ country_event = {
     		long_name = FRA_TOTNAP_party_long
     		name = FRA_TOTNAP_party
 		}
+		remove_all_ministers = yes
+		add_ideas = FRA_Leon_Blum_hog_rso
+		add_ideas = FRA_Marc_Augier_sec_tot
+		add_ideas = FRA_Henri_Tanguy_eco_rso
+		add_ideas = FRA_Gaston_Monmousseau_sec_syn
 		set_cosmetic_tag = France_Imperial_Commune
 		complete_national_focus = KXWD_FRA_sirf_secures_hold
 	}
@@ -110,4 +115,20 @@ country_event = {
 	}
 }
 
-
+country_event = {
+	id = KXWD_FRA.3
+	title = KXWD_FRA.3.t
+	desc = KXWD_FRA.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_FRA.1" }
+	option = {
+		name = KXWD_FRA.3.a
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_popularity = {
+    		ideology = totalist
+    		popularity = 0.15
+		}
+	}
+}
