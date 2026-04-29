@@ -1,0 +1,18 @@
+################################
+# Japan Decisions Categories   #
+################################
+# 		 By wchishun2	  	   #
+################################
+AFG_OTT_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = AFG
+	}
+
+	visible = { 
+		OR = {
+			has_completed_focus = AFG_ottoman_ex_restoration
+		}
+	}
+}
