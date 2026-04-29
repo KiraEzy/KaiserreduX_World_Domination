@@ -2930,7 +2930,6 @@ NFA_PET_establish_rk_SWE = {
 				state = 139
 				state = 140
 				state = 141
-				state = 145
 				state = 666
 				state = 778
 				state = 908
@@ -2954,7 +2953,6 @@ NFA_PET_establish_rk_SWE = {
 		139 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		140 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		141 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		145 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		666 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		778 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		908 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
@@ -2967,7 +2965,6 @@ NFA_PET_establish_rk_SWE = {
 				139 = { NOT = { is_core_of = NFA } }
 				140 = { NOT = { is_core_of = NFA } }
 				141 = { NOT = { is_core_of = NFA } }
-				145 = { NOT = { is_core_of = NFA } }
 				666 = { NOT = { is_core_of = NFA } }
 				778 = { NOT = { is_core_of = NFA } }
 				908 = { NOT = { is_core_of = NFA } }
@@ -2999,7 +2996,6 @@ NFA_PET_establish_rk_SWE = {
 		139 = { add_core_of = SWE }
 		140 = { add_core_of = SWE }
 		141 = { add_core_of = SWE }
-		145 = { add_core_of = SWE }
 		666 = { add_core_of = SWE }
 		778 = { add_core_of = SWE }
 		908 = { add_core_of = SWE }
@@ -5124,16 +5120,7 @@ NFA_PET_establish_rk_ARM = {
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 352
-				state = 354
-				state = 998
-				state = 1000
-				state = 1298
-				state = 1299
-				state = 1300
-				state = 1302
-				state = 1303
-				state = 1082
+				state = 230
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -5146,27 +5133,9 @@ NFA_PET_establish_rk_ARM = {
 			}
 			ARM = { is_subject_of = NFA }
 		}
-		352 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		354 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		998 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1000 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1298 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1299 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1300 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1302 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1303 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
-		1082 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		230 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		OR = {
-				352 = { NOT = { is_core_of = NFA } }
-				354 = { NOT = { is_core_of = NFA } }
-				998 = { NOT = { is_core_of = NFA } }
-				1000 = { NOT = { is_core_of = NFA } }
-				1298 = { NOT = { is_core_of = NFA } }
-				1299 = { NOT = { is_core_of = NFA } }
-				1300 = { NOT = { is_core_of = NFA } }
-				1302 = { NOT = { is_core_of = NFA } }
-				1303 = { NOT = { is_core_of = NFA } }
-				1082 = { NOT = { is_core_of = NFA } }
+				230 = { NOT = { is_core_of = NFA } }
 		}
 	}
 
