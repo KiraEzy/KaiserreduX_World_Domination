@@ -1,0 +1,97 @@
+hol_bm_init_variables_effect = {
+	if = {
+		limit = { NOT = { has_country_flag = HOL_bm_initialized } }
+		set_variable = { hol_bm_progress = 0 }
+		set_variable = { hol_bm_anger = 25 }
+		set_variable = { hol_bm_confidence = 20 }
+		set_variable = { hol_bm_colonial_pressure = 0 }
+		set_country_flag = HOL_bm_initialized
+	}
+}
+
+hol_bm_clamp_variables_effect = {
+	if = {
+		limit = { check_variable = { var = hol_bm_progress value = 0 compare = less_than } }
+		set_variable = { hol_bm_progress = 0 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_progress value = 100 compare = greater_than } }
+		set_variable = { hol_bm_progress = 100 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_anger value = 0 compare = less_than } }
+		set_variable = { hol_bm_anger = 0 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_anger value = 100 compare = greater_than } }
+		set_variable = { hol_bm_anger = 100 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_confidence value = 0 compare = less_than } }
+		set_variable = { hol_bm_confidence = 0 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_confidence value = 100 compare = greater_than } }
+		set_variable = { hol_bm_confidence = 100 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_colonial_pressure value = 0 compare = less_than } }
+		set_variable = { hol_bm_colonial_pressure = 0 }
+	}
+	if = {
+		limit = { check_variable = { var = hol_bm_colonial_pressure value = 100 compare = greater_than } }
+		set_variable = { hol_bm_colonial_pressure = 100 }
+	}
+}
+
+hol_bm_finish_recovery_effect = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = HOL_black_monday_recovered }
+			check_variable = { var = hol_bm_progress value = 80 compare = greater_than_or_equals }
+		}
+		set_country_flag = HOL_black_monday_recovered
+		clr_country_flag = HOL_bm_cooldown_standard
+		clr_country_flag = HOL_bm_cooldown_extraction
+		clr_country_flag = HOL_bm_cooldown_cabinet
+		remove_ideas = HOL_idea_crisis
+		remove_ideas = HOL_idea_instability
+		remove_ideas = HOL_idea_instability_above_50
+		remove_ideas = HOL_idea_economic_recovery
+		add_stability = 0.03
+	}
+}
+
+hol_bm_update_stage_effect = {
+	if = {
+		limit = { check_variable = { var = hol_bm_progress value = 80 compare = greater_than_or_equals } }
+		hol_bm_finish_recovery_effect = yes
+	}
+}
+
+hol_bm_apply_standard_cooldown_effect = {
+	set_country_flag = {
+		flag = HOL_bm_cooldown_standard
+		days = 35
+		value = 1
+	}
+	activate_mission = HOL_bm_standard_cooldown_tracker
+}
+
+hol_bm_apply_extraction_cooldown_effect = {
+	set_country_flag = {
+		flag = HOL_bm_cooldown_extraction
+		days = 60
+		value = 1
+	}
+	activate_mission = HOL_bm_extraction_cooldown_tracker
+}
+
+hol_bm_apply_crisis_cabinet_cooldown_effect = {
+	set_country_flag = {
+		flag = HOL_bm_cooldown_cabinet
+		days = 90
+		value = 1
+	}
+	activate_mission = HOL_bm_cabinet_cooldown_tracker
+}

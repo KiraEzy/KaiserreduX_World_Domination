@@ -23,3 +23,15 @@ HOL_great_game = {
 		has_completed_focus = HOLWD_Expansionism
 	}
 }
+
+HOL_black_monday_recovery_category = {
+	icon = GFX_decision_category_economic_policy
+	priority = 15
+
+	allowed = {
+		original_tag = HOL
+	}
+	visible = {
+		has_completed_focus = HOLWD_Recovery
+	}
+}

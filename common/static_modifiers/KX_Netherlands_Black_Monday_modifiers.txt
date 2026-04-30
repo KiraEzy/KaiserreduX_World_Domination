@@ -1,0 +1,23 @@
+HOL_bm_public_works_modifier = {
+	civilian_factory_use = 3
+	production_speed_buildings_factor = 0.08
+}
+
+HOL_bm_export_guarantees_modifier = {
+	industrial_capacity_factory = 0.03
+	production_speed_dockyard_factor = 0.05
+}
+
+HOL_bm_subsidy_modifier = {
+	stability_factor = 0.04
+	civilian_factory_use = 0.02
+}
+
+HOL_bm_port_modernization_modifier = {
+	production_speed_dockyard_factor = 0.08
+	supply_node_range = 0.1
+}
+
+HOL_bm_colonial_revenue_modifier = {
+	local_resources_factor = 0.05
+}

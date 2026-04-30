@@ -1,0 +1,43 @@
+hol_bm_is_active = {
+	tag = HOL
+	# has_country_flag = HOLWD_Recovery
+	NOT = { has_country_flag = HOL_black_monday_recovered }
+	OR = {
+		has_idea = HOL_idea_crisis
+		has_idea = HOL_idea_instability
+		has_idea = HOL_idea_instability_above_50
+		has_idea = HOL_idea_economic_recovery
+	}
+}
+
+hol_bm_is_complete = {
+	has_country_flag = HOL_black_monday_recovered
+}
+
+hol_bm_stage_shock = {
+	check_variable = { var = hol_bm_progress value = 25 compare = less_than }
+}
+
+hol_bm_stage_contraction = {
+	check_variable = { var = hol_bm_progress value = 25 compare = greater_than_or_equals }
+	check_variable = { var = hol_bm_progress value = 50 compare = less_than }
+}
+hol_bm_stage_fragile = {
+	check_variable = { var = hol_bm_progress value = 50 compare = greater_than_or_equals }
+	check_variable = { var = hol_bm_progress value = 80 compare = less_than }
+}
+hol_bm_anger_high = {
+	check_variable = { var = hol_bm_anger value = 60 compare = greater_than_or_equals }
+}
+hol_bm_anger_critical = {
+	check_variable = { var = hol_bm_anger value = 75 compare = greater_than_or_equals }
+}
+hol_bm_confidence_low = {
+	check_variable = { var = hol_bm_confidence value = 25 compare = less_than_or_equals }
+}
+hol_bm_confidence_critical = {
+	check_variable = { var = hol_bm_confidence value = 15 compare = less_than_or_equals }
+}
+hol_bm_colonial_overstretched = {
+	check_variable = { var = hol_bm_colonial_pressure value = 50 compare = greater_than_or_equals }
+}

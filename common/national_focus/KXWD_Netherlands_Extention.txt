@@ -136,7 +136,9 @@ shared_focus = {
     }
     relative_position_id = HOLWD_Destroy_Socialist
 	completion_reward = {
-		remove_ideas = HOL_idea_economic_recovery
+        custom_effect_tooltip = HOLWD_Recovery_tt
+        add_political_power = 100
+		# remove_ideas = HOL_idea_economic_recovery
     }
 }
 
@@ -322,7 +324,7 @@ shared_focus = {
     }
     relative_position_id = HOLWD_Recovery
 	completion_reward = {
-		add_idea = KXWD_HOL_Economy_Boom
+		add_ideas = KXWD_HOL_Economy_Boom
         36 = {
             add_extra_state_shared_building_slots = 5
             add_building_construction = {
@@ -529,41 +531,41 @@ shared_focus = {
     }
 }
 
-shared_focus = {
-	id = HOLWD_Great_State
-	icon = GFX_goal_MLTWD_call_the_pope
-    available = {
-        or = {
-            has_subject = DEI
-            or = {
-                has_subject = INS
-                INS = {
-                    exists = no
-                }
-            }
-        }
-    }
-	x = 0
-	y = 1
-	cost = 5
+# shared_focus = {
+# 	id = HOLWD_Great_State
+# 	icon = GFX_goal_MLTWD_call_the_pope
+#     available = {
+#         or = {
+#             has_subject = DEI
+#             or = {
+#                 has_subject = INS
+#                 INS = {
+#                     exists = no
+#                 }
+#             }
+#         }
+#     }
+# 	x = 0
+# 	y = 1
+# 	cost = 5
 	
-    prerequisite = {
-        focus = HOLWD_Indonesia_Question
-    }
-    prerequisite = {
-        focus = HOLWD_New_York_Question
-    }
-    prerequisite = {
-        focus = HOLWD_Boer_Question
-    }
-    relative_position_id = HOLWD_Indonesia_Question
-	completion_reward = {
-		swap_ideas = {
-            remove_idea = KXWD_HOL_Expansion_1
-            add_idea = KXWD_HOL_Expansion_2
-        }
-    }
-}
+#     prerequisite = {
+#         focus = HOLWD_Indonesia_Question
+#     }
+#     prerequisite = {
+#         focus = HOLWD_New_York_Question
+#     }
+#     prerequisite = {
+#         focus = HOLWD_Boer_Question
+#     }
+#     relative_position_id = HOLWD_Indonesia_Question
+# 	completion_reward = {
+# 		swap_ideas = {
+#             remove_idea = KXWD_HOL_Expansion_1
+#             add_idea = KXWD_HOL_Expansion_2
+#         }
+#     }
+# }
 
 shared_focus = {
 	id = HOLWD_Fight_GER
