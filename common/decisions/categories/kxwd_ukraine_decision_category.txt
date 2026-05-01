@@ -1,10 +1,11 @@
 UKR_great_game = {
 	icon = GFX_decision_category_foreign_policy
+	priority = 11
 
 	allowed = {
 		original_tag = UKR
 	}
 	visible = { 
-	has_completed_focus = UKR_Constitutional_Review_Committee
+		has_completed_focus = UKR_Constitutional_Review_Committee
 	}
 }
