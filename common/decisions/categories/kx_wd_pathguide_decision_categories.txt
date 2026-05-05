@@ -185,6 +185,17 @@ POR_WD_pathguide = {
 	}
 }
 
+QIE_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = QIE
+	}
+
+	visible = {
+		tag = QIE
+	}
+}
+
 UKR_WD_pathguide = {
 	icon = GFX_decision_category_foreign_policy
 	allowed = {
