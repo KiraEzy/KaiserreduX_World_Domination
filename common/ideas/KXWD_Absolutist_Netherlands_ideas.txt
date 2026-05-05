@@ -205,5 +205,118 @@ ideas = {
             }
 			removal_cost = -1
 		}
+
+		HOL_idea_economic_recovery_shock = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_economic_recovery_shock" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_economic_recovery_shock
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		HOL_idea_economic_recovery_contraction = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_economic_recovery_contraction" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_economic_recovery_contraction
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		HOL_idea_economic_recovery_fragile = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_economic_recovery_fragile" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_economic_recovery_fragile
+			allowed = { always = no }
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.02
+				industrial_capacity_factory = -0.03
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_confidence = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_confidence" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_anger = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_anger" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_colonial = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_colonial" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_confidence_anger = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_confidence_anger" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.15
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_confidence_colonial = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_confidence_colonial" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_anger_colonial = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_anger_colonial" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				stability_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		HOL_idea_fruit_of_economic_recovery_all = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_all" }
+			picture = HOL_black_monday_recovery
+			name = HOL_idea_fruit_of_economic_recovery
+			allowed = { always = no }
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
     }	
 }

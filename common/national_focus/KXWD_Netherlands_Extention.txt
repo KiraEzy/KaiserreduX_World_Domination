@@ -27,7 +27,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HOLWD_Rally_the_Guard
-	icon = GFX_goal_MLTWD_call_the_pope
+	icon = GFX_goal_NEP_guarding_the_prime_minister
     available = {
     }
 	x = -2
@@ -80,7 +80,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HOLWD_Destroy_Socialist
-	icon = GFX_goal_MLTWD_call_the_pope
+	icon = GFX_goal_CSA_destroy_social_capitalists
     available = {
     }
 	x = 0
@@ -119,7 +119,12 @@ shared_focus = {
 	id = HOLWD_Recovery
 	icon = GFX_goal_MLTWD_call_the_pope
     available = {
-        has_idea = HOL_idea_economic_recovery
+        OR = {
+            has_idea = HOL_idea_economic_recovery
+            has_idea = HOL_idea_economic_recovery_shock
+            has_idea = HOL_idea_economic_recovery_contraction
+            has_idea = HOL_idea_economic_recovery_fragile
+        }
     }
 	x = 0
 	y = 1
@@ -182,6 +187,10 @@ shared_focus = {
         add_state_claim = 6
         add_state_claim = 34
         add_state_claim = 29
+		hidden_effect = {
+			set_global_flag = KXWD_belgian_influence_active
+			KXWD_init_belgian_influence_frames = yes
+		}
     }
 }
 
@@ -250,7 +259,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HOLWD_Royal_Guard
-	icon = GFX_goal_MLTWD_call_the_pope
+	icon = GFX_goal_SWE_royal_guard
     available = {
     }
 	x = -1
@@ -312,7 +321,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HOLWD_Conservative_Economy
-	icon = GFX_goal_MLTWD_call_the_pope
+	icon = GFX_goal_SWE_conservative_business
     available = {
     }
 	x = 1
@@ -355,7 +364,7 @@ shared_focus = {
 
 shared_focus = {
 	id = HOLWD_Education
-	icon = GFX_goal_MLTWD_call_the_pope
+	icon = GFX_goal_HON_Education_Research
     available = {
     }
 	x = 1

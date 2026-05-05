@@ -1,4 +1,4 @@
-﻿###################################
+###################################
 # Netherlands - By MonarchistKaiser (not that I know of), Denizz, Thomahawk2k & Strategia (lore only afaik)
 ###################################
 
@@ -780,6 +780,9 @@ country_event = { #event to remove black monday if you're puppeted which disable
 		OR = {
 			has_idea = HOL_idea_crisis
 			has_idea = HOL_idea_economic_recovery
+			has_idea = HOL_idea_economic_recovery_shock
+			has_idea = HOL_idea_economic_recovery_contraction
+			has_idea = HOL_idea_economic_recovery_fragile
 		}
 	}
 
@@ -788,6 +791,9 @@ country_event = { #event to remove black monday if you're puppeted which disable
 		remove_ideas = {
 			HOL_idea_crisis
 			HOL_idea_economic_recovery
+			HOL_idea_economic_recovery_shock
+			HOL_idea_economic_recovery_contraction
+			HOL_idea_economic_recovery_fragile
 		}
 	}
 }

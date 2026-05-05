@@ -1,0 +1,59 @@
+defined_text = {
+	name = GetHOLBMProgressStatus
+	text = {
+		trigger = { check_variable = { var = hol_bm_progress value = 25 compare = less_than } }
+		localization_key = HOL_bm_status_failing
+	}
+	text = {
+		trigger = { check_variable = { var = hol_bm_progress value = 80 compare = greater_than_or_equals } }
+		localization_key = HOL_bm_status_thriving
+	}
+	text = {
+		localization_key = HOL_bm_status_normal
+	}
+}
+
+defined_text = {
+	name = GetHOLBMAngerStatus
+	text = {
+		trigger = { check_variable = { var = hol_bm_anger value = 55 compare = greater_than_or_equals } }
+		localization_key = HOL_bm_status_failing
+	}
+	text = {
+		trigger = { check_variable = { var = hol_bm_anger value = 10 compare = less_than } }
+		localization_key = HOL_bm_status_thriving
+	}
+	text = {
+		localization_key = HOL_bm_status_normal
+	}
+}
+
+defined_text = {
+	name = GetHOLBMConfidenceStatus
+	text = {
+		trigger = { check_variable = { var = hol_bm_confidence value = 15 compare = less_than_or_equals } }
+		localization_key = HOL_bm_status_failing
+	}
+	text = {
+		trigger = { check_variable = { var = hol_bm_confidence value = 60 compare = greater_than } }
+		localization_key = HOL_bm_status_thriving
+	}
+	text = {
+		localization_key = HOL_bm_status_normal
+	}
+}
+
+defined_text = {
+	name = GetHOLBMColonialStatus
+	text = {
+		trigger = { check_variable = { var = hol_bm_colonial_pressure value = 20 compare = greater_than_or_equals } }
+		localization_key = HOL_bm_status_failing
+	}
+	text = {
+		trigger = { check_variable = { var = hol_bm_colonial_pressure value = 30 compare = less_than } }
+		localization_key = HOL_bm_status_thriving
+	}
+	text = {
+		localization_key = HOL_bm_status_normal
+	}
+}

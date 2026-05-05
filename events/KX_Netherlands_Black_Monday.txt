@@ -1,0 +1,51 @@
+add_namespace = holbm
+
+country_event = {
+	id = holbm.1
+	title = holbm.1.t
+	desc = holbm.1.d
+	picture = GFX_report_event_strike
+	is_triggered_only = yes
+
+	option = {
+		name = holbm.1.a
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_to_variable = { hol_bm_progress = -5 }
+		add_to_variable = { hol_bm_confidence = -2 }
+		hol_bm_clamp_variables_effect = yes
+	}
+}
+
+country_event = {
+	id = holbm.2
+	title = holbm.2.t
+	desc = holbm.2.d
+	picture = GFX_report_event_black_monday
+	is_triggered_only = yes
+
+	option = {
+		name = holbm.2.a
+		add_stability = -0.05
+		add_to_variable = { hol_bm_progress = -5 }
+		add_to_variable = { hol_bm_anger = 3 }
+		hol_bm_clamp_variables_effect = yes
+	}
+}
+
+country_event = {
+	id = holbm.3
+	title = holbm.3.t
+	desc = holbm.3.d
+	picture = GFX_report_event_colonial_unrest
+	is_triggered_only = yes
+
+	option = {
+		name = holbm.3.a
+		add_stability = -0.06
+		add_to_variable = { hol_bm_progress = -4 }
+		add_to_variable = { hol_bm_anger = 2 }
+		add_to_variable = { hol_bm_confidence = -2 }
+		hol_bm_clamp_variables_effect = yes
+	}
+}

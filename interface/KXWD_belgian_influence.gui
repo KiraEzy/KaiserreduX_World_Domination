@@ -1,0 +1,77 @@
+guiTypes = {
+	containerWindowType = {
+		name = "KXWD_belgian_influence_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100%% height = 268 }
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_window_thin_border2"
+		}
+
+		# instantTextboxType = {
+		# 	name = "KXWD_BEL_intro"
+		# 	position = { x = 12 y = 8 }
+		# 	font = "hoi_16mbs"
+		# 	borderSize = { x = 0 y = 0 }
+		# 	text = "KXWD_belgian_influence_gui_intro"
+		# 	maxWidth = 486
+		# 	maxHeight = 72
+		# 	format = left
+		# }
+
+		# Map: rear = full-country strip, front = Flanders-only strip (must draw AFTER wallonia).
+		# Use upper_left + same scale so both layers share one map origin (puzzle-style). If art
+		# padding differs, nudge ONLY KXWD_BEL_flanders_layer by a few pixels (y smaller = move up).
+		containerWindowType = {
+			name = "KXWD_BEL_map_canvas"
+			position = { x = 0 y = 34 }
+			size = { width = 100%% height = 200 }
+			clipping = no
+
+			# Rear: whole Belgium (your Wallonia strip asset)
+			iconType = {
+				name = "KXWD_BEL_wallonia_layer"
+				spriteType = "GFX_KXWD_BEL_wallonia_strip"
+				orientation = upper_left
+				# position = { x = 140 y = 110 }
+				position = { x = 145 y = 68 }
+				scale = 1.12
+				pdx_tooltip = "KXWD_BEL_wallonia_map_tt"
+			}
+
+			# Front: Flanders mask — same scale & common anchor; y slightly above wallonia so north lines up
+			iconType = {
+				name = "KXWD_BEL_flanders_layer"
+				spriteType = "GFX_KXWD_BEL_flanders_strip"
+				orientation = upper_left
+				# position = { x = 105 y = 52 }
+				position = { x = 105 y = 2 }
+				scale = 1.12
+				pdx_tooltip = "KXWD_BEL_flanders_map_tt"
+			}
+		}
+
+		instantTextboxType = {
+			name = "KXWD_BEL_status_flanders"
+			position = { x = 12 y = 228 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "[GetKXWD_BEL_flanders_influence_status]"
+			maxWidth = 486
+			maxHeight = 24
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "KXWD_BEL_status_wallonia"
+			position = { x = 12 y = 250 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "[GetKXWD_BEL_wallonia_influence_status]"
+			maxWidth = 486
+			maxHeight = 24
+			format = left
+		}
+	}
+}

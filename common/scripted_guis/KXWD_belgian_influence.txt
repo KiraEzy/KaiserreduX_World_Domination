@@ -1,0 +1,15 @@
+scripted_gui = {
+	KXWD_belgian_influence_ui = {
+		context_type = decision_category
+		window_name = "KXWD_belgian_influence_ui_window"
+
+		properties = {
+			KXWD_BEL_wallonia_layer = {
+				frame = global.KXWD_BEL_wallonia_frame
+			}
+			KXWD_BEL_flanders_layer = {
+				frame = global.KXWD_BEL_flanders_frame
+			}
+		}
+	}
+}

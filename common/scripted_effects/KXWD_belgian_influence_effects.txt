@@ -1,0 +1,9 @@
+KXWD_init_belgian_influence_frames = {
+	set_variable = { global.KXWD_BEL_wallonia_frame = 3 }
+	set_variable = { global.KXWD_BEL_flanders_frame = 3 }
+}
+
+KXWD_clamp_belgian_influence_frames = {
+	clamp_variable = { var = global.KXWD_BEL_wallonia_frame min = 1 max = 5 }
+	clamp_variable = { var = global.KXWD_BEL_flanders_frame min = 1 max = 5 }
+}

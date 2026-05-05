@@ -44,7 +44,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HOL_aftermath_black_monday"
 		swap_ideas = {
 			remove_idea = HOL_idea_crisis
-			add_idea = HOL_idea_economic_recovery
+			add_idea = HOL_idea_economic_recovery_shock
 		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -1048,7 +1048,12 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus HOL_recovery_from_black_monday"
-		remove_ideas = HOL_idea_economic_recovery
+		remove_ideas = {
+			HOL_idea_economic_recovery
+			HOL_idea_economic_recovery_shock
+			HOL_idea_economic_recovery_contraction
+			HOL_idea_economic_recovery_fragile
+		}
 	}
 }
 

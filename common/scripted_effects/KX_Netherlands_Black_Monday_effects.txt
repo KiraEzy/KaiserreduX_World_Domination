@@ -1,4 +1,5 @@
 hol_bm_init_variables_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_init_variables_effect"
 	if = {
 		limit = { NOT = { has_country_flag = HOL_bm_initialized } }
 		set_variable = { hol_bm_progress = 0 }
@@ -6,10 +7,12 @@ hol_bm_init_variables_effect = {
 		set_variable = { hol_bm_confidence = 20 }
 		set_variable = { hol_bm_colonial_pressure = 0 }
 		set_country_flag = HOL_bm_initialized
+		hol_bm_update_stage_effect = yes
 	}
 }
 
 hol_bm_clamp_variables_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_clamp_variables_effect"
 	if = {
 		limit = { check_variable = { var = hol_bm_progress value = 0 compare = less_than } }
 		set_variable = { hol_bm_progress = 0 }
@@ -45,6 +48,7 @@ hol_bm_clamp_variables_effect = {
 }
 
 hol_bm_finish_recovery_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_finish_recovery_effect"
 	if = {
 		limit = {
 			NOT = { has_country_flag = HOL_black_monday_recovered }
@@ -58,18 +62,121 @@ hol_bm_finish_recovery_effect = {
 		remove_ideas = HOL_idea_instability
 		remove_ideas = HOL_idea_instability_above_50
 		remove_ideas = HOL_idea_economic_recovery
-		add_stability = 0.03
+		remove_ideas = HOL_idea_economic_recovery_shock
+		remove_ideas = HOL_idea_economic_recovery_contraction
+		remove_ideas = HOL_idea_economic_recovery_fragile
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_confidence
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_anger
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_colonial
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_confidence_anger
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_confidence_colonial
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_anger_colonial
+		remove_ideas = HOL_idea_fruit_of_economic_recovery_all
+		if = {
+			limit = {
+				check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+				check_variable = { var = hol_bm_anger value = 10 compare = less_than }
+				check_variable = { var = hol_bm_colonial_pressure value = 30 compare = less_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_all
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+				check_variable = { var = hol_bm_anger value = 10 compare = less_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_confidence_anger
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+				check_variable = { var = hol_bm_colonial_pressure value = 30 compare = less_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_confidence_colonial
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = hol_bm_anger value = 10 compare = less_than }
+				check_variable = { var = hol_bm_colonial_pressure value = 30 compare = less_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_anger_colonial
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_confidence
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = hol_bm_anger value = 10 compare = less_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_anger
+		}
+		else_if = {
+			limit = {
+				check_variable = { var = hol_bm_colonial_pressure value = 30 compare = less_than }
+			}
+			add_ideas = HOL_idea_fruit_of_economic_recovery_colonial
+		}
+		add_stability = 0.2
+	}
+}
+
+hol_bm_apply_recovery_stage_idea_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_apply_recovery_stage_idea_effect"
+	if = {
+		limit = {
+			hol_bm_stage_shock = yes
+			NOT = { has_idea = HOL_idea_economic_recovery_shock }
+		}
+		remove_ideas = {
+			HOL_idea_economic_recovery
+			HOL_idea_economic_recovery_contraction
+			HOL_idea_economic_recovery_fragile
+		}
+		add_ideas = HOL_idea_economic_recovery_shock
+	}
+	if = {
+		limit = {
+			hol_bm_stage_contraction = yes
+			NOT = { has_idea = HOL_idea_economic_recovery_contraction }
+		}
+		remove_ideas = {
+			HOL_idea_economic_recovery
+			HOL_idea_economic_recovery_shock
+			HOL_idea_economic_recovery_fragile
+		}
+		add_ideas = HOL_idea_economic_recovery_contraction
+	}
+	if = {
+		limit = {
+			hol_bm_stage_fragile = yes
+			NOT = { has_idea = HOL_idea_economic_recovery_fragile }
+		}
+		remove_ideas = {
+			HOL_idea_economic_recovery
+			HOL_idea_economic_recovery_shock
+			HOL_idea_economic_recovery_contraction
+		}
+		add_ideas = HOL_idea_economic_recovery_fragile
 	}
 }
 
 hol_bm_update_stage_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_update_stage_effect"
 	if = {
 		limit = { check_variable = { var = hol_bm_progress value = 80 compare = greater_than_or_equals } }
 		hol_bm_finish_recovery_effect = yes
 	}
+	if = {
+		limit = { check_variable = { var = hol_bm_progress value = 80 compare = less_than } }
+		hol_bm_apply_recovery_stage_idea_effect = yes
+	}
 }
 
 hol_bm_apply_standard_cooldown_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_apply_standard_cooldown_effect"
 	set_country_flag = {
 		flag = HOL_bm_cooldown_standard
 		days = 35
@@ -79,6 +186,7 @@ hol_bm_apply_standard_cooldown_effect = {
 }
 
 hol_bm_apply_extraction_cooldown_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_apply_extraction_cooldown_effect"
 	set_country_flag = {
 		flag = HOL_bm_cooldown_extraction
 		days = 60
@@ -88,6 +196,7 @@ hol_bm_apply_extraction_cooldown_effect = {
 }
 
 hol_bm_apply_crisis_cabinet_cooldown_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect hol_bm_apply_crisis_cabinet_cooldown_effect"
 	set_country_flag = {
 		flag = HOL_bm_cooldown_cabinet
 		days = 90

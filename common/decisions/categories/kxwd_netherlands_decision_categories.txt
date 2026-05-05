@@ -33,5 +33,20 @@ HOL_black_monday_recovery_category = {
 	}
 	visible = {
 		has_completed_focus = HOLWD_Recovery
+		NOT = { has_country_flag = HOL_black_monday_recovered }
+	}
+}
+
+HOL_black_monday_recovery_category_recovered = {
+	icon = GFX_decision_category_economic_policy
+	priority = 15
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = HOL
+	}
+	visible = {
+		has_completed_focus = HOLWD_Recovery
+		has_country_flag = HOL_black_monday_recovered
 	}
 }
