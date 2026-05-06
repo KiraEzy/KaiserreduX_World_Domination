@@ -8034,8 +8034,8 @@ MLT_buy_ships = {
 			}
 			else = {
 				if = {
-					limit = { NOT = { has_tech = basic_destroyer } }
-					set_technology = { basic_destroyer = 1 }
+					limit = { NOT = { has_tech = ship_hull_light_2 } }
+					set_technology = { ship_hull_light_2 = 1 }
 				}
 				create_ship = { type = ship_hull_light_2 equipment_variant = "Improved Destroyer" creator = MLT }
 				create_ship = { type = ship_hull_light_2 equipment_variant = "Improved Destroyer" creator = MLT }

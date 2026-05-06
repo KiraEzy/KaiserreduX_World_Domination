@@ -1,5 +1,5 @@
 AUS_great_game = {
-    BUL_early_WAR = {
+    AUS_BUL_early_WAR = {
 		icon = GFX_decision_icon_default
 		
 		available = {
@@ -340,11 +340,6 @@ AUS_great_game = {
 			1272 = { transfer_state_to = AUS }
 			1357 = { transfer_state_to = AUS }
 
-
-			AUS = { 
-					transfer_state_to = AUS
-				}
-			
 			AUS = { 
 				set_cosmetic_tag = AUS_AUS_OCC
 			}
