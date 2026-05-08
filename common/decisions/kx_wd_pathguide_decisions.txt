@@ -421,3 +421,21 @@ TRM_WD_pathguide = {
 		}
 	}
 }
+
+DEH_WD_pathguide = {
+	DEH_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = DEH
+		}
+		available = {
+			original_tag = DEH
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.25
+		}
+	}
+}

@@ -218,6 +218,17 @@ FIN_WD_pathguide = {
 	}
 }
 
+DEH_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = DEH
+	}
+
+	visible = {
+		tag = DEH
+	}
+}
+
 TRM_WD_pathguide = {
 	icon = GFX_decision_category_foreign_policy
 	allowed = {
