@@ -1128,19 +1128,959 @@ POLWD_force_annex_lithuania = {
 
 
 POLWD_great_game = {
-	intermarium_grab = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
-			
-			log = "CZE"
-			CZE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
+POL_integrate_rk_EPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 5
+				state = 188
+				state = 777
 			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
 		}
-		days_remove = 0
+
+	available = {
+		5 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		188 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		777 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				5 = { NOT = { is_core_of = POL } }
+				188 = { NOT = { is_core_of = POL } }
+				777 = { NOT = { is_core_of = POL } }
+		}
 	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		5 = { add_core_of = POL }
+		188 = { add_core_of = POL }
+		777 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_DDR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+				state = 63
+				state = 65
+				state = 66
+				state = 67
+				state = 68
+				state = 776
+				state = 1357
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		86 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		63 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		65 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		66 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		67 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		68 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		776 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1357 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				86 = { NOT = { is_core_of = POL } }
+				63 = { NOT = { is_core_of = POL } }
+				65 = { NOT = { is_core_of = POL } }
+				66 = { NOT = { is_core_of = POL } }
+				67 = { NOT = { is_core_of = POL } }
+				68 = { NOT = { is_core_of = POL } }
+				776 = { NOT = { is_core_of = POL } }
+				1357 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		86 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		65 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		776 = { add_core_of = POL }
+		1357 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_SVK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1123
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1123 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1123 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1119 = { add_core_of = POL }
+		70 = { add_core_of = POL }
+		73 = { add_core_of = POL }
+		664 = { add_core_of = POL }
+		1120 = { add_core_of = POL }
+		1121 = { add_core_of = POL }
+		1122 = { add_core_of = POL }
+		1135 = { add_core_of = POL }
+		1136 = { add_core_of = POL }
+		1123 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_CZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1129
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1129 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1129 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		9 = { add_core_of = POL }
+		69 = { add_core_of = POL }
+		71 = { add_core_of = POL }
+		74 = { add_core_of = POL }
+		75 = { add_core_of = POL }
+		786 = { add_core_of = POL }
+		1139 = { add_core_of = POL }
+		1130 = { add_core_of = POL }
+		1131 = { add_core_of = POL }
+		1132 = { add_core_of = POL }
+		1133 = { add_core_of = POL }
+		1134 = { add_core_of = POL }
+		1138 = { add_core_of = POL }
+		1129 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		43 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				43 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		43 = { add_core_of = POL }
+		1111 = { add_core_of = POL }
+		784 = { add_core_of = POL }
+		1110 = { add_core_of = POL }
+		1106 = { add_core_of = POL }
+		1107 = { add_core_of = POL }
+		1108 = { add_core_of = POL }
+		1109 = { add_core_of = POL }
+		154 = { add_core_of = POL }
+		155 = { add_core_of = POL }
+		45 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_LAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 190
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		12 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		190 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				12 = { NOT = { is_core_of = POL } }
+				190 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		12 = { add_core_of = POL }
+		190 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_BAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1091 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1091 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1091 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_EST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 191
+				state = 13
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		191 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		13 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				191 = { NOT = { is_core_of = POL } }
+				13 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		191 = { add_core_of = POL }
+		13 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_WHR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 206
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		206 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				206 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		95 = { add_core_of = POL }
+		194 = { add_core_of = POL }
+		204 = { add_core_of = POL }
+		1295 = { add_core_of = POL }
+		207 = { add_core_of = POL }
+		1087 = { add_core_of = POL }
+		1294 = { add_core_of = POL }
+		206 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_UKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		202 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				202 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		93 = { add_core_of = POL }
+		1285 = { add_core_of = POL }
+		192 = { add_core_of = POL }
+		193 = { add_core_of = POL }
+		196 = { add_core_of = POL }
+		197 = { add_core_of = POL }
+		198 = { add_core_of = POL }
+		199 = { add_core_of = POL }
+		200 = { add_core_of = POL }
+		201 = { add_core_of = POL }
+		1286 = { add_core_of = POL }
+		203 = { add_core_of = POL }
+		221 = { add_core_of = POL }
+		225 = { add_core_of = POL }
+		226 = { add_core_of = POL }
+		227 = { add_core_of = POL }
+		228 = { add_core_of = POL }
+		241 = { add_core_of = POL }
+		259 = { add_core_of = POL }
+		791 = { add_core_of = POL }
+		792 = { add_core_of = POL }
+		997 = { add_core_of = POL }
+		1284 = { add_core_of = POL }
+		1283 = { add_core_of = POL }
+		1228 = { add_core_of = POL }
+		1230 = { add_core_of = POL }
+		1232 = { add_core_of = POL }
+		1233 = { add_core_of = POL }
+		1234 = { add_core_of = POL }
+		1237 = { add_core_of = POL }
+		1238 = { add_core_of = POL }
+		1239 = { add_core_of = POL }
+		1240 = { add_core_of = POL }
+		1241 = { add_core_of = POL }
+		1242 = { add_core_of = POL }
+		1243 = { add_core_of = POL }
+		1244 = { add_core_of = POL }
+		1245 = { add_core_of = POL }
+		1282 = { add_core_of = POL }
+		202 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_TRS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1112
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1112 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1112 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		76 = { add_core_of = POL }
+		82 = { add_core_of = POL }
+		83 = { add_core_of = POL }
+		84 = { add_core_of = POL }
+		789 = { add_core_of = POL }
+		875 = { add_core_of = POL }
+		1113 = { add_core_of = POL }
+		1114 = { add_core_of = POL }
+		1115 = { add_core_of = POL }
+		1116 = { add_core_of = POL }
+		1117 = { add_core_of = POL }
+		1118 = { add_core_of = POL }
+		1112 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		46 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				46 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1320 = { add_core_of = POL }
+		81 = { add_core_of = POL }
+		79 = { add_core_of = POL }
+		78 = { add_core_of = POL }
+		80 = { add_core_of = POL }
+		713 = { add_core_of = POL }
+		1222 = { add_core_of = POL }
+		772 = { add_core_of = POL }
+		46 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_CRO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 109
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		109 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				109 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		103 = { add_core_of = POL }
+		1206 = { add_core_of = POL }
+		1128 = { add_core_of = POL }
+		1270 = { add_core_of = POL }
+		163 = { add_core_of = POL }
+		794 = { add_core_of = POL }
+		1105 = { add_core_of = POL }
+		1098 = { add_core_of = POL }
+		1099 = { add_core_of = POL }
+		1102 = { add_core_of = POL }
+		102 = { add_core_of = POL }
+		736 = { add_core_of = POL }
+		1100 = { add_core_of = POL }
+		1101 = { add_core_of = POL }
+		1103 = { add_core_of = POL }
+		1104 = { add_core_of = POL }
+		1144 = { add_core_of = POL }
+		1272 = { add_core_of = POL }
+		104 = { add_core_of = POL }
+		1141 = { add_core_of = POL }
+		1142 = { add_core_of = POL }
+		1143 = { add_core_of = POL }
+		1145 = { add_core_of = POL }
+		105 = { add_core_of = POL }
+		1097 = { add_core_of = POL }
+		109 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_BUL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 48
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		48 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				48 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1271 = { add_core_of = POL }
+		77 = { add_core_of = POL }
+		106 = { add_core_of = POL }
+		184 = { add_core_of = POL }
+		211 = { add_core_of = POL }
+		212 = { add_core_of = POL }
+		731 = { add_core_of = POL }
+		769 = { add_core_of = POL }
+		770 = { add_core_of = POL }
+		771 = { add_core_of = POL }
+		773 = { add_core_of = POL }
+		841 = { add_core_of = POL }
+		1089 = { add_core_of = POL }
+		1090 = { add_core_of = POL }
+		989 = { add_core_of = POL }
+		341 = { add_core_of = POL }
+		48 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_SER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 107
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		107 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				107 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1269 = { add_core_of = POL }
+		108 = { add_core_of = POL }
+		765 = { add_core_of = POL }
+		767 = { add_core_of = POL }
+		107 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_ALB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+				state = 766
+				state = 1268
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		44 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		766 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1268 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				44 = { NOT = { is_core_of = POL } }
+				766 = { NOT = { is_core_of = POL } }
+				1268 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		44 = { add_core_of = POL }
+		766 = { add_core_of = POL }
+		1268 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_RRF = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 243
+				state = 195
+				state = 208
+				state = 209
+				state = 210
+				state = 220
+				state = 224
+				state = 240
+				state = 242
+				state = 244
+				state = 263
+				state = 755
+				state = 821
+				state = 880
+				state = 1229
+				state = 1287
+				state = 1288
+				state = 1289
+				state = 1290
+				state = 1291
+				state = 1328
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		243 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		195 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		208 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		209 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		210 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		220 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		224 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		240 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		242 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		244 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		263 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		755 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		821 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		880 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1229 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1287 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1288 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1289 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1290 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1291 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1328 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				243 = { NOT = { is_core_of = POL } }
+				195 = { NOT = { is_core_of = POL } }
+				208 = { NOT = { is_core_of = POL } }
+				209 = { NOT = { is_core_of = POL } }
+				210 = { NOT = { is_core_of = POL } }
+				220 = { NOT = { is_core_of = POL } }
+				224 = { NOT = { is_core_of = POL } }
+				240 = { NOT = { is_core_of = POL } }
+				242 = { NOT = { is_core_of = POL } }
+				244 = { NOT = { is_core_of = POL } }
+				263 = { NOT = { is_core_of = POL } }
+				755 = { NOT = { is_core_of = POL } }
+				821 = { NOT = { is_core_of = POL } }
+				880 = { NOT = { is_core_of = POL } }
+				1229 = { NOT = { is_core_of = POL } }
+				1287 = { NOT = { is_core_of = POL } }
+				1288 = { NOT = { is_core_of = POL } }
+				1289 = { NOT = { is_core_of = POL } }
+				1290 = { NOT = { is_core_of = POL } }
+				1291 = { NOT = { is_core_of = POL } }
+				1328 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		243 = { add_core_of = POL }
+		195 = { add_core_of = POL }
+		208 = { add_core_of = POL }
+		209 = { add_core_of = POL }
+		210 = { add_core_of = POL }
+		220 = { add_core_of = POL }
+		224 = { add_core_of = POL }
+		240 = { add_core_of = POL }
+		242 = { add_core_of = POL }
+		244 = { add_core_of = POL }
+		263 = { add_core_of = POL }
+		755 = { add_core_of = POL }
+		821 = { add_core_of = POL }
+		880 = { add_core_of = POL }
+		1229 = { add_core_of = POL }
+		1287 = { add_core_of = POL }
+		1288 = { add_core_of = POL }
+		1289 = { add_core_of = POL }
+		1290 = { add_core_of = POL }
+		1291 = { add_core_of = POL }
+		1328 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 111
+				state = 145
+				state = 864
+				state = 865
+				state = 148
+				state = 149
+				state = 150
+				state = 840
+				state = 844
+				state = 863
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		111 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		145 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		864 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		865 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		148 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		149 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		150 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		840 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		844 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		863 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				111 = { NOT = { is_core_of = POL } }
+				145 = { NOT = { is_core_of = POL } }
+				864 = { NOT = { is_core_of = POL } }
+				865 = { NOT = { is_core_of = POL } }
+				148 = { NOT = { is_core_of = POL } }
+				149 = { NOT = { is_core_of = POL } }
+				150 = { NOT = { is_core_of = POL } }
+				840 = { NOT = { is_core_of = POL } }
+				844 = { NOT = { is_core_of = POL } }
+				863 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		215 = { add_core_of = POL }
+		146 = { add_core_of = POL }
+		147 = { add_core_of = POL }
+		213 = { add_core_of = POL }
+		216 = { add_core_of = POL }
+		722 = { add_core_of = POL }
+		1274 = { add_core_of = POL }
+		1324 = { add_core_of = POL }
+		1325 = { add_core_of = POL }
+		1326 = { add_core_of = POL }
+		1327 = { add_core_of = POL }
+		111 = { add_core_of = POL }
+		145 = { add_core_of = POL }
+		864 = { add_core_of = POL }
+		865 = { add_core_of = POL }
+		148 = { add_core_of = POL }
+		149 = { add_core_of = POL }
+		150 = { add_core_of = POL }
+		840 = { add_core_of = POL }
+		844 = { add_core_of = POL }
+		863 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_CRM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1221
+				state = 137
+				state = 1220
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1221 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		137 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1220 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1221 = { NOT = { is_core_of = POL } }
+				137 = { NOT = { is_core_of = POL } }
+				1220 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1221 = { add_core_of = POL }
+		137 = { add_core_of = POL }
+		1220 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_KLY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1263
+				state = 1231
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1263 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1231 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1263 = { NOT = { is_core_of = POL } }
+				1231 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1263 = { add_core_of = POL }
+		1231 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_KUB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 234
+				state = 1227
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		234 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		1227 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				234 = { NOT = { is_core_of = POL } }
+				1227 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		234 = { add_core_of = POL }
+		1227 = { add_core_of = POL }
+	}
+}
+
+POL_integrate_rk_SCH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1190
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1190 = { owner = { OR = { original_tag = POL is_subject_of = POL } } }
+		OR = {
+				1190 = { NOT = { is_core_of = POL } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1190 = { add_core_of = POL }
+	}
+}
 }
 
 
