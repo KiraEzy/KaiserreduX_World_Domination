@@ -1,4 +1,4 @@
-RUS_Great_game = {
+RUS_MON_Great_game = {
 	icon = GFX_category_icon
 
 	allowed = {
@@ -6,7 +6,23 @@ RUS_Great_game = {
 	}
 
 	visible = { 
-    has_completed_focus = RUS_Imperial_Glory
+		#for yellow flag
+		OR = {
+			# if = {
+			# 	limit = {
+			# 		AND = {
+			# 			has_completed_focus = RUS_God_Save_the_Tsar
+			# 			NOT = { has_completed_focus = RUS_Clericals }
+			# 		}
+			# 	}
+			# 	has_completed_focus = RUS_rnsma #blackhumdred yellow
+			# }
+			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
+			has_completed_focus = RUS_Clericals #yellow validated
+			has_completed_focus = RUS_Black_Tsar #yellow wrangle as tsar validated
+			# RUS_wrangel_in_power = yes
+			# has_completed_focus = RUS_Imperial_Glory
+		}
 	}
 }
 RUS_integration_game = {
@@ -17,6 +33,8 @@ RUS_integration_game = {
 	}
 
 	visible = { 
-    has_completed_focus = RUS_Imperial_Glory
+		has_completed_focus = RUS_rnsma #blackhumdred yellow
+		has_completed_focus = RUS_Clericals #yellow
+		has_completed_focus = RUS_Black_Tsar #yellow wrangle as tsar
 	}
 }

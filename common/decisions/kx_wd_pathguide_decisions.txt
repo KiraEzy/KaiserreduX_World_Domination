@@ -334,3 +334,90 @@ POR_WD_pathguide = {
 		}
 	}
 }
+
+QIE_WD_pathguide = {
+	QIE_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = QIE
+		}
+		available = {
+			original_tag = QIE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.20
+		}
+	}
+}
+
+UKR_WD_pathguide = {
+	UKR_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = UKR
+		}
+		available = {
+			original_tag = UKR
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.21
+		}
+	}
+}
+
+FIN_WD_pathguide = {
+	FIN_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = FIN
+		}
+		available = {
+			original_tag = FIN
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.22
+		}
+	}
+}
+
+TRM_WD_pathguide = {
+	TRM_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = TRM
+		}
+		available = {
+			original_tag = TRM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.23
+		}
+	}
+	TRM_slavic_tree = {
+		icon = GFX_decision_generic_agreement
+		visible = {
+			tag = TRM
+		}
+		available = {
+			original_tag = TRM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			country_event = wd_pathguide.24
+		}
+	}
+}

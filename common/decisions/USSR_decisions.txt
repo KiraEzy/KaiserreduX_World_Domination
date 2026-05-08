@@ -1698,7 +1698,11 @@ SOV_Great_Game_SSR_decisions = {
 				state = 1057
 				state = 426
 				state = 428
-				state = 430
+				state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 				state = 431
 				state = 432
 				state = 433
@@ -1723,7 +1727,10 @@ SOV_Great_Game_SSR_decisions = {
 				state = 887
 				state = 890
 				state = 891
+				state = 1361
+				state = 1360
 				state = 429
+				state = 430
 				state = 427
 				state = 424
 				state = 889
@@ -1764,7 +1771,6 @@ SOV_Great_Game_SSR_decisions = {
 				state = 887
 				state = 890
 				state = 891
-				state = 429
 				state = 427
 				state = 424
 				state = 889
@@ -2032,7 +2038,31 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
+						1361 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1360 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
 						429 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						430 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -2249,7 +2279,16 @@ SOV_Great_Game_SSR_decisions = {
 					891 = {
 						add_core_of = DEH
 					}
+					1361 = {
+						add_core_of = DEH
+					}
+					1360 = {
+						add_core_of = DEH
+					}
 					429 = {
+						add_core_of = DEH
+					}
+					430 = {
 						add_core_of = DEH
 					}
 					427 = {
