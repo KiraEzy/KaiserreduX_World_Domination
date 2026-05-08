@@ -7301,8 +7301,14 @@ SIC_establish_rk_MAD = {
 				state = 426
 				state = 427
 				state = 428
+				state = 1361
+				state = 1360
 				state = 429
-				state = 430
+				state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 				state = 431
 				state = 432
 				state = 433
@@ -7372,7 +7378,13 @@ SIC_establish_rk_MAD = {
 		426 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		427 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		428 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+		1361 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+		1360 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		429 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+		1358 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+		1359 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+		1362 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
+		1363 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		430 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		431 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
 		432 = { owner = { OR = { original_tag = SIC is_subject_of = SIC } } }
@@ -7451,8 +7463,14 @@ SIC_establish_rk_MAD = {
 		426 = { add_core_of = MAD }
 		427 = { add_core_of = MAD }
 		428 = { add_core_of = MAD }
-		429 = { add_core_of = MAD }
-		430 = { add_core_of = MAD }
+		1361 = { add_core_of = MAD}
+		1360 = { add_core_of = MAD}
+		429 = { add_core_of = MAD}
+		1358 = { add_core_of = MAD }
+1359 = { add_core_of = MAD }
+1362 = { add_core_of = MAD }
+1363 = { add_core_of = MAD }
+430 = { add_core_of = MAD }
 		431 = { add_core_of = MAD }
 		432 = { add_core_of = MAD }
 		433 = { add_core_of = MAD }

@@ -1,0 +1,23 @@
+TRM_slavic_claim_game = {
+	icon = GFX_category_icon
+
+	allowed = {
+		original_tag = TRM
+	}
+
+	visible = { 
+        has_completed_focus = TRM_For_Freedom_Of_Slavic_Peoples
+	}
+}
+
+TRM_slavic_great_game = {
+	icon = GFX_category_icon
+
+	allowed = {
+		original_tag = TRM
+	}
+
+	visible = { 
+        has_completed_focus = TRM_For_Freedom_Of_Slavic_Peoples
+	}
+}
