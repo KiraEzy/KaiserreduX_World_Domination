@@ -1,0 +1,1259 @@
+
+####### Operation Our Brothers #######
+
+POLWD_operation_galicia = {
+POLWD_recruit_galician_officers = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		GAL = {
+			every_unit_leader = {
+				limit = {
+					not = {
+						has_trait = UKR_uga_officer
+					}
+				}
+				set_nationality = POL
+			}	
+		}
+	}
+}
+POLWD_infiltrate_krakow = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 1124
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		1124 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_rzeszow = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 1125
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		1125 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_lesser_poland = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 88
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		88 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_lemko = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 1314
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		1314 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_sanok = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 1319
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		1319 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+
+POLWD_execute_the_operation = {
+    activation = { 
+		has_completed_focus = KXWD_POL_operation_our_brothers
+    }
+	fire_only_once = yes
+    available = {
+		GAL = {
+			any_state = {
+				has_state_flag = POLWD_state_secured
+			}
+		}
+    }
+    cancel_trigger = {
+		or = {
+			or = {
+				has_war_with = GAL
+				GAL = {
+					exists = no
+				}
+			}
+			and = {
+				1124 = {
+					has_state_flag = POLWD_state_secured
+				}
+				1125 = {
+					has_state_flag = POLWD_state_secured
+				}
+				88 = {
+					has_state_flag = POLWD_state_secured
+				}
+				1314 = {
+					has_state_flag = POLWD_state_secured
+				}
+				1319 = {
+					has_state_flag = POLWD_state_secured	
+				}
+			}
+		}
+    }
+	cost = 100
+    days_mission_timeout = 60
+    selectable_mission = yes
+	icon = mission_icon
+    complete_effect = {
+		POL = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = WSU
+			}
+		}
+        1124 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		1125 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		88 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		1314 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		1319 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		AUS = {
+			end_puppet = GAL
+		}
+		GAL = {
+			leave_faction = yes
+		}
+		declare_war_on = {
+            target = GAL
+            type = annex_everything
+        }
+		set_country_flag = POLWD_operation_galicia_started
+		91 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1127 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1126 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1140 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		89 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		80 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		713 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		WSU = {
+			load_oob = WSUWD_army
+		}
+    }
+    timeout_effect = {
+		POL = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = WSU
+			}
+		}
+		1124 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		1125 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		88 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		1314 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		1319 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		AUS = {
+			end_puppet = GAL
+		}
+		GAL = {
+			leave_faction = yes
+		}
+		declare_war_on = {
+            target = GAL
+            type = annex_everything
+        }
+		set_country_flag = POLWD_operation_galicia_started
+		91 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1127 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1126 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1140 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		89 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		80 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		713 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		WSU = {
+			load_oob = WSUWD_army
+		}
+    }
+}
+
+POLWD_austrian_intervention = {
+    activation = { 
+        POL = {
+            has_war_with = GAL
+        }
+    }
+    available = {
+		GAL = {
+			exists = no
+		}
+    }
+    cancel_trigger = {
+    }
+    days_mission_timeout = 30
+    selectable_mission = no
+	icon = mission_icon
+    complete_effect = {
+		add_war_support = 0.1
+		add_stability = 0.1
+    }
+    timeout_effect = {
+		AUS = {
+			declare_war_on = {
+                target = POL
+                type = annex_everything
+            }
+    	}
+    }
+}
+
+POLWD_force_annex_galicia = {
+	icon = generic_prepare_civil_war
+
+
+	available = {
+		1124 = {
+			has_state_flag = POLWD_state_secured
+		}
+		1125 = {
+			has_state_flag = POLWD_state_secured
+		}
+		88 = {
+			has_state_flag = POLWD_state_secured
+		}
+		1314 = {
+			has_state_flag = POLWD_state_secured
+		}
+		1319 = {
+			has_state_flag = POLWD_state_secured	
+		}
+	}
+
+	fire_only_once = yes
+
+	cost = 100
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		91 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1127 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1126 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		1140 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		89 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		80 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		713 = {
+			if = {
+				limit = {
+					is_owned_and_controlled_by = GAL
+				}
+				add_core_of = WSU
+				add_core_of = POL
+				transfer_state_to = WSU
+			}
+		}
+		WSU = {
+			load_oob = WSUWD_army
+		}
+		POL = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = WSU
+			}
+			annex_country = {
+    			target = GAL
+    			transfer_troops = yes
+			}
+		}
+		1124 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		1125 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		88 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		1314 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		1319 = {
+			set_demilitarized_zone = no
+			add_core_of = POL	
+		}
+	}
+}
+
+}
+
+####### Operation Commonwealth #######
+
+POLWD_operation_lithuania = {
+POLWD_recruit_lithuanian_officers = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		LIT = {
+			every_unit_leader = {
+				set_nationality = POL
+			}	
+		}
+	}
+}
+POLWD_infiltrate_suwalki = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 1329
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		1329 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_vawkavysk = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 94
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		94 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_sudovia = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 655
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		655 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_vilnius = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 96
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		96 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_kaunas = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 11
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		11 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+POLWD_infiltrate_samogitia = {
+	icon = generic_prepare_civil_war
+
+	highlight_states = {
+		highlight_state_targets = {
+			state = 189
+		}
+		highlight_color_while_active = 3
+		highlight_color_before_active = 2
+	}
+
+	available = {	
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		189 = {
+			set_state_flag = POLWD_state_secured
+			set_demilitarized_zone = yes
+		}
+	}
+}
+
+POLWD_execute_the_operation_in_lithuania = {
+    activation = { 
+		has_completed_focus = KXWD_POL_operation_our_brothers
+    }
+	fire_only_once = yes
+    available = {
+		LIT = {
+			any_state = {
+				has_state_flag = POLWD_state_secured
+			}
+		}
+    }
+    cancel_trigger = {
+		or = {
+			or = {
+				has_war_with = LIT
+				LIT = {
+					exists = no
+				}
+			}
+			and = {
+				1329 = {
+					has_state_flag = POLWD_state_secured
+				}
+				94 = {
+					has_state_flag = POLWD_state_secured
+				}
+				655 = {
+					has_state_flag = POLWD_state_secured
+				}
+				96 = {
+					has_state_flag = POLWD_state_secured
+				}
+				11 = {
+					has_state_flag = POLWD_state_secured	
+				}
+                189 = {
+					has_state_flag = POLWD_state_secured	
+				}
+			}
+		}
+    }
+	cost = 100
+    days_mission_timeout = 60
+    selectable_mission = yes
+	icon = mission_icon
+    complete_effect = {
+        1329 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		94 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		655 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		96 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		11 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		GER = {
+			end_puppet = LIT
+		}
+		LIT = {
+			leave_faction = yes
+		}
+		declare_war_on = {
+            target = LIT
+            type = annex_everything
+        }
+		set_country_flag = POLWD_operation_lithuania_started
+    }
+    timeout_effect = {
+		POL = {
+			create_wargoal = {
+    			type = annex_everything
+    			target = WSU
+			}
+		}
+		1329 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		94 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		655 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		96 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		11 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+        189 = {
+			if = {
+				limit = {
+					has_state_flag = POLWD_state_secured
+				}
+				transfer_state_to = POL
+				add_core_of = POL
+			}
+		}
+		GER = {
+			end_puppet = LIT
+		}
+		LIT = {
+			leave_faction = yes
+		}
+		declare_war_on = {
+            target = LIT
+            type = annex_everything
+        }
+		set_country_flag = POLWD_operation_lithuania_started
+    }
+}
+
+POLWD_german_intervention = {
+    activation = { 
+        POL = {
+            has_war_with = LIT
+        }
+    }
+    available = {
+		LIT = {
+			exists = no
+		}
+    }
+    cancel_trigger = {
+    }
+    days_mission_timeout = 30
+    selectable_mission = no
+	icon = mission_icon
+    complete_effect = {
+		add_war_support = 0.1
+		add_stability = 0.1
+    }
+    timeout_effect = {
+		GER = {
+			declare_war_on = {
+                target = POL
+                type = annex_everything
+            }
+    	}
+    }
+}
+
+POLWD_force_annex_lithuania = {
+	icon = generic_prepare_civil_war
+
+
+	available = {
+		1329 = {
+			has_state_flag = POLWD_state_secured
+		}
+		94 = {
+			has_state_flag = POLWD_state_secured
+		}
+		655 = {
+			has_state_flag = POLWD_state_secured
+		}
+		96 = {
+			has_state_flag = POLWD_state_secured
+		}
+		11 = {
+			has_state_flag = POLWD_state_secured	
+		}
+        189 = {
+			has_state_flag = POLWD_state_secured	
+		}
+	}
+
+	fire_only_once = yes
+
+	cost = 100
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		POL = {
+			annex_country = {
+    			target = LIT
+    			transfer_troops = yes
+			}
+		}
+		1329 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		94 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		655 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		96 = {
+			set_demilitarized_zone = no
+			add_core_of = POL
+		}
+		11 = {
+			set_demilitarized_zone = no
+			add_core_of = POL	
+		}
+        189 = {
+			set_demilitarized_zone = no
+			add_core_of = POL	
+		}
+	}
+}
+}
+
+
+
+POLWD_great_game = {
+	intermarium_grab = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			
+			log = "CZE"
+			CZE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+		}
+		days_remove = 0
+	}
+}
+
+
+
+POLWD_recruit_generals_game = {
+POLWD_recruit_czech_generals = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+		owns_state = 1129
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		CZE = {
+			every_unit_leader = {
+				set_nationality = POL
+			}	
+		}
+	}
+}
+POLWD_recruit_slovak_generals = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+		owns_state = 1123
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		SVK = {
+			every_unit_leader = {
+				set_nationality = POL
+			}	
+		}
+	}
+}
+POLWD_recruit_romanian_generals = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+		owns_state = 46
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		ROM = {
+			every_unit_leader = {
+				set_nationality = POL
+			}	
+		}
+	}
+}
+POLWD_recruit_bulgarian_generals = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+		owns_state = 48
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		BUL = {
+			every_unit_leader = {
+				set_nationality = POL
+			}	
+		}
+	}
+}
+POLWD_recruit_serbian_generals = {
+	icon = generic_prepare_civil_war
+
+	available = {	
+		owns_state = 107
+	}
+
+	fire_only_once = yes
+
+	cost = 40
+
+	ai_will_do = {
+		factor = 0
+	}
+	complete_effect = {
+		SER = {
+			every_unit_leader = {
+				set_nationality = POL
+			}	
+		}
+	}
+}
+}

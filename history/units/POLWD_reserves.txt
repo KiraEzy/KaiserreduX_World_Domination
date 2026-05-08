@@ -1,0 +1,84 @@
+division_template = {
+    name = "Dywizja Rezerwowa"
+    division_names_group = POL_INF_01
+    priority = 2
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+    }
+}
+
+units = {
+    division= {
+        name = "1. Dywizja Rezerwowa"
+        location = 3544
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "2. Dywizja Rezerwowa"
+        location = 3544
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "3. Dywizja Rezerwowa"
+        location = 3544
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "4. Dywizja Rezerwowa"
+        location = 3544
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "5. Dywizja Rezerwowa"
+        location = 3544
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "6. Dywizja Rezerwowa"
+        location = 3544
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "7. Dywizja Rezerwowa"
+        location = 9508
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "8. Dywizja Rezerwowa"
+        location = 9508
+        division_template = "Dywizja Rezerwowa"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}

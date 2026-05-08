@@ -1,0 +1,52 @@
+division_template = {
+    name = "Partyzanci"
+    division_names_group = POL_MIL_01
+    priority = 0
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+        militia = { x = 1 y = 0 }
+        militia = { x = 1 y = 1 }
+        militia = { x = 1 y = 2 }
+        militia = { x = 1 y = 3 }
+    }
+    support = {
+    }
+}
+
+units = {
+    division= {
+        name = "1. Partyzanci"
+        location = 3544
+        division_template = "Partyzanci"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "2. Partyzanci"
+        location = 3544
+        division_template = "Partyzanci"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "3. Partyzanci"
+        location = 3544
+        division_template = "Partyzanci"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "4. Partyzanci"
+        location = 3544
+        division_template = "Partyzanci"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}

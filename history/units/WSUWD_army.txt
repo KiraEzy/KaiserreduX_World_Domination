@@ -1,0 +1,137 @@
+division_template = {
+    name = "Viddil UHA"
+    division_names_group = POL_INF_01
+    priority = 2
+    regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+        infantry = { x = 1 y = 2 }
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+    }
+}
+
+units = {
+    division= {
+        name = "1. Viddil UHA"
+        location = 11479
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "2. Viddil UHA"
+        location = 11479
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "3. Viddil UHA"
+        location = 11479
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "4. Viddil UHA"
+        location = 11479
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "5. Viddil UHA"
+        location = 11479
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "6. Viddil UHA"
+        location = 11479
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "7. Viddil UHA"
+        location = 9508
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "8. Viddil UHA"
+        location = 9508
+        division_template = "Viddil UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}
+
+division_template = {
+    name = "Opolchennya UHA"
+    division_names_group = POL_MIL_01
+    priority = 0
+    regiments = {
+        militia = { x = 0 y = 0 }
+        militia = { x = 0 y = 1 }
+        militia = { x = 0 y = 2 }
+        militia = { x = 0 y = 3 }
+        militia = { x = 1 y = 0 }
+        militia = { x = 1 y = 1 }
+        militia = { x = 1 y = 2 }
+        militia = { x = 1 y = 3 }
+    }
+    support = {
+    }
+}
+
+units = {
+    division= {
+        name = "1. Opolchennya UHA"
+        location = 11479
+        division_template = "Opolchennya UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "2. Opolchennya UHA"
+        location = 11479
+        division_template = "Opolchennya UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "3. Opolchennya UHA"
+        location = 11479
+        division_template = "Opolchennya UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+    division= {
+        name = "4. Opolchennya UHA"
+        location = 11479
+        division_template = "Opolchennya UHA"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}

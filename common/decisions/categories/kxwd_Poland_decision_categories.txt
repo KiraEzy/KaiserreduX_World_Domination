@@ -1,0 +1,52 @@
+POLWD_operation_galicia = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 11
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = { 
+		has_completed_focus = KXWD_POL_operation_our_brothers
+	}
+}
+
+
+POLWD_operation_lithuania = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 10
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = { 
+		has_completed_focus = KXWD_POL_operation_commonwealth
+	}
+}
+
+POLWD_great_game = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 9
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = { 
+		has_completed_focus = KXWD_POL_intermarium_dream
+	}
+}
+
+POLWD_recruit_generals_game = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 8
+
+	allowed = {
+		original_tag = POL
+	}
+
+	visible = { 
+		has_country_flag = POLWD_recruiting_generals
+	}
+}

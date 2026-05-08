@@ -1,0 +1,744 @@
+
+#################################
+####### Absolutist Poland #######
+#################################
+
+shared_focus = {
+	id = KXWD_POL_end_of_poland
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       has_defensive_war_with = GER
+       is_ai = no
+    }
+	x = 0
+	y = 2
+	cost = 0
+	
+    relative_position_id = POL_golden_liberty
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_end_of_poland"
+        add_ideas = POLWD_end_of_poland_idea
+        country_event = KXWD_POL.1
+        set_technology = {
+    		basic_fortification_tech = 1
+		}
+		set_technology = {
+    		land_fort_tech_1 = 1
+		}
+		set_technology = {
+    		land_fort_tech_2 = 1
+		}
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_partisans
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       has_defensive_war_with = GER
+       is_ai = no
+    }
+	x = -1
+	y = 1
+	cost = 1
+
+    prerequisite = {
+		focus = KXWD_POL_end_of_poland
+	}
+    relative_position_id = KXWD_POL_end_of_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_partisans"
+        load_oob = POLWD_partisans
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_reserves
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       has_defensive_war_with = GER
+       is_ai = no
+    }
+	x = 1
+	y = 1
+	cost = 1
+
+    prerequisite = {
+		focus = KXWD_POL_end_of_poland
+	}
+    relative_position_id = KXWD_POL_end_of_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_reserves"
+        load_oob = POLWD_reserves
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_weaken_germany
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       has_defensive_war_with = GER
+       is_ai = no
+    }
+	x = 0
+	y = 2
+	cost = 1
+
+    prerequisite = {
+		focus = KXWD_POL_reserves
+	}
+    prerequisite = {
+		focus = KXWD_POL_partisans
+	}
+    relative_position_id = KXWD_POL_end_of_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_weaken_germany"
+        GER = {
+            add_stability = -0.25
+            add_war_support = -0.25
+            add_manpower = -50000
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_victory
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       has_defensive_war_with = GER
+       is_ai = no
+    }
+	x = 0
+	y = 1
+	cost = 2
+
+    prerequisite = {
+		focus = KXWD_POL_weaken_germany
+	}
+    relative_position_id = KXWD_POL_weaken_germany
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_victory"
+        country_event = KXWD_POL.2
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_not_yet_dead
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+       has_completed_focus = POL_absolutism
+       has_completed_focus = POL_polish_king
+    }
+	x = 0
+	y = 2
+	cost = 5
+
+    relative_position_id = POL_polish_exceptionalism
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_not_yet_dead"
+        add_ideas = POLWD_poland_is_not_dead_idea
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_rise_of_poland
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = -1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_not_yet_dead
+	}
+    relative_position_id = KXWD_POL_not_yet_dead
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_rise_of_poland"
+        add_ideas = POLWD_rise_of_poland_1
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_for_glory
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = -1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_rise_of_poland
+	}
+    relative_position_id = KXWD_POL_rise_of_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_for_glory"
+        swap_ideas = {
+            remove_idea = POLWD_rise_of_poland_1
+            add_idea = POLWD_rise_of_poland_2
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_commonwealth_army
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+       has_completed_focus = KXWD_POL_commonwealth_united
+    }
+	x = 1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_for_glory
+	}
+    relative_position_id = KXWD_POL_for_glory
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_commonwealth_army"
+        swap_ideas = {
+            remove_idea = POLWD_rise_of_poland_2
+            add_idea = POLWD_commonwealth_army
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_towards_greater_poland
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = 1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_not_yet_dead
+	}
+    relative_position_id = KXWD_POL_not_yet_dead
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_towards_greater_poland"
+        add_ideas = POLWD_polish_expansionism
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_operation_our_brothers
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+     bypass = {
+        LIT = {
+            exists = no
+        }
+    }
+    bypass_effect = {
+        91 = {
+			add_core_of = POL
+		}
+		1127 = {
+			add_core_of = POL
+		}
+		1126 = {
+			add_core_of = POL
+		}
+		1140 = {
+			add_core_of = POL
+		}
+		89 = {
+			add_core_of = POL
+		}
+		80 = {
+			add_core_of = POL
+		}
+		713 = {
+			add_core_of = POL
+		}
+		1124 = {
+			add_core_of = POL
+		}
+		1125 = {
+			add_core_of = POL
+		}
+		88 = {
+			add_core_of = POL
+		}
+		1314 = {
+			add_core_of = POL
+		}
+		1319 = {
+			add_core_of = POL	
+		}
+    }
+	x = -1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_towards_greater_poland
+	}
+    relative_position_id = KXWD_POL_towards_greater_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_operation_our_brothers"
+        custom_effect_tooltip = "Unlocks Decisions to take over Galicia"
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_operation_commonwealth
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+    bypass = {
+        LIT = {
+            exists = no
+        }
+    }
+    bypass_effect = {
+        1329 = {
+			add_core_of = POL
+		}
+		94 = {
+			add_core_of = POL
+		}
+		655 = {
+			add_core_of = POL
+		}
+		96 = {
+			add_core_of = POL
+		}
+		11 = {
+			add_core_of = POL	
+		}
+        189 = {
+			add_core_of = POL	
+		}
+    }
+	x = 1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_towards_greater_poland
+	}
+    relative_position_id = KXWD_POL_towards_greater_poland
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_operation_commonwealth"
+        custom_effect_tooltip = "Unlocks Decisions to take over Lithuania"
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_commonwealth_united
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = 1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_operation_commonwealth
+	}
+    prerequisite = {
+        focus = KXWD_POL_operation_our_brothers
+	}
+    relative_position_id = KXWD_POL_operation_our_brothers
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_commonwealth_united"
+        swap_ideas = {
+            remove_idea = POLWD_poland_is_not_dead_idea
+            add_idea = POLWD_commonwealth
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_intermarium_dream
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = -1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_commonwealth_army
+	}
+    prerequisite = {
+        focus = KXWD_POL_commonwealth_united
+	}
+    relative_position_id = KXWD_POL_commonwealth_united
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_intermarium_dream"
+        set_cosmetic_tag = POLWD_INTERMARIUM_OCC
+        custom_effect_tooltip = "Unlocks Intermarium integration decisions and custom puppet decisions"
+        9 = { add_claim_by = POL }
+		69 = { add_claim_by = POL }
+		71 = { add_claim_by = POL }
+		74 = { add_claim_by = POL }
+		75 = { add_claim_by = POL }
+		786 = { add_claim_by = POL }
+		1129 = { add_claim_by = POL }
+		1130 = { add_claim_by = POL }
+		1131 = { add_claim_by = POL }
+		1132 = { add_claim_by = POL }
+		1133 = { add_claim_by = POL }
+		1134 = { add_claim_by = POL }
+		1138 = { add_claim_by = POL }
+		1139 = { add_claim_by = POL }
+		5 = { add_claim_by = POL }
+		12 = { add_claim_by = POL }
+		13 = { add_claim_by = POL }
+		43 = { add_claim_by = POL }
+		44 = { add_claim_by = POL }
+		45 = { add_claim_by = POL }
+		46 = { add_claim_by = POL }
+		48 = { add_claim_by = POL }
+		63 = { add_claim_by = POL }
+		65 = { add_claim_by = POL }
+		66 = { add_claim_by = POL }
+		67 = { add_claim_by = POL }
+		68 = { add_claim_by = POL }
+		70 = { add_claim_by = POL }
+		73 = { add_claim_by = POL }
+		76 = { add_claim_by = POL }
+		77 = { add_claim_by = POL }
+		78 = { add_claim_by = POL }
+		79 = { add_claim_by = POL }
+		80 = { add_claim_by = POL }
+		81 = { add_claim_by = POL }
+		82 = { add_claim_by = POL }
+		83 = { add_claim_by = POL }
+		84 = { add_claim_by = POL }
+		86 = { add_claim_by = POL }
+		93 = { add_claim_by = POL }
+		95 = { add_claim_by = POL }
+		102 = { add_claim_by = POL }
+		103 = { add_claim_by = POL }
+		104 = { add_claim_by = POL }
+		105 = { add_claim_by = POL }
+		106 = { add_claim_by = POL }
+		107 = { add_claim_by = POL }
+		108 = { add_claim_by = POL }
+		109 = { add_claim_by = POL }
+		111 = { add_claim_by = POL }
+		137 = { add_claim_by = POL }
+		145 = { add_claim_by = POL }
+		146 = { add_claim_by = POL }
+		147 = { add_claim_by = POL }
+		148 = { add_claim_by = POL }
+		149 = { add_claim_by = POL }
+		150 = { add_claim_by = POL }
+		154 = { add_claim_by = POL }
+		155 = { add_claim_by = POL }
+		163 = { add_claim_by = POL }
+		184 = { add_claim_by = POL }
+		188 = { add_claim_by = POL }
+		190 = { add_claim_by = POL }
+		191 = { add_claim_by = POL }
+		192 = { add_claim_by = POL }
+		193 = { add_claim_by = POL }
+		194 = { add_claim_by = POL }
+		195 = { add_claim_by = POL }
+		196 = { add_claim_by = POL }
+		197 = { add_claim_by = POL }
+		198 = { add_claim_by = POL }
+		199 = { add_claim_by = POL }
+		200 = { add_claim_by = POL }
+		201 = { add_claim_by = POL }
+		202 = { add_claim_by = POL }
+		203 = { add_claim_by = POL }
+		204 = { add_claim_by = POL }
+		206 = { add_claim_by = POL }
+		207 = { add_claim_by = POL }
+		208 = { add_claim_by = POL }
+		209 = { add_claim_by = POL }
+		210 = { add_claim_by = POL }
+		211 = { add_claim_by = POL }
+		212 = { add_claim_by = POL }
+		213 = { add_claim_by = POL }
+		215 = { add_claim_by = POL }
+		216 = { add_claim_by = POL }
+		220 = { add_claim_by = POL }
+		221 = { add_claim_by = POL }
+		224 = { add_claim_by = POL }
+		225 = { add_claim_by = POL }
+		226 = { add_claim_by = POL }
+		227 = { add_claim_by = POL }
+		228 = { add_claim_by = POL }
+		234 = { add_claim_by = POL }
+		240 = { add_claim_by = POL }
+		241 = { add_claim_by = POL }
+		242 = { add_claim_by = POL }
+		243 = { add_claim_by = POL }
+		244 = { add_claim_by = POL }
+		259 = { add_claim_by = POL }
+		263 = { add_claim_by = POL }
+		341 = { add_claim_by = POL }
+		664 = { add_claim_by = POL }
+		713 = { add_claim_by = POL }
+		722 = { add_claim_by = POL }
+		731 = { add_claim_by = POL }
+		736 = { add_claim_by = POL }
+		755 = { add_claim_by = POL }
+		765 = { add_claim_by = POL }
+		766 = { add_claim_by = POL }
+		767 = { add_claim_by = POL }
+		769 = { add_claim_by = POL }
+		770 = { add_claim_by = POL }
+		771 = { add_claim_by = POL }
+		772 = { add_claim_by = POL }
+		773 = { add_claim_by = POL }
+		776 = { add_claim_by = POL }
+		777 = { add_claim_by = POL }
+		784 = { add_claim_by = POL }
+		789 = { add_claim_by = POL }
+		791 = { add_claim_by = POL }
+		792 = { add_claim_by = POL }
+		794 = { add_claim_by = POL }
+		821 = { add_claim_by = POL }
+		840 = { add_claim_by = POL }
+		841 = { add_claim_by = POL }
+		844 = { add_claim_by = POL }
+		863 = { add_claim_by = POL }
+		864 = { add_claim_by = POL }
+		865 = { add_claim_by = POL }
+		875 = { add_claim_by = POL }
+		880 = { add_claim_by = POL }
+		989 = { add_claim_by = POL }
+		997 = { add_claim_by = POL }
+		1087 = { add_claim_by = POL }
+		1089 = { add_claim_by = POL }
+		1090 = { add_claim_by = POL }
+		1091 = { add_claim_by = POL }
+		1097 = { add_claim_by = POL }
+		1098 = { add_claim_by = POL }
+		1099 = { add_claim_by = POL }
+		1100 = { add_claim_by = POL }
+		1101 = { add_claim_by = POL }
+		1102 = { add_claim_by = POL }
+		1103 = { add_claim_by = POL }
+		1104 = { add_claim_by = POL }
+		1105 = { add_claim_by = POL }
+		1106 = { add_claim_by = POL }
+		1107 = { add_claim_by = POL }
+		1108 = { add_claim_by = POL }
+		1109 = { add_claim_by = POL }
+		1110 = { add_claim_by = POL }
+		1111 = { add_claim_by = POL }
+		1112 = { add_claim_by = POL }
+		1113 = { add_claim_by = POL }
+		1114 = { add_claim_by = POL }
+		1115 = { add_claim_by = POL }
+		1116 = { add_claim_by = POL }
+		1117 = { add_claim_by = POL }
+		1118 = { add_claim_by = POL }
+		1119 = { add_claim_by = POL }
+		1120 = { add_claim_by = POL }
+		1121 = { add_claim_by = POL }
+		1122 = { add_claim_by = POL }
+		1123 = { add_claim_by = POL }
+		1128 = { add_claim_by = POL }
+		1135 = { add_claim_by = POL }
+		1136 = { add_claim_by = POL }
+		1141 = { add_claim_by = POL }
+		1142 = { add_claim_by = POL }
+		1143 = { add_claim_by = POL }
+		1144 = { add_claim_by = POL }
+		1145 = { add_claim_by = POL }
+		1190 = { add_claim_by = POL }
+		1206 = { add_claim_by = POL }
+		1220 = { add_claim_by = POL }
+		1221 = { add_claim_by = POL }
+		1222 = { add_claim_by = POL }
+		1227 = { add_claim_by = POL }
+		1228 = { add_claim_by = POL }
+		1229 = { add_claim_by = POL }
+		1230 = { add_claim_by = POL }
+		1231 = { add_claim_by = POL }
+		1232 = { add_claim_by = POL }
+		1233 = { add_claim_by = POL }
+		1234 = { add_claim_by = POL }
+		1237 = { add_claim_by = POL }
+		1238 = { add_claim_by = POL }
+		1239 = { add_claim_by = POL }
+		1240 = { add_claim_by = POL }
+		1241 = { add_claim_by = POL }
+		1242 = { add_claim_by = POL }
+		1243 = { add_claim_by = POL }
+		1244 = { add_claim_by = POL }
+		1245 = { add_claim_by = POL }
+		1263 = { add_claim_by = POL }
+		1268 = { add_claim_by = POL }
+		1269 = { add_claim_by = POL }
+		1270 = { add_claim_by = POL }
+		1271 = { add_claim_by = POL }
+		1272 = { add_claim_by = POL }
+		1274 = { add_claim_by = POL }
+		1282 = { add_claim_by = POL }
+		1283 = { add_claim_by = POL }
+		1284 = { add_claim_by = POL }
+		1285 = { add_claim_by = POL }
+		1286 = { add_claim_by = POL }
+		1287 = { add_claim_by = POL }
+		1288 = { add_claim_by = POL }
+		1289 = { add_claim_by = POL }
+		1290 = { add_claim_by = POL }
+		1291 = { add_claim_by = POL }
+		1294 = { add_claim_by = POL }
+		1295 = { add_claim_by = POL }
+		1320 = { add_claim_by = POL }
+		1324 = { add_claim_by = POL }
+		1325 = { add_claim_by = POL }
+		1326 = { add_claim_by = POL }
+		1327 = { add_claim_by = POL }
+		1328 = { add_claim_by = POL }
+		1357 = { add_claim_by = POL }
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_intermarium_army
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = -2
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_intermarium_dream
+	}
+    relative_position_id = KXWD_POL_intermarium_dream
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_intermarium_army"
+        swap_ideas = {
+            remove_idea = POLWD_commonwealth_army
+            add_idea = POLWD_intermarium_army
+        }
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_culture_question
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = 2
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_intermarium_dream
+	}
+    relative_position_id = KXWD_POL_intermarium_dream
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_culture_question"
+        country_event = KXWD_POL.4
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_admin_dilemma
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = 0
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_intermarium_dream
+	}
+    relative_position_id = KXWD_POL_intermarium_dream
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_admin_dilemma"
+        country_event = KXWD_POL.3
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_industry_direction
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = 1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_culture_question
+	}
+    prerequisite = {
+        focus = KXWD_POL_admin_dilemma
+	}
+    relative_position_id = KXWD_POL_admin_dilemma
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_industry_direction"
+        country_event = KXWD_POL.5
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_recruit_generals
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = -1
+	y = 1
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_intermarium_army
+	}
+    prerequisite = {
+        focus = KXWD_POL_admin_dilemma
+	}
+    relative_position_id = KXWD_POL_admin_dilemma
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_recruit_generals"
+        country_event = KXWD_POL.6
+    }
+}
+
+shared_focus = {
+	id = KXWD_POL_intermarium_united
+	icon = GFX_goal_SHXWD_order_youth
+    available = {
+       is_ai = no
+    }
+	x = 0
+	y = 2
+	cost = 5
+
+    prerequisite = {
+        focus = KXWD_POL_industry_direction
+	}
+    prerequisite = {
+        focus = KXWD_POL_recruit_generals
+	}
+    relative_position_id = KXWD_POL_admin_dilemma
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus KXWD_POL_intermarium_united"
+        swap_ideas = {
+            remove_idea = POLWD_commonwealth
+            add_idea = POLWD_intermarium
+        }
+    }
+}

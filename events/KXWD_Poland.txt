@@ -1,0 +1,232 @@
+﻿########################################
+####### Absolutist Poland Events #######
+########################################
+
+add_namespace = KXWD_POL	
+
+country_event = {
+	id = KXWD_POL.1
+	title = KXWD_POL.1.t
+	desc = KXWD_POL.1.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_POL.1" }
+
+	option = {
+		name = KXWD_POL.1.a
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 3544
+			}
+		}
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 6511
+			}
+		}
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 467
+			}
+		}
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 9400
+			}
+		}
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 11492
+			}
+		}
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 3482
+			}
+		}
+		10 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 9508
+			}
+		}
+		87 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 548
+			}
+		}
+		87 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 493
+			}
+		}
+		87 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 11428
+			}
+		}
+		98 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 6259
+			}
+		}
+		98 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 6567
+			}
+		}
+		92 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 524
+			}
+		}
+		92 = {
+			set_building_level = {
+    			type = bunker
+    			level = 7
+    			province = 12562
+			}
+		}
+		add_equipment_to_stockpile = {
+            type = infantry_equipment_1
+            amount = 7500
+            producer = POL
+        }
+        add_equipment_to_stockpile = {
+            type = artillery_equipment
+            amount = 2500
+            producer = POL
+        }
+        add_equipment_to_stockpile = {
+            type = support_equipment
+            amount = 2500
+            producer = POL
+        }
+	}
+}
+
+country_event = {
+	id = KXWD_POL.2
+	title = KXWD_POL.2.t
+	desc = KXWD_POL.2.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_POL.2" }
+
+	option = {
+		name = KXWD_POL.2.a
+		add_stability = 0.1
+		remove_ideas = POLWD_end_of_poland_idea
+		white_peace = GER
+		give_military_access = GER
+		GER = {
+		    give_military_access = POL
+			add_stability = -0.15
+			add_war_support = -0.2
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_POL.3
+	title = KXWD_POL.3.t
+	desc = KXWD_POL.3.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_POL.2" }
+
+	option = {
+		name = KXWD_POL.3.a
+		add_ideas = POLWD_admin_1
+	}
+	option = {
+		name = KXWD_POL.3.b
+		add_ideas = POLWD_admin_2
+	}
+}
+
+country_event = {
+	id = KXWD_POL.4
+	title = KXWD_POL.4.t
+	desc = KXWD_POL.4.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_POL.2" }
+
+	option = {
+		name = KXWD_POL.4.a
+		add_ideas = POLWD_culture_1
+	}
+	option = {
+		name = KXWD_POL.4.b
+		add_ideas = POLWD_culture_2
+	}
+}
+
+country_event = {
+	id = KXWD_POL.5
+	title = KXWD_POL.5.t
+	desc = KXWD_POL.5.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_POL.2" }
+
+	option = {
+		name = KXWD_POL.5.a
+		add_ideas = POLWD_industry_1
+	}
+	option = {
+		name = KXWD_POL.5.b
+		add_ideas = POLWD_industry_2
+	}
+	option = {
+		name = KXWD_POL.5.c
+		add_ideas = POLWD_industry_3
+	}
+}
+
+country_event = {
+	id = KXWD_POL.6
+	title = KXWD_POL.6.t
+	desc = KXWD_POL.6.d
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_POL.2" }
+
+	option = {
+		name = KXWD_POL.6.a
+		set_country_flag = POLWD_recruiting_generals
+		custom_effect_tooltip = "Unlocks decisions to recruit new Generals"
+	}
+	option = {
+		name = KXWD_POL.6.b
+		add_stability = 0.1
+		add_political_power = 100
+		add_command_power = 100
+	}
+}
