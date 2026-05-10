@@ -1,9 +1,214 @@
 KXWD_init_belgian_influence_frames = {
 	set_variable = { global.KXWD_BEL_wallonia_frame = 3 }
 	set_variable = { global.KXWD_BEL_flanders_frame = 3 }
+	set_variable = { global.KXWD_BEL_wallonia_prep = 0 }
+	set_variable = { global.KXWD_BEL_flanders_prep = 0 }
+	set_variable = { global.KXWD_BEL_active_prep_missions = 0 }
+	clr_global_flag = KXWD_BEL_resolution_ready
+	clr_global_flag = KXWD_BEL_resolution_done
+	clr_global_flag = KXWD_BEL_deadline_handled
 }
 
 KXWD_clamp_belgian_influence_frames = {
 	clamp_variable = { var = global.KXWD_BEL_wallonia_frame min = 1 max = 5 }
 	clamp_variable = { var = global.KXWD_BEL_flanders_frame min = 1 max = 5 }
+	clamp_variable = { var = global.KXWD_BEL_wallonia_prep min = 0 max = 99 }
+	clamp_variable = { var = global.KXWD_BEL_flanders_prep min = 0 max = 99 }
+	clamp_variable = { var = global.KXWD_BEL_active_prep_missions min = 0 max = 3 }
+}
+
+KXWD_BEL_apply_neutral_wargoals_flanders = {
+	6 = { owner = { save_event_target_as = KXWD_BEL_flanders_owner } }
+	if = {
+		limit = {
+			exists = event_target:KXWD_BEL_flanders_owner
+			event_target:KXWD_BEL_flanders_owner = { NOT = { tag = HOL } NOT = { tag = GER } }
+		}
+		HOL = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_flanders_owner } }
+		GER = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_flanders_owner } }
+	}
+	if = {
+		limit = { country_exists = FLN }
+		HOL = { if = { limit = { has_subject = FLN } end_puppet = FLN } }
+		GER = { if = { limit = { has_subject = FLN } end_puppet = FLN } }
+	}
+}
+
+KXWD_BEL_apply_neutral_wargoals_wallonia = {
+	34 = { owner = { save_event_target_as = KXWD_BEL_wallonia_owner } }
+	if = {
+		limit = {
+			exists = event_target:KXWD_BEL_wallonia_owner
+			event_target:KXWD_BEL_wallonia_owner = { NOT = { tag = HOL } NOT = { tag = GER } }
+		}
+		HOL = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_wallonia_owner } }
+		GER = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_wallonia_owner } }
+	}
+	if = {
+		limit = { country_exists = WLL }
+		HOL = { if = { limit = { has_subject = WLL } end_puppet = WLL } }
+		GER = { if = { limit = { has_subject = WLL } end_puppet = WLL } }
+	}
+}
+
+KXWD_BEL_resolve_HOL_territorial = {
+	if = {
+		limit = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 2 }
+			check_variable = { global.KXWD_BEL_wallonia_frame = 2 }
+		}
+		transfer_state = 6
+		transfer_state = 29
+		transfer_state = 34
+		BEL = {
+			add_state_core = 6
+			add_state_core = 29
+			add_state_core = 34
+		}
+		release = BEL
+		set_autonomy = {
+			target = BEL
+			autonomy_state = kx_colored_puppet
+		}
+	}
+	else = {
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_flanders_frame = 1 } }
+			transfer_state = 6
+			transfer_state = 29
+			add_state_core = 6
+			add_state_core = 29
+		}
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_flanders_frame = 2 } }
+			transfer_state = 6
+			transfer_state = 29
+			FLN = {
+				add_state_core = 6
+				add_state_core = 29
+			}
+			release = FLN
+			set_autonomy = {
+				target = FLN
+				autonomy_state = kx_colored_puppet
+			}
+		}
+
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_wallonia_frame = 1 } }
+			transfer_state = 34
+			add_state_core = 34
+		}
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_wallonia_frame = 2 } }
+			transfer_state = 34
+			WLL = { add_state_core = 34 }
+			release = WLL
+			set_autonomy = {
+				target = WLL
+				autonomy_state = kx_colored_puppet
+			}
+		}
+	}
+}
+
+KXWD_BEL_resolve_GER_territorial = {
+	if = {
+		limit = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 4 }
+			check_variable = { global.KXWD_BEL_wallonia_frame = 4 }
+		}
+		transfer_state = 6
+		transfer_state = 29
+		transfer_state = 34
+		BEL = {
+			add_state_core = 6
+			add_state_core = 29
+			add_state_core = 34
+		}
+		release = BEL
+		set_autonomy = {
+			target = BEL
+			autonomy_state = kx_colored_puppet
+		}
+	}
+	else = {
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_flanders_frame = 5 } }
+			transfer_state = 6
+			transfer_state = 29
+			add_state_core = 6
+			add_state_core = 29
+		}
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_flanders_frame = 4 } }
+			transfer_state = 6
+			transfer_state = 29
+			FLN = {
+				add_state_core = 6
+				add_state_core = 29
+			}
+			release = FLN
+			set_autonomy = {
+				target = FLN
+				autonomy_state = kx_colored_puppet
+			}
+		}
+
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_wallonia_frame = 5 } }
+			transfer_state = 34
+			add_state_core = 34
+		}
+		if = {
+			limit = { check_variable = { global.KXWD_BEL_wallonia_frame = 4 } }
+			transfer_state = 34
+			WLL = { add_state_core = 34 }
+			release = WLL
+			set_autonomy = {
+				target = WLL
+				autonomy_state = kx_colored_puppet
+			}
+		}
+	}
+}
+
+KXWD_BEL_resolve_neutral_and_finalize = {
+	if = {
+		limit = { check_variable = { global.KXWD_BEL_flanders_frame = 3 } }
+		KXWD_BEL_apply_neutral_wargoals_flanders = yes
+	}
+	if = {
+		limit = { check_variable = { global.KXWD_BEL_wallonia_frame = 3 } }
+		KXWD_BEL_apply_neutral_wargoals_wallonia = yes
+	}
+
+	set_global_flag = KXWD_BEL_resolution_done
+	clr_global_flag = KXWD_BEL_resolution_ready
+}
+
+KXWD_BEL_resolve_influence_outcome = {
+	if = {
+		limit = { tag = HOL }
+		KXWD_BEL_resolve_HOL_territorial = yes
+		if = {
+			limit = { country_exists = GER }
+			GER = { country_event = KXWD_BEL_influence.10 }
+		}
+		else = {
+			KXWD_BEL_resolve_neutral_and_finalize = yes
+		}
+	}
+
+	if = {
+		limit = { tag = GER }
+		KXWD_BEL_resolve_GER_territorial = yes
+		if = {
+			limit = { country_exists = HOL }
+			HOL = { country_event = KXWD_BEL_influence.11 }
+		}
+		else = {
+			KXWD_BEL_resolve_neutral_and_finalize = yes
+		}
+	}
 }

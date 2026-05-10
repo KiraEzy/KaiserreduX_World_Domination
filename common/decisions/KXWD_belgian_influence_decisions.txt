@@ -1,4 +1,484 @@
 KXWD_belgian_influence_struggle = {
+	KXWD_BEL_influence_countdown_210_days = {
+		icon = generic_prepare_civil_war
+
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
+
+		activation = {
+			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+			NOT = { has_global_flag = KXWD_BEL_resolution_ready }
+		}
+
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+
+		cancel_trigger = {
+			OR = {
+				has_global_flag = KXWD_BEL_resolution_done
+				NOT = { has_global_flag = KXWD_belgian_influence_active }
+			}
+		}
+
+		selectable_mission = no
+		is_good = no
+		days_mission_timeout = 5
+		# days_mission_timeout = 210
+		fire_only_once = yes
+
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName]: Mission timeout KXWD_BEL_influence_countdown_210_days"
+			if = {
+				limit = {
+					NOT = { has_global_flag = KXWD_BEL_deadline_handled }
+				}
+				set_global_flag = KXWD_BEL_deadline_handled
+				if = {
+					limit = {
+						country_exists = GER
+						GER = { is_ai = no }
+						OR = {
+							NOT = { country_exists = HOL }
+							HOL = { is_ai = yes }
+						}
+					}
+					GER = {
+						KXWD_BEL_resolve_influence_outcome = yes
+						country_event = KXWD_BEL_influence.2
+					}
+				}
+				else_if = {
+					limit = { country_exists = HOL }
+					HOL = {
+						KXWD_BEL_resolve_influence_outcome = yes
+						country_event = KXWD_BEL_influence.2
+					}
+				}
+				else_if = {
+					limit = { country_exists = GER }
+					GER = {
+						KXWD_BEL_resolve_influence_outcome = yes
+						country_event = KXWD_BEL_influence.2
+					}
+				}
+			}
+		}
+
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_resolve_influence_situation = {
+		icon = generic_political_reform
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_BEL_resolution_ready
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
+		available = { always = yes }
+		cost = 0
+		days_remove = 1
+		fire_only_once = yes
+		complete_effect = {
+			KXWD_BEL_resolve_influence_outcome = yes
+			country_event = KXWD_BEL_influence.2
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_flanders_frame_1 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_flanders_frame_1"
+			set_variable = { global.KXWD_BEL_flanders_frame = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_flanders_frame_2 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_flanders_frame_2"
+			set_variable = { global.KXWD_BEL_flanders_frame = 2 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_flanders_frame_3 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_flanders_frame_3"
+			set_variable = { global.KXWD_BEL_flanders_frame = 3 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_flanders_frame_4 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_flanders_frame_4"
+			set_variable = { global.KXWD_BEL_flanders_frame = 4 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_flanders_frame_5 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_flanders_frame_5"
+			set_variable = { global.KXWD_BEL_flanders_frame = 5 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_wallonia_frame_1 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_wallonia_frame_1"
+			set_variable = { global.KXWD_BEL_wallonia_frame = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_wallonia_frame_2 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_wallonia_frame_2"
+			set_variable = { global.KXWD_BEL_wallonia_frame = 2 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_wallonia_frame_3 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_wallonia_frame_3"
+			set_variable = { global.KXWD_BEL_wallonia_frame = 3 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_wallonia_frame_4 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_wallonia_frame_4"
+			set_variable = { global.KXWD_BEL_wallonia_frame = 4 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_debug_wallonia_frame_5 = {
+		icon = generic_political_reform
+		cost = 0
+		visible = {
+			is_debug = yes
+			OR = { original_tag = HOL original_tag = GER }
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		available = {
+			is_debug = yes
+			has_global_flag = KXWD_belgian_influence_active
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_debug_wallonia_frame_5"
+			set_variable = { global.KXWD_BEL_wallonia_frame = 5 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_1_fund_friendly_newspapers = {
+		icon = generic_political_reform
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			add_political_power = 50
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_2_bribe_municipal_elites = {
+		icon = generic_improve_worker_conditions
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			increase_ruling_party_popularity_by_2 = yes
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_3_support_trade_leagues = {
+		icon = generic_trade_interdiction
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 119
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 120
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_4_sponsor_language_leagues = {
+		icon = generic_political_reform
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			add_stability = 0.02
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_5_subsidize_newspapers = {
+		icon = generic_consumer_goods
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			add_war_support = 0.02
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_6_court_industrialists = {
+		icon = generic_construct_civilian
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 129
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 130
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_flanders_prep_7_student_clergy_networks = {
+		icon = generic_political_reform
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
+			add_manpower = 1000
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
 
 	KXWD_BEL_influence_nudge_flanders_dutch = {
 		icon = generic_political_reform
@@ -8,16 +488,21 @@ KXWD_belgian_influence_struggle = {
 		}
 
 		available = {
-			has_political_power > 24
+			has_political_power > 39
 			NOT = { check_variable = { global.KXWD_BEL_flanders_frame = 1 } }
+			custom_override_tooltip = {
+				tooltip = KXWD_BEL_need_flanders_prep_tt
+				check_variable = { global.KXWD_BEL_flanders_prep > 4 }
+			}
 		}
 
-		cost = 25
-		days_remove = 14
+		cost = 40
+		days_remove = 21
 		fire_only_once = no
 
 		complete_effect = {
 			subtract_from_variable = { global.KXWD_BEL_flanders_frame = 1 }
+			subtract_from_variable = { global.KXWD_BEL_flanders_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_flanders_dutch_tt
 		}
@@ -33,20 +518,213 @@ KXWD_belgian_influence_struggle = {
 		}
 
 		available = {
-			has_political_power > 24
+			has_political_power > 39
 			NOT = { check_variable = { global.KXWD_BEL_flanders_frame = 5 } }
+			custom_override_tooltip = {
+				tooltip = KXWD_BEL_need_flanders_prep_tt
+				check_variable = { global.KXWD_BEL_flanders_prep > 4 }
+			}
 		}
 
-		cost = 25
-		days_remove = 14
+		cost = 40
+		days_remove = 21
 		fire_only_once = no
 
 		complete_effect = {
 			add_to_variable = { global.KXWD_BEL_flanders_frame = 1 }
+			subtract_from_variable = { global.KXWD_BEL_flanders_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_flanders_german_tt
 		}
 
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_1_language_societies = {
+		icon = generic_political_reform
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			add_stability = 0.02
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_2_discredit_rivals = {
+		icon = generic_strikes
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			add_political_power = 50
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_3_smuggle_campaign_money = {
+		icon = generic_foreign_influence_defense
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			increase_ruling_party_popularity_by_2 = yes
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_4_business_circles = {
+		icon = generic_construct_civilian
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			add_war_support = 0.02
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_5_press_networks = {
+		icon = generic_political_reform
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 9
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 10
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			add_manpower = 1000
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_6_undermine_german_investors = {
+		icon = generic_trade_interdiction
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 119
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 120
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
+		ai_will_do = { factor = 0 }
+	}
+
+	KXWD_BEL_wallonia_prep_7_final_prep_lobby = {
+		icon = generic_foreign_influence_defense
+		visible = { OR = { original_tag = HOL original_tag = GER } }
+		available = {
+			has_political_power > 129
+			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+		}
+		cost = 130
+		days_remove = 21
+		days_re_enable = 7
+		fire_only_once = no
+		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		remove_effect = {
+			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		cancel_effect = {
+			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			KXWD_clamp_belgian_influence_frames = yes
+		}
 		ai_will_do = { factor = 0 }
 	}
 
@@ -58,16 +736,21 @@ KXWD_belgian_influence_struggle = {
 		}
 
 		available = {
-			has_political_power > 24
+			has_political_power > 39
 			NOT = { check_variable = { global.KXWD_BEL_wallonia_frame = 1 } }
+			custom_override_tooltip = {
+				tooltip = KXWD_BEL_need_wallonia_prep_tt
+				check_variable = { global.KXWD_BEL_wallonia_prep > 4 }
+			}
 		}
 
-		cost = 25
-		days_remove = 14
+		cost = 40
+		days_remove = 21
 		fire_only_once = no
 
 		complete_effect = {
 			subtract_from_variable = { global.KXWD_BEL_wallonia_frame = 1 }
+			subtract_from_variable = { global.KXWD_BEL_wallonia_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_wallonia_dutch_tt
 		}
@@ -83,16 +766,21 @@ KXWD_belgian_influence_struggle = {
 		}
 
 		available = {
-			has_political_power > 24
+			has_political_power > 39
 			NOT = { check_variable = { global.KXWD_BEL_wallonia_frame = 5 } }
+			custom_override_tooltip = {
+				tooltip = KXWD_BEL_need_wallonia_prep_tt
+				check_variable = { global.KXWD_BEL_wallonia_prep > 4 }
+			}
 		}
 
-		cost = 25
-		days_remove = 14
+		cost = 40
+		days_remove = 21
 		fire_only_once = no
 
 		complete_effect = {
 			add_to_variable = { global.KXWD_BEL_wallonia_frame = 1 }
+			subtract_from_variable = { global.KXWD_BEL_wallonia_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_wallonia_german_tt
 		}
