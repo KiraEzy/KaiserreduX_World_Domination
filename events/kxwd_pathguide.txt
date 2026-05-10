@@ -287,3 +287,15 @@ country_event = { #Transamur Slavic Pathguide
 		name = wd_pathguide.24.a
 	}
 }
+
+country_event = { #Dominion of India Pathguide
+	id = wd_pathguide.25
+	title = wd_pathguide.25.t
+	desc = wd_pathguide.25.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.25.a
+	}
+}
