@@ -16,7 +16,9 @@ TRM_integration_game = {
 		original_tag = TRM
 	}
 
-	visible = { 
-    has_completed_focus = TRM_spirit_revolution
+	visible = {
+		or = {
+    		has_completed_focus = TRM_spirit_revolution
+		}
 	}
 }
