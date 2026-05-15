@@ -99,6 +99,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -119,6 +120,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -139,6 +141,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -159,6 +162,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -179,6 +183,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -199,6 +204,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -219,6 +225,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -239,6 +246,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -259,6 +267,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -279,6 +288,7 @@ KXWD_belgian_influence_struggle = {
 			is_debug = yes
 			OR = { original_tag = HOL original_tag = GER }
 			has_global_flag = KXWD_belgian_influence_active
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 		available = {
 			is_debug = yes
@@ -294,7 +304,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_1_fund_friendly_newspapers = {
 		icon = generic_political_reform
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -320,7 +333,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_2_bribe_municipal_elites = {
 		icon = generic_improve_worker_conditions
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -346,7 +362,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_3_support_trade_leagues = {
 		icon = generic_trade_interdiction
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 119
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -375,7 +394,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_4_sponsor_language_leagues = {
 		icon = generic_political_reform
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -401,7 +423,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_5_subsidize_newspapers = {
 		icon = generic_consumer_goods
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -427,7 +452,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_6_court_industrialists = {
 		icon = generic_construct_civilian
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 129
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -456,7 +484,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_flanders_prep_7_student_clergy_networks = {
 		icon = generic_political_reform
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -485,6 +516,7 @@ KXWD_belgian_influence_struggle = {
 
 		visible = {
 			original_tag = HOL
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 
 		available = {
@@ -515,6 +547,7 @@ KXWD_belgian_influence_struggle = {
 
 		visible = {
 			original_tag = GER
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 
 		available = {
@@ -542,7 +575,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_1_language_societies = {
 		icon = generic_political_reform
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -568,7 +604,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_2_discredit_rivals = {
 		icon = generic_strikes
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -594,7 +633,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_3_smuggle_campaign_money = {
 		icon = generic_foreign_influence_defense
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -620,7 +662,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_4_business_circles = {
 		icon = generic_construct_civilian
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -646,7 +691,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_5_press_networks = {
 		icon = generic_political_reform
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 9
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -672,7 +720,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_6_undermine_german_investors = {
 		icon = generic_trade_interdiction
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 119
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -701,7 +752,10 @@ KXWD_belgian_influence_struggle = {
 
 	KXWD_BEL_wallonia_prep_7_final_prep_lobby = {
 		icon = generic_foreign_influence_defense
-		visible = { OR = { original_tag = HOL original_tag = GER } }
+		visible = {
+			OR = { original_tag = HOL original_tag = GER }
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
+		}
 		available = {
 			has_political_power > 129
 			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
@@ -733,6 +787,7 @@ KXWD_belgian_influence_struggle = {
 
 		visible = {
 			original_tag = HOL
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 
 		available = {
@@ -763,6 +818,7 @@ KXWD_belgian_influence_struggle = {
 
 		visible = {
 			original_tag = GER
+			NOT = { has_global_flag = KXWD_BEL_resolution_done }
 		}
 
 		available = {
