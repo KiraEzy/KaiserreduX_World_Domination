@@ -1,3 +1,51 @@
+
+###################################################################################################################
+# Integration Decisions
+
+RUS_integration_game = {
+	icon = GFX_category_icon
+	priority = 11
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow
+			has_completed_focus = RUS_Clericals #yellow
+			has_completed_focus = RUS_Crown_And_Sword
+			has_completed_focus = RUS_Regency
+		}
+	}
+}
+
+###################################################################################################################
+# Decisions to hire Generals
+
+RUS_recruiting_game = {
+	icon = GFX_category_icon
+	priority = 10
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
+			has_completed_focus = RUS_Clericals #yellow validated
+			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restorationis
+			has_completed_focus = Rus_Regency #Drozdovite Regency
+		}
+	}
+}
+
+###################################################################################################################
+# Absolutist Puppets
+
 RUS_MON_Great_game = {
 	icon = GFX_category_icon
 
@@ -7,34 +55,14 @@ RUS_MON_Great_game = {
 
 	visible = { 
 		#for yellow flag
+		is_ai = no
 		OR = {
-			# if = {
-			# 	limit = {
-			# 		AND = {
-			# 			has_completed_focus = RUS_God_Save_the_Tsar
-			# 			NOT = { has_completed_focus = RUS_Clericals }
-			# 		}
-			# 	}
-			# 	has_completed_focus = RUS_rnsma #blackhumdred yellow
-			# }
 			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
 			has_completed_focus = RUS_Clericals #yellow validated
-			has_completed_focus = RUS_Black_Tsar #yellow wrangle as tsar validated
-			# RUS_wrangel_in_power = yes
-			# has_completed_focus = RUS_Imperial_Glory
+			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restorationis
+			has_completed_focus = Rus_Regency #Drozdovite Regency
 		}
 	}
 }
-RUS_integration_game = {
-	icon = GFX_category_icon
 
-	allowed = {
-		original_tag = RUS
-	}
-
-	visible = { 
-		has_completed_focus = RUS_rnsma #blackhumdred yellow
-		has_completed_focus = RUS_Clericals #yellow
-		has_completed_focus = RUS_Black_Tsar #yellow wrangle as tsar
-	}
-}
+###################################################################################################################
