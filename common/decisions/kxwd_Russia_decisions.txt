@@ -1750,6 +1750,16 @@ Rehabilitate_Don_Cossack_Generals = {
 		owns_state = 218
 		DKB = {
 			exists = no
+			any_unit_leader = {
+				or = {
+					has_trait = RUS_don_cossack
+					has_trait = RUS_terek_cossack 
+					has_trait = RUS_lineytsy_cossack
+					has_trait = RUS_kuban_cossack
+					has_trait = RUS_orenburg_cossack
+					has_trait = RUS_ural_cossack
+				}
+			}
 		}
 	}
 
@@ -1760,14 +1770,16 @@ Rehabilitate_Don_Cossack_Generals = {
 	}
 	complete_effect = {
 		DKB = {
-			all_unit_leader = {
+			every_unit_leader = {
 				limit = {
-					has_trait = RUS_don_cossack
-					has_trait = RUS_terek_cossack 
-					has_trait = RUS_lineytsy_cossack
-					has_trait = RUS_kuban_cossack
-					has_trait = RUS_orenburg_cossack
-					has_trait = RUS_ural_cossack
+					or = {
+						has_trait = RUS_don_cossack
+						has_trait = RUS_terek_cossack 
+						has_trait = RUS_lineytsy_cossack
+						has_trait = RUS_kuban_cossack
+						has_trait = RUS_orenburg_cossack
+						has_trait = RUS_ural_cossack
+					}
 				}
 				set_nationality = RUS
 			}
@@ -1781,6 +1793,16 @@ Rehabilitate_Kuban_Cossack_Generals = {
 		owns_state = 234
 		KUB = {
 			exists = no
+			any_unit_leader = {
+				or = {
+					has_trait = RUS_don_cossack
+					has_trait = RUS_terek_cossack 
+					has_trait = RUS_lineytsy_cossack
+					has_trait = RUS_kuban_cossack
+					has_trait = RUS_orenburg_cossack
+					has_trait = RUS_ural_cossack
+				}
+			}
 		}
 	}
 
@@ -1791,14 +1813,190 @@ Rehabilitate_Kuban_Cossack_Generals = {
 	}
 	complete_effect = {
 		KUB = {
-			all_unit_leader = {
+			every_unit_leader = {
 				limit = {
+					or = {
+						has_trait = RUS_don_cossack
+						has_trait = RUS_terek_cossack 
+						has_trait = RUS_lineytsy_cossack
+						has_trait = RUS_kuban_cossack
+						has_trait = RUS_orenburg_cossack
+						has_trait = RUS_ural_cossack
+					}
+				}
+				set_nationality = RUS
+			}
+		}
+	}
+}
+Rehabilitate_Orenburg_Cossack_Generals = {
+	icon = generic_prepare_civil_war
+
+	available = {
+		owns_state = 1208
+		ORE = {
+			exists = no
+			any_unit_leader = {
+				or = {
 					has_trait = RUS_don_cossack
 					has_trait = RUS_terek_cossack 
 					has_trait = RUS_lineytsy_cossack
 					has_trait = RUS_kuban_cossack
 					has_trait = RUS_orenburg_cossack
 					has_trait = RUS_ural_cossack
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ORE = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_don_cossack
+						has_trait = RUS_terek_cossack 
+						has_trait = RUS_lineytsy_cossack
+						has_trait = RUS_kuban_cossack
+						has_trait = RUS_orenburg_cossack
+						has_trait = RUS_ural_cossack
+					}
+				}
+				set_nationality = RUS
+			}
+		}
+	}
+}
+Rehabilitate_Uralsk_Cossack_Generals = {
+	icon = generic_prepare_civil_war
+
+	available = {
+		owns_state = 406
+		URL = {
+			exists = no
+			any_unit_leader = {
+				or = {
+					has_trait = RUS_don_cossack
+					has_trait = RUS_terek_cossack 
+					has_trait = RUS_lineytsy_cossack
+					has_trait = RUS_kuban_cossack
+					has_trait = RUS_orenburg_cossack
+					has_trait = RUS_ural_cossack
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		URL = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_don_cossack
+						has_trait = RUS_terek_cossack 
+						has_trait = RUS_lineytsy_cossack
+						has_trait = RUS_kuban_cossack
+						has_trait = RUS_orenburg_cossack
+						has_trait = RUS_ural_cossack
+					}
+				}
+				set_nationality = RUS
+			}
+		}
+	}
+}
+Rehabilitate_Terek_Cossack_Generals = {
+	icon = generic_prepare_civil_war
+
+	available = {
+		owns_state = 1189
+		MTR = {
+			exists = no
+			any_unit_leader = {
+				or = {
+					has_trait = RUS_don_cossack
+					has_trait = RUS_terek_cossack 
+					has_trait = RUS_lineytsy_cossack
+					has_trait = RUS_kuban_cossack
+					has_trait = RUS_orenburg_cossack
+					has_trait = RUS_ural_cossack
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MTR = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_don_cossack
+						has_trait = RUS_terek_cossack 
+						has_trait = RUS_lineytsy_cossack
+						has_trait = RUS_kuban_cossack
+						has_trait = RUS_orenburg_cossack
+						has_trait = RUS_ural_cossack
+					}
+				}
+				set_nationality = RUS
+			}
+		}
+	}
+}
+Rehabilitate_Mongolian_Generals = {
+	icon = generic_prepare_civil_war
+
+	available = {
+		owns_state = 330
+		MON = {
+			exists = no
+			any_unit_leader = {
+				or = {
+					has_trait = RUS_don_cossack
+					has_trait = RUS_terek_cossack 
+					has_trait = RUS_lineytsy_cossack
+					has_trait = RUS_kuban_cossack
+					has_trait = RUS_orenburg_cossack
+					has_trait = RUS_ural_cossack
+					has_trait = MON_rvk_member_trait 
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MON = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_don_cossack
+						has_trait = RUS_terek_cossack 
+						has_trait = RUS_lineytsy_cossack
+						has_trait = RUS_kuban_cossack
+						has_trait = RUS_orenburg_cossack
+						has_trait = RUS_ural_cossack
+						has_trait = MON_rvk_member_trait 
+					}
 				}
 				set_nationality = RUS
 			}
