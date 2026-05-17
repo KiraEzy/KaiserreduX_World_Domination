@@ -1,82 +1,292 @@
 ﻿l_english:
 
+###################################################################################################################
+# Integration Decisions
+
 RUS_integration_game:0 "Integration of True Russian Lands"
 
-RUS_establish_rk_RUSINTUKR:0 "Integrate Ukraine"
+RUS_RUSINTUKR:0 "Integrate Ukraine"
 
-RUS_establish_rk_RUSINTWHR:0 "Integrate Belarus"
+RUS_RUSINTWHR:0 "Integrate Belarus"
 
-RUS_establish_rk_RUSINTLIT:0 "Integrate Lithuania"
+RUS_RUSINTLIT:0 "Integrate Lithuania"
 
-RUS_establish_rk_RUSINTBAT:0 "Integrate the Baltics"
+RUS_RUSINTBAT:0 "Integrate the Baltics"
 
-RUS_establish_rk_RUSINTFIN:0 "Integrate Finland"
+RUS_RUSINTFIN:0 "Integrate Finland"
 
-RUS_establish_rk_RUSINTPOL:0 "Integrate Poland"
+RUS_RUSINTPOL:0 "Integrate Poland"
 
-RUS_establish_rk_RUSINTWUKR:0 "Integrate West Ukraine"
+RUS_RUSINTWUKR:0 "Integrate West Ukraine"
 
-RUS_establish_rk_RUSINTGLC:0 "Integrate Galicia"
+RUS_RUSINTGLC:0 "Integrate Galicia"
 
-RUS_establish_rk_RUSINTMOL:0 "Integrate Moldavia"
+RUS_RUSINTMOL:0 "Integrate Moldavia"
 
-RUS_establish_rk_RUSINTDKB:0 "Integrate Don Region"
+RUS_RUSINTDKB:0 "Integrate Don Region"
 
-RUS_establish_rk_RUSINTKLM:0 "Integrate Kalmykia"
+RUS_RUSINTKLM:0 "Integrate Kalmykia"
 
-RUS_establish_rk_RUSINTKUB:0 "Integrate Kuban"
+RUS_RUSINTKUB:0 "Integrate Kuban"
 
-RUS_establish_rk_RUSINTNCAU:0 "Integrate North Caucasus"
+RUS_RUSINTNCAU:0 "Integrate North Caucasus"
 
-RUS_establish_rk_RUSINTGEO:0 "Integrate Georgia"
+RUS_RUSINTGEO:0 "Integrate Georgia"
 
-RUS_establish_rk_RUSINTAZE:0 "Integrate East Armenia and Azerbaijan"
+RUS_RUSINTAZE:0 "Integrate East Armenia and Azerbaijan"
 
-RUS_establish_rk_RUSINTARM:0 "Integrate Yerevan"
+RUS_RUSINTARM:0 "Integrate Yerevan"
 
-RUS_establish_rk_RUSINTALO:0 "Integrate Alash Orda"
+RUS_RUSINTALO:0 "Integrate Alash Orda"
 
-RUS_establish_rk_RUSINTTRK:0 "Integrate Turkestan"
+RUS_RUSINTTRK:0 "Integrate Turkestan"
 
-RUS_establish_rk_RUSINTKHV:0 "Integrate Khiva"
+RUS_RUSINTKHV:0 "Integrate Khiva"
 
-RUS_establish_rk_RUSINTBKR:0 "Integrate Bukhara"
+RUS_RUSINTBKR:0 "Integrate Bukhara"
 
-RUS_establish_rk_RUSINTTRM:0 "Integrate Transamur"
+RUS_RUSINTTRM:0 "Integrate Transamur"
 
-RUS_establish_rk_RUSINTMON:0 "Integrate Mongolia"
+RUS_RUSINTMON:0 "Integrate Mongolia"
 
-RUS_establish_rk_RUSINTSUI:0 "Integrate Suiyuan"
+RUS_RUSINTSUI:0 "Integrate Suiyuan"
 
-RUS_establish_rk_RUSINTMAN:0 "Integrate Manchuria"
+RUS_RUSINTMAN:0 "Integrate Manchuria"
 
-RUS_establish_rk_RUSINTPRA:0 "Integrate Port Arthur"
+RUS_RUSINTPRA:0 "Integrate Port Arthur"
 
-RUS_establish_rk_RUSINTMRU:0 "Integrate Mongolian Russia"
+RUS_RUSINTMRU:0 "Integrate Mongolian Russia"
 
-RUS_establish_rk_RUSINTANA:0 "Integrate Anatolian Armenia"
+RUS_RUSINTANA:0 "Integrate Anatolian Armenia"
 
-RUS_establish_rk_RUSINTNPE:0 "Integrate North Persia"
+RUS_RUSINTNPE:0 "Integrate North Persia"
 
-RUS_establish_rk_RUSINTPPO:0 "Integrate Prussian Poland"
+RUS_RUSINTPPO:0 "Integrate Prussian Poland"
 
-RUS_establish_rk_RUSINTSAK:0 "Integrate Sakhalin and the Kurils"
+RUS_RUSINTSAK:0 "Integrate Sakhalin and the Kurils"
 
-RUS_establish_rk_RUSINTALA:0 "Integrate Alaska"
+RUS_RUSINTALA:0 "Integrate Alaska"
 
-RUS_establish_rk_RUSINTETR:0 "Integrate Eastern Turkestan"
+RUS_RUSINTETR:0 "Integrate Eastern Turkestan"
 
-RUS_establish_rk_RUSINTTSG:0 "Integrate Tsargrad"
+RUS_RUSINTTSG:0 "Integrate Tsargrad"
 
-RUS_establish_rk_RUSINTTRC:0 "Integrate Transcarpathia"
+RUS_RUSINTTRC:0 "Integrate Transcarpathia"
 
-RUS_establish_rk_RUSINTEPR:0 "Integrate East Prussia"
+RUS_RUSINTEPR:0 "Integrate East Prussia"
 
-RUS_establish_rk_RUSINTRIGA:0 "Integrate Riga"
+RUS_RUSINTRIGA:0 "Integrate Riga"
 
+###################################################################################################################
+# Decisions to hire Generals
+
+RUS_recruiting_game:0 "Officer Rehabilitation"
 Rehabilitate_Terek_Cossack_Generals:0 "Rehabilitate Terek Cossack Officers"
 Rehabilitate_Don_Cossack_Generals:0 "Rehabilitate Don Cossack Officers"
 Rehabilitate_Kuban_Cossack_Generals:0 "Rehabilitate Kuban Cossack Officers"
 Rehabilitate_Orenburg_Cossack_Generals:0 "Rehabilitate Orenburg Cossack Officers"
 Rehabilitate_Ural_Cossack_Generals:0 "Rehabilitate Ural Cossack Officers"
 Rehabilitate_Mongolian_Generals:0 "Rehabilitate Mongolian RVK Officers"
+
+###################################################################################################################
+# Absolutist Puppets
+
+RUS_absolutist_great_game:0 "Renewed Russian Imperialism"
+
+RUS_ABSO_ROM_OCC:0 "General-gubernatorstvo Rumynii"
+RUS_ABSO_establish_rk_ROM:0 "Establish General-gubernatorstvo Rumynii"
+
+RUS_ABSO_BUL_OCC:0 "General-gubernatorstvo Bolgarii"
+RUS_ABSO_establish_rk_BUL:0 "Establish General-gubernatorstvo Bolgarii"
+
+RUS_ABSO_SER_OCC:0 "Korolevstvo Yugoslaviya"
+RUS_ABSO_establish_rk_SER:0 "Establish Korolevstvo Yugoslaviya"
+
+RUS_ABSO_ALB_OCC:0 "General-gubernatorstvo Albanii"
+RUS_ABSO_establish_rk_ALB:0 "Establish General-gubernatorstvo Albanii"
+
+RUS_ABSO_TUR_OCC:0 "General-gubernatorstvo Turtsii"
+RUS_ABSO_establish_rk_TUR:0 "Establish General-gubernatorstvo Turtsii"
+
+RUS_ABSO_GRE_OCC:0 "General-gubernatorstvo Gretsii"
+RUS_ABSO_establish_rk_GRE:0 "Establish General-gubernatorstvo Gretsii"
+
+RUS_ABSO_HUN_OCC:0 "General-gubernatorstvo Vengrii"
+RUS_ABSO_establish_rk_HUN:0 "Establish General-gubernatorstvo Vengrii"
+
+RUS_ABSO_CZE_OCC:0 "Chekhoslovatskaya Respublika"
+RUS_ABSO_establish_rk_CZE:0 "Establish Chekhoslovatskaya Respublika"
+
+RUS_ABSO_AUS_OCC:0 "General-gubernatorstvo Avstrii"
+RUS_ABSO_establish_rk_AUS:0 "Establish General-gubernatorstvo Avstrii"
+
+RUS_ABSO_BAY_OCC:0 "General-gubernatorstvo Yuzhnoy Germanii"
+RUS_ABSO_establish_rk_BAY:0 "Establish General-gubernatorstvo Yuzhnoy Germanii"
+
+RUS_ABSO_DDR_OCC:0 "General-gubernatorstvo Severnoy Germanii"
+RUS_ABSO_establish_rk_DDR:0 "Establish General-gubernatorstvo Severnoy Germanii"
+
+RUS_ABSO_DEN_OCC:0 "General-gubernatorstvo Danii"
+RUS_ABSO_establish_rk_DEN:0 "Establish General-gubernatorstvo Danii"
+
+RUS_ABSO_SWE_OCC:0 "General-gubernatorstvo Shvetsii"
+RUS_ABSO_establish_rk_SWE:0 "Establish General-gubernatorstvo Shvetsii"
+
+RUS_ABSO_NOR_OCC:0 "General-gubernatorstvo Norvegii"
+RUS_ABSO_establish_rk_NOR:0 "Establish General-gubernatorstvo Norvegii"
+
+RUS_ABSO_BEL_OCC:0 "General-gubernatorstvo Benilyuksa"
+RUS_ABSO_establish_rk_BEL:0 "Establish General-gubernatorstvo Benilyuksa"
+
+RUS_ABSO_SWI_OCC:0 "General-gubernatorstvo Shveytsarii"
+RUS_ABSO_establish_rk_SWI:0 "Establish General-gubernatorstvo Shveytsarii"
+
+RUS_ABSO_ITA_OCC:0 "General-gubernatorstvo Italii"
+RUS_ABSO_establish_rk_ITA:0 "Establish General-gubernatorstvo Italii"
+
+RUS_ABSO_FRP_OCC:0 "General-gubernatorstvo Frantsii"
+RUS_ABSO_establish_rk_FRP:0 "Establish General-gubernatorstvo Frantsii"
+
+RUS_ABSO_CAR_OCC:0 "General-gubernatorstvo Ispanii"
+RUS_ABSO_establish_rk_CAR:0 "Establish General-gubernatorstvo Ispanii"
+
+RUS_ABSO_POR_OCC:0 "General-gubernatorstvo Portugalii"
+RUS_ABSO_establish_rk_POR:0 "Establish General-gubernatorstvo Portugalii"
+
+RUS_ABSO_GBP_OCC:0 "General-gubernatorstvo Velikobritanii"
+RUS_ABSO_establish_rk_GBP:0 "Establish General-gubernatorstvo Velikobritanii"
+
+RUS_ABSO_IRE_OCC:0 "General-gubernatorstvo Irlandii"
+RUS_ABSO_establish_rk_IRE:0 "Establish General-gubernatorstvo Irlandii"
+
+RUS_ABSO_LEB_OCC:0 "General-gubernatorstvo Sirii"
+RUS_ABSO_establish_rk_LEB:0 "Establish General-gubernatorstvo Sirii"
+
+RUS_ABSO_IRQ_OCC:0 "General-gubernatorstvo Iraka"
+RUS_ABSO_establish_rk_IRQ:0 "Establish General-gubernatorstvo Iraka"
+
+RUS_ABSO_JBS_OCC:0 "General-gubernatorstvo Aravii"
+RUS_ABSO_establish_rk_JBS:0 "Establish General-gubernatorstvo Aravii"
+
+RUS_ABSO_EGY_OCC:0 "General-gubernatorstvo Severnoy Afriki"
+RUS_ABSO_establish_rk_EGY:0 "Establish General-gubernatorstvo Severnoy Afriki"
+
+RUS_ABSO_SUD_OCC:0 "General-gubernatorstvo Vostochnoy Afriki"
+RUS_ABSO_establish_rk_SUD:0 "Establish General-gubernatorstvo Vostochnoy Afriki"
+
+RUS_ABSO_SIE_OCC:0 "General-gubernatorstvo Zapadnoy Afriki"
+RUS_ABSO_establish_rk_SIE:0 "Establish General-gubernatorstvo Zapadnoy Afriki"
+
+RUS_ABSO_TZN_OCC:0 "General-gubernatorstvo Tsentral'noy Afriki"
+RUS_ABSO_establish_rk_TZN:0 "Establish General-gubernatorstvo Tsentral'noy Afriki"
+
+RUS_ABSO_SAF_OCC:0 "General-gubernatorstvo Yuzhnoy Afriki"
+RUS_ABSO_establish_rk_SAF:0 "Establish General-gubernatorstvo Yuzhnoy Afriki"
+
+RUS_ABSO_MAG_OCC:0 "General-gubernatorstvo Madagaskara"
+RUS_ABSO_establish_rk_MAG:0 "Establish General-gubernatorstvo Madagaskara"
+
+RUS_ABSO_PER_OCC:0 "General-gubernatorstvo Persii"
+RUS_ABSO_establish_rk_PER:0 "Establish General-gubernatorstvo Persii"
+
+RUS_ABSO_AFG_OCC:0 "General-gubernatorstvo Afganistana"
+RUS_ABSO_establish_rk_AFG:0 "Establish General-gubernatorstvo Afganistana"
+
+RUS_ABSO_KOR_OCC:0 "General-gubernatorstvo Korei"
+RUS_ABSO_establish_rk_KOR:0 "Establish General-gubernatorstvo Korei"
+
+RUS_ABSO_QIE_OCC:0 "Tsinskaya imperiya Kitaya"
+RUS_ABSO_establish_rk_QIE:0 "Establish Tsinskaya imperiya Kitaya"
+
+RUS_ABSO_TIB_OCC:0 "General-gubernatorstvo Tibeta"
+RUS_ABSO_establish_rk_TIB:0 "Establish General-gubernatorstvo Tibeta"
+
+RUS_ABSO_JAP_OCC:0 "General-gubernatorstvo Yaponii"
+RUS_ABSO_establish_rk_JAP:0 "Establish General-gubernatorstvo Yaponii"
+
+RUS_ABSO_DEH_OCC:0 "General-gubernatorstvo Indii"
+RUS_ABSO_establish_rk_DEH:0 "Establish General-gubernatorstvo Indii"
+
+RUS_ABSO_BRM_OCC:0 "General-gubernatorstvo Birmy"
+RUS_ABSO_establish_rk_BRM:0 "Establish General-gubernatorstvo Birmy"
+
+RUS_ABSO_SIA_OCC:0 "General-gubernatorstvo Siama"
+RUS_ABSO_establish_rk_SIA:0 "Establish General-gubernatorstvo Siama"
+
+RUS_ABSO_INC_OCC:0 "General-gubernatorstvo Indokitaya"
+RUS_ABSO_establish_rk_INC:0 "Establish General-gubernatorstvo Indokitaya"
+
+RUS_ABSO_MLY_OCC:0 "General-gubernatorstvo Malayi"
+RUS_ABSO_establish_rk_MLY:0 "Establish General-gubernatorstvo Malayi"
+
+RUS_ABSO_PHI_OCC:0 "General-gubernatorstvo Filippin"
+RUS_ABSO_establish_rk_PHI:0 "Establish General-gubernatorstvo Filippin"
+
+RUS_ABSO_INS_OCC:0 "General-gubernatorstvo Vostochnoy Azii"
+RUS_ABSO_establish_rk_INS:0 "Establish General-gubernatorstvo Vostochnoy Azii"
+
+RUS_ABSO_AST_OCC:0 "General-gubernatorstvo Avstralii"
+RUS_ABSO_establish_rk_AST:0 "Establish General-gubernatorstvo Avstralii"
+
+RUS_ABSO_NZL_OCC:0 "General-gubernatorstvo Novoy Zelandii"
+RUS_ABSO_establish_rk_NZL:0 "Establish General-gubernatorstvo Novoy Zelandii"
+
+RUS_ABSO_CAN_OCC:0 "General-gubernatorstvo Kanady"
+RUS_ABSO_establish_rk_CAN:0 "Establish General-gubernatorstvo Kanady"
+
+RUS_ABSO_NEE_OCC:0 "General-gubernatorstvo Novoy Anglii"
+RUS_ABSO_establish_rk_NEE:0 "Establish General-gubernatorstvo Novoy Anglii"
+
+RUS_ABSO_USA_OCC:0 "General-gubernatorstvo Appalachi"
+RUS_ABSO_establish_rk_USA:0 "Establish General-gubernatorstvo Appalachi"
+
+RUS_ABSO_CGL_OCC:0 "General-gubernatorstvo Velikikh ozer"
+RUS_ABSO_establish_rk_CGL:0 "Establish General-gubernatorstvo Velikikh ozer"
+
+RUS_ABSO_TEX_OCC:0 "General-gubernatorstvo Luiziany"
+RUS_ABSO_establish_rk_TEX:0 "Establish General-gubernatorstvo Luiziany"
+
+RUS_ABSO_TXS_OCC:0 "General-gubernatorstvo Tekhasa"
+RUS_ABSO_establish_rk_TXS:0 "Establish General-gubernatorstvo Tekhasa"
+
+RUS_ABSO_CAL_OCC:0 "General-gubernatorstvo Kalifornii"
+RUS_ABSO_establish_rk_CAL:0 "Establish General-gubernatorstvo Kalifornii"
+
+RUS_ABSO_MEX_OCC:0 "General-gubernatorstvo Meksiki"
+RUS_ABSO_establish_rk_MEX:0 "Establish General-gubernatorstvo Meksiki"
+
+RUS_ABSO_GUA_OCC:0 "General-gubernatorstvo Tsentral'noy Ameriki"
+RUS_ABSO_establish_rk_GUA:0 "Establish General-gubernatorstvo Tsentral'noy Ameriki"
+
+RUS_ABSO_VEN_OCC:0 "General-gubernatorstvo Kolumbii"
+RUS_ABSO_establish_rk_VEN:0 "Establish General-gubernatorstvo Kolumbii"
+
+RUS_ABSO_JAM_OCC:0 "General-gubernatorstvo Karibskogo basseyna"
+RUS_ABSO_establish_rk_JAM:0 "Establish General-gubernatorstvo Karibskogo basseyna"
+
+RUS_ABSO_PRU_OCC:0 "General-gubernatorstvo Peru"
+RUS_ABSO_establish_rk_PRU:0 "Establish General-gubernatorstvo Peru"
+
+RUS_ABSO_BOL_OCC:0 "General-gubernatorstvo Bolivii"
+RUS_ABSO_establish_rk_BOL:0 "Establish General-gubernatorstvo Bolivii"
+
+RUS_ABSO_CHL_OCC:0 "General-gubernatorstvo Chili"
+RUS_ABSO_establish_rk_CHL:0 "Establish General-gubernatorstvo Chili"
+
+RUS_ABSO_ARG_OCC:0 "General-gubernatorstvo Argentiny"
+RUS_ABSO_establish_rk_ARG:0 "Establish General-gubernatorstvo Argentiny"
+
+RUS_ABSO_PAR_OCC:0 "General-gubernatorstvo Paragvaya"
+RUS_ABSO_establish_rk_PAR:0 "Establish General-gubernatorstvo Paragvaya"
+
+RUS_ABSO_URG_OCC:0 "General-gubernatorstvo Urugvaya"
+RUS_ABSO_establish_rk_URG:0 "Establish General-gubernatorstvo Urugvaya"
+
+RUS_ABSO_BRA_OCC:0 "General-gubernatorstvo Brazilii"
+RUS_ABSO_establish_rk_BRA:0 "Establish General-gubernatorstvo Brazilii"
+
+###################################################################################################################
+# Constitutionalist Puppets
+
+###################################################################################################################
+# Republican Puppets
