@@ -17,6 +17,9 @@ RUS_integration_game = {
 			has_completed_focus = RUS_Clericals #yellow
 			has_completed_focus = RUS_Crown_And_Sword
 			has_completed_focus = RUS_Regency
+			has_completed_focus = RUS_RUS_Long_Live_Tsar #VNS/KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
 		}
 	}
 }
@@ -39,6 +42,9 @@ RUS_recruiting_game = {
 			has_completed_focus = RUS_Clericals #yellow validated
 			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restoration
 			has_completed_focus = RUS_Regency #Drozdovite Regency
+			has_completed_focus = RUS_RUS_Long_Live_Tsar #VNS/KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
 		}
 	}
 }
@@ -69,5 +75,23 @@ RUS_absolutist_great_game = {
 ###################################################################################################################
 # Constitutional Puppets
 
+RUS_constitutional_great_game = {
+	icon = GFX_category_icon
+	priority = 9
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		#for normal flag
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_RUS_Long_Live_Tsar #VNS/KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
+		}
+	}
+}
+
 ###################################################################################################################
-# Republican Puppets
