@@ -7,6 +7,7 @@ TRM_UNI_great_game = {
 	}
 
 	visible = { 
+        is_ai = no
 		or = {
     		has_completed_focus = TRM_Form_A_New_Cabinet
 			has_completed_focus = TRM_May_The_Country_Be_Free
@@ -31,6 +32,7 @@ TRM_UNI_integration_game = {
 	}
 
 	visible = { 
+        is_ai = no
 		or = {
     		has_completed_focus = TRM_Form_A_New_Cabinet
 			has_completed_focus = TRM_May_The_Country_Be_Free
@@ -55,6 +57,7 @@ TRM_recruiting_game = {
 	}
 
 	visible = { 
+        is_ai = no
 		or = {
     		has_completed_focus = TRM_Form_A_New_Cabinet
 			has_completed_focus = TRM_May_The_Country_Be_Free
