@@ -1,0 +1,51 @@
+Russian_Century_Decisions = {
+	icon = GFX_category_icon
+	priority = 2
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+		OR = {
+			# RUS_is_absolute_monarchy = yes
+			# RUS_natpops_in_power = yes #validated
+			has_completed_focus = RUS_NSNP_In_Power #validated
+			has_completed_focus = RUS_NRPR_Elected #validated
+			RUS_kornilov_in_power = yes #validated
+			RUS_denikin_in_power = yes #validated
+			has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+			AND = { # validated
+			    has_completed_focus = RUS_Imperial_Glory
+				NOT = { has_completed_focus = RUS_Clericals }
+	    		NOT = { has_completed_focus = RUS_rnsma }
+			}
+		}
+	}
+}
+
+RUS_Faction_Interaction = {
+    icon = GFX_category_icon
+	priority = 1
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = {
+		OR = {
+			# RUS_is_absolute_monarchy = yes
+			# RUS_natpops_in_power = yes #validated
+			has_completed_focus = RUS_NSNP_In_Power #validated
+			has_completed_focus = RUS_NRPR_Elected #validated
+			RUS_kornilov_in_power = yes #validated
+			RUS_denikin_in_power = yes #validated
+			has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+			AND = { # validated
+			    has_completed_focus = RUS_Imperial_Glory
+				NOT = { has_completed_focus = RUS_Clericals }
+	    		NOT = { has_completed_focus = RUS_rnsma }
+			}
+		}
+	}
+}

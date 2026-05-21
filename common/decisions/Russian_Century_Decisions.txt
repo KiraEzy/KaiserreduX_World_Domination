@@ -1,0 +1,5664 @@
+Russian_Century_Decisions = {
+#WD Start
+	RUS_Occupy_Albania = {
+		icon = generic_nationalism
+
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        ALB = { is_subject_of = RUS }
+		}
+		
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Albania"
+			add_manpower = -5000
+				RUS = {
+						set_autonomy = {
+							target = ALB
+							autonomous_state = kr_military_district
+						}
+                       }			
+			ALB = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = ALB_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vladimir Tolstov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Tolstov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}				
+			}		
+		}
+	}
+	RUS_Belarus_Officers = {
+		icon = generic_nationalism
+
+		available = {
+		tag = RUS
+		owns_state = 206
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        WHR = { exists = no }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Cossack_Officers"
+			WHR = {
+				every_unit_leader = {
+					limit = {
+						NOT = { has_id = 191802 }
+					}
+					set_nationality = RUS
+				}			
+			}
+			WRA = {
+				every_unit_leader = {
+					set_nationality = RUS
+				}			
+			}			
+  			
+		}
+	}
+	RUS_Cossack_Officers = {
+		icon = generic_nationalism
+
+		available = {
+		tag = RUS
+		owns_state = 1263
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        DKB = { exists = no }
+			KUB = { exists = no }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Cossack_Officers"
+			DKB = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 418
+							has_id = 3339
+							has_id = 42023
+							has_id = 42024
+							has_id = 42025
+							has_id = 420
+							has_id = 42022
+							has_id = 3338
+						}
+					}
+					set_nationality = RUS
+				}			
+			}
+			KUB = {
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 18901
+							has_id = 17941
+							has_id = 179421
+							has_id = 179431
+							has_id = 179441
+							has_id = 17945
+							has_id = 17946
+							has_id = 17947
+							has_id = 622
+						}
+					}
+					set_nationality = RUS
+				}			
+			}			
+		}
+	}
+	RUS_czech_legion = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        CZE = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_czech_legion"
+				RUS = {
+				set_autonomy = {
+					target = CZE
+					autonomous_state = kr_colonial_government
+				}
+				every_unit_leader = {
+					limit = {
+						OR = {
+							has_id = 243913
+							has_id = 505059
+						}
+					}
+					set_nationality = CZE
+				}						
+                       }			
+			CZE = {
+			    set_cosmetic_tag = CZE_legion
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_czech_legion_party
+					long_name = RUS_czech_legion_party_long
+				}
+				set_party_name = {
+					ideology = national_populist
+					name = RUS_czech_legion_party
+					long_name = RUS_czech_legion_party_long
+				}				
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Sergey Voytsekhovskiy"
+					picture = "gfx/leaders/TRM/Portrait_TRM_Sergey_Wojciechowski.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}		
+				create_country_leader = {
+					name = "Sergey Voytsekhovskiy"
+					picture = "gfx/leaders/TRM/Portrait_TRM_Sergey_Wojciechowski.png"
+					expire = "1.1.1"
+					ideology = militarism_subtype
+				}				
+			}
+		}
+	}	
+	RUS_Occupy_Alaska = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        ALA = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Alaska"
+				RUS = {
+						set_autonomy = {
+							target = ALA
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			ALA = {
+			    country_lock_all_division_template = yes
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Sergey Pavlov"
+					picture = "gfx/leaders/DKB/Portrait_DKB_Sergey_Pavlov.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}	
+             add_state_core = 473
+             add_state_core = 471
+             add_state_core = 740
+			 add_state_core = 1332
+			}
+		}
+	}
+	RUS_Seize_Djibouti = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        DJI = { 
+			OR = {
+			has_completed_focus = AFR_Tribal_Monarchism
+            has_completed_focus = AFR_A_African_Republic
+			AND = {
+			has_completed_focus = AFR_Colonial_Rule
+			NOT = { has_cosmetic_tag = DJI_RUS }
+			}
+			}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Seize_Djibouti"
+				RUS = {
+				        add_manpower = -10000
+						set_autonomy = {
+							target = DJI
+							autonomous_state = kr_colonial_government
+						}
+                       }	
+		DKB = {
+			every_unit_leader = {
+				limit = {
+					has_id = 42021
+				}
+				set_nationality = DJI
+			}
+		}					   
+			DJI = {
+		if = {
+		limit = { has_completed_focus = AFR_Tribal_Monarchism }
+		uncomplete_national_focus = { focus = AFR_Tribal_Monarchism }
+		complete_national_focus = AFR_Colonial_Rule 	
+		}
+		if = {
+		limit = { has_completed_focus = AFR_A_African_Republic }
+		uncomplete_national_focus = { focus = AFR_A_African_Republic }
+		complete_national_focus = AFR_Colonial_Rule 	
+		}		
+			country_lock_all_division_template = yes			
+		create_country_leader = {
+			name = "Semyon Krasnov"
+			desc = "POLITICS_SEMEN_KRASNOV_DESC"
+			picture = "gfx/leaders/DKB/Portrait_DKB_Semyon_Krasnov.png"
+			expire = "1.1.1"
+			ideology = autocratic_colonial_govt_subtype
+			traits = {}
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ETH
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = SOM
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ERI
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = ETH
+					is_claimed_by = ETH
+					is_core_of = SOM
+					is_claimed_by = SOM
+					is_core_of = ERI
+					is_claimed_by = ERI
+				}
+			}
+			add_core_of = DJI
+			}		
+		set_country_flag = DJI_SAGALLO_FORMED
+		set_cosmetic_tag = DJI_RUS
+		swap_ideas = {
+			remove_idea = DJI_chaos_n_shit
+			add_idea = DJI_new_sagallo
+		}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}		
+		set_party_name = {
+			name = DJI_paternal_autocrat_party2
+			long_name = DJI_paternal_autocrat_party2_long
+			ideology = paternal_autocrat
+		}
+			}
+		}
+	}	
+	RUS_Occupy_Djibouti = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        DJI = { 
+			has_country_leader = {
+				name = "Boris I"
+				ruling_only = yes
+			}
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Djibouti"
+				RUS = {
+						set_autonomy = {
+							target = DJI
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			DJI = {
+			country_lock_all_division_template = yes
+				add_popularity = {
+					ideology = paternal_autocrat
+					popularity = 0.2
+				}			
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+	RUS_Occupy_Prussia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        DDR = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Prussia"
+			    add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = DDR
+							autonomous_state = kr_military_district
+						}
+                       }			
+			DDR = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1
+				set_cosmetic_tag = DDR_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+			}
+		}
+	}
+	RUS_Occupy_Scandinavia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        SWE = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Scandinavia"
+			    add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = SWE
+							autonomous_state = kr_military_district
+						}
+                        transfer_state = 337	
+						add_state_claim = 337
+						add_state_claim = 124
+                       }			
+			SWE = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus
+				set_cosmetic_tag = SCA_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Pavel Shatilov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Pavel_Shatilov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			NOR = { is_subject_of = RUS } }
+			annex_country = {
+				target = NOR transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			DEN = { is_subject_of = RUS } }
+			annex_country = {
+				target = DEN transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			ICE = { is_subject_of = RUS } }
+			annex_country = {
+				target = ICE transfer_troops = yes
+			} }				
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = ICE
+					is_core_of = DEN
+					is_core_of = NOR
+				}
+			}
+			SWE = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_North_Germany = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        NGF = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_North_Germany"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = NGF
+							autonomous_state = kr_military_district
+						}
+                       }			
+			NGF = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1		
+				set_cosmetic_tag = NGF_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Anton Turkul"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Anton_Turkul.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			WGR = { is_subject_of = RUS } }
+			annex_country = {
+				target = WGR transfer_troops = yes
+			} }
+            transfer_state = 55	
+            add_state_core = 55			
+			}
+		every_state = {
+			limit = {
+					is_core_of = WGR
+			}
+			NGF = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}	
+	RUS_Occupy_South_Germany = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        BAY = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_South_Germany"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = BAY
+							autonomous_state = kr_military_district
+						}
+                       }			
+			BAY = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1			
+				set_cosmetic_tag = BAY_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Mitrofan Nezhentsev"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Mitrofan_Nezhentsev.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			AUS = { is_subject_of = RUS } }
+			annex_country = {
+				target = AUS transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			SWI = { is_subject_of = RUS } }
+			annex_country = {
+				target = SWI transfer_troops = yes
+			} }				
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = SWI
+					is_core_of = AUS
+				}
+			}
+			BAY = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}	
+	RUS_Occupy_Italy = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        ITA = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Italy"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = ITA
+							autonomous_state = kr_military_district
+						}
+                       }			
+			ITA = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = ITA_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Ivan Romanovskiy"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Ivan_Romanovsky.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			SIC = { is_subject_of = RUS } }
+			annex_country = {
+				target = SIC transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			SRD = { is_subject_of = RUS } }
+			annex_country = {
+				target = SRD transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			PAP = { is_subject_of = RUS } }
+			annex_country = {
+				target = PAP transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+					is_owned_by = ITA
+			}
+			ITA = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_France = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        FRP = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_France"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = FRP
+							autonomous_state = kr_military_district
+						}
+                       }			
+			FRP = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1		
+				set_cosmetic_tag = FRP_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Aleksandr Kutepov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Aleksander_Kutepov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+                        transfer_state = 1	
+  						add_state_core = 1				
+			}
+		
+		}
+	}
+	RUS_Occupy_Venezuela = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        VEN = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Venezuela"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = VEN
+							autonomous_state = kr_military_district
+						}
+                       }			
+			VEN = {
+			    country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1		
+				set_cosmetic_tag = VEN_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Pyetr von Glazenap"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Pyetr_von_Glazenap.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}                       
+  						add_state_core = 1079	
+  						add_state_core = 1039	
+  						add_state_core = 1308	
+  						add_state_core = 1078	
+  						add_state_core = 687							
+			}
+		
+		}
+	}	
+	RUS_Occupy_Benelux = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        BEL = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Benelux"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = BEL
+							autonomous_state = kr_military_district
+						}
+                       }			
+			BEL = {
+				country_lock_all_division_template = yes
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = BEL_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vladimir Vitkovskiy"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Vitkovskiy.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			HOL = { is_subject_of = RUS } }
+			annex_country = {
+				target = HOL transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			LUX = { is_subject_of = RUS } }
+			annex_country = {
+				target = LUX transfer_troops = yes
+			} }				
+			}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = HOL
+					is_core_of = LUX
+				}
+			}
+			BEL = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Iberia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+			POR = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Iberia"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = POR
+							autonomous_state = kr_military_district
+						}
+                       }			
+			POR = {
+				country_lock_all_division_template = yes			
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = SPR_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Nikolai Skoblin"
+					picture = "gfx/leaders/TRM/Portrait_TRM_Nikolai_Skoblin.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			SPR = { is_subject_of = RUS } }
+			annex_country = {
+				target = SPR transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			CAR = { is_subject_of = RUS } }
+			annex_country = {
+				target = CAR transfer_troops = yes
+			} }	
+            set_capital = {state = 41}			
+			}
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = SPR
+					is_core_of = CAR
+					}
+			}
+			POR = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Britain = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        GBP = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Britain"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = GBP
+							autonomous_state = kr_military_district
+						}
+                        transfer_state = 1315	
+  						add_state_claim = 1315							
+                       }			
+			GBP = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1		
+				set_cosmetic_tag = GBP_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Mikhail Levitov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Mikhail_Levitov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			IRE = { is_subject_of = RUS } }
+			annex_country = {
+				target = IRE transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+					is_core_of = IRE
+			}
+			GBP = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Korea = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        KOR = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Korea"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = KOR
+							autonomous_state = kr_military_district
+						}
+                       }			
+			KOR = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = KOR_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vladimir Manshteyn"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vladimir_von_Manstein.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}			
+			}
+		
+		}
+	}
+	RUS_Occupy_Japan = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        JAP = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Japan"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = JAP
+							autonomous_state = kr_military_district
+						}
+                       }			
+			JAP = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = JAP_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Sergey Markov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Sergei_Markov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}			
+			}
+		
+		}
+	}
+	RUS_Occupy_China = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+			GXC = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_China"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = GXC
+							autonomous_state = kr_colonial_government
+						}
+						transfer_state = 745
+						add_state_core = 745
+                       }			
+			GXC = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = CHI_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vasiliy Boldyrev"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vasiliy_Boldyrev.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+						transfer_state = 348
+						transfer_state = 616
+						transfer_state = 621
+						add_state_core = 348
+						add_state_core = 616
+						add_state_core = 621
+			}
+		
+		}
+	}
+	RUS_Occupy_Canada = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+			CAN = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Canada"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = CAN
+							autonomous_state = kr_military_district
+						}
+                       }			
+			CAN = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = CAN_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Nikolay Timanovskiy"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Nikolai_Timanovsky.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}			
+			}
+		
+		}
+	}
+	# RUS_Occupy_America = {
+	# 	icon = generic_nationalism
+
+	# 	available = {
+	# 	tag = RUS
+    #     OR = {
+    #     RUS_is_absolute_monarchy = yes
+	# 	RUS_natpops_in_power = yes
+	# 	RUS_kornilov_in_power = yes
+	# 	RUS_denikin_in_power = yes
+	# 	RUS_wrangel_in_power = yes
+	# 	has_completed_focus = RUS_Long_Live_Tsar 	
+	# 	}
+	# 	}
+		
+	# 	visible = {
+	# 		has_completed_focus = RUS_Expansionism
+	# 		USA = { is_subject_of = RUS }
+	# 	}
+
+	# 	cost = 25
+	# 	fire_only_once = yes
+
+	# 	ai_will_do = {
+	# 		factor = 50
+	# 	}
+
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_America"
+	# 		add_manpower = -40000
+	# 	balkanize_america_puppet_RUS = yes
+	# 	}
+	# }
+	RUS_Occupy_California = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+			CAL = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_California"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = CAL
+							autonomous_state = kr_military_district
+						}
+                       }			
+			CAL = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = CAL_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Aleksander Bleish"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Aleksandr_Bleish.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}			
+			}
+		
+		}
+	}	
+	RUS_Occupy_Central_America = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        AML = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Central_America"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = AML
+							autonomous_state = kr_military_district
+						}							
+                       }			
+			AML = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1		
+				set_cosmetic_tag = AML_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Pyotr Mashin"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Pyetr_Mashin.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			DSR = { is_subject_of = RUS } }
+			annex_country = {
+				target = DSR transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+					is_core_of = DSR
+			}
+			AML = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}	
+	RUS_Occupy_South_America = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        FSA = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_South_America"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = FSA
+							autonomous_state = kr_military_district
+						}							
+                       }			
+			FSA = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1		
+				set_cosmetic_tag = FSA_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Abram Dragomirov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Abram_Dragomirov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			TXS = { is_subject_of = RUS } }
+			annex_country = {
+				target = TXS transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+					is_core_of = TXS
+			}
+			FSA = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_East_America = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        NEE = { is_subject_of = RUS }
+			CGL = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_East_America"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = NEE
+							autonomous_state = kr_military_district
+						}							
+                       }			
+			NEE = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = CGL_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Yakov Slashchov"
+					picture = "gfx/leaders/TRM/Portrait_TRM_Yakov_Slashchov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			CGL = { is_subject_of = RUS } }
+			annex_country = {
+				target = CGL transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+					is_core_of = CGL
+			}
+			NEE = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Anatolia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        TUR = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Anatolia"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = TUR
+							autonomous_state = kr_military_district
+						}							
+                       }			
+			TUR = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = TUR_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Afrikan Bogaewsky"
+					picture = "gfx/leaders/DKB/Portrait_DKB_Bogaevskiy.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}		
+		} 
+	  }
+		
+	}
+	RUS_Occupy_Arabia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        IRQ = { is_subject_of = RUS }			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Arabia"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = IRQ
+							autonomous_state = kr_military_district
+						}
+					transfer_state = 907
+					add_state_claim = 907
+                       }			
+			IRQ = {
+			    country_lock_all_division_template = yes	
+			    remove_ideas = IRQ_socialist_agitation
+				remove_dynamic_modifier = { modifier = IRQ_Rampant_Corruption_dynamic_modifier	} 
+				remove_dynamic_modifier = { modifier = IRQ_Crippling_Poverty_dynamic_modifier	} 
+				remove_dynamic_modifier = { modifier = IRQ_Sectarian_Divide_dynamic_modifier	} 
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = IRQ_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Anatoliy Pepelyaev"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Anatoliy_Pepelyaev.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			HEJ = { is_subject_of = RUS } }
+			annex_country = {
+				target = HEJ transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			SYR = { is_subject_of = RUS } }
+			annex_country = {
+				target = SYR transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			LEB = { is_subject_of = RUS } }
+			annex_country = {
+				target = LEB transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			YEM = { is_subject_of = RUS } }
+			annex_country = {
+				target = YEM transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			OMA = { is_subject_of = RUS } }
+			annex_country = {
+				target = OMA transfer_troops = yes
+			} }				
+			}
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = HEJ
+					is_core_of = SYR
+					is_core_of = LEB
+					is_core_of = OMA
+					is_core_of = YEM
+					}
+			}
+			IRQ = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Persia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        PER = { is_subject_of = RUS }		
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Persia"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = PER
+							autonomous_state = kr_military_district
+						}
+                       }			
+			PER = {
+			    country_lock_all_division_template = yes	
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = PER_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vladimir Kappel"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Kappel.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			AFG = { is_subject_of = RUS } }
+			annex_country = {
+				target = AFG transfer_troops = yes
+			} }
+            add_state_core = 1219
+			add_state_core = 444
+			add_state_core = 443
+			add_state_core = 445
+			add_state_core = 891
+			add_state_core = 442
+			add_state_core = 441
+			}
+		every_state = {
+			limit = {
+					is_core_of = AFG
+			}
+			PER = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_India = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        PRF = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_India"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = PRF
+							autonomous_state = kr_military_district
+						}
+                       }			
+			PRF = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = PRF_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Sergey Baranovskiy"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Sergey_Baranovskiy.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			BHU = { is_subject_of = RUS } }
+			annex_country = {
+				target = BHU transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			NEP = { is_subject_of = RUS } }
+			annex_country = {
+				target = NEP transfer_troops = yes
+			} }
+            remove_state_core = 1219
+			remove_state_core = 444
+			remove_state_core = 443
+			remove_state_core = 445
+			remove_state_core = 891
+			remove_state_core = 442
+			remove_state_core = 441
+			}
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = BHU
+					is_core_of = NEP
+					}
+			}
+			PRF = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	} 
+	RUS_Occupy_Indochina = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        INC = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Indochina"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = INC
+							autonomous_state = kr_military_district
+						}
+                       }			
+			INC = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = INC_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Innokentiy Smolin"
+					picture = "gfx/leaders/TRM/TRM_Innokentiy_Smolin.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			SIA= { is_subject_of = RUS } }
+			annex_country = {
+				target = SIA transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			BRM = { is_subject_of = RUS } }
+			annex_country = {
+				target = BRM transfer_troops = yes
+			} }
+			}
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = SIA
+					is_core_of = BRM
+					}
+			}
+			INC = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Indonesia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        INS = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Indonesia"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = INS
+							autonomous_state = kr_military_district
+						}
+						transfer_state = 336
+                       }			
+			INS = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = INS_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Ivan Gamov"
+					picture = "gfx/leaders/TRM/TRM_Ivan_Gamov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			PHI = { is_subject_of = RUS } }
+			annex_country = {
+				target = PHI transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			MLY = { is_subject_of = RUS } }
+			annex_country = {
+				target = MLY transfer_troops = yes
+			} }
+			}
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = MLY
+					is_core_of = PHI
+					}
+			}
+			INS = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Australia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        AST = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Australia"
+				RUS = {
+						set_autonomy = {
+							target = AST
+							autonomous_state = kr_military_district
+						}
+                       }			
+			AST = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = AST_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Mikhail Khanzhin"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Mikhail_Khanzhin.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			}		
+		}
+	}
+	RUS_Occupy_Pacific = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        HAW = { is_subject_of = RUS }			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Pacific"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = HAW
+							autonomous_state = kr_naval_district
+						}
+                       }			
+			HAW = {
+				country_lock_all_division_template = yes				
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = HAW_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_naval_authority_party
+					long_name = RUS_naval_authority_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vasiliy Kanin"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vasily_Kanin.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			transfer_state = 524				
+            add_state_core = 648
+			add_state_core = 645
+			add_state_core = 526			
+            add_state_core = 641
+			add_state_core = 941
+			add_state_core = 643
+			add_state_core = 639
+			add_state_core = 725
+			add_state_core = 633
+			add_state_core = 684
+			add_state_core = 647
+			add_state_core = 646
+			add_state_core = 524
+			set_capital = {state = 524}		
+			}		
+		}
+	}
+	RUS_Occupy_Indian_Ocean = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        MAG = { is_subject_of = RUS }			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Indian_Ocean"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = MAG
+							autonomous_state = kr_naval_district
+						}
+                       }			
+			MAG = {
+				country_lock_all_division_template = yes				
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = MAG_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_naval_authority_party
+					long_name = RUS_naval_authority_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Mikhail Berens"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Mikhail_Berens.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			add_state_core = 733
+            add_state_core = 709
+			add_state_core = 710
+			add_state_core = 281
+			add_state_core = 711
+			add_state_core = 336
+			add_state_core = 422				
+			}		
+		}
+	}
+	RUS_Occupy_Caribbean = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        CAF = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Caribbean"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = CAF
+							autonomous_state = kr_naval_district
+						}
+                       }			
+			CAF = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = CAF_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_naval_authority_party
+					long_name = RUS_naval_authority_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Nestor Monastyryev"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Nestor_Monastyrev.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}				
+			if = {
+            limit = {
+   			CUB = { is_subject_of = RUS } }
+			annex_country = {
+				target = CUB transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			HAI = { is_subject_of = RUS } }
+			annex_country = {
+				target = HAI transfer_troops = yes
+			} }	
+			if = {
+            limit = {
+   			DOM = { is_subject_of = RUS } }
+			annex_country = {
+				target = DOM transfer_troops = yes
+			} }	
+            add_state_core = 178
+            add_state_core = 299
+            add_state_core = 685
+            add_state_core = 695
+            add_state_core = 696
+            add_state_core = 697
+            add_state_core = 698
+            add_state_core = 702
+            add_state_core = 703
+            add_state_core = 704
+            add_state_core = 720
+            add_state_core = 1028			
+			}
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = CUB
+					is_core_of = HAI
+					is_core_of = DOM					
+					}
+			}
+			CAF = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	} 
+	RUS_Occupy_Egypt = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        EGY = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Caribbean"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = EGY
+							autonomous_state = kr_military_district
+						}
+                       }			
+			EGY = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = EGY_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Vladimir Gulidov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Gulidov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}				
+			}		
+		}
+	}	
+	RUS_Occupy_Hungary = {
+		icon = generic_nationalism
+
+		available = {
+			tag = RUS
+			OR = {
+			RUS_is_absolute_monarchy = yes
+			RUS_natpops_in_power = yes
+			RUS_kornilov_in_power = yes
+			RUS_denikin_in_power = yes
+			RUS_wrangel_in_power = yes
+			has_completed_focus = RUS_Long_Live_Tsar 	
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        HUN = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Hungary"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = HUN
+							autonomous_state = kr_military_district
+						}
+                       }			
+			HUN = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = HUN_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Aleksey Grishin-Almazov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Aleksey_Grishin_Almazov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}				
+			}		
+		}
+	}	
+		
+	RUS_Occupy_Brazil = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        BRA = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Brazil"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = BRA
+							autonomous_state = kr_military_district
+						}
+                       }			
+			BRA = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = BRA_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Leonid Skipetrov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Leonid_Skipetrov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+             add_state_core = 1309	
+             add_state_core = 1037
+             add_state_core = 310
+             add_state_core = 1038
+             add_state_core = 309			 
+			}		
+		}
+	} 
+	RUS_Occupy_Argentina = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        ARG = { is_subject_of = RUS }	
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Argentina"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = ARG
+							autonomous_state = kr_military_district
+						}
+                       }			
+			ARG = { 
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = ARG_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Fyedor Abramov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Fyodor_Abramov.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			CHL = { is_subject_of = RUS } }
+			annex_country = {
+				target = CHL transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			URG = { is_subject_of = URG } }
+			annex_country = {
+				target = CHL transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+			        OR = {
+					is_core_of = CHL
+					is_core_of = URG
+					}
+			}
+			ARG = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}  
+	RUS_Occupy_North_Africa = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        LBA = { is_subject_of = RUS }			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_North_Africa"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = LBA
+							autonomous_state = kr_military_district
+						}
+                       }			
+			LBA = {
+				country_lock_all_division_template = yes				
+			    add_ideas = RUS_Occupation_Army_1
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = LBA_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_military_ocupation_party
+					long_name = RUS_military_ocupation_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Anatoly Lieven"
+					picture = "gfx/leaders/DKB/Portrait_DKB_Anatoly_Liven.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+			if = {
+            limit = {
+   			TUN = { is_subject_of = RUS } }
+			annex_country = {
+				target = TUN transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			MOR = { is_subject_of = RUS } }
+			annex_country = {
+				target = MOR transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			ALG = { is_subject_of = RUS } }
+			annex_country = {
+				target = ALG transfer_troops = yes
+			} }			
+			}
+		every_state = {
+			limit = {
+			OR = {
+					is_core_of = MOR
+					is_core_of = ALG
+					is_core_of = TUN
+					}
+			}
+			LBA = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	} 
+	RUS_Occupy_East_Africa = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		visible = {
+		    NOT = {
+			DJI = { is_subject_of = RUS}
+			}
+			has_completed_focus = RUS_Expansionism
+	        ETH = { is_subject_of = RUS }
+	        SOM = { is_subject_of = RUS }		
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_East_Africa"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = ETH
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			ETH = {
+				country_lock_all_division_template = yes				
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = ETH_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Boris Shteyfon"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Boris_Shteyfon.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+			if = {
+            limit = {
+   			SOM = { is_subject_of = RUS } }
+			annex_country = {
+				target = SOM transfer_troops = yes
+			} }		
+			}
+		every_state = {
+			limit = {
+					is_core_of = SOM
+	
+			}
+			ETH = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_South_Africa = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        SAF = { is_subject_of = RUS }
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_South_Africa"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = SAF
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			SAF = {
+				country_lock_all_division_template = yes				
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = SAF_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Anatoly Rogozhin"
+					picture = "gfx/leaders/DKB/Portrait_DKB_Anatoly_Rogozhin.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+			if = {
+            limit = {
+   			NMB = { is_subject_of = RUS } }
+			annex_country = {
+				target = NMB transfer_troops = yes
+			} }				
+			if = {
+            limit = {
+   			MZB = { is_subject_of = RUS } }
+			annex_country = {
+				target = MZB transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			ZIM = { is_subject_of = RUS } }
+			annex_country = {
+				target = ZIM transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			BOT = { is_subject_of = RUS } }
+			annex_country = {
+				target = BOT transfer_troops = yes
+			} }		
+			}
+		every_state = {
+			limit = {
+			OR = {
+			        is_core_of = NMB
+					is_core_of = BOT
+					is_core_of = ZIM 
+					is_core_of = MZB					
+					}
+			}
+			SAF = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_West_Africa = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        LIB = { is_subject_of = RUS }		
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_West_Africa"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = LIB
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			LIB = {
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = LIB_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Konstantin Kromiadi"
+					picture = "gfx/leaders/DKB/Portrait_DKB_Konstantin_Kromiadi.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+			if = {
+            limit = {
+   			GNA = { is_subject_of = RUS } }
+			annex_country = {
+				target = GNA transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			SIE = { is_subject_of = RUS } }
+			annex_country = {
+				target = SIE transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			CVG= { is_subject_of = RUS } }
+			annex_country = {
+				target = CVG transfer_troops = yes
+			} } 
+			if = {
+            limit = {
+   			SEN = { is_subject_of = RUS } }
+			annex_country = {
+				target = SEN transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			MRT = { is_subject_of = RUS } }
+			annex_country = {
+				target = MRT transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			MAL = { is_subject_of = RUS } }
+			annex_country = {
+				target = MAL transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			BFA = { is_subject_of = RUS } }
+			annex_country = {
+				target = BFA transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			NER = { is_subject_of = RUS } }
+			annex_country = {
+				target = NER transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			WAD = { is_subject_of = RUS } }
+			annex_country = {
+				target = WAD transfer_troops = yes
+			} }	
+            add_state_core = 699			
+			}
+		every_state = {
+			limit = {
+			OR = {
+					is_core_of = WAD
+					is_core_of = NER 
+					is_core_of = BFA
+					is_core_of = MAL
+					is_core_of = MRT 
+					is_core_of = SEN
+					is_core_of = CVG
+					is_core_of = SIE
+					is_core_of = GNA 					
+					}
+			}
+			LIB = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_Occupy_Central_Africa = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		visible = {
+		    NOT = {
+			DJI = { is_subject_of = RUS }
+			 }
+			has_completed_focus = RUS_Expansionism
+	        LPD = { is_subject_of = RUS }	
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Occupy_Central_Africa"
+			add_manpower = -10000
+				RUS = {
+						set_autonomy = {
+							target = LPD
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			LPD = {
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = RUS_MITTEL
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Konstantin Mamantov"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Konstantin_Mamontov.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+			if = {
+            limit = {
+   			GAB = { is_subject_of = RUS } }
+			annex_country = {
+				target = GAB transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			CMR = { is_subject_of = RUS } }
+			annex_country = {
+				target = CMR transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			CEA = { is_subject_of = RUS } }
+			annex_country = {
+				target = CEA transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			ANG = { is_subject_of = RUS } }
+			annex_country = {
+				target = ANG transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			ZAM = { is_subject_of = RUS } }
+			annex_country = {
+				target = ZAM transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			TZN = { is_subject_of = RUS } }
+			annex_country = {
+				target = TZN transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			UGA = { is_subject_of = RUS } }
+			annex_country = {
+				target = UGA transfer_troops = yes
+			} }
+			if = {
+            limit = {
+   			KEN = { is_subject_of = RUS } }
+			annex_country = {
+				target = KEN transfer_troops = yes
+			} }	
+			add_state_core = 948
+			add_state_core = 928
+			add_state_core = 953
+			add_state_core = 974
+			}
+		every_state = {
+			limit = {
+			OR = {
+					is_core_of = KEN 
+					is_core_of = UGA
+					is_core_of = TZN
+					is_core_of = ZAM 
+					is_core_of = ANG
+					is_core_of = CEA
+					is_core_of = CMR 
+					is_core_of = GAB					
+					}
+			}
+			LPD = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+    RUS_Sphere_Race = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+		is_faction_leader = yes
+        is_in_faction = yes
+		has_war_with = FRA
+        NOT = { has_war_with = RUS }
+		}
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+        complete_effect = {	
+		}
+        remove_effect = {
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+    }
+    RUS_unify_africa = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+		OR = {
+		tag = SOM
+		tag = ERI
+		tag = ETH
+		is_afrikan_tag = yes
+		}
+        NOT = { tag = DJI }
+		}
+    }
+		visible = {
+		    AND = {
+			DJI = {
+			is_puppet_of = RUS
+		    has_completed_focus = AFR_Reform_Mittelafrika 
+			}
+			}
+			has_completed_focus = RUS_The_Iron_Curtain
+			
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 25
+		days_remove = 7
+		fire_only_once = yes
+        complete_effect = {	
+		}
+        remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+    }
+    RUS_unify_china = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+		OR = {
+		is_chinese_tag = yes
+		tag = TIB
+		}
+        NOT = { is_puppet_of = RUS }
+		}
+    }
+		visible = {
+		    AND = {
+		    has_completed_focus = RUS_China_Policy
+			has_completed_focus = RUS_The_Iron_Curtain
+			}
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+        complete_effect = {	
+		}
+        remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+    }	
+    RUS_unify_india = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+		OR = {
+		tag = NEP
+		tag = BHU
+		tag = PRF
+		tag = DEH
+		tag = BHC
+		tag = MYS
+		tag = MAD
+		tag = TRV
+		tag = SKM
+		}
+        NOT = { is_puppet_of = RUS }
+		}
+    }
+		visible = {
+		    AND = {
+		    has_completed_focus = RUS_India_Policy
+			has_completed_focus = RUS_The_Iron_Curtain
+			}
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 25
+		days_remove = 30
+		fire_only_once = yes
+        complete_effect = {	
+		}
+        remove_effect = {
+			create_wargoal = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+    }	
+
+	
+	RUS_Attack_Galicia = {
+		name = RUS_Attack_Region
+		icon = hol_draw_up_staff_plans
+
+		available = {
+			OR = {
+				is_owner_neighbor_of = FROM
+				any_allied_country = { is_owner_neighbor_of = FROM }
+			}
+			can_declare_war_on = FROM
+		}
+
+		visible = {
+			FROM = { owns_state = 91 } #Lwow
+			has_completed_focus = RUS_Expansionism
+			has_completed_focus = RUS_Protect_Ukranians_In_Galicia
+		}
+
+		targets = { 91.OWNER }
+		target_root_trigger = {
+			has_completed_focus = RUS_Expansionism
+			has_completed_focus = RUS_Protect_Ukranians_In_Galicia
+		}
+		target_trigger = {
+			can_declare_war_on = FROM
+			FROM = { owns_state = 91 } #Lwow
+		}
+
+		cost = 10
+		days_remove = 14
+		fire_only_once = no
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					alliance_strength_ratio < 0.5
+					surrender_progress > 0
+				}
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = { tag = FROM ratio < 0.8 }
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					is_in_faction = yes
+					var:FROM.faction_leader = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 0.7
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					is_subject = yes
+					overlord = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 0.7
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = imminent_war
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Attack_Galicia target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			setup_decision_attack_AI = yes
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Attack_Galicia target: [From.GetName]"
+			clear_decision_attack_AI = yes
+			declare_war_on = {
+				target = FROM
+				type = annex_everything
+			}
+		}
+	}
+
+	
+	RUS_Fate_Of_Turkestan = {
+		icon = hol_draw_up_staff_plans
+		available = {
+			if = {
+				limit = {
+					has_global_flag = global_turkestan_united
+				}
+				OR = {
+					is_neighbor_of = UTR
+					any_allied_country = {
+						is_neighbor_of = UTR
+					}
+				}
+			}
+			else = {
+				OR = {
+					is_neighbor_of = UZB
+					is_neighbor_of = KYR
+					is_neighbor_of = TRK
+					any_allied_country = {
+						OR = {
+							is_neighbor_of = UZB
+							is_neighbor_of = KYR
+							is_neighbor_of = TRK
+						}
+					}
+				}
+			}
+			NOT = { has_global_flag = RUS_UTR_peace }
+		}
+
+		visible = {
+			OR = {
+				has_completed_focus = RUS_Secure_Central_Asia
+				has_completed_focus = RUS_Central_Asia_Intervention
+			}
+			if = {
+				limit = {
+					has_global_flag = global_turkestan_united
+				}
+				can_declare_war_on = UTR
+			}
+		}
+
+		cost = 10
+		days_remove = 14
+		fire_only_once = yes
+		war_with_target_on_remove = yes
+
+		ai_will_do = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.8
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					any_allied_country = {
+						is_faction_leader = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				FROM = {
+					is_subject = yes
+					overlord = {
+						strength_ratio = {
+							tag = ROOT
+							ratio > 0.7
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				has_country_flag = imminent_war
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Fate_Of_Turkestan target: [From.GetName]"
+			set_country_flag = { flag = imminent_war days = 20 value = 1 }
+			UTR = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 1000
+				}
+			}
+			UZB = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 1000
+				}
+			}
+			KYR = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 1000
+				}
+			}
+			TRK = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 1000
+				}
+			}
+			ROOT = {
+				country_event = {
+					id = rusfor.1443
+					days = 4
+				}
+			}		
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Fate_Of_Turkestan target: [From.GetName]"
+			UTR = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = -1000
+				}
+			}
+			UZB = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = -1000
+				}
+			}
+			KYR = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = -1000
+				}
+			}
+			TRK = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = -1000
+				}
+			}
+		}
+	}
+	
+	
+	RUS_Claim_Greater_Armenia = {
+		icon = generic_nationalism
+
+		available = {
+			230 = { is_owned_by_ROOT_or_subject = yes } #Yerevan
+			231 = { is_owned_by_ROOT_or_subject = yes } #Sakartvelo
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+			has_completed_focus = RUS_Open_The_Straits
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Claim_Greater_Armenia"
+			if = {
+				limit = {
+					can_declare_war_on = 1000.owner
+					1000 = {
+						owner = {
+							is_subject = no
+						}
+					}
+				}
+				1000 = {
+					owner = {
+						country_event = {
+							id = rusfor.1071
+							days = 2
+							random_hours = 48
+						}
+					}
+				}
+			}
+		}
+	}
+	#WD End
+}
+
+RUS_Faction_Interaction = {
+    RUS_Faction_Officers = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+        is_in_faction_with = RUS
+		is_subject = no
+		NOT = {
+		has_idea = RUS_Faction_Advisors		
+		} }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		army_experience = -10
+		add_manpower = -1500		
+		}
+        remove_effect = {
+		FROM = {
+		add_manpower = 1500
+		add_ideas = {
+		RUS_Faction_Advisors	
+		RUS_Professional_Army
+		}
+		   }
+		}
+    }	
+    RUS_Faction_Investors_1 = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+        is_in_faction_with = RUS
+		is_subject = no
+		NOT = {
+		OR = {
+		has_idea = RUS_Faction_Investment_1
+		has_idea = RUS_Faction_Investment_2
+		has_idea = RUS_Faction_Investment_3
+		has_idea = RUS_Faction_Investment_4
+		has_idea = RUS_Faction_Investment_5
+		}
+		} }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 15
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		}
+        remove_effect = {
+		FROM = {
+		add_ideas = RUS_Faction_Investment_1
+		   }
+		}
+    }
+    RUS_Faction_Investors_2 = {
+	icon = generic_nationalism
+     target_trigger = {
+	   FROM = {
+        is_in_faction_with = RUS
+		is_subject = no
+		has_idea = RUS_Faction_Investment_1 }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 15
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		}
+        remove_effect = {
+		FROM = {
+		swap_ideas = {
+		remove_idea = RUS_Faction_Investment_1
+		add_idea = RUS_Faction_Investment_2   
+		      }
+		  }
+        } 
+    }
+    RUS_Faction_Investors_3 = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+        is_in_faction_with = RUS
+		is_subject = no
+		has_idea = RUS_Faction_Investment_2 }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 15
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		}
+        remove_effect = {
+		FROM = {
+		swap_ideas = {
+		remove_idea = RUS_Faction_Investment_2
+		add_idea = RUS_Faction_Investment_3   
+		      }
+		  }
+        } 
+    }
+    RUS_Faction_Investors_4 = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+        is_in_faction_with = RUS
+		is_subject = no
+		has_idea = RUS_Faction_Investment_3 }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 15
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		}
+        remove_effect = {
+		FROM = {
+		swap_ideas = {
+		remove_idea = RUS_Faction_Investment_3
+		add_idea = RUS_Faction_Investment_4  
+		      }
+		  }
+        } 
+    }	
+    RUS_Faction_Investors_5 = {
+	icon = generic_nationalism
+     target_trigger = {
+	   FROM = {
+        is_in_faction_with = RUS
+		is_subject = no
+		has_idea = RUS_Faction_Investment_4 }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 15
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		}
+        remove_effect = {
+		FROM = {
+		swap_ideas = {
+		remove_idea = RUS_Faction_Investment_4
+		add_idea = RUS_Faction_Investment_5  
+		      }
+		  }
+        } 
+    }
+}
+
+RUS_Puppet_Management = {
+    RUS_Faction_Resources = {
+	icon = generic_nationalism
+     target_trigger = {
+	    FROM = {
+          is_in_faction_with = RUS
+		  has_autonomy_state = kr_military_district
+		}
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {		
+		}
+        remove_effect = {
+				every_state = {
+					limit = {
+					   AND = {
+					   is_owned_by = FROM
+						OR = {
+							has_resources_amount = {
+								resource = aluminium
+								amount > 0
+								delivered = yes
+							}
+							has_resources_amount = {
+								resource = rubber
+								amount > 0
+								delivered = yes
+							}
+							has_resources_amount = {
+								resource = tungsten
+								amount > 0
+								delivered = yes
+							}
+							has_resources_amount = {
+								resource = steel
+								amount > 0
+								delivered = yes
+							}
+							has_resources_amount = {
+								resource = chromium
+								amount > 0
+								delivered = yes
+							}
+							has_resources_amount = {
+								resource = oil
+								amount > 0
+								delivered = yes
+							}
+						}
+					  }
+					}
+							owner = {
+								give_resource_rights = {
+									receiver = RUS
+									state = PREV
+									resources = { aluminium rubber tungsten steel chromium oil }
+								}
+							}
+						
+				}
+		}
+    }	
+	RUS_Djibouti_Mittelafrika = {
+		icon = generic_nationalism
+
+		available = {
+		DJI = { is_subject_of = RUS }
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        DJI = { 
+			has_completed_focus = AFR_Defend_Ourselves
+			}
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Djibouti_Mittelafrika"	
+            add_manpower = -100000			
+			DJI = {
+			add_manpower = 100000	
+		uncomplete_national_focus = { focus = AFR_Defend_Ourselves }
+		complete_national_focus = AFR_Reform_Mittelafrika 
+			}
+		}
+	}
+	RUS_Puppet_Territory = {
+		icon = generic_nationalism
+
+		available = {
+		is_subject_of = RUS
+		
+		}
+		
+		visible = {
+		is_subject = yes
+		 any_owned_state = {
+		 NOT = {
+			is_core_of = ROOT
+			}
+		 }
+		}
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1000
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Puppet_Territory"
+		every_state = {
+			limit = {
+					is_owned_by = ROOT
+					NOT = {
+					is_core_of = ROOT
+					}
+			}
+			ROOT = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+    RUS_Supply_Africa = {
+	icon = generic_nationalism
+     target_trigger = {
+	   FROM = {
+        is_in_faction_with = RUS
+		tag = DJI
+		NOT = {
+		has_cosmetic_tag = RUS_MITTEL
+		} }
+    }
+		visible = {
+			has_completed_focus = RUS_The_Iron_Curtain
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 60
+		days_re_enable = 30
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		army_experience = -25
+		add_manpower = -5000		
+		}
+        remove_effect = {
+		FROM = {
+		add_manpower = 5000
+		   }
+		ROOT = {
+		send_equipment = {
+			target = FROM
+			type = infantry_equipment
+			amount = 2000
+		}	}	   
+		}
+    }
+    RUS_occupation_admin_1 = {
+	icon = generic_nationalism
+     target_trigger = {
+	  FROM = {
+        has_idea = RUS_Occupation_Army_1
+		is_subject_of = RUS }
+    }
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}
+        complete_effect = {
+		army_experience = -25
+		add_manpower = -10000
+		}
+        remove_effect = {
+		FROM = {
+		add_manpower = 10000
+		swap_ideas = {
+		remove_idea = RUS_Occupation_Army_1
+		add_idea = RUS_Occupation_Army_2
+		     }
+		   }
+		}
+    }
+    RUS_occupation_admin_2 = {
+	icon = generic_nationalism
+     target_trigger = {
+	   FROM = {
+        has_idea = RUS_Occupation_Army_2
+		is_subject_of = RUS }
+    }
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}		
+        complete_effect = {
+		add_manpower = -5000
+		}
+        remove_effect = {
+		FROM = {
+		add_manpower = 5000
+		swap_ideas = {
+		remove_idea = RUS_Occupation_Army_2
+		add_idea = RUS_Occupation_Army_3
+		     }
+		   }
+		}
+    }	
+    RUS_occupation_admin_3 = {
+	icon = generic_nationalism
+     target_trigger = {
+	  FROM = {
+        has_idea = RUS_Occupation_Army_3
+		is_subject_of = RUS }
+    }
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+		}	
+    target_root_trigger = {
+		tag = RUS
+        OR = {
+        RUS_is_absolute_monarchy = yes
+		RUS_natpops_in_power = yes
+		RUS_kornilov_in_power = yes
+		RUS_denikin_in_power = yes
+		RUS_wrangel_in_power = yes
+		has_completed_focus = RUS_Long_Live_Tsar 	
+		  }
+		}
+		cost = 10
+		days_remove = 30
+		fire_only_once = yes
+		modifier = {
+			civilian_factory_use = 5
+		}		
+        complete_effect = {
+		add_manpower = -5000
+		}
+        remove_effect = {
+		FROM = {
+		add_manpower = 5000
+		swap_ideas = {
+		remove_idea = RUS_Occupation_Army_3
+		add_idea = RUS_Occupation_Army_4
+		     }
+		   }
+		}
+    }
+	RUS_Africa_Angola = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        DJI = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = RUS_MITTEL
+			}
+			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Africa_Angola"
+
+		every_state = {
+			limit = {
+					is_core_of = ANG
+			}
+			DJI = {
+				add_state_core = PREV
+			}
+		}		
+		}
+	}
+	RUS_West_Africa = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        LIB = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = LIB_RUS
+			} 
+	        DJI = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = RUS_MITTEL
+			}
+			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Africa_Angola"
+
+		every_state = {
+			limit = {
+			       OR = {
+					is_core_of = NGR
+					is_core_of = CIV
+					}
+					is_owned_by = DJI					
+			}
+			LIB = {
+				add_state_core = PREV
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_Pakistan = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        PER = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = PER_RUS
+			} 
+	        PRF = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = PRF_RUS
+			}
+			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Pakistan"
+
+		every_state = {
+			limit = { 
+			     AND = {
+			       owner = {
+				    OR = {
+					tag = RUS
+					is_subject_of = RUS
+					}
+				   }
+			       OR = {
+					state = 1219
+					state = 444
+					state = 443
+					state = 445
+					state = 891
+					state = 442
+					state = 441
+					}
+				}	
+			}
+			PER = {
+				transfer_state = PREV
+			}
+		}		
+		}
+	}	
+	RUS_Indian_Islands = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        MAG = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = MAG_RUS
+			} 
+			422 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = MAG }
+			   } 			
+			}
+			281 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = MAG }
+			   } 			
+			}			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Indian_Islands"
+
+		every_state = {
+			limit = { 
+			       OR = {
+					state = 281
+					state = 422
+					}					
+			}
+			MAG = {
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_Africa_West = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        LIB = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = LIB_RUS
+			} 
+			699 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = LIB }
+			   } 			
+			}			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Africa_West"
+
+		every_state = {
+			limit = { 
+					state = 699										
+			}
+			LIB = {
+			    add_state_core = PREV
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_Columbia = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        ALA = { 
+			is_subject_of = RUS 
+			} 
+			473 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = ALA }
+			   } 			
+			}
+			740 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = ALA }
+			   } 			
+			}	
+			471 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = ALA }
+			   } 			
+			}						
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Columbia"
+
+		every_state = {
+			limit = { 
+			        OR = {
+					state = 473
+					state = 740
+					state = 471					
+					}
+			}
+			LIB = {
+			    add_state_core = PREV
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_Zambezi = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+			OR = {
+	         LPD = { 
+			 is_subject_of = RUS 
+			 } 
+	         DJI = { 
+			 is_subject_of = RUS 
+			 } 			 
+			}
+			544 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = LPD }
+			   NOT = { tag = DJI }
+			   } 			
+			}						
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Zambezi"
+        if = {
+		limit = {
+	         DJI = { 
+			 is_subject_of = RUS 
+			 } 		
+		}
+		every_state = {
+			limit = { 
+			        state = 544
+			}
+			DJI = {
+			    add_state_core = PREV
+				transfer_state = PREV
+			}
+		}
+         }
+        if = {
+		limit = {
+	         LPD = { 
+			 is_subject_of = RUS 
+			 } 		
+		}
+		every_state = {
+			limit = { 
+			        state = 544
+			}
+			LPD = {
+			    add_state_core = PREV
+				transfer_state = PREV
+			}
+		}
+         }		 
+		}
+	}
+	RUS_Venezuela_Guyana = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        VEN = { 
+			is_subject_of = RUS 
+			} 
+			1079 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = VEN }
+			   } 			
+			}
+			1039 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = VEN }
+			   } 			
+			}	
+			1308 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = VEN }
+			   } 			
+			}
+			1078 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = VEN }
+			   } 			
+			}	
+			687 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = VEN }
+			   } 			
+			}			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Venezuela_Guyana"
+
+		every_state = {
+			limit = { 
+			        OR = {
+					state = 1308
+					state = 1079
+					state = 1039
+					state = 1078
+					state = 1309
+					}
+			}
+			VEN = {
+				transfer_state = PREV
+			}
+		}		
+		}
+	}	
+	RUS_Brazil_Guyana = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        BRA = { 
+			is_subject_of = RUS 
+			} 
+			1309 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = BRA }
+			   } 			
+			}
+			1037 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = BRA }
+			   } 			
+			}	
+			310 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = BRA }
+			   } 			
+			}
+			1038 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = BRA }
+			   } 			
+			}	
+			309 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = BRA }
+			   } 			
+			}			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Brazil_Guyana"
+
+		every_state = {
+			limit = { 
+			        OR = {
+					state = 309
+					state = 1038
+					state = 1037
+					state = 310
+					state = 1309
+					}
+			}
+			BRA = {
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_Atlantic_Islands = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        CAF = { 
+			is_subject_of = RUS 
+			} 
+			178 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			299 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}	
+			685 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			695 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}	
+			696 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			697 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			698 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}	
+			702 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			703 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}	
+			704 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			720 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}
+			1028 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = CAF }
+			   } 			
+			}				
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Atlantic_Islands"
+
+		every_state = {
+			limit = { 
+			        OR = {
+					state = 178
+					state = 299
+					state = 685
+					state = 695
+					state = 696
+					state = 697
+					state = 698
+					state = 702
+					state = 703
+					state = 704
+					state = 720
+					state = 1028				
+					}
+			}
+			CAF = {
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_Easter = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		available = {
+			tag = RUS
+			has_completed_focus = RUS_Expansionism
+	        HAW = { 
+			is_subject_of = RUS 
+			has_cosmetic_tag = HAW_RUS
+			} 
+			270 = {
+			   owner = {
+			   OR = {
+			   tag = RUS
+			   is_subject_of = RUS
+			   }
+			   NOT = { tag = HAW }
+			   } 			
+			}			
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_Easter"
+
+		every_state = {
+			limit = { 
+					state = 270									
+			}
+			HAW = {
+			    add_state_core = PREV
+				transfer_state = PREV
+			}
+		}		
+		}
+	}
+	RUS_East_Africa_Reorg = {
+		icon = generic_nationalism
+
+		visible = {
+			OR = {
+				# RUS_is_absolute_monarchy = yes
+				# RUS_natpops_in_power = yes #validated
+				has_completed_focus = RUS_NSNP_In_Power #validated
+				has_completed_focus = RUS_NRPR_Elected #validated
+				RUS_kornilov_in_power = yes #validated
+				RUS_denikin_in_power = yes #validated
+				has_completed_focus = RUS_Long_Live_Tsar #normal for VNS path - validated
+				AND = { # validated
+					has_completed_focus = RUS_Imperial_Glory
+					NOT = { has_completed_focus = RUS_Clericals }
+					NOT = { has_completed_focus = RUS_rnsma }
+				}
+			}
+		}
+		
+		visible = {
+			DJI = { 
+			  is_subject_of = RUS
+			  has_cosmetic_tag = RUS_MITTEL
+			}
+			has_completed_focus = RUS_Expansionism
+	        ETH = { exists = no }		
+		}
+
+		cost = 25
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision RUS_East_Africa_Reorg"
+			add_manpower = -10000
+		every_state = {
+			limit = {
+			        is_core_of = ETH
+					is_core_of = SOM
+	
+			}
+			ETH = {
+			    transfer_state = PREV
+				add_state_core = PREV
+			}
+		}
+		every_state = {
+			limit = {
+			        is_core_of = ETH
+					is_core_of = SOM
+	
+			}
+			DJI = {
+			    remove_state_core = PREV
+			}
+		}		
+				RUS = {
+						set_autonomy = {
+							target = ETH
+							autonomous_state = kr_colonial_government
+						}
+                       }			
+			ETH = {
+				country_lock_all_division_template = yes				
+				load_focus_tree = generic_focus			
+				set_cosmetic_tag = ETH_RUS
+				set_party_name = {
+					ideology = paternal_autocrat
+					name = RUS_colonial_government_party
+					long_name = RUS_colonial_government_party_long
+				}
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+				}
+				create_country_leader = {
+					name = "Boris Shteyfon"
+					picture = "gfx/leaders/RUS/Portrait_RUS_Boris_Shteyfon.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}		
+			}
+            DJI = {
+             set_capital = {state = 965}
+            }			
+		}
+	}	
+}
