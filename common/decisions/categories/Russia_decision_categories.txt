@@ -214,6 +214,7 @@ RUS_Foreign_Policy_decisions = {
 	priority = 100
 
 	allowed = {
+		is_ai = no
 		OR = {
 			tag = RUS
 			tag = DKB
@@ -571,6 +572,7 @@ SOV_Great_Game_SSR_decisions = {
 	icon = GFX_decision_category_russia
 	priority = 100
 	allowed = {
+		is_ai = no
 		OR = {
 			original_tag = RUS
 			original_tag = GEO
@@ -637,6 +639,7 @@ RUS_Puppet_Management = {
 	priority = 200
 	
 	allowed = {
+	  is_ai = no
 	  OR = {
 	    tag = RUS
 		is_subject_of = RUS

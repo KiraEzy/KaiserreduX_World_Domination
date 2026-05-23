@@ -1,6 +1,7 @@
 GER_great_game = {
 	icon = GFX_decision_category_foreign_policy
 	allowed = {
+		is_ai = no
 		original_tag = GER
 	}
 	visible = { 
@@ -15,6 +16,7 @@ GER_great_game = {
 GER_asia_game = {
 	icon = GFX_decision_category_foreign_policy
 	allowed = {
+		is_ai = no
 		original_tag = GER
 	}
 	visible = { 
@@ -31,6 +33,7 @@ GER_asia_game = {
 GER_africa_game = {
 	icon = GFX_decision_category_foreign_policy
 	allowed = {
+		is_ai = no
 		original_tag = GER
 	}
 	visible = { 
