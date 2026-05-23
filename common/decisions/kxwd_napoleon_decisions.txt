@@ -2782,7 +2782,7 @@ NAP_establish_rk_POL = {
 
 	available = {
 		OR = {
-			POL = { has_country_flag = has_napoleonic_tag  }
+			POL = { OR = { has_country_flag = has_napoleonic_tag has_cosmetic_tag = POL_PLC } }
 			NFA = {
 				OR = {
 					has_completed_focus = NFA_a_grand_meeting
