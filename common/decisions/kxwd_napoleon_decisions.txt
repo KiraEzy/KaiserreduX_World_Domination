@@ -5,6 +5,51 @@
 ################################
 
 NAP_great_game = {
+NFA_integrate_rk_CAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1313
+				state = 165
+				state = 167
+				state = 940
+				state = 166
+				state = 177
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		1313 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		165 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		167 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		940 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		166 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+		177 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		1313 = { add_core_of = NFA }
+		165 = { add_core_of = NFA }
+		167 = { add_core_of = NFA }
+		940 = { add_core_of = NFA }
+		166 = { add_core_of = NFA }
+		177 = { add_core_of = NFA }
+		1313 = { transfer_state_to = NFA }
+		165 = { transfer_state_to = NFA }
+		167 = { transfer_state_to = NFA }
+		940 = { transfer_state_to = NFA }
+		166 = { transfer_state_to = NFA }
+		177 = { transfer_state_to = NFA }
+	}
+}
 NFA_integrate_rk_TUS = {
 	icon = generic_prepare_civil_war
 
@@ -350,7 +395,15 @@ NFA_integrate_rk_PAP = {
 		}
 
 	available = {
-		ITA = { has_cosmetic_tag = ITA_napoleonic }
+		OR = {
+			ITA = { has_country_flag = has_napoleonic_tag  }
+			NFA = {
+				OR = {
+					has_completed_focus = NFA_a_grand_meeting
+					has_completed_focus = NFA_mandate_of_people
+				}
+			}	
+		}
 		2 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		1149 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 	}
