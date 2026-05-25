@@ -8202,7 +8202,15 @@ NAP_establish_rk_EGY = {
 		}
 
 	available = {
-		EGY = { has_country_flag = has_napoleonic_tag }
+		OR = {
+			EGY = { has_country_flag = has_napoleonic_tag  }
+			NFA = {
+				OR = {
+					has_completed_focus = NFA_a_grand_meeting
+					has_completed_focus = NFA_mandate_of_people
+				}
+			}	
+		}
 		446 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		447 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
 		452 = { owner = { OR = { original_tag = NFA is_subject_of = NFA } } }
