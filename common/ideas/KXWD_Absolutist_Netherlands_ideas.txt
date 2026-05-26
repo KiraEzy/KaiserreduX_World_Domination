@@ -175,6 +175,20 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+		KXWD_HOL_Colonial_Exploitation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Colonial_Exploitation" }
+			allowed = { always = no }
+			picture = KXWD_GRE_royal_army
+			modifier = {
+				local_resources_factor = 0.1
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				weekly_manpower = 2500
+				consumer_goods_factor = -0.05
+				political_power_gain = 0.1
+			}
+			removal_cost = -1
+		}
 		KXWD_HOL_Fight_GER= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Fight_GER"}
 			allowed = {always = no}

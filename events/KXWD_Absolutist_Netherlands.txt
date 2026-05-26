@@ -188,88 +188,58 @@ country_event = { #indonesia question
 
 		unlock_decision_tooltip = HOLWD_INS_game
 	}
-	option = { #dont unite
+	option = { #puppet — strip factories, resources, and manpower for the metropole
 		name = holwd.7.b
-		INS = {
-			every_core_state = {
-				remove_core_of = INS
+		ai_chance = {
+			factor = 40
+		}
+
+		custom_effect_tooltip = holwd.7.b.tt
+
+		set_country_flag = HOLWD_indonesia_puppeted
+
+		add_ideas = KXWD_HOL_Colonial_Exploitation
+		add_political_power = 100
+		add_stability = -0.1
+		add_war_support = 0.05
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+		add_offsite_building = {
+			type = dockyard
+			level = 1
+		}
+
+		7 = {
+			add_extra_state_shared_building_slots = 2
+			add_resource = {
+				type = rubber
+				amount = 12
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = INS
-				}
-				remove_claim_by = INS
+			add_resource = {
+				type = oil
+				amount = 6
 			}
 		}
-		1020 = { add_core_of = INS }
-		1333 = { add_core_of = INS }
-		1022 = { add_core_of = INS }
-		1021 = { add_core_of = INS }
-		335 = { add_core_of = INS }
-		1023 = { add_core_of = INS }
-		1019 = { add_core_of = INS }
-		667 = { add_core_of = INS }
-		1018 = { add_core_of = INS }
-		1017 = { add_core_of = INS }
-		334 = { add_core_of = INS }
-		1016 = { add_core_of = INS }
-		673 = { add_core_of = INS }
-		672 = { add_core_of = INS }
-		668 = { add_core_of = INS }
-		669 = { add_core_of = INS }
-		843 = { add_core_of = INS }
-		release = INS
-		INS = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = HOL
-						}
-						OR = {
-							is_owned_by = HOL
-							OWNER = { is_subject_of = HOL} 
-						}
-					}
-				}
-				transfer_state_to = INS
+		35 = {
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
 			}
 		}
-		INS = { 
-			set_cosmetic_tag = HOL_INS_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Dutch Administration"
-				picture = "gfx/leaders/HOL/Portrait_Holland_Junta.png"
-				expire = "1.1.1"
-				ideology = autocratic_colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			HOL = {
-				set_autonomy = {
-					target = INS
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = paternal_autocrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				authoritarian_democrat = 50
-				paternal_autocrat = 50
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Dutch Administration"
-				long_name = "Dutch Administration"
-			}
+		hidden_effect = {
+			holwd_puppet_indonesia_extract_effect = yes
 		}
 	}
 }
