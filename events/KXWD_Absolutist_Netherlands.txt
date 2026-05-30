@@ -243,3 +243,75 @@ country_event = { #indonesia question
 		}
 	}
 }
+
+country_event = { #great state — choose war direction
+	id = holwd.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.8" }
+	title = holwd.8.t
+	desc = holwd.8.d
+
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #fight germany
+		name = holwd.8.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = HOLWD_unlock_fight_ger
+		custom_effect_tooltip = holwd.8.a.tt
+		hidden_effect = {
+			holwd_check_secondary_fight_focus_unlocks = yes
+		}
+	}
+
+	option = { #fight union of britain
+		name = holwd.8.b
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = HOLWD_unlock_fight_uob
+		custom_effect_tooltip = holwd.8.b.tt
+		hidden_effect = {
+			holwd_check_secondary_fight_focus_unlocks = yes
+		}
+	}
+}
+
+country_event = { #owns London — unlock Fight GER focus
+	id = holwd.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.9" }
+	title = holwd.9.t
+	desc = holwd.9.d
+
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = holwd.9.a
+		set_country_flag = HOLWD_unlock_fight_ger
+		custom_effect_tooltip = holwd.9.a.tt
+	}
+}
+
+country_event = { #owns Berlin — unlock Fight UOB focus
+	id = holwd.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.10" }
+	title = holwd.10.t
+	desc = holwd.10.d
+
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = holwd.10.a
+		set_country_flag = HOLWD_unlock_fight_uob
+		custom_effect_tooltip = holwd.10.a.tt
+	}
+}

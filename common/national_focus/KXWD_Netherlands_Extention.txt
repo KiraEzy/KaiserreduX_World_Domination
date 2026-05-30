@@ -572,6 +572,7 @@ shared_focus = {
 			remove_idea = KXWD_HOL_Expansion_1
 			add_idea = KXWD_HOL_Expansion_2
 		}
+		country_event = holwd.8
 	}
 	relative_position_id = HOLWD_Indonesia_Question
 }
@@ -618,21 +619,27 @@ shared_focus = {
 	continue_if_invalid = no
 	cancel_if_invalid = yes
 	available = {
-		5 = {
-			is_core_of = HOL
-		}
-		1357 = {
-			is_core_of = HOL
-		}
-		59 = {
-			is_core_of = HOL
-		}
+		has_country_flag = HOLWD_unlock_fight_ger
 	}
 	prerequisite = {
 		focus = HOLWD_Great_State
 	}
 	completion_reward = {
 		add_ideas = KXWD_HOL_Fight_GER
+		GER = {
+			every_core_state = {
+				add_core_of = HOL
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HOLWD_unlock_fight_uob
+			}
+			set_cosmetic_tag = HOL_ENG_GER_OCC
+		}
+		else = {
+			set_cosmetic_tag = HOL_GER
+		}
 	}
 	relative_position_id = HOLWD_Great_State
 }
@@ -645,17 +652,7 @@ shared_focus = {
 	continue_if_invalid = no
 	cancel_if_invalid = yes
 	available = {
-		NOT = {
-			5 = {
-				is_core_of = HOL
-			}
-			1357 = {
-				is_core_of = HOL
-			}
-			59 = {
-				is_core_of = HOL
-			}
-		}
+		has_country_flag = HOLWD_unlock_fight_uob
 	}
 	prerequisite = {
 		focus = HOLWD_Great_State
@@ -763,7 +760,15 @@ shared_focus = {
 			type = annex_everything
 			target = IRE
 		}
-		set_cosmetic_tag = HOL_ENG_union_OCC
+		if = {
+			limit = {
+				has_country_flag = HOLWD_unlock_fight_ger
+			}
+			set_cosmetic_tag = HOL_ENG_GER_OCC
+		}
+		else = {
+			set_cosmetic_tag = BRG_ANGLO_DUTCH_HOL
+		}
 	}
 	relative_position_id = HOLWD_Great_State
 }

@@ -57,6 +57,26 @@ holwd_extract_colonial_subject_effect = {
 	OVERLORD = { add_manpower = 500000 }
 }
 
+# Unlock the opposite fight focus when the capital is held (HOL or subject)
+holwd_check_secondary_fight_focus_unlocks = {
+	if = {
+		limit = {
+			has_country_flag = HOLWD_unlock_fight_uob
+			NOT = { has_country_flag = HOLWD_unlock_fight_ger }
+			126 = { is_owned_by_ROOT_or_subject = yes }
+		}
+		country_event = holwd.9
+	}
+	if = {
+		limit = {
+			has_country_flag = HOLWD_unlock_fight_ger
+			NOT = { has_country_flag = HOLWD_unlock_fight_uob }
+			64 = { is_owned_by_ROOT_or_subject = yes }
+		}
+		country_event = holwd.10
+	}
+}
+
 holwd_puppet_indonesia_extract_effect = {
 	log = "[GetDateText]: [This.GetName]: Effect holwd_puppet_indonesia_extract_effect"
 	if = {

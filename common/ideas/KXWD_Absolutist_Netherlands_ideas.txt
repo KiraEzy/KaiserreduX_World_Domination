@@ -3,7 +3,7 @@ ideas = {
         KXWD_HOL_Empowered_Queen_1= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Empowered_Queen_1"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = LIT_crown_4
 			modifier = {
 				stability_weekly = 0.015
 				war_support_weekly = 0.015
@@ -19,7 +19,7 @@ ideas = {
 		KXWD_HOL_Empowered_Queen_2= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Empowered_Queen_2"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = LIT_crown_4
 			modifier = {
 				stability_weekly = 0.03
 				war_support_weekly = 0.03
@@ -37,7 +37,7 @@ ideas = {
 		KXWD_HOL_Royal_Guard_1= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Royal_Guard_1"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = SWE_royal_guard_anime
 			modifier = {
 				equipment_capture_factor = 0.1
 				army_attack_factor = 0.15
@@ -53,7 +53,7 @@ ideas = {
 		KXWD_HOL_Royal_Guard_2= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Royal_Guard_2"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = SWE_royal_guard_anime
 			modifier = {
 				equipment_capture_factor = 0.15
 				army_attack_factor = 0.25
@@ -75,7 +75,7 @@ ideas = {
 		KXWD_HOL_Golden_Age= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Golden_Age"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = KXWD_HOL_Golden_Age
 			modifier = {
 				weekly_manpower = 1000 
 				max_command_power = 200
@@ -107,7 +107,7 @@ ideas = {
 		KXWD_HOL_Free_Education= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Free_Education"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = public_education
 			modifier = {
 				production_speed_buildings_factor = 0.2
 				global_building_slots_factor = 0.25
@@ -121,7 +121,7 @@ ideas = {
 		KXWD_HOL_Protestant_1= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Protestant_1"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = SHX_christian_statism
 			modifier = {
 				party_popularity_stability_factor = 0.3
 				political_power_factor = 0.15
@@ -138,7 +138,7 @@ ideas = {
 		KXWD_HOL_Protestant_2= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Protestant_2"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = SHX_christian_statism
 			modifier = {
 				party_popularity_stability_factor = 0.4
 				political_power_factor = 0.3
@@ -155,7 +155,7 @@ ideas = {
 		KXWD_HOL_Expansion_1= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Expansion_"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = KXWD_HOL_Expansion
 			modifier = {
 				justify_war_goal_time = -0.9
 				generate_wargoal_tension = -1.0
@@ -165,7 +165,7 @@ ideas = {
 		KXWD_HOL_Expansion_2= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Expansion_2"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = KXWD_HOL_Expansion
 			modifier = {
 				justify_war_goal_time = -0.9
 				generate_wargoal_tension = -1.0
@@ -178,7 +178,7 @@ ideas = {
 		KXWD_HOL_Colonial_Exploitation = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Colonial_Exploitation" }
 			allowed = { always = no }
-			picture = KXWD_GRE_royal_army
+			picture = DEI_colonial_nation
 			modifier = {
 				local_resources_factor = 0.1
 				industrial_capacity_factory = 0.05
@@ -192,7 +192,7 @@ ideas = {
 		KXWD_HOL_Fight_GER= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Fight_GER"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = attack_idea_icon_GER
 			targeted_modifier = {
 				tag = GER
 				attack_bonus_against = 0.25
@@ -207,7 +207,7 @@ ideas = {
 		KXWD_HOL_Fight_UOB= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Fight_UOB"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = KXWD_HOL_Fight_UOB
 			targeted_modifier = {
 				tag = ENG
 				attack_bonus_against = 0.25
@@ -222,7 +222,7 @@ ideas = {
 
 		HOL_idea_economic_recovery_shock = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_economic_recovery_shock" }
-			picture = HOL_black_monday_recovery
+			picture = HOL_economic_recovery_custom
 			name = HOL_idea_economic_recovery_shock
 			allowed = { always = no }
 			modifier = {
@@ -234,7 +234,7 @@ ideas = {
 		}
 		HOL_idea_economic_recovery_contraction = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_economic_recovery_contraction" }
-			picture = HOL_black_monday_recovery
+			picture = HOL_economic_recovery_custom
 			name = HOL_idea_economic_recovery_contraction
 			allowed = { always = no }
 			modifier = {
@@ -246,7 +246,7 @@ ideas = {
 		}
 		HOL_idea_economic_recovery_fragile = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_economic_recovery_fragile" }
-			picture = HOL_black_monday_recovery
+			picture = HOL_economic_recovery_custom
 			name = HOL_idea_economic_recovery_fragile
 			allowed = { always = no }
 			modifier = {
@@ -258,7 +258,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_confidence = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_confidence" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
@@ -267,7 +267,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_anger = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_anger" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
@@ -276,7 +276,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_colonial = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_colonial" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
@@ -287,7 +287,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_confidence_anger = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_confidence_anger" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
@@ -297,7 +297,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_confidence_colonial = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_confidence_colonial" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
@@ -309,7 +309,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_anger_colonial = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_anger_colonial" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
@@ -321,7 +321,7 @@ ideas = {
 		}
 		HOL_idea_fruit_of_economic_recovery_all = {
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea HOL_idea_fruit_of_economic_recovery_all" }
-			picture = HOL_black_monday_recovery
+			picture = mixed_economy_2
 			name = HOL_idea_fruit_of_economic_recovery
 			allowed = { always = no }
 			modifier = {
