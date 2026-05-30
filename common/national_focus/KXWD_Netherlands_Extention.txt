@@ -1,0 +1,774 @@
+######################################
+####### Absolutist Netherlands #######
+######################################
+shared_focus = {
+	id = HOLWD_Absolutist_Coup
+	x = 20
+	y = 6
+	cost = 1
+	icon = GFX_goal_HOLWD_Absolutist_Coup
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		has_country_flag = HOLWD_Absolutist
+		is_ai = no
+		or = {
+			has_idea = HOL_idea_instability_above_50
+			has_idea = HOL_idea_instability
+		}
+	}
+	completion_reward = {
+		remove_ideas = HOL_idea_instability
+		remove_ideas = HOL_idea_instability_above_50
+	}
+}
+shared_focus = {
+	id = HOLWD_Rally_the_Guard
+	x = -2
+	y = 1
+	cost = 5
+	icon = GFX_goal_NEP_guarding_the_prime_minister
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Absolutist_Coup
+	}
+	completion_reward = {
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 3000
+			producer = HOL
+		}
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 1000
+			producer = HOL
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 1500
+			producer = HOL
+		}
+	}
+	relative_position_id = HOLWD_Absolutist_Coup
+}
+shared_focus = {
+	id = HOLWD_Absorb_the_Right
+	x = 2
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Absorb_the_Right
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Absolutist_Coup
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.25
+		}
+	}
+	relative_position_id = HOLWD_Absolutist_Coup
+}
+shared_focus = {
+	id = HOLWD_Destroy_Socialist
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_CSA_destroy_social_capitalists
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Absolutist_Coup
+	}
+	completion_reward = {
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.5
+		}
+	}
+	relative_position_id = HOLWD_Absolutist_Coup
+}
+shared_focus = {
+	id = HOLWD_Recovery
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Recovery
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		OR = {
+			has_idea = HOL_idea_economic_recovery
+			has_idea = HOL_idea_economic_recovery_shock
+			has_idea = HOL_idea_economic_recovery_contraction
+			has_idea = HOL_idea_economic_recovery_fragile
+		}
+	}
+	prerequisite = {
+		focus = HOLWD_Rally_the_Guard
+	}
+	prerequisite = {
+		focus = HOLWD_Destroy_Socialist
+	}
+	prerequisite = {
+		focus = HOLWD_Absorb_the_Right
+	}
+	completion_reward = {
+		custom_effect_tooltip = HOLWD_Recovery_tt
+		add_political_power = 100
+		# remove_ideas = HOL_idea_economic_recovery
+	}
+	relative_position_id = HOLWD_Destroy_Socialist
+}
+shared_focus = {
+	id = HOLWD_Golden_Age
+	x = 0
+	y = 2
+	cost = 5
+	icon = GFX_goal_HOLWD_Golden_Age
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Recovery
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Golden_Age
+	}
+	relative_position_id = HOLWD_Recovery
+}
+shared_focus = {
+	id = HOLWD_Belgian_Question
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Belgian_Question
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Golden_Age
+	}
+	completion_reward = {
+		add_war_support = 0.15
+		add_stability = 0.05
+		add_manpower = 15000
+		add_political_power = 250
+		add_offsite_building = {
+			type = arms_factory
+			level = 3
+		}
+		add_state_claim = 6
+		add_state_claim = 34
+		add_state_claim = 29
+		hidden_effect = {
+			set_global_flag = KXWD_belgian_influence_active
+			KXWD_init_belgian_influence_frames = yes
+		}
+	}
+	relative_position_id = HOLWD_Golden_Age
+}
+shared_focus = {
+	id = HOLWD_Invest_Flemish_Industry
+	x = -1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Invest_Flemish_Industry
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		has_global_flag = KXWD_BEL_resolution_done
+		6 = {
+			OR = {
+				is_owned_by = HOL
+				OWNER = {
+					is_subject_of = HOL
+				}
+			}
+		}
+		29 = {
+			OR = {
+				is_owned_by = HOL
+				OWNER = {
+					is_subject_of = HOL
+				}
+			}
+		}
+	}
+	prerequisite = {
+		focus = HOLWD_Belgian_Question
+	}
+	completion_reward = {
+		6 = {
+			add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = HOLWD_Belgian_Question
+}
+shared_focus = {
+	id = HOLWD_Revive_Walloon_Industrial_Belt
+	x = 1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Revive_Walloon_Industrial_Belt
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		has_global_flag = KXWD_BEL_resolution_done
+		34 = {
+			OR = {
+				is_owned_by = HOL
+				OWNER = {
+					is_subject_of = HOL
+				}
+			}
+		}
+	}
+	prerequisite = {
+		focus = HOLWD_Belgian_Question
+	}
+	completion_reward = {
+		34 = {
+			add_extra_state_shared_building_slots = 6
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = HOLWD_Belgian_Question
+}
+shared_focus = {
+	id = HOLWD_Empowered_Queen
+	x = -1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Empowered_Queen
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Recovery
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Empowered_Queen_1
+	}
+	relative_position_id = HOLWD_Recovery
+}
+shared_focus = {
+	id = HOLWD_Royal_Guard
+	x = -1
+	y = 1
+	cost = 5
+	icon = GFX_goal_SWE_royal_guard
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Empowered_Queen
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Royal_Guard_1
+	}
+	relative_position_id = HOLWD_Empowered_Queen
+}
+shared_focus = {
+	id = HOLWD_Idealise_Queen
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Idealise_Queen
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Royal_Guard
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = KXWD_HOL_Empowered_Queen_1
+			add_idea = KXWD_HOL_Empowered_Queen_2
+		}
+	}
+	relative_position_id = HOLWD_Royal_Guard
+}
+shared_focus = {
+	id = HOLWD_for_the_Queen
+	x = -1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_for_the_Queen
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Idealise_Queen
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = KXWD_HOL_Royal_Guard_1
+			add_idea = KXWD_HOL_Royal_Guard_2
+		}
+	}
+	relative_position_id = HOLWD_Idealise_Queen
+}
+shared_focus = {
+	id = HOLWD_Conservative_Economy
+	x = 1
+	y = 1
+	cost = 5
+	icon = GFX_goal_SWE_conservative_business
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Recovery
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Economy_Boom
+		36 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+		866 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+		}
+		7 = {
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = dockyard
+				level = 5
+				instant_build = yes
+			}
+		}
+		add_ideas = KXWD_HOL_Economy_Boom
+	}
+	relative_position_id = HOLWD_Recovery
+}
+shared_focus = {
+	id = HOLWD_Education
+	x = 1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HON_Education_Research
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Conservative_Economy
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = KXWD_HOL_Economy_Boom
+			add_idea = KXWD_HOL_Free_Education
+		}
+	}
+	relative_position_id = HOLWD_Conservative_Economy
+}
+shared_focus = {
+	id = HOLWD_State_Religion
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_State_Religion
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Education
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Protestant_1
+	}
+	relative_position_id = HOLWD_Education
+}
+shared_focus = {
+	id = HOLWD_Godly_Spirit
+	x = 1
+	y = 1
+	cost = 5
+	icon = GFX_goal_AUS_Not_Without_Gods_Good_Light
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_State_Religion
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = KXWD_HOL_Protestant_1
+			add_idea = KXWD_HOL_Protestant_2
+		}
+	}
+	relative_position_id = HOLWD_State_Religion
+}
+shared_focus = {
+	id = HOLWD_Expansionism
+	x = 1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Expansionism
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Godly_Spirit
+	}
+	prerequisite = {
+		focus = HOLWD_for_the_Queen
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Expansion_1
+	}
+	relative_position_id = HOLWD_Invest_Flemish_Industry
+}
+shared_focus = {
+	id = HOLWD_Boer_Question
+	x = -2
+	y = 1
+	cost = 5
+	icon = GFX_SAF_boercrack_shine
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Expansionism
+	}
+	completion_reward = {
+		country_event = holwd.5
+	}
+	relative_position_id = HOLWD_Expansionism
+}
+shared_focus = {
+	id = HOLWD_New_York_Question
+	x = 2
+	y = 1
+	cost = 5
+	icon = GFX_goal_New_York_City_flag
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+	}
+	prerequisite = {
+		focus = HOLWD_Expansionism
+	}
+	completion_reward = {
+		country_event = holwd.6
+	}
+	relative_position_id = HOLWD_Expansionism
+}
+shared_focus = {
+	id = HOLWD_Indonesia_Question
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_JAP_target_indonesia
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		or = {
+			has_subject = DEI
+			or = {
+				has_subject = INS
+				INS = {
+					exists = no
+				}
+			}
+		}
+	}
+	prerequisite = {
+		focus = HOLWD_Expansionism
+	}
+	completion_reward = {
+		country_event = holwd.7
+	}
+	relative_position_id = HOLWD_Expansionism
+}
+shared_focus = {
+	id = HOLWD_Great_State
+	x = 0
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Great_State
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		or = {
+			has_subject = DEI
+			or = {
+				has_subject = INS
+				INS = {
+					exists = no
+				}
+			}
+		}
+	}
+	prerequisite = {
+		focus = HOLWD_Indonesia_Question
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = KXWD_HOL_Expansion_1
+			add_idea = KXWD_HOL_Expansion_2
+		}
+		country_event = holwd.8
+	}
+	relative_position_id = HOLWD_Indonesia_Question
+}
+# shared_focus = {
+# 	id = HOLWD_Great_State
+# 	icon = GFX_goal_MLTWD_call_the_pope
+#     available = {
+#         or = {
+#             has_subject = DEI
+#             or = {
+#                 has_subject = INS
+#                 INS = {
+#                     exists = no
+#                 }
+#             }
+#         }
+#     }
+# 	x = 0
+# 	y = 1
+# 	cost = 5
+#     prerequisite = {
+#         focus = HOLWD_Indonesia_Question
+#     }
+#     prerequisite = {
+#         focus = HOLWD_New_York_Question
+#     }
+#     prerequisite = {
+#         focus = HOLWD_Boer_Question
+#     }
+#     relative_position_id = HOLWD_Indonesia_Question
+# 	completion_reward = {
+# 		swap_ideas = {
+#             remove_idea = KXWD_HOL_Expansion_1
+#             add_idea = KXWD_HOL_Expansion_2
+#         }
+#     }
+# }
+shared_focus = {
+	id = HOLWD_Fight_GER
+	x = -1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Fight_GER
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		has_country_flag = HOLWD_unlock_fight_ger
+	}
+	prerequisite = {
+		focus = HOLWD_Great_State
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Fight_GER
+		GER = {
+			every_core_state = {
+				add_core_of = HOL
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = HOLWD_unlock_fight_uob
+			}
+			set_cosmetic_tag = HOL_ENG_GER_OCC
+		}
+		else = {
+			set_cosmetic_tag = HOL_GER
+		}
+	}
+	relative_position_id = HOLWD_Great_State
+}
+shared_focus = {
+	id = HOLWD_Fight_UOB
+	x = 1
+	y = 1
+	cost = 5
+	icon = GFX_goal_HOLWD_Fight_UOB
+	continue_if_invalid = no
+	cancel_if_invalid = yes
+	available = {
+		has_country_flag = HOLWD_unlock_fight_uob
+	}
+	prerequisite = {
+		focus = HOLWD_Great_State
+	}
+	completion_reward = {
+		add_ideas = KXWD_HOL_Fight_UOB
+		120 = {
+			add_core_of = HOL
+		}
+		121 = {
+			add_core_of = HOL
+		}
+		122 = {
+			add_core_of = HOL
+		}
+		123 = {
+			add_core_of = HOL
+		}
+		125 = {
+			add_core_of = HOL
+		}
+		126 = {
+			add_core_of = HOL
+		}
+		127 = {
+			add_core_of = HOL
+		}
+		128 = {
+			add_core_of = HOL
+		}
+		129 = {
+			add_core_of = HOL
+		}
+		130 = {
+			add_core_of = HOL
+		}
+		131 = {
+			add_core_of = HOL
+		}
+		132 = {
+			add_core_of = HOL
+		}
+		133 = {
+			add_core_of = HOL
+		}
+		136 = {
+			add_core_of = HOL
+		}
+		338 = {
+			add_core_of = HOL
+		}
+		938 = {
+			add_core_of = HOL
+		}
+		1225 = {
+			add_core_of = HOL
+		}
+		1315 = {
+			add_core_of = HOL
+		}
+		1317 = {
+			add_core_of = HOL
+		}
+		113 = {
+			add_core_of = HOL
+		}
+		119 = {
+			add_core_of = HOL
+		}
+		134 = {
+			add_core_of = HOL
+		}
+		135 = {
+			add_core_of = HOL
+		}
+		14 = {
+			add_core_of = HOL
+		}
+		15 = {
+			add_core_of = HOL
+		}
+		17 = {
+			add_core_of = HOL
+		}
+		23 = {
+			add_core_of = HOL
+		}
+		24 = {
+			add_core_of = HOL
+		}
+		30 = {
+			add_core_of = HOL
+		}
+		980 = {
+			add_core_of = HOL
+		}
+		983 = {
+			add_core_of = HOL
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = ENG
+		}
+		create_wargoal = {
+			type = annex_everything
+			target = IRE
+		}
+		if = {
+			limit = {
+				has_country_flag = HOLWD_unlock_fight_ger
+			}
+			set_cosmetic_tag = HOL_ENG_GER_OCC
+		}
+		else = {
+			set_cosmetic_tag = BRG_ANGLO_DUTCH_HOL
+		}
+	}
+	relative_position_id = HOLWD_Great_State
+}
