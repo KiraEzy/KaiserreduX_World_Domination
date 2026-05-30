@@ -23,7 +23,6 @@ BEL_great_game = {
 					log = "[state.GetID]"
 				}
 			}
-		days_remove = 0
 	}
     }
     BEL_establish_rk_FRA = {
@@ -56,7 +55,7 @@ BEL_great_game = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		24 = { transfer_state_to = BEL }
@@ -96,7 +95,7 @@ BEL_great_game = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		760 = { add_core_of = BEL }
@@ -139,7 +138,7 @@ BEL_establish_rk_NGF = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		781 = { add_core_of = BEL }
@@ -186,7 +185,7 @@ BEL_establish_rk_HOL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		7 = { add_core_of = BEL }
@@ -237,7 +236,7 @@ BEL_establish_rk_WGR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = WGR
@@ -347,7 +346,7 @@ BEL_establish_rk_BAY = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = BAY
@@ -469,7 +468,7 @@ BEL_establish_rk_DDR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = DDR
@@ -587,7 +586,7 @@ BEL_establish_rk_FRP = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = FRP
@@ -691,7 +690,7 @@ BEL_establish_rk_SWI = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SWI = {
@@ -810,7 +809,7 @@ BEL_establish_rk_OCC = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = OCC
@@ -921,7 +920,7 @@ BEL_establish_rk_SUR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = SUR
@@ -1056,7 +1055,7 @@ BEL_establish_rk_COG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = COG
@@ -1201,7 +1200,7 @@ BEL_establish_rk_INS = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		release = INS

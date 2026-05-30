@@ -13638,7 +13638,9 @@ state = 430
 		highlight_states = {
 			highlight_state_targets = {
 				state = 122
+				state = 1225
 				state = 122
+				state = 1225
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -13664,6 +13666,14 @@ state = 430
 					}
 					WAL = {
 						122 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1225 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -13706,6 +13716,9 @@ state = 430
 						remove_core_of = WAL
 					}
 					122 = {
+						add_core_of = WAL
+					}
+					1225 = {
 						add_core_of = WAL
 					}
 					WAL = {
@@ -14292,11 +14305,10 @@ state = 430
 				state = 342
 				state = 340
 				state = 339
-				state = 1225
 				state = 341
 				state = 773
-				state = 184
-				state = 1089
+				# state = 184
+				# state = 1089
 				state = 230
 				state = 1000
 				state = 354
@@ -14310,11 +14322,10 @@ state = 430
 				state = 342
 				state = 340
 				state = 339
-				state = 1225
 				state = 341
 				state = 773
-				state = 184
-				state = 1089
+				# state = 184
+				# state = 1089
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -14443,14 +14454,6 @@ state = 430
 								}
 							}
 						}
-						1225 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
 						341 = {
 							owner = {
 								OR = {
@@ -14467,22 +14470,22 @@ state = 430
 								}
 							}
 						}
-						184 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
-						1089 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
+						# 184 = {
+						# 	owner = {
+						# 		OR = {
+						# 			original_tag = ROOT
+						# 			is_subject_of = ROOT
+						# 		}
+						# 	}
+						# }
+						# 1089 = {
+						# 	owner = {
+						# 		OR = {
+						# 			original_tag = ROOT
+						# 			is_subject_of = ROOT
+						# 		}
+						# 	}
+						# }
 					}
 				}
 				NOT = {
@@ -14554,9 +14557,6 @@ state = 430
 						add_core_of = TUR
 					}
 					339 = {
-						add_core_of = TUR
-					}
-					1225 = {
 						add_core_of = TUR
 					}
 					341 = {
