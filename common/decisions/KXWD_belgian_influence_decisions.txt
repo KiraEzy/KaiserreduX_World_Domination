@@ -29,8 +29,8 @@ KXWD_belgian_influence_struggle = {
 
 		selectable_mission = no
 		is_good = no
-		days_mission_timeout = 5
-		# days_mission_timeout = 210
+		# days_mission_timeout = 5
+		days_mission_timeout = 210
 		fire_only_once = yes
 
 		timeout_effect = {
@@ -86,9 +86,14 @@ KXWD_belgian_influence_struggle = {
 		days_remove = 1
 		fire_only_once = yes
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_resolve_influence_situation"
 			KXWD_BEL_resolve_influence_outcome = yes
 			country_event = KXWD_BEL_influence.2
 		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_resolve_influence_situation"
+		}
+
 		ai_will_do = { factor = 0 }
 	}
 
@@ -310,25 +315,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_1_fund_friendly_newspapers"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_1_fund_friendly_newspapers"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			add_political_power = 50
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_1_fund_friendly_newspapers"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_flanders_prep_2_bribe_municipal_elites = {
@@ -339,25 +354,38 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			OR = {
+				check_variable = { KXWD_BEL_active_prep_missions < 3 }
+				check_variable = { KXWD_BEL_active_prep_missions = 0 }
+			}
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_2_bribe_municipal_elites"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_2_bribe_municipal_elites"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			increase_ruling_party_popularity_by_2 = yes
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_2_bribe_municipal_elites"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_flanders_prep_3_support_trade_leagues = {
@@ -368,16 +396,20 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 119
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 120
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_3_support_trade_leagues"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_3_support_trade_leagues"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			add_offsite_building = {
@@ -386,10 +418,16 @@ KXWD_belgian_influence_struggle = {
 			}
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_3_support_trade_leagues"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_flanders_prep_4_sponsor_language_leagues = {
@@ -400,25 +438,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_4_sponsor_language_leagues"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_4_sponsor_language_leagues"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			add_stability = 0.02
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_4_sponsor_language_leagues"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_flanders_prep_5_subsidize_newspapers = {
@@ -429,25 +477,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_5_subsidize_newspapers"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_5_subsidize_newspapers"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			add_war_support = 0.02
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_5_subsidize_newspapers"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_flanders_prep_6_court_industrialists = {
@@ -458,16 +516,20 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 129
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 130
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_6_court_industrialists"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_6_court_industrialists"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			add_offsite_building = {
@@ -476,10 +538,16 @@ KXWD_belgian_influence_struggle = {
 			}
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_6_court_industrialists"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_flanders_prep_7_student_clergy_networks = {
@@ -490,25 +558,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_flanders_prep_7_student_clergy_networks"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_flanders_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_flanders_prep_7_student_clergy_networks"
+			add_to_variable = { KXWD_BEL_flanders_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_flanders_prep_gain_tt
 			add_manpower = 1000
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_flanders_prep_7_student_clergy_networks"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_influence_nudge_flanders_dutch = {
@@ -524,7 +602,7 @@ KXWD_belgian_influence_struggle = {
 			NOT = { check_variable = { global.KXWD_BEL_flanders_frame = 1 } }
 			custom_override_tooltip = {
 				tooltip = KXWD_BEL_need_flanders_prep_tt
-				check_variable = { global.KXWD_BEL_flanders_prep > 4 }
+				check_variable = { KXWD_BEL_flanders_prep > 4 }
 			}
 		}
 
@@ -533,10 +611,15 @@ KXWD_belgian_influence_struggle = {
 		fire_only_once = no
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_influence_nudge_flanders_dutch"
 			subtract_from_variable = { global.KXWD_BEL_flanders_frame = 1 }
-			subtract_from_variable = { global.KXWD_BEL_flanders_prep = 5 }
+			subtract_from_variable = { KXWD_BEL_flanders_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_flanders_dutch_tt
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_influence_nudge_flanders_dutch"
 		}
 
 		ai_will_do = { factor = 0 }
@@ -555,7 +638,7 @@ KXWD_belgian_influence_struggle = {
 			NOT = { check_variable = { global.KXWD_BEL_flanders_frame = 5 } }
 			custom_override_tooltip = {
 				tooltip = KXWD_BEL_need_flanders_prep_tt
-				check_variable = { global.KXWD_BEL_flanders_prep > 4 }
+				check_variable = { KXWD_BEL_flanders_prep > 4 }
 			}
 		}
 
@@ -564,13 +647,23 @@ KXWD_belgian_influence_struggle = {
 		fire_only_once = no
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_influence_nudge_flanders_german"
 			add_to_variable = { global.KXWD_BEL_flanders_frame = 1 }
-			subtract_from_variable = { global.KXWD_BEL_flanders_prep = 5 }
+			subtract_from_variable = { KXWD_BEL_flanders_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_flanders_german_tt
 		}
 
-		ai_will_do = { factor = 0 }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_influence_nudge_flanders_german"
+		}
+
+		ai_will_do = {
+			factor = 999999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_1_language_societies = {
@@ -581,25 +674,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_1_language_societies"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_1_language_societies"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			add_stability = 0.02
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_1_language_societies"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_2_discredit_rivals = {
@@ -610,25 +713,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_2_discredit_rivals"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_2_discredit_rivals"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			add_political_power = 50
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_2_discredit_rivals"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_3_smuggle_campaign_money = {
@@ -639,25 +752,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_3_smuggle_campaign_money"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_3_smuggle_campaign_money"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			increase_ruling_party_popularity_by_2 = yes
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_3_smuggle_campaign_money"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_4_business_circles = {
@@ -668,25 +791,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_4_business_circles"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_4_business_circles"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			add_war_support = 0.02
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_4_business_circles"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_5_press_networks = {
@@ -697,25 +830,35 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 9
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 10
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_5_press_networks"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_5_press_networks"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			add_manpower = 1000
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_5_press_networks"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_6_undermine_german_investors = {
@@ -726,16 +869,20 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 119
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 120
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_6_undermine_german_investors"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_6_undermine_german_investors"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			add_offsite_building = {
@@ -744,10 +891,16 @@ KXWD_belgian_influence_struggle = {
 			}
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_6_undermine_german_investors"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_wallonia_prep_7_final_prep_lobby = {
@@ -758,16 +911,20 @@ KXWD_belgian_influence_struggle = {
 		}
 		available = {
 			has_political_power > 129
-			check_variable = { global.KXWD_BEL_active_prep_missions < 3 }
+			check_variable = { KXWD_BEL_active_prep_missions < 3 }
 		}
 		cost = 130
 		days_remove = 21
 		days_re_enable = 7
 		fire_only_once = no
-		complete_effect = { add_to_variable = { global.KXWD_BEL_active_prep_missions = 1 } }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_wallonia_prep_7_final_prep_lobby"
+			add_to_variable = { KXWD_BEL_active_prep_missions = 1 }
+		}
 		remove_effect = {
-			add_to_variable = { global.KXWD_BEL_wallonia_prep = 1 }
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_wallonia_prep_7_final_prep_lobby"
+			add_to_variable = { KXWD_BEL_wallonia_prep = 1 }
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_wallonia_prep_gain_tt
 			add_offsite_building = {
@@ -776,10 +933,16 @@ KXWD_belgian_influence_struggle = {
 			}
 		}
 		cancel_effect = {
-			subtract_from_variable = { global.KXWD_BEL_active_prep_missions = 1 }
+			log = "[GetDateText]: [Root.GetName]: Decision cancel KXWD_BEL_wallonia_prep_7_final_prep_lobby"
+			subtract_from_variable = { KXWD_BEL_active_prep_missions = 1 }
 			KXWD_clamp_belgian_influence_frames = yes
 		}
-		ai_will_do = { factor = 0 }
+		ai_will_do = {
+			factor = 99999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 
 	KXWD_BEL_influence_nudge_wallonia_dutch = {
@@ -795,7 +958,7 @@ KXWD_belgian_influence_struggle = {
 			NOT = { check_variable = { global.KXWD_BEL_wallonia_frame = 1 } }
 			custom_override_tooltip = {
 				tooltip = KXWD_BEL_need_wallonia_prep_tt
-				check_variable = { global.KXWD_BEL_wallonia_prep > 4 }
+				check_variable = { KXWD_BEL_wallonia_prep > 4 }
 			}
 		}
 
@@ -804,10 +967,15 @@ KXWD_belgian_influence_struggle = {
 		fire_only_once = no
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_influence_nudge_wallonia_dutch"
 			subtract_from_variable = { global.KXWD_BEL_wallonia_frame = 1 }
-			subtract_from_variable = { global.KXWD_BEL_wallonia_prep = 5 }
+			subtract_from_variable = { KXWD_BEL_wallonia_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_wallonia_dutch_tt
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_influence_nudge_wallonia_dutch"
 		}
 
 		ai_will_do = { factor = 0 }
@@ -826,7 +994,7 @@ KXWD_belgian_influence_struggle = {
 			NOT = { check_variable = { global.KXWD_BEL_wallonia_frame = 5 } }
 			custom_override_tooltip = {
 				tooltip = KXWD_BEL_need_wallonia_prep_tt
-				check_variable = { global.KXWD_BEL_wallonia_prep > 4 }
+				check_variable = { KXWD_BEL_wallonia_prep > 4 }
 			}
 		}
 
@@ -835,12 +1003,22 @@ KXWD_belgian_influence_struggle = {
 		fire_only_once = no
 
 		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision complete KXWD_BEL_influence_nudge_wallonia_german"
 			add_to_variable = { global.KXWD_BEL_wallonia_frame = 1 }
-			subtract_from_variable = { global.KXWD_BEL_wallonia_prep = 5 }
+			subtract_from_variable = { KXWD_BEL_wallonia_prep = 5 }
 			KXWD_clamp_belgian_influence_frames = yes
 			custom_effect_tooltip = KXWD_BEL_influence_nudge_wallonia_german_tt
 		}
 
-		ai_will_do = { factor = 0 }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove KXWD_BEL_influence_nudge_wallonia_german"
+		}
+
+		ai_will_do = {
+			factor = 999999
+			modifier = { factor = 0 NOT = { original_tag = GER } }
+			modifier = { factor = 0 NOT = { has_global_flag = KXWD_belgian_influence_active } }
+			modifier = { factor = 0 has_global_flag = KXWD_BEL_resolution_done }
+		}
 	}
 }

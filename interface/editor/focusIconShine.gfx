@@ -1,10 +1,10 @@
 spriteTypes = {
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Absolutist_Coup"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Absolutist_Coup.dds"
+		name = "GFX_goal_HOLWD_Absolutist_Coup_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Absolutist_Coup.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Absolutist_Coup.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Absolutist_Coup.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -22,7 +22,50 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Absolutist_Coup.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Absolutist_Coup.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		legacy_lazy_load = no
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_HOLWD_Absorb_the_Right_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Absorb_the_Right.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Absorb_the_Right.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = {
+				x = 0
+				y = 0
+			}
+			animationtexturescale = {
+				x = 1
+				y = 1
+			}
+		}
+		animation = {
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Absorb_the_Right.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -42,11 +85,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Absorb_the_Right"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Absorb_the_Right.dds"
+		name = "GFX_goal_HOLWD_Belgian_Question_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Belgian_Question.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Absorb_the_Right.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Belgian_Question.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -64,7 +107,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Absorb_the_Right.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Belgian_Question.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -84,11 +127,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Belgian_Question"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Belgian_Question.dds"
+		name = "GFX_goal_HOLWD_Empowered_Queen_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Empowered_Queen.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Belgian_Question.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Empowered_Queen.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -106,7 +149,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Belgian_Question.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Empowered_Queen.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -126,11 +169,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Empowered_Queen"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Empowered_Queen.dds"
+		name = "GFX_goal_HOLWD_Golden_Age_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Golden_Age.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Empowered_Queen.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Golden_Age.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -148,7 +191,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Empowered_Queen.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Golden_Age.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -168,11 +211,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Golden_Age"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Golden_Age.dds"
+		name = "GFX_goal_HOLWD_Recovery_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Recovery.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Golden_Age.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Recovery.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -190,7 +233,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Golden_Age.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Recovery.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -210,11 +253,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Recovery"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Recovery.dds"
+		name = "GFX_goal_HOLWD_State_Religion_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_State_Religion.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Recovery.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_State_Religion.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -232,7 +275,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Recovery.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_State_Religion.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -252,11 +295,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_State_Religion"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_State_Religion.dds"
+		name = "GFX_goal_HOLWD_Idealise_Queen_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Idealise_Queen.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_State_Religion.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Idealise_Queen.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -274,7 +317,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_State_Religion.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Idealise_Queen.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -294,11 +337,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Idealise_Queen"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Idealise_Queen.dds"
+		name = "GFX_goal_HOLWD_for_the_Queen_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_for_the_Queen.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Idealise_Queen.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_for_the_Queen.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -316,7 +359,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Idealise_Queen.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_for_the_Queen.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -336,11 +379,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_for_the_Queen"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_for_the_Queen.dds"
+		name = "GFX_goal_HOLWD_Revive_Walloon_Industrial_Belt_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Revive_Walloon_Industrial_Belt.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_for_the_Queen.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Revive_Walloon_Industrial_Belt.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -358,7 +401,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_for_the_Queen.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Revive_Walloon_Industrial_Belt.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -378,11 +421,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Revive_Walloon_Industrial_Belt"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Revive_Walloon_Industrial_Belt.dds"
+		name = "GFX_goal_HOLWD_Invest_Flemish_Industry_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Invest_Flemish_Industry.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Revive_Walloon_Industrial_Belt.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Invest_Flemish_Industry.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -400,7 +443,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Revive_Walloon_Industrial_Belt.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Invest_Flemish_Industry.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -420,11 +463,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Invest_Flemish_Industry"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Invest_Flemish_Industry.dds"
+		name = "GFX_goal_HOLWD_Expansionism_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Expansionism.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Invest_Flemish_Industry.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Expansionism.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -442,7 +485,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Invest_Flemish_Industry.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Expansionism.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -462,11 +505,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Expansionism"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Expansionism.dds"
+		name = "GFX_goal_HOLWD_Great_State_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Great_State.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Expansionism.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Great_State.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -484,7 +527,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Expansionism.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Great_State.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -504,11 +547,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Great_State"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Great_State.dds"
+		name = "GFX_goal_HOLWD_Great_State_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Great_State.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Great_State.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Great_State.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -526,7 +569,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Great_State.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Great_State.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -546,11 +589,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Great_State"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Great_State.dds"
+		name = "GFX_goal_HOLWD_Fight_UOB_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Fight_UOB.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Great_State.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Fight_UOB.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -568,7 +611,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Great_State.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Fight_UOB.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no
@@ -588,53 +631,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_HOLWD_Fight_UOB"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Fight_UOB.dds"
+		name = "GFX_goal_HOLWD_Fight_GER_shine"
+		texturefile = "gfx/editor/interface/focusIcon/goal_HOLWD_Fight_GER.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Fight_UOB.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = {
-				x = 0
-				y = 0
-			}
-			animationtexturescale = {
-				x = 1
-				y = 1
-			}
-		}
-		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Fight_UOB.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = {
-				x = 0
-				y = 0
-			}
-			animationtexturescale = {
-				x = 1
-				y = 1
-			}
-		}
-		legacy_lazy_load = no
-	}
-	SpriteType = {
-		name = "GFX_goal_HOLWD_Fight_GER"
-		texturefile = "gfx\editor\interface\focusIcon\goal_HOLWD_Fight_GER.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Fight_GER.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Fight_GER.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90
 			animationlooping = no
@@ -652,7 +653,7 @@ spriteTypes = {
 			}
 		}
 		animation = {
-			animationmaskfile = "gfx\editor\interface\focusIcon\goal_HOLWD_Fight_GER.dds"
+			animationmaskfile = "gfx/editor/interface/focusIcon/goal_HOLWD_Fight_GER.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90
 			animationlooping = no

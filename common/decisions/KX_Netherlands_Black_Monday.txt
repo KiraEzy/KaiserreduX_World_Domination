@@ -46,7 +46,7 @@ HOL_black_monday_recovery_category = {
 		activation = {
 			hol_bm_is_active = yes
 			has_country_flag = HOL_bm_initialized
-			check_variable = { var = hol_bm_anger value = 55 compare = greater_than_or_equals }
+			check_variable = { var = hol_bm_anger value = 40 compare = greater_than_or_equals }
 		}
 		available = {
 			hidden_trigger = {
@@ -56,7 +56,7 @@ HOL_black_monday_recovery_category = {
 		cancel_trigger = {
 			OR = {
 				NOT = { hol_bm_is_active = yes }
-				check_variable = { var = hol_bm_anger value = 55 compare = less_than }
+				check_variable = { var = hol_bm_anger value = 40 compare = less_than }
 			}
 		}
 		selectable_mission = no
@@ -112,7 +112,7 @@ HOL_black_monday_recovery_category = {
 		activation = {
 			hol_bm_is_active = yes
 			has_country_flag = HOL_bm_initialized
-			check_variable = { var = hol_bm_colonial_pressure value = 20 compare = greater_than_or_equals }
+			check_variable = { var = hol_bm_colonial_pressure value = 60 compare = greater_than_or_equals }
 		}
 		available = {
 			hidden_trigger = {
@@ -122,7 +122,7 @@ HOL_black_monday_recovery_category = {
 		cancel_trigger = {
 			OR = {
 				NOT = { hol_bm_is_active = yes }
-				check_variable = { var = hol_bm_colonial_pressure value = 20 compare = less_than }
+				check_variable = { var = hol_bm_colonial_pressure value = 30 compare = less_than }
 			}
 		}
 		selectable_mission = no
@@ -179,8 +179,8 @@ HOL_black_monday_recovery_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_emergency_public_works"
 			custom_effect_tooltip = HOL_bm_tt_emergency_public_works
 			add_to_variable = { hol_bm_progress = 8 }
-			add_to_variable = { hol_bm_anger = -6 }
-			add_to_variable = { hol_bm_confidence = 2 }
+			add_to_variable = { hol_bm_anger = -9 }
+			add_to_variable = { hol_bm_confidence = -3 }
 			add_dynamic_modifier = { modifier = HOL_bm_public_works_modifier days = 90 }
 			hol_bm_apply_standard_cooldown_effect = yes
 			hol_bm_clamp_variables_effect = yes
@@ -212,7 +212,7 @@ HOL_black_monday_recovery_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_guarantee_export_firms"
 			custom_effect_tooltip = HOL_bm_tt_guarantee_export_firms
-			add_to_variable = { hol_bm_progress = 7 }
+			add_to_variable = { hol_bm_progress = 10 }
 			add_to_variable = { hol_bm_confidence = 8 }
 			add_to_variable = { hol_bm_anger = 4 }
 			add_dynamic_modifier = { modifier = HOL_bm_export_guarantees_modifier days = 90 }
@@ -247,9 +247,9 @@ HOL_black_monday_recovery_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_negotiate_wage_restraint"
 			custom_effect_tooltip = HOL_bm_tt_negotiate_wage_restraint
-			add_to_variable = { hol_bm_progress = 5 }
-			add_to_variable = { hol_bm_confidence = 3 }
-			add_to_variable = { hol_bm_anger = 2 }
+			add_to_variable = { hol_bm_progress = 9 }
+			add_to_variable = { hol_bm_confidence = 5 }
+			add_to_variable = { hol_bm_anger = 3 }
 			if = {
 				limit = { has_stability < 0.45 }
 				add_to_variable = { hol_bm_anger = 2 }
@@ -302,7 +302,7 @@ HOL_black_monday_recovery_category = {
 
 	HOL_bm_expand_rotterdam_modernization = {
 		icon = generic_construct_infrastructure
-		cost = 30
+		cost = 20
 		days_remove = 35
 
 		visible = {
@@ -320,7 +320,7 @@ HOL_black_monday_recovery_category = {
 			custom_effect_tooltip = HOL_bm_tt_expand_rotterdam_modernization
 			add_to_variable = { hol_bm_progress = 3 }
 			add_to_variable = { hol_bm_confidence = 4 }
-			add_to_variable = { hol_bm_anger = -2 }
+			add_to_variable = { hol_bm_anger = -5 }
 			add_dynamic_modifier = { modifier = HOL_bm_port_modernization_modifier days = 120 }
 			hol_bm_apply_standard_cooldown_effect = yes
 			hol_bm_clamp_variables_effect = yes
@@ -336,7 +336,7 @@ HOL_black_monday_recovery_category = {
 
 	HOL_bm_draw_east_indies_revenues = {
 		icon = generic_production
-		cost = 75
+		cost = 35
 		days_remove = 60
 
 		visible = {
@@ -359,8 +359,8 @@ HOL_black_monday_recovery_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_draw_east_indies_revenues"
 			custom_effect_tooltip = HOL_bm_tt_draw_east_indies_revenues
-			add_to_variable = { hol_bm_progress = 10 }
-			add_to_variable = { hol_bm_confidence = 3 }
+			add_to_variable = { hol_bm_progress = 15 }
+			add_to_variable = { hol_bm_confidence = 5 }
 			add_to_variable = { hol_bm_anger = 3 }
 			add_to_variable = { hol_bm_colonial_pressure = 12 }
 			add_dynamic_modifier = { modifier = HOL_bm_colonial_revenue_modifier days = 90 }
@@ -382,7 +382,7 @@ HOL_black_monday_recovery_category = {
 
 	HOL_bm_cut_colonial_development_budgets = {
 		icon = generic_production
-		cost = 50
+		cost = 40
 		days_remove = 60
 
 		visible = {
@@ -399,7 +399,7 @@ HOL_black_monday_recovery_category = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_cut_colonial_development_budgets"
 			custom_effect_tooltip = HOL_bm_tt_cut_colonial_development_budgets
 			add_to_variable = { hol_bm_progress = 9 }
-			add_to_variable = { hol_bm_confidence = -7 }
+			add_to_variable = { hol_bm_confidence = -4 }
 			add_to_variable = { hol_bm_anger = 8 }
 			add_to_variable = { hol_bm_colonial_pressure = 13 }
 			hol_bm_apply_extraction_cooldown_effect = yes
@@ -417,7 +417,7 @@ HOL_black_monday_recovery_category = {
 
 	HOL_bm_convene_crisis_cabinet = {
 		icon = generic_political_reform
-		cost = 110
+		cost = 50
 		days_remove = 14
 
 		visible = {
@@ -452,164 +452,164 @@ HOL_black_monday_recovery_category = {
 		}
 	}
 
-	HOL_bm_debug_set_anger_100 = {
-		icon = generic_political_reform
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_anger_100 = {
+	# 	icon = generic_political_reform
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_anger_100"
-			set_variable = { hol_bm_anger = 100 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_anger_100"
+	# 		set_variable = { hol_bm_anger = 100 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 
-	HOL_bm_debug_set_anger_0 = {
-		icon = generic_political_reform
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_anger_0 = {
+	# 	icon = generic_political_reform
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_anger_0"
-			set_variable = { hol_bm_anger = 0 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_anger_0"
+	# 		set_variable = { hol_bm_anger = 0 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 
-	HOL_bm_debug_set_confidence_100 = {
-		icon = generic_political_reform
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_confidence_100 = {
+	# 	icon = generic_political_reform
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_confidence_100"
-			set_variable = { hol_bm_confidence = 100 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_confidence_100"
+	# 		set_variable = { hol_bm_confidence = 100 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 
-	HOL_bm_debug_set_confidence_0 = {
-		icon = generic_political_reform
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_confidence_0 = {
+	# 	icon = generic_political_reform
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_confidence_0"
-			set_variable = { hol_bm_confidence = 0 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_confidence_0"
+	# 		set_variable = { hol_bm_confidence = 0 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 
-	HOL_bm_debug_set_colonial_pressure_100 = {
-		icon = generic_political_reform
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_colonial_pressure_100 = {
+	# 	icon = generic_political_reform
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_colonial_pressure_100"
-			set_variable = { hol_bm_colonial_pressure = 100 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_colonial_pressure_100"
+	# 		set_variable = { hol_bm_colonial_pressure = 100 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 
-	HOL_bm_debug_set_colonial_pressure_0 = {
-		icon = generic_political_reform
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_colonial_pressure_0 = {
+	# 	icon = generic_political_reform
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_colonial_pressure_0"
-			set_variable = { hol_bm_colonial_pressure = 0 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_colonial_pressure_0"
+	# 		set_variable = { hol_bm_colonial_pressure = 0 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 
-	HOL_bm_debug_set_progress_98 = {
-		icon = generic_construct_civilian
-		cost = 0
-		visible = {
-			is_debug = yes
-			hol_bm_is_active = yes
-		}
+	# HOL_bm_debug_set_progress_98 = {
+	# 	icon = generic_construct_civilian
+	# 	cost = 0
+	# 	visible = {
+	# 		is_debug = yes
+	# 		hol_bm_is_active = yes
+	# 	}
 
-		available = {
-			hol_bm_is_active = yes
-			has_country_flag = HOL_bm_initialized
-		}
+	# 	available = {
+	# 		hol_bm_is_active = yes
+	# 		has_country_flag = HOL_bm_initialized
+	# 	}
 
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_progress_98"
-			set_variable = { hol_bm_progress = 75 }
-			hol_bm_clamp_variables_effect = yes
-			hol_bm_update_stage_effect = yes
-		}
+	# 	complete_effect = {
+	# 		log = "[GetDateText]: [Root.GetName]: Decision complete HOL_bm_debug_set_progress_98"
+	# 		set_variable = { hol_bm_progress = 75 }
+	# 		hol_bm_clamp_variables_effect = yes
+	# 		hol_bm_update_stage_effect = yes
+	# 	}
 
-		ai_will_do = { factor = 0 }
-	}
+	# 	ai_will_do = { factor = 0 }
+	# }
 }

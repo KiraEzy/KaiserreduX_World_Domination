@@ -1,0 +1,38 @@
+KXWD_BEL_contest_active_GER = {
+	tag = GER
+	is_ai = yes
+	has_global_flag = KXWD_belgian_influence_active
+	NOT = { has_global_flag = KXWD_BEL_resolution_done }
+}
+
+KXWD_BEL_GER_can_take_prep = {
+	KXWD_BEL_contest_active_GER = yes
+	check_variable = { KXWD_BEL_active_prep_missions < 3 }
+	has_political_power > 15
+}
+
+KXWD_BEL_GER_wants_flanders_prep = {
+	KXWD_BEL_GER_can_take_prep = yes
+	check_variable = { KXWD_BEL_flanders_prep < 5 }
+	NOT = { check_variable = { global.KXWD_BEL_flanders_frame = 5 } }
+}
+
+KXWD_BEL_GER_wants_wallonia_prep = {
+	KXWD_BEL_GER_can_take_prep = yes
+	check_variable = { KXWD_BEL_wallonia_prep < 5 }
+	NOT = { check_variable = { global.KXWD_BEL_wallonia_frame = 5 } }
+}
+
+KXWD_BEL_GER_ready_flanders_nudge = {
+	KXWD_BEL_contest_active_GER = yes
+	check_variable = { KXWD_BEL_flanders_prep > 4 }
+	NOT = { check_variable = { global.KXWD_BEL_flanders_frame = 5 } }
+	has_political_power > 35
+}
+
+KXWD_BEL_GER_ready_wallonia_nudge = {
+	KXWD_BEL_contest_active_GER = yes
+	check_variable = { KXWD_BEL_wallonia_prep > 4 }
+	NOT = { check_variable = { global.KXWD_BEL_wallonia_frame = 5 } }
+	has_political_power > 35
+}

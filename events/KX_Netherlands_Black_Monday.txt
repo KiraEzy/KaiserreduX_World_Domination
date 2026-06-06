@@ -49,3 +49,15 @@ country_event = {
 		hol_bm_clamp_variables_effect = yes
 	}
 }
+
+country_event = {
+	id = holbm.4
+	title = holbm.4.t
+	desc = holbm.4.d
+	picture = GFX_report_event_black_monday
+	is_triggered_only = yes
+
+	option = {
+		name = holbm.4.a
+	}
+}

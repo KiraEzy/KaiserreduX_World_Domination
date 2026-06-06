@@ -1,9 +1,17 @@
 KXWD_init_belgian_influence_frames = {
 	set_variable = { global.KXWD_BEL_wallonia_frame = 3 }
 	set_variable = { global.KXWD_BEL_flanders_frame = 3 }
-	set_variable = { global.KXWD_BEL_wallonia_prep = 0 }
-	set_variable = { global.KXWD_BEL_flanders_prep = 0 }
-	set_variable = { global.KXWD_BEL_active_prep_missions = 0 }
+	every_country = {
+		limit = {
+			OR = {
+				tag = HOL
+				tag = GER
+			}
+		}
+		set_variable = { KXWD_BEL_wallonia_prep = 0 }
+		set_variable = { KXWD_BEL_flanders_prep = 0 }
+		set_variable = { KXWD_BEL_active_prep_missions = 0 }
+	}
 	clr_global_flag = KXWD_BEL_resolution_ready
 	clr_global_flag = KXWD_BEL_resolution_done
 	clr_global_flag = KXWD_BEL_deadline_handled
@@ -12,17 +20,20 @@ KXWD_init_belgian_influence_frames = {
 KXWD_clamp_belgian_influence_frames = {
 	clamp_variable = { var = global.KXWD_BEL_wallonia_frame min = 1 max = 5 }
 	clamp_variable = { var = global.KXWD_BEL_flanders_frame min = 1 max = 5 }
-	clamp_variable = { var = global.KXWD_BEL_wallonia_prep min = 0 max = 99 }
-	clamp_variable = { var = global.KXWD_BEL_flanders_prep min = 0 max = 99 }
-	clamp_variable = { var = global.KXWD_BEL_active_prep_missions min = 0 max = 3 }
+	clamp_variable = { var = KXWD_BEL_wallonia_prep min = 0 max = 99 }
+	clamp_variable = { var = KXWD_BEL_flanders_prep min = 0 max = 99 }
+	clamp_variable = { var = KXWD_BEL_active_prep_missions min = 0 max = 3 }
 }
 
 KXWD_BEL_apply_neutral_wargoals_flanders = {
 	6 = { owner = { save_event_target_as = KXWD_BEL_flanders_owner } }
 	if = {
 		limit = {
-			exists = event_target:KXWD_BEL_flanders_owner
-			event_target:KXWD_BEL_flanders_owner = { NOT = { tag = HOL } NOT = { tag = GER } }
+			event_target:KXWD_BEL_flanders_owner = {
+				exists = yes
+				NOT = { tag = HOL }
+				NOT = { tag = GER }
+			}
 		}
 		HOL = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_flanders_owner } }
 		GER = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_flanders_owner } }
@@ -38,8 +49,11 @@ KXWD_BEL_apply_neutral_wargoals_wallonia = {
 	34 = { owner = { save_event_target_as = KXWD_BEL_wallonia_owner } }
 	if = {
 		limit = {
-			exists = event_target:KXWD_BEL_wallonia_owner
-			event_target:KXWD_BEL_wallonia_owner = { NOT = { tag = HOL } NOT = { tag = GER } }
+			event_target:KXWD_BEL_wallonia_owner = {
+				exists = yes
+				NOT = { tag = HOL }
+				NOT = { tag = GER }
+			}
 		}
 		HOL = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_wallonia_owner } }
 		GER = { create_wargoal = { type = annex_everything target = event_target:KXWD_BEL_wallonia_owner } }

@@ -18,8 +18,8 @@
 
  KXWD_BEL_wallonia_map_tt:0 "§YWallonia§! / whole-country strip: §Oorange§!–§Yyellow§! = §ODutch§! lean, §Wwhite§! = neutral, §Hkhaki§!–§gcharcoal§! = §gGerman§! lean."
  KXWD_BEL_flanders_map_tt:0 "§YFlanders§! overlay strip: same colour scale as the base map."
- KXWD_BEL_prep_flanders_line:0 "§YFlanders Preparation:§! [?global.KXWD_BEL_flanders_prep|0]/7"
- KXWD_BEL_prep_wallonia_line:0 "§YWallonia Preparation:§! [?global.KXWD_BEL_wallonia_prep|0]/7"
+ KXWD_BEL_prep_flanders_line:0 "§YFlanders Preparation:§! [?KXWD_BEL_flanders_prep|0]/7"
+ KXWD_BEL_prep_wallonia_line:0 "§YWallonia Preparation:§! [?KXWD_BEL_wallonia_prep|0]/7"
  KXWD_BEL_need_flanders_prep_tt:0 "Requires at least §Y5§! Flanders preparation points."
  KXWD_BEL_need_wallonia_prep_tt:0 "Requires at least §Y5§! Wallonia preparation points."
  KXWD_BEL_flanders_prep_gain_tt:0 "§YFlanders§! preparation increased by §G1§!."
