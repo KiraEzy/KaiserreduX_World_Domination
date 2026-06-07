@@ -1,0 +1,50 @@
+﻿
+add_namespace = irewd
+
+country_event = {
+	id = irewd.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event irewd.1" }
+	title = irewd.1.t
+	desc = irewd.1.d
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+        name = irewd.1.a
+        trigger = {
+            or = {
+				has_government = paternal_autocrat
+				has_government = national_populist
+        	}
+        }
+		add_ideas = KXWD_IRE_constitution_nationalist
+		remove_ideas = KXWD_IRE_constitution_problem
+    }
+	option = {
+        name = irewd.1.b
+        trigger = {
+            or = {
+				has_government = authoritarian_democrat
+				has_government = social_conservative
+				has_government = market_liberal
+				has_government = social_liberal
+				has_government = social_democrat
+        	}
+        }
+		add_ideas = KXWD_IRE_constitution_democratic
+		remove_ideas = KXWD_IRE_constitution_problem
+    }
+	option = {
+        name = irewd.1.c
+        trigger = {
+            or = {
+				has_government = radical_socialist
+				has_government = syndicalist
+				has_government = totalist
+        	}
+        }
+		add_ideas = KXWD_IRE_constitution_socialist
+		remove_ideas = KXWD_IRE_constitution_problem
+    }
+}

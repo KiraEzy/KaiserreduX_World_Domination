@@ -1,0 +1,503 @@
+
+###################################
+####### Ireland Celtic tree #######
+###################################
+
+shared_focus = {
+	id = IREWD_celts_united
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+		OR = {
+			has_cosmetic_tag = CELTIC_UNION
+			has_cosmetic_tag = IRE_CELT
+			has_cosmetic_tag = IRE_CELT2
+		}
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = IRE_Legacy_of_Pearse
+	cost = 0
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_celts_united"
+        add_ideas = KXWD_IRE_constitution_problem
+	}
+}
+
+shared_focus = {
+	id = IREWD_State_Organs
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_celts_united
+	cost = 5
+    prerequisite = {
+        focus = IREWD_celts_united
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_State_Organs"
+        add_political_power = 100
+        add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = IREWD_Celt_Industry
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_State_Organs
+	cost = 5
+    prerequisite = {
+        focus = IREWD_State_Organs
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Celt_Industry"
+        add_offsite_building = { type = arms_factory level = 2 }
+        add_offsite_building = { type = industrial_complex level = 4 }
+	}
+}
+
+shared_focus = {
+	id = IREWD_Religion
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = -4
+	y = 1
+    relative_position_id = IREWD_State_Organs
+	cost = 5
+    prerequisite = {
+        focus = IREWD_State_Organs
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Religion"
+        add_ideas = KXWD_IRE_religion_problem
+	}
+}
+
+shared_focus = {
+	id = IREWD_Religion_Cath
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = -2
+	y = 1
+    relative_position_id = IREWD_Religion
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Religion
+    }
+    mutually_exclusive = { focus = IREWD_Religion_Pag }
+    mutually_exclusive = { focus = IREWD_Religion_Sec }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Religion_Cath"
+        swap_ideas = {
+            remove_idea = KXWD_IRE_religion_problem
+            add_idea = KXWD_IRE_religion_catholic
+        }
+	}
+}
+
+shared_focus = {
+	id = IREWD_Religion_Sec
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_Religion
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Religion
+    }
+    mutually_exclusive = { focus = IREWD_Religion_Cath }
+    mutually_exclusive = { focus = IREWD_Religion_Pag }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Religion_Sec"
+        swap_ideas = {
+            remove_idea = KXWD_IRE_religion_problem
+            add_idea = KXWD_IRE_religion_secular
+        }
+	}
+}
+
+shared_focus = {
+	id = IREWD_Religion_Pag
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 2
+	y = 1
+    relative_position_id = IREWD_Religion
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Religion
+    }
+    mutually_exclusive = { focus = IREWD_Religion_Cath }
+    mutually_exclusive = { focus = IREWD_Religion_Sec }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Religion_Pag"
+        swap_ideas = {
+            remove_idea = KXWD_IRE_religion_problem
+            add_idea = KXWD_IRE_religion_pagan
+        }
+	}
+}
+
+shared_focus = {
+	id = IREWD_Religion_Setteled
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_Religion_Sec
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Religion_Sec
+        focus = IREWD_Religion_Cath
+        focus = IREWD_Religion_Pag
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Religion_Setteled"
+        add_political_power = 150
+        add_stability = 0.1
+        add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = IREWD_language
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 4
+	y = 1
+    relative_position_id = IREWD_State_Organs
+	cost = 5
+    prerequisite = {
+        focus = IREWD_State_Organs
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_language"
+        add_ideas = KXWD_IRE_language_problem
+	}
+}
+
+shared_focus = {
+	id = IREWD_language_Ire
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = -2
+	y = 1
+    relative_position_id = IREWD_language
+	cost = 5
+    prerequisite = {
+        focus = IREWD_language
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+    mutually_exclusive = { focus = IREWD_language_All }
+    mutually_exclusive = { focus = IREWD_language_Cel }
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_language_Ire"
+        swap_ideas = {
+            remove_idea = KXWD_IRE_language_problem
+            add_idea = KXWD_IRE_language_irish
+        }
+	}
+}
+
+shared_focus = {
+	id = IREWD_language_Cel
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 2
+	y = 1
+    relative_position_id = IREWD_language
+	cost = 5
+    prerequisite = {
+        focus = IREWD_language
+    }
+    mutually_exclusive = { focus = IREWD_language_Ire }
+    mutually_exclusive = { focus = IREWD_language_All }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_language_Cel"
+        swap_ideas = {
+            remove_idea = KXWD_IRE_language_problem
+            add_idea = KXWD_IRE_language_celtic
+        }
+	}
+}
+
+shared_focus = {
+	id = IREWD_language_All
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_language
+	cost = 5
+    prerequisite = {
+        focus = IREWD_language
+    }
+    mutually_exclusive = { focus = IREWD_language_Ire }
+    mutually_exclusive = { focus = IREWD_language_Cel }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_language_All"
+        swap_ideas = {
+            remove_idea = KXWD_IRE_language_problem
+            add_idea = KXWD_IRE_language_multiple
+        }
+	}
+}
+
+shared_focus = {
+	id = IREWD_language_Setteled
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_language_All
+	cost = 5
+    prerequisite = {
+        focus = IREWD_language_All
+        focus = IREWD_language_Cel
+        focus = IREWD_language_Ire
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_language_Setteled"
+        add_political_power = 150
+        add_stability = 0.1
+        add_war_support = 0.1
+	}
+}
+
+shared_focus = {
+	id = IREWD_Celt_Government
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = IREWD_Celt_Industry
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Celt_Industry
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Celt_Government"
+        country_event = irewd.1
+	}
+}
+
+shared_focus = {
+	id = IREWD_Celts_Awakened
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_Celt_Government
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Celt_Government
+    }
+    prerequisite = {
+        focus = IREWD_language_Setteled
+    }
+    prerequisite = {
+        focus = IREWD_Religion_Setteled
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Celts_Awakened"
+        custom_effect_tooltip = "Unlocks Puppet Decisions"
+        add_ideas = KXWD_IRE_celtic_expansionism
+	}
+}
+
+shared_focus = {
+	id = IREWD_Celt_Army
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = IREWD_Celts_Awakened
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Celts_Awakened
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Celt_Army"
+        add_ideas = KXWD_IRE_celtic_army
+	}
+}
+
+shared_focus = {
+	id = IREWD_Celt_Navy
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = 2
+	y = 1
+    relative_position_id = IREWD_Celts_Awakened
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Celts_Awakened
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Celt_Navy"
+        add_ideas = KXWD_IRE_celtic_army
+	}
+}
+
+shared_focus = {
+	id = IREWD_Celt_Air
+	icon = GFX_goal_SHXWD_order_of_china
+	available = {
+		is_ai = no
+	}
+
+	x = -2
+	y = 1
+    relative_position_id = IREWD_Celts_Awakened
+	cost = 5
+    prerequisite = {
+        focus = IREWD_Celts_Awakened
+    }
+
+	ai_will_do = {
+		factor = 0
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus IREWD_Celt_Air"
+        add_ideas = KXWD_IRE_celtic_air
+	}
+}
