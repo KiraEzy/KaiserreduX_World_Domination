@@ -3829,10 +3829,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        ALB = { is_subject_of = RUS }
 		}
 		
@@ -3899,10 +3901,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        WHR = { exists = no }
 		}
 
@@ -3946,10 +3950,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        DKB = { exists = no }
 			KUB = { exists = no }
 		}
@@ -4015,10 +4021,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        CZE = { is_subject_of = RUS }
 		}
 
@@ -4092,10 +4100,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        ALA = { is_subject_of = RUS }
 		}
 
@@ -4153,10 +4163,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        DJI = { 
 			OR = {
 			has_completed_focus = AFR_Tribal_Monarchism
@@ -4271,10 +4283,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        DJI = { 
 			has_country_leader = {
 				name = "Boris I"
@@ -4326,10 +4340,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        DDR = { is_subject_of = RUS }
 		}
 
@@ -4380,10 +4396,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        SWE = { is_subject_of = RUS }
 		}
 
@@ -4474,10 +4492,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        NGF = { is_subject_of = RUS }
 		}
 
@@ -4550,10 +4570,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        BAY = { is_subject_of = RUS }
 		}
 
@@ -4633,10 +4655,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        ITA = { is_subject_of = RUS }
 		}
 
@@ -4720,10 +4744,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        FRP = { is_subject_of = RUS }
 		}
 
@@ -4783,10 +4809,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        VEN = { is_subject_of = RUS }
 		}
 
@@ -4849,10 +4877,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        BEL = { is_subject_of = RUS }
 		}
 
@@ -4933,10 +4963,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 			POR = { is_subject_of = RUS }
 		}
 
@@ -5018,10 +5050,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        GBP = { is_subject_of = RUS }
 		}
 
@@ -5094,10 +5128,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        KOR = { is_subject_of = RUS }
 		}
 
@@ -5156,10 +5192,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        JAP = { is_subject_of = RUS }
 		}
 
@@ -5218,10 +5256,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 			GXC = { is_subject_of = RUS }
 		}
 
@@ -5288,10 +5328,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 			CAN = { is_subject_of = RUS }
 		}
 
@@ -5383,10 +5425,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 			CAL = { is_subject_of = RUS }
 		}
 
@@ -5445,10 +5489,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        AML = { is_subject_of = RUS }
 		}
 
@@ -5519,10 +5565,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        FSA = { is_subject_of = RUS }
 		}
 
@@ -5593,10 +5641,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        NEE = { is_subject_of = RUS }
 			CGL = { is_subject_of = RUS }
 		}
@@ -5669,10 +5719,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        TUR = { is_subject_of = RUS }
 		}
 
@@ -5731,10 +5783,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        IRQ = { is_subject_of = RUS }			
 		}
 
@@ -5842,10 +5896,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        PER = { is_subject_of = RUS }		
 		}
 
@@ -5924,10 +5980,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        PRF = { is_subject_of = RUS }
 		}
 
@@ -6015,10 +6073,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        INC = { is_subject_of = RUS }
 		}
 
@@ -6099,10 +6159,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        INS = { is_subject_of = RUS }
 		}
 
@@ -6184,10 +6246,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        AST = { is_subject_of = RUS }
 		}
 
@@ -6244,10 +6308,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        HAW = { is_subject_of = RUS }			
 		}
 
@@ -6319,10 +6385,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        MAG = { is_subject_of = RUS }			
 		}
 
@@ -6386,10 +6454,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        CAF = { is_subject_of = RUS }
 		}
 
@@ -6489,10 +6559,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        EGY = { is_subject_of = RUS }
 		}
 
@@ -6551,10 +6623,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        HUN = { is_subject_of = RUS }
 		}
 
@@ -6613,10 +6687,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        BRA = { is_subject_of = RUS }
 		}
 
@@ -6679,10 +6755,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        ARG = { is_subject_of = RUS }	
 		}
 
@@ -6763,10 +6841,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        LBA = { is_subject_of = RUS }			
 		}
 
@@ -6928,10 +7008,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        SAF = { is_subject_of = RUS }
 		}
 
@@ -7025,10 +7107,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        LIB = { is_subject_of = RUS }		
 		}
 
@@ -7710,10 +7794,12 @@ RUS_Foreign_Policy_decisions = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 			has_completed_focus = RUS_Open_The_Straits
 		}
 
@@ -21728,10 +21814,12 @@ RUS_Puppet_Management = {
 			DJI = { is_subject_of = RUS }
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        DJI = { 
 			has_completed_focus = AFR_Defend_Ourselves
 			}
@@ -21848,10 +21936,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -21894,10 +21984,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -21939,10 +22031,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 		}	
     target_root_trigger = {
 		tag = RUS
@@ -21989,10 +22083,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        DJI = { 
 			is_subject_of = RUS 
 			has_cosmetic_tag = RUS_MITTEL
@@ -22035,10 +22131,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        LIB = { 
 			is_subject_of = RUS 
 			has_cosmetic_tag = LIB_RUS
@@ -22090,10 +22188,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        PER = { 
 			is_subject_of = RUS 
 			has_cosmetic_tag = PER_RUS
@@ -22156,10 +22256,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        MAG = { 
 			is_subject_of = RUS 
 			has_cosmetic_tag = MAG_RUS
@@ -22222,10 +22324,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        LIB = { 
 			is_subject_of = RUS 
 			has_cosmetic_tag = LIB_RUS
@@ -22277,10 +22381,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        ALA = { 
 			is_subject_of = RUS 
 			} 
@@ -22353,10 +22459,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 			OR = {
 	         LPD = { 
 			 is_subject_of = RUS 
@@ -22435,10 +22543,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        VEN = { 
 			is_subject_of = RUS 
 			} 
@@ -22530,10 +22640,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        BRA = { 
 			is_subject_of = RUS 
 			} 
@@ -22625,10 +22737,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        CAF = { 
 			is_subject_of = RUS 
 			} 
@@ -22790,10 +22904,12 @@ RUS_Puppet_Management = {
 		available = {
 			tag = RUS
 			has_completed_focus = RUS_Expansionism
-			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
-			has_completed_focus = RUS_Black_Tsar
-			has_completed_focus = RUS_Rally_The_Monarchists
-			has_completed_focus = RUS_Long_Live_Tsar
+			OR = {
+				has_completed_focus = RUS_The_Sword_Bows_To_The_Crown
+				has_completed_focus = RUS_Black_Tsar
+				has_completed_focus = RUS_Rally_The_Monarchists
+				has_completed_focus = RUS_Long_Live_Tsar
+			}
 	        HAW = { 
 			is_subject_of = RUS 
 			has_cosmetic_tag = HAW_RUS
