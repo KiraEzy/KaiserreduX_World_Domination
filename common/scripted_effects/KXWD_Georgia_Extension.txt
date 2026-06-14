@@ -1,0 +1,114 @@
+###########################
+# KXWDD Georgia Scripted Effects Extension
+###########################
+
+GEO_recalculate_aftermath_effects = {
+	set_variable = { GEO.GEO_aftermath_political_power = -0.3 }
+	set_variable = { GEO.GEO_aftermath_stability = -0.3 }
+	set_variable = { GEO.GEO_aftermath_war_support = -0.3 }
+	set_variable = { GEO.GEO_aftermath_max_efficiency = -0.15 }
+	set_variable = { GEO.GEO_aftermath_construction_speed = -0.3 }
+	set_variable = { GEO.GEO_aftermath_factory_output = -0.15 }
+	set_variable = { GEO.GEO_aftermath_army_org = -0.25 }
+	set_variable = { GEO.GEO_aftermath_morale_factor = -0.25 }
+	set_variable = { GEO.GEO_aftermath_ideology_drift = -0.05 }
+	
+	if = {
+		limit = {
+			has_completed_focus = GEO_Deal_With_Opposition
+		}
+		add_to_variable = { GEO.GEO_aftermath_political_power = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_stability = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_ideology_drift = 0.025 }
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Fate_Of_Socialist_Parties
+		}
+		add_to_variable = { GEO.GEO_aftermath_ideology_drift = 0.025 }
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Cement_The_Regime
+		}
+		add_to_variable = { GEO.GEO_aftermath_political_power = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_stability = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_ideology_drift = 0.025 }
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Trade_Unions_Issue
+		}
+		add_to_variable = { GEO.GEO_aftermath_political_power = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_stability = 0.05 }
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Economic_Integration
+		}
+		add_to_variable = { GEO.GEO_aftermath_political_power = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_stability = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_max_efficiency = 0.025 }
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Cement_The_Economy
+		}
+		add_to_variable = { GEO.GEO_aftermath_political_power = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_max_efficiency = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_construction_speed = 0.05}
+		add_to_variable = { GEO.GEO_aftermath_factory_output = 0.025 }
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Main_Military_Council
+		}
+		add_to_variable = { GEO.GEO_aftermath_army_org = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_morale_factor = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_war_support = 0.05}
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Increase_Military_Budget
+		}
+		add_to_variable = { GEO.GEO_aftermath_army_org = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_morale_factor = 0.05 }
+		add_to_variable = { GEO.GEO_aftermath_war_support = 0.05}
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Centralised_Command
+		}
+		add_to_variable = { GEO.GEO_aftermath_army_org = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_morale_factor = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_war_support = 0.025}
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_Reorganize_Armament
+		}
+		add_to_variable = { GEO.GEO_aftermath_army_org = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_morale_factor = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_war_support = 0.025}
+	}
+	if = {
+		limit = {
+			has_completed_focus = GEO_The_Peoples_Logistics_Corps
+		}
+		add_to_variable = { GEO.GEO_aftermath_army_org = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_morale_factor = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_war_support = 0.025}
+	}
+
+	if = {
+		limit = {
+			has_completed_focus = GEO_Cement_The_Army
+		}
+		add_to_variable = { GEO.GEO_aftermath_army_org = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_morale_factor = 0.025 }
+		add_to_variable = { GEO.GEO_aftermath_war_support = 0.025}
+	}
+	
+	force_update_dynamic_modifier = yes
+}
+

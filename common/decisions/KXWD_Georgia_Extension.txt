@@ -1,0 +1,2400 @@
+###########################
+# KXWDD Georgia Decisions Extension
+###########################
+
+GEO_Integration_decisions = {
+		GEO_Integrate_Country = {
+			icon = eng_trade_unions_demand
+	
+			available = {
+				core_compliance = {
+					occupied_country_tag = FROM
+					value > 30 
+				}
+			}
+			
+			visible = {
+				any_of_scopes = {
+					array = FROM.core_states
+					is_owned_by = ROOT
+					is_claimed_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+	
+			cost = 0
+			days_remove = rus_core_integration_time_to_remove
+	
+			target_non_existing = yes
+			target_array = RUS_integration_array
+			target_root_trigger = {
+				has_country_flag = RUS_can_integrate
+			}
+			target_trigger = {
+				any_of_scopes = {
+					array = FROM.core_states
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+	
+			ai_will_do = {
+				factor = 1000
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Integrate_Country target: [From.GetName]"
+				every_owned_state = {
+					limit = {
+						is_claimed_by = ROOT
+						is_core_of = FROM
+					}
+					hidden_effect = { remove_claim_by = ROOT }
+					add_core_of = ROOT
+				}
+			}
+		}
+
+		GEO_Integrate_State = {
+			icon = eng_trade_unions_demand
+	
+			available = {
+				FROM = {
+					is_fully_controlled_by = ROOT
+					compliance > 30
+				}
+			}
+	
+			visible = {
+				FROM = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+	
+			cost = 0
+			days_remove = rus_core_integration_time_to_remove
+			cancel_if_not_visible = yes
+	
+			state_target = yes
+			target_array = RUS_integration_state_array
+			target_root_trigger = {
+				has_country_flag = RUS_can_integrate
+			}
+			target_trigger = {
+				FROM = {
+					is_owned_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+	
+			ai_will_do = {
+				factor = 1000
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Integrate_State target: [From.GetName]"
+				hidden_effect = { remove_state_claim = FROM }
+				add_state_core = FROM
+			}
+		}
+
+}
+
+GEO_Integration_decisions_caucasus = {
+		GEO_integrate_state_caucasus = {
+			name = integrate_state
+			icon = eng_trade_unions_demand
+	
+			allowed = { tag = GEO }
+	
+			available = {
+				FROM = {
+					is_controlled_by = ROOT
+					any_neighbor_state = {
+						is_owned_and_controlled_by = ROOT
+						is_core_of = ROOT
+					}
+				}
+			}
+	
+			visible = {
+				FROM = {
+					is_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+	
+			cost = 50
+			days_remove = 90
+			cancel_if_not_visible = yes
+	
+			state_target = yes
+			targets = { 230 229 998 1082 1081 1301 990 1082 1299 1302 1303 232 787 233 234 235 237 238 245 218 1189 1190 1186 1187 1188 1191 1227 1266 1226 1264 1265 1231 1263 1304 1298 1267}
+			target_trigger = {
+				FROM = {
+					is_controlled_by = ROOT
+					NOT = { is_core_of = ROOT }
+				}
+			}
+	
+			ai_will_do = {
+				factor = 100
+			}
+	
+			cancel_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision cancel GEO_integrate_state target: [From.GetName]"
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_integrate_state target: [From.GetName]"
+				hidden_effect = { remove_state_claim = FROM }
+				add_state_core = FROM
+			}
+		}
+
+}
+
+GEO_Spreading_The_Revolution_decisions = {
+		GEO_Approach_Japan = {
+			icon = generic_civil_support
+			name = RUS_Approach_Japan
+			priority = 100
+			
+			available = {
+				is_neighbor_of = FROM
+				FROM = {
+					is_subject = no
+					has_socialist_government = no
+				}
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+			}
+	
+			targets = { JAP }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+	
+			cost = 10
+			days_remove = 28
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Approach_Japan target: [From.GetName]"
+				ROOT = {
+					country_event = {
+						id = rusfor.1416
+						days = 2
+					}
+				}
+			} 
+		}
+
+		GEO_Attack_Central_Asia = {
+			icon = hol_draw_up_staff_plans
+			name = RUS_Attack_Region
+			available = {
+				OR = {
+					is_neighbor_of = FROM
+					any_allied_country = {
+						is_neighbor_of = FROM
+					}
+				}
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan 
+				}
+			}
+	
+			targets = { ALO }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							overlord = {
+								strength_ratio = {
+									tag = ROOT
+									ratio > 0.7
+								}
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Attack_Central_Asia target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Attack_Central_Asia target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+
+		GEO_Attack_Poland = {
+			name = RUS_Attack_Region
+			icon = hol_draw_up_staff_plans
+	
+			available = {
+				is_neighbor_of = FROM
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+				NOT = { has_global_flag = danzig_treaty_active }
+			}
+	
+			targets = { 10.OWNER }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							overlord = {
+								strength_ratio = {
+									tag = ROOT
+									ratio > 0.7
+								}
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Attack_Poland target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Attack_Poland target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+
+		GEO_Attack_Romania = {
+			name = RUS_Attack_Region
+			icon = hol_draw_up_staff_plans
+	
+			available = {
+				is_neighbor_of = FROM
+				78 = { is_owned_and_controlled_by = FROM }
+				1222 = { is_owned_and_controlled_by = FROM }
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+			}
+	
+			targets = { ROM }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					FROM = { is_in_faction_with = SER }
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Attack_Romania target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Attack_Romania target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+
+		GEO_Attack_Yakutia = {
+			name = RUS_Attack_Region
+			icon = hol_draw_up_staff_plans
+	
+			available = {
+				is_neighbor_of = FROM
+				can_declare_war_on = FROM
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+			}
+	
+			targets = { YAK }
+			target_root_trigger = {
+				has_completed_focus = GEO_Expand_The_Plan
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 10
+			days_remove = 7
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							overlord = {
+								strength_ratio = {
+									tag = ROOT
+									ratio > 0.7
+								}
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Attack_Yakutia target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				for_each_scope_loop = {
+					array = FROM.faction_members
+					if = {
+						limit = { is_neighbor_of = ROOT }
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 1000
+						}
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Attack_Yakutia target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				for_each_scope_loop = {
+					array = FROM.faction_members
+					if = {
+						limit = { is_neighbor_of = ROOT }
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = -1000
+						}
+					}
+				}
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				}
+			}
+		}
+
+		GEO_Demand_Bessarabia = {
+			icon = generic_civil_support
+			name = RUS_Demand_Bessarabia
+			available = {
+				is_neighbor_of = FROM
+				78 = { is_owned_and_controlled_by = FROM }
+				1222 = { is_owned_and_controlled_by = FROM }
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+				NOT = {
+				78 = { is_owned_and_controlled_by = ROOT }
+				1222 = { is_owned_and_controlled_by = ROOT }
+				}
+			}
+	
+			targets = { ROM }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					FROM = { is_in_faction_with = SER }
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.8
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Demand_Bessarabia target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+					country_event = {
+						id = rusfor.1180
+						days = 2
+						random = 48
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Demand_Bessarabia target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+			}
+		}
+
+		GEO_Demand_Karelia = {
+			icon = generic_civil_support
+			name = RUS_Demand_Karelia
+			available = {
+				is_neighbor_of = FROM
+				FROM = {
+					NOT = { is_in_faction_with = GER }
+				}
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+				FROM = {
+					NOT = { is_in_faction_with = GER }
+				}
+				NOT = { has_global_flag = danzig_treaty_active }
+			}
+	
+			targets = { FIN }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.8
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Demand_Karelia target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+					country_event = {
+						id = rusfor.1229
+						days = 2
+						random = 48
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Demand_Karelia target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+			}
+		}
+
+		GEO_Demand_Tuva = {
+			icon = generic_civil_support
+			name = RUS_Demand_Tuva
+			available = {
+				OR = {
+					is_owner_neighbor_of = MON
+					any_allied_country = { is_owner_neighbor_of = MON }
+				}
+				MON = {
+					is_subject = no
+				}
+			}
+	
+			visible = {
+				329 = { is_owned_by_ROOT_or_ally = no }
+				811 = { is_owned_by_ROOT_or_ally = no }
+				654 = { is_owned_by_ROOT_or_ally = no }
+			}
+	
+			targets = { MON }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = MON
+				MON = {
+					owns_state = 329 #Tuva
+					is_subject = no
+				}
+			}
+	
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			cancel_if_not_visible = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					RUS_dont_attack_if_vulnerable_or_preparing = yes
+				}
+				modifier = {
+					factor = 0
+					FROM = { RUS_dont_attack_if_target_is_stronger = yes }
+				}
+				modifier = {
+					factor = 0
+					FROM = { RUS_dont_attack_if_faction_is_stronger = yes }
+				}
+				modifier = {
+					factor = 0
+					FROM = { RUS_dont_attack_if_overlord_is_stronger = yes }
+				}
+			}
+			
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Demand_Tuva target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				transfer_state = 329
+				transfer_state = 654
+				transfer_state = 811
+				add_state_core = 654
+				add_state_core = 811
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+					country_event = {
+						id = rusfor.1113
+						days = 2
+						random = 48
+					}	
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Demand_Tuva target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+			}
+		}
+
+		GEO_Fate_Of_Turkestan = {
+			icon = hol_draw_up_staff_plans
+			name = RUS_Fate_Of_Turkestan
+			available = {
+				if = {
+					limit = {
+						has_global_flag = global_turkestan_united
+					}
+					OR = {
+						is_neighbor_of = UTR
+						any_allied_country = {
+							is_neighbor_of = UTR
+						}
+					}
+				}
+				else = {
+					OR = {
+						is_neighbor_of = UZB
+						is_neighbor_of = KYR
+						any_allied_country = {
+							OR = {
+								is_neighbor_of = UZB
+								is_neighbor_of = KYR
+							}
+						}
+					}
+				}
+			}
+	
+			visible = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+				if = {
+					limit = {
+						has_global_flag = global_turkestan_united
+					}
+					can_declare_war_on = UTR
+				}
+				else = {
+					can_declare_war_on = UZB
+					can_declare_war_on = KYR
+				}
+			}
+	
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							overlord = {
+								strength_ratio = {
+									tag = ROOT
+									ratio > 0.7
+								}
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Fate_Of_Turkestan target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				UTR = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				UZB = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				KYR = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				TRK = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				ROOT = {
+					country_event = {
+						id = rusfor.1443
+						days = 4
+					}
+				}		
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Fate_Of_Turkestan target: [From.GetName]"
+				UTR = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				UZB = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				KYR = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				TRK = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+			}
+		}
+
+		GEO_Intervene_In_India_BHC = {
+			icon = hol_draw_up_staff_plans
+			name = RUS_Intervene_In_India_BHC
+			available = {
+				has_global_flag = Georgia_Supports_BHC
+			}
+	
+			visible = {
+				has_global_flag = Georgia_Supports_BHC
+				BHC = {
+					has_war_with = PRF
+				}
+			}
+	
+			targets = { PRF }
+			target_root_trigger = {
+				has_completed_focus = GEO_Expand_The_Plan
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+	
+			cost = 10
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							overlord = {
+								strength_ratio = {
+									tag = ROOT
+									ratio > 0.7
+								}
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				for_each_scope_loop = {
+					array = FROM.faction_members
+					if = {
+						limit = { is_neighbor_of = ROOT }
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 1000
+						}
+					}
+				}
+			}
+	
+			remove_effect = {
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+				for_each_scope_loop = {
+					array = FROM.faction_members
+					if = {
+						limit = { is_neighbor_of = ROOT }
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = -1000
+						}
+					}
+				}
+			}
+		}
+
+		GEO_Raise_NRA_decision = {
+			icon = hol_draw_up_staff_plans
+			priority = 100
+			name = RUS_Raise_NRA
+			available = {
+				is_neighbor_of = FROM
+				FROM = {
+					OR = {
+						has_socialist_government = no
+						is_subject = no
+					}
+				}
+			}
+	
+			visible = {
+				can_declare_war_on = FROM 
+			}
+	
+			targets = { TRM }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM 
+			}
+			
+	
+			cost = 10
+			days_remove = 28
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 10
+			}
+	
+			complete_effect = {
+				TRM = {
+					country_event = {
+						id = trmnra.19
+						days = 1
+					}
+				}
+			}
+		}
+
+		GEO_Send_Equipment_BHC = {
+			priority = 15
+			icon = ger_military_buildup
+			name = RUS_Send_Equipment_BHC
+			available = {
+				country_exists = BHC
+			}
+			visible = {
+				has_global_flag = Georgia_Supports_BHC
+				BHC = {
+					OR = {
+						has_war_with = PRF
+						has_war_with = DEH
+					}
+				}
+			}
+			fire_only_once = yes
+			custom_cost_trigger = {
+				has_equipment = { infantry_equipment > 2499 }
+			}
+			ai_will_do = {
+				factor = 3
+				modifier = {
+					factor = 0
+					has_equipment = { infantry_equipment < 4000 }
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+			}
+			complete_effect = {
+				send_equipment = { target = BHC type = infantry_equipment amount = 2500 }
+				BHC = {
+					country_event = rusfor.1400
+				}
+			}
+		}
+
+		GEO_Support_BHC = {
+			priority = 20
+			icon = hol_exchange_intelligence_data
+			name = RUS_Support_BHC
+			available = {
+				has_socialist_government = yes
+				BHC = {
+					has_socialist_government = yes
+				}
+			}
+	
+			visible = {
+	
+				has_completed_focus = GEO_Expand_The_Plan
+	
+				country_exists = BHC
+			}
+			
+			cost = 10
+			days_remove = 1
+			fire_only_once = yes
+			ai_will_do = {
+				factor = 100
+			}
+	
+			complete_effect = {
+				set_global_flag = Georgia_Supports_BHC
+			}
+		}
+
+		GEO_The_Final_Battle_decision = {
+			name = SOV_The_Final_Battle
+			priority = 150
+			icon = eng_puppet_usa
+	
+			visible = {
+				can_declare_war_on = FROM
+				NOT = { has_global_flag = danzig_treaty_active }
+			}
+	
+			targets = { GER }
+			target_root_trigger = {
+				OR = {
+					has_completed_focus = GEO_Expand_The_Plan
+				}
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 0
+			days_remove = 40
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 1000
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					any_allied_country = {
+						is_faction_leader = yes
+						has_war = yes
+					}
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.6
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_The_Final_Battle_decision target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 45 value = 1 }
+				for_each_scope_loop = {
+					array = FROM.faction_members
+					if = {
+						limit = {
+							OR = {
+								is_in_europe = yes
+								tag = DKB
+								tag = GEO
+								tag = AZR
+							}
+							is_in_faction_with = GER
+							ROOT = {
+								can_declare_war_on = PREV
+								is_neighbor_of = PREV
+							}
+						}
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 1000
+						}
+						ROOT = {
+							set_country_flag = RUS_prepare_for_war_@PREV
+							add_ai_strategy = {
+								type = prepare_for_war
+								id = PREV
+								value = 1000
+							}
+						}
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_The_Final_Battle_decision target: [From.GetName]"
+				effect_tooltip = {
+					every_other_country = {
+						limit = {
+							OR = {
+								is_in_europe = yes
+								tag = DKB
+								tag = GEO
+								tag = AZR
+							}
+							is_in_faction_with = GER
+							ROOT = {
+								can_declare_war_on = PREV
+								is_neighbor_of = PREV
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = annex_everything
+							}
+						}
+					}
+				}
+				every_other_country = {
+					limit = {
+						ROOT = { has_country_flag = RUS_prepare_for_war_@PREV }
+					}
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+					ROOT = {
+						clr_country_flag = RUS_prepare_for_war_@PREV
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = PREV
+							value = -1000
+						}
+						declare_war_on = {
+							target = PREV
+							type = annex_everything
+						}
+					}
+				}
+			}
+		}
+
+}
+
+GEO_economic_decisions = {
+		GEO_Azov_Black_Sea_DonBass_Mining = {
+			icon = steel
+	
+			available = {
+				has_tech = excavation3
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				218 = { is_owned_and_controlled_by = ROOT } #Rostov
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 218 } #Rostov
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Azov_Black_Sea_DonBass_Mining"
+				218 = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+				}
+			}
+		}
+
+		GEO_Grozny_Oil_Fields = {
+			icon = oil
+	
+			available = {
+				has_tech = excavation1
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				787 = { is_owned_and_controlled_by = ROOT } #Terek
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 787 } #Terek
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Grozny_Oil_Fields"
+				787 = {
+					add_resource = {
+						type = oil
+						amount = 20
+					}
+				}
+			}
+		}
+
+		GEO_Ivankovskaya_Hydroelectricity_decision = {
+			icon = generic_construction
+			allowed = {
+				original_tag = GEO
+			}
+			visible = {
+				has_completed_focus = GEO_Hydroelectricity
+			}
+			fire_only_once = yes
+			cost = 20
+			days_remove = 270
+			ai_will_do = {
+				factor = 6
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Ivankovskaya_Hydroelectricity_decision"
+				247 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					increase_state_category_by_one_level = yes
+				}
+				set_country_flag = rus_complete_dam1
+			}
+		}
+
+		GEO_Kachkanar_Exploitation = {
+			icon = generic_construction
+	
+			available = {
+				has_tech = excavation4
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				653 = { is_owned_and_controlled_by = ROOT } #Yekaterinburg
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 653 } #Yekaterinburg
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Kachkanar_Exploitation"
+				653 = {
+					add_resource = {
+						type = steel
+						amount = 10
+					}
+					add_resource = {
+						type = aluminium
+						amount = 8
+					}
+				}
+			}
+		}
+
+		GEO_Kamenskiy_Uralskiy_Aluminium_Plant = {
+			icon = aluminium
+	
+			available = {
+				has_tech = excavation3
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				653 = { is_owned_and_controlled_by = ROOT } #Yekaterinburg
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 653 } #Yekaterinburg
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Kamenskiy_Uralskiy_Aluminium_Plant"
+				653 = {
+					add_resource = {
+						type = aluminium
+						amount = 8
+					}
+				}
+			}
+		}
+
+		GEO_Kamysh_Burunskiy_Iron_Ore = {
+			icon = steel
+	
+			available = {
+				has_tech = excavation2
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				137 = { is_owned_and_controlled_by = ROOT } #Crimea
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 137 } #Crimea
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Kamysh_Burunskiy_Iron_Ore"
+				137 = {
+					add_resource = {
+						type = steel
+						amount = 8
+					}
+				}
+			}
+		}
+
+		GEO_Kovdor_Iron_Ore_Deposits = {
+			icon = steel
+	
+			available = {
+				has_tech = excavation3
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				213 = { is_owned_and_controlled_by = ROOT } #Murmansk
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 213 } #Murmansk
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Kovdor_Iron_Ore_Deposits"
+				213 = {
+					add_resource = {
+						type = steel
+						amount = 8
+					}
+				}
+			}
+		}
+
+		GEO_KuzBass_Coal_Mining = {
+			icon = steel
+	
+			available = {
+				has_tech = excavation1
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				569 = { is_owned_and_controlled_by = ROOT } #Shchlegovsk
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 569 } #Shchlegovsk
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_KuzBass_Coal_Mining"
+				569 = {
+					add_resource = {
+						type = steel
+						amount = 24
+					}
+				}
+			}
+		}
+
+		GEO_Pechenga_Nickel_Mining = {
+			icon = chromium
+	
+			available = {
+				has_tech = excavation2
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				722 = { is_owned_and_controlled_by = ROOT } #Pechenga
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 722 } #Pechenga
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Pechenga_Nickel_Mining"
+				722 = {
+					add_resource = {
+						type = chromium
+						amount = 20
+					}
+				}
+			}
+		}
+
+		GEO_Romashkino_Oil_Field = {
+			icon = oil
+	
+			available = {
+				has_tech = excavation4
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				249 = { is_owned_and_controlled_by = ROOT } #Kazan
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 249 } #Kazan
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Romashkino_Oil_Field"
+				249 = {
+					add_resource = {
+						type = oil
+						amount = 20
+					}
+				}
+			}
+		}
+
+		GEO_Rybinsk_Hydroelectricity_decision = {
+			icon = generic_construction	
+			allowed = {
+				original_tag = GEO
+			}
+			visible = {
+				has_completed_focus = GEO_Hydroelectricity
+			}
+			available = {
+				ROOT = {
+					has_war = no
+					has_country_flag = rus_complete_dam2
+				}
+				NOT = {
+					has_country_flag = rus_complete_dam3
+				}
+			}
+			fire_only_once = no
+			cost = 20
+			days_remove = 270
+			ai_will_do = {
+				factor = 6
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Rybinsk_Hydroelectricity_decision"
+				247 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_country_flag = rus_complete_dam3
+			}
+		}
+
+		GEO_Tikhvin_Bauxite_Mining = {
+			icon = aluminium
+	
+			available = {
+				has_tech = excavation2
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				264 = { is_owned_and_controlled_by = ROOT } #Tikhvin
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 264 } #Tikhvin
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Tikhvin_Bauxite_Mining"
+				264 = {
+					add_resource = {
+						type = aluminium
+						amount = 10
+					}
+				}
+			}
+		}
+
+		GEO_Tunguss_Basin_Coal_Mining = {
+			icon = steel
+	
+			available = {
+				has_tech = excavation2
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				568 = { is_owned_and_controlled_by = ROOT } #Krasnoyarsk
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 568 } #Krasnoyarsk
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Tunguss_Basin_Coal_Mining"
+				568 = {
+					add_resource = {
+						type = steel
+						amount = 16
+					}
+				}
+			}
+		}
+
+		GEO_Tyrnyauz_Tungsten_Mining = {
+			icon = tungsten
+	
+			available = {
+				has_tech = excavation3
+				num_of_civilian_factories_available_for_projects > 2
+			}
+	
+			visible = {
+				787 = { is_owned_and_controlled_by = ROOT } #Terek
+				has_completed_focus = GEO_Resource_Prospection
+			}
+	
+			cost = 25
+			days_remove = 60
+			fire_only_once = yes
+	
+			modifier = {
+				civilian_factory_use = 3
+			}
+	
+			ai_will_do = {
+				factor = 10
+			}
+			highlight_states = {
+				highlight_state_targets = { state = 787 } #Terek
+			}
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Tyrnyauz_Tungsten_Mining"
+				787 = {
+					add_resource = {
+						type = tungsten
+						amount = 8
+					}
+				}
+			}
+		}
+
+		GEO_Uglich_Hydroelectricity_decision = {
+			icon = generic_construction
+			allowed = {
+				original_tag = GEO
+			}
+			visible = {
+				has_completed_focus = GEO_Hydroelectricity
+			}
+			available = {
+				ROOT = {
+					has_war = no
+					has_country_flag = rus_complete_dam1
+				}
+				NOT = {
+					has_country_flag = rus_complete_dam2
+				}
+			}
+			fire_only_once = no
+			cost = 20
+			days_remove = 270
+			ai_will_do = {
+				factor = 6
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove RUS_Uglich_Hydroelectricity_decision"
+				247 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				set_country_flag = rus_complete_dam2
+			}
+		}
+
+}
+
+GEO_foreign_policy_decisions = {
+		GEO_Attack_Caucasus = {
+			icon = hol_draw_up_staff_plans
+			name = RUS_Attack_Region
+			available = {
+				OR = {
+					is_neighbor_of = FROM
+					any_allied_country = {
+						is_neighbor_of = FROM
+					}
+				}
+			}
+	
+			visible = {
+				can_declare_war_on = FROM
+			}
+	
+			targets = { DKB KUB KLY MTR }
+			target_root_trigger = {
+				has_completed_focus = GEO_don_kuban_focus
+	
+			}
+			target_trigger = {
+				can_declare_war_on = FROM
+			}
+			
+			cost = 20
+			days_remove = 14
+			fire_only_once = yes
+			war_with_target_on_remove = yes
+	
+			ai_will_do = {
+				factor = 100
+				modifier = {
+					factor = 0
+					FROM = {
+						OR = {
+							is_guaranteed_by = GER
+							is_in_faction = yes
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_war = yes
+				}
+				modifier = {
+					factor = 0
+					strength_ratio = {
+						tag = FROM
+						ratio < 0.8
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						any_allied_country = {
+							is_faction_leader = yes
+							overlord = {
+								strength_ratio = {
+									tag = ROOT
+									ratio > 0.7
+								}
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					FROM = {
+						is_subject = yes
+						overlord = {
+							strength_ratio = {
+								tag = ROOT
+								ratio > 0.7
+							}
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					has_country_flag = imminent_war
+				}
+			}
+	
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision SOV_Attack_Caucasus target: [From.GetName]"
+				set_country_flag = { flag = imminent_war days = 20 value = 1 }
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = 1000
+					}
+				}
+				if = {
+					limit = {
+						FROM = { tag = DKB }
+					}
+					country_event = {
+						id = GEO.514
+						days = 1
+					}
+				}
+				if = {
+					limit = {
+						FROM = { tag = KUB }
+					}
+					country_event = {
+						id = GEO.534
+						days = 1
+					}
+				}
+				if = {
+					limit = {
+						FROM = { tag = KLY }
+					}
+					country_event = {
+						id = GEO.524
+						days = 1
+					}
+				}
+				if = {
+					limit = {
+						FROM = { tag = MTR }
+					}
+					country_event = {
+						id = GEO.544
+						days = 1
+					}
+				}
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove SOV_Attack_Caucasus target: [From.GetName]"
+				FROM = {
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = ROOT
+						value = -1000
+					}
+				}
+			}
+		}
+
+}
+
+political_actions = {
+		GEO_Renaming_Kerensky_Legacy = {
+			icon = generic_agreement
+			
+			allowed = {
+				tag = GEO
+			}
+			available = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+				217 = { is_owned_and_controlled_by = ROOT }
+				653 = { is_owned_and_controlled_by = ROOT }
+				213 = { is_owned_and_controlled_by = ROOT }
+			}
+			visible = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+				217 = { is_owned_and_controlled_by = ROOT }
+				653 = { is_owned_and_controlled_by = ROOT }
+				213 = { is_owned_and_controlled_by = ROOT }
+			}
+			cost = 0
+			fire_only_once = yes
+			
+			ai_will_do = {
+				factor = 100
+			}
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Renaming_Kerensky_Legacy"
+				custom_effect_tooltip = RUS_Renaming_Kerensky_Legacy_tooltip
+				country_event = geo.510
+			}
+		}
+
+		GEO_Renaming_Peterburg = {
+			icon = generic_agreement
+			allowed = {
+				tag = GEO
+			}
+			available = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+			}
+			visible = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+			}
+			cost = 0
+			fire_only_once = yes
+			
+			ai_will_do = {
+				factor = 100
+			}
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Renaming_Peterburg"
+				country_event = geo.509
+			}
+		}
+
+		GEO_capital = {
+			icon = decision_generic_decision
+			allowed = {
+				tag = GEO
+			}
+			available = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+				219 = { is_owned_and_controlled_by = ROOT }
+				231 = { is_owned_and_controlled_by = ROOT }
+				217 = { is_owned_and_controlled_by = ROOT }
+			}
+			visible = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+				219 = { is_owned_and_controlled_by = ROOT }
+				231 = { is_owned_and_controlled_by = ROOT }
+				217 = { is_owned_and_controlled_by = ROOT }
+				has_completed_focus = GEO_Aftermath_Of_Civil_War
+			}
+			cost = 0
+			fire_only_once = yes
+			
+			ai_will_do = {
+				factor = 100
+			}
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_capital"
+				country_event = geo.511
+			}
+		}
+
+		GEO_name_and_flag = {
+			icon = generic_agreement
+			allowed = {
+				tag = GEO
+			}
+			available = {
+				tag = GEO
+				has_socialist_government = yes
+				195 = { is_owned_and_controlled_by = ROOT }
+				219 = { is_owned_and_controlled_by = ROOT }
+				231 = { is_owned_and_controlled_by = ROOT }
+				217 = { is_owned_and_controlled_by = ROOT }
+			}
+			visible = {
+				tag = GEO
+				has_socialist_government = yes
+				has_completed_focus = GEO_Aftermath_Of_Civil_War
+			}
+			cost = 0
+			fire_only_once = yes
+			
+			ai_will_do = {
+				factor = 100
+			}
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_Renaming_Peterburg"
+				country_event = geo.547
+			}
+		}
+
+		GEO_portrait_decision = {
+			icon = portraits_picker
+	
+			visible = {
+				OR = {
+					has_country_leader = { name = "Ioseb 'Koba' Jughashvili" ruling_only = yes }
+					has_country_leader = { name = "Joseph Stalin" ruling_only = yes }
+				}
+				
+			}
+	
+			cost = 0
+			days_remove = 0
+	
+			ai_will_do = {
+				factor = 0
+			}
+	
+			remove_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_a_motorise_army_decision"
+				country_event = geo.10000
+			}
+		}
+
+		GEO_superevent_trigger = {
+			icon = generic_form_nation
+			allowed = {
+				tag = GEO
+			}
+			available = {
+				NOT = {
+					country_exists = RVA
+					country_exists = WRA
+					country_exists = SIB
+					country_exists = BRY
+					country_exists = YAK
+					country_exists = RRF
+				}
+				
+				if = {
+					limit = {
+						NOT = { tag = RUS }
+					}
+					NOT = { country_exists = RUS }
+				}
+				if = {
+					limit = {
+						NOT = { tag = TRM }
+					}
+					NOT = { country_exists = TRM }
+				}
+				
+			}
+			visible = {
+				owns_state = 408
+				owns_state = 195
+				owns_state = 219
+				tag = GEO
+				has_socialist_government = yes
+			}
+			cost = 0
+			fire_only_once = yes
+			priority = 120
+			ai_will_do = {
+				factor = 1000
+			}
+			complete_effect = {
+				log = "[GetDateText]: [Root.GetName]: Decision GEO_superevent_trigger"
+				custom_effect_tooltip = GEO_superevent_trigger_tt
+				custom_effect_tooltip = GFX_SPEVNT_RUSSIAN_UNIFICATION_stalin
+				hidden_effect = { country_event = super.200 }
+				custom_effect_tooltip = GEO_superevent_trigger_colour_ends
+			}
+		}
+
+}
+

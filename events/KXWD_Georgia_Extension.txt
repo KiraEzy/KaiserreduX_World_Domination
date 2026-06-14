@@ -1,0 +1,740 @@
+###########################
+# KXWDD Georgia Events Extension
+###########################
+add_namespace = geo_expanded
+news_event = {
+	id = geo_expanded.502
+
+    picture = GFX_GEO_2ed_rev
+	title = geo_expanded.502.t
+	desc = geo_expanded.502.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+    major = yes
+
+	option = {
+		name = geo_expanded.502.a
+	}
+}
+
+country_event = {
+	id = geo_expanded.507
+	##picture = 
+	title = geo_expanded.507.t
+	desc = geo_expanded.507.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = no
+
+	option = { 
+		name = geo_expanded.507.a
+		
+	}
+
+}
+
+country_event = { #alliance name
+	id = geo_expanded.508
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.508" }
+	title = geo_expanded.508.t
+	desc = geo_expanded.508.d
+	is_triggered_only = yes
+	
+	option = {
+		name = geo_expanded.508.a
+		trigger = {
+			OR = {
+				has_socialist_government = yes
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				is_faction_leader = yes
+			}
+			set_faction_name = Comintern
+		}
+		else = {
+			create_faction = Comintern
+		}
+	}
+}
+
+country_event = { #Peterburg 
+	id = geo_expanded.509
+	title = geo_expanded.509.t
+	desc = geo_expanded.509.d
+	picture = GFX_report_event_RUS_Gorod_na_Neve_event
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = geo_expanded.509.a
+
+		set_province_name = { id = 6174 name = "Leningrad"}
+		hidden_effect = {
+			195 = { set_state_name = "Leningrad" }
+		}
+	}
+	option = { #
+		name = geo_expanded.509.b
+
+
+	}
+}
+
+country_event = {
+	id = geo_expanded.510
+	title = geo_expanded.510.t
+	desc = geo_expanded.510.d
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = geo_expanded.510.a
+
+		set_province_name = { id = 14780 name = "Staliniri"}
+		set_province_name = { id = 3529 name = "Stalingrad"}
+		set_province_name = { id = 1821 name = "Sverdlovsk"}
+		set_province_name = { id = 9628 name = "Ordzhonikidze"}
+		hidden_effect = {
+			217 = { set_state_name = "Stalingrad" }
+		}
+	}
+	option = { #
+		name = geo_expanded.510.b
+
+
+	}
+}
+
+country_event = {
+	id = geo_expanded.511
+	title = geo_expanded.511.t
+	desc = geo_expanded.511.d
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = geo_expanded.511.a
+		set_capital = { state = 195 }
+		add_political_power = 10
+	}
+	option = { #
+		name = geo_expanded.511.b
+		set_capital = { state = 219 }
+		add_political_power = 10
+
+	}
+	option = { #
+		name = geo_expanded.511.c
+		set_capital = { state = 217 }
+		add_political_power = 10
+
+	}
+	option = { #
+		name = geo_expanded.511.e
+		add_political_power = 100
+	}
+}
+
+country_event = {
+	id = geo_expanded.512
+	title = geo_expanded.512.t
+	desc = geo_expanded.512.d
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = geo_expanded.512.a
+		set_country_leader_name = {
+			ideology = totalist
+			name = jughashvili_stalin
+		}
+	}
+	option = { #
+		name = geo_expanded.512.b
+		add_political_power = 10
+	}
+}
+
+country_event = { #Stalin Portrait
+	id = geo_expanded.10000
+	title = geo_expanded.10000.t 
+	desc = geo_expanded.10000.d 
+	
+	is_triggered_only = yes
+	option = {
+		name = geo_expanded.10000.a #take off hat 
+		ai_chance = {
+			factor = 0
+		}
+		set_country_leader_portrait = {
+			portrait = "gfx/leaders/GEO/Portrait_GEO_Ioseb_Jughashvili_KX.png"
+		}
+
+	}
+	option = { #shave
+		name = geo_expanded.10000.b
+		ai_chance = {
+			factor = 20
+		}
+
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/GEO/Portrait_GEO_Supreme_stalin.png"
+			}
+	}
+	option = { #shave
+		name = geo_expanded.10000.c
+		ai_chance = {
+			factor = 20
+		}
+
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/GEO/Portrait_Soviet_Joseph_Stalin.png"
+			}
+
+	}
+	option = { #shave
+		name = geo_expanded.10000.g
+		ai_chance = {
+			factor = 20
+		}
+
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/GEO/Portrait_Soviet_Joseph_Stalin_3.png"
+			}
+
+	}
+	
+	option = { #shave
+		name = geo_expanded.10000.e
+		ai_chance = {
+			factor = 20
+		}
+
+
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/GEO/Portrait_Soviet_Joseph_Stalin_4.png"
+			}
+
+	}
+	
+	option = { #shave
+		name = geo_expanded.10000.f
+		ai_chance = {
+			factor = 20
+		}
+
+
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/GEO/Portrait_Soviet_Joseph_Stalin_7.png"
+			}
+
+	}
+}
+
+country_event = { #soviet generals
+	id = geo_expanded.1923
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.1919 FROM = [From.GetName]" }
+	title = geo_expanded.1923.t
+	desc = geo_expanded.1923.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = geo_expanded.1923.a
+		ai_chance = { base = 90 }
+		custom_effect_tooltip = SOV_russian_generals_will_return
+		ENG = {
+			every_unit_leader = {
+				limit = {
+					has_trait = SOV_bolshevik_officer 
+					NOT = { has_id = 1955 }
+				}
+				remove_unit_leader_trait = SOV_bolshevik_officer
+				set_nationality = GEO
+			}
+		}
+		FRA = {
+			every_unit_leader = {
+				limit = {
+					has_trait = SOV_bolshevik_officer 
+					NOT = { has_id = 1954 }
+				}
+				remove_unit_leader_trait = SOV_bolshevik_officer
+				set_nationality = GEO
+			}
+		}
+		FOP = {
+			every_unit_leader = {
+				limit = {
+					has_trait = SOV_bolshevik_officer 
+				}
+				remove_unit_leader_trait = SOV_bolshevik_officer
+				set_nationality = GEO
+			}
+		}	
+		add_stability = -0.05
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+		hidden_effect = {
+			ENG = {
+				random_unit_leader = {
+					limit = { has_id = 1955 }
+					set_nationality = ROOT
+					unit_leader_event = {
+						id = geo_expanded.1925
+						days = 2
+					}
+				}
+			}
+			FRA = {
+				every_unit_leader = {
+					limit = { has_id = 1954 }
+					set_nationality = ROOT
+					unit_leader_event = {
+						id = geo_expanded.1924
+						days = 5
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = geo_expanded.1923.b
+		ai_chance = { base = 10 }
+		add_stability = 0.05
+		add_political_power = 50
+		hidden_effect = {
+			ENG = {
+				random_unit_leader = {
+					limit = { has_id = 1955 }
+					set_nationality = ROOT
+					unit_leader_event = {
+						id = geo_expanded.1924
+						days = 2
+					}
+				}
+			}
+			FRA = {
+				every_unit_leader = {
+					limit = { has_id = 1954 }
+					set_nationality = ROOT
+					unit_leader_event = {
+						id = geo_expanded.1925
+						days = 5
+					}
+				}
+			}
+		}
+	}
+}
+
+unit_leader_event = { #soviet generals
+	id = geo_expanded.1925
+	title = geo_expanded.1925.t
+	desc = geo_expanded.1925.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = geo_expanded.1925.a
+		ai_chance = {
+			base = 99
+		}
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+		every_unit_leader = {
+			limit = { has_id = 1955 }
+			remove_unit_leader_trait = SOV_bolshevik_officer
+			set_nationality = GEO
+		}
+	}
+	option = {
+		name = geo_expanded.1924.b
+		add_stability = 0.05
+		add_political_power = 15
+		every_unit_leader = {
+			limit = { has_id = 1955 }
+			set_nationality = FRA
+		}
+	}
+}
+
+unit_leader_event = { #soviet generals
+	id = geo_expanded.1924
+	title = geo_expanded.1924.t
+	desc = geo_expanded.1924.d
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	option = {
+		name = geo_expanded.1924.a
+		ai_chance = {
+			base = 99
+		}
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+		every_unit_leader = {
+			limit = { has_id = 1954 }
+			remove_unit_leader_trait = SOV_bolshevik_officer
+			set_nationality = GEO
+		}
+	}
+	option = {
+		name = geo_expanded.1924.b
+		add_stability = 0.05
+		add_political_power = 15
+		every_unit_leader = {
+			limit = { has_id = 1954 }
+			set_nationality = FRA
+		}
+	}
+}
+
+country_event = {
+	id = geo_expanded.513
+	title = geo_expanded.513.t
+	desc = geo_expanded.513.d
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = geo_expanded.513.a
+		complete_national_focus = GEO_expand_motherland_focus
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = { #
+		name = geo_expanded.513.b
+		add_political_power = 10
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+country_event = { #What to do with DKB
+	id = geo_expanded.514
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.133" }
+	title = geo_expanded.514.t
+	desc = geo_expanded.514.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.514.a #Demand they Surrender!
+
+		DKB = {
+			country_event = {id = geo_expanded.515 days = 3}
+		}
+
+		custom_effect_tooltip = TRM_demand_warning
+	}
+}
+
+country_event = { #Russia demands our surrender
+	id = geo_expanded.515
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.134" }
+	title = geo_expanded.515.t
+	desc = geo_expanded.515.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.515.a #strike
+		ai_chance = {
+			factor = 35
+		}
+		FROM = {
+			create_wargoal = {
+				type = annex_everything
+				target = DKB
+			}
+		}
+	}
+
+	option = {
+		name = geo_expanded.515.b #surrender
+		ai_chance = {
+			factor = 65
+		}
+		FROM = {
+			country_event = {id = geo_expanded.516 days = 3}
+		}
+	}
+}
+
+country_event = { #DKB surrendered
+	id = geo_expanded.516
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.516" }
+	title = geo_expanded.516.t
+	desc = geo_expanded.516.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.516.a
+		add_stability = -0.05
+
+		annex_country = {
+			target = DKB
+		}
+	}
+}
+
+country_event = { #What to do with KLY
+	id = geo_expanded.524
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.133" }
+	title = geo_expanded.524.t
+	desc = geo_expanded.524.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.524.a #Demand they Surrender!
+
+		KLY = {
+			country_event = {id = geo_expanded.525 days = 3}
+		}
+
+		custom_effect_tooltip = TRM_demand_warning
+	}
+}
+
+country_event = { #Russia demands our surrender
+	id = geo_expanded.525
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.134" }
+	title = geo_expanded.525.t
+	desc = geo_expanded.525.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.525.a #strike
+		ai_chance = {
+			factor = 35
+		}
+		FROM = {
+			create_wargoal = {
+				type = annex_everything
+				target = KLY
+			}
+		}
+	}
+
+	option = {
+		name = geo_expanded.525.b #surrender
+		ai_chance = {
+			factor = 65
+		}
+		FROM = {
+			country_event = {id = geo_expanded.526 days = 3}
+		}
+	}
+}
+
+country_event = { #KLY surrendered
+	id = geo_expanded.526
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.526" }
+	title = geo_expanded.526.t
+	desc = geo_expanded.526.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.526.a
+		add_stability = -0.05
+
+		annex_country = {
+			target = KLY
+		}
+	}
+}
+
+country_event = { #What to do with KUB
+	id = geo_expanded.534
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.133" }
+	title = geo_expanded.534.t
+	desc = geo_expanded.534.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.534.a #Demand they Surrender!
+
+		KUB = {
+			country_event = {id = geo_expanded.535 days = 3}
+		}
+
+		custom_effect_tooltip = TRM_demand_warning
+	}
+}
+
+country_event = { #Russia demands our surrender
+	id = geo_expanded.535
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.134" }
+	title = geo_expanded.535.t
+	desc = geo_expanded.535.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.535.a #strike
+		ai_chance = {
+			factor = 35
+		}
+		FROM = {
+			create_wargoal = {
+				type = annex_everything
+				target = KUB
+			}
+		}
+	}
+
+	option = {
+		name = geo_expanded.535.b #surrender
+		ai_chance = {
+			factor = 65
+		}
+		FROM = {
+			country_event = {id = geo_expanded.536 days = 3}
+		}
+	}
+}
+
+country_event = { #KUB surrendered
+	id = geo_expanded.536
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.536" }
+	title = geo_expanded.536.t
+	desc = geo_expanded.536.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.536.a
+		add_stability = -0.05
+
+		annex_country = {
+			target = KUB
+		}
+	}
+}
+
+country_event = { #What to do with MTR
+	id = geo_expanded.544
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.133" }
+	title = geo_expanded.544.t
+	desc = geo_expanded.544.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.544.a #Demand they Surrender!
+
+		MTR = {
+			country_event = {id = geo_expanded.545 days = 3}
+		}
+
+		custom_effect_tooltip = TRM_demand_warning
+	}
+}
+
+country_event = { #Russia demands our surrender
+	id = geo_expanded.545
+	immediate = { log = "[GetDateText]: [Root.GetName]: event tram.134" }
+	title = geo_expanded.545.t
+	desc = geo_expanded.545.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.545.a #strike
+		ai_chance = {
+			factor = 35
+		}
+		FROM = {
+			create_wargoal = {
+				type = annex_everything
+				target = MTR
+			}
+		}
+	}
+
+	option = {
+		name = geo_expanded.545.b #surrender
+		ai_chance = {
+			factor = 65
+		}
+		FROM = {
+			country_event = {id = geo_expanded.546 days = 3}
+		}
+	}
+}
+
+country_event = { #MTR surrendered
+	id = geo_expanded.546
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.546" }
+	title = geo_expanded.546.t
+	desc = geo_expanded.546.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.546.a
+		add_stability = -0.05
+
+		annex_country = {
+			target = MTR
+		}
+	}
+}
+
+country_event = { #Name and Flag change
+	id = geo_expanded.547
+	immediate = { log = "[GetDateText]: [Root.GetName]: event geo_expanded.547" }
+	title = geo_expanded.547.t
+	desc = geo_expanded.547.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = geo_expanded.547.a
+		
+		set_cosmetic_tag = PPS_SOV
+	}
+	
+	option = {
+		name = geo_expanded.547.b
+		add_stability = -0.05	
+	
+	}
+}
+

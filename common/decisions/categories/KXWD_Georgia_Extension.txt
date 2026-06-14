@@ -1,0 +1,58 @@
+###########################
+# KXWDD Georgia Decision Categories Extension
+###########################
+
+GEO_Integration_decisions = {
+	icon = GFX_decision_cat_annexation
+	picture = GFX_decision_cat_picture_annexation
+	priority = 80
+
+	allowed = {
+		tag = GEO
+	}
+	visible = { has_country_flag = RUS_can_integrate 
+				has_completed_focus = GEO_Expand_The_Plan
+	}
+}
+
+GEO_Integration_decisions_caucasus = {
+	icon = GFX_decision_cat_annexation
+	picture = GFX_decision_cat_picture_annexation
+	priority = 80
+
+	allowed = {
+		tag = GEO
+	}
+	visible = {
+	tag = GEO
+	}
+}
+
+
+GEO_Spreading_The_Revolution_decisions = {
+	icon = GFX_decision_category_export_revolution
+	priority = 100
+
+	allowed = {
+		OR = {
+			tag = GEO
+		}
+	}
+
+	visible = {
+		is_subject = no
+
+		has_completed_focus = GEO_Expand_The_Plan
+
+	}
+}
+
+
+GEO_gulag_decisions = {
+	icon = GFX_decision_category_nkvd
+	priority = 80
+
+	allowed = {
+		has_completed_focus = GEO_beria_gulag
+	}
+}
