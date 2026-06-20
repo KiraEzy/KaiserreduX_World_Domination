@@ -1315,6 +1315,7 @@ JAP_establish_rk_MON = {
 				state = 330
 				state = 612
 				state = 1084
+				state = 1265
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -1331,11 +1332,13 @@ JAP_establish_rk_MON = {
 		330 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		612 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		1084 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
+		1265 = { owner = { OR = { original_tag = JAP is_subject_of = JAP } } }
 		OR = {
 				329 = { NOT = { is_core_of = JAP } }
 				330 = { NOT = { is_core_of = JAP } }
 				612 = { NOT = { is_core_of = JAP } }
 				1084 = { NOT = { is_core_of = JAP } }
+				1265 = { NOT = { is_core_of = JAP } }
 		}
 	}
 
@@ -1360,6 +1363,7 @@ JAP_establish_rk_MON = {
 		330 = { add_core_of = MON }
 		612 = { add_core_of = MON }
 		1084 = { add_core_of = MON }
+		1265 = { add_core_of = MON }
 		release = MON
 		MON = { 
 			every_core_state = {
@@ -3682,7 +3686,6 @@ JAP_establish_rk_RUS = {
 		245 = { add_core_of = RUS }
 		1226 = { add_core_of = RUS }
 		1264 = { add_core_of = RUS }
-		1265 = { add_core_of = RUS }
 		1266 = { add_core_of = RUS }
 		195 = { add_core_of = RUS }
 		205 = { add_core_of = RUS }
