@@ -4648,6 +4648,7 @@ country_event = {
 				planning_skill = 1
 				logistics_skill = 2
 				id = 9249
+				female = yes
 			}
 		}
 		if = {
@@ -4940,6 +4941,7 @@ country_event = {
 				planning_skill = 1
 				logistics_skill = 2
 				id = 9249
+				female = yes
 			}
 		}
 		if = {
@@ -7433,7 +7435,11 @@ country_event = {
 		}
 		# then have the king captured
 		else = {
-			hidden_effect = { news_event = entente.260 }
+			if = {
+				limit = { NOT = { has_global_flag = CAN_king_was_captured } }
+				hidden_effect = { news_event = entente.260 }
+			}
+			set_global_flag = CAN_king_was_captured
 		}
 
 		if = {
@@ -10730,6 +10736,7 @@ country_event = {
 				}
 				if = {
 					limit = {
+						ENT = { is_ai = yes }
 						NOT = { has_idea = KEN_Colonial_Government }
 					}
 					add_ideas = KEN_Colonial_Government
@@ -10768,6 +10775,7 @@ country_event = {
 				}
 				if = {
 					limit = {
+						ENT = { is_ai = yes }
 						NOT = { has_idea = NGR_Colonial_Government }
 					}
 					add_ideas = NGR_Colonial_Government
