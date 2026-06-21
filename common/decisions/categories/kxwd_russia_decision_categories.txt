@@ -19,10 +19,10 @@ RUS_MON_Great_game = {
 			# }
 			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
 			has_completed_focus = RUS_Clericals #yellow validated
-			has_completed_focus = RUS_Black_Tsar #yellow wrangle as tsar validated
 			# RUS_wrangel_in_power = yes
 			# has_completed_focus = RUS_Imperial_Glory
 		}
+		NOT = { has_completed_focus = RUS_Rally_The_Monarchists }
 	}
 }
 RUS_integration_game = {
@@ -33,8 +33,10 @@ RUS_integration_game = {
 	}
 
 	visible = { 
-		has_completed_focus = RUS_rnsma #blackhumdred yellow
-		has_completed_focus = RUS_Clericals #yellow
-		has_completed_focus = RUS_Black_Tsar #yellow wrangle as tsar
+		OR={
+			has_completed_focus = RUS_rnsma #blackhumdred yellow
+			has_completed_focus = RUS_Clericals #yellow
+		}
+		NOT = { has_completed_focus = RUS_Rally_The_Monarchists }
 	}
 }

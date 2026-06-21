@@ -580,7 +580,6 @@ SOV_Great_Game_SSR_decisions = {
 		OR = {
 			RUS = {
 				AND = {
-					is_ai = no
 					has_completed_focus = RUS_The_War_Effort
 				}
 			}
@@ -637,6 +636,7 @@ RUS_Puppet_Management = {
 	priority = 200
 	
 	allowed = {
+	  is_ai = no
 	  OR = {
 	    tag = RUS
 		is_subject_of = RUS
