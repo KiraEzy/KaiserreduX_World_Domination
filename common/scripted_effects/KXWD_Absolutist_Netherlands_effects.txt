@@ -2,12 +2,7 @@
 
 holwd_strip_colonial_factories_to_overlord_effect = {
 	log = "[GetDateText]: [Root.GetName]: Effect holwd_strip_colonial_factories_to_overlord_effect"
-	modifier = {
-		cic_to_overlord_factor = 1
-		mic_to_overlord_factor = 1
-		production_speed_industrial_complex_factor = 1
-		production_speed_arms_factory_factor = 1				
-	}
+	add_ideas = KXWD_HOL_Colonial_Subject_Exploitation
 }
 
 holwd_give_colonial_resource_rights_to_overlord_effect = {
@@ -41,10 +36,11 @@ holwd_give_colonial_resource_rights_to_overlord_effect = {
 				}
 			}
 		}
-		give_resource_rights = {
-			receiver = OVERLORD
-			state = THIS
-			resources = { rubber oil tungsten steel chromium aluminium }
+		ROOT = {
+			give_resource_rights = {
+				receiver = OVERLORD
+				state = PREV
+			}
 		}
 	}
 }

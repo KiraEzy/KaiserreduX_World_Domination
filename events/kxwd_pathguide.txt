@@ -299,3 +299,15 @@ country_event = { #Dominion of India Pathguide
 		name = wd_pathguide.25.a
 	}
 }
+
+country_event = { #Netherlands Pathguide
+	id = wd_pathguide.26
+	title = wd_pathguide.26.t
+	desc = wd_pathguide.26.d
+	picture = GFX_report_event_generic_diplomacy1
+
+	is_triggered_only = yes
+	option = { #Yes
+		name = wd_pathguide.26.a
+	}
+}

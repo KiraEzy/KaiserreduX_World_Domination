@@ -94,7 +94,7 @@ ideas = {
 		KXWD_HOL_Economy_Boom= {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Economy_Boom"}
 			allowed = {always = no}
-			picture = KXWD_GRE_royal_army
+			picture = generic_conservatism
 			modifier = {
 				production_speed_buildings_factor = 0.2
 				global_building_slots_factor = 0.25
@@ -186,6 +186,17 @@ ideas = {
 				weekly_manpower = 2500
 				consumer_goods_factor = -0.05
 				political_power_gain = 0.1
+			}
+			removal_cost = -1
+		}
+		KXWD_HOL_Colonial_Subject_Exploitation = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea KXWD_HOL_Colonial_Subject_Exploitation" }
+			allowed = { always = no }
+			available = { is_subject = yes }
+			picture = DEI_colonial_nation
+			modifier = {
+				production_speed_industrial_complex_factor = 0.35
+				production_speed_arms_factory_factor = 0.35
 			}
 			removal_cost = -1
 		}

@@ -171,6 +171,31 @@ shared_focus = {
 	continue_if_invalid = no
 	cancel_if_invalid = yes
 	available = {
+		custom_trigger_tooltip = {
+			tooltip = HOLWD_Belgian_Question_belgian_states_tt
+			34 = {
+				OWNER = {
+					OR = {
+						tag = GER
+						tag = HOL
+						tag = BEL
+						tag = WLL
+						tag = FLN
+					}
+				}
+			}
+			6 = {
+				OWNER = {
+					OR = {
+						tag = GER
+						tag = HOL
+						tag = BEL
+						tag = WLL
+						tag = FLN
+					}
+				}
+			}
+		}
 	}
 	prerequisite = {
 		focus = HOLWD_Golden_Age

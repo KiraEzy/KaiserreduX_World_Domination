@@ -1,28 +1,28 @@
 HOL_bm_public_works_modifier = {
-	icon = "GFX_idea_generic_production_2"
+	icon = "GFX_idea_BBR_workers_market"
 	civilian_factory_use = 3
 	production_speed_buildings_factor = 0.08
 }
 
 HOL_bm_export_guarantees_modifier = {
-	icon = "GFX_idea_generic_production"
+	icon = "GFX_idea_social_capitalism_2"
 	industrial_capacity_factory = 0.03
 	production_speed_dockyard_factor = 0.05
 }
 
 HOL_bm_subsidy_modifier = {
-	icon = "GFX_idea_generic_consumer_goods"
+	icon = "GFX_idea_generic_capitalism"
 	stability_factor = 0.04
 	civilian_factory_use = 0.02
 }
 
 HOL_bm_port_modernization_modifier = {
-	icon = "GFX_idea_generic_navy"
+	icon = "GFX_idea_ACW_building_navy"
 	production_speed_dockyard_factor = 0.08
 	supply_node_range = 0.1
 }
 
 HOL_bm_colonial_revenue_modifier = {
-	icon = "GFX_idea_generic_oil_refinery"
+	icon = "GFX_idea_DEI_colonial_nation"
 	local_resources_factor = 0.05
 }
