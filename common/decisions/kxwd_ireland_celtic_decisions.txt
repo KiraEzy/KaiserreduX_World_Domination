@@ -1,0 +1,5237 @@
+IRE_great_game = {
+IRE_integrate_rk_SCT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 130
+				state = 131
+				state = 132
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		130 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		131 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		132 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				130 = { NOT = { is_core_of = IRE } }
+				131 = { NOT = { is_core_of = IRE } }
+				132 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		130 = { add_core_of = IRE }
+		131 = { add_core_of = IRE }
+		132 = { add_core_of = IRE }
+        130 = { transfer_state_to = IRE }
+		131 = { transfer_state_to = IRE }
+		132 = { transfer_state_to = IRE }
+	}
+}
+
+IRE_integrate_rk_GLC = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 171
+				state = 172
+				state = 174
+				state = 176
+				state = 793
+				state = 951
+				state = 1338
+				state = 1339
+				state = 1344
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		171 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		172 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		174 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		176 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		793 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		951 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1338 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1339 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1344 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				171 = { NOT = { is_core_of = IRE } }
+				172 = { NOT = { is_core_of = IRE } }
+				174 = { NOT = { is_core_of = IRE } }
+				176 = { NOT = { is_core_of = IRE } }
+				793 = { NOT = { is_core_of = IRE } }
+				951 = { NOT = { is_core_of = IRE } }
+				1338 = { NOT = { is_core_of = IRE } }
+				1339 = { NOT = { is_core_of = IRE } }
+				1344 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		171 = { add_core_of = IRE }
+		172 = { add_core_of = IRE }
+		174 = { add_core_of = IRE }
+		176 = { add_core_of = IRE }
+		793 = { add_core_of = IRE }
+		951 = { add_core_of = IRE }
+		1338 = { add_core_of = IRE }
+		1339 = { add_core_of = IRE }
+		1344 = { add_core_of = IRE }
+        171 = { transfer_state_to = IRE }
+		172 = { transfer_state_to = IRE }
+		174 = { transfer_state_to = IRE }
+		176 = { transfer_state_to = IRE }
+		793 = { transfer_state_to = IRE }
+		951 = { transfer_state_to = IRE }
+		1338 = { transfer_state_to = IRE }
+		1339 = { transfer_state_to = IRE }
+		1344 = { transfer_state_to = IRE }
+	}
+}
+
+IRE_integrate_rk_POR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 112
+				state = 180
+				state = 181
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		112 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		180 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		181 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				112 = { NOT = { is_core_of = IRE } }
+				180 = { NOT = { is_core_of = IRE } }
+				181 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		112 = { add_core_of = IRE }
+		180 = { add_core_of = IRE }
+		181 = { add_core_of = IRE }
+        112 = { transfer_state_to = IRE }
+		180 = { transfer_state_to = IRE }
+		181 = { transfer_state_to = IRE }
+	}
+}
+
+IRE_integrate_rk_BRI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 14
+				state = 15
+				state = 23
+				state = 30
+				state = 983
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		14 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		15 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		23 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		30 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		983 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				14 = { NOT = { is_core_of = IRE } }
+				15 = { NOT = { is_core_of = IRE } }
+				23 = { NOT = { is_core_of = IRE } }
+				30 = { NOT = { is_core_of = IRE } }
+				983 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		14 = { add_core_of = IRE }
+		15 = { add_core_of = IRE }
+		23 = { add_core_of = IRE }
+		30 = { add_core_of = IRE }
+		983 = { add_core_of = IRE }
+        14 = { transfer_state_to = IRE }
+		15 = { transfer_state_to = IRE }
+		23 = { transfer_state_to = IRE }
+		30 = { transfer_state_to = IRE }
+		983 = { transfer_state_to = IRE }
+	}
+}
+
+IRE_integrate_rk_NEE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 357
+				state = 358
+				state = 359
+				state = 360
+				state = 796
+				state = 930
+				state = 931
+				state = 932
+				state = 933
+				state = 934
+				state = 935
+				state = 1162
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		357 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		358 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		359 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		360 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		796 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		930 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		931 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		932 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		933 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		934 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		935 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1162 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				357 = { NOT = { is_core_of = IRE } }
+				358 = { NOT = { is_core_of = IRE } }
+				359 = { NOT = { is_core_of = IRE } }
+				360 = { NOT = { is_core_of = IRE } }
+				796 = { NOT = { is_core_of = IRE } }
+				930 = { NOT = { is_core_of = IRE } }
+				931 = { NOT = { is_core_of = IRE } }
+				932 = { NOT = { is_core_of = IRE } }
+				933 = { NOT = { is_core_of = IRE } }
+				934 = { NOT = { is_core_of = IRE } }
+				935 = { NOT = { is_core_of = IRE } }
+				1162 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		357 = { add_core_of = IRE }
+		358 = { add_core_of = IRE }
+		359 = { add_core_of = IRE }
+		360 = { add_core_of = IRE }
+		796 = { add_core_of = IRE }
+		930 = { add_core_of = IRE }
+		931 = { add_core_of = IRE }
+		932 = { add_core_of = IRE }
+		933 = { add_core_of = IRE }
+		934 = { add_core_of = IRE }
+		935 = { add_core_of = IRE }
+		1162 = { add_core_of = IRE }
+        357 = { transfer_state_to = IRE }
+		358 = { transfer_state_to = IRE }
+		359 = { transfer_state_to = IRE }
+		360 = { transfer_state_to = IRE }
+		796 = { transfer_state_to = IRE }
+		930 = { transfer_state_to = IRE }
+		931 = { transfer_state_to = IRE }
+		932 = { transfer_state_to = IRE }
+		933 = { transfer_state_to = IRE }
+		934 = { transfer_state_to = IRE }
+		935 = { transfer_state_to = IRE }
+		1162 = { transfer_state_to = IRE }
+	}
+}
+IRE_establish_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = IRE }
+		}
+		126 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				126 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		125 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = IRE_GBP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_CAR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 41
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAR = { exists = yes }
+			}
+			CAR = { is_subject_of = IRE }
+		}
+		41 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				41 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAR = {
+			every_core_state = {
+				remove_core_of = CAR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAR
+				}
+				remove_claim_by = CAR
+			}
+		}
+		118 = { add_core_of = CAR }
+		165 = { add_core_of = CAR }
+		166 = { add_core_of = CAR }
+		167 = { add_core_of = CAR }
+		168 = { add_core_of = CAR }
+		169 = { add_core_of = CAR }
+		170 = { add_core_of = CAR }
+		173 = { add_core_of = CAR }
+		175 = { add_core_of = CAR }
+		177 = { add_core_of = CAR }
+		178 = { add_core_of = CAR }
+		179 = { add_core_of = CAR }
+		697 = { add_core_of = CAR }
+		698 = { add_core_of = CAR }
+		795 = { add_core_of = CAR }
+		940 = { add_core_of = CAR }
+		1313 = { add_core_of = CAR }
+		1316 = { add_core_of = CAR }
+		1336 = { add_core_of = CAR }
+		1337 = { add_core_of = CAR }
+		1340 = { add_core_of = CAR }
+		1341 = { add_core_of = CAR }
+		1342 = { add_core_of = CAR }
+		1343 = { add_core_of = CAR }
+		41 = { add_core_of = CAR }
+		release = CAR
+		CAR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = CAR
+			}
+		}
+		CAR = { 
+			set_cosmetic_tag = IRE_CAR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = CAR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = IRE }
+		}
+		16 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				16 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		6 = { add_core_of = FRP }
+		8 = { add_core_of = FRP }
+		17 = { add_core_of = FRP }
+		18 = { add_core_of = FRP }
+		19 = { add_core_of = FRP }
+		20 = { add_core_of = FRP }
+		21 = { add_core_of = FRP }
+		22 = { add_core_of = FRP }
+		24 = { add_core_of = FRP }
+		25 = { add_core_of = FRP }
+		26 = { add_core_of = FRP }
+		27 = { add_core_of = FRP }
+		28 = { add_core_of = FRP }
+		29 = { add_core_of = FRP }
+		31 = { add_core_of = FRP }
+		32 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		34 = { add_core_of = FRP }
+		35 = { add_core_of = FRP }
+		42 = { add_core_of = FRP }
+		735 = { add_core_of = FRP }
+		741 = { add_core_of = FRP }
+		760 = { add_core_of = FRP }
+		762 = { add_core_of = FRP }
+		763 = { add_core_of = FRP }
+		779 = { add_core_of = FRP }
+		781 = { add_core_of = FRP }
+		785 = { add_core_of = FRP }
+		817 = { add_core_of = FRP }
+		943 = { add_core_of = FRP }
+		978 = { add_core_of = FRP }
+		979 = { add_core_of = FRP }
+		980 = { add_core_of = FRP }
+		984 = { add_core_of = FRP }
+		1334 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = IRE_FRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_DDR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 64
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DDR = { exists = yes }
+			}
+			DDR = { is_subject_of = IRE }
+		}
+		64 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				64 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DDR = {
+			every_core_state = {
+				remove_core_of = DDR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DDR
+				}
+				remove_claim_by = DDR
+			}
+		}
+		3 = { add_core_of = DDR }
+		4 = { add_core_of = DDR }
+		5 = { add_core_of = DDR }
+		7 = { add_core_of = DDR }
+		9 = { add_core_of = DDR }
+		36 = { add_core_of = DDR }
+		39 = { add_core_of = DDR }
+		50 = { add_core_of = DDR }
+		51 = { add_core_of = DDR }
+		52 = { add_core_of = DDR }
+		53 = { add_core_of = DDR }
+		54 = { add_core_of = DDR }
+		55 = { add_core_of = DDR }
+		56 = { add_core_of = DDR }
+		57 = { add_core_of = DDR }
+		58 = { add_core_of = DDR }
+		59 = { add_core_of = DDR }
+		60 = { add_core_of = DDR }
+		61 = { add_core_of = DDR }
+		62 = { add_core_of = DDR }
+		63 = { add_core_of = DDR }
+		65 = { add_core_of = DDR }
+		66 = { add_core_of = DDR }
+		67 = { add_core_of = DDR }
+		68 = { add_core_of = DDR }
+		69 = { add_core_of = DDR }
+		71 = { add_core_of = DDR }
+		74 = { add_core_of = DDR }
+		75 = { add_core_of = DDR }
+		86 = { add_core_of = DDR }
+		151 = { add_core_of = DDR }
+		152 = { add_core_of = DDR }
+		153 = { add_core_of = DDR }
+		188 = { add_core_of = DDR }
+		775 = { add_core_of = DDR }
+		776 = { add_core_of = DDR }
+		777 = { add_core_of = DDR }
+		780 = { add_core_of = DDR }
+		782 = { add_core_of = DDR }
+		786 = { add_core_of = DDR }
+		835 = { add_core_of = DDR }
+		836 = { add_core_of = DDR }
+		839 = { add_core_of = DDR }
+		866 = { add_core_of = DDR }
+		942 = { add_core_of = DDR }
+		1129 = { add_core_of = DDR }
+		1130 = { add_core_of = DDR }
+		1131 = { add_core_of = DDR }
+		1132 = { add_core_of = DDR }
+		1133 = { add_core_of = DDR }
+		1134 = { add_core_of = DDR }
+		1137 = { add_core_of = DDR }
+		1138 = { add_core_of = DDR }
+		1139 = { add_core_of = DDR }
+		1235 = { add_core_of = DDR }
+		1272 = { add_core_of = DDR }
+		1357 = { add_core_of = DDR }
+		64 = { add_core_of = DDR }
+		release = DDR
+		DDR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = DDR
+			}
+		}
+		DDR = { 
+			set_cosmetic_tag = IRE_DDR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = DDR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_ITA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 159
+				state = 160
+				state = 759
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ITA = { exists = yes }
+			}
+			ITA = { is_subject_of = IRE }
+		}
+		159 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		160 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		759 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				159 = { NOT = { is_core_of = IRE } }
+				160 = { NOT = { is_core_of = IRE } }
+				759 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ITA = {
+			every_core_state = {
+				remove_core_of = ITA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ITA
+				}
+				remove_claim_by = ITA
+			}
+		}
+		1 = { add_core_of = ITA }
+		2 = { add_core_of = ITA }
+		114 = { add_core_of = ITA }
+		115 = { add_core_of = ITA }
+		117 = { add_core_of = ITA }
+		156 = { add_core_of = ITA }
+		157 = { add_core_of = ITA }
+		158 = { add_core_of = ITA }
+		161 = { add_core_of = ITA }
+		162 = { add_core_of = ITA }
+		742 = { add_core_of = ITA }
+		761 = { add_core_of = ITA }
+		764 = { add_core_of = ITA }
+		783 = { add_core_of = ITA }
+		837 = { add_core_of = ITA }
+		838 = { add_core_of = ITA }
+		1002 = { add_core_of = ITA }
+		1003 = { add_core_of = ITA }
+		1004 = { add_core_of = ITA }
+		1005 = { add_core_of = ITA }
+		1006 = { add_core_of = ITA }
+		1149 = { add_core_of = ITA }
+		1236 = { add_core_of = ITA }
+		159 = { add_core_of = ITA }
+		160 = { add_core_of = ITA }
+		759 = { add_core_of = ITA }
+		release = ITA
+		ITA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = ITA
+			}
+		}
+		ITA = { 
+			set_cosmetic_tag = IRE_ITA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = ITA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_POL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POL = { exists = yes }
+			}
+			POL = { is_subject_of = IRE }
+		}
+		10 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				10 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POL = {
+			every_core_state = {
+				remove_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POL
+				}
+				remove_claim_by = POL
+			}
+		}
+		11 = { add_core_of = POL }
+		87 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+		89 = { add_core_of = POL }
+		90 = { add_core_of = POL }
+		91 = { add_core_of = POL }
+		92 = { add_core_of = POL }
+		93 = { add_core_of = POL }
+		94 = { add_core_of = POL }
+		95 = { add_core_of = POL }
+		96 = { add_core_of = POL }
+		97 = { add_core_of = POL }
+		98 = { add_core_of = POL }
+		189 = { add_core_of = POL }
+		199 = { add_core_of = POL }
+		207 = { add_core_of = POL }
+		655 = { add_core_of = POL }
+		792 = { add_core_of = POL }
+		997 = { add_core_of = POL }
+		1088 = { add_core_of = POL }
+		1124 = { add_core_of = POL }
+		1125 = { add_core_of = POL }
+		1126 = { add_core_of = POL }
+		1127 = { add_core_of = POL }
+		1140 = { add_core_of = POL }
+		1148 = { add_core_of = POL }
+		1228 = { add_core_of = POL }
+		1295 = { add_core_of = POL }
+		1314 = { add_core_of = POL }
+		1319 = { add_core_of = POL }
+		1329 = { add_core_of = POL }
+		1366 = { add_core_of = POL }
+		10 = { add_core_of = POL }
+		release = POL
+		POL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = POL
+			}
+		}
+		POL = { 
+			set_cosmetic_tag = IRE_POL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = POL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HUN = { exists = yes }
+			}
+			HUN = { is_subject_of = IRE }
+		}
+		43 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				43 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HUN
+				}
+				remove_claim_by = HUN
+			}
+		}
+		45 = { add_core_of = HUN }
+		70 = { add_core_of = HUN }
+		73 = { add_core_of = HUN }
+		76 = { add_core_of = HUN }
+		82 = { add_core_of = HUN }
+		83 = { add_core_of = HUN }
+		84 = { add_core_of = HUN }
+		154 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		664 = { add_core_of = HUN }
+		784 = { add_core_of = HUN }
+		789 = { add_core_of = HUN }
+		875 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		1111 = { add_core_of = HUN }
+		1112 = { add_core_of = HUN }
+		1113 = { add_core_of = HUN }
+		1114 = { add_core_of = HUN }
+		1115 = { add_core_of = HUN }
+		1116 = { add_core_of = HUN }
+		1117 = { add_core_of = HUN }
+		1118 = { add_core_of = HUN }
+		1119 = { add_core_of = HUN }
+		1120 = { add_core_of = HUN }
+		1121 = { add_core_of = HUN }
+		1122 = { add_core_of = HUN }
+		1123 = { add_core_of = HUN }
+		1135 = { add_core_of = HUN }
+		1136 = { add_core_of = HUN }
+		43 = { add_core_of = HUN }
+		release = HUN
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = IRE_HUN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = IRE }
+		}
+		37 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				37 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		38 = { add_core_of = DEN }
+		99 = { add_core_of = DEN }
+		100 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		110 = { add_core_of = DEN }
+		124 = { add_core_of = DEN }
+		138 = { add_core_of = DEN }
+		139 = { add_core_of = DEN }
+		140 = { add_core_of = DEN }
+		141 = { add_core_of = DEN }
+		142 = { add_core_of = DEN }
+		143 = { add_core_of = DEN }
+		144 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		666 = { add_core_of = DEN }
+		778 = { add_core_of = DEN }
+		908 = { add_core_of = DEN }
+		909 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		936 = { add_core_of = DEN }
+		937 = { add_core_of = DEN }
+		960 = { add_core_of = DEN }
+		1146 = { add_core_of = DEN }
+		1147 = { add_core_of = DEN }
+		37 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = IRE_DEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_BAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BAT = { exists = yes }
+			}
+			BAT = { is_subject_of = IRE }
+		}
+		1091 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				1091 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BAT = {
+			every_core_state = {
+				remove_core_of = BAT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BAT
+				}
+				remove_claim_by = BAT
+			}
+		}
+		12 = { add_core_of = BAT }
+		13 = { add_core_of = BAT }
+		190 = { add_core_of = BAT }
+		191 = { add_core_of = BAT }
+		209 = { add_core_of = BAT }
+		880 = { add_core_of = BAT }
+		1288 = { add_core_of = BAT }
+		1289 = { add_core_of = BAT }
+		1290 = { add_core_of = BAT }
+		1291 = { add_core_of = BAT }
+		1091 = { add_core_of = BAT }
+		release = BAT
+		BAT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = BAT
+			}
+		}
+		BAT = { 
+			set_cosmetic_tag = IRE_BAT_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = BAT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = IRE }
+		}
+		47 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				47 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		44 = { add_core_of = GRE }
+		46 = { add_core_of = GRE }
+		48 = { add_core_of = GRE }
+		77 = { add_core_of = GRE }
+		81 = { add_core_of = GRE }
+		102 = { add_core_of = GRE }
+		103 = { add_core_of = GRE }
+		104 = { add_core_of = GRE }
+		105 = { add_core_of = GRE }
+		106 = { add_core_of = GRE }
+		107 = { add_core_of = GRE }
+		108 = { add_core_of = GRE }
+		109 = { add_core_of = GRE }
+		163 = { add_core_of = GRE }
+		164 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		183 = { add_core_of = GRE }
+		184 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		187 = { add_core_of = GRE }
+		211 = { add_core_of = GRE }
+		212 = { add_core_of = GRE }
+		339 = { add_core_of = GRE }
+		340 = { add_core_of = GRE }
+		341 = { add_core_of = GRE }
+		342 = { add_core_of = GRE }
+		731 = { add_core_of = GRE }
+		736 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		765 = { add_core_of = GRE }
+		766 = { add_core_of = GRE }
+		767 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		769 = { add_core_of = GRE }
+		770 = { add_core_of = GRE }
+		771 = { add_core_of = GRE }
+		772 = { add_core_of = GRE }
+		773 = { add_core_of = GRE }
+		794 = { add_core_of = GRE }
+		841 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		989 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		1089 = { add_core_of = GRE }
+		1090 = { add_core_of = GRE }
+		1097 = { add_core_of = GRE }
+		1098 = { add_core_of = GRE }
+		1099 = { add_core_of = GRE }
+		1100 = { add_core_of = GRE }
+		1101 = { add_core_of = GRE }
+		1102 = { add_core_of = GRE }
+		1103 = { add_core_of = GRE }
+		1104 = { add_core_of = GRE }
+		1105 = { add_core_of = GRE }
+		1128 = { add_core_of = GRE }
+		1141 = { add_core_of = GRE }
+		1142 = { add_core_of = GRE }
+		1143 = { add_core_of = GRE }
+		1144 = { add_core_of = GRE }
+		1145 = { add_core_of = GRE }
+		1206 = { add_core_of = GRE }
+		1268 = { add_core_of = GRE }
+		1269 = { add_core_of = GRE }
+		1270 = { add_core_of = GRE }
+		1271 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = IRE_GRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_MOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 78
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MOL = { exists = yes }
+			}
+			MOL = { is_subject_of = IRE }
+		}
+		78 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				78 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MOL = {
+			every_core_state = {
+				remove_core_of = MOL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MOL
+				}
+				remove_claim_by = MOL
+			}
+		}
+		79 = { add_core_of = MOL }
+		80 = { add_core_of = MOL }
+		713 = { add_core_of = MOL }
+		1222 = { add_core_of = MOL }
+		1320 = { add_core_of = MOL }
+		78 = { add_core_of = MOL }
+		release = MOL
+		MOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = MOL
+			}
+		}
+		MOL = { 
+			set_cosmetic_tag = IRE_MOL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = MOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_UKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				UKR = { exists = yes }
+			}
+			UKR = { is_subject_of = IRE }
+		}
+		202 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				202 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		UKR = {
+			every_core_state = {
+				remove_core_of = UKR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = UKR
+				}
+				remove_claim_by = UKR
+			}
+		}
+		137 = { add_core_of = UKR }
+		192 = { add_core_of = UKR }
+		193 = { add_core_of = UKR }
+		194 = { add_core_of = UKR }
+		196 = { add_core_of = UKR }
+		197 = { add_core_of = UKR }
+		198 = { add_core_of = UKR }
+		200 = { add_core_of = UKR }
+		201 = { add_core_of = UKR }
+		203 = { add_core_of = UKR }
+		204 = { add_core_of = UKR }
+		205 = { add_core_of = UKR }
+		206 = { add_core_of = UKR }
+		210 = { add_core_of = UKR }
+		220 = { add_core_of = UKR }
+		221 = { add_core_of = UKR }
+		222 = { add_core_of = UKR }
+		224 = { add_core_of = UKR }
+		225 = { add_core_of = UKR }
+		226 = { add_core_of = UKR }
+		227 = { add_core_of = UKR }
+		228 = { add_core_of = UKR }
+		234 = { add_core_of = UKR }
+		240 = { add_core_of = UKR }
+		241 = { add_core_of = UKR }
+		242 = { add_core_of = UKR }
+		243 = { add_core_of = UKR }
+		259 = { add_core_of = UKR }
+		755 = { add_core_of = UKR }
+		791 = { add_core_of = UKR }
+		821 = { add_core_of = UKR }
+		1087 = { add_core_of = UKR }
+		1220 = { add_core_of = UKR }
+		1221 = { add_core_of = UKR }
+		1227 = { add_core_of = UKR }
+		1229 = { add_core_of = UKR }
+		1230 = { add_core_of = UKR }
+		1231 = { add_core_of = UKR }
+		1232 = { add_core_of = UKR }
+		1233 = { add_core_of = UKR }
+		1234 = { add_core_of = UKR }
+		1237 = { add_core_of = UKR }
+		1238 = { add_core_of = UKR }
+		1239 = { add_core_of = UKR }
+		1240 = { add_core_of = UKR }
+		1241 = { add_core_of = UKR }
+		1242 = { add_core_of = UKR }
+		1243 = { add_core_of = UKR }
+		1244 = { add_core_of = UKR }
+		1245 = { add_core_of = UKR }
+		1263 = { add_core_of = UKR }
+		1282 = { add_core_of = UKR }
+		1283 = { add_core_of = UKR }
+		1284 = { add_core_of = UKR }
+		1285 = { add_core_of = UKR }
+		1286 = { add_core_of = UKR }
+		1287 = { add_core_of = UKR }
+		1294 = { add_core_of = UKR }
+		202 = { add_core_of = UKR }
+		release = UKR
+		UKR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = UKR
+			}
+		}
+		UKR = { 
+			set_cosmetic_tag = IRE_UKR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = UKR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 840
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FIN = { exists = yes }
+			}
+			FIN = { is_subject_of = IRE }
+		}
+		840 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				840 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FIN = {
+			every_core_state = {
+				remove_core_of = FIN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FIN
+				}
+				remove_claim_by = FIN
+			}
+		}
+		111 = { add_core_of = FIN }
+		145 = { add_core_of = FIN }
+		146 = { add_core_of = FIN }
+		147 = { add_core_of = FIN }
+		148 = { add_core_of = FIN }
+		149 = { add_core_of = FIN }
+		150 = { add_core_of = FIN }
+		213 = { add_core_of = FIN }
+		215 = { add_core_of = FIN }
+		216 = { add_core_of = FIN }
+		722 = { add_core_of = FIN }
+		844 = { add_core_of = FIN }
+		863 = { add_core_of = FIN }
+		864 = { add_core_of = FIN }
+		865 = { add_core_of = FIN }
+		1274 = { add_core_of = FIN }
+		1324 = { add_core_of = FIN }
+		1325 = { add_core_of = FIN }
+		1326 = { add_core_of = FIN }
+		1327 = { add_core_of = FIN }
+		840 = { add_core_of = FIN }
+		release = FIN
+		FIN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = FIN
+			}
+		}
+		FIN = { 
+			set_cosmetic_tag = IRE_FIN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = FIN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				RUS = { exists = yes }
+			}
+			RUS = { is_subject_of = IRE }
+		}
+		195 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				195 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = RUS
+				}
+				remove_claim_by = RUS
+			}
+		}
+		208 = { add_core_of = RUS }
+		214 = { add_core_of = RUS }
+		217 = { add_core_of = RUS }
+		218 = { add_core_of = RUS }
+		219 = { add_core_of = RUS }
+		223 = { add_core_of = RUS }
+		235 = { add_core_of = RUS }
+		236 = { add_core_of = RUS }
+		237 = { add_core_of = RUS }
+		238 = { add_core_of = RUS }
+		239 = { add_core_of = RUS }
+		244 = { add_core_of = RUS }
+		245 = { add_core_of = RUS }
+		246 = { add_core_of = RUS }
+		247 = { add_core_of = RUS }
+		248 = { add_core_of = RUS }
+		249 = { add_core_of = RUS }
+		250 = { add_core_of = RUS }
+		251 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		254 = { add_core_of = RUS }
+		255 = { add_core_of = RUS }
+		256 = { add_core_of = RUS }
+		257 = { add_core_of = RUS }
+		258 = { add_core_of = RUS }
+		260 = { add_core_of = RUS }
+		262 = { add_core_of = RUS }
+		263 = { add_core_of = RUS }
+		264 = { add_core_of = RUS }
+		265 = { add_core_of = RUS }
+		351 = { add_core_of = RUS }
+		397 = { add_core_of = RUS }
+		398 = { add_core_of = RUS }
+		399 = { add_core_of = RUS }
+		400 = { add_core_of = RUS }
+		401 = { add_core_of = RUS }
+		651 = { add_core_of = RUS }
+		652 = { add_core_of = RUS }
+		1193 = { add_core_of = RUS }
+		1194 = { add_core_of = RUS }
+		1197 = { add_core_of = RUS }
+		1198 = { add_core_of = RUS }
+		1199 = { add_core_of = RUS }
+		1204 = { add_core_of = RUS }
+		1205 = { add_core_of = RUS }
+		1207 = { add_core_of = RUS }
+		1224 = { add_core_of = RUS }
+		1226 = { add_core_of = RUS }
+		1264 = { add_core_of = RUS }
+		1266 = { add_core_of = RUS }
+		1328 = { add_core_of = RUS }
+		195 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = IRE_RUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GEO = { exists = yes }
+			}
+			GEO = { is_subject_of = IRE }
+		}
+		231 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				231 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GEO
+				}
+				remove_claim_by = GEO
+			}
+		}
+		229 = { add_core_of = GEO }
+		230 = { add_core_of = GEO }
+		232 = { add_core_of = GEO }
+		233 = { add_core_of = GEO }
+		787 = { add_core_of = GEO }
+		990 = { add_core_of = GEO }
+		998 = { add_core_of = GEO }
+		1000 = { add_core_of = GEO }
+		1080 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1082 = { add_core_of = GEO }
+		1186 = { add_core_of = GEO }
+		1187 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1189 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		1191 = { add_core_of = GEO }
+		1213 = { add_core_of = GEO }
+		1267 = { add_core_of = GEO }
+		1298 = { add_core_of = GEO }
+		1299 = { add_core_of = GEO }
+		1300 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		1302 = { add_core_of = GEO }
+		1303 = { add_core_of = GEO }
+		1304 = { add_core_of = GEO }
+		231 = { add_core_of = GEO }
+		release = GEO
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = IRE_GEO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_TUR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 49
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TUR = { exists = yes }
+			}
+			TUR = { is_subject_of = IRE }
+		}
+		49 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				49 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TUR = {
+			every_core_state = {
+				remove_core_of = TUR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TUR
+				}
+				remove_claim_by = TUR
+			}
+		}
+		1001 = { add_core_of = TUR }
+		343 = { add_core_of = TUR }
+		344 = { add_core_of = TUR }
+		345 = { add_core_of = TUR }
+		346 = { add_core_of = TUR }
+		354 = { add_core_of = TUR }
+		355 = { add_core_of = TUR }
+		356 = { add_core_of = TUR }
+		49 = { add_core_of = TUR }
+		release = TUR
+		TUR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = TUR
+			}
+		}
+		TUR = { 
+			set_cosmetic_tag = IRE_TUR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = TUR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_JBS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 915
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JBS = { exists = yes }
+			}
+			JBS = { is_subject_of = IRE }
+		}
+		915 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				915 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JBS = {
+			every_core_state = {
+				remove_core_of = JBS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JBS
+				}
+				remove_claim_by = JBS
+			}
+		}
+		292 = { add_core_of = JBS }
+		293 = { add_core_of = JBS }
+		294 = { add_core_of = JBS }
+		347 = { add_core_of = JBS }
+		454 = { add_core_of = JBS }
+		455 = { add_core_of = JBS }
+		553 = { add_core_of = JBS }
+		554 = { add_core_of = JBS }
+		656 = { add_core_of = JBS }
+		658 = { add_core_of = JBS }
+		659 = { add_core_of = JBS }
+		675 = { add_core_of = JBS }
+		677 = { add_core_of = JBS }
+		678 = { add_core_of = JBS }
+		679 = { add_core_of = JBS }
+		680 = { add_core_of = JBS }
+		752 = { add_core_of = JBS }
+		754 = { add_core_of = JBS }
+		859 = { add_core_of = JBS }
+		907 = { add_core_of = JBS }
+		981 = { add_core_of = JBS }
+		982 = { add_core_of = JBS }
+		991 = { add_core_of = JBS }
+		992 = { add_core_of = JBS }
+		993 = { add_core_of = JBS }
+		994 = { add_core_of = JBS }
+		995 = { add_core_of = JBS }
+		1024 = { add_core_of = JBS }
+		1035 = { add_core_of = JBS }
+		915 = { add_core_of = JBS }
+		release = JBS
+		JBS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = JBS
+			}
+		}
+		JBS = { 
+			set_cosmetic_tag = IRE_JBS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = JBS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_SIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 570
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIB = { exists = yes }
+			}
+			SIB = { is_subject_of = IRE }
+		}
+		570 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				570 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIB
+				}
+				remove_claim_by = SIB
+			}
+		}
+		40 = { add_core_of = SIB }
+		403 = { add_core_of = SIB }
+		408 = { add_core_of = SIB }
+		409 = { add_core_of = SIB }
+		516 = { add_core_of = SIB }
+		537 = { add_core_of = SIB }
+		555 = { add_core_of = SIB }
+		560 = { add_core_of = SIB }
+		561 = { add_core_of = SIB }
+		562 = { add_core_of = SIB }
+		563 = { add_core_of = SIB }
+		564 = { add_core_of = SIB }
+		565 = { add_core_of = SIB }
+		566 = { add_core_of = SIB }
+		567 = { add_core_of = SIB }
+		568 = { add_core_of = SIB }
+		569 = { add_core_of = SIB }
+		571 = { add_core_of = SIB }
+		572 = { add_core_of = SIB }
+		573 = { add_core_of = SIB }
+		574 = { add_core_of = SIB }
+		575 = { add_core_of = SIB }
+		576 = { add_core_of = SIB }
+		577 = { add_core_of = SIB }
+		578 = { add_core_of = SIB }
+		580 = { add_core_of = SIB }
+		581 = { add_core_of = SIB }
+		582 = { add_core_of = SIB }
+		637 = { add_core_of = SIB }
+		644 = { add_core_of = SIB }
+		653 = { add_core_of = SIB }
+		654 = { add_core_of = SIB }
+		657 = { add_core_of = SIB }
+		811 = { add_core_of = SIB }
+		1195 = { add_core_of = SIB }
+		1200 = { add_core_of = SIB }
+		1201 = { add_core_of = SIB }
+		1202 = { add_core_of = SIB }
+		1246 = { add_core_of = SIB }
+		1292 = { add_core_of = SIB }
+		1293 = { add_core_of = SIB }
+		570 = { add_core_of = SIB }
+		release = SIB
+		SIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = SIB
+			}
+		}
+		SIB = { 
+			set_cosmetic_tag = IRE_SIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+IRE_establish_rk_TRK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 585
+				state = 586
+				state = 712
+				state = 1042
+				state = 1196
+				state = 1209
+				state = 1211
+				state = 1278
+				state = 1279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRK = { exists = yes }
+			}
+			TRK = { is_subject_of = IRE }
+		}
+		407 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		585 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		586 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		712 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1042 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1196 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1209 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1211 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1278 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		1279 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				407 = { NOT = { is_core_of = IRE } }
+				585 = { NOT = { is_core_of = IRE } }
+				586 = { NOT = { is_core_of = IRE } }
+				712 = { NOT = { is_core_of = IRE } }
+				1042 = { NOT = { is_core_of = IRE } }
+				1196 = { NOT = { is_core_of = IRE } }
+				1209 = { NOT = { is_core_of = IRE } }
+				1211 = { NOT = { is_core_of = IRE } }
+				1278 = { NOT = { is_core_of = IRE } }
+				1279 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRK = {
+			every_core_state = {
+				remove_core_of = TRK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRK
+				}
+				remove_claim_by = TRK
+			}
+		}
+		402 = { add_core_of = TRK }
+		404 = { add_core_of = TRK }
+		405 = { add_core_of = TRK }
+		406 = { add_core_of = TRK }
+		583 = { add_core_of = TRK }
+		584 = { add_core_of = TRK }
+		587 = { add_core_of = TRK }
+		588 = { add_core_of = TRK }
+		589 = { add_core_of = TRK }
+		590 = { add_core_of = TRK }
+		732 = { add_core_of = TRK }
+		810 = { add_core_of = TRK }
+		861 = { add_core_of = TRK }
+		1203 = { add_core_of = TRK }
+		1208 = { add_core_of = TRK }
+		1210 = { add_core_of = TRK }
+		1212 = { add_core_of = TRK }
+		1275 = { add_core_of = TRK }
+		1276 = { add_core_of = TRK }
+		1277 = { add_core_of = TRK }
+		1281 = { add_core_of = TRK }
+		407 = { add_core_of = TRK }
+		585 = { add_core_of = TRK }
+		586 = { add_core_of = TRK }
+		712 = { add_core_of = TRK }
+		1042 = { add_core_of = TRK }
+		1196 = { add_core_of = TRK }
+		1209 = { add_core_of = TRK }
+		1211 = { add_core_of = TRK }
+		1278 = { add_core_of = TRK }
+		1279 = { add_core_of = TRK }
+		release = TRK
+		TRK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = TRK
+			}
+		}
+		TRK = { 
+			set_cosmetic_tag = IRE_TRK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = TRK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = IRE }
+		}
+		266 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				266 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		267 = { add_core_of = PER }
+		291 = { add_core_of = PER }
+		349 = { add_core_of = PER }
+		350 = { add_core_of = PER }
+		352 = { add_core_of = PER }
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		415 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		440 = { add_core_of = PER }
+		441 = { add_core_of = PER }
+		442 = { add_core_of = PER }
+		443 = { add_core_of = PER }
+		444 = { add_core_of = PER }
+		445 = { add_core_of = PER }
+		676 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		812 = { add_core_of = PER }
+		819 = { add_core_of = PER }
+		890 = { add_core_of = PER }
+		891 = { add_core_of = PER }
+		1217 = { add_core_of = PER }
+		1218 = { add_core_of = PER }
+		1219 = { add_core_of = PER }
+		266 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = IRE_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_ALG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ALG = { exists = yes }
+			}
+			ALG = { is_subject_of = IRE }
+		}
+		459 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				459 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALG = {
+			every_core_state = {
+				remove_core_of = ALG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ALG
+				}
+				remove_claim_by = ALG
+			}
+		}
+		116 = { add_core_of = ALG }
+		273 = { add_core_of = ALG }
+		290 = { add_core_of = ALG }
+		448 = { add_core_of = ALG }
+		458 = { add_core_of = ALG }
+		460 = { add_core_of = ALG }
+		461 = { add_core_of = ALG }
+		462 = { add_core_of = ALG }
+		513 = { add_core_of = ALG }
+		514 = { add_core_of = ALG }
+		665 = { add_core_of = ALG }
+		805 = { add_core_of = ALG }
+		1318 = { add_core_of = ALG }
+		459 = { add_core_of = ALG }
+		release = ALG
+		ALG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = ALG
+			}
+		}
+		ALG = { 
+			set_cosmetic_tag = IRE_ALG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = ALG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = IRE }
+		}
+		446 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				446 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		85 = { add_core_of = EGY }
+		268 = { add_core_of = EGY }
+		269 = { add_core_of = EGY }
+		271 = { add_core_of = EGY }
+		272 = { add_core_of = EGY }
+		274 = { add_core_of = EGY }
+		275 = { add_core_of = EGY }
+		295 = { add_core_of = EGY }
+		296 = { add_core_of = EGY }
+		297 = { add_core_of = EGY }
+		298 = { add_core_of = EGY }
+		447 = { add_core_of = EGY }
+		450 = { add_core_of = EGY }
+		451 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		453 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		515 = { add_core_of = EGY }
+		538 = { add_core_of = EGY }
+		539 = { add_core_of = EGY }
+		540 = { add_core_of = EGY }
+		541 = { add_core_of = EGY }
+		542 = { add_core_of = EGY }
+		543 = { add_core_of = EGY }
+		544 = { add_core_of = EGY }
+		545 = { add_core_of = EGY }
+		546 = { add_core_of = EGY }
+		547 = { add_core_of = EGY }
+		548 = { add_core_of = EGY }
+		549 = { add_core_of = EGY }
+		550 = { add_core_of = EGY }
+		551 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		556 = { add_core_of = EGY }
+		557 = { add_core_of = EGY }
+		558 = { add_core_of = EGY }
+		559 = { add_core_of = EGY }
+		660 = { add_core_of = EGY }
+		662 = { add_core_of = EGY }
+		663 = { add_core_of = EGY }
+		681 = { add_core_of = EGY }
+		699 = { add_core_of = EGY }
+		700 = { add_core_of = EGY }
+		702 = { add_core_of = EGY }
+		703 = { add_core_of = EGY }
+		704 = { add_core_of = EGY }
+		705 = { add_core_of = EGY }
+		706 = { add_core_of = EGY }
+		707 = { add_core_of = EGY }
+		708 = { add_core_of = EGY }
+		709 = { add_core_of = EGY }
+		718 = { add_core_of = EGY }
+		719 = { add_core_of = EGY }
+		738 = { add_core_of = EGY }
+		753 = { add_core_of = EGY }
+		806 = { add_core_of = EGY }
+		807 = { add_core_of = EGY }
+		808 = { add_core_of = EGY }
+		809 = { add_core_of = EGY }
+		813 = { add_core_of = EGY }
+		834 = { add_core_of = EGY }
+		860 = { add_core_of = EGY }
+		862 = { add_core_of = EGY }
+		869 = { add_core_of = EGY }
+		870 = { add_core_of = EGY }
+		871 = { add_core_of = EGY }
+		876 = { add_core_of = EGY }
+		877 = { add_core_of = EGY }
+		878 = { add_core_of = EGY }
+		879 = { add_core_of = EGY }
+		881 = { add_core_of = EGY }
+		892 = { add_core_of = EGY }
+		899 = { add_core_of = EGY }
+		905 = { add_core_of = EGY }
+		906 = { add_core_of = EGY }
+		910 = { add_core_of = EGY }
+		911 = { add_core_of = EGY }
+		913 = { add_core_of = EGY }
+		914 = { add_core_of = EGY }
+		916 = { add_core_of = EGY }
+		917 = { add_core_of = EGY }
+		918 = { add_core_of = EGY }
+		919 = { add_core_of = EGY }
+		920 = { add_core_of = EGY }
+		921 = { add_core_of = EGY }
+		922 = { add_core_of = EGY }
+		923 = { add_core_of = EGY }
+		924 = { add_core_of = EGY }
+		925 = { add_core_of = EGY }
+		927 = { add_core_of = EGY }
+		928 = { add_core_of = EGY }
+		944 = { add_core_of = EGY }
+		945 = { add_core_of = EGY }
+		946 = { add_core_of = EGY }
+		947 = { add_core_of = EGY }
+		948 = { add_core_of = EGY }
+		949 = { add_core_of = EGY }
+		950 = { add_core_of = EGY }
+		952 = { add_core_of = EGY }
+		953 = { add_core_of = EGY }
+		954 = { add_core_of = EGY }
+		955 = { add_core_of = EGY }
+		956 = { add_core_of = EGY }
+		957 = { add_core_of = EGY }
+		958 = { add_core_of = EGY }
+		959 = { add_core_of = EGY }
+		961 = { add_core_of = EGY }
+		962 = { add_core_of = EGY }
+		963 = { add_core_of = EGY }
+		964 = { add_core_of = EGY }
+		965 = { add_core_of = EGY }
+		966 = { add_core_of = EGY }
+		967 = { add_core_of = EGY }
+		968 = { add_core_of = EGY }
+		969 = { add_core_of = EGY }
+		970 = { add_core_of = EGY }
+		971 = { add_core_of = EGY }
+		973 = { add_core_of = EGY }
+		974 = { add_core_of = EGY }
+		975 = { add_core_of = EGY }
+		976 = { add_core_of = EGY }
+		977 = { add_core_of = EGY }
+		1007 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		1009 = { add_core_of = EGY }
+		1010 = { add_core_of = EGY }
+		1011 = { add_core_of = EGY }
+		1025 = { add_core_of = EGY }
+		1026 = { add_core_of = EGY }
+		1032 = { add_core_of = EGY }
+		1176 = { add_core_of = EGY }
+		1177 = { add_core_of = EGY }
+		1178 = { add_core_of = EGY }
+		1179 = { add_core_of = EGY }
+		1180 = { add_core_of = EGY }
+		1181 = { add_core_of = EGY }
+		1182 = { add_core_of = EGY }
+		1183 = { add_core_of = EGY }
+		1184 = { add_core_of = EGY }
+		1185 = { add_core_of = EGY }
+		1192 = { add_core_of = EGY }
+		1297 = { add_core_of = EGY }
+		1321 = { add_core_of = EGY }
+		1322 = { add_core_of = EGY }
+		1323 = { add_core_of = EGY }
+		1335 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = IRE_EGY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = IRE }
+		}
+		608 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				608 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		283 = { add_core_of = QIE }
+		287 = { add_core_of = QIE }
+		322 = { add_core_of = QIE }
+		325 = { add_core_of = QIE }
+		326 = { add_core_of = QIE }
+		328 = { add_core_of = QIE }
+		329 = { add_core_of = QIE }
+		330 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		524 = { add_core_of = QIE }
+		591 = { add_core_of = QIE }
+		592 = { add_core_of = QIE }
+		593 = { add_core_of = QIE }
+		594 = { add_core_of = QIE }
+		595 = { add_core_of = QIE }
+		596 = { add_core_of = QIE }
+		597 = { add_core_of = QIE }
+		598 = { add_core_of = QIE }
+		599 = { add_core_of = QIE }
+		600 = { add_core_of = QIE }
+		601 = { add_core_of = QIE }
+		602 = { add_core_of = QIE }
+		603 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		605 = { add_core_of = QIE }
+		606 = { add_core_of = QIE }
+		607 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		610 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		612 = { add_core_of = QIE }
+		613 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		617 = { add_core_of = QIE }
+		618 = { add_core_of = QIE }
+		619 = { add_core_of = QIE }
+		620 = { add_core_of = QIE }
+		621 = { add_core_of = QIE }
+		622 = { add_core_of = QIE }
+		650 = { add_core_of = QIE }
+		661 = { add_core_of = QIE }
+		693 = { add_core_of = QIE }
+		714 = { add_core_of = QIE }
+		715 = { add_core_of = QIE }
+		716 = { add_core_of = QIE }
+		717 = { add_core_of = QIE }
+		728 = { add_core_of = QIE }
+		729 = { add_core_of = QIE }
+		743 = { add_core_of = QIE }
+		744 = { add_core_of = QIE }
+		745 = { add_core_of = QIE }
+		746 = { add_core_of = QIE }
+		747 = { add_core_of = QIE }
+		748 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		788 = { add_core_of = QIE }
+		799 = { add_core_of = QIE }
+		800 = { add_core_of = QIE }
+		801 = { add_core_of = QIE }
+		802 = { add_core_of = QIE }
+		803 = { add_core_of = QIE }
+		816 = { add_core_of = QIE }
+		883 = { add_core_of = QIE }
+		884 = { add_core_of = QIE }
+		885 = { add_core_of = QIE }
+		886 = { add_core_of = QIE }
+		897 = { add_core_of = QIE }
+		996 = { add_core_of = QIE }
+		1012 = { add_core_of = QIE }
+		1013 = { add_core_of = QIE }
+		1014 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1044 = { add_core_of = QIE }
+		1045 = { add_core_of = QIE }
+		1046 = { add_core_of = QIE }
+		1047 = { add_core_of = QIE }
+		1048 = { add_core_of = QIE }
+		1049 = { add_core_of = QIE }
+		1050 = { add_core_of = QIE }
+		1051 = { add_core_of = QIE }
+		1052 = { add_core_of = QIE }
+		1053 = { add_core_of = QIE }
+		1054 = { add_core_of = QIE }
+		1055 = { add_core_of = QIE }
+		1056 = { add_core_of = QIE }
+		1058 = { add_core_of = QIE }
+		1059 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1064 = { add_core_of = QIE }
+		1065 = { add_core_of = QIE }
+		1066 = { add_core_of = QIE }
+		1067 = { add_core_of = QIE }
+		1068 = { add_core_of = QIE }
+		1069 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		1075 = { add_core_of = QIE }
+		1083 = { add_core_of = QIE }
+		1084 = { add_core_of = QIE }
+		1085 = { add_core_of = QIE }
+		1086 = { add_core_of = QIE }
+		1265 = { add_core_of = QIE }
+		525 = { add_core_of = QIE }
+		527 = { add_core_of = QIE }
+		1345 = { add_core_of = QIE }
+		1346 = { add_core_of = QIE }
+		1347 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = IRE_QIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = IRE }
+		}
+		439 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				439 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		72 = { add_core_of = DEH }
+		281 = { add_core_of = DEH }
+		288 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		323 = { add_core_of = DEH }
+		324 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		428 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		640 = { add_core_of = DEH }
+		701 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		733 = { add_core_of = DEH }
+		756 = { add_core_of = DEH }
+		790 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = IRE_DEH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = IRE }
+		}
+		282 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				282 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		526 = { add_core_of = JAP }
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		282 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = IRE_JAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_PHI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 327
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PHI = { exists = yes }
+			}
+			PHI = { is_subject_of = IRE }
+		}
+		327 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				327 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PHI = {
+			every_core_state = {
+				remove_core_of = PHI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PHI
+				}
+				remove_claim_by = PHI
+			}
+		}
+		286 = { add_core_of = PHI }
+		289 = { add_core_of = PHI }
+		333 = { add_core_of = PHI }
+		334 = { add_core_of = PHI }
+		335 = { add_core_of = PHI }
+		336 = { add_core_of = PHI }
+		523 = { add_core_of = PHI }
+		623 = { add_core_of = PHI }
+		624 = { add_core_of = PHI }
+		625 = { add_core_of = PHI }
+		626 = { add_core_of = PHI }
+		627 = { add_core_of = PHI }
+		628 = { add_core_of = PHI }
+		629 = { add_core_of = PHI }
+		630 = { add_core_of = PHI }
+		631 = { add_core_of = PHI }
+		632 = { add_core_of = PHI }
+		633 = { add_core_of = PHI }
+		634 = { add_core_of = PHI }
+		635 = { add_core_of = PHI }
+		636 = { add_core_of = PHI }
+		638 = { add_core_of = PHI }
+		639 = { add_core_of = PHI }
+		641 = { add_core_of = PHI }
+		642 = { add_core_of = PHI }
+		643 = { add_core_of = PHI }
+		645 = { add_core_of = PHI }
+		646 = { add_core_of = PHI }
+		647 = { add_core_of = PHI }
+		648 = { add_core_of = PHI }
+		667 = { add_core_of = PHI }
+		668 = { add_core_of = PHI }
+		669 = { add_core_of = PHI }
+		670 = { add_core_of = PHI }
+		671 = { add_core_of = PHI }
+		672 = { add_core_of = PHI }
+		673 = { add_core_of = PHI }
+		684 = { add_core_of = PHI }
+		721 = { add_core_of = PHI }
+		724 = { add_core_of = PHI }
+		725 = { add_core_of = PHI }
+		726 = { add_core_of = PHI }
+		727 = { add_core_of = PHI }
+		734 = { add_core_of = PHI }
+		737 = { add_core_of = PHI }
+		749 = { add_core_of = PHI }
+		750 = { add_core_of = PHI }
+		751 = { add_core_of = PHI }
+		757 = { add_core_of = PHI }
+		822 = { add_core_of = PHI }
+		823 = { add_core_of = PHI }
+		824 = { add_core_of = PHI }
+		825 = { add_core_of = PHI }
+		826 = { add_core_of = PHI }
+		827 = { add_core_of = PHI }
+		828 = { add_core_of = PHI }
+		830 = { add_core_of = PHI }
+		831 = { add_core_of = PHI }
+		843 = { add_core_of = PHI }
+		846 = { add_core_of = PHI }
+		856 = { add_core_of = PHI }
+		857 = { add_core_of = PHI }
+		882 = { add_core_of = PHI }
+		941 = { add_core_of = PHI }
+		972 = { add_core_of = PHI }
+		999 = { add_core_of = PHI }
+		1016 = { add_core_of = PHI }
+		1017 = { add_core_of = PHI }
+		1018 = { add_core_of = PHI }
+		1019 = { add_core_of = PHI }
+		1020 = { add_core_of = PHI }
+		1021 = { add_core_of = PHI }
+		1022 = { add_core_of = PHI }
+		1023 = { add_core_of = PHI }
+		1333 = { add_core_of = PHI }
+		1364 = { add_core_of = PHI }
+		1365 = { add_core_of = PHI }
+		327 = { add_core_of = PHI }
+		release = PHI
+		PHI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = PHI
+			}
+		}
+		PHI = { 
+			set_cosmetic_tag = IRE_PHI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = PHI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 985
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = IRE }
+		}
+		985 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				985 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		284 = { add_core_of = AST }
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		711 = { add_core_of = AST }
+		723 = { add_core_of = AST }
+		986 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = IRE_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_CAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 739
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAN = { exists = yes }
+			}
+			CAN = { is_subject_of = IRE }
+		}
+		739 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				739 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAN = {
+			every_core_state = {
+				remove_core_of = CAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAN
+				}
+				remove_claim_by = CAN
+			}
+		}
+		276 = { add_core_of = CAN }
+		331 = { add_core_of = CAN }
+		332 = { add_core_of = CAN }
+		463 = { add_core_of = CAN }
+		464 = { add_core_of = CAN }
+		465 = { add_core_of = CAN }
+		466 = { add_core_of = CAN }
+		467 = { add_core_of = CAN }
+		468 = { add_core_of = CAN }
+		469 = { add_core_of = CAN }
+		470 = { add_core_of = CAN }
+		471 = { add_core_of = CAN }
+		472 = { add_core_of = CAN }
+		473 = { add_core_of = CAN }
+		682 = { add_core_of = CAN }
+		683 = { add_core_of = CAN }
+		730 = { add_core_of = CAN }
+		740 = { add_core_of = CAN }
+		832 = { add_core_of = CAN }
+		1273 = { add_core_of = CAN }
+		1330 = { add_core_of = CAN }
+		1331 = { add_core_of = CAN }
+		1332 = { add_core_of = CAN }
+		1348 = { add_core_of = CAN }
+		1349 = { add_core_of = CAN }
+		1350 = { add_core_of = CAN }
+		739 = { add_core_of = CAN }
+		release = CAN
+		CAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = CAN
+			}
+		}
+		CAN = { 
+			set_cosmetic_tag = IRE_CAN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = CAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = IRE }
+		}
+		361 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				361 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
+				}
+				remove_claim_by = USA
+			}
+		}
+		261 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		366 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		370 = { add_core_of = USA }
+		371 = { add_core_of = USA }
+		372 = { add_core_of = USA }
+		373 = { add_core_of = USA }
+		374 = { add_core_of = USA }
+		375 = { add_core_of = USA }
+		376 = { add_core_of = USA }
+		377 = { add_core_of = USA }
+		378 = { add_core_of = USA }
+		379 = { add_core_of = USA }
+		380 = { add_core_of = USA }
+		381 = { add_core_of = USA }
+		382 = { add_core_of = USA }
+		383 = { add_core_of = USA }
+		384 = { add_core_of = USA }
+		385 = { add_core_of = USA }
+		386 = { add_core_of = USA }
+		387 = { add_core_of = USA }
+		388 = { add_core_of = USA }
+		389 = { add_core_of = USA }
+		390 = { add_core_of = USA }
+		391 = { add_core_of = USA }
+		392 = { add_core_of = USA }
+		393 = { add_core_of = USA }
+		394 = { add_core_of = USA }
+		395 = { add_core_of = USA }
+		396 = { add_core_of = USA }
+		797 = { add_core_of = USA }
+		798 = { add_core_of = USA }
+		829 = { add_core_of = USA }
+		833 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		1096 = { add_core_of = USA }
+		1150 = { add_core_of = USA }
+		1151 = { add_core_of = USA }
+		1152 = { add_core_of = USA }
+		1153 = { add_core_of = USA }
+		1154 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1156 = { add_core_of = USA }
+		1157 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1161 = { add_core_of = USA }
+		1163 = { add_core_of = USA }
+		1164 = { add_core_of = USA }
+		1165 = { add_core_of = USA }
+		1166 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1171 = { add_core_of = USA }
+		1172 = { add_core_of = USA }
+		1173 = { add_core_of = USA }
+		1174 = { add_core_of = USA }
+		1175 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = IRE_USA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_MEX = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 277
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MEX = { exists = yes }
+			}
+			MEX = { is_subject_of = IRE }
+		}
+		277 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				277 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MEX = {
+			every_core_state = {
+				remove_core_of = MEX
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MEX
+				}
+				remove_claim_by = MEX
+			}
+		}
+		304 = { add_core_of = MEX }
+		311 = { add_core_of = MEX }
+		312 = { add_core_of = MEX }
+		313 = { add_core_of = MEX }
+		314 = { add_core_of = MEX }
+		316 = { add_core_of = MEX }
+		317 = { add_core_of = MEX }
+		474 = { add_core_of = MEX }
+		475 = { add_core_of = MEX }
+		476 = { add_core_of = MEX }
+		477 = { add_core_of = MEX }
+		478 = { add_core_of = MEX }
+		479 = { add_core_of = MEX }
+		480 = { add_core_of = MEX }
+		481 = { add_core_of = MEX }
+		482 = { add_core_of = MEX }
+		483 = { add_core_of = MEX }
+		484 = { add_core_of = MEX }
+		485 = { add_core_of = MEX }
+		685 = { add_core_of = MEX }
+		842 = { add_core_of = MEX }
+		854 = { add_core_of = MEX }
+		1070 = { add_core_of = MEX }
+		1071 = { add_core_of = MEX }
+		1247 = { add_core_of = MEX }
+		1248 = { add_core_of = MEX }
+		1249 = { add_core_of = MEX }
+		1250 = { add_core_of = MEX }
+		1251 = { add_core_of = MEX }
+		1252 = { add_core_of = MEX }
+		1253 = { add_core_of = MEX }
+		1254 = { add_core_of = MEX }
+		1255 = { add_core_of = MEX }
+		1256 = { add_core_of = MEX }
+		1257 = { add_core_of = MEX }
+		1258 = { add_core_of = MEX }
+		1259 = { add_core_of = MEX }
+		1260 = { add_core_of = MEX }
+		1261 = { add_core_of = MEX }
+		1262 = { add_core_of = MEX }
+		277 = { add_core_of = MEX }
+		release = MEX
+		MEX = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = MEX
+			}
+		}
+		MEX = { 
+			set_cosmetic_tag = IRE_MEX_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = MEX
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_JAM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 689
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAM = { exists = yes }
+			}
+			JAM = { is_subject_of = IRE }
+		}
+		689 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				689 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAM = {
+			every_core_state = {
+				remove_core_of = JAM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAM
+				}
+				remove_claim_by = JAM
+			}
+		}
+		308 = { add_core_of = JAM }
+		315 = { add_core_of = JAM }
+		318 = { add_core_of = JAM }
+		319 = { add_core_of = JAM }
+		686 = { add_core_of = JAM }
+		690 = { add_core_of = JAM }
+		692 = { add_core_of = JAM }
+		694 = { add_core_of = JAM }
+		696 = { add_core_of = JAM }
+		818 = { add_core_of = JAM }
+		820 = { add_core_of = JAM }
+		1077 = { add_core_of = JAM }
+		1312 = { add_core_of = JAM }
+		689 = { add_core_of = JAM }
+		release = JAM
+		JAM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = JAM
+			}
+		}
+		JAM = { 
+			set_cosmetic_tag = IRE_JAM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = JAM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_COL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 306
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				COL = { exists = yes }
+			}
+			COL = { is_subject_of = IRE }
+		}
+		306 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				306 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		COL = {
+			every_core_state = {
+				remove_core_of = COL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = COL
+				}
+				remove_claim_by = COL
+			}
+		}
+		305 = { add_core_of = COL }
+		307 = { add_core_of = COL }
+		309 = { add_core_of = COL }
+		310 = { add_core_of = COL }
+		486 = { add_core_of = COL }
+		488 = { add_core_of = COL }
+		489 = { add_core_of = COL }
+		490 = { add_core_of = COL }
+		493 = { add_core_of = COL }
+		649 = { add_core_of = COL }
+		687 = { add_core_of = COL }
+		691 = { add_core_of = COL }
+		695 = { add_core_of = COL }
+		849 = { add_core_of = COL }
+		850 = { add_core_of = COL }
+		851 = { add_core_of = COL }
+		852 = { add_core_of = COL }
+		853 = { add_core_of = COL }
+		912 = { add_core_of = COL }
+		1036 = { add_core_of = COL }
+		1037 = { add_core_of = COL }
+		1038 = { add_core_of = COL }
+		1039 = { add_core_of = COL }
+		1078 = { add_core_of = COL }
+		1079 = { add_core_of = COL }
+		1214 = { add_core_of = COL }
+		1215 = { add_core_of = COL }
+		1216 = { add_core_of = COL }
+		1280 = { add_core_of = COL }
+		1296 = { add_core_of = COL }
+		1308 = { add_core_of = COL }
+		1309 = { add_core_of = COL }
+		306 = { add_core_of = COL }
+		release = COL
+		COL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = COL
+			}
+		}
+		COL = { 
+			set_cosmetic_tag = IRE_COL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = COL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_PRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 303
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PRU = { exists = yes }
+			}
+			PRU = { is_subject_of = IRE }
+		}
+		303 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				303 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PRU = {
+			every_core_state = {
+				remove_core_of = PRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PRU
+				}
+				remove_claim_by = PRU
+			}
+		}
+		302 = { add_core_of = PRU }
+		487 = { add_core_of = PRU }
+		491 = { add_core_of = PRU }
+		492 = { add_core_of = PRU }
+		494 = { add_core_of = PRU }
+		506 = { add_core_of = PRU }
+		845 = { add_core_of = PRU }
+		847 = { add_core_of = PRU }
+		848 = { add_core_of = PRU }
+		872 = { add_core_of = PRU }
+		873 = { add_core_of = PRU }
+		1027 = { add_core_of = PRU }
+		1073 = { add_core_of = PRU }
+		303 = { add_core_of = PRU }
+		release = PRU
+		PRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = PRU
+			}
+		}
+		PRU = { 
+			set_cosmetic_tag = IRE_PRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = PRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_CHL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CHL = { exists = yes }
+			}
+			CHL = { is_subject_of = IRE }
+		}
+		279 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				279 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CHL = {
+			every_core_state = {
+				remove_core_of = CHL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CHL
+				}
+				remove_claim_by = CHL
+			}
+		}
+		270 = { add_core_of = CHL }
+		278 = { add_core_of = CHL }
+		299 = { add_core_of = CHL }
+		300 = { add_core_of = CHL }
+		301 = { add_core_of = CHL }
+		449 = { add_core_of = CHL }
+		502 = { add_core_of = CHL }
+		503 = { add_core_of = CHL }
+		507 = { add_core_of = CHL }
+		508 = { add_core_of = CHL }
+		509 = { add_core_of = CHL }
+		510 = { add_core_of = CHL }
+		511 = { add_core_of = CHL }
+		512 = { add_core_of = CHL }
+		579 = { add_core_of = CHL }
+		688 = { add_core_of = CHL }
+		720 = { add_core_of = CHL }
+		874 = { add_core_of = CHL }
+		894 = { add_core_of = CHL }
+		901 = { add_core_of = CHL }
+		902 = { add_core_of = CHL }
+		903 = { add_core_of = CHL }
+		904 = { add_core_of = CHL }
+		1028 = { add_core_of = CHL }
+		1029 = { add_core_of = CHL }
+		1041 = { add_core_of = CHL }
+		1043 = { add_core_of = CHL }
+		1074 = { add_core_of = CHL }
+		279 = { add_core_of = CHL }
+		release = CHL
+		CHL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = CHL
+			}
+		}
+		CHL = { 
+			set_cosmetic_tag = IRE_CHL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = CHL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+
+IRE_establish_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 500
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRA = { exists = yes }
+			}
+			BRA = { is_subject_of = IRE }
+		}
+		500 = { owner = { OR = { original_tag = IRE is_subject_of = IRE } } }
+		OR = {
+				500 = { NOT = { is_core_of = IRE } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRA
+				}
+				remove_claim_by = BRA
+			}
+		}
+		280 = { add_core_of = BRA }
+		495 = { add_core_of = BRA }
+		496 = { add_core_of = BRA }
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		501 = { add_core_of = BRA }
+		504 = { add_core_of = BRA }
+		505 = { add_core_of = BRA }
+		855 = { add_core_of = BRA }
+		895 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		898 = { add_core_of = BRA }
+		900 = { add_core_of = BRA }
+		1030 = { add_core_of = BRA }
+		1031 = { add_core_of = BRA }
+		1033 = { add_core_of = BRA }
+		1040 = { add_core_of = BRA }
+		1305 = { add_core_of = BRA }
+		1306 = { add_core_of = BRA }
+		1307 = { add_core_of = BRA }
+		1310 = { add_core_of = BRA }
+		1311 = { add_core_of = BRA }
+		500 = { add_core_of = BRA }
+		release = BRA
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = IRE
+						}
+						OR = {
+							is_owned_by = IRE
+							OWNER = { is_subject_of = IRE} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = IRE_BRA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Celtic Administration"
+				picture = "gfx/leaders/IRE/Portrait_Ireland_Regency_Council.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			IRE = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				syndicalist = 5
+				social_democrat = 5
+				social_liberal = 0
+				market_liberal = 0
+				social_conservative = 20
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Celtic Administration"
+				long_name = "Celtic Administration"
+			}
+		}
+	}
+}
+}
