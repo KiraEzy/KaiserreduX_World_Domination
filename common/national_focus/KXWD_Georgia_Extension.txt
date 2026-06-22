@@ -1,0 +1,2126 @@
+
+####################################
+####### delhi churchill tree #######
+####################################
+
+shared_focus = {
+    id = GEO_the_georgian_state_focus
+    icon = GFX_goal_GEO_Defending_the_Motherland
+    cost = 2
+    x = 1
+    y = 1
+    relative_position_id = GEO_chairman_focus
+    ai_will_do = {
+        factor = 100
+    }
+    prerequisite = {
+        focus = GEO_chairman_focus
+    }
+    available = {
+        has_government = totalist
+    }
+    mutually_exclusive = {
+        focus = GEO_trans_state_focus
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus GEO_georgian_state_focus"
+        swap_ideas = {
+            remove_idea = GEO_nationalism_idea2
+            add_idea = GEO_nationalism_idea3
+        }
+        add_political_power = 150
+    }
+}
+
+shared_focus = {
+    id = GEO_trans_state_focus
+    icon = GFX_goal_GEO_Transcaucasian_Union
+    cost = 2
+    prerequisite = {
+        focus = GEO_chairman_focus
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_chairman_focus
+    x = -1
+    y = 1
+    available = {
+        has_government = totalist
+    }
+    mutually_exclusive = {
+        focus = GEO_the_georgian_state_focus
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus trans_state_focus"
+        custom_effect_tooltip = GEO_trans_tooltip_2
+        set_country_flag = GEO_can_form_transcaucasia
+        activate_targeted_decision = { target = THIS decision = GEO_form_transcaucasia }
+        country_event = geo.513
+    }
+}
+
+shared_focus = {
+    id = GEO_expand_motherland_focus
+    icon = GFX_goal_GEO_Expanding_the_Motherland
+    cost = 6.5
+    relative_position_id = GEO_trans_state_focus
+    
+    ai_will_do = {
+        factor = 100
+    }
+    x = 1
+    y = 1
+    available = {
+        always = no
+        has_government = totalist
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus expand_motherland_focus"
+        custom_effect_tooltip = GEO_expand_tooltip_2
+        add_war_support = 0.05
+    }
+}	
+
+
+shared_focus = {
+    id = GEO_don_kuban_focus
+    icon = GFX_goal_GEO_Strike_the_Don_Kuban_Union
+    cost = 3
+    prerequisite = {
+        focus = GEO_expand_motherland_focus
+    }
+    ai_will_do = {
+        factor = 50
+    }
+    relative_position_id = GEO_expand_motherland_focus
+    x = 0
+    y = 1
+    available = {
+        has_government = totalist
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus don_kuban_focus"
+        custom_effect_tooltip = RUS_Attack_Caucasus_DKB_tooltip
+        activate_targeted_decision = { target = DKB decision = GEO_Attack_Caucasus }
+        if = {
+            limit = { 
+                country_exists = KUB
+            }
+            activate_targeted_decision = { target = KUB decision = GEO_Attack_Caucasus }
+        }
+        if = {
+            limit = {
+                country_exists = KLY
+            }
+            activate_targeted_decision = { target = KLY decision = GEO_Attack_Caucasus }
+        }
+        if = {
+            limit = { 
+                country_exists = MTR 
+            }
+            activate_targeted_decision = { target = MTR decision = GEO_Attack_Caucasus }
+        }
+        hidden_effect = {
+            GER = {
+            diplomatic_relation = {
+                country = DKB
+                relation = guarantee
+                active = no
+            }	
+            remove_from_faction = DKB
+            }
+            activate_targeted_decision = { target = DKB decision = GEO_Attack_Caucasus }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_1st_Caucasian_Congress_focus
+    icon = GFX_goal_commune_politics
+    cost = 3
+    prerequisite = {
+        focus = GEO_don_kuban_focus
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_don_kuban_focus
+    x = 0
+    y = 1
+    available = {
+        has_government = totalist
+        has_completed_focus = GEO_chairman_focus
+    }
+    completion_reward = {
+        add_political_power = 100
+        increase_ruling_party_popularity_by_5 = yes
+        GEO = {
+            country_event={
+                id= geo.507
+                days = 3
+            }	
+        }	
+    }
+}
+
+
+shared_focus = {
+    id = GEO_second_red_october_focus
+    icon = GFX_CRM_Russian_October
+    cost = 3
+    prerequisite = {
+        focus = GEO_1st_Caucasian_Congress_focus
+    }
+    ai_will_do = {
+        factor = 20
+        modifier = {
+            factor = 2
+            RUS = {
+                has_war = yes
+            }
+        }
+        modifier = {
+            factor = 4
+            RUS = {
+                surrender_progress > 0.1
+            }
+        }
+    }
+    relative_position_id = GEO_1st_Caucasian_Congress_focus
+    x = 0
+    y = 1
+    available = {
+        is_neighbor_of = RUS
+        has_government = totalist
+    }
+    bypass = {
+        hidden_trigger = {
+            NOT = { country_exists = RUS }
+        }
+    }
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = RUS
+                is_owned_and_controlled_by = RUS
+            }
+            add_core_of = ROOT
+        }
+        declare_war_on = {
+            target = RUS
+            type = annex_everything
+        }
+
+        news_event = {
+            id = geo_expanded.502
+            days = 3
+        }
+    }   
+}
+
+shared_focus = {
+    id = GEO_Rise_The_Resistance
+    icon = GFX_RUS_Raise_The_Red_Banners
+    cost = 2
+    relative_position_id = GEO_second_red_october_focus
+    x = -1
+    y = 1
+    available = {
+        has_war_with = RUS
+    }
+    prerequisite = {
+        focus = GEO_second_red_october_focus
+    }
+    ai_will_do = {
+        factor = 70
+    }
+    completion_reward = {
+        division_template = {
+            name = "Krasnaya Gvardiya"
+            division_names_group = SOV_GAR_01
+            regiments = {
+                infantry = { x = 0 y = 0 }
+                infantry = { x = 0 y = 1 }
+                infantry = { x = 0 y = 2 }
+                infantry = { x = 1 y = 0 }
+                infantry = { x = 1 y = 1 }
+                infantry = { x = 1 y = 2 }
+                infantry = { x = 2 y = 0 }
+                infantry = { x = 2 y = 1 }
+                infantry = { x = 2 y = 2 }
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 195 }
+            create_unit = {
+                division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6174
+            }
+            create_unit = {
+                division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6174
+            }
+            create_unit = {
+                division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6174
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 219 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6380
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6380
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6380
+            }
+        }
+        division_template = {
+            name = "Gorodskaya Militsiya"
+            division_names_group = SOV_GAR_01
+            regiments = {
+                militia = { x = 0 y = 0 }
+                militia = { x = 0 y = 1 }
+                militia = { x = 0 y = 2 }
+                militia = { x = 1 y = 0 }
+                militia = { x = 1 y = 1 }
+                militia = { x = 1 y = 2 }
+                militia = { x = 2 y = 0 }
+                militia = { x = 2 y = 1 }
+                militia = { x = 2 y = 2 }
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 195 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6174
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6174
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6174
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 219 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6380
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6380
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6380
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 242 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 306
+            }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 11241
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 246 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 11349
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 247 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6245
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 223 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 6262
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 222 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 9355
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 224 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 3335
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 220 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 3580
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 248 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 121
+            }
+        }
+        random_owned_controlled_state = {
+            prioritize = { 252 }
+            create_unit = {
+                division = "division_template = \"Gorodskaya Militsiya\" start_experience_factor = 0.1"
+                owner = ROOT
+                prioritize_location = 11375
+            }
+        }
+    }
+}
+
+    shared_focus = {
+    id = GEO_Socialist_Propaganda
+    icon = GFX_ITA_syndicalist_unite
+    cost = 2
+    relative_position_id = GEO_second_red_october_focus
+    x = 1
+    y = 1
+    available = {
+        has_war_with = RUS
+        has_socialist_government = yes 
+    }
+    prerequisite = {
+        focus = GEO_second_red_october_focus
+    }
+    ai_will_do = {
+        factor = 60
+    }
+    completion_reward = {
+        RUS = {
+            add_timed_idea = {
+                idea = DKB_soc_prop_in_russia
+                days = 180
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Aftermath_Of_Civil_War
+    icon = GFX_SOV_soviet_republics
+    cost = 4
+    relative_position_id = GEO_second_red_october_focus
+    x = 0
+    y = 2
+    available = {
+        NOT = { country_exists = RUS }
+        195 = { is_owned_and_controlled_by = ROOT }
+        219 = { is_owned_and_controlled_by = ROOT }
+        has_government = totalist
+    }
+    prerequisite = {
+        focus = GEO_second_red_october_focus
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        set_cosmetic_tag = PPS
+        set_country_flag = RUS_can_integrate
+        ROOT = { save_global_event_target_as = soviet_russia }
+        every_state = {
+            limit = {
+                is_core_of = RUS
+                is_owned_and_controlled_by = ROOT
+            }
+            add_core_of = ROOT
+        }
+        add_dynamic_modifier = {
+            modifier = GEO_aftermath_modifier
+        }
+        hidden_effect = { add_ideas = GEO_aftermath_idea }
+        GEO_recalculate_aftermath_effects = yes
+        swap_ideas = {
+            remove_idea = GEO_nationalism_idea2
+            add_idea = GEO_nationalism_idea4
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Deal_With_Opposition
+    icon = GFX_SOV_even_greater_purge
+    cost = 4
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -5
+    y = 1
+    available = {
+        has_completed_focus = GEO_beria_desires
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Aftermath_Of_Civil_War
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        country_event = {
+            id = dkb.67
+            days = 1
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Fate_Of_Socialist_Parties
+    icon = GFX_RUS_Ban_Socialists_vns
+    cost = 4
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -5
+    y = 3
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Deal_With_Opposition
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        country_event = {
+            id = dkb.68
+            days = 1
+        }
+    }
+}
+
+
+
+shared_focus = {
+    id = GEO_Reinstate_The_Cheka
+    text = GEO_Reinstate_The_Cheka
+    icon = GFX_RUS_Recreate_Cheka
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -4
+    y = 2
+    cost = 6
+    prerequisite = {
+        focus = GEO_Deal_With_Opposition
+    }
+    available = {
+        has_government = totalist
+        has_completed_focus = GEO_Rebuild_The_Red_Army
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 2
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus GEO_Reinstate_The_Cheka"
+        if = {
+            limit = { has_dlc = "La Resistance" }
+            if = {
+                limit = { has_intelligence_agency = no }
+                create_intelligence_agency = {
+                    name = "Cheka"
+                    icon = GFX_intelligence_agency_logo_geoa
+                }
+            }
+            else_if = {
+                limit = {
+                    NOT = { has_done_agency_upgrade = upgrade_army_department }
+                }
+                upgrade_intelligence_agency = upgrade_army_department
+            }
+            else = {
+                add_political_power = 50
+            }
+            swap_ideas = {
+                remove_idea = RUS_new_red_army_2
+                add_idea = RUS_new_red_army_3_lar
+            }
+        }
+        else = {
+            swap_ideas = {
+                remove_idea = RUS_new_red_army_2
+                add_idea = RUS_new_red_army_3
+            }
+            add_tech_bonus = {
+                name = RUS_Reinstate_The_Cheka
+                bonus = 1
+                uses = 1
+                category = encryption_tech
+                category = decryption_tech
+            }
+        }
+    }
+}
+
+
+shared_focus = {
+    id = GEO_Bureaucratic_Centralism
+    text = RUS_Bureaucratic_Centralism
+    icon = GFX_SOV_centralize_state
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -2
+    y = 2
+    available = {
+        has_government = totalist
+    }
+    prerequisite = {
+        focus = GEO_Deal_With_Opposition
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        if = {
+            limit = {
+                has_idea = DKB_economic_totalist
+            }
+            swap_ideas = {
+                remove_idea = DKB_economic_totalist
+                add_idea = DKB_economic_totalist_3
+            }
+        }
+        else_if = {
+            limit = {
+                has_idea = DKB_economic_totalist_1
+            }
+            swap_ideas = {
+                remove_idea = DKB_economic_totalist_1
+                add_idea = DKB_economic_totalist_4
+            }
+        }
+        else = {
+            add_ideas = DKB_economic_totalist_2
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Trade_Unions_Issue
+    text = RUS_Control_Trade_Unions
+    icon = GFX_RUS_Control_Trade_Unions_nsp
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -3
+    y = 3
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Bureaucratic_Centralism
+        focus = GEO_Reinstate_The_Cheka
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        country_event = {
+            id = dkb.69
+            days = 1
+        }
+    }
+}
+
+
+shared_focus = {
+    id = GEO_Cement_The_Regime
+    icon = GFX_SOV_integ_com
+    cost = 4
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -5
+    y = 5
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Fate_Of_Socialist_Parties
+    }
+    prerequisite = {
+        focus = GEO_Trade_Unions_Issue
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+    }
+}
+shared_focus = {
+    id = GEO_Economic_Integration
+    icon = GFX_SOV_slow_down_industrialization
+    cost = 3
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 0
+    y = 1
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Aftermath_Of_Civil_War
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        add_timed_idea = {
+            idea = DKB_integration
+            days = 730
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Expand_The_Plan
+    icon = GFX_socialist_constitution
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 0
+    y = 2
+    prerequisite = {
+        focus = GEO_Economic_Integration
+    }
+    available = {
+        has_socialist_government = yes
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        modify_timed_idea = {
+            idea = DKB_integration
+            days = -275
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_GOELRO
+    text = RUS_GOELRO
+    icon = GFX_SOV_save_village
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -1
+    y = 3
+    prerequisite = {
+        focus = GEO_Expand_The_Plan
+    }
+    available = {
+        has_socialist_government = yes
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        swap_ideas = {
+            remove_idea = DKB_gosplan_6
+            add_idea = DKB_gosplan_7
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Resource_Prospection
+    text = RUS_ec_mutual8
+    icon = GFX_goal_CSA_resource_nationalisation
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = -2
+    y = 4
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_GOELRO
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        unlock_decision_category_tooltip = RUS_Resource_decisions 
+    }
+}
+shared_focus = {
+    id = GEO_Ural_Tractor_Plants
+    text = RUS_Ural_Tractor_Plants
+    icon = GFX_RUS_Complexes_Urals
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 0
+    y = 4
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_GOELRO
+    }
+    prerequisite = {
+        focus = GEO_Hydroelectricity
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        swap_ideas = {
+            remove_idea = DKB_gosplan_7
+            add_idea = DKB_gosplan_8
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Expand_The_Transsiberian
+    text = RUS_Expand_The_Railway_Network
+    icon = GFX_goal_FRA_Revolutionary_Railways
+    cost = 8
+    available = {
+        561 = { is_owned_and_controlled_by = ROOT } # Amur
+        563 = { is_owned_and_controlled_by = ROOT } # Chita
+        564 = { is_owned_and_controlled_by = ROOT } # Verkhneudinsk
+        566 = { is_owned_and_controlled_by = ROOT } # Irkutsk
+        567 = { is_owned_and_controlled_by = ROOT } # Bratsk
+        568 = { is_owned_and_controlled_by = ROOT } # Krasnoyarsk
+        569 = { is_owned_and_controlled_by = ROOT } # Shcheglovsk
+        657 = { is_owned_and_controlled_by = ROOT } # Blagoveshchensk
+        has_socialist_government = yes
+    }
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 2
+    y = 4
+
+    prerequisite = {
+        focus = GEO_Hydroelectricity
+    }
+    ai_will_do = {
+        factor = 20
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+    569 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        568 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        567 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        566 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        564 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        563 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        561 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+        657 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Hydroelectricity
+    text = RUS_ec_mutual3
+    icon = GFX_goal_dam
+    relative_position_id = GEO_Expand_The_Plan
+    x = 1
+    y = 1
+    cost = 6
+    ai_will_do = {
+        factor = 20
+    }
+    prerequisite = {
+        focus = GEO_Expand_The_Plan
+    }
+    completion_reward = {
+        custom_effect_tooltip = RUS_tt_hydroelectricity_decisions
+    }
+}
+shared_focus = {
+    id = GEO_Cement_The_Economy
+    icon = GFX_SOV_socialism_in_one_country
+    cost = 4
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 0
+    y = 5
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Ural_Tractor_Plants
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        remove_ideas = DKB_integration
+    }
+}
+shared_focus = {
+    id = GEO_Fate_Of_Russian_Army
+    icon = GFX_DKB_ban_rus_army
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 4
+    y = 1
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Aftermath_Of_Civil_War
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        country_event = {
+            id = dkb.70
+            days = 2
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Main_Military_Council
+    icon = GFX_DKB_glavvoyensovet
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 3
+    y = 2
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Fate_Of_Russian_Army
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        country_event = {
+            id = dkb.71
+            days = 2
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Increase_Military_Budget
+    icon = GFX_SOV_labor_militarization
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 3
+    y = 3
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Main_Military_Council
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        add_ideas = DKB_military_budget_increased
+    }
+}
+shared_focus = {
+    id = GEO_Centralised_Command
+    text = RUS_Centralised_Command
+    icon = GFX_goal_officers
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 5
+    y = 2
+    prerequisite = {
+        focus = GEO_Fate_Of_Russian_Army
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    available = {
+        has_socialist_government = yes
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        add_ideas = RUS_new_red_army_1
+    }
+}
+
+shared_focus = {
+    id = GEO_Reorganize_Armament
+    text = RUS_Reorganise_Armament_Production
+    icon = GFX_SOV_proletarian_religion
+    cost = 5
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 6
+    y = 3
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Centralised_Command
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        add_tech_bonus = {
+            name = RUS_Reorganise_Armament_Production
+            bonus = 1
+            uses = 1
+            category = infantry_weapons
+        }
+        add_ideas = RUS_armament_production_1
+    }
+}
+shared_focus = {
+    id = GEO_The_Peoples_Logistics_Corps
+    text = RUS_The_Peoples_Logistics_Corps
+    icon = GFX_goal_generic_war_in_the_plate
+    relative_position_id = GEO_Reorganize_Armament
+    x = -1
+    y = 1
+    cost = 6
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Reorganize_Armament
+    }
+    prerequisite = {
+        focus = GEO_Centralised_Command
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 2
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_The_Peoples_Logistics_Corps"
+        custom_effect_tooltip = SOV_The_Peoples_Logistics_Corps_tooltip
+        hidden_effect = {
+            swap_ideas = {
+                remove_idea = RUS_armament_production_1
+                add_idea = RUS_armament_production_2
+            }
+        }
+    }
+    search_filters = { FOCUS_FILTER_ARMY }
+}
+
+
+shared_focus = {
+    id = GEO_Cement_The_Army
+    icon = GFX_SOV_army_purge
+    relative_position_id = GEO_Reorganize_Armament
+    x = -2
+    y = 2
+    cost = 4
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_The_Peoples_Logistics_Corps
+    }
+    prerequisite = {
+        focus = GEO_Increase_Military_Budget
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 2
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+    }
+    search_filters = { FOCUS_FILTER_ARMY }
+}
+shared_focus = {
+    id = GEO_Invite_Russian_Communists
+    text = DKB_Invite_Russian_Communists
+    icon = GFX_SOV_militia
+    cost = 3
+    relative_position_id = GEO_Reorganize_Armament
+    x = 0
+    y = 2
+    available = {
+        NOT = { country_exists = RUS }
+        195 = { is_owned_and_controlled_by = ROOT }
+        219 = { is_owned_and_controlled_by = ROOT }
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_The_Peoples_Logistics_Corps
+    }
+    prerequisite = {
+        focus = GEO_Increase_Military_Budget
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        country_event = {
+            id = geo.1923
+            days = 1
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Into_The_Future
+    icon = GFX_SOV_Progress
+    cost = 3
+    relative_position_id = GEO_Aftermath_Of_Civil_War
+    x = 0
+    y = 6
+    ai_will_do = {
+        factor = 100
+    }
+    available = {
+        has_socialist_government = yes
+    }
+    prerequisite = {
+        focus = GEO_Cement_The_Economy
+    }
+    prerequisite = {
+        focus = GEO_Cement_The_Army
+    }
+    prerequisite = {
+        focus = GEO_Cement_The_Regime
+    }
+    completion_reward = {
+        remove_dynamic_modifier = {
+            modifier = DKB_aftermath_modifier
+        }
+        hidden_effect = {
+            remove_ideas = DKB_aftermath_idea 
+            activate_targeted_decision = { target = GEO decision = GEO_SOV_Create_Soviet_Union }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Rebuild_The_Red_Army
+    text = RUS_Rebuild_The_Red_Army
+    icon = GFX_goal_CSA_union_army
+    relative_position_id = GEO_Invite_Russian_Communists
+    x = 0
+    y = 1
+    cost = 5
+    prerequisite = {
+        focus = GEO_Invite_Russian_Communists
+    }
+    available = {
+        has_socialist_government = yes		
+    }
+    ai_will_do = {
+        factor = 20
+        modifier = {
+            factor = 2
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus GEO_Rebuild_The_Red_Army"
+        swap_ideas = {
+            remove_idea = RUS_new_red_army_1
+            add_idea = RUS_new_red_army_2
+        }
+
+        add_doctrine_cost_reduction = {
+            name = RUS_Rebuild_The_Red_Army
+            cost_reduction = 0.5
+            uses = 2
+            category = land_doctrine
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Zhukovs_Reform_Plan
+    text = GEO_Zhukovs_Reform_Plan
+    icon = GFX_SOV_Zhukov_Plan
+    available = {
+        NOT = {
+            OR = {
+                has_country_leader = {
+                    name = "Mikhail Frunze"
+                    ruling_only = yes
+                }
+                has_country_leader = {
+                    name = "Mikhail Tukhachevsky"
+                    ruling_only = yes
+                }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = RUS_Zhukov_Is_General
+            OR = {
+                has_unit_leader = 449
+                has_unit_leader = 457
+            }
+        }			
+    }
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 0
+    y = 1
+    cost = 6
+    mutually_exclusive = {
+        focus = GEO_Tukhachevskiys_Reform_Plan
+        focus = GEO_Frunzes_Reform_Plan
+    }
+    prerequisite = {
+        focus = GEO_Rebuild_The_Red_Army
+    }
+    available = {
+        has_completed_focus = GEO_Rebuild_The_Red_Army
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                has_tech = mass_assault
+                has_tech = superior_firepower
+            }
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Frunzes_Reform_Plan"
+        add_ideas = RUS_zhukovs_reform_plan_1
+    }
+}
+shared_focus = {
+    id = GEO_Mass_Conscription_SOV
+    text = GEO_Mass_Conscription_SOV
+    icon = GFX_goal_CSA_militia_support
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = -1
+    y = 3
+    cost = 6
+    prerequisite = {
+        focus = GEO_Zhukovs_Reform_Plan
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                has_tech = mass_assault
+                has_tech = superior_firepower
+            }
+        }
+    }
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = RUS_zhukovs_reform_plan_1
+            add_idea = RUS_zhukovs_reform_plan_2
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Standarisation_Of_Equipment_Production_SOV
+    text = GEO_Standarisation_Of_Equipment_Production_SOV
+    icon = GFX_goal_POL_New_Polish_Rifle
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 1
+    y = 3
+    cost = 6
+    prerequisite = {
+        focus = GEO_Zhukovs_Reform_Plan
+    }
+    available = {
+        has_completed_focus = GEO_Mass_Conscription_SOV
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                has_tech = mass_assault
+                has_tech = superior_firepower
+            }
+        }
+    }
+    completion_reward = {
+        add_tech_bonus = {
+            name = RUS_Land_Air_Integration
+            bonus = 0.5
+            uses = 2
+            category = infantry_weapons
+        }
+        add_tech_bonus = {
+            name = RUS_Land_Air_Integration
+            bonus = 0.5
+            uses = 2
+            category = artillery
+        }
+        swap_ideas = {
+            remove_idea = RUS_zhukovs_reform_plan_2
+            add_idea = RUS_zhukovs_reform_plan_3
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Tukhachevskiys_Reform_Plan
+    text = RUS_Tukhachevskiys_Reform_Plan
+    icon = GFX_SOV_Tukhachevskiy_Plan
+    available = {
+        NOT = {
+            OR = {
+                has_country_leader = {
+                    name = "Mikhail Frunze"
+                    ruling_only = yes
+                }
+                has_country_leader = {
+                    name = "Georgy Zhukov"
+                    ruling_only = yes
+                }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = RUS_Tukha_Is_General
+            has_unit_leader = 1954
+        }
+    }
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 2
+    y = 1
+    cost = 6
+    mutually_exclusive = {
+        focus = GEO_Frunzes_Reform_Plan
+        focus = GEO_Zhukovs_Reform_Plan
+    }
+    prerequisite = {
+        focus = GEO_Rebuild_The_Red_Army
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                has_tech = trench_warfare
+                has_tech = mass_assault
+            }
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Tukhachevskiys_Reform_Plan"
+        add_ideas = RUS_tukhachevskiys_reform_plan_1
+    }
+}
+
+shared_focus = {
+    id = GEO_Mass_Breakthroughs
+    text = RUS_Mass_Breakthroughs
+    icon = GFX_goal_FRA_Thundering_Artillery_Corps
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 2
+    y = 2
+    cost = 8
+    prerequisite = {
+        focus = GEO_Tukhachevskiys_Reform_Plan
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Mass_Breakthroughs"
+        add_tech_bonus = {
+            name = RUS_Mass_Breakthroughs
+            bonus = 1
+            uses = 1
+            category = armor
+        }
+        custom_effect_tooltip = SOV_Mass_Breakthroughs_tooltip
+        hidden_effect = {
+            if = {
+                limit = { has_idea = RUS_tukhachevskiys_reform_plan_3 }
+                swap_ideas = {
+                    remove_idea = RUS_tukhachevskiys_reform_plan_3
+                    add_idea = RUS_tukhachevskiys_reform_plan_4
+                }
+            }
+            else = {
+                swap_ideas = {
+                    remove_idea = RUS_tukhachevskiys_reform_plan_1
+                    add_idea = RUS_tukhachevskiys_reform_plan_2
+                }
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Land_Air_Integration
+    text = RUS_Land_Air_Integration
+    icon = GFX_goal_USA_organic_air_support
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 3
+    y = 3
+    cost = 8
+    prerequisite = {
+        focus = GEO_Tukhachevskiys_Reform_Plan
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Land_Air_Integration"
+        add_tech_bonus = {
+            name = RUS_Land_Air_Integration
+            bonus = 1
+            uses = 1
+            category = cas_bomber
+        }
+        custom_effect_tooltip = SOV_Land_Air_Integration_tooltip
+        hidden_effect = {
+            if = {
+                limit = { has_idea = RUS_tukhachevskiys_reform_plan_2 }
+                swap_ideas = {
+                    remove_idea = RUS_tukhachevskiys_reform_plan_2
+                    add_idea = RUS_tukhachevskiys_reform_plan_4
+                }
+            }
+            else = {
+                swap_ideas = {
+                    remove_idea = RUS_tukhachevskiys_reform_plan_1
+                    add_idea = RUS_tukhachevskiys_reform_plan_3
+                }
+            }
+        }
+    }
+}
+shared_focus = {
+    id = GEO_The_Second_Red_Army
+    text = RUS_The_Second_Red_Army
+    icon = GFX_SOV_krasna_dictatorship
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 0
+    y = 4
+    cost = 6
+    prerequisite = {
+        focus = GEO_Expand_The_High_Command
+        focus = GEO_Mass_Conscription_SOV
+        focus = GEO_Standarisation_Of_Equipment_Production_SOV
+        focus = GEO_Land_Air_Integration
+    }
+    available = {
+        OR = {
+            AND = {
+                has_completed_focus = GEO_Expand_The_High_Command
+                has_completed_focus = GEO_Officer_Training_Academies
+            }
+            AND = {
+                has_completed_focus = GEO_Mass_Conscription_SOV
+                has_completed_focus = GEO_Standarisation_Of_Equipment_Production_SOV
+            }
+            AND = {
+                has_completed_focus = GEO_Mass_Breakthroughs
+                has_completed_focus = GEO_Land_Air_Integration
+            }
+        }
+        has_completed_focus = GEO_Reinstate_The_Cheka
+    }
+    prerequisite = {
+        focus = GEO_Professional_Engineer_Corps
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 2
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_The_Second_Red_Army"
+        if = {
+            limit = { has_dlc = "La Resistance" }
+            swap_ideas = {
+                remove_idea = RUS_new_red_army_3_lar
+                add_idea = RUS_new_red_army_4_lar
+            }
+        }
+        else = {
+            swap_ideas = {
+                remove_idea = RUS_new_red_army_3
+                add_idea = RUS_new_red_army_4
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Frunzes_Reform_Plan
+    text = RUS_Frunzes_Reform_Plan
+    icon = GFX_SOV_Frunze_Plan
+    available = {
+        NOT = {
+            OR = {
+                has_country_leader = {
+                    name = "Mikhail Tukhachevsky"
+                    ruling_only = yes
+                }
+                has_country_leader = {
+                    name = "Georgy Zhukov"
+                    ruling_only = yes
+                }
+            }
+        }
+        custom_trigger_tooltip = {
+            tooltip = RUS_Frunze_Is_General
+            has_unit_leader = 1955
+        }
+    }
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = -2
+    y = 1
+    cost = 6
+    mutually_exclusive = {
+        focus = GEO_Tukhachevskiys_Reform_Plan
+        focus = GEO_Zhukovs_Reform_Plan
+    }
+    prerequisite = {
+        focus = GEO_Rebuild_The_Red_Army
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+        modifier = {
+            factor = 0.5
+            OR = {
+                has_tech = mobile_warfare
+                has_tech = superior_firepower
+            }
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Frunzes_Reform_Plan"
+        add_ideas = RUS_frunzes_reform_plan_1
+    }
+}
+
+shared_focus = {
+    id = GEO_Expand_The_High_Command
+    text = RUS_Expand_The_High_Command
+    icon = GFX_goal_FRA_Command_Control_Centers
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = -3
+    y = 3
+    cost = 8
+    prerequisite = {
+        focus = GEO_Frunzes_Reform_Plan
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Expand_The_High_Command"
+        add_doctrine_cost_reduction = {
+            name = RUS_Expand_The_High_Command
+            cost_reduction = 0.5
+            uses = 1
+            category = land_doctrine
+        }
+        if = {
+            limit = { has_idea = RUS_frunzes_reform_plan_3 }
+            swap_ideas = {
+                remove_idea = RUS_frunzes_reform_plan_3
+                add_idea = RUS_frunzes_reform_plan_4
+            }
+        }
+        else = {
+            swap_ideas = {
+                remove_idea = RUS_frunzes_reform_plan_1
+                add_idea = RUS_frunzes_reform_plan_2
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Officer_Training_Academies
+    text = RUS_Officer_Training_Academies
+    icon = GFX_goal_CSA_peoples_military_academy
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = -2
+    y = 2
+    cost = 8
+    prerequisite = {
+        focus = GEO_Frunzes_Reform_Plan
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Officer_Training_Academies"
+        add_doctrine_cost_reduction = {
+            name = RUS_Officer_Training_Academies
+            cost_reduction = 0.5
+            uses = 1
+            category = land_doctrine
+        }
+        if = {
+            limit = { has_idea = RUS_frunzes_reform_plan_2 }
+            swap_ideas = {
+                remove_idea = RUS_frunzes_reform_plan_2
+                add_idea = RUS_frunzes_reform_plan_4
+            }
+        }
+        else = {
+            swap_ideas = {
+                remove_idea = RUS_frunzes_reform_plan_1
+                add_idea = RUS_frunzes_reform_plan_3
+            }
+        }
+    }
+}
+
+shared_focus = {
+    id = GEO_Professional_Engineer_Corps
+    text = RUS_Professional_Engineer_Corps
+    icon = GFX_goal_USA_integral_mechanization
+    relative_position_id = GEO_Rebuild_The_Red_Army
+    x = 0
+    y = 2
+    cost = 6
+    prerequisite = {
+        focus = GEO_Frunzes_Reform_Plan
+        focus = GEO_Tukhachevskiys_Reform_Plan
+        focus = GEO_Zhukovs_Reform_Plan
+    }
+    ai_will_do = {
+        factor = 10
+        modifier = {
+            factor = 3
+            has_war = yes
+        }
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus RUS_Professional_Engineer_Corps"
+        custom_effect_tooltip = expanded_engineer_corps_tech_effect
+        hidden_effect = {
+            set_technology = { expanded_engineer_corps_tech = 1 }
+        }
+    }
+}
+
+
+shared_focus = {
+    id = GEO_chairman_stalin
+    text = GEO_chairman_stalin
+    icon = GFX_SOV_bolsheviks_in_power
+    cost = 1
+    x = 22
+    y = 15
+    ai_will_do = {
+        factor = 100
+    }
+
+    available = {
+        has_completed_focus = GEO_Aftermath_Of_Civil_War
+        has_government = totalist
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: GEO_chairman_stalin"
+        country_event = geo.512
+        add_political_power = 50
+    }
+
+}
+shared_focus = {
+    id = GEO_Purge_Proletkultisty
+    text = SOV_Purge_Proletkultisty
+    icon = GFX_SOV_prolekultisy_dead
+    relative_position_id = GEO_chairman_stalin
+    x = 1
+    y = 2
+    prerequisite = {
+        focus = GEO_Purge_Zinovievtsy
+    }
+    available = {
+        has_government = totalist
+    }
+    cost = 3
+    ai_will_do = {
+        factor = 40
+    }
+    completion_reward = {
+        country_event = nkvd.24
+        hidden_effect = {
+            country_event = {
+                id = russia.3678
+                days = 75
+            }
+        }
+    }
+}
+shared_focus = {
+    id = GEO_Purge_Zinovievtsy
+    text = SOV_Purge_Zinovievtsy
+    icon = GFX_SOV_zinovievtsy_dead
+    relative_position_id = GEO_chairman_stalin
+    x = 0
+    y = 1
+    prerequisite = {
+        focus = GEO_chairman_stalin
+    }
+    available = {
+        has_government = totalist
+    }
+    cost = 3
+    ai_will_do = {
+        factor = 40
+    }
+    completion_reward = {
+        country_event = nkvd.22
+    }
+}
+shared_focus = {
+    id = GEO_Purge_Ekonomisty
+    text = SOV_Purge_Ekonomisty
+    icon = GFX_SOV_ekonomisty_dead
+    relative_position_id = GEO_chairman_stalin
+    x = -1
+    y = 2
+    prerequisite = {
+        focus = GEO_Purge_Zinovievtsy
+    }
+    available = {
+        has_government = totalist
+    }
+    cost = 3
+    ai_will_do = {
+        factor = 40
+    }
+    completion_reward = {
+        country_event = nkvd.23
+    }
+}
+shared_focus = {
+    id = GEO_beria_labour
+    text = beria_labour
+    icon = GFX_goal_GEO_beria_labour
+    cost = 5.00
+    prerequisite = {
+        focus = GEO_Purge_Ekonomisty
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_chairman_stalin
+    x = -1
+    y = 3
+    available = {
+            has_government = totalist
+        }
+    completion_reward = {
+                log = "[GetDateText]: [Root.GetName]: Focus beria_labour"
+                random_owned_state = {
+                        limit = {
+                                free_building_slots = {
+                                        building = arms_factory
+                                        size > 1
+                                        include_locked = yes
+                                    }
+                            }
+                        add_extra_state_shared_building_slots = 2
+                        add_building_construction = {
+                                type = arms_factory
+                                level = 3
+                                instant_build = yes
+                            }
+                    }
+                random_owned_state = {
+                        limit = {
+                                free_building_slots = {
+                                        building = arms_factory
+                                        size > 0
+                                        include_locked = yes
+                                    }
+                            }
+                        add_extra_state_shared_building_slots = 1
+                        add_building_construction = {
+                                type = arms_factory
+                                level = 3
+                                instant_build = yes
+                            }
+                    }
+            }
+
+}
+shared_focus = {
+    id = GEO_Industrialize_The_Motherland
+    icon = GFX_SOV_rapid_industrialization
+    cost = 7
+    relative_position_id = GEO_chairman_stalin
+    x = -2
+    y = 4
+    prerequisite = {
+        focus = GEO_beria_labour
+    }
+    available = {
+        has_socialist_government = yes
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    completion_reward = {
+        custom_effect_tooltip = DKB_reduce_aftermath_tt
+        GEO_recalculate_aftermath_effects = yes
+        unlock_decision_category_tooltip = RUS_Economy_decisions
+        hidden_effect = {
+            activate_targeted_decision = { target = 651 decision = RUS_Develop_Civilian_Industry_In_State } #Ufa
+            activate_targeted_decision = { target = 248 decision = RUS_Develop_Civilian_Industry_In_State } #Yaroslavl
+            activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+            activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+            activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+            activate_targeted_decision = { target = 249 decision = RUS_Develop_Military_Industry_In_State } #Kazan
+            activate_targeted_decision = { target = 398 decision = RUS_Develop_Military_Industry_In_State } #Perm
+            activate_targeted_decision = { target = 217 decision = RUS_Develop_Military_Industry_In_State } #Tsaritsyn
+            activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+            activate_targeted_decision = { target = 566 decision = RUS_Develop_Civilian_Industry_In_State } #Irkutsk
+            activate_targeted_decision = { target = 217 decision = RUS_Develop_Civilian_Industry_In_State } #Tsaritsyn
+            activate_targeted_decision = { target = 252 decision = RUS_Develop_Civilian_Industry_In_State } #Nizhny Novgorod
+            activate_targeted_decision = { target = 220 decision = RUS_Develop_Civilian_Industry_In_State } #Kursk
+            activate_targeted_decision = { target = 398 decision = RUS_Develop_Civilian_Industry_In_State } #Perm
+            activate_targeted_decision = { target = 247 decision = RUS_Develop_Military_Industry_In_State } #Tver
+            activate_targeted_decision = { target = 250 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+            activate_targeted_decision = { target = 257 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+            activate_targeted_decision = { target = 224 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+            activate_targeted_decision = { target = 222 decision = RUS_Mechanize_Agriculture_In_State } #Simbirsk
+        } 
+    }
+}
+shared_focus = {
+    id = GEO_Institutionalize_Terror
+    icon = GFX_goal_GEO_oppressive_violence
+    cost = 5
+    prerequisite = {
+        focus = GEO_beria_labour
+    }
+    prerequisite = {
+        focus = GEO_beria_desires
+    }
+    relative_position_id = GEO_chairman_stalin
+    x = 0
+    y = 4
+    available = {
+
+    }
+    ai_will_do = {
+        factor = 20
+    }
+    completion_reward = {
+        add_ideas = SOV_institutionalized_terror
+    }
+}
+shared_focus = {
+    id = GEO_Mass_Collectivisation
+    text = GEO_Mass_Collectivisation
+    icon = GFX_SOV_farm
+    relative_position_id = GEO_chairman_stalin
+    x = 2
+    y = 4
+    cost = 5
+    prerequisite = {
+        focus = GEO_beria_desires
+    }
+    available = {
+        has_government = totalist
+    }
+    ai_will_do = {
+        factor = 20
+        modifier = {
+            factor = 0.25
+            has_stability < 0.25
+        }
+    }
+    completion_reward = {
+        add_stability = -0.1
+        swap_ideas = {
+            remove_idea = GEO_collectivised_agriculture_idea
+            add_idea = GEO_mass_collectivization
+        }
+        hidden_effect = {
+            country_event = {
+                id = bolsheviks.50
+                days = 365
+            }
+            country_event = {
+                id = bolsheviks.48
+                days = 100
+            }
+        }
+    }
+}
+shared_focus = {
+    id = GEO_cult_of_stalin
+    icon = GFX_goal_GEO_Jugashvili_is_Georgia
+    cost = 5
+    prerequisite = {
+        focus = GEO_beria_gulag
+    }
+    prerequisite = {
+        focus = GEO_stalin_atom
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_chairman_stalin
+    x = 0
+    y = 6
+    available = {
+        has_government = totalist
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus GEO_cult_of_stalin"
+        add_country_leader_trait = stalin_father_of_nations
+    }
+}
+shared_focus = {
+    id = GEO_stalin_atom
+    text = GEO_stalin_atom
+    icon = GFX_goal_GEO_stalin_atom
+    cost = 5
+    prerequisite = {
+        focus = GEO_beria_desires
+    }
+    prerequisite = {
+        focus = GEO_Mass_Collectivisation
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_chairman_stalin
+    x = 1
+    y = 5
+    available = {
+        has_government = totalist
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus GEO_cult_of_stalin"
+        add_research_slot = 1
+        add_tech_bonus = {
+            name = SOV_soviet_atomic_bomb_project_tech_bonus_name
+            bonus = 1
+            uses = 1
+            ahead_reduction = 1
+            category = nuclear
+        }
+    }
+}
+shared_focus = {
+    id = GEO_beria_desires
+    text = beria_desires
+    icon = GFX_goal_GEO_beria_desires
+    cost = 2
+    prerequisite = {
+        focus = GEO_Purge_Proletkultisty
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_chairman_stalin
+    x = 1
+    y = 3
+        
+    available = {
+        has_government = totalist
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus beria_desires"
+        swap_ideas = {
+            remove_idea = GEO_guard_idea2
+            add_idea = GEO_guard_idea3
+        }
+    }
+}
+shared_focus = {
+    id = GEO_beria_gulag
+    text = beria_gulag
+    icon = GFX_goal_GEO_beria_gulag
+    cost = 4
+    prerequisite = {
+        focus = GEO_beria_labour
+    }
+    prerequisite = {
+        focus = GEO_Industrialize_The_Motherland
+    }
+    ai_will_do = {
+        factor = 100
+    }
+    relative_position_id = GEO_chairman_stalin
+    x = -1
+    y = 5
+    available = {
+        has_government = totalist
+    }
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus GEO_beria_gulag"
+        unlock_decision_category_tooltip = GEO_gulag_decisions
+        hidden_effect = {
+            activate_targeted_decision = { target = 577 decision = GEO_Develop_gulag_oil_In_State }
+            activate_targeted_decision = { target = 403 decision = GEO_Develop_gulag_oil_In_State }
+            activate_targeted_decision = { target = 1194 decision = GEO_Develop_gulag_oil_In_State }
+            activate_targeted_decision = { target = 569 decision = GEO_Develop_gulag_steel_In_State }
+            activate_targeted_decision = { target = 516 decision = GEO_Develop_gulag_steel_In_State }
+            activate_targeted_decision = { target = 214 decision = GEO_Develop_gulag_chromium_In_State }
+            activate_targeted_decision = { target = 397 decision = GEO_Develop_gulag_chromium_In_State }
+            activate_targeted_decision = { target = 400 decision = GEO_Develop_gulag_aluminium_In_State }
+            activate_targeted_decision = { target = 581 decision = GEO_Develop_gulag_aluminium_In_State }
+        }
+    }
+}

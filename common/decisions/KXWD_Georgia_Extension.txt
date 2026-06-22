@@ -55,49 +55,49 @@ GEO_Integration_decisions = {
 			}
 		}
 
-		GEO_Integrate_State = {
-			icon = eng_trade_unions_demand
+		# GEO_Integrate_State = {
+		# 	icon = eng_trade_unions_demand
 	
-			available = {
-				FROM = {
-					is_fully_controlled_by = ROOT
-					compliance > 30
-				}
-			}
+		# 	available = {
+		# 		FROM = {
+		# 			is_fully_controlled_by = ROOT
+		# 			compliance > 30
+		# 		}
+		# 	}
 	
-			visible = {
-				FROM = {
-					is_owned_by = ROOT
-					NOT = { is_core_of = ROOT }
-				}
-			}
+		# 	visible = {
+		# 		FROM = {
+		# 			is_owned_by = ROOT
+		# 			NOT = { is_core_of = ROOT }
+		# 		}
+		# 	}
 	
-			cost = 0
-			days_remove = rus_core_integration_time_to_remove
-			cancel_if_not_visible = yes
+		# 	cost = 0
+		# 	days_remove = rus_core_integration_time_to_remove
+		# 	cancel_if_not_visible = yes
 	
-			state_target = yes
-			target_array = RUS_integration_state_array
-			target_root_trigger = {
-				has_country_flag = RUS_can_integrate
-			}
-			target_trigger = {
-				FROM = {
-					is_owned_by = ROOT
-					NOT = { is_core_of = ROOT }
-				}
-			}
+		# 	state_target = yes
+		# 	target_array = RUS_integration_state_array
+		# 	target_root_trigger = {
+		# 		has_country_flag = RUS_can_integrate
+		# 	}
+		# 	target_trigger = {
+		# 		FROM = {
+		# 			is_owned_by = ROOT
+		# 			NOT = { is_core_of = ROOT }
+		# 		}
+		# 	}
 	
-			ai_will_do = {
-				factor = 1000
-			}
+		# 	ai_will_do = {
+		# 		factor = 1000
+		# 	}
 	
-			remove_effect = {
-				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Integrate_State target: [From.GetName]"
-				hidden_effect = { remove_state_claim = FROM }
-				add_state_core = FROM
-			}
-		}
+		# 	remove_effect = {
+		# 		log = "[GetDateText]: [Root.GetName]: Decision remove GEO_Integrate_State target: [From.GetName]"
+		# 		hidden_effect = { remove_state_claim = FROM }
+		# 		add_state_core = FROM
+		# 	}
+		# }
 
 }
 
