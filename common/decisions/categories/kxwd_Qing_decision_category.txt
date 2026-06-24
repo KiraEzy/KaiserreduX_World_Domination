@@ -1,0 +1,15 @@
+QING_great_game = {
+	priority = 10
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = QIE
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = QIE_demand_fealty
+			has_completed_focus = QIE_imperial_consolidation
+		}
+	}
+}

@@ -1,0 +1,36 @@
+
+###################################
+# Shanxi Clique Events extensionm #
+###################################
+
+add_namespace = SHXWD
+
+country_event = {
+	id = SHXWD.1
+	title = SHXWD.1.t
+	desc = SHXWD.1.d
+    picture = GFX_report_event_federalist_troops_rally
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SHXWD.1" }
+
+	option = {
+		name = SHXWD.1.a
+        load_oob = "SHXWD_order"
+	}
+}	
+
+country_event = {
+	id = SHXWD.2
+	title = SHXWD.2.t
+	desc = SHXWD.2.d
+    picture = GFX_report_event_federalist_troops_rally
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = { log = "[GetDateText]: [Root.GetName]: event SHXWD.2" }
+
+	option = {
+		name = SHXWD.2.a
+        load_oob = "SHXWD_order"
+	}
+}
