@@ -5,11 +5,13 @@ SIC_great_game = {
 	allowed = {
 		original_tag = SIC
 	}
-	visible = { 
-		has_completed_focus = SIC_politics
-		has_completed_focus = SIC_Holy_Italia
-		has_completed_focus = SIC_criminal_axis
-		has_completed_focus = SIC_stable_democracy
-		has_completed_focus = SIC_unbreakable_bundle
+	visible = {
+		or = {
+			has_completed_focus = SIC_politics
+			has_completed_focus = SIC_Holy_Italia
+			has_completed_focus = SIC_criminal_axis
+			has_completed_focus = SIC_stable_democracy
+			has_completed_focus = SIC_unbreakable_bundle
+		}
 	}
 }
