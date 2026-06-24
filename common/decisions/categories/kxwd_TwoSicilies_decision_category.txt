@@ -6,14 +6,6 @@ SIC_great_game = {
 		original_tag = SIC
 	}
 	visible = { 
-		OR = {
-			has_country_flag = SIC_empire
-			has_cosmetic_tag = SRI_mafia_italy
-			has_completed_focus = SIC_Holy_Italia
-			has_completed_focus = SIC_unbreakable_bundle
-		}
-		NOT = {
-			has_completed_focus = SIC_papal_crowning
-		}
+		has_completed_focus = SIC_politics
 	}
 }
