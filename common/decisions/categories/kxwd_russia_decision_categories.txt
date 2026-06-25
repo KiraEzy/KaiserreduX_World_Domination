@@ -69,6 +69,7 @@ RUS_absolutist_great_game = {
 			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restoration
 			has_completed_focus = RUS_Regency #Drozdovite Regency
 		}
+		NOT = { has_completed_focus = RUS_Rally_The_Monarchists }
 	}
 }
 
