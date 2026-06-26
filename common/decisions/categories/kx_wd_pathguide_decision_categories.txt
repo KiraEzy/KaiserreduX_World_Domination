@@ -194,3 +194,14 @@ FRA_WD_pathguide = {
 		tag = FRA
 	}
 }
+
+HOL_WD_pathguide = {
+	icon = GFX_decision_category_foreign_policy
+	allowed = {
+		original_tag = HOL
+	}
+
+	visible = {
+		tag = HOL
+	}
+}

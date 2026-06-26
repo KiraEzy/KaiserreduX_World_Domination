@@ -1,0 +1,54 @@
+HOLWD_INS_game = {
+	icon = GFX_decision_category_foreign_policy
+    priority = 10
+
+	allowed = {
+		original_tag = HOL
+	}
+
+	visible = { 
+		has_country_flag = HOLWD_INS_game_flag
+	}
+}
+
+HOL_great_game = {
+	icon = GFX_decision_category_foreign_policy
+    priority = 11
+
+	allowed = {
+		# original_tag = HOL
+		always = no
+	}
+
+	visible = { 
+		# has_completed_focus = HOLWD_Expansionism
+		always = no
+	}
+}
+
+HOL_black_monday_recovery_category = {
+	icon = GFX_decision_category_economic_policy
+	priority = 15
+
+	allowed = {
+		original_tag = HOL
+	}
+	visible = {
+		has_completed_focus = HOLWD_Recovery
+		NOT = { has_country_flag = HOL_black_monday_recovered }
+	}
+}
+
+HOL_black_monday_recovery_category_recovered = {
+	icon = GFX_decision_category_economic_policy
+	priority = 15
+	visible_when_empty = yes
+
+	allowed = {
+		original_tag = HOL
+	}
+	visible = {
+		has_completed_focus = HOLWD_Recovery
+		has_country_flag = HOL_black_monday_recovered
+	}
+}
