@@ -1,0 +1,317 @@
+﻿
+add_namespace = holwd
+
+country_event = { #Wilhelmina seizes control
+	id = holwd.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.2.t
+	desc = holwd.2.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #Hail Wilhelmina
+		name = holwd.2.a
+		
+
+		create_country_leader = {
+			name = "Wilhelmina"
+			desc = "POLITICS_WILHELMINA_DESC"
+			picture = "gfx/leaders/HOL/Portrait_Holland_Wilhelmina.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+			traits = {
+			}
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+			long_name = HOLWD_Orange_Nassau_long
+    		name = HOLWD_Orange_Nassau
+		}
+		set_country_flag = HOLWD_Absolutist
+		set_cosmetic_tag = HOL_HOL_OCC
+		remove_all_ministers = yes
+		add_ideas = HOL_Graaf_de_Marchant_et_d'Ansembourg_hog_ade
+		add_ideas = HOL_Frans_B_van_Blokland_for_ade
+		add_ideas = HOL_Kees_Staf_eco_sco
+		add_ideas = HOL_Louis_Einthoven_sec_ade
+	}
+}
+
+country_event = { #belgium purchased
+	id = holwd.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.3.t
+	desc = holwd.3.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #united at last
+		name = holwd.3.a
+
+		transfer_navy = {
+    		target = BEL
+		}
+		annex_country = {
+    		target = BEL
+    		transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #belgium coup succes
+	id = holwd.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.4.t
+	desc = holwd.4.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #united at last
+		name = holwd.4.a
+
+		transfer_navy = {
+    		target = BEL
+		}
+		annex_country = {
+    		target = BEL
+    		transfer_troops = yes
+		}
+	}
+}
+
+country_event = { #boer question
+	id = holwd.5
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.5.t
+	desc = holwd.5.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #unite
+		name = holwd.5.a
+
+		add_state_core = 1176
+		add_state_core = 681
+		add_state_core = 945
+		add_state_core = 946
+		add_state_core = 719
+		add_state_core = 947
+		add_state_core = 275
+		add_state_claim = 85
+		add_state_claim = 738
+	}
+	option = { #dont unite
+		name = holwd.5.b
+	}
+}
+
+country_event = { #america question
+	id = holwd.6
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.6.t
+	desc = holwd.6.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #unite
+		name = holwd.6.a
+
+		add_state_core = 1162
+		add_state_core = 359
+		add_state_core = 358
+		add_state_core = 931
+		add_state_core = 935
+	}
+	option = { #dont unite
+		name = holwd.6.b
+	}
+}
+
+country_event = { #indonesia question
+	id = holwd.7
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.2" }
+	title = holwd.7.t
+	desc = holwd.7.d
+	
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #unite
+		name = holwd.7.a
+
+		annex_country = {
+    		target = DEI
+    		transfer_troops = yes
+		}
+
+		set_country_flag = HOLWD_INS_game_flag
+
+		add_state_core = 1020
+		add_state_core = 1333
+		add_state_claim = 1022
+		add_state_claim = 1021
+		add_state_claim = 335
+		add_state_claim = 1023
+		add_state_claim = 1019
+		add_state_claim = 667
+		add_state_claim = 1018
+		add_state_claim = 1017
+		add_state_claim = 334
+		add_state_claim = 1016
+		add_state_claim = 673
+		add_state_claim = 672
+		add_state_claim = 668
+		add_state_claim = 669
+		add_state_claim = 843
+
+		unlock_decision_tooltip = HOLWD_INS_int
+	}
+	option = { #puppet — strip factories, resources, and manpower for the metropole
+		name = holwd.7.b
+		ai_chance = {
+			factor = 40
+		}
+
+		custom_effect_tooltip = holwd.7.b.tt
+
+		set_country_flag = HOLWD_indonesia_puppeted
+
+		add_ideas = KXWD_HOL_Colonial_Exploitation
+		add_political_power = 100
+		add_stability = -0.1
+		add_war_support = 0.05
+
+		add_offsite_building = {
+			type = industrial_complex
+			level = 2
+		}
+		add_offsite_building = {
+			type = arms_factory
+			level = 1
+		}
+		add_offsite_building = {
+			type = dockyard
+			level = 1
+		}
+
+		7 = {
+			add_extra_state_shared_building_slots = 2
+			add_resource = {
+				type = rubber
+				amount = 12
+			}
+			add_resource = {
+				type = oil
+				amount = 6
+			}
+		}
+		35 = {
+			add_resource = {
+				type = rubber
+				amount = 8
+			}
+			add_resource = {
+				type = tungsten
+				amount = 4
+			}
+		}
+
+		hidden_effect = {
+			holwd_puppet_indonesia_extract_effect = yes
+		}
+	}
+}
+
+country_event = { #great state — choose war direction
+	id = holwd.8
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.8" }
+	title = holwd.8.t
+	desc = holwd.8.d
+
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { #fight germany
+		name = holwd.8.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = HOLWD_unlock_fight_ger
+		custom_effect_tooltip = holwd.8.a.tt
+		hidden_effect = {
+			holwd_check_secondary_fight_focus_unlocks = yes
+		}
+	}
+
+	option = { #fight union of britain
+		name = holwd.8.b
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = HOLWD_unlock_fight_uob
+		custom_effect_tooltip = holwd.8.b.tt
+		hidden_effect = {
+			holwd_check_secondary_fight_focus_unlocks = yes
+		}
+	}
+}
+
+country_event = { #owns London — unlock Fight GER focus
+	id = holwd.9
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.9" }
+	title = holwd.9.t
+	desc = holwd.9.d
+
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = holwd.9.a
+		set_country_flag = HOLWD_unlock_fight_ger
+		custom_effect_tooltip = holwd.9.a.tt
+	}
+}
+
+country_event = { #owns Berlin — unlock Fight UOB focus
+	id = holwd.10
+	immediate = { log = "[GetDateText]: [Root.GetName]: event holwd.10" }
+	title = holwd.10.t
+	desc = holwd.10.d
+
+	picture = GFX_report_event_MLT_carribean
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = holwd.10.a
+		set_country_flag = HOLWD_unlock_fight_uob
+		custom_effect_tooltip = holwd.10.a.tt
+	}
+}

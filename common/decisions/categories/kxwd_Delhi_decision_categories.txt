@@ -1,0 +1,22 @@
+DEH_int_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = DEH
+	}
+
+	visible = { 
+		has_completed_focus = DEHWD_loyalty_to_king	
+    }
+}
+DEH_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = DEH
+	}
+
+	visible = { 
+		has_completed_focus = DEHWD_loyalty_to_king	
+    }
+}

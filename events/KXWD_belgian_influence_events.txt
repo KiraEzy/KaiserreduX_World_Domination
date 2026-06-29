@@ -1,0 +1,47 @@
+add_namespace = KXWD_BEL_influence
+
+country_event = {
+	id = KXWD_BEL_influence.1
+	title = KXWD_BEL_influence.1.t
+	desc = KXWD_BEL_influence.1.d
+	is_triggered_only = yes
+
+	option = {
+		name = KXWD_BEL_influence.1.a
+	}
+}
+
+country_event = {
+	id = KXWD_BEL_influence.2
+	title = KXWD_BEL_influence.2.t
+	desc = KXWD_BEL_influence.2.d
+	is_triggered_only = yes
+
+	option = {
+		name = KXWD_BEL_influence.2.a
+	}
+}
+
+country_event = {
+	id = KXWD_BEL_influence.10
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_BEL_influence.10 (partner GER territorial + finalize)"
+		KXWD_BEL_resolve_GER_territorial = yes
+		KXWD_BEL_resolve_neutral_and_finalize = yes
+	}
+}
+
+country_event = {
+	id = KXWD_BEL_influence.11
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_BEL_influence.11 (partner HOL territorial + finalize)"
+		KXWD_BEL_resolve_HOL_territorial = yes
+		KXWD_BEL_resolve_neutral_and_finalize = yes
+	}
+}

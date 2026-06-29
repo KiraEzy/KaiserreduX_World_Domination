@@ -1,0 +1,16 @@
+---
+description: Load and prioritize project documentation from .resouces
+alwaysApply: true
+---
+
+# Documentation First: `.resouces`
+
+Before editing files, proposing logic, or answering implementation questions:
+
+1. Read relevant materials in `.resouces/` first.
+2. Treat `.resouces/` as the primary source of truth for this project's rare language/scenario conventions.
+3. If both code and docs differ, follow `.resouces/` unless the user explicitly overrides it.
+4. When useful, cite which `.resouces/` files informed the decision.
+5. If `.resouces/` is empty or missing needed guidance, state that briefly and continue with best-effort reasoning.
+
+If a user references `.resources`, check `.resouces/` as the intended location in this project.
