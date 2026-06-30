@@ -1,0 +1,13 @@
+SRD_great_game = {
+	priority = 10
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = SRD
+	}
+	visible = {
+		or = {
+			has_completed_focus = SRD_kingdom_of_italy
+		}
+	}
+}
