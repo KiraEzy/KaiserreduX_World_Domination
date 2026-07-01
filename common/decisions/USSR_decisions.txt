@@ -1,263 +1,5 @@
 
 SOV_Great_Game_SSR_decisions = {
-DAT_Soviet_grab = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
-			
-			log = "QUE"
-			QUE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NFL"
-			NFL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CAN"
-			CAN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TEX"
-			TEX = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "USA"
-			USA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "DSR"
-			DSR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CAL"
-			CAL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TXS"
-			TXS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "WCC"
-			WCC = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "YUC"
-			YUC = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MEX"
-			MEX = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GUA"
-			GUA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ELS"
-			ELS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "HON"
-			HON = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NIC"
-			NIC = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "COS"
-			COS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PAN"
-			PAN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "JAM"
-			JAM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CUB"
-			CUB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "HAI"
-			HAI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PRI"
-			PRI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "COL"
-			COL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "VEN"
-			VEN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ECU"
-			ECU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GYA"
-			GYA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SUR"
-			SUR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PIR"
-			PIR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PRU"
-			PRU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ARZ"
-			ARZ = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BOL"
-			BOL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CHL"
-			CHL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PAR"
-			PAR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "FOP"
-			FOP = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ARG"
-			ARG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BRA"
-			BRA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "URG"
-			URG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-		}
-		days_remove = 0
-	}
 RUS_SOV_establish_rk_UKR = {
 	icon = generic_prepare_civil_war
 
@@ -366,7 +108,7 @@ RUS_SOV_establish_rk_UKR = {
 			}
 		}
 		UKR = { 
-			set_cosmetic_tag = RUS_SOV_UKR_OCC
+			UKR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -473,7 +215,7 @@ RUS_SOV_establish_rk_WHR = {
 			}
 		}
 		WHR = { 
-			set_cosmetic_tag = RUS_SOV_WHR_OCC
+			WHR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -580,7 +322,7 @@ RUS_SOV_establish_rk_EST = {
 			}
 		}
 		EST = { 
-			set_cosmetic_tag = RUS_SOV_EST_OCC
+			EST_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -688,7 +430,7 @@ RUS_SOV_establish_rk_LAT = {
 			}
 		}
 		LAT = { 
-			set_cosmetic_tag = RUS_SOV_LAT_OCC
+			LAT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -791,7 +533,7 @@ RUS_SOV_establish_rk_LIT = {
 			}
 		}
 		LIT = { 
-			set_cosmetic_tag = RUS_SOV_LIT_OCC
+			LIT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -906,7 +648,7 @@ RUS_SOV_establish_rk_POL = {
 			}
 		}
 		POL = { 
-			set_cosmetic_tag = RUS_SOV_POL_OCC
+			POL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1014,7 +756,7 @@ RUS_SOV_establish_rk_DDR = {
 			}
 		}
 		DDR = { 
-			set_cosmetic_tag = RUS_SOV_DDR_OCC
+			DDR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1127,7 +869,7 @@ RUS_SOV_establish_rk_FIN = {
 			}
 		}
 		FIN = { 
-			set_cosmetic_tag = RUS_SOV_FIN_OCC
+			FIN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1236,7 +978,7 @@ RUS_SOV_establish_rk_SWE = {
 			}
 		}
 		SWE = { 
-			set_cosmetic_tag = RUS_SOV_SWE_OCC
+			SWE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1342,7 +1084,7 @@ RUS_SOV_establish_rk_NOR = {
 			}
 		}
 		NOR = { 
-			set_cosmetic_tag = RUS_SOV_NOR_OCC
+			NOR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1445,7 +1187,7 @@ RUS_SOV_establish_rk_DEN = {
 			}
 		}
 		DEN = { 
-			set_cosmetic_tag = RUS_SOV_DEN_OCC
+			DEN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1551,7 +1293,7 @@ RUS_SOV_establish_rk_NGF = {
 			}
 		}
 		NGF = { 
-			set_cosmetic_tag = RUS_SOV_NGF_OCC
+			NGF_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1676,7 +1418,7 @@ RUS_SOV_establish_rk_CZE = {
 			}
 		}
 		CZE = { 
-			set_cosmetic_tag = RUS_SOV_CZE_OCC
+			CZE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1779,7 +1521,7 @@ RUS_SOV_establish_rk_BAY = {
 			}
 		}
 		BAY = { 
-			set_cosmetic_tag = RUS_SOV_BAY_OCC
+			BAY_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1882,7 +1624,7 @@ RUS_SOV_establish_rk_WGR = {
 			}
 		}
 		WGR = { 
-			set_cosmetic_tag = RUS_SOV_WGR_OCC
+			WGR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2001,7 +1743,7 @@ RUS_SOV_establish_rk_HOL = {
 			}
 		}
 		HOL = { 
-			set_cosmetic_tag = RUS_SOV_HOL_OCC
+			HOL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2109,7 +1851,7 @@ RUS_SOV_establish_rk_BEL = {
 			}
 		}
 		BEL = { 
-			set_cosmetic_tag = RUS_SOV_BEL_OCC
+			BEL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2208,7 +1950,7 @@ RUS_SOV_establish_rk_LUX = {
 			}
 		}
 		LUX = { 
-			set_cosmetic_tag = RUS_SOV_LUX_OCC
+			LUX_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2307,7 +2049,7 @@ RUS_SOV_establish_rk_ICE = {
 			}
 		}
 		ICE = { 
-			set_cosmetic_tag = RUS_SOV_ICE_OCC
+			ICE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2417,7 +2159,7 @@ RUS_SOV_establish_rk_FRP = {
 			}
 		}
 		FRP = { 
-			set_cosmetic_tag = RUS_SOV_FRP_OCC
+			FRP_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2526,7 +2268,7 @@ RUS_SOV_establish_rk_AUS = {
 			}
 		}
 		AUS = { 
-			set_cosmetic_tag = RUS_SOV_AUS_OCC
+			AUS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2637,7 +2379,7 @@ RUS_SOV_establish_rk_SWI = {
 			}
 		}
 		SWI = { 
-			set_cosmetic_tag = RUS_SOV_SWI_OCC
+			SWI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2740,7 +2482,7 @@ RUS_SOV_establish_rk_BRI = {
 			}
 		}
 		BRI = { 
-			set_cosmetic_tag = RUS_SOV_BRI_OCC
+			BRI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2867,7 +2609,7 @@ RUS_SOV_establish_rk_HUN = {
 			}
 		}
 		HUN = { 
-			set_cosmetic_tag = RUS_SOV_HUN_OCC
+			HUN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -2977,7 +2719,7 @@ RUS_SOV_establish_rk_TRS = {
 			}
 		}
 		TRS = { 
-			set_cosmetic_tag = RUS_SOV_TRS_OCC
+			TRS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3084,7 +2826,7 @@ RUS_SOV_establish_rk_ROM = {
 			}
 		}
 		ROM = { 
-			set_cosmetic_tag = RUS_SOV_ROM_OCC
+			ROM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3192,7 +2934,7 @@ RUS_SOV_establish_rk_BUL = {
 			}
 		}
 		BUL = { 
-			set_cosmetic_tag = RUS_SOV_BUL_OCC
+			BUL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3327,7 +3069,7 @@ RUS_SOV_establish_rk_SER = {
 			}
 		}
 		SER = { 
-			set_cosmetic_tag = RUS_SOV_SER_OCC
+			SER_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3430,7 +3172,7 @@ RUS_SOV_establish_rk_ALB = {
 			}
 		}
 		ALB = { 
-			set_cosmetic_tag = RUS_SOV_ALB_OCC
+			ALB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3541,7 +3283,7 @@ RUS_SOV_establish_rk_GRE = {
 			}
 		}
 		GRE = { 
-			set_cosmetic_tag = RUS_SOV_GRE_OCC
+			GRE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3654,7 +3396,7 @@ RUS_SOV_establish_rk_ITA = {
 			}
 		}
 		ITA = { 
-			set_cosmetic_tag = RUS_SOV_ITA_OCC
+			ITA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3768,7 +3510,7 @@ RUS_SOV_establish_rk_OCC = {
 			}
 		}
 		OCC = { 
-			set_cosmetic_tag = RUS_SOV_OCC_OCC
+			OCC_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3879,7 +3621,7 @@ RUS_SOV_establish_rk_CAT = {
 			}
 		}
 		CAT = { 
-			set_cosmetic_tag = RUS_SOV_CAT_OCC
+			CAT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -3978,7 +3720,7 @@ RUS_SOV_establish_rk_BAS = {
 			}
 		}
 		BAS = { 
-			set_cosmetic_tag = RUS_SOV_BAS_OCC
+			BAS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4101,7 +3843,7 @@ RUS_SOV_establish_rk_CNT = {
 			}
 		}
 		CNT = { 
-			set_cosmetic_tag = RUS_SOV_CNT_OCC
+			CNT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4200,7 +3942,7 @@ RUS_SOV_establish_rk_GLC = {
 			}
 		}
 		GLC = { 
-			set_cosmetic_tag = RUS_SOV_GLC_OCC
+			GLC_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4319,7 +4061,7 @@ RUS_SOV_establish_rk_POR = {
 			}
 		}
 		POR = { 
-			set_cosmetic_tag = RUS_SOV_POR_OCC
+			POR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4429,7 +4171,7 @@ RUS_SOV_establish_rk_GBP = {
 			}
 		}
 		GBP = { 
-			set_cosmetic_tag = RUS_SOV_GBP_OCC
+			GBP_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4532,7 +4274,7 @@ RUS_SOV_establish_rk_SCT = {
 			}
 		}
 		SCT = { 
-			set_cosmetic_tag = RUS_SOV_SCT_OCC
+			SCT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4635,7 +4377,7 @@ RUS_SOV_establish_rk_WAL = {
 			}
 		}
 		WAL = { 
-			set_cosmetic_tag = RUS_SOV_WAL_OCC
+			WAL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4746,7 +4488,7 @@ RUS_SOV_establish_rk_IRE = {
 			}
 		}
 		IRE = { 
-			set_cosmetic_tag = RUS_SOV_IRE_OCC
+			IRE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4846,7 +4588,7 @@ RUS_SOV_establish_rk_TUS = {
 			}
 		}
 		TUS = { 
-			set_cosmetic_tag = RUS_SOV_TUS_OCC
+			TUS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4949,7 +4691,7 @@ RUS_SOV_establish_rk_PAP = {
 			}
 		}
 		PAP = { 
-			set_cosmetic_tag = RUS_SOV_PAP_OCC
+			PAP_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5053,7 +4795,7 @@ RUS_SOV_establish_rk_SIC = {
 			}
 		}
 		SIC = { 
-			set_cosmetic_tag = RUS_SOV_SIC_OCC
+			SIC_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5162,7 +4904,7 @@ RUS_SOV_establish_rk_TUR = {
 			}
 		}
 		TUR = { 
-			set_cosmetic_tag = RUS_SOV_TUR_OCC
+			TUR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5268,7 +5010,7 @@ RUS_SOV_establish_rk_GEO = {
 			}
 		}
 		GEO = { 
-			set_cosmetic_tag = RUS_SOV_GEO_OCC
+			GEO_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5376,7 +5118,7 @@ RUS_SOV_establish_rk_ARM = {
 			}
 		}
 		ARM = { 
-			set_cosmetic_tag = RUS_SOV_ARM_OCC
+			ARM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5487,7 +5229,7 @@ RUS_SOV_establish_rk_AZE = {
 			}
 		}
 		AZE = { 
-			set_cosmetic_tag = RUS_SOV_AZE_OCC
+			AZE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5594,7 +5336,7 @@ RUS_SOV_establish_rk_KUR = {
 			}
 		}
 		KUR = { 
-			set_cosmetic_tag = RUS_SOV_KUR_OCC
+			KUR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5701,7 +5443,7 @@ RUS_SOV_establish_rk_SYR = {
 			}
 		}
 		SYR = { 
-			set_cosmetic_tag = RUS_SOV_SYR_OCC
+			SYR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5814,7 +5556,7 @@ RUS_SOV_establish_rk_JBS = {
 			}
 		}
 		JBS = { 
-			set_cosmetic_tag = RUS_SOV_JBS_OCC
+			JBS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -5921,7 +5663,7 @@ RUS_SOV_establish_rk_YEM = {
 			}
 		}
 		YEM = { 
-			set_cosmetic_tag = RUS_SOV_YEM_OCC
+			YEM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6032,7 +5774,7 @@ RUS_SOV_establish_rk_OMA = {
 			}
 		}
 		OMA = { 
-			set_cosmetic_tag = RUS_SOV_OMA_OCC
+			OMA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6143,7 +5885,7 @@ RUS_SOV_establish_rk_IRQ = {
 			}
 		}
 		IRQ = { 
-			set_cosmetic_tag = RUS_SOV_IRQ_OCC
+			IRQ_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6290,7 +6032,7 @@ RUS_SOV_establish_rk_PER = {
 			}
 		}
 		PER = { 
-			set_cosmetic_tag = RUS_SOV_PER_OCC
+			PER_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6433,7 +6175,7 @@ RUS_SOV_establish_rk_ALO = {
 			}
 		}
 		ALO = { 
-			set_cosmetic_tag = RUS_SOV_ALO_OCC
+			ALO_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6568,7 +6310,7 @@ RUS_SOV_establish_rk_TRK = {
 			}
 		}
 		TRK = { 
-			set_cosmetic_tag = RUS_SOV_TRK_OCC
+			TRK_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6679,7 +6421,7 @@ RUS_SOV_establish_rk_KHI = {
 			}
 		}
 		KHI = { 
-			set_cosmetic_tag = RUS_SOV_KHI_OCC
+			KHI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6794,7 +6536,7 @@ RUS_SOV_establish_rk_UZB = {
 			}
 		}
 		UZB = { 
-			set_cosmetic_tag = RUS_SOV_UZB_OCC
+			UZB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6908,7 +6650,7 @@ RUS_SOV_establish_rk_AFG = {
 			}
 		}
 		AFG = { 
-			set_cosmetic_tag = RUS_SOV_AFG_OCC
+			AFG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7021,7 +6763,7 @@ RUS_SOV_establish_rk_EGY = {
 			}
 		}
 		EGY = { 
-			set_cosmetic_tag = RUS_SOV_EGY_OCC
+			EGY_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7140,7 +6882,7 @@ RUS_SOV_establish_rk_LBA = {
 			}
 		}
 		LBA = { 
-			set_cosmetic_tag = RUS_SOV_LBA_OCC
+			LBA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7243,7 +6985,7 @@ RUS_SOV_establish_rk_TUN = {
 			}
 		}
 		TUN = { 
-			set_cosmetic_tag = RUS_SOV_TUN_OCC
+			TUN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7358,7 +7100,7 @@ RUS_SOV_establish_rk_ALG = {
 			}
 		}
 		ALG = { 
-			set_cosmetic_tag = RUS_SOV_ALG_OCC
+			ALG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7461,7 +7203,7 @@ RUS_SOV_establish_rk_MOR = {
 			}
 		}
 		MOR = { 
-			set_cosmetic_tag = RUS_SOV_MOR_OCC
+			MOR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7564,7 +7306,7 @@ RUS_SOV_establish_rk_WAD = {
 			}
 		}
 		WAD = { 
-			set_cosmetic_tag = RUS_SOV_WAD_OCC
+			WAD_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7671,7 +7413,7 @@ RUS_SOV_establish_rk_MRT = {
 			}
 		}
 		MRT = { 
-			set_cosmetic_tag = RUS_SOV_MRT_OCC
+			MRT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7774,7 +7516,7 @@ RUS_SOV_establish_rk_MAL = {
 			}
 		}
 		MAL = { 
-			set_cosmetic_tag = RUS_SOV_MAL_OCC
+			MAL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7881,7 +7623,7 @@ RUS_SOV_establish_rk_NER = {
 			}
 		}
 		NER = { 
-			set_cosmetic_tag = RUS_SOV_NER_OCC
+			NER_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -7980,7 +7722,7 @@ RUS_SOV_establish_rk_BFA = {
 			}
 		}
 		BFA = { 
-			set_cosmetic_tag = RUS_SOV_BFA_OCC
+			BFA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8082,7 +7824,7 @@ RUS_SOV_establish_rk_SEN = {
 			}
 		}
 		SEN = { 
-			set_cosmetic_tag = RUS_SOV_SEN_OCC
+			SEN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8181,7 +7923,7 @@ RUS_SOV_establish_rk_GNA = {
 			}
 		}
 		GNA = { 
-			set_cosmetic_tag = RUS_SOV_GNA_OCC
+			GNA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8280,7 +8022,7 @@ RUS_SOV_establish_rk_SIE = {
 			}
 		}
 		SIE = { 
-			set_cosmetic_tag = RUS_SOV_SIE_OCC
+			SIE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8383,7 +8125,7 @@ RUS_SOV_establish_rk_LIB = {
 			}
 		}
 		LIB = { 
-			set_cosmetic_tag = RUS_SOV_LIB_OCC
+			LIB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8486,7 +8228,7 @@ RUS_SOV_establish_rk_IVO = {
 			}
 		}
 		IVO = { 
-			set_cosmetic_tag = RUS_SOV_IVO_OCC
+			IVO_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8597,7 +8339,7 @@ RUS_SOV_establish_rk_GHA = {
 			}
 		}
 		GHA = { 
-			set_cosmetic_tag = RUS_SOV_GHA_OCC
+			GHA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8696,7 +8438,7 @@ RUS_SOV_establish_rk_TOG = {
 			}
 		}
 		TOG = { 
-			set_cosmetic_tag = RUS_SOV_TOG_OCC
+			TOG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8795,7 +8537,7 @@ RUS_SOV_establish_rk_DAH = {
 			}
 		}
 		DAH = { 
-			set_cosmetic_tag = RUS_SOV_DAH_OCC
+			DAH_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -8898,7 +8640,7 @@ RUS_SOV_establish_rk_NGR = {
 			}
 		}
 		NGR = { 
-			set_cosmetic_tag = RUS_SOV_NGR_OCC
+			NGR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9001,7 +8743,7 @@ RUS_SOV_establish_rk_CEA = {
 			}
 		}
 		CEA = { 
-			set_cosmetic_tag = RUS_SOV_CEA_OCC
+			CEA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9114,7 +8856,7 @@ RUS_SOV_establish_rk_CMR = {
 			}
 		}
 		CMR = { 
-			set_cosmetic_tag = RUS_SOV_CMR_OCC
+			CMR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9213,7 +8955,7 @@ RUS_SOV_establish_rk_GAB = {
 			}
 		}
 		GAB = { 
-			set_cosmetic_tag = RUS_SOV_GAB_OCC
+			GAB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9316,7 +9058,7 @@ RUS_SOV_establish_rk_ERI = {
 			}
 		}
 		ERI = { 
-			set_cosmetic_tag = RUS_SOV_ERI_OCC
+			ERI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9443,7 +9185,7 @@ RUS_SOV_establish_rk_ETH = {
 			}
 		}
 		ETH = { 
-			set_cosmetic_tag = RUS_SOV_ETH_OCC
+			ETH_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9562,7 +9304,7 @@ RUS_SOV_establish_rk_SOM = {
 			}
 		}
 		SOM = { 
-			set_cosmetic_tag = RUS_SOV_SOM_OCC
+			SOM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9673,7 +9415,7 @@ RUS_SOV_establish_rk_KEN = {
 			}
 		}
 		KEN = { 
-			set_cosmetic_tag = RUS_SOV_KEN_OCC
+			KEN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9772,7 +9514,7 @@ RUS_SOV_establish_rk_UGA = {
 			}
 		}
 		UGA = { 
-			set_cosmetic_tag = RUS_SOV_UGA_OCC
+			UGA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9891,7 +9633,7 @@ RUS_SOV_establish_rk_TZN = {
 			}
 		}
 		TZN = { 
-			set_cosmetic_tag = RUS_SOV_TZN_OCC
+			TZN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -9990,7 +9732,7 @@ RUS_SOV_establish_rk_BRD = {
 			}
 		}
 		BRD = { 
-			set_cosmetic_tag = RUS_SOV_BRD_OCC
+			BRD_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10089,7 +9831,7 @@ RUS_SOV_establish_rk_BFA = {
 			}
 		}
 		BFA = { 
-			set_cosmetic_tag = RUS_SOV_BFA_OCC
+			BFA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10207,7 +9949,7 @@ RUS_SOV_establish_rk_LPD = {
 			}
 		}
 		LPD = { 
-			set_cosmetic_tag = RUS_SOV_LPD_OCC
+			LPD_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10322,7 +10064,7 @@ RUS_SOV_establish_rk_ANG = {
 			}
 		}
 		ANG = { 
-			set_cosmetic_tag = RUS_SOV_ANG_OCC
+			ANG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10425,7 +10167,7 @@ RUS_SOV_establish_rk_ZAM = {
 			}
 		}
 		ZAM = { 
-			set_cosmetic_tag = RUS_SOV_ZAM_OCC
+			ZAM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10524,7 +10266,7 @@ RUS_SOV_establish_rk_MLW = {
 			}
 		}
 		MLW = { 
-			set_cosmetic_tag = RUS_SOV_MLW_OCC
+			MLW_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10631,7 +10373,7 @@ RUS_SOV_establish_rk_MZB = {
 			}
 		}
 		MZB = { 
-			set_cosmetic_tag = RUS_SOV_MZB_OCC
+			MZB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10730,7 +10472,7 @@ RUS_SOV_establish_rk_ZIM = {
 			}
 		}
 		ZIM = { 
-			set_cosmetic_tag = RUS_SOV_ZIM_OCC
+			ZIM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10833,7 +10575,7 @@ RUS_SOV_establish_rk_NMB = {
 			}
 		}
 		NMB = { 
-			set_cosmetic_tag = RUS_SOV_NMB_OCC
+			NMB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -10932,7 +10674,7 @@ RUS_SOV_establish_rk_BOT = {
 			}
 		}
 		BOT = { 
-			set_cosmetic_tag = RUS_SOV_BOT_OCC
+			BOT_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11063,7 +10805,7 @@ RUS_SOV_establish_rk_SAF = {
 			}
 		}
 		SAF = { 
-			set_cosmetic_tag = RUS_SOV_SAF_OCC
+			SAF_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11169,7 +10911,7 @@ RUS_SOV_establish_rk_MAG = {
 			}
 		}
 		MAG = { 
-			set_cosmetic_tag = RUS_SOV_MAG_OCC
+			MAG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11292,7 +11034,7 @@ RUS_SOV_establish_rk_ETS = {
 			}
 		}
 		ETS = { 
-			set_cosmetic_tag = RUS_SOV_ETS_OCC
+			ETS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11396,7 +11138,7 @@ RUS_SOV_establish_rk_MON = {
 			}
 		}
 		MON = { 
-			set_cosmetic_tag = RUS_SOV_MON_OCC
+			MON_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11505,7 +11247,7 @@ RUS_SOV_establish_rk_MAN = {
 			}
 		}
 		MAN = { 
-			set_cosmetic_tag = RUS_SOV_MAN_OCC
+			MAN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11620,7 +11362,7 @@ RUS_SOV_establish_rk_KOR = {
 			}
 		}
 		KOR = { 
-			set_cosmetic_tag = RUS_SOV_KOR_OCC
+			KOR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11797,7 +11539,7 @@ RUS_SOV_establish_rk_QIE = {
 			}
 		}
 		QIE = { 
-			set_cosmetic_tag = RUS_SOV_QIE_OCC
+			QIE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11900,7 +11642,7 @@ RUS_SOV_establish_rk_TIB = {
 			}
 		}
 		TIB = { 
-			set_cosmetic_tag = RUS_SOV_TIB_OCC
+			TIB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -11999,7 +11741,7 @@ RUS_SOV_establish_rk_NEP = {
 			}
 		}
 		NEP = { 
-			set_cosmetic_tag = RUS_SOV_NEP_OCC
+			NEP_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12098,7 +11840,7 @@ RUS_SOV_establish_rk_SKM = {
 			}
 		}
 		SKM = { 
-			set_cosmetic_tag = RUS_SOV_SKM_OCC
+			SKM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12197,7 +11939,7 @@ RUS_SOV_establish_rk_BHU = {
 			}
 		}
 		BHU = { 
-			set_cosmetic_tag = RUS_SOV_BHU_OCC
+			BHU_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12343,7 +12085,7 @@ RUS_SOV_establish_rk_DEH = {
 			}
 		}
 		DEH = { 
-			set_cosmetic_tag = RUS_SOV_DEH_OCC
+			DEH_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12442,7 +12184,7 @@ RUS_SOV_establish_rk_KAC = {
 			}
 		}
 		KAC = { 
-			set_cosmetic_tag = RUS_SOV_KAC_OCC
+			KAC_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12549,7 +12291,7 @@ RUS_SOV_establish_rk_BRM = {
 			}
 		}
 		BRM = { 
-			set_cosmetic_tag = RUS_SOV_BRM_OCC
+			BRM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12649,7 +12391,7 @@ RUS_SOV_establish_rk_SHA = {
 			}
 		}
 		SHA = { 
-			set_cosmetic_tag = RUS_SOV_SHA_OCC
+			SHA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12764,7 +12506,7 @@ RUS_SOV_establish_rk_VIN = {
 			}
 		}
 		VIN = { 
-			set_cosmetic_tag = RUS_SOV_VIN_OCC
+			VIN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12864,7 +12606,7 @@ RUS_SOV_establish_rk_LAO = {
 			}
 		}
 		LAO = { 
-			set_cosmetic_tag = RUS_SOV_LAO_OCC
+			LAO_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -12965,7 +12707,7 @@ RUS_SOV_establish_rk_CAM = {
 			}
 		}
 		CAM = { 
-			set_cosmetic_tag = RUS_SOV_CAM_OCC
+			CAM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13070,7 +12812,7 @@ RUS_SOV_establish_rk_SIA = {
 			}
 		}
 		SIA = { 
-			set_cosmetic_tag = RUS_SOV_SIA_OCC
+			SIA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13173,7 +12915,7 @@ RUS_SOV_establish_rk_MLY = {
 			}
 		}
 		MLY = { 
-			set_cosmetic_tag = RUS_SOV_MLY_OCC
+			MLY_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13276,7 +13018,7 @@ RUS_SOV_establish_rk_SAR = {
 			}
 		}
 		SAR = { 
-			set_cosmetic_tag = RUS_SOV_SAR_OCC
+			SAR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13399,7 +13141,7 @@ RUS_SOV_establish_rk_PHI = {
 			}
 		}
 		PHI = { 
-			set_cosmetic_tag = RUS_SOV_PHI_OCC
+			PHI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13518,7 +13260,7 @@ RUS_SOV_establish_rk_JAP = {
 			}
 		}
 		JAP = { 
-			set_cosmetic_tag = RUS_SOV_JAP_OCC
+			JAP_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13633,7 +13375,7 @@ RUS_SOV_establish_rk_INS = {
 			}
 		}
 		INS = { 
-			set_cosmetic_tag = RUS_SOV_INS_OCC
+			INS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13750,7 +13492,7 @@ RUS_SOV_establish_rk_PNG = {
 			}
 		}
 		PNG = { 
-			set_cosmetic_tag = RUS_SOV_PNG_OCC
+			PNG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -13897,7 +13639,7 @@ RUS_SOV_establish_rk_AST = {
 			}
 		}
 		AST = { 
-			set_cosmetic_tag = RUS_SOV_AST_OCC
+			AST_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14000,7 +13742,7 @@ RUS_SOV_establish_rk_NZL = {
 			}
 		}
 		NZL = { 
-			set_cosmetic_tag = RUS_SOV_NZL_OCC
+			NZL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14131,7 +13873,7 @@ RUS_SOV_establish_rk_HAW = {
 			}
 		}
 		HAW = { 
-			set_cosmetic_tag = RUS_SOV_HAW_OCC
+			HAW_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14242,7 +13984,7 @@ RUS_SOV_establish_rk_QUE = {
 			}
 		}
 		QUE = { 
-			set_cosmetic_tag = RUS_SOV_QUE_OCC
+			QUE_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14358,7 +14100,7 @@ RUS_SOV_establish_rk_CAN = {
 			}
 		}
 		CAN = { 
-			set_cosmetic_tag = RUS_SOV_CAN_OCC
+			CAN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14526,7 +14268,7 @@ RUS_SOV_establish_rk_USA = {
 			}
 		}
 		USA = { 
-			set_cosmetic_tag = RUS_SOV_USA_OCC
+			USA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14632,7 +14374,7 @@ RUS_SOV_establish_rk_CAL = {
 			}
 		}
 		CAL = { 
-			set_cosmetic_tag = RUS_SOV_CAL_OCC
+			CAL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14733,7 +14475,7 @@ RUS_SOV_establish_rk_TXS = {
 			}
 		}
 		TXS = { 
-			set_cosmetic_tag = RUS_SOV_TXS_OCC
+			TXS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14847,7 +14589,7 @@ RUS_SOV_establish_rk_MEX = {
 			}
 		}
 		MEX = { 
-			set_cosmetic_tag = RUS_SOV_MEX_OCC
+			MEX_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -14958,7 +14700,7 @@ RUS_SOV_establish_rk_GUA = {
 			}
 		}
 		GUA = { 
-			set_cosmetic_tag = RUS_SOV_GUA_OCC
+			GUA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15061,7 +14803,7 @@ RUS_SOV_establish_rk_ELS = {
 			}
 		}
 		ELS = { 
-			set_cosmetic_tag = RUS_SOV_ELS_OCC
+			ELS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15172,7 +14914,7 @@ RUS_SOV_establish_rk_HON = {
 			}
 		}
 		HON = { 
-			set_cosmetic_tag = RUS_SOV_HON_OCC
+			HON_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15287,7 +15029,7 @@ RUS_SOV_establish_rk_NIC = {
 			}
 		}
 		NIC = { 
-			set_cosmetic_tag = RUS_SOV_NIC_OCC
+			NIC_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15398,7 +15140,7 @@ RUS_SOV_establish_rk_COS = {
 			}
 		}
 		COS = { 
-			set_cosmetic_tag = RUS_SOV_COS_OCC
+			COS_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15513,7 +15255,7 @@ RUS_SOV_establish_rk_PAN = {
 			}
 		}
 		PAN = { 
-			set_cosmetic_tag = RUS_SOV_PAN_OCC
+			PAN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15612,7 +15354,7 @@ RUS_SOV_establish_rk_JAM = {
 			}
 		}
 		JAM = { 
-			set_cosmetic_tag = RUS_SOV_JAM_OCC
+			JAM_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15719,7 +15461,7 @@ RUS_SOV_establish_rk_CUB = {
 			}
 		}
 		CUB = { 
-			set_cosmetic_tag = RUS_SOV_CUB_OCC
+			CUB_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15822,7 +15564,7 @@ RUS_SOV_establish_rk_HAI = {
 			}
 		}
 		HAI = { 
-			set_cosmetic_tag = RUS_SOV_HAI_OCC
+			HAI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -15925,7 +15667,7 @@ RUS_SOV_establish_rk_PRI = {
 			}
 		}
 		PRI = { 
-			set_cosmetic_tag = RUS_SOV_PRI_OCC
+			PRI_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16060,7 +15802,7 @@ RUS_SOV_establish_rk_COL = {
 			}
 		}
 		COL = { 
-			set_cosmetic_tag = RUS_SOV_COL_OCC
+			COL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16183,7 +15925,7 @@ RUS_SOV_establish_rk_VEN = {
 			}
 		}
 		VEN = { 
-			set_cosmetic_tag = RUS_SOV_VEN_OCC
+			VEN_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16290,7 +16032,7 @@ RUS_SOV_establish_rk_ECU = {
 			}
 		}
 		ECU = { 
-			set_cosmetic_tag = RUS_SOV_ECU_OCC
+			ECU_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16398,7 +16140,7 @@ RUS_SOV_establish_rk_GYA = {
 			}
 		}
 		GYA = { 
-			set_cosmetic_tag = RUS_SOV_GYA_OCC
+			GYA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16503,7 +16245,7 @@ RUS_SOV_establish_rk_PRU = {
 			}
 		}
 		PRU = { 
-			set_cosmetic_tag = RUS_SOV_PRU_OCC
+			PRU_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16610,7 +16352,7 @@ RUS_SOV_establish_rk_BOL = {
 			}
 		}
 		BOL = { 
-			set_cosmetic_tag = RUS_SOV_BOL_OCC
+			BOL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16721,7 +16463,7 @@ RUS_SOV_establish_rk_CHL = {
 			}
 		}
 		CHL = { 
-			set_cosmetic_tag = RUS_SOV_CHL_OCC
+			CHL_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16820,7 +16562,7 @@ RUS_SOV_establish_rk_PAR = {
 			}
 		}
 		PAR = { 
-			set_cosmetic_tag = RUS_SOV_PAR_OCC
+			PAR_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -16935,7 +16677,7 @@ RUS_SOV_establish_rk_ARG = {
 			}
 		}
 		ARG = { 
-			set_cosmetic_tag = RUS_SOV_ARG_OCC
+			ARG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -17146,7 +16888,7 @@ RUS_SOV_establish_rk_BRA = {
 			}
 		}
 		BRA = { 
-			set_cosmetic_tag = RUS_SOV_BRA_OCC
+			BRA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -17245,7 +16987,7 @@ RUS_SOV_establish_rk_URG = {
 			}
 		}
 		URG = { 
-			set_cosmetic_tag = RUS_SOV_URG_OCC
+			URG_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -17359,7 +17101,7 @@ RUS_SOV_establish_rk_ALA = {
 			}
 		}
 		ALA = { 
-			set_cosmetic_tag = RUS_SOV_ALA_OCC
+			ALA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -17458,7 +17200,7 @@ RUS_SOV_establish_rk_RWA = {
 			}
 		}
 		RWA = { 
-			set_cosmetic_tag = RUS_SOV_RWA_OCC
+			RWA_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -17557,7 +17299,7 @@ RUS_SOV_establish_rk_CEY = {
 			}
 		}
 		CEY = { 
-			set_cosmetic_tag = RUS_SOV_CEY_OCC
+			CEY_SOV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
