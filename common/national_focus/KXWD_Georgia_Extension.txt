@@ -56,7 +56,7 @@ shared_focus = {
         custom_effect_tooltip = GEO_trans_tooltip_2
         set_country_flag = GEO_can_form_transcaucasia
         activate_targeted_decision = { target = THIS decision = GEO_form_transcaucasia }
-        country_event = geo.513
+        country_event = geo_expanded.513
     }
 }
 
@@ -157,7 +157,7 @@ shared_focus = {
         increase_ruling_party_popularity_by_5 = yes
         GEO = {
             country_event={
-                id= geo.507
+                id= geo_expanded.507
                 days = 3
             }	
         }	
@@ -1175,7 +1175,7 @@ shared_focus = {
     }
     completion_reward = {
         country_event = {
-            id = geo.1923
+            id = geo_expanded.1923
             days = 1
         }
     }
@@ -1774,7 +1774,7 @@ shared_focus = {
 
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: GEO_chairman_stalin"
-        country_event = geo.512
+        country_event = geo_expanded.512
         add_political_power = 50
     }
 

@@ -2147,7 +2147,7 @@ GEO_foreign_policy_decisions = {
 						FROM = { tag = DKB }
 					}
 					country_event = {
-						id = GEO.514
+						id = geo_expanded.514
 						days = 1
 					}
 				}
@@ -2156,7 +2156,7 @@ GEO_foreign_policy_decisions = {
 						FROM = { tag = KUB }
 					}
 					country_event = {
-						id = GEO.534
+						id = geo_expanded.534
 						days = 1
 					}
 				}
@@ -2165,7 +2165,7 @@ GEO_foreign_policy_decisions = {
 						FROM = { tag = KLY }
 					}
 					country_event = {
-						id = GEO.524
+						id = geo_expanded.524
 						days = 1
 					}
 				}
@@ -2174,7 +2174,7 @@ GEO_foreign_policy_decisions = {
 						FROM = { tag = MTR }
 					}
 					country_event = {
-						id = GEO.544
+						id = geo_expanded.544
 						days = 1
 					}
 				}
@@ -2226,7 +2226,7 @@ political_actions = {
 			complete_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision GEO_Renaming_Kerensky_Legacy"
 				custom_effect_tooltip = RUS_Renaming_Kerensky_Legacy_tooltip
-				country_event = geo.510
+				country_event = geo_expanded.510
 			}
 		}
 
@@ -2253,7 +2253,7 @@ political_actions = {
 			}
 			complete_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision GEO_Renaming_Peterburg"
-				country_event = geo.509
+				country_event = geo_expanded.509
 			}
 		}
 
@@ -2287,7 +2287,7 @@ political_actions = {
 			}
 			complete_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision GEO_capital"
-				country_event = geo.511
+				country_event = geo_expanded.511
 			}
 		}
 
@@ -2317,7 +2317,7 @@ political_actions = {
 			}
 			complete_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision GEO_Renaming_Peterburg"
-				country_event = geo.547
+				country_event = geo_expanded.547
 			}
 		}
 
@@ -2341,7 +2341,7 @@ political_actions = {
 	
 			remove_effect = {
 				log = "[GetDateText]: [Root.GetName]: Decision remove GEO_a_motorise_army_decision"
-				country_event = geo.10000
+				country_event = geo_expanded.10000
 			}
 		}
 
