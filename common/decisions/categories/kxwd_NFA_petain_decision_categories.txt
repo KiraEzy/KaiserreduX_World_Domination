@@ -2,9 +2,9 @@ NFA_africa_game_PET_DGL = {
 	icon = GFX_decision_category_foreign_policy
 	priority = 9
 
-	allowed = {
-		original_tag = NFA
-	}
+# 	allowed = {
+# 		original_tag = NFA
+# 	}
 
 	visible = { 
 		has_completed_focus = NFA_martial_law
@@ -17,9 +17,9 @@ NFA_integrate_game_PET_DGL = {
 	icon = GFX_decision_category_foreign_policy
 	priority = 10
 
-	allowed = {
-		original_tag = NFA
-	}
+# 	allowed = {
+# 		original_tag = NFA
+# 	}
 
 	visible = { 
 		OR = {

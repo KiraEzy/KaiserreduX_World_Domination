@@ -1,0 +1,53 @@
+defined_text = {
+	name = GetHOLBMRecoverySpiritSummary
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+			check_variable = { var = hol_bm_anger value = 20 compare = less_than }
+			check_variable = { var = hol_bm_colonial_pressure value = 60 compare = less_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_all
+	}
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+			check_variable = { var = hol_bm_anger value = 20 compare = less_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_confidence_anger
+	}
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+			check_variable = { var = hol_bm_colonial_pressure value = 60 compare = less_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_confidence_colonial
+	}
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_anger value = 20 compare = less_than }
+			check_variable = { var = hol_bm_colonial_pressure value = 60 compare = less_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_anger_colonial
+	}
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_confidence value = 60 compare = greater_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_confidence
+	}
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_anger value = 20 compare = less_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_anger
+	}
+	text = {
+		trigger = {
+			check_variable = { var = hol_bm_colonial_pressure value = 60 compare = less_than }
+		}
+		localization_key = HOL_bm_recovery_spirit_colonial
+	}
+	text = {
+		localization_key = HOL_bm_recovery_spirit_none
+	}
+}

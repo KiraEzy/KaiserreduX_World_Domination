@@ -5695,14 +5695,14 @@ country_event = {
 					name = "Edward VIII"
 					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
 					expire = "1965.1.1"
-					ideology = paternal_autocrat
+					ideology = autocratic_colonial_govt_subtype
           		}
 				set_politics = {
 					ruling_party = paternal_autocrat
 					elections_allowed = no
 				}
 				set_party_name = {
-					ideology = autocratic_colonial_govt_subtype
+					ideology = paternal_autocrat
 					long_name = "Dominion Government"
 					name = "Dominion Government"
 				}
@@ -6660,7 +6660,6 @@ country_event = {
 					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
 					expire = "1965.1.1"
 					ideology = autocratic_colonial_govt_subtype
-					traits = { hog_emperor_of_china }
 				}
 				set_popularities = {
 					totalist = 19
@@ -6781,7 +6780,6 @@ country_event = {
 					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
 					expire = "1965.1.1"
 					ideology = autocratic_colonial_govt_subtype
-					traits = { hog_emperor_of_china }
 				}
 				set_popularities = {
 					totalist = 19
@@ -6889,7 +6887,6 @@ country_event = {
 					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
 					expire = "1965.1.1"
 					ideology = autocratic_colonial_govt_subtype
-					traits = { hog_emperor_of_china }
 				}
 				set_popularities = {
 					totalist = 19
@@ -7113,7 +7110,6 @@ country_event = {
 					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
 					expire = "1965.1.1"
 					ideology = autocratic_colonial_govt_subtype
-					traits = { hog_emperor_of_china }
 				}
 				set_popularities = {
 					totalist = 19
@@ -7229,7 +7225,6 @@ country_event = {
 					picture = "gfx/leaders/PAN/Portrait_PAN_Edward_VIII.png"
 					expire = "1965.1.1"
 					ideology = autocratic_colonial_govt_subtype
-					traits = { hog_emperor_of_china }
 				}
 				set_popularities = {
 					totalist = 19

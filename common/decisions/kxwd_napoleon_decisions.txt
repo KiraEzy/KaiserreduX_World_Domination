@@ -33,7 +33,7 @@ NFA_integrate_rk_CAT = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		165 = { add_core_of = NFA }
@@ -79,7 +79,7 @@ NFA_integrate_rk_TUS = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		1005 = { add_core_of = NFA }
@@ -117,7 +117,7 @@ NFA_integrate_rk_SWI = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		3 = { add_core_of = NFA }
@@ -147,7 +147,7 @@ NFA_integrate_rk_SRD = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		114 = { add_core_of = NFA }
@@ -177,7 +177,7 @@ NFA_integrate_rk_BEL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		6 = { add_core_of = NFA }
@@ -207,7 +207,7 @@ NFA_integrate_rk_LUX = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		8 = { add_core_of = NFA }
@@ -245,7 +245,7 @@ NFA_integrate_rk_HOL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		7 = { add_core_of = NFA }
@@ -291,7 +291,7 @@ NFA_integrate_rk_NGF = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		42 = { add_core_of = NFA }
@@ -351,7 +351,7 @@ NFA_integrate_rk_SLO = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		102 = { add_core_of = NFA }
@@ -404,7 +404,7 @@ NFA_integrate_rk_PAP = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		2 = { add_core_of = NFA }
@@ -431,7 +431,7 @@ NFA_integrate_rk_NRM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		1315 = { add_core_of = NFA }
@@ -508,7 +508,7 @@ NAP_establish_rk_SPR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SPR = {
@@ -636,7 +636,7 @@ NAP_establish_rk_POR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		POR = {
@@ -745,7 +745,7 @@ NAP_establish_rk_SIC = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SIC = {
@@ -862,7 +862,7 @@ NAP_establish_rk_ITA = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		ITA = {
@@ -985,7 +985,7 @@ NAP_establish_rk_WGR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		WGR = {
@@ -1105,7 +1105,7 @@ NAP_establish_rk_AUS = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		AUS = {
@@ -1219,7 +1219,7 @@ NAP_establish_rk_DDR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		DDR = {
@@ -1326,7 +1326,7 @@ NAP_establish_rk_DEN = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		DEN = {
@@ -1433,7 +1433,7 @@ NAP_establish_rk_NOR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		NOR = {
@@ -1577,7 +1577,7 @@ NAP_establish_rk_CZE = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		CZE = {
@@ -1712,7 +1712,7 @@ NAP_establish_rk_HUN = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		HUN = {
@@ -1861,7 +1861,7 @@ NAP_establish_rk_SER = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SER = {
@@ -2018,7 +2018,7 @@ NAP_establish_rk_ROM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		ROM = {
@@ -2142,7 +2142,7 @@ NAP_establish_rk_BUL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		BUL = {
@@ -2282,7 +2282,7 @@ NAP_establish_rk_GRE = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		GRE = {
@@ -2461,7 +2461,7 @@ NAP_establish_rk_POL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		POL = {
@@ -2599,7 +2599,7 @@ NAP_establish_rk_BAT = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		BAT = {
@@ -2786,7 +2786,7 @@ NAP_establish_rk_UKR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		UKR = {
@@ -3081,7 +3081,7 @@ NAP_establish_rk_RUS = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		RUS = {
@@ -3316,7 +3316,7 @@ NAP_establish_rk_GEO = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		GEO = {
@@ -3459,7 +3459,7 @@ NAP_establish_rk_LEB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		LEB = {
@@ -3569,7 +3569,7 @@ NAP_establish_rk_ASY = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		ASY = {
@@ -3708,7 +3708,7 @@ NAP_establish_rk_SAU = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SAU = {
@@ -3842,7 +3842,7 @@ NAP_establish_rk_PER = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		PER = {
@@ -3951,7 +3951,7 @@ NAP_establish_rk_AFG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		AFG = {
@@ -4125,7 +4125,7 @@ NAP_establish_rk_SIB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SIB = {
@@ -4317,7 +4317,7 @@ NAP_establish_rk_TRK = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		TRK = {
@@ -4450,7 +4450,7 @@ NAP_establish_rk_ETS = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		ETS = {
@@ -4555,7 +4555,7 @@ NAP_establish_rk_MON = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		MON = {
@@ -4672,7 +4672,7 @@ NAP_establish_rk_MAN = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		MAN = {
@@ -4783,7 +4783,7 @@ NAP_establish_rk_KOR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		KOR = {
@@ -5036,7 +5036,7 @@ NAP_establish_rk_QIE = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		QIE = {
@@ -5221,7 +5221,7 @@ NAP_establish_rk_TIB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		TIB = {
@@ -5421,7 +5421,7 @@ state = 430
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		MAD = {
@@ -5574,7 +5574,7 @@ NAP_establish_rk_BRM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		BRM = {
@@ -5714,7 +5714,7 @@ NAP_establish_rk_INC = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		INC = {
@@ -5842,7 +5842,7 @@ NAP_establish_rk_MAG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		MAG = {
@@ -5988,7 +5988,7 @@ NAP_establish_rk_INS = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		INS = {
@@ -6116,7 +6116,7 @@ NAP_establish_rk_PHI = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		PHI = {
@@ -6265,7 +6265,7 @@ NAP_establish_rk_TAI = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		TAI = {
@@ -6417,7 +6417,7 @@ NAP_establish_rk_JAP = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		JAP = {
@@ -6555,7 +6555,7 @@ NAP_establish_rk_AST = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		AST = {
@@ -6790,7 +6790,7 @@ NAP_establish_rk_TEX = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		TEX = {
@@ -7060,7 +7060,7 @@ NAP_establish_rk_MEX = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		MEX = {
@@ -7257,7 +7257,7 @@ NAP_establish_rk_USA = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		USA = {
@@ -7398,7 +7398,7 @@ NAP_establish_rk_JAM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		JAM = {
@@ -7505,7 +7505,7 @@ NAP_establish_rk_DOM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		DOM = {
@@ -7629,7 +7629,7 @@ NAP_establish_rk_COL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		COL = {
@@ -7759,7 +7759,7 @@ NAP_establish_rk_PRU = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		PRU = {
@@ -7883,7 +7883,7 @@ NAP_establish_rk_BOL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		BOL = {
@@ -8018,7 +8018,7 @@ NAP_establish_rk_CHL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		CHL = {
@@ -8191,7 +8191,7 @@ NAP_establish_rk_BRA = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		BRA = {
@@ -8334,7 +8334,7 @@ NAP_establish_rk_GYA = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		GYA = {
@@ -8461,7 +8461,7 @@ NAP_establish_rk_GBP = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		GBP = {
@@ -8571,7 +8571,7 @@ NAP_establish_rk_WAL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		WAL = {
@@ -8678,7 +8678,7 @@ NAP_establish_rk_SCT = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		SCT = {
@@ -8775,7 +8775,7 @@ NAP_establish_rk_MLT = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		MLT = {
@@ -8875,7 +8875,7 @@ NAP_establish_rk_IRE = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		IRE = {
@@ -8980,7 +8980,7 @@ NAP_establish_rk_ICE = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		ICE = {
@@ -9062,7 +9062,7 @@ NAP_establish_rk_ICE = {
 }
 
 NFA_africa_game_NAP = {
-PET_establish_rk_EGY = {
+NAP_establish_rk_EGY = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9105,7 +9105,7 @@ PET_establish_rk_EGY = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		446 = { add_core_of = FAR }
@@ -9139,7 +9139,7 @@ PET_establish_rk_EGY = {
 		}
 	}
 }
-PET_establish_rk_ERI = {
+NAP_establish_rk_ERI = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9181,7 +9181,7 @@ PET_establish_rk_ERI = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		550 = { add_core_of = FAR }
@@ -9215,7 +9215,7 @@ PET_establish_rk_ERI = {
 		}
 	}
 }
-PET_establish_rk_TRP = {
+NAP_establish_rk_TRP = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9243,7 +9243,7 @@ PET_establish_rk_TRP = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		273 = { add_core_of = FAR }
@@ -9270,7 +9270,7 @@ PET_establish_rk_TRP = {
 		}
 	}
 }
-PET_establish_rk_MOR = {
+NAP_establish_rk_MOR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9296,7 +9296,7 @@ PET_establish_rk_MOR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		461 = { add_core_of = FAR }
@@ -9322,7 +9322,7 @@ PET_establish_rk_MOR = {
 		}
 	}
 }
-PET_establish_rk_CVG = {
+NAP_establish_rk_CVG = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9342,7 +9342,7 @@ PET_establish_rk_CVG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		296 = { add_core_of = FAR }
@@ -9365,7 +9365,7 @@ PET_establish_rk_CVG = {
 		}
 	}
 }
-PET_establish_rk_LIB = {
+NAP_establish_rk_LIB = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9385,7 +9385,7 @@ PET_establish_rk_LIB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		298 = { add_core_of = FAR }
@@ -9408,7 +9408,7 @@ PET_establish_rk_LIB = {
 		}
 	}
 }
-PET_establish_rk_CIV = {
+NAP_establish_rk_CIV = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9440,7 +9440,7 @@ PET_establish_rk_CIV = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		274 = { add_core_of = FAR }
@@ -9470,7 +9470,7 @@ PET_establish_rk_CIV = {
 	}
 }
 
-PET_establish_rk_NGR = {
+NAP_establish_rk_NGR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9496,7 +9496,7 @@ PET_establish_rk_NGR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		558 = { add_core_of = FAR }
@@ -9523,7 +9523,7 @@ PET_establish_rk_NGR = {
 	}
 }
 
-PET_establish_rk_CMR = {
+NAP_establish_rk_CMR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9547,7 +9547,7 @@ PET_establish_rk_CMR = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		927 = { add_core_of = FAR }
@@ -9573,7 +9573,7 @@ PET_establish_rk_CMR = {
 	}
 }
 
-PET_establish_rk_CEA = {
+NAP_establish_rk_CEA = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9593,7 +9593,7 @@ PET_establish_rk_CEA = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		660 = { add_core_of = FAR }
@@ -9617,7 +9617,7 @@ PET_establish_rk_CEA = {
 	}
 }
 
-PET_establish_rk_KOG = {
+NAP_establish_rk_KOG = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9641,7 +9641,7 @@ PET_establish_rk_KOG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		928 = { add_core_of = FAR }
@@ -9667,7 +9667,7 @@ PET_establish_rk_KOG = {
 	}
 }
 
-PET_establish_rk_COG = {
+NAP_establish_rk_COG = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9715,7 +9715,7 @@ PET_establish_rk_COG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		295 = { add_core_of = FAR }
@@ -9753,7 +9753,7 @@ PET_establish_rk_COG = {
 	}
 }
 
-PET_establish_rk_ANG = {
+NAP_establish_rk_ANG = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9779,7 +9779,7 @@ PET_establish_rk_ANG = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		540 = { add_core_of = FAR }
@@ -9806,7 +9806,7 @@ PET_establish_rk_ANG = {
 	}
 }
 
-PET_establish_rk_UGA = {
+NAP_establish_rk_UGA = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9824,7 +9824,7 @@ PET_establish_rk_UGA = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		548 = { add_core_of = FAR }
@@ -9847,7 +9847,7 @@ PET_establish_rk_UGA = {
 	}
 }
 
-PET_establish_rk_KEN = {
+NAP_establish_rk_KEN = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9873,7 +9873,7 @@ PET_establish_rk_KEN = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		547 = { add_core_of = FAR }
@@ -9900,7 +9900,7 @@ PET_establish_rk_KEN = {
 	}
 }
 
-PET_establish_rk_TZN = {
+NAP_establish_rk_TZN = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9934,7 +9934,7 @@ PET_establish_rk_TZN = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		546 = { add_core_of = FAR }
@@ -9965,7 +9965,7 @@ PET_establish_rk_TZN = {
 	}
 }
 
-PET_establish_rk_ZAM = {
+NAP_establish_rk_ZAM = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9993,7 +9993,7 @@ PET_establish_rk_ZAM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		813 = { add_core_of = FAR }
@@ -10021,7 +10021,7 @@ PET_establish_rk_ZAM = {
 	}
 }
 
-PET_establish_rk_ZIM = {
+NAP_establish_rk_ZIM = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10039,7 +10039,7 @@ PET_establish_rk_ZIM = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		545 = { add_core_of = FAR }
@@ -10062,7 +10062,7 @@ PET_establish_rk_ZIM = {
 	}
 }
 
-PET_establish_rk_MZB = {
+NAP_establish_rk_MZB = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10084,7 +10084,7 @@ PET_establish_rk_MZB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		544 = { add_core_of = FAR }
@@ -10109,7 +10109,7 @@ PET_establish_rk_MZB = {
 	}
 }
 
-PET_establish_rk_NMB = {
+NAP_establish_rk_NMB = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10129,7 +10129,7 @@ PET_establish_rk_NMB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		541 = { add_core_of = FAR }
@@ -10153,7 +10153,7 @@ PET_establish_rk_NMB = {
 	}
 }
 
-PET_establish_rk_SAF = {
+NAP_establish_rk_SAF = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10189,7 +10189,7 @@ PET_establish_rk_SAF = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		85 = { add_core_of = FAR }
@@ -10221,7 +10221,7 @@ PET_establish_rk_SAF = {
 	}
 }
 
-PET_establish_rk_DJI = {
+NAP_establish_rk_DJI = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10241,7 +10241,7 @@ PET_establish_rk_DJI = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		268 = { add_core_of = FAR }
@@ -10264,7 +10264,7 @@ PET_establish_rk_DJI = {
 		}
 	}
 }
-PET_establish_rk_GAB = {
+NAP_establish_rk_GAB = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10284,7 +10284,7 @@ PET_establish_rk_GAB = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		297 = { add_core_of = FAR }
@@ -10307,7 +10307,7 @@ PET_establish_rk_GAB = {
 		}
 	}
 }
-PET_establish_rk_MAF = {
+NAP_establish_rk_MAF = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10329,7 +10329,7 @@ PET_establish_rk_MAF = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		704 = { add_core_of = FAR }
@@ -10373,7 +10373,7 @@ NAP_establish_rk_PAL = {
 	fire_only_once = yes
 
 	ai_will_do = {
-		factor = 5
+		factor = 0
 	}
 	complete_effect = {
 		453 = { add_core_of = FAR }
