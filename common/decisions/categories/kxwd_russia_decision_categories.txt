@@ -40,3 +40,50 @@ RUS_integration_game = {
 		NOT = { has_completed_focus = RUS_Rally_The_Monarchists }
 	}
 }
+SOV_Great_Game_SSR_decisions = {
+	icon = GFX_decision_category_russia
+	priority = 100
+	allowed = {
+		OR = {
+			original_tag = RUS
+			original_tag = GEO
+		}
+	}
+	visible = {
+		OR = {
+			RUS = {
+				AND = {
+					has_completed_focus = RUS_The_War_Effort
+				}
+			}
+		}
+	}
+				# RUS = { 
+		# 	OR = {
+		# 		has_cosmetic_tag = SOV_union
+		# 		has_cosmetic_tag = SOV_union_alternative
+		# 		has_cosmetic_tag = SOV_union_alternative_2
+		# 		has_cosmetic_tag = SOV_union_alternative_3
+		# 		has_cosmetic_tag = SOV_union_kirov
+		# 		has_cosmetic_tag = SOV_union_syndicalist
+		# 		has_cosmetic_tag = SOV_union_psr
+		# 		has_cosmetic_tag = SOV_union_labor_republic
+		# 		has_cosmetic_tag = SOV_union_yezhov
+		# 		has_cosmetic_tag = SOV_union_tomsky
+		# 		has_cosmetic_tag = SOV_zhdanov
+		# 		has_cosmetic_tag = SOV_gastev
+		# 		has_cosmetic_tag = SOV_mayakovsky
+		# 		has_cosmetic_tag = SOV_world
+		# 		has_cosmetic_tag = SOV_workers
+		# 		has_cosmetic_tag = SOV_tsentrobalt
+		# 		has_cosmetic_tag = SOV_tukhachevsky_totalist
+		# 		has_cosmetic_tag = SOV_tukhachevsky
+		# 		has_cosmetic_tag = SOV_lunacharsky
+		# 		has_cosmetic_tag = SOV_molotov
+		# 		has_cosmetic_tag = SOV_labor_republic
+		# 		has_cosmetic_tag = SOV_union_labor_republic_2
+		# 	}
+		# }
+	
+
+}
