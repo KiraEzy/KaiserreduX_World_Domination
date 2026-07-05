@@ -1,104 +1,62 @@
 ﻿l_english:
 
-CAN_west_indies_game:0 "Extending the West Indies"
-
-CAN_establish_rk_SUR:0 "Transfer Dutch West Indies to West Indies Federation"
-
-CAN_establish_rk_PRI:0 "Transfer Puerto Rico to West Indies Federation"
-
-CAN_establish_rk_DOM:0 "Transfer Hispaniola to West Indies Federation"
-
-CAN_establish_rk_CUB:0 "Transfer Cuba to West Indies Federation"
-
-CAN_establish_rk_GUA:0 "Transfer Belize to West Indies Federation"
-
-CAN_IMPFED_game:0 "Creation of an Imperial Federation"
-
-CAN_CAN_OCC:0 "Imperial Federation"
-CAN_establish_rk_IMPFED:0 "Claim the Imperial Federation"
-
-CAN_establish_rk_SURCAF:0 "Integrate Suriname"
-
-CAN_establish_rk_GYACAF:0 "Integrate Guyana"
-
-CAN_establish_rk_TRICAF:0 "Integrate Caribbean Islands"
-
-CAN_establish_rk_PRICAF:0 "Integrate Puerto Rico"
-
-CAN_establish_rk_DOMCAF:0 "Integrate Hispaniola"
-
-CAN_establish_rk_JAMCAF:0 "Integrate Jamaica"
-
-CAN_establish_rk_CUBCAF:0 "Integrate Cuba"
-
-CAN_establish_rk_BRHCAF:0 "Integrate British Honduras"
-
-CAN_establish_rk_BABCAF:0 "Integrate Bahamas and Bermuda"
-
-CAN_establish_rk_DEHFED:0 "Integrate Western India"
-
-CAN_establish_rk_BHCFED:0 "Integrate Eastern India"
-
-CAN_establish_rk_MADFED:0 "Integrate Southern India"
-
-CAN_establish_rk_GOAFED:0 "Integrate Goa"
-
-CAN_establish_rk_CEYFED:0 "Integrate Indian Ocean Possessions"
-
-CAN_establish_rk_SAFFED:0 "Integrate South Africa"
-
-CAN_establish_rk_ASTFED:0 "Integrate Australia"
-
-CAN_establish_rk_NZLFED:0 "Integrate New Zealand"
-
-CAN_establish_rk_PNGFED:0 "Integrate Papua and Fiji"
-
-CAN_annex_rk_SAFFED:0 "Annex South Africa and its army"
-
-CAN_annex_rk_DEHFED:0 "Annex Dominion of Delhi and its army"
-
-CAN_annex_rk_ASTFED:0 "Annex Australasia and its army"
-
 CAN_new_game:0 "Restoring the Empire"
 
 CAN_new_game_desc:0 "The decision category allow you to annex, integrate and form new colonies and dominions.\n\nIntegration Decision: These decision will transfer the ownership of the highlighted states to you and add core of the state to you. Therefore they will be available under following circumstances:\n- Formed the §YImperial Federation§! or the §0Arch-Imperial Empire of the Supreme Rulership of the Monarch of Great Britain and all it's Territories§!\n- You or your puppet owns all the highlighted states\n- You do not own one of the highlighted states or you do not have core on one of the highlighted states\n\nEstablishing Puppet Decision: These decision will form custom formables once the following conditions are met:\n- You or your puppet owns all the highlighted states\n- You do not have core on all of the highlighted states, as your core would not be transferred to the formed country, if you already have core on all of the highlighted states, it don't works so it is not available.\n\nAnnex decision: On top of the condition on the decision hover description, you also need to form the §YImperial Federation§! or the §0A-IEotSRotMoGBaaiT§!(short form of the formable mentioned above)."
 
-CAN_annex_rk_ZIM:0 "Annex South Rhodesia and its army"
+CAN_Imperialism_back:0 "§2We will Unlock new Colonial Puppets to Help Govern our Soon-to-be-Reborn Empire!§!"
 
-CAN_annex_rk_AFG:0 "Annex the Dominion of Afghanistan and its army"
+imp_fed.9.b:0 "An Imperial Federation simply isnt enough, let us proclaim an Empire where the sun never sets!"
+
+ENT_IMPERIAL_FEDERATION_EXTREME:0 "Arch-Imperial Empire of the Supreme Rulership of the Monarch of Great Britain and all it's Territories"
+ENT_IMPERIAL_FEDERATION_EXTREME_ADJ:0 "Imperial"
+ENT_IMPERIAL_FEDERATION_EXTREME_DEF:0 "the Arch-Imperial Empire of the Supreme Rulership of the Monarch of Great Britain and all it's Territories"
+
+hog_emperor_of_china:0 "Emperor of China"
 
 CAN_establish_rk_IRE:0 "Integrate Ireland"
-
-CAN_establish_rk_HOL:0 "Integrate Holland"
-
-CAN_establish_rk_WGR:0 "Integrate Hannover"
-
-CAN_establish_rk_CAR:0 "Integrate Gibraltar"
-
-CAN_establish_rk_NRM:0 "Integrate Normandy"
-
-CAN_establish_rk_ICE:0 "Establish Crown Colony of Iceland"
 
 CAN_MEX_OCC:0 "Dominion of Mexico"
 CAN_establish_rk_MEX:0 "Establish Dominion of Mexico"
 
-CAN_PAN_OCC:0 "Crown Colony of Central America"
-CAN_establish_rk_PAN:0 "Establish Crown Colony of Central America"
+CAN_GUA_OCC:0 "Crown Colony of Central America"
+CAN_establish_rk_GUA:0 "Establish Crown Colony of Central America"
 
-CAN_COL_OCC:0 "Dominion of Gran Colombia"
-CAN_establish_rk_COL:0 "Establish Dominion of Gran Colombia"
+CAN_CUB_OCC:0 "Crown Colony of Cuba"
+CAN_establish_rk_CUB:0 "Establish Crown Colony of Cuba"
 
-CAN_PRU_OCC:0 "Crown Colony of Peru"
-CAN_establish_rk_PRU:0 "Establish Crown Colony of Peru"
+CAN_HAI_OCC:0 "Crown Colony of Haiti"
+CAN_establish_rk_HAI:0 "Establish Crown Colony of Haiti"
+
+CAN_DOM_OCC:0 "Crown Colony of the Dominican"
+CAN_establish_rk_DOM:0 "Establish Crown Colony of the Dominican"
+
+CAN_VEN_OCC:0 "Dominion of Venezuela"
+CAN_establish_rk_VEN:0 "Establish Dominion of Venezuela"
+
+CAN_COL_OCC:0 "Dominion of Colombia"
+CAN_establish_rk_COL:0 "Establish Dominion of Colombia"
+
+CAN_SUR_OCC:0 "Crown Colony of Suriname"
+CAN_establish_rk_SUR:0 "Establish Crown Colony of Suriname"
+
+CAN_ECU_OCC:0 "Crown Colony of Ecuador"
+CAN_establish_rk_ECU:0 "Establish Crown Colony of Ecuador"
+
+CAN_PRU_OCC:0 "Dominion of Peru"
+CAN_establish_rk_PRU:0 "Establish Dominion of Peru"
 
 CAN_BOL_OCC:0 "Dominion of Bolivia"
 CAN_establish_rk_BOL:0 "Establish Dominion of Bolivia"
 
+CAN_CHL_OCC:0 "Dominion of Chile"
+CAN_establish_rk_CHL:0 "Establish Dominion of Chile"
+
+CAN_ARG_OCC:0 "Crown Colony of Argentina"
+CAN_establish_rk_ARG:0 "Establish Crown Colony of Argentina"
+
 CAN_PAR_OCC:0 "Crown Colony of Paraguay"
 CAN_establish_rk_PAR:0 "Establish Crown Colony of Paraguay"
-
-CAN_ARG_OCC:0 "Dominion of Patagonia"
-CAN_establish_rk_ARG:0 "Establish Dominion of Patagonia"
 
 CAN_URG_OCC:0 "Crown Colony of Uruguay"
 CAN_establish_rk_URG:0 "Establish Crown Colony of Uruguay"
@@ -106,158 +64,218 @@ CAN_establish_rk_URG:0 "Establish Crown Colony of Uruguay"
 CAN_BRA_OCC:0 "Dominion of Brazil"
 CAN_establish_rk_BRA:0 "Establish Dominion of Brazil"
 
-CAN_ZIM_OCC:0 "Dominion of Rhodesia"
-CAN_establish_rk_ZIM:0 "Establish Dominion of Rhodesia"
-
-CAN_NMB_OCC:0 "Crown Colony of Namibia"
-CAN_establish_rk_NMB:0 "Establish Crown Colony of Namibia"
-
-CAN_ANG_OCC:0 "Crown Colony of Angola"
-CAN_establish_rk_ANG:0 "Establish Crown Colony of Angola"
-
-CAN_MZB_OCC:0 "Crown Colony of Mozambique"
-CAN_establish_rk_MZB:0 "Establish Crown Colony of Mozambique"
-
-CAN_KOG_OCC:0 "Crown Colony of Congo"
-CAN_establish_rk_KOG:0 "Establish Crown Colony of Congo"
-
-CAN_KEN_OCC:0 "Dominion of Kenya-Uganda-Tanganyika"
-CAN_establish_rk_KEN:0 "Establish Dominion of Kenya-Uganda-Tanganyika"
-
-CAN_CMR_OCC:0 "Crown Colony of Cameroon"
-CAN_establish_rk_CMR:0 "Establish Crown Colony of Cameroon"
-
-CAN_WAD_OCC:0 "Crown Colony of Central Africa"
-CAN_establish_rk_WAD:0 "Establish Crown Colony of Central Africa"
-
-CAN_MAG_OCC:0 "Crown Colony of Madagascar"
-CAN_establish_rk_MAG:0 "Establish Crown Colony of Madagascar"
-
-CAN_NGR_OCC:0 "Dominion of Nigeria"
-CAN_establish_rk_NGR:0 "Establish Dominion of Nigeria"
-
-CAN_SIE_OCC:0 "Crown Colony of West Africa"
-CAN_establish_rk_SIE:0 "Establish Crown Colony of West Africa"
-
-CAN_MOR_OCC:0 "Crown Colony of Morocco"
-CAN_establish_rk_MOR:0 "Establish Crown Colony of Morocco"
-
-CAN_TUN_OCC:0 "Crown Colony of North Africa"
-CAN_establish_rk_TUN:0 "Establish Crown Colony of North Africa"
-
-CAN_EGY_OCC:0 "Crown Colony of Egypt"
-CAN_establish_rk_EGY:0 "Establish Crown Colony of Egypt"
-
-CAN_ETH_OCC:0 "Crown Colony of East Africa"
-CAN_establish_rk_ETH:0 "Establish Crown Colony of East Africa"
-
-CAN_INS_OCC:0 "British East Indies"
-CAN_establish_rk_INS:0 "Establish British East Indies"
-
-CAN_MLY_OCC:0 "Crown Colony of Malaya"
-CAN_establish_rk_MLY:0 "Establish Crown Colony of Malaya"
-
-CAN_PHI_OCC:0 "Dominion of Philippines"
-CAN_establish_rk_PHI:0 "Establish Dominion of Philippines"
-
-CAN_INC_OCC:0 "Crown Colony of Indochina"
-CAN_establish_rk_INC:0 "Establish Crown Colony of Indochina"
-
-CAN_BRM_OCC:0 "Dominion of Burma"
-CAN_establish_rk_BRM:0 "Establish Dominion of Burma"
-
-CAN_FRP_OCC:0 "Anglo-French Kingdom"
-CAN_establish_rk_FRP:0 "Establish Anglo-French Kingdom"
-
-CAN_SPR_OCC:0 "Dominion of Spain"
-CAN_establish_rk_SPR:0 "Establish Dominion of Spain"
-
-CAN_PRT_OCC:0 "Dominion of Portugal"
+CAN_POR_OCC:0 "Dominion of Portugal"
 CAN_establish_rk_POR:0 "Establish Dominion of Portugal"
 
-CAN_SWI_OCC:0 "British Special Economic Zone of Switzerland"
-CAN_establish_rk_SWI:0 "Establish British Special Economic Zone of Switzerland"
+CAN_CAR_OCC:0 "Dominion of Spain"
+CAN_establish_rk_CAR:0 "Establish Dominion of Spain"
 
-CAN_ITA_OCC:0 "Anglo-Italian Kingdom"
-CAN_establish_rk_ITA:0 "Establish Anglo-Italian Kingdom"
+CAN_CAT_OCC:0 "Special Economic Zone of Catalonia"
+CAN_establish_rk_CAT:0 "Establish Special Economic Zone of Catalonia"
 
-CAN_AUS_OCC:0 "Dominion of Austria"
-CAN_establish_rk_AUS:0 "Establish Dominion of Austria"
+CAN_FRP_OCC:0 "Dominion of France"
+CAN_establish_rk_FRP:0 "Establish Dominion of France"
+
+CAN_BEL_OCC:0 "Crown Colony of Belgium"
+CAN_establish_rk_BEL:0 "Establish Crown Colony of Belgium"
+
+CAN_HOL_OCC:0 "Crown Colony of Holland"
+CAN_establish_rk_HOL:0 "Establish Crown Colony of Holland"
+
+CAN_WGR_OCC:0 "Crown Colony of Rhineland"
+CAN_establish_rk_WGR:0 "Establish Crown Colony of Rhineland"
+
+CAN_NGF_OCC:0 "Crown Colony of North Germany"
+CAN_establish_rk_NGF:0 "Establish Dominion of North Germany"
 
 CAN_BAY_OCC:0 "Crown Colony of South Germany"
-CAN_establish_rk_BAY:0 "Establish Crown Colony of South Germany"
+CAN_establish_rk_BAY:0 "Establish Dominion of South Germany"
 
-CAN_CZE_OCC:0 "Dominion of Czecho-slovakia"
-CAN_establish_rk_CZE:0 "Establish Dominion of Czecho-slovakia"
+CAN_SWI_OCC:0 "Special Economic Zone of Switzerland"
+CAN_establish_rk_SWI:0 "Establish Special Economic Zone of Switzerland"
+
+CAN_ITA_OCC:0 "Dominion of Italy"
+CAN_establish_rk_ITA:0 "Establish Dominion of Italy"
+
+CAN_PAP_OCC:0 "Special Economic Zone of Rome"
+CAN_establish_rk_PAP:0 "Establish Special Economic Zone of Rome"
+
+CAN_AUS_OCC:0 "Crown Colony of Austria"
+CAN_establish_rk_AUS:0 "Establish Crown Colony of Austria"
 
 CAN_DDR_OCC:0 "Crown Colony of Prussia"
 CAN_establish_rk_DDR:0 "Establish Crown Colony of Prussia"
 
-CAN_NOR_OCC:0 "United Kingdom of Scandinavia"
-CAN_establish_rk_NOR:0 "Establish United Kingdom of Scandinavia"
-
-CAN_SER_OCC:0 "Dominion of Yugoslavia"
-CAN_establish_rk_SER:0 "Establish Dominion of Yugoslavia"
+CAN_CZE_OCC:0 "Dominion of Czechoslovakia"
+CAN_establish_rk_CZE:0 "Establish Dominion of Czechoslovakia"
 
 CAN_HUN_OCC:0 "Crown Colony of Hungary"
 CAN_establish_rk_HUN:0 "Establish Crown Colony of Hungary"
 
+CAN_SER_OCC:0 "Dominion of Yugoslavia"
+CAN_establish_rk_SER:0 "Establish Dominion of Yugoslavia"
+
+CAN_ALB_OCC:0 "Crown Colony of Albania"
+CAN_establish_rk_ALB:0 "Establish Crown Colony of Albania"
+
 CAN_ROM_OCC:0 "Dominion of Romania"
 CAN_establish_rk_ROM:0 "Establish Dominion of Romania"
 
-CAN_BUL_OCC:0 "Dominion of Bulgaria"
-CAN_establish_rk_BUL:0 "Establish Dominion of Bulgaria"
+CAN_BUL_OCC:0 "Crown Colony of Bulgaria"
+CAN_establish_rk_BUL:0 "Establish Crown Colony of Bulgaria"
 
-CAN_GRC_OCC:0 "Dominion of Greece"
+CAN_GRE_OCC:0 "Dominion of Greece"
 CAN_establish_rk_GRE:0 "Establish Dominion of Greece"
 
 CAN_POL_OCC:0 "Dominion of Poland"
 CAN_establish_rk_POL:0 "Establish Dominion of Poland"
 
-CAN_BAT_OCC:0 "Crown Colony of the Baltics"
-CAN_establish_rk_BAT:0 "Establish Crown Colony of the Baltics"
+CAN_DEN_OCC:0 "Crown Colony of Denmark"
+CAN_establish_rk_DEN:0 "Establish Crown Colony of Denmark"
+
+CAN_NOR_OCC:0 "Dominion of Norway"
+CAN_establish_rk_NOR:0 "Establish Dominion of Norway"
+
+CAN_SWE_OCC:0 "Crown Colony of Sweden"
+CAN_establish_rk_SWE:0 "Establish Crown Colony of Sweden"
+
+CAN_BAT_OCC:0 "Dominion of the Baltic"
+CAN_establish_rk_BAT:0 "Establish Dominion of the Baltic"
+
+CAN_UKR_OCC:0 "Dominion of Ukraine"
+CAN_establish_rk_UKR:0 "Establish Dominion of Ukraine"
+
+CAN_CRM_OCC:0 "Special Economic Zone of Crimea"
+CAN_establish_rk_CRM:0 "Establish Special Economic Zone of Crimea"
+
+CAN_WHR_OCC:0 "Crown Colony of Belarus"
+CAN_establish_rk_WHR:0 "Establish Crown Colony of Belarus"
+
+CAN_FIN_OCC:0 "Dominion of Finland"
+CAN_establish_rk_FIN:0 "Establish Dominion of Finland"
 
 CAN_TUR_OCC:0 "Crown Colony of Anatolia"
 CAN_establish_rk_TUR:0 "Establish Crown Colony of Anatolia"
 
-CAN_LEB_OCC:0 "Crown Colony of Levant"
-CAN_establish_rk_LEB:0 "Establish Crown Colony of Levant"
-
-CAN_TRU_OCC:0 "Crown Colony of Arabia"
-CAN_establish_rk_TRU:0 "Establish Crown Colony of Arabia"
-
-CAN_ASY_OCC:0 "Crown Colony of Mesopotamia"
-CAN_establish_rk_ASY:0 "Establish Crown Colony of Mesopotamia"
-
-CAN_ARM_OCC:0 "Dominion of Armenia"
-CAN_establish_rk_ARM:0 "Establish Dominion of Armenia"
+CAN_DKB_OCC:0 "Crown Colony of Don-Kuban"
+CAN_establish_rk_DKB:0 "Establish Crown Colony of Don-Kuban"
 
 CAN_GEO_OCC:0 "Dominion of Georgia"
 CAN_establish_rk_GEO:0 "Establish Dominion of Georgia"
 
+CAN_ARM_OCC:0 "Dominion of Armenia"
+CAN_establish_rk_ARM:0 "Establish Dominion of Armenia"
+
 CAN_AZE_OCC:0 "Crown Colony of Azerbaijan"
 CAN_establish_rk_AZE:0 "Establish Crown Colony of Azerbaijan"
 
-CAN_DKB_OCC:0 "Dominion of Don-Kuban"
-CAN_establish_rk_DKB:0 "Establish Dominion of Don-Kuban"
+CAN_SYR_OCC:0 "Crown Colony of Syria"
+CAN_establish_rk_SYR:0 "Establish Crown Colony of Syria"
 
-CAN_CRM_OCC:0 "Crown Colony of Crimea"
-CAN_establish_rk_CRM:0 "Establish Crown Colony of Crimea"
+CAN_IRQ_OCC:0 "Crown Colony of Iraq"
+CAN_establish_rk_IRQ:0 "Establish Crown Colony of Iraq"
 
-CAN_RUS_OCC:0 "Anglo-Russian Empire"
-CAN_establish_rk_RUS:0 "Establish Anglo-Russian Empire"
+CAN_JBS_OCC:0 "Crown Colony of Arabia"
+CAN_establish_rk_JBS:0 "Establish Crown Colony of Arabia"
+
+CAN_YEM_OCC:0 "Protectorate of Yemen"
+CAN_establish_rk_YEM:0 "Establish Protectorate of Yemen"
+
+CAN_OMA_OCC:0 "Crown Colony of Muscat and Oman"
+CAN_establish_rk_OMA:0 "Establish Crown Colony of Muscat and Oman"
+
+CAN_EGY_OCC:0 "Crown Colony of Egypt"
+CAN_establish_rk_EGY:0 "Establish Crown Colony of Egypt"
+
+CAN_LBA_OCC:0 "Crown Colony of Libya"
+CAN_establish_rk_LBA:0 "Establish Crown Colony of Libya"
+
+CAN_TUN_OCC:0 "Crown Colony of Tunisia"
+CAN_establish_rk_TUN:0 "Establish Crown Colony of Tunisia"
+
+CAN_ALG_OCC:0 "Dominion of Algeria"
+CAN_establish_rk_ALG:0 "Establish Dominion of Algeria"
+
+CAN_ETH_OCC:0 "Crown Colony of the Horn of Africa"
+CAN_establish_rk_ETH:0 "Establish Crown Colony of the Horn of Africa"
+
+CAN_MOR_OCC:0 "Dominion of Morocco"
+CAN_establish_rk_MOR:0 "Establish Dominion of Morocco"
+
+CAN_MAL_OCC:0 "Crown Colony of Mali"
+CAN_establish_rk_MAL:0 "Establish Crown Colony of Mali"
+
+CAN_NER_OCC:0 "Crown Colony of Niger"
+CAN_establish_rk_NER:0 "Establish Crown Colony of Niger"
+
+CAN_WAD_OCC:0 "Crown Colony of Central Africa"
+CAN_establish_rk_WAD:0 "Establish Crown Colony of Central Africa"
+
+CAN_SEN_OCC:0 "Dominion of Senegambia"
+CAN_establish_rk_SEN:0 "Establish Dominion of Senegambia"
+
+CAN_GNA_OCC:0 "Crown Colony of Guinea"
+CAN_establish_rk_GNA:0 "Establish Crown Colony of Guinea"
+
+CAN_SIE_OCC:0 "Dominion of Sierra Leone"
+CAN_establish_rk_SIE:0 "Establish Dominion of Sierra Leone"
+
+CAN_LIB_OCC:0 "Dominion of Liberia"
+CAN_establish_rk_LIB:0 "Establish Dominion of Liberia"
+
+CAN_CIV_OCC:0 "Dominion of West Africa"
+CAN_establish_rk_CIV:0 "Establish Dominion of West Africa"
+
+CAN_NGR_OCC:0 "Dominion of Nigeria"
+CAN_establish_rk_NGR:0 "Establish Dominion of Nigeria"
+
+CAN_CMR_OCC:0 "Crown Colony of Cameroon"
+CAN_establish_rk_CMR:0 "Establish Crown Colony of Cameroon"
+
+CAN_KOG_OCC:0 "Crown Colony of Congo"
+CAN_establish_rk_KOG:0 "Establish Crown Colony of Congo"
+
+CAN_UGA_OCC:0 "Dominion of Uganda"
+CAN_establish_rk_UGA:0 "Establish Dominion of Uganda"
+
+CAN_KEN_OCC:0 "Dominion of Kenya"
+CAN_establish_rk_KEN:0 "Establish Dominion of Kenya"
+
+CAN_TZN_OCC:0 "Crown Colony of Tanzania"
+CAN_establish_rk_TZN:0 "Establish Crown Colony of Tanzania"
+
+CAN_ANG_OCC:0 "Dominion of Angola"
+CAN_establish_rk_ANG:0 "Establish Dominion of Angola"
+
+CAN_ZAM_OCC:0 "Dominion of North Rhodesia"
+CAN_establish_rk_ZAM:0 "Establish Dominion of North Rhodesia"
+
+CAN_MLW_OCC:0 "Dominion of Nyasaland"
+CAN_establish_rk_MLW:0 "Establish Dominion of Nyasaland"
+
+CAN_MZB_OCC:0 "Crown Colony of Mozmbique"
+CAN_establish_rk_MZB:0 "Establish Crown Colony of Mozmbique"
+
+CAN_NMB_OCC:0 "Crown Colony of Namibia"
+CAN_establish_rk_NMB:0 "Establish Crown Colony of Namibia"
+
+CAN_BOT_OCC:0 "Dominion of Bechuanaland"
+CAN_establish_rk_BOT:0 "Establish Dominion of Bechuanaland"
+
+CAN_MAG_OCC:0 "Crown Colony of Madagascar"
+CAN_establish_rk_MAG:0 "Establish Crown Colony of Madagascar"
+
+CAN_RUS_OCC:0 "Crown Colony of Russia"
+CAN_establish_rk_RUS:0 "Establish Crown Colony of Russia"
 
 CAN_SIB_OCC:0 "Crown Colony of Siberia"
 CAN_establish_rk_SIB:0 "Establish Crown Colony of Siberia"
 
-CAN_TRK_OCC:0 "Crown Colony of Turkestan"
-CAN_establish_rk_TRK:0 "Establish Crown Colony of Turkestan"
-
-CAN_NEP_OCC:0 "Dominion of Himalayas"
-CAN_establish_rk_NEP:0 "Establish Dominion of Himalayas"
-
 CAN_PER_OCC:0 "Crown Colony of Persia"
 CAN_establish_rk_PER:0 "Establish Crown Colony of Persia"
+
+CAN_TRK_OCC:0 "Crown Colony of Turkestan"
+CAN_establish_rk_TRK:0 "Establish Crown Colony of Turkestan"
 
 CAN_AFG_OCC:0 "Dominion of Afghanistan"
 CAN_establish_rk_AFG:0 "Establish Dominion of Afghanistan"
@@ -268,37 +286,62 @@ CAN_establish_rk_MON:0 "Establish Crown Colony of Mongolia"
 CAN_MAN_OCC:0 "Crown Colony of Manchuria"
 CAN_establish_rk_MAN:0 "Establish Crown Colony of Manchuria"
 
-CAN_KOR_OCC:0 "Dominion of Korea"
-CAN_establish_rk_KOR:0 "Establish Dominion of Korea"
-
 CAN_SIK_OCC:0 "Crown Colony of Sinkiang"
 CAN_establish_rk_SIK:0 "Establish Crown Colony of Sinkiang"
 
 CAN_QIE_OCC:0 "Dominion of North China"
 CAN_establish_rk_QIE:0 "Establish Dominion of North China"
 
+CAN_KOR_OCC:0 "Dominion of Korea"
+CAN_establish_rk_KOR:0 "Establish Dominion of Korea"
+
+CAN_LEC_OCC:0 "Special Economic Zone of China"
+CAN_establish_rk_LEC:0 "Establish Special Economic Zone of China"
+
+CAN_LEP_OCC:0 "Dominion of the Yangtze"
+CAN_establish_rk_LEP:0 "Establish Dominion of the Yangtze"
+
+CAN_GXC_OCC:0 "Dominion of the Pearl River Delta"
+CAN_establish_rk_GXC:0 "Establish Dominion of the Pearl River Delta"
+
 CAN_TIB_OCC:0 "Dominion of Tibet"
 CAN_establish_rk_TIB:0 "Establish Dominion of Tibet"
 
-CAN_LEP_OCC:0 "Dominion of Yangtze River"
-CAN_establish_rk_LEP:0 "Establish Dominion of Yangtze River"
+CAN_NEP_OCC:0 "Dominion of Nepal"
+CAN_establish_rk_NEP:0 "Establish Dominion of Nepal"
 
-CAN_LEC_OCC:0 "British Special Economic Zone of China"
-CAN_establish_rk_LEC:0 "Establish British Special Economic Zone of China"
+CAN_BHU_OCC:0 "Crown Colony of Bhutan"
+CAN_establish_rk_BHU:0 "Establish Crown Colony of Bhutan"
 
-CAN_GXC_OCC:0 "Crown Colony of the Pearl River Delta"
-CAN_establish_rk_GXC:0 "Establish Crown Colony of the Pearl River Delta"
+CAN_INC_OCC:0 "Crown Colony of Indochina"
+CAN_establish_rk_INC:0 "Establish Crown Colony of Indochina"
+
+CAN_SIA_OCC:0 "Dominion of Siam"
+CAN_establish_rk_SIA:0 "Establish Dominion of Siam"
+
+CAN_MLY_OCC:0 "Crown Colony of Malaya"
+CAN_establish_rk_MLY:0 "Establish Crown Colony of Malaya"
+
+CAN_SAR_OCC:0 "Crown Colony of Sarawak"
+CAN_establish_rk_SAR:0 "Establish Crown Colony of Sarawak"
+
+CAN_PHI_OCC:0 "Dominion of the Philippines"
+CAN_establish_rk_PHI:0 "Establish Dominion of the Philippines"
+
+CAN_INS_OCC:0 "Crown Colony of Indonesia"
+CAN_establish_rk_INS:0 "Establish Crown Colony of Indonesia"
+
+CAN_PNG_OCC:0 "Crown Colony of Papua New Guinea"
+CAN_establish_rk_PNG:0 "Establish Crown Colony of Papua New Guinea"
+
+CAN_JAP_OCC:0 "Crown Colony of Japan"
+CAN_establish_rk_JAP:0 "Establish Crown Colony of Japan"
 
 CAN_TAI_OCC:0 "Crown Colony of Taiwan"
 CAN_establish_rk_TAI:0 "Establish Crown Colony of Taiwan"
 
-CAN_JPN_OCC:0 "Crown Colony of Japan"
-CAN_establish_rk_JAP:0 "Establish Crown Colony of Japan"
-
-CAN_UKR_OCC:0 "Dominion of Ukraine"
-CAN_establish_rk_UKR:0 "Establish Dominion of Ukraine"
-
-CAN_annex_rk_CAFFED:0 "Annex West Indies and its army"
+CAN_SSI_OCC:0 "Crown Colony of the Pacific"
+CAN_establish_rk_SSI:0 "Establish Crown Colony of the Pacific"
 
 #LEP 
 # The Occupation of the Yangtze River
@@ -399,13 +442,183 @@ UKoccupationNew.77.d:0 "The diverse landscapes of Cameroon, from Atlantic coastl
 UKoccupationNew.76.t:0 ""
 UKoccupationNew.76.d:0 "The vast basin of the Congo River has been organized as the Crown Colony of Congo, securing British control over one of Africa's richest and most strategic territories. From the dense rainforests to the mineral wealth of the interior, this colony presents extraordinary opportunities for development and commerce. Direct Crown administration will ensure responsible governance, infrastructure expansion, and the harnessing of resources that will benefit both the Empire and the local populations."
 
-#ZIM 
-# The Occupation of South Rhodesia
-UKoccupationNew.75.t:0 ""
-UKoccupationNew.75.d:0 "The highlands of Rhodesia have been formally recognized as the Dominion of Rhodesia within the British Empire, honoring the European settlers' contributions while maintaining close imperial bonds. With its temperate climate, mineral wealth, and agricultural potential, this self-governing Dominion will be a pillar of British power in southern Africa. Under British guidance, Rhodesia will continue to develop its economy and infrastructure, serving as a model of settler governance and loyalty to the Crown."
 
+# The Occupation of Central america
 UKoccupationNew.45.d:0 "The humid and verdant coasts of Central America have been unified as the Crown Colony of Central America, securing for the British Empire a vital foothold on the isthmus that links the oceans. Consolidating the territories of British Honduras with the Mosquito Coast and strategic Bay Islands, this colony will serve as a bastion of maritime power and a gateway to the Pacific trade. Under direct Crown administration, the Colony of Central America will see its valuable timber resources, plantations, and harbors developed, transforming a scattered collection of settlements into a coherent and prosperous imperial stronghold in the New World."
-UKoccupationNew.11.d:0 "The sweeping savannas and highlands of East Africa have been constituted as the Crown Colony of East Africa, establishing a permanent British dominion over this vast and varied landscape. From the humid coastal belt and the great port of Mombasa to the fertile White Highlands and the shores of Lake Victoria, this colony will serve as a model of agricultural development and orderly settlement. Under direct Crown administration, the Colony of East Africa will see the expansion of railways, the modernization of farming, and the growth of commerce, binding the diverse peoples and territories of this strategic region into a prosperous and loyal component of the Empire."
-UKoccupationNew.7.d:0 "The Scandinavian kingdoms have been united as the Dominion of Scandinavia, a self-governing realm within the British Empire. Drawing on the shared cultural heritage of Denmark, Norway, and Sweden, this Dominion will preserve its distinctive national identities while integrating into the broader imperial system. Under British guidance, the Dominion of Scandinavia will modernize its infrastructure, industries, and military, ensuring stability and loyalty in this region of strategic importance."
 
-UKoccupationNew.71.d:0 "The rugged and windswept shores of Iceland have been organized as the Dominion of Iceland, securing for the British Empire a permanent stronghold at the edge of the North Atlantic. From the geothermal springs and the fishing villages of the Westfjords to the volcanic peaks of the interior, this dominion will serve as a gateway to the Arctic and a bastion of British influence in the North Atlantic. Under direct Dominion administration, the Dominion of Iceland will see its ports, fisheries, and infrastructure expanded, transforming this remote frontier into a vital asset of British power and commerce."
+# The Occupation of east africa
+UKoccupationNew.11.d:0 "The sweeping savannas and highlands of East Africa have been constituted as the Crown Colony of East Africa, establishing a permanent British dominion over this vast and varied landscape. From the humid coastal belt and the great port of Mombasa to the fertile White Highlands and the shores of Lake Victoria, this colony will serve as a model of agricultural development and orderly settlement. Under direct Crown administration, the Colony of East Africa will see the expansion of railways, the modernization of farming, and the growth of commerce, binding the diverse peoples and territories of this strategic region into a prosperous and loyal component of the Empire."
+
+# The Occupation of germany
+UKoccupation.1.d:0 "After an incredibly hard fought campaign, through the battlefields our men had encountered in the Great War, we have finally acchieved victory over the Krauts! After 20 long years, we have ended the catalyst for our Empires demise, and hopefully, it shall never appear again. The Kaiser has gone into hiding, and the remaining German government is willing to do our bidding. All that remains is to decide how to manage the lands."
+
+# The Occupation of france
+UKoccupation.2.d:0 "The thousand year rivalry has finally ended, with the perfidious Albion coming out on top. At last, the mainland of France is finally under our control, and it is now up to us to decide how we will occupy these lands. While the French may have helped us during the First and Second World Wars, therefore a new Anglo-French Union will be established."
+
+# The Occupation of russia
+UKoccupation.3.d:0 "In a very suprising turn of events, we have triumphed over the Russian hordes, and now control their motherland. We must immediately instate a military authority in the region to make sure that they remain under our grasp, as their natural resources will be massive for our new growing industry. As well as that, we should consider splitting off Siberia so we can focus a new colonization program there, for a new Anglo homeland. Our people will be overjoyed to know that the birthplace of the ideologies which ended our Empire have been safely neutered, forever."
+
+# The Occupation of austria
+UKoccupation.4.d:0 "In a strange turn of events, our old Napoleonic ally, Austria, has fallen under our rule. Already our military has moved in to secure the land, so we dont have a repeat of the ethnic tensions which plagued the former Austrian Empire. With the capital like Vienna now under our control, we hope that our art scene will quickly flourish across the new Empire."
+
+# The Occupation of spain
+UKoccupation.5.d:0 "At long last, we have extended the territory of Gibraltar into the entire nation of Spain. The beaches of Spain, slowly being rebuilt from the naval battles which took place on the shores and nearby, have already become a large tourist destination for our British citizens, and both our and their economies are recovering and thriving. Prehaps, in the far future, the lands of Spain could be considered the sister lands of Great Britain! Now that we have them under our control, we must set up their administrations."
+
+# The Occupation of italy
+UKoccupation.6.d:0 "In a sweeping campaign across the Italian Peninsula, the British Empire has successfully established control over both Italy and the Papal State, each now under a distinct but united British administration. The newly formed Britannic Kingdom of Italia will encompass the lands of Italy, merging the ancient traditions of Rome and the Renaissance cities with the strength and order of British rule. This kingdom, centered in Rome, will serve as a vital component of our Mediterranean strategy. \n Simultaneously, the Papal State has been transformed into the Holy Protectorate of the Vatican. While maintaining the Pope’s spiritual authority, the British Empire now ensures the security and governance of the Vatican and its surrounding territories. This protectorate represents our commitment to preserving the sanctity of the Catholic Church, even as it is integrated into the broader Empire. \n Together, these two entities—Britannic Kingdom of Italia and the Holy Protectorate of the Vatican—symbolize the Empire’s ability to protect and govern lands of immense cultural, historical, and spiritual significance, bringing them under the unifying influence of British power."
+
+# The Occupation of brazil
+UKoccupation.8.d:0 "Following a hard-fought campaign and strategic maneuvers, our forces have secured control over the vast lands of Brazil, establishing it as the Crown Colony of Brazil under the British Empire's dominion. After many years of turmoil and resistance, the once independent nation now bows to our authority. The local rulers have been subdued, and plans are underway to establish a firm British presence in this rich and resourceful land. With the Amazon rainforest at our disposal and the promise of abundant natural wealth, we are laying the foundations for a prosperous future. Administration and infrastructure projects are being implemented to harness Brazil's potential and integrate it into our global economic network. The sun sets on Brazil as a free nation, rising again under the auspices of the British Crown, marking a new chapter in our imperial legacy."
+
+# The Occupation of egypt
+UKoccupation.10.d:0 "In a strategic maneuver, our forces have established control over the ancient lands of Egypt, transforming it into the Sultanate of Egypt Protectorate under the watchful eye of the British Empire. The once mighty Pharaonic civilization now yields to our authority as we secure this pivotal territory in the heart of the Middle East. Plans are underway to modernize Egypt's infrastructure, harness its agricultural riches, and maintain stability in this crucial region. With the Nile at our disposal and the promise of economic prosperity on the horizon, the Sultanate of Egypt Protectorate stands as a testament to British power and influence in the cradle of civilization."
+
+# The Occupation of argentina
+UKoccupation.12.d:0 "Following a successful operation, the British Empire has established the Protectorate of Patagonia. This remote and rugged region, known for its stunning landscapes and valuable natural resources, is now under our protective oversight. By setting up a protectorate, we ensure that British interests are safeguarded while allowing the local governance to continue functioning. Our immediate focus will be on securing strategic locations and integrating Patagonia’s resources into our broader imperial framework. This new protectorate enhances our influence in South America and provides us with key assets that will benefit the Empire for years to come."
+
+# The Occupation of uruguay
+UKoccupation.13.d:0 "With a decisive campaign, the British Empire has successfully established the Crown Colony of Uruguay. This strategically positioned territory on the southeastern coast of South America is now under our direct control. Our primary objectives will be to integrate Uruguay’s port facilities and agricultural resources into the Empire's economy. We will implement a robust administrative framework to ensure stability and prosperity in the colony. The local population will be governed under British law, and we will work to align Uruguay with the broader goals of the Empire. This acquisition not only secures a vital position in South America but also enhances our economic and strategic interests in the region."
+
+# The Occupation of morroco
+UKoccupation.14.d:0 "Following a series of diplomatic and military maneuvers, the British Empire has established the Protectorate of Morocco. This crucial region, straddling the border between Europe and Africa, now falls under our careful stewardship. By designating Morocco as a protectorate, we ensure that British interests are safeguarded while allowing for a degree of local governance. Our immediate focus will be on solidifying our military presence and setting up an administration that integrates seamlessly with the local traditions and governance structures. This strategic acquisition enhances our influence in North Africa and secures our position as a dominant power in the Mediterranean region."
+
+# The Occupation of siberia
+UKoccupation.15.d:0 "After a carefully planned operation, the British Empire has extended its reach to the distant lands of Transamur. This strategically vital region, nestled between the great powers of Russia and Japan, is now under our protection. The establishment of the British Protectorate of Transamur will ensure that we maintain control over the critical ports and resources that the area provides. Our first priority is to fortify our military presence and set up a stable administration that aligns with our imperial goals. The local governance will be guided by British advisors to ensure that Transamur contributes effectively to the Empire's strength. This move secures our influence in East Asia, marking a significant victory for the Crown."
+
+# The Occupation of chile
+UKoccupation.16.d:0 "After a decisive campaign, we have successfully brought the Dominion of Chile under the protection of the British Empire. Chile, with its vast coastline and rich natural resources, is now firmly within our sphere of influence. Our first task is to establish a strong and stable administration, ensuring that Chile prospers as a key dominion in our global empire. The local population will be guided towards British governance, and we will work to integrate Chile’s economy with our own, securing its place as a vital contributor to the Crown. This triumph marks a new chapter in the history of the Empire, and the people of Britain can take pride in this significant achievement."
+
+# The Occupation of paraguay
+UKoccupation.17.d:0 "With a successful strategic campaign, the British Empire has established the Protectorate of Paraguay. This landlocked nation, rich in agricultural resources and strategically positioned in South America, is now under our protective oversight. By implementing a protectorate, we ensure that British interests are safeguarded while allowing Paraguay to maintain its local governance. Our immediate tasks will involve strengthening our military presence and collaborating with local leaders to ensure a stable and prosperous administration. This new protectorate enhances our influence in South America and secures valuable resources for the Empire."
+
+# The Occupation of peru
+UKoccupation.18.d:0 "After a decisive campaign, the British Empire has established the Crown Colony of Peru. This region, rich in mineral resources and strategically positioned on the South American coast, is now under our direct control. Our immediate focus will be on integrating Peru’s wealth into the Empire’s economy and establishing a robust administrative framework. With direct British governance, we aim to harness Peru's resources efficiently and ensure its stability as a vital part of our global empire."
+
+# The Occupation of bolivia
+UKoccupation.19.d:0 "Following a successful operation, the British Empire has established the Protectorate of Bolivia. This landlocked nation, known for its valuable natural resources and unique cultural landscape, is now under our protective oversight. By setting up a protectorate, we ensure that British interests are safeguarded while allowing Bolivia to retain a degree of local governance. Our priority will be to integrate Bolivia’s resources into our economic framework while working with local leaders to maintain stability and prosperity."
+
+# The Occupation of suriname
+UKoccupation.20.d:0 "With a decisive operation, the British Empire has established the Crown Colony of Suriname. This small yet resource-rich territory on the northern coast of South America is now under our direct control. Our primary objective is to integrate Suriname’s abundant natural resources, including bauxite and gold, into the Empire's economy. Direct British governance will ensure the efficient administration of the colony and the stability of the region. This new acquisition not only strengthens our presence in South America but also secures a valuable economic asset for the Empire."
+
+# The Occupation of colombia
+UKoccupation.21.d:0 "In a momentous achievement, the British Empire has established the Dominion of Gran Colombia, uniting the territories of Venezuela, Colombia, and Ecuador under a single administration. This vast and diverse region, rich in natural resources and strategically positioned between the Caribbean Sea and the Pacific Ocean, is now a vital part of our Empire. By granting it dominion status, we ensure strong ties to Britain while allowing for local self-governance, respecting the unique cultural identities of the people. Our immediate focus will be on securing key trade routes, including the Panama Canal, and integrating the region’s wealth into the Empire's economic framework."
+
+# The Occupation of greece
+UKoccupation.22.d:0 "In recognition of Greece’s strategic importance and rich cultural legacy, the British Empire has established the Kingdom of Anglo-Greece. By merging Greek identity with British governance, this new kingdom will serve as a beacon of stability and prosperity in the Eastern Mediterranean. The creation of Anglo-Greece ensures that both nations’ legacies are honored, while firmly integrating Greece into the British imperial fold."
+
+# The Occupation of turkestan
+UKoccupation.25.d:0 "After a protracted and arduous campaign, the vast lands of Turkestan have been brought under the rule of the British Empire. This region, with its diverse peoples and rich cultural heritage, now stands as the Turkestan Dominion, a new frontier in our imperial reach. The strategic importance of Turkestan cannot be overstated—its vast resources and key position along ancient trade routes make it a jewel in our crown. Our first priority will be to establish a stable administration, ensuring that the various ethnic groups within the Dominion are governed justly and effectively. With British oversight, Turkestan shall flourish, providing both security and prosperity to the Empire while serving as a bulwark against any threats from the east."
+
+# The Occupation of sinkiang
+UKoccupation.26.d:0 "The remote and rugged lands of Sinkiang have been brought under the banner of the British Empire, now forming the Dominion of Sinkiang. This vast region, with its towering mountains and expansive deserts, holds significant strategic value, serving as a gateway between East and West. Under British rule, the Dominion of Sinkiang will become a crucial outpost of imperial influence, linking our territories across Asia. We must establish firm control over the region, integrating its diverse ethnic groups into a stable and prosperous administration. With careful governance, Sinkiang will not only contribute to the strength of the Empire but also stand as a symbol of British power on one of the farthest reaches of our dominion."
+
+# The Occupation of tibet
+UKoccupation.27.d:0 "High upon the roof of the world, the ancient and mystical land of Tibet has now become part of the British Empire, established as the Dominion of Tibet. This remote and spiritual region, long isolated from the outside world, holds not only significant cultural and religious importance but also strategic value as a buffer between our Indian territories and the rising powers of the East. The challenge of governing such a unique and secluded domain will require careful diplomacy and respect for local traditions. Under British oversight, the Dominion of Tibet will be preserved as a peaceful sanctuary, while also serving as a key outpost in securing our influence across the Himalayan frontier. Through judicious rule, Tibet shall remain a vital and revered part of our global Empire."
+
+# The Occupation of persia
+UKoccupation.28.d:0 "The ancient and storied lands of Persia have now fallen under the control of the British Empire, forming the Dominion of Persia. This region, rich in history and culture, has long been the crossroads of empires, with its vast resources and strategic position making it a prize of unparalleled value. As we establish British rule, our immediate task will be to secure the loyalty of Persia’s diverse peoples and to harness the wealth of its oil fields and trade routes. The Dominion of Persia will play a pivotal role in securing our influence across the Middle East, serving as both a vital source of economic strength and a bulwark against potential rivals. With firm but fair governance, Persia shall flourish under British protection, restoring its ancient grandeur within the framework of our global Empire."
+
+# The Occupation of turkey
+UKoccupation.30.d:0 "The historic lands of Anatolia, the cradle of civilizations and the gateway between East and West, have now been secured under the dominion of the British Empire. As the Dominion of Anatolia, this region will serve as a linchpin in our control over the eastern Mediterranean, with its strategic ports and ancient cities providing invaluable resources and influence. The diverse peoples of Anatolia, with their rich cultural heritage, will now be united under British governance, ensuring stability and prosperity in a land that has seen countless empires rise and fall. With careful administration, the Dominion of Anatolia will thrive, becoming a beacon of British power and a crucial link in our global network of trade and military strength."
+
+# The Occupation of algeria
+UKoccupation.31.d:0 "The vast and diverse lands of Algeria have now come under the authority of the British Empire, forming the Dominion of Algeria. With its rich resources and strategic position along the Mediterranean coast, Algeria is set to become a key component in our imperial network. This dominion, spanning from the Mediterranean shores to the Sahara Desert, will be integral in bolstering our influence in North Africa and securing vital trade routes. Our immediate focus will be on establishing effective governance, fostering economic development, and integrating Algeria’s varied cultures and traditions into a cohesive administrative framework. Under British oversight, Algeria will not only enhance our strategic reach but also contribute significantly to the prosperity of the Empire."
+
+# The Occupation of indochina
+UKoccupation.32.d:0 "The lush and strategically vital lands of Indochina have now been integrated into the British Empire as the Dominion of Indochina. This region, with its diverse cultures, rich natural resources, and pivotal location in Southeast Asia, holds immense value for our imperial ambitions. Our task is to stabilize and develop the area, ensuring that its economic potential is fully realized while maintaining harmony among its varied populations. The Dominion of Indochina will serve as a crucial hub for trade and military operations in the Far East, strengthening our influence in the region. Through careful administration and investment in infrastructure, Indochina will flourish as a prosperous and integral part of the British Empire."
+
+# The Occupation of philippines
+UKoccupation.33.d:0 "The tropical archipelago of the Philippines has now been established as the Dominion of the Philippines under the British Empire. This strategic collection of islands, with its rich resources and vital position in Southeast Asia, is set to become a cornerstone of our imperial influence in the region. The Dominion of the Philippines will play a crucial role in enhancing our maritime reach and securing vital trade routes across the Pacific. Our focus will be on developing infrastructure, fostering economic growth, and integrating the diverse cultures of the islands into a stable and prosperous administration. With British oversight, the Philippines will emerge as a vibrant and strategic asset, bolstering our presence in the Far East."
+
+# The Occupation of mexico
+UKoccupation.34.d:0 "The rich and vibrant land of Mexico has now been established as the Dominion of Mexico within the British Empire. This strategically significant territory, with its vast resources, bustling cities, and historic heritage, offers immense opportunities for economic development and imperial expansion. Our focus will be on integrating Mexico's diverse regions into a cohesive and prosperous administration while leveraging its abundant resources and key trade routes. The Dominion of Mexico will act as a crucial link between North and South America, bolstering our influence in the Western Hemisphere. Through diligent governance and investment in infrastructure, Mexico will thrive as a prominent and valued part of the British Empire."
+
+# The Occupation of mozambique
+UKoccupation.38.d:0 "The expansive and resource-rich territories of Zambezia and Mozambique have now been established as the Crown Colony of Zambezia and Mozambique. This region, renowned for its extensive coastline along the Indian Ocean, offers immense strategic and economic opportunities for the British Empire. With its vital ports and abundant natural resources, including fertile land and valuable minerals, the colony will serve as a crucial hub for maritime trade and resource extraction. As a Crown Colony, it will be directly administered by the British government, ensuring robust infrastructure development and effective governance. The Crown Colony of Zambezia and Mozambique will enhance our influence in southeastern Africa, fortify our maritime presence, and contribute significantly to the prosperity of the Empire."
+
+# The Occupation of angola
+UKoccupation.40.d:0 "The rich and diverse land of Angola has now been established as the Crown Colony of Angola under British control. This region, with its vast natural resources, including valuable minerals and fertile agricultural lands, presents significant opportunities for economic growth and strategic advantage. The colony's extensive Atlantic coastline and strategic location along key trade routes will enhance our maritime presence and economic influence in West Africa. As a Crown Colony, Angola will be directly administered by the British government, ensuring robust infrastructure development and efficient governance. The Crown Colony of Angola will be a vital asset in our African empire, contributing to the prosperity of the Empire and strengthening our strategic position in the region."
+
+# The Occupation of syria
+UKoccupation.41.d:0 "The historically rich and strategically positioned region of Syria has now been established as the Crown Colony of Syria under British rule. This territory, with its significant cultural heritage and pivotal location in the Middle East, offers important advantages for our imperial interests. The colony's central role in regional trade routes and its access to key resources will be leveraged to strengthen our influence in the area. As a Crown Colony, Syria will be directly administered by the British government, ensuring effective governance and development. Our focus will be on stabilizing the region, enhancing infrastructure, and integrating its diverse population into the Empire. The Crown Colony of Syria will be a key component of our strategic and economic presence in the Middle East."
+
+# The Occupation of siam
+UKoccupation.42.d:0 "The Kingdom of Siam has now been established as the Dominion of Siam within the British Empire. This strategically important region in Southeast Asia, known for its vibrant culture and economic potential, will play a crucial role in our imperial strategy. The Dominion of Siam, with its rich resources and key position in regional trade, offers significant opportunities for growth and influence. Under British oversight, Siam will benefit from enhanced infrastructure and economic development while maintaining its local governance. The Dominion of Siam will strengthen our position in Asia, fostering economic ties and securing strategic interests in the region."
+
+# The Occupation of indonesia
+UKoccupation.43.d:0 "The vibrant and strategically significant region of the East Indies has been established as the Crown Colony of East Indies under British control. This expansive territory, encompassing the islands of Southeast Asia and the surrounding maritime routes, offers immense opportunities for economic growth and strategic advantage. The colony's rich natural resources, including valuable spices and strategic ports, will enhance our global trade network and bolster our maritime presence in the region. As a Crown Colony, the East Indies will be directly administered by the British government, ensuring effective governance and infrastructure development. Our focus will be on maximizing economic benefits, developing trade infrastructure, and securing the region's strategic interests. The Crown Colony of East Indies will be a pivotal asset in strengthening British influence and operations across Southeast Asia and the Pacific."
+
+# The Occupation of sarawak
+UKoccupation.44.d:0 "The entire Borneo island has been designated as the Special Economic Territory of Sarawak, reflecting its critical strategic location and economic potential. This vast and resource-rich island, with its extensive coastline and central position in the Southeast Asian seas, offers unparalleled opportunities for maritime trade and economic development. The Special Economic Territory of Sarawak will be developed as a hub for maritime defense and economic activity, leveraging its prime location to enhance British influence in the region. Special emphasis will be placed on building infrastructure to support trade, resource extraction, and naval operations. This unique administrative status will ensure that the island's economic benefits are maximized while maintaining effective governance and stability. The Special Economic Territory of Sarawak will be a cornerstone of our strategic and economic interests in Southeast Asia."
+
+# The Occupation of arabia
+UKoccupation.46.d:0 "The vast and strategically pivotal region of Arabia has been established as the Dominion of Arabia. This area, known for its rich cultural heritage and critical position in the Middle East, offers significant strategic and economic opportunities. As a Dominion, Arabia will benefit from British administrative oversight while maintaining a degree of local governance. Our efforts will focus on stabilizing the region, developing its infrastructure, and leveraging its strategic location to enhance our influence in the Middle East. The Dominion of Arabia will play a crucial role in securing trade routes, managing valuable resources, and reinforcing our strategic presence in this key area. With a focus on development and integration, the Dominion of Arabia will be an essential part of our imperial strategy in the region."
+
+# The Occupation of switzerland
+UKoccupation.47.d:0 "The neutral and strategically advantageous territory of Switzerland has been established as the Special Economic Territory of Switzerland under British control. Renowned for its stability, security, and central location in Europe, Switzerland is perfectly positioned to serve as a premier economic center and banking hub for the continent. This Special Economic Territory will focus on leveraging Switzerland’s established financial infrastructure, fostering economic growth, and enhancing our influence in European financial markets. Direct British administration will ensure the maintenance of high standards in financial services and infrastructure development. The Special Economic Territory of Switzerland will play a crucial role in consolidating our economic power in Europe and securing our interests in the global financial system."
+
+# The Occupation of baltic
+UKoccupation.48.d:0 "The strategically located and historically rich Baltic States have now been established as the Crown Colony of the Baltic States. This region, encompassing Estonia, Latvia, and Lithuania, offers significant strategic advantages and economic potential. The colony’s access to key maritime routes and its strategic position in Northern Europe will enhance British influence in the Baltic Sea and beyond. As a Crown Colony, it will be directly administered by the British government, ensuring effective management and infrastructure development. Our focus will be on strengthening trade connections, boosting economic growth, and securing the region’s vital maritime interests. The Crown Colony of the Baltic States will be a key component in our Northern European holdings."
+
+# The Occupation of romania
+UKoccupation.49.d:0 "The historically significant and strategically located territory of Romania has been established as the Dominion of Romania. This region, with its rich resources and central position in Southeast Europe, offers substantial opportunities for economic development and strategic advantage. As a Dominion, Romania will maintain a degree of local autonomy while benefiting from British administrative oversight. Our efforts will focus on enhancing infrastructure, leveraging the region’s natural resources, and strengthening its role in our European strategy. The Dominion of Romania will play a crucial role in reinforcing British influence in Southeast Europe."
+
+# The Occupation of bulgaria
+UKoccupation.50.d:0 "The key strategic territory of Bulgaria has been established as the Dominion of Bulgaria. This region, with its rich cultural history and strategic location in the Balkans, offers important advantages for our imperial strategy. As a Dominion, Bulgaria will enjoy a level of local governance while benefiting from British oversight and development initiatives. Our focus will be on leveraging Bulgaria’s resources, enhancing infrastructure, and integrating the region into our broader European strategy. The Dominion of Bulgaria will be an essential part of our efforts to consolidate British influence in the Balkans and Southeast Europe."
+
+# The Occupation of ukraine
+UKoccupation.51.d:0 "The vast and resource-rich territory of Ukraine has been established as the British Protectorate of Ukraine. This region, with its fertile lands and strategic location in Eastern Europe, presents significant opportunities for economic development and strategic advantage. Under British protection, Ukraine will benefit from enhanced infrastructure and administrative support while maintaining its local governance. Our focus will be on stabilizing the region, maximizing its agricultural and industrial potential, and securing its role in our European strategy. The British Protectorate of Ukraine will be a key asset in reinforcing our influence in Eastern Europe."
+
+# The Occupation of napal
+UKoccupation.53.d:0 "The majestic and strategically significant region of the Himalayas has been established as the Crown Colony of the Himalaya. This territory, known for its breathtaking landscapes and critical geopolitical position, will serve as a vital part of the British Empire’s holdings in Asia. The colony’s unique location provides strategic advantages for controlling key mountain passes and trade routes. As a Crown Colony, it will be directly administered by the British government, ensuring effective management and development. Our focus will be on maintaining stability, enhancing infrastructure, and securing the region’s strategic importance. The Crown Colony of the Himalaya will play a crucial role in reinforcing our influence in the Asian highlands."
+
+# The Occupation of china central
+UKoccupation.54.d:0 "The expansive and strategically vital region of the Yangtze Basin has been established as the Imperial Dominion of Yangtze. This territory, encompassing the entire Yangtze River basin, represents a crucial asset due to its significant economic, agricultural, and strategic value. As an Imperial Dominion, Yangtze will operate with a blend of local governance and British administrative oversight, ensuring both effective management and integration into our broader imperial strategy. Our focus will be on harnessing the region’s rich natural resources, developing infrastructure, and maximizing its agricultural and industrial potential. The Imperial Dominion of Yangtze will play a key role in reinforcing British influence in East Asia, securing vital trade routes, and enhancing our economic and strategic presence in the region."
+
+# The Occupation of china south
+UKoccupation.55.d:0 "The strategically significant and economically vibrant region of the Pearl River Delta has been established as the Crown Dominion of the Pearl River Delta. This territory, renowned for its bustling port cities and dynamic economic activity, will serve as a key hub for British operations in Southern China. As a Crown Dominion, it will benefit from direct British governance while allowing for local administrative input. Our focus will be on developing the region’s extensive port infrastructure, harnessing its economic potential, and enhancing trade networks. The Pearl River Delta’s critical location will bolster our maritime influence and economic reach in East Asia. The Crown Dominion of the Pearl River Delta will be central to our efforts to maximize trade efficiency and secure strategic economic interests in the region."
+
+# The Occupation of legations
+UKoccupation.56.d:0 "The newly established British Special Economic Region of East Asia encompasses a crucial network of major port cities and strategic locations, including Shanghai, Qingdao, Fuzhou, Hong Kong, Macau, Hainan, Singapore, as well as the western bases of Hispaniola and Newfoundland. This Special Economic Region is designed to leverage its prime locations for global trade, economic development, and strategic maritime operations. The region will serve as a central hub for British economic activities in Asia, integrating key ports and trade centers into a cohesive economic and strategic network. Under British administration, the Special Economic Region of East Asia will focus on maximizing trade efficiency, enhancing port infrastructure, and securing vital maritime routes. The inclusion of Hispaniola and Newfoundland as western bases will further strengthen our global reach and strategic positioning. This Special Economic Region will be instrumental in reinforcing British influence and dominance across both the eastern and western hemispheres."
+
+# The Occupation of mongolia
+UKoccupation.57.d:0 "The vast and historically rich territory of Mongolia has been established as the British Protectorate of Mongolia. This region, known for its expansive steppes and strategic location, will benefit from British oversight while maintaining its local governance. Our focus will be on stabilizing the region, enhancing infrastructure, and leveraging Mongolia’s strategic position in Central Asia. The Protectorate of Mongolia will play a key role in reinforcing British influence across the Asian steppe and securing vital trade routes."
+
+# The Occupation of china
+UKoccupation.58.d:0 "The immense and culturally significant territory of China has been established as the Imperial Dominion of China. This region, encompassing vast areas of economic and strategic value, will operate under British governance with a blend of local administrative autonomy. Our efforts will focus on harnessing China’s vast resources, developing critical infrastructure, and integrating it into our broader imperial strategy. The Imperial Dominion of China will be central to our plans for economic expansion and strategic dominance in East Asia."
+
+# The Occupation of manchuria
+UKoccupation.59.d:0 "The resource-rich and strategically located region of Manchuria has been established as the Dominion of Manchuria. As a Dominion, it will benefit from British oversight while retaining a degree of local governance. Our focus will be on developing Manchuria’s infrastructure, leveraging its natural resources, and enhancing its role in our East Asian strategy. The Dominion of Manchuria will be pivotal in reinforcing our economic and strategic presence in the region."
+
+# The Occupation of papua new guinea
+UKoccupation.60.d:0 "The diverse and strategically important territory of Papua New Guinea has been established as the Crown Dominion of Papua New Guinea. This region, with its rich natural resources and strategic maritime location, will be directly administered by the British government. Our focus will be on developing the region’s infrastructure, exploiting its resources, and securing its position in the Pacific. The Crown Dominion of Papua New Guinea will play a crucial role in our strategy for regional influence and resource management."
+
+# The Occupation of taiwan
+UKoccupation.61.d:0 "The strategically positioned island of Taiwan has been established as the Crown Colony of Taiwan. This territory, known for its significant maritime location and economic potential, will be directly administered by the British government. Our efforts will focus on developing Taiwan’s infrastructure, enhancing its economic capabilities, and securing its strategic maritime position. The Crown Colony of Taiwan will be a key component in our strategy for expanding influence in East Asia."
+
+# The Occupation of korea
+UKoccupation.62.d:0 "The strategically vital and culturally rich peninsula of Korea has been established as the Crown Colony of Korea. This region, with its important location and economic potential, will be directly administered by the British government. Our focus will be on developing Korea’s infrastructure, leveraging its strategic position, and enhancing its role in our East Asian strategy. The Crown Colony of Korea will be essential in reinforcing British influence and securing our interests in the region."
+
+# The Occupation of poland
+UKoccupation.63.d:0 "The historically significant and strategically located territory of Poland has been established as the British Protectorate of Poland. This region, with its rich cultural heritage and key position in Central Europe, will benefit from British oversight while maintaining local governance. Our focus will be on stabilizing the region, enhancing infrastructure, and integrating Poland into our broader European strategy. The Protectorate of Poland will be pivotal in consolidating British influence in Central Europe and securing vital strategic interests."
+
+# The Occupation of belarus
+UKoccupation.64.d:0 "The historically significant and strategically important region of White Ruthenia has been established as the Crown Colony of White Ruthenia. This territory, known for its rich cultural heritage and key location in Eastern Europe, will be directly administered by the British government. Our focus will be on stabilizing the region, enhancing infrastructure, and integrating White Ruthenia into our broader European strategy. The Crown Colony of White Ruthenia will play a crucial role in consolidating British influence in Eastern Europe and securing strategic interests."
+
+# The Occupation of japan
+UKoccupation.65.d:0 "The culturally rich and strategically located territory of Japan has been established as the Dominion of Nippon. This region, with its significant economic potential and strategic importance, will operate under British governance while retaining a degree of local administrative autonomy. Our efforts will focus on leveraging Japan’s resources, developing infrastructure, and integrating it into our broader imperial strategy. The Dominion of Nippon will be central to our plans for expanding influence and securing our interests in East Asia."
+
+# The Occupation of cuba
+UKoccupation.66.d:0 "The vibrant and strategically positioned island nation of Cuba has been established as the Crown Colony of Cuba. This territory, with its significant maritime location and economic potential, will be directly administered by the British government. Our focus will be on developing Cuba’s infrastructure, enhancing its economic capabilities, and securing its strategic position in the Caribbean. The Crown Colony of Cuba will be a key component in our strategy for regional influence and maritime control."
+
+# The Occupation of portugal
+UKoccupation.67.d:0 "The historically significant and strategically located territory of Portugal has been established as the Crown Colony of Portugal. This region, known for its rich cultural heritage and key position in Western Europe, will be directly administered by the British government. Our efforts will focus on stabilizing the region, enhancing infrastructure, and integrating Portugal into our broader European strategy. The Crown Colony of Portugal will play a vital role in reinforcing British influence in Western Europe and securing maritime interests."
+
+# The Occupation of malaya
+UKoccupation.70.d:0 "The strategically significant and resource-rich region of Malaya has been established as the Crown Colony of Malaya. This territory, known for its economic potential and maritime importance, will be directly administered by the British government. Our focus will be on developing Malaya’s infrastructure, harnessing its resources, and securing its strategic position in Southeast Asia. The Crown Colony of Malaya will play a crucial role in our regional strategy and economic expansion."
+
+# The Occupation of denmark
+UKoccupation.73.d:0 "The culturally significant and strategically located territory of Denmark has been established as the Crown Colony of Denmark. This region, known for its key position in Northern Europe and its economic potential, will be directly administered by the British government. Our focus will be on stabilizing the region, enhancing infrastructure, and integrating Denmark into our broader European strategy. The Crown Colony of Denmark will play a vital role in reinforcing British influence and securing strategic interests in Northern Europe."
+
+# The Occupation of madagascar
+UKoccupation.74.d:0 "The diverse and strategically important island of Madagascar has been established as the Crown Colony of Madagascar. This territory, with its rich natural resources and strategic maritime location, will be directly administered by the British government. Our efforts will focus on developing Madagascar’s infrastructure, exploiting its resources, and securing its position in the Indian Ocean. The Crown Colony of Madagascar will play a crucial role in our strategy for regional influence and resource management."
