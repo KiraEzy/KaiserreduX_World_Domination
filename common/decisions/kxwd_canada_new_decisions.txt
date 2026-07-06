@@ -6503,7 +6503,7 @@ CAN_establish_rk_EGY = {
 	}
 }
 
-CAN_establish_rk_LBA = {
+CAN_establish_rk_TRP = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -6517,9 +6517,9 @@ CAN_establish_rk_LBA = {
 	available = {
 		if = {
 			limit = {
-				LBA = { exists = yes }
+				TRP = { exists = yes }
 			}
-			LBA = { is_subject_of = CAN }
+			TRP = { is_subject_of = CAN }
 		}
 		448 = { owner = { OR = { original_tag = CAN is_subject_of = CAN } } }
 		OR = {
@@ -6535,25 +6535,25 @@ CAN_establish_rk_LBA = {
 	complete_effect = {
 		country_event = UKoccupationNew.58
 		hidden_effect = {
-		LBA = {
+		TRP = {
 			every_core_state = {
-				remove_core_of = LBA
+				remove_core_of = TRP
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = LBA
+					is_claimed_by = TRP
 				}
-				remove_claim_by = LBA
+				remove_claim_by = TRP
 			}
 		}
-		273 = { add_core_of = LBA }
-		450 = { add_core_of = LBA }
-		451 = { add_core_of = LBA }
-		663 = { add_core_of = LBA }
-		1009 = { add_core_of = LBA }
-		448 = { add_core_of = LBA }
-		release = LBA
-		LBA = { 
+		273 = { add_core_of = TRP }
+		450 = { add_core_of = TRP }
+		451 = { add_core_of = TRP }
+		663 = { add_core_of = TRP }
+		1009 = { add_core_of = TRP }
+		448 = { add_core_of = TRP }
+		release = TRP
+		TRP = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -6566,11 +6566,11 @@ CAN_establish_rk_LBA = {
 						}
 					}
 				}
-				transfer_state_to = LBA
+				transfer_state_to = TRP
 			}
 		}
-		LBA = { 
-			set_cosmetic_tag = CAN_LBA_OCC
+		TRP = { 
+			set_cosmetic_tag = CAN_TRP_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -6584,7 +6584,7 @@ CAN_establish_rk_LBA = {
 
 			CAN = {
 				set_autonomy = {
-					target = LBA
+					target = TRP
 					autonomous_state = kx_colored_puppet
 				}
 			}
