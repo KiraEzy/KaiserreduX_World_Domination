@@ -25,6 +25,31 @@ on_actions = {
                 }
                 GRE = {country_event = KXWD_GRE.2}
             }
+            if = {
+                limit = {
+                    OR = {
+                        FROM.FROM = { state = 126 }
+                        FROM.FROM = { state = 64 }
+                    }
+                    HOL = {
+                        has_completed_focus = HOLWD_Great_State
+                    }
+                }
+                HOL = {
+                    holwd_check_secondary_fight_focus_unlocks = yes
+                }
+            }
+        }
+    }
+
+    on_weekly = {
+        effect = {
+            if = {
+                limit = {
+                    has_completed_focus = HOLWD_Great_State
+                }
+                holwd_check_secondary_fight_focus_unlocks = yes
+            }
         }
     }
 }

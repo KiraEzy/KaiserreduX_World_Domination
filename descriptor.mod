@@ -1,4 +1,4 @@
-version="0.0.1"
+version="1.0.13"
 dependencies={
 	"KaiserreduX"
 }
@@ -9,5 +9,5 @@ tags={
 }
 name="Kaiserredux: World Domination"
 picture="thumbnail.png"
-supported_version="1.18.*"
+supported_version="1.19.*"
 remote_file_id="3325164444"
