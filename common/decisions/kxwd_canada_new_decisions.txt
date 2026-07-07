@@ -5053,6 +5053,7 @@ CAN_establish_rk_WHR = {
 		}
 
 	available = {
+		WHR = { is_subject_of = CAN }
 		if = {
 			limit = {
 				WHR = { exists = yes }
