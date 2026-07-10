@@ -1,0 +1,28 @@
+
+######################################
+####### Carlist tree Expansion #######
+######################################
+
+shared_focus = {
+	id = CARWD_great_recoquista
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+        NOT = {
+			has_completed_focus = CAR_plus_ultra
+		}
+		has_completed_focus = CAR_viva_el_rey
+	}
+
+	x = 0
+	y = 3
+    relative_position_id = CAR_viva_el_rey
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_great_recoquista"
+	}
+}

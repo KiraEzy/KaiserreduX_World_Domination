@@ -2323,6 +2323,9 @@ focus = {
 		icon = GFX_CAR_plus_ultra
 		cost = 7
 		available = {
+			NOT = {
+				has_completed_focus = CARWD_great_recoquista
+			}
 			has_completed_focus = CAR_call_for_unity
 			OR = {
 				has_completed_focus = CAR_help_pope
@@ -3173,4 +3176,5 @@ focus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
+	shared_focus = CARWD_great_recoquista
 }
