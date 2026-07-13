@@ -9,13 +9,16 @@ shared_focus = {
 	available = {
         NOT = {
 			has_completed_focus = CAR_plus_ultra
+            has_completed_focus = CAR_join_entente
+            has_completed_focus = CAR_foreign_focus
 		}
 		has_completed_focus = CAR_viva_el_rey
+        is_ai = no
 	}
 
 	x = 0
 	y = 3
-    relative_position_id = CAR_viva_el_rey
+    relative_position_id = CAR_expand_air_ports
 	cost = 1
 
 	ai_will_do = {
@@ -24,5 +27,451 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_great_recoquista"
+        custom_effect_tooltip = "Unlocks decisions to make Puppets"
+	}
+}
+
+shared_focus = {
+	id = CARWD_new_world
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_great_recoquista
+    }
+
+	x = -2
+	y = 1
+    relative_position_id = CARWD_great_recoquista
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_new_world"
+        custom_effect_tooltip = "Unlocks decisions to reconqer the new world"
+	}
+}
+
+shared_focus = {
+	id = CARWD_operation_havana
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_new_world
+    }
+
+	x = -1
+	y = 1
+    relative_position_id = CARWD_new_world
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_operation_havana"
+        custom_effect_tooltip = "Unlocks decision to take cuba"
+	}
+}
+
+shared_focus = {
+	id = CARWD_operation_cortez
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_operation_havana
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_operation_havana
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_operation_cortez"
+        custom_effect_tooltip = "Unlocks decision to invade Mexico"
+	}
+}
+
+shared_focus = {
+	id = CARWD_push_south
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_operation_cortez
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_operation_cortez
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_push_south"
+        custom_effect_tooltip = "Unlocks decisions to Attack South America"
+	}
+}
+
+shared_focus = {
+	id = CARWD_old_world
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_great_recoquista
+    }
+
+	x = 1
+	y = 1
+    relative_position_id = CARWD_great_recoquista
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_old_world"
+        custom_effect_tooltip = "Unlocks decisions to conquer the old world"
+	}
+}
+
+shared_focus = {
+	id = CARWD_reclaim_hre
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_old_world
+    }
+
+	x = -2
+	y = 1
+    relative_position_id = CARWD_old_world
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_reclaim_hre"
+        custom_effect_tooltip = "Unlocks decisions to reclaim the Holy Roman Empire"
+	}
+}
+
+shared_focus = {
+	id = CARWD_german_huns
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+        has_completed_focus = CARWD_syndie_threat
+	}
+    prerequisite = {
+        focus = CARWD_reclaim_hre
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_reclaim_hre
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_german_huns"
+        custom_effect_tooltip = "Unlocks decisions to suprise attack the Germanic Huns"
+	}
+}
+
+shared_focus = {
+	id = CARWD_proclaim_hre
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_german_huns
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_german_huns
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_proclaim_hre"
+        custom_effect_tooltip = "Unlocks decision to proclaim the Holy Roman Empire"
+	}
+}
+
+shared_focus = {
+	id = CARWD_return_to_africa
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_old_world
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_old_world
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_return_to_africa"
+        custom_effect_tooltip = "Unlocks decisions to expand our african holdings"
+	}
+}
+
+shared_focus = {
+	id = CARWD_pink_map_plan
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_return_to_africa
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_return_to_africa
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_pink_map_plan"
+        custom_effect_tooltip = "Unlocks decisions to take the pink map claims"
+	}
+}
+
+shared_focus = {
+	id = CARWD_cameroon_gambit
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_pink_map_plan
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_pink_map_plan
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_cameroon_gambit"
+        custom_effect_tooltip = "Unlocks decision to take Cameroon"
+	}
+}
+
+shared_focus = {
+	id = CARWD_asian_ambition
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_old_world
+    }
+
+	x = 2
+	y = 1
+    relative_position_id = CARWD_old_world
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_asian_ambition"
+        custom_effect_tooltip = "Unlocks decisions to expand in Asia"
+	}
+}
+
+shared_focus = {
+	id = CARWD_macao_base
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_asian_ambition
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_asian_ambition
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_macao_base"
+        custom_effect_tooltip = "Unlocks decisions to fortify macao and expand our holdings in china"
+	}
+}
+
+shared_focus = {
+	id = CARWD_philippine_ultimatum
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_macao_base
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_macao_base
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_philippine_ultimatum"
+        custom_effect_tooltip = "Unlocks decisions to take the philippines either peacefully or by force"
+	}
+}
+
+shared_focus = {
+	id = CARWD_syndie_threat
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+        has_completed_focus = CARWD_reclaim_hre
+	}
+    prerequisite = {
+        focus = CARWD_old_world
+    }
+
+	x = 4
+	y = 1
+    relative_position_id = CARWD_old_world
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_syndie_threat"
+        custom_effect_tooltip = "Unlocks decisions to fight the syndicalist threat"
+	}
+}
+
+shared_focus = {
+	id = CARWD_protect_the_pope
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_syndie_threat
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_syndie_threat
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_protect_the_pope"
+        custom_effect_tooltip = "Unlocks decisions to protect the papal states and destroy the Italian socialists"
+	}
+}
+
+shared_focus = {
+	id = CARWD_revenge_on_england
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_protect_the_pope
+    }
+
+	x = 0
+	y = 1
+    relative_position_id = CARWD_protect_the_pope
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_revenge_on_england"
+        custom_effect_tooltip = "Unlocks decisions to destroy the British"
+	}
+}
+
+shared_focus = {
+	id = CARWD_from_sunrise_to_sunset
+	icon = GFX_goal_MLTWD_take_iberian_peninsula
+	available = {
+	}
+    prerequisite = {
+        focus = CARWD_proclaim_hre
+    }
+    prerequisite = {
+        focus = CARWD_revenge_on_england
+    }
+    prerequisite = {
+        focus = CARWD_cameroon_gambit
+    }
+    prerequisite = {
+        focus = CARWD_philippine_ultimatum
+    }
+    prerequisite = {
+        focus = CARWD_push_south
+    }
+
+	x = 0
+	y = 5
+    relative_position_id = CARWD_great_recoquista
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_from_sunrise_to_sunset"
 	}
 }
