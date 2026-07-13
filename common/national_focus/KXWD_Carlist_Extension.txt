@@ -10,7 +10,6 @@ shared_focus = {
         NOT = {
 			has_completed_focus = CAR_plus_ultra
             has_completed_focus = CAR_join_entente
-            has_completed_focus = CAR_foreign_focus
 		}
 		has_completed_focus = CAR_viva_el_rey
         is_ai = no
@@ -172,6 +171,106 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_reclaim_hre"
         custom_effect_tooltip = "Unlocks decisions to reclaim the Holy Roman Empire"
+        hidden_effect = {
+        3 = { add_claim_by = CAR }
+		4 = { add_claim_by = CAR }
+		6 = { add_claim_by = CAR }
+		7 = { add_claim_by = CAR }
+		8 = { add_claim_by = CAR }
+		9 = { add_claim_by = CAR }
+		17 = { add_claim_by = CAR }
+		18 = { add_claim_by = CAR }
+		20 = { add_claim_by = CAR }
+		21 = { add_claim_by = CAR }
+		24 = { add_claim_by = CAR }
+		27 = { add_claim_by = CAR }
+		28 = { add_claim_by = CAR }
+		29 = { add_claim_by = CAR }
+		32 = { add_claim_by = CAR }
+		34 = { add_claim_by = CAR }
+		35 = { add_claim_by = CAR }
+		36 = { add_claim_by = CAR }
+		39 = { add_claim_by = CAR }
+		42 = { add_claim_by = CAR }
+		50 = { add_claim_by = CAR }
+		51 = { add_claim_by = CAR }
+		52 = { add_claim_by = CAR }
+		53 = { add_claim_by = CAR }
+		54 = { add_claim_by = CAR }
+		55 = { add_claim_by = CAR }
+		56 = { add_claim_by = CAR }
+		57 = { add_claim_by = CAR }
+		58 = { add_claim_by = CAR }
+		59 = { add_claim_by = CAR }
+		60 = { add_claim_by = CAR }
+		61 = { add_claim_by = CAR }
+		62 = { add_claim_by = CAR }
+		63 = { add_claim_by = CAR }
+		64 = { add_claim_by = CAR }
+		65 = { add_claim_by = CAR }
+		66 = { add_claim_by = CAR }
+		67 = { add_claim_by = CAR }
+		68 = { add_claim_by = CAR }
+		69 = { add_claim_by = CAR }
+		71 = { add_claim_by = CAR }
+		74 = { add_claim_by = CAR }
+		75 = { add_claim_by = CAR }
+		102 = { add_claim_by = CAR }
+		151 = { add_claim_by = CAR }
+		152 = { add_claim_by = CAR }
+		153 = { add_claim_by = CAR }
+		158 = { add_claim_by = CAR }
+		159 = { add_claim_by = CAR }
+		160 = { add_claim_by = CAR }
+		162 = { add_claim_by = CAR }
+		735 = { add_claim_by = CAR }
+		736 = { add_claim_by = CAR }
+		741 = { add_claim_by = CAR }
+		759 = { add_claim_by = CAR }
+		760 = { add_claim_by = CAR }
+		761 = { add_claim_by = CAR }
+		762 = { add_claim_by = CAR }
+		763 = { add_claim_by = CAR }
+		775 = { add_claim_by = CAR }
+		779 = { add_claim_by = CAR }
+		780 = { add_claim_by = CAR }
+		781 = { add_claim_by = CAR }
+		782 = { add_claim_by = CAR }
+		783 = { add_claim_by = CAR }
+		784 = { add_claim_by = CAR }
+		785 = { add_claim_by = CAR }
+		786 = { add_claim_by = CAR }
+		835 = { add_claim_by = CAR }
+		836 = { add_claim_by = CAR }
+		838 = { add_claim_by = CAR }
+		839 = { add_claim_by = CAR }
+		866 = { add_claim_by = CAR }
+		942 = { add_claim_by = CAR }
+		943 = { add_claim_by = CAR }
+		978 = { add_claim_by = CAR }
+		979 = { add_claim_by = CAR }
+		980 = { add_claim_by = CAR }
+		1003 = { add_claim_by = CAR }
+		1004 = { add_claim_by = CAR }
+		1100 = { add_claim_by = CAR }
+		1101 = { add_claim_by = CAR }
+		1103 = { add_claim_by = CAR }
+		1104 = { add_claim_by = CAR }
+		1111 = { add_claim_by = CAR }
+		1129 = { add_claim_by = CAR }
+		1130 = { add_claim_by = CAR }
+		1131 = { add_claim_by = CAR }
+		1132 = { add_claim_by = CAR }
+		1133 = { add_claim_by = CAR }
+		1134 = { add_claim_by = CAR }
+		1137 = { add_claim_by = CAR }
+		1138 = { add_claim_by = CAR }
+		1139 = { add_claim_by = CAR }
+		1144 = { add_claim_by = CAR }
+		1235 = { add_claim_by = CAR }
+		1272 = { add_claim_by = CAR }
+		1357 = { add_claim_by = CAR }
+	    }
 	}
 }
 
