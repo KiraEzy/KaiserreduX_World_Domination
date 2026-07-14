@@ -10,8 +10,8 @@ shared_focus = {
         NOT = {
 			has_completed_focus = CAR_plus_ultra
             has_completed_focus = CAR_join_entente
+            has_completed_focus = CAR_foreign_focus
 		}
-		has_completed_focus = CAR_viva_el_rey
         is_ai = no
 	}
 
@@ -50,7 +50,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_new_world"
-        custom_effect_tooltip = "Unlocks decisions to reconqer the new world"
+        add_ideas = KXWD_CAR_new_world_conquest
 	}
 }
 
@@ -74,7 +74,16 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_operation_havana"
-        custom_effect_tooltip = "Unlocks decision to take cuba"
+        818 = {
+            transfer_state_to = CAR
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = CUB
+        }
+        CUB = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
 	}
 }
 
@@ -98,7 +107,13 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_operation_cortez"
-        custom_effect_tooltip = "Unlocks decision to invade Mexico"
+        create_wargoal = {
+            type = annex_everything
+            target = MEX
+        }
+        MEX = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
 	}
 }
 
@@ -122,8 +137,98 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_push_south"
-        custom_effect_tooltip = "Unlocks decisions to Attack South America"
-	}
+        controller = {
+        create_wargoal = {
+            type = annex_everything
+            target = GUA
+            generator = { 313 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = HON
+            generator = { 842 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = ELS
+            generator = { 314 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = NIC
+            generator = { 317 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = COS
+            generator = { 316 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = PAN
+            generator = { 304 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = COL
+            generator = { 306 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = VEN
+            generator = { 849 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = ECU
+            generator = { 305 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = PRU
+            generator = { 303 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = JAM
+            generator = { 689 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = BOL    
+            generator = { 302 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = CHL
+            generator = { 279 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = ARG
+            generator = { 278 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = PAR
+            generator = { 301 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = URG
+            generator = { 300 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = BRA
+            generator = { 500 }
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = CEN
+        }
+	    }
+    }
 }
 
 shared_focus = {
@@ -146,7 +251,14 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_old_world"
-        custom_effect_tooltip = "Unlocks decisions to conquer the old world"
+        add_ideas = KXWD_CAR_ambitious_empire
+        POR = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        create_wargoal = {
+            type = annex_everything
+            target = POR
+        }
 	}
 }
 
@@ -295,7 +407,30 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_german_huns"
-        custom_effect_tooltip = "Unlocks decisions to suprise attack the Germanic Huns"
+        create_wargoal = {
+            type = annex_everything
+            target = GER
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = AUS
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = HOL
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = BEL
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = CZE
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = SWI
+        }
 	}
 }
 
@@ -343,7 +478,27 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_return_to_africa"
-        custom_effect_tooltip = "Unlocks decisions to expand our african holdings"
+        MOR = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        NFA = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        LIB = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        create_wargoal = {
+            type = annex_everything
+            target = NFA
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = MOR
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = LIB
+        }
 	}
 }
 
@@ -367,7 +522,41 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_pink_map_plan"
-        custom_effect_tooltip = "Unlocks decisions to take the pink map claims"
+        create_wargoal = {
+            type = annex_everything
+            target = ZAM
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = ZIM
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = COG
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = UMN
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = BRT
+        }
+        BRT = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        COG = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        UMN = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        ZAM = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        ZIM = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
 	}
 }
 
@@ -392,6 +581,20 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_cameroon_gambit"
         custom_effect_tooltip = "Unlocks decision to take Cameroon"
+        create_wargoal = {
+            type = annex_everything
+            target = MAF
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = CMR
+        }
+        MAF = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
+        CMR = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
 	}
 }
 
@@ -415,12 +618,51 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_asian_ambition"
-        custom_effect_tooltip = "Unlocks decisions to expand in Asia"
+        create_wargoal = {
+            type = annex_everything
+            target = SIA
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = INS
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = GXC
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = CHI
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = QIE
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = LEP
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = ANQ
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = INC
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = HNN
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = YUN
+        }
 	}
 }
 
 shared_focus = {
-	id = CARWD_macao_base
+	id = CARWD_philippine_war
 	icon = GFX_goal_MLTWD_take_iberian_peninsula
 	available = {
 	}
@@ -438,23 +680,36 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CARWD_macao_base"
-        custom_effect_tooltip = "Unlocks decisions to fortify macao and expand our holdings in china"
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_philippine_war"
+        327 = { add_claim_by = CAR }
+		623 = { add_claim_by = CAR }
+		624 = { add_claim_by = CAR }
+		625 = { add_claim_by = CAR }
+		626 = { add_claim_by = CAR }
+		627 = { add_claim_by = CAR }
+		628 = { add_claim_by = CAR }
+        create_wargoal = {
+            type = annex_everything
+            target = PHI
+        }
+        PHI = {
+            add_ideas = KXWD_CAR_ALONE
+	    }
 	}
 }
 
 shared_focus = {
-	id = CARWD_philippine_ultimatum
+	id = CARWD_japan_war
 	icon = GFX_goal_MLTWD_take_iberian_peninsula
 	available = {
 	}
     prerequisite = {
-        focus = CARWD_macao_base
+        focus = CARWD_philippine_war
     }
 
 	x = 0
 	y = 1
-    relative_position_id = CARWD_macao_base
+    relative_position_id = CARWD_philippine_war
 	cost = 1
 
 	ai_will_do = {
@@ -462,8 +717,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CARWD_philippine_ultimatum"
-        custom_effect_tooltip = "Unlocks decisions to take the philippines either peacefully or by force"
+		log = "[GetDateText]: [Root.GetName]: Focus CARWD_japan_war"
+        create_wargoal = {
+            type = annex_everything
+            target = JAP
+        }
 	}
 }
 
@@ -488,7 +746,10 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_syndie_threat"
-        custom_effect_tooltip = "Unlocks decisions to fight the syndicalist threat"
+        create_wargoal = {
+            type = annex_everything
+            target = FRA
+        }
 	}
 }
 
@@ -512,7 +773,22 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_protect_the_pope"
-        custom_effect_tooltip = "Unlocks decisions to protect the papal states and destroy the Italian socialists"
+        create_wargoal = {
+            type = annex_everything
+            target = SRI
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = ITA
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = SIC
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = PAP
+        }
 	}
 }
 
@@ -536,7 +812,22 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_revenge_on_england"
-        custom_effect_tooltip = "Unlocks decisions to destroy the British"
+        create_wargoal = {
+            type = annex_everything
+            target = ENG
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = SCT
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = IRE
+        }
+        create_wargoal = {
+            type = annex_everything
+            target = WAL
+        }
 	}
 }
 
@@ -555,7 +846,7 @@ shared_focus = {
         focus = CARWD_cameroon_gambit
     }
     prerequisite = {
-        focus = CARWD_philippine_ultimatum
+        focus = CARWD_japan_war
     }
     prerequisite = {
         focus = CARWD_push_south
@@ -572,5 +863,9 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_from_sunrise_to_sunset"
+        swap_ideas = {
+            remove_idea = KXWD_CAR_ambitious_empire
+            add_idea = KXWD_CAR_great_empire
+	    }
 	}
 }

@@ -1948,6 +1948,9 @@ focus = {
 	y = 0
 	cost = 5
 	available = {
+	NOT = {
+		has_completed_focus = CARWD_great_recoquista
+	}
 	is_subject = no
 	has_country_flag = CAR_carlist_restoration
 	is_in_faction = no

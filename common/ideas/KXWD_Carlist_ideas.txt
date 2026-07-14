@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+        KXWD_CAR_ambitious_empire = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_CAR_ambitious_empire"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.1
+                army_speed_factor = 0.15
+                justify_war_goal_time = -0.5
+				generate_wargoal_tension = -0.5
+                weekly_casualties_war_support = 0.006
+            }
+            removal_cost = -1
+        }
+        KXWD_CAR_great_empire = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_CAR_great_empire"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                army_attack_factor = 0.15
+                army_defence_factor = 0.15
+                army_speed_factor = 0.2
+                justify_war_goal_time = -1.0
+				generate_wargoal_tension = -1.0
+                weekly_casualties_war_support = 0.012
+            }
+            removal_cost = -1
+        }
+        KXWD_CAR_new_world_conquest = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_CAR_new_world_conquest"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                naval_invasion_prep_speed = 0.25
+                naval_invasion_capacity = 10
+                navy_max_range = 15
+            }
+            removal_cost = -1
+        }
+        KXWD_CAR_ALONE = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_CAR_ALONE"}
+            allowed = {always = no}
+            picture = KXWD_placeholder
+            modifier = {
+                ai_join_ally_desire_factor = -10000.0
+                ai_call_ally_desire_factor = -10000.0
+            }
+            removal_cost = -1
+        }
+    }	
+}
