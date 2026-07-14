@@ -670,10 +670,6 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = DKB_reduce_aftermath_tt
         GEO_recalculate_aftermath_effects = yes
-        country_event = {
-            id = dkb.69
-            days = 1
-        }
     }
 }
 
@@ -773,10 +769,6 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = DKB_reduce_aftermath_tt
         GEO_recalculate_aftermath_effects = yes
-        swap_ideas = {
-            remove_idea = DKB_gosplan_6
-            add_idea = DKB_gosplan_7
-        }
     }
 }
 shared_focus = {
@@ -825,10 +817,7 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = DKB_reduce_aftermath_tt
         GEO_recalculate_aftermath_effects = yes
-        swap_ideas = {
-            remove_idea = DKB_gosplan_7
-            add_idea = DKB_gosplan_8
-        }
+        add_ideas = TRM_ural_tractor_plants
     }
 }
 shared_focus = {
@@ -977,10 +966,6 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = DKB_reduce_aftermath_tt
         GEO_recalculate_aftermath_effects = yes
-        country_event = {
-            id = dkb.70
-            days = 2
-        }
     }
 }
 shared_focus = {
@@ -1002,10 +987,6 @@ shared_focus = {
     completion_reward = {
         custom_effect_tooltip = DKB_reduce_aftermath_tt
         GEO_recalculate_aftermath_effects = yes
-        country_event = {
-            id = dkb.71
-            days = 2
-        }
     }
 }
 shared_focus = {
@@ -1845,7 +1826,6 @@ shared_focus = {
         factor = 40
     }
     completion_reward = {
-        country_event = nkvd.23
     }
 }
 shared_focus = {

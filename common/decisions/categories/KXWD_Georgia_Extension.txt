@@ -56,3 +56,24 @@ GEO_gulag_decisions = {
 		has_completed_focus = GEO_beria_gulag
 	}
 }
+
+WD_GEO_economic_decisions = {
+	icon = generic_industry
+	allowed = {
+		tag = GEO
+	}
+}
+
+WD_GEO_political_actions = {
+	icon = generic_agreement
+	allowed = {
+		tag = GEO
+	}
+}
+
+WD_GEO_foreign_policy_decisions = {
+	icon = hol_draw_up_staff_plans
+	allowed = {
+		tag = GEO
+	}
+}
