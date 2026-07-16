@@ -4,950 +4,6 @@
 # By KiraEzy/wchishun2
 ################################
 CAR_great_game = {
-	carlist_game = {
-		icon = generic_prepare_civil_war
-		complete_effect = {
-			
-			log = "FRP"
-			FRP = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "FRA"
-			FRA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GBP"
-			GBP = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ENG"
-			ENG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SCT"
-			SCT = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "WAL"
-			WAL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ULS"
-			ULS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "IRE"
-			IRE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PAP"
-			PAP = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TUS"
-			TUS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ICE"
-			ICE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "DEN"
-			DEN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SCA"
-			SCA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NOR"
-			NOR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SAM"
-			SAM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SWE"
-			SWE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SER"
-			SER = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CRO"
-			CRO = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CNT"
-			CNT = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ALB"
-			ALB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CUM"
-			CUM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "HUN"
-			HUN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CPU"
-			CPU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SVK"
-			SVK = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ROM"
-			ROM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TRS"
-			TRS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MCD"
-			MCD = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BUL"
-			BUL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CRE"
-			CRE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GRE"
-			GRE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GAL"
-			GAL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "POL"
-			POL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "EPR"
-			EPR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GRU"
-			GRU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "LAT"
-			LAT = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BAT"
-			BAT = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "KAR"
-			KAR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "FIN"
-			FIN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "WSU"
-			WSU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "UKR"
-			UKR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NGF"
-			NGF = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "WHR"
-			WHR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "KUB"
-			KUB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "DKB"
-			DKB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ABK"
-			ABK = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GEO"
-			GEO = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ARM"
-			ARM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "KUR"
-			KUR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "KDR"
-			KDR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "AZE"
-			AZE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "LEB"
-			LEB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SYR"
-			SYR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ASY"
-			ASY = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "IRQ"
-			IRQ = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "JBS"
-			JBS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SAU"
-			SAU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PAL"
-			PAL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "EGY"
-			EGY = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ALG"
-			ALG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TUN"
-			TUN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CVG"
-			CVG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "LIB"
-			LIB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "EQG"
-			EQG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CMR"
-			CMR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ETH"
-			ETH = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SOM"
-			SOM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MZB"
-			MZB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BOT"
-			BOT = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TZN"
-			TZN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MAG"
-			MAG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "RVZ"
-			RVZ = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "RUS"
-			RUS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SIB"
-			SIB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TRM"
-			TRM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TRK"
-			TRK = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "KHI"
-			KHI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "INR"
-			INR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PER"
-			PER = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "WRA"
-			WRA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "AFG"
-			AFG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "QIE"
-			QIE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SHX"
-			SHX = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "HNN"
-			HNN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "KOR"
-			KOR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TAI"
-			TAI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "JAP"
-			JAP = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MAD"
-			MAD = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "DEH"
-			DEH = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SIR"
-			SIR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SIA"
-			SIA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "INS"
-			INS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "DEI"
-			DEI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CEA"
-			CEA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "AST"
-			AST = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "IVO"
-			IVO = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NZL"
-			NZL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TOG"
-			TOG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SSI"
-			SSI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NFL"
-			NFL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CAN"
-			CAN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NEE"
-			NEE = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "NYC"
-			NYC = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CGL"
-			CGL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CSA"
-			CSA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "COR"
-			COR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "USA"
-			USA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "TEX"
-			TEX = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "WCC"
-			WCC = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "YUC"
-			YUC = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "MEX"
-			MEX = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GUA"
-			GUA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "COS"
-			COS = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CUB"
-			CUB = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CAF"
-			CAF = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SPR"
-			SPR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "VEN"
-			VEN = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "GYA"
-			GYA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "SUR"
-			SUR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "JAM"
-			JAM = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "COL"
-			COL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ECU"
-			ECU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PRU"
-			PRU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BHU"
-			BHU = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BOL"
-			BOL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CHI"
-			CHI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "CHL"
-			CHL = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "FOP"
-			FOP = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "ARG"
-			ARG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "URG"
-			URG = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PAR"
-			PAR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PRI"
-			PRI = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "AMA"
-			AMA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "PIR"
-			PIR = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-
-			log = "BRA"
-			BRA = {
-				every_owned_state = {
-					log = "[state.GetID]"
-				}
-			}
-		}
-		days_remove = 0
-	}
 CAR_integrate_rk_POR = {
 	icon = generic_prepare_civil_war
 
@@ -1739,6 +795,7719 @@ CAR_integrate_rk_HRE = {
 		1235 = { transfer_state_to = CAR }
 		1272 = { transfer_state_to = CAR }
 		1357 = { transfer_state_to = CAR }
+	}
+}
+
+CAR_establish_rk_FRP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 16
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FRP = { exists = yes }
+			}
+			FRP = { is_subject_of = CAR }
+		}
+		16 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				16 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FRP = {
+			every_core_state = {
+				remove_core_of = FRP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FRP
+				}
+				remove_claim_by = FRP
+			}
+		}
+		14 = { add_core_of = FRP }
+		15 = { add_core_of = FRP }
+		19 = { add_core_of = FRP }
+		22 = { add_core_of = FRP }
+		23 = { add_core_of = FRP }
+		25 = { add_core_of = FRP }
+		26 = { add_core_of = FRP }
+		30 = { add_core_of = FRP }
+		31 = { add_core_of = FRP }
+		33 = { add_core_of = FRP }
+		817 = { add_core_of = FRP }
+		983 = { add_core_of = FRP }
+		984 = { add_core_of = FRP }
+		1334 = { add_core_of = FRP }
+		16 = { add_core_of = FRP }
+		release = FRP
+		FRP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = FRP
+			}
+		}
+		FRP = { 
+			set_cosmetic_tag = CAR_FRP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = FRP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_GBP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 126
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GBP = { exists = yes }
+			}
+			GBP = { is_subject_of = CAR }
+		}
+		126 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				126 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GBP = {
+			every_core_state = {
+				remove_core_of = GBP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GBP
+				}
+				remove_claim_by = GBP
+			}
+		}
+		122 = { add_core_of = GBP }
+		123 = { add_core_of = GBP }
+		125 = { add_core_of = GBP }
+		127 = { add_core_of = GBP }
+		128 = { add_core_of = GBP }
+		129 = { add_core_of = GBP }
+		130 = { add_core_of = GBP }
+		131 = { add_core_of = GBP }
+		132 = { add_core_of = GBP }
+		338 = { add_core_of = GBP }
+		1225 = { add_core_of = GBP }
+		1315 = { add_core_of = GBP }
+		126 = { add_core_of = GBP }
+		release = GBP
+		GBP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = GBP
+			}
+		}
+		GBP = { 
+			set_cosmetic_tag = CAR_GBP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = GBP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SCT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 121
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SCT = { exists = yes }
+			}
+			SCT = { is_subject_of = CAR }
+		}
+		121 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				121 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SCT = {
+			every_core_state = {
+				remove_core_of = SCT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SCT
+				}
+				remove_claim_by = SCT
+			}
+		}
+		120 = { add_core_of = SCT }
+		133 = { add_core_of = SCT }
+		136 = { add_core_of = SCT }
+		938 = { add_core_of = SCT }
+		1317 = { add_core_of = SCT }
+		121 = { add_core_of = SCT }
+		release = SCT
+		SCT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SCT
+			}
+		}
+		SCT = { 
+			set_cosmetic_tag = CAR_SCT_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SCT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_IRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 113
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRE = { exists = yes }
+			}
+			IRE = { is_subject_of = CAR }
+		}
+		113 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				113 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRE = {
+			every_core_state = {
+				remove_core_of = IRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRE
+				}
+				remove_claim_by = IRE
+			}
+		}
+		119 = { add_core_of = IRE }
+		134 = { add_core_of = IRE }
+		135 = { add_core_of = IRE }
+		113 = { add_core_of = IRE }
+		release = IRE
+		IRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = IRE
+			}
+		}
+		IRE = { 
+			set_cosmetic_tag = CAR_IRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = IRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_PAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 2
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PAP = { exists = yes }
+			}
+			PAP = { is_subject_of = CAR }
+		}
+		2 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				2 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PAP = {
+			every_core_state = {
+				remove_core_of = PAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PAP
+				}
+				remove_claim_by = PAP
+			}
+		}
+		157 = { add_core_of = PAP }
+		161 = { add_core_of = PAP }
+		764 = { add_core_of = PAP }
+		1005 = { add_core_of = PAP }
+		1149 = { add_core_of = PAP }
+		1236 = { add_core_of = PAP }
+		2 = { add_core_of = PAP }
+		release = PAP
+		PAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = PAP
+			}
+		}
+		PAP = { 
+			set_cosmetic_tag = CAR_PAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Pius XII"
+				picture = "gfx/leaders/PAP/Portrait_Papal_State_Pius_XII.png"
+				expire = "1.1.1"
+				ideology = theocracy_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = PAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Santa Sede"
+				long_name = "Santa Sede"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_DEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 37
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEN = { exists = yes }
+			}
+			DEN = { is_subject_of = CAR }
+		}
+		37 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				37 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEN = {
+			every_core_state = {
+				remove_core_of = DEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEN
+				}
+				remove_claim_by = DEN
+			}
+		}
+		99 = { add_core_of = DEN }
+		100 = { add_core_of = DEN }
+		101 = { add_core_of = DEN }
+		337 = { add_core_of = DEN }
+		926 = { add_core_of = DEN }
+		37 = { add_core_of = DEN }
+		release = DEN
+		DEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = DEN
+			}
+		}
+		DEN = { 
+			set_cosmetic_tag = CAR_DEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = DEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_NOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 110
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NOR = { exists = yes }
+			}
+			NOR = { is_subject_of = CAR }
+		}
+		110 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				110 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NOR = {
+			every_core_state = {
+				remove_core_of = NOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NOR
+				}
+				remove_claim_by = NOR
+			}
+		}
+		142 = { add_core_of = NOR }
+		143 = { add_core_of = NOR }
+		144 = { add_core_of = NOR }
+		936 = { add_core_of = NOR }
+		937 = { add_core_of = NOR }
+		1146 = { add_core_of = NOR }
+		1147 = { add_core_of = NOR }
+		110 = { add_core_of = NOR }
+		release = NOR
+		NOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = NOR
+			}
+		}
+		NOR = { 
+			set_cosmetic_tag = CAR_NOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = NOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SWE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 141
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SWE = { exists = yes }
+			}
+			SWE = { is_subject_of = CAR }
+		}
+		141 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				141 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SWE = {
+			every_core_state = {
+				remove_core_of = SWE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SWE
+				}
+				remove_claim_by = SWE
+			}
+		}
+		38 = { add_core_of = SWE }
+		124 = { add_core_of = SWE }
+		138 = { add_core_of = SWE }
+		139 = { add_core_of = SWE }
+		140 = { add_core_of = SWE }
+		666 = { add_core_of = SWE }
+		778 = { add_core_of = SWE }
+		908 = { add_core_of = SWE }
+		909 = { add_core_of = SWE }
+		960 = { add_core_of = SWE }
+		141 = { add_core_of = SWE }
+		release = SWE
+		SWE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SWE
+			}
+		}
+		SWE = { 
+			set_cosmetic_tag = CAR_SWE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SWE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_CRO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 109
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CRO = { exists = yes }
+			}
+			CRO = { is_subject_of = CAR }
+		}
+		109 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				109 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CRO = {
+			every_core_state = {
+				remove_core_of = CRO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CRO
+				}
+				remove_claim_by = CRO
+			}
+		}
+		45 = { add_core_of = CRO }
+		103 = { add_core_of = CRO }
+		104 = { add_core_of = CRO }
+		105 = { add_core_of = CRO }
+		107 = { add_core_of = CRO }
+		108 = { add_core_of = CRO }
+		163 = { add_core_of = CRO }
+		765 = { add_core_of = CRO }
+		767 = { add_core_of = CRO }
+		794 = { add_core_of = CRO }
+		875 = { add_core_of = CRO }
+		1097 = { add_core_of = CRO }
+		1098 = { add_core_of = CRO }
+		1099 = { add_core_of = CRO }
+		1102 = { add_core_of = CRO }
+		1105 = { add_core_of = CRO }
+		1128 = { add_core_of = CRO }
+		1141 = { add_core_of = CRO }
+		1142 = { add_core_of = CRO }
+		1143 = { add_core_of = CRO }
+		1145 = { add_core_of = CRO }
+		1206 = { add_core_of = CRO }
+		1269 = { add_core_of = CRO }
+		1270 = { add_core_of = CRO }
+		109 = { add_core_of = CRO }
+		release = CRO
+		CRO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = CRO
+			}
+		}
+		CRO = { 
+			set_cosmetic_tag = CAR_CRO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = CRO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_ALB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 44
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ALB = { exists = yes }
+			}
+			ALB = { is_subject_of = CAR }
+		}
+		44 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				44 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALB = {
+			every_core_state = {
+				remove_core_of = ALB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ALB
+				}
+				remove_claim_by = ALB
+			}
+		}
+		1268 = { add_core_of = ALB }
+		44 = { add_core_of = ALB }
+		release = ALB
+		ALB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = ALB
+			}
+		}
+		ALB = { 
+			set_cosmetic_tag = CAR_ALB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = ALB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_HUN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 43
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				HUN = { exists = yes }
+			}
+			HUN = { is_subject_of = CAR }
+		}
+		43 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				43 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		HUN = {
+			every_core_state = {
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = HUN
+				}
+				remove_claim_by = HUN
+			}
+		}
+		154 = { add_core_of = HUN }
+		155 = { add_core_of = HUN }
+		1106 = { add_core_of = HUN }
+		1107 = { add_core_of = HUN }
+		1108 = { add_core_of = HUN }
+		1109 = { add_core_of = HUN }
+		1110 = { add_core_of = HUN }
+		43 = { add_core_of = HUN }
+		release = HUN
+		HUN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = HUN
+			}
+		}
+		HUN = { 
+			set_cosmetic_tag = CAR_HUN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = HUN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SVK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1123
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SVK = { exists = yes }
+			}
+			SVK = { is_subject_of = CAR }
+		}
+		1123 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				1123 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SVK = {
+			every_core_state = {
+				remove_core_of = SVK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SVK
+				}
+				remove_claim_by = SVK
+			}
+		}
+		70 = { add_core_of = SVK }
+		73 = { add_core_of = SVK }
+		664 = { add_core_of = SVK }
+		1119 = { add_core_of = SVK }
+		1120 = { add_core_of = SVK }
+		1121 = { add_core_of = SVK }
+		1122 = { add_core_of = SVK }
+		1135 = { add_core_of = SVK }
+		1136 = { add_core_of = SVK }
+		1123 = { add_core_of = SVK }
+		release = SVK
+		SVK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SVK
+			}
+		}
+		SVK = { 
+			set_cosmetic_tag = CAR_SVK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SVK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_ROM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 46
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ROM = { exists = yes }
+			}
+			ROM = { is_subject_of = CAR }
+		}
+		46 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				46 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ROM = {
+			every_core_state = {
+				remove_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ROM
+				}
+				remove_claim_by = ROM
+			}
+		}
+		76 = { add_core_of = ROM }
+		78 = { add_core_of = ROM }
+		79 = { add_core_of = ROM }
+		80 = { add_core_of = ROM }
+		81 = { add_core_of = ROM }
+		82 = { add_core_of = ROM }
+		83 = { add_core_of = ROM }
+		84 = { add_core_of = ROM }
+		713 = { add_core_of = ROM }
+		772 = { add_core_of = ROM }
+		789 = { add_core_of = ROM }
+		1112 = { add_core_of = ROM }
+		1113 = { add_core_of = ROM }
+		1114 = { add_core_of = ROM }
+		1115 = { add_core_of = ROM }
+		1116 = { add_core_of = ROM }
+		1117 = { add_core_of = ROM }
+		1118 = { add_core_of = ROM }
+		1222 = { add_core_of = ROM }
+		1320 = { add_core_of = ROM }
+		46 = { add_core_of = ROM }
+		release = ROM
+		ROM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = ROM
+			}
+		}
+		ROM = { 
+			set_cosmetic_tag = CAR_ROM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = ROM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_BUL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 48
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BUL = { exists = yes }
+			}
+			BUL = { is_subject_of = CAR }
+		}
+		48 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				48 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BUL = {
+			every_core_state = {
+				remove_core_of = BUL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BUL
+				}
+				remove_claim_by = BUL
+			}
+		}
+		77 = { add_core_of = BUL }
+		106 = { add_core_of = BUL }
+		211 = { add_core_of = BUL }
+		212 = { add_core_of = BUL }
+		770 = { add_core_of = BUL }
+		771 = { add_core_of = BUL }
+		841 = { add_core_of = BUL }
+		1089 = { add_core_of = BUL }
+		1090 = { add_core_of = BUL }
+		1271 = { add_core_of = BUL }
+		48 = { add_core_of = BUL }
+		release = BUL
+		BUL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = BUL
+			}
+		}
+		BUL = { 
+			set_cosmetic_tag = CAR_BUL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = BUL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_GRE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 47
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GRE = { exists = yes }
+			}
+			GRE = { is_subject_of = CAR }
+		}
+		47 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				47 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GRE = {
+			every_core_state = {
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GRE
+				}
+				remove_claim_by = GRE
+			}
+		}
+		49 = { add_core_of = GRE }
+		164 = { add_core_of = GRE }
+		182 = { add_core_of = GRE }
+		183 = { add_core_of = GRE }
+		184 = { add_core_of = GRE }
+		185 = { add_core_of = GRE }
+		186 = { add_core_of = GRE }
+		187 = { add_core_of = GRE }
+		339 = { add_core_of = GRE }
+		340 = { add_core_of = GRE }
+		341 = { add_core_of = GRE }
+		342 = { add_core_of = GRE }
+		343 = { add_core_of = GRE }
+		345 = { add_core_of = GRE }
+		346 = { add_core_of = GRE }
+		355 = { add_core_of = GRE }
+		356 = { add_core_of = GRE }
+		731 = { add_core_of = GRE }
+		758 = { add_core_of = GRE }
+		766 = { add_core_of = GRE }
+		768 = { add_core_of = GRE }
+		769 = { add_core_of = GRE }
+		773 = { add_core_of = GRE }
+		939 = { add_core_of = GRE }
+		989 = { add_core_of = GRE }
+		1076 = { add_core_of = GRE }
+		47 = { add_core_of = GRE }
+		release = GRE
+		GRE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = GRE
+			}
+		}
+		GRE = { 
+			set_cosmetic_tag = CAR_GRE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Javier I"
+				picture = "gfx/leaders/CAR/Portrait_Javier_I.png"
+				expire = "1.1.1"
+				ideology = carlism_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = GRE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Casa de Borbón-Parma"
+				long_name = "Casa de Borbón-Parma"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_POL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				POL = { exists = yes }
+			}
+			POL = { is_subject_of = CAR }
+		}
+		10 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				10 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		POL = {
+			every_core_state = {
+				remove_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = POL
+				}
+				remove_claim_by = POL
+			}
+		}
+		86 = { add_core_of = POL }
+		87 = { add_core_of = POL }
+		88 = { add_core_of = POL }
+		89 = { add_core_of = POL }
+		90 = { add_core_of = POL }
+		91 = { add_core_of = POL }
+		92 = { add_core_of = POL }
+		97 = { add_core_of = POL }
+		98 = { add_core_of = POL }
+		776 = { add_core_of = POL }
+		1088 = { add_core_of = POL }
+		1124 = { add_core_of = POL }
+		1125 = { add_core_of = POL }
+		1126 = { add_core_of = POL }
+		1127 = { add_core_of = POL }
+		1140 = { add_core_of = POL }
+		1148 = { add_core_of = POL }
+		1314 = { add_core_of = POL }
+		1319 = { add_core_of = POL }
+		1329 = { add_core_of = POL }
+		1366 = { add_core_of = POL }
+		10 = { add_core_of = POL }
+		release = POL
+		POL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = POL
+			}
+		}
+		POL = { 
+			set_cosmetic_tag = CAR_POL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = POL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_EPR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 5
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EPR = { exists = yes }
+			}
+			EPR = { is_subject_of = CAR }
+		}
+		5 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				5 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EPR = {
+			every_core_state = {
+				remove_core_of = EPR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EPR
+				}
+				remove_claim_by = EPR
+			}
+		}
+		777 = { add_core_of = EPR }
+		5 = { add_core_of = EPR }
+		release = EPR
+		EPR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = EPR
+			}
+		}
+		EPR = { 
+			set_cosmetic_tag = CAR_EPR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = EPR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_BAT = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BAT = { exists = yes }
+			}
+			BAT = { is_subject_of = CAR }
+		}
+		1091 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				1091 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BAT = {
+			every_core_state = {
+				remove_core_of = BAT
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BAT
+				}
+				remove_claim_by = BAT
+			}
+		}
+		11 = { add_core_of = BAT }
+		12 = { add_core_of = BAT }
+		13 = { add_core_of = BAT }
+		96 = { add_core_of = BAT }
+		188 = { add_core_of = BAT }
+		189 = { add_core_of = BAT }
+		190 = { add_core_of = BAT }
+		191 = { add_core_of = BAT }
+		655 = { add_core_of = BAT }
+		880 = { add_core_of = BAT }
+		1288 = { add_core_of = BAT }
+		1091 = { add_core_of = BAT }
+		release = BAT
+		BAT = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = BAT
+			}
+		}
+		BAT = { 
+			set_cosmetic_tag = CAR_BAT_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = BAT
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_FIN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 840
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				FIN = { exists = yes }
+			}
+			FIN = { is_subject_of = CAR }
+		}
+		840 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				840 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		FIN = {
+			every_core_state = {
+				remove_core_of = FIN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = FIN
+				}
+				remove_claim_by = FIN
+			}
+		}
+		111 = { add_core_of = FIN }
+		145 = { add_core_of = FIN }
+		146 = { add_core_of = FIN }
+		147 = { add_core_of = FIN }
+		148 = { add_core_of = FIN }
+		149 = { add_core_of = FIN }
+		150 = { add_core_of = FIN }
+		213 = { add_core_of = FIN }
+		215 = { add_core_of = FIN }
+		216 = { add_core_of = FIN }
+		722 = { add_core_of = FIN }
+		844 = { add_core_of = FIN }
+		863 = { add_core_of = FIN }
+		864 = { add_core_of = FIN }
+		865 = { add_core_of = FIN }
+		1274 = { add_core_of = FIN }
+		1324 = { add_core_of = FIN }
+		1325 = { add_core_of = FIN }
+		1326 = { add_core_of = FIN }
+		1327 = { add_core_of = FIN }
+		1328 = { add_core_of = FIN }
+		840 = { add_core_of = FIN }
+		release = FIN
+		FIN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = FIN
+			}
+		}
+		FIN = { 
+			set_cosmetic_tag = CAR_FIN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = FIN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_UKR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				UKR = { exists = yes }
+			}
+			UKR = { is_subject_of = CAR }
+		}
+		202 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				202 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		UKR = {
+			every_core_state = {
+				remove_core_of = UKR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = UKR
+				}
+				remove_claim_by = UKR
+			}
+		}
+		137 = { add_core_of = UKR }
+		192 = { add_core_of = UKR }
+		193 = { add_core_of = UKR }
+		196 = { add_core_of = UKR }
+		197 = { add_core_of = UKR }
+		198 = { add_core_of = UKR }
+		199 = { add_core_of = UKR }
+		200 = { add_core_of = UKR }
+		201 = { add_core_of = UKR }
+		203 = { add_core_of = UKR }
+		221 = { add_core_of = UKR }
+		225 = { add_core_of = UKR }
+		226 = { add_core_of = UKR }
+		227 = { add_core_of = UKR }
+		228 = { add_core_of = UKR }
+		240 = { add_core_of = UKR }
+		241 = { add_core_of = UKR }
+		259 = { add_core_of = UKR }
+		791 = { add_core_of = UKR }
+		792 = { add_core_of = UKR }
+		821 = { add_core_of = UKR }
+		1220 = { add_core_of = UKR }
+		1221 = { add_core_of = UKR }
+		1228 = { add_core_of = UKR }
+		1230 = { add_core_of = UKR }
+		1232 = { add_core_of = UKR }
+		1233 = { add_core_of = UKR }
+		1234 = { add_core_of = UKR }
+		1237 = { add_core_of = UKR }
+		1238 = { add_core_of = UKR }
+		1239 = { add_core_of = UKR }
+		1240 = { add_core_of = UKR }
+		1241 = { add_core_of = UKR }
+		1242 = { add_core_of = UKR }
+		1243 = { add_core_of = UKR }
+		1244 = { add_core_of = UKR }
+		1245 = { add_core_of = UKR }
+		1282 = { add_core_of = UKR }
+		1283 = { add_core_of = UKR }
+		1284 = { add_core_of = UKR }
+		1285 = { add_core_of = UKR }
+		1286 = { add_core_of = UKR }
+		202 = { add_core_of = UKR }
+		release = UKR
+		UKR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = UKR
+			}
+		}
+		UKR = { 
+			set_cosmetic_tag = CAR_UKR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = UKR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_WHR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 206
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				WHR = { exists = yes }
+			}
+			WHR = { is_subject_of = CAR }
+		}
+		206 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				206 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		WHR = {
+			every_core_state = {
+				remove_core_of = WHR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = WHR
+				}
+				remove_claim_by = WHR
+			}
+		}
+		93 = { add_core_of = WHR }
+		94 = { add_core_of = WHR }
+		95 = { add_core_of = WHR }
+		194 = { add_core_of = WHR }
+		204 = { add_core_of = WHR }
+		207 = { add_core_of = WHR }
+		243 = { add_core_of = WHR }
+		755 = { add_core_of = WHR }
+		997 = { add_core_of = WHR }
+		1087 = { add_core_of = WHR }
+		1287 = { add_core_of = WHR }
+		1294 = { add_core_of = WHR }
+		1295 = { add_core_of = WHR }
+		206 = { add_core_of = WHR }
+		release = WHR
+		WHR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = WHR
+			}
+		}
+		WHR = { 
+			set_cosmetic_tag = CAR_WHR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = WHR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_DKB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DKB = { exists = yes }
+			}
+			DKB = { is_subject_of = CAR }
+		}
+		218 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				218 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DKB = {
+			every_core_state = {
+				remove_core_of = DKB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DKB
+				}
+				remove_claim_by = DKB
+			}
+		}
+		232 = { add_core_of = DKB }
+		233 = { add_core_of = DKB }
+		234 = { add_core_of = DKB }
+		235 = { add_core_of = DKB }
+		237 = { add_core_of = DKB }
+		238 = { add_core_of = DKB }
+		245 = { add_core_of = DKB }
+		787 = { add_core_of = DKB }
+		1186 = { add_core_of = DKB }
+		1187 = { add_core_of = DKB }
+		1189 = { add_core_of = DKB }
+		1191 = { add_core_of = DKB }
+		1226 = { add_core_of = DKB }
+		1227 = { add_core_of = DKB }
+		1231 = { add_core_of = DKB }
+		1263 = { add_core_of = DKB }
+		1264 = { add_core_of = DKB }
+		1266 = { add_core_of = DKB }
+		218 = { add_core_of = DKB }
+		release = DKB
+		DKB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = DKB
+			}
+		}
+		DKB = { 
+			set_cosmetic_tag = CAR_DKB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = DKB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_GEO = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GEO = { exists = yes }
+			}
+			GEO = { is_subject_of = CAR }
+		}
+		231 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				231 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GEO = {
+			every_core_state = {
+				remove_core_of = GEO
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GEO
+				}
+				remove_claim_by = GEO
+			}
+		}
+		1001 = { add_core_of = GEO }
+		1080 = { add_core_of = GEO }
+		1081 = { add_core_of = GEO }
+		1188 = { add_core_of = GEO }
+		1190 = { add_core_of = GEO }
+		1213 = { add_core_of = GEO }
+		1301 = { add_core_of = GEO }
+		231 = { add_core_of = GEO }
+		release = GEO
+		GEO = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = GEO
+			}
+		}
+		GEO = { 
+			set_cosmetic_tag = CAR_GEO_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = GEO
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_ARM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 230
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ARM = { exists = yes }
+			}
+			ARM = { is_subject_of = CAR }
+		}
+		230 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				230 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ARM = {
+			every_core_state = {
+				remove_core_of = ARM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ARM
+				}
+				remove_claim_by = ARM
+			}
+		}
+		352 = { add_core_of = ARM }
+		354 = { add_core_of = ARM }
+		998 = { add_core_of = ARM }
+		1000 = { add_core_of = ARM }
+		1082 = { add_core_of = ARM }
+		1298 = { add_core_of = ARM }
+		1299 = { add_core_of = ARM }
+		1300 = { add_core_of = ARM }
+		1302 = { add_core_of = ARM }
+		1303 = { add_core_of = ARM }
+		230 = { add_core_of = ARM }
+		release = ARM
+		ARM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = ARM
+			}
+		}
+		ARM = { 
+			set_cosmetic_tag = CAR_ARM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = ARM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_AZE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 990
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AZE = { exists = yes }
+			}
+			AZE = { is_subject_of = CAR }
+		}
+		990 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				990 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AZE = {
+			every_core_state = {
+				remove_core_of = AZE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AZE
+				}
+				remove_claim_by = AZE
+			}
+		}
+		229 = { add_core_of = AZE }
+		1267 = { add_core_of = AZE }
+		1304 = { add_core_of = AZE }
+		990 = { add_core_of = AZE }
+		release = AZE
+		AZE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = AZE
+			}
+		}
+		AZE = { 
+			set_cosmetic_tag = CAR_AZE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = AZE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SYR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 554
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SYR = { exists = yes }
+			}
+			SYR = { is_subject_of = CAR }
+		}
+		554 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				554 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SYR = {
+			every_core_state = {
+				remove_core_of = SYR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SYR
+				}
+				remove_claim_by = SYR
+			}
+		}
+		344 = { add_core_of = SYR }
+		350 = { add_core_of = SYR }
+		454 = { add_core_of = SYR }
+		455 = { add_core_of = SYR }
+		553 = { add_core_of = SYR }
+		677 = { add_core_of = SYR }
+		680 = { add_core_of = SYR }
+		992 = { add_core_of = SYR }
+		995 = { add_core_of = SYR }
+		554 = { add_core_of = SYR }
+		release = SYR
+		SYR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SYR
+			}
+		}
+		SYR = { 
+			set_cosmetic_tag = CAR_SYR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SYR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_IRQ = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 291
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				IRQ = { exists = yes }
+			}
+			IRQ = { is_subject_of = CAR }
+		}
+		291 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				291 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		IRQ = {
+			every_core_state = {
+				remove_core_of = IRQ
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = IRQ
+				}
+				remove_claim_by = IRQ
+			}
+		}
+		349 = { add_core_of = IRQ }
+		676 = { add_core_of = IRQ }
+		812 = { add_core_of = IRQ }
+		819 = { add_core_of = IRQ }
+		291 = { add_core_of = IRQ }
+		release = IRQ
+		IRQ = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = IRQ
+			}
+		}
+		IRQ = { 
+			set_cosmetic_tag = CAR_IRQ_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = IRQ
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_JBS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 292
+				state = 915
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JBS = { exists = yes }
+			}
+			JBS = { is_subject_of = CAR }
+		}
+		292 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		915 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				292 = { NOT = { is_core_of = CAR } }
+				915 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JBS = {
+			every_core_state = {
+				remove_core_of = JBS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JBS
+				}
+				remove_claim_by = JBS
+			}
+		}
+		293 = { add_core_of = JBS }
+		294 = { add_core_of = JBS }
+		347 = { add_core_of = JBS }
+		656 = { add_core_of = JBS }
+		658 = { add_core_of = JBS }
+		659 = { add_core_of = JBS }
+		675 = { add_core_of = JBS }
+		678 = { add_core_of = JBS }
+		679 = { add_core_of = JBS }
+		752 = { add_core_of = JBS }
+		754 = { add_core_of = JBS }
+		859 = { add_core_of = JBS }
+		907 = { add_core_of = JBS }
+		981 = { add_core_of = JBS }
+		982 = { add_core_of = JBS }
+		991 = { add_core_of = JBS }
+		993 = { add_core_of = JBS }
+		994 = { add_core_of = JBS }
+		1024 = { add_core_of = JBS }
+		1035 = { add_core_of = JBS }
+		292 = { add_core_of = JBS }
+		915 = { add_core_of = JBS }
+		release = JBS
+		JBS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = JBS
+			}
+		}
+		JBS = { 
+			set_cosmetic_tag = CAR_JBS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = JBS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_EGY = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EGY = { exists = yes }
+			}
+			EGY = { is_subject_of = CAR }
+		}
+		446 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				446 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EGY = {
+			every_core_state = {
+				remove_core_of = EGY
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EGY
+				}
+				remove_claim_by = EGY
+			}
+		}
+		447 = { add_core_of = EGY }
+		452 = { add_core_of = EGY }
+		453 = { add_core_of = EGY }
+		456 = { add_core_of = EGY }
+		457 = { add_core_of = EGY }
+		549 = { add_core_of = EGY }
+		551 = { add_core_of = EGY }
+		552 = { add_core_of = EGY }
+		753 = { add_core_of = EGY }
+		862 = { add_core_of = EGY }
+		1007 = { add_core_of = EGY }
+		1008 = { add_core_of = EGY }
+		1010 = { add_core_of = EGY }
+		1011 = { add_core_of = EGY }
+		446 = { add_core_of = EGY }
+		release = EGY
+		EGY = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = EGY
+			}
+		}
+		EGY = { 
+			set_cosmetic_tag = CAR_EGY_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = EGY
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_ALG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 459
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ALG = { exists = yes }
+			}
+			ALG = { is_subject_of = CAR }
+		}
+		459 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				459 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ALG = {
+			every_core_state = {
+				remove_core_of = ALG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ALG
+				}
+				remove_claim_by = ALG
+			}
+		}
+		273 = { add_core_of = ALG }
+		448 = { add_core_of = ALG }
+		450 = { add_core_of = ALG }
+		451 = { add_core_of = ALG }
+		458 = { add_core_of = ALG }
+		460 = { add_core_of = ALG }
+		513 = { add_core_of = ALG }
+		514 = { add_core_of = ALG }
+		663 = { add_core_of = ALG }
+		665 = { add_core_of = ALG }
+		805 = { add_core_of = ALG }
+		1009 = { add_core_of = ALG }
+		459 = { add_core_of = ALG }
+		release = ALG
+		ALG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = ALG
+			}
+		}
+		ALG = { 
+			set_cosmetic_tag = CAR_ALG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = ALG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_CVG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 296
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CVG = { exists = yes }
+			}
+			CVG = { is_subject_of = CAR }
+		}
+		296 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				296 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CVG = {
+			every_core_state = {
+				remove_core_of = CVG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CVG
+				}
+				remove_claim_by = CVG
+			}
+		}
+		272 = { add_core_of = CVG }
+		274 = { add_core_of = CVG }
+		298 = { add_core_of = CVG }
+		515 = { add_core_of = CVG }
+		556 = { add_core_of = CVG }
+		557 = { add_core_of = CVG }
+		558 = { add_core_of = CVG }
+		662 = { add_core_of = CVG }
+		700 = { add_core_of = CVG }
+		702 = { add_core_of = CVG }
+		703 = { add_core_of = CVG }
+		704 = { add_core_of = CVG }
+		806 = { add_core_of = CVG }
+		807 = { add_core_of = CVG }
+		808 = { add_core_of = CVG }
+		809 = { add_core_of = CVG }
+		834 = { add_core_of = CVG }
+		860 = { add_core_of = CVG }
+		876 = { add_core_of = CVG }
+		877 = { add_core_of = CVG }
+		878 = { add_core_of = CVG }
+		910 = { add_core_of = CVG }
+		911 = { add_core_of = CVG }
+		913 = { add_core_of = CVG }
+		963 = { add_core_of = CVG }
+		966 = { add_core_of = CVG }
+		967 = { add_core_of = CVG }
+		968 = { add_core_of = CVG }
+		973 = { add_core_of = CVG }
+		1192 = { add_core_of = CVG }
+		1321 = { add_core_of = CVG }
+		1322 = { add_core_of = CVG }
+		1323 = { add_core_of = CVG }
+		296 = { add_core_of = CVG }
+		release = CVG
+		CVG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = CVG
+			}
+		}
+		CVG = { 
+			set_cosmetic_tag = CAR_CVG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = CVG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_EQG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 297
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				EQG = { exists = yes }
+			}
+			EQG = { is_subject_of = CAR }
+		}
+		297 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				297 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		EQG = {
+			every_core_state = {
+				remove_core_of = EQG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = EQG
+				}
+				remove_claim_by = EQG
+			}
+		}
+		295 = { add_core_of = EQG }
+		538 = { add_core_of = EQG }
+		539 = { add_core_of = EQG }
+		540 = { add_core_of = EQG }
+		546 = { add_core_of = EQG }
+		547 = { add_core_of = EQG }
+		548 = { add_core_of = EQG }
+		660 = { add_core_of = EQG }
+		705 = { add_core_of = EQG }
+		718 = { add_core_of = EQG }
+		813 = { add_core_of = EQG }
+		869 = { add_core_of = EQG }
+		870 = { add_core_of = EQG }
+		871 = { add_core_of = EQG }
+		879 = { add_core_of = EQG }
+		881 = { add_core_of = EQG }
+		899 = { add_core_of = EQG }
+		905 = { add_core_of = EQG }
+		914 = { add_core_of = EQG }
+		916 = { add_core_of = EQG }
+		917 = { add_core_of = EQG }
+		918 = { add_core_of = EQG }
+		925 = { add_core_of = EQG }
+		927 = { add_core_of = EQG }
+		928 = { add_core_of = EQG }
+		948 = { add_core_of = EQG }
+		949 = { add_core_of = EQG }
+		952 = { add_core_of = EQG }
+		953 = { add_core_of = EQG }
+		955 = { add_core_of = EQG }
+		956 = { add_core_of = EQG }
+		957 = { add_core_of = EQG }
+		958 = { add_core_of = EQG }
+		959 = { add_core_of = EQG }
+		962 = { add_core_of = EQG }
+		965 = { add_core_of = EQG }
+		969 = { add_core_of = EQG }
+		970 = { add_core_of = EQG }
+		971 = { add_core_of = EQG }
+		974 = { add_core_of = EQG }
+		975 = { add_core_of = EQG }
+		976 = { add_core_of = EQG }
+		977 = { add_core_of = EQG }
+		1025 = { add_core_of = EQG }
+		1026 = { add_core_of = EQG }
+		1032 = { add_core_of = EQG }
+		1180 = { add_core_of = EQG }
+		1181 = { add_core_of = EQG }
+		1182 = { add_core_of = EQG }
+		1183 = { add_core_of = EQG }
+		1184 = { add_core_of = EQG }
+		1185 = { add_core_of = EQG }
+		1335 = { add_core_of = EQG }
+		297 = { add_core_of = EQG }
+		release = EQG
+		EQG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = EQG
+			}
+		}
+		EQG = { 
+			set_cosmetic_tag = CAR_EQG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = EQG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_ETH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 271
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ETH = { exists = yes }
+			}
+			ETH = { is_subject_of = CAR }
+		}
+		271 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				271 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ETH = {
+			every_core_state = {
+				remove_core_of = ETH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ETH
+				}
+				remove_claim_by = ETH
+			}
+		}
+		268 = { add_core_of = ETH }
+		269 = { add_core_of = ETH }
+		550 = { add_core_of = ETH }
+		559 = { add_core_of = ETH }
+		892 = { add_core_of = ETH }
+		906 = { add_core_of = ETH }
+		919 = { add_core_of = ETH }
+		920 = { add_core_of = ETH }
+		921 = { add_core_of = ETH }
+		922 = { add_core_of = ETH }
+		923 = { add_core_of = ETH }
+		924 = { add_core_of = ETH }
+		944 = { add_core_of = ETH }
+		961 = { add_core_of = ETH }
+		1297 = { add_core_of = ETH }
+		271 = { add_core_of = ETH }
+		release = ETH
+		ETH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = ETH
+			}
+		}
+		ETH = { 
+			set_cosmetic_tag = CAR_ETH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = ETH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_MZB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 950
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MZB = { exists = yes }
+			}
+			MZB = { is_subject_of = CAR }
+		}
+		950 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				950 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MZB = {
+			every_core_state = {
+				remove_core_of = MZB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MZB
+				}
+				remove_claim_by = MZB
+			}
+		}
+		85 = { add_core_of = MZB }
+		275 = { add_core_of = MZB }
+		541 = { add_core_of = MZB }
+		542 = { add_core_of = MZB }
+		544 = { add_core_of = MZB }
+		545 = { add_core_of = MZB }
+		681 = { add_core_of = MZB }
+		719 = { add_core_of = MZB }
+		738 = { add_core_of = MZB }
+		945 = { add_core_of = MZB }
+		946 = { add_core_of = MZB }
+		947 = { add_core_of = MZB }
+		954 = { add_core_of = MZB }
+		964 = { add_core_of = MZB }
+		1176 = { add_core_of = MZB }
+		950 = { add_core_of = MZB }
+		release = MZB
+		MZB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = MZB
+			}
+		}
+		MZB = { 
+			set_cosmetic_tag = CAR_MZB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = MZB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_MAG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 543
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MAG = { exists = yes }
+			}
+			MAG = { is_subject_of = CAR }
+		}
+		543 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				543 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MAG = {
+			every_core_state = {
+				remove_core_of = MAG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MAG
+				}
+				remove_claim_by = MAG
+			}
+		}
+		706 = { add_core_of = MAG }
+		707 = { add_core_of = MAG }
+		708 = { add_core_of = MAG }
+		709 = { add_core_of = MAG }
+		1177 = { add_core_of = MAG }
+		1178 = { add_core_of = MAG }
+		1179 = { add_core_of = MAG }
+		543 = { add_core_of = MAG }
+		release = MAG
+		MAG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = MAG
+			}
+		}
+		MAG = { 
+			set_cosmetic_tag = CAR_MAG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = MAG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_RUS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 195
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				RUS = { exists = yes }
+			}
+			RUS = { is_subject_of = CAR }
+		}
+		195 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				195 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		RUS = {
+			every_core_state = {
+				remove_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = RUS
+				}
+				remove_claim_by = RUS
+			}
+		}
+		205 = { add_core_of = RUS }
+		208 = { add_core_of = RUS }
+		209 = { add_core_of = RUS }
+		210 = { add_core_of = RUS }
+		214 = { add_core_of = RUS }
+		217 = { add_core_of = RUS }
+		219 = { add_core_of = RUS }
+		220 = { add_core_of = RUS }
+		222 = { add_core_of = RUS }
+		223 = { add_core_of = RUS }
+		224 = { add_core_of = RUS }
+		236 = { add_core_of = RUS }
+		239 = { add_core_of = RUS }
+		242 = { add_core_of = RUS }
+		244 = { add_core_of = RUS }
+		246 = { add_core_of = RUS }
+		247 = { add_core_of = RUS }
+		248 = { add_core_of = RUS }
+		249 = { add_core_of = RUS }
+		250 = { add_core_of = RUS }
+		251 = { add_core_of = RUS }
+		252 = { add_core_of = RUS }
+		253 = { add_core_of = RUS }
+		254 = { add_core_of = RUS }
+		255 = { add_core_of = RUS }
+		256 = { add_core_of = RUS }
+		257 = { add_core_of = RUS }
+		258 = { add_core_of = RUS }
+		260 = { add_core_of = RUS }
+		262 = { add_core_of = RUS }
+		263 = { add_core_of = RUS }
+		264 = { add_core_of = RUS }
+		265 = { add_core_of = RUS }
+		351 = { add_core_of = RUS }
+		397 = { add_core_of = RUS }
+		398 = { add_core_of = RUS }
+		399 = { add_core_of = RUS }
+		400 = { add_core_of = RUS }
+		401 = { add_core_of = RUS }
+		651 = { add_core_of = RUS }
+		652 = { add_core_of = RUS }
+		1193 = { add_core_of = RUS }
+		1194 = { add_core_of = RUS }
+		1197 = { add_core_of = RUS }
+		1198 = { add_core_of = RUS }
+		1199 = { add_core_of = RUS }
+		1204 = { add_core_of = RUS }
+		1205 = { add_core_of = RUS }
+		1207 = { add_core_of = RUS }
+		1224 = { add_core_of = RUS }
+		1229 = { add_core_of = RUS }
+		1289 = { add_core_of = RUS }
+		1290 = { add_core_of = RUS }
+		1291 = { add_core_of = RUS }
+		195 = { add_core_of = RUS }
+		release = RUS
+		RUS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = RUS
+			}
+		}
+		RUS = { 
+			set_cosmetic_tag = CAR_RUS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = RUS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SIB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 570
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIB = { exists = yes }
+			}
+			SIB = { is_subject_of = CAR }
+		}
+		570 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				570 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIB = {
+			every_core_state = {
+				remove_core_of = SIB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIB
+				}
+				remove_claim_by = SIB
+			}
+		}
+		40 = { add_core_of = SIB }
+		403 = { add_core_of = SIB }
+		408 = { add_core_of = SIB }
+		409 = { add_core_of = SIB }
+		516 = { add_core_of = SIB }
+		537 = { add_core_of = SIB }
+		555 = { add_core_of = SIB }
+		560 = { add_core_of = SIB }
+		561 = { add_core_of = SIB }
+		562 = { add_core_of = SIB }
+		563 = { add_core_of = SIB }
+		564 = { add_core_of = SIB }
+		565 = { add_core_of = SIB }
+		566 = { add_core_of = SIB }
+		567 = { add_core_of = SIB }
+		568 = { add_core_of = SIB }
+		569 = { add_core_of = SIB }
+		571 = { add_core_of = SIB }
+		572 = { add_core_of = SIB }
+		573 = { add_core_of = SIB }
+		574 = { add_core_of = SIB }
+		575 = { add_core_of = SIB }
+		576 = { add_core_of = SIB }
+		577 = { add_core_of = SIB }
+		578 = { add_core_of = SIB }
+		580 = { add_core_of = SIB }
+		581 = { add_core_of = SIB }
+		582 = { add_core_of = SIB }
+		637 = { add_core_of = SIB }
+		644 = { add_core_of = SIB }
+		653 = { add_core_of = SIB }
+		654 = { add_core_of = SIB }
+		657 = { add_core_of = SIB }
+		811 = { add_core_of = SIB }
+		1195 = { add_core_of = SIB }
+		1200 = { add_core_of = SIB }
+		1201 = { add_core_of = SIB }
+		1202 = { add_core_of = SIB }
+		1246 = { add_core_of = SIB }
+		1292 = { add_core_of = SIB }
+		1293 = { add_core_of = SIB }
+		570 = { add_core_of = SIB }
+		release = SIB
+		SIB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SIB
+			}
+		}
+		SIB = { 
+			set_cosmetic_tag = CAR_SIB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SIB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_TRK = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 1279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TRK = { exists = yes }
+			}
+			TRK = { is_subject_of = CAR }
+		}
+		407 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		1279 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				407 = { NOT = { is_core_of = CAR } }
+				1279 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TRK = {
+			every_core_state = {
+				remove_core_of = TRK
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TRK
+				}
+				remove_claim_by = TRK
+			}
+		}
+		402 = { add_core_of = TRK }
+		404 = { add_core_of = TRK }
+		405 = { add_core_of = TRK }
+		406 = { add_core_of = TRK }
+		583 = { add_core_of = TRK }
+		584 = { add_core_of = TRK }
+		585 = { add_core_of = TRK }
+		586 = { add_core_of = TRK }
+		587 = { add_core_of = TRK }
+		588 = { add_core_of = TRK }
+		589 = { add_core_of = TRK }
+		590 = { add_core_of = TRK }
+		712 = { add_core_of = TRK }
+		732 = { add_core_of = TRK }
+		810 = { add_core_of = TRK }
+		861 = { add_core_of = TRK }
+		1042 = { add_core_of = TRK }
+		1196 = { add_core_of = TRK }
+		1203 = { add_core_of = TRK }
+		1208 = { add_core_of = TRK }
+		1209 = { add_core_of = TRK }
+		1210 = { add_core_of = TRK }
+		1211 = { add_core_of = TRK }
+		1212 = { add_core_of = TRK }
+		1275 = { add_core_of = TRK }
+		1276 = { add_core_of = TRK }
+		1277 = { add_core_of = TRK }
+		1278 = { add_core_of = TRK }
+		1281 = { add_core_of = TRK }
+		407 = { add_core_of = TRK }
+		1279 = { add_core_of = TRK }
+		release = TRK
+		TRK = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = TRK
+			}
+		}
+		TRK = { 
+			set_cosmetic_tag = CAR_TRK_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = TRK
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_PER = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 266
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PER = { exists = yes }
+			}
+			PER = { is_subject_of = CAR }
+		}
+		266 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				266 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PER = {
+			every_core_state = {
+				remove_core_of = PER
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PER
+				}
+				remove_claim_by = PER
+			}
+		}
+		410 = { add_core_of = PER }
+		411 = { add_core_of = PER }
+		412 = { add_core_of = PER }
+		413 = { add_core_of = PER }
+		414 = { add_core_of = PER }
+		416 = { add_core_of = PER }
+		417 = { add_core_of = PER }
+		418 = { add_core_of = PER }
+		419 = { add_core_of = PER }
+		420 = { add_core_of = PER }
+		421 = { add_core_of = PER }
+		804 = { add_core_of = PER }
+		266 = { add_core_of = PER }
+		release = PER
+		PER = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = PER
+			}
+		}
+		PER = { 
+			set_cosmetic_tag = CAR_PER_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = PER
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_AFG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 267
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AFG = { exists = yes }
+			}
+			AFG = { is_subject_of = CAR }
+		}
+		267 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				267 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AFG = {
+			every_core_state = {
+				remove_core_of = AFG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AFG
+				}
+				remove_claim_by = AFG
+			}
+		}
+		415 = { add_core_of = AFG }
+		1217 = { add_core_of = AFG }
+		1218 = { add_core_of = AFG }
+		267 = { add_core_of = AFG }
+		release = AFG
+		AFG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = AFG
+			}
+		}
+		AFG = { 
+			set_cosmetic_tag = CAR_AFG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = AFG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_QIE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 608
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				QIE = { exists = yes }
+			}
+			QIE = { is_subject_of = CAR }
+		}
+		608 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				608 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		QIE = {
+			every_core_state = {
+				remove_core_of = QIE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = QIE
+				}
+				remove_claim_by = QIE
+			}
+		}
+		283 = { add_core_of = QIE }
+		287 = { add_core_of = QIE }
+		322 = { add_core_of = QIE }
+		325 = { add_core_of = QIE }
+		326 = { add_core_of = QIE }
+		328 = { add_core_of = QIE }
+		329 = { add_core_of = QIE }
+		330 = { add_core_of = QIE }
+		348 = { add_core_of = QIE }
+		353 = { add_core_of = QIE }
+		591 = { add_core_of = QIE }
+		592 = { add_core_of = QIE }
+		593 = { add_core_of = QIE }
+		594 = { add_core_of = QIE }
+		595 = { add_core_of = QIE }
+		596 = { add_core_of = QIE }
+		597 = { add_core_of = QIE }
+		598 = { add_core_of = QIE }
+		599 = { add_core_of = QIE }
+		600 = { add_core_of = QIE }
+		601 = { add_core_of = QIE }
+		602 = { add_core_of = QIE }
+		603 = { add_core_of = QIE }
+		604 = { add_core_of = QIE }
+		605 = { add_core_of = QIE }
+		606 = { add_core_of = QIE }
+		607 = { add_core_of = QIE }
+		609 = { add_core_of = QIE }
+		610 = { add_core_of = QIE }
+		611 = { add_core_of = QIE }
+		612 = { add_core_of = QIE }
+		613 = { add_core_of = QIE }
+		614 = { add_core_of = QIE }
+		615 = { add_core_of = QIE }
+		616 = { add_core_of = QIE }
+		617 = { add_core_of = QIE }
+		618 = { add_core_of = QIE }
+		619 = { add_core_of = QIE }
+		620 = { add_core_of = QIE }
+		621 = { add_core_of = QIE }
+		622 = { add_core_of = QIE }
+		650 = { add_core_of = QIE }
+		661 = { add_core_of = QIE }
+		693 = { add_core_of = QIE }
+		714 = { add_core_of = QIE }
+		715 = { add_core_of = QIE }
+		716 = { add_core_of = QIE }
+		717 = { add_core_of = QIE }
+		728 = { add_core_of = QIE }
+		729 = { add_core_of = QIE }
+		743 = { add_core_of = QIE }
+		744 = { add_core_of = QIE }
+		745 = { add_core_of = QIE }
+		746 = { add_core_of = QIE }
+		747 = { add_core_of = QIE }
+		748 = { add_core_of = QIE }
+		774 = { add_core_of = QIE }
+		788 = { add_core_of = QIE }
+		799 = { add_core_of = QIE }
+		800 = { add_core_of = QIE }
+		801 = { add_core_of = QIE }
+		802 = { add_core_of = QIE }
+		803 = { add_core_of = QIE }
+		816 = { add_core_of = QIE }
+		883 = { add_core_of = QIE }
+		884 = { add_core_of = QIE }
+		885 = { add_core_of = QIE }
+		886 = { add_core_of = QIE }
+		897 = { add_core_of = QIE }
+		996 = { add_core_of = QIE }
+		1012 = { add_core_of = QIE }
+		1013 = { add_core_of = QIE }
+		1014 = { add_core_of = QIE }
+		1015 = { add_core_of = QIE }
+		1044 = { add_core_of = QIE }
+		1045 = { add_core_of = QIE }
+		1046 = { add_core_of = QIE }
+		1047 = { add_core_of = QIE }
+		1048 = { add_core_of = QIE }
+		1049 = { add_core_of = QIE }
+		1050 = { add_core_of = QIE }
+		1051 = { add_core_of = QIE }
+		1052 = { add_core_of = QIE }
+		1053 = { add_core_of = QIE }
+		1054 = { add_core_of = QIE }
+		1055 = { add_core_of = QIE }
+		1056 = { add_core_of = QIE }
+		1058 = { add_core_of = QIE }
+		1059 = { add_core_of = QIE }
+		1060 = { add_core_of = QIE }
+		1061 = { add_core_of = QIE }
+		1062 = { add_core_of = QIE }
+		1063 = { add_core_of = QIE }
+		1064 = { add_core_of = QIE }
+		1065 = { add_core_of = QIE }
+		1066 = { add_core_of = QIE }
+		1067 = { add_core_of = QIE }
+		1068 = { add_core_of = QIE }
+		1069 = { add_core_of = QIE }
+		1072 = { add_core_of = QIE }
+		1075 = { add_core_of = QIE }
+		1083 = { add_core_of = QIE }
+		1084 = { add_core_of = QIE }
+		1085 = { add_core_of = QIE }
+		1086 = { add_core_of = QIE }
+		1265 = { add_core_of = QIE }
+		608 = { add_core_of = QIE }
+		release = QIE
+		QIE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = QIE
+			}
+		}
+		QIE = { 
+			set_cosmetic_tag = CAR_QIE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = QIE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_KOR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 525
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				KOR = { exists = yes }
+			}
+			KOR = { is_subject_of = CAR }
+		}
+		525 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				525 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KOR = {
+			every_core_state = {
+				remove_core_of = KOR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KOR
+				}
+				remove_claim_by = KOR
+			}
+		}
+		527 = { add_core_of = KOR }
+		1345 = { add_core_of = KOR }
+		1346 = { add_core_of = KOR }
+		1347 = { add_core_of = KOR }
+		525 = { add_core_of = KOR }
+		release = KOR
+		KOR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = KOR
+			}
+		}
+		KOR = { 
+			set_cosmetic_tag = CAR_KOR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = KOR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_JAP = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 282
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAP = { exists = yes }
+			}
+			JAP = { is_subject_of = CAR }
+		}
+		282 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				282 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAP = {
+			every_core_state = {
+				remove_core_of = JAP
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAP
+				}
+				remove_claim_by = JAP
+			}
+		}
+		528 = { add_core_of = JAP }
+		529 = { add_core_of = JAP }
+		530 = { add_core_of = JAP }
+		531 = { add_core_of = JAP }
+		532 = { add_core_of = JAP }
+		533 = { add_core_of = JAP }
+		534 = { add_core_of = JAP }
+		535 = { add_core_of = JAP }
+		536 = { add_core_of = JAP }
+		1351 = { add_core_of = JAP }
+		1352 = { add_core_of = JAP }
+		1353 = { add_core_of = JAP }
+		1354 = { add_core_of = JAP }
+		1355 = { add_core_of = JAP }
+		1356 = { add_core_of = JAP }
+		282 = { add_core_of = JAP }
+		release = JAP
+		JAP = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = JAP
+			}
+		}
+		JAP = { 
+			set_cosmetic_tag = CAR_JAP_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = JAP
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = CAR }
+		}
+		439 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				439 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		72 = { add_core_of = DEH }
+		281 = { add_core_of = DEH }
+		288 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		323 = { add_core_of = DEH }
+		324 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		428 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		440 = { add_core_of = DEH }
+		441 = { add_core_of = DEH }
+		442 = { add_core_of = DEH }
+		443 = { add_core_of = DEH }
+		444 = { add_core_of = DEH }
+		445 = { add_core_of = DEH }
+		640 = { add_core_of = DEH }
+		701 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		733 = { add_core_of = DEH }
+		756 = { add_core_of = DEH }
+		790 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		890 = { add_core_of = DEH }
+		891 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		1219 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = CAR_DEH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SIA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 289
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SIA = { exists = yes }
+			}
+			SIA = { is_subject_of = CAR }
+		}
+		289 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				289 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SIA = {
+			every_core_state = {
+				remove_core_of = SIA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SIA
+				}
+				remove_claim_by = SIA
+			}
+		}
+		286 = { add_core_of = SIA }
+		333 = { add_core_of = SIA }
+		336 = { add_core_of = SIA }
+		670 = { add_core_of = SIA }
+		671 = { add_core_of = SIA }
+		724 = { add_core_of = SIA }
+		749 = { add_core_of = SIA }
+		750 = { add_core_of = SIA }
+		751 = { add_core_of = SIA }
+		822 = { add_core_of = SIA }
+		823 = { add_core_of = SIA }
+		824 = { add_core_of = SIA }
+		825 = { add_core_of = SIA }
+		826 = { add_core_of = SIA }
+		827 = { add_core_of = SIA }
+		828 = { add_core_of = SIA }
+		830 = { add_core_of = SIA }
+		831 = { add_core_of = SIA }
+		846 = { add_core_of = SIA }
+		856 = { add_core_of = SIA }
+		857 = { add_core_of = SIA }
+		882 = { add_core_of = SIA }
+		999 = { add_core_of = SIA }
+		289 = { add_core_of = SIA }
+		release = SIA
+		SIA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SIA
+			}
+		}
+		SIA = { 
+			set_cosmetic_tag = CAR_SIA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SIA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_INS = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1020
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				INS = { exists = yes }
+			}
+			INS = { is_subject_of = CAR }
+		}
+		1020 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				1020 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		INS = {
+			every_core_state = {
+				remove_core_of = INS
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = INS
+				}
+				remove_claim_by = INS
+			}
+		}
+		334 = { add_core_of = INS }
+		335 = { add_core_of = INS }
+		523 = { add_core_of = INS }
+		667 = { add_core_of = INS }
+		668 = { add_core_of = INS }
+		669 = { add_core_of = INS }
+		672 = { add_core_of = INS }
+		673 = { add_core_of = INS }
+		721 = { add_core_of = INS }
+		757 = { add_core_of = INS }
+		843 = { add_core_of = INS }
+		972 = { add_core_of = INS }
+		1016 = { add_core_of = INS }
+		1017 = { add_core_of = INS }
+		1018 = { add_core_of = INS }
+		1019 = { add_core_of = INS }
+		1021 = { add_core_of = INS }
+		1022 = { add_core_of = INS }
+		1023 = { add_core_of = INS }
+		1333 = { add_core_of = INS }
+		1364 = { add_core_of = INS }
+		1365 = { add_core_of = INS }
+		1020 = { add_core_of = INS }
+		release = INS
+		INS = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = INS
+			}
+		}
+		INS = { 
+			set_cosmetic_tag = CAR_INS_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = INS
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 985
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = CAR }
+		}
+		985 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				985 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		711 = { add_core_of = AST }
+		986 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = CAR_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_NZL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NZL = { exists = yes }
+			}
+			NZL = { is_subject_of = CAR }
+		}
+		284 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				284 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NZL = {
+			every_core_state = {
+				remove_core_of = NZL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NZL
+				}
+				remove_claim_by = NZL
+			}
+		}
+		723 = { add_core_of = NZL }
+		284 = { add_core_of = NZL }
+		release = NZL
+		NZL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = NZL
+			}
+		}
+		NZL = { 
+			set_cosmetic_tag = CAR_NZL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = NZL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_SSI = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 636
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SSI = { exists = yes }
+			}
+			SSI = { is_subject_of = CAR }
+		}
+		636 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				636 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SSI = {
+			every_core_state = {
+				remove_core_of = SSI
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SSI
+				}
+				remove_claim_by = SSI
+			}
+		}
+		524 = { add_core_of = SSI }
+		526 = { add_core_of = SSI }
+		629 = { add_core_of = SSI }
+		630 = { add_core_of = SSI }
+		631 = { add_core_of = SSI }
+		632 = { add_core_of = SSI }
+		633 = { add_core_of = SSI }
+		634 = { add_core_of = SSI }
+		635 = { add_core_of = SSI }
+		638 = { add_core_of = SSI }
+		639 = { add_core_of = SSI }
+		641 = { add_core_of = SSI }
+		642 = { add_core_of = SSI }
+		643 = { add_core_of = SSI }
+		645 = { add_core_of = SSI }
+		646 = { add_core_of = SSI }
+		647 = { add_core_of = SSI }
+		648 = { add_core_of = SSI }
+		684 = { add_core_of = SSI }
+		725 = { add_core_of = SSI }
+		726 = { add_core_of = SSI }
+		727 = { add_core_of = SSI }
+		734 = { add_core_of = SSI }
+		737 = { add_core_of = SSI }
+		941 = { add_core_of = SSI }
+		636 = { add_core_of = SSI }
+		release = SSI
+		SSI = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = SSI
+			}
+		}
+		SSI = { 
+			set_cosmetic_tag = CAR_SSI_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = SSI
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_CAN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 739
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAN = { exists = yes }
+			}
+			CAN = { is_subject_of = CAR }
+		}
+		739 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				739 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAN = {
+			every_core_state = {
+				remove_core_of = CAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAN
+				}
+				remove_claim_by = CAN
+			}
+		}
+		276 = { add_core_of = CAN }
+		331 = { add_core_of = CAN }
+		332 = { add_core_of = CAN }
+		464 = { add_core_of = CAN }
+		465 = { add_core_of = CAN }
+		466 = { add_core_of = CAN }
+		467 = { add_core_of = CAN }
+		468 = { add_core_of = CAN }
+		469 = { add_core_of = CAN }
+		470 = { add_core_of = CAN }
+		472 = { add_core_of = CAN }
+		682 = { add_core_of = CAN }
+		683 = { add_core_of = CAN }
+		730 = { add_core_of = CAN }
+		832 = { add_core_of = CAN }
+		1330 = { add_core_of = CAN }
+		1331 = { add_core_of = CAN }
+		739 = { add_core_of = CAN }
+		release = CAN
+		CAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = CAN
+			}
+		}
+		CAN = { 
+			set_cosmetic_tag = CAR_CAN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = CAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_NEE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 932
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NEE = { exists = yes }
+			}
+			NEE = { is_subject_of = CAR }
+		}
+		932 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				932 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NEE = {
+			every_core_state = {
+				remove_core_of = NEE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NEE
+				}
+				remove_claim_by = NEE
+			}
+		}
+		357 = { add_core_of = NEE }
+		358 = { add_core_of = NEE }
+		796 = { add_core_of = NEE }
+		931 = { add_core_of = NEE }
+		933 = { add_core_of = NEE }
+		934 = { add_core_of = NEE }
+		935 = { add_core_of = NEE }
+		932 = { add_core_of = NEE }
+		release = NEE
+		NEE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = NEE
+			}
+		}
+		NEE = { 
+			set_cosmetic_tag = CAR_NEE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = NEE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_CGL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 393
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CGL = { exists = yes }
+			}
+			CGL = { is_subject_of = CAR }
+		}
+		393 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				393 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CGL = {
+			every_core_state = {
+				remove_core_of = CGL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CGL
+				}
+				remove_claim_by = CGL
+			}
+		}
+		261 = { add_core_of = CGL }
+		394 = { add_core_of = CGL }
+		395 = { add_core_of = CGL }
+		396 = { add_core_of = CGL }
+		1151 = { add_core_of = CGL }
+		1152 = { add_core_of = CGL }
+		1153 = { add_core_of = CGL }
+		1154 = { add_core_of = CGL }
+		1173 = { add_core_of = CGL }
+		393 = { add_core_of = CGL }
+		release = CGL
+		CGL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = CGL
+			}
+		}
+		CGL = { 
+			set_cosmetic_tag = CAR_CGL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = CGL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = CAR }
+		}
+		361 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				361 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
+				}
+				remove_claim_by = USA
+			}
+		}
+		359 = { add_core_of = USA }
+		360 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		370 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		930 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1162 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1172 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = CAR_USA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_TEX = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 371
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				TEX = { exists = yes }
+			}
+			TEX = { is_subject_of = CAR }
+		}
+		371 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				371 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		TEX = {
+			every_core_state = {
+				remove_core_of = TEX
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = TEX
+				}
+				remove_claim_by = TEX
+			}
+		}
+		372 = { add_core_of = TEX }
+		373 = { add_core_of = TEX }
+		374 = { add_core_of = TEX }
+		381 = { add_core_of = TEX }
+		382 = { add_core_of = TEX }
+		383 = { add_core_of = TEX }
+		384 = { add_core_of = TEX }
+		388 = { add_core_of = TEX }
+		389 = { add_core_of = TEX }
+		390 = { add_core_of = TEX }
+		391 = { add_core_of = TEX }
+		392 = { add_core_of = TEX }
+		1150 = { add_core_of = TEX }
+		1156 = { add_core_of = TEX }
+		1157 = { add_core_of = TEX }
+		1163 = { add_core_of = TEX }
+		1164 = { add_core_of = TEX }
+		371 = { add_core_of = TEX }
+		release = TEX
+		TEX = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = TEX
+			}
+		}
+		TEX = { 
+			set_cosmetic_tag = CAR_TEX_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = TEX
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_MEX = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 277
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				MEX = { exists = yes }
+			}
+			MEX = { is_subject_of = CAR }
+		}
+		277 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				277 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MEX = {
+			every_core_state = {
+				remove_core_of = MEX
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MEX
+				}
+				remove_claim_by = MEX
+			}
+		}
+		375 = { add_core_of = MEX }
+		376 = { add_core_of = MEX }
+		377 = { add_core_of = MEX }
+		378 = { add_core_of = MEX }
+		379 = { add_core_of = MEX }
+		380 = { add_core_of = MEX }
+		385 = { add_core_of = MEX }
+		386 = { add_core_of = MEX }
+		387 = { add_core_of = MEX }
+		463 = { add_core_of = MEX }
+		471 = { add_core_of = MEX }
+		473 = { add_core_of = MEX }
+		474 = { add_core_of = MEX }
+		475 = { add_core_of = MEX }
+		476 = { add_core_of = MEX }
+		477 = { add_core_of = MEX }
+		478 = { add_core_of = MEX }
+		479 = { add_core_of = MEX }
+		480 = { add_core_of = MEX }
+		481 = { add_core_of = MEX }
+		482 = { add_core_of = MEX }
+		483 = { add_core_of = MEX }
+		484 = { add_core_of = MEX }
+		485 = { add_core_of = MEX }
+		740 = { add_core_of = MEX }
+		797 = { add_core_of = MEX }
+		798 = { add_core_of = MEX }
+		829 = { add_core_of = MEX }
+		833 = { add_core_of = MEX }
+		1096 = { add_core_of = MEX }
+		1161 = { add_core_of = MEX }
+		1165 = { add_core_of = MEX }
+		1166 = { add_core_of = MEX }
+		1174 = { add_core_of = MEX }
+		1175 = { add_core_of = MEX }
+		1252 = { add_core_of = MEX }
+		1253 = { add_core_of = MEX }
+		1254 = { add_core_of = MEX }
+		1255 = { add_core_of = MEX }
+		1273 = { add_core_of = MEX }
+		1332 = { add_core_of = MEX }
+		1348 = { add_core_of = MEX }
+		1349 = { add_core_of = MEX }
+		1350 = { add_core_of = MEX }
+		277 = { add_core_of = MEX }
+		release = MEX
+		MEX = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = MEX
+			}
+		}
+		MEX = { 
+			set_cosmetic_tag = CAR_MEX_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = MEX
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_GUA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 313
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GUA = { exists = yes }
+			}
+			GUA = { is_subject_of = CAR }
+		}
+		313 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				313 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GUA = {
+			every_core_state = {
+				remove_core_of = GUA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GUA
+				}
+				remove_claim_by = GUA
+			}
+		}
+		311 = { add_core_of = GUA }
+		312 = { add_core_of = GUA }
+		314 = { add_core_of = GUA }
+		316 = { add_core_of = GUA }
+		317 = { add_core_of = GUA }
+		842 = { add_core_of = GUA }
+		1070 = { add_core_of = GUA }
+		1071 = { add_core_of = GUA }
+		1247 = { add_core_of = GUA }
+		1249 = { add_core_of = GUA }
+		1250 = { add_core_of = GUA }
+		1251 = { add_core_of = GUA }
+		1256 = { add_core_of = GUA }
+		1258 = { add_core_of = GUA }
+		1259 = { add_core_of = GUA }
+		1260 = { add_core_of = GUA }
+		1261 = { add_core_of = GUA }
+		1262 = { add_core_of = GUA }
+		313 = { add_core_of = GUA }
+		release = GUA
+		GUA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = GUA
+			}
+		}
+		GUA = { 
+			set_cosmetic_tag = CAR_GUA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = GUA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_CUB = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 315
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CUB = { exists = yes }
+			}
+			CUB = { is_subject_of = CAR }
+		}
+		315 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				315 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CUB = {
+			every_core_state = {
+				remove_core_of = CUB
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CUB
+				}
+				remove_claim_by = CUB
+			}
+		}
+		308 = { add_core_of = CUB }
+		318 = { add_core_of = CUB }
+		319 = { add_core_of = CUB }
+		366 = { add_core_of = CUB }
+		686 = { add_core_of = CUB }
+		689 = { add_core_of = CUB }
+		690 = { add_core_of = CUB }
+		691 = { add_core_of = CUB }
+		692 = { add_core_of = CUB }
+		694 = { add_core_of = CUB }
+		696 = { add_core_of = CUB }
+		818 = { add_core_of = CUB }
+		820 = { add_core_of = CUB }
+		1077 = { add_core_of = CUB }
+		1171 = { add_core_of = CUB }
+		1312 = { add_core_of = CUB }
+		315 = { add_core_of = CUB }
+		release = CUB
+		CUB = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = CUB
+			}
+		}
+		CUB = { 
+			set_cosmetic_tag = CAR_CUB_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = CUB
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_VEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 849
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				VEN = { exists = yes }
+			}
+			VEN = { is_subject_of = CAR }
+		}
+		849 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				849 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		VEN = {
+			every_core_state = {
+				remove_core_of = VEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = VEN
+				}
+				remove_claim_by = VEN
+			}
+		}
+		307 = { add_core_of = VEN }
+		488 = { add_core_of = VEN }
+		489 = { add_core_of = VEN }
+		695 = { add_core_of = VEN }
+		850 = { add_core_of = VEN }
+		912 = { add_core_of = VEN }
+		1036 = { add_core_of = VEN }
+		1078 = { add_core_of = VEN }
+		1079 = { add_core_of = VEN }
+		849 = { add_core_of = VEN }
+		release = VEN
+		VEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = VEN
+			}
+		}
+		VEN = { 
+			set_cosmetic_tag = CAR_VEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = VEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_GYA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 687
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				GYA = { exists = yes }
+			}
+			GYA = { is_subject_of = CAR }
+		}
+		687 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				687 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		GYA = {
+			every_core_state = {
+				remove_core_of = GYA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = GYA
+				}
+				remove_claim_by = GYA
+			}
+		}
+		309 = { add_core_of = GYA }
+		310 = { add_core_of = GYA }
+		1037 = { add_core_of = GYA }
+		1038 = { add_core_of = GYA }
+		1039 = { add_core_of = GYA }
+		1308 = { add_core_of = GYA }
+		1309 = { add_core_of = GYA }
+		687 = { add_core_of = GYA }
+		release = GYA
+		GYA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = GYA
+			}
+		}
+		GYA = { 
+			set_cosmetic_tag = CAR_GYA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = GYA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_COL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 306
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				COL = { exists = yes }
+			}
+			COL = { is_subject_of = CAR }
+		}
+		306 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				306 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		COL = {
+			every_core_state = {
+				remove_core_of = COL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = COL
+				}
+				remove_claim_by = COL
+			}
+		}
+		304 = { add_core_of = COL }
+		305 = { add_core_of = COL }
+		486 = { add_core_of = COL }
+		490 = { add_core_of = COL }
+		493 = { add_core_of = COL }
+		649 = { add_core_of = COL }
+		685 = { add_core_of = COL }
+		851 = { add_core_of = COL }
+		852 = { add_core_of = COL }
+		853 = { add_core_of = COL }
+		854 = { add_core_of = COL }
+		1214 = { add_core_of = COL }
+		1215 = { add_core_of = COL }
+		1216 = { add_core_of = COL }
+		1248 = { add_core_of = COL }
+		1257 = { add_core_of = COL }
+		1280 = { add_core_of = COL }
+		1296 = { add_core_of = COL }
+		306 = { add_core_of = COL }
+		release = COL
+		COL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = COL
+			}
+		}
+		COL = { 
+			set_cosmetic_tag = CAR_COL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = COL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_PRU = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 303
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				PRU = { exists = yes }
+			}
+			PRU = { is_subject_of = CAR }
+		}
+		303 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				303 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		PRU = {
+			every_core_state = {
+				remove_core_of = PRU
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PRU
+				}
+				remove_claim_by = PRU
+			}
+		}
+		491 = { add_core_of = PRU }
+		492 = { add_core_of = PRU }
+		494 = { add_core_of = PRU }
+		845 = { add_core_of = PRU }
+		872 = { add_core_of = PRU }
+		303 = { add_core_of = PRU }
+		release = PRU
+		PRU = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = PRU
+			}
+		}
+		PRU = { 
+			set_cosmetic_tag = CAR_PRU_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = PRU
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_BOL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 302
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BOL = { exists = yes }
+			}
+			BOL = { is_subject_of = CAR }
+		}
+		302 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				302 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BOL = {
+			every_core_state = {
+				remove_core_of = BOL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BOL
+				}
+				remove_claim_by = BOL
+			}
+		}
+		487 = { add_core_of = BOL }
+		506 = { add_core_of = BOL }
+		688 = { add_core_of = BOL }
+		847 = { add_core_of = BOL }
+		848 = { add_core_of = BOL }
+		855 = { add_core_of = BOL }
+		873 = { add_core_of = BOL }
+		901 = { add_core_of = BOL }
+		903 = { add_core_of = BOL }
+		1027 = { add_core_of = BOL }
+		1040 = { add_core_of = BOL }
+		1073 = { add_core_of = BOL }
+		302 = { add_core_of = BOL }
+		release = BOL
+		BOL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = BOL
+			}
+		}
+		BOL = { 
+			set_cosmetic_tag = CAR_BOL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = BOL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_CHL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CHL = { exists = yes }
+			}
+			CHL = { is_subject_of = CAR }
+		}
+		279 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				279 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CHL = {
+			every_core_state = {
+				remove_core_of = CHL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CHL
+				}
+				remove_claim_by = CHL
+			}
+		}
+		270 = { add_core_of = CHL }
+		507 = { add_core_of = CHL }
+		874 = { add_core_of = CHL }
+		279 = { add_core_of = CHL }
+		release = CHL
+		CHL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = CHL
+			}
+		}
+		CHL = { 
+			set_cosmetic_tag = CAR_CHL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = CHL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_ARG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 278
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ARG = { exists = yes }
+			}
+			ARG = { is_subject_of = CAR }
+		}
+		278 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				278 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ARG = {
+			every_core_state = {
+				remove_core_of = ARG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ARG
+				}
+				remove_claim_by = ARG
+			}
+		}
+		299 = { add_core_of = ARG }
+		449 = { add_core_of = ARG }
+		508 = { add_core_of = ARG }
+		509 = { add_core_of = ARG }
+		511 = { add_core_of = ARG }
+		512 = { add_core_of = ARG }
+		579 = { add_core_of = ARG }
+		720 = { add_core_of = ARG }
+		902 = { add_core_of = ARG }
+		904 = { add_core_of = ARG }
+		1028 = { add_core_of = ARG }
+		1029 = { add_core_of = ARG }
+		278 = { add_core_of = ARG }
+		release = ARG
+		ARG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = ARG
+			}
+		}
+		ARG = { 
+			set_cosmetic_tag = CAR_ARG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = ARG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_URG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 300
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				URG = { exists = yes }
+			}
+			URG = { is_subject_of = CAR }
+		}
+		300 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				300 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		URG = {
+			every_core_state = {
+				remove_core_of = URG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = URG
+				}
+				remove_claim_by = URG
+			}
+		}
+		301 = { add_core_of = URG }
+		502 = { add_core_of = URG }
+		503 = { add_core_of = URG }
+		510 = { add_core_of = URG }
+		894 = { add_core_of = URG }
+		1041 = { add_core_of = URG }
+		1043 = { add_core_of = URG }
+		1074 = { add_core_of = URG }
+		300 = { add_core_of = URG }
+		release = URG
+		URG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = URG
+			}
+		}
+		URG = { 
+			set_cosmetic_tag = CAR_URG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = URG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_AMA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 898
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AMA = { exists = yes }
+			}
+			AMA = { is_subject_of = CAR }
+		}
+		898 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				898 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AMA = {
+			every_core_state = {
+				remove_core_of = AMA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AMA
+				}
+				remove_claim_by = AMA
+			}
+		}
+		280 = { add_core_of = AMA }
+		495 = { add_core_of = AMA }
+		504 = { add_core_of = AMA }
+		900 = { add_core_of = AMA }
+		1030 = { add_core_of = AMA }
+		1031 = { add_core_of = AMA }
+		1033 = { add_core_of = AMA }
+		1305 = { add_core_of = AMA }
+		1306 = { add_core_of = AMA }
+		1307 = { add_core_of = AMA }
+		1310 = { add_core_of = AMA }
+		1311 = { add_core_of = AMA }
+		898 = { add_core_of = AMA }
+		release = AMA
+		AMA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = AMA
+			}
+		}
+		AMA = { 
+			set_cosmetic_tag = CAR_AMA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = AMA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
+	}
+}
+
+CAR_establish_rk_BRA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 500
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRA = { exists = yes }
+			}
+			BRA = { is_subject_of = CAR }
+		}
+		500 = { owner = { OR = { original_tag = CAR is_subject_of = CAR } } }
+		OR = {
+				500 = { NOT = { is_core_of = CAR } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRA = {
+			every_core_state = {
+				remove_core_of = BRA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRA
+				}
+				remove_claim_by = BRA
+			}
+		}
+		496 = { add_core_of = BRA }
+		497 = { add_core_of = BRA }
+		498 = { add_core_of = BRA }
+		499 = { add_core_of = BRA }
+		501 = { add_core_of = BRA }
+		505 = { add_core_of = BRA }
+		895 = { add_core_of = BRA }
+		896 = { add_core_of = BRA }
+		500 = { add_core_of = BRA }
+		release = BRA
+		BRA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = CAR
+						}
+						OR = {
+							is_owned_by = CAR
+							OWNER = { is_subject_of = CAR} 
+						}
+					}
+				}
+				transfer_state_to = BRA
+			}
+		}
+		BRA = { 
+			set_cosmetic_tag = CAR_BRA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Administración Española"
+				picture = "gfx/leaders/CAR/Portrait_CAR_Colonial_Administration.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			CAR = {
+				set_autonomy = {
+					target = BRA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 50
+				national_populist = 50
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "Administración Española"
+				long_name = "Administración Española"
+			}
+		}
 	}
 }
 } 
