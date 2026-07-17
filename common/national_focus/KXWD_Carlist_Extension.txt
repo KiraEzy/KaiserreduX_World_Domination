@@ -82,7 +82,10 @@ shared_focus = {
             target = CUB
         }
         CUB = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
 	}
 }
@@ -112,7 +115,10 @@ shared_focus = {
             target = MEX
         }
         MEX = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
 	}
 }
@@ -253,7 +259,10 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_old_world"
         add_ideas = KXWD_CAR_ambitious_empire
         POR = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         create_wargoal = {
             type = annex_everything
@@ -479,13 +488,22 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CARWD_return_to_africa"
         MOR = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         NFA = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         LIB = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         create_wargoal = {
             type = annex_everything
@@ -543,19 +561,34 @@ shared_focus = {
             target = BRT
         }
         BRT = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         COG = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         UMN = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         ZAM = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         ZIM = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
 	}
 }
@@ -590,10 +623,16 @@ shared_focus = {
             target = CMR
         }
         MAF = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
         CMR = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
 	}
 }
@@ -693,7 +732,10 @@ shared_focus = {
             target = PHI
         }
         PHI = {
-            add_ideas = KXWD_CAR_ALONE
+            add_timed_idea = {
+                idea = KXWD_CAR_ALONE
+                days = 180
+            }
 	    }
 	}
 }
