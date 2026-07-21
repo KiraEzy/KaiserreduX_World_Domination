@@ -11350,6 +11350,7 @@ ENG_establish_rk_PNG = {
 		737 = { add_core_of = PNG }
 		843 = { add_core_of = PNG }
 		757 = { add_core_of = PNG }
+		523 = { add_core_of = PNG }
 		release = PNG
 		PNG = { 
 			every_core_state = {
@@ -11732,5 +11733,1179 @@ ENG_establish_rk_SSI = {
 	}
 }
 
+ENG_establish_rk_CAN = {
+	icon = generic_prepare_civil_war
 
+		highlight_states = {
+			highlight_state_targets = {
+				state = 739
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				CAN = { exists = yes }
+			}
+			CAN = { is_subject_of = ENG }
+		}
+		739 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				739 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		CAN = {
+			every_core_state = {
+				remove_core_of = CAN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CAN
+				}
+				remove_claim_by = CAN
+			}
+		}
+		276 = { add_core_of = CAN }
+		331 = { add_core_of = CAN }
+		332 = { add_core_of = CAN }
+		464 = { add_core_of = CAN }
+		465 = { add_core_of = CAN }
+		466 = { add_core_of = CAN }
+		467 = { add_core_of = CAN }
+		468 = { add_core_of = CAN }
+		469 = { add_core_of = CAN }
+		470 = { add_core_of = CAN }
+		471 = { add_core_of = CAN }
+		472 = { add_core_of = CAN }
+		473 = { add_core_of = CAN }
+		682 = { add_core_of = CAN }
+		683 = { add_core_of = CAN }
+		730 = { add_core_of = CAN }
+		740 = { add_core_of = CAN }
+		832 = { add_core_of = CAN }
+		1330 = { add_core_of = CAN }
+		1331 = { add_core_of = CAN }
+		1332 = { add_core_of = CAN }
+		739 = { add_core_of = CAN }
+		release = CAN
+		CAN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = CAN
+			}
+		}
+		CAN = { 
+			set_cosmetic_tag = ENG_CAN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = CAN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_USA = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 361
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				USA = { exists = yes }
+			}
+			USA = { is_subject_of = ENG }
+		}
+		361 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				361 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		USA = {
+			every_core_state = {
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = USA
+				}
+				remove_claim_by = USA
+			}
+		}
+		261 = { add_core_of = USA }
+		357 = { add_core_of = USA }
+		358 = { add_core_of = USA }
+		359 = { add_core_of = USA }
+		360 = { add_core_of = USA }
+		362 = { add_core_of = USA }
+		363 = { add_core_of = USA }
+		364 = { add_core_of = USA }
+		365 = { add_core_of = USA }
+		366 = { add_core_of = USA }
+		367 = { add_core_of = USA }
+		368 = { add_core_of = USA }
+		369 = { add_core_of = USA }
+		370 = { add_core_of = USA }
+		371 = { add_core_of = USA }
+		372 = { add_core_of = USA }
+		373 = { add_core_of = USA }
+		374 = { add_core_of = USA }
+		375 = { add_core_of = USA }
+		376 = { add_core_of = USA }
+		377 = { add_core_of = USA }
+		378 = { add_core_of = USA }
+		379 = { add_core_of = USA }
+		380 = { add_core_of = USA }
+		381 = { add_core_of = USA }
+		382 = { add_core_of = USA }
+		383 = { add_core_of = USA }
+		384 = { add_core_of = USA }
+		385 = { add_core_of = USA }
+		386 = { add_core_of = USA }
+		387 = { add_core_of = USA }
+		388 = { add_core_of = USA }
+		389 = { add_core_of = USA }
+		390 = { add_core_of = USA }
+		391 = { add_core_of = USA }
+		392 = { add_core_of = USA }
+		393 = { add_core_of = USA }
+		394 = { add_core_of = USA }
+		395 = { add_core_of = USA }
+		396 = { add_core_of = USA }
+		463 = { add_core_of = USA }
+		629 = { add_core_of = USA }
+		796 = { add_core_of = USA }
+		797 = { add_core_of = USA }
+		798 = { add_core_of = USA }
+		829 = { add_core_of = USA }
+		833 = { add_core_of = USA }
+		929 = { add_core_of = USA }
+		930 = { add_core_of = USA }
+		931 = { add_core_of = USA }
+		932 = { add_core_of = USA }
+		933 = { add_core_of = USA }
+		934 = { add_core_of = USA }
+		935 = { add_core_of = USA }
+		1096 = { add_core_of = USA }
+		1150 = { add_core_of = USA }
+		1151 = { add_core_of = USA }
+		1152 = { add_core_of = USA }
+		1153 = { add_core_of = USA }
+		1154 = { add_core_of = USA }
+		1155 = { add_core_of = USA }
+		1156 = { add_core_of = USA }
+		1157 = { add_core_of = USA }
+		1158 = { add_core_of = USA }
+		1159 = { add_core_of = USA }
+		1160 = { add_core_of = USA }
+		1161 = { add_core_of = USA }
+		1162 = { add_core_of = USA }
+		1163 = { add_core_of = USA }
+		1164 = { add_core_of = USA }
+		1165 = { add_core_of = USA }
+		1166 = { add_core_of = USA }
+		1167 = { add_core_of = USA }
+		1168 = { add_core_of = USA }
+		1169 = { add_core_of = USA }
+		1170 = { add_core_of = USA }
+		1171 = { add_core_of = USA }
+		1172 = { add_core_of = USA }
+		1173 = { add_core_of = USA }
+		1174 = { add_core_of = USA }
+		1175 = { add_core_of = USA }
+		1273 = { add_core_of = USA }
+		1348 = { add_core_of = USA }
+		1349 = { add_core_of = USA }
+		1350 = { add_core_of = USA }
+		361 = { add_core_of = USA }
+		release = USA
+		USA = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = USA
+			}
+		}
+		USA = { 
+			set_cosmetic_tag = ENG_USA_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = USA
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_JAM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 689
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				JAM = { exists = yes }
+			}
+			JAM = { is_subject_of = ENG }
+		}
+		689 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				689 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		JAM = {
+			every_core_state = {
+				remove_core_of = JAM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = JAM
+				}
+				remove_claim_by = JAM
+			}
+		}
+		308 = { add_core_of = JAM }
+		310 = { add_core_of = JAM }
+		311 = { add_core_of = JAM }
+		686 = { add_core_of = JAM }
+		687 = { add_core_of = JAM }
+		690 = { add_core_of = JAM }
+		691 = { add_core_of = JAM }
+		692 = { add_core_of = JAM }
+		694 = { add_core_of = JAM }
+		696 = { add_core_of = JAM }
+		1037 = { add_core_of = JAM }
+		1039 = { add_core_of = JAM }
+		1077 = { add_core_of = JAM }
+		1078 = { add_core_of = JAM }
+		1079 = { add_core_of = JAM }
+		1308 = { add_core_of = JAM }
+		1309 = { add_core_of = JAM }
+		1312 = { add_core_of = JAM }
+		689 = { add_core_of = JAM }
+		release = JAM
+		JAM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = JAM
+			}
+		}
+		JAM = { 
+			set_cosmetic_tag = ENG_JAM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = JAM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_SAF = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 275
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				SAF = { exists = yes }
+			}
+			SAF = { is_subject_of = ENG }
+		}
+		275 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				275 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		SAF = {
+			every_core_state = {
+				remove_core_of = SAF
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = SAF
+				}
+				remove_claim_by = SAF
+			}
+		}
+		85 = { add_core_of = SAF }
+		681 = { add_core_of = SAF }
+		719 = { add_core_of = SAF }
+		738 = { add_core_of = SAF }
+		945 = { add_core_of = SAF }
+		946 = { add_core_of = SAF }
+		947 = { add_core_of = SAF }
+		1176 = { add_core_of = SAF }
+		275 = { add_core_of = SAF }
+		release = SAF
+		SAF = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = SAF
+			}
+		}
+		SAF = { 
+			set_cosmetic_tag = ENG_SAF_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = SAF
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_DEH = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 439
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				DEH = { exists = yes }
+			}
+			DEH = { is_subject_of = ENG }
+		}
+		439 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				439 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		DEH = {
+			every_core_state = {
+				remove_core_of = DEH
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = DEH
+				}
+				remove_claim_by = DEH
+			}
+		}
+		281 = { add_core_of = DEH }
+		320 = { add_core_of = DEH }
+		321 = { add_core_of = DEH }
+		422 = { add_core_of = DEH }
+		423 = { add_core_of = DEH }
+		424 = { add_core_of = DEH }
+		425 = { add_core_of = DEH }
+		426 = { add_core_of = DEH }
+		427 = { add_core_of = DEH }
+		428 = { add_core_of = DEH }
+		429 = { add_core_of = DEH }
+		430 = { add_core_of = DEH }
+		431 = { add_core_of = DEH }
+		432 = { add_core_of = DEH }
+		433 = { add_core_of = DEH }
+		434 = { add_core_of = DEH }
+		435 = { add_core_of = DEH }
+		436 = { add_core_of = DEH }
+		437 = { add_core_of = DEH }
+		438 = { add_core_of = DEH }
+		440 = { add_core_of = DEH }
+		441 = { add_core_of = DEH }
+		442 = { add_core_of = DEH }
+		443 = { add_core_of = DEH }
+		444 = { add_core_of = DEH }
+		445 = { add_core_of = DEH }
+		710 = { add_core_of = DEH }
+		733 = { add_core_of = DEH }
+		814 = { add_core_of = DEH }
+		815 = { add_core_of = DEH }
+		858 = { add_core_of = DEH }
+		867 = { add_core_of = DEH }
+		868 = { add_core_of = DEH }
+		887 = { add_core_of = DEH }
+		888 = { add_core_of = DEH }
+		889 = { add_core_of = DEH }
+		890 = { add_core_of = DEH }
+		891 = { add_core_of = DEH }
+		893 = { add_core_of = DEH }
+		1034 = { add_core_of = DEH }
+		1057 = { add_core_of = DEH }
+		1092 = { add_core_of = DEH }
+		1093 = { add_core_of = DEH }
+		1094 = { add_core_of = DEH }
+		1095 = { add_core_of = DEH }
+		1219 = { add_core_of = DEH }
+		1358 = { add_core_of = DEH }
+		1359 = { add_core_of = DEH }
+		1360 = { add_core_of = DEH }
+		1361 = { add_core_of = DEH }
+		1362 = { add_core_of = DEH }
+		1363 = { add_core_of = DEH }
+		439 = { add_core_of = DEH }
+		release = DEH
+		DEH = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = DEH
+			}
+		}
+		DEH = { 
+			set_cosmetic_tag = ENG_DEH_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = DEH
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_ZIM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 545
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ZIM = { exists = yes }
+			}
+			ZIM = { is_subject_of = ENG }
+		}
+		545 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				545 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ZIM = {
+			every_core_state = {
+				remove_core_of = ZIM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ZIM
+				}
+				remove_claim_by = ZIM
+			}
+		}
+		545 = { add_core_of = ZIM }
+		release = ZIM
+		ZIM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = ZIM
+			}
+		}
+		ZIM = { 
+			set_cosmetic_tag = ENG_ZIM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = ZIM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_AST = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 985
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				AST = { exists = yes }
+			}
+			AST = { is_subject_of = ENG }
+		}
+		985 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				985 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		AST = {
+			every_core_state = {
+				remove_core_of = AST
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = AST
+				}
+				remove_claim_by = AST
+			}
+		}
+		285 = { add_core_of = AST }
+		517 = { add_core_of = AST }
+		518 = { add_core_of = AST }
+		519 = { add_core_of = AST }
+		520 = { add_core_of = AST }
+		521 = { add_core_of = AST }
+		522 = { add_core_of = AST }
+		674 = { add_core_of = AST }
+		711 = { add_core_of = AST }
+		986 = { add_core_of = AST }
+		987 = { add_core_of = AST }
+		988 = { add_core_of = AST }
+		985 = { add_core_of = AST }
+		release = AST
+		AST = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = AST
+			}
+		}
+		AST = { 
+			set_cosmetic_tag = ENG_AST_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = AST
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_NZL = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 284
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				NZL = { exists = yes }
+			}
+			NZL = { is_subject_of = ENG }
+		}
+		284 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				284 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NZL = {
+			every_core_state = {
+				remove_core_of = NZL
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NZL
+				}
+				remove_claim_by = NZL
+			}
+		}
+		723 = { add_core_of = NZL }
+		284 = { add_core_of = NZL }
+		release = NZL
+		NZL = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = NZL
+			}
+		}
+		NZL = { 
+			set_cosmetic_tag = ENG_NZL_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = NZL
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+ENG_establish_rk_BRM = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 288
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				BRM = { exists = yes }
+			}
+			BRM = { is_subject_of = ENG }
+		}
+		288 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				288 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		BRM = {
+			every_core_state = {
+				remove_core_of = BRM
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = BRM
+				}
+				remove_claim_by = BRM
+			}
+		}
+		790 = { add_core_of = BRM }
+		640 = { add_core_of = BRM }
+		701 = { add_core_of = BRM }
+		72 = { add_core_of = BRM }
+		756 = { add_core_of = BRM }
+		831 = { add_core_of = BRM }
+		749 = { add_core_of = BRM }
+		288 = { add_core_of = BRM }
+		release = BRM
+		BRM = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = BRM
+			}
+		}
+		BRM = { 
+			set_cosmetic_tag = ENG_BRM_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = BRM
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
+
+ENG_establish_rk_ICE = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 100
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		if = {
+			limit = {
+				ICE = { exists = yes }
+			}
+			ICE = { is_subject_of = ENG }
+		}
+		100 = { owner = { OR = { original_tag = ENG is_subject_of = ENG } } }
+		OR = {
+				100 = { NOT = { is_core_of = ENG } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		ICE = {
+			every_core_state = {
+				remove_core_of = ICE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = ICE
+				}
+				remove_claim_by = ICE
+			}
+		}
+		926 = { add_core_of = ICE }
+		101 = { add_core_of = ICE }
+		337 = { add_core_of = ICE }
+		100 = { add_core_of = ICE }
+		release = ICE
+		ICE = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = ENG
+						}
+						OR = {
+							is_owned_by = ENG
+							OWNER = { is_subject_of = ENG} 
+						}
+					}
+				}
+				transfer_state_to = ICE
+			}
+		}
+		ICE = { 
+			set_cosmetic_tag = ENG_ICE_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "British Administration"
+				picture = "gfx/leaders/WDENG/UOB_CounterRev_Admin.png"
+				expire = "1.1.1"
+				ideology = autocratic_colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			ENG = {
+				set_autonomy = {
+					target = ICE
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				paternal_autocrat = 100
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				name = "British Administration"
+				long_name = "British Administration"
+			}
+		}
+	}
+}
 }
