@@ -27,5 +27,52 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+        KXWD_ARM_unstable_government = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_unstable_government"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+				authoritarian_democrat_acceptance = -25
+                surrender_limit = -0.25
+                stability_factor = -0.15
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_undermining_the_turks = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_undermining_the_turks"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                authoritarian_democrat_acceptance = -25
+                surrender_limit = -0.25
+                war_support_factor = -0.15
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_secret_rearming = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_secret_rearming"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                consumer_goods_factor = -0.15
+                production_speed_buildings_factor = 0.5
+                industrial_capacity_factory = 1.5
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_revolt_ready = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_secret_rearming"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+			}
+            targeted_modifier = {
+                tag = TUR
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+                breakthrough_bonus_against = 0.2
+            }
+			removal_cost = -1
+		}
     }	
 }
