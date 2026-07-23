@@ -61,7 +61,7 @@ ideas = {
 			removal_cost = -1
 		}
         KXWD_ARM_revolt_ready = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_secret_rearming"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_revolt_ready"}
 			allowed = {always = no}
 			picture = KXWD_GRE_neo_varangian_guard
 			modifier = {
