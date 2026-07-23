@@ -73,7 +73,10 @@ shared_focus = {
         set_technology = {
             motorised_infantry = 1
         }
-        load_oob = ARMWD_IAA
+        custom_effect_tooltip = "We will create 3 IAA divisions"
+        hidden_effect = {
+            load_oob = ARMWD_IAA
+        }
     }
 }
 
@@ -99,7 +102,10 @@ shared_focus = {
         set_technology = {
             elite_infantry_tech = 1
         }
-        load_oob = ARMWD_nzhdeh
+        custom_effect_tooltip = "We will gain access to nzhdehs elite forces"
+        hidden_effect = {
+            load_oob = ARMWD_nzhdeh
+        }
     }
 }
 
@@ -314,6 +320,9 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revolt_ready"
         add_ideas = KXWD_ARM_revolt_ready
-        load_oob = ARMWD_revolt_ready
+        custom_effect_tooltip = "We will mobilize the state guard"
+        hidden_effect = {
+            load_oob = ARMWD_revolt_ready
+        }
     }
 }
