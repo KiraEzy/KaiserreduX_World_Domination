@@ -1,0 +1,102 @@
+shared_focus = {
+	id = ARMWD_secret_network
+	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+	available = {
+		ARM = {
+            is_puppet_of = TUR
+	    }
+        is_ai = no
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = ARM_soviet_union
+	cost = 1
+
+	ai_will_do = {
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARMWD_secret_network"
+        create_intelligence_agency = yes
+        upgrade_intelligence_agency = upgrade_form_department
+        upgrade_intelligence_agency = upgrade_army_department
+        upgrade_intelligence_agency = upgrade_economy_civilian
+        upgrade_intelligence_agency = upgrade_passive_defense
+        upgrade_intelligence_agency = upgrade_suicide_pills
+        upgrade_intelligence_agency = upgrade_plastic_explosives
+	}
+}
+
+shared_focus = {
+	id = ARMWD_international_army
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_secret_network
+    cost = 2
+    available = {
+		ARM = {
+            is_puppet_of = TUR
+	    }
+	}
+    prerequisite = {
+        focus = ARMWD_secret_network
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_international_army"
+        add_ideas = KXWD_ARM_international_army
+        set_technology = {
+            tech_support = 1
+        }
+        set_technology = {
+            tech_logistics_company = 1
+        }
+        set_technology = {
+            tech_signal_company = 1
+        }
+        set_technology = {
+            gw_artillery = 1
+        }
+        set_technology = {
+            interwar_artillery = 1
+        }
+        set_technology = {
+            tech_recon = 1
+        }
+        set_technology = {
+            tech_trucks = 1
+        }
+        set_technology = {
+            motorised_infantry = 1
+        }
+        load_oob = ARMWD_IAA
+    }
+}
+
+shared_focus = {
+	id = ARMWD_contact_nzhdeh
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_international_army
+    cost = 2
+    available = {
+		ARM = {
+            is_puppet_of = TUR
+	    }
+	}
+    prerequisite = {
+        focus = ARMWD_international_army
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_contact_nzhdeh"
+        add_ideas = KXWD_ARM_nzhdeh_influence
+        set_technology = {
+            elite_infantry_tech = 1
+        }
+        load_oob = ARMWD_nzhdeh
+    }
+}

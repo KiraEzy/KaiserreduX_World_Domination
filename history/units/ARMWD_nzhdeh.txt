@@ -1,0 +1,34 @@
+division_template = {
+    name = "Nzhdehs Personal Forces"
+    division_names_group = ARM_INF_01
+    priority = 2
+    template_counter = 1
+    regiments = {
+        elite_infantry = { x = 0 y = 0 }
+        elite_infantry = { x = 0 y = 1 }
+        elite_infantry = { x = 0 y = 2 }
+        elite_infantry = { x = 1 y = 0 }
+        elite_infantry = { x = 1 y = 1 }
+        elite_infantry = { x = 1 y = 2 }
+        elite_infantry = { x = 2 y = 0 }
+        elite_infantry = { x = 2 y = 1 }
+        elite_infantry = { x = 2 y = 2 }
+    }
+    support = {
+        artillery = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+        logistics_company = { x = 0 y = 3 }
+    }
+}
+
+units = {
+    division= {
+        name = "Nzhdehs Own Division"
+        location = 14774
+        division_template = "Nzhdehs Personal Forces"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+    }
+}
