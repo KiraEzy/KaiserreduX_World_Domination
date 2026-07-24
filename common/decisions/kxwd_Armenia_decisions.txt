@@ -1,0 +1,19 @@
+ARM_great_game = {
+	borgir = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			
+			log = "RUS"
+			RUS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+		}
+		days_remove = 0
+	}
+}
+
+ARM_general_game = {
+
+}

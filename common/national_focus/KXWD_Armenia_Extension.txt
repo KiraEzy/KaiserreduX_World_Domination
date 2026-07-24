@@ -12,6 +12,13 @@ shared_focus = {
 	}
     prerequisite = {
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
 	x = 0
 	y = 2
@@ -31,6 +38,16 @@ shared_focus = {
         upgrade_intelligence_agency = upgrade_suicide_pills
         upgrade_intelligence_agency = upgrade_plastic_explosives
 	}
+    bypass_effect = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_secret_network"
+        create_intelligence_agency = yes
+        upgrade_intelligence_agency = upgrade_form_department
+        upgrade_intelligence_agency = upgrade_army_department
+        upgrade_intelligence_agency = upgrade_economy_civilian
+        upgrade_intelligence_agency = upgrade_passive_defense
+        upgrade_intelligence_agency = upgrade_suicide_pills
+        upgrade_intelligence_agency = upgrade_plastic_explosives
+    }
 }
 
 shared_focus = {
@@ -48,8 +65,47 @@ shared_focus = {
     prerequisite = {
         focus = ARMWD_secret_network
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
     completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_international_army"
+        add_ideas = KXWD_ARM_international_army
+        set_technology = {
+            tech_support = 1
+        }
+        set_technology = {
+            tech_logistics_company = 1
+        }
+        set_technology = {
+            tech_signal_company = 1
+        }
+        set_technology = {
+            gw_artillery = 1
+        }
+        set_technology = {
+            interwar_artillery = 1
+        }
+        set_technology = {
+            tech_recon = 1
+        }
+        set_technology = {
+            tech_trucks = 1
+        }
+        set_technology = {
+            motorised_infantry = 1
+        }
+        custom_effect_tooltip = "We will create 3 IAA divisions"
+        hidden_effect = {
+            load_oob = ARMWD_IAA
+        }
+    }
+    bypass_effect = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_international_army"
         add_ideas = KXWD_ARM_international_army
         set_technology = {
@@ -98,8 +154,26 @@ shared_focus = {
     prerequisite = {
         focus = ARMWD_international_army
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
     completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_contact_nzhdeh"
+        add_ideas = KXWD_ARM_nzhdeh_influence
+        set_technology = {
+            elite_infantry_tech = 1
+        }
+        custom_effect_tooltip = "We will gain access to nzhdehs elite forces"
+        hidden_effect = {
+            load_oob = ARMWD_nzhdeh
+        }
+    }
+    bypass_effect = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_contact_nzhdeh"
         add_ideas = KXWD_ARM_nzhdeh_influence
         set_technology = {
@@ -127,6 +201,13 @@ shared_focus = {
     prerequisite = {
         focus = ARMWD_international_army
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_destroy_stability"
@@ -148,6 +229,13 @@ shared_focus = {
 	}
     prerequisite = {
         focus = ARMWD_international_army
+    }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
     }
 
     completion_reward = {
@@ -177,6 +265,13 @@ shared_focus = {
     prerequisite = {
         focus = ARMWD_contact_nzhdeh
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_ARF_support"
@@ -205,6 +300,13 @@ shared_focus = {
 	}
     prerequisite = {
         focus = ARMWD_ARF_support
+    }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
     }
 
     completion_reward = {
@@ -253,6 +355,13 @@ shared_focus = {
     prerequisite = {
         focus = ARMWD_contact_nzhdeh
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_secret_rearming"
@@ -274,6 +383,13 @@ shared_focus = {
 	}
     prerequisite = {
         focus = ARMWD_secret_rearming
+    }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
     }
 
     completion_reward = {
@@ -319,6 +435,13 @@ shared_focus = {
     prerequisite = {
         focus = ARMWD_help_from_egypt
     }
+    bypass = {
+        ARM = {
+            not = { 
+                is_subject_of = TUR
+            }
+	    }
+    }
 
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revolt_ready"
@@ -326,6 +449,49 @@ shared_focus = {
         custom_effect_tooltip = "We will mobilize the state guard"
         hidden_effect = {
             load_oob = ARMWD_revolt_ready
+        }
+    }
+    bypass_effect = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revolt_ready"
+        add_ideas = KXWD_ARM_revolt_ready
+        custom_effect_tooltip = "We will mobilize the state guard"
+        hidden_effect = {
+            load_oob = ARMWD_revolt_ready
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_new_age
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 8
+    y = 0
+	relative_position_id = ARMWD_secret_network
+    cost = 2
+    available = {
+        has_government = paternal_autocrat
+        has_completed_focus = ARM_free_once_again
+        has_elections = no
+        not = {
+            has_completed_focus = ARM_safeguard_our_independence
+        }
+        RUS = {
+            RUS_russian_monarch = no
+			OR = {
+			    has_socialist_government = yes
+				has_liberal_government = yes
+			}
+        }
+	}
+    prerequisite = {
+
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revolt_ready"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_nzhdeh_influence
+            add_idea = KXWD_ARM_new_age
         }
     }
 }
