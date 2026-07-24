@@ -3,9 +3,12 @@ shared_focus = {
 	icon = goal_KXWD_GRE_create_the_neo_varangian_guard
 	available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
         is_ai = no
+        not = {
+            has_completed_focus = ARM_Contain_Armenian_Nationalism
+        }
 	}
     prerequisite = {
     }
@@ -39,7 +42,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -89,7 +92,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -118,7 +121,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -140,7 +143,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -162,7 +165,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -197,7 +200,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -238,7 +241,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -266,7 +269,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {
@@ -307,7 +310,7 @@ shared_focus = {
     cost = 2
     available = {
 		ARM = {
-            is_puppet_of = TUR
+            is_subject_of = TUR
 	    }
 	}
     prerequisite = {

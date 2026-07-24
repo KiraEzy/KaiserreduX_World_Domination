@@ -1,0 +1,211 @@
+﻿add_namespace = KXWD_ARM	
+
+country_event = {
+	id = KXWD_ARM.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_ARM.1" }
+	title = KXWD_ARM.1.t
+	desc = KXWD_ARM.1.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = KXWD_ARM.1.a
+		trigger = {
+			has_country_flag = KXWD_ARM_allied_monarchist
+		}
+		set_country_flag = KXWD_ARM_russo_armenian_empire_flag
+	}
+	option = {
+		name = KXWD_ARM.1.b
+		trigger = {
+			has_country_flag = KXWD_ARM_allied_monarchist
+		}
+		set_country_flag = KXWD_ARM_russian_empire_flag
+	}
+	option = {
+		name = KXWD_ARM.1.c
+		trigger = {
+			has_country_flag = KXWD_ARM_allied_republican
+		}
+		set_country_flag = KXWD_ARM_russian_state_flag
+	}
+}
+
+country_event = {
+	id = KXWD_ARM.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_ARM.2" }
+	title = KXWD_ARM.2.t
+	desc = KXWD_ARM.2.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = KXWD_ARM.2.a
+		create_country_leader = {
+			name = "Nzhdeh I"
+			picture = "gfx/leaders/ARM/Portrait_Armenia_Garegin_Nzhdeh.png"
+			expire = "1.1.1"
+			ideology = pataut_bonapartism_subtype
+			traits = {
+				RUS_tsar_of_all_russia_1
+				ARM_armenian_guide
+				ARM_national_savior
+			}
+		}
+		set_party_name = {
+    		ideology = paternal_autocrat
+    		long_name = KXWD_ARM_house_nzhdeh_long
+    		name = KXWD_ARM_house_nzhdeh
+		}
+		set_cosmetic_tag = ARMWD_RUS_ARM_empire_OCC
+	}
+	option = {
+		name = KXWD_ARM.2.b
+		create_country_leader = {
+			name = "Nzhdeh I"
+			picture = "gfx/leaders/ARM/Portrait_Armenia_Garegin_Nzhdeh.png"
+			expire = "1.1.1"
+			ideology = socdem_bonapartism_subtype
+			traits = {
+				RUS_tsar_of_all_russia_1
+				ARM_armenian_guide
+				ARM_national_savior
+			}
+		}
+		add_popularity = {
+   			ideology = social_democrat
+  		    popularity = 0.5
+		}
+		set_politics = {
+    		ruling_party = social_democrat
+    		elections_allowed = no
+    		long_name = KXWD_ARM_RRF_long 
+   			name = KXWD_ARM_RRF
+		}
+		swap_ideas = {
+			remove_idea = KXWD_ARM_nzhdeh_bonaparte
+			add_idea = KXWD_ARM_nzhdeh_bonaparte_socdem
+		}
+		set_cosmetic_tag = ARMWD_RUS_ARM_empire_OCC
+	}
+}
+
+country_event = {
+	id = KXWD_ARM.3
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_ARM.3" }
+	title = KXWD_ARM.3.t
+	desc = KXWD_ARM.3.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = KXWD_ARM.3.a
+		create_country_leader = {
+			name = "Garegin Nzhdeh"
+			picture = "gfx/leaders/ARM/Portrait_Armenia_Garegin_Nzhdeh.png"
+			expire = "1.1.1"
+			ideology = pataut_bonapartism_subtype
+			traits = {
+				RUS_supreme_ruler
+				ARM_armenian_guide
+				ARM_national_savior
+			}
+		}
+		set_party_name = {
+    		ideology = paternal_autocrat
+    		long_name = KXWD_ARM_RUS_state_long
+    		name = KXWD_ARM_RUS_state
+		}
+		set_cosmetic_tag = ARMWD_RUS_state_OCC
+	}
+	option = {
+		name = KXWD_ARM.3.b
+		create_country_leader = {
+			name = "Anton Denikin"
+			picture = "gfx/leaders/RUS/Portrait_RUS_Anton_Denikin.png"
+			expire = "1.1.1"
+			ideology = junta_subtype
+			traits = {
+				RUS_supreme_ruler
+			}
+		}
+		set_party_name = {
+    		ideology = paternal_autocrat
+    		long_name = KXWD_ARM_RUS_state_long
+    		name = KXWD_ARM_RUS_state
+		}
+		set_cosmetic_tag = ARMWD_RUS_state_OCC
+	}
+}
+
+country_event = {
+	id = KXWD_ARM.4
+	immediate = { log = "[GetDateText]: [Root.GetName]: event KXWD_ARM.4" }
+	title = KXWD_ARM.4.t
+	desc = KXWD_ARM.4.d
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = KXWD_ARM.4.a
+		create_country_leader = {
+			name = "Vladimir III"
+			picture = "gfx/leaders/RUS/Portrait_RUS_Vladimir_Romanov.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+			traits = {
+				RUS_tsar_of_all_russia_1
+			}
+		}
+		set_party_name = {
+    		ideology = paternal_autocrat
+    		long_name = KXWD_RUS_empire_long
+    		name = KXWD_RUS_empire
+		}
+		set_cosmetic_tag = ARMWD_RUS_empire_OCC
+	}
+	option = {
+		name = KXWD_ARM.4.b
+		create_country_leader = {
+			name = "Vsevolod I"
+			picture = "gfx/leaders/RUS/Portrait_RUS_Vsevolod_I.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+			traits = {
+				RUS_tsar_of_all_russia_1
+			}
+		}
+		set_party_name = {
+    		ideology = paternal_autocrat
+    		long_name = KXWD_RUS_empire_long
+    		name = KXWD_RUS_empire
+		}
+		set_cosmetic_tag = ARMWD_RUS_empire_OCC
+	}
+	option = {
+		name = KXWD_ARM.4.c
+		create_country_leader = {
+			name = "Roman I"
+			picture = "gfx/leaders/RUS/Portrait_RUS_Roman_I.png"
+			expire = "1.1.1"
+			ideology = absolute_monarchy_subtype
+			traits = {
+				RUS_tsar_of_all_russia_1
+			}
+		}
+		set_party_name = {
+    		ideology = paternal_autocrat
+    		long_name = KXWD_RUS_empire_long
+    		name = KXWD_RUS_empire
+		}
+		set_cosmetic_tag = ARMWD_RUS_empire_OCC
+	}
+}

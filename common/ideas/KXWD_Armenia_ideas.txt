@@ -7,9 +7,9 @@ ideas = {
 			modifier = {
                 army_org_factor = 0.15
                 army_attack_factor = 0.05
-                army_defense_factor = 0.05
+                army_defence_factor = 0.05
                 army_core_attack_factor = 0.1
-                army_core_defense_factor = 0.1
+                army_core_defence_factor = 0.1
 				weekly_casualties_war_support = 0.006
 				weekly_convoys_war_support = 0.006
 				weekly_bombing_war_support = 0.006
@@ -27,6 +27,62 @@ ideas = {
 			}
 			removal_cost = -1
 		}
+        KXWD_ARM_new_age = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_new_age"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                paternal_autocrat_drift = 0.05
+				paternal_autocrat_acceptance = 50
+                stability_weekly = 0.01
+                war_support_weekly = 0.01
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_nzhdeh_ambitions = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_ambitions"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                paternal_autocrat_drift = 0.1
+				paternal_autocrat_acceptance = 75
+                stability_weekly = 0.02
+                war_support_weekly = 0.02
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_nzhdeh_bonaparte = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_bonaparte"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                paternal_autocrat_drift = 0.15
+				paternal_autocrat_acceptance = 100
+                stability_weekly = 0.025
+                war_support_weekly = 0.025
+                offensive_war_stability_factor = 0.3
+                defensive_war_stability_factor = 0.3
+                surrender_limit = 1.0
+                monthly_population = 0.5
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_nzhdeh_bonaparte_socdem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_bonaparte_socdem"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                social_democrat_drift = 0.15
+				social_democrat_acceptance = 100
+                stability_weekly = 0.025
+                war_support_weekly = 0.025
+                offensive_war_stability_factor = 0.3
+                defensive_war_stability_factor = 0.3
+                surrender_limit = 1.0
+                monthly_population = 0.5
+			}
+			removal_cost = -1
+		}
         KXWD_ARM_unstable_government = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_unstable_government"}
 			allowed = {always = no}
@@ -36,6 +92,11 @@ ideas = {
                 surrender_limit = -0.25
                 stability_factor = -0.15
 			}
+            cancel = {
+                not = {
+                    is_subject_of = TUR
+                }
+            }
 			removal_cost = -1
 		}
         KXWD_ARM_undermining_the_turks = {
@@ -47,6 +108,11 @@ ideas = {
                 surrender_limit = -0.25
                 war_support_factor = -0.15
 			}
+            cancel = {
+                not = {
+                    is_subject_of = TUR
+                }
+            }
 			removal_cost = -1
 		}
         KXWD_ARM_secret_rearming = {
@@ -58,6 +124,11 @@ ideas = {
                 production_speed_buildings_factor = 0.5
                 industrial_capacity_factory = 1.5
 			}
+            cancel = {
+                not = {
+                    is_subject_of = TUR
+                }
+            }
 			removal_cost = -1
 		}
         KXWD_ARM_revolt_ready = {
@@ -71,6 +142,230 @@ ideas = {
                 attack_bonus_against = 0.15
                 defense_bonus_against = 0.15
                 breakthrough_bonus_against = 0.2
+            }
+			removal_cost = -1
+		}
+        KXWD_ARM_meritocracy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_meritocracy"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                research_speed_factor = 0.15
+                factory_energy_consumption = -0.25
+                min_export = -0.5
+                global_building_slots_factor = 0.3
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_guide_reforms = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_guide_reforms"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                consumer_goods_factor = -0.25
+                industrial_capacity_dockyard = 0.15
+                industrial_capacity_factory = 0.15
+                production_speed_buildings_factor = 0.25
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_patriotic_economy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_patriotic_economy"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                consumer_goods_factor = -0.3
+                industrial_capacity_dockyard = 0.3
+                industrial_capacity_factory = 0.3
+                production_speed_buildings_factor = 0.4
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_united_in_orthodoxy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_united_in_orthodoxy"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                conscription = 0.03
+                conscription_factor = 0.25
+                land_reinforce_rate = 0.03
+                max_command_power = 50
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_russo_armenian_church = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_russo_armenian_church"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                conscription = 0.05
+                conscription_factor = 0.5
+                land_reinforce_rate = 0.04
+                max_command_power = 100
+                weekly_manpower = 1000
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_russo_armenian_union = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_russo_armenian_union"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                conscription = 0.075
+                conscription_factor = 1.0
+                land_reinforce_rate = 0.05
+                max_command_power = 200
+                weekly_manpower = 1500
+                land_mastery_gain_factor = 0.15
+                air_mastery_gain_factor = 0.15
+                naval_mastery_gain_factor = 0.15
+                experience_gain_army = 0.5
+                experience_gain_navy = 0.5
+                experience_gain_air = 0.5
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_white_exiles = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_white_exiles"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                weekly_manpower = 3000
+                army_leader_start_level = 2
+                army_leader_start_attack_level = 3
+                army_leader_start_defense_level = 3
+                army_leader_start_logistics_level = 3
+			}
+            targeted_modifier = {
+                tag = RUS
+                attack_bonus_against = 0.15
+                defense_bonus_against = 0.15
+            }
+			removal_cost = -1
+		}
+        KXWD_ARM_new_russia = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_white_exiles"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                weekly_manpower = 1000
+                army_leader_start_level = 2
+                army_leader_start_attack_level = 3
+                army_leader_start_defense_level = 3
+                army_leader_start_logistics_level = 3
+                war_stability_factor = 0.3
+                political_power_gain = 0.3
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_russian_state = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_russian_state"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                weekly_manpower = 1000
+                army_leader_start_level = 2
+                army_leader_start_attack_level = 3
+                army_leader_start_defense_level = 3
+                army_leader_start_logistics_level = 3
+                stability_factor = 0.35
+                political_power_gain = 0.35
+                party_popularity_stability_factor = 0.15
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_russian_empire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_russian_empire"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                weekly_manpower = 1000
+                army_leader_start_level = 2
+                army_leader_start_attack_level = 3
+                army_leader_start_defense_level = 3
+                army_leader_start_logistics_level = 3
+                stability_factor = 0.25
+                political_power_gain = 0.35
+                consumer_goods_factor = -0.1
+                attrition = -0.15
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_russian_armenian_empire = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_russian_armenian_empire"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                weekly_manpower = 1500
+                army_leader_start_level = 3
+                army_leader_start_attack_level = 3
+                army_leader_start_defense_level = 3
+                army_leader_start_logistics_level = 3
+                stability_factor = 0.25
+                political_power_gain = 0.35
+                attrition = -0.1 
+                compliance_gain = 0.05
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_navy = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_navy"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                naval_morale_factor = 0.2
+                naval_speed_factor = 0.3
+                navy_capital_ship_attack_factor = 0.2
+                navy_capital_ship_defence_factor = 0.2
+                repair_speed_factor = 0.5
+                shore_bombardment_bonus = 0.5
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_army = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_army"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                army_armor_attack_factor = 0.15
+                army_armor_defence_factor = 0.15
+                army_artillery_attack_factor = 0.2
+                army_artillery_defence_factor = 0.2
+                army_artillery_attack_factor = 0.2
+                army_artillery_defence_factor = 0.2
+                modifier_army_sub_unit_elite_infantry_attack_factor = 0.2
+                modifier_army_sub_unit_elite_infantry_defence_factor = 0.2
+                modifier_army_sub_unit_category_mobile_infantry_attack_factor = 0.25
+				modifier_army_sub_unit_category_mobile_infantry_defence_factor = 0.25
+                special_forces_cap = 0.5
+                additional_brigade_column_size = 1
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_airforce = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_airforce"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+                air_agility_factor = 0.25
+                air_attack_factor = 0.15
+                air_defence_factor = 0.15
+                air_cas_efficiency = 0.4
+                air_range_factor = 0.5
+			}
+			removal_cost = -1
+		}
+        KXWD_ARM_for_motherland = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_for_motherland"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+			}
+            targeted_modifier = {
+                tag = RUS
+                attack_bonus_against = 0.25
+                defense_bonus_against = 0.25
+                breakthrough_bonus_against = 0.25
             }
 			removal_cost = -1
 		}

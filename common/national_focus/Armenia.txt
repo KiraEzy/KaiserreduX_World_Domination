@@ -555,6 +555,9 @@ focus_tree = {
 		y = 6
 		available = {
 			is_subject_of = TUR
+			not = {
+            	has_completed_focus = ARMWD_secret_network
+        	}
 		}
 		prerequisite = { 
 			focus = ARM_Import_Tarrifs
