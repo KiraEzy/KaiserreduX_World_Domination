@@ -2608,6 +2608,9 @@ focus_tree = {
 				has_government = national_populist
 			}
 			has_elections = no
+			not = {
+				has_completed_focus = ARMWD_new_age
+			}
 		}
 		prerequisite = {
 			focus = ARM_free_once_again

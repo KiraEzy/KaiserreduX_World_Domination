@@ -6,7 +6,8 @@ ARM_great_game = {
 		original_tag = ARM
 	}
 
-	visible = { 
+	visible = {
+		has_completed_focus = ARMWD_white_exiles_arrive
     }
 }
 
@@ -19,5 +20,6 @@ ARM_general_game = {
 	}
 
 	visible = { 
+		has_completed_focus = ARMWD_invite_russian_generals
     }
 }
