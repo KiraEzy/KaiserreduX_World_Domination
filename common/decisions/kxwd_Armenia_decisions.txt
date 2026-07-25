@@ -17,7 +17,7 @@ ARM_establish_rk_ROM = {
 			}
 			ROM = { is_subject_of = ARM }
 		}
-		46 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		46 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				46 = { NOT = { is_core_of = ARM } }
 		}
@@ -131,7 +131,7 @@ ARM_establish_rk_BUL = {
 			}
 			BUL = { is_subject_of = ARM }
 		}
-		48 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		48 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				48 = { NOT = { is_core_of = ARM } }
 		}
@@ -240,7 +240,7 @@ ARM_establish_rk_SER = {
 			}
 			SER = { is_subject_of = ARM }
 		}
-		107 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		107 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				107 = { NOT = { is_core_of = ARM } }
 		}
@@ -318,7 +318,7 @@ ARM_establish_rk_SER = {
 			}
 		}
 		SER = { 
-			set_cosmetic_tag = ARM_SER_OCC
+			set_cosmetic_tag = TRM_UNI_SER_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -377,9 +377,9 @@ ARM_establish_rk_ALB = {
 			}
 			ALB = { is_subject_of = ARM }
 		}
-		44 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1268 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		766 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		44 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1268 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		766 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				44 = { NOT = { is_core_of = ARM } }
 				1268 = { NOT = { is_core_of = ARM } }
@@ -486,11 +486,11 @@ ARM_establish_rk_TUR = {
 			}
 			TUR = { is_subject_of = ARM }
 		}
-		49 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		345 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		346 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		343 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		356 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		49 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		345 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		346 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		343 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		356 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				49 = { NOT = { is_core_of = ARM } }
 				345 = { NOT = { is_core_of = ARM } }
@@ -597,7 +597,7 @@ ARM_establish_rk_GRE = {
 			}
 			GRE = { is_subject_of = ARM }
 		}
-		47 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		47 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				47 = { NOT = { is_core_of = ARM } }
 		}
@@ -717,14 +717,14 @@ ARM_establish_rk_HUN = {
 			}
 			HUN = { is_subject_of = ARM }
 		}
-		43 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		154 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		155 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1110 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1106 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1107 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1108 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1109 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		43 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		154 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		155 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1110 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1106 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1107 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1108 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1109 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				43 = { NOT = { is_core_of = ARM } }
 				154 = { NOT = { is_core_of = ARM } }
@@ -858,28 +858,28 @@ ARM_establish_rk_CZE = {
 			}
 			CZE = { is_subject_of = ARM }
 		}
-		9 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		69 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		71 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		74 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		75 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		786 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1129 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1130 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1131 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1132 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1133 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1134 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1138 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1139 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		70 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		664 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1120 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1121 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1122 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1123 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1135 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1136 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		9 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		69 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		71 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		74 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		75 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		786 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1129 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1130 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1131 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1132 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1133 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1134 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1138 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1139 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		70 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		664 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1120 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1121 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1122 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1123 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1135 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1136 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				9 = { NOT = { is_core_of = ARM } }
 				69 = { NOT = { is_core_of = ARM } }
@@ -963,7 +963,7 @@ ARM_establish_rk_CZE = {
 			}
 		}
 		CZE = { 
-			set_cosmetic_tag = ARM_CZE_OCC
+			set_cosmetic_tag = TRM_UNI_CZE_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -1020,7 +1020,7 @@ ARM_establish_rk_AUS = {
 			}
 			AUS = { is_subject_of = ARM }
 		}
-		1137 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		1137 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				1137 = { NOT = { is_core_of = ARM } }
 		}
@@ -1130,7 +1130,7 @@ ARM_establish_rk_BAY = {
 			}
 			BAY = { is_subject_of = ARM }
 		}
-		52 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		52 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				52 = { NOT = { is_core_of = ARM } }
 		}
@@ -1233,7 +1233,7 @@ ARM_establish_rk_DDR = {
 			}
 			DDR = { is_subject_of = ARM }
 		}
-		64 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		64 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				64 = { NOT = { is_core_of = ARM } }
 		}
@@ -1351,8 +1351,8 @@ ARM_establish_rk_DEN = {
 			}
 			DEN = { is_subject_of = ARM }
 		}
-		37 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		99 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		37 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		99 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				37 = { NOT = { is_core_of = ARM } }
 				99 = { NOT = { is_core_of = ARM } }
@@ -1467,17 +1467,17 @@ ARM_establish_rk_SWE = {
 			}
 			SWE = { is_subject_of = ARM }
 		}
-		38 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		124 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		138 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		139 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		140 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		141 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		666 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		778 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		908 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		909 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		960 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		38 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		124 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		138 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		139 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		140 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		141 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		666 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		778 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		908 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		909 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		960 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				38 = { NOT = { is_core_of = ARM } }
 				124 = { NOT = { is_core_of = ARM } }
@@ -1603,14 +1603,14 @@ ARM_establish_rk_NOR = {
 			}
 			NOR = { is_subject_of = ARM }
 		}
-		110 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		142 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		143 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		144 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		936 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		937 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1146 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1147 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		110 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		142 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		143 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		144 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		936 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		937 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1146 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1147 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				110 = { NOT = { is_core_of = ARM } }
 				142 = { NOT = { is_core_of = ARM } }
@@ -1723,7 +1723,7 @@ ARM_establish_rk_BEL = {
 			}
 			BEL = { is_subject_of = ARM }
 		}
-		6 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		6 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				6 = { NOT = { is_core_of = ARM } }
 		}
@@ -1834,10 +1834,10 @@ ARM_establish_rk_SWI = {
 			}
 			SWI = { is_subject_of = ARM }
 		}
-		3 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		151 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		760 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		761 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		3 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		151 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		760 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		761 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				3 = { NOT = { is_core_of = ARM } }
 				151 = { NOT = { is_core_of = ARM } }
@@ -1944,9 +1944,9 @@ ARM_establish_rk_ITA = {
 			}
 			ITA = { is_subject_of = ARM }
 		}
-		159 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		160 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		759 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		159 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		160 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		759 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				159 = { NOT = { is_core_of = ARM } }
 				160 = { NOT = { is_core_of = ARM } }
@@ -2069,7 +2069,7 @@ ARM_establish_rk_FRP = {
 			}
 			FRP = { is_subject_of = ARM }
 		}
-		16 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		16 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				16 = { NOT = { is_core_of = ARM } }
 		}
@@ -2199,7 +2199,7 @@ ARM_establish_rk_CAR = {
 			}
 			CAR = { is_subject_of = ARM }
 		}
-		41 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		41 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				41 = { NOT = { is_core_of = ARM } }
 		}
@@ -2333,12 +2333,12 @@ ARM_establish_rk_POR = {
 			}
 			POR = { is_subject_of = ARM }
 		}
-		112 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		179 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		180 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		181 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		697 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		698 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		112 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		179 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		180 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		181 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		697 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		698 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				112 = { NOT = { is_core_of = ARM } }
 				179 = { NOT = { is_core_of = ARM } }
@@ -2447,7 +2447,7 @@ ARM_establish_rk_GBP = {
 			}
 			GBP = { is_subject_of = ARM }
 		}
-		126 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		126 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				126 = { NOT = { is_core_of = ARM } }
 		}
@@ -2567,10 +2567,10 @@ ARM_establish_rk_IRE = {
 			}
 			IRE = { is_subject_of = ARM }
 		}
-		113 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		119 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		134 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		135 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		113 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		119 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		134 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		135 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				113 = { NOT = { is_core_of = ARM } }
 				119 = { NOT = { is_core_of = ARM } }
@@ -2675,7 +2675,7 @@ ARM_establish_rk_LEB = {
 			}
 			LEB = { is_subject_of = ARM }
 		}
-		553 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		553 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				553 = { NOT = { is_core_of = ARM } }
 		}
@@ -2787,11 +2787,11 @@ ARM_establish_rk_IRQ = {
 			}
 			IRQ = { is_subject_of = ARM }
 		}
-		291 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		349 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		676 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		812 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		819 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		291 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		349 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		676 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		812 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		819 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				291 = { NOT = { is_core_of = ARM } }
 				349 = { NOT = { is_core_of = ARM } }
@@ -2905,14 +2905,14 @@ ARM_establish_rk_JBS = {
 			}
 			JBS = { is_subject_of = ARM }
 		}
-		915 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		994 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1035 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		292 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		656 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		675 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		678 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		991 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		915 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		994 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1035 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		292 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		656 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		675 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		678 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		991 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				915 = { NOT = { is_core_of = ARM } }
 				994 = { NOT = { is_core_of = ARM } }
@@ -3045,13 +3045,13 @@ ARM_establish_rk_EGY = {
 			}
 			EGY = { is_subject_of = ARM }
 		}
-		446 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		447 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		452 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		456 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		457 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		552 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1008 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		446 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		447 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		452 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		456 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		457 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		552 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1008 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				446 = { NOT = { is_core_of = ARM } }
 				447 = { NOT = { is_core_of = ARM } }
@@ -3187,12 +3187,12 @@ ARM_establish_rk_SUD = {
 			}
 			SUD = { is_subject_of = ARM }
 		}
-		549 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		551 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		862 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1007 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1010 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1011 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		549 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		551 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		862 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1007 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1010 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1011 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				549 = { NOT = { is_core_of = ARM } }
 				551 = { NOT = { is_core_of = ARM } }
@@ -3322,7 +3322,7 @@ ARM_establish_rk_SIE = {
 			}
 			SIE = { is_subject_of = ARM }
 		}
-		700 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		700 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				700 = { NOT = { is_core_of = ARM } }
 		}
@@ -3457,12 +3457,12 @@ ARM_establish_rk_TZN = {
 			}
 			TZN = { is_subject_of = ARM }
 		}
-		546 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		899 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		905 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		918 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		965 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1032 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		546 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		899 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		905 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		918 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		965 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1032 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				546 = { NOT = { is_core_of = ARM } }
 				899 = { NOT = { is_core_of = ARM } }
@@ -3624,13 +3624,13 @@ ARM_establish_rk_SAF = {
 			}
 			SAF = { is_subject_of = ARM }
 		}
-		947 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		275 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1176 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		681 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		719 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		946 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		945 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		947 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		275 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1176 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		681 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		719 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		946 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		945 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				947 = { NOT = { is_core_of = ARM } }
 				275 = { NOT = { is_core_of = ARM } }
@@ -3751,10 +3751,10 @@ ARM_establish_rk_MAG = {
 			}
 			MAG = { is_subject_of = ARM }
 		}
-		543 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1179 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1178 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1177 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		543 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1179 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1178 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1177 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				543 = { NOT = { is_core_of = ARM } }
 				1179 = { NOT = { is_core_of = ARM } }
@@ -3870,14 +3870,14 @@ ARM_establish_rk_PER = {
 			}
 			PER = { is_subject_of = ARM }
 		}
-		266 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		410 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		411 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		412 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		413 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		414 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		416 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		421 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		266 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		410 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		411 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		412 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		413 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		414 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		416 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		421 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				266 = { NOT = { is_core_of = ARM } }
 				410 = { NOT = { is_core_of = ARM } }
@@ -3993,10 +3993,10 @@ ARM_establish_rk_AFG = {
 			}
 			AFG = { is_subject_of = ARM }
 		}
-		267 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		415 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1217 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1218 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		267 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		415 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1217 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1218 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				267 = { NOT = { is_core_of = ARM } }
 				415 = { NOT = { is_core_of = ARM } }
@@ -4115,11 +4115,11 @@ ARM_establish_rk_KOR = {
 			}
 			KOR = { is_subject_of = ARM }
 		}
-		525 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		527 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1345 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1346 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1347 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		525 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		527 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1345 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1346 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1347 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				525 = { NOT = { is_core_of = ARM } }
 				527 = { NOT = { is_core_of = ARM } }
@@ -4226,7 +4226,7 @@ ARM_establish_rk_QIE = {
 			}
 			QIE = { is_subject_of = ARM }
 		}
-		608 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		608 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				608 = { NOT = { is_core_of = ARM } }
 		}
@@ -4347,7 +4347,7 @@ ARM_establish_rk_QIE = {
 			}
 		}
 		QIE = { 
-			set_cosmetic_tag = ARM_QIE_OCC
+			set_cosmetic_tag = TRM_UNI_CZE_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
@@ -4407,10 +4407,10 @@ ARM_establish_rk_TIB = {
 			}
 			TIB = { is_subject_of = ARM }
 		}
-		322 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		693 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		748 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1086 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		322 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		693 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		748 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1086 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				322 = { NOT = { is_core_of = ARM } }
 				693 = { NOT = { is_core_of = ARM } }
@@ -4531,23 +4531,23 @@ ARM_establish_rk_JAP = {
 			}
 			JAP = { is_subject_of = ARM }
 		}
-		282 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1351 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1353 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		526 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1352 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		528 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		529 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		530 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		531 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		532 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		533 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		534 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		535 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		536 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1355 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1354 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		1356 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		282 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1351 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1353 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		526 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1352 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		528 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		529 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		530 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		531 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		532 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		533 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		534 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		535 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		536 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1355 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1354 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		1356 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				282 = { NOT = { is_core_of = ARM } }
 				1351 = { NOT = { is_core_of = ARM } }
@@ -4678,7 +4678,7 @@ ARM_establish_rk_DEH = {
 			}
 			DEH = { is_subject_of = ARM }
 		}
-		439 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		439 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				439 = { NOT = { is_core_of = ARM } }
 		}
@@ -4826,11 +4826,11 @@ ARM_establish_rk_BRM = {
 			}
 			BRM = { is_subject_of = ARM }
 		}
-		72 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		288 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		640 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		701 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		790 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		72 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		288 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		640 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		701 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		790 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				72 = { NOT = { is_core_of = ARM } }
 				288 = { NOT = { is_core_of = ARM } }
@@ -4938,7 +4938,7 @@ ARM_establish_rk_SIA = {
 			}
 			SIA = { is_subject_of = ARM }
 		}
-		289 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		289 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				289 = { NOT = { is_core_of = ARM } }
 		}
@@ -5043,7 +5043,7 @@ ARM_establish_rk_INC = {
 			}
 			INC = { is_subject_of = ARM }
 		}
-		286 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		286 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				286 = { NOT = { is_core_of = ARM } }
 		}
@@ -5151,7 +5151,7 @@ ARM_establish_rk_MLY = {
 			}
 			MLY = { is_subject_of = ARM }
 		}
-		846 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		846 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				846 = { NOT = { is_core_of = ARM } }
 		}
@@ -5254,7 +5254,7 @@ ARM_establish_rk_PHI = {
 			}
 			PHI = { is_subject_of = ARM }
 		}
-		327 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		327 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				327 = { NOT = { is_core_of = ARM } }
 		}
@@ -5359,7 +5359,7 @@ ARM_establish_rk_INS = {
 			}
 			INS = { is_subject_of = ARM }
 		}
-		1020 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		1020 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				1020 = { NOT = { is_core_of = ARM } }
 		}
@@ -5516,18 +5516,18 @@ ARM_establish_rk_AST = {
 			}
 			AST = { is_subject_of = ARM }
 		}
-		987 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		285 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		517 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		518 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		519 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		520 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		521 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		522 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		988 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		985 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		674 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		986 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		987 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		285 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		517 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		518 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		519 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		520 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		521 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		522 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		988 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		985 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		674 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		986 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				987 = { NOT = { is_core_of = ARM } }
 				285 = { NOT = { is_core_of = ARM } }
@@ -5649,8 +5649,8 @@ ARM_establish_rk_NZL = {
 			}
 			NZL = { is_subject_of = ARM }
 		}
-		284 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
-		723 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		284 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
+		723 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				284 = { NOT = { is_core_of = ARM } }
 				723 = { NOT = { is_core_of = ARM } }
@@ -5751,7 +5751,7 @@ ARM_establish_rk_CAN = {
 			}
 			CAN = { is_subject_of = ARM }
 		}
-		739 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		739 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				739 = { NOT = { is_core_of = ARM } }
 		}
@@ -5871,7 +5871,7 @@ ARM_establish_rk_NEE = {
 			}
 			NEE = { is_subject_of = ARM }
 		}
-		932 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		932 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				932 = { NOT = { is_core_of = ARM } }
 		}
@@ -5977,7 +5977,7 @@ ARM_establish_rk_USA = {
 			}
 			USA = { is_subject_of = ARM }
 		}
-		361 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		361 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				361 = { NOT = { is_core_of = ARM } }
 		}
@@ -6099,7 +6099,7 @@ ARM_establish_rk_CGL = {
 			}
 			CGL = { is_subject_of = ARM }
 		}
-		393 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		393 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				393 = { NOT = { is_core_of = ARM } }
 		}
@@ -6208,7 +6208,7 @@ ARM_establish_rk_TEX = {
 			}
 			TEX = { is_subject_of = ARM }
 		}
-		371 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		371 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				371 = { NOT = { is_core_of = ARM } }
 		}
@@ -6326,7 +6326,7 @@ ARM_establish_rk_TXS = {
 			}
 			TXS = { is_subject_of = ARM }
 		}
-		375 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		375 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				375 = { NOT = { is_core_of = ARM } }
 		}
@@ -6429,7 +6429,7 @@ ARM_establish_rk_CAL = {
 			}
 			CAL = { is_subject_of = ARM }
 		}
-		378 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		378 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				378 = { NOT = { is_core_of = ARM } }
 		}
@@ -6539,7 +6539,7 @@ ARM_establish_rk_MEX = {
 			}
 			MEX = { is_subject_of = ARM }
 		}
-		277 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		277 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				277 = { NOT = { is_core_of = ARM } }
 		}
@@ -6654,7 +6654,7 @@ ARM_establish_rk_GUA = {
 			}
 			GUA = { is_subject_of = ARM }
 		}
-		313 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		313 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				313 = { NOT = { is_core_of = ARM } }
 		}
@@ -6776,7 +6776,7 @@ ARM_establish_rk_VEN = {
 			}
 			VEN = { is_subject_of = ARM }
 		}
-		849 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		849 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				849 = { NOT = { is_core_of = ARM } }
 		}
@@ -6894,7 +6894,7 @@ ARM_establish_rk_JAM = {
 			}
 			JAM = { is_subject_of = ARM }
 		}
-		689 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		689 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				689 = { NOT = { is_core_of = ARM } }
 		}
@@ -7018,7 +7018,7 @@ ARM_establish_rk_PRU = {
 			}
 			PRU = { is_subject_of = ARM }
 		}
-		303 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		303 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				303 = { NOT = { is_core_of = ARM } }
 		}
@@ -7123,7 +7123,7 @@ ARM_establish_rk_BOL = {
 			}
 			BOL = { is_subject_of = ARM }
 		}
-		302 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		302 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				302 = { NOT = { is_core_of = ARM } }
 		}
@@ -7234,7 +7234,7 @@ ARM_establish_rk_CHL = {
 			}
 			CHL = { is_subject_of = ARM }
 		}
-		279 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		279 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				279 = { NOT = { is_core_of = ARM } }
 		}
@@ -7336,7 +7336,7 @@ ARM_establish_rk_ARG = {
 			}
 			ARG = { is_subject_of = ARM }
 		}
-		278 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		278 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				278 = { NOT = { is_core_of = ARM } }
 		}
@@ -7449,7 +7449,7 @@ ARM_establish_rk_PAR = {
 			}
 			PAR = { is_subject_of = ARM }
 		}
-		301 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		301 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				301 = { NOT = { is_core_of = ARM } }
 		}
@@ -7548,7 +7548,7 @@ ARM_establish_rk_URG = {
 			}
 			URG = { is_subject_of = ARM }
 		}
-		300 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		300 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				300 = { NOT = { is_core_of = ARM } }
 		}
@@ -7647,7 +7647,7 @@ ARM_establish_rk_BRA = {
 			}
 			BRA = { is_subject_of = ARM }
 		}
-		500 = { owner = { OR = { original_tag = TRM is_subject_of = ARM } } }
+		500 = { owner = { OR = { original_tag = ARM is_subject_of = ARM } } }
 		OR = {
 				500 = { NOT = { is_core_of = ARM } }
 		}
@@ -7760,6 +7760,9 @@ ARM_invite_republican_russian_Generals = {
 	icon = generic_prepare_civil_war
 
 	available = {
+		not = {
+			has_country_flag = KXWD_ARM_allied_monarchist
+		}
 		RUS = {
 			RUS_russian_monarch = no
 			OR = {
@@ -7773,6 +7776,7 @@ ARM_invite_republican_russian_Generals = {
 				or = {
 					has_trait = RUS_denikin_officer
 					has_trait = RUS_kornilov_officer
+					has_trait = RUS_white_navy_admiral
 				}
 			}
 		}
@@ -7782,6 +7786,7 @@ ARM_invite_republican_russian_Generals = {
 				or = {
 					has_trait = RUS_denikin_officer
 					has_trait = RUS_kornilov_officer
+					has_trait = RUS_white_navy_admiral
 				}
 			}
 		}
@@ -7794,12 +7799,14 @@ ARM_invite_republican_russian_Generals = {
 		factor = 5
 	}
 	complete_effect = {
+		set_country_flag = KXWD_ARM_allied_republican
 		RUS = {
 			every_unit_leader = {
 				limit = {
 					or = {
 						has_trait = RUS_denikin_officer
 						has_trait = RUS_kornilov_officer
+						has_trait = RUS_white_navy_admiral
 					}
 				}
 				set_nationality = ARM
@@ -7811,6 +7818,154 @@ ARM_invite_republican_russian_Generals = {
 					or = {
 						has_trait = RUS_denikin_officer
 						has_trait = RUS_kornilov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+				set_nationality = ARM
+			}
+		}
+	}
+}
+
+ARM_invite_monarchist_russian_Generals = {
+	icon = generic_prepare_civil_war
+
+	available = {
+		not = {
+			has_country_flag = KXWD_ARM_allied_republican
+		}
+		RUS = {
+			RUS_russian_monarch = no
+			OR = {
+			    has_socialist_government = yes
+				has_liberal_government = yes
+			}
+		}
+		or = {
+			RUS = {
+				any_unit_leader = {
+					or = {
+						has_trait = RUS_wrangel_officer
+						has_trait = RUS_drozdovsky_officer
+						has_trait = RUS_avalov_officer
+						has_trait = RUS_markov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+			}
+			RVA = {
+			exists = no
+				any_unit_leader = {
+					or = {
+						has_trait = RUS_wrangel_officer
+						has_trait = RUS_drozdovsky_officer
+						has_trait = RUS_avalov_officer
+						has_trait = RUS_markov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+			}
+			WRA = {
+			exists = no
+				any_unit_leader = {
+					or = {
+						has_trait = RUS_wrangel_officer
+						has_trait = RUS_drozdovsky_officer
+						has_trait = RUS_avalov_officer
+						has_trait = RUS_markov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		set_country_flag = KXWD_ARM_allied_monarchist
+		RUS = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_wrangel_officer
+						has_trait = RUS_drozdovsky_officer
+						has_trait = RUS_avalov_officer
+						has_trait = RUS_markov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+				set_nationality = ARM
+			}
+		}
+		RVA = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_wrangel_officer
+						has_trait = RUS_drozdovsky_officer
+						has_trait = RUS_avalov_officer
+						has_trait = RUS_markov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+				set_nationality = ARM
+			}
+		}
+		WRA = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_wrangel_officer
+						has_trait = RUS_drozdovsky_officer
+						has_trait = RUS_avalov_officer
+						has_trait = RUS_markov_officer
+						has_trait = RUS_white_navy_admiral
+					}
+				}
+				set_nationality = ARM
+			}
+		}
+	}
+}
+
+ARM_invite_monarchist_transamur_Generals = {
+	icon = generic_prepare_civil_war
+
+	available = {
+		not = {
+			has_country_flag = KXWD_ARM_allied_republican
+		}
+		TRM = {
+			OR = {
+			  	has_socialist_government = yes
+				has_liberal_government = yes
+				exists = no
+				TRM_do_rovs_in_power = no
+			}
+			any_unit_leader = {
+				or = {
+					has_trait = RUS_diterikhs_officer
+				}
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		set_country_flag = KXWD_ARM_allied_monarchist
+		TRM = {
+			every_unit_leader = {
+				limit = {
+					or = {
+						has_trait = RUS_diterikhs_officer
 					}
 				}
 				set_nationality = ARM

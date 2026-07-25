@@ -51,8 +51,8 @@ ideas = {
 			}
 			removal_cost = -1
 		}
-        KXWD_ARM_nzhdeh_bonaparte = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_bonaparte"}
+        KXWD_ARM_nzhdeh_napoleon = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_napoleon"}
 			allowed = {always = no}
 			picture = KXWD_GRE_neo_varangian_guard
 			modifier = {
@@ -67,8 +67,8 @@ ideas = {
 			}
 			removal_cost = -1
 		}
-        KXWD_ARM_nzhdeh_bonaparte_socdem = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_bonaparte_socdem"}
+        KXWD_ARM_nzhdeh_napoleon_socdem = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_nzhdeh_napoleon_socdem"}
 			allowed = {always = no}
 			picture = KXWD_GRE_neo_varangian_guard
 			modifier = {
@@ -244,7 +244,7 @@ ideas = {
 			removal_cost = -1
 		}
         KXWD_ARM_new_russia = {
-			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_white_exiles"}
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_new_russia"}
 			allowed = {always = no}
 			picture = KXWD_GRE_neo_varangian_guard
 			modifier = {
@@ -253,7 +253,7 @@ ideas = {
                 army_leader_start_attack_level = 3
                 army_leader_start_defense_level = 3
                 army_leader_start_logistics_level = 3
-                war_stability_factor = 0.3
+                stability_factor = 0.3
                 political_power_gain = 0.3
 			}
 			removal_cost = -1
@@ -327,6 +327,14 @@ ideas = {
 			allowed = {always = no}
 			picture = KXWD_GRE_neo_varangian_guard
 			modifier = {
+                army_org_factor = 0.15
+                army_attack_factor = 0.05
+                army_defence_factor = 0.05
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.15
+				weekly_casualties_war_support = 0.006
+				weekly_convoys_war_support = 0.006
+				weekly_bombing_war_support = 0.006
                 army_armor_attack_factor = 0.15
                 army_armor_defence_factor = 0.15
                 army_artillery_attack_factor = 0.2

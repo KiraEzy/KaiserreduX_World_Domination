@@ -312,7 +312,7 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_contacts_in_persia"
         add_equipment_to_stockpile = {
-            type = infantry_equipment_1
+            type = infantry_equipment_0
             amount = 5000
             producer = PER
         }
@@ -331,6 +331,7 @@ shared_focus = {
             amount = 2500
             producer = PER
         }
+        add_offsite_building = { type = arms_factory level = 3 }
     }
 }
 
@@ -366,6 +367,7 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_secret_rearming"
         add_ideas = KXWD_ARM_secret_rearming
+        add_offsite_building = { type = arms_factory level = 3 }
     }
 }
 
@@ -395,7 +397,7 @@ shared_focus = {
     completion_reward = {
         log = "[GetDateText]: [Root.GetName]: Focus ARMWD_help_from_egypt"
         add_equipment_to_stockpile = {
-            type = infantry_equipment_1
+            type = infantry_equipment_0
             amount = 5000
             producer = EGY
         }
@@ -414,6 +416,7 @@ shared_focus = {
             amount = 2500
             producer = EGY
         }
+        add_offsite_building = { type = arms_factory level = 3 }
     }
 }
 
@@ -482,16 +485,863 @@ shared_focus = {
 				has_liberal_government = yes
 			}
         }
+        is_ai = no
 	}
     prerequisite = {
-
     }
 
     completion_reward = {
-        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revolt_ready"
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_new_age"
         swap_ideas = {
             remove_idea = KXWD_ARM_nzhdeh_influence
             add_idea = KXWD_ARM_new_age
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_nzhdehs_ambition
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_new_age
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_new_age
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_nzhdehs_ambition"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_new_age
+            add_idea = KXWD_ARM_nzhdeh_ambitions
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_armenian_napoleon
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_nzhdehs_ambition
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_nzhdehs_ambition
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_armenian_napoleon"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_nzhdeh_ambitions
+            add_idea = KXWD_ARM_nzhdeh_napoleon
+        }
+        set_country_leader_ideology = pataut_bonapartism_subtype
+        custom_effect_tooltip = "We Shall Embrace Bonapartism"
+    }
+}
+
+shared_focus = {
+	id = ARMWD_invite_russian_generals
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 2
+	relative_position_id = ARMWD_armenian_napoleon
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_armenian_napoleon
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_invite_russian_generals"
+        custom_effect_tooltip = "We Will Unlock Decisions to Invite Exiled Russian Generals to Armenia to Help them Reclaim Russia for some Concesions"
+    }
+}
+
+shared_focus = {
+	id = ARMWD_meritocracy
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = -1
+    y = 1
+	relative_position_id = ARMWD_armenian_napoleon
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_armenian_napoleon
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_meritocracy"
+        add_ideas = KXWD_ARM_meritocracy
+    }
+}
+
+shared_focus = {
+	id = ARMWD_guided_reforms
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = -1
+    y = 1
+	relative_position_id = ARMWD_meritocracy
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_meritocracy
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_guided_reforms"
+        add_ideas = KXWD_ARM_guide_reforms
+    }
+}
+
+shared_focus = {
+	id = ARMWD_patriotic_economy
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 1
+    y = 1
+	relative_position_id = ARMWD_guided_reforms
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_guided_reforms
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_patriotic_economy"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_guide_reforms
+            add_idea = KXWD_ARM_patriotic_economy
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_united_in_orthodoxy
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 1
+    y = 1
+	relative_position_id = ARMWD_armenian_napoleon
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_armenian_napoleon
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_united_in_orthodoxy"
+        add_ideas = KXWD_ARM_united_in_orthodoxy
+    }
+}
+
+shared_focus = {
+	id = ARMWD_merge_russian_and_armenian_churches
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 1
+    y = 1
+	relative_position_id = ARMWD_united_in_orthodoxy
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_united_in_orthodoxy
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_merge_russian_and_armenian_churches"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_united_in_orthodoxy
+            add_idea = KXWD_ARM_russo_armenian_church
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_russo_armenian_union
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = -1
+    y = 1
+	relative_position_id = ARMWD_merge_russian_and_armenian_churches
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_merge_russian_and_armenian_churches
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_russo_armenian_union"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_russo_armenian_church
+            add_idea = KXWD_ARM_russo_armenian_union
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_white_exiles_arrive
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 2
+	relative_position_id = ARMWD_invite_russian_generals
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_russo_armenian_union
+    }
+    prerequisite = {
+        focus = ARMWD_patriotic_economy
+    }
+    prerequisite = {
+        focus = ARMWD_invite_russian_generals
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_white_exiles_arrive"
+        add_ideas = KXWD_ARM_white_exiles
+        add_ideas = KXWD_ARM_expansionism
+        custom_effect_tooltip = "We Will Declare the Russian State and Gain Cores on All of Greater Russia"
+        hidden_effect = {
+            set_cosmetic_tag = ARMWD_RUS_state_OCC
+            40 = { add_core_of = ARM }
+            195 = { add_core_of = ARM }
+            205 = { add_core_of = ARM }
+            208 = { add_core_of = ARM }
+            209 = { add_core_of = ARM }
+            210 = { add_core_of = ARM }
+            213 = { add_core_of = ARM }
+            214 = { add_core_of = ARM }
+            215 = { add_core_of = ARM }
+            216 = { add_core_of = ARM }
+            217 = { add_core_of = ARM }
+            219 = { add_core_of = ARM }
+            220 = { add_core_of = ARM }
+            222 = { add_core_of = ARM }
+            223 = { add_core_of = ARM }
+            224 = { add_core_of = ARM }
+            236 = { add_core_of = ARM }
+            239 = { add_core_of = ARM }
+            240 = { add_core_of = ARM }
+            242 = { add_core_of = ARM }
+            243 = { add_core_of = ARM }
+            244 = { add_core_of = ARM }
+            246 = { add_core_of = ARM }
+            247 = { add_core_of = ARM }
+            248 = { add_core_of = ARM }
+            249 = { add_core_of = ARM }
+            250 = { add_core_of = ARM }
+            251 = { add_core_of = ARM }
+            252 = { add_core_of = ARM }
+            253 = { add_core_of = ARM }
+            254 = { add_core_of = ARM }
+            255 = { add_core_of = ARM }
+            256 = { add_core_of = ARM }
+            257 = { add_core_of = ARM }
+            258 = { add_core_of = ARM }
+            260 = { add_core_of = ARM }
+            262 = { add_core_of = ARM }
+            263 = { add_core_of = ARM }
+            264 = { add_core_of = ARM }
+            265 = { add_core_of = ARM }
+            351 = { add_core_of = ARM }
+            397 = { add_core_of = ARM }
+            398 = { add_core_of = ARM }
+            399 = { add_core_of = ARM }
+            400 = { add_core_of = ARM }
+            401 = { add_core_of = ARM }
+            403 = { add_core_of = ARM }
+            516 = { add_core_of = ARM }
+            566 = { add_core_of = ARM }
+            567 = { add_core_of = ARM }
+            568 = { add_core_of = ARM }
+            569 = { add_core_of = ARM }
+            570 = { add_core_of = ARM }
+            571 = { add_core_of = ARM }
+            572 = { add_core_of = ARM }
+            573 = { add_core_of = ARM }
+            575 = { add_core_of = ARM }
+            576 = { add_core_of = ARM }
+            577 = { add_core_of = ARM }
+            578 = { add_core_of = ARM }
+            580 = { add_core_of = ARM }
+            581 = { add_core_of = ARM }
+            582 = { add_core_of = ARM }
+            644 = { add_core_of = ARM }
+            651 = { add_core_of = ARM }
+            652 = { add_core_of = ARM }
+            653 = { add_core_of = ARM }
+            722 = { add_core_of = ARM }
+            755 = { add_core_of = ARM }
+            821 = { add_core_of = ARM }
+            880 = { add_core_of = ARM }
+            1193 = { add_core_of = ARM }
+            1194 = { add_core_of = ARM }
+            1195 = { add_core_of = ARM }
+            1197 = { add_core_of = ARM }
+            1198 = { add_core_of = ARM }
+            1199 = { add_core_of = ARM }
+            1200 = { add_core_of = ARM }
+            1201 = { add_core_of = ARM }
+            1202 = { add_core_of = ARM }
+            1204 = { add_core_of = ARM }
+            1205 = { add_core_of = ARM }
+            1207 = { add_core_of = ARM }
+            1224 = { add_core_of = ARM }
+            1229 = { add_core_of = ARM }
+            1274 = { add_core_of = ARM }
+            1287 = { add_core_of = ARM }
+            1288 = { add_core_of = ARM }
+            1289 = { add_core_of = ARM }
+            1290 = { add_core_of = ARM }
+            1291 = { add_core_of = ARM }
+            1292 = { add_core_of = ARM }
+            1327 = { add_core_of = ARM }
+            1328 = { add_core_of = ARM }
+            5 = { add_core_of = ARM }
+            10 = { add_core_of = ARM }
+            11 = { add_core_of = ARM }
+            12 = { add_core_of = ARM }
+            13 = { add_core_of = ARM }
+            67 = { add_core_of = ARM }
+            78 = { add_core_of = ARM }
+            80 = { add_core_of = ARM }
+            86 = { add_core_of = ARM }
+            87 = { add_core_of = ARM }
+            88 = { add_core_of = ARM }
+            89 = { add_core_of = ARM }
+            90 = { add_core_of = ARM }
+            91 = { add_core_of = ARM }
+            92 = { add_core_of = ARM }
+            93 = { add_core_of = ARM }
+            94 = { add_core_of = ARM }
+            95 = { add_core_of = ARM }
+            96 = { add_core_of = ARM }
+            97 = { add_core_of = ARM }
+            98 = { add_core_of = ARM }
+            111 = { add_core_of = ARM }
+            137 = { add_core_of = ARM }
+            145 = { add_core_of = ARM }
+            146 = { add_core_of = ARM }
+            147 = { add_core_of = ARM }
+            148 = { add_core_of = ARM }
+            149 = { add_core_of = ARM }
+            150 = { add_core_of = ARM }
+            188 = { add_core_of = ARM }
+            189 = { add_core_of = ARM }
+            190 = { add_core_of = ARM }
+            191 = { add_core_of = ARM }
+            192 = { add_core_of = ARM }
+            193 = { add_core_of = ARM }
+            194 = { add_core_of = ARM }
+            196 = { add_core_of = ARM }
+            197 = { add_core_of = ARM }
+            198 = { add_core_of = ARM }
+            199 = { add_core_of = ARM }
+            200 = { add_core_of = ARM }
+            201 = { add_core_of = ARM }
+            202 = { add_core_of = ARM }
+            203 = { add_core_of = ARM }
+            204 = { add_core_of = ARM }
+            206 = { add_core_of = ARM }
+            207 = { add_core_of = ARM }
+            218 = { add_core_of = ARM }
+            221 = { add_core_of = ARM }
+            225 = { add_core_of = ARM }
+            226 = { add_core_of = ARM }
+            227 = { add_core_of = ARM }
+            228 = { add_core_of = ARM }
+            229 = { add_core_of = ARM }
+            231 = { add_core_of = ARM }
+            232 = { add_core_of = ARM }
+            233 = { add_core_of = ARM }
+            234 = { add_core_of = ARM }
+            235 = { add_core_of = ARM }
+            237 = { add_core_of = ARM }
+            238 = { add_core_of = ARM }
+            241 = { add_core_of = ARM }
+            245 = { add_core_of = ARM }
+            259 = { add_core_of = ARM }
+            287 = { add_core_of = ARM }
+            328 = { add_core_of = ARM }
+            329 = { add_core_of = ARM }
+            330 = { add_core_of = ARM }
+            340 = { add_core_of = ARM }
+            341 = { add_core_of = ARM }
+            352 = { add_core_of = ARM }
+            354 = { add_core_of = ARM }
+            355 = { add_core_of = ARM }
+            402 = { add_core_of = ARM }
+            404 = { add_core_of = ARM }
+            405 = { add_core_of = ARM }
+            406 = { add_core_of = ARM }
+            407 = { add_core_of = ARM }
+            408 = { add_core_of = ARM }
+            409 = { add_core_of = ARM }
+            417 = { add_core_of = ARM }
+            418 = { add_core_of = ARM }
+            419 = { add_core_of = ARM }
+            420 = { add_core_of = ARM }
+            537 = { add_core_of = ARM }
+            555 = { add_core_of = ARM }
+            560 = { add_core_of = ARM }
+            561 = { add_core_of = ARM }
+            562 = { add_core_of = ARM }
+            563 = { add_core_of = ARM }
+            564 = { add_core_of = ARM }
+            565 = { add_core_of = ARM }
+            574 = { add_core_of = ARM }
+            583 = { add_core_of = ARM }
+            584 = { add_core_of = ARM }
+            585 = { add_core_of = ARM }
+            586 = { add_core_of = ARM }
+            587 = { add_core_of = ARM }
+            588 = { add_core_of = ARM }
+            589 = { add_core_of = ARM }
+            590 = { add_core_of = ARM }
+            610 = { add_core_of = ARM }
+            612 = { add_core_of = ARM }
+            617 = { add_core_of = ARM }
+            618 = { add_core_of = ARM }
+            619 = { add_core_of = ARM }
+            621 = { add_core_of = ARM }
+            637 = { add_core_of = ARM }
+            654 = { add_core_of = ARM }
+            655 = { add_core_of = ARM }
+            657 = { add_core_of = ARM }
+            712 = { add_core_of = ARM }
+            714 = { add_core_of = ARM }
+            715 = { add_core_of = ARM }
+            716 = { add_core_of = ARM }
+            717 = { add_core_of = ARM }
+            732 = { add_core_of = ARM }
+            745 = { add_core_of = ARM }
+            773 = { add_core_of = ARM }
+            776 = { add_core_of = ARM }
+            777 = { add_core_of = ARM }
+            787 = { add_core_of = ARM }
+            791 = { add_core_of = ARM }
+            792 = { add_core_of = ARM }
+            804 = { add_core_of = ARM }
+            810 = { add_core_of = ARM }
+            811 = { add_core_of = ARM }
+            840 = { add_core_of = ARM }
+            844 = { add_core_of = ARM }
+            861 = { add_core_of = ARM }
+            863 = { add_core_of = ARM }
+            864 = { add_core_of = ARM }
+            865 = { add_core_of = ARM }
+            883 = { add_core_of = ARM }
+            884 = { add_core_of = ARM }
+            885 = { add_core_of = ARM }
+            886 = { add_core_of = ARM }
+            990 = { add_core_of = ARM }
+            997 = { add_core_of = ARM }
+            998 = { add_core_of = ARM }
+            1000 = { add_core_of = ARM }
+            1001 = { add_core_of = ARM }
+            1042 = { add_core_of = ARM }
+            1080 = { add_core_of = ARM }
+            1081 = { add_core_of = ARM }
+            1082 = { add_core_of = ARM }
+            1083 = { add_core_of = ARM }
+            1084 = { add_core_of = ARM }
+            1085 = { add_core_of = ARM }
+            1087 = { add_core_of = ARM }
+            1088 = { add_core_of = ARM }
+            1091 = { add_core_of = ARM }
+            1124 = { add_core_of = ARM }
+            1125 = { add_core_of = ARM }
+            1126 = { add_core_of = ARM }
+            1127 = { add_core_of = ARM }
+            1140 = { add_core_of = ARM }
+            1148 = { add_core_of = ARM }
+            1186 = { add_core_of = ARM }
+            1187 = { add_core_of = ARM }
+            1188 = { add_core_of = ARM }
+            1189 = { add_core_of = ARM }
+            1190 = { add_core_of = ARM }
+            1191 = { add_core_of = ARM }
+            1196 = { add_core_of = ARM }
+            1203 = { add_core_of = ARM }
+            1208 = { add_core_of = ARM }
+            1209 = { add_core_of = ARM }
+            1210 = { add_core_of = ARM }
+            1211 = { add_core_of = ARM }
+            1212 = { add_core_of = ARM }
+            1213 = { add_core_of = ARM }
+            1220 = { add_core_of = ARM }
+            1221 = { add_core_of = ARM }
+            1222 = { add_core_of = ARM }
+            1226 = { add_core_of = ARM }
+            1227 = { add_core_of = ARM }
+            1228 = { add_core_of = ARM }
+            1230 = { add_core_of = ARM }
+            1231 = { add_core_of = ARM }
+            1232 = { add_core_of = ARM }
+            1233 = { add_core_of = ARM }
+            1234 = { add_core_of = ARM }
+            1237 = { add_core_of = ARM }
+            1238 = { add_core_of = ARM }
+            1239 = { add_core_of = ARM }
+            1240 = { add_core_of = ARM }
+            1241 = { add_core_of = ARM }
+            1242 = { add_core_of = ARM }
+            1243 = { add_core_of = ARM }
+            1244 = { add_core_of = ARM }
+            1245 = { add_core_of = ARM }
+            1246 = { add_core_of = ARM }
+            1263 = { add_core_of = ARM }
+            1264 = { add_core_of = ARM }
+            1265 = { add_core_of = ARM }
+            1266 = { add_core_of = ARM }
+            1267 = { add_core_of = ARM }
+            1275 = { add_core_of = ARM }
+            1276 = { add_core_of = ARM }
+            1277 = { add_core_of = ARM }
+            1278 = { add_core_of = ARM }
+            1279 = { add_core_of = ARM }
+            1281 = { add_core_of = ARM }
+            1282 = { add_core_of = ARM }
+            1283 = { add_core_of = ARM }
+            1284 = { add_core_of = ARM }
+            1285 = { add_core_of = ARM }
+            1286 = { add_core_of = ARM }
+            1293 = { add_core_of = ARM }
+            1294 = { add_core_of = ARM }
+            1295 = { add_core_of = ARM }
+            1298 = { add_core_of = ARM }
+            1299 = { add_core_of = ARM }
+            1300 = { add_core_of = ARM }
+            1301 = { add_core_of = ARM }
+            1302 = { add_core_of = ARM }
+            1303 = { add_core_of = ARM }
+            1304 = { add_core_of = ARM }
+            1314 = { add_core_of = ARM }
+            1319 = { add_core_of = ARM }
+            1320 = { add_core_of = ARM }
+            1324 = { add_core_of = ARM }
+            1325 = { add_core_of = ARM }
+            1326 = { add_core_of = ARM }
+            1329 = { add_core_of = ARM }
+            1366 = { add_core_of = ARM }
+            463 = { add_core_of = ARM }
+            1273 = { add_core_of = ARM }
+            1348 = { add_core_of = ARM }
+            1349 = { add_core_of = ARM }
+            1350 = { add_core_of = ARM }
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_revive_army
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_white_exiles_arrive
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_white_exiles_arrive
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revive_army"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_international_army
+            add_idea = KXWD_ARM_army
+        }
+        add_offsite_building = { type = arms_factory level = 5 }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_revive_airforce
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = -2
+    y = 1
+	relative_position_id = ARMWD_white_exiles_arrive
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_white_exiles_arrive
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revive_airforce"
+        add_ideas = KXWD_ARM_airforce
+        add_offsite_building = { type = arms_factory level = 3 }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_revive_navy
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 2
+    y = 1
+	relative_position_id = ARMWD_white_exiles_arrive
+    cost = 5
+    available = {
+        is_ai = no
+        any_state = {
+            is_owned_and_controlled_by = ARM
+            is_coastal = yes
+        }
+	}
+    prerequisite = {
+        focus = ARMWD_white_exiles_arrive
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_revive_navy"
+        add_ideas = KXWD_ARM_navy
+        add_offsite_building = { type = dockyard level = 5 }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_for_motherland
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_revive_army
+    cost = 5
+    available = {
+        is_ai = no
+	}
+    prerequisite = {
+        focus = ARMWD_revive_airforce
+        focus = ARMWD_revive_army
+        focus = ARMWD_revive_navy
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_for_motherland"
+        add_timed_idea = {
+            idea = KXWD_ARM_for_motherland
+            days = 240
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_restoration_of_russia
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_for_motherland
+    cost = 5
+    available = {
+        is_ai = no
+        195 = { is_owned_and_controlled_by = ARM }
+		219 = { is_owned_and_controlled_by = ARM }
+	}
+    prerequisite = {
+        focus = ARMWD_for_motherland
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_restoration_of_russia"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_white_exiles
+            add_idea = KXWD_ARM_new_russia
+        }
+        country_event = KXWD_ARM.1
+        country_event = russia.2008
+        country_event = russia.2006
+        set_capital = {
+            state = 195
+            remember_old_capital = yes
+        }
+        hidden_effect = {
+            every_state = {
+                clr_state_flag = renamed_petrodvorets
+                clr_state_flag = renamed_state_apraksin
+                clr_state_flag = renamed_state_dmitri
+                clr_state_flag = renamed_state_imperial
+                clr_state_flag = renamed_state_leningrad
+                clr_state_flag = renamed_state_molotov
+                clr_state_flag = renamed_state_rykov
+                clr_state_flag = renamed_state_tsentrograd
+                clr_state_flag = renamed_state_zhdanovgrad
+                clr_state_flag = renamed_state_elizavetburg
+                clr_state_flag = renamed_state_frunzensk
+                clr_state_flag = renamed_state_kornilovsk
+                clr_state_flag = renamed_state_novooktyabrsk
+                clr_state_flag = renamed_state_rykov
+				clr_state_flag = renamed_state_saltykov
+                clr_state_flag = renamed_state_savinkovsk
+                clr_state_flag = renamed_state_tukhachevsk
+                clr_state_flag = renamed_state_vladimir
+		    	clr_state_flag = renamed_state_wrangelburg
+				clr_state_flag = renamed_state_zhukov
+				clr_state_flag = zhdanov_renamed
+			}
+		}
+    }
+}
+
+shared_focus = {
+	id = ARMWD_new_dynasty
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_restoration_of_russia
+    cost = 5
+    available = {
+        is_ai = no
+        has_country_flag = KXWD_ARM_russo_armenian_empire_flag
+	}
+    prerequisite = {
+        focus = ARMWD_restoration_of_russia
+    }
+    mutually_exclusive = { focus = ARMWD_no_more_monarchs }
+    mutually_exclusive = { focus = ARMWD_hold_zemsky_sobor }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_new_dynasty"
+        country_event = KXWD_ARM.2
+    }
+}
+
+shared_focus = {
+	id = ARMWD_russo_armenian_empire
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_new_dynasty
+    cost = 5
+    available = {
+        is_ai = no
+        has_country_flag = KXWD_ARM_russo_armenian_empire_flag
+	}
+    prerequisite = {
+        focus = ARMWD_new_dynasty
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_russo_armenian_empire"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_new_russia
+            add_idea = KXWD_ARM_russian_armenian_empire
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_no_more_monarchs
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = -2
+    y = 1
+	relative_position_id = ARMWD_restoration_of_russia
+    cost = 5
+    available = {
+        is_ai = no
+        has_country_flag = KXWD_ARM_russian_state_flag
+	}
+    prerequisite = {
+        focus = ARMWD_restoration_of_russia
+    }
+    mutually_exclusive = { focus = ARMWD_hold_zemsky_sobor }
+    mutually_exclusive = { focus = ARMWD_new_dynasty }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_no_more_monarchs"
+        country_event = KXWD_ARM.3
+    }
+}
+
+shared_focus = {
+	id = ARMWD_russian_state
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_no_more_monarchs
+    cost = 5
+    available = {
+        is_ai = no
+        has_country_flag = KXWD_ARM_russian_state_flag
+	}
+    prerequisite = {
+        focus = ARMWD_no_more_monarchs
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_russian_state"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_new_russia
+            add_idea = KXWD_ARM_russian_state
+        }
+    }
+}
+
+shared_focus = {
+	id = ARMWD_hold_zemsky_sobor
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 2
+    y = 1
+	relative_position_id = ARMWD_restoration_of_russia
+    cost = 5
+    available = {
+        is_ai = no
+        has_country_flag = KXWD_ARM_russian_empire_flag
+	}
+    prerequisite = {
+        focus = ARMWD_restoration_of_russia
+    }
+    mutually_exclusive = { focus = ARMWD_no_more_monarchs }
+    mutually_exclusive = { focus = ARMWD_new_dynasty }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_hold_zemsky_sobor"
+        country_event = KXWD_ARM.4
+    }
+}
+
+shared_focus = {
+	id = ARMWD_russian_empire
+    icon = goal_KXWD_GRE_create_the_neo_varangian_guard
+    x = 0
+    y = 1
+	relative_position_id = ARMWD_hold_zemsky_sobor
+    cost = 5
+    available = {
+        is_ai = no
+        has_country_flag = KXWD_ARM_russian_empire_flag
+	}
+    prerequisite = {
+        focus = ARMWD_hold_zemsky_sobor
+    }
+
+    completion_reward = {
+        log = "[GetDateText]: [Root.GetName]: Focus ARMWD_russian_empire"
+        swap_ideas = {
+            remove_idea = KXWD_ARM_new_russia
+            add_idea = KXWD_ARM_russian_empire
         }
     }
 }
