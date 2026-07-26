@@ -377,6 +377,20 @@ ideas = {
             }
 			removal_cost = -1
 		}
+        KXWD_ARM_revolt_ongoing = {
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_revolt_ongoing"}
+			allowed = {always = no}
+			picture = KXWD_GRE_neo_varangian_guard
+			modifier = {
+			}
+            targeted_modifier = {
+                tag = TUR
+                attack_bonus_against = 0.25
+                defense_bonus_against = 0.25
+                breakthrough_bonus_against = 0.25
+            }
+			removal_cost = -1
+		}
         KXWD_ARM_expansionism = {
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea KXWD_ARM_expansionism"}
 			allowed = {always = no}
