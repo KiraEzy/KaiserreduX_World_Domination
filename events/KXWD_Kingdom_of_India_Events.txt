@@ -1,0 +1,341 @@
+
+add_namespace = KXWD_PRF
+
+country_event = {
+	id = KXWD_PRF.1
+	title = KXWD_PRF.1.t
+	desc = KXWD_PRF.1.d
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PRF
+		has_government = market_liberal
+        is_ai = no
+	}
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_PRF.1"
+	}
+
+	option = {
+		name = KXWD_PRF.1.a 
+		ai_chance = {
+			factor = 0
+		}
+        set_country_flag = KXWD_PRF_agiants_liberals
+	}
+	option = {
+		name = KXWD_PRF.1.b
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_PRF.2
+	title = KXWD_PRF.2.t
+	desc = KXWD_PRF.2.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_PRF.2"
+	}
+
+	option = {
+		name = KXWD_PRF.2.a 
+        annex_country = {
+            target = MAD
+            transfer_troops = yes
+        }
+        MAD = {
+            all_unit_leader = {
+                set_nationality = PRF
+            }
+        }
+	}
+}
+
+country_event = {
+	id = KXWD_PRF.3
+	title = KXWD_PRF.3.t
+	desc = KXWD_PRF.3.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_PRF.3"
+	}
+
+	option = {
+        name = KXWD_PRF.3.a
+        create_country_leader = {
+			name = "Salvador de Bourbon-Bhopal"
+			picture = "gfx/leaders/PRF/Portrait_PRF_Salvador_III_de_Bourbon.png"
+			expire = "1.1.1"
+			ideology = militarism_subtype
+		}
+		set_politics = {
+            ruling_party = national_populist
+            elections_allowed = no
+            last_election = "1935.12.17"
+            long_name = PRFWD_provisional_party_long
+            name = PRFWD_provisional_party
+        }
+        hidden_effect = {
+			remove_all_ministers = yes
+		}
+		add_ideas = PRF_Council_of_Princes_hog_ade
+		add_ideas = PRF_Osman_Ali_Khan_for_pau
+		add_ideas = PRF_Maharaja_Srish_Kumar_Nandy_eco_pau
+		add_ideas = PRF_Azam_Jah_of_Berar_sec_pau
+        set_cosmetic_tag = PRFWD_PROV_GOVT_OCC
+        add_political_power = 100
+        country_event = {
+            id = KXWD_PRF.5
+            days = 15
+        }
+        complete_national_focus = PRFWD_successful_coup
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.25
+        }
+	}
+}
+
+country_event = {
+	id = KXWD_PRF.4
+	title = KXWD_PRF.4.t
+	desc = KXWD_PRF.4.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_PRF.4"
+	}
+
+	option = {
+		name = KXWD_PRF.4.a 
+        set_country_flag = KXWD_PRF_no_rebels
+	}
+}
+
+country_event = {
+	id = KXWD_PRF.5
+	title = KXWD_PRF.5.t
+	desc = KXWD_PRF.5.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_PRF.5"
+	}
+
+	option = {
+		name = KXWD_PRF.5.a
+        trigger = {
+            NOT = {
+                has_country_flag = KXWD_PRF_no_rebels
+            }
+        }
+        set_country_flag = PRF_mysore_revolt
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+		if = {
+			limit = {
+				MAD = {
+					is_subject_of = ROOT
+				}
+			}
+			end_puppet = MAD
+		}
+		if = {
+			limit = {
+				has_idea = PRF_Krishna_Raja_Wadiyar_IV_hog_ade
+			}
+			remove_ideas = PRF_Krishna_Raja_Wadiyar_IV_hog_ade
+		}
+		if = {
+			limit = {
+				has_idea = PRF_Jayachamarajendra_Wadiyar_hog_ade
+			}
+			remove_ideas = PRF_Jayachamarajendra_Wadiyar_hog_ade
+		}
+		if = {
+			limit = {
+				has_idea = PRF_Mokshagundam_Visveswaraiah_eco_ade
+			}
+			remove_ideas = PRF_Mokshagundam_Visveswaraiah_eco_ade
+		}
+		if = {
+			limit = {
+				has_idea = PRF_Albion_Rajkumar_Banerjee_sec_ade
+			}
+			remove_ideas = PRF_Albion_Rajkumar_Banerjee_sec_ade
+		}
+		if = {
+			limit = {
+				has_idea = PRF_Mirza_Muhammad_Ismail_hog_sco
+			}
+			remove_ideas = PRF_Mirza_Muhammad_Ismail_hog_sco
+		}
+		if = {
+			limit = {
+				has_idea = PRF_Aspy_Merwan_Engineer_cair_ade
+			}
+			remove_ideas = PRF_Aspy_Merwan_Engineer_cair_ade
+		}
+		set_country_flag = Krishna_Raja_Wadiyar_IV_dead
+		set_country_flag = Jayachamarajendra_Wadiyar_dead
+		set_country_flag = Mokshagundam_Visveswaraiah_dead
+		set_country_flag = Albion_Rajkumar_Banerjee_dead
+		set_country_flag = Mirza_Muhammad_Ismail_dead
+		set_country_flag = Aspy_Merwan_Engineer_dead
+		if = {
+			limit = {
+				has_unit_leader = 1254
+			}
+			random_unit_leader = {
+				limit = { has_id = 1254 }			
+				remove_unit_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_unit_leader = 1255
+			}
+			random_unit_leader = {
+				limit = { has_id = 1255 }			
+				remove_unit_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_unit_leader = 1260
+			}
+			random_unit_leader = {
+				limit = { has_id = 1260 }			
+				remove_unit_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_unit_leader = 1261
+			}
+			random_unit_leader = {
+				limit = { has_id = 1261 }			
+				remove_unit_leader = yes
+			}
+		}
+		MYS = {
+			transfer_state = 425
+			add_state_core = 425
+			hidden_effect = {
+				transfer_technology = yes
+				country_event = prf.121
+			}
+		}
+		if = {
+			limit = { owns_state = 1034 } #Malabar
+			MYS = {
+				transfer_state = 1034
+				add_state_core = 1034
+			}
+		}
+        if = {
+			limit = {
+				has_idea = PRF_Chithira_Thirunal_Balarama_Varma_hog_sco
+			}
+			remove_ideas = PRF_Chithira_Thirunal_Balarama_Varma_hog_sco
+		}
+		set_country_flag = Chithira_Thirunal_Balarama_Varma_dead
+		set_country_flag = Nawab_Muhammad_Habibullah_dead
+		if = {
+			limit = {
+				has_unit_leader = 1259
+			}
+			random_unit_leader = {
+				limit = { has_id = 1259 }			
+				remove_unit_leader = yes
+			}
+		}
+		if = {
+			limit = {
+				has_unit_leader = 1263
+			}
+			random_unit_leader = {
+				limit = { has_id = 1263 }			
+				remove_unit_leader = yes
+			}
+		}
+		TRV = {
+			transfer_state = 867
+			add_state_core = 867
+			hidden_effect = {
+				transfer_technology = yes
+				country_event = prf.123
+			}
+		}
+	}
+    option = {
+		name = KXWD_PRF.5.b
+        trigger = {
+            has_country_flag = KXWD_PRF_no_rebels
+        }
+        add_political_power = 150
+        add_popularity = {
+            ideology = national_populist
+            popularity = 0.15
+        }
+	}
+}
+
+country_event = {
+	id = KXWD_PRF.6
+	title = KXWD_PRF.6.t
+	desc = KXWD_PRF.6.d
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_PRF.6"
+	}
+
+	option = {
+        name = KXWD_PRF.6.a
+        set_party_name = {
+            ideology = national_populist
+            long_name = PRFWD_kingdom_party_long
+            name = PRFWD_kingdom_party
+        }
+        set_cosmetic_tag = PRFWD_KINGDOM_OCC
+        create_country_leader = {
+			name = "Salvador III de Bourbon-Bhopal"
+			picture = "gfx/leaders/PRF/Portrait_PRF_Salvador_III_de_Bourbon.png"
+			expire = "1.1.1"
+			ideology = maurrassism_subtype
+		}
+        hidden_effect = {
+			remove_all_ministers = yes
+		}
+		add_ideas = PRF_Krushna_Chandra_Gajapati_hog_ade
+		add_ideas = PRF_Osman_Ali_Khan_for_pau
+		add_ideas = PRF_Maharaja_Srish_Kumar_Nandy_eco_pau
+		add_ideas = PRF_Azam_Jah_of_Berar_sec_pau
+        add_political_power = 100
+	}
+}
