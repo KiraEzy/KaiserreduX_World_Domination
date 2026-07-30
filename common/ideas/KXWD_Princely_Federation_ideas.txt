@@ -1,0 +1,176 @@
+ideas = {
+	country = {
+        PRFWD_princes_satisfied = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_princes_satisfied"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                surrender_limit = 0.1
+				national_populist_drift = 0.01
+                political_power_gain = 0.15
+                stability_factor = 0.1
+            }
+        }
+        PRFWD_princely_regency = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_princely_regency"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                surrender_limit = 0.15
+				national_populist_drift = 0.02
+                political_power_gain = 0.15
+                stability_factor = 0.15
+            }
+        }
+        PRFWD_kingdom_of_india = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_kingdom_of_india"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                surrender_limit = 0.2
+				national_populist_drift = 0.03
+                political_power_gain = 0.25
+                stability_factor = 0.2
+            }
+        }
+        PRFWD_princely_kingdom = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_princely_kingdom"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                surrender_limit = 0.25
+				national_populist_drift = 0.05
+                political_power_gain = 0.3
+                stability_factor = 0.25
+                war_support_weekly = 0.01
+                stability_weekly = 0.01
+            }
+        }
+        PRFWD_french_support = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_french_support"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                drift_defence_factor = 0.3
+                annex_cost_factor = -0.1
+                consumer_goods_factor = -0.15
+            }
+        }
+        PRFWD_classical_laws = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_classical_laws"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                drift_defence_factor = 0.4
+                annex_cost_factor = -0.15
+                consumer_goods_factor = -0.2
+                global_building_slots_factor = 0.25
+                industrial_capacity_factory = 0.15
+            }
+        }
+        PRFWD_integralist_inspiration = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_integralist_inspiration"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                drift_defence_factor = 0.5
+                annex_cost_factor = -0.2
+                consumer_goods_factor = -0.25
+                global_building_slots_factor = 0.35
+                industrial_capacity_factory = 0.15
+                industrial_capacity_dockyard = 0.15
+            }
+        }
+        PRFWD_franco_indian_tradition = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_franco_indian_tradition"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                drift_defence_factor = 0.5
+                annex_cost_factor = -0.2
+                consumer_goods_factor = -0.25
+                global_building_slots_factor = 0.35
+                industrial_capacity_factory = 0.2
+                industrial_capacity_dockyard = 0.2
+                attrition = -0.3
+            }
+        }
+        PRFWD_localism = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_localism"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                drift_defence_factor = 0.75
+                annex_cost_factor = -0.2
+                consumer_goods_factor = -0.35
+                global_building_slots_factor = 0.5
+                industrial_capacity_factory = 0.25
+                industrial_capacity_dockyard = 0.25
+                attrition = -0.35
+            }
+        }
+        PRFWD_royal_guard = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_royal_guard"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                army_attack_factor = 0.1
+                army_defence_factor = 0.15
+                army_speed_factor = 0.15
+                army_morale_factor = 0.05
+                army_org_factor = 0.15
+            }
+        }
+        PRFWD_royal_knights = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_royal_knights"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                army_attack_factor = 0.15
+                army_defence_factor = 0.15
+                army_speed_factor = 0.2
+                army_morale_factor = 0.1
+                army_org_factor = 0.2
+            }
+        }
+        PRFWD_religious_tolerance = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_religious_tolerance"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                monthly_population = 0.5
+                research_speed_factor = 0.15
+                local_resources_factor = 0.3
+            }
+        }
+        PRFWD_papal_mission = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_papal_mission"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                monthly_population = 1.0
+                research_speed_factor = 0.3
+                local_resources_factor = 0.5
+            }
+        }
+        PRFWD_death_of_romanticism = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_death_of_romanticism"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                production_factory_efficiency_gain_factor = 0.25
+                production_factory_max_efficiency_factor = 0.5
+                line_change_production_efficiency_factor = 0.3
+            }
+        }
+        PRFWD_great_ambitions = {
+            on_add = {log = "[GetDateText]: [Root.GetName]: add idea PRFWD_great_ambitions"}
+            allowed = {always = no}
+            picture = GFX_KXWD_GRE_neo_varangian_guard
+            modifier = {
+                generate_wargoal_tension = -0.9
+                justify_war_goal_time = -0.99
+            }
+        }
+    }	
+}
