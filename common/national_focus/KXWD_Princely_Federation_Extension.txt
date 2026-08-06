@@ -1,0 +1,136 @@
+
+##################################################
+####### Princely Federation tree extension #######
+##################################################
+
+shared_focus = {
+	id = PRFWD_anti_liberal_support
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+        has_country_flag = KXWD_PRF_againts_liberals
+	}
+
+	x = 0
+	y = 5
+    relative_position_id = PRF_india_united
+	cost = 1
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_anti_liberal_support"
+        add_popularity = {
+            ideology = market_liberal
+            popularity = -0.3
+        }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_sway_princes
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_anti_liberal_support
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_anti_liberal_support
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_sway_princes"
+        add_political_power = 100
+        add_stability = 0.05
+        add_command_power = 15
+        army_experience = 15
+	}
+}
+
+shared_focus = {
+	id = PRFWD_contact_pondicherry
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_anti_liberal_support
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_anti_liberal_support
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_contact_pondicherry"
+        country_event = KXWD_PRF.2
+	}
+}
+
+shared_focus = {
+	id = PRFWD_launch_coup
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = PRFWD_anti_liberal_support
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_contact_pondicherry
+    }
+    prerequisite = {
+        focus = PRFWD_sway_princes
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_launch_coup"
+        country_event = KXWD_PRF.3
+	}
+}
+
+shared_focus = {
+	id = PRFWD_successful_coup
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+        always = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = PRFWD_launch_coup
+	cost = 0
+    prerequisite = {
+        focus = PRFWD_launch_coup
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_successful_coup"
+	}
+}
