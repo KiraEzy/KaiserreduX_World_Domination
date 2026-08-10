@@ -1,0 +1,11 @@
+PRF_great_game = {
+	icon = GFX_decision_category_foreign_policy
+
+	allowed = {
+		original_tag = PRF
+	}
+
+	visible = { 
+		has_completed_focus = PRFWD_retake_france
+    }
+}

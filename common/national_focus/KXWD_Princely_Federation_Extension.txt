@@ -13,7 +13,7 @@ shared_focus = {
 
 	x = 0
 	y = 5
-    relative_position_id = PRF_india_united
+    relative_position_id = PRF_defend_coast
 	cost = 1
 
 	ai_will_do = {
@@ -717,5 +717,118 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_retake_france"
         add_ideas = PRFWD_great_ambitions
+        create_faction_from_template = {
+            template = faction_template_european_dominance
+            name = PRFWD_bourbon_accords
+            icon = GFX_faction_paris
+        }
+        custom_effect_tooltip = "We will gain cores on all of greater french kingdom and greater india"
+        hidden_effect = {
+            14 = { add_core_of = PRF }
+            15 = { add_core_of = PRF }
+            16 = { add_core_of = PRF }
+            17 = { add_core_of = PRF }
+            18 = { add_core_of = PRF }
+            19 = { add_core_of = PRF }
+            20 = { add_core_of = PRF }
+            21 = { add_core_of = PRF }
+            22 = { add_core_of = PRF }
+            23 = { add_core_of = PRF }
+            24 = { add_core_of = PRF }
+            25 = { add_core_of = PRF }
+            26 = { add_core_of = PRF }
+            27 = { add_core_of = PRF }
+            30 = { add_core_of = PRF }
+            31 = { add_core_of = PRF }
+            32 = { add_core_of = PRF }
+            33 = { add_core_of = PRF }
+            735 = { add_core_of = PRF }
+            762 = { add_core_of = PRF }
+            763 = { add_core_of = PRF }
+            785 = { add_core_of = PRF }
+            817 = { add_core_of = PRF }
+            980 = { add_core_of = PRF }
+            983 = { add_core_of = PRF }
+            984 = { add_core_of = PRF }
+            1334 = { add_core_of = PRF }
+            1 = { add_core_of = PRF }
+            6 = { add_core_of = PRF }
+            7 = { add_core_of = PRF }
+            8 = { add_core_of = PRF }
+            28 = { add_core_of = PRF }
+            29 = { add_core_of = PRF }
+            34 = { add_core_of = PRF }
+            35 = { add_core_of = PRF }
+            36 = { add_core_of = PRF }
+            42 = { add_core_of = PRF }
+            51 = { add_core_of = PRF }
+            72 = { add_core_of = PRF }
+            1358 = { add_core_of = PRF }
+            1219 = { add_core_of = PRF }
+            897 = { add_core_of = PRF }
+            1362 = { add_core_of = PRF }
+            281 = { add_core_of = PRF }
+            288 = { add_core_of = PRF }
+            320 = { add_core_of = PRF }
+            321 = { add_core_of = PRF }
+            323 = { add_core_of = PRF }
+            324 = { add_core_of = PRF }
+            1363 = { add_core_of = PRF }
+            422 = { add_core_of = PRF }
+            426 = { add_core_of = PRF }
+            428 = { add_core_of = PRF }
+            430 = { add_core_of = PRF }
+            431 = { add_core_of = PRF }
+            432 = { add_core_of = PRF }
+            433 = { add_core_of = PRF }
+            434 = { add_core_of = PRF }
+            435 = { add_core_of = PRF }
+            436 = { add_core_of = PRF }
+            437 = { add_core_of = PRF }
+            438 = { add_core_of = PRF }
+            439 = { add_core_of = PRF }
+            440 = { add_core_of = PRF }
+            441 = { add_core_of = PRF }
+            442 = { add_core_of = PRF }
+            443 = { add_core_of = PRF }
+            444 = { add_core_of = PRF }
+            445 = { add_core_of = PRF }
+            459 = { add_core_of = PRF }
+            460 = { add_core_of = PRF }
+            513 = { add_core_of = PRF }
+            514 = { add_core_of = PRF }
+            640 = { add_core_of = PRF }
+            701 = { add_core_of = PRF }
+            710 = { add_core_of = PRF }
+            733 = { add_core_of = PRF }
+            741 = { add_core_of = PRF }
+            749 = { add_core_of = PRF }
+            756 = { add_core_of = PRF }
+            760 = { add_core_of = PRF }
+            779 = { add_core_of = PRF }
+            781 = { add_core_of = PRF }
+            790 = { add_core_of = PRF }
+            805 = { add_core_of = PRF }
+            814 = { add_core_of = PRF }
+            815 = { add_core_of = PRF }
+            831 = { add_core_of = PRF }
+            858 = { add_core_of = PRF }
+            866 = { add_core_of = PRF }
+            887 = { add_core_of = PRF }
+            888 = { add_core_of = PRF }
+            890 = { add_core_of = PRF }
+            891 = { add_core_of = PRF }
+            1315 = { add_core_of = PRF }
+            943 = { add_core_of = PRF }
+            978 = { add_core_of = PRF }
+            979 = { add_core_of = PRF }
+            1359 = { add_core_of = PRF }
+            1003 = { add_core_of = PRF }
+            1057 = { add_core_of = PRF }
+            1092 = { add_core_of = PRF }
+            1093 = { add_core_of = PRF }
+            1094 = { add_core_of = PRF }
+            1095 = { add_core_of = PRF }
+        }
 	}
 }
