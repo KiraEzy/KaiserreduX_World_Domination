@@ -17,7 +17,7 @@ shared_focus = {
 	cost = 1
 
 	ai_will_do = {
-		factor = 2
+		factor = 0
 	}
 
 	completion_reward = {
@@ -132,5 +132,590 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_successful_coup"
+	}
+}
+
+shared_focus = {
+	id = PRFWD_prevent_rebelion
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_successful_coup
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_successful_coup
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_prevent_rebelion"
+        country_event = KXWD_PRF.4
+	}
+}
+
+shared_focus = {
+	id = PRFWD_french_support_focus
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_prevent_rebelion
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_prevent_rebelion
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_french_support_focus"
+        add_ideas = PRFWD_french_support
+	}
+}
+
+shared_focus = {
+	id = PRFWD_satisfy_princes
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_successful_coup
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_successful_coup
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_satisfy_princes"
+        add_ideas = PRFWD_princes_satisfied
+	}
+}
+
+shared_focus = {
+	id = PRFWD_undo_democracy
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_satisfy_princes
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_satisfy_princes
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_undo_democracy"
+        add_popularity = {
+            ideology = totalist
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = syndicalist
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = radical_socialist
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = social_democrat
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = social_liberal
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = market_liberal
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = social_conservative
+            popularity = -0.3
+        }
+        add_popularity = {
+            ideology = authoritarian_democrat
+            popularity = -0.3
+        }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_princely_regency_council
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = PRFWD_successful_coup
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_satisfy_princes
+    }
+    prerequisite = {
+        focus = PRFWD_prevent_rebelion
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_princely_regency_council"
+        swap_ideas = {
+            remove_idea = PRFWD_princes_satisfied
+            add_idea = PRFWD_princely_regency
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_regency_choice
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = PRFWD_princely_regency_council
+	cost = 3
+    prerequisite = {
+        focus = PRFWD_french_support_focus
+    }
+    prerequisite = {
+        focus = PRFWD_princely_regency_council
+    }
+    prerequisite = {
+        focus = PRFWD_undo_democracy
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_regency_choice"
+        country_event = KXWD_PRF.6
+	}
+}
+
+shared_focus = {
+	id = PRFWD_declare_kingdom
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+        always = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = PRFWD_regency_choice
+	cost = 0
+    prerequisite = {
+        focus = PRFWD_regency_choice
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_declare_kingdom"
+        swap_ideas = {
+            remove_idea = PRFWD_princely_regency
+            add_idea = PRFWD_kingdom_of_india
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_solidify_princes
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 0
+	y = 1
+    relative_position_id = PRFWD_declare_kingdom
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_declare_kingdom
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_solidify_princes"
+        swap_ideas = {
+            remove_idea = PRFWD_kingdom_of_india
+            add_idea = PRFWD_princely_kingdom
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_codify_classical_laws
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -2
+	y = 1
+    relative_position_id = PRFWD_declare_kingdom
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_declare_kingdom
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_codify_classical_laws"
+        add_ideas = PRFWD_classical_laws
+	}
+}
+
+shared_focus = {
+	id = PRFWD_create_royal_guard
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 2
+	y = 1
+    relative_position_id = PRFWD_declare_kingdom
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_declare_kingdom
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_create_royal_guard"
+        add_ideas = PRFWD_royal_guard
+	}
+}
+
+shared_focus = {
+	id = PRFWD_integralist_inspiration_focus
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_solidify_princes
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_solidify_princes
+    }
+    prerequisite = {
+        focus = PRFWD_codify_classical_laws
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_integralist_inspiration_focus"
+        swap_ideas = {
+            remove_idea = PRFWD_classical_laws
+            add_idea = PRFWD_integralist_inspiration
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_create_franco_indian_tradition
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_integralist_inspiration_focus
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_integralist_inspiration_focus
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_create_franco_indian_tradition"
+        swap_ideas = {
+            remove_idea = PRFWD_integralist_inspiration
+            add_idea = PRFWD_franco_indian_tradition
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_embrace_localism
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_create_franco_indian_tradition
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_create_franco_indian_tradition
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_embrace_localism"
+        swap_ideas = {
+            remove_idea = PRFWD_franco_indian_tradition
+            add_idea = PRFWD_localism
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_create_royal_knights
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_solidify_princes
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_solidify_princes
+    }
+    prerequisite = {
+        focus = PRFWD_create_royal_guard
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_create_royal_knights"
+        swap_ideas = {
+            remove_idea = PRFWD_royal_guard
+            add_idea = PRFWD_royal_knights
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_indian_corporates
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_create_royal_knights
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_create_royal_knights
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_indian_corporates"
+        add_offsite_building = { type = arms_factory level = 5 }
+        add_offsite_building = { type = industrial_complex level = 3 }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_corporate_monarchism
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_indian_corporates
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_indian_corporates
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_corporate_monarchism"
+        add_offsite_building = { type = arms_factory level = 3 }
+        add_offsite_building = { type = dockyard level = 3 }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_enshrine_religious_tolerance
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = PRFWD_solidify_princes
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_create_royal_knights
+    }
+    prerequisite = {
+        focus = PRFWD_integralist_inspiration_focus
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_enshrine_religious_tolerance"
+        add_ideas = PRFWD_religious_tolerance
+	}
+}
+
+shared_focus = {
+	id = PRFWD_death_to_romanticism
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = -1
+	y = 1
+    relative_position_id = PRFWD_enshrine_religious_tolerance
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_enshrine_religious_tolerance
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_death_to_romanticism"
+        add_ideas = PRFWD_death_of_romanticism
+	}
+}
+
+shared_focus = {
+	id = PRFWD_invite_papal_mission
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 1
+	y = 1
+    relative_position_id = PRFWD_enshrine_religious_tolerance
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_enshrine_religious_tolerance
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_invite_papal_mission"
+        swap_ideas = {
+            remove_idea = PRFWD_religious_tolerance
+            add_idea = PRFWD_papal_mission
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRFWD_retake_france
+	icon = GFX_goal_MLTWD_take_india
+	available = {
+        is_ai = no
+	}
+
+	x = 0
+	y = 2
+    relative_position_id = PRFWD_enshrine_religious_tolerance
+	cost = 5
+    prerequisite = {
+        focus = PRFWD_papal_mission
+    }
+    prerequisite = {
+        focus = PRFWD_death_to_romanticism
+    }
+    prerequisite = {
+        focus = PRFWD_corporate_monarchism
+    }
+    prerequisite = {
+        focus = PRFWD_embrace_localism
+    }
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_retake_france"
+        add_ideas = PRFWD_great_ambitions
 	}
 }

@@ -322,7 +322,6 @@ country_event = {
             long_name = PRFWD_kingdom_party_long
             name = PRFWD_kingdom_party
         }
-        set_cosmetic_tag = PRFWD_KINGDOM_OCC
         create_country_leader = {
 			name = "Salvador III de Bourbon-Bhopal"
 			picture = "gfx/leaders/PRF/Portrait_PRF_Salvador_III_de_Bourbon.png"
@@ -337,5 +336,7 @@ country_event = {
 		add_ideas = PRF_Maharaja_Srish_Kumar_Nandy_eco_pau
 		add_ideas = PRF_Azam_Jah_of_Berar_sec_pau
         add_political_power = 100
+        complete_national_focus = PRFWD_declare_kingdom
+        set_cosmetic_tag = PRFWD_KINGDOM_OCC
 	}
 }
