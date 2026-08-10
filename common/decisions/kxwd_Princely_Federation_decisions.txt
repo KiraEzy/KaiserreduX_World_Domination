@@ -3,8 +3,687 @@ PRF_great_game = {
 		icon = generic_prepare_civil_war
 		complete_effect = {
 			
+			log = "DEH"
+			DEH = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "AFG"
+			AFG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
 			log = "FRA"
 			FRA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PER"
+			PER = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CAM"
+			CAM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIA"
+			SIA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "LEB"
+			LEB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SYR"
+			SYR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ABK"
+			ABK = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GEO"
+			GEO = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "QIE"
+			QIE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SHX"
+			SHX = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "HNN"
+			HNN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "KOR"
+			KOR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TRK"
+			TRK = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "UZB"
+			UZB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIB"
+			SIB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TRM"
+			TRM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "INS"
+			INS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "DEI"
+			DEI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GXC"
+			GXC = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PHI"
+			PHI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "COG"
+			COG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "AST"
+			AST = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SSI"
+			SSI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GEA"
+			GEA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TAI"
+			TAI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "JAP"
+			JAP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "UGA"
+			UGA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "RUS"
+			RUS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CRE"
+			CRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GRE"
+			GRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "WSU"
+			WSU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "UKR"
+			UKR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "WRA"
+			WRA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "WHR"
+			WHR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "LAT"
+			LAT = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "BAT"
+			BAT = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CRO"
+			CRO = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SLO"
+			SLO = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ROM"
+			ROM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "BAN"
+			BAN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GAL"
+			GAL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "POL"
+			POL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CUM"
+			CUM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "HUN"
+			HUN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "NGF"
+			NGF = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "AUS"
+			AUS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PGU"
+			PGU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CZE"
+			CZE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TOG"
+			TOG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SWI"
+			SWI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "BAY"
+			BAY = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GER"
+			GER = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "DDR"
+			DDR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GRU"
+			GRU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ICE"
+			ICE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "DEN"
+			DEN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ITA"
+			ITA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SRI"
+			SRI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CAR"
+			CAR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SPR"
+			SPR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CNT"
+			CNT = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "POR"
+			POR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GBP"
+			GBP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ENG"
+			ENG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ULS"
+			ULS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "IRE"
+			IRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SUD"
+			SUD = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ETH"
+			ETH = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TUN"
+			TUN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ALG"
+			ALG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SIE"
+			SIE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CIV"
+			CIV = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TZN"
+			TZN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ANG"
+			ANG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "KEN"
+			KEN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "MAG"
+			MAG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ZIM"
+			ZIM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "SAF"
+			SAF = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "NFL"
+			NFL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CAN"
+			CAN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "TEX"
+			TEX = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "USA"
+			USA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "YUC"
+			YUC = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "MEX"
+			MEX = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "GUA"
+			GUA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "HON"
+			HON = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CUB"
+			CUB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "CAF"
+			CAF = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "VEN"
+			VEN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "COL"
+			COL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ECU"
+			ECU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PRU"
+			PRU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "FOP"
+			FOP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "ARG"
+			ARG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "PRI"
+			PRI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
+
+			log = "BRA"
+			BRA = {
 				every_owned_state = {
 					log = "[state.GetID]"
 				}
