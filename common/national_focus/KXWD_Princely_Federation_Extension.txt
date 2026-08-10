@@ -722,7 +722,8 @@ shared_focus = {
             name = PRFWD_bourbon_accords
             icon = GFX_faction_paris
         }
-        custom_effect_tooltip = "We will gain cores on all of greater french kingdom and greater india"
+        custom_effect_tooltip = "We will gain cores on all of greater french kingdom and greater india and declare the Franco-Indian Kingdom"
+        set_cosmetic_tag = PRF_FRANCE_INDIA_OCC
         hidden_effect = {
             14 = { add_core_of = PRF }
             15 = { add_core_of = PRF }
