@@ -507,6 +507,9 @@ focus_tree = {
 
 		available = {
 			is_subject = no
+			not = {
+				has_completed_focus = PRFWD_anti_liberal_support
+			}
 		}
 
 		ai_will_do = {

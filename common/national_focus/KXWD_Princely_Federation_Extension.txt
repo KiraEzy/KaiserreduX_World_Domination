@@ -8,7 +8,7 @@ shared_focus = {
 	icon = GFX_goal_MLTWD_take_india
 	available = {
         is_ai = no
-        has_country_flag = KXWD_PRF_againts_liberals
+        has_idea = PRFWD_anti_liberal
 	}
 
 	x = 0
@@ -25,6 +25,7 @@ shared_focus = {
         add_popularity = {
             ideology = market_liberal
             popularity = -0.3
+            remove_ideas = PRF_rule_of_princes_2
         }
 	}
 }
@@ -132,6 +133,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_successful_coup"
+        remove_ideas = PRFWD_anti_liberal
 	}
 }
 
@@ -145,7 +147,7 @@ shared_focus = {
 	x = -1
 	y = 1
     relative_position_id = PRFWD_successful_coup
-	cost = 3
+	cost = 1
     prerequisite = {
         focus = PRFWD_successful_coup
     }
@@ -406,7 +408,10 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PRFWD_codify_classical_laws"
-        add_ideas = PRFWD_classical_laws
+        swap_ideas = {
+            remove_idea = PRFWD_french_support
+            add_idea = PRFWD_classical_laws
+	    }
 	}
 }
 
@@ -698,7 +703,7 @@ shared_focus = {
     relative_position_id = PRFWD_enshrine_religious_tolerance
 	cost = 5
     prerequisite = {
-        focus = PRFWD_papal_mission
+        focus = PRFWD_invite_papal_mission
     }
     prerequisite = {
         focus = PRFWD_death_to_romanticism
