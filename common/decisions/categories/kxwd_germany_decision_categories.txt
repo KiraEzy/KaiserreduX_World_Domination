@@ -5,8 +5,7 @@ GER_great_game = {
 	}
 	visible = { 
 		OR = {
-			has_completed_focus = GER_europakammer
-			has_completed_focus = GER_europakommission
+			has_completed_focus = GER_Post_2WK_For
 		}
 		
 	}
@@ -20,8 +19,7 @@ GER_asia_game = {
 	visible = { 
 		AND = {
 			OR = {
-				has_completed_focus = GER_europakammer
-				has_completed_focus = GER_europakommission
+				has_completed_focus = GER_Post_2WK_For
 			}
 			GER = { exists = yes }
 		}
@@ -37,8 +35,7 @@ GER_africa_game = {
 	visible = { 
 		AND = {
 			OR = {
-				has_completed_focus = GER_europakammer
-				has_completed_focus = GER_europakommission
+				has_completed_focus = GER_Post_2WK_For
 			}
 			OR = {
 				MAF = { exists = yes } 

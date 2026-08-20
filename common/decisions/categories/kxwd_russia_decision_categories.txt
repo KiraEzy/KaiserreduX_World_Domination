@@ -1,5 +1,60 @@
-RUS_MON_Great_game = {
+
+###################################################################################################################
+# Integration Decisions
+
+RUS_integration_game = {
 	icon = GFX_category_icon
+	priority = 11
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow
+			has_completed_focus = RUS_Clericals #yellow
+			has_completed_focus = RUS_Crown_And_Sword
+			has_completed_focus = RUS_Regency
+			has_completed_focus = RUS_Long_Live_Tsar #VNS-KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
+		}
+	}
+}
+
+###################################################################################################################
+# Decisions to hire Generals
+
+RUS_recruiting_game = {
+	icon = GFX_category_icon
+	priority = 10
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
+			has_completed_focus = RUS_Clericals #yellow validated
+			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restoration
+			has_completed_focus = RUS_Regency #Drozdovite Regency
+			has_completed_focus = RUS_Long_Live_Tsar #VNS-KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
+		}
+	}
+}
+
+###################################################################################################################
+# Absolutist Puppets
+
+RUS_absolutist_great_game = {
+	icon = GFX_category_icon
+	priority = 9
 
 	allowed = {
 		original_tag = RUS
@@ -7,39 +62,39 @@ RUS_MON_Great_game = {
 
 	visible = { 
 		#for yellow flag
+		is_ai = no
 		OR = {
-			# if = {
-			# 	limit = {
-			# 		AND = {
-			# 			has_completed_focus = RUS_God_Save_the_Tsar
-			# 			NOT = { has_completed_focus = RUS_Clericals }
-			# 		}
-			# 	}
-			# 	has_completed_focus = RUS_rnsma #blackhumdred yellow
-			# }
 			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
 			has_completed_focus = RUS_Clericals #yellow validated
-			# RUS_wrangel_in_power = yes
-			# has_completed_focus = RUS_Imperial_Glory
+			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restoration
+			has_completed_focus = RUS_Regency #Drozdovite Regency
 		}
-		NOT = { has_completed_focus = RUS_Rally_The_Monarchists }
 	}
 }
-RUS_integration_game = {
+
+###################################################################################################################
+# Constitutional Puppets
+
+RUS_constitutional_great_game = {
 	icon = GFX_category_icon
+	priority = 9
 
 	allowed = {
 		original_tag = RUS
 	}
 
 	visible = { 
-		OR={
-			has_completed_focus = RUS_rnsma #blackhumdred yellow
-			has_completed_focus = RUS_Clericals #yellow
+		#for normal flag
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_Long_Live_Tsar #VNS-KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
 		}
-		NOT = { has_completed_focus = RUS_Rally_The_Monarchists }
 	}
 }
+
+###################################################################################################################
 SOV_Great_Game_SSR_decisions = {
 	icon = GFX_decision_category_russia
 	priority = 100
