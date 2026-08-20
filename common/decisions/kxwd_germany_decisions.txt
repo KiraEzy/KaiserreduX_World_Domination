@@ -223,173 +223,173 @@ GER_establish_rk_SWI = {
 		760 = { transfer_state_to = GER }
 	}
 }
-GER_establish_rk_FRP = {
-	icon = generic_prepare_civil_war
+# GER_establish_rk_FRP = {
+# 	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 14
-				state = 15
-				state = 16
-				state = 18
-				state = 23
-				state = 24
-				state = 27
-				state = 30
-				state = 33
-				state = 785
-				state = 983
-				state = 19
-				state = 20
-				state = 21
-				state = 22
-				state = 25
-				state = 26
-				state = 31
-				state = 32
-				state = 735
-				state = 762
-				state = 763
-				state = 817
-				state = 943
-				state = 984
-				state = 1334
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 14
+# 				state = 15
+# 				state = 16
+# 				state = 18
+# 				state = 23
+# 				state = 24
+# 				state = 27
+# 				state = 30
+# 				state = 33
+# 				state = 785
+# 				state = 983
+# 				state = 19
+# 				state = 20
+# 				state = 21
+# 				state = 22
+# 				state = 25
+# 				state = 26
+# 				state = 31
+# 				state = 32
+# 				state = 735
+# 				state = 762
+# 				state = 763
+# 				state = 817
+# 				state = 943
+# 				state = 984
+# 				state = 1334
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
 
-	available = {
-		14 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		15 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		16 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		18 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		23 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		24 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		27 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		30 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		33 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		785 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		983 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		19 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		20 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		21 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		22 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		25 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		26 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		31 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		32 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		735 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		762 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		763 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		817 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		943 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		984 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1334 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-	}
+# 	available = {
+# 		14 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		15 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		16 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		18 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		23 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		24 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		27 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		30 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		33 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		785 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		983 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		19 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		20 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		21 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		22 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		25 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		26 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		31 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		32 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		735 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		762 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		763 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		817 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		943 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		984 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1334 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 	}
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 0
-	}
-	complete_effect = {
-		FRP = {
-			every_core_state = {
-				remove_core_of = FRP
-			}
-		}
-		14 = { add_core_of = FRP }
-		15 = { add_core_of = FRP }
-		16 = { add_core_of = FRP }
-		18 = { add_core_of = FRP }
-		23 = { add_core_of = FRP }
-		24 = { add_core_of = FRP }
-		27 = { add_core_of = FRP }
-		30 = { add_core_of = FRP }
-		33 = { add_core_of = FRP }
-		785 = { add_core_of = FRP }
-		983 = { add_core_of = FRP }
-		19 = { add_core_of = FRP }
-		20 = { add_core_of = FRP }
-		21 = { add_core_of = FRP }
-		22 = { add_core_of = FRP }
-		25 = { add_core_of = FRP }
-		26 = { add_core_of = FRP }
-		31 = { add_core_of = FRP }
-		32 = { add_core_of = FRP }
-		735 = { add_core_of = FRP }
-		762 = { add_core_of = FRP }
-		763 = { add_core_of = FRP }
-		817 = { add_core_of = FRP }
-		943 = { add_core_of = FRP }
-		984 = { add_core_of = FRP }
-		1334 = { add_core_of = FRP }
-		release = FRP
-		FRP = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = FRP
-			}
-		}
-		FRP = { 
-			set_cosmetic_tag = GER_FRP_OCC
-			load_focus_tree = generic_focus            
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# 	complete_effect = {
+# 		FRP = {
+# 			every_core_state = {
+# 				remove_core_of = FRP
+# 			}
+# 		}
+# 		14 = { add_core_of = FRP }
+# 		15 = { add_core_of = FRP }
+# 		16 = { add_core_of = FRP }
+# 		18 = { add_core_of = FRP }
+# 		23 = { add_core_of = FRP }
+# 		24 = { add_core_of = FRP }
+# 		27 = { add_core_of = FRP }
+# 		30 = { add_core_of = FRP }
+# 		33 = { add_core_of = FRP }
+# 		785 = { add_core_of = FRP }
+# 		983 = { add_core_of = FRP }
+# 		19 = { add_core_of = FRP }
+# 		20 = { add_core_of = FRP }
+# 		21 = { add_core_of = FRP }
+# 		22 = { add_core_of = FRP }
+# 		25 = { add_core_of = FRP }
+# 		26 = { add_core_of = FRP }
+# 		31 = { add_core_of = FRP }
+# 		32 = { add_core_of = FRP }
+# 		735 = { add_core_of = FRP }
+# 		762 = { add_core_of = FRP }
+# 		763 = { add_core_of = FRP }
+# 		817 = { add_core_of = FRP }
+# 		943 = { add_core_of = FRP }
+# 		984 = { add_core_of = FRP }
+# 		1334 = { add_core_of = FRP }
+# 		release = FRP
+# 		FRP = { 
+# 			every_core_state = {
+# 				limit = {
+# 					AND = {
+# 						NOT = { 
+# 							is_core_of = GER
+# 						}
+# 						OR = {
+# 							is_owned_by = GER
+# 							OWNER = { is_subject_of = GER} 
+# 						}
+# 					}
+# 				}
+# 				transfer_state_to = FRP
+# 			}
+# 		}
+# 		FRP = { 
+# 			set_cosmetic_tag = GER_FRP_OCC
+# 			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Victoria I"
-				picture = "gfx/leaders/FRP/Portrait_France_Victoria_Louise_Military.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
+# 			create_country_leader = {
+# 				name = "Victoria I"
+# 				picture = "gfx/leaders/FRP/Portrait_France_Victoria_Louise_Military.png"
+# 				expire = "1.1.1"
+# 				ideology = prussian_constitutionalism_subtype
+# 				traits = {
+# 				}
+# 			}
 
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
+# 			set_popularities = {
+# 				syndicalist = 5.0
+# 				social_democrat = 5.0
+# 				social_liberal = 0.0
+# 				market_liberal = 0.0
+# 				social_conservative = 20.0
+# 				authoritarian_democrat = 50.0
+# 				paternal_autocrat = 10.0
+# 				national_populist = 10.0
+# 			}
+# 			set_party_name = {
+# 				ideology = paternal_autocrat
+# 				name = "Haus Hohenzollern"
+# 				long_name = "Haus Hohenzollern"
+# 			}
+# 			set_party_name = {
+# 				ideology = authoritarian_democrat
+# 				name = "Haus Hohenzollern"
+# 				long_name = "Haus Hohenzollern"
+# 			}
 
-			GER = {
-				set_autonomy = {
-					target = FRP
-					autonomous_state = kx_colored_puppet
-				}
-			}
+# 			GER = {
+# 				set_autonomy = {
+# 					target = FRP
+# 					autonomous_state = kx_colored_puppet
+# 				}
+# 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
+# 			set_politics = {
+# 				ruling_party = authoritarian_democrat
+# 				elections_allowed = no
+# 			}
+# 		}
+# 	}
+# }
 
 GER_establish_rk_EMI = {
 	icon = generic_prepare_civil_war
@@ -742,152 +742,152 @@ GER_establish_rk_SPR = {
 	}
 }
 
-GER_establish_rk_GBP = {
-	icon = generic_prepare_civil_war
+# GER_establish_rk_GBP = {
+# 	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 120
-				state = 121
-				state = 122
-				state = 123
-				state = 125
-				state = 126
-				state = 127
-				state = 128
-				state = 129
-				state = 130
-				state = 131
-				state = 132
-				state = 133
-				state = 136
-				state = 338
-				state = 938
-				state = 1225
-				state = 1315
-				state = 1317
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 120
+# 				state = 121
+# 				state = 122
+# 				state = 123
+# 				state = 125
+# 				state = 126
+# 				state = 127
+# 				state = 128
+# 				state = 129
+# 				state = 130
+# 				state = 131
+# 				state = 132
+# 				state = 133
+# 				state = 136
+# 				state = 338
+# 				state = 938
+# 				state = 1225
+# 				state = 1315
+# 				state = 1317
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
 
-	available = {
-		120 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		121 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		122 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		123 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		125 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		126 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		127 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		128 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		129 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		130 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		131 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		132 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		133 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		136 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		338 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		938 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1225 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1315 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1317 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-	}
+# 	available = {
+# 		120 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		121 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		122 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		123 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		125 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		126 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		127 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		128 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		129 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		130 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		131 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		132 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		133 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		136 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		338 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		938 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1225 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1315 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1317 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 	}
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 0
-	}
-	complete_effect = {
-		GBP = {
-			every_core_state = {
-				remove_core_of = GBP
-			}
-		}
-		120 = { add_core_of = GBP }
-		121 = { add_core_of = GBP }
-		122 = { add_core_of = GBP }
-		123 = { add_core_of = GBP }
-		125 = { add_core_of = GBP }
-		126 = { add_core_of = GBP }
-		127 = { add_core_of = GBP }
-		128 = { add_core_of = GBP }
-		129 = { add_core_of = GBP }
-		130 = { add_core_of = GBP }
-		131 = { add_core_of = GBP }
-		132 = { add_core_of = GBP }
-		133 = { add_core_of = GBP }
-		136 = { add_core_of = GBP }
-		338 = { add_core_of = GBP }
-		938 = { add_core_of = GBP }
-		1225 = { add_core_of = GBP }
-		1315 = { add_core_of = GBP }
-		1317 = { add_core_of = GBP }
-		release = GBP
-		GBP = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = GBP
-			}
-		}
-		GBP = { 
-			set_cosmetic_tag = GER_GBP_OCC
-			load_focus_tree = generic_focus            
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# 	complete_effect = {
+# 		GBP = {
+# 			every_core_state = {
+# 				remove_core_of = GBP
+# 			}
+# 		}
+# 		120 = { add_core_of = GBP }
+# 		121 = { add_core_of = GBP }
+# 		122 = { add_core_of = GBP }
+# 		123 = { add_core_of = GBP }
+# 		125 = { add_core_of = GBP }
+# 		126 = { add_core_of = GBP }
+# 		127 = { add_core_of = GBP }
+# 		128 = { add_core_of = GBP }
+# 		129 = { add_core_of = GBP }
+# 		130 = { add_core_of = GBP }
+# 		131 = { add_core_of = GBP }
+# 		132 = { add_core_of = GBP }
+# 		133 = { add_core_of = GBP }
+# 		136 = { add_core_of = GBP }
+# 		338 = { add_core_of = GBP }
+# 		938 = { add_core_of = GBP }
+# 		1225 = { add_core_of = GBP }
+# 		1315 = { add_core_of = GBP }
+# 		1317 = { add_core_of = GBP }
+# 		release = GBP
+# 		GBP = { 
+# 			every_core_state = {
+# 				limit = {
+# 					AND = {
+# 						NOT = { 
+# 							is_core_of = GER
+# 						}
+# 						OR = {
+# 							is_owned_by = GER
+# 							OWNER = { is_subject_of = GER} 
+# 						}
+# 					}
+# 				}
+# 				transfer_state_to = GBP
+# 			}
+# 		}
+# 		GBP = { 
+# 			set_cosmetic_tag = GER_GBP_OCC
+# 			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Robert I"
-				picture = "gfx/leaders/GER/Portrait_Germany_Rupprecht_Jacobite.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
+# 			create_country_leader = {
+# 				name = "Robert I"
+# 				picture = "gfx/leaders/GER/Portrait_Germany_Rupprecht_Jacobite.png"
+# 				expire = "1.1.1"
+# 				ideology = prussian_constitutionalism_subtype
+# 				traits = {
+# 				}
+# 			}
 
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Haus Wittelsbach"
-				long_name = "Haus Wittelsbach"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Wittelsbach"
-				long_name = "Haus Wittelsbach"
-			}
+# 			set_popularities = {
+# 				syndicalist = 5.0
+# 				social_democrat = 5.0
+# 				social_liberal = 0.0
+# 				market_liberal = 0.0
+# 				social_conservative = 20.0
+# 				authoritarian_democrat = 50.0
+# 				paternal_autocrat = 10.0
+# 				national_populist = 10.0
+# 			}
+# 			set_party_name = {
+# 				ideology = paternal_autocrat
+# 				name = "Haus Wittelsbach"
+# 				long_name = "Haus Wittelsbach"
+# 			}
+# 			set_party_name = {
+# 				ideology = authoritarian_democrat
+# 				name = "Haus Wittelsbach"
+# 				long_name = "Haus Wittelsbach"
+# 			}
 
-			GER = {
-				set_autonomy = {
-					target = GBP
-					autonomous_state = kx_colored_puppet
-				}
-			}
+# 			GER = {
+# 				set_autonomy = {
+# 					target = GBP
+# 					autonomous_state = kx_colored_puppet
+# 				}
+# 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
+# 			set_politics = {
+# 				ruling_party = authoritarian_democrat
+# 				elections_allowed = no
+# 			}
+# 		}
+# 	}
+# }
 
 GER_establish_rk_BEL = {
 	icon = generic_prepare_civil_war
@@ -3082,242 +3082,242 @@ GER_establish_rk_UKR = {
 	}
 }
 
-GER_establish_rk_RUS = {
-	icon = generic_prepare_civil_war
+# GER_establish_rk_RUS = {
+# 	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 195
-				state = 205
-				state = 208
-				state = 214
-				state = 217
-				state = 219
-				state = 220
-				state = 222
-				state = 223
-				state = 224
-				state = 236
-				state = 239
-				state = 244
-				state = 246
-				state = 247
-				state = 248
-				state = 249
-				state = 250
-				state = 251
-				state = 252
-				state = 253
-				state = 254
-				state = 255
-				state = 256
-				state = 257
-				state = 258
-				state = 260
-				state = 262
-				state = 263
-				state = 264
-				state = 265
-				state = 351
-				state = 397
-				state = 398
-				state = 399
-				state = 400
-				state = 401
-				state = 651
-				state = 652
-				state = 1193
-				state = 1194
-				state = 1197
-				state = 1198
-				state = 1199
-				state = 1204
-				state = 1205
-				state = 1207
-				state = 1224
-				state = 1229
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 195
+# 				state = 205
+# 				state = 208
+# 				state = 214
+# 				state = 217
+# 				state = 219
+# 				state = 220
+# 				state = 222
+# 				state = 223
+# 				state = 224
+# 				state = 236
+# 				state = 239
+# 				state = 244
+# 				state = 246
+# 				state = 247
+# 				state = 248
+# 				state = 249
+# 				state = 250
+# 				state = 251
+# 				state = 252
+# 				state = 253
+# 				state = 254
+# 				state = 255
+# 				state = 256
+# 				state = 257
+# 				state = 258
+# 				state = 260
+# 				state = 262
+# 				state = 263
+# 				state = 264
+# 				state = 265
+# 				state = 351
+# 				state = 397
+# 				state = 398
+# 				state = 399
+# 				state = 400
+# 				state = 401
+# 				state = 651
+# 				state = 652
+# 				state = 1193
+# 				state = 1194
+# 				state = 1197
+# 				state = 1198
+# 				state = 1199
+# 				state = 1204
+# 				state = 1205
+# 				state = 1207
+# 				state = 1224
+# 				state = 1229
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
 
-	available = {
-		195 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		205 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		208 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		214 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		217 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		219 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		220 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		222 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		223 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		224 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		236 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		239 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		244 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		246 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		247 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		248 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		249 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		250 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		251 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		252 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		253 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		254 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		255 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		256 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		257 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		258 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		260 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		262 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		263 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		264 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		265 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		351 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		397 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		398 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		399 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		400 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		401 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		651 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		652 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1193 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1194 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1197 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1198 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1199 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1204 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1205 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1207 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1224 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1229 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-	}
+# 	available = {
+# 		195 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		205 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		208 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		214 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		217 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		219 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		220 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		222 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		223 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		224 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		236 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		239 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		244 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		246 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		247 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		248 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		249 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		250 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		251 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		252 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		253 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		254 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		255 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		256 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		257 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		258 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		260 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		262 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		263 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		264 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		265 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		351 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		397 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		398 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		399 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		400 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		401 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		651 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		652 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1193 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1194 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1197 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1198 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1199 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1204 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1205 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1207 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1224 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 		1229 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+# 	}
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 0
-	}
-	complete_effect = {
-		RUS = {
-			every_core_state = {
-				remove_core_of = RUS
-			}
-		}
-		195 = { add_core_of = RUS }
-		205 = { add_core_of = RUS }
-		208 = { add_core_of = RUS }
-		214 = { add_core_of = RUS }
-		217 = { add_core_of = RUS }
-		219 = { add_core_of = RUS }
-		220 = { add_core_of = RUS }
-		222 = { add_core_of = RUS }
-		223 = { add_core_of = RUS }
-		224 = { add_core_of = RUS }
-		236 = { add_core_of = RUS }
-		239 = { add_core_of = RUS }
-		244 = { add_core_of = RUS }
-		246 = { add_core_of = RUS }
-		247 = { add_core_of = RUS }
-		248 = { add_core_of = RUS }
-		249 = { add_core_of = RUS }
-		250 = { add_core_of = RUS }
-		251 = { add_core_of = RUS }
-		252 = { add_core_of = RUS }
-		253 = { add_core_of = RUS }
-		254 = { add_core_of = RUS }
-		255 = { add_core_of = RUS }
-		256 = { add_core_of = RUS }
-		257 = { add_core_of = RUS }
-		258 = { add_core_of = RUS }
-		260 = { add_core_of = RUS }
-		262 = { add_core_of = RUS }
-		263 = { add_core_of = RUS }
-		264 = { add_core_of = RUS }
-		265 = { add_core_of = RUS }
-		351 = { add_core_of = RUS }
-		397 = { add_core_of = RUS }
-		398 = { add_core_of = RUS }
-		399 = { add_core_of = RUS }
-		400 = { add_core_of = RUS }
-		401 = { add_core_of = RUS }
-		651 = { add_core_of = RUS }
-		652 = { add_core_of = RUS }
-		1193 = { add_core_of = RUS }
-		1194 = { add_core_of = RUS }
-		1197 = { add_core_of = RUS }
-		1198 = { add_core_of = RUS }
-		1199 = { add_core_of = RUS }
-		1204 = { add_core_of = RUS }
-		1205 = { add_core_of = RUS }
-		1207 = { add_core_of = RUS }
-		1224 = { add_core_of = RUS }
-		1229 = { add_core_of = RUS }
-		release = RUS
-		RUS = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = RUS
-			}
-		}
-		RUS = { 
-			set_cosmetic_tag = GER_RUS_OCC
-			load_focus_tree = generic_focus            
+# 	ai_will_do = {
+# 		factor = 0
+# 	}
+# 	complete_effect = {
+# 		RUS = {
+# 			every_core_state = {
+# 				remove_core_of = RUS
+# 			}
+# 		}
+# 		195 = { add_core_of = RUS }
+# 		205 = { add_core_of = RUS }
+# 		208 = { add_core_of = RUS }
+# 		214 = { add_core_of = RUS }
+# 		217 = { add_core_of = RUS }
+# 		219 = { add_core_of = RUS }
+# 		220 = { add_core_of = RUS }
+# 		222 = { add_core_of = RUS }
+# 		223 = { add_core_of = RUS }
+# 		224 = { add_core_of = RUS }
+# 		236 = { add_core_of = RUS }
+# 		239 = { add_core_of = RUS }
+# 		244 = { add_core_of = RUS }
+# 		246 = { add_core_of = RUS }
+# 		247 = { add_core_of = RUS }
+# 		248 = { add_core_of = RUS }
+# 		249 = { add_core_of = RUS }
+# 		250 = { add_core_of = RUS }
+# 		251 = { add_core_of = RUS }
+# 		252 = { add_core_of = RUS }
+# 		253 = { add_core_of = RUS }
+# 		254 = { add_core_of = RUS }
+# 		255 = { add_core_of = RUS }
+# 		256 = { add_core_of = RUS }
+# 		257 = { add_core_of = RUS }
+# 		258 = { add_core_of = RUS }
+# 		260 = { add_core_of = RUS }
+# 		262 = { add_core_of = RUS }
+# 		263 = { add_core_of = RUS }
+# 		264 = { add_core_of = RUS }
+# 		265 = { add_core_of = RUS }
+# 		351 = { add_core_of = RUS }
+# 		397 = { add_core_of = RUS }
+# 		398 = { add_core_of = RUS }
+# 		399 = { add_core_of = RUS }
+# 		400 = { add_core_of = RUS }
+# 		401 = { add_core_of = RUS }
+# 		651 = { add_core_of = RUS }
+# 		652 = { add_core_of = RUS }
+# 		1193 = { add_core_of = RUS }
+# 		1194 = { add_core_of = RUS }
+# 		1197 = { add_core_of = RUS }
+# 		1198 = { add_core_of = RUS }
+# 		1199 = { add_core_of = RUS }
+# 		1204 = { add_core_of = RUS }
+# 		1205 = { add_core_of = RUS }
+# 		1207 = { add_core_of = RUS }
+# 		1224 = { add_core_of = RUS }
+# 		1229 = { add_core_of = RUS }
+# 		release = RUS
+# 		RUS = { 
+# 			every_core_state = {
+# 				limit = {
+# 					AND = {
+# 						NOT = { 
+# 							is_core_of = GER
+# 						}
+# 						OR = {
+# 							is_owned_by = GER
+# 							OWNER = { is_subject_of = GER} 
+# 						}
+# 					}
+# 				}
+# 				transfer_state_to = RUS
+# 			}
+# 		}
+# 		RUS = { 
+# 			set_cosmetic_tag = GER_RUS_OCC
+# 			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Louis I Ferdinand"
-				picture = "gfx/leaders/RUS/Portrait_RUS_Louis_Ferdinand.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
+# 			create_country_leader = {
+# 				name = "Louis I Ferdinand"
+# 				picture = "gfx/leaders/RUS/Portrait_RUS_Louis_Ferdinand.png"
+# 				expire = "1.1.1"
+# 				ideology = prussian_constitutionalism_subtype
+# 				traits = {
+# 				}
+# 			}
 
-			set_popularities = {
-				syndicalist = 5.0
-				social_democrat = 5.0
-				social_liberal = 0.0
-				market_liberal = 0.0
-				social_conservative = 20.0
-				authoritarian_democrat = 50.0
-				paternal_autocrat = 10.0
-				national_populist = 10.0
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
+# 			set_popularities = {
+# 				syndicalist = 5.0
+# 				social_democrat = 5.0
+# 				social_liberal = 0.0
+# 				market_liberal = 0.0
+# 				social_conservative = 20.0
+# 				authoritarian_democrat = 50.0
+# 				paternal_autocrat = 10.0
+# 				national_populist = 10.0
+# 			}
+# 			set_party_name = {
+# 				ideology = paternal_autocrat
+# 				name = "Haus Hohenzollern"
+# 				long_name = "Haus Hohenzollern"
+# 			}
+# 			set_party_name = {
+# 				ideology = authoritarian_democrat
+# 				name = "Haus Hohenzollern"
+# 				long_name = "Haus Hohenzollern"
+# 			}
 
-			GER = {
-				set_autonomy = {
-					target = RUS
-					autonomous_state = kx_colored_puppet
-				}
-			}
+# 			GER = {
+# 				set_autonomy = {
+# 					target = RUS
+# 					autonomous_state = kx_colored_puppet
+# 				}
+# 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-		}
-	}
-}
+# 			set_politics = {
+# 				ruling_party = authoritarian_democrat
+# 				elections_allowed = no
+# 			}
+# 		}
+# 	}
+# }
 
 GER_establish_rk_CRM = {
 	icon = generic_prepare_civil_war
