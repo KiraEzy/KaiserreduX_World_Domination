@@ -9066,23 +9066,14 @@ GER_restructure_rk_MAF = {
 		is_ai = no
         MAF = {
         	exists = yes
-        	has_subject = COG
-        	has_subject = KEN
-        	has_subject = ZAM
-       		has_subject = CIV
-        	has_subject = NGR
-        	has_subject = MAG
         	has_war = no
-        }
-        KIK = {
-        	exists = no
         }
 	}
 
 	fire_only_once = yes
 
 	complete_effect = {
-		custom_effect_tooltip = "We will restructure Mittelafrika into the Mittelafrikanisches Kaiserreich, Deutsches Westafrika, Deutsches Ostafrika and Deutsches Madagascar. We will also recall some of our officers, take command of the african armies and officialy occupy the protectorates"
+		custom_effect_tooltip = "We will take closer command of mittelafrika and occupy the protectorates. We will also recall some of our officers and take command of the african armies"
 		set_country_flag = GERWD_restructured_MAF
 		MAF = {
         	every_unit_leader = {
@@ -9134,30 +9125,78 @@ GER_restructure_rk_MAF = {
     		target = MAF
     		transfer_troops = yes
     	}
-	    annex_country = {
-    		target = COG
-    		transfer_troops = yes
-    	}
-    	annex_country = {
-    		target = KEN
-    		transfer_troops = yes
-	    }
-	    annex_country = {
-	    	target = ZAM
-		    transfer_troops = yes
-	    }
-	    annex_country = {
-		    target = CIV
-		    transfer_troops = yes
-	    }
-	    annex_country = {
-		    target = MAG
-		    transfer_troops = yes
-	    }
-	    annex_country = {
-		    target = NGR
- 		    transfer_troops = yes
-    	}
+	    GER = {
+			limit = {
+				COG = {
+					exists = yes
+					is_subject_of = MAF
+				}
+			}
+			annex_country = {
+		    	target = COG
+		   		transfer_troops = yes
+	    	}
+        }
+    	GER = {
+			limit = {
+				KEN = {
+					exists = yes
+					is_subject_of = MAF
+				}
+			}
+			annex_country = {
+		    	target = KEN
+		   		transfer_troops = yes
+	    	}
+        }
+	    GER = {
+			limit = {
+				ZAM = {
+					exists = yes
+					is_subject_of = MAF
+				}
+			}
+			annex_country = {
+		    	target = ZAM
+		   		transfer_troops = yes
+	    	}
+        }
+		GER = {
+			limit = {
+				CIV = {
+					exists = yes
+					is_subject_of = MAF
+				}
+			}
+			annex_country = {
+		    	target = CIV
+		   		transfer_troops = yes
+	    	}
+        }
+	    GER = {
+			limit = {
+				NGR = {
+					exists = yes
+					is_subject_of = MAF
+				}
+			}
+			annex_country = {
+		    	target = NGR
+		   		transfer_troops = yes
+	    	}
+        }
+		GER = {
+			limit = {
+				MAG = {
+					exists = yes
+					is_subject_of = MAF
+				}
+			}
+			annex_country = {
+		    	target = MAG
+		   		transfer_troops = yes
+	    	}
+        }
 		MAF = {
 			every_core_state = {
 				remove_core_of = MAF
@@ -9169,14 +9208,14 @@ GER_restructure_rk_MAF = {
 				remove_claim_by = MAF
 			}
 		}
-		1185 = { add_core_of = MAF }
+		538 = { add_core_of = MAF }
 		539 = { add_core_of = MAF }
 		541 = { add_core_of = MAF }
 		546 = { add_core_of = MAF }
 		660 = { add_core_of = MAF }
 		703 = { add_core_of = MAF }
 		704 = { add_core_of = MAF }
-		1335 = { add_core_of = MAF }
+		709 = { add_core_of = MAF }
 		869 = { add_core_of = MAF }
 		870 = { add_core_of = MAF }
 		899 = { add_core_of = MAF }
@@ -9189,41 +9228,34 @@ GER_restructure_rk_MAF = {
 		953 = { add_core_of = MAF }
 		962 = { add_core_of = MAF }
 		964 = { add_core_of = MAF }
-		965 = { add_core_of = MAF }
+		1335 = { add_core_of = MAF }
 		971 = { add_core_of = MAF }
 		974 = { add_core_of = MAF }
 		975 = { add_core_of = MAF }
 		1032 = { add_core_of = MAF }
 		1184 = { add_core_of = MAF }
-		295 = { add_core_of = MAF }
-		297 = { add_core_of = MAF }
-		538 = { add_core_of = MAF }
 		540 = { add_core_of = MAF }
 		544 = { add_core_of = MAF }
-		545 = { add_core_of = MAF }
-		547 = { add_core_of = MAF }
-		548 = { add_core_of = MAF }
+		914 = { add_core_of = MAF }
+		916 = { add_core_of = MAF }
+		917 = { add_core_of = MAF }
+		950 = { add_core_of = MAF }
+		954 = { add_core_of = MAF }
+		959 = { add_core_of = MAF }
+		297 = { add_core_of = MAF }
 		705 = { add_core_of = MAF }
+		295 = { add_core_of = MAF }
+		1185 = { add_core_of = MAF }
 		718 = { add_core_of = MAF }
 		813 = { add_core_of = MAF }
 		871 = { add_core_of = MAF }
 		879 = { add_core_of = MAF }
 		881 = { add_core_of = MAF }
-		892 = { add_core_of = MAF }
-		914 = { add_core_of = MAF }
-		916 = { add_core_of = MAF }
-		917 = { add_core_of = MAF }
-		925 = { add_core_of = MAF }
 		949 = { add_core_of = MAF }
-		950 = { add_core_of = MAF }
-		954 = { add_core_of = MAF }
 		955 = { add_core_of = MAF }
 		956 = { add_core_of = MAF }
 		957 = { add_core_of = MAF }
 		958 = { add_core_of = MAF }
-		959 = { add_core_of = MAF }
-		969 = { add_core_of = MAF }
-		970 = { add_core_of = MAF }
 		976 = { add_core_of = MAF }
 		977 = { add_core_of = MAF }
 		1025 = { add_core_of = MAF }
@@ -9232,6 +9264,9 @@ GER_restructure_rk_MAF = {
 		1181 = { add_core_of = MAF }
 		1182 = { add_core_of = MAF }
 		1183 = { add_core_of = MAF }
+		268 = { add_core_of = MAF }
+		1297 = { add_core_of = MAF }
+		965 = { add_core_of = MAF }
 		release = MAF
 		MAF = { 
 			every_core_state = {
@@ -9254,10 +9289,10 @@ GER_restructure_rk_MAF = {
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Wilhelm_III.png"
+				name = "Hans Albert von Lettow-Vorbeck"
+				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Hans_Albert_Vorbeck.png"
 				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
+				ideology = colonial_govt_subtype
 				traits = {
 				}
 			}
@@ -9276,60 +9311,38 @@ GER_restructure_rk_MAF = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
-		CIV = {
+		KEN = {
 			every_core_state = {
-				remove_core_of = CIV
+				remove_core_of = KEN
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = CIV
+					is_claimed_by = KEN
 				}
-				remove_claim_by = CIV
+				remove_claim_by = KEN
 			}
 		}
-		274 = { add_core_of = CIV }
-		807 = { add_core_of = CIV }
-		876 = { add_core_of = CIV }
-		877 = { add_core_of = CIV }
-		963 = { add_core_of = CIV }
-		1321 = { add_core_of = CIV }
-		1322 = { add_core_of = CIV }
-		1323 = { add_core_of = CIV }
-		272 = { add_core_of = CIV }
-		298 = { add_core_of = CIV }
-		515 = { add_core_of = CIV }
-		556 = { add_core_of = CIV }
-		557 = { add_core_of = CIV }
-		700 = { add_core_of = CIV }
-		806 = { add_core_of = CIV }
-		808 = { add_core_of = CIV }
-		809 = { add_core_of = CIV }
-		860 = { add_core_of = CIV }
-		910 = { add_core_of = CIV }
-		911 = { add_core_of = CIV }
-		966 = { add_core_of = CIV }
-		967 = { add_core_of = CIV }
-		968 = { add_core_of = CIV }
-		1192 = { add_core_of = CIV }
-		296 = { add_core_of = CIV }
-		702 = { add_core_of = CIV }
-		834 = { add_core_of = CIV }
-		558 = { add_core_of = CIV }
-		662 = { add_core_of = CIV }
-		878 = { add_core_of = CIV }
-		913 = { add_core_of = CIV }
-		973 = { add_core_of = CIV }
-		release = CIV
-		CIV = { 
+		892 = { add_core_of = KEN }
+		548 = { add_core_of = KEN }
+		925 = { add_core_of = KEN }
+		969 = { add_core_of = KEN }
+		970 = { add_core_of = KEN }
+		547 = { add_core_of = KEN }
+		release = KEN
+		KEN = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -9342,17 +9355,16 @@ GER_restructure_rk_MAF = {
 						}
 					}
 				}
-				transfer_state_to = CIV
+				transfer_state_to = KEN
 			}
 		}
-
-		CIV = { 
-			set_cosmetic_tag = GER_CIV_OCC
+		KEN = { 
+			set_cosmetic_tag = GER_KEN_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Walther von Brauchitsch"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Walther_von_Brauchitsch.png"
+				name = "Robert Leakey"
+				picture = "gfx/leaders/WDGER/Portrait_Kenya_Bob_Leaky.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -9361,7 +9373,7 @@ GER_restructure_rk_MAF = {
 
 			GER = {
 				set_autonomy = {
-					target = CIV
+					target = KEN
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -9373,102 +9385,19 @@ GER_restructure_rk_MAF = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
-
-		DJI = {
-			every_core_state = {
-				remove_core_of = DJI
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = DJI
-				}
-				remove_claim_by = DJI
-			}
-		}
-		268 = { add_core_of = DJI }
-		1297 = { add_core_of = DJI }
-		269 = { add_core_of = DJI }
-		271 = { add_core_of = DJI }
-		549 = { add_core_of = DJI }
-		550 = { add_core_of = DJI }
-		551 = { add_core_of = DJI }
-		559 = { add_core_of = DJI }
-		862 = { add_core_of = DJI }
-		906 = { add_core_of = DJI }
-		919 = { add_core_of = DJI }
-		920 = { add_core_of = DJI }
-		921 = { add_core_of = DJI }
-		922 = { add_core_of = DJI }
-		923 = { add_core_of = DJI }
-		924 = { add_core_of = DJI }
-		944 = { add_core_of = DJI }
-		961 = { add_core_of = DJI }
-		1007 = { add_core_of = DJI }
-		1010 = { add_core_of = DJI }
-		1011 = { add_core_of = DJI }
-		release = DJI
-		DJI = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = DJI
-			}
-		}
-		DJI = { 
-			set_cosmetic_tag = GER_DJI_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Ernst Junger"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Ernst_Junger.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = DJI
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				authoritarian_democrat = 50
-				paternal_autocrat = 50
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-
 		MAG = {
 			every_core_state = {
 				remove_core_of = MAG
@@ -9480,14 +9409,13 @@ GER_restructure_rk_MAF = {
 				remove_claim_by = MAG
 			}
 		}
-		543 = { add_core_of = MAG }
+		1179 = { add_core_of = MAG }
 		706 = { add_core_of = MAG }
 		707 = { add_core_of = MAG }
 		708 = { add_core_of = MAG }
 		1177 = { add_core_of = MAG }
 		1178 = { add_core_of = MAG }
-		1179 = { add_core_of = MAG }
-		709 = { add_core_of = MAG }
+		543 = { add_core_of = MAG }
 		release = MAG
 		MAG = { 
 			every_core_state = {
@@ -9511,7 +9439,7 @@ GER_restructure_rk_MAF = {
 
 			create_country_leader = {
 				name = "Emil Maurice"
-				picture = "gfx/leaders/MAG/MAG_Emil_Maurice.png"
+				picture = "gfx/leaders/WDGER/MAG_Emil_Maurice.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -9532,19 +9460,172 @@ GER_restructure_rk_MAF = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
+			}
+		}
+		NGR = {
+			every_core_state = {
+				remove_core_of = NGR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NGR
+				}
+				remove_claim_by = NGR
+			}
+		}
+		558 = { add_core_of = NGR }
+		662 = { add_core_of = NGR }
+		878 = { add_core_of = NGR }
+		913 = { add_core_of = NGR }
+		973 = { add_core_of = NGR }
+		release = NGR
+		NGR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GER
+						}
+						OR = {
+							is_owned_by = GER
+							OWNER = { is_subject_of = GER} 
+						}
+					}
+				}
+				transfer_state_to = NGR
+			}
+		}
+		NGR = { 
+			set_cosmetic_tag = GER_NGR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Bernard H. Bourdilion"
+				picture = "gfx/leaders/WDGER/NGR_Bernard_Henry_Bourdillon.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			GER = {
+				set_autonomy = {
+					target = NGR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
+			}
+		}
+		CIV = {
+			every_core_state = {
+				remove_core_of = CIV
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = CIV
+				}
+				remove_claim_by = CIV
+			}
+		}
+		274 = { add_core_of = CIV }
+		807 = { add_core_of = CIV }
+		876 = { add_core_of = CIV }
+		1323 = { add_core_of = CIV }
+		963 = { add_core_of = CIV }
+		1321 = { add_core_of = CIV }
+		1322 = { add_core_of = CIV }
+		877 = { add_core_of = CIV }
+		release = CIV
+		CIV = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GER
+						}
+						OR = {
+							is_owned_by = GER
+							OWNER = { is_subject_of = GER} 
+						}
+					}
+				}
+				transfer_state_to = CIV
+			}
+		}
+		CIV = { 
+			set_cosmetic_tag = GER_CIV_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Ernst Junger"
+				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Ernst_Junger.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			GER = {
+				set_autonomy = {
+					target = CIV
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
 }
 
-GER_establish_collapse_rk_MAF = {
+GER_collapse_rk_MAF = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9588,14 +9669,14 @@ GER_establish_collapse_rk_MAF = {
 				remove_claim_by = MAF
 			}
 		}
-		1185 = { add_core_of = MAF }
+		538 = { add_core_of = MAF }
 		539 = { add_core_of = MAF }
 		541 = { add_core_of = MAF }
 		546 = { add_core_of = MAF }
 		660 = { add_core_of = MAF }
 		703 = { add_core_of = MAF }
 		704 = { add_core_of = MAF }
-		1335 = { add_core_of = MAF }
+		709 = { add_core_of = MAF }
 		869 = { add_core_of = MAF }
 		870 = { add_core_of = MAF }
 		899 = { add_core_of = MAF }
@@ -9608,41 +9689,34 @@ GER_establish_collapse_rk_MAF = {
 		953 = { add_core_of = MAF }
 		962 = { add_core_of = MAF }
 		964 = { add_core_of = MAF }
-		965 = { add_core_of = MAF }
+		1335 = { add_core_of = MAF }
 		971 = { add_core_of = MAF }
 		974 = { add_core_of = MAF }
 		975 = { add_core_of = MAF }
 		1032 = { add_core_of = MAF }
 		1184 = { add_core_of = MAF }
-		295 = { add_core_of = MAF }
-		297 = { add_core_of = MAF }
-		538 = { add_core_of = MAF }
 		540 = { add_core_of = MAF }
 		544 = { add_core_of = MAF }
-		545 = { add_core_of = MAF }
-		547 = { add_core_of = MAF }
-		548 = { add_core_of = MAF }
+		914 = { add_core_of = MAF }
+		916 = { add_core_of = MAF }
+		917 = { add_core_of = MAF }
+		950 = { add_core_of = MAF }
+		954 = { add_core_of = MAF }
+		959 = { add_core_of = MAF }
+		297 = { add_core_of = MAF }
 		705 = { add_core_of = MAF }
+		295 = { add_core_of = MAF }
+		1185 = { add_core_of = MAF }
 		718 = { add_core_of = MAF }
 		813 = { add_core_of = MAF }
 		871 = { add_core_of = MAF }
 		879 = { add_core_of = MAF }
 		881 = { add_core_of = MAF }
-		892 = { add_core_of = MAF }
-		914 = { add_core_of = MAF }
-		916 = { add_core_of = MAF }
-		917 = { add_core_of = MAF }
-		925 = { add_core_of = MAF }
 		949 = { add_core_of = MAF }
-		950 = { add_core_of = MAF }
-		954 = { add_core_of = MAF }
 		955 = { add_core_of = MAF }
 		956 = { add_core_of = MAF }
 		957 = { add_core_of = MAF }
 		958 = { add_core_of = MAF }
-		959 = { add_core_of = MAF }
-		969 = { add_core_of = MAF }
-		970 = { add_core_of = MAF }
 		976 = { add_core_of = MAF }
 		977 = { add_core_of = MAF }
 		1025 = { add_core_of = MAF }
@@ -9651,6 +9725,9 @@ GER_establish_collapse_rk_MAF = {
 		1181 = { add_core_of = MAF }
 		1182 = { add_core_of = MAF }
 		1183 = { add_core_of = MAF }
+		268 = { add_core_of = MAF }
+		1297 = { add_core_of = MAF }
+		965 = { add_core_of = MAF }
 		release = MAF
 		MAF = { 
 			every_core_state = {
@@ -9673,10 +9750,10 @@ GER_establish_collapse_rk_MAF = {
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Wilhelm_III.png"
+				name = "Hans Albert von Lettow-Vorbeck"
+				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Hans_Albert_Vorbeck.png"
 				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
+				ideology = colonial_govt_subtype
 				traits = {
 				}
 			}
@@ -9695,19 +9772,353 @@ GER_establish_collapse_rk_MAF = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
 }
 
-GER_establish_collapse_rk_CIV = {
+GER_collapse_rk_KEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 547
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		not = {
+			GER = { has_country_flag = GERWD_restructured_MAF }
+		}
+		if = {
+			limit = {
+				KEN = { exists = yes }
+			}
+			KEN = { is_subject_of = GER }
+		}
+		547 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		OR = {
+				547 = { NOT = { is_core_of = GER } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KEN = {
+			every_core_state = {
+				remove_core_of = KEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KEN
+				}
+				remove_claim_by = KEN
+			}
+		}
+		892 = { add_core_of = KEN }
+		548 = { add_core_of = KEN }
+		925 = { add_core_of = KEN }
+		969 = { add_core_of = KEN }
+		970 = { add_core_of = KEN }
+		547 = { add_core_of = KEN }
+		release = KEN
+		KEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GER
+						}
+						OR = {
+							is_owned_by = GER
+							OWNER = { is_subject_of = GER} 
+						}
+					}
+				}
+				transfer_state_to = KEN
+			}
+		}
+		KEN = { 
+			set_cosmetic_tag = GER_KEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Robert Leakey"
+				picture = "gfx/leaders/WDGER/Portrait_Kenya_Bob_Leaky.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			GER = {
+				set_autonomy = {
+					target = KEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
+			}
+		}
+	}
+}
+
+GER_collapse_rk_MAG = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 543
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		not = {
+			GER = { has_country_flag = GERWD_restructured_MAF }
+		}
+		if = {
+			limit = {
+				MAG = { exists = yes }
+			}
+			MAG = { is_subject_of = GER }
+		}
+		543 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		OR = {
+				543 = { NOT = { is_core_of = GER } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		MAG = {
+			every_core_state = {
+				remove_core_of = MAG
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = MAG
+				}
+				remove_claim_by = MAG
+			}
+		}
+		1179 = { add_core_of = MAG }
+		706 = { add_core_of = MAG }
+		707 = { add_core_of = MAG }
+		708 = { add_core_of = MAG }
+		1177 = { add_core_of = MAG }
+		1178 = { add_core_of = MAG }
+		543 = { add_core_of = MAG }
+		release = MAG
+		MAG = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GER
+						}
+						OR = {
+							is_owned_by = GER
+							OWNER = { is_subject_of = GER} 
+						}
+					}
+				}
+				transfer_state_to = MAG
+			}
+		}
+		MAG = { 
+			set_cosmetic_tag = GER_MAG_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Emil Maurice"
+				picture = "gfx/leaders/WDGER/MAG_Emil_Maurice.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			GER = {
+				set_autonomy = {
+					target = MAG
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
+			}
+		}
+	}
+}
+
+GER_collapse_rk_NGR = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 973
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		not = {
+			GER = { has_country_flag = GERWD_restructured_MAF }
+		}
+		if = {
+			limit = {
+				NGR = { exists = yes }
+			}
+			NGR = { is_subject_of = GER }
+		}
+		973 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		OR = {
+				973 = { NOT = { is_core_of = GER } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		NGR = {
+			every_core_state = {
+				remove_core_of = NGR
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = NGR
+				}
+				remove_claim_by = NGR
+			}
+		}
+		558 = { add_core_of = NGR }
+		662 = { add_core_of = NGR }
+		878 = { add_core_of = NGR }
+		913 = { add_core_of = NGR }
+		973 = { add_core_of = NGR }
+		release = NGR
+		NGR = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GER
+						}
+						OR = {
+							is_owned_by = GER
+							OWNER = { is_subject_of = GER} 
+						}
+					}
+				}
+				transfer_state_to = NGR
+			}
+		}
+		NGR = { 
+			set_cosmetic_tag = GER_NGR_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Bernard H. Bourdilion"
+				picture = "gfx/leaders/WDGER/NGR_Bernard_Henry_Bourdillon.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			GER = {
+				set_autonomy = {
+					target = NGR
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
+			}
+		}
+	}
+}
+
+GER_collapse_rk_CIV = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -9754,35 +10165,11 @@ GER_establish_collapse_rk_CIV = {
 		274 = { add_core_of = CIV }
 		807 = { add_core_of = CIV }
 		876 = { add_core_of = CIV }
-		877 = { add_core_of = CIV }
+		1323 = { add_core_of = CIV }
 		963 = { add_core_of = CIV }
 		1321 = { add_core_of = CIV }
 		1322 = { add_core_of = CIV }
-		1323 = { add_core_of = CIV }
-		272 = { add_core_of = CIV }
-		298 = { add_core_of = CIV }
-		515 = { add_core_of = CIV }
-		556 = { add_core_of = CIV }
-		557 = { add_core_of = CIV }
-		700 = { add_core_of = CIV }
-		806 = { add_core_of = CIV }
-		808 = { add_core_of = CIV }
-		809 = { add_core_of = CIV }
-		860 = { add_core_of = CIV }
-		910 = { add_core_of = CIV }
-		911 = { add_core_of = CIV }
-		966 = { add_core_of = CIV }
-		967 = { add_core_of = CIV }
-		968 = { add_core_of = CIV }
-		1192 = { add_core_of = CIV }
-		296 = { add_core_of = CIV }
-		702 = { add_core_of = CIV }
-		834 = { add_core_of = CIV }
-		558 = { add_core_of = CIV }
-		662 = { add_core_of = CIV }
-		878 = { add_core_of = CIV }
-		913 = { add_core_of = CIV }
-		973 = { add_core_of = CIV }
+		877 = { add_core_of = CIV }
 		release = CIV
 		CIV = { 
 			every_core_state = {
@@ -9805,8 +10192,8 @@ GER_establish_collapse_rk_CIV = {
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Walther von Brauchitsch"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Walther_von_Brauchitsch.png"
+				name = "Ernst Junger"
+				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Ernst_Junger.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -9827,24 +10214,26 @@ GER_establish_collapse_rk_CIV = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
-}
-
-GER_establish_collapse_rk_DJI = {
+}GER_collapse_rk_MAF = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 268
+				state = 965
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -9856,13 +10245,13 @@ GER_establish_collapse_rk_DJI = {
 		}
 		if = {
 			limit = {
-				DJI = { exists = yes }
+				MAF = { exists = yes }
 			}
-			DJI = { is_subject_of = GER }
+			MAF = { is_subject_of = GER }
 		}
-		268 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		965 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		OR = {
-				268 = { NOT = { is_core_of = GER } }
+				965 = { NOT = { is_core_of = GER } }
 		}
 	}
 
@@ -9872,40 +10261,78 @@ GER_establish_collapse_rk_DJI = {
 		factor = 5
 	}
 	complete_effect = {
-		DJI = {
+		MAF = {
 			every_core_state = {
-				remove_core_of = DJI
+				remove_core_of = MAF
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = DJI
+					is_claimed_by = MAF
 				}
-				remove_claim_by = DJI
+				remove_claim_by = MAF
 			}
 		}
-		268 = { add_core_of = DJI }
-		1297 = { add_core_of = DJI }
-		269 = { add_core_of = DJI }
-		271 = { add_core_of = DJI }
-		549 = { add_core_of = DJI }
-		550 = { add_core_of = DJI }
-		551 = { add_core_of = DJI }
-		559 = { add_core_of = DJI }
-		862 = { add_core_of = DJI }
-		906 = { add_core_of = DJI }
-		919 = { add_core_of = DJI }
-		920 = { add_core_of = DJI }
-		921 = { add_core_of = DJI }
-		922 = { add_core_of = DJI }
-		923 = { add_core_of = DJI }
-		924 = { add_core_of = DJI }
-		944 = { add_core_of = DJI }
-		961 = { add_core_of = DJI }
-		1007 = { add_core_of = DJI }
-		1010 = { add_core_of = DJI }
-		1011 = { add_core_of = DJI }
-		release = DJI
-		DJI = { 
+		538 = { add_core_of = MAF }
+		539 = { add_core_of = MAF }
+		541 = { add_core_of = MAF }
+		546 = { add_core_of = MAF }
+		660 = { add_core_of = MAF }
+		703 = { add_core_of = MAF }
+		704 = { add_core_of = MAF }
+		709 = { add_core_of = MAF }
+		869 = { add_core_of = MAF }
+		870 = { add_core_of = MAF }
+		899 = { add_core_of = MAF }
+		905 = { add_core_of = MAF }
+		918 = { add_core_of = MAF }
+		927 = { add_core_of = MAF }
+		928 = { add_core_of = MAF }
+		948 = { add_core_of = MAF }
+		952 = { add_core_of = MAF }
+		953 = { add_core_of = MAF }
+		962 = { add_core_of = MAF }
+		964 = { add_core_of = MAF }
+		1335 = { add_core_of = MAF }
+		971 = { add_core_of = MAF }
+		974 = { add_core_of = MAF }
+		975 = { add_core_of = MAF }
+		1032 = { add_core_of = MAF }
+		1184 = { add_core_of = MAF }
+		540 = { add_core_of = MAF }
+		544 = { add_core_of = MAF }
+		914 = { add_core_of = MAF }
+		916 = { add_core_of = MAF }
+		917 = { add_core_of = MAF }
+		950 = { add_core_of = MAF }
+		954 = { add_core_of = MAF }
+		959 = { add_core_of = MAF }
+		297 = { add_core_of = MAF }
+		705 = { add_core_of = MAF }
+		295 = { add_core_of = MAF }
+		1185 = { add_core_of = MAF }
+		718 = { add_core_of = MAF }
+		813 = { add_core_of = MAF }
+		871 = { add_core_of = MAF }
+		879 = { add_core_of = MAF }
+		881 = { add_core_of = MAF }
+		949 = { add_core_of = MAF }
+		955 = { add_core_of = MAF }
+		956 = { add_core_of = MAF }
+		957 = { add_core_of = MAF }
+		958 = { add_core_of = MAF }
+		976 = { add_core_of = MAF }
+		977 = { add_core_of = MAF }
+		1025 = { add_core_of = MAF }
+		1026 = { add_core_of = MAF }
+		1180 = { add_core_of = MAF }
+		1181 = { add_core_of = MAF }
+		1182 = { add_core_of = MAF }
+		1183 = { add_core_of = MAF }
+		268 = { add_core_of = MAF }
+		1297 = { add_core_of = MAF }
+		965 = { add_core_of = MAF }
+		release = MAF
+		MAF = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -9918,16 +10345,16 @@ GER_establish_collapse_rk_DJI = {
 						}
 					}
 				}
-				transfer_state_to = DJI
+				transfer_state_to = MAF
 			}
 		}
-		DJI = { 
-			set_cosmetic_tag = GER_DJI_OCC
+		MAF = { 
+			set_cosmetic_tag = GER_MAF_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Ernst Junger"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Ernst_Junger.png"
+				name = "Hans Albert von Lettow-Vorbeck"
+				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Hans_Albert_Vorbeck.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -9936,7 +10363,7 @@ GER_establish_collapse_rk_DJI = {
 
 			GER = {
 				set_autonomy = {
-					target = DJI
+					target = MAF
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -9948,19 +10375,133 @@ GER_establish_collapse_rk_DJI = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
 }
 
-GER_establish_collapse_rk_MAG = {
+GER_collapse_rk_KEN = {
+	icon = generic_prepare_civil_war
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 547
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+
+	available = {
+		not = {
+			GER = { has_country_flag = GERWD_restructured_MAF }
+		}
+		if = {
+			limit = {
+				KEN = { exists = yes }
+			}
+			KEN = { is_subject_of = GER }
+		}
+		547 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		OR = {
+				547 = { NOT = { is_core_of = GER } }
+		}
+	}
+
+	fire_only_once = yes
+
+	ai_will_do = {
+		factor = 5
+	}
+	complete_effect = {
+		KEN = {
+			every_core_state = {
+				remove_core_of = KEN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = KEN
+				}
+				remove_claim_by = KEN
+			}
+		}
+		892 = { add_core_of = KEN }
+		548 = { add_core_of = KEN }
+		925 = { add_core_of = KEN }
+		969 = { add_core_of = KEN }
+		970 = { add_core_of = KEN }
+		547 = { add_core_of = KEN }
+		release = KEN
+		KEN = { 
+			every_core_state = {
+				limit = {
+					AND = {
+						NOT = { 
+							is_core_of = GER
+						}
+						OR = {
+							is_owned_by = GER
+							OWNER = { is_subject_of = GER} 
+						}
+					}
+				}
+				transfer_state_to = KEN
+			}
+		}
+		KEN = { 
+			set_cosmetic_tag = GER_KEN_OCC
+			load_focus_tree = generic_focus            
+
+			create_country_leader = {
+				name = "Robert Leakey"
+				picture = "gfx/leaders/WDGER/Portrait_Kenya_Bob_Leaky.png"
+				expire = "1.1.1"
+				ideology = colonial_govt_subtype
+				traits = {
+				}
+			}
+
+			GER = {
+				set_autonomy = {
+					target = KEN
+					autonomous_state = kx_colored_puppet
+				}
+			}
+
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = no
+			}
+
+
+			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
+				authoritarian_democrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
+			}
+		}
+	}
+}
+
+GER_collapse_rk_MAG = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -10004,14 +10545,13 @@ GER_establish_collapse_rk_MAG = {
 				remove_claim_by = MAG
 			}
 		}
-		543 = { add_core_of = MAG }
+		1179 = { add_core_of = MAG }
 		706 = { add_core_of = MAG }
 		707 = { add_core_of = MAG }
 		708 = { add_core_of = MAG }
 		1177 = { add_core_of = MAG }
 		1178 = { add_core_of = MAG }
-		1179 = { add_core_of = MAG }
-		709 = { add_core_of = MAG }
+		543 = { add_core_of = MAG }
 		release = MAG
 		MAG = { 
 			every_core_state = {
@@ -10035,7 +10575,7 @@ GER_establish_collapse_rk_MAG = {
 
 			create_country_leader = {
 				name = "Emil Maurice"
-				picture = "gfx/leaders/MAG/MAG_Emil_Maurice.png"
+				picture = "gfx/leaders/WDGER/MAG_Emil_Maurice.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -10056,39 +10596,46 @@ GER_establish_collapse_rk_MAG = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
 }
 
-GER_establish_rk_SAF = {
+GER_collapse_rk_NGR = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 275
+				state = 973
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
 
 	available = {
+		not = {
+			GER = { has_country_flag = GERWD_restructured_MAF }
+		}
 		if = {
 			limit = {
-				SAF = { exists = yes }
+				NGR = { exists = yes }
 			}
-			SAF = { is_subject_of = GER }
+			NGR = { is_subject_of = GER }
 		}
-		275 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		973 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		OR = {
-				275 = { NOT = { is_core_of = GER } }
+				973 = { NOT = { is_core_of = GER } }
 		}
 	}
 
@@ -10098,29 +10645,24 @@ GER_establish_rk_SAF = {
 		factor = 5
 	}
 	complete_effect = {
-		SAF = {
+		NGR = {
 			every_core_state = {
-				remove_core_of = SAF
+				remove_core_of = NGR
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = SAF
+					is_claimed_by = NGR
 				}
-				remove_claim_by = SAF
+				remove_claim_by = NGR
 			}
 		}
-		85 = { add_core_of = SAF }
-		1176 = { add_core_of = SAF }
-		542 = { add_core_of = SAF }
-		681 = { add_core_of = SAF }
-		719 = { add_core_of = SAF }
-		738 = { add_core_of = SAF }
-		945 = { add_core_of = SAF }
-		946 = { add_core_of = SAF }
-		947 = { add_core_of = SAF }
-		275 = { add_core_of = SAF }
-		release = SAF
-		SAF = { 
+		558 = { add_core_of = NGR }
+		662 = { add_core_of = NGR }
+		878 = { add_core_of = NGR }
+		913 = { add_core_of = NGR }
+		973 = { add_core_of = NGR }
+		release = NGR
+		NGR = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -10133,16 +10675,16 @@ GER_establish_rk_SAF = {
 						}
 					}
 				}
-				transfer_state_to = SAF
+				transfer_state_to = NGR
 			}
 		}
-		SAF = { 
-			set_cosmetic_tag = GER_SAF_OCC
+		NGR = { 
+			set_cosmetic_tag = GER_NGR_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Hans Albert Vorbeck"
-				picture = "gfx/leaders/MAF/MAF_Hans_Albert_Vorbeck_General.png"
+				name = "Bernard H. Bourdilion"
+				picture = "gfx/leaders/WDGER/NGR_Bernard_Henry_Bourdillon.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -10151,7 +10693,7 @@ GER_establish_rk_SAF = {
 
 			GER = {
 				set_autonomy = {
-					target = SAF
+					target = NGR
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -10163,39 +10705,46 @@ GER_establish_rk_SAF = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
 }
 
-GER_establish_rk_MOR = {
+GER_collapse_rk_CIV = {
 	icon = generic_prepare_civil_war
 
 		highlight_states = {
 			highlight_state_targets = {
-				state = 461
+				state = 877
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
 
 	available = {
+		not = {
+			GER = { has_country_flag = GERWD_restructured_MAF }
+		}
 		if = {
 			limit = {
-				MOR = { exists = yes }
+				CIV = { exists = yes }
 			}
-			MOR = { is_subject_of = GER }
+			CIV = { is_subject_of = GER }
 		}
-		461 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
+		877 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
 		OR = {
-				461 = { NOT = { is_core_of = GER } }
+				877 = { NOT = { is_core_of = GER } }
 		}
 	}
 
@@ -10205,24 +10754,27 @@ GER_establish_rk_MOR = {
 		factor = 5
 	}
 	complete_effect = {
-		MOR = {
+		CIV = {
 			every_core_state = {
-				remove_core_of = MOR
+				remove_core_of = CIV
 			}
 			every_state = {
 				limit = {
-					is_claimed_by = MOR
+					is_claimed_by = CIV
 				}
-				remove_claim_by = MOR
+				remove_claim_by = CIV
 			}
 		}
-		462 = { add_core_of = MOR }
-		290 = { add_core_of = MOR }
-		699 = { add_core_of = MOR }
-		1318 = { add_core_of = MOR }
-		461 = { add_core_of = MOR }
-		release = MOR
-		MOR = { 
+		274 = { add_core_of = CIV }
+		807 = { add_core_of = CIV }
+		876 = { add_core_of = CIV }
+		1323 = { add_core_of = CIV }
+		963 = { add_core_of = CIV }
+		1321 = { add_core_of = CIV }
+		1322 = { add_core_of = CIV }
+		877 = { add_core_of = CIV }
+		release = CIV
+		CIV = { 
 			every_core_state = {
 				limit = {
 					AND = {
@@ -10235,16 +10787,16 @@ GER_establish_rk_MOR = {
 						}
 					}
 				}
-				transfer_state_to = MOR
+				transfer_state_to = CIV
 			}
 		}
-		MOR = { 
-			set_cosmetic_tag = GER_MOR_OCC
+		CIV = { 
+			set_cosmetic_tag = GER_CIV_OCC
 			load_focus_tree = generic_focus            
 
 			create_country_leader = {
-				name = "Arnold Lequis"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Arnold_Lequis.png"
+				name = "Ernst Junger"
+				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Ernst_Junger.png"
 				expire = "1.1.1"
 				ideology = colonial_govt_subtype
 				traits = {
@@ -10253,7 +10805,7 @@ GER_establish_rk_MOR = {
 
 			GER = {
 				set_autonomy = {
-					target = MOR
+					target = CIV
 					autonomous_state = kx_colored_puppet
 				}
 			}
@@ -10265,132 +10817,17 @@ GER_establish_rk_MOR = {
 
 
 			set_popularities = {
+				social_liberal = 10
+				market_liberal = 10
+				social_conservative = 10
 				authoritarian_democrat = 50
-				paternal_autocrat = 50
+				paternal_autocrat = 10
+				national_populist = 10
 			}
 			set_party_name = {
 				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_EGY = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 446
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				EGY = { exists = yes }
-			}
-			EGY = { is_subject_of = GER }
-		}
-		446 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				446 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		EGY = {
-			every_core_state = {
-				remove_core_of = EGY
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = EGY
-				}
-				remove_claim_by = EGY
-			}
-		}
-		451 = { add_core_of = EGY }
-		663 = { add_core_of = EGY }
-		1009 = { add_core_of = EGY }
-		273 = { add_core_of = EGY }
-		447 = { add_core_of = EGY }
-		448 = { add_core_of = EGY }
-		450 = { add_core_of = EGY }
-		452 = { add_core_of = EGY }
-		456 = { add_core_of = EGY }
-		457 = { add_core_of = EGY }
-		458 = { add_core_of = EGY }
-		459 = { add_core_of = EGY }
-		460 = { add_core_of = EGY }
-		513 = { add_core_of = EGY }
-		514 = { add_core_of = EGY }
-		552 = { add_core_of = EGY }
-		665 = { add_core_of = EGY }
-		805 = { add_core_of = EGY }
-		1008 = { add_core_of = EGY }
-		453 = { add_core_of = EGY }
-		753 = { add_core_of = EGY }
-		446 = { add_core_of = EGY }
-		release = EGY
-		EGY = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = EGY
-			}
-		}
-		EGY = { 
-			set_cosmetic_tag = GER_EGY_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Erwin Rommel"
-				picture = "gfx/leaders/MAF/Portrait_Mittelafrika_Erwin_Rommel_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = EGY
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				authoritarian_democrat = 50
-				paternal_autocrat = 50
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+				name = "Deutsche Kolonialverwaltung"
+				long_name = "Deutsche Kolonialverwaltung"
 			}
 		}
 	}
