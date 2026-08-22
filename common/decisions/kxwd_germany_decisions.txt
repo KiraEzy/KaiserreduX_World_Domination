@@ -1,6532 +1,884 @@
 GER_great_game = {
-GER_establish_rk_HOL = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 7
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				HOL = { exists = yes }
-			}
-			HOL = { is_subject_of = GER }
-		}
-		7 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				7 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		HOL = {
-			every_core_state = {
-				remove_core_of = HOL
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = HOL
-				}
-				remove_claim_by = HOL
-			}
-		}
-		866 = { add_core_of = HOL }
-		35 = { add_core_of = HOL }
-		36 = { add_core_of = HOL }
-		978 = { add_core_of = HOL }
-		979 = { add_core_of = HOL }
-		7 = { add_core_of = HOL }
-		release = HOL
-		HOL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = HOL
-			}
-		}
-		HOL = { 
-			set_cosmetic_tag = GER_HOL_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Marie Adelaide"
-				picture = "gfx/leaders/WDGER/Portrait_HOL_Marie_Adelaide.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = HOL
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Nassau-Weilburg"
-				long_name = "Nassau-Weilburg"
-			}
-		}
-	}
-}
-
-GER_establish_rk_BEL = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 6
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				BEL = { exists = yes }
-			}
-			BEL = { is_subject_of = GER }
-		}
-		6 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				6 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		BEL = {
-			every_core_state = {
-				remove_core_of = BEL
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = BEL
-				}
-				remove_claim_by = BEL
-			}
-		}
-		980 = { add_core_of = BEL }
-		29 = { add_core_of = BEL }
-		34 = { add_core_of = BEL }
-		17 = { add_core_of = BEL }
-		741 = { add_core_of = BEL }
-		6 = { add_core_of = BEL }
-		release = BEL
-		BEL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = BEL
-			}
-		}
-		BEL = { 
-			set_cosmetic_tag = GER_BEL_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Adalbert I"
-				picture = "gfx/leaders/WDGER/Portrait_Belgium_Adalbert_I.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = BEL
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_FRP = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 16
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				FRP = { exists = yes }
-			}
-			FRP = { is_subject_of = GER }
-		}
-		16 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				16 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		FRP = {
-			every_core_state = {
-				remove_core_of = FRP
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = FRP
-				}
-				remove_claim_by = FRP
-			}
-		}
-		1 = { add_core_of = FRP }
-		15 = { add_core_of = FRP }
-		984 = { add_core_of = FRP }
-		1334 = { add_core_of = FRP }
-		18 = { add_core_of = FRP }
-		19 = { add_core_of = FRP }
-		20 = { add_core_of = FRP }
-		21 = { add_core_of = FRP }
-		22 = { add_core_of = FRP }
-		23 = { add_core_of = FRP }
-		24 = { add_core_of = FRP }
-		25 = { add_core_of = FRP }
-		26 = { add_core_of = FRP }
-		27 = { add_core_of = FRP }
-		30 = { add_core_of = FRP }
-		31 = { add_core_of = FRP }
-		32 = { add_core_of = FRP }
-		33 = { add_core_of = FRP }
-		735 = { add_core_of = FRP }
-		762 = { add_core_of = FRP }
-		763 = { add_core_of = FRP }
-		785 = { add_core_of = FRP }
-		817 = { add_core_of = FRP }
-		779 = { add_core_of = FRP }
-		16 = { add_core_of = FRP }
-		release = FRP
-		FRP = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = FRP
-			}
-		}
-		FRP = { 
-			set_cosmetic_tag = GER_FRP_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Victoria Louise I"
-				picture = "gfx/leaders/WDGER/Portrait_France_Victoria_Louise_Military.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = FRP
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_SWI = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 3
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				SWI = { exists = yes }
-			}
-			SWI = { is_subject_of = GER }
-		}
-		3 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				3 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		SWI = {
-			every_core_state = {
-				remove_core_of = SWI
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = SWI
-				}
-				remove_claim_by = SWI
-			}
-		}
-		943 = { add_core_of = SWI }
-		151 = { add_core_of = SWI }
-		760 = { add_core_of = SWI }
-		761 = { add_core_of = SWI }
-		3 = { add_core_of = SWI }
-		release = SWI
-		SWI = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = SWI
-			}
-		}
-		SWI = { 
-			set_cosmetic_tag = GER_SWI_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Friedrich Paulus"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Friedrich_Paulus_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = SWI
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_BRI = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 14
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				BRI = { exists = yes }
-			}
-			BRI = { is_subject_of = GER }
-		}
-		14 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				14 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		BRI = {
-			every_core_state = {
-				remove_core_of = BRI
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = BRI
-				}
-				remove_claim_by = BRI
-			}
-		}
-		983 = { add_core_of = BRI }
-		14 = { add_core_of = BRI }
-		release = BRI
-		BRI = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = BRI
-			}
-		}
-		BRI = { 
-			set_cosmetic_tag = GER_BRI_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Ludwig Bockholt"
-				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Ludwig_Bockholt.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = BRI
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_CAR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 41
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				CAR = { exists = yes }
-			}
-			CAR = { is_subject_of = GER }
-		}
-		41 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				41 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		CAR = {
-			every_core_state = {
-				remove_core_of = CAR
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = CAR
-				}
-				remove_claim_by = CAR
-			}
-		}
-		1339 = { add_core_of = CAR }
-		118 = { add_core_of = CAR }
-		165 = { add_core_of = CAR }
-		166 = { add_core_of = CAR }
-		167 = { add_core_of = CAR }
-		168 = { add_core_of = CAR }
-		169 = { add_core_of = CAR }
-		170 = { add_core_of = CAR }
-		171 = { add_core_of = CAR }
-		172 = { add_core_of = CAR }
-		173 = { add_core_of = CAR }
-		174 = { add_core_of = CAR }
-		175 = { add_core_of = CAR }
-		176 = { add_core_of = CAR }
-		177 = { add_core_of = CAR }
-		178 = { add_core_of = CAR }
-		1342 = { add_core_of = CAR }
-		1344 = { add_core_of = CAR }
-		1341 = { add_core_of = CAR }
-		793 = { add_core_of = CAR }
-		795 = { add_core_of = CAR }
-		940 = { add_core_of = CAR }
-		951 = { add_core_of = CAR }
-		1313 = { add_core_of = CAR }
-		1316 = { add_core_of = CAR }
-		1340 = { add_core_of = CAR }
-		1343 = { add_core_of = CAR }
-		1336 = { add_core_of = CAR }
-		1337 = { add_core_of = CAR }
-		1338 = { add_core_of = CAR }
-		41 = { add_core_of = CAR }
-		release = CAR
-		CAR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = CAR
-			}
-		}
-		CAR = { 
-			set_cosmetic_tag = GER_CAR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Eitel I"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Prince_Eitel_Friedrich.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = CAR
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Preussen"
-				long_name = "Haus Preussen"
-			}
-		}
-	}
-}
-
-GER_establish_rk_POR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 112
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				POR = { exists = yes }
-			}
-			POR = { is_subject_of = GER }
-		}
-		112 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				112 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		POR = {
-			every_core_state = {
-				remove_core_of = POR
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = POR
-				}
-				remove_claim_by = POR
-			}
-		}
-		697 = { add_core_of = POR }
-		179 = { add_core_of = POR }
-		180 = { add_core_of = POR }
-		181 = { add_core_of = POR }
-		698 = { add_core_of = POR }
-		112 = { add_core_of = POR }
-		release = POR
-		POR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = POR
-			}
-		}
-		POR = { 
-			set_cosmetic_tag = GER_POR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Gotthard Heinrici"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Gotthard_Heinrici_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = POR
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_GBP = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 126
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				GBP = { exists = yes }
-			}
-			GBP = { is_subject_of = GER }
-		}
-		126 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				126 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GBP = {
-			every_core_state = {
-				remove_core_of = GBP
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = GBP
-				}
-				remove_claim_by = GBP
-			}
-		}
-		132 = { add_core_of = GBP }
-		338 = { add_core_of = GBP }
-		1315 = { add_core_of = GBP }
-		123 = { add_core_of = GBP }
-		125 = { add_core_of = GBP }
-		130 = { add_core_of = GBP }
-		127 = { add_core_of = GBP }
-		128 = { add_core_of = GBP }
-		129 = { add_core_of = GBP }
-		126 = { add_core_of = GBP }
-		release = GBP
-		GBP = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = GBP
-			}
-		}
-		GBP = { 
-			set_cosmetic_tag = GER_GBP_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Charles III"
-				picture = "gfx/leaders/WDGER/Portrait_Britain_Charles_III.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = GBP
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Sachsen-Coburg und Gotha"
-				long_name = "Haus Sachsen-Coburg und Gotha"
-			}
-		}
-	}
-}
-
-GER_establish_rk_WAL = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 122
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				WAL = { exists = yes }
-			}
-			WAL = { is_subject_of = GER }
-		}
-		122 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				122 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		WAL = {
-			every_core_state = {
-				remove_core_of = WAL
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = WAL
-				}
-				remove_claim_by = WAL
-			}
-		}
-		1225 = { add_core_of = WAL }
-		122 = { add_core_of = WAL }
-		release = WAL
-		WAL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = WAL
-			}
-		}
-		WAL = { 
-			set_cosmetic_tag = GER_WAL_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Franz von Roques"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Franz_von_Roques.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = WAL
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_SCT = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 121
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				SCT = { exists = yes }
-			}
-			SCT = { is_subject_of = GER }
-		}
-		121 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				121 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		SCT = {
-			every_core_state = {
-				remove_core_of = SCT
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = SCT
-				}
-				remove_claim_by = SCT
-			}
-		}
-		133 = { add_core_of = SCT }
-		120 = { add_core_of = SCT }
-		131 = { add_core_of = SCT }
-		136 = { add_core_of = SCT }
-		938 = { add_core_of = SCT }
-		1317 = { add_core_of = SCT }
-		121 = { add_core_of = SCT }
-		release = SCT
-		SCT = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = SCT
-			}
-		}
-		SCT = { 
-			set_cosmetic_tag = GER_SCT_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Rupprecht I"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Rupprecht_Jacobite.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = SCT
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_IRE = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 113
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				IRE = { exists = yes }
-			}
-			IRE = { is_subject_of = GER }
-		}
-		113 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				113 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		IRE = {
-			every_core_state = {
-				remove_core_of = IRE
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = IRE
-				}
-				remove_claim_by = IRE
-			}
-		}
-		135 = { add_core_of = IRE }
-		119 = { add_core_of = IRE }
-		134 = { add_core_of = IRE }
-		113 = { add_core_of = IRE }
-		release = IRE
-		IRE = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = IRE
-			}
-		}
-		IRE = { 
-			set_cosmetic_tag = GER_IRE_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Oskar I"
-				picture = "gfx/leaders/WDGER/Portrait_Oskar_I.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = IRE
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_ITA = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 159
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				ITA = { exists = yes }
-			}
-			ITA = { is_subject_of = GER }
-		}
-		159 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				159 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		ITA = {
-			every_core_state = {
-				remove_core_of = ITA
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = ITA
-				}
-				remove_claim_by = ITA
-			}
-		}
-		2 = { add_core_of = ITA }
-		1149 = { add_core_of = ITA }
-		114 = { add_core_of = ITA }
-		115 = { add_core_of = ITA }
-		117 = { add_core_of = ITA }
-		156 = { add_core_of = ITA }
-		157 = { add_core_of = ITA }
-		158 = { add_core_of = ITA }
-		160 = { add_core_of = ITA }
-		161 = { add_core_of = ITA }
-		162 = { add_core_of = ITA }
-		742 = { add_core_of = ITA }
-		759 = { add_core_of = ITA }
-		764 = { add_core_of = ITA }
-		837 = { add_core_of = ITA }
-		838 = { add_core_of = ITA }
-		1002 = { add_core_of = ITA }
-		1003 = { add_core_of = ITA }
-		1004 = { add_core_of = ITA }
-		1005 = { add_core_of = ITA }
-		1006 = { add_core_of = ITA }
-		1236 = { add_core_of = ITA }
-		159 = { add_core_of = ITA }
-		release = ITA
-		ITA = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = ITA
-			}
-		}
-		ITA = { 
-			set_cosmetic_tag = GER_ITA_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "George I"
-				picture = "gfx/leaders/WDGER/Portrait_France_Francois_III.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = ITA
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hannover"
-				long_name = "Haus Hannover"
-			}
-		}
-	}
-}
-
-GER_establish_rk_MLT = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 116
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				MLT = { exists = yes }
-			}
-			MLT = { is_subject_of = GER }
-		}
-		116 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				116 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		MLT = {
-			every_core_state = {
-				remove_core_of = MLT
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = MLT
-				}
-				remove_claim_by = MLT
-			}
-		}
-		116 = { add_core_of = MLT }
-		release = MLT
-		MLT = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = MLT
-			}
-		}
-		MLT = { 
-			set_cosmetic_tag = GER_MLT_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Bernhard Rogge"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Bernhard_Rogge_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = MLT
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_CRE = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 182
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				CRE = { exists = yes }
-			}
-			CRE = { is_subject_of = GER }
-		}
-		182 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				182 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		CRE = {
-			every_core_state = {
-				remove_core_of = CRE
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = CRE
-				}
-				remove_claim_by = CRE
-			}
-		}
-		182 = { add_core_of = CRE }
-		release = CRE
-		CRE = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = CRE
-			}
-		}
-		CRE = { 
-			set_cosmetic_tag = GER_CRE_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Georg Alexander von Muller"
-				picture = "gfx/leaders/WDGER/Portrait_Crete_Georg_Alexander_von_Muller.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = CRE
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_AUS = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1137
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				AUS = { exists = yes }
-			}
-			AUS = { is_subject_of = GER }
-		}
-		1137 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				1137 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		AUS = {
-			every_core_state = {
-				remove_core_of = AUS
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = AUS
-				}
-				remove_claim_by = AUS
-			}
-		}
-		4 = { add_core_of = AUS }
-		39 = { add_core_of = AUS }
-		102 = { add_core_of = AUS }
-		152 = { add_core_of = AUS }
-		153 = { add_core_of = AUS }
-		736 = { add_core_of = AUS }
-		775 = { add_core_of = AUS }
-		783 = { add_core_of = AUS }
-		835 = { add_core_of = AUS }
-		836 = { add_core_of = AUS }
-		942 = { add_core_of = AUS }
-		1100 = { add_core_of = AUS }
-		1101 = { add_core_of = AUS }
-		1103 = { add_core_of = AUS }
-		1104 = { add_core_of = AUS }
-		1111 = { add_core_of = AUS }
-		1144 = { add_core_of = AUS }
-		1235 = { add_core_of = AUS }
-		1272 = { add_core_of = AUS }
-		784 = { add_core_of = AUS }
-		1137 = { add_core_of = AUS }
-		release = AUS
-		AUS = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = AUS
-			}
-		}
-		AUS = { 
-			set_cosmetic_tag = GER_AUS_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Wilhelm IV"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Wilhelm_IV.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = AUS
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_CZE = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1129
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				CZE = { exists = yes }
-			}
-			CZE = { is_subject_of = GER }
-		}
-		1129 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				1129 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		CZE = {
-			every_core_state = {
-				remove_core_of = CZE
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = CZE
-				}
-				remove_claim_by = CZE
-			}
-		}
-		9 = { add_core_of = CZE }
-		69 = { add_core_of = CZE }
-		71 = { add_core_of = CZE }
-		74 = { add_core_of = CZE }
-		75 = { add_core_of = CZE }
-		786 = { add_core_of = CZE }
-		1139 = { add_core_of = CZE }
-		1130 = { add_core_of = CZE }
-		1131 = { add_core_of = CZE }
-		1132 = { add_core_of = CZE }
-		1133 = { add_core_of = CZE }
-		1134 = { add_core_of = CZE }
-		1138 = { add_core_of = CZE }
-		1129 = { add_core_of = CZE }
-		release = CZE
-		CZE = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = CZE
-			}
-		}
-		CZE = { 
-			set_cosmetic_tag = GER_CZE_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Walter Nicolai"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Walter_Nicolai.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = CZE
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_DEN = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 37
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				DEN = { exists = yes }
-			}
-			DEN = { is_subject_of = GER }
-		}
-		37 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				37 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		DEN = {
-			every_core_state = {
-				remove_core_of = DEN
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = DEN
-				}
-				remove_claim_by = DEN
-			}
-		}
-		99 = { add_core_of = DEN }
-		110 = { add_core_of = DEN }
-		937 = { add_core_of = DEN }
-		142 = { add_core_of = DEN }
-		143 = { add_core_of = DEN }
-		144 = { add_core_of = DEN }
-		936 = { add_core_of = DEN }
-		100 = { add_core_of = DEN }
-		101 = { add_core_of = DEN }
-		926 = { add_core_of = DEN }
-		337 = { add_core_of = DEN }
-		1146 = { add_core_of = DEN }
-		1147 = { add_core_of = DEN }
-		141 = { add_core_of = DEN }
-		38 = { add_core_of = DEN }
-		124 = { add_core_of = DEN }
-		138 = { add_core_of = DEN }
-		139 = { add_core_of = DEN }
-		140 = { add_core_of = DEN }
-		960 = { add_core_of = DEN }
-		666 = { add_core_of = DEN }
-		778 = { add_core_of = DEN }
-		908 = { add_core_of = DEN }
-		909 = { add_core_of = DEN }
-		37 = { add_core_of = DEN }
-		release = DEN
-		DEN = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = DEN
-			}
-		}
-		DEN = { 
-			set_cosmetic_tag = GER_DEN_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Sigismund I"
-				picture = "gfx/leaders/WDGER/Portrait_WHR_Zyhimont.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = DEN
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_POL = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 10
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				POL = { exists = yes }
-			}
-			POL = { is_subject_of = GER }
-		}
-		10 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				10 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		POL = {
-			every_core_state = {
-				remove_core_of = POL
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = POL
-				}
-				remove_claim_by = POL
-			}
-		}
-		1148 = { add_core_of = POL }
-		87 = { add_core_of = POL }
-		90 = { add_core_of = POL }
-		92 = { add_core_of = POL }
-		97 = { add_core_of = POL }
-		98 = { add_core_of = POL }
-		1088 = { add_core_of = POL }
-		88 = { add_core_of = POL }
-		89 = { add_core_of = POL }
-		91 = { add_core_of = POL }
-		1124 = { add_core_of = POL }
-		1125 = { add_core_of = POL }
-		1126 = { add_core_of = POL }
-		1127 = { add_core_of = POL }
-		1140 = { add_core_of = POL }
-		1314 = { add_core_of = POL }
-		1319 = { add_core_of = POL }
-		1366 = { add_core_of = POL }
-		10 = { add_core_of = POL }
-		release = POL
-		POL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = POL
-			}
-		}
-		POL = { 
-			set_cosmetic_tag = GER_POL_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Fryderyk II Kystian"
-				picture = "gfx/leaders/WDGER/Portrait_POL_Fryderyk_Krystian_Saski.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = POL
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Wettin"
-				long_name = "Haus Wettin"
-			}
-		}
-	}
-}
-
-GER_establish_rk_SVK = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1123
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				SVK = { exists = yes }
-			}
-			SVK = { is_subject_of = GER }
-		}
-		1123 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				1123 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		SVK = {
-			every_core_state = {
-				remove_core_of = SVK
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = SVK
-				}
-				remove_claim_by = SVK
-			}
-		}
-		1119 = { add_core_of = SVK }
-		70 = { add_core_of = SVK }
-		73 = { add_core_of = SVK }
-		664 = { add_core_of = SVK }
-		1120 = { add_core_of = SVK }
-		1121 = { add_core_of = SVK }
-		1122 = { add_core_of = SVK }
-		1135 = { add_core_of = SVK }
-		1136 = { add_core_of = SVK }
-		1123 = { add_core_of = SVK }
-		release = SVK
-		SVK = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = SVK
-			}
-		}
-		SVK = { 
-			set_cosmetic_tag = GER_SVK_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Erwin von Witzleben"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Erwin_von_Witzleben_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = SVK
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_HUN = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 43
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				HUN = { exists = yes }
-			}
-			HUN = { is_subject_of = GER }
-		}
-		43 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				43 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		HUN = {
-			every_core_state = {
-				remove_core_of = HUN
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = HUN
-				}
-				remove_claim_by = HUN
-			}
-		}
-		1113 = { add_core_of = HUN }
-		45 = { add_core_of = HUN }
-		1117 = { add_core_of = HUN }
-		1118 = { add_core_of = HUN }
-		76 = { add_core_of = HUN }
-		82 = { add_core_of = HUN }
-		83 = { add_core_of = HUN }
-		84 = { add_core_of = HUN }
-		154 = { add_core_of = HUN }
-		155 = { add_core_of = HUN }
-		1116 = { add_core_of = HUN }
-		1114 = { add_core_of = HUN }
-		789 = { add_core_of = HUN }
-		875 = { add_core_of = HUN }
-		1106 = { add_core_of = HUN }
-		1107 = { add_core_of = HUN }
-		1108 = { add_core_of = HUN }
-		1109 = { add_core_of = HUN }
-		1110 = { add_core_of = HUN }
-		1115 = { add_core_of = HUN }
-		1112 = { add_core_of = HUN }
-		43 = { add_core_of = HUN }
-		release = HUN
-		HUN = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = HUN
-			}
-		}
-		HUN = { 
-			set_cosmetic_tag = GER_HUN_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Walter von Wiese und Kaiserswaldau"
-				picture = "gfx/leaders/WDGER/CIV_Walter_von_Wiese_und_Kaiserswaldau.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = HUN
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Wiese und Kaiserswaldau"
-				long_name = "Haus Wiese und Kaiserswaldau"
-			}
-		}
-	}
-}
-
-GER_establish_rk_ROM = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 46
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				ROM = { exists = yes }
-			}
-			ROM = { is_subject_of = GER }
-		}
-		46 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				46 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		ROM = {
-			every_core_state = {
-				remove_core_of = ROM
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = ROM
-				}
-				remove_claim_by = ROM
-			}
-		}
-		1222 = { add_core_of = ROM }
-		78 = { add_core_of = ROM }
-		79 = { add_core_of = ROM }
-		81 = { add_core_of = ROM }
-		713 = { add_core_of = ROM }
-		1320 = { add_core_of = ROM }
-		80 = { add_core_of = ROM }
-		46 = { add_core_of = ROM }
-		release = ROM
-		ROM = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = ROM
-			}
-		}
-		ROM = { 
-			set_cosmetic_tag = GER_ROM_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Friedrich Viktor I"
-				picture = "gfx/leaders/WDGER/Friedrich_Viktor_von_Hohenzollern.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = ROM
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_CRO = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 109
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				CRO = { exists = yes }
-			}
-			CRO = { is_subject_of = GER }
-		}
-		109 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				109 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		CRO = {
-			every_core_state = {
-				remove_core_of = CRO
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = CRO
-				}
-				remove_claim_by = CRO
-			}
-		}
-		103 = { add_core_of = CRO }
-		104 = { add_core_of = CRO }
-		105 = { add_core_of = CRO }
-		1270 = { add_core_of = CRO }
-		163 = { add_core_of = CRO }
-		794 = { add_core_of = CRO }
-		1097 = { add_core_of = CRO }
-		1098 = { add_core_of = CRO }
-		1099 = { add_core_of = CRO }
-		1102 = { add_core_of = CRO }
-		1105 = { add_core_of = CRO }
-		1128 = { add_core_of = CRO }
-		1141 = { add_core_of = CRO }
-		1142 = { add_core_of = CRO }
-		1143 = { add_core_of = CRO }
-		1145 = { add_core_of = CRO }
-		1206 = { add_core_of = CRO }
-		107 = { add_core_of = CRO }
-		108 = { add_core_of = CRO }
-		1269 = { add_core_of = CRO }
-		109 = { add_core_of = CRO }
-		release = CRO
-		CRO = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = CRO
-			}
-		}
-		CRO = { 
-			set_cosmetic_tag = GER_CRO_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Maximilian von Weichs"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Maximilian_von_Weichs_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = CRO
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_ALB = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 44
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				ALB = { exists = yes }
-			}
-			ALB = { is_subject_of = GER }
-		}
-		44 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				44 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		ALB = {
-			every_core_state = {
-				remove_core_of = ALB
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = ALB
-				}
-				remove_claim_by = ALB
-			}
-		}
-		765 = { add_core_of = ALB }
-		766 = { add_core_of = ALB }
-		1268 = { add_core_of = ALB }
-		44 = { add_core_of = ALB }
-		release = ALB
-		ALB = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = ALB
-			}
-		}
-		ALB = { 
-			set_cosmetic_tag = GER_ALB_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Walther von Reichenau"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Walther_von_Reichenau.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = ALB
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_BUL = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 48
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				BUL = { exists = yes }
-			}
-			BUL = { is_subject_of = GER }
-		}
-		48 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				48 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		BUL = {
-			every_core_state = {
-				remove_core_of = BUL
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = BUL
-				}
-				remove_claim_by = BUL
-			}
-		}
-		1271 = { add_core_of = BUL }
-		77 = { add_core_of = BUL }
-		106 = { add_core_of = BUL }
-		184 = { add_core_of = BUL }
-		211 = { add_core_of = BUL }
-		212 = { add_core_of = BUL }
-		731 = { add_core_of = BUL }
-		769 = { add_core_of = BUL }
-		770 = { add_core_of = BUL }
-		771 = { add_core_of = BUL }
-		772 = { add_core_of = BUL }
-		841 = { add_core_of = BUL }
-		1089 = { add_core_of = BUL }
-		1090 = { add_core_of = BUL }
-		767 = { add_core_of = BUL }
-		989 = { add_core_of = BUL }
-		48 = { add_core_of = BUL }
-		release = BUL
-		BUL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = BUL
-			}
-		}
-		BUL = { 
-			set_cosmetic_tag = GER_BUL_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Kyril I"
-				picture = "gfx/leaders/WDGER/Portrait_BUL_Prince_Kyril.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = BUL
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Sachsen-Coburg und Gotha"
-				long_name = "Haus Sachsen-Coburg und Gotha"
-			}
-		}
-	}
-}
-
-GER_establish_rk_GRE = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 47
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				GRE = { exists = yes }
-			}
-			GRE = { is_subject_of = GER }
-		}
-		47 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				47 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GRE = {
-			every_core_state = {
-				remove_core_of = GRE
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = GRE
-				}
-				remove_claim_by = GRE
-			}
-		}
-		1076 = { add_core_of = GRE }
-		185 = { add_core_of = GRE }
-		186 = { add_core_of = GRE }
-		758 = { add_core_of = GRE }
-		768 = { add_core_of = GRE }
-		939 = { add_core_of = GRE }
-		47 = { add_core_of = GRE }
-		release = GRE
-		GRE = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = GRE
-			}
-		}
-		GRE = { 
-			set_cosmetic_tag = GER_GRE_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Max Looff"
-				picture = "gfx/leaders/WDGER/Portrait_Mittelafrika_Max_Looff.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = GRE
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_TUR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 773
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				TUR = { exists = yes }
-			}
-			TUR = { is_subject_of = GER }
-		}
-		773 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				773 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		TUR = {
-			every_core_state = {
-				remove_core_of = TUR
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = TUR
-				}
-				remove_claim_by = TUR
-			}
-		}
-		49 = { add_core_of = TUR }
-		164 = { add_core_of = TUR }
-		183 = { add_core_of = TUR }
-		187 = { add_core_of = TUR }
-		992 = { add_core_of = TUR }
-		291 = { add_core_of = TUR }
-		339 = { add_core_of = TUR }
-		340 = { add_core_of = TUR }
-		341 = { add_core_of = TUR }
-		342 = { add_core_of = TUR }
-		343 = { add_core_of = TUR }
-		344 = { add_core_of = TUR }
-		345 = { add_core_of = TUR }
-		346 = { add_core_of = TUR }
-		349 = { add_core_of = TUR }
-		350 = { add_core_of = TUR }
-		352 = { add_core_of = TUR }
-		354 = { add_core_of = TUR }
-		355 = { add_core_of = TUR }
-		356 = { add_core_of = TUR }
-		812 = { add_core_of = TUR }
-		454 = { add_core_of = TUR }
-		455 = { add_core_of = TUR }
-		553 = { add_core_of = TUR }
-		554 = { add_core_of = TUR }
-		995 = { add_core_of = TUR }
-		676 = { add_core_of = TUR }
-		677 = { add_core_of = TUR }
-		819 = { add_core_of = TUR }
-		680 = { add_core_of = TUR }
-		773 = { add_core_of = TUR }
-		release = TUR
-		TUR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = TUR
-			}
-		}
-		TUR = { 
-			set_cosmetic_tag = GER_TUR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/WDGER/Portrait_OTT_Vilyam_II.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = TUR
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_LIT = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 96
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				LIT = { exists = yes }
-			}
-			LIT = { is_subject_of = GER }
-		}
-		96 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				96 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		LIT = {
-			every_core_state = {
-				remove_core_of = LIT
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = LIT
-				}
-				remove_claim_by = LIT
-			}
-		}
-		11 = { add_core_of = LIT }
-		94 = { add_core_of = LIT }
-		1329 = { add_core_of = LIT }
-		189 = { add_core_of = LIT }
-		655 = { add_core_of = LIT }
-		96 = { add_core_of = LIT }
-		release = LIT
-		LIT = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = LIT
-			}
-		}
-		LIT = { 
-			set_cosmetic_tag = GER_LIT_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Mindaugas IV"
-				picture = "gfx/leaders/WDGER/Portrait_LIT_Eberhard_von_Urach.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = LIT
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Württemberg"
-				long_name = "Haus Württemberg"
-			}
-		}
-	}
-}
-
-GER_establish_rk_BAT = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 1091
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				BAT = { exists = yes }
-			}
-			BAT = { is_subject_of = GER }
-		}
-		1091 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				1091 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		BAT = {
-			every_core_state = {
-				remove_core_of = BAT
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = BAT
-				}
-				remove_claim_by = BAT
-			}
-		}
-		12 = { add_core_of = BAT }
-		13 = { add_core_of = BAT }
-		190 = { add_core_of = BAT }
-		191 = { add_core_of = BAT }
-		1291 = { add_core_of = BAT }
-		209 = { add_core_of = BAT }
-		880 = { add_core_of = BAT }
-		1288 = { add_core_of = BAT }
-		1091 = { add_core_of = BAT }
-		release = BAT
-		BAT = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = BAT
-			}
-		}
-		BAT = { 
-			set_cosmetic_tag = GER_BAT_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Adolf Friedrich"
-				picture = "gfx/leaders/WDGER/Portrait_BAT_Adolf_Friedrich.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = BAT
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Mecklenburg-Schwerin"
-				long_name = "Haus Mecklenburg-Schwerin"
-			}
-		}
-	}
-}
-
-GER_establish_rk_FIN = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 840
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				FIN = { exists = yes }
-			}
-			FIN = { is_subject_of = GER }
-		}
-		840 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				840 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		FIN = {
-			every_core_state = {
-				remove_core_of = FIN
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = FIN
-				}
-				remove_claim_by = FIN
-			}
-		}
-		111 = { add_core_of = FIN }
-		145 = { add_core_of = FIN }
-		146 = { add_core_of = FIN }
-		147 = { add_core_of = FIN }
-		148 = { add_core_of = FIN }
-		149 = { add_core_of = FIN }
-		150 = { add_core_of = FIN }
-		1328 = { add_core_of = FIN }
-		844 = { add_core_of = FIN }
-		863 = { add_core_of = FIN }
-		864 = { add_core_of = FIN }
-		865 = { add_core_of = FIN }
-		1324 = { add_core_of = FIN }
-		1325 = { add_core_of = FIN }
-		1326 = { add_core_of = FIN }
-		213 = { add_core_of = FIN }
-		215 = { add_core_of = FIN }
-		216 = { add_core_of = FIN }
-		722 = { add_core_of = FIN }
-		1274 = { add_core_of = FIN }
-		1327 = { add_core_of = FIN }
-		840 = { add_core_of = FIN }
-		release = FIN
-		FIN = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = FIN
-			}
-		}
-		FIN = { 
-			set_cosmetic_tag = GER_FIN_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Vaino I"
-				picture = "gfx/leaders/WDGER/Portrait_FIN_Vaino_I.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = FIN
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hesse-Kassel"
-				long_name = "Haus Hesse-Kassel"
-			}
-		}
-	}
-}
-
-GER_establish_rk_UKR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 202
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				UKR = { exists = yes }
-			}
-			UKR = { is_subject_of = GER }
-		}
-		202 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				202 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		UKR = {
-			every_core_state = {
-				remove_core_of = UKR
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = UKR
-				}
-				remove_claim_by = UKR
-			}
-		}
-		93 = { add_core_of = UKR }
-		137 = { add_core_of = UKR }
-		192 = { add_core_of = UKR }
-		193 = { add_core_of = UKR }
-		196 = { add_core_of = UKR }
-		197 = { add_core_of = UKR }
-		198 = { add_core_of = UKR }
-		199 = { add_core_of = UKR }
-		200 = { add_core_of = UKR }
-		201 = { add_core_of = UKR }
-		194 = { add_core_of = UKR }
-		203 = { add_core_of = UKR }
-		221 = { add_core_of = UKR }
-		225 = { add_core_of = UKR }
-		226 = { add_core_of = UKR }
-		227 = { add_core_of = UKR }
-		228 = { add_core_of = UKR }
-		241 = { add_core_of = UKR }
-		259 = { add_core_of = UKR }
-		791 = { add_core_of = UKR }
-		792 = { add_core_of = UKR }
-		997 = { add_core_of = UKR }
-		1220 = { add_core_of = UKR }
-		1221 = { add_core_of = UKR }
-		1228 = { add_core_of = UKR }
-		1230 = { add_core_of = UKR }
-		1232 = { add_core_of = UKR }
-		1233 = { add_core_of = UKR }
-		1234 = { add_core_of = UKR }
-		1237 = { add_core_of = UKR }
-		1238 = { add_core_of = UKR }
-		1239 = { add_core_of = UKR }
-		1240 = { add_core_of = UKR }
-		1241 = { add_core_of = UKR }
-		1242 = { add_core_of = UKR }
-		1243 = { add_core_of = UKR }
-		1244 = { add_core_of = UKR }
-		1245 = { add_core_of = UKR }
-		1282 = { add_core_of = UKR }
-		1283 = { add_core_of = UKR }
-		1284 = { add_core_of = UKR }
-		1285 = { add_core_of = UKR }
-		1286 = { add_core_of = UKR }
-		234 = { add_core_of = UKR }
-		240 = { add_core_of = UKR }
-		821 = { add_core_of = UKR }
-		1227 = { add_core_of = UKR }
-		1231 = { add_core_of = UKR }
-		1263 = { add_core_of = UKR }
-		1187 = { add_core_of = UKR }
-		95 = { add_core_of = UKR }
-		202 = { add_core_of = UKR }
-		release = UKR
-		UKR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = UKR
-			}
-		}
-		UKR = { 
-			set_cosmetic_tag = GER_UKR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/WDGER/Portrait_UKR_Willy_III_Ukraine.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = UKR
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_WHR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 206
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				WHR = { exists = yes }
-			}
-			WHR = { is_subject_of = GER }
-		}
-		206 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				206 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	days_remove = 1
-	complete_effect = {
-		WHR = {
-			every_core_state = {
-				remove_core_of = WHR
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = WHR
-				}
-				remove_claim_by = WHR
-			}
-		}
-		1295 = { add_core_of = WHR }
-		1294 = { add_core_of = WHR }
-		204 = { add_core_of = WHR }
-		755 = { add_core_of = WHR }
-		207 = { add_core_of = WHR }
-		1087 = { add_core_of = WHR }
-		1287 = { add_core_of = WHR }
-		243 = { add_core_of = WHR }
-		206 = { add_core_of = WHR }
-		release = WHR
-		WHR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = WHR
-			}
-		}
-	}
-	remove_effect = {
-		WHR = { 
-			set_cosmetic_tag = GER_WHR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Uladzimir I"
-				picture = "gfx/leaders/WDGER/Portrait_WHR_Uladzimir.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = WHR
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_DKB = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 218
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				DKB = { exists = yes }
-			}
-			DKB = { is_subject_of = GER }
-		}
-		218 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				218 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		DKB = {
-			every_core_state = {
-				remove_core_of = DKB
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = DKB
-				}
-				remove_claim_by = DKB
-			}
-		}
-		1191 = { add_core_of = DKB }
-		237 = { add_core_of = DKB }
-		238 = { add_core_of = DKB }
-		245 = { add_core_of = DKB }
-		1226 = { add_core_of = DKB }
-		1189 = { add_core_of = DKB }
-		235 = { add_core_of = DKB }
-		1264 = { add_core_of = DKB }
-		1266 = { add_core_of = DKB }
-		218 = { add_core_of = DKB }
-		release = DKB
-		DKB = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = DKB
-			}
-		}
-		DKB = { 
-			set_cosmetic_tag = GER_DKB_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Wilhelm List"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Wilhelm_List_kr.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = DKB
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_GEO = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 231
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				GEO = { exists = yes }
-			}
-			GEO = { is_subject_of = GER }
-		}
-		231 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				231 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GEO = {
-			every_core_state = {
-				remove_core_of = GEO
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = GEO
-				}
-				remove_claim_by = GEO
-			}
-		}
-		230 = { add_core_of = GEO }
-		1000 = { add_core_of = GEO }
-		1001 = { add_core_of = GEO }
-		1213 = { add_core_of = GEO }
-		229 = { add_core_of = GEO }
-		990 = { add_core_of = GEO }
-		998 = { add_core_of = GEO }
-		1080 = { add_core_of = GEO }
-		1081 = { add_core_of = GEO }
-		1082 = { add_core_of = GEO }
-		1188 = { add_core_of = GEO }
-		1190 = { add_core_of = GEO }
-		1267 = { add_core_of = GEO }
-		1298 = { add_core_of = GEO }
-		1299 = { add_core_of = GEO }
-		1300 = { add_core_of = GEO }
-		1301 = { add_core_of = GEO }
-		1302 = { add_core_of = GEO }
-		1303 = { add_core_of = GEO }
-		1304 = { add_core_of = GEO }
-		232 = { add_core_of = GEO }
-		233 = { add_core_of = GEO }
-		787 = { add_core_of = GEO }
-		1186 = { add_core_of = GEO }
-		417 = { add_core_of = GEO }
-		419 = { add_core_of = GEO }
-		231 = { add_core_of = GEO }
-		release = GEO
-		GEO = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = GEO
-			}
-		}
-		GEO = { 
-			set_cosmetic_tag = GER_GEO_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Joachim I"
-				picture = "gfx/leaders/WDGER/Portrait_GEO_Prince_Joachim.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = GEO
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_JBS = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 915
-				state = 292
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				JBS = { exists = yes }
-			}
-			JBS = { is_subject_of = GER }
-		}
-		915 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		292 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				915 = { NOT = { is_core_of = GER } }
-				292 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		JBS = {
-			every_core_state = {
-				remove_core_of = JBS
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = JBS
-				}
-				remove_claim_by = JBS
-			}
-		}
-		991 = { add_core_of = JBS }
-		656 = { add_core_of = JBS }
-		675 = { add_core_of = JBS }
-		678 = { add_core_of = JBS }
-		658 = { add_core_of = JBS }
-		679 = { add_core_of = JBS }
-		754 = { add_core_of = JBS }
-		907 = { add_core_of = JBS }
-		981 = { add_core_of = JBS }
-		982 = { add_core_of = JBS }
-		993 = { add_core_of = JBS }
-		994 = { add_core_of = JBS }
-		1035 = { add_core_of = JBS }
-		293 = { add_core_of = JBS }
-		294 = { add_core_of = JBS }
-		347 = { add_core_of = JBS }
-		659 = { add_core_of = JBS }
-		752 = { add_core_of = JBS }
-		859 = { add_core_of = JBS }
-		1024 = { add_core_of = JBS }
-		915 = { add_core_of = JBS }
-		292 = { add_core_of = JBS }
-		release = JBS
-		JBS = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = JBS
-			}
-		}
-		JBS = { 
-			set_cosmetic_tag = GER_JBS_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Friedrich Olbricht"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Friedrich_Olbricht.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = JBS
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_PER = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 266
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				PER = { exists = yes }
-			}
-			PER = { is_subject_of = GER }
-		}
-		266 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				266 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		PER = {
-			every_core_state = {
-				remove_core_of = PER
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = PER
-				}
-				remove_claim_by = PER
-			}
-		}
-		804 = { add_core_of = PER }
-		410 = { add_core_of = PER }
-		411 = { add_core_of = PER }
-		412 = { add_core_of = PER }
-		413 = { add_core_of = PER }
-		414 = { add_core_of = PER }
-		416 = { add_core_of = PER }
-		421 = { add_core_of = PER }
-		418 = { add_core_of = PER }
-		420 = { add_core_of = PER }
-		266 = { add_core_of = PER }
-		release = PER
-		PER = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = PER
-			}
-		}
-		PER = { 
-			set_cosmetic_tag = GER_PER_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = PER
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_RUS = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 195
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				RUS = { exists = yes }
-			}
-			RUS = { is_subject_of = GER }
-		}
-		195 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				195 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		RUS = {
-			every_core_state = {
-				remove_core_of = RUS
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = RUS
-				}
-				remove_claim_by = RUS
-			}
-		}
-		1198 = { add_core_of = RUS }
-		242 = { add_core_of = RUS }
-		205 = { add_core_of = RUS }
-		208 = { add_core_of = RUS }
-		1204 = { add_core_of = RUS }
-		210 = { add_core_of = RUS }
-		1224 = { add_core_of = RUS }
-		214 = { add_core_of = RUS }
-		1207 = { add_core_of = RUS }
-		1205 = { add_core_of = RUS }
-		217 = { add_core_of = RUS }
-		219 = { add_core_of = RUS }
-		220 = { add_core_of = RUS }
-		222 = { add_core_of = RUS }
-		223 = { add_core_of = RUS }
-		224 = { add_core_of = RUS }
-		236 = { add_core_of = RUS }
-		239 = { add_core_of = RUS }
-		652 = { add_core_of = RUS }
-		1290 = { add_core_of = RUS }
-		1229 = { add_core_of = RUS }
-		244 = { add_core_of = RUS }
-		246 = { add_core_of = RUS }
-		247 = { add_core_of = RUS }
-		248 = { add_core_of = RUS }
-		249 = { add_core_of = RUS }
-		250 = { add_core_of = RUS }
-		251 = { add_core_of = RUS }
-		252 = { add_core_of = RUS }
-		253 = { add_core_of = RUS }
-		254 = { add_core_of = RUS }
-		255 = { add_core_of = RUS }
-		256 = { add_core_of = RUS }
-		257 = { add_core_of = RUS }
-		258 = { add_core_of = RUS }
-		260 = { add_core_of = RUS }
-		262 = { add_core_of = RUS }
-		263 = { add_core_of = RUS }
-		264 = { add_core_of = RUS }
-		265 = { add_core_of = RUS }
-		351 = { add_core_of = RUS }
-		397 = { add_core_of = RUS }
-		398 = { add_core_of = RUS }
-		399 = { add_core_of = RUS }
-		400 = { add_core_of = RUS }
-		401 = { add_core_of = RUS }
-		1197 = { add_core_of = RUS }
-		651 = { add_core_of = RUS }
-		1194 = { add_core_of = RUS }
-		1193 = { add_core_of = RUS }
-		1289 = { add_core_of = RUS }
-		1199 = { add_core_of = RUS }
-		195 = { add_core_of = RUS }
-		release = RUS
-		RUS = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = RUS
-			}
-		}
-		RUS = { 
-			set_cosmetic_tag = GER_RUS_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Ivan VII"
-				picture = "gfx/leaders/WDGER/Portrait_RUS_Louis_Ferdinand.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = RUS
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_SIB = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 570
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				SIB = { exists = yes }
-			}
-			SIB = { is_subject_of = GER }
-		}
-		570 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				570 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		SIB = {
-			every_core_state = {
-				remove_core_of = SIB
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = SIB
-				}
-				remove_claim_by = SIB
-			}
-		}
-		408 = { add_core_of = SIB }
-		409 = { add_core_of = SIB }
-		560 = { add_core_of = SIB }
-		561 = { add_core_of = SIB }
-		562 = { add_core_of = SIB }
-		563 = { add_core_of = SIB }
-		564 = { add_core_of = SIB }
-		565 = { add_core_of = SIB }
-		574 = { add_core_of = SIB }
-		637 = { add_core_of = SIB }
-		657 = { add_core_of = SIB }
-		1246 = { add_core_of = SIB }
-		40 = { add_core_of = SIB }
-		582 = { add_core_of = SIB }
-		403 = { add_core_of = SIB }
-		516 = { add_core_of = SIB }
-		566 = { add_core_of = SIB }
-		567 = { add_core_of = SIB }
-		568 = { add_core_of = SIB }
-		569 = { add_core_of = SIB }
-		571 = { add_core_of = SIB }
-		573 = { add_core_of = SIB }
-		575 = { add_core_of = SIB }
-		576 = { add_core_of = SIB }
-		577 = { add_core_of = SIB }
-		578 = { add_core_of = SIB }
-		580 = { add_core_of = SIB }
-		581 = { add_core_of = SIB }
-		644 = { add_core_of = SIB }
-		653 = { add_core_of = SIB }
-		654 = { add_core_of = SIB }
-		811 = { add_core_of = SIB }
-		1195 = { add_core_of = SIB }
-		1200 = { add_core_of = SIB }
-		1201 = { add_core_of = SIB }
-		1202 = { add_core_of = SIB }
-		1292 = { add_core_of = SIB }
-		1293 = { add_core_of = SIB }
-		572 = { add_core_of = SIB }
-		537 = { add_core_of = SIB }
-		555 = { add_core_of = SIB }
-		570 = { add_core_of = SIB }
-		release = SIB
-		SIB = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = SIB
-			}
-		}
-		SIB = { 
-			set_cosmetic_tag = GER_SIB_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = SIB
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_TRK = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 407
-				state = 1279
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				TRK = { exists = yes }
-			}
-			TRK = { is_subject_of = GER }
-		}
-		407 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		1279 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				407 = { NOT = { is_core_of = GER } }
-				1279 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		TRK = {
-			every_core_state = {
-				remove_core_of = TRK
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = TRK
-				}
-				remove_claim_by = TRK
-			}
-		}
-		584 = { add_core_of = TRK }
-		861 = { add_core_of = TRK }
-		1275 = { add_core_of = TRK }
-		1281 = { add_core_of = TRK }
-		402 = { add_core_of = TRK }
-		404 = { add_core_of = TRK }
-		405 = { add_core_of = TRK }
-		406 = { add_core_of = TRK }
-		583 = { add_core_of = TRK }
-		585 = { add_core_of = TRK }
-		586 = { add_core_of = TRK }
-		587 = { add_core_of = TRK }
-		588 = { add_core_of = TRK }
-		589 = { add_core_of = TRK }
-		590 = { add_core_of = TRK }
-		712 = { add_core_of = TRK }
-		732 = { add_core_of = TRK }
-		810 = { add_core_of = TRK }
-		1042 = { add_core_of = TRK }
-		1196 = { add_core_of = TRK }
-		1203 = { add_core_of = TRK }
-		1208 = { add_core_of = TRK }
-		1209 = { add_core_of = TRK }
-		1210 = { add_core_of = TRK }
-		1211 = { add_core_of = TRK }
-		1212 = { add_core_of = TRK }
-		1276 = { add_core_of = TRK }
-		1277 = { add_core_of = TRK }
-		1278 = { add_core_of = TRK }
-		407 = { add_core_of = TRK }
-		1279 = { add_core_of = TRK }
-		release = TRK
-		TRK = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = TRK
-			}
-		}
-		TRK = { 
-			set_cosmetic_tag = GER_TRK_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = TRK
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_AFG = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 267
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				AFG = { exists = yes }
-			}
-			AFG = { is_subject_of = GER }
-		}
-		267 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				267 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		AFG = {
-			every_core_state = {
-				remove_core_of = AFG
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = AFG
-				}
-				remove_claim_by = AFG
-			}
-		}
-		1217 = { add_core_of = AFG }
-		415 = { add_core_of = AFG }
-		1218 = { add_core_of = AFG }
-		267 = { add_core_of = AFG }
-		release = AFG
-		AFG = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = AFG
-			}
-		}
-		AFG = { 
-			set_cosmetic_tag = GER_AFG_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = AFG
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_QIE = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 608
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				QIE = { exists = yes }
-			}
-			QIE = { is_subject_of = GER }
-		}
-		608 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				608 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		QIE = {
-			every_core_state = {
-				remove_core_of = QIE
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = QIE
-				}
-				remove_claim_by = QIE
-			}
-		}
-		622 = { add_core_of = QIE }
-		1015 = { add_core_of = QIE }
-		1072 = { add_core_of = QIE }
-		283 = { add_core_of = QIE }
-		287 = { add_core_of = QIE }
-		322 = { add_core_of = QIE }
-		325 = { add_core_of = QIE }
-		328 = { add_core_of = QIE }
-		329 = { add_core_of = QIE }
-		330 = { add_core_of = QIE }
-		348 = { add_core_of = QIE }
-		353 = { add_core_of = QIE }
-		593 = { add_core_of = QIE }
-		594 = { add_core_of = QIE }
-		595 = { add_core_of = QIE }
-		596 = { add_core_of = QIE }
-		597 = { add_core_of = QIE }
-		598 = { add_core_of = QIE }
-		599 = { add_core_of = QIE }
-		600 = { add_core_of = QIE }
-		601 = { add_core_of = QIE }
-		602 = { add_core_of = QIE }
-		603 = { add_core_of = QIE }
-		604 = { add_core_of = QIE }
-		605 = { add_core_of = QIE }
-		606 = { add_core_of = QIE }
-		607 = { add_core_of = QIE }
-		610 = { add_core_of = QIE }
-		611 = { add_core_of = QIE }
-		612 = { add_core_of = QIE }
-		613 = { add_core_of = QIE }
-		614 = { add_core_of = QIE }
-		615 = { add_core_of = QIE }
-		616 = { add_core_of = QIE }
-		617 = { add_core_of = QIE }
-		618 = { add_core_of = QIE }
-		619 = { add_core_of = QIE }
-		620 = { add_core_of = QIE }
-		621 = { add_core_of = QIE }
-		650 = { add_core_of = QIE }
-		661 = { add_core_of = QIE }
-		693 = { add_core_of = QIE }
-		714 = { add_core_of = QIE }
-		715 = { add_core_of = QIE }
-		716 = { add_core_of = QIE }
-		717 = { add_core_of = QIE }
-		748 = { add_core_of = QIE }
-		774 = { add_core_of = QIE }
-		788 = { add_core_of = QIE }
-		799 = { add_core_of = QIE }
-		800 = { add_core_of = QIE }
-		816 = { add_core_of = QIE }
-		883 = { add_core_of = QIE }
-		884 = { add_core_of = QIE }
-		885 = { add_core_of = QIE }
-		886 = { add_core_of = QIE }
-		897 = { add_core_of = QIE }
-		1012 = { add_core_of = QIE }
-		1013 = { add_core_of = QIE }
-		1014 = { add_core_of = QIE }
-		1044 = { add_core_of = QIE }
-		1045 = { add_core_of = QIE }
-		1046 = { add_core_of = QIE }
-		1047 = { add_core_of = QIE }
-		1048 = { add_core_of = QIE }
-		1049 = { add_core_of = QIE }
-		1050 = { add_core_of = QIE }
-		1051 = { add_core_of = QIE }
-		1052 = { add_core_of = QIE }
-		1053 = { add_core_of = QIE }
-		1054 = { add_core_of = QIE }
-		1055 = { add_core_of = QIE }
-		1056 = { add_core_of = QIE }
-		1058 = { add_core_of = QIE }
-		1059 = { add_core_of = QIE }
-		1060 = { add_core_of = QIE }
-		1061 = { add_core_of = QIE }
-		1062 = { add_core_of = QIE }
-		1063 = { add_core_of = QIE }
-		1064 = { add_core_of = QIE }
-		1065 = { add_core_of = QIE }
-		1066 = { add_core_of = QIE }
-		1067 = { add_core_of = QIE }
-		1068 = { add_core_of = QIE }
-		1069 = { add_core_of = QIE }
-		1083 = { add_core_of = QIE }
-		1084 = { add_core_of = QIE }
-		1085 = { add_core_of = QIE }
-		1086 = { add_core_of = QIE }
-		1265 = { add_core_of = QIE }
-		608 = { add_core_of = QIE }
-		release = QIE
-		QIE = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = QIE
-			}
-		}
-		QIE = { 
-			set_cosmetic_tag = GER_QIE_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/WDGER/Portrait_AOG_Wilhelm_III.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = QIE
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_DEH = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 439
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				DEH = { exists = yes }
-			}
-			DEH = { is_subject_of = GER }
-		}
-		439 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				439 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		DEH = {
-			every_core_state = {
-				remove_core_of = DEH
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = DEH
-				}
-				remove_claim_by = DEH
-			}
-		}
-		428 = { add_core_of = DEH }
-		433 = { add_core_of = DEH }
-		437 = { add_core_of = DEH }
-		438 = { add_core_of = DEH }
-		790 = { add_core_of = DEH }
-		440 = { add_core_of = DEH }
-		441 = { add_core_of = DEH }
-		443 = { add_core_of = DEH }
-		444 = { add_core_of = DEH }
-		815 = { add_core_of = DEH }
-		890 = { add_core_of = DEH }
-		891 = { add_core_of = DEH }
-		1057 = { add_core_of = DEH }
-		1092 = { add_core_of = DEH }
-		1094 = { add_core_of = DEH }
-		442 = { add_core_of = DEH }
-		445 = { add_core_of = DEH }
-		1219 = { add_core_of = DEH }
-		281 = { add_core_of = DEH }
-		320 = { add_core_of = DEH }
-		321 = { add_core_of = DEH }
-		323 = { add_core_of = DEH }
-		324 = { add_core_of = DEH }
-		422 = { add_core_of = DEH }
-		423 = { add_core_of = DEH }
-		424 = { add_core_of = DEH }
-		425 = { add_core_of = DEH }
-		426 = { add_core_of = DEH }
-		427 = { add_core_of = DEH }
-		429 = { add_core_of = DEH }
-		430 = { add_core_of = DEH }
-		431 = { add_core_of = DEH }
-		432 = { add_core_of = DEH }
-		434 = { add_core_of = DEH }
-		435 = { add_core_of = DEH }
-		436 = { add_core_of = DEH }
-		710 = { add_core_of = DEH }
-		814 = { add_core_of = DEH }
-		858 = { add_core_of = DEH }
-		867 = { add_core_of = DEH }
-		868 = { add_core_of = DEH }
-		887 = { add_core_of = DEH }
-		888 = { add_core_of = DEH }
-		889 = { add_core_of = DEH }
-		893 = { add_core_of = DEH }
-		1034 = { add_core_of = DEH }
-		1093 = { add_core_of = DEH }
-		1095 = { add_core_of = DEH }
-		1358 = { add_core_of = DEH }
-		1359 = { add_core_of = DEH }
-		1360 = { add_core_of = DEH }
-		1361 = { add_core_of = DEH }
-		1362 = { add_core_of = DEH }
-		1363 = { add_core_of = DEH }
-		72 = { add_core_of = DEH }
-		288 = { add_core_of = DEH }
-		640 = { add_core_of = DEH }
-		701 = { add_core_of = DEH }
-		756 = { add_core_of = DEH }
-		439 = { add_core_of = DEH }
-		release = DEH
-		DEH = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = DEH
-			}
-		}
-		DEH = { 
-			set_cosmetic_tag = GER_DEH_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = DEH
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_KOR = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 525
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				KOR = { exists = yes }
-			}
-			KOR = { is_subject_of = GER }
-		}
-		525 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				525 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		KOR = {
-			every_core_state = {
-				remove_core_of = KOR
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = KOR
-				}
-				remove_claim_by = KOR
-			}
-		}
-		1347 = { add_core_of = KOR }
-		527 = { add_core_of = KOR }
-		1345 = { add_core_of = KOR }
-		1346 = { add_core_of = KOR }
-		525 = { add_core_of = KOR }
-		release = KOR
-		KOR = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = KOR
-			}
-		}
-		KOR = { 
-			set_cosmetic_tag = GER_KOR_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = KOR
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
-			}
-		}
-	}
-}
-
-GER_establish_rk_JPN = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 282
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				JAP = { exists = yes }
-			}
-			JAP = { is_subject_of = GER }
-		}
-		282 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				282 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		JAP = {
-			every_core_state = {
-				remove_core_of = JAP
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = JAP
-				}
-				remove_claim_by = JAP
-			}
-		}
-		1355 = { add_core_of = JAP }
-		1356 = { add_core_of = JAP }
-		1351 = { add_core_of = JAP }
-		1353 = { add_core_of = JAP }
-		1352 = { add_core_of = JAP }
-		528 = { add_core_of = JAP }
-		529 = { add_core_of = JAP }
-		530 = { add_core_of = JAP }
-		531 = { add_core_of = JAP }
-		532 = { add_core_of = JAP }
-		533 = { add_core_of = JAP }
-		534 = { add_core_of = JAP }
-		535 = { add_core_of = JAP }
-		536 = { add_core_of = JAP }
-		1354 = { add_core_of = JAP }
-		282 = { add_core_of = JAP }
-		release = JAP
-		JAP = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = JAP
-			}
-		}
-		JAP = { 
-			set_cosmetic_tag = GER_JPN_OCC
-			load_focus_tree = generic_focus            
-
-			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/WDGER/Portrait_BRG_Wilhelm_III.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
-				}
-			}
-
-			GER = {
-				set_autonomy = {
-					target = JAP
-					autonomous_state = kx_colored_puppet
-				}
-			}
-
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
-			}
-
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzolern"
-				long_name = "Haus Hohenzolern"
-			}
-		}
-	}
-}
-
-GER_establish_rk_AST = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 985
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
-
-	available = {
-		if = {
-			limit = {
-				AST = { exists = yes }
-			}
-			AST = { is_subject_of = GER }
-		}
-		985 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				985 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		AST = {
-			every_core_state = {
-				remove_core_of = AST
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = AST
-				}
-				remove_claim_by = AST
-			}
-		}
-		284 = { add_core_of = AST }
-		285 = { add_core_of = AST }
-		517 = { add_core_of = AST }
-		518 = { add_core_of = AST }
-		519 = { add_core_of = AST }
-		520 = { add_core_of = AST }
-		521 = { add_core_of = AST }
-		522 = { add_core_of = AST }
-		988 = { add_core_of = AST }
-		987 = { add_core_of = AST }
-		674 = { add_core_of = AST }
-		711 = { add_core_of = AST }
-		723 = { add_core_of = AST }
-		986 = { add_core_of = AST }
-		985 = { add_core_of = AST }
-		release = AST
-		AST = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = AST
+borgir = {
+		icon = generic_prepare_civil_war
+		complete_effect = {
+			
+			log = "NGF"
+			NGF = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		AST = { 
-			set_cosmetic_tag = GER_AST_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "HOL"
+			HOL = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = AST
-					autonomous_state = kx_colored_puppet
+			log = "FLN"
+			FLN = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "BEL"
+			BEL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+			log = "WGR"
+			WGR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_CAN = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 739
+			log = "SWI"
+			SWI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				CAN = { exists = yes }
+			log = "CAR"
+			CAR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			CAN = { is_subject_of = GER }
-		}
-		739 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				739 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		CAN = {
-			every_core_state = {
-				remove_core_of = CAN
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = CAN
+			log = "SPR"
+			SPR = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = CAN
-			}
-		}
-		276 = { add_core_of = CAN }
-		464 = { add_core_of = CAN }
-		465 = { add_core_of = CAN }
-		466 = { add_core_of = CAN }
-		467 = { add_core_of = CAN }
-		468 = { add_core_of = CAN }
-		469 = { add_core_of = CAN }
-		470 = { add_core_of = CAN }
-		471 = { add_core_of = CAN }
-		472 = { add_core_of = CAN }
-		473 = { add_core_of = CAN }
-		682 = { add_core_of = CAN }
-		683 = { add_core_of = CAN }
-		1332 = { add_core_of = CAN }
-		740 = { add_core_of = CAN }
-		832 = { add_core_of = CAN }
-		1330 = { add_core_of = CAN }
-		1331 = { add_core_of = CAN }
-		331 = { add_core_of = CAN }
-		332 = { add_core_of = CAN }
-		730 = { add_core_of = CAN }
-		739 = { add_core_of = CAN }
-		release = CAN
-		CAN = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = CAN
 			}
-		}
-		CAN = { 
-			set_cosmetic_tag = GER_CAN_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Charlotte I"
-				picture = "gfx/leaders/WDGER/Portrait_Luxemburg_Charlotte.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
+			log = "CNT"
+			CNT = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = CAN
-					autonomous_state = kx_colored_puppet
+			log = "POR"
+			POR = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "ULS"
+			ULS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Nassau-Weilburg"
-				long_name = "Haus Nassau-Weilburg"
+			log = "IRE"
+			IRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
-
-GER_establish_rk_USA = {
-	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 361
+			log = "ITA"
+			ITA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				USA = { exists = yes }
+			log = "SIC"
+			SIC = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			USA = { is_subject_of = GER }
-		}
-		361 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				361 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		USA = {
-			every_core_state = {
-				remove_core_of = USA
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = USA
+			log = "SLO"
+			SLO = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = USA
-			}
-		}
-		261 = { add_core_of = USA }
-		357 = { add_core_of = USA }
-		358 = { add_core_of = USA }
-		359 = { add_core_of = USA }
-		360 = { add_core_of = USA }
-		1172 = { add_core_of = USA }
-		362 = { add_core_of = USA }
-		363 = { add_core_of = USA }
-		364 = { add_core_of = USA }
-		365 = { add_core_of = USA }
-		366 = { add_core_of = USA }
-		367 = { add_core_of = USA }
-		368 = { add_core_of = USA }
-		369 = { add_core_of = USA }
-		370 = { add_core_of = USA }
-		371 = { add_core_of = USA }
-		372 = { add_core_of = USA }
-		373 = { add_core_of = USA }
-		374 = { add_core_of = USA }
-		375 = { add_core_of = USA }
-		376 = { add_core_of = USA }
-		377 = { add_core_of = USA }
-		378 = { add_core_of = USA }
-		379 = { add_core_of = USA }
-		380 = { add_core_of = USA }
-		381 = { add_core_of = USA }
-		382 = { add_core_of = USA }
-		383 = { add_core_of = USA }
-		384 = { add_core_of = USA }
-		385 = { add_core_of = USA }
-		386 = { add_core_of = USA }
-		387 = { add_core_of = USA }
-		388 = { add_core_of = USA }
-		389 = { add_core_of = USA }
-		390 = { add_core_of = USA }
-		391 = { add_core_of = USA }
-		392 = { add_core_of = USA }
-		393 = { add_core_of = USA }
-		394 = { add_core_of = USA }
-		395 = { add_core_of = USA }
-		396 = { add_core_of = USA }
-		463 = { add_core_of = USA }
-		1348 = { add_core_of = USA }
-		1168 = { add_core_of = USA }
-		1273 = { add_core_of = USA }
-		1175 = { add_core_of = USA }
-		1174 = { add_core_of = USA }
-		1350 = { add_core_of = USA }
-		1171 = { add_core_of = USA }
-		1170 = { add_core_of = USA }
-		1173 = { add_core_of = USA }
-		1349 = { add_core_of = USA }
-		796 = { add_core_of = USA }
-		797 = { add_core_of = USA }
-		798 = { add_core_of = USA }
-		1169 = { add_core_of = USA }
-		829 = { add_core_of = USA }
-		833 = { add_core_of = USA }
-		929 = { add_core_of = USA }
-		930 = { add_core_of = USA }
-		931 = { add_core_of = USA }
-		932 = { add_core_of = USA }
-		933 = { add_core_of = USA }
-		934 = { add_core_of = USA }
-		935 = { add_core_of = USA }
-		1096 = { add_core_of = USA }
-		1150 = { add_core_of = USA }
-		1151 = { add_core_of = USA }
-		1152 = { add_core_of = USA }
-		1153 = { add_core_of = USA }
-		1154 = { add_core_of = USA }
-		1155 = { add_core_of = USA }
-		1156 = { add_core_of = USA }
-		1157 = { add_core_of = USA }
-		1158 = { add_core_of = USA }
-		1159 = { add_core_of = USA }
-		1160 = { add_core_of = USA }
-		1161 = { add_core_of = USA }
-		1162 = { add_core_of = USA }
-		1163 = { add_core_of = USA }
-		1164 = { add_core_of = USA }
-		1165 = { add_core_of = USA }
-		1166 = { add_core_of = USA }
-		1167 = { add_core_of = USA }
-		361 = { add_core_of = USA }
-		release = USA
-		USA = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = USA
 			}
-		}
-		USA = { 
-			set_cosmetic_tag = GER_USA_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Wilhelm I"
-				picture = "gfx/leaders/WDGER/Portrait_Texas_Wilhelm_III.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
+			log = "AUS"
+			AUS = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = USA
-					autonomous_state = kx_colored_puppet
+			log = "PGU"
+			PGU = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "CZE"
+			CZE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
+			log = "GHA"
+			GHA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_MEX = {
-	icon = generic_prepare_civil_war
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 277
+			log = "DEN"
+			DEN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				MEX = { exists = yes }
+			log = "TOG"
+			TOG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			MEX = { is_subject_of = GER }
-		}
-		277 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				277 = { NOT = { is_core_of = GER } }
-		}
-	}
-
-	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		MEX = {
-			every_core_state = {
-				remove_core_of = MEX
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = MEX
+			log = "NOR"
+			NOR = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = MEX
 			}
-		}
-		1255 = { add_core_of = MEX }
-		474 = { add_core_of = MEX }
-		475 = { add_core_of = MEX }
-		476 = { add_core_of = MEX }
-		477 = { add_core_of = MEX }
-		478 = { add_core_of = MEX }
-		479 = { add_core_of = MEX }
-		480 = { add_core_of = MEX }
-		481 = { add_core_of = MEX }
-		482 = { add_core_of = MEX }
-		483 = { add_core_of = MEX }
-		484 = { add_core_of = MEX }
-		485 = { add_core_of = MEX }
-		1252 = { add_core_of = MEX }
-		1253 = { add_core_of = MEX }
-		1254 = { add_core_of = MEX }
-		277 = { add_core_of = MEX }
-		release = MEX
-		MEX = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = MEX
-			}
-		}
-		MEX = { 
-			set_cosmetic_tag = GER_MEX_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Josias von Waldeck-Prymont"
-				picture = "gfx/leaders/WDGER/Portrait_GEA_Prinz_Josias_Waldeck-Prymont.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
+			log = "SAM"
+			SAM = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = MEX
-					autonomous_state = kx_colored_puppet
+			log = "SWE"
+			SWE = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "GAL"
+			GAL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Waldeck-Prymont"
-				long_name = "Haus Waldeck-Prymont"
+			log = "POL"
+			POL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
-
-GER_establish_rk_GUA = {
-	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 313
+			log = "CPU"
+			CPU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				GUA = { exists = yes }
+			log = "SVK"
+			SVK = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			GUA = { is_subject_of = GER }
-		}
-		313 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				313 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
-
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GUA = {
-			every_core_state = {
-				remove_core_of = GUA
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = GUA
+			log = "CUM"
+			CUM = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = GUA
 			}
-		}
-		312 = { add_core_of = GUA }
-		842 = { add_core_of = GUA }
-		1249 = { add_core_of = GUA }
-		1262 = { add_core_of = GUA }
-		304 = { add_core_of = GUA }
-		311 = { add_core_of = GUA }
-		314 = { add_core_of = GUA }
-		316 = { add_core_of = GUA }
-		317 = { add_core_of = GUA }
-		685 = { add_core_of = GUA }
-		854 = { add_core_of = GUA }
-		1070 = { add_core_of = GUA }
-		1071 = { add_core_of = GUA }
-		1247 = { add_core_of = GUA }
-		1248 = { add_core_of = GUA }
-		1250 = { add_core_of = GUA }
-		1251 = { add_core_of = GUA }
-		1256 = { add_core_of = GUA }
-		1257 = { add_core_of = GUA }
-		1258 = { add_core_of = GUA }
-		1259 = { add_core_of = GUA }
-		1260 = { add_core_of = GUA }
-		1261 = { add_core_of = GUA }
-		313 = { add_core_of = GUA }
-		release = GUA
-		GUA = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = GUA
+
+			log = "HUN"
+			HUN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		GUA = { 
-			set_cosmetic_tag = GER_GUA_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "BOS"
+			BOS = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = GUA
-					autonomous_state = kx_colored_puppet
+			log = "CRO"
+			CRO = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "KDR"
+			KDR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "ALB"
+			ALB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "MOL"
+			MOL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+
+			log = "ROM"
+			ROM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_VEN = {
-	icon = generic_prepare_civil_war
+			log = "MCD"
+			MCD = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 849
+			log = "BUL"
+			BUL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				VEN = { exists = yes }
+			log = "DDR"
+			DDR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			VEN = { is_subject_of = GER }
-		}
-		849 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				849 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "GRE"
+			GRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		VEN = {
-			every_core_state = {
-				remove_core_of = VEN
+			log = "MLT"
+			MLT = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = VEN
+
+			log = "CRE"
+			CRE = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = VEN
 			}
-		}
-		306 = { add_core_of = VEN }
-		486 = { add_core_of = VEN }
-		493 = { add_core_of = VEN }
-		851 = { add_core_of = VEN }
-		852 = { add_core_of = VEN }
-		853 = { add_core_of = VEN }
-		1214 = { add_core_of = VEN }
-		1215 = { add_core_of = VEN }
-		1216 = { add_core_of = VEN }
-		1296 = { add_core_of = VEN }
-		305 = { add_core_of = VEN }
-		307 = { add_core_of = VEN }
-		488 = { add_core_of = VEN }
-		489 = { add_core_of = VEN }
-		490 = { add_core_of = VEN }
-		649 = { add_core_of = VEN }
-		850 = { add_core_of = VEN }
-		912 = { add_core_of = VEN }
-		1036 = { add_core_of = VEN }
-		1280 = { add_core_of = VEN }
-		849 = { add_core_of = VEN }
-		release = VEN
-		VEN = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = VEN
+
+			log = "EPR"
+			EPR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		VEN = { 
-			set_cosmetic_tag = GER_VEN_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Wilhelm Friedrich I"
-				picture = "gfx/leaders/WDGER/Portrait_GER_Wilhelm_Friedrich_Schleswig_Holstein.png"
-				expire = "1.1.1"
-				ideology = prussian_constitutionalism_subtype
-				traits = {
+			log = "LIT"
+			LIT = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = VEN
-					autonomous_state = kx_colored_puppet
+			log = "LAT"
+			LAT = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "BAT"
+			BAT = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "KAR"
+			KAR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "FIN"
+			FIN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Schleswig-Holstein"
-				long_name = "Haus Schleswig-Holstein"
+
+			log = "RRF"
+			RRF = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_JAM = {
-	icon = generic_prepare_civil_war
+			log = "WHR"
+			WHR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 689
+			log = "WSU"
+			WSU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				JAM = { exists = yes }
+			log = "UKR"
+			UKR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			JAM = { is_subject_of = GER }
-		}
-		689 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				689 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "KUR"
+			KUR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		JAM = {
-			every_core_state = {
-				remove_core_of = JAM
+			log = "TUR"
+			TUR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = JAM
+
+			log = "KUB"
+			KUB = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = JAM
 			}
-		}
-		308 = { add_core_of = JAM }
-		310 = { add_core_of = JAM }
-		687 = { add_core_of = JAM }
-		1309 = { add_core_of = JAM }
-		690 = { add_core_of = JAM }
-		691 = { add_core_of = JAM }
-		692 = { add_core_of = JAM }
-		694 = { add_core_of = JAM }
-		696 = { add_core_of = JAM }
-		1037 = { add_core_of = JAM }
-		1039 = { add_core_of = JAM }
-		1078 = { add_core_of = JAM }
-		1079 = { add_core_of = JAM }
-		1308 = { add_core_of = JAM }
-		309 = { add_core_of = JAM }
-		315 = { add_core_of = JAM }
-		318 = { add_core_of = JAM }
-		319 = { add_core_of = JAM }
-		686 = { add_core_of = JAM }
-		695 = { add_core_of = JAM }
-		818 = { add_core_of = JAM }
-		820 = { add_core_of = JAM }
-		1038 = { add_core_of = JAM }
-		1077 = { add_core_of = JAM }
-		1312 = { add_core_of = JAM }
-		689 = { add_core_of = JAM }
-		release = JAM
-		JAM = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = JAM
+
+			log = "DKB"
+			DKB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		JAM = { 
-			set_cosmetic_tag = GER_JAM_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "ABK"
+			ABK = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = JAM
-					autonomous_state = kx_colored_puppet
+			log = "GEO"
+			GEO = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "JBS"
+			JBS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "HEJ"
+			HEJ = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "SUD"
+			SUD = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+
+			log = "EGY"
+			EGY = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_PRU = {
-	icon = generic_prepare_civil_war
+			log = "ETH"
+			ETH = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 303
+			log = "SOM"
+			SOM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				PRU = { exists = yes }
+			log = "ALG"
+			ALG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			PRU = { is_subject_of = GER }
-		}
-		303 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				303 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "TUN"
+			TUN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		PRU = {
-			every_core_state = {
-				remove_core_of = PRU
+			log = "MOR"
+			MOR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = PRU
+
+			log = "RIF"
+			RIF = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = PRU
 			}
-		}
-		845 = { add_core_of = PRU }
-		491 = { add_core_of = PRU }
-		492 = { add_core_of = PRU }
-		494 = { add_core_of = PRU }
-		872 = { add_core_of = PRU }
-		303 = { add_core_of = PRU }
-		release = PRU
-		PRU = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = PRU
+
+			log = "MAL"
+			MAL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		PRU = { 
-			set_cosmetic_tag = GER_PRU_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "BFA"
+			BFA = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = PRU
-					autonomous_state = kx_colored_puppet
+			log = "NER"
+			NER = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "FAR"
+			FAR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "WAD"
+			WAD = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "NFA"
+			NFA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+
+			log = "LIB"
+			LIB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_BOL = {
-	icon = generic_prepare_civil_war
+			log = "SIE"
+			SIE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 302
+			log = "ZIM"
+			ZIM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				BOL = { exists = yes }
+			log = "SAF"
+			SAF = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			BOL = { is_subject_of = GER }
-		}
-		302 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				302 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "SIB"
+			SIB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		BOL = {
-			every_core_state = {
-				remove_core_of = BOL
+			log = "BRY"
+			BRY = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = BOL
+
+			log = "TRK"
+			TRK = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = BOL
 			}
-		}
-		1027 = { add_core_of = BOL }
-		487 = { add_core_of = BOL }
-		847 = { add_core_of = BOL }
-		848 = { add_core_of = BOL }
-		1073 = { add_core_of = BOL }
-		506 = { add_core_of = BOL }
-		873 = { add_core_of = BOL }
-		688 = { add_core_of = BOL }
-		901 = { add_core_of = BOL }
-		903 = { add_core_of = BOL }
-		302 = { add_core_of = BOL }
-		release = BOL
-		BOL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = BOL
+
+			log = "ALO"
+			ALO = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		BOL = { 
-			set_cosmetic_tag = GER_BOL_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "LEB"
+			LEB = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = BOL
-					autonomous_state = kx_colored_puppet
+			log = "PER"
+			PER = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "TRS"
+			TRS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "AFG"
+			AFG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "QIE"
+			QIE = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+
+			log = "LEP"
+			LEP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_CHL = {
-	icon = generic_prepare_civil_war
+			log = "HNN"
+			HNN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 279
+			log = "KOR"
+			KOR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				CHL = { exists = yes }
+			log = "TAI"
+			TAI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			CHL = { is_subject_of = GER }
-		}
-		279 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				279 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "JAP"
+			JAP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		CHL = {
-			every_core_state = {
-				remove_core_of = CHL
+			log = "DEH"
+			DEH = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = CHL
+
+			log = "MAD"
+			MAD = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = CHL
 			}
-		}
-		270 = { add_core_of = CHL }
-		507 = { add_core_of = CHL }
-		874 = { add_core_of = CHL }
-		279 = { add_core_of = CHL }
-		release = CHL
-		CHL = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = CHL
+
+			log = "BRM"
+			BRM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		CHL = { 
-			set_cosmetic_tag = GER_CHL_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "SHA"
+			SHA = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = CHL
-					autonomous_state = kx_colored_puppet
+			log = "NZL"
+			NZL = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "AST"
+			AST = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "NFL"
+			NFL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "CAN"
+			CAN = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+
+			log = "TEX"
+			TEX = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_ARG = {
-	icon = generic_prepare_civil_war
+			log = "USA"
+			USA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 278
+			log = "YUC"
+			YUC = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				ARG = { exists = yes }
+			log = "MEX"
+			MEX = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			ARG = { is_subject_of = GER }
-		}
-		278 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				278 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "COS"
+			COS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		ARG = {
-			every_core_state = {
-				remove_core_of = ARG
+			log = "ELS"
+			ELS = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = ARG
+
+			log = "GUA"
+			GUA = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = ARG
 			}
-		}
-		902 = { add_core_of = ARG }
-		299 = { add_core_of = ARG }
-		449 = { add_core_of = ARG }
-		508 = { add_core_of = ARG }
-		509 = { add_core_of = ARG }
-		904 = { add_core_of = ARG }
-		511 = { add_core_of = ARG }
-		579 = { add_core_of = ARG }
-		720 = { add_core_of = ARG }
-		1028 = { add_core_of = ARG }
-		512 = { add_core_of = ARG }
-		1029 = { add_core_of = ARG }
-		278 = { add_core_of = ARG }
-		release = ARG
-		ARG = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = ARG
+
+			log = "COL"
+			COL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		ARG = { 
-			set_cosmetic_tag = GER_ARG_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Deutsche Verwaltung"
-				picture = "gfx/leaders/WDGER/Portrait_Germany_Militar_General_Gouverneur.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "JAM"
+			JAM = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = ARG
-					autonomous_state = kx_colored_puppet
+			log = "CAF"
+			CAF = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "WRA"
+			WRA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
+			log = "PRU"
+			PRU = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
+			log = "PRI"
+			PRI = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Deutsche Verwaltung"
-				long_name = "Deutsche Verwaltung"
+
+			log = "BOL"
+			BOL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-	}
-}
 
-GER_establish_rk_BRA = {
-	icon = generic_prepare_civil_war
+			log = "FOP"
+			FOP = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 500
+			log = "CHL"
+			CHL = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
 
-	available = {
-		if = {
-			limit = {
-				BRA = { exists = yes }
+			log = "URG"
+			URG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			BRA = { is_subject_of = GER }
-		}
-		500 = { owner = { OR = { original_tag = GER is_subject_of = GER } } }
-		OR = {
-				500 = { NOT = { is_core_of = GER } }
-		}
-	}
 
-	fire_only_once = yes
+			log = "ARG"
+			ARG = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
+			}
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		BRA = {
-			every_core_state = {
-				remove_core_of = BRA
+			log = "PIR"
+			PIR = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-			every_state = {
-				limit = {
-					is_claimed_by = BRA
+
+			log = "BRA"
+			BRA = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
-				remove_claim_by = BRA
 			}
-		}
-		280 = { add_core_of = BRA }
-		495 = { add_core_of = BRA }
-		496 = { add_core_of = BRA }
-		497 = { add_core_of = BRA }
-		498 = { add_core_of = BRA }
-		499 = { add_core_of = BRA }
-		1074 = { add_core_of = BRA }
-		501 = { add_core_of = BRA }
-		502 = { add_core_of = BRA }
-		503 = { add_core_of = BRA }
-		504 = { add_core_of = BRA }
-		505 = { add_core_of = BRA }
-		855 = { add_core_of = BRA }
-		894 = { add_core_of = BRA }
-		895 = { add_core_of = BRA }
-		896 = { add_core_of = BRA }
-		898 = { add_core_of = BRA }
-		900 = { add_core_of = BRA }
-		1030 = { add_core_of = BRA }
-		1031 = { add_core_of = BRA }
-		1033 = { add_core_of = BRA }
-		1040 = { add_core_of = BRA }
-		1041 = { add_core_of = BRA }
-		1043 = { add_core_of = BRA }
-		1305 = { add_core_of = BRA }
-		1306 = { add_core_of = BRA }
-		1307 = { add_core_of = BRA }
-		1310 = { add_core_of = BRA }
-		1311 = { add_core_of = BRA }
-		301 = { add_core_of = BRA }
-		510 = { add_core_of = BRA }
-		300 = { add_core_of = BRA }
-		500 = { add_core_of = BRA }
-		release = BRA
-		BRA = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = GER
-						}
-						OR = {
-							is_owned_by = GER
-							OWNER = { is_subject_of = GER} 
-						}
-					}
-				}
-				transfer_state_to = BRA
+			log = "GYA"
+			GYA = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
-		}
-		BRA = { 
-			set_cosmetic_tag = GER_BRA_OCC
-			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "August I Wilhelm"
-				picture = "gfx/leaders/WDGER/Portrait_COS_August_Wilhelm.png"
-				expire = "1.1.1"
-				ideology = colonial_govt_subtype
-				traits = {
+			log = "SUR"
+			SUR = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			GER = {
-				set_autonomy = {
-					target = BRA
-					autonomous_state = kx_colored_puppet
+			log = "ICE"
+			ICE = {
+				every_owned_state = {
+					log = "[state.GetID]"
 				}
 			}
 
-			set_politics = {
-				ruling_party = authoritarian_democrat
-				elections_allowed = no
+			log = "TRB"
+			TRB = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 
-
-			set_popularities = {
-				market_liberal = 10
-				social_conservative = 20
-				authoritarian_democrat = 50
-				paternal_autocrat = 20
-			}
-			set_party_name = {
-				ideology = authoritarian_democrat
-				name = "Haus Hohenzollern"
-				long_name = "Haus Hohenzollern"
+			log = "TRM"
+			TRM = {
+				every_owned_state = {
+					log = "[state.GetID]"
+				}
 			}
 		}
+		days_remove = 0
 	}
-}
 }
 
 
