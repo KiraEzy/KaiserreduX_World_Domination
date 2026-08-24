@@ -5,7 +5,10 @@ GER_great_game = {
 		original_tag = GER
 	}
 	visible = { 
-		has_completed_focus = GER_Post_2WK_For
+		AND = {
+			has_completed_focus = GER_ForPol_Start
+			has_completed_focus = GER_Successful_Stabilization
+		}
 	}
 }
 
@@ -17,7 +20,8 @@ GER_asia_game = {
 	}
 	visible = { 
 		AND = {
-			has_completed_focus = GER_Post_2WK_For
+			has_completed_focus = GER_ForPol_Start
+			has_completed_focus = GER_Successful_Stabilization
 			GEA = { exists = yes }
 		}
 	}
@@ -42,6 +46,21 @@ GER_africa_game = {
 		original_tag = GER
 	}
 	visible = { 
-		has_completed_focus = GER_Post_2WK_For
+		AND = {
+			has_completed_focus = GER_ForPol_Start
+			has_completed_focus = GER_Successful_Stabilization
+		}
+	}
+}
+
+GER_africa_int_game = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 9
+	allowed = {
+		is_ai = no
+		original_tag = GER
+	}
+	visible = { 
+		has_completed_focus = GER_Weltkaiser_Weltmeister
 	}
 }
