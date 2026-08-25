@@ -962,264 +962,279 @@ RUS_integration_game = {
 	# 		}
 	# 	}
 	# }
-	# RUS_RUSINTLIT = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 11
-	# 			state = 94
-	# 			state = 96
-	# 			state = 189
-	# 			state = 655
-	# 			state = 1329
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		11 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		94 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		96 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		189 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		655 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1329 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 100
-	# 	remove_effect = {
-	# 		11 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		94 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		96 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		189 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		655 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1329 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		11 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		94 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		96 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		189 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		655 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1329 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		11 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		94 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		96 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		189 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		655 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1329 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTBAT = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 12
-	# 			state = 13
-	# 			state = 190
-	# 			state = 191
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		12 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		13 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		190 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		191 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 100
-	# 	remove_effect = {
-	# 		12 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		13 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		190 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		191 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		12 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		13 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		190 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		191 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		12 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		13 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		190 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		191 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTRIGA = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 1091
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		1091 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 60
-	# 	remove_effect = {
-	# 		1091 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		1091 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1091 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
+	RUS_RUSINTLIT = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 11
+				state = 94
+				state = 96
+				state = 189
+				state = 655
+				state = 1329
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			11 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			94 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			96 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			189 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			655 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1329 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 100
+		remove_effect = {
+			11 = {
+				add_core_of = RUS
+			}
+			94 = {
+				add_core_of = RUS
+			}
+			96 = {
+				add_core_of = RUS
+			}
+			189 = {
+				add_core_of = RUS
+			}
+			655 = {
+				add_core_of = RUS
+			}
+			1329 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			11 = {
+				add_claim_by = RUS
+			}
+			94 = {
+				add_claim_by = RUS
+			}
+			96 = {
+				add_claim_by = RUS
+			}
+			189 = {
+				add_claim_by = RUS
+			}
+			655 = {
+				add_claim_by = RUS
+			}
+			1329 = {
+				add_claim_by = RUS
+			}
+			11 = {
+				transfer_state_to = RUS
+			}
+			94 = {
+				transfer_state_to = RUS
+			}
+			96 = {
+				transfer_state_to = RUS
+			}
+			189 = {
+				transfer_state_to = RUS
+			}
+			655 = {
+				transfer_state_to = RUS
+			}
+			1329 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTBAT = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 12
+				state = 13
+				state = 190
+				state = 191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			12 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			13 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			190 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			191 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 100
+		remove_effect = {
+			12 = {
+				add_core_of = RUS
+			}
+			13 = {
+				add_core_of = RUS
+			}
+			190 = {
+				add_core_of = RUS
+			}
+			191 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			12 = {
+				add_claim_by = RUS
+			}
+			13 = {
+				add_claim_by = RUS
+			}
+			190 = {
+				add_claim_by = RUS
+			}
+			191 = {
+				add_claim_by = RUS
+			}
+			12 = {
+				transfer_state_to = RUS
+			}
+			13 = {
+				transfer_state_to = RUS
+			}
+			190 = {
+				transfer_state_to = RUS
+			}
+			191 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTRIGA = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1091
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			1091 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 60
+		remove_effect = {
+			1091 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			1091 = {
+				add_claim_by = RUS
+			}
+			1091 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+
 	# RUS_RUSINTFIN = {
 	# 	icon = generic_prepare_civil_war
 	# 	highlight_states = {
@@ -1510,170 +1525,181 @@ RUS_integration_game = {
 	# 		}
 	# 	}
 	# }
-	# RUS_RUSINTPOL = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 10
-	# 			state = 87
-	# 			state = 90
-	# 			state = 92
-	# 			state = 97
-	# 			state = 98
-	# 			state = 1088
-	# 			state = 1148
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		10 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		87 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		90 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		92 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		97 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		98 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1088 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1148 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 280
-	# 	remove_effect = {
-	# 		10 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		87 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		90 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		92 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		97 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		98 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1088 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1148 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		10 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		87 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		90 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		92 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		97 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		98 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1088 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1148 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		10 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		87 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		90 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		92 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		97 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		98 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1088 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1148 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
+
+	#start
+	RUS_RUSINTPOL = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 10
+				state = 87
+				state = 90
+				state = 92
+				state = 97
+				state = 98
+				state = 1088
+				state = 1148
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			10 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			87 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			90 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			92 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			97 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			98 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1088 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1148 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 280
+		remove_effect = {
+			10 = {
+				add_core_of = RUS
+			}
+			87 = {
+				add_core_of = RUS
+			}
+			90 = {
+				add_core_of = RUS
+			}
+			92 = {
+				add_core_of = RUS
+			}
+			97 = {
+				add_core_of = RUS
+			}
+			98 = {
+				add_core_of = RUS
+			}
+			1088 = {
+				add_core_of = RUS
+			}
+			1148 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.10
+			10 = {
+				add_claim_by = RUS
+			}
+			87 = {
+				add_claim_by = RUS
+			}
+			90 = {
+				add_claim_by = RUS
+			}
+			92 = {
+				add_claim_by = RUS
+			}
+			97 = {
+				add_claim_by = RUS
+			}
+			98 = {
+				add_claim_by = RUS
+			}
+			1088 = {
+				add_claim_by = RUS
+			}
+			1148 = {
+				add_claim_by = RUS
+			}
+			10 = {
+				transfer_state_to = RUS
+			}
+			87 = {
+				transfer_state_to = RUS
+			}
+			90 = {
+				transfer_state_to = RUS
+			}
+			92 = {
+				transfer_state_to = RUS
+			}
+			97 = {
+				transfer_state_to = RUS
+			}
+			98 = {
+				transfer_state_to = RUS
+			}
+			1088 = {
+				transfer_state_to = RUS
+			}
+			1148 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
 	# RUS_RUSINTWUKR = {
 	# 	icon = generic_prepare_civil_war
 	# 	highlight_states = {
@@ -1784,1014 +1810,1069 @@ RUS_integration_game = {
 	# 		}
 	# 	}
 	# }
-	# RUS_RUSINTGLC = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 88
-	# 			state = 1319
-	# 			state = 1124
-	# 			state = 1125
-	# 			state = 1314
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		88 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1319 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1124 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1125 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1314 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 180
-	# 	remove_effect = {
-	# 		88 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1319 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1124 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1125 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1314 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		88 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1319 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1124 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1125 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1314 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		88 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1319 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1124 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1125 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1314 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTMOL = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 78
-	# 			state = 1222
-	# 			state = 1320
-	# 			state = 80
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		78 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1222 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1320 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		80 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 100
-	# 	remove_effect = {
-	# 		78 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1222 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1320 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		80 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		78 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1222 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1320 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		78 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1222 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1320 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		80 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		80 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTDKB = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 218
-	# 			state = 238
-	# 			state = 245
-	# 			state = 1226
-	# 			state = 1231
-	# 			state = 1263
-	# 			state = 1264
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		218 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		238 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		245 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1226 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1231 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1263 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1264 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 120
-	# 	remove_effect = {
-	# 		218 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		238 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		245 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1226 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1231 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1263 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1264 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		218 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		238 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		245 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1226 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1231 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1263 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1264 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		218 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		238 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		245 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1226 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1231 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1263 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1264 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTKLM = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 237
-	# 			state = 1266
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		237 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1266 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 60
-	# 	remove_effect = {
-	# 		237 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1266 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		237 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1266 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		237 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1266 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTKUB = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 234
-	# 			state = 235
-	# 			state = 1227
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		234 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		235 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1227 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 80
-	# 	remove_effect = {
-	# 		234 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		235 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1227 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		234 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		235 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1227 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		234 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		235 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1227 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTNCAU = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 232
-	# 			state = 233
-	# 			state = 787
-	# 			state = 1186
-	# 			state = 1187
-	# 			state = 1189
-	# 			state = 1191
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		232 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		233 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		787 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1186 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1187 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1189 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1191 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 200
-	# 	remove_effect = {
-	# 		232 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		233 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		787 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1186 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1187 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1189 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1191 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		232 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		233 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		787 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1186 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1187 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1189 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1191 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		232 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		233 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		787 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1186 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1187 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1189 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1191 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTGEO = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 231
-	# 			state = 1080
-	# 			state = 1082
-	# 			state = 1188
-	# 			state = 1190
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		231 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1080 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1082 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1188 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1190 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 200
-	# 	remove_effect = {
-	# 		231 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1080 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1082 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1188 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1190 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		231 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1080 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1082 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1188 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1190 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		231 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1080 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1082 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1188 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1190 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTAZE = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 229
-	# 			state = 990
-	# 			state = 998
-	# 			state = 1081
-	# 			state = 1267
-	# 			state = 1298
-	# 			state = 1299
-	# 			state = 1300
-	# 			state = 1301
-	# 			state = 1302
-	# 			state = 1303
-	# 			state = 1304
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		229 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		990 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		998 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1081 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1267 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1298 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1299 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1300 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1301 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1302 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1303 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1304 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 250
-	# 	remove_effect = {
-	# 		229 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		990 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		998 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1081 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1267 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1298 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1299 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1300 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1301 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1302 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1303 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1304 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		229 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		990 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		998 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1081 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1267 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1298 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1299 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1300 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1301 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1302 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1303 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1304 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		229 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		990 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		998 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1081 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1267 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1298 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1299 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1300 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1301 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1302 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1303 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1304 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTARM = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 230
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		230 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 100
-	# 	remove_effect = {
-	# 		230 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		230 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		230 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
+	RUS_RUSINTGLC = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 88
+				state = 1319
+				state = 1124
+				state = 1125
+				state = 1314
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			88 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1319 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1124 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1125 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1314 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 180
+		remove_effect = {
+			88 = {
+				add_core_of = RUS
+			}
+			1319 = {
+				add_core_of = RUS
+			}
+			1124 = {
+				add_core_of = RUS
+			}
+			1125 = {
+				add_core_of = RUS
+			}
+			1314 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			88 = {
+				add_claim_by = RUS
+			}
+			1319 = {
+				add_claim_by = RUS
+			}
+			1124 = {
+				add_claim_by = RUS
+			}
+			1125 = {
+				add_claim_by = RUS
+			}
+			1314 = {
+				add_claim_by = RUS
+			}
+			88 = {
+				transfer_state_to = RUS
+			}
+			1319 = {
+				transfer_state_to = RUS
+			}
+			1124 = {
+				transfer_state_to = RUS
+			}
+			1125 = {
+				transfer_state_to = RUS
+			}
+			1314 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTMOL = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 78
+				state = 1222
+				state = 1320
+				state = 80
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			78 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1222 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1320 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			80 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 100
+		remove_effect = {
+			78 = {
+				add_core_of = RUS
+			}
+			1222 = {
+				add_core_of = RUS
+			}
+			1320 = {
+				add_core_of = RUS
+			}
+			80 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			78 = {
+				add_claim_by = RUS
+			}
+			1222 = {
+				add_claim_by = RUS
+			}
+			1320 = {
+				add_claim_by = RUS
+			}
+			78 = {
+				transfer_state_to = RUS
+			}
+			1222 = {
+				transfer_state_to = RUS
+			}
+			1320 = {
+				transfer_state_to = RUS
+			}
+			80 = {
+				add_claim_by = RUS
+			}
+			80 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTDKB = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 218
+				state = 238
+				state = 245
+				state = 1226
+				state = 1231
+				state = 1263
+				state = 1264
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			218 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			238 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			245 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1226 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1231 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1263 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1264 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 120
+		remove_effect = {
+			218 = {
+				add_core_of = RUS
+			}
+			238 = {
+				add_core_of = RUS
+			}
+			245 = {
+				add_core_of = RUS
+			}
+			1226 = {
+				add_core_of = RUS
+			}
+			1231 = {
+				add_core_of = RUS
+			}
+			1263 = {
+				add_core_of = RUS
+			}
+			1264 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.02
+			218 = {
+				add_claim_by = RUS
+			}
+			238 = {
+				add_claim_by = RUS
+			}
+			245 = {
+				add_claim_by = RUS
+			}
+			1226 = {
+				add_claim_by = RUS
+			}
+			1231 = {
+				add_claim_by = RUS
+			}
+			1263 = {
+				add_claim_by = RUS
+			}
+			1264 = {
+				add_claim_by = RUS
+			}
+			218 = {
+				transfer_state_to = RUS
+			}
+			238 = {
+				transfer_state_to = RUS
+			}
+			245 = {
+				transfer_state_to = RUS
+			}
+			1226 = {
+				transfer_state_to = RUS
+			}
+			1231 = {
+				transfer_state_to = RUS
+			}
+			1263 = {
+				transfer_state_to = RUS
+			}
+			1264 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTKLM = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 237
+				state = 1266
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			237 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1266 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 60
+		remove_effect = {
+			237 = {
+				add_core_of = RUS
+			}
+			1266 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.03
+			237 = {
+				add_claim_by = RUS
+			}
+			1266 = {
+				add_claim_by = RUS
+			}
+			237 = {
+				transfer_state_to = RUS
+			}
+			1266 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTKUB = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 234
+				state = 235
+				state = 1227
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			234 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			235 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1227 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 80
+		remove_effect = {
+			234 = {
+				add_core_of = RUS
+			}
+			235 = {
+				add_core_of = RUS
+			}
+			1227 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.03
+			234 = {
+				add_claim_by = RUS
+			}
+			235 = {
+				add_claim_by = RUS
+			}
+			1227 = {
+				add_claim_by = RUS
+			}
+			234 = {
+				transfer_state_to = RUS
+			}
+			235 = {
+				transfer_state_to = RUS
+			}
+			1227 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTNCAU = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 232
+				state = 233
+				state = 787
+				state = 1186
+				state = 1187
+				state = 1189
+				state = 1191
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			232 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			233 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			787 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1186 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1187 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1189 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1191 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 200
+		remove_effect = {
+			232 = {
+				add_core_of = RUS
+			}
+			233 = {
+				add_core_of = RUS
+			}
+			787 = {
+				add_core_of = RUS
+			}
+			1186 = {
+				add_core_of = RUS
+			}
+			1187 = {
+				add_core_of = RUS
+			}
+			1189 = {
+				add_core_of = RUS
+			}
+			1191 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.03
+			232 = {
+				add_claim_by = RUS
+			}
+			233 = {
+				add_claim_by = RUS
+			}
+			787 = {
+				add_claim_by = RUS
+			}
+			1186 = {
+				add_claim_by = RUS
+			}
+			1187 = {
+				add_claim_by = RUS
+			}
+			1189 = {
+				add_claim_by = RUS
+			}
+			1191 = {
+				add_claim_by = RUS
+			}
+			232 = {
+				transfer_state_to = RUS
+			}
+			233 = {
+				transfer_state_to = RUS
+			}
+			787 = {
+				transfer_state_to = RUS
+			}
+			1186 = {
+				transfer_state_to = RUS
+			}
+			1187 = {
+				transfer_state_to = RUS
+			}
+			1189 = {
+				transfer_state_to = RUS
+			}
+			1191 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTGEO = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+				state = 1080
+				state = 1082
+				state = 1188
+				state = 1190
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			231 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1080 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1082 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1188 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1190 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 200
+		remove_effect = {
+			231 = {
+				add_core_of = RUS
+			}
+			1080 = {
+				add_core_of = RUS
+			}
+			1082 = {
+				add_core_of = RUS
+			}
+			1188 = {
+				add_core_of = RUS
+			}
+			1190 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.02
+			231 = {
+				add_claim_by = RUS
+			}
+			1080 = {
+				add_claim_by = RUS
+			}
+			1082 = {
+				add_claim_by = RUS
+			}
+			1188 = {
+				add_claim_by = RUS
+			}
+			1190 = {
+				add_claim_by = RUS
+			}
+			231 = {
+				transfer_state_to = RUS
+			}
+			1080 = {
+				transfer_state_to = RUS
+			}
+			1082 = {
+				transfer_state_to = RUS
+			}
+			1188 = {
+				transfer_state_to = RUS
+			}
+			1190 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTAZE = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 229
+				state = 990
+				state = 998
+				state = 1081
+				state = 1267
+				state = 1298
+				state = 1299
+				state = 1300
+				state = 1301
+				state = 1302
+				state = 1303
+				state = 1304
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			229 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			990 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			998 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1081 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1267 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1298 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1299 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1300 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1301 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1302 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1303 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1304 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 250
+		remove_effect = {
+			229 = {
+				add_core_of = RUS
+			}
+			990 = {
+				add_core_of = RUS
+			}
+			998 = {
+				add_core_of = RUS
+			}
+			1081 = {
+				add_core_of = RUS
+			}
+			1267 = {
+				add_core_of = RUS
+			}
+			1298 = {
+				add_core_of = RUS
+			}
+			1299 = {
+				add_core_of = RUS
+			}
+			1300 = {
+				add_core_of = RUS
+			}
+			1301 = {
+				add_core_of = RUS
+			}
+			1302 = {
+				add_core_of = RUS
+			}
+			1303 = {
+				add_core_of = RUS
+			}
+			1304 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.02
+			229 = {
+				add_claim_by = RUS
+			}
+			990 = {
+				add_claim_by = RUS
+			}
+			998 = {
+				add_claim_by = RUS
+			}
+			1081 = {
+				add_claim_by = RUS
+			}
+			1267 = {
+				add_claim_by = RUS
+			}
+			1298 = {
+				add_claim_by = RUS
+			}
+			1299 = {
+				add_claim_by = RUS
+			}
+			1300 = {
+				add_claim_by = RUS
+			}
+			1301 = {
+				add_claim_by = RUS
+			}
+			1302 = {
+				add_claim_by = RUS
+			}
+			1303 = {
+				add_claim_by = RUS
+			}
+			1304 = {
+				add_claim_by = RUS
+			}
+			229 = {
+				transfer_state_to = RUS
+			}
+			990 = {
+				transfer_state_to = RUS
+			}
+			998 = {
+				transfer_state_to = RUS
+			}
+			1081 = {
+				transfer_state_to = RUS
+			}
+			1267 = {
+				transfer_state_to = RUS
+			}
+			1298 = {
+				transfer_state_to = RUS
+			}
+			1299 = {
+				transfer_state_to = RUS
+			}
+			1300 = {
+				transfer_state_to = RUS
+			}
+			1301 = {
+				transfer_state_to = RUS
+			}
+			1302 = {
+				transfer_state_to = RUS
+			}
+			1303 = {
+				transfer_state_to = RUS
+			}
+			1304 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTARM = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 230
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			230 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 100
+		remove_effect = {
+			230 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.01
+			230 = {
+				add_claim_by = RUS
+			}
+			230 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
 	# RUS_RUSINTALO = {
 	# 	icon = generic_prepare_civil_war
 	# 	highlight_states = {
@@ -3028,408 +3109,430 @@ RUS_integration_game = {
 	# 		}
 	# 	}
 	# }
-	# RUS_RUSINTTRK = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 407
-	# 			state = 585
-	# 			state = 586
-	# 			state = 712
-	# 			state = 1042
-	# 			state = 1196
-	# 			state = 1209
-	# 			state = 1211
-	# 			state = 1278
-	# 			state = 1279
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		407 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		585 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		586 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		712 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1042 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1196 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1209 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1211 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1278 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1279 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 200
-	# 	remove_effect = {
-	# 		407 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		585 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		586 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		712 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1042 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1196 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1209 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1211 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1278 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1279 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		407 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		585 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		586 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		712 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1042 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1196 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1209 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1211 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1278 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1279 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		407 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		585 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		586 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		712 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1042 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1196 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1209 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1211 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1278 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1279 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTKHV = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 584
-	# 			state = 861
-	# 			state = 1275
-	# 			state = 1281
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		584 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		861 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1275 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1281 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 200
-	# 	remove_effect = {
-	# 		584 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		861 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1275 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1281 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		584 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		861 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1275 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1281 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		584 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		861 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1275 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1281 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
-	# RUS_RUSINTBKR = {
-	# 	icon = generic_prepare_civil_war
-	# 	highlight_states = {
-	# 		highlight_state_targets = {
-	# 			state = 405
-	# 			state = 732
-	# 			state = 1210
-	# 			state = 1276
-	# 			state = 1277
-	# 		}
-	# 		highlight_color_while_active = 3
-	# 		highlight_color_before_active = 2
-	# 	}
-	# 	available = {
-	# 		405 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		732 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1210 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1276 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 		1277 = {
-	# 			owner = {
-	# 				OR = {
-	# 					original_tag = RUS
-	# 					is_subject_of = RUS
-	# 				}
-	# 			}
-	# 		}
-	# 	}
-	# 	fire_only_once = yes
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	days_remove = 200
-	# 	remove_effect = {
-	# 		405 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		732 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1210 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1276 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 		1277 = {
-	# 			add_core_of = RUS
-	# 		}
-	# 	}
-	# 	complete_effect = {
-	# 		405 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		732 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1210 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1276 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		1277 = {
-	# 			add_claim_by = RUS
-	# 		}
-	# 		405 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		732 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1210 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1276 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 		1277 = {
-	# 			transfer_state_to = RUS
-	# 		}
-	# 	}
-	# }
+	RUS_RUSINTTRK = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 407
+				state = 585
+				state = 586
+				state = 712
+				state = 1042
+				state = 1196
+				state = 1209
+				state = 1211
+				state = 1278
+				state = 1279
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			407 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			585 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			586 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			712 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1042 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1196 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1209 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1211 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1278 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1279 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 200
+		remove_effect = {
+			407 = {
+				add_core_of = RUS
+			}
+			585 = {
+				add_core_of = RUS
+			}
+			586 = {
+				add_core_of = RUS
+			}
+			712 = {
+				add_core_of = RUS
+			}
+			1042 = {
+				add_core_of = RUS
+			}
+			1196 = {
+				add_core_of = RUS
+			}
+			1209 = {
+				add_core_of = RUS
+			}
+			1211 = {
+				add_core_of = RUS
+			}
+			1278 = {
+				add_core_of = RUS
+			}
+			1279 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.02
+			407 = {
+				add_claim_by = RUS
+			}
+			585 = {
+				add_claim_by = RUS
+			}
+			586 = {
+				add_claim_by = RUS
+			}
+			712 = {
+				add_claim_by = RUS
+			}
+			1042 = {
+				add_claim_by = RUS
+			}
+			1196 = {
+				add_claim_by = RUS
+			}
+			1209 = {
+				add_claim_by = RUS
+			}
+			1211 = {
+				add_claim_by = RUS
+			}
+			1278 = {
+				add_claim_by = RUS
+			}
+			1279 = {
+				add_claim_by = RUS
+			}
+			407 = {
+				transfer_state_to = RUS
+			}
+			585 = {
+				transfer_state_to = RUS
+			}
+			586 = {
+				transfer_state_to = RUS
+			}
+			712 = {
+				transfer_state_to = RUS
+			}
+			1042 = {
+				transfer_state_to = RUS
+			}
+			1196 = {
+				transfer_state_to = RUS
+			}
+			1209 = {
+				transfer_state_to = RUS
+			}
+			1211 = {
+				transfer_state_to = RUS
+			}
+			1278 = {
+				transfer_state_to = RUS
+			}
+			1279 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTKHV = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 584
+				state = 861
+				state = 1275
+				state = 1281
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			584 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			861 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1275 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1281 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 200
+		remove_effect = {
+			584 = {
+				add_core_of = RUS
+			}
+			861 = {
+				add_core_of = RUS
+			}
+			1275 = {
+				add_core_of = RUS
+			}
+			1281 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.03
+			584 = {
+				add_claim_by = RUS
+			}
+			861 = {
+				add_claim_by = RUS
+			}
+			1275 = {
+				add_claim_by = RUS
+			}
+			1281 = {
+				add_claim_by = RUS
+			}
+			584 = {
+				transfer_state_to = RUS
+			}
+			861 = {
+				transfer_state_to = RUS
+			}
+			1275 = {
+				transfer_state_to = RUS
+			}
+			1281 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
+	RUS_RUSINTBKR = {
+		icon = generic_prepare_civil_war
+		highlight_states = {
+			highlight_state_targets = {
+				state = 405
+				state = 732
+				state = 1210
+				state = 1276
+				state = 1277
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		available = {
+			405 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			732 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1210 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1276 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+			1277 = {
+				is_claimed_by = RUS
+				owner = {
+					OR = {
+						original_tag = RUS
+						is_subject_of = RUS
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 5
+		}
+		days_remove = 200
+		remove_effect = {
+			405 = {
+				add_core_of = RUS
+			}
+			732 = {
+				add_core_of = RUS
+			}
+			1210 = {
+				add_core_of = RUS
+			}
+			1276 = {
+				add_core_of = RUS
+			}
+			1277 = {
+				add_core_of = RUS
+			}
+		}
+		complete_effect = {
+			add_stability = 0.04
+			405 = {
+				add_claim_by = RUS
+			}
+			732 = {
+				add_claim_by = RUS
+			}
+			1210 = {
+				add_claim_by = RUS
+			}
+			1276 = {
+				add_claim_by = RUS
+			}
+			1277 = {
+				add_claim_by = RUS
+			}
+			405 = {
+				transfer_state_to = RUS
+			}
+			732 = {
+				transfer_state_to = RUS
+			}
+			1210 = {
+				transfer_state_to = RUS
+			}
+			1276 = {
+				transfer_state_to = RUS
+			}
+			1277 = {
+				transfer_state_to = RUS
+			}
+		}
+	}
 	# RUS_RUSINTTRM = {
 	# 	icon = generic_prepare_civil_war
 	# 	highlight_states = {
@@ -3666,6 +3769,8 @@ RUS_integration_game = {
 	# 		}
 	# 	}
 	# }
+
+	#end
 	RUS_RUSINTMON = {
 		icon = generic_prepare_civil_war
 		highlight_states = {
