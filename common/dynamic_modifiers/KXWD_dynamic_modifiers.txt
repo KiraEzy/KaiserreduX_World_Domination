@@ -1,0 +1,23 @@
+KXWD_TRM_siberian_war_modifier_during_rcw = {
+	icon = "GFX_idea_generic_cold_war"
+	enable = { has_global_flag = RCW_begun }
+	remove_trigger = { has_global_flag = RCW_over }
+
+	army_attack_factor = 0.2
+    army_defence_factor = 0.2
+    army_speed_factor = 0.2
+    attrition = -0.15
+    army_org_factor = 0.2
+}
+
+KXWD_TRM_siberian_war_modifier_outside_rcw = {
+	icon = "GFX_idea_generic_cold_war"
+	enable = { NOT = { has_global_flag = RCW_begun } }
+	remove_trigger = { has_global_flag = RCW_over }
+
+	army_attack_factor = 0.4
+    army_defence_factor = 0.4
+    army_speed_factor = 0.4
+    attrition = -0.3
+    army_org_factor = 0.4
+}

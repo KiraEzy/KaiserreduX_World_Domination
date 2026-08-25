@@ -1698,7 +1698,11 @@ SOV_Great_Game_SSR_decisions = {
 				state = 1057
 				state = 426
 				state = 428
-				state = 430
+				state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 				state = 431
 				state = 432
 				state = 433
@@ -1723,7 +1727,10 @@ SOV_Great_Game_SSR_decisions = {
 				state = 887
 				state = 890
 				state = 891
+				state = 1361
+				state = 1360
 				state = 429
+				state = 430
 				state = 427
 				state = 424
 				state = 889
@@ -1764,7 +1771,6 @@ SOV_Great_Game_SSR_decisions = {
 				state = 887
 				state = 890
 				state = 891
-				state = 429
 				state = 427
 				state = 424
 				state = 889
@@ -2032,7 +2038,31 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
+						1361 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1360 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
 						429 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						430 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -2249,7 +2279,16 @@ SOV_Great_Game_SSR_decisions = {
 					891 = {
 						add_core_of = DEH
 					}
+					1361 = {
+						add_core_of = DEH
+					}
+					1360 = {
+						add_core_of = DEH
+					}
 					429 = {
+						add_core_of = DEH
+					}
+					430 = {
 						add_core_of = DEH
 					}
 					427 = {
@@ -13599,7 +13638,9 @@ SOV_Great_Game_SSR_decisions = {
 		highlight_states = {
 			highlight_state_targets = {
 				state = 122
+				state = 1225
 				state = 122
+				state = 1225
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -13625,6 +13666,14 @@ SOV_Great_Game_SSR_decisions = {
 					}
 					WAL = {
 						122 = {
+							owner = {
+								OR = {
+									original_tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+						1225 = {
 							owner = {
 								OR = {
 									original_tag = ROOT
@@ -13667,6 +13716,9 @@ SOV_Great_Game_SSR_decisions = {
 						remove_core_of = WAL
 					}
 					122 = {
+						add_core_of = WAL
+					}
+					1225 = {
 						add_core_of = WAL
 					}
 					WAL = {
@@ -14253,11 +14305,10 @@ SOV_Great_Game_SSR_decisions = {
 				state = 342
 				state = 340
 				state = 339
-				state = 1225
 				state = 341
 				state = 773
-				state = 184
-				state = 1089
+				# state = 184
+				# state = 1089
 				state = 230
 				state = 1000
 				state = 354
@@ -14271,11 +14322,10 @@ SOV_Great_Game_SSR_decisions = {
 				state = 342
 				state = 340
 				state = 339
-				state = 1225
 				state = 341
 				state = 773
-				state = 184
-				state = 1089
+				# state = 184
+				# state = 1089
 			}
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
@@ -14404,14 +14454,6 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
-						1225 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
 						341 = {
 							owner = {
 								OR = {
@@ -14428,22 +14470,22 @@ SOV_Great_Game_SSR_decisions = {
 								}
 							}
 						}
-						184 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
-						1089 = {
-							owner = {
-								OR = {
-									original_tag = ROOT
-									is_subject_of = ROOT
-								}
-							}
-						}
+						# 184 = {
+						# 	owner = {
+						# 		OR = {
+						# 			original_tag = ROOT
+						# 			is_subject_of = ROOT
+						# 		}
+						# 	}
+						# }
+						# 1089 = {
+						# 	owner = {
+						# 		OR = {
+						# 			original_tag = ROOT
+						# 			is_subject_of = ROOT
+						# 		}
+						# 	}
+						# }
 					}
 				}
 				NOT = {
@@ -14515,9 +14557,6 @@ SOV_Great_Game_SSR_decisions = {
 						add_core_of = TUR
 					}
 					339 = {
-						add_core_of = TUR
-					}
-					1225 = {
 						add_core_of = TUR
 					}
 					341 = {

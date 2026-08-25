@@ -1,0 +1,87 @@
+# Absolutist Netherlands — colonial asset extraction (holwd.7.b)
+
+holwd_strip_colonial_factories_to_overlord_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect holwd_strip_colonial_factories_to_overlord_effect"
+	add_ideas = KXWD_HOL_Colonial_Subject_Exploitation
+}
+
+holwd_give_colonial_resource_rights_to_overlord_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect holwd_give_colonial_resource_rights_to_overlord_effect"
+	every_owned_state = {
+		limit = {
+			OR = {
+				has_resources_amount = {
+					resource = rubber
+					amount > 0
+				}
+				has_resources_amount = {
+					resource = oil
+					amount > 0
+				}
+				has_resources_amount = {
+					resource = tungsten
+					amount > 0
+				}
+				has_resources_amount = {
+					resource = steel
+					amount > 0
+				}
+				has_resources_amount = {
+					resource = chromium
+					amount > 0
+				}
+				has_resources_amount = {
+					resource = aluminium
+					amount > 0
+				}
+			}
+		}
+		ROOT = {
+			give_resource_rights = {
+				receiver = OVERLORD
+				state = PREV
+			}
+		}
+	}
+}
+
+holwd_extract_colonial_subject_effect = {
+	log = "[GetDateText]: [Root.GetName]: Effect holwd_extract_colonial_subject_effect"
+	holwd_strip_colonial_factories_to_overlord_effect = yes
+	holwd_give_colonial_resource_rights_to_overlord_effect = yes
+	add_manpower = -500000
+	OVERLORD = { add_manpower = 500000 }
+}
+
+# Unlock the opposite fight focus when the capital is held (HOL or subject)
+holwd_check_secondary_fight_focus_unlocks = {
+	if = {
+		limit = {
+			has_country_flag = HOLWD_unlock_fight_uob
+			NOT = { has_country_flag = HOLWD_unlock_fight_ger }
+			126 = { is_owned_by_ROOT_or_subject = yes }
+		}
+		country_event = holwd.9
+	}
+	if = {
+		limit = {
+			has_country_flag = HOLWD_unlock_fight_ger
+			NOT = { has_country_flag = HOLWD_unlock_fight_uob }
+			64 = { is_owned_by_ROOT_or_subject = yes }
+		}
+		country_event = holwd.10
+	}
+}
+
+holwd_puppet_indonesia_extract_effect = {
+	log = "[GetDateText]: [This.GetName]: Effect holwd_puppet_indonesia_extract_effect"
+	if = {
+		limit = {
+			country_exists = DEI
+			DEI = { is_subject_of = ROOT }
+		}
+		DEI = {
+			holwd_extract_colonial_subject_effect = yes
+		}
+	}
+}

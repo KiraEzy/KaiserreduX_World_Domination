@@ -1,22 +1,144 @@
-RUS_Great_game = {
-	icon = GFX_category_icon
 
-	allowed = {
-		original_tag = RUS
-	}
+###################################################################################################################
+# Integration Decisions
 
-	visible = { 
-    has_completed_focus = RUS_Imperial_Glory
-	}
-}
 RUS_integration_game = {
 	icon = GFX_category_icon
+	priority = 11
 
 	allowed = {
 		original_tag = RUS
 	}
 
 	visible = { 
-    has_completed_focus = RUS_Imperial_Glory
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow
+			has_completed_focus = RUS_Clericals #yellow
+			has_completed_focus = RUS_Crown_And_Sword
+			has_completed_focus = RUS_Regency
+			has_completed_focus = RUS_Long_Live_Tsar #VNS-KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
+		}
 	}
+}
+
+###################################################################################################################
+# Decisions to hire Generals
+
+RUS_recruiting_game = {
+	icon = GFX_category_icon
+	priority = 10
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
+			has_completed_focus = RUS_Clericals #yellow validated
+			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restoration
+			has_completed_focus = RUS_Regency #Drozdovite Regency
+			has_completed_focus = RUS_Long_Live_Tsar #VNS-KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
+		}
+	}
+}
+
+###################################################################################################################
+# Absolutist Puppets
+
+RUS_absolutist_great_game = {
+	icon = GFX_category_icon
+	priority = 9
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		#for yellow flag
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_rnsma #blackhumdred yellow validated
+			has_completed_focus = RUS_Clericals #yellow validated
+			has_completed_focus = RUS_Crown_And_Sword #Drozdovite Restoration
+			has_completed_focus = RUS_Regency #Drozdovite Regency
+		}
+	}
+}
+
+###################################################################################################################
+# Constitutional Puppets
+
+RUS_constitutional_great_game = {
+	icon = GFX_category_icon
+	priority = 9
+
+	allowed = {
+		original_tag = RUS
+	}
+
+	visible = { 
+		#for normal flag
+		is_ai = no
+		OR = {
+			has_completed_focus = RUS_Long_Live_Tsar #VNS-KDP Restoration
+			has_completed_focus = RUS_The_Sword_Bows_To_The_Crown #Wrangel Restoration
+			has_completed_focus = RUS_Black_Tsar #Wrangel Tsar
+		}
+	}
+}
+
+###################################################################################################################
+SOV_Great_Game_SSR_decisions = {
+	icon = GFX_decision_category_russia
+	priority = 100
+	allowed = {
+		OR = {
+			original_tag = RUS
+			original_tag = GEO
+		}
+	}
+	visible = {
+		OR = {
+			RUS = {
+				AND = {
+					has_completed_focus = RUS_The_War_Effort
+				}
+			}
+		}
+	}
+				# RUS = { 
+		# 	OR = {
+		# 		has_cosmetic_tag = SOV_union
+		# 		has_cosmetic_tag = SOV_union_alternative
+		# 		has_cosmetic_tag = SOV_union_alternative_2
+		# 		has_cosmetic_tag = SOV_union_alternative_3
+		# 		has_cosmetic_tag = SOV_union_kirov
+		# 		has_cosmetic_tag = SOV_union_syndicalist
+		# 		has_cosmetic_tag = SOV_union_psr
+		# 		has_cosmetic_tag = SOV_union_labor_republic
+		# 		has_cosmetic_tag = SOV_union_yezhov
+		# 		has_cosmetic_tag = SOV_union_tomsky
+		# 		has_cosmetic_tag = SOV_zhdanov
+		# 		has_cosmetic_tag = SOV_gastev
+		# 		has_cosmetic_tag = SOV_mayakovsky
+		# 		has_cosmetic_tag = SOV_world
+		# 		has_cosmetic_tag = SOV_workers
+		# 		has_cosmetic_tag = SOV_tsentrobalt
+		# 		has_cosmetic_tag = SOV_tukhachevsky_totalist
+		# 		has_cosmetic_tag = SOV_tukhachevsky
+		# 		has_cosmetic_tag = SOV_lunacharsky
+		# 		has_cosmetic_tag = SOV_molotov
+		# 		has_cosmetic_tag = SOV_labor_republic
+		# 		has_cosmetic_tag = SOV_union_labor_republic_2
+		# 	}
+		# }
+	
+
 }

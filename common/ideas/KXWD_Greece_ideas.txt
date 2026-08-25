@@ -11,7 +11,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.05
 				war_support_weekly = 0.01
-				recruitable_population_factor = 0.2
+				conscription_factor = 0.2
 				war_support_factor = 0.1
 				stability_factor = 0.1
 			}
@@ -25,8 +25,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.15
 				war_support_weekly = 0.015
-				recruitable_population_factor = 0.4
-				recruitable_population = 0.025
+				conscription_factor = 0.4
+				conscription = 0.025
 				war_support_factor = 0.1
 				stability_factor = 0.1
 				army_attack_factor = 0.05
@@ -82,7 +82,7 @@ ideas = {
 				army_defence_factor = 0.05
 				army_org_factor = 0.1
 				army_morale_factor = 0.15
-				land_reinforce_rate = 1.5
+				land_reinforce_rate = 0.015
 			}
 			removal_cost = -1
 		}
@@ -96,7 +96,7 @@ ideas = {
 				army_defence_factor = 0.15
 				army_org_factor = 0.2
 				army_morale_factor = 0.2
-				land_reinforce_rate = 2.5
+				land_reinforce_rate = 0.025
 				army_speed_factor = 0.2
 			}
 			removal_cost = -1

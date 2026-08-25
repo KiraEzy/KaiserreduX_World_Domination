@@ -1,0 +1,73 @@
+defined_text = {
+	name = GetKXWD_BEL_flanders_influence_status
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 1 }
+		}
+		localization_key = KXWD_BEL_line_flanders_strong_nl
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 2 }
+		}
+		localization_key = KXWD_BEL_line_flanders_slight_nl
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 3 }
+		}
+		localization_key = KXWD_BEL_line_flanders_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 4 }
+		}
+		localization_key = KXWD_BEL_line_flanders_slight_ger
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_flanders_frame = 5 }
+		}
+		localization_key = KXWD_BEL_line_flanders_strong_ger
+	}
+	text = {
+		localization_key = KXWD_BEL_line_flanders_neutral
+	}
+}
+
+defined_text = {
+	name = GetKXWD_BEL_wallonia_influence_status
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_wallonia_frame = 1 }
+		}
+		localization_key = KXWD_BEL_line_wallonia_strong_nl
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_wallonia_frame = 2 }
+		}
+		localization_key = KXWD_BEL_line_wallonia_slight_nl
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_wallonia_frame = 3 }
+		}
+		localization_key = KXWD_BEL_line_wallonia_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_wallonia_frame = 4 }
+		}
+		localization_key = KXWD_BEL_line_wallonia_slight_ger
+	}
+	text = {
+		trigger = {
+			check_variable = { global.KXWD_BEL_wallonia_frame = 5 }
+		}
+		localization_key = KXWD_BEL_line_wallonia_strong_ger
+	}
+	text = {
+		localization_key = KXWD_BEL_line_wallonia_neutral
+	}
+}

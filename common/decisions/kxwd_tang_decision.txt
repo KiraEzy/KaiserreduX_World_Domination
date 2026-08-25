@@ -639,7 +639,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = VIN
@@ -825,7 +825,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SIB
@@ -971,7 +971,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = TRM
@@ -1212,7 +1212,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = RUS
@@ -1365,8 +1365,14 @@ MING_great_game = {
 					state = 426
 					state = 427
 					state = 428
+					state = 1361
+					state = 1360
 					state = 429
-					state = 430
+					state = 1358
+state = 1359
+state = 1362
+state = 1363
+state = 430
 					state = 431
 					state = 432
 					state = 433
@@ -1415,8 +1421,14 @@ MING_great_game = {
 			426 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			427 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			428 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1361 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1360 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			429 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
-			430 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+			1358 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+1359 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+1362 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+1363 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
+430 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			431 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			432 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
 			433 = { owner = { OR = { original_tag = YUN is_subject_of = YUN } } }
@@ -1454,7 +1466,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = DEH
@@ -1472,8 +1484,14 @@ MING_great_game = {
 			426 = { add_core_of = DEH }
 			427 = { add_core_of = DEH }
 			428 = { add_core_of = DEH }
-			429 = { add_core_of = DEH }
-			430 = { add_core_of = DEH }
+			1361 = { add_core_of = DEH}
+			1360 = { add_core_of = DEH}
+			429 = { add_core_of = DEH}
+			1358 = { add_core_of = DEH }
+1359 = { add_core_of = DEH }
+1362 = { add_core_of = DEH }
+1363 = { add_core_of = DEH }
+430 = { add_core_of = DEH }
 			431 = { add_core_of = DEH }
 			432 = { add_core_of = DEH }
 			433 = { add_core_of = DEH }
@@ -1630,7 +1648,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = TRK
@@ -1748,7 +1766,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = KOR
@@ -1875,7 +1893,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = JAP
@@ -2002,7 +2020,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = INS
@@ -2125,7 +2143,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SAR
@@ -2236,7 +2254,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = PHI
@@ -2358,7 +2376,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = AST
@@ -2491,7 +2509,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = PER
@@ -2667,7 +2685,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = DKB
@@ -2828,7 +2846,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = TUR
@@ -3029,7 +3047,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = UKR
@@ -3177,7 +3195,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = WHR
@@ -3288,7 +3306,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = BAT
@@ -3411,7 +3429,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = FIN
@@ -3531,7 +3549,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SWE
@@ -3641,7 +3659,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = NOR
@@ -3742,7 +3760,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = DEN
@@ -3864,7 +3882,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = GER
@@ -3991,7 +4009,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = DDR
@@ -4149,7 +4167,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = FRA
@@ -4269,7 +4287,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = BEL
@@ -4367,7 +4385,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = HOL
@@ -4484,7 +4502,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CZE
@@ -4597,7 +4615,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = AUS
@@ -4716,7 +4734,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = POL
@@ -4821,7 +4839,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SWI
@@ -4960,7 +4978,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ITA
@@ -5115,7 +5133,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CRO
@@ -5289,7 +5307,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = HUN
@@ -5422,7 +5440,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SER
@@ -5521,7 +5539,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ALB
@@ -5650,7 +5668,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = GRE
@@ -5770,7 +5788,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ROM
@@ -5875,7 +5893,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = BUL
@@ -5967,7 +5985,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CYP
@@ -6109,7 +6127,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SPR
@@ -6238,7 +6256,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = POR
@@ -6374,7 +6392,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ENG
@@ -6523,7 +6541,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = HEJ
@@ -6654,7 +6672,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = EGY
@@ -6782,7 +6800,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ALG
@@ -6935,7 +6953,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = MAL
@@ -7075,7 +7093,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ETH
@@ -7237,7 +7255,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = COG
@@ -7384,7 +7402,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = KEN
@@ -7535,7 +7553,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = SAF
@@ -7658,7 +7676,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = MAG
@@ -7780,7 +7798,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ARG
@@ -7893,7 +7911,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CHL
@@ -7985,7 +8003,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = URG
@@ -8079,7 +8097,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = BOL
@@ -8225,7 +8243,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = BRA
@@ -8349,7 +8367,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = PRU
@@ -8444,7 +8462,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ECU
@@ -8550,7 +8568,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = COL
@@ -8659,7 +8677,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = VEN
@@ -8770,7 +8788,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = GYA
@@ -8867,7 +8885,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = HAI
@@ -8956,7 +8974,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = PRI
@@ -9045,7 +9063,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CUB
@@ -9132,7 +9150,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = JAM
@@ -9242,7 +9260,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = PAN
@@ -9350,7 +9368,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = HON
@@ -9447,7 +9465,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = GUA
@@ -9574,7 +9592,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = MEX
@@ -9683,7 +9701,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = YUC
@@ -9779,7 +9797,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = TXS
@@ -9877,7 +9895,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = DSR
@@ -9979,7 +9997,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CAL
@@ -10097,7 +10115,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = AML
@@ -10238,7 +10256,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = USA
@@ -10381,7 +10399,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CGL
@@ -10497,7 +10515,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = NEE
@@ -10589,7 +10607,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = NYC
@@ -10684,7 +10702,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ALA
@@ -10798,7 +10816,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CAN
@@ -10906,7 +10924,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = QUE
@@ -10999,7 +11017,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = NFL
@@ -11086,7 +11104,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = ICE
@@ -11172,7 +11190,7 @@ MING_great_game = {
 		fire_only_once = yes
 
 		ai_will_do = {
-			factor = 5
+			factor = 0
 		}
 		complete_effect = {
 			release = CRE
