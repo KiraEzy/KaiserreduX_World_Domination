@@ -1,0 +1,208 @@
+# Field-tested HOI4 pitfalls
+
+These are portable failure patterns reproduced while maintaining a large live
+mod. Project names and identifiers are intentionally omitted. Reconfirm each
+fix against the target build, consumer, dependency set, and current log.
+
+## Localisation
+
+### Duplicate keys are two different problems
+
+- Same key and same value is an exact duplicate. It can normally be removed
+  after choosing the intended canonical file.
+- Same key and different value is a content conflict. Do not guess which text
+  wins; report every file and value and obtain an explicit canonical choice.
+- Load order is not a durable conflict-resolution strategy. Use a deliberate
+  `localisation/<language>/replace/` entry only when overriding vanilla or a
+  dependency is the actual design.
+- Preserve a user- or project-designated canonical file. File size and number
+  of entries are weak heuristics, not authority.
+- A bulk dedupe must not compact whitespace or rewrite unrelated values. Review
+  the diff and run `git diff --check` afterward.
+
+### Nested text support is consumer-specific
+
+A shared `$OTHER_KEY$` rendered literally, including the dollar signs, in one
+real GUI tooltip path. The reliable production fix was to inline the sentence
+in each affected tooltip after the failure was reproduced in-game.
+
+Do not conclude that nested localisation is globally broken. It works in many
+vanilla consumers, and bound localisation is recursive in supported consumers.
+Instead:
+
+1. identify the actual GUI/event/focus/decision consumer;
+2. confirm whether it supplies dynamic or contextual localisation;
+3. test `$KEY$`, scripted localisation, or bound localisation there;
+4. keep a direct-key or inline fallback when the richer form renders literally.
+
+The Wiki separately warns that legacy `pdx_tooltip` does not reliably expand
+nested `$KEY$`. That is a consumer limitation, not a language-wide rule.
+
+### Formatting markers can fail far from their source
+
+- Every opened colour such as `§C` needs a following `§!`, even at the end of a
+  value. Missing resets can bleed into later UI text.
+- `§M`, `§ `, or a string ending in bare `§` produces colour errors whose log
+  line may not name the source file. Search all loaded `.yml` files.
+- A `£text_icon` requires a matching `GFX_text_icon` sprite. For multi-frame
+  icons, verify both `£name|N` and `legacy_lazy_load = no`.
+- Preserve formatting tokens while translating. Translators should change
+  prose, not `$PARAMETERS$`, `[Scope.GetFunction]`, `[?variables|format]`,
+  `§...§!`, or `£icons` unless the change deliberately targets them.
+
+### Encoding and language identity form one contract
+
+The file must have a UTF-8 BOM, the first content line must be the correct
+`l_<language>:` header, the filename should end in `_l_<language>.yml`, and the
+file should live in the matching `localisation/<language>/` directory. A valid
+sentence in a mismatched file can silently disappear or pollute another
+language's collision set.
+
+Use only `key: "Text"`. Never use `key:0 "Text"` or another numeric key-version
+suffix, even when an old mod or tutorial uses it. Migrate the entry by removing
+the suffix before it enters a template or production file.
+
+### Dynamic text needs a real context
+
+Square-bracket functions and `[?variables]` can render literally when the
+consumer does not localise dynamically or lacks the requested scope. A focus
+title may need its documented dynamic setting; a custom GUI needs the correct
+scripted-GUI `context_type`; `context_aware_text` requires a context-aware
+owner. Copy a current consumer of the same UI class and test it.
+
+### An unconditional scripted-localisation branch can hide every later state
+
+`defined_text` selects the first true branch. A real GUI stayed on its
+"not started" text after the feature flag was set because its first branch used
+`trigger = { }`; that branch was always true, so the later active-state branch
+was unreachable. The files passed static syntax checks because the script was
+valid.
+
+For a binary state, use explicit complementary triggers (`has_*` and
+`NOT = { has_* }`). For ordered ranges, place the unconditional fallback last.
+Then test the inactive state, the transition, the active state, and close/reopen
+behavior in the actual GUI. Treat a clean validator as syntax evidence, not
+proof of runtime branch selection.
+
+### Template keys collide when kits are combined unchanged
+
+Independent examples commonly reuse `MOD.1.t`, `MOD.1.desc`, and `MOD.1.a`.
+That is acceptable inside separate template demonstrations but not after they
+are copied into one mod. Allocate a namespace and event-ID range before merging
+kits, then rescan all languages for collisions.
+
+## Script, GUI, and lifecycle
+
+### Loading screens are not ordinary PNG-capable sprites
+
+A tested set of working loading-screen DDS files was losslessly converted to
+pixel-identical RGBA PNG files, and the known `.gfx` registrations were updated
+to the new extension. The engine did not load the PNG backgrounds. Restoring
+the DDS files fixed the path.
+
+For `gfx/loadingscreens`, require DDS for both the full-size background and its
+small selector image. Do not infer support from ideas, portraits, or other GFX
+sprites that successfully use PNG. Static path, dimensions, and decoded-pixel
+checks cannot prove that this consumer accepts the codec; exercise frontend
+selection and an actual loading transition.
+
+### The first parser error creates misleading cascades
+
+One malformed quote, slash, brace, or token can produce dozens of later scope,
+trigger, GUI, or localisation errors. Fix the earliest parser error in each
+file, relaunch, and compare a fresh log before treating downstream lines as
+independent defects.
+
+### Old logs are baseline evidence, not post-fix proof
+
+Record log modification time and game build. Static validation can prove
+encoding, braces, references, and known tokens; it cannot prove that a GUI
+clicked, a scope existed, or a dynamic value refreshed. Only a fresh run after
+the edit can do that.
+
+### The last log entry is not the crashing native path
+
+A log line immediately before a crash may come from another worker thread or
+an earlier queued operation. One investigated crash ended after an
+equipment-variant message, while the exception context and RTTI chain were in
+parallel decision-AI trigger evaluation. Keep log defects as findings, but do
+not promote temporal adjacency into native causation.
+
+Trace the faulting instruction and operands, inspect the object/vtable/RTTI
+chain, compare all threads and locks, and map the recovered object back to a
+specific script category or identifier. Report the engine failure, script
+trigger surface, possible timing amplifiers, and unrelated errors separately.
+If minimum WinDbg evidence cannot support a high-confidence result, use the
+staged authorization workflow in
+`native-crash-reverse-engineering.md`; do not fill the missing native evidence
+with a plausible mod theory.
+
+### GUI hot reload is not lifecycle proof
+
+Editing GUI files while the game is running and then enabling GUI debug or hot
+refresh can destroy and recreate controls while a scripted GUI updater still
+holds an old object reference. A dump may then show a source control reduced to
+a base GUI object followed by an indirect null call. Treat that pattern as a
+hot-reload lifecycle hypothesis, not immediate proof that the static binding is
+invalid.
+
+Ask for the exact pre-crash operation sequence and reproduce after a full game
+restart without hot refresh before changing otherwise valid GUI bindings.
+
+### Nearby performance work must preserve cadence
+
+Merging repeated weekly scans does not authorize moving an unrelated daily
+counter to weekly execution. Record each mechanic's cadence and player-visible
+units before refactoring. If cadence intentionally changes, preserve old
+variable/flag names for save compatibility unless a migration covers them.
+
+### Internal names are not semantic evidence
+
+An ASCII character token was once transliterated into the wrong displayed
+proper name during a performance review even though the maintained
+localisation and character description identified the character correctly.
+This can also misidentify policies, currencies, organizations, dates, and
+failure behavior.
+
+Before describing or changing an existing path, search the token's decision,
+event, GUI, scripted-localisation, tooltip, modifier, and character text. Build
+the code ID -> visible name -> player promise map first. When code and text
+disagree, record a semantic conflict and resolve it from project intent and
+runtime evidence; never let a plausible transliteration decide the feature.
+
+### Search consumers before deleting or renaming state
+
+Flags, variables, event targets, localisation keys, sprite names, and scripted
+GUI element names frequently have distant consumers. Search the full effective
+mod and enabled dependencies before changing them. A name that looks temporary
+can still be part of save data, GUI binding, or another file's lifecycle.
+
+### Recognised tokens are not universally accepted
+
+A generated modifier or localisation function proves engine recognition. It
+does not prove that every database or UI consumer accepts it. Require both a
+current installed definition and a working consumer of the same class.
+
+### Triage hard failures before optional media
+
+Prioritise parser, scope/trigger, invalid ideology, equipment/MIO, missing
+required IDs, and localisation collisions. Missing optional textures, audio,
+or icons matter, but chasing them first hides the errors that can stop content
+from loading at all.
+
+## Reusable review sequence
+
+1. Read project guidance and identify the current build and playset.
+2. Preserve unrelated changes and inspect the actual newest logs.
+3. Read the affected localisation and map code IDs to visible meaning.
+4. Search definitions and consumers before editing identifiers.
+5. Fix the earliest root cause in each error bucket.
+6. Follow the base skill's **Validate proportionally** lanes. Inspect-only
+   diffs skip scripts. Otherwise run the cheapest matching check on the
+   edited paths; localisation/map/override audits only when that domain
+   changed.
+7. Run stale-ID searches, encoding checks, and `git diff --check` only
+   where the chosen lane requires them.
+8. Ask before launching Steam or HOI4 after non-trivial static work; skip
+   the Steam prompt for inspect-only diffs unless the user asked. Report
+   static and runtime evidence separately.
