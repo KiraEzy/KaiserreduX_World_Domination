@@ -8,10 +8,14 @@ GER_great_game = {
 		AND = {
 			# has_completed_focus = GER_ForPol_Start
 			# has_completed_focus = GER_Successful_Stabilization
-			GER = { has_country_flag = GER_Released_Unified_Britain }
-			GER = { has_country_flag = GER_Released_Balkanized_Britain }
-			GER = { has_country_flag = GER_Released_Unified_France }
-			GER = { has_country_flag = GER_Released_Balkanized_France }
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_Britain }
+				GER = { has_country_flag = GER_Released_Balkanized_Britain }
+			}
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_France }
+				GER = { has_country_flag = GER_Released_Balkanized_France }
+			}
 		}
 	}
 }
@@ -26,10 +30,14 @@ GER_asia_game = {
 		AND = {
 			# has_completed_focus = GER_ForPol_Start
 			# has_completed_focus = GER_Successful_Stabilization
-			GER = { has_country_flag = GER_Released_Unified_Britain }
-			GER = { has_country_flag = GER_Released_Balkanized_Britain }
-			GER = { has_country_flag = GER_Released_Unified_France }
-			GER = { has_country_flag = GER_Released_Balkanized_France }
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_Britain }
+				GER = { has_country_flag = GER_Released_Balkanized_Britain }
+			}
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_France }
+				GER = { has_country_flag = GER_Released_Balkanized_France }
+			}
 			GEA = { exists = yes }
 		}
 	}
