@@ -1,49 +1,82 @@
 GER_great_game = {
 	icon = GFX_decision_category_foreign_policy
+	priority = 11
 	allowed = {
 		original_tag = GER
 	}
 	visible = { 
-		OR = {
-			has_completed_focus = GER_Post_2WK_For
+		AND = {
+			# has_completed_focus = GER_ForPol_Start
+			# has_completed_focus = GER_Successful_Stabilization
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_Britain }
+				GER = { has_country_flag = GER_Released_Balkanized_Britain }
+			}
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_France }
+				GER = { has_country_flag = GER_Released_Balkanized_France }
+			}
 		}
-		
 	}
 }
 
 GER_asia_game = {
 	icon = GFX_decision_category_foreign_policy
+	priority = 10
 	allowed = {
 		original_tag = GER
 	}
 	visible = { 
 		AND = {
+			# has_completed_focus = GER_ForPol_Start
+			# has_completed_focus = GER_Successful_Stabilization
 			OR = {
-				has_completed_focus = GER_Post_2WK_For
+				GER = { has_country_flag = GER_Released_Unified_Britain }
+				GER = { has_country_flag = GER_Released_Balkanized_Britain }
 			}
-			GER = { exists = yes }
+			OR = {
+				GER = { has_country_flag = GER_Released_Unified_France }
+				GER = { has_country_flag = GER_Released_Balkanized_France }
+			}
+			GEA = { exists = yes }
 		}
 	}
 }
 
-GER_africa_game = {
-	icon = GFX_decision_category_foreign_policy
-	allowed = {
-		is_ai = no
-		original_tag = GER
-	}
-	visible = { 
-		AND = {
-			OR = {
-				has_completed_focus = GER_Post_2WK_For
-			}
-			OR = {
-				MAF = { exists = yes } 
-				AND = {
-					TZN = { exists = yes }
-					TZN = { has_cosmetic_tag = GER_TZN_OCC }
-				}
-			} 
-		}
-	}
-}
+# GER_asia_game_int = {
+# 	icon = GFX_decision_category_foreign_policy
+# 	priority = 10
+# 	allowed = {
+# 		original_tag = GER
+# 	}
+# 	visible = { 
+# 		has_completed_focus = GER_Weltkaiser_Weltmeister
+# 	}
+# }
+
+# GER_africa_game = {
+# 	icon = GFX_decision_category_foreign_policy
+# 	priority = 9
+# 	allowed = {
+# 		is_ai = no
+# 		original_tag = GER
+# 	}
+# 	visible = { 
+# 		AND = {
+# 			has_completed_focus = GER_ForPol_Start
+# 			has_completed_focus = GER_Successful_Stabilization
+# 		}
+# 	}
+# }
+
+# GER_africa_int_game = {
+# 	icon = GFX_decision_category_foreign_policy
+# 	priority = 9
+# 	allowed = {
+# 		is_ai = no
+# 		original_tag = GER
+# 	}
+# 	visible = { 
+# 		has_completed_focus = GER_Weltkaiser_Weltmeister
+# 	}
+# }
