@@ -16,13 +16,13 @@ HOL_great_game = {
     priority = 11
 
 	allowed = {
-		# original_tag = HOL
-		always = no
+		original_tag = HOL
+		# always = no
 	}
 
 	visible = { 
-		# has_completed_focus = HOLWD_Expansionism
-		always = no
+		has_completed_focus = HOLWD_Expansionism
+		# always = no
 	}
 }
 

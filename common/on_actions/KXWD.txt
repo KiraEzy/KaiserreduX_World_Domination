@@ -41,4 +41,15 @@ on_actions = {
             }
         }
     }
+
+    on_weekly = {
+        effect = {
+            if = {
+                limit = {
+                    has_completed_focus = HOLWD_Great_State
+                }
+                holwd_check_secondary_fight_focus_unlocks = yes
+            }
+        }
+    }
 }
