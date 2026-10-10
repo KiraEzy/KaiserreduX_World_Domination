@@ -12,11 +12,11 @@ SIC_integrate_rk_SWI = {
 		}
 
 	available = {
-		761 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		943 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		761 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		943 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				761 = { NOT = { is_core_of = ITA } }
-				943 = { NOT = { is_core_of = ITA } }
+				761 = { NOT = { is_core_of = ROOT } }
+				943 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -26,10 +26,10 @@ SIC_integrate_rk_SWI = {
 		factor = 5
 	}
 	complete_effect = {
-		761 = { add_core_of = ITA }
-		943 = { add_core_of = ITA }
-		761 = { transfer_state_to = ITA }
-		943 = { transfer_state_to = ITA }
+		761 = { add_core_of = ROOT }
+		943 = { add_core_of = ROOT }
+		761 = { transfer_state_to = ROOT }
+		943 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -46,11 +46,11 @@ SIC_integrate_rk_TRN = {
 		}
 
 	available = {
-		783 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		39 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		783 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		39 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				783 = { NOT = { is_core_of = ITA } }
-				39 = { NOT = { is_core_of = ITA } }
+				783 = { NOT = { is_core_of = ROOT } }
+				39 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -60,10 +60,10 @@ SIC_integrate_rk_TRN = {
 		factor = 5
 	}
 	complete_effect = {
-		783 = { add_core_of = ITA }
-		39 = { add_core_of = ITA }
-		783 = { transfer_state_to = ITA }
-		39 = { transfer_state_to = ITA }
+		783 = { add_core_of = ROOT }
+		39 = { add_core_of = ROOT }
+		783 = { transfer_state_to = ROOT }
+		39 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -81,13 +81,13 @@ SIC_integrate_rk_TRI = {
 		}
 
 	available = {
-		1100 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1144 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		736 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1100 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1144 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		736 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1100 = { NOT = { is_core_of = ITA } }
-				1144 = { NOT = { is_core_of = ITA } }
-				736 = { NOT = { is_core_of = ITA } }
+				1100 = { NOT = { is_core_of = ROOT } }
+				1144 = { NOT = { is_core_of = ROOT } }
+				736 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -97,12 +97,12 @@ SIC_integrate_rk_TRI = {
 		factor = 5
 	}
 	complete_effect = {
-		1100 = { add_core_of = ITA }
-		1144 = { add_core_of = ITA }
-		736 = { add_core_of = ITA }
-		1100 = { transfer_state_to = ITA }
-		1144 = { transfer_state_to = ITA }
-		736 = { transfer_state_to = ITA }
+		1100 = { add_core_of = ROOT }
+		1144 = { add_core_of = ROOT }
+		736 = { add_core_of = ROOT }
+		1100 = { transfer_state_to = ROOT }
+		1144 = { transfer_state_to = ROOT }
+		736 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -118,9 +118,9 @@ SIC_integrate_rk_CRS = {
 		}
 
 	available = {
-		1 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1 = { NOT = { is_core_of = ITA } }
+				1 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -130,8 +130,8 @@ SIC_integrate_rk_CRS = {
 		factor = 5
 	}
 	complete_effect = {
-		1 = { add_core_of = ITA }
-		1 = { transfer_state_to = ITA }
+		1 = { add_core_of = ROOT }
+		1 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -147,9 +147,9 @@ SIC_integrate_rk_MLT = {
 		}
 
 	available = {
-		116 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		116 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				116 = { NOT = { is_core_of = ITA } }
+				116 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -159,8 +159,8 @@ SIC_integrate_rk_MLT = {
 		factor = 5
 	}
 	complete_effect = {
-		116 = { add_core_of = ITA }
-		116 = { transfer_state_to = ITA }
+		116 = { add_core_of = ROOT }
+		116 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -183,23 +183,23 @@ SIC_integrate_rk_GRE = {
 		}
 
 	available = {
-		185 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		758 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		47 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		186 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		939 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		768 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1076 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		989 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		185 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		758 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		47 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		186 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		939 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		768 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1076 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		989 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				185 = { NOT = { is_core_of = ITA } }
-				758 = { NOT = { is_core_of = ITA } }
-				47 = { NOT = { is_core_of = ITA } }
-				186 = { NOT = { is_core_of = ITA } }
-				939 = { NOT = { is_core_of = ITA } }
-				768 = { NOT = { is_core_of = ITA } }
-				1076 = { NOT = { is_core_of = ITA } }
-				989 = { NOT = { is_core_of = ITA } }
+				185 = { NOT = { is_core_of = ROOT } }
+				758 = { NOT = { is_core_of = ROOT } }
+				47 = { NOT = { is_core_of = ROOT } }
+				186 = { NOT = { is_core_of = ROOT } }
+				939 = { NOT = { is_core_of = ROOT } }
+				768 = { NOT = { is_core_of = ROOT } }
+				1076 = { NOT = { is_core_of = ROOT } }
+				989 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -209,22 +209,22 @@ SIC_integrate_rk_GRE = {
 		factor = 5
 	}
 	complete_effect = {
-		185 = { add_core_of = ITA }
-		758 = { add_core_of = ITA }
-		47 = { add_core_of = ITA }
-		186 = { add_core_of = ITA }
-		939 = { add_core_of = ITA }
-		768 = { add_core_of = ITA }
-		1076 = { add_core_of = ITA }
-		989 = { add_core_of = ITA }
-		185 = { transfer_state_to = ITA }
-		758 = { transfer_state_to = ITA }
-		47 = { transfer_state_to = ITA }
-		186 = { transfer_state_to = ITA }
-		939 = { transfer_state_to = ITA }
-		768 = { transfer_state_to = ITA }
-		1076 = { transfer_state_to = ITA }
-		989 = { transfer_state_to = ITA }
+		185 = { add_core_of = ROOT }
+		758 = { add_core_of = ROOT }
+		47 = { add_core_of = ROOT }
+		186 = { add_core_of = ROOT }
+		939 = { add_core_of = ROOT }
+		768 = { add_core_of = ROOT }
+		1076 = { add_core_of = ROOT }
+		989 = { add_core_of = ROOT }
+		185 = { transfer_state_to = ROOT }
+		758 = { transfer_state_to = ROOT }
+		47 = { transfer_state_to = ROOT }
+		186 = { transfer_state_to = ROOT }
+		939 = { transfer_state_to = ROOT }
+		768 = { transfer_state_to = ROOT }
+		1076 = { transfer_state_to = ROOT }
+		989 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -241,11 +241,11 @@ SIC_integrate_rk_MNT = {
 		}
 
 	available = {
-		105 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1097 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		105 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1097 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				105 = { NOT = { is_core_of = ITA } }
-				1097 = { NOT = { is_core_of = ITA } }
+				105 = { NOT = { is_core_of = ROOT } }
+				1097 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -255,10 +255,10 @@ SIC_integrate_rk_MNT = {
 		factor = 5
 	}
 	complete_effect = {
-		105 = { add_core_of = ITA }
-		1097 = { add_core_of = ITA }
-		105 = { transfer_state_to = ITA }
-		1097 = { transfer_state_to = ITA }
+		105 = { add_core_of = ROOT }
+		1097 = { add_core_of = ROOT }
+		105 = { transfer_state_to = ROOT }
+		1097 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -274,9 +274,9 @@ SIC_integrate_rk_CRE = {
 		}
 
 	available = {
-		182 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		182 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				182 = { NOT = { is_core_of = ITA } }
+				182 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -286,8 +286,8 @@ SIC_integrate_rk_CRE = {
 		factor = 5
 	}
 	complete_effect = {
-		182 = { add_core_of = ITA }
-		182 = { transfer_state_to = ITA }
+		182 = { add_core_of = ROOT }
+		182 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -305,13 +305,13 @@ SIC_integrate_rk_ALB = {
 		}
 
 	available = {
-		1268 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		44 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		766 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1268 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		44 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		766 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1268 = { NOT = { is_core_of = ITA } }
-				44 = { NOT = { is_core_of = ITA } }
-				766 = { NOT = { is_core_of = ITA } }
+				1268 = { NOT = { is_core_of = ROOT } }
+				44 = { NOT = { is_core_of = ROOT } }
+				766 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -321,12 +321,12 @@ SIC_integrate_rk_ALB = {
 		factor = 5
 	}
 	complete_effect = {
-		1268 = { add_core_of = ITA }
-		44 = { add_core_of = ITA }
-		766 = { add_core_of = ITA }
-		1268 = { transfer_state_to = ITA }
-		44 = { transfer_state_to = ITA }
-		766 = { transfer_state_to = ITA }
+		1268 = { add_core_of = ROOT }
+		44 = { add_core_of = ROOT }
+		766 = { add_core_of = ROOT }
+		1268 = { transfer_state_to = ROOT }
+		44 = { transfer_state_to = ROOT }
+		766 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -344,13 +344,13 @@ SIC_integrate_rk_SLO = {
 		}
 
 	available = {
-		1103 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1101 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		102 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1103 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1101 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		102 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1103 = { NOT = { is_core_of = ITA } }
-				1101 = { NOT = { is_core_of = ITA } }
-				102 = { NOT = { is_core_of = ITA } }
+				1103 = { NOT = { is_core_of = ROOT } }
+				1101 = { NOT = { is_core_of = ROOT } }
+				102 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -360,12 +360,12 @@ SIC_integrate_rk_SLO = {
 		factor = 5
 	}
 	complete_effect = {
-		1103 = { add_core_of = ITA }
-		1101 = { add_core_of = ITA }
-		102 = { add_core_of = ITA }
-		1103 = { transfer_state_to = ITA }
-		1101 = { transfer_state_to = ITA }
-		102 = { transfer_state_to = ITA }
+		1103 = { add_core_of = ROOT }
+		1101 = { add_core_of = ROOT }
+		102 = { add_core_of = ROOT }
+		1103 = { transfer_state_to = ROOT }
+		1101 = { transfer_state_to = ROOT }
+		102 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -388,23 +388,23 @@ SIC_integrate_rk_DLM = {
 		}
 
 	available = {
-		1145 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1270 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1098 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		163 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1206 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		103 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1099 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1105 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1145 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1270 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1098 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		163 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1206 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		103 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1099 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1105 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1145 = { NOT = { is_core_of = ITA } }
-				1270 = { NOT = { is_core_of = ITA } }
-				1098 = { NOT = { is_core_of = ITA } }
-				163 = { NOT = { is_core_of = ITA } }
-				1206 = { NOT = { is_core_of = ITA } }
-				103 = { NOT = { is_core_of = ITA } }
-				1099 = { NOT = { is_core_of = ITA } }
-				1105 = { NOT = { is_core_of = ITA } }
+				1145 = { NOT = { is_core_of = ROOT } }
+				1270 = { NOT = { is_core_of = ROOT } }
+				1098 = { NOT = { is_core_of = ROOT } }
+				163 = { NOT = { is_core_of = ROOT } }
+				1206 = { NOT = { is_core_of = ROOT } }
+				103 = { NOT = { is_core_of = ROOT } }
+				1099 = { NOT = { is_core_of = ROOT } }
+				1105 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -414,22 +414,22 @@ SIC_integrate_rk_DLM = {
 		factor = 5
 	}
 	complete_effect = {
-		1145 = { add_core_of = ITA }
-		1270 = { add_core_of = ITA }
-		1098 = { add_core_of = ITA }
-		163 = { add_core_of = ITA }
-		1206 = { add_core_of = ITA }
-		103 = { add_core_of = ITA }
-		1099 = { add_core_of = ITA }
-		1105 = { add_core_of = ITA }
-		1145 = { transfer_state_to = ITA }
-		1270 = { transfer_state_to = ITA }
-		1098 = { transfer_state_to = ITA }
-		163 = { transfer_state_to = ITA }
-		1206 = { transfer_state_to = ITA }
-		103 = { transfer_state_to = ITA }
-		1099 = { transfer_state_to = ITA }
-		1105 = { transfer_state_to = ITA }
+		1145 = { add_core_of = ROOT }
+		1270 = { add_core_of = ROOT }
+		1098 = { add_core_of = ROOT }
+		163 = { add_core_of = ROOT }
+		1206 = { add_core_of = ROOT }
+		103 = { add_core_of = ROOT }
+		1099 = { add_core_of = ROOT }
+		1105 = { add_core_of = ROOT }
+		1145 = { transfer_state_to = ROOT }
+		1270 = { transfer_state_to = ROOT }
+		1098 = { transfer_state_to = ROOT }
+		163 = { transfer_state_to = ROOT }
+		1206 = { transfer_state_to = ROOT }
+		103 = { transfer_state_to = ROOT }
+		1099 = { transfer_state_to = ROOT }
+		1105 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -450,19 +450,19 @@ SIC_integrate_rk_FRA = {
 		}
 
 	available = {
-		762 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		21 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		735 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		763 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		32 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		20 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		762 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		21 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		735 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		763 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		32 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		20 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				762 = { NOT = { is_core_of = ITA } }
-				21 = { NOT = { is_core_of = ITA } }
-				735 = { NOT = { is_core_of = ITA } }
-				763 = { NOT = { is_core_of = ITA } }
-				32 = { NOT = { is_core_of = ITA } }
-				20 = { NOT = { is_core_of = ITA } }
+				762 = { NOT = { is_core_of = ROOT } }
+				21 = { NOT = { is_core_of = ROOT } }
+				735 = { NOT = { is_core_of = ROOT } }
+				763 = { NOT = { is_core_of = ROOT } }
+				32 = { NOT = { is_core_of = ROOT } }
+				20 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -472,18 +472,18 @@ SIC_integrate_rk_FRA = {
 		factor = 5
 	}
 	complete_effect = {
-		762 = { add_core_of = ITA }
-		21 = { add_core_of = ITA }
-		735 = { add_core_of = ITA }
-		763 = { add_core_of = ITA }
-		32 = { add_core_of = ITA }
-		20 = { add_core_of = ITA }
-		762 = { transfer_state_to = ITA }
-		21 = { transfer_state_to = ITA }
-		735 = { transfer_state_to = ITA }
-		763 = { transfer_state_to = ITA }
-		32 = { transfer_state_to = ITA }
-		20 = { transfer_state_to = ITA }
+		762 = { add_core_of = ROOT }
+		21 = { add_core_of = ROOT }
+		735 = { add_core_of = ROOT }
+		763 = { add_core_of = ROOT }
+		32 = { add_core_of = ROOT }
+		20 = { add_core_of = ROOT }
+		762 = { transfer_state_to = ROOT }
+		21 = { transfer_state_to = ROOT }
+		735 = { transfer_state_to = ROOT }
+		763 = { transfer_state_to = ROOT }
+		32 = { transfer_state_to = ROOT }
+		20 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -501,13 +501,13 @@ SIC_integrate_rk_NMC = {
 		}
 
 	available = {
-		106 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		731 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1271 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		106 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		731 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1271 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				106 = { NOT = { is_core_of = ITA } }
-				731 = { NOT = { is_core_of = ITA } }
-				1271 = { NOT = { is_core_of = ITA } }
+				106 = { NOT = { is_core_of = ROOT } }
+				731 = { NOT = { is_core_of = ROOT } }
+				1271 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -517,12 +517,12 @@ SIC_integrate_rk_NMC = {
 		factor = 5
 	}
 	complete_effect = {
-		106 = { add_core_of = ITA }
-		731 = { add_core_of = ITA }
-		1271 = { add_core_of = ITA }
-		106 = { transfer_state_to = ITA }
-		731 = { transfer_state_to = ITA }
-		1271 = { transfer_state_to = ITA }
+		106 = { add_core_of = ROOT }
+		731 = { add_core_of = ROOT }
+		1271 = { add_core_of = ROOT }
+		106 = { transfer_state_to = ROOT }
+		731 = { transfer_state_to = ROOT }
+		1271 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -538,9 +538,9 @@ SIC_integrate_rk_KOS = {
 		}
 
 	available = {
-		765 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		765 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				765 = { NOT = { is_core_of = ITA } }
+				765 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -550,8 +550,8 @@ SIC_integrate_rk_KOS = {
 		factor = 5
 	}
 	complete_effect = {
-		765 = { add_core_of = ITA }
-		765 = { transfer_state_to = ITA }
+		765 = { add_core_of = ROOT }
+		765 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -567,9 +567,9 @@ SIC_integrate_rk_ESL = {
 		}
 
 	available = {
-		769 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		769 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				769 = { NOT = { is_core_of = ITA } }
+				769 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -579,8 +579,8 @@ SIC_integrate_rk_ESL = {
 		factor = 5
 	}
 	complete_effect = {
-		769 = { add_core_of = ITA }
-		769 = { transfer_state_to = ITA }
+		769 = { add_core_of = ROOT }
+		769 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -596,9 +596,9 @@ SIC_integrate_rk_CYP = {
 		}
 
 	available = {
-		183 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		183 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				183 = { NOT = { is_core_of = ITA } }
+				183 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -608,8 +608,8 @@ SIC_integrate_rk_CYP = {
 		factor = 5
 	}
 	complete_effect = {
-		183 = { add_core_of = ITA }
-		183 = { transfer_state_to = ITA }
+		183 = { add_core_of = ROOT }
+		183 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -626,11 +626,11 @@ SIC_integrate_rk_AGI = {
 		}
 
 	available = {
-		164 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		187 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		164 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		187 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				164 = { NOT = { is_core_of = ITA } }
-				187 = { NOT = { is_core_of = ITA } }
+				164 = { NOT = { is_core_of = ROOT } }
+				187 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -640,10 +640,10 @@ SIC_integrate_rk_AGI = {
 		factor = 5
 	}
 	complete_effect = {
-		164 = { add_core_of = ITA }
-		187 = { add_core_of = ITA }
-		164 = { transfer_state_to = ITA }
-		187 = { transfer_state_to = ITA }
+		164 = { add_core_of = ROOT }
+		187 = { add_core_of = ROOT }
+		164 = { transfer_state_to = ROOT }
+		187 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -661,13 +661,13 @@ SIC_integrate_rk_THR = {
 		}
 
 	available = {
-		341 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		184 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1089 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		341 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		184 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1089 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				341 = { NOT = { is_core_of = ITA } }
-				184 = { NOT = { is_core_of = ITA } }
-				1089 = { NOT = { is_core_of = ITA } }
+				341 = { NOT = { is_core_of = ROOT } }
+				184 = { NOT = { is_core_of = ROOT } }
+				1089 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -677,12 +677,12 @@ SIC_integrate_rk_THR = {
 		factor = 5
 	}
 	complete_effect = {
-		341 = { add_core_of = ITA }
-		184 = { add_core_of = ITA }
-		1089 = { add_core_of = ITA }
-		341 = { transfer_state_to = ITA }
-		184 = { transfer_state_to = ITA }
-		1089 = { transfer_state_to = ITA }
+		341 = { add_core_of = ROOT }
+		184 = { add_core_of = ROOT }
+		1089 = { add_core_of = ROOT }
+		341 = { transfer_state_to = ROOT }
+		184 = { transfer_state_to = ROOT }
+		1089 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -700,13 +700,13 @@ SIC_integrate_rk_ANC = {
 		}
 
 	available = {
-		340 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		339 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		342 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		340 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		339 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		342 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				340 = { NOT = { is_core_of = ITA } }
-				339 = { NOT = { is_core_of = ITA } }
-				342 = { NOT = { is_core_of = ITA } }
+				340 = { NOT = { is_core_of = ROOT } }
+				339 = { NOT = { is_core_of = ROOT } }
+				342 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -716,12 +716,12 @@ SIC_integrate_rk_ANC = {
 		factor = 5
 	}
 	complete_effect = {
-		340 = { add_core_of = ITA }
-		339 = { add_core_of = ITA }
-		342 = { add_core_of = ITA }
-		340 = { transfer_state_to = ITA }
-		339 = { transfer_state_to = ITA }
-		342 = { transfer_state_to = ITA }
+		340 = { add_core_of = ROOT }
+		339 = { add_core_of = ROOT }
+		342 = { add_core_of = ROOT }
+		340 = { transfer_state_to = ROOT }
+		339 = { transfer_state_to = ROOT }
+		342 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -737,9 +737,9 @@ SIC_integrate_rk_CSP = {
 		}
 
 	available = {
-		773 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		773 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				773 = { NOT = { is_core_of = ITA } }
+				773 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -749,8 +749,8 @@ SIC_integrate_rk_CSP = {
 		factor = 5
 	}
 	complete_effect = {
-		773 = { add_core_of = ITA }
-		773 = { transfer_state_to = ITA }
+		773 = { add_core_of = ROOT }
+		773 = { transfer_state_to = ROOT }
 	}
 }
 
@@ -770,11 +770,11 @@ SIC_establish_rk_FRP = {
 			limit = {
 				FRP = { exists = yes }
 			}
-			FRP = { is_subject_of = ITA }
+			FRP = { is_subject_of = ROOT }
 		}
-		16 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		16 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				16 = { NOT = { is_core_of = ITA } }
+				16 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -826,11 +826,11 @@ SIC_establish_rk_FRP = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -850,7 +850,7 @@ SIC_establish_rk_FRP = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = FRP
 					autonomous_state = kx_colored_puppet
@@ -895,11 +895,11 @@ SIC_establish_rk_CAR = {
 			limit = {
 				CAR = { exists = yes }
 			}
-			CAR = { is_subject_of = ITA }
+			CAR = { is_subject_of = ROOT }
 		}
-		41 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		41 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				41 = { NOT = { is_core_of = ITA } }
+				41 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -957,11 +957,11 @@ SIC_establish_rk_CAR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -981,7 +981,7 @@ SIC_establish_rk_CAR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CAR
 					autonomous_state = kx_colored_puppet
@@ -1026,11 +1026,11 @@ SIC_establish_rk_POR = {
 			limit = {
 				POR = { exists = yes }
 			}
-			POR = { is_subject_of = ITA }
+			POR = { is_subject_of = ROOT }
 		}
-		112 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		112 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				112 = { NOT = { is_core_of = ITA } }
+				112 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1063,11 +1063,11 @@ SIC_establish_rk_POR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1087,7 +1087,7 @@ SIC_establish_rk_POR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = POR
 					autonomous_state = kx_colored_puppet
@@ -1132,11 +1132,11 @@ SIC_establish_rk_GBP = {
 			limit = {
 				GBP = { exists = yes }
 			}
-			GBP = { is_subject_of = ITA }
+			GBP = { is_subject_of = ROOT }
 		}
-		126 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		126 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				126 = { NOT = { is_core_of = ITA } }
+				126 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1182,11 +1182,11 @@ SIC_establish_rk_GBP = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1206,7 +1206,7 @@ SIC_establish_rk_GBP = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = GBP
 					autonomous_state = kx_colored_puppet
@@ -1251,11 +1251,11 @@ SIC_establish_rk_IRE = {
 			limit = {
 				IRE = { exists = yes }
 			}
-			IRE = { is_subject_of = ITA }
+			IRE = { is_subject_of = ROOT }
 		}
-		113 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		113 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				113 = { NOT = { is_core_of = ITA } }
+				113 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1286,11 +1286,11 @@ SIC_establish_rk_IRE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1310,7 +1310,7 @@ SIC_establish_rk_IRE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = IRE
 					autonomous_state = kx_colored_puppet
@@ -1355,11 +1355,11 @@ SIC_establish_rk_SWI = {
 			limit = {
 				SWI = { exists = yes }
 			}
-			SWI = { is_subject_of = ITA }
+			SWI = { is_subject_of = ROOT }
 		}
-		3 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		3 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				3 = { NOT = { is_core_of = ITA } }
+				3 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1389,11 +1389,11 @@ SIC_establish_rk_SWI = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1413,7 +1413,7 @@ SIC_establish_rk_SWI = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SWI
 					autonomous_state = kx_colored_puppet
@@ -1458,11 +1458,11 @@ SIC_establish_rk_AUS = {
 			limit = {
 				AUS = { exists = yes }
 			}
-			AUS = { is_subject_of = ITA }
+			AUS = { is_subject_of = ROOT }
 		}
-		1137 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1137 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1137 = { NOT = { is_core_of = ITA } }
+				1137 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1499,11 +1499,11 @@ SIC_establish_rk_AUS = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1523,7 +1523,7 @@ SIC_establish_rk_AUS = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = AUS
 					autonomous_state = kx_colored_puppet
@@ -1568,11 +1568,11 @@ SIC_establish_rk_CRO = {
 			limit = {
 				CRO = { exists = yes }
 			}
-			CRO = { is_subject_of = ITA }
+			CRO = { is_subject_of = ROOT }
 		}
-		109 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		109 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				109 = { NOT = { is_core_of = ITA } }
+				109 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1615,11 +1615,11 @@ SIC_establish_rk_CRO = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1639,7 +1639,7 @@ SIC_establish_rk_CRO = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CRO
 					autonomous_state = kx_colored_puppet
@@ -1684,11 +1684,11 @@ SIC_establish_rk_BUL = {
 			limit = {
 				BUL = { exists = yes }
 			}
-			BUL = { is_subject_of = ITA }
+			BUL = { is_subject_of = ROOT }
 		}
-		48 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		48 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				48 = { NOT = { is_core_of = ITA } }
+				48 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1721,11 +1721,11 @@ SIC_establish_rk_BUL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1745,7 +1745,7 @@ SIC_establish_rk_BUL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BUL
 					autonomous_state = kx_colored_puppet
@@ -1790,11 +1790,11 @@ SIC_establish_rk_ROM = {
 			limit = {
 				ROM = { exists = yes }
 			}
-			ROM = { is_subject_of = ITA }
+			ROM = { is_subject_of = ROOT }
 		}
-		46 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		46 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				46 = { NOT = { is_core_of = ITA } }
+				46 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1843,11 +1843,11 @@ SIC_establish_rk_ROM = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1867,7 +1867,7 @@ SIC_establish_rk_ROM = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = ROM
 					autonomous_state = kx_colored_puppet
@@ -1912,11 +1912,11 @@ SIC_establish_rk_HUN = {
 			limit = {
 				HUN = { exists = yes }
 			}
-			HUN = { is_subject_of = ITA }
+			HUN = { is_subject_of = ROOT }
 		}
-		43 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		43 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				43 = { NOT = { is_core_of = ITA } }
+				43 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -1953,11 +1953,11 @@ SIC_establish_rk_HUN = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -1977,7 +1977,7 @@ SIC_establish_rk_HUN = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = HUN
 					autonomous_state = kx_colored_puppet
@@ -2022,11 +2022,11 @@ SIC_establish_rk_SVK = {
 			limit = {
 				SVK = { exists = yes }
 			}
-			SVK = { is_subject_of = ITA }
+			SVK = { is_subject_of = ROOT }
 		}
-		1123 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1123 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1123 = { NOT = { is_core_of = ITA } }
+				1123 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2063,11 +2063,11 @@ SIC_establish_rk_SVK = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2087,7 +2087,7 @@ SIC_establish_rk_SVK = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SVK
 					autonomous_state = kx_colored_puppet
@@ -2132,11 +2132,11 @@ SIC_establish_rk_BAY = {
 			limit = {
 				BAY = { exists = yes }
 			}
-			BAY = { is_subject_of = ITA }
+			BAY = { is_subject_of = ROOT }
 		}
-		52 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		52 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				52 = { NOT = { is_core_of = ITA } }
+				52 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2168,11 +2168,11 @@ SIC_establish_rk_BAY = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2192,7 +2192,7 @@ SIC_establish_rk_BAY = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BAY
 					autonomous_state = kx_colored_puppet
@@ -2237,11 +2237,11 @@ SIC_establish_rk_BEL = {
 			limit = {
 				BEL = { exists = yes }
 			}
-			BEL = { is_subject_of = ITA }
+			BEL = { is_subject_of = ROOT }
 		}
-		6 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		6 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				6 = { NOT = { is_core_of = ITA } }
+				6 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2278,11 +2278,11 @@ SIC_establish_rk_BEL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2302,7 +2302,7 @@ SIC_establish_rk_BEL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BEL
 					autonomous_state = kx_colored_puppet
@@ -2347,11 +2347,11 @@ SIC_establish_rk_DDR = {
 			limit = {
 				DDR = { exists = yes }
 			}
-			DDR = { is_subject_of = ITA }
+			DDR = { is_subject_of = ROOT }
 		}
-		64 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		64 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				64 = { NOT = { is_core_of = ITA } }
+				64 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2398,11 +2398,11 @@ SIC_establish_rk_DDR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2422,7 +2422,7 @@ SIC_establish_rk_DDR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = DDR
 					autonomous_state = kx_colored_puppet
@@ -2467,11 +2467,11 @@ SIC_establish_rk_CZE = {
 			limit = {
 				CZE = { exists = yes }
 			}
-			CZE = { is_subject_of = ITA }
+			CZE = { is_subject_of = ROOT }
 		}
-		1129 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1129 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1129 = { NOT = { is_core_of = ITA } }
+				1129 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2512,11 +2512,11 @@ SIC_establish_rk_CZE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2536,7 +2536,7 @@ SIC_establish_rk_CZE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CZE
 					autonomous_state = kx_colored_puppet
@@ -2581,11 +2581,11 @@ SIC_establish_rk_DEN = {
 			limit = {
 				DEN = { exists = yes }
 			}
-			DEN = { is_subject_of = ITA }
+			DEN = { is_subject_of = ROOT }
 		}
-		37 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		37 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				37 = { NOT = { is_core_of = ITA } }
+				37 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2618,11 +2618,11 @@ SIC_establish_rk_DEN = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2642,7 +2642,7 @@ SIC_establish_rk_DEN = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = DEN
 					autonomous_state = kx_colored_puppet
@@ -2687,11 +2687,11 @@ SIC_establish_rk_NOR = {
 			limit = {
 				NOR = { exists = yes }
 			}
-			NOR = { is_subject_of = ITA }
+			NOR = { is_subject_of = ROOT }
 		}
-		110 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		110 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				110 = { NOT = { is_core_of = ITA } }
+				110 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2726,11 +2726,11 @@ SIC_establish_rk_NOR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2750,7 +2750,7 @@ SIC_establish_rk_NOR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = NOR
 					autonomous_state = kx_colored_puppet
@@ -2795,11 +2795,11 @@ SIC_establish_rk_SWE = {
 			limit = {
 				SWE = { exists = yes }
 			}
-			SWE = { is_subject_of = ITA }
+			SWE = { is_subject_of = ROOT }
 		}
-		141 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		141 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				141 = { NOT = { is_core_of = ITA } }
+				141 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2837,11 +2837,11 @@ SIC_establish_rk_SWE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2861,7 +2861,7 @@ SIC_establish_rk_SWE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SWE
 					autonomous_state = kx_colored_puppet
@@ -2906,11 +2906,11 @@ SIC_establish_rk_POL = {
 			limit = {
 				POL = { exists = yes }
 			}
-			POL = { is_subject_of = ITA }
+			POL = { is_subject_of = ROOT }
 		}
-		10 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		10 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				10 = { NOT = { is_core_of = ITA } }
+				10 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -2969,11 +2969,11 @@ SIC_establish_rk_POL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -2993,7 +2993,7 @@ SIC_establish_rk_POL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = POL
 					autonomous_state = kx_colored_puppet
@@ -3038,11 +3038,11 @@ SIC_establish_rk_BAT = {
 			limit = {
 				BAT = { exists = yes }
 			}
-			BAT = { is_subject_of = ITA }
+			BAT = { is_subject_of = ROOT }
 		}
-		1091 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1091 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1091 = { NOT = { is_core_of = ITA } }
+				1091 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3080,11 +3080,11 @@ SIC_establish_rk_BAT = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3104,7 +3104,7 @@ SIC_establish_rk_BAT = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BAT
 					autonomous_state = kx_colored_puppet
@@ -3149,11 +3149,11 @@ SIC_establish_rk_FIN = {
 			limit = {
 				FIN = { exists = yes }
 			}
-			FIN = { is_subject_of = ITA }
+			FIN = { is_subject_of = ROOT }
 		}
-		840 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		840 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				840 = { NOT = { is_core_of = ITA } }
+				840 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3196,11 +3196,11 @@ SIC_establish_rk_FIN = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3220,7 +3220,7 @@ SIC_establish_rk_FIN = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = FIN
 					autonomous_state = kx_colored_puppet
@@ -3265,11 +3265,11 @@ SIC_establish_rk_UKR = {
 			limit = {
 				UKR = { exists = yes }
 			}
-			UKR = { is_subject_of = ITA }
+			UKR = { is_subject_of = ROOT }
 		}
-		202 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		202 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				202 = { NOT = { is_core_of = ITA } }
+				202 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3339,11 +3339,11 @@ SIC_establish_rk_UKR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3363,7 +3363,7 @@ SIC_establish_rk_UKR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = UKR
 					autonomous_state = kx_colored_puppet
@@ -3408,11 +3408,11 @@ SIC_establish_rk_RUS = {
 			limit = {
 				RUS = { exists = yes }
 			}
-			RUS = { is_subject_of = ITA }
+			RUS = { is_subject_of = ROOT }
 		}
-		195 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		195 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				195 = { NOT = { is_core_of = ITA } }
+				195 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3507,11 +3507,11 @@ SIC_establish_rk_RUS = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3531,7 +3531,7 @@ SIC_establish_rk_RUS = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = RUS
 					autonomous_state = kx_colored_puppet
@@ -3576,11 +3576,11 @@ SIC_establish_rk_TUR = {
 			limit = {
 				TUR = { exists = yes }
 			}
-			TUR = { is_subject_of = ITA }
+			TUR = { is_subject_of = ROOT }
 		}
-		49 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		49 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				49 = { NOT = { is_core_of = ITA } }
+				49 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3613,11 +3613,11 @@ SIC_establish_rk_TUR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3637,7 +3637,7 @@ SIC_establish_rk_TUR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = TUR
 					autonomous_state = kx_colored_puppet
@@ -3682,11 +3682,11 @@ SIC_establish_rk_DKB = {
 			limit = {
 				DKB = { exists = yes }
 			}
-			DKB = { is_subject_of = ITA }
+			DKB = { is_subject_of = ROOT }
 		}
-		218 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		218 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				218 = { NOT = { is_core_of = ITA } }
+				218 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3732,11 +3732,11 @@ SIC_establish_rk_DKB = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3756,7 +3756,7 @@ SIC_establish_rk_DKB = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = DKB
 					autonomous_state = kx_colored_puppet
@@ -3801,11 +3801,11 @@ SIC_establish_rk_GEO = {
 			limit = {
 				GEO = { exists = yes }
 			}
-			GEO = { is_subject_of = ITA }
+			GEO = { is_subject_of = ROOT }
 		}
-		231 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		231 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				231 = { NOT = { is_core_of = ITA } }
+				231 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3840,11 +3840,11 @@ SIC_establish_rk_GEO = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3864,7 +3864,7 @@ SIC_establish_rk_GEO = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = GEO
 					autonomous_state = kx_colored_puppet
@@ -3909,11 +3909,11 @@ SIC_establish_rk_ARM = {
 			limit = {
 				ARM = { exists = yes }
 			}
-			ARM = { is_subject_of = ITA }
+			ARM = { is_subject_of = ROOT }
 		}
-		230 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		230 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				230 = { NOT = { is_core_of = ITA } }
+				230 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -3951,11 +3951,11 @@ SIC_establish_rk_ARM = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -3975,7 +3975,7 @@ SIC_establish_rk_ARM = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = ARM
 					autonomous_state = kx_colored_puppet
@@ -4020,11 +4020,11 @@ SIC_establish_rk_AZE = {
 			limit = {
 				AZE = { exists = yes }
 			}
-			AZE = { is_subject_of = ITA }
+			AZE = { is_subject_of = ROOT }
 		}
-		990 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		990 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				990 = { NOT = { is_core_of = ITA } }
+				990 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4055,11 +4055,11 @@ SIC_establish_rk_AZE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4079,7 +4079,7 @@ SIC_establish_rk_AZE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = AZE
 					autonomous_state = kx_colored_puppet
@@ -4124,11 +4124,11 @@ SIC_establish_rk_SYR = {
 			limit = {
 				SYR = { exists = yes }
 			}
-			SYR = { is_subject_of = ITA }
+			SYR = { is_subject_of = ROOT }
 		}
-		554 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		554 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				554 = { NOT = { is_core_of = ITA } }
+				554 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4165,11 +4165,11 @@ SIC_establish_rk_SYR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4189,7 +4189,7 @@ SIC_establish_rk_SYR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SYR
 					autonomous_state = kx_colored_puppet
@@ -4234,11 +4234,11 @@ SIC_establish_rk_TRP = {
 			limit = {
 				TRP = { exists = yes }
 			}
-			TRP = { is_subject_of = ITA }
+			TRP = { is_subject_of = ROOT }
 		}
-		448 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		448 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				448 = { NOT = { is_core_of = ITA } }
+				448 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4287,11 +4287,11 @@ SIC_establish_rk_TRP = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4311,7 +4311,7 @@ SIC_establish_rk_TRP = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = TRP
 					autonomous_state = kx_colored_puppet
@@ -4356,11 +4356,11 @@ SIC_establish_rk_MOR = {
 			limit = {
 				MOR = { exists = yes }
 			}
-			MOR = { is_subject_of = ITA }
+			MOR = { is_subject_of = ROOT }
 		}
-		461 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		461 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				461 = { NOT = { is_core_of = ITA } }
+				461 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4392,11 +4392,11 @@ SIC_establish_rk_MOR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4416,7 +4416,7 @@ SIC_establish_rk_MOR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = MOR
 					autonomous_state = kx_colored_puppet
@@ -4461,11 +4461,11 @@ SIC_establish_rk_SIE = {
 			limit = {
 				SIE = { exists = yes }
 			}
-			SIE = { is_subject_of = ITA }
+			SIE = { is_subject_of = ROOT }
 		}
-		700 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		700 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				700 = { NOT = { is_core_of = ITA } }
+				700 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4517,11 +4517,11 @@ SIC_establish_rk_SIE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4541,7 +4541,7 @@ SIC_establish_rk_SIE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SIE
 					autonomous_state = kx_colored_puppet
@@ -4586,11 +4586,11 @@ SIC_establish_rk_SUD = {
 			limit = {
 				SUD = { exists = yes }
 			}
-			SUD = { is_subject_of = ITA }
+			SUD = { is_subject_of = ROOT }
 		}
-		551 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		551 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				551 = { NOT = { is_core_of = ITA } }
+				551 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4657,11 +4657,11 @@ SIC_establish_rk_SUD = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4681,7 +4681,7 @@ SIC_establish_rk_SUD = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SUD
 					autonomous_state = kx_colored_puppet
@@ -4726,11 +4726,11 @@ SIC_establish_rk_NGR = {
 			limit = {
 				NGR = { exists = yes }
 			}
-			NGR = { is_subject_of = ITA }
+			NGR = { is_subject_of = ROOT }
 		}
-		973 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		973 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				973 = { NOT = { is_core_of = ITA } }
+				973 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4804,11 +4804,11 @@ SIC_establish_rk_NGR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4828,7 +4828,7 @@ SIC_establish_rk_NGR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = NGR
 					autonomous_state = kx_colored_puppet
@@ -4873,11 +4873,11 @@ SIC_establish_rk_SAF = {
 			limit = {
 				SAF = { exists = yes }
 			}
-			SAF = { is_subject_of = ITA }
+			SAF = { is_subject_of = ROOT }
 		}
-		275 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		275 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				275 = { NOT = { is_core_of = ITA } }
+				275 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -4918,11 +4918,11 @@ SIC_establish_rk_SAF = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -4942,7 +4942,7 @@ SIC_establish_rk_SAF = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SAF
 					autonomous_state = kx_colored_puppet
@@ -4987,11 +4987,11 @@ SIC_establish_rk_MAG = {
 			limit = {
 				MAG = { exists = yes }
 			}
-			MAG = { is_subject_of = ITA }
+			MAG = { is_subject_of = ROOT }
 		}
-		543 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		543 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				543 = { NOT = { is_core_of = ITA } }
+				543 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5026,11 +5026,11 @@ SIC_establish_rk_MAG = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5050,7 +5050,7 @@ SIC_establish_rk_MAG = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = MAG
 					autonomous_state = kx_colored_puppet
@@ -5095,11 +5095,11 @@ SIC_establish_rk_JBS = {
 			limit = {
 				JBS = { exists = yes }
 			}
-			JBS = { is_subject_of = ITA }
+			JBS = { is_subject_of = ROOT }
 		}
-		915 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		915 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				915 = { NOT = { is_core_of = ITA } }
+				915 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5139,11 +5139,11 @@ SIC_establish_rk_JBS = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5163,7 +5163,7 @@ SIC_establish_rk_JBS = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = JBS
 					autonomous_state = kx_colored_puppet
@@ -5208,11 +5208,11 @@ SIC_establish_rk_YEM = {
 			limit = {
 				YEM = { exists = yes }
 			}
-			YEM = { is_subject_of = ITA }
+			YEM = { is_subject_of = ROOT }
 		}
-		293 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		293 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				293 = { NOT = { is_core_of = ITA } }
+				293 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5244,11 +5244,11 @@ SIC_establish_rk_YEM = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5268,7 +5268,7 @@ SIC_establish_rk_YEM = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = YEM
 					autonomous_state = kx_colored_puppet
@@ -5313,11 +5313,11 @@ SIC_establish_rk_OMA = {
 			limit = {
 				OMA = { exists = yes }
 			}
-			OMA = { is_subject_of = ITA }
+			OMA = { is_subject_of = ROOT }
 		}
-		294 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		294 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				294 = { NOT = { is_core_of = ITA } }
+				294 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5348,11 +5348,11 @@ SIC_establish_rk_OMA = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5372,7 +5372,7 @@ SIC_establish_rk_OMA = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = OMA
 					autonomous_state = kx_colored_puppet
@@ -5417,11 +5417,11 @@ SIC_establish_rk_IRQ = {
 			limit = {
 				IRQ = { exists = yes }
 			}
-			IRQ = { is_subject_of = ITA }
+			IRQ = { is_subject_of = ROOT }
 		}
-		291 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		291 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				291 = { NOT = { is_core_of = ITA } }
+				291 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5453,11 +5453,11 @@ SIC_establish_rk_IRQ = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5477,7 +5477,7 @@ SIC_establish_rk_IRQ = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = IRQ
 					autonomous_state = kx_colored_puppet
@@ -5522,11 +5522,11 @@ SIC_establish_rk_PER = {
 			limit = {
 				PER = { exists = yes }
 			}
-			PER = { is_subject_of = ITA }
+			PER = { is_subject_of = ROOT }
 		}
-		266 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		266 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				266 = { NOT = { is_core_of = ITA } }
+				266 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5566,11 +5566,11 @@ SIC_establish_rk_PER = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5590,7 +5590,7 @@ SIC_establish_rk_PER = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = PER
 					autonomous_state = kx_colored_puppet
@@ -5635,11 +5635,11 @@ SIC_establish_rk_SIB = {
 			limit = {
 				SIB = { exists = yes }
 			}
-			SIB = { is_subject_of = ITA }
+			SIB = { is_subject_of = ROOT }
 		}
-		570 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		570 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				570 = { NOT = { is_core_of = ITA } }
+				570 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5708,11 +5708,11 @@ SIC_establish_rk_SIB = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5732,7 +5732,7 @@ SIC_establish_rk_SIB = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SIB
 					autonomous_state = kx_colored_puppet
@@ -5786,29 +5786,29 @@ SIC_establish_rk_TRK = {
 			limit = {
 				TRK = { exists = yes }
 			}
-			TRK = { is_subject_of = ITA }
+			TRK = { is_subject_of = ROOT }
 		}
-		407 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		585 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		586 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		712 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1042 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1196 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1209 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1211 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1278 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		1279 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		407 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		585 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		586 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		712 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1042 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1196 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1209 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1211 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1278 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		1279 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				407 = { NOT = { is_core_of = ITA } }
-				585 = { NOT = { is_core_of = ITA } }
-				586 = { NOT = { is_core_of = ITA } }
-				712 = { NOT = { is_core_of = ITA } }
-				1042 = { NOT = { is_core_of = ITA } }
-				1196 = { NOT = { is_core_of = ITA } }
-				1209 = { NOT = { is_core_of = ITA } }
-				1211 = { NOT = { is_core_of = ITA } }
-				1278 = { NOT = { is_core_of = ITA } }
-				1279 = { NOT = { is_core_of = ITA } }
+				407 = { NOT = { is_core_of = ROOT } }
+				585 = { NOT = { is_core_of = ROOT } }
+				586 = { NOT = { is_core_of = ROOT } }
+				712 = { NOT = { is_core_of = ROOT } }
+				1042 = { NOT = { is_core_of = ROOT } }
+				1196 = { NOT = { is_core_of = ROOT } }
+				1209 = { NOT = { is_core_of = ROOT } }
+				1211 = { NOT = { is_core_of = ROOT } }
+				1278 = { NOT = { is_core_of = ROOT } }
+				1279 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5872,11 +5872,11 @@ SIC_establish_rk_TRK = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -5896,7 +5896,7 @@ SIC_establish_rk_TRK = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = TRK
 					autonomous_state = kx_colored_puppet
@@ -5941,11 +5941,11 @@ SIC_establish_rk_AFG = {
 			limit = {
 				AFG = { exists = yes }
 			}
-			AFG = { is_subject_of = ITA }
+			AFG = { is_subject_of = ROOT }
 		}
-		267 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		267 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				267 = { NOT = { is_core_of = ITA } }
+				267 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -5976,11 +5976,11 @@ SIC_establish_rk_AFG = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6000,7 +6000,7 @@ SIC_establish_rk_AFG = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = AFG
 					autonomous_state = kx_colored_puppet
@@ -6045,11 +6045,11 @@ SIC_establish_rk_MON = {
 			limit = {
 				MON = { exists = yes }
 			}
-			MON = { is_subject_of = ITA }
+			MON = { is_subject_of = ROOT }
 		}
-		330 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		330 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				330 = { NOT = { is_core_of = ITA } }
+				330 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6082,11 +6082,11 @@ SIC_establish_rk_MON = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6106,7 +6106,7 @@ SIC_establish_rk_MON = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = MON
 					autonomous_state = kx_colored_puppet
@@ -6151,11 +6151,11 @@ SIC_establish_rk_MAN = {
 			limit = {
 				MAN = { exists = yes }
 			}
-			MAN = { is_subject_of = ITA }
+			MAN = { is_subject_of = ROOT }
 		}
-		716 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		716 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				716 = { NOT = { is_core_of = ITA } }
+				716 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6193,11 +6193,11 @@ SIC_establish_rk_MAN = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6217,7 +6217,7 @@ SIC_establish_rk_MAN = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = MAN
 					autonomous_state = kx_colored_puppet
@@ -6262,11 +6262,11 @@ SIC_establish_rk_KOR = {
 			limit = {
 				KOR = { exists = yes }
 			}
-			KOR = { is_subject_of = ITA }
+			KOR = { is_subject_of = ROOT }
 		}
-		525 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		525 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				525 = { NOT = { is_core_of = ITA } }
+				525 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6298,11 +6298,11 @@ SIC_establish_rk_KOR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6322,7 +6322,7 @@ SIC_establish_rk_KOR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = KOR
 					autonomous_state = kx_colored_puppet
@@ -6367,11 +6367,11 @@ SIC_establish_rk_JAP = {
 			limit = {
 				JAP = { exists = yes }
 			}
-			JAP = { is_subject_of = ITA }
+			JAP = { is_subject_of = ROOT }
 		}
-		282 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		282 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				282 = { NOT = { is_core_of = ITA } }
+				282 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6415,11 +6415,11 @@ SIC_establish_rk_JAP = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6439,7 +6439,7 @@ SIC_establish_rk_JAP = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = JAP
 					autonomous_state = kx_colored_puppet
@@ -6484,11 +6484,11 @@ SIC_establish_rk_QIE = {
 			limit = {
 				QIE = { exists = yes }
 			}
-			QIE = { is_subject_of = ITA }
+			QIE = { is_subject_of = ROOT }
 		}
-		608 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		608 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				608 = { NOT = { is_core_of = ITA } }
+				608 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6595,11 +6595,11 @@ SIC_establish_rk_QIE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6619,7 +6619,7 @@ SIC_establish_rk_QIE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = QIE
 					autonomous_state = kx_colored_puppet
@@ -6664,11 +6664,11 @@ SIC_establish_rk_TIB = {
 			limit = {
 				TIB = { exists = yes }
 			}
-			TIB = { is_subject_of = ITA }
+			TIB = { is_subject_of = ROOT }
 		}
-		322 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		322 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				322 = { NOT = { is_core_of = ITA } }
+				322 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6699,11 +6699,11 @@ SIC_establish_rk_TIB = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6723,7 +6723,7 @@ SIC_establish_rk_TIB = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = TIB
 					autonomous_state = kx_colored_puppet
@@ -6768,11 +6768,11 @@ SIC_establish_rk_DEH = {
 			limit = {
 				DEH = { exists = yes }
 			}
-			DEH = { is_subject_of = ITA }
+			DEH = { is_subject_of = ROOT }
 		}
-		439 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		439 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				439 = { NOT = { is_core_of = ITA } }
+				439 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6855,11 +6855,11 @@ SIC_establish_rk_DEH = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6879,7 +6879,7 @@ SIC_establish_rk_DEH = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = DEH
 					autonomous_state = kx_colored_puppet
@@ -6924,11 +6924,11 @@ SIC_establish_rk_BRM = {
 			limit = {
 				BRM = { exists = yes }
 			}
-			BRM = { is_subject_of = ITA }
+			BRM = { is_subject_of = ROOT }
 		}
-		288 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		288 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				288 = { NOT = { is_core_of = ITA } }
+				288 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -6961,11 +6961,11 @@ SIC_establish_rk_BRM = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -6985,7 +6985,7 @@ SIC_establish_rk_BRM = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BRM
 					autonomous_state = kx_colored_puppet
@@ -7030,11 +7030,11 @@ SIC_establish_rk_SIA = {
 			limit = {
 				SIA = { exists = yes }
 			}
-			SIA = { is_subject_of = ITA }
+			SIA = { is_subject_of = ROOT }
 		}
-		289 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		289 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				289 = { NOT = { is_core_of = ITA } }
+				289 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7069,11 +7069,11 @@ SIC_establish_rk_SIA = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7093,7 +7093,7 @@ SIC_establish_rk_SIA = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = SIA
 					autonomous_state = kx_colored_puppet
@@ -7138,11 +7138,11 @@ SIC_establish_rk_INC = {
 			limit = {
 				INC = { exists = yes }
 			}
-			INC = { is_subject_of = ITA }
+			INC = { is_subject_of = ROOT }
 		}
-		286 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		286 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				286 = { NOT = { is_core_of = ITA } }
+				286 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7178,11 +7178,11 @@ SIC_establish_rk_INC = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7202,7 +7202,7 @@ SIC_establish_rk_INC = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = INC
 					autonomous_state = kx_colored_puppet
@@ -7247,11 +7247,11 @@ SIC_establish_rk_MLY = {
 			limit = {
 				MLY = { exists = yes }
 			}
-			MLY = { is_subject_of = ITA }
+			MLY = { is_subject_of = ROOT }
 		}
-		846 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		846 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				846 = { NOT = { is_core_of = ITA } }
+				846 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7285,11 +7285,11 @@ SIC_establish_rk_MLY = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7309,7 +7309,7 @@ SIC_establish_rk_MLY = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = MLY
 					autonomous_state = kx_colored_puppet
@@ -7354,11 +7354,11 @@ SIC_establish_rk_INS = {
 			limit = {
 				INS = { exists = yes }
 			}
-			INS = { is_subject_of = ITA }
+			INS = { is_subject_of = ROOT }
 		}
-		1020 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		1020 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				1020 = { NOT = { is_core_of = ITA } }
+				1020 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7404,11 +7404,11 @@ SIC_establish_rk_INS = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7428,7 +7428,7 @@ SIC_establish_rk_INS = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = INS
 					autonomous_state = kx_colored_puppet
@@ -7473,11 +7473,11 @@ SIC_establish_rk_PHI = {
 			limit = {
 				PHI = { exists = yes }
 			}
-			PHI = { is_subject_of = ITA }
+			PHI = { is_subject_of = ROOT }
 		}
-		327 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		327 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				327 = { NOT = { is_core_of = ITA } }
+				327 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7511,11 +7511,11 @@ SIC_establish_rk_PHI = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7535,7 +7535,7 @@ SIC_establish_rk_PHI = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = PHI
 					autonomous_state = kx_colored_puppet
@@ -7581,13 +7581,13 @@ SIC_establish_rk_AST = {
 			limit = {
 				AST = { exists = yes }
 			}
-			AST = { is_subject_of = ITA }
+			AST = { is_subject_of = ROOT }
 		}
-		985 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
-		284 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		985 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
+		284 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				985 = { NOT = { is_core_of = ITA } }
-				284 = { NOT = { is_core_of = ITA } }
+				985 = { NOT = { is_core_of = ROOT } }
+				284 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7638,11 +7638,11 @@ SIC_establish_rk_AST = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7662,7 +7662,7 @@ SIC_establish_rk_AST = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = AST
 					autonomous_state = kx_colored_puppet
@@ -7707,11 +7707,11 @@ SIC_establish_rk_HAW = {
 			limit = {
 				HAW = { exists = yes }
 			}
-			HAW = { is_subject_of = ITA }
+			HAW = { is_subject_of = ROOT }
 		}
-		629 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		629 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				629 = { NOT = { is_core_of = ITA } }
+				629 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7757,11 +7757,11 @@ SIC_establish_rk_HAW = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7781,7 +7781,7 @@ SIC_establish_rk_HAW = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = HAW
 					autonomous_state = kx_colored_puppet
@@ -7826,11 +7826,11 @@ SIC_establish_rk_CAN = {
 			limit = {
 				CAN = { exists = yes }
 			}
-			CAN = { is_subject_of = ITA }
+			CAN = { is_subject_of = ROOT }
 		}
-		739 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		739 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				739 = { NOT = { is_core_of = ITA } }
+				739 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7887,11 +7887,11 @@ SIC_establish_rk_CAN = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -7911,7 +7911,7 @@ SIC_establish_rk_CAN = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CAN
 					autonomous_state = kx_colored_puppet
@@ -7956,11 +7956,11 @@ SIC_establish_rk_NEE = {
 			limit = {
 				NEE = { exists = yes }
 			}
-			NEE = { is_subject_of = ITA }
+			NEE = { is_subject_of = ROOT }
 		}
-		932 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		932 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				932 = { NOT = { is_core_of = ITA } }
+				932 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -7995,11 +7995,11 @@ SIC_establish_rk_NEE = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8019,7 +8019,7 @@ SIC_establish_rk_NEE = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = NEE
 					autonomous_state = kx_colored_puppet
@@ -8064,11 +8064,11 @@ SIC_establish_rk_CGL = {
 			limit = {
 				CGL = { exists = yes }
 			}
-			CGL = { is_subject_of = ITA }
+			CGL = { is_subject_of = ROOT }
 		}
-		393 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		393 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				393 = { NOT = { is_core_of = ITA } }
+				393 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8105,11 +8105,11 @@ SIC_establish_rk_CGL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8129,7 +8129,7 @@ SIC_establish_rk_CGL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CGL
 					autonomous_state = kx_colored_puppet
@@ -8174,11 +8174,11 @@ SIC_establish_rk_USA = {
 			limit = {
 				USA = { exists = yes }
 			}
-			USA = { is_subject_of = ITA }
+			USA = { is_subject_of = ROOT }
 		}
-		361 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		361 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				361 = { NOT = { is_core_of = ITA } }
+				361 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8230,11 +8230,11 @@ SIC_establish_rk_USA = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8254,7 +8254,7 @@ SIC_establish_rk_USA = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = USA
 					autonomous_state = kx_colored_puppet
@@ -8299,11 +8299,11 @@ SIC_establish_rk_TEX = {
 			limit = {
 				TEX = { exists = yes }
 			}
-			TEX = { is_subject_of = ITA }
+			TEX = { is_subject_of = ROOT }
 		}
-		371 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		371 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				371 = { NOT = { is_core_of = ITA } }
+				371 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8350,11 +8350,11 @@ SIC_establish_rk_TEX = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8374,7 +8374,7 @@ SIC_establish_rk_TEX = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = TEX
 					autonomous_state = kx_colored_puppet
@@ -8419,11 +8419,11 @@ SIC_establish_rk_TXS = {
 			limit = {
 				TXS = { exists = yes }
 			}
-			TXS = { is_subject_of = ITA }
+			TXS = { is_subject_of = ROOT }
 		}
-		375 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		375 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				375 = { NOT = { is_core_of = ITA } }
+				375 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8455,11 +8455,11 @@ SIC_establish_rk_TXS = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8479,7 +8479,7 @@ SIC_establish_rk_TXS = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = TXS
 					autonomous_state = kx_colored_puppet
@@ -8524,11 +8524,11 @@ SIC_establish_rk_DSR = {
 			limit = {
 				DSR = { exists = yes }
 			}
-			DSR = { is_subject_of = ITA }
+			DSR = { is_subject_of = ROOT }
 		}
-		380 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		380 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				380 = { NOT = { is_core_of = ITA } }
+				380 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8560,11 +8560,11 @@ SIC_establish_rk_DSR = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8584,7 +8584,7 @@ SIC_establish_rk_DSR = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = DSR
 					autonomous_state = kx_colored_puppet
@@ -8629,11 +8629,11 @@ SIC_establish_rk_CAL = {
 			limit = {
 				CAL = { exists = yes }
 			}
-			CAL = { is_subject_of = ITA }
+			CAL = { is_subject_of = ROOT }
 		}
-		378 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		378 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				378 = { NOT = { is_core_of = ITA } }
+				378 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8664,11 +8664,11 @@ SIC_establish_rk_CAL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8688,7 +8688,7 @@ SIC_establish_rk_CAL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CAL
 					autonomous_state = kx_colored_puppet
@@ -8733,11 +8733,11 @@ SIC_establish_rk_MEX = {
 			limit = {
 				MEX = { exists = yes }
 			}
-			MEX = { is_subject_of = ITA }
+			MEX = { is_subject_of = ROOT }
 		}
-		277 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		277 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				277 = { NOT = { is_core_of = ITA } }
+				277 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8781,11 +8781,11 @@ SIC_establish_rk_MEX = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8805,7 +8805,7 @@ SIC_establish_rk_MEX = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = MEX
 					autonomous_state = kx_colored_puppet
@@ -8850,11 +8850,11 @@ SIC_establish_rk_GUA = {
 			limit = {
 				GUA = { exists = yes }
 			}
-			GUA = { is_subject_of = ITA }
+			GUA = { is_subject_of = ROOT }
 		}
-		313 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		313 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				313 = { NOT = { is_core_of = ITA } }
+				313 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -8905,11 +8905,11 @@ SIC_establish_rk_GUA = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -8929,7 +8929,7 @@ SIC_establish_rk_GUA = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = GUA
 					autonomous_state = kx_colored_puppet
@@ -8974,11 +8974,11 @@ SIC_establish_rk_JAM = {
 			limit = {
 				JAM = { exists = yes }
 			}
-			JAM = { is_subject_of = ITA }
+			JAM = { is_subject_of = ROOT }
 		}
-		689 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		689 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				689 = { NOT = { is_core_of = ITA } }
+				689 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9021,11 +9021,11 @@ SIC_establish_rk_JAM = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9045,7 +9045,7 @@ SIC_establish_rk_JAM = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = JAM
 					autonomous_state = kx_colored_puppet
@@ -9090,11 +9090,11 @@ SIC_establish_rk_VEN = {
 			limit = {
 				VEN = { exists = yes }
 			}
-			VEN = { is_subject_of = ITA }
+			VEN = { is_subject_of = ROOT }
 		}
-		849 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		849 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				849 = { NOT = { is_core_of = ITA } }
+				849 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9136,11 +9136,11 @@ SIC_establish_rk_VEN = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9160,7 +9160,7 @@ SIC_establish_rk_VEN = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = VEN
 					autonomous_state = kx_colored_puppet
@@ -9205,11 +9205,11 @@ SIC_establish_rk_GYA = {
 			limit = {
 				GYA = { exists = yes }
 			}
-			GYA = { is_subject_of = ITA }
+			GYA = { is_subject_of = ROOT }
 		}
-		687 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		687 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				687 = { NOT = { is_core_of = ITA } }
+				687 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9246,11 +9246,11 @@ SIC_establish_rk_GYA = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9270,7 +9270,7 @@ SIC_establish_rk_GYA = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = GYA
 					autonomous_state = kx_colored_puppet
@@ -9315,11 +9315,11 @@ SIC_establish_rk_PRU = {
 			limit = {
 				PRU = { exists = yes }
 			}
-			PRU = { is_subject_of = ITA }
+			PRU = { is_subject_of = ROOT }
 		}
-		303 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		303 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				303 = { NOT = { is_core_of = ITA } }
+				303 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9358,11 +9358,11 @@ SIC_establish_rk_PRU = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9382,7 +9382,7 @@ SIC_establish_rk_PRU = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = PRU
 					autonomous_state = kx_colored_puppet
@@ -9427,11 +9427,11 @@ SIC_establish_rk_BOL = {
 			limit = {
 				BOL = { exists = yes }
 			}
-			BOL = { is_subject_of = ITA }
+			BOL = { is_subject_of = ROOT }
 		}
-		302 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		302 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				302 = { NOT = { is_core_of = ITA } }
+				302 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9471,11 +9471,11 @@ SIC_establish_rk_BOL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9495,7 +9495,7 @@ SIC_establish_rk_BOL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BOL
 					autonomous_state = kx_colored_puppet
@@ -9540,11 +9540,11 @@ SIC_establish_rk_CHL = {
 			limit = {
 				CHL = { exists = yes }
 			}
-			CHL = { is_subject_of = ITA }
+			CHL = { is_subject_of = ROOT }
 		}
-		279 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		279 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				279 = { NOT = { is_core_of = ITA } }
+				279 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9588,11 +9588,11 @@ SIC_establish_rk_CHL = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9612,7 +9612,7 @@ SIC_establish_rk_CHL = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = CHL
 					autonomous_state = kx_colored_puppet
@@ -9657,11 +9657,11 @@ SIC_establish_rk_URG = {
 			limit = {
 				URG = { exists = yes }
 			}
-			URG = { is_subject_of = ITA }
+			URG = { is_subject_of = ROOT }
 		}
-		300 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		300 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				300 = { NOT = { is_core_of = ITA } }
+				300 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9697,11 +9697,11 @@ SIC_establish_rk_URG = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9721,7 +9721,7 @@ SIC_establish_rk_URG = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = URG
 					autonomous_state = kx_colored_puppet
@@ -9766,11 +9766,11 @@ SIC_establish_rk_BRA = {
 			limit = {
 				BRA = { exists = yes }
 			}
-			BRA = { is_subject_of = ITA }
+			BRA = { is_subject_of = ROOT }
 		}
-		500 = { owner = { OR = { original_tag = ITA is_subject_of = ITA } } }
+		500 = { owner = { OR = { original_tag = ROOT is_subject_of = ROOT } } }
 		OR = {
-				500 = { NOT = { is_core_of = ITA } }
+				500 = { NOT = { is_core_of = ROOT } }
 		}
 	}
 
@@ -9819,11 +9819,11 @@ SIC_establish_rk_BRA = {
 				limit = {
 					AND = {
 						NOT = { 
-							is_core_of = ITA
+							is_core_of = ROOT
 						}
 						OR = {
-							is_owned_by = ITA
-							OWNER = { is_subject_of = ITA} 
+							is_owned_by = ROOT
+							OWNER = { is_subject_of = ROOT} 
 						}
 					}
 				}
@@ -9843,7 +9843,7 @@ SIC_establish_rk_BRA = {
 				}
 			}
 
-			ITA = {
+			ROOT = {
 				set_autonomy = {
 					target = BRA
 					autonomous_state = kx_colored_puppet
