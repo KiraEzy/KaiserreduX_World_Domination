@@ -6,8 +6,6 @@ SRD_great_game = {
 		original_tag = SRD
 	}
 	visible = {
-		or = {
-			has_completed_focus = SRD_kingdom_of_italy
-		}
+		has_completed_focus = SRD_kingdom_of_italy
 	}
 }
