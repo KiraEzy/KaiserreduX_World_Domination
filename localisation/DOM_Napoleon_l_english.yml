@@ -74,20 +74,32 @@ NFA_integrate_rk_PAP:0 "Integrate Roman Napoleonic Departments"
 
 NFA_integrate_rk_NRM:0 "Integrate Channel Islands Napoleonic Department"
 
-NAP_SPR_OCC:0 "Royaume d'Espagne"
-NAP_establish_rk_SPR:0 "Establish Royaume d'Espagne"
+NAP_CAR_OCC:0 "Royaume d'Espagne"
+NAP_establish_rk_CAR:0 "Establish Royaume d'Espagne"
 
 NAP_POR_OCC:0 "Province impériale du Portugal"
 NAP_establish_rk_POR:0 "Establish Province impériale du Portugal"
 
-NAP_SIC_OCC:0 "Royaume de Naples"
-NAP_establish_rk_SIC:0 "Establish Royaume de Naples"
+NAP_IRE_OCC:0 "Province impériale d'Irlande"
+NAP_establish_rk_IRE:0 "Establish Province impériale d'Irlande"
+
+NAP_GBP_OCC:0 "Province impériale d'Angleterre"
+NAP_establish_rk_GBP:0 "Establish Province impériale d'Angleterre"
+
+NAP_WAL_OCC:0 "Province impériale du Pays de Galles"
+NAP_establish_rk_WAL:0 "Establish Province impériale du Pays de Galles"
+
+NAP_SCT_OCC:0 "Royaume d'Écosse"
+NAP_establish_rk_SCT:0 "Establish Royaume d'Écosse"
+
+NAP_WGR_OCC:0 "Confédération du Rhin"
+NAP_establish_rk_WGR:0 "Establish Confédération du Rhin"
 
 NAP_ITA_OCC:0 "Royaume d'Italie"
 NAP_establish_rk_ITA:0 "Establish Royaume d'Italie"
 
-NAP_WGR_OCC:0 "Confédération du Rhin"
-NAP_establish_rk_WGR:0 "Establish Confédération du Rhin"
+NAP_SIC_OCC:0 "Royaume de Naples"
+NAP_establish_rk_SIC:0 "Establish Royaume de Naples"
 
 NAP_AUS_OCC:0 "Province impériale d'Autriche"
 NAP_establish_rk_AUS:0 "Establish Province impériale d'Autriche"
@@ -98,17 +110,17 @@ NAP_establish_rk_DDR:0 "Establish Province impériale de Prusse"
 NAP_DEN_OCC:0 "Province impériale du Danemark"
 NAP_establish_rk_DEN:0 "Establish Province impériale du Danemark"
 
+NAP_SWE_OCC:0 "Province impériale de Suède"
+NAP_establish_rk_SWE:0 "Establish Province impériale de Suède"
+
 NAP_NOR_OCC:0 "Province impériale de Norvège"
 NAP_establish_rk_NOR:0 "Establish Province impériale de Norvège"
-
-NAP_SWE_OCC:0 "Empire Suédois"
-NAP_establish_rk_SWE:0 "Establish Empire Suédois"
 
 NAP_CZE_OCC:0 "Confédération Tchécoslovaque"
 NAP_establish_rk_CZE:0 "Establish Confédération Tchécoslovaque"
 
-NAP_HUN_OCC:0 "Imperial Province of Hungary"
-NAP_establish_rk_HUN:0 "Establish Imperial Province of Hungary"
+NAP_HUN_OCC:0 "Province impériale de Hongrie"
+NAP_establish_rk_HUN:0 "Establish Province impériale de Hongrie"
 
 NAP_SER_OCC:0 "Confédération de Yougoslavie"
 NAP_establish_rk_SER:0 "Establish Confédération de Yougoslavie"
@@ -128,17 +140,23 @@ NAP_establish_rk_POL:0 "Establish Confédération de Pologne-Lituanie"
 NAP_BAT_OCC:0 "Province impériale de la Baltique"
 NAP_establish_rk_BAT:0 "Establish Province impériale de la Baltique"
 
+NAP_FIN_OCC:0 "Province impériale de Finlande"
+NAP_establish_rk_FIN:0 "Establish Province impériale de Finlande"
+
 NAP_UKR_OCC:0 "Province impériale d'Ukraine"
 NAP_establish_rk_UKR:0 "Establish Province impériale d'Ukraine"
 
 NAP_RUS_OCC:0 "Empire Russe"
 NAP_establish_rk_RUS:0 "Establish Empire Russe"
 
-NAP_GEO_OCC:0 "Confédération Transcaucasienne"
-NAP_establish_rk_GEO:0 "Establish Confédération Transcaucasienne"
+NAP_GEO_OCC:0 "Province impériale du Caucase"
+NAP_establish_rk_GEO:0 "Establish Province impériale du Caucase"
 
-NAP_TUR_OCC:0 "Province impériale d'Anatolie"
-NAP_establish_rk_TUR:0 "Establish Province impériale d'Anatolie"
+NAP_TUR_OCC:0 "Province impériale de Turquie"
+NAP_establish_rk_TUR:0 "Establish Province impériale de Turquie"
+
+NAP_PER_OCC:0 "Province impériale de Perse"
+NAP_establish_rk_PER:0 "Establish Province impériale de Perse"
 
 NAP_LEB_OCC:0 "Province impériale de Syrie"
 NAP_establish_rk_LEB:0 "Establish Province impériale de Syrie"
@@ -146,14 +164,11 @@ NAP_establish_rk_LEB:0 "Establish Province impériale de Syrie"
 NAP_ASY_OCC:0 "Province impériale d'Assyrie"
 NAP_establish_rk_ASY:0 "Establish Province impériale d'Assyrie"
 
-NAP_SAU_OCC:0 "Province impériale d'Arabie"
-NAP_establish_rk_SAU:0 "Establish Province impériale d'Arabie"
+NAP_JBS_OCC:0 "Province impériale d'Arabie"
+NAP_establish_rk_JBS:0 "Establish Province impériale d'Arabie"
 
-NAP_PER_OCC:0 "Province impériale de Perse"
-NAP_establish_rk_PER:0 "Establish Province impériale de Perse"
-
-NAP_AFG_OCC:0 "Province impériale d'Afghanistan"
-NAP_establish_rk_AFG:0 "Establish Province impériale d'Afghanistan"
+NAP_MAG_OCC:0 "Province impériale de Madagascar"
+NAP_establish_rk_MAG:0 "Establish Province impériale de Madagascar"
 
 NAP_SIB_OCC:0 "Province impériale de Sibérie"
 NAP_establish_rk_SIB:0 "Establish Province impériale de Sibérie"
@@ -161,8 +176,8 @@ NAP_establish_rk_SIB:0 "Establish Province impériale de Sibérie"
 NAP_TRK_OCC:0 "Province impériale du Turkestan"
 NAP_establish_rk_TRK:0 "Establish Province impériale du Turkestan"
 
-NAP_ETS_OCC:0 "Province impériale du Xinjiang"
-NAP_establish_rk_ETS:0 "Establish Province impériale du Xinjiang"
+NAP_AFG_OCC:0 "Province impériale d'Afghanistan"
+NAP_establish_rk_AFG:0 "Establish Province impériale d'Afghanistan"
 
 NAP_MON_OCC:0 "Province impériale de Mongolie"
 NAP_establish_rk_MON:0 "Establish Province impériale de Mongolie"
@@ -170,8 +185,14 @@ NAP_establish_rk_MON:0 "Establish Province impériale de Mongolie"
 NAP_MAN_OCC:0 "Province impériale de Mandchourie"
 NAP_establish_rk_MAN:0 "Establish Province impériale de Mandchourie"
 
+NAP_ETS_OCC:0 "Province impériale du Xinjiang"
+NAP_establish_rk_ETS:0 "Establish Province impériale du Xinjiang"
+
 NAP_KOR_OCC:0 "Province impériale de Corée"
 NAP_establish_rk_KOR:0 "Establish Province impériale de Corée"
+
+NAP_JAP_OCC:0 "Province impériale du Japon"
+NAP_establish_rk_JAP:0 "Establish Province impériale du Japon"
 
 NAP_QIE_OCC:0 "Empire Chinois"
 NAP_establish_rk_QIE:0 "Establish Empire Chinois"
@@ -179,8 +200,8 @@ NAP_establish_rk_QIE:0 "Establish Empire Chinois"
 NAP_TIB_OCC:0 "Province impériale de l'Himalaya"
 NAP_establish_rk_TIB:0 "Establish Province impériale de l'Himalaya"
 
-NAP_MAD_OCC:0 "Province impériale de l'Inde"
-NAP_establish_rk_MAD:0 "Establish Province impériale de l'Inde"
+NAP_DEH_OCC:0 "Province impériale de l'Inde"
+NAP_establish_rk_DEH:0 "Establish Province impériale de l'Inde"
 
 NAP_BRM_OCC:0 "Province impériale de Birmanie"
 NAP_establish_rk_BRM:0 "Establish Province impériale de Birmanie"
@@ -188,38 +209,38 @@ NAP_establish_rk_BRM:0 "Establish Province impériale de Birmanie"
 NAP_INC_OCC:0 "Province impériale d'Indochine"
 NAP_establish_rk_INC:0 "Establish Province impériale d'Indochine"
 
-NAP_MAG_OCC:0 "Province impériale de Madagascar"
-NAP_establish_rk_MAG:0 "Establish Province impériale de Madagascar"
-
 NAP_INS_OCC:0 "Province impériale d'Indonésie"
 NAP_establish_rk_INS:0 "Establish Province impériale d'Indonésie"
 
 NAP_PHI_OCC:0 "Province impériale des Philippines"
 NAP_establish_rk_PHI:0 "Establish Province impériale des Philippines"
 
-NAP_TAI_OCC:0 "Province impériale du Pacifique"
-NAP_establish_rk_TAI:0 "Establish Province impériale du Pacifique"
-
-NAP_JAP_OCC:0 "Province impériale du Japon"
-NAP_establish_rk_JAP:0 "Establish Province impériale du Japon"
-
 NAP_AST_OCC:0 "Province impériale d'Australasie"
 NAP_establish_rk_AST:0 "Establish Province impériale d'Australasie"
 
-NAP_TEX_OCC:0 "Nouvelle-France"
-NAP_establish_rk_TEX:0 "Establish Nouvelle-France"
+NAP_TAI_OCC:0 "Province impériale du Pacifique"
+NAP_establish_rk_TAI:0 "Establish Province impériale du Pacifique"
 
-NAP_MEX_OCC:0 "Confédération du Mexique"
-NAP_establish_rk_MEX:0 "Establish Confédération du Mexique"
+NAP_TEX_OCC:0 "Nouvelle France"
+NAP_establish_rk_TEX:0 "Establish Nouvelle France"
 
 NAP_USA_OCC:0 "Province impériale des Appalaches"
 NAP_establish_rk_USA:0 "Establish Province impériale des Appalaches"
 
+NAP_MEX_OCC:0 "Confédération du Mexique"
+NAP_establish_rk_MEX:0 "Establish Confédération du Mexique"
+
 NAP_JAM_OCC:0 "Province impériale des Caraïbes"
 NAP_establish_rk_JAM:0 "Establish Province impériale des Caraïbes"
 
-NAP_COL_OCC:0 "Province impériale de Colombie-Venezuela"
-NAP_establish_rk_COL:0 "Establish Province impériale de Colombie-Venezuela"
+NAP_COL_OCC:0 "Province impériale de Colombie"
+NAP_establish_rk_COL:0 "Establish Province impériale de Colombie"
+
+NAP_DOM_OCC:0 "Province impériale de Saint-Domingue"
+NAP_establish_rk_DOM:0 "Establish Province impériale de Saint-Domingue"
+
+NAP_GYA_OCC:0 "Province impériale de Guyane"
+NAP_establish_rk_GYA:0 "Establish Province impériale de Guyane"
 
 NAP_PRU_OCC:0 "Province impériale du Pérou"
 NAP_establish_rk_PRU:0 "Establish Province impériale du Pérou"
@@ -227,35 +248,17 @@ NAP_establish_rk_PRU:0 "Establish Province impériale du Pérou"
 NAP_BOL_OCC:0 "Province impériale de Bolivie"
 NAP_establish_rk_BOL:0 "Establish Province impériale de Bolivie"
 
-NAP_CHL_OCC:0 "Confédération de Patagonie"
-NAP_establish_rk_CHL:0 "Establish Confédération de Patagonie"
+NAP_CHL_OCC:0 "Province impériale de Patagonie"
+NAP_establish_rk_CHL:0 "Establish Province impériale de Patagonie"
 
 NAP_BRA_OCC:0 "Province impériale du Brésil"
 NAP_establish_rk_BRA:0 "Establish Province impériale du Brésil"
 
-NAP_GYA_OCC:0 "Province impériale de Guyane"
-NAP_establish_rk_GYA:0 "Establish Province impériale de Guyane"
-
-NAP_GBP_OCC:0 "Province impériale d'Angleterre"
-NAP_establish_rk_GBP:0 "Establish Province impériale d'Angleterre"
-
-NAP_WAL_OCC:0 "Province impériale du Pays de Galles"
-NAP_establish_rk_WAL:0 "Establish Province impériale du Pays de Galles"
-
-NAP_SCT_OCC:0 "Royaume d'Écosse"
-NAP_establish_rk_SCT:0 "Establish Royaume d'Écosse"
-
 NAP_MLT_OCC:0 "Province impériale de Malte"
 NAP_establish_rk_MLT:0 "Establish Province impériale de Malte"
 
-NAP_IRE_OCC:0 "Province impériale d'Irlande"
-NAP_establish_rk_IRE:0 "Establish Province impériale d'Irlande"
-
 NAP_ICE_OCC:0 "Province impériale de l'Atlantique Nord"
 NAP_establish_rk_ICE:0 "Establish Province impériale de l'Atlantique Nord"
-
-NAP_DOM_OCC:0 "Province de Saint-Domingue"
-NAP_establish_rk_DOM:0 "Establish Province de Saint-Domingue"
 
 NAP_great_game_desc:0 "The decision category allow you to annex, integrate and form new §YNapoleonic Provinces§! and Confederations.\n\nIntegration Decision: These decision will transfer the ownership of the highlighted states to you and add core of the state to you.\n\nEstablishing Puppet Decision: These decision will form custom formables once the following conditions are met:\n- You or your puppet owns all the highlighted states\n- If the puppet requires land that is shared by KX original napoleonic puppets, you will be to establish the KX original puppet formable first, before you can reorganize the states to the new puppet formable."
 

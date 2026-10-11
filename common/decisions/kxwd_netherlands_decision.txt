@@ -304,120 +304,120 @@ HOL_establish_rk_FRP = {
 	}
 }
 
-HOL_establish_rk_GBP = {
-	icon = generic_prepare_civil_war
+# HOL_establish_rk_GBP = {
+# 	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 126
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 126
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
 
-	available = {
-		if = {
-			limit = {
-				GBP = { exists = yes }
-			}
-			GBP = { is_subject_of = HOL }
-		}
-		126 = { owner = { OR = { original_tag = HOL is_subject_of = HOL } } }
-		OR = {
-				126 = { NOT = { is_core_of = HOL } }
-		}
-	}
+# 	available = {
+# 		if = {
+# 			limit = {
+# 				GBP = { exists = yes }
+# 			}
+# 			GBP = { is_subject_of = HOL }
+# 		}
+# 		126 = { owner = { OR = { original_tag = HOL is_subject_of = HOL } } }
+# 		OR = {
+# 				126 = { NOT = { is_core_of = HOL } }
+# 		}
+# 	}
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GBP = {
-			every_core_state = {
-				remove_core_of = GBP
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = GBP
-				}
-				remove_claim_by = GBP
-			}
-		}
-		120 = { add_core_of = GBP }
-		121 = { add_core_of = GBP }
-		122 = { add_core_of = GBP }
-		123 = { add_core_of = GBP }
-		125 = { add_core_of = GBP }
-		1317 = { add_core_of = GBP }
-		127 = { add_core_of = GBP }
-		128 = { add_core_of = GBP }
-		129 = { add_core_of = GBP }
-		130 = { add_core_of = GBP }
-		131 = { add_core_of = GBP }
-		132 = { add_core_of = GBP }
-		133 = { add_core_of = GBP }
-		136 = { add_core_of = GBP }
-		338 = { add_core_of = GBP }
-		938 = { add_core_of = GBP }
-		1225 = { add_core_of = GBP }
-		1315 = { add_core_of = GBP }
-		126 = { add_core_of = GBP }
-		release = GBP
-		GBP = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = HOL
-						}
-						OR = {
-							is_owned_by = HOL
-							OWNER = { is_subject_of = HOL} 
-						}
-					}
-				}
-				transfer_state_to = GBP
-			}
-		}
-		GBP = { 
-			set_cosmetic_tag = HOL_GBP_OCC
-			load_focus_tree = generic_focus            
+# 	ai_will_do = {
+# 		factor = 5
+# 	}
+# 	complete_effect = {
+# 		GBP = {
+# 			every_core_state = {
+# 				remove_core_of = GBP
+# 			}
+# 			every_state = {
+# 				limit = {
+# 					is_claimed_by = GBP
+# 				}
+# 				remove_claim_by = GBP
+# 			}
+# 		}
+# 		120 = { add_core_of = GBP }
+# 		121 = { add_core_of = GBP }
+# 		122 = { add_core_of = GBP }
+# 		123 = { add_core_of = GBP }
+# 		125 = { add_core_of = GBP }
+# 		1317 = { add_core_of = GBP }
+# 		127 = { add_core_of = GBP }
+# 		128 = { add_core_of = GBP }
+# 		129 = { add_core_of = GBP }
+# 		130 = { add_core_of = GBP }
+# 		131 = { add_core_of = GBP }
+# 		132 = { add_core_of = GBP }
+# 		133 = { add_core_of = GBP }
+# 		136 = { add_core_of = GBP }
+# 		338 = { add_core_of = GBP }
+# 		938 = { add_core_of = GBP }
+# 		1225 = { add_core_of = GBP }
+# 		1315 = { add_core_of = GBP }
+# 		126 = { add_core_of = GBP }
+# 		release = GBP
+# 		GBP = { 
+# 			every_core_state = {
+# 				limit = {
+# 					AND = {
+# 						NOT = { 
+# 							is_core_of = HOL
+# 						}
+# 						OR = {
+# 							is_owned_by = HOL
+# 							OWNER = { is_subject_of = HOL} 
+# 						}
+# 					}
+# 				}
+# 				transfer_state_to = GBP
+# 			}
+# 		}
+# 		GBP = { 
+# 			set_cosmetic_tag = HOL_GBP_OCC
+# 			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Dutch Administration"
-				picture = "gfx/leaders/HOL/Portrait_Holland_Junta.png"
-				expire = "1.1.1"
-				ideology = autocratic_colonial_govt_subtype
-				traits = {
-				}
-			}
+# 			create_country_leader = {
+# 				name = "Dutch Administration"
+# 				picture = "gfx/leaders/HOL/Portrait_Holland_Junta.png"
+# 				expire = "1.1.1"
+# 				ideology = autocratic_colonial_govt_subtype
+# 				traits = {
+# 				}
+# 			}
 
-			HOL = {
-				set_autonomy = {
-					target = GBP
-					autonomous_state = kx_colored_puppet
-				}
-			}
+# 			HOL = {
+# 				set_autonomy = {
+# 					target = GBP
+# 					autonomous_state = kx_colored_puppet
+# 				}
+# 			}
 
-			set_politics = {
-				ruling_party = paternal_autocrat
-				elections_allowed = no
-			}
+# 			set_politics = {
+# 				ruling_party = paternal_autocrat
+# 				elections_allowed = no
+# 			}
 
 
-			set_popularities = {
-				paternal_autocrat = 100
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Dutch Administration"
-				long_name = "Dutch Administration"
-			}
-		}
-	}
-}
+# 			set_popularities = {
+# 				paternal_autocrat = 100
+# 			}
+# 			set_party_name = {
+# 				ideology = paternal_autocrat
+# 				name = "Dutch Administration"
+# 				long_name = "Dutch Administration"
+# 			}
+# 		}
+# 	}
+# }
 
 HOL_establish_rk_SPR = {
 	icon = generic_prepare_civil_war
@@ -745,132 +745,132 @@ HOL_establish_rk_IRE = {
 	}
 }
 
-HOL_establish_rk_GRU = {
-	icon = generic_prepare_civil_war
+# HOL_establish_rk_GRU = {
+# 	icon = generic_prepare_civil_war
 
-		highlight_states = {
-			highlight_state_targets = {
-				state = 64
-			}
-			highlight_color_while_active = 3
-			highlight_color_before_active = 2
-		}
+# 		highlight_states = {
+# 			highlight_state_targets = {
+# 				state = 64
+# 			}
+# 			highlight_color_while_active = 3
+# 			highlight_color_before_active = 2
+# 		}
 
-	available = {
-		if = {
-			limit = {
-				GRU = { exists = yes }
-			}
-			GRU = { is_subject_of = HOL }
-		}
-		64 = { owner = { OR = { original_tag = HOL is_subject_of = HOL } } }
-		OR = {
-				64 = { NOT = { is_core_of = HOL } }
-		}
-	}
+# 	available = {
+# 		if = {
+# 			limit = {
+# 				GRU = { exists = yes }
+# 			}
+# 			GRU = { is_subject_of = HOL }
+# 		}
+# 		64 = { owner = { OR = { original_tag = HOL is_subject_of = HOL } } }
+# 		OR = {
+# 				64 = { NOT = { is_core_of = HOL } }
+# 		}
+# 	}
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	ai_will_do = {
-		factor = 5
-	}
-	complete_effect = {
-		GRU = {
-			every_core_state = {
-				remove_core_of = GRU
-			}
-			every_state = {
-				limit = {
-					is_claimed_by = GRU
-				}
-				remove_claim_by = GRU
-			}
-		}
-		5 = { add_core_of = GRU }
-		1357 = { add_core_of = GRU }
-		28 = { add_core_of = GRU }
-		42 = { add_core_of = GRU }
-		50 = { add_core_of = GRU }
-		51 = { add_core_of = GRU }
-		52 = { add_core_of = GRU }
-		53 = { add_core_of = GRU }
-		54 = { add_core_of = GRU }
-		55 = { add_core_of = GRU }
-		56 = { add_core_of = GRU }
-		57 = { add_core_of = GRU }
-		58 = { add_core_of = GRU }
-		59 = { add_core_of = GRU }
-		60 = { add_core_of = GRU }
-		61 = { add_core_of = GRU }
-		62 = { add_core_of = GRU }
-		63 = { add_core_of = GRU }
-		781 = { add_core_of = GRU }
-		65 = { add_core_of = GRU }
-		66 = { add_core_of = GRU }
-		67 = { add_core_of = GRU }
-		68 = { add_core_of = GRU }
-		86 = { add_core_of = GRU }
-		188 = { add_core_of = GRU }
-		782 = { add_core_of = GRU }
-		777 = { add_core_of = GRU }
-		776 = { add_core_of = GRU }
-		839 = { add_core_of = GRU }
-		780 = { add_core_of = GRU }
-		64 = { add_core_of = GRU }
-		release = GRU
-		GRU = { 
-			every_core_state = {
-				limit = {
-					AND = {
-						NOT = { 
-							is_core_of = HOL
-						}
-						OR = {
-							is_owned_by = HOL
-							OWNER = { is_subject_of = HOL} 
-						}
-					}
-				}
-				transfer_state_to = GRU
-			}
-		}
-		GRU = { 
-			set_cosmetic_tag = HOL_GRU_OCC
-			load_focus_tree = generic_focus            
+# 	ai_will_do = {
+# 		factor = 5
+# 	}
+# 	complete_effect = {
+# 		GRU = {
+# 			every_core_state = {
+# 				remove_core_of = GRU
+# 			}
+# 			every_state = {
+# 				limit = {
+# 					is_claimed_by = GRU
+# 				}
+# 				remove_claim_by = GRU
+# 			}
+# 		}
+# 		5 = { add_core_of = GRU }
+# 		1357 = { add_core_of = GRU }
+# 		28 = { add_core_of = GRU }
+# 		42 = { add_core_of = GRU }
+# 		50 = { add_core_of = GRU }
+# 		51 = { add_core_of = GRU }
+# 		52 = { add_core_of = GRU }
+# 		53 = { add_core_of = GRU }
+# 		54 = { add_core_of = GRU }
+# 		55 = { add_core_of = GRU }
+# 		56 = { add_core_of = GRU }
+# 		57 = { add_core_of = GRU }
+# 		58 = { add_core_of = GRU }
+# 		59 = { add_core_of = GRU }
+# 		60 = { add_core_of = GRU }
+# 		61 = { add_core_of = GRU }
+# 		62 = { add_core_of = GRU }
+# 		63 = { add_core_of = GRU }
+# 		781 = { add_core_of = GRU }
+# 		65 = { add_core_of = GRU }
+# 		66 = { add_core_of = GRU }
+# 		67 = { add_core_of = GRU }
+# 		68 = { add_core_of = GRU }
+# 		86 = { add_core_of = GRU }
+# 		188 = { add_core_of = GRU }
+# 		782 = { add_core_of = GRU }
+# 		777 = { add_core_of = GRU }
+# 		776 = { add_core_of = GRU }
+# 		839 = { add_core_of = GRU }
+# 		780 = { add_core_of = GRU }
+# 		64 = { add_core_of = GRU }
+# 		release = GRU
+# 		GRU = { 
+# 			every_core_state = {
+# 				limit = {
+# 					AND = {
+# 						NOT = { 
+# 							is_core_of = HOL
+# 						}
+# 						OR = {
+# 							is_owned_by = HOL
+# 							OWNER = { is_subject_of = HOL} 
+# 						}
+# 					}
+# 				}
+# 				transfer_state_to = GRU
+# 			}
+# 		}
+# 		GRU = { 
+# 			set_cosmetic_tag = HOL_GRU_OCC
+# 			load_focus_tree = generic_focus            
 
-			create_country_leader = {
-				name = "Dutch Administration"
-				picture = "gfx/leaders/HOL/Portrait_Holland_Junta.png"
-				expire = "1.1.1"
-				ideology = autocratic_colonial_govt_subtype
-				traits = {
-				}
-			}
+# 			create_country_leader = {
+# 				name = "Dutch Administration"
+# 				picture = "gfx/leaders/HOL/Portrait_Holland_Junta.png"
+# 				expire = "1.1.1"
+# 				ideology = autocratic_colonial_govt_subtype
+# 				traits = {
+# 				}
+# 			}
 
-			HOL = {
-				set_autonomy = {
-					target = GRU
-					autonomous_state = kx_colored_puppet
-				}
-			}
+# 			HOL = {
+# 				set_autonomy = {
+# 					target = GRU
+# 					autonomous_state = kx_colored_puppet
+# 				}
+# 			}
 
-			set_politics = {
-				ruling_party = paternal_autocrat
-				elections_allowed = no
-			}
+# 			set_politics = {
+# 				ruling_party = paternal_autocrat
+# 				elections_allowed = no
+# 			}
 
 
-			set_popularities = {
-				paternal_autocrat = 100
-			}
-			set_party_name = {
-				ideology = paternal_autocrat
-				name = "Dutch Administration"
-				long_name = "Dutch Administration"
-			}
-		}
-	}
-}
+# 			set_popularities = {
+# 				paternal_autocrat = 100
+# 			}
+# 			set_party_name = {
+# 				ideology = paternal_autocrat
+# 				name = "Dutch Administration"
+# 				long_name = "Dutch Administration"
+# 			}
+# 		}
+# 	}
+# }
 
 HOL_establish_rk_DEN = {
 	icon = generic_prepare_civil_war
