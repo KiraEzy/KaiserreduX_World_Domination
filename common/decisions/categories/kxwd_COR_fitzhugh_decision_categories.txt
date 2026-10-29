@@ -1,0 +1,11 @@
+COR_fitzhugh_protectorates = {
+	icon = GFX_decision_category_foreign_policy
+	priority = 10
+	allowed = {
+		original_tag = COR
+	}
+	visible = {
+		COR_fitzhugh_protectorates_enabled = yes
+	}
+	visible_when_empty = yes
+}
