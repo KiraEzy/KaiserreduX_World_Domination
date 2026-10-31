@@ -158,53 +158,15 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { BOL = { exists = yes } } BOL = { is_subject_of = COR } }
-			270 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			279 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			302 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			303 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			305 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			487 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			490 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			491 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			492 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			494 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			506 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			507 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			649 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			688 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			845 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			847 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			848 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			872 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			873 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			874 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1027 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1073 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1280 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				270 = { NOT = { is_core_of = COR } }
 				279 = { NOT = { is_core_of = COR } }
 				302 = { NOT = { is_core_of = COR } }
 				303 = { NOT = { is_core_of = COR } }
 				305 = { NOT = { is_core_of = COR } }
-				487 = { NOT = { is_core_of = COR } }
-				490 = { NOT = { is_core_of = COR } }
-				491 = { NOT = { is_core_of = COR } }
-				492 = { NOT = { is_core_of = COR } }
-				494 = { NOT = { is_core_of = COR } }
-				506 = { NOT = { is_core_of = COR } }
-				507 = { NOT = { is_core_of = COR } }
-				649 = { NOT = { is_core_of = COR } }
-				688 = { NOT = { is_core_of = COR } }
-				845 = { NOT = { is_core_of = COR } }
-				847 = { NOT = { is_core_of = COR } }
-				848 = { NOT = { is_core_of = COR } }
-				872 = { NOT = { is_core_of = COR } }
-				873 = { NOT = { is_core_of = COR } }
-				874 = { NOT = { is_core_of = COR } }
-				1027 = { NOT = { is_core_of = COR } }
-				1073 = { NOT = { is_core_of = COR } }
-				1280 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -423,11 +385,7 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { ALG = { exists = yes } } ALG = { is_subject_of = COR } }
-			273 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			290 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			448 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			450 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			451 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			458 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			459 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			460 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
@@ -435,18 +393,12 @@ COR_fitzhugh_protectorates = {
 			462 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			513 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			514 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			663 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			665 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			699 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			805 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1009 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1318 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				273 = { NOT = { is_core_of = COR } }
 				290 = { NOT = { is_core_of = COR } }
-				448 = { NOT = { is_core_of = COR } }
-				450 = { NOT = { is_core_of = COR } }
-				451 = { NOT = { is_core_of = COR } }
 				458 = { NOT = { is_core_of = COR } }
 				459 = { NOT = { is_core_of = COR } }
 				460 = { NOT = { is_core_of = COR } }
@@ -454,11 +406,9 @@ COR_fitzhugh_protectorates = {
 				462 = { NOT = { is_core_of = COR } }
 				513 = { NOT = { is_core_of = COR } }
 				514 = { NOT = { is_core_of = COR } }
-				663 = { NOT = { is_core_of = COR } }
 				665 = { NOT = { is_core_of = COR } }
 				699 = { NOT = { is_core_of = COR } }
 				805 = { NOT = { is_core_of = COR } }
-				1009 = { NOT = { is_core_of = COR } }
 				1318 = { NOT = { is_core_of = COR } }
 			}
 		}
@@ -589,7 +539,6 @@ COR_fitzhugh_protectorates = {
 			967 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			968 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			973 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			975 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1192 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1321 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1322 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
@@ -623,7 +572,6 @@ COR_fitzhugh_protectorates = {
 				967 = { NOT = { is_core_of = COR } }
 				968 = { NOT = { is_core_of = COR } }
 				973 = { NOT = { is_core_of = COR } }
-				975 = { NOT = { is_core_of = COR } }
 				1192 = { NOT = { is_core_of = COR } }
 				1321 = { NOT = { is_core_of = COR } }
 				1322 = { NOT = { is_core_of = COR } }
@@ -746,77 +694,11 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { KOG = { exists = yes } } KOG = { is_subject_of = COR } }
-			295 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			297 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			538 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			539 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			540 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			545 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			660 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			718 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			879 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			881 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			914 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			916 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			917 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			927 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			928 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			948 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			949 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			952 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			953 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			957 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			958 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			959 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			962 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			971 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			974 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			976 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			977 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1025 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1026 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1180 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1181 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1182 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1183 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1184 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1185 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				295 = { NOT = { is_core_of = COR } }
-				297 = { NOT = { is_core_of = COR } }
-				538 = { NOT = { is_core_of = COR } }
-				539 = { NOT = { is_core_of = COR } }
-				540 = { NOT = { is_core_of = COR } }
-				545 = { NOT = { is_core_of = COR } }
-				660 = { NOT = { is_core_of = COR } }
-				718 = { NOT = { is_core_of = COR } }
-				879 = { NOT = { is_core_of = COR } }
 				881 = { NOT = { is_core_of = COR } }
-				914 = { NOT = { is_core_of = COR } }
-				916 = { NOT = { is_core_of = COR } }
-				917 = { NOT = { is_core_of = COR } }
-				927 = { NOT = { is_core_of = COR } }
 				928 = { NOT = { is_core_of = COR } }
-				948 = { NOT = { is_core_of = COR } }
-				949 = { NOT = { is_core_of = COR } }
-				952 = { NOT = { is_core_of = COR } }
-				953 = { NOT = { is_core_of = COR } }
-				957 = { NOT = { is_core_of = COR } }
-				958 = { NOT = { is_core_of = COR } }
-				959 = { NOT = { is_core_of = COR } }
-				962 = { NOT = { is_core_of = COR } }
-				971 = { NOT = { is_core_of = COR } }
-				974 = { NOT = { is_core_of = COR } }
-				976 = { NOT = { is_core_of = COR } }
-				977 = { NOT = { is_core_of = COR } }
-				1025 = { NOT = { is_core_of = COR } }
-				1026 = { NOT = { is_core_of = COR } }
-				1180 = { NOT = { is_core_of = COR } }
-				1181 = { NOT = { is_core_of = COR } }
-				1182 = { NOT = { is_core_of = COR } }
-				1183 = { NOT = { is_core_of = COR } }
-				1184 = { NOT = { is_core_of = COR } }
-				1185 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -945,93 +827,13 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { KEN = { exists = yes } } KEN = { is_subject_of = COR } }
-			268 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			269 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			271 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			543 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			544 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			546 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			547 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			548 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			550 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			559 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			706 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			707 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			708 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			813 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			869 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			870 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			871 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			892 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			899 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			905 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			906 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			918 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			919 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			920 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			921 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			922 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			923 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			924 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			925 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			944 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			950 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			954 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			955 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			956 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			961 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			965 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			969 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			970 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1032 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1177 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1178 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1179 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1297 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				268 = { NOT = { is_core_of = COR } }
-				269 = { NOT = { is_core_of = COR } }
 				271 = { NOT = { is_core_of = COR } }
-				543 = { NOT = { is_core_of = COR } }
-				544 = { NOT = { is_core_of = COR } }
-				546 = { NOT = { is_core_of = COR } }
 				547 = { NOT = { is_core_of = COR } }
-				548 = { NOT = { is_core_of = COR } }
-				550 = { NOT = { is_core_of = COR } }
-				559 = { NOT = { is_core_of = COR } }
-				706 = { NOT = { is_core_of = COR } }
-				707 = { NOT = { is_core_of = COR } }
-				708 = { NOT = { is_core_of = COR } }
-				813 = { NOT = { is_core_of = COR } }
-				869 = { NOT = { is_core_of = COR } }
-				870 = { NOT = { is_core_of = COR } }
-				871 = { NOT = { is_core_of = COR } }
-				892 = { NOT = { is_core_of = COR } }
-				899 = { NOT = { is_core_of = COR } }
-				905 = { NOT = { is_core_of = COR } }
-				906 = { NOT = { is_core_of = COR } }
-				918 = { NOT = { is_core_of = COR } }
-				919 = { NOT = { is_core_of = COR } }
-				920 = { NOT = { is_core_of = COR } }
-				921 = { NOT = { is_core_of = COR } }
-				922 = { NOT = { is_core_of = COR } }
-				923 = { NOT = { is_core_of = COR } }
-				924 = { NOT = { is_core_of = COR } }
-				925 = { NOT = { is_core_of = COR } }
-				944 = { NOT = { is_core_of = COR } }
-				950 = { NOT = { is_core_of = COR } }
-				954 = { NOT = { is_core_of = COR } }
-				955 = { NOT = { is_core_of = COR } }
-				956 = { NOT = { is_core_of = COR } }
-				961 = { NOT = { is_core_of = COR } }
 				965 = { NOT = { is_core_of = COR } }
-				969 = { NOT = { is_core_of = COR } }
-				970 = { NOT = { is_core_of = COR } }
-				1032 = { NOT = { is_core_of = COR } }
-				1177 = { NOT = { is_core_of = COR } }
-				1178 = { NOT = { is_core_of = COR } }
-				1179 = { NOT = { is_core_of = COR } }
-				1297 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -1147,7 +949,6 @@ COR_fitzhugh_protectorates = {
 			549 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			551 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			552 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			753 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			862 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1007 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1008 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
@@ -1162,7 +963,6 @@ COR_fitzhugh_protectorates = {
 				549 = { NOT = { is_core_of = COR } }
 				551 = { NOT = { is_core_of = COR } }
 				552 = { NOT = { is_core_of = COR } }
-				753 = { NOT = { is_core_of = COR } }
 				862 = { NOT = { is_core_of = COR } }
 				1007 = { NOT = { is_core_of = COR } }
 				1008 = { NOT = { is_core_of = COR } }
@@ -1617,74 +1417,8 @@ COR_fitzhugh_protectorates = {
 		available = {
 			if = { limit = { YUN = { exists = yes } } YUN = { is_subject_of = COR } }
 			325 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			591 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			593 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			594 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			595 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			596 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			599 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			600 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			602 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			603 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			606 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			613 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			620 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			800 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			816 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1012 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1013 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1014 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1044 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1045 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1046 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1048 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1050 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1051 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1052 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1053 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1054 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1055 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1056 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1058 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1066 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1067 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1068 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1069 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
 				325 = { NOT = { is_core_of = COR } }
-				591 = { NOT = { is_core_of = COR } }
-				593 = { NOT = { is_core_of = COR } }
-				594 = { NOT = { is_core_of = COR } }
-				595 = { NOT = { is_core_of = COR } }
-				596 = { NOT = { is_core_of = COR } }
-				599 = { NOT = { is_core_of = COR } }
-				600 = { NOT = { is_core_of = COR } }
-				602 = { NOT = { is_core_of = COR } }
-				603 = { NOT = { is_core_of = COR } }
-				606 = { NOT = { is_core_of = COR } }
-				613 = { NOT = { is_core_of = COR } }
-				620 = { NOT = { is_core_of = COR } }
-				800 = { NOT = { is_core_of = COR } }
-				816 = { NOT = { is_core_of = COR } }
-				1012 = { NOT = { is_core_of = COR } }
-				1013 = { NOT = { is_core_of = COR } }
-				1014 = { NOT = { is_core_of = COR } }
-				1044 = { NOT = { is_core_of = COR } }
-				1045 = { NOT = { is_core_of = COR } }
-				1046 = { NOT = { is_core_of = COR } }
-				1048 = { NOT = { is_core_of = COR } }
-				1050 = { NOT = { is_core_of = COR } }
-				1051 = { NOT = { is_core_of = COR } }
-				1052 = { NOT = { is_core_of = COR } }
-				1053 = { NOT = { is_core_of = COR } }
-				1054 = { NOT = { is_core_of = COR } }
-				1055 = { NOT = { is_core_of = COR } }
-				1056 = { NOT = { is_core_of = COR } }
-				1058 = { NOT = { is_core_of = COR } }
-				1066 = { NOT = { is_core_of = COR } }
-				1067 = { NOT = { is_core_of = COR } }
-				1068 = { NOT = { is_core_of = COR } }
-				1069 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -1977,7 +1711,7 @@ COR_fitzhugh_protectorates = {
 		}
 	}
 
-	COR_establish_protectorate_LEP = {
+	COR_establish_protectorate_LEC = {
 		icon = generic_prepare_civil_war
 
 		highlight_states = {
@@ -2005,38 +1739,10 @@ COR_fitzhugh_protectorates = {
 		visible = { COR_fitzhugh_protectorates_enabled = yes }
 
 		available = {
-			if = { limit = { LEP = { exists = yes } } LEP = { is_subject_of = COR } }
-			326 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			524 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			592 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			609 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			729 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
+			if = { limit = { LEC = { exists = yes } } LEC = { is_subject_of = COR } }
 			743 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			744 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			745 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			746 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			747 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			801 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			802 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			803 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			996 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1075 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				326 = { NOT = { is_core_of = COR } }
-				524 = { NOT = { is_core_of = COR } }
-				592 = { NOT = { is_core_of = COR } }
-				609 = { NOT = { is_core_of = COR } }
-				729 = { NOT = { is_core_of = COR } }
 				743 = { NOT = { is_core_of = COR } }
-				744 = { NOT = { is_core_of = COR } }
-				745 = { NOT = { is_core_of = COR } }
-				746 = { NOT = { is_core_of = COR } }
-				747 = { NOT = { is_core_of = COR } }
-				801 = { NOT = { is_core_of = COR } }
-				802 = { NOT = { is_core_of = COR } }
-				803 = { NOT = { is_core_of = COR } }
-				996 = { NOT = { is_core_of = COR } }
-				1075 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -2044,32 +1750,32 @@ COR_fitzhugh_protectorates = {
 		ai_will_do = { factor = 5 }
 
 		complete_effect = {
-			LEP = {
-				every_core_state = { remove_core_of = LEP }
-				every_state = { limit = { is_claimed_by = LEP } remove_claim_by = LEP }
+			LEC = {
+				every_core_state = { remove_core_of = LEC }
+				every_state = { limit = { is_claimed_by = LEC } remove_claim_by = LEC }
 			}
-			326 = { add_core_of = LEP }
-			524 = { add_core_of = LEP }
-			592 = { add_core_of = LEP }
-			609 = { add_core_of = LEP }
-			729 = { add_core_of = LEP }
-			743 = { add_core_of = LEP }
-			744 = { add_core_of = LEP }
-			745 = { add_core_of = LEP }
-			746 = { add_core_of = LEP }
-			747 = { add_core_of = LEP }
-			801 = { add_core_of = LEP }
-			802 = { add_core_of = LEP }
-			803 = { add_core_of = LEP }
-			996 = { add_core_of = LEP }
-			1075 = { add_core_of = LEP }
-			release = LEP
-			LEP = {
+			326 = { add_core_of = LEC }
+			524 = { add_core_of = LEC }
+			592 = { add_core_of = LEC }
+			609 = { add_core_of = LEC }
+			729 = { add_core_of = LEC }
+			743 = { add_core_of = LEC }
+			744 = { add_core_of = LEC }
+			745 = { add_core_of = LEC }
+			746 = { add_core_of = LEC }
+			747 = { add_core_of = LEC }
+			801 = { add_core_of = LEC }
+			802 = { add_core_of = LEC }
+			803 = { add_core_of = LEC }
+			996 = { add_core_of = LEC }
+			1075 = { add_core_of = LEC }
+			release = LEC
+			LEC = {
 				every_core_state = {
 					limit = { AND = { NOT = { is_core_of = COR } OR = { is_owned_by = COR OWNER = { is_subject_of = COR } } } }
-					transfer_state_to = LEP
+					transfer_state_to = LEC
 				}
-				set_cosmetic_tag = COR_LEP_OCC
+				set_cosmetic_tag = COR_LEC_OCC
 				load_focus_tree = generic_focus
 
 				create_country_leader = {
@@ -2081,7 +1787,7 @@ COR_fitzhugh_protectorates = {
 				}
 
 				set_party_name = { ideology = totalist name = COR_fitzhugh_protector_party long_name = COR_fitzhugh_protector_party_long }
-				COR = { set_autonomy = { target = LEP autonomous_state = kx_colored_puppet } }
+				COR = { set_autonomy = { target = LEC autonomous_state = kx_colored_puppet } }
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
@@ -2649,49 +2355,9 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { INS = { exists = yes } } INS = { is_subject_of = COR } }
-			333 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			334 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			335 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			336 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			667 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			668 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			672 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			673 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			721 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			828 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			846 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			972 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1016 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1017 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1018 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1019 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1020 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1021 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1022 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1023 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1333 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				333 = { NOT = { is_core_of = COR } }
-				334 = { NOT = { is_core_of = COR } }
-				335 = { NOT = { is_core_of = COR } }
-				336 = { NOT = { is_core_of = COR } }
-				667 = { NOT = { is_core_of = COR } }
-				668 = { NOT = { is_core_of = COR } }
-				672 = { NOT = { is_core_of = COR } }
-				673 = { NOT = { is_core_of = COR } }
-				721 = { NOT = { is_core_of = COR } }
-				828 = { NOT = { is_core_of = COR } }
-				846 = { NOT = { is_core_of = COR } }
-				972 = { NOT = { is_core_of = COR } }
-				1016 = { NOT = { is_core_of = COR } }
-				1017 = { NOT = { is_core_of = COR } }
-				1018 = { NOT = { is_core_of = COR } }
-				1019 = { NOT = { is_core_of = COR } }
 				1020 = { NOT = { is_core_of = COR } }
-				1021 = { NOT = { is_core_of = COR } }
-				1022 = { NOT = { is_core_of = COR } }
-				1023 = { NOT = { is_core_of = COR } }
-				1333 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -3056,47 +2722,9 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { HEJ = { exists = yes } } HEJ = { is_subject_of = COR } }
-			292 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			293 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			294 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			656 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			658 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			659 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			675 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			678 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			679 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			752 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			754 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			859 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			915 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			981 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			982 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			991 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			993 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			994 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1024 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1035 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				292 = { NOT = { is_core_of = COR } }
-				293 = { NOT = { is_core_of = COR } }
-				294 = { NOT = { is_core_of = COR } }
-				656 = { NOT = { is_core_of = COR } }
-				658 = { NOT = { is_core_of = COR } }
-				659 = { NOT = { is_core_of = COR } }
-				675 = { NOT = { is_core_of = COR } }
-				678 = { NOT = { is_core_of = COR } }
 				679 = { NOT = { is_core_of = COR } }
-				752 = { NOT = { is_core_of = COR } }
-				754 = { NOT = { is_core_of = COR } }
-				859 = { NOT = { is_core_of = COR } }
-				915 = { NOT = { is_core_of = COR } }
-				981 = { NOT = { is_core_of = COR } }
-				982 = { NOT = { is_core_of = COR } }
-				991 = { NOT = { is_core_of = COR } }
-				993 = { NOT = { is_core_of = COR } }
-				994 = { NOT = { is_core_of = COR } }
-				1024 = { NOT = { is_core_of = COR } }
-				1035 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -3182,7 +2810,6 @@ COR_fitzhugh_protectorates = {
 			if = { limit = { SAF = { exists = yes } } SAF = { is_subject_of = COR } }
 			85 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			275 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			541 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			542 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			681 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			719 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
@@ -3190,12 +2817,10 @@ COR_fitzhugh_protectorates = {
 			945 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			946 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			947 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			964 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1176 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
 				85 = { NOT = { is_core_of = COR } }
 				275 = { NOT = { is_core_of = COR } }
-				541 = { NOT = { is_core_of = COR } }
 				542 = { NOT = { is_core_of = COR } }
 				681 = { NOT = { is_core_of = COR } }
 				719 = { NOT = { is_core_of = COR } }
@@ -3203,7 +2828,6 @@ COR_fitzhugh_protectorates = {
 				945 = { NOT = { is_core_of = COR } }
 				946 = { NOT = { is_core_of = COR } }
 				947 = { NOT = { is_core_of = COR } }
-				964 = { NOT = { is_core_of = COR } }
 				1176 = { NOT = { is_core_of = COR } }
 			}
 		}
@@ -3509,7 +3133,6 @@ COR_fitzhugh_protectorates = {
 			281 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			320 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			321 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			422 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			423 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			424 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			425 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
@@ -3528,7 +3151,6 @@ COR_fitzhugh_protectorates = {
 				281 = { NOT = { is_core_of = COR } }
 				320 = { NOT = { is_core_of = COR } }
 				321 = { NOT = { is_core_of = COR } }
-				422 = { NOT = { is_core_of = COR } }
 				423 = { NOT = { is_core_of = COR } }
 				424 = { NOT = { is_core_of = COR } }
 				425 = { NOT = { is_core_of = COR } }
@@ -4892,48 +4514,10 @@ COR_fitzhugh_protectorates = {
 		available = {
 			if = { limit = { TUR = { exists = yes } } TUR = { is_subject_of = COR } }
 			49 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			164 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			183 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			187 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			339 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			340 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			341 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			342 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			343 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			344 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			345 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			346 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			350 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			352 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			354 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			355 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			356 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			773 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1000 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1001 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1213 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
 				49 = { NOT = { is_core_of = COR } }
-				164 = { NOT = { is_core_of = COR } }
-				183 = { NOT = { is_core_of = COR } }
-				187 = { NOT = { is_core_of = COR } }
-				339 = { NOT = { is_core_of = COR } }
-				340 = { NOT = { is_core_of = COR } }
-				341 = { NOT = { is_core_of = COR } }
-				342 = { NOT = { is_core_of = COR } }
-				343 = { NOT = { is_core_of = COR } }
-				344 = { NOT = { is_core_of = COR } }
-				345 = { NOT = { is_core_of = COR } }
-				346 = { NOT = { is_core_of = COR } }
-				350 = { NOT = { is_core_of = COR } }
-				352 = { NOT = { is_core_of = COR } }
-				354 = { NOT = { is_core_of = COR } }
-				355 = { NOT = { is_core_of = COR } }
-				356 = { NOT = { is_core_of = COR } }
 				773 = { NOT = { is_core_of = COR } }
-				1000 = { NOT = { is_core_of = COR } }
-				1001 = { NOT = { is_core_of = COR } }
-				1213 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -5653,73 +5237,11 @@ COR_fitzhugh_protectorates = {
 
 		available = {
 			if = { limit = { AUS = { exists = yes } } AUS = { is_subject_of = COR } }
-			4 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			9 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			39 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			69 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			71 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			74 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			75 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			102 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			152 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			153 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			736 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			775 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			783 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			786 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			835 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			836 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			942 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1100 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1101 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1103 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1104 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1129 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1130 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1131 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1132 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1133 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1134 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1137 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1138 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1139 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1144 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1235 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1272 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
-				4 = { NOT = { is_core_of = COR } }
-				9 = { NOT = { is_core_of = COR } }
-				39 = { NOT = { is_core_of = COR } }
-				69 = { NOT = { is_core_of = COR } }
-				71 = { NOT = { is_core_of = COR } }
-				74 = { NOT = { is_core_of = COR } }
-				75 = { NOT = { is_core_of = COR } }
-				102 = { NOT = { is_core_of = COR } }
-				152 = { NOT = { is_core_of = COR } }
-				153 = { NOT = { is_core_of = COR } }
-				736 = { NOT = { is_core_of = COR } }
-				775 = { NOT = { is_core_of = COR } }
-				783 = { NOT = { is_core_of = COR } }
-				786 = { NOT = { is_core_of = COR } }
-				835 = { NOT = { is_core_of = COR } }
-				836 = { NOT = { is_core_of = COR } }
-				942 = { NOT = { is_core_of = COR } }
-				1100 = { NOT = { is_core_of = COR } }
-				1101 = { NOT = { is_core_of = COR } }
-				1103 = { NOT = { is_core_of = COR } }
-				1104 = { NOT = { is_core_of = COR } }
 				1129 = { NOT = { is_core_of = COR } }
-				1130 = { NOT = { is_core_of = COR } }
-				1131 = { NOT = { is_core_of = COR } }
-				1132 = { NOT = { is_core_of = COR } }
-				1133 = { NOT = { is_core_of = COR } }
-				1134 = { NOT = { is_core_of = COR } }
 				1137 = { NOT = { is_core_of = COR } }
-				1138 = { NOT = { is_core_of = COR } }
-				1139 = { NOT = { is_core_of = COR } }
-				1144 = { NOT = { is_core_of = COR } }
-				1235 = { NOT = { is_core_of = COR } }
-				1272 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -5838,74 +5360,8 @@ COR_fitzhugh_protectorates = {
 		available = {
 			if = { limit = { HUN = { exists = yes } } HUN = { is_subject_of = COR } }
 			43 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			45 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			70 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			73 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			76 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			82 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			83 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			84 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			154 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			155 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			664 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			784 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			789 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			875 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1106 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1107 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1108 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1109 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1110 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1111 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1112 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1113 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1114 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1115 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1116 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1117 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1118 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1119 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1120 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1121 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1122 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1123 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1135 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1136 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
 				43 = { NOT = { is_core_of = COR } }
-				45 = { NOT = { is_core_of = COR } }
-				70 = { NOT = { is_core_of = COR } }
-				73 = { NOT = { is_core_of = COR } }
-				76 = { NOT = { is_core_of = COR } }
-				82 = { NOT = { is_core_of = COR } }
-				83 = { NOT = { is_core_of = COR } }
-				84 = { NOT = { is_core_of = COR } }
-				154 = { NOT = { is_core_of = COR } }
-				155 = { NOT = { is_core_of = COR } }
-				664 = { NOT = { is_core_of = COR } }
-				784 = { NOT = { is_core_of = COR } }
-				789 = { NOT = { is_core_of = COR } }
-				875 = { NOT = { is_core_of = COR } }
-				1106 = { NOT = { is_core_of = COR } }
-				1107 = { NOT = { is_core_of = COR } }
-				1108 = { NOT = { is_core_of = COR } }
-				1109 = { NOT = { is_core_of = COR } }
-				1110 = { NOT = { is_core_of = COR } }
-				1111 = { NOT = { is_core_of = COR } }
-				1112 = { NOT = { is_core_of = COR } }
-				1113 = { NOT = { is_core_of = COR } }
-				1114 = { NOT = { is_core_of = COR } }
-				1115 = { NOT = { is_core_of = COR } }
-				1116 = { NOT = { is_core_of = COR } }
-				1117 = { NOT = { is_core_of = COR } }
-				1118 = { NOT = { is_core_of = COR } }
-				1119 = { NOT = { is_core_of = COR } }
-				1120 = { NOT = { is_core_of = COR } }
-				1121 = { NOT = { is_core_of = COR } }
-				1122 = { NOT = { is_core_of = COR } }
-				1123 = { NOT = { is_core_of = COR } }
-				1135 = { NOT = { is_core_of = COR } }
-				1136 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -6018,60 +5474,8 @@ COR_fitzhugh_protectorates = {
 		available = {
 			if = { limit = { POL = { exists = yes } } POL = { is_subject_of = COR } }
 			10 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			11 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			67 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			86 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			87 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			88 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			89 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			90 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			91 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			92 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			94 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			95 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			96 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			97 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			98 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			189 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			194 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			776 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			777 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1087 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1088 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1124 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1125 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1126 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1127 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1140 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1148 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
 				10 = { NOT = { is_core_of = COR } }
-				11 = { NOT = { is_core_of = COR } }
-				67 = { NOT = { is_core_of = COR } }
-				86 = { NOT = { is_core_of = COR } }
-				87 = { NOT = { is_core_of = COR } }
-				88 = { NOT = { is_core_of = COR } }
-				89 = { NOT = { is_core_of = COR } }
-				90 = { NOT = { is_core_of = COR } }
-				91 = { NOT = { is_core_of = COR } }
-				92 = { NOT = { is_core_of = COR } }
-				94 = { NOT = { is_core_of = COR } }
-				95 = { NOT = { is_core_of = COR } }
-				96 = { NOT = { is_core_of = COR } }
-				97 = { NOT = { is_core_of = COR } }
-				98 = { NOT = { is_core_of = COR } }
-				189 = { NOT = { is_core_of = COR } }
-				194 = { NOT = { is_core_of = COR } }
-				776 = { NOT = { is_core_of = COR } }
-				777 = { NOT = { is_core_of = COR } }
-				1087 = { NOT = { is_core_of = COR } }
-				1088 = { NOT = { is_core_of = COR } }
-				1124 = { NOT = { is_core_of = COR } }
-				1125 = { NOT = { is_core_of = COR } }
-				1126 = { NOT = { is_core_of = COR } }
-				1127 = { NOT = { is_core_of = COR } }
-				1140 = { NOT = { is_core_of = COR } }
-				1148 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -6414,82 +5818,18 @@ COR_fitzhugh_protectorates = {
 			44 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			46 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			48 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			77 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			78 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			79 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			81 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			103 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			104 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			105 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			107 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			108 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			109 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			163 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			211 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			212 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			765 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			766 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			767 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			770 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			771 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			772 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			841 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1089 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1090 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1098 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1099 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1102 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1105 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1128 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1141 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1142 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1143 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1145 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1222 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1268 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1269 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1271 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			1320 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			OR = {
 				44 = { NOT = { is_core_of = COR } }
 				46 = { NOT = { is_core_of = COR } }
 				48 = { NOT = { is_core_of = COR } }
-				77 = { NOT = { is_core_of = COR } }
 				78 = { NOT = { is_core_of = COR } }
-				79 = { NOT = { is_core_of = COR } }
-				81 = { NOT = { is_core_of = COR } }
-				103 = { NOT = { is_core_of = COR } }
 				104 = { NOT = { is_core_of = COR } }
-				105 = { NOT = { is_core_of = COR } }
 				107 = { NOT = { is_core_of = COR } }
-				108 = { NOT = { is_core_of = COR } }
 				109 = { NOT = { is_core_of = COR } }
-				163 = { NOT = { is_core_of = COR } }
-				211 = { NOT = { is_core_of = COR } }
-				212 = { NOT = { is_core_of = COR } }
-				765 = { NOT = { is_core_of = COR } }
-				766 = { NOT = { is_core_of = COR } }
-				767 = { NOT = { is_core_of = COR } }
-				770 = { NOT = { is_core_of = COR } }
-				771 = { NOT = { is_core_of = COR } }
-				772 = { NOT = { is_core_of = COR } }
-				841 = { NOT = { is_core_of = COR } }
-				1089 = { NOT = { is_core_of = COR } }
-				1090 = { NOT = { is_core_of = COR } }
-				1098 = { NOT = { is_core_of = COR } }
-				1099 = { NOT = { is_core_of = COR } }
-				1102 = { NOT = { is_core_of = COR } }
-				1105 = { NOT = { is_core_of = COR } }
-				1128 = { NOT = { is_core_of = COR } }
-				1141 = { NOT = { is_core_of = COR } }
-				1142 = { NOT = { is_core_of = COR } }
-				1143 = { NOT = { is_core_of = COR } }
-				1145 = { NOT = { is_core_of = COR } }
-				1222 = { NOT = { is_core_of = COR } }
-				1268 = { NOT = { is_core_of = COR } }
-				1269 = { NOT = { is_core_of = COR } }
-				1271 = { NOT = { is_core_of = COR } }
-				1320 = { NOT = { is_core_of = COR } }
 			}
 		}
 
@@ -6595,13 +5935,11 @@ COR_fitzhugh_protectorates = {
 			47 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			106 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			182 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			184 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			185 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			186 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			731 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			758 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			768 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
-			769 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			939 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			989 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
 			1076 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
@@ -6609,13 +5947,11 @@ COR_fitzhugh_protectorates = {
 				47 = { NOT = { is_core_of = COR } }
 				106 = { NOT = { is_core_of = COR } }
 				182 = { NOT = { is_core_of = COR } }
-				184 = { NOT = { is_core_of = COR } }
 				185 = { NOT = { is_core_of = COR } }
 				186 = { NOT = { is_core_of = COR } }
 				731 = { NOT = { is_core_of = COR } }
 				758 = { NOT = { is_core_of = COR } }
 				768 = { NOT = { is_core_of = COR } }
-				769 = { NOT = { is_core_of = COR } }
 				939 = { NOT = { is_core_of = COR } }
 				989 = { NOT = { is_core_of = COR } }
 				1076 = { NOT = { is_core_of = COR } }
