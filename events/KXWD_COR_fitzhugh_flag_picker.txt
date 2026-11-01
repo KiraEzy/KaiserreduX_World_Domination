@@ -1,0 +1,490 @@
+# Fitzhugh protectorate flag picker.
+# Caller: COR_establish_protectorate_<TAG> complete_effect on COR (player only).
+# ROOT = COR. Options apply set_cosmetic_tag on the released protectorate.
+# One event per tag that has extra COR_<TAG>_OCC_<N> flags.
+
+add_namespace = KXWD_COR_fitzhugh_flag
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.1
+	title = KXWD_COR_fitzhugh_flag.1.t
+	desc = KXWD_COR_fitzhugh_flag.1.desc
+	picture = GFX_evt_COR_BHC_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.1 (BHC flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.1.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.1.a.tt
+		if = {
+			limit = { BHC = { exists = yes } }
+			BHC = { set_cosmetic_tag = COR_BHC_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.1.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.1.b.tt
+		if = {
+			limit = { BHC = { exists = yes } }
+			BHC = { set_cosmetic_tag = COR_BHC_OCC_2 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.1.c
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.1.c.tt
+		if = {
+			limit = { BHC = { exists = yes } }
+			BHC = { set_cosmetic_tag = COR_BHC_OCC_3 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.1.d
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.1.d.tt
+		if = {
+			limit = { BHC = { exists = yes } }
+			BHC = { set_cosmetic_tag = COR_BHC_OCC_4 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.2
+	title = KXWD_COR_fitzhugh_flag.2.t
+	desc = KXWD_COR_fitzhugh_flag.2.desc
+	picture = GFX_evt_COR_ARG_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.2 (ARG flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.2.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.2.a.tt
+		if = {
+			limit = { ARG = { exists = yes } }
+			ARG = { set_cosmetic_tag = COR_ARG_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.2.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.2.b.tt
+		if = {
+			limit = { ARG = { exists = yes } }
+			ARG = { set_cosmetic_tag = COR_ARG_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.3
+	title = KXWD_COR_fitzhugh_flag.3.t
+	desc = KXWD_COR_fitzhugh_flag.3.desc
+	picture = GFX_evt_COR_SZC_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.3 (SZC flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.3.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.3.a.tt
+		if = {
+			limit = { SZC = { exists = yes } }
+			SZC = { set_cosmetic_tag = COR_SZC_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.3.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.3.b.tt
+		if = {
+			limit = { SZC = { exists = yes } }
+			SZC = { set_cosmetic_tag = COR_SZC_OCC_2 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.3.c
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.3.c.tt
+		if = {
+			limit = { SZC = { exists = yes } }
+			SZC = { set_cosmetic_tag = COR_SZC_OCC_3 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.4
+	title = KXWD_COR_fitzhugh_flag.4.t
+	desc = KXWD_COR_fitzhugh_flag.4.desc
+	picture = GFX_evt_COR_AST_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.4 (AST flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.4.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.4.a.tt
+		if = {
+			limit = { AST = { exists = yes } }
+			AST = { set_cosmetic_tag = COR_AST_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.4.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.4.b.tt
+		if = {
+			limit = { AST = { exists = yes } }
+			AST = { set_cosmetic_tag = COR_AST_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.5
+	title = KXWD_COR_fitzhugh_flag.5.t
+	desc = KXWD_COR_fitzhugh_flag.5.desc
+	picture = GFX_evt_COR_IRE_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.5 (IRE flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.5.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.5.a.tt
+		if = {
+			limit = { IRE = { exists = yes } }
+			IRE = { set_cosmetic_tag = COR_IRE_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.5.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.5.b.tt
+		if = {
+			limit = { IRE = { exists = yes } }
+			IRE = { set_cosmetic_tag = COR_IRE_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.6
+	title = KXWD_COR_fitzhugh_flag.6.t
+	desc = KXWD_COR_fitzhugh_flag.6.desc
+	picture = GFX_evt_COR_SIA_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.6 (SIA flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.6.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.6.a.tt
+		if = {
+			limit = { SIA = { exists = yes } }
+			SIA = { set_cosmetic_tag = COR_SIA_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.6.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.6.b.tt
+		if = {
+			limit = { SIA = { exists = yes } }
+			SIA = { set_cosmetic_tag = COR_SIA_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.7
+	title = KXWD_COR_fitzhugh_flag.7.t
+	desc = KXWD_COR_fitzhugh_flag.7.desc
+	picture = GFX_evt_COR_FRA_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.7 (FRA flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.7.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.7.a.tt
+		if = {
+			limit = { FRA = { exists = yes } }
+			FRA = { set_cosmetic_tag = COR_FRA_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.7.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.7.b.tt
+		if = {
+			limit = { FRA = { exists = yes } }
+			FRA = { set_cosmetic_tag = COR_FRA_OCC_2 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.7.c
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.7.c.tt
+		if = {
+			limit = { FRA = { exists = yes } }
+			FRA = { set_cosmetic_tag = COR_FRA_OCC_3 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.7.d
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.7.d.tt
+		if = {
+			limit = { FRA = { exists = yes } }
+			FRA = { set_cosmetic_tag = COR_FRA_OCC_4 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.8
+	title = KXWD_COR_fitzhugh_flag.8.t
+	desc = KXWD_COR_fitzhugh_flag.8.desc
+	picture = GFX_evt_COR_SPR_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.8 (SPR flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.8.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.8.a.tt
+		if = {
+			limit = { SPR = { exists = yes } }
+			SPR = { set_cosmetic_tag = COR_SPR_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.8.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.8.b.tt
+		if = {
+			limit = { SPR = { exists = yes } }
+			SPR = { set_cosmetic_tag = COR_SPR_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.9
+	title = KXWD_COR_fitzhugh_flag.9.t
+	desc = KXWD_COR_fitzhugh_flag.9.desc
+	picture = GFX_evt_COR_POR_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.9 (POR flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.9.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.9.a.tt
+		if = {
+			limit = { POR = { exists = yes } }
+			POR = { set_cosmetic_tag = COR_POR_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.9.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.9.b.tt
+		if = {
+			limit = { POR = { exists = yes } }
+			POR = { set_cosmetic_tag = COR_POR_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.10
+	title = KXWD_COR_fitzhugh_flag.10.t
+	desc = KXWD_COR_fitzhugh_flag.10.desc
+	picture = GFX_evt_COR_SYR_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.10 (SYR flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.10.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.10.a.tt
+		if = {
+			limit = { SYR = { exists = yes } }
+			SYR = { set_cosmetic_tag = COR_SYR_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.10.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.10.b.tt
+		if = {
+			limit = { SYR = { exists = yes } }
+			SYR = { set_cosmetic_tag = COR_SYR_OCC_2 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.10.c
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.10.c.tt
+		if = {
+			limit = { SYR = { exists = yes } }
+			SYR = { set_cosmetic_tag = COR_SYR_OCC_3 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.11
+	title = KXWD_COR_fitzhugh_flag.11.t
+	desc = KXWD_COR_fitzhugh_flag.11.desc
+	picture = GFX_evt_COR_PER_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.11 (PER flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.11.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.11.a.tt
+		if = {
+			limit = { PER = { exists = yes } }
+			PER = { set_cosmetic_tag = COR_PER_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.11.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.11.b.tt
+		if = {
+			limit = { PER = { exists = yes } }
+			PER = { set_cosmetic_tag = COR_PER_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.12
+	title = KXWD_COR_fitzhugh_flag.12.t
+	desc = KXWD_COR_fitzhugh_flag.12.desc
+	picture = GFX_evt_COR_DEN_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.12 (DEN flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.12.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.12.a.tt
+		if = {
+			limit = { DEN = { exists = yes } }
+			DEN = { set_cosmetic_tag = COR_DEN_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.12.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.12.b.tt
+		if = {
+			limit = { DEN = { exists = yes } }
+			DEN = { set_cosmetic_tag = COR_DEN_OCC_2 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.12.c
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.12.c.tt
+		if = {
+			limit = { DEN = { exists = yes } }
+			DEN = { set_cosmetic_tag = COR_DEN_OCC_3 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.13
+	title = KXWD_COR_fitzhugh_flag.13.t
+	desc = KXWD_COR_fitzhugh_flag.13.desc
+	picture = GFX_evt_COR_SWE_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.13 (SWE flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.13.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.13.a.tt
+		if = {
+			limit = { SWE = { exists = yes } }
+			SWE = { set_cosmetic_tag = COR_SWE_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.13.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.13.b.tt
+		if = {
+			limit = { SWE = { exists = yes } }
+			SWE = { set_cosmetic_tag = COR_SWE_OCC_1 }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.13.c
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.13.c.tt
+		if = {
+			limit = { SWE = { exists = yes } }
+			SWE = { set_cosmetic_tag = COR_SWE_OCC_2 }
+		}
+	}
+}
+
+country_event = {
+	id = KXWD_COR_fitzhugh_flag.14
+	title = KXWD_COR_fitzhugh_flag.14.t
+	desc = KXWD_COR_fitzhugh_flag.14.desc
+	picture = GFX_evt_COR_FIN_OCC_flags
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event KXWD_COR_fitzhugh_flag.14 (FIN flag picker)"
+	}
+
+	option = {
+		name = KXWD_COR_fitzhugh_flag.14.a
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.14.a.tt
+		if = {
+			limit = { FIN = { exists = yes } }
+			FIN = { set_cosmetic_tag = COR_FIN_OCC }
+		}
+	}
+	option = {
+		name = KXWD_COR_fitzhugh_flag.14.b
+		custom_effect_tooltip = KXWD_COR_fitzhugh_flag.14.b.tt
+		if = {
+			limit = { FIN = { exists = yes } }
+			FIN = { set_cosmetic_tag = COR_FIN_OCC_2 }
+		}
+	}
+}

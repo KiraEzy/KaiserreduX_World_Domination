@@ -350,6 +350,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_ARG_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					ARG = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.2 }
+			}
 		}
 	}
 
@@ -1561,6 +1569,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_SZC_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					SZC = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.3 }
+			}
 		}
 	}
 
@@ -2210,6 +2226,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_AST_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					AST = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.4 }
+			}
 		}
 	}
 
@@ -2557,6 +2581,14 @@ COR_fitzhugh_protectorates = {
 				COR = { set_autonomy = { target = IRE autonomous_state = kx_colored_puppet } }
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
+			}
+			# Player-only flag picker. AI keeps COR_IRE_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					IRE = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.5 }
 			}
 		}
 	}
@@ -3094,6 +3126,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_BHC_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					BHC = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.1 }
+			}
 		}
 	}
 
@@ -3412,6 +3452,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_SIA_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					SIA = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.6 }
+			}
 		}
 	}
 
@@ -3576,6 +3624,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_FRA_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					FRA = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.7 }
+			}
 		}
 	}
 
@@ -3724,6 +3780,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_SPR_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					SPR = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.8 }
+			}
 		}
 	}
 
@@ -3831,6 +3895,14 @@ COR_fitzhugh_protectorates = {
 				COR = { set_autonomy = { target = POR autonomous_state = kx_colored_puppet } }
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
+			}
+			# Player-only flag picker. AI keeps COR_POR_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					POR = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.9 }
 			}
 		}
 	}
@@ -4308,6 +4380,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_SYR_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					SYR = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.10 }
+			}
 		}
 	}
 
@@ -4474,6 +4554,14 @@ COR_fitzhugh_protectorates = {
 				COR = { set_autonomy = { target = PER autonomous_state = kx_colored_puppet } }
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
+			}
+			# Player-only flag picker. AI keeps COR_PER_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					PER = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.11 }
 			}
 		}
 	}
@@ -4790,6 +4878,14 @@ COR_fitzhugh_protectorates = {
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
 			}
+			# Player-only flag picker. AI keeps COR_DEN_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					DEN = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.12 }
+			}
 		}
 	}
 
@@ -4884,6 +4980,14 @@ COR_fitzhugh_protectorates = {
 				COR = { set_autonomy = { target = SWE autonomous_state = kx_colored_puppet } }
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
+			}
+			# Player-only flag picker. AI keeps COR_SWE_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					SWE = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.13 }
 			}
 		}
 	}
@@ -4995,6 +5099,14 @@ COR_fitzhugh_protectorates = {
 				COR = { set_autonomy = { target = FIN autonomous_state = kx_colored_puppet } }
 				set_popularities = { totalist = 70 paternal_autocrat = 15 national_populist = 10 social_conservative = 5 }
 				set_politics = { ruling_party = totalist elections_allowed = no }
+			}
+			# Player-only flag picker. AI keeps COR_FIN_OCC. Event ROOT is COR.
+			if = {
+				limit = {
+					is_ai = no
+					FIN = { exists = yes }
+				}
+				country_event = { id = KXWD_COR_fitzhugh_flag.14 }
 			}
 		}
 	}
