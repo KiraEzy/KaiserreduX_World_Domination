@@ -5020,7 +5020,7 @@ MON_foreign_policy_decisions = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				add = 100
+				add = 1000
 				JAP = { is_ai = no }
 			}
 		}
@@ -5250,7 +5250,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = { has_country_flag = MON_already_invited }
@@ -5318,7 +5318,7 @@ MON_foreign_policy_decisions = {
 		cost = 25
 		days_remove = 20
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = { has_country_flag = MON_already_invited }
@@ -5383,7 +5383,7 @@ MON_foreign_policy_decisions = {
 		cost = 25
 		days_remove = 20
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -5461,7 +5461,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -5528,7 +5528,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -5598,7 +5598,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -5664,7 +5664,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -5730,7 +5730,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -5800,7 +5800,7 @@ MON_foreign_policy_decisions = {
 		days_remove = 20
 
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 			modifier = {
 				factor = 0
 				FROM = {
@@ -8492,6 +8492,8 @@ MON_red_diplomacy = {
 						is_claimed_by = MON
 						is_claims_china = yes
 						is_russian_starting_claims = yes
+						is_core_of = JAP
+						is_core_of = KOR
 					}
 				}
 				add_core_of = MON

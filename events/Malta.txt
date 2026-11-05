@@ -2523,6 +2523,15 @@ country_event = { #malta wants to unite admins
 	option = { #ok sure
 		name = mlt.57.a
 		add_political_power = -25
+		every_unit_leader = {
+			limit = { 
+				OR = {
+					has_unit_leader_flag = CRE_german_leader 
+					has_trait = GER_expeditionary_leader
+				}
+			}
+			set_nationality = GER
+		}
 		MLT = {
 			annex_country = {
 				target = CRE
@@ -4767,7 +4776,7 @@ country_event = { #musso here
 			}
 			create_country_leader = {# Benito Mussolini
 			name = "Benito Mussolini"
-			picture = "gfx/leaders/MLT/Portrait_SRI_Benito_Mussolini.png"
+			picture = "gfx/leaders/SRI/Portrait_SRI_Benito_Mussolini.png"
         	desc = "POLITICS_MUSSOLINI_DESC"
 			expire = "1.1.1"
 			ideology = comrades_coast_subtype

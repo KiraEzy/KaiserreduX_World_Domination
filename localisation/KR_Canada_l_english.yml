@@ -442,8 +442,12 @@ CAN_national_populist_party:0 "IUP"
 CAN_national_populist_party_long:0 "Imperial Unity Party"
 CAN_nationalists_natpop_party:0 "CNL"
 CAN_nationalists_natpop_party_long:0 "Canadian Nationalist League"
-CAN_angevin_empire_party:0 "IUP/PdlI/AA/AA"
+CAN_angevin_empire_party:0 "IUP/PUI/AA/AA"
 CAN_angevin_empire_party_long:0 "Imperial Unity Party/Angevin Action\n§LParti de l'Unité Impériale/Action Angevine§!"
+CAN_angevin_empire_absolutist_party:0 "IUP(A)/PUI(A)/AA/AA"
+CAN_angevin_empire_absolutist_party_long:0 "Imperial Unity Party (Absolutists)/Angevin Action\n§LParti de l'Unité Impériale (Absolutistes)/Action Angevine§!"
+CAN_angevin_empire_soccred_party:0 "IUP(SC)/PUI(C)/AA/AA"
+CAN_angevin_empire_soccred_party_long:0 "Imperial Unity Party (SocCreds)/Angevin Action\n§LParti de l'Unité Impériale (Créditistes)/Action Angevine§!"
 
 CAN_dominion_midwest_party:0 "Canadian Military Occupation"
 CAN_dominion_midwest_party_long:0 "Midwestern Administration Zone"
@@ -1542,9 +1546,9 @@ CAN_interventionist_policy:0 "Interventionist Foreign Policy"
 CAN_world_police:0 "World Police"
 
 CAN_nato_member:0 "NATO Member"
-CAN_nato_member_desc:0 "We are the leader of the North American Treaty Organization, an organisation designed by the Canadians to ensure peace in the Americas."
+CAN_nato_member_desc:0 "We are a member of the North American Treaty Organization, an organisation designed by the Canadians to ensure peace in the Americas."
 CAN_nato_leader:0 "Leader of NATO"
-CAN_nato_leader_desc:0 "We are a member of the North American Treaty Organization, an organisation designed by the Canadians to ensure peace in the Americas."
+CAN_nato_leader_desc:0 "We are the leader of the North American Treaty Organization, an organisation designed by the Canadians to ensure peace in the Americas. "
 
 CAN_entente_trade_idea:0 "Entente Trade Agreement"
 CAN_entente_trade_idea_desc:0 "$CAN_entente_trade_desc$"
@@ -4471,11 +4475,6 @@ canada.3080.t:0 "Germany Doesn't Sign the Treaty"
 canada.3080.d:0 "The Germans have refused to sign our treaty. We should be ever wary of the Germans coming after us."
 canada.3080.a:0 "Vile Germans."
 
-canada.3090.t:0 "Fulfilling the Treaty"
-canada.3090.d:0 "We have won against the godless syndicalist in the Union of Britain with our victory however, the ambassador from Canada has reminded us of the treaty we signed with them about restoring Canada to them should the Union of Britain be defeated. Now that they are, should we honour our treaty or go with our own plans?"
-canada.3090.a:0 "Honour the Treaty."
-canada.3090.b:0 "We have our own plans."
-
 #Danish Claims
 
 canada.820.t:0 "Occupying the Danish North Atlantic Possessions"
@@ -5536,7 +5535,7 @@ entente.409.a:0 "Will this organisation be utterly useless? Or just what the wor
 ## Imperial Fed Events
 
 imp_fed.1.t:0 "An Invitation to the Imperial Federation"
-imp_fed.1.d:0 "Once but a dream of the British Colonial Project, since returning from exile, the British government has been seemingly working towards a realization of the unification of the entire Empire as a single nation state. Today, it appears that these rumors have proved correct, as the British government has formally invited our government to join them in the creation of an Imperial Super State. Promising a massive boon to the economy and national stability, the British have made it clear that while we have every right to refuse, they might not take no for an answer. In any case, with the Federation seeming closer every day, London is awaiting our response with baited breath."
+imp_fed.1.d:0 "Once but a dream of the British Colonial Project, since returning from exile, the British government has been seemingly working towards a realization of the unification of the entire Empire as a single nation state. Today, it appears that these rumors have proved correct, as the British government has formally invited our government to join them in the creation of an Imperial Super State. Promising a massive boon to the economy and national stability, the British have made it clear that while we have every right to refuse, they might not take no for an answer. In any case, with the Federation seeming closer every day, London is awaiting our response with bated breath."
 imp_fed.1.a:0 "We have awaited this day, accept at once!"
 imp_fed.1.b:0 "They must be joking? Such an entity would surely collapse overnight!"
 
