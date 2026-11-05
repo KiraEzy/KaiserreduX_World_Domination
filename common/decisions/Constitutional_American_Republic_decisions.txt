@@ -1227,6 +1227,7 @@ COR_faction_decisions = {
 			has_completed_focus = COR_Ring_Of_Fire
 			has_country_leader = { ruling_only = yes name = "George W. Christians" }
 			NOT = {
+				country_exists = MEX
 				country_exists = GUA
 				country_exists = ELS
 				country_exists = COS
@@ -1235,11 +1236,6 @@ COR_faction_decisions = {
 				country_exists = CUB
 				country_exists = HAI
 				country_exists = DOM
-			}
-			# KXWD: Ring annexes Mexico but never cores it, so a MEX protectorate is a valid end state.
-			OR = {
-				NOT = { country_exists = MEX }
-				MEX = { is_subject_of = COR }
 			}
 			OR = {
 			AND = {
@@ -1274,8 +1270,7 @@ COR_faction_decisions = {
 			is_in_faction_with = COR
 				}
 			}
-			# KXWD: Mexico City may be held by COR or by a COR protectorate.
-			277 = { owner = { OR = { original_tag = COR is_subject_of = COR } } }
+			owns_state = 277
 			owns_state = 313
 			owns_state = 314
 			owns_state = 316
